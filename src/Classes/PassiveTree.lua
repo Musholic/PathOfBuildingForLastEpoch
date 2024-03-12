@@ -85,16 +85,14 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		self[k] = v
 	end
 
-	local cdnRoot = versionNum >= 3.08 and versionNum <= 3.09 and "https://web.poecdn.com" or ""
+	local cdnRoot = ""
 
 	self.size = m_min(self.max_x - self.min_x, self.max_y - self.min_y) * 1.1
 
-	if versionNum >= 3.10 then
-		-- Migrate to old format
-		for i = 0, 6 do
-			self.classes[i] = self.classes[i + 1]
-			self.classes[i + 1] = nil
-		end
+	-- Migrate to old format
+	for i = 0, 6 do
+		self.classes[i] = self.classes[i + 1]
+		self.classes[i + 1] = nil
 	end
 
 	-- Build maps of class name -> class table
@@ -103,10 +101,8 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 	self.classNotables = { }
 
 	for classId, class in pairs(self.classes) do
-		if versionNum >= 3.10 then
-			-- Migrate to old format
-			class.classes = class.ascendancies
-		end
+		-- Migrate to old format
+		class.classes = class.ascendancies
 		class.classes[0] = { name = "None" }
 		self.classNameMap[class.name] = classId
 		for ascendClassId, ascendClass in pairs(class.classes) do
@@ -153,13 +149,11 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 	local spriteSheets = { }
 	for type, data in pairs(self.skillSprites) do
 		local maxZoom = data[#data]
-		if versionNum >= 3.19 then
-			maxZoom = data[0.3835] or data[1]
-		end
+		maxZoom = data[0.3835] or data[1]
 		local sheet = spriteSheets[maxZoom.filename]
 		if not sheet then
 			sheet = { }
-			self:LoadImage(versionNum >= 3.16 and maxZoom.filename:gsub("%?%x+$",""):gsub(".*/","") or maxZoom.filename:gsub("%?%x+$",""), versionNum >= 3.16 and maxZoom.filename or "https://web.poecdn.com"..(self.imageRoot or "/image/")..(versionNum >= 3.08 and "passive-skill/" or "build-gen/passive-skill-sprite/")..maxZoom.filename, sheet, "CLAMP")--, "MIPMAP")
+			self:LoadImage(maxZoom.filename:gsub("%?%x+$",""):gsub(".*/","") or maxZoom.filename:gsub("%?%x+$",""), maxZoom.filename or "https://web.poecdn.com"..(self.imageRoot or "/image/")..("passive-skill/" or "build-gen/passive-skill-sprite/")..maxZoom.filename, sheet, "CLAMP")--, "MIPMAP")
 			spriteSheets[maxZoom.filename] = sheet
 		end
 		for name, coords in pairs(maxZoom.coords) do
@@ -193,18 +187,18 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			alloc = "PSSkillFrameActive",
 			path = "PSSkillFrameHighlighted",
 			unalloc = "PSSkillFrame",
-			allocAscend = versionNum >= 3.10 and "AscendancyFrameSmallAllocated" or "PassiveSkillScreenAscendancyFrameSmallAllocated",
-			pathAscend = versionNum >= 3.10 and "AscendancyFrameSmallCanAllocate" or "PassiveSkillScreenAscendancyFrameSmallCanAllocate",
-			unallocAscend = versionNum >= 3.10 and "AscendancyFrameSmallNormal" or "PassiveSkillScreenAscendancyFrameSmallNormal"
+			allocAscend = "AscendancyFrameSmallAllocated",
+			pathAscend = "AscendancyFrameSmallCanAllocate",
+			unallocAscend = "AscendancyFrameSmallNormal"
 		},
 		Notable = {
 			artWidth = 58,
 			alloc = "NotableFrameAllocated",
 			path = "NotableFrameCanAllocate",
 			unalloc = "NotableFrameUnallocated",
-			allocAscend = versionNum >= 3.10 and "AscendancyFrameLargeAllocated" or "PassiveSkillScreenAscendancyFrameLargeAllocated",
-			pathAscend = versionNum >= 3.10 and "AscendancyFrameLargeCanAllocate" or "PassiveSkillScreenAscendancyFrameLargeCanAllocate",
-			unallocAscend = versionNum >= 3.10 and "AscendancyFrameLargeNormal" or "PassiveSkillScreenAscendancyFrameLargeNormal",
+			allocAscend = "AscendancyFrameLargeAllocated",
+			pathAscend = "AscendancyFrameLargeCanAllocate",
+			unallocAscend = "AscendancyFrameLargeNormal",
 			allocBlighted = "BlightedNotableFrameAllocated",
 			pathBlighted = "BlightedNotableFrameCanAllocate",
 			unallocBlighted = "BlightedNotableFrameUnallocated",
@@ -237,19 +231,17 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		data.rsq = size * size
 	end
 
-	if versionNum >= 3.10 then
-		-- Migrate groups to old format
-		for _, group in pairs(self.groups) do
-			group.n = group.nodes
-			group.oo = { }
-			for _, orbit in ipairs(group.orbits) do
-				group.oo[orbit] = true
-			end
+	-- Migrate groups to old format
+	for _, group in pairs(self.groups) do
+		group.n = group.nodes
+		group.oo = { }
+		for _, orbit in ipairs(group.orbits) do
+			group.oo[orbit] = true
 		end
-
-		-- Go away
-		self.nodes.root = nil
 	end
+
+	-- Go away
+	self.nodes.root = nil
 
 	ConPrintf("Processing tree...")
 	self.ascendancyMap = { }
@@ -261,23 +253,15 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 	local nodeMap = { }
 	for _, node in pairs(self.nodes) do
 		-- Migration...
-		if versionNum < 3.10 then
-			-- To new format
-			node.classStartIndex = node.spc[0] and node.spc[0]
-		else
-			-- To old format
-			node.id = node.skill
-			node.g = node.group
-			node.o = node.orbit
-			node.oidx = node.orbitIndex
-			node.dn = node.name
-			node.sd = node.stats
-			node.passivePointsGranted = node.grantedPassivePoints or 0
-		end
+		-- To old format
+		node.id = node.skill
+		node.g = node.group
+		node.o = node.orbit
+		node.oidx = node.orbitIndex
+		node.dn = node.name
+		node.sd = node.stats
+		node.passivePointsGranted = node.grantedPassivePoints or 0
 
-		if versionNum <= 3.09 and node.passivePointsGranted > 0 then
-			t_insert(node.sd, "Grants "..node.passivePointsGranted.." Passive Skill Point"..(node.passivePointsGranted > 1 and "s" or ""))
-		end
 		node.__index = node
 		node.linkedId = { }
 		nodeMap[node.id] = node
