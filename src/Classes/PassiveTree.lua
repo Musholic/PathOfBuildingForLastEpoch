@@ -51,8 +51,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 	self.treeVersion = treeVersion
 	local versionNum = treeVersions[treeVersion].num
 
-	self.legion = LoadModule("Data/TimelessJewelData/LegionPassives")
-	self.tattoo = LoadModule("Data/TattooPassives")
 
 	MakeDir("TreeData")
 
@@ -120,10 +118,10 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			}
 		end
 	end
-	
+
 	if self.alternate_ascendancies then
 		self.secondaryAscendNameMap = { }
-		local alternate_ascendancies_class = { 
+		local alternate_ascendancies_class = {
 			["name"]= "alternate_ascendancies",
 			["classes"]= self.alternate_ascendancies
 		}
@@ -145,41 +143,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		self.orbitAnglesByOrbit[orbit] = self:CalcOrbitAngles(skillsInOrbit)
 	end
 
-	if versionNum >= 3.19 then
-		local treeTextOLD
-		local treeFileOLD = io.open("TreeData/".. "3_18" .."/tree.lua", "r")
-		if treeFileOLD then
-			treeTextOLD = treeFileOLD:read("*a")
-			treeFileOLD:close()
-		end
-		local temp = {}
-		for k, v in pairs(assert(loadstring(treeTextOLD))()) do
-			temp[k] = v
-		end
-		self.assets = temp.assets
-		self.skillSprites = self.sprites
-		if self.alternate_ascendancies then
-			-- backgrounds
-			self.assets["ClassesPrimalist"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/ClassesPrimalist.png"}
-			self.assets["ClassesWarlock"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/ClassesWarlock.png"}
-			self.assets["ClassesWarden"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/ClassesWarden.png"}
-			-- ascendancy nodes
-			self.assets["AzmeriAscendancyMiddle"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriAscendancyMiddle.png"}
-			self.assets["AzmeriAscendancyFrameLargeNormal"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriAscendancyFrameLargeNormal.png"}
-			self.assets["AzmeriAscendancyFrameLargeCanAllocate"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriAscendancyFrameLargeCanAllocate.png"}
-			self.assets["AzmeriAscendancyFrameLargeAllocated"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriAscendancyFrameLargeAllocated.png"}
-			self.assets["AzmeriAscendancyFrameSmallNormal"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriAscendancyFrameSmallNormal.png"}
-			self.assets["AzmeriAscendancyFrameSmallCanAllocate"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriAscendancyFrameSmallCanAllocate.png"}
-			self.assets["AzmeriAscendancyFrameSmallAllocated"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriAscendancyFrameSmallAllocated.png"}
-			-- jewel sockets
-			self.assets["AzmeriJewelFrameUnallocated"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriJewelFrameUnallocated.png"}
-			self.assets["AzmeriJewelFrameCanAllocate"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriJewelFrameCanAllocate.png"}
-			self.assets["AzmeriJewelFrameAllocated"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/AzmeriJewelFrameAllocated.png"}
-			self.assets["CharmSocketActiveStr"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/CharmSocketActiveStr.png"}
-			self.assets["CharmSocketActiveInt"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/CharmSocketActiveInt.png"}
-			self.assets["CharmSocketActiveDex"] = {[0.3835]="https://web.poecdn.com/gen/image/WzIyLCJlMzIwYTYwYmNiZTY4ZmQ5YTc2NmE1ZmY4MzhjMDMyNCIseyJ0IjoyNywic3AiOjAuMzgzNX1d/3d68393250/CharmSocketActiveDex.png"}
-		end
-	end
 	ConPrintf("Loading passive tree assets...")
 	for name, data in pairs(self.assets) do
 		self:LoadImage(name..".png", cdnRoot..(data[0.3835] or data[1]), data, not name:match("[OL][ri][bn][ie][tC]") and "ASYNC" or nil)--, not name:match("[OL][ri][bn][ie][tC]") and "MIPMAP" or nil)
@@ -197,34 +160,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		if not sheet then
 			sheet = { }
 			self:LoadImage(versionNum >= 3.16 and maxZoom.filename:gsub("%?%x+$",""):gsub(".*/","") or maxZoom.filename:gsub("%?%x+$",""), versionNum >= 3.16 and maxZoom.filename or "https://web.poecdn.com"..(self.imageRoot or "/image/")..(versionNum >= 3.08 and "passive-skill/" or "build-gen/passive-skill-sprite/")..maxZoom.filename, sheet, "CLAMP")--, "MIPMAP")
-			spriteSheets[maxZoom.filename] = sheet
-		end
-		for name, coords in pairs(maxZoom.coords) do
-			if not self.spriteMap[name] then
-				self.spriteMap[name] = { }
-			end
-			self.spriteMap[name][type] = {
-				handle = sheet.handle,
-				width = coords.w,
-				height = coords.h,
-				[1] = coords.x / sheet.width,
-				[2] = coords.y / sheet.height,
-				[3] = (coords.x + coords.w) / sheet.width,
-				[4] = (coords.y + coords.h) / sheet.height
-			}
-		end
-	end
-
-	-- Load legion sprite sheets and build sprite map
-	local legionSprites = LoadModule("TreeData/legion/tree-legion.lua")
-	for type, data in pairs(legionSprites) do
-		local maxZoom = data[#data]
-		local sheet = spriteSheets[maxZoom.filename]
-		if not sheet then
-			sheet = { }
-			sheet.handle = NewImageHandle()
-			sheet.handle:Load("TreeData/legion/"..maxZoom.filename)
-			sheet.width, sheet.height = sheet.handle:ImageSize()
 			spriteSheets[maxZoom.filename] = sheet
 		end
 		for name, coords in pairs(maxZoom.coords) do
@@ -345,7 +280,7 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		end
 		node.__index = node
 		node.linkedId = { }
-		nodeMap[node.id] = node	
+		nodeMap[node.id] = node
 
 		-- Determine node type
 		if node.classStartIndex then
@@ -399,14 +334,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			end
 		else
 			node.type = "Normal"
-			if node.ascendancyName == "Ascendant" and not node.dn:find("Dexterity") and not node.dn:find("Intelligence") and
-				not node.dn:find("Strength") and not node.dn:find("Passive") then
-				self.ascendancyMap[node.dn:lower()] = node
-				if not self.classNotables[self.ascendNameMap[node.ascendancyName].class.name] then
-					self.classNotables[self.ascendNameMap[node.ascendancyName].class.name] = { }
-				end
-				t_insert(self.classNotables[self.ascendNameMap[node.ascendancyName].class.name], node.dn)
-			end
 		end
 
 		-- Find the node group
@@ -420,7 +347,7 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		elseif node.type == "Notable" or node.type == "Keystone" then
 			self.clusterNodeMap[node.dn] = node
 		end
-		
+
 		self:ProcessNode(node)
 	end
 
@@ -520,56 +447,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 				node.modList:NewMod("Condition:ConnectedTo"..class.name.."Start", "FLAG", true, "Tree:"..nodeId)
 			end
 		end
-	end
-
-	-- Build ModList for legion jewels
-	for _, node in pairs(self.legion.nodes) do
-		-- Determine node type
-		if node.m then
-			node.type = "Mastery"
-		elseif node.ks then
-			node.type = "Keystone"
-			if not self.keystoneMap[node.dn] then -- Don't override good tree data with legacy keystones
-				self.keystoneMap[node.dn] = node
-			end
-		elseif node["not"] then
-			node.type = "Notable"
-		else
-			node.type = "Normal"
-		end
-
-		-- Assign node artwork assets
-		node.sprites = self.spriteMap[node.icon]
-		if not node.sprites then
-			--error("missing sprite "..node.icon)
-			node.sprites = { }
-		end
-
-		self:ProcessStats(node)
-	end
-
-	-- Build ModList for tattoos
-	for _, node in pairs(self.tattoo.nodes) do
-		-- Determine node type
-		if node.m then
-			node.type = "Mastery"
-		elseif node.ks then
-			node.type = "Keystone"
-		elseif node["not"] then
-			node.type = "Notable"
-		else
-			node.type = "Normal"
-		end
-
-		-- Assign node artwork assets
-		node.sprites = self.spriteMap[node.icon]
-		node.effectSprites = self.spriteMap[node.activeEffectImage]
-		if not node.sprites then
-			--error("missing sprite "..node.icon)
-			node.sprites = { }
-		end
-
-		self:ProcessStats(node)
 	end
 
 	-- Late load the Generated data so we can take advantage of a tree existing
@@ -719,7 +596,7 @@ function PassiveTreeClass:BuildConnector(node1, node2)
 		nodeId2 = node2.id,
 		c = { } -- This array will contain the quad's data: 1-8 are the vertex coordinates, 9-16 are the texture coordinates
 				-- Only the texture coords are filled in at this time; the vertex coords need to be converted from tree-space to screen-space first
-				-- This will occur when the tree is being drawn; .vert will map line state (Normal/Intermediate/Active) to the correct tree-space coordinates 
+				-- This will occur when the tree is being drawn; .vert will map line state (Normal/Intermediate/Active) to the correct tree-space coordinates
 	}
 	if node1.g == node2.g and node1.o == node2.o then
 		-- Nodes are in the same orbit of the same group
