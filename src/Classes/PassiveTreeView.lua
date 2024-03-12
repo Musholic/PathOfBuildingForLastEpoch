@@ -197,7 +197,7 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 		-- Cursor is over the tree, check if it is over a node
 		local curTreeX, curTreeY = screenToTree(cursorX, cursorY)
 		for nodeId, node in pairs(spec.nodes) do
-			if node.rsq and node.group and not node.isProxy and not node.group.isProxy then
+			if node.rsq and not node.isProxy then
 				-- Node has a defined size (i.e. has artwork)
 				local vX = curTreeX - node.x
 				local vY = curTreeY - node.y
@@ -334,35 +334,6 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 	elseif build.spec.curClassId == 6 then
 		local scrX, scrY = treeToScreen(2350, -1950)
 		self:DrawAsset(tree.assets.BackgroundDexInt, scrX, scrY, scale)
-	end
-
-	local function renderGroup(group, isExpansion)
-		local scrX, scrY = treeToScreen(group.x, group.y)
-		if group.ascendancyName then
-			if group.isAscendancyStart then
-				if group.ascendancyName ~= spec.curAscendClassName and (not spec.curSecondaryAscendClass or group.ascendancyName ~= spec.curSecondaryAscendClass.id) then
-					SetDrawColor(1, 1, 1, 0.25)
-				end
-				self:DrawAsset(tree.assets["Classes"..group.ascendancyName], scrX, scrY, scale)
-				SetDrawColor(1, 1, 1)
-			end
-		elseif group.oo[3] then
-			self:DrawAsset(tree.assets[isExpansion and "GroupBackgroundLargeHalfAlt" or "PSGroupBackground3"], scrX, scrY, scale, true)
-		elseif group.oo[2] then
-			self:DrawAsset(tree.assets[isExpansion and "GroupBackgroundMediumAlt" or "PSGroupBackground2"], scrX, scrY, scale)
-		elseif group.oo[1] then
-			self:DrawAsset(tree.assets[isExpansion and "GroupBackgroundSmallAlt" or "PSGroupBackground1"], scrX, scrY, scale)
-		end
-	end
-
-	-- Draw the group backgrounds
-	for _, group in pairs(tree.groups) do
-		if not group.isProxy then
-			renderGroup(group)
-		end
-	end
-	for _, subGraph in pairs(spec.subGraphs) do
-		renderGroup(subGraph.group, true)
 	end
 
 	local connectorColor = { 1, 1, 1 }

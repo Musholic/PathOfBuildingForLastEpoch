@@ -41,7 +41,7 @@ function PassiveSpecClass:Init(treeVersion, convert)
 	self.nodes = { }
 	for _, treeNode in pairs(self.tree.nodes) do
 		-- Exclude proxy or groupless nodes, as well as expansion sockets
-		if treeNode.group and not treeNode.isProxy and not treeNode.group.isProxy and (not treeNode.expansionJewel or not treeNode.expansionJewel.parent) then
+		if not treeNode.isProxy and (not treeNode.expansionJewel or not treeNode.expansionJewel.parent) then
 			self.nodes[treeNode.id] = setmetatable({
 				linked = { },
 				power = { }

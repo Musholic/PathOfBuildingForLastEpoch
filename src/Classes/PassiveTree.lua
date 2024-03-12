@@ -51,7 +51,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 	self.treeVersion = treeVersion
 	local versionNum = treeVersions[treeVersion].num
 
-
 	MakeDir("TreeData")
 
 	ConPrintf("Loading passive tree data for version '%s'...", treeVersions[treeVersion].display)
@@ -80,6 +79,16 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		treeFile = io.open("TreeData/"..treeVersion.."/tree.lua", "w")
 		treeFile:write(treeText)
 		treeFile:close()
+	end
+	for k, v in pairs(assert(loadstring(treeText))()) do
+		self[k] = v
+	end
+
+	-- Add json data from game files extracts
+	local treeJsonFile = io.open("TreeData/"..treeVersion.."/tree.json", "r")
+	if treeFile then
+		treeText = "return " .. jsonToLua(treeJsonFile:read("*a"))
+		treeJsonFile:close()
 	end
 	for k, v in pairs(assert(loadstring(treeText))()) do
 		self[k] = v
@@ -231,15 +240,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 		data.rsq = size * size
 	end
 
-	-- Migrate groups to old format
-	for _, group in pairs(self.groups) do
-		group.n = group.nodes
-		group.oo = { }
-		for _, orbit in ipairs(group.orbits) do
-			group.oo[orbit] = true
-		end
-	end
-
 	-- Go away
 	self.nodes.root = nil
 
@@ -320,18 +320,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			node.type = "Normal"
 		end
 
-		-- Find the node group
-		local group = self.groups[node.g]
-		if group then
-			node.group = group
-			group.ascendancyName = node.ascendancyName
-			if node.isAscendancyStart then
-				group.isAscendancyStart = true
-			end
-		elseif node.type == "Notable" or node.type == "Keystone" then
-			self.clusterNodeMap[node.dn] = node
-		end
-
 		self:ProcessNode(node)
 	end
 
@@ -339,16 +327,12 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 	self.connectors = { }
 	for _, node in pairs(self.nodes) do
 		for _, otherId in pairs(node.out or {}) do
-			if type(otherId) == "string" then
-				otherId = tonumber(otherId)
-			end
 			local other = nodeMap[otherId]
 			t_insert(node.linkedId, otherId)
 			if node.type ~= "ClassStart" and other.type ~= "ClassStart"
 				and node.type ~= "Mastery" and other.type ~= "Mastery"
 				and node.ascendancyName == other.ascendancyName
-				and not node.isProxy and not other.isProxy
-				and not node.group.isProxy and not node.group.isProxy then
+				and not node.isProxy and not other.isProxy then
 					local connectors = self:BuildConnector(node, other)
 					t_insert(self.connectors, connectors[1])
 					if connectors[2] then
@@ -357,9 +341,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			end
 		end
 		for _, otherId in pairs(node["in"] or {}) do
-			if type(otherId) == "string" then
-				otherId = tonumber(otherId)
-			end
 			t_insert(node.linkedId, otherId)
 		end
 	end
@@ -582,40 +563,6 @@ function PassiveTreeClass:BuildConnector(node1, node2)
 				-- Only the texture coords are filled in at this time; the vertex coords need to be converted from tree-space to screen-space first
 				-- This will occur when the tree is being drawn; .vert will map line state (Normal/Intermediate/Active) to the correct tree-space coordinates
 	}
-	if node1.g == node2.g and node1.o == node2.o then
-		-- Nodes are in the same orbit of the same group
-		-- Calculate the starting angle (node1.angle) and arc angle
-		if node1.angle > node2.angle then
-			node1, node2 = node2, node1
-		end
-		local arcAngle = node2.angle - node1.angle
-		if arcAngle >= m_pi then
-			node1, node2 = node2, node1
-			arcAngle = m_pi * 2 - arcAngle
-		end
-		if arcAngle <= m_pi then
-			-- Angle is less than 180 degrees, draw an arc
-			-- If our arc is greater than 90 degrees, we will need 2 arcs because our orbit assets are at most 90 degree arcs see below
-			-- The calling class already handles adding a second connector object in the return table if provided and omits it if nil
-			-- Establish a nil secondConnector to populate in the case that we need a second arc (>90 degree orbit)
-			local secondConnector
-			if arcAngle > (m_pi / 2) then
-				-- Angle is greater than 90 degrees.
-				-- The default behavior for a given arcAngle is to place the arc at the center point between two nodes and clip the excess
-				-- If we need a second arc of any size, we should shift the arcAngle to 25% of the distance between the nodes instead of 50%
-				arcAngle = arcAngle / 2
-				-- clone the original connector table to ensure same functionality for both of the necessary connectors
-				secondConnector = copyTableSafe(connector)
-				-- And then ask the BuildArc function to create a connector that is a mirror of the provided arcAngle
-				-- Provide the second connector as a parameter to store the mirrored arc
-				self:BuildArc(arcAngle, node1, secondConnector, true)
-			end
-			-- generate the primary arc -- this arcAngle may have been modified if we have determined that a second arc is necessary for this orbit
-			self:BuildArc(arcAngle, node1, connector)
-			return { connector, secondConnector }
-		end
-	end
-
 	-- Generate a straight line
 	connector.type = "LineConnector"
 	local art = self.assets.LineConnectorNormal

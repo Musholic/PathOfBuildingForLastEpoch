@@ -33,3 +33,7 @@ src/Export/ggpk/*.dll
 
 # Timeless Jewels
 src/Data/TimelessJewelData/*.bin
+
+/gameFileExtractScript/passiveTree.yaml
+/gameFileExtractScript/PassiveTree2021.prefab
+/gameFileExtractScript/passiveTreeExtract.yaml
