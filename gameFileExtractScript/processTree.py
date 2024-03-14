@@ -88,7 +88,13 @@ for classInfo in data["trees"].values():
                 reqId = req["node"]["fileID"]
                 tree["nodes"][passiveId]["in"].append(reqId)
 
-#TODO: Fix all out based on "in" property
+        for statData in passiveData["stats"]:
+            stat = ""
+            if(statData["value"]):
+                stat = statData["value"] + " "
+            stat += statData["statName"]
+            tree["nodes"][passiveId]["stats"].append(stat)
+
 for node in tree["nodes"].values():
     for req in node["in"]:
         tree["nodes"][req]["out"].append(node["skill"])
