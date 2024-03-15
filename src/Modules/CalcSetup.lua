@@ -447,12 +447,12 @@ function calcs.initEnv(build, mode, override, specEnv)
 
 	if not cachedPlayerDB then
 		-- Initialise modifier database with base values
-		for _, stat in pairs({"Str","Dex","Int"}) do
+		for _, stat in pairs({"Str","Dex","Int","Vit"}) do
 			modDB:NewMod(stat, "BASE", classStats["base_"..stat:lower()], "Base")
 		end
 		modDB.multipliers["Level"] = m_max(1, m_min(100, build.characterLevel))
 		calcs.initModDB(env, modDB)
-		modDB:NewMod("Life", "BASE", 12, "Base", { type = "Multiplier", var = "Level", base = 38 })
+		modDB:NewMod("Life", "BASE", 8, "Base", { type = "Multiplier", var = "Level", base = 100 })
 		modDB:NewMod("Mana", "BASE", 6, "Base", { type = "Multiplier", var = "Level", base = 34 })
 		modDB:NewMod("ManaRegen", "BASE", 0.0175, "Base", { type = "PerStat", stat = "Mana", div = 1 })
 		modDB:NewMod("Devotion", "BASE", 0, "Base")

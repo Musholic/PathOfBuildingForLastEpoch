@@ -1,12 +1,11 @@
 import yaml
 import json
 
-
 def insert_newlines(string, every=128):
     return '\n'.join(string[i:i + every] for i in range(0, len(string), every))
 
 
-with open("passiveTreeExtract.yaml", "r") as yamlFile:
+with open("generatedAssets/passiveTreeExtract.yaml", "r") as yamlFile:
     data = yaml.safe_load(yamlFile)
 
 tree = {
@@ -47,6 +46,11 @@ for classInfo in data["trees"].values():
         "base_int": 32,
         "ascendancies": []
     }
+
+    with open("originalAssets/" + className + ".asset", "r") as yamlFile:
+        classData = yaml.safe_load(yamlFile)
+        classData = classData["MonoBehaviour"]
+        classes[className]["base_vit"] = classData["baseVitality"]
 
     tree["nodes"]["root"]["out"].append(className)
 

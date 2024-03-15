@@ -1326,6 +1326,7 @@ return {
 	{ label = "Strength", { format = "{0:output:Str}", { breakdown = "Str" }, { modName = "Str" }, }, },
 	{ label = "Dexterity", { format = "{0:output:Dex}", { breakdown = "Dex" }, { modName = "Dex" }, }, },
 	{ label = "Intelligence", { format = "{0:output:Int}", { breakdown = "Int" }, { modName = "Int" }, }, },
+	{ label = "Vitality", { format = "{0:output:Vit}", { breakdown = "Vit" }, { modName = "Vit" }, }, },
 	{ label = "Omniscience", haveOutput = "Omni", { format = "{0:output:Omni}", { breakdown = "Omni" }, { modName = "Omni" }, }, },
 	{ notFlag = "minionSkill", label = "Str. Required", { format = "{output:ReqStrString}", { breakdown = "ReqStr" }, }, },
 	{ notFlag = "minionSkill", label = "Dex. Required", { format = "{output:ReqDexString}", { breakdown = "ReqDex" }, }, },
@@ -1334,7 +1335,7 @@ return {
 } }
 } },
 -- primary defenses
-{ 1, "Life", 2, colorCodes.LIFE, {{ defaultCollapsed = false, label = "Life", data = {
+{ 1, "Life", 2, colorCodes.LIFE, {{ defaultCollapsed = false, label = "Health", data = {
 	extra = "{0:output:LifeUnreserved}/{0:output:Life}",
 	{ label = "Base from Gear", { format = "{0:mod:1}", { modName = "Life", modType = "BASE", modSource = "Item" }, }, },
 	{ label = "Inc. from Tree", { format = "{0:mod:1}%", { modName = "Life", modType = "INC", modSource = "Tree" }, }, },

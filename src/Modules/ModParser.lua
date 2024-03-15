@@ -149,6 +149,7 @@ local modNameList = {
 	["strength"] = "Str",
 	["dexterity"] = "Dex",
 	["intelligence"] = "Int",
+	["vitality"] = "Vit",
 	["omniscience"] = "Omni",
 	["strength and dexterity"] = { "Str", "Dex", "StrDex" },
 	["strength and intelligence"] = { "Str", "Int", "StrInt" },
@@ -158,6 +159,7 @@ local modNameList = {
 	["devotion"] = "Devotion",
 	-- Life/mana
 	["life"] = "Life",
+	["health"] = "Life",
 	["maximum life"] = "Life",
 	["life regeneration rate"] = "LifeRegen",
 	["mana"] = "Mana",

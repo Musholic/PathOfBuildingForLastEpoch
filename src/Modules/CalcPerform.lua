@@ -303,7 +303,7 @@ local function doActorAttribsConditions(env, actor)
 	-- Calculate attributes
 	local calculateAttributes = function()
 		for pass = 1, 2 do -- Calculate twice because of circular dependency (X attribute higher than Y attribute)
-			for _, stat in pairs({"Str","Dex","Int"}) do
+			for _, stat in pairs({"Str","Dex","Int", "Vit"}) do
 				output[stat] = m_max(round(calcLib.val(modDB, stat)), 0)
 				if breakdown then
 					breakdown[stat] = breakdown.simple(nil, nil, output[stat], stat)
@@ -403,11 +403,10 @@ local function doActorAttribsConditions(env, actor)
 	output.Devotion = modDB:Sum("BASE", nil, "Devotion")
 
 	-- Add attribute bonuses
+	modDB:NewMod("Life", "BASE", output.Vit * 6, "Vitality")
+
 	if not modDB:Flag(nil, "NoAttributeBonuses") then
 		if not modDB:Flag(nil, "NoStrengthAttributeBonuses") then
-			if not modDB:Flag(nil, "NoStrBonusToLife") then
-				modDB:NewMod("Life", "BASE", m_floor(output.Str / 2), "Strength")
-			end
 			local strDmgBonusRatioOverride = modDB:Sum("BASE", nil, "StrDmgBonusRatioOverride")
 			if strDmgBonusRatioOverride > 0 then
 				actor.strDmgBonus = m_floor((output.Str + modDB:Sum("BASE", nil, "DexIntToMeleeBonus")) * strDmgBonusRatioOverride)
