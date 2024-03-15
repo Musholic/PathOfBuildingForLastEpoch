@@ -10,8 +10,6 @@ with open("passiveTreeExtract.yaml", "r") as yamlFile:
     data = yaml.safe_load(yamlFile)
 
 tree = {
-    "classes": [
-    ],
     "nodes": {
         "root": {
             "out": [],
@@ -20,32 +18,45 @@ tree = {
     }
 }
 
+classes = {}
 
 for classInfo in data["trees"].values():
     classId = classInfo["treeID"]
     className = classId
 
-    if classId == 'rg-1':
+    if classId == 'pr-1':
+        className = "Primalist"
+        classStartIndex = 0
+    elif classId == 'mg-1':
+        className = "Mage"
+        classStartIndex = 1
+    elif classId == 'kn-1':
+        className = "Sentinel"
+        classStartIndex = 2
+    elif classId == 'ac-1':
+        className = "Acolyte"
+        classStartIndex = 3
+    elif classId == 'rg-1':
         className = "Rogue"
+        classStartIndex = 4
 
-    tree["classes"].append({
+    classes[className] = {
         "name": className,
         "base_str": 14,
         "base_dex": 14,
         "base_int": 32,
         "ascendancies": []
-    })
+    }
 
-    tree["nodes"]["root"]["out"].append(classId)
+    tree["nodes"]["root"]["out"].append(className)
 
-    classStartIndex = len(tree["classes"]) - 1
 
     posX = 0
     posY = classStartIndex * 1000
 
-    tree["nodes"][classId] = {
-        "skill": classId,
-        "name": classId,
+    tree["nodes"][className] = {
+        "skill": className,
+        "name": className,
         "classStartIndex": classStartIndex,
         "x": 0,
         "y": posY,
@@ -56,10 +67,10 @@ for classInfo in data["trees"].values():
     masteryReq = 0
 
     for node in classInfo["nodeList"]:
-        passiveId = node['fileID']
-        passiveData = data["passives"][passiveId]
+        passiveData = data["passives"][node['fileID']]
+        passiveId = className + "-" + passiveData["id"]
 
-        tree["nodes"][classId]["out"].append(passiveId)
+        tree["nodes"][className]["out"].append(passiveId)
 
         if masteryReq != passiveData['masteryRequirement']:
             masteryReq = passiveData['masteryRequirement']
@@ -75,22 +86,22 @@ for classInfo in data["trees"].values():
             "y": posY,
             "stats": [],
             "reminderText": [
-            #     insert_newlines(str(passiveData))
+                #     insert_newlines(str(passiveData))
             ],
             "in": [],
             "out": [],
         }
 
         if not passiveData["requirements"]:
-            tree["nodes"][passiveId]["in"].append(classId)
+            tree["nodes"][passiveId]["in"].append(className)
         else:
             for req in passiveData["requirements"]:
-                reqId = req["node"]["fileID"]
+                reqId = className + "-" + data["passives"][req["node"]["fileID"]]["id"]
                 tree["nodes"][passiveId]["in"].append(reqId)
 
         for statData in passiveData["stats"]:
             stat = ""
-            if(statData["value"]):
+            if (statData["value"]):
                 stat = statData["value"] + " "
             stat += statData["statName"]
             tree["nodes"][passiveId]["stats"].append(stat)
@@ -98,6 +109,15 @@ for classInfo in data["trees"].values():
 for node in tree["nodes"].values():
     for req in node["in"]:
         tree["nodes"][req]["out"].append(node["skill"])
+
+# Add the classes in the correct order
+tree["classes"] = [
+    classes["Primalist"],
+    classes["Mage"],
+    classes["Sentinel"],
+    classes["Acolyte"],
+    classes["Rogue"],
+]
 
 with open("../src/TreeData/1_0/tree.json", "w") as jsonFile:
     json.dump(tree, jsonFile, indent=4)
