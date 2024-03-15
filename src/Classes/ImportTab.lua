@@ -364,8 +364,11 @@ function ImportTabClass:DownloadCharacterList()
             ["items"] = {},
             ["hashes"] = { }
         }
-        for _, passive in ipairs(saveContent["savedCharacterTree"]["nodeIDs"]) do
-            table.insert(char["hashes"], className .. "-".. passive)
+        for passiveIdx, passive in ipairs(saveContent["savedCharacterTree"]["nodeIDs"]) do
+            local nbPoints = saveContent["savedCharacterTree"]["nodePoints"][passiveIdx]
+            for point = 0, nbPoints - 1 do
+                table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
+            end
         end
         table.insert(charList, char)
     end

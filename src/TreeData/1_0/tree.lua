@@ -7,7 +7,7 @@ return {
     ["min_x"]= -11294,
     ["min_y"]= -10697,
     ["max_x"]= 12430,
-    ["max_y"]= 10023,
+    ["max_y"]= 15000,
     ["assets"]= {
         ["PSSkillFrame"]= {
             [0.1246]= "https://web.poecdn.com/gen/image/WzIyLCJjOTk3MTkyODgzMjUyYWZlNzZkZGE3Yzc1MjNhNGMwOCIseyJ0IjowLCJzcCI6MC4xMjQ2fV0/b09afb1b33/Skill_Frame_Unallocated.png",

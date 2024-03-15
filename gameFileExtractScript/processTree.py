@@ -36,7 +36,7 @@ for classInfo in data["trees"].values():
     elif classId == 'ac-1':
         className = "Acolyte"
         classStartIndex = 3
-    elif classId == 'rg-1':
+    else:
         className = "Rogue"
         classStartIndex = 4
 
@@ -50,9 +50,8 @@ for classInfo in data["trees"].values():
 
     tree["nodes"]["root"]["out"].append(className)
 
-
     posX = 0
-    posY = classStartIndex * 1000
+    posY = classStartIndex * 6000
 
     tree["nodes"][className] = {
         "skill": className,
@@ -68,43 +67,47 @@ for classInfo in data["trees"].values():
 
     for node in classInfo["nodeList"]:
         passiveData = data["passives"][node['fileID']]
-        passiveId = className + "-" + passiveData["id"]
-
-        tree["nodes"][className]["out"].append(passiveId)
 
         if masteryReq != passiveData['masteryRequirement']:
             masteryReq = passiveData['masteryRequirement']
-            posY = classStartIndex * 1000
+            posY = classStartIndex * 6000
             posX += 200
         else:
             posY += 200
 
-        tree["nodes"][passiveId] = {
-            "skill": passiveId,
-            "name": passiveData["nodeName"],
-            "x": posX,
-            "y": posY,
-            "stats": [],
-            "reminderText": [
-                #     insert_newlines(str(passiveData))
-            ],
-            "in": [],
-            "out": [],
-        }
+        for nbPoint in range(int(passiveData['maxPoints'])):
+            posY += 100
+            passiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint)
+            tree["nodes"][passiveId] = {
+                "skill": passiveId,
+                "name": passiveData["nodeName"] + "#" + str(nbPoint + 1),
+                "x": posX,
+                "y": posY,
+                "stats": [],
+                "reminderText": [
+                    #     insert_newlines(str(passiveData))
+                ],
+                "in": [],
+                "out": [],
+            }
 
-        if not passiveData["requirements"]:
-            tree["nodes"][passiveId]["in"].append(className)
-        else:
-            for req in passiveData["requirements"]:
-                reqId = className + "-" + data["passives"][req["node"]["fileID"]]["id"]
-                tree["nodes"][passiveId]["in"].append(reqId)
+            for statData in passiveData["stats"]:
+                stat = ""
+                if (statData["value"]):
+                    stat = statData["value"] + " "
+                stat += statData["statName"]
+                tree["nodes"][passiveId]["stats"].append(stat)
 
-        for statData in passiveData["stats"]:
-            stat = ""
-            if (statData["value"]):
-                stat = statData["value"] + " "
-            stat += statData["statName"]
-            tree["nodes"][passiveId]["stats"].append(stat)
+            if nbPoint == 0:
+                if not passiveData["requirements"]:
+                    tree["nodes"][passiveId]["in"].append(className)
+                else:
+                    for req in passiveData["requirements"]:
+                        reqId = className + "-" + data["passives"][req["node"]["fileID"]]["id"] + "-" + str(int(req["requirement"]) - 1)
+                        tree["nodes"][passiveId]["in"].append(reqId)
+            else:
+                previousPassiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint - 1)
+                tree["nodes"][passiveId]["in"].append(previousPassiveId)
 
 for node in tree["nodes"].values():
     for req in node["in"]:
