@@ -1,5 +1,7 @@
 import yaml
 import json
+from natsort import natsorted
+
 
 def insert_newlines(string, every=128):
     return '\n'.join(string[i:i + every] for i in range(0, len(string), every))
@@ -107,11 +109,14 @@ for classInfo in data["trees"].values():
                     tree["nodes"][passiveId]["in"].append(className)
                 else:
                     for req in passiveData["requirements"]:
-                        reqId = className + "-" + data["passives"][req["node"]["fileID"]]["id"] + "-" + str(int(req["requirement"]) - 1)
+                        reqId = className + "-" + data["passives"][req["node"]["fileID"]]["id"] + "-" + str(
+                            int(req["requirement"]) - 1)
                         tree["nodes"][passiveId]["in"].append(reqId)
             else:
                 previousPassiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint - 1)
                 tree["nodes"][passiveId]["in"].append(previousPassiveId)
+
+tree["nodes"] = dict(natsorted(tree["nodes"].items()))
 
 for node in tree["nodes"].values():
     for req in node["in"]:
