@@ -532,8 +532,10 @@ LoadModule("Data/Misc", data)
 data.describeStats = LoadModule("Modules/StatDescriber")
 
 -- Load item modifiers
+data.implicitItemMods = readJsonFile("Data/ImplicitModItem.json")
+
 data.itemMods = {
-	Item = LoadModule("Data/ModItem"),
+	Item = readJsonFile("Data/ModItem.json"),
 	Flask = LoadModule("Data/ModFlask"),
 	Tincture = LoadModule("Data/ModTincture"),
 	Jewel = LoadModule("Data/ModJewel"),

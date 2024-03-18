@@ -1,0 +1,317 @@
+{
+    "0": {
+        "value": "Damage"
+    },
+    "1": {
+        "value": "Ailment Chance"
+    },
+    "2": {
+        "value": "Attack Speed"
+    },
+    "3": {
+        "value": "Cast Speed"
+    },
+    "4": {
+        "value": "Critical Strike Chance"
+    },
+    "5": {
+        "value": "Critical Strike Multiplier"
+    },
+    "6": {
+        "value": "Damage Taken"
+    },
+    "7": {
+        "value": "Health"
+    },
+    "8": {
+        "value": "Mana"
+    },
+    "9": {
+        "value": "Movement Speed"
+    },
+    "10": {
+        "value": "Armor"
+    },
+    "11": {
+        "value": "Dodge Rating"
+    },
+    "12": {
+        "value": "Stun Avoidance"
+    },
+    "13": {
+        "value": "Fire Resistance"
+    },
+    "14": {
+        "value": "Cold Resistance"
+    },
+    "15": {
+        "value": "Lightning Resistance"
+    },
+    "16": {
+        "value": "Ward Retention"
+    },
+    "17": {
+        "value": "Health Regen"
+    },
+    "18": {
+        "value": "Mana Regen"
+    },
+    "19": {
+        "value": "Strength"
+    },
+    "20": {
+        "value": "Vitality"
+    },
+    "21": {
+        "value": "Intelligence"
+    },
+    "22": {
+        "value": "Dexterity"
+    },
+    "23": {
+        "value": "Attunement"
+    },
+    "24": {
+        "value": "Damage Dealt to Mana Before Health"
+    },
+    "25": {
+        "value": "Channel Cost"
+    },
+    "26": {
+        "value": "Void Resistance"
+    },
+    "27": {
+        "value": "Necrotic Resistance"
+    },
+    "28": {
+        "value": "Poison Resistance"
+    },
+    "29": {
+        "value": "Block Chance"
+    },
+    "30": {
+        "value": "All Resistances"
+    },
+    "31": {
+        "value": "Damage Taken as Physical"
+    },
+    "32": {
+        "value": "Damage Taken as Fire"
+    },
+    "33": {
+        "value": "Damage Taken as Cold"
+    },
+    "34": {
+        "value": "Damage Taken as Lightning"
+    },
+    "35": {
+        "value": "Damage Taken as Necrotic"
+    },
+    "36": {
+        "value": "Damage Taken as Void"
+    },
+    "37": {
+        "value": "Damage Taken as Poison"
+    },
+    "38": {
+        "value": "Health Gain"
+    },
+    "39": {
+        "value": "Ward Gain"
+    },
+    "40": {
+        "value": "Mana Gain"
+    },
+    "41": {
+        "value": "Adaptive Spell Damage"
+    },
+    "42": {
+        "value": "Increased Ailment Duration"
+    },
+    "43": {
+        "value": "Increased Ailment Effect"
+    },
+    "44": {
+        "value": "Increased Healing Effectiveness"
+    },
+    "45": {
+        "value": "Increased Stun Chance"
+    },
+    "46": {
+        "value": "All Attributes"
+    },
+    "47": {
+        "value": "Increased Chance To Find Potions"
+    },
+    "48": {
+        "value": "Health Gained on Potion Use"
+    },
+    "49": {
+        "value": "Potion Slots"
+    },
+    "50": {
+        "value": "Chance to gain Haste for 1 second on Hit"
+    },
+    "51": {
+        "value": "Damage Leeched as Health"
+    },
+    "52": {
+        "value": "Elemental Resistance"
+    },
+    "53": {
+        "value": "Block Effectiveness"
+    },
+    "55": {
+        "value": "Increased Stun Immunity Duration"
+    },
+    "56": {
+        "value": "Stun Immunity"
+    },
+    "58": {
+        "value": "Dark Protection (deprecated)"
+    },
+    "59": {
+        "value": "Penetration"
+    },
+    "60": {
+        "value": "Current Health Drained per Second"
+    },
+    "61": {
+        "value": "Maximum Companions"
+    },
+    "62": {
+        "value": "Chance to receive a Glancing Blow when hit"
+    },
+    "64": {
+        "value": "Physical Resistance"
+    },
+    "65": {
+        "value": "Cull on Hit"
+    },
+    "66": {
+        "value": "Mana Cost"
+    },
+    "67": {
+        "value": "Freeze Rate Multiplier"
+    },
+    "69": {
+        "value": "Mana Efficiency"
+    },
+    "70": {
+        "value": "Increased Cooldown Recovery Speed"
+    },
+    "71": {
+        "value": "Duration of Stuns Received"
+    },
+    "73": {
+        "value": "Chance to Chill Attackers"
+    },
+    "74": {
+        "value": "Chance to Slow Attackers"
+    },
+    "75": {
+        "value": "Endurance"
+    },
+    "76": {
+        "value": "Endurance Threshold"
+    },
+    "85": {
+        "value": "Damage Reflected to Attackers"
+    },
+    "86": {
+        "value": "Damage Reflected"
+    },
+    "87": {
+        "value": "Chance to Shock Attackers"
+    },
+    "88": {
+        "value": "Level of Skills"
+    },
+    "89": {
+        "value": "Critical Strike Avoidance"
+    },
+    "90": {
+        "value": "Potion Health Converted to Ward"
+    },
+    "91": {
+        "value": "Ward Gained on Potion Use"
+    },
+    "92": {
+        "value": "Ward per Second"
+    },
+    "93": {
+        "value": "Overkill Damage Leeched as Health"
+    },
+    "94": {
+        "value": "Damage Dealt to Mana Before Health or Ward"
+    },
+    "95": {
+        "value": "Increased Stun Duration"
+    },
+    "96": {
+        "value": "Maximum Health gained as Endurance Threshold"
+    },
+    "97": {
+        "value": "Chance to Gain 30 Ward when Hit"
+    },
+    "99": {
+        "value": "Mana Spent Gained as Ward"
+    },
+    "100": {
+        "value": "Ailment Conversion"
+    },
+    "102": {
+        "value": "Increased Leech Rate"
+    },
+    "103": {
+        "value": "Freeze Rate per stack of Chill"
+    },
+    "104": {
+        "value": "Increased Drop Rate"
+    },
+    "105": {
+        "value": "Increased Experience"
+    },
+    "106": {
+        "value": "Physical and Void Resistance"
+    },
+    "107": {
+        "value": "Necrotic and Poison Resistance"
+    },
+    "110": {
+        "value": "Damage Taken From Nearby Enemies"
+    },
+    "111": {
+        "value": "Block Chance Against Distant Enemies"
+    },
+    "112": {
+        "value": "Chance to Receive a Critical Strike"
+    },
+    "113": {
+        "value": "Damage Taken While Moving"
+    },
+    "114": {
+        "value": "reduced Bonus Damage Taken from Critical Strikes"
+    },
+    "115": {
+        "value": "More Damage Per Stack"
+    },
+    "116": {
+        "value": "increased Area for Area Skills"
+    },
+    "117": {
+        "value": "Global Conditional Damage"
+    },
+    "118": {
+        "value": "Armor Mitigation also applies to Damage over Time"
+    },
+    "119": {
+        "value": "Ward Decay Threshold"
+    },
+    "121": {
+        "value": "Parry Chance"
+    },
+    "122": {
+        "value": "Lens"
+    }
+}

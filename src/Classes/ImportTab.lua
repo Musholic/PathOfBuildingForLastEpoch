@@ -455,6 +455,29 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
             for itemBaseName, itemBase in pairs(self.build.data.itemBases) do
                 if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
                     item["name"] = itemBaseName
+                    item.implicitMods= {}
+                    for i,implicit in ipairs(itemBase.implicits) do
+                        local range = itemData["data"][5 + i ] / 256.0
+                        local modData = data.implicitItemMods[implicit.property]
+                        local mod = "+(" .. implicit.min .. "-" .. implicit.max .. ") " .. modData.value
+                        mod = itemLib.applyRange(mod, range, 1)
+                        table.insert(item.implicitMods, mod)
+                    end
+                    item["explicitMods"] = {}
+                    for i=0,3 do
+                        local dataId = 12 + i * 3
+                        local affixId = itemData["data"][dataId]
+                        if affixId then
+                            local affixTier = itemData["data"][dataId - 1] / 16
+                            local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+                            if modData then
+                                local mod = modData.value
+                                local range = itemData["data"][dataId + 1] / 256.0
+                                mod = itemLib.applyRange(mod, range, 1)
+                                table.insert(item.explicitMods, mod)
+                            end
+                        end
+                    end
                     table.insert(char["items"], item)
                 end
             end
