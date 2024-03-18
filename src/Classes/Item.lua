@@ -666,43 +666,13 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					-- Items with variants can have multiple bases
 					self.baseLines[baseName] = { line = baseName, variantList = modLine.variantList }
 					-- Set the actual base if variant matches or doesn't have variants
-					if not self.variant or not modLine.variantList or modLine.variantList[self.variant] then
-						self.baseName = baseName
-						if not (self.rarity == "NORMAL" or self.rarity == "MAGIC") then
-							self.title = self.name
-						end
-						self.type = base.type
-						self.base = base
-						self.affixes = (self.base.subType and data.itemMods[self.base.type..self.base.subType])
-								or data.itemMods[self.base.type]
-								or data.itemMods.Item
-						if self.base.weapon then
-							self.enchantments = data.enchantments["Weapon"]
-						elseif self.base.flask then
-							self.enchantments = data.enchantments["Flask"]
-							if self.base.utility_flask then
-								self.enchantments = data.enchantments["Flask"]
-							end
-						else
-							self.enchantments = data.enchantments[self.base.type]
-						end
-						self.corruptible = self.base.type ~= "Flask"
-						self.canBeInfluenced = self.base.influenceTags ~= nil
-						self.clusterJewel = data.clusterJewels and data.clusterJewels.jewels[self.baseName]
-						self.requirements.str = self.base.req.str or 0
-						self.requirements.dex = self.base.req.dex or 0
-						self.requirements.int = self.base.req.int or 0
-						local maxReq = m_max(self.requirements.str, self.requirements.dex, self.requirements.int)
-						self.defaultSocketColor = (maxReq == self.requirements.dex and "G") or (maxReq == self.requirements.int and "B") or "R"
-						if self.base.flask and self.base.flask.buff and not flaskBuffLines then
-							flaskBuffLines = { }
-							for _, line in ipairs(self.base.flask.buff) do
-								flaskBuffLines[line] = true
-								local modList, extra = modLib.parseMod(line)
-								t_insert(self.buffModLines, { line = line, extra = extra, modList = modList or { } })
-							end
-						end
-					end
+					self.baseName = baseName
+					self.title = self.name
+					self.type = base.type
+					self.base = base
+					self.affixes = (self.base.subType and data.itemMods[self.base.type..self.base.subType])
+							or data.itemMods[self.base.type]
+							or data.itemMods.Item
 					-- Base lines don't need mod parsing, skip it
 					goto continue
 				end
@@ -801,7 +771,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 		l = l + 1
 	end
 	if self.baseName and self.title then
-		self.name = self.title .. ", " .. self.baseName:gsub(" %(.+%)","")
+		self.name = self.baseName
 	end
 	if self.base and not self.requirements.level then
 		if importedLevelReq and #self.sockets == 0 then
@@ -1208,7 +1178,7 @@ end
 function ItemClass:GetPrimarySlot()
 	if self.base.weapon then
 		return "Weapon 1"
-	elseif self.type == "Quiver" or self.type == "Shield" then
+	elseif self.type == "Quiver" or self.type == "Shield" or self.type == "Off-Hand Catalyst" then
 		return "Weapon 2"
 	elseif self.type == "Ring" then
 		return "Ring 1"
@@ -1335,7 +1305,7 @@ function ItemClass:BuildModListForSlotNum(baseList, slotNum)
 				end
 			end
 		end
-		weaponData.CritChance = round((self.base.weapon.CritChanceBase + calcLocal(modList, "CritChance", "BASE", 0)) * (1 + (calcLocal(modList, "CritChance", "INC", 0) + m_floor(self.quality / 4 * calcLocal(modList, "AlternateQualityLocalCritChancePer4Quality", "INC", 0))) / 100), 2)
+		weaponData.CritChance = round((calcLocal(modList, "CritChance", "BASE", 0)) * (1 + (calcLocal(modList, "CritChance", "INC", 0) + m_floor(self.quality / 4 * calcLocal(modList, "AlternateQualityLocalCritChancePer4Quality", "INC", 0))) / 100), 2)
 		for _, value in ipairs(modList:List(nil, "WeaponData")) do
 			weaponData[value.key] = value.value
 		end

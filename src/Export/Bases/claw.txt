@@ -1,7 +1,0 @@
--- Item data (c) Grinding Gear Games
-local itemBases = ...
-
-#type Claw
-#influenceBaseTag claw
-#socketLimit 3
-#baseMatch Metadata/Items/Weapons/OneHandWeapons/Claws/Claw

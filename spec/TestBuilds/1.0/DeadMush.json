@@ -1,0 +1,8891 @@
+{
+  "partitionKey": null,
+  "characterName": "DeadMush",
+  "level": 75,
+  "slot": 2,
+  "currentExp": 2672,
+  "hardcore": false,
+  "died": true,
+  "deaths": 6,
+  "masochist": false,
+  "closedPassivesTooltip": true,
+  "closedSkillsTooltip": true,
+  "closedMonolithTooltip": false,
+  "closedIdolsTooltip": true,
+  "closedMinSkillLevelTutorial": true,
+  "characterClass": 3,
+  "savedItems": [
+    {
+      "itemData": null,
+      "data": [
+        2,
+        0,
+        14,
+        4,
+        2,
+        51,
+        136,
+        88,
+        0,
+        4,
+        64,
+        25,
+        240,
+        33,
+        146,
+        233,
+        49,
+        246,
+        226,
+        0,
+        7,
+        32,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 2,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        1,
+        62,
+        7,
+        128,
+        250,
+        80,
+        167,
+        0,
+        106,
+        109,
+        28,
+        63,
+        213,
+        120,
+        118,
+        141,
+        17,
+        2
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 3,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        10,
+        9,
+        4,
+        128,
+        127,
+        182,
+        190,
+        0,
+        4,
+        16,
+        85,
+        198,
+        32,
+        18,
+        63,
+        32,
+        72,
+        202,
+        0,
+        55,
+        100,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 4,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        19,
+        8,
+        4,
+        3,
+        201,
+        140,
+        46,
+        0,
+        4,
+        64,
+        38,
+        218,
+        32,
+        17,
+        99,
+        80,
+        72,
+        242,
+        48,
+        7,
+        103,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 5,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        4,
+        6,
+        4,
+        128,
+        40,
+        82,
+        94,
+        30,
+        4,
+        80,
+        10,
+        70,
+        0,
+        31,
+        254,
+        16,
+        83,
+        18,
+        16,
+        101,
+        252,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 6,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        2,
+        4,
+        4,
+        0,
+        3,
+        3,
+        90,
+        17,
+        4,
+        16,
+        80,
+        203,
+        48,
+        18,
+        91,
+        0,
+        75,
+        93,
+        16,
+        17,
+        107,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 7,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        3,
+        5,
+        4,
+        3,
+        136,
+        229,
+        197,
+        17,
+        4,
+        64,
+        25,
+        46,
+        48,
+        19,
+        116,
+        81,
+        249,
+        157,
+        49,
+        246,
+        177,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 8,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        21,
+        10,
+        4,
+        0,
+        83,
+        195,
+        112,
+        13,
+        4,
+        1,
+        247,
+        235,
+        0,
+        13,
+        16,
+        49,
+        246,
+        253,
+        16,
+        25,
+        8,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 10,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        21,
+        10,
+        4,
+        0,
+        179,
+        199,
+        71,
+        0,
+        4,
+        0,
+        8,
+        225,
+        1,
+        170,
+        0,
+        0,
+        18,
+        241,
+        32,
+        16,
+        251,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 9,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        20,
+        2,
+        4,
+        128,
+        231,
+        253,
+        103,
+        0,
+        4,
+        32,
+        80,
+        58,
+        80,
+        29,
+        186,
+        32,
+        18,
+        69,
+        48,
+        72,
+        234,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 11,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        22,
+        12,
+        4,
+        128,
+        43,
+        162,
+        13,
+        42,
+        4,
+        48,
+        24,
+        98,
+        48,
+        19,
+        110,
+        80,
+        18,
+        212,
+        50,
+        71,
+        68,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 12,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        103,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 25,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        26,
+        0,
+        2,
+        128,
+        167,
+        99,
+        45,
+        21,
+        2,
+        1,
+        64,
+        129,
+        0,
+        142,
+        42,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 3,
+        "y": 4
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        25,
+        0,
+        2,
+        0,
+        249,
+        152,
+        231,
+        22,
+        2,
+        0,
+        116,
+        155,
+        0,
+        119,
+        211,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 3,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        26,
+        0,
+        2,
+        0,
+        131,
+        238,
+        217,
+        23,
+        2,
+        0,
+        111,
+        203,
+        0,
+        142,
+        94,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 1,
+        "y": 4
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        28,
+        0,
+        2,
+        128,
+        76,
+        68,
+        37,
+        21,
+        2,
+        0,
+        105,
+        177,
+        0,
+        120,
+        246,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 3,
+        "y": 1
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        25,
+        0,
+        2,
+        0,
+        60,
+        228,
+        108,
+        16,
+        2,
+        1,
+        68,
+        69,
+        0,
+        118,
+        175,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 2,
+        "y": 4
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        25,
+        0,
+        2,
+        0,
+        89,
+        192,
+        42,
+        28,
+        2,
+        0,
+        118,
+        227,
+        1,
+        68,
+        249,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 1,
+        "y": 2
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        28,
+        0,
+        2,
+        0,
+        145,
+        119,
+        222,
+        19,
+        2,
+        0,
+        107,
+        96,
+        0,
+        112,
+        128,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 4,
+        "y": 1
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        30,
+        3,
+        2,
+        128,
+        24,
+        163,
+        39,
+        18,
+        2,
+        0,
+        122,
+        3,
+        0,
+        105,
+        210,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 1
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        33,
+        3,
+        2,
+        128,
+        230,
+        7,
+        236,
+        26,
+        2,
+        2,
+        245,
+        97,
+        0,
+        105,
+        122,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 1,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        31,
+        3,
+        2,
+        128,
+        96,
+        41,
+        4,
+        20,
+        2,
+        1,
+        52,
+        180,
+        2,
+        138,
+        47,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 1,
+        "y": 3
+      },
+      "quantity": 1,
+      "containerID": 29,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        15,
+        4,
+        4,
+        0,
+        248,
+        234,
+        46,
+        10,
+        4,
+        0,
+        102,
+        237,
+        0,
+        56,
+        60,
+        32,
+        6,
+        97,
+        0,
+        18,
+        136,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        4,
+        2,
+        4,
+        0,
+        203,
+        40,
+        153,
+        30,
+        4,
+        0,
+        22,
+        101,
+        0,
+        7,
+        220,
+        0,
+        5,
+        241,
+        17,
+        246,
+        119,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        6,
+        3,
+        2,
+        0,
+        242,
+        233,
+        187,
+        27,
+        2,
+        32,
+        62,
+        174,
+        0,
+        4,
+        11,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        175,
+        78,
+        62,
+        22,
+        2,
+        17,
+        74,
+        86,
+        32,
+        75,
+        205,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        19,
+        17,
+        3,
+        0,
+        60,
+        177,
+        177,
+        23,
+        3,
+        32,
+        16,
+        165,
+        0,
+        38,
+        218,
+        16,
+        19,
+        75,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        15,
+        4,
+        4,
+        0,
+        153,
+        87,
+        124,
+        16,
+        4,
+        0,
+        20,
+        84,
+        32,
+        72,
+        231,
+        18,
+        205,
+        186,
+        0,
+        54,
+        223,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        10,
+        7,
+        4,
+        0,
+        231,
+        131,
+        109,
+        14,
+        4,
+        32,
+        38,
+        43,
+        48,
+        18,
+        117,
+        0,
+        55,
+        173,
+        0,
+        56,
+        145,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        21,
+        10,
+        3,
+        0,
+        17,
+        5,
+        124,
+        18,
+        3,
+        0,
+        61,
+        181,
+        16,
+        51,
+        107,
+        16,
+        14,
+        4,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        15,
+        7,
+        3,
+        0,
+        131,
+        95,
+        28,
+        19,
+        3,
+        18,
+        206,
+        150,
+        18,
+        131,
+        131,
+        0,
+        16,
+        19,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        6,
+        5,
+        3,
+        0,
+        240,
+        133,
+        193,
+        21,
+        3,
+        32,
+        79,
+        64,
+        34,
+        205,
+        164,
+        16,
+        68,
+        61,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        18,
+        2,
+        2,
+        0,
+        49,
+        233,
+        226,
+        20,
+        2,
+        16,
+        3,
+        190,
+        16,
+        25,
+        168,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        21,
+        0,
+        3,
+        0,
+        158,
+        64,
+        244,
+        16,
+        3,
+        0,
+        72,
+        172,
+        0,
+        26,
+        213,
+        0,
+        10,
+        243,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        21,
+        3,
+        4,
+        0,
+        33,
+        92,
+        127,
+        23,
+        4,
+        1,
+        245,
+        2,
+        0,
+        25,
+        134,
+        16,
+        38,
+        205,
+        16,
+        22,
+        37,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        15,
+        7,
+        2,
+        0,
+        80,
+        182,
+        229,
+        17,
+        2,
+        32,
+        103,
+        24,
+        0,
+        64,
+        254,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        10,
+        4,
+        4,
+        0,
+        91,
+        32,
+        130,
+        20,
+        4,
+        0,
+        85,
+        163,
+        48,
+        16,
+        184,
+        16,
+        9,
+        2,
+        32,
+        58,
+        50,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        4,
+        2,
+        4,
+        0,
+        210,
+        53,
+        136,
+        7,
+        4,
+        48,
+        72,
+        4,
+        48,
+        80,
+        159,
+        34,
+        161,
+        4,
+        0,
+        10,
+        194,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        19,
+        8,
+        2,
+        128,
+        29,
+        95,
+        62,
+        21,
+        2,
+        16,
+        72,
+        105,
+        16,
+        11,
+        3,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        19,
+        8,
+        4,
+        128,
+        136,
+        225,
+        249,
+        33,
+        4,
+        48,
+        4,
+        164,
+        0,
+        11,
+        144,
+        48,
+        34,
+        196,
+        16,
+        10,
+        105,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        10,
+        9,
+        2,
+        128,
+        85,
+        132,
+        193,
+        19,
+        2,
+        16,
+        4,
+        131,
+        32,
+        72,
+        142,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        3,
+        8,
+        4,
+        128,
+        225,
+        63,
+        30,
+        25,
+        4,
+        64,
+        25,
+        197,
+        48,
+        45,
+        70,
+        1,
+        245,
+        212,
+        49,
+        247,
+        206,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 32,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        34,
+        10,
+        0,
+        0,
+        51,
+        36,
+        184,
+        0,
+        0,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 33,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        34,
+        68,
+        0,
+        0,
+        78,
+        27,
+        243,
+        0,
+        0,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 34,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        34,
+        36,
+        0,
+        0,
+        94,
+        55,
+        249,
+        0,
+        0,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 35,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        34,
+        14,
+        0,
+        0,
+        16,
+        174,
+        169,
+        0,
+        0,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 36,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        34,
+        82,
+        0,
+        0,
+        44,
+        234,
+        88,
+        0,
+        0,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 37,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        36,
+        3,
+        0,
+        0,
+        50,
+        97,
+        145,
+        0,
+        0,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 68,
+      "formatVersion": 2
+    },
+    {
+      "itemData": null,
+      "data": [
+        2,
+        35,
+        7,
+        0,
+        0,
+        74,
+        10,
+        39,
+        0,
+        0,
+        0
+      ],
+      "inventoryPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "quantity": 1,
+      "containerID": 74,
+      "formatVersion": 2
+    }
+  ],
+  "savedCharacterTree": {
+    "treeID": "",
+    "version": 2,
+    "nodeIDs": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      30,
+      66,
+      29,
+      38,
+      42,
+      40,
+      48,
+      43,
+      56
+    ],
+    "nodePoints": [
+      8,
+      1,
+      1,
+      5,
+      5,
+      8,
+      4,
+      8,
+      8,
+      10,
+      5,
+      10,
+      9,
+      5
+    ],
+    "unspentPoints": 0,
+    "nodesTaken": null
+  },
+  "savedSkillTrees": [
+    {
+      "treeID": "sp5g2",
+      "slotNumber": 0,
+      "xp": 3915828,
+      "version": 1,
+      "nodeIDs": [
+        2,
+        6,
+        10,
+        18,
+        22,
+        23,
+        24,
+        13
+      ],
+      "nodePoints": [
+        1,
+        3,
+        1,
+        3,
+        5,
+        2,
+        1,
+        3
+      ],
+      "unspentPoints": 0,
+      "nodesTaken": null,
+      "abilityXP": 0.0
+    },
+    {
+      "treeID": "rf1azz",
+      "slotNumber": 1,
+      "xp": 3915769,
+      "version": 1,
+      "nodeIDs": [
+        2,
+        6,
+        21,
+        33,
+        7,
+        31,
+        19,
+        32,
+        25
+      ],
+      "nodePoints": [
+        1,
+        3,
+        2,
+        3,
+        4,
+        3,
+        1,
+        1,
+        1
+      ],
+      "unspentPoints": 0,
+      "nodesTaken": null,
+      "abilityXP": 0.0
+    },
+    {
+      "treeID": "ws54hm",
+      "slotNumber": 2,
+      "xp": 3915812,
+      "version": 2,
+      "nodeIDs": [
+        30,
+        8,
+        31,
+        7,
+        26,
+        3,
+        2
+      ],
+      "nodePoints": [
+        3,
+        4,
+        3,
+        3,
+        4,
+        1,
+        1
+      ],
+      "unspentPoints": 0,
+      "nodesTaken": null,
+      "abilityXP": 0.0
+    },
+    {
+      "treeID": "ds34l",
+      "slotNumber": 3,
+      "xp": 3915755,
+      "version": 0,
+      "nodeIDs": [
+        5,
+        8,
+        11,
+        6,
+        7,
+        26,
+        22,
+        15
+      ],
+      "nodePoints": [
+        5,
+        3,
+        1,
+        1,
+        4,
+        2,
+        1,
+        2
+      ],
+      "unspentPoints": 0,
+      "nodesTaken": null,
+      "abilityXP": 0.0
+    },
+    {
+      "treeID": "ts50pl",
+      "slotNumber": 4,
+      "xp": 3915623,
+      "version": 3,
+      "nodeIDs": [
+        4,
+        18,
+        17,
+        19,
+        13,
+        12,
+        14,
+        7,
+        8,
+        2,
+        5
+      ],
+      "nodePoints": [
+        3,
+        3,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3
+      ],
+      "unspentPoints": 0,
+      "nodesTaken": null,
+      "abilityXP": 0.0
+    }
+  ],
+  "characterTreeNodeProgression": [],
+  "unlockedWaypointScenes": [
+    "Z22",
+    "Z32",
+    "Z32",
+    "Z52",
+    "Z32",
+    "Z32",
+    "Z72",
+    "Z32",
+    "Z92",
+    "Z102",
+    "Z32",
+    "A06",
+    "A10",
+    "A30",
+    "A30",
+    "A30",
+    "A45",
+    "A30",
+    "A60TR",
+    "A60",
+    "A70",
+    "EoT",
+    "A30",
+    "A90",
+    "B10",
+    "B20",
+    "B25",
+    "B25",
+    "B25",
+    "B30",
+    "B33",
+    "B25",
+    "B7S10",
+    "B25",
+    "B40",
+    "B40TR",
+    "B1S40",
+    "A30",
+    "B50",
+    "B60",
+    "B80",
+    "A30",
+    "C10",
+    "C20",
+    "C30",
+    "C10",
+    "C35",
+    "C40",
+    "C10",
+    "C40TR",
+    "C50",
+    "C60",
+    "C70",
+    "D05",
+    "D20",
+    "D30",
+    "D40",
+    "D05TR",
+    "Dun1Q10",
+    "D40",
+    "D60",
+    "D40",
+    "E10",
+    "D80",
+    "E20",
+    "E20TR",
+    "E30",
+    "E40",
+    "E50",
+    "E60",
+    "E60",
+    "E60",
+    "E80",
+    "E90",
+    "F10",
+    "F40",
+    "F40",
+    "F40",
+    "F40",
+    "F40",
+    "F40",
+    "F40",
+    "F40",
+    "F40",
+    "F80",
+    "F1S10",
+    "F50",
+    "F70",
+    "F40",
+    "F90",
+    "F100",
+    "F110",
+    "F40",
+    "F40",
+    "G40",
+    "G40",
+    "G60",
+    "G70",
+    "G80",
+    "G90",
+    "G2S10",
+    "G80",
+    "G96",
+    "G80",
+    "G93",
+    "G110",
+    "H10",
+    "G80",
+    "H40",
+    "H50",
+    "H50",
+    "Bazaar",
+    "Observatory",
+    "H50",
+    "H70",
+    "H50",
+    "H50",
+    "Bazaar",
+    "Observatory",
+    "H80",
+    "H100",
+    "H110",
+    "H110",
+    "H50",
+    "H110",
+    "H110",
+    "H120",
+    "MonolithHub"
+  ],
+  "openedOneShotCaches": [
+    -186909701,
+    -171074355,
+    -1363843847,
+    359666994,
+    449522818,
+    -1395931878,
+    769778200,
+    -2056742390,
+    -1280599686,
+    -847703628,
+    -90535557,
+    1270366889,
+    -1638843829,
+    -563023595,
+    879047897,
+    -1876044017,
+    2044604578
+  ],
+  "abilityBar": [
+    "rf1azz",
+    "ds34l",
+    "ws54hm",
+    "ts50pl",
+    "sp5g2"
+  ],
+  "moveButtonBehaviour": 0,
+  "werebearAbilityBar": [],
+  "sprigganFormAbilityBar": [],
+  "swarmbladeAbilityBar": [],
+  "portalUnlocked": true,
+  "reachedTown": false,
+  "soloChallenge": false,
+  "soloCharacterChallenge": false,
+  "respecs": 0,
+  "uniquesPickedUp": 0,
+  "savedQuests": [
+    {
+      "questID": 127,
+      "questStepID": 678,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        623,
+        624,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 128,
+      "questStepID": 687,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 131,
+      "questStepID": 714,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        613,
+        614,
+        617,
+        618,
+        619
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 129,
+      "questStepID": 696,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        594,
+        595,
+        596,
+        598,
+        597,
+        600,
+        601
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 132,
+      "questStepID": 719,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        615,
+        620,
+        621,
+        622
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 130,
+      "questStepID": 708,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        610,
+        611,
+        612
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 48,
+      "questStepID": 281,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        626,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 1,
+      "questStepID": 4,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        1,
+        2,
+        3,
+        48
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 49,
+      "questStepID": 284,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        254,
+        255,
+        256,
+        257
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 3,
+      "questStepID": 12,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        8,
+        9
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 94,
+      "questStepID": 493,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        404,
+        405,
+        406,
+        407,
+        408
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 2,
+      "questStepID": 24,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        4,
+        5,
+        6,
+        7,
+        20
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 1
+    },
+    {
+      "questID": 5,
+      "questStepID": 14,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        22,
+        24,
+        25,
+        26,
+        62,
+        625,
+        10
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 34,
+      "questStepID": 197,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        175,
+        177,
+        178,
+        179
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 39,
+      "questStepID": 230,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        202,
+        206,
+        207
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 6,
+      "questStepID": 47,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        11,
+        15,
+        431,
+        16,
+        17,
+        61
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 9,
+      "questStepID": 38,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        29,
+        30,
+        31
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 35,
+      "questStepID": 202,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        180,
+        181,
+        182,
+        190,
+        191,
+        183
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 96,
+      "questStepID": 506,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 99,
+      "questStepID": 520,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        427,
+        428,
+        429
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 29,
+      "questStepID": 160,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        144,
+        145,
+        146,
+        147
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 100,
+      "questStepID": 525,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        435,
+        434
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 10,
+      "questStepID": 40,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        28
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 13,
+      "questStepID": 60,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        41,
+        436,
+        437,
+        438,
+        43,
+        44,
+        45,
+        49,
+        46
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 14,
+      "questStepID": 101,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        139,
+        149,
+        47,
+        50,
+        88,
+        89,
+        90,
+        91,
+        96,
+        97,
+        98
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 28,
+      "questStepID": 155,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        142,
+        143
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 12,
+      "questStepID": 54,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 116,
+      "questStepID": 596,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        514
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 37,
+      "questStepID": 217,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        193,
+        195,
+        196
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 20,
+      "questStepID": 106,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        92,
+        93,
+        94,
+        95,
+        105,
+        106
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 24,
+      "questStepID": 128,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 30,
+      "questStepID": 168,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 36,
+      "questStepID": 209,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        184,
+        185,
+        186,
+        187,
+        188,
+        192,
+        189
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 25,
+      "questStepID": 136,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        117,
+        118,
+        119,
+        121,
+        120,
+        122,
+        123
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 31,
+      "questStepID": 176,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        155,
+        156,
+        162,
+        157,
+        158,
+        159,
+        163,
+        160,
+        164,
+        161
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 33,
+      "questStepID": 187,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        169,
+        627,
+        170,
+        174,
+        171
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 32,
+      "questStepID": 189,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        628,
+        165,
+        166,
+        167,
+        173,
+        168,
+        172
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 42,
+      "questStepID": 240,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        245,
+        212,
+        213,
+        214,
+        215,
+        239,
+        216
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 44,
+      "questStepID": 254,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        223,
+        244,
+        224,
+        225,
+        226,
+        246,
+        227,
+        228
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 47,
+      "questStepID": 270,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        240,
+        241,
+        242,
+        243
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 43,
+      "questStepID": 246,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        217,
+        222,
+        218,
+        219,
+        220,
+        221
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 46,
+      "questStepID": 266,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        235,
+        237,
+        236,
+        238
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 45,
+      "questStepID": 261,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        229,
+        230,
+        231,
+        232,
+        233,
+        234
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 50,
+      "questStepID": 288,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        258,
+        309,
+        260
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 51,
+      "questStepID": 295,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 53,
+      "questStepID": 306,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        271,
+        272,
+        274,
+        275,
+        313,
+        276,
+        571
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 58,
+      "questStepID": 339,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        302,
+        303,
+        304,
+        305,
+        306,
+        307
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 56,
+      "questStepID": 322,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        287,
+        288,
+        289,
+        291,
+        292
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 54,
+      "questStepID": 312,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        277,
+        293,
+        294,
+        278,
+        279,
+        280,
+        308,
+        281,
+        282
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 55,
+      "questStepID": 316,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        283,
+        285,
+        286
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 57,
+      "questStepID": 332,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        295,
+        310,
+        311,
+        296,
+        297,
+        298,
+        312,
+        299,
+        300,
+        301,
+        572
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 125,
+      "questStepID": 668,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        576,
+        577
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 114,
+      "questStepID": 584,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        554,
+        504
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 121,
+      "questStepID": 626,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        536,
+        537,
+        538,
+        539
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 1
+    },
+    {
+      "questID": 118,
+      "questStepID": 609,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        519,
+        520,
+        521,
+        522,
+        524,
+        525
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 119,
+      "questStepID": 615,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        556,
+        558,
+        557,
+        526,
+        527,
+        528,
+        529
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 115,
+      "questStepID": 593,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        505,
+        506,
+        507,
+        567,
+        508,
+        513,
+        509,
+        510,
+        511,
+        512
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 120,
+      "questStepID": 621,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        531,
+        532,
+        533,
+        534,
+        535
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 117,
+      "questStepID": 601,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        573,
+        515,
+        516,
+        517,
+        518
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 133,
+      "questStepID": 728,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        629,
+        630
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 134,
+      "questStepID": 731,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        631,
+        632,
+        636
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 123,
+      "questStepID": 640,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        545,
+        546,
+        547,
+        552,
+        548,
+        549,
+        550,
+        553,
+        551,
+        568,
+        569,
+        570
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 122,
+      "questStepID": 632,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        540,
+        541,
+        542,
+        543,
+        544
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 124,
+      "questStepID": 656,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        559,
+        560,
+        574,
+        575,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 27,
+      "questStepID": 145,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        126,
+        128,
+        129,
+        130
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 1
+    },
+    {
+      "questID": 83,
+      "questStepID": 455,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        480,
+        481,
+        482
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 85,
+      "questStepID": 462,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        486,
+        487
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 87,
+      "questStepID": 468,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        490,
+        491
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 84,
+      "questStepID": 459,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        483,
+        484,
+        485
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 88,
+      "questStepID": 472,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        492,
+        493,
+        494
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 86,
+      "questStepID": 463,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 91,
+      "questStepID": 479,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    },
+    {
+      "questID": 89,
+      "questStepID": 473,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    }
+  ],
+  "savedMonolithQuests": [
+    {
+      "questID": 77,
+      "questStepID": 428,
+      "state": 0,
+      "questBranch": 0,
+      "completeObjectives": [
+        371,
+        372
+      ],
+      "failedObjectives": [],
+      "nolongerRelevantObjectives": [],
+      "objectiveProgress": [],
+      "trackStatus": 0
+    }
+  ],
+  "maxWave": 0,
+  "competitiveCharacterVersion": 17,
+  "oneTimeEvents": [
+    "A40PortalTutorialFirst",
+    "A40PortalTutorialDisable",
+    "BalthasKidnapped",
+    "Z102OrianDefeated",
+    "ChANotification",
+    "A30SavingLastRefugeIdols",
+    "A30ErzaUniqueDrop",
+    "A60-70Door",
+    "Reached EoT",
+    "activate time travel EoT to A30",
+    "A30RuneDoorOneTime",
+    "ChBNotification",
+    "B33SoulVesselSwap",
+    "B80LeftObjective",
+    "LeftOrbPlaced",
+    "activate time travel EoT to C10",
+    "ChCNotification",
+    "ChDNotification",
+    "D35DiamondMiniboss",
+    "D30RuneDoorOneTime",
+    "ChENotification",
+    "ChFNotification",
+    "ChGNotification",
+    "G40teleportG60",
+    "G70FireWallsComplete",
+    "G80Melvern",
+    "G80Tanavast",
+    "G80Baz",
+    "G80teleportG90",
+    "G80CinematicPlayed",
+    "G2s10LeaderDefeat",
+    "G100Liath",
+    "G100EastAltarComplete",
+    "G100WestAltarComplete",
+    "G110PortalActive",
+    "G80toH10Teleport",
+    "H20IdolPlaced",
+    "H30MerchantCorpse",
+    "H40ZerrickFreed",
+    "H50Cinematic",
+    "H60BodyguardComplete",
+    "H120toH130open",
+    "MHubBridgeInitial",
+    "Bridge1to5"
+  ],
+  "focusedQuest": -1,
+  "sceneProgresses": [
+    {
+      "scene": "Z22",
+      "savedProgress": 1125842893684703,
+      "version": 1
+    },
+    {
+      "scene": "Z42",
+      "savedProgress": 8444266615373827,
+      "version": 1
+    },
+    {
+      "scene": "Z1S10",
+      "savedProgress": 8539602878,
+      "version": 1
+    },
+    {
+      "scene": "Z52",
+      "savedProgress": 202436583308124151,
+      "version": 1
+    },
+    {
+      "scene": "Z62",
+      "savedProgress": 305958875868168191,
+      "version": 1
+    },
+    {
+      "scene": "Z72",
+      "savedProgress": 134201342,
+      "version": 1
+    },
+    {
+      "scene": "Z82",
+      "savedProgress": 34907294621761790,
+      "version": 1
+    },
+    {
+      "scene": "Z92",
+      "savedProgress": 32985345048575,
+      "version": 1
+    },
+    {
+      "scene": "Z102",
+      "savedProgress": 28569855,
+      "version": 1
+    },
+    {
+      "scene": "Z32",
+      "savedProgress": 2185299361791,
+      "version": 1
+    },
+    {
+      "scene": "A06",
+      "savedProgress": 10062455405313791,
+      "version": 1
+    },
+    {
+      "scene": "A10",
+      "savedProgress": 6476211173651378159,
+      "version": 1
+    },
+    {
+      "scene": "A3S10",
+      "savedProgress": 243,
+      "version": 1
+    },
+    {
+      "scene": "A40",
+      "savedProgress": 208440174261535743,
+      "version": 1
+    },
+    {
+      "scene": "A45",
+      "savedProgress": 51072,
+      "version": 1
+    },
+    {
+      "scene": "A60TR",
+      "savedProgress": 31525197794246656,
+      "version": 2
+    },
+    {
+      "scene": "A60",
+      "savedProgress": 574410712061869568,
+      "version": 1
+    },
+    {
+      "scene": "A70",
+      "savedProgress": 9007166770379839,
+      "version": 1
+    },
+    {
+      "scene": "A80",
+      "savedProgress": 254,
+      "version": 1
+    },
+    {
+      "scene": "A30",
+      "savedProgress": 4029678078,
+      "version": 1
+    },
+    {
+      "scene": "A90",
+      "savedProgress": 4611703609539694591,
+      "version": 1
+    },
+    {
+      "scene": "B10",
+      "savedProgress": 7010779136,
+      "version": 1
+    },
+    {
+      "scene": "B20",
+      "savedProgress": 22255077285166079,
+      "version": 1
+    },
+    {
+      "scene": "B33",
+      "savedProgress": 22518307378708367,
+      "version": 1
+    },
+    {
+      "scene": "B7S10",
+      "savedProgress": 7034982485704735,
+      "version": 1
+    },
+    {
+      "scene": "B25",
+      "savedProgress": 292057841089,
+      "version": 1
+    },
+    {
+      "scene": "B36",
+      "savedProgress": 34902897179230208,
+      "version": 2
+    },
+    {
+      "scene": "B40TR",
+      "savedProgress": 126082888679438432,
+      "version": 2
+    },
+    {
+      "scene": "B1S30",
+      "savedProgress": 6052837482695753607,
+      "version": 1
+    },
+    {
+      "scene": "B1S40",
+      "savedProgress": 175640386002223615,
+      "version": 1
+    },
+    {
+      "scene": "B40",
+      "savedProgress": 9007233480261632,
+      "version": 2
+    },
+    {
+      "scene": "B50",
+      "savedProgress": 2270272334062590,
+      "version": 1
+    },
+    {
+      "scene": "B90",
+      "savedProgress": 1906969638921,
+      "version": 1
+    },
+    {
+      "scene": "B100",
+      "savedProgress": 204010961920,
+      "version": 1
+    },
+    {
+      "scene": "C10",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "C20",
+      "savedProgress": 68677762939879468,
+      "version": 1
+    },
+    {
+      "scene": "B30",
+      "savedProgress": 319755857025548239,
+      "version": 1
+    },
+    {
+      "scene": "B4S10",
+      "savedProgress": 2096847,
+      "version": 1
+    },
+    {
+      "scene": "C1S10",
+      "savedProgress": 14285404816408575,
+      "version": 1
+    },
+    {
+      "scene": "C30",
+      "savedProgress": 143671116208011516,
+      "version": 1
+    },
+    {
+      "scene": "C35",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "C40TR",
+      "savedProgress": 1080872633647496193,
+      "version": 1
+    },
+    {
+      "scene": "C40",
+      "savedProgress": 6803229900807,
+      "version": 1
+    },
+    {
+      "scene": "C50",
+      "savedProgress": 26388170012671,
+      "version": 1
+    },
+    {
+      "scene": "C60",
+      "savedProgress": 249588866752391,
+      "version": 1
+    },
+    {
+      "scene": "C65",
+      "savedProgress": 147279,
+      "version": 1
+    },
+    {
+      "scene": "C70",
+      "savedProgress": 7059390237062987775,
+      "version": 1
+    },
+    {
+      "scene": "C80",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "D10",
+      "savedProgress": 15887857385268231,
+      "version": 1
+    },
+    {
+      "scene": "D20",
+      "savedProgress": 29132660056002559,
+      "version": 1
+    },
+    {
+      "scene": "D30",
+      "savedProgress": 3382028510814192,
+      "version": 1
+    },
+    {
+      "scene": "D35",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "D40",
+      "savedProgress": 7044333568,
+      "version": 1
+    },
+    {
+      "scene": "D05",
+      "savedProgress": 23072090353919,
+      "version": 1
+    },
+    {
+      "scene": "D50",
+      "savedProgress": 3891814444563496824,
+      "version": 1
+    },
+    {
+      "scene": "D60",
+      "savedProgress": 35183176775423,
+      "version": 1
+    },
+    {
+      "scene": "D80",
+      "savedProgress": 8406915,
+      "version": 1
+    },
+    {
+      "scene": "E10",
+      "savedProgress": 17591347183871,
+      "version": 1
+    },
+    {
+      "scene": "E20TR",
+      "savedProgress": 290545945544643,
+      "version": 1
+    },
+    {
+      "scene": "E20",
+      "savedProgress": 540992415208046471,
+      "version": 1
+    },
+    {
+      "scene": "E30",
+      "savedProgress": 18420848375852171007,
+      "version": 1
+    },
+    {
+      "scene": "E2S10",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "E40",
+      "savedProgress": 4611123343351865344,
+      "version": 1
+    },
+    {
+      "scene": "E50",
+      "savedProgress": 28957833447261176,
+      "version": 1
+    },
+    {
+      "scene": "E1S10",
+      "savedProgress": 1083106845566435327,
+      "version": 1
+    },
+    {
+      "scene": "E60",
+      "savedProgress": 639103,
+      "version": 1
+    },
+    {
+      "scene": "E70",
+      "savedProgress": 1116966508822655,
+      "version": 1
+    },
+    {
+      "scene": "E80",
+      "savedProgress": 36290373143787524,
+      "version": 1
+    },
+    {
+      "scene": "E90",
+      "savedProgress": 69295603246426083,
+      "version": 1
+    },
+    {
+      "scene": "F20",
+      "savedProgress": 4502774993420191,
+      "version": 1
+    },
+    {
+      "scene": "F30",
+      "savedProgress": 255491,
+      "version": 1
+    },
+    {
+      "scene": "F1S10",
+      "savedProgress": 1730508293702451199,
+      "version": 1
+    },
+    {
+      "scene": "F50",
+      "savedProgress": 2394218846715905,
+      "version": 1
+    },
+    {
+      "scene": "F60",
+      "savedProgress": 2733880373247,
+      "version": 1
+    },
+    {
+      "scene": "F70",
+      "savedProgress": 128352589380058143,
+      "version": 1
+    },
+    {
+      "scene": "F80",
+      "savedProgress": 63578709885452287,
+      "version": 1
+    },
+    {
+      "scene": "F100",
+      "savedProgress": 140722451775488,
+      "version": 1
+    },
+    {
+      "scene": "F110",
+      "savedProgress": 131101,
+      "version": 1
+    },
+    {
+      "scene": "F120",
+      "savedProgress": 100127,
+      "version": 1
+    },
+    {
+      "scene": "G10",
+      "savedProgress": 58823841153023,
+      "version": 1
+    },
+    {
+      "scene": "G20",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "F40",
+      "savedProgress": 8508020568362951,
+      "version": 1
+    },
+    {
+      "scene": "G30",
+      "savedProgress": 18577340944612302,
+      "version": 1
+    },
+    {
+      "scene": "G40",
+      "savedProgress": 171664441407,
+      "version": 1
+    },
+    {
+      "scene": "G50",
+      "savedProgress": 2251756834390079,
+      "version": 1
+    },
+    {
+      "scene": "G80",
+      "savedProgress": 13743893512189,
+      "version": 1
+    },
+    {
+      "scene": "H20",
+      "savedProgress": 585436606949232639,
+      "version": 1
+    },
+    {
+      "scene": "H10",
+      "savedProgress": 23924441031,
+      "version": 1
+    },
+    {
+      "scene": "H30",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "H40",
+      "savedProgress": 25860522066968559,
+      "version": 1
+    },
+    {
+      "scene": "H50",
+      "savedProgress": 8589537279,
+      "version": 1
+    },
+    {
+      "scene": "H60",
+      "savedProgress": 3602876403294273526,
+      "version": 1
+    },
+    {
+      "scene": "H80",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "H90",
+      "savedProgress": 439657690070919,
+      "version": 1
+    },
+    {
+      "scene": "H100",
+      "savedProgress": 9727436546461450767,
+      "version": 1
+    },
+    {
+      "scene": "H105",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "H110",
+      "savedProgress": 0,
+      "version": 1
+    },
+    {
+      "scene": "H120",
+      "savedProgress": 11575658421227519,
+      "version": 1
+    },
+    {
+      "scene": "H130",
+      "savedProgress": 6290431,
+      "version": 1
+    },
+    {
+      "scene": "H140",
+      "savedProgress": 246290805948416,
+      "version": 1
+    },
+    {
+      "scene": "Dun1Q30",
+      "savedProgress": 2251799813914637,
+      "version": 1
+    }
+  ],
+  "monolithRuns": [
+    {
+      "timelineID": 1,
+      "difficultyIndex": 0,
+      "depth": 14,
+      "questCompletion": 0,
+      "questBranch": 0,
+      "bossLootDropped": false,
+      "savedEchoWeb": {
+        "version": 0,
+        "corruption": 0,
+        "echoesSinceLastDeath": 0,
+        "gazeOfOrobyss": 0,
+        "islands": [
+          {
+            "data": [
+              6,
+              3,
+              0,
+              0,
+              34,
+              0,
+              127,
+              127
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              2,
+              13,
+              19,
+              58,
+              136,
+              4,
+              25,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              6,
+              41,
+              14,
+              165,
+              3,
+              0,
+              5,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              3,
+              50,
+              18,
+              55,
+              24,
+              1,
+              16,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              8,
+              53,
+              21,
+              27,
+              65,
+              0,
+              16,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              16,
+              1,
+              5,
+              1,
+              118,
+              1,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              18,
+              2,
+              11,
+              55,
+              31,
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              11,
+              41,
+              4,
+              224,
+              230,
+              8,
+              25,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              12,
+              42,
+              16,
+              82,
+              166,
+              21,
+              17,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              20,
+              1,
+              13,
+              170,
+              194,
+              7,
+              16,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              7,
+              4,
+              7,
+              95,
+              114,
+              17,
+              22,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              21,
+              2,
+              18,
+              151,
+              0,
+              1,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              26,
+              58,
+              8,
+              60,
+              77,
+              0,
+              25,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              24,
+              37,
+              0,
+              235,
+              141,
+              7,
+              20,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              13,
+              2,
+              9,
+              14,
+              24,
+              14,
+              10,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              27,
+              6,
+              6,
+              60,
+              171,
+              7,
+              4,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              46,
+              1,
+              12,
+              119,
+              44,
+              4,
+              25,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              47,
+              2,
+              5,
+              76,
+              97,
+              1,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              44,
+              50,
+              20,
+              104,
+              18,
+              5,
+              1,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              23,
+              28,
+              8,
+              108,
+              147,
+              7,
+              5,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              69,
+              49,
+              12,
+              219,
+              172,
+              7,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              70,
+              42,
+              1,
+              243,
+              126,
+              1,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              42,
+              1,
+              4,
+              246,
+              190,
+              1,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              22,
+              4,
+              18,
+              128,
+              65,
+              6,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              100,
+              53,
+              0,
+              93,
+              173,
+              24,
+              14,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              101,
+              34,
+              16,
+              22,
+              99,
+              23,
+              25,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              71,
+              2,
+              22,
+              80,
+              140,
+              1,
+              6,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              102,
+              2,
+              21,
+              5,
+              133,
+              7,
+              24,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              137,
+              37,
+              15,
+              46,
+              73,
+              5,
+              6,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              138,
+              42,
+              1,
+              216,
+              44,
+              7,
+              6,
+              2
+            ]
+          },
+          {
+            "data": [
+              3,
+              11,
+              0,
+              99,
+              14,
+              6,
+              26,
+              14
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              139,
+              14,
+              2,
+              193,
+              205,
+              17,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              136,
+              30,
+              17,
+              237,
+              153,
+              5,
+              6,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              181,
+              50,
+              1,
+              253,
+              198,
+              2,
+              11,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              182,
+              50,
+              8,
+              205,
+              98,
+              7,
+              18,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              67,
+              34,
+              1,
+              185,
+              70,
+              7,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              98,
+              42,
+              13,
+              247,
+              207,
+              0,
+              25,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              135,
+              26,
+              12,
+              35,
+              203,
+              8,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              179,
+              21,
+              12,
+              101,
+              163,
+              7,
+              11,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              231,
+              3,
+              0,
+              6,
+              81,
+              6,
+              3,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              230,
+              1,
+              15,
+              191,
+              252,
+              1,
+              24,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              97,
+              42,
+              17,
+              147,
+              240,
+              10,
+              12,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              178,
+              9,
+              4,
+              75,
+              94,
+              3,
+              10,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              66,
+              43,
+              8,
+              31,
+              243,
+              2,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              228,
+              1,
+              9,
+              173,
+              204,
+              16,
+              14,
+              2
+            ]
+          },
+          {
+            "data": [
+              3,
+              2,
+              0,
+              41,
+              48,
+              6,
+              68,
+              202
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              65,
+              8,
+              3,
+              203,
+              153,
+              4,
+              1,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              96,
+              9,
+              18,
+              97,
+              126,
+              4,
+              21,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              140,
+              4,
+              4,
+              196,
+              145,
+              8,
+              21,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              232,
+              2,
+              13,
+              127,
+              48,
+              19,
+              20,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              133,
+              1,
+              6,
+              229,
+              235,
+              1,
+              4,
+              3
+            ]
+          }
+        ]
+      },
+      "stability": 165,
+      "previousEchoWasQuestEcho": false,
+      "previousEchoHexIndex": 101,
+      "previousEchoIslandType": 0,
+      "hasRerolledOptions": false,
+      "modIndexs": [
+        25,
+        25
+      ],
+      "modRemainingDurations": [
+        1,
+        1
+      ],
+      "modEffectModifiers": [
+        0.0,
+        0.0
+      ],
+      "options": [
+        {
+          "zoneIndex": 0,
+          "modIndex": 0,
+          "duration": 0,
+          "effectModifier": 0.0,
+          "questEcho": true
+        },
+        {
+          "zoneIndex": 7,
+          "modIndex": 11,
+          "duration": 2,
+          "effectModifier": 0.0,
+          "questEcho": false
+        }
+      ]
+    },
+    {
+      "timelineID": 2,
+      "difficultyIndex": 0,
+      "depth": 14,
+      "questCompletion": 0,
+      "questBranch": 0,
+      "bossLootDropped": false,
+      "savedEchoWeb": {
+        "version": 0,
+        "corruption": 0,
+        "echoesSinceLastDeath": 0,
+        "gazeOfOrobyss": 0,
+        "islands": [
+          {
+            "data": [
+              6,
+              3,
+              0,
+              0,
+              44,
+              0,
+              127,
+              127
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              6,
+              57,
+              16,
+              68,
+              116,
+              0,
+              20,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              4,
+              41,
+              21,
+              233,
+              0,
+              4,
+              23,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              3,
+              25,
+              12,
+              221,
+              37,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              16,
+              37,
+              10,
+              24,
+              89,
+              0,
+              21,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              17,
+              49,
+              15,
+              30,
+              112,
+              22,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              18,
+              42,
+              15,
+              179,
+              28,
+              8,
+              10,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              12,
+              1,
+              6,
+              136,
+              52,
+              1,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              14,
+              2,
+              14,
+              60,
+              111,
+              4,
+              24,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              10,
+              1,
+              10,
+              172,
+              145,
+              3,
+              6,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              11,
+              1,
+              24,
+              14,
+              3,
+              7,
+              25,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              33,
+              10,
+              10,
+              173,
+              146,
+              0,
+              26,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              15,
+              4,
+              22,
+              133,
+              14,
+              22,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              34,
+              19,
+              12,
+              159,
+              153,
+              1,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              35,
+              34,
+              15,
+              106,
+              130,
+              20,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              7,
+              54,
+              9,
+              9,
+              125,
+              1,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              36,
+              50,
+              0,
+              65,
+              62,
+              4,
+              22,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              19,
+              57,
+              9,
+              213,
+              139,
+              20,
+              14,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              20,
+              42,
+              22,
+              48,
+              206,
+              4,
+              5,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              8,
+              44,
+              7,
+              15,
+              156,
+              7,
+              21,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              60,
+              19,
+              23,
+              152,
+              191,
+              8,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              59,
+              3,
+              23,
+              246,
+              82,
+              4,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              38,
+              50,
+              1,
+              236,
+              61,
+              1,
+              5,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              37,
+              25,
+              19,
+              184,
+              46,
+              0,
+              5,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              39,
+              2,
+              10,
+              79,
+              71,
+              6,
+              5,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              21,
+              38,
+              4,
+              144,
+              139,
+              2,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              9,
+              34,
+              19,
+              13,
+              231,
+              4,
+              10,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              23,
+              2,
+              0,
+              7,
+              179,
+              7,
+              24,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              40,
+              2,
+              22,
+              100,
+              62,
+              7,
+              17,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              63,
+              2,
+              5,
+              14,
+              144,
+              0,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              62,
+              1,
+              23,
+              220,
+              145,
+              4,
+              12,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              90,
+              37,
+              2,
+              9,
+              220,
+              7,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              61,
+              41,
+              2,
+              203,
+              141,
+              3,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              89,
+              29,
+              17,
+              126,
+              78,
+              7,
+              2,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              124,
+              53,
+              1,
+              60,
+              7,
+              7,
+              11,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              88,
+              14,
+              0,
+              84,
+              80,
+              4,
+              26,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              165,
+              21,
+              16,
+              45,
+              211,
+              4,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              123,
+              12,
+              11,
+              52,
+              156,
+              4,
+              8,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              166,
+              42,
+              19,
+              133,
+              34,
+              0,
+              17,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              58,
+              32,
+              19,
+              172,
+              39,
+              22,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              87,
+              8,
+              11,
+              166,
+              120,
+              0,
+              13,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              126,
+              35,
+              10,
+              106,
+              129,
+              7,
+              12,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              212,
+              1,
+              12,
+              80,
+              12,
+              24,
+              11,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              164,
+              8,
+              23,
+              204,
+              144,
+              7,
+              7,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              122,
+              8,
+              4,
+              169,
+              103,
+              7,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              167,
+              4,
+              12,
+              251,
+              223,
+              23,
+              26,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              214,
+              2,
+              24,
+              27,
+              194,
+              7,
+              18,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              168,
+              42,
+              13,
+              141,
+              9,
+              6,
+              12,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              216,
+              2,
+              6,
+              49,
+              84,
+              25,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              127,
+              2,
+              15,
+              52,
+              93,
+              7,
+              0,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              92,
+              2,
+              15,
+              5,
+              59,
+              10,
+              6,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              57,
+              1,
+              2,
+              140,
+              115,
+              1,
+              9,
+              2
+            ]
+          }
+        ]
+      },
+      "stability": 58,
+      "previousEchoWasQuestEcho": false,
+      "previousEchoHexIndex": 35,
+      "previousEchoIslandType": 0,
+      "hasRerolledOptions": false,
+      "modIndexs": [
+        16
+      ],
+      "modRemainingDurations": [
+        1
+      ],
+      "modEffectModifiers": [
+        0.0
+      ],
+      "options": [
+        {
+          "zoneIndex": 0,
+          "modIndex": 0,
+          "duration": 0,
+          "effectModifier": 0.0,
+          "questEcho": true
+        },
+        {
+          "zoneIndex": 11,
+          "modIndex": 12,
+          "duration": 2,
+          "effectModifier": 0.0,
+          "questEcho": false
+        }
+      ]
+    },
+    {
+      "timelineID": 3,
+      "difficultyIndex": 0,
+      "depth": 11,
+      "questCompletion": 0,
+      "questBranch": 0,
+      "bossLootDropped": false,
+      "savedEchoWeb": {
+        "version": 0,
+        "corruption": 0,
+        "echoesSinceLastDeath": 0,
+        "gazeOfOrobyss": 0,
+        "islands": [
+          {
+            "data": [
+              6,
+              3,
+              0,
+              0,
+              36,
+              0,
+              127,
+              127
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              3,
+              51,
+              8,
+              228,
+              93,
+              4,
+              8,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              6,
+              41,
+              18,
+              109,
+              90,
+              1,
+              5,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              2,
+              4,
+              2,
+              41,
+              218,
+              0,
+              8,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              11,
+              1,
+              16,
+              145,
+              69,
+              0,
+              17,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              12,
+              2,
+              8,
+              183,
+              187,
+              1,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              18,
+              50,
+              1,
+              226,
+              95,
+              0,
+              11,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              16,
+              53,
+              4,
+              31,
+              96,
+              4,
+              3,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              32,
+              37,
+              14,
+              11,
+              69,
+              17,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              15,
+              30,
+              9,
+              147,
+              245,
+              4,
+              13,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              33,
+              42,
+              5,
+              213,
+              54,
+              8,
+              3,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              35,
+              1,
+              13,
+              224,
+              51,
+              0,
+              12,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              36,
+              2,
+              4,
+              131,
+              173,
+              19,
+              4,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              31,
+              5,
+              0,
+              89,
+              109,
+              4,
+              5,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              55,
+              34,
+              6,
+              19,
+              109,
+              1,
+              3,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              14,
+              8,
+              3,
+              202,
+              89,
+              7,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              30,
+              1,
+              3,
+              78,
+              8,
+              0,
+              13,
+              1
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              56,
+              50,
+              1,
+              86,
+              148,
+              1,
+              13,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              34,
+              34,
+              0,
+              64,
+              96,
+              1,
+              12,
+              1
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              84,
+              51,
+              2,
+              97,
+              215,
+              7,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              85,
+              58,
+              0,
+              224,
+              219,
+              10,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              58,
+              2,
+              19,
+              206,
+              34,
+              0,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              119,
+              35,
+              18,
+              28,
+              83,
+              21,
+              21,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              118,
+              21,
+              2,
+              133,
+              34,
+              10,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              120,
+              26,
+              11,
+              56,
+              76,
+              6,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              86,
+              50,
+              14,
+              199,
+              191,
+              7,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              3,
+              11,
+              0,
+              160,
+              51,
+              18,
+              9,
+              65
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              158,
+              21,
+              2,
+              127,
+              98,
+              17,
+              22,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              117,
+              8,
+              10,
+              63,
+              64,
+              1,
+              12,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              207,
+              58,
+              16,
+              66,
+              58,
+              8,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              206,
+              49,
+              3,
+              224,
+              197,
+              4,
+              21,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              121,
+              35,
+              4,
+              81,
+              66,
+              7,
+              1,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              3,
+              35,
+              4,
+              194,
+              249,
+              6,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              2,
+              21,
+              8,
+              39,
+              114,
+              6,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              208,
+              44,
+              12,
+              19,
+              189,
+              24,
+              11,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              4,
+              50,
+              9,
+              33,
+              38,
+              13,
+              1,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              122,
+              2,
+              12,
+              221,
+              87,
+              1,
+              22,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              163,
+              2,
+              19,
+              32,
+              52,
+              17,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              204,
+              1,
+              19,
+              152,
+              227,
+              1,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              157,
+              8,
+              2,
+              42,
+              50,
+              14,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              5,
+              42,
+              1,
+              47,
+              121,
+              4,
+              8,
+              3
+            ]
+          },
+          {
+            "data": [
+              3,
+              2,
+              0,
+              209,
+              38,
+              14,
+              229,
+              94
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              60,
+              1,
+              14,
+              178,
+              116,
+              10,
+              16,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              1,
+              8,
+              9,
+              223,
+              83,
+              1,
+              5,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              62,
+              3,
+              9,
+              83,
+              104,
+              4,
+              23,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              63,
+              2,
+              10,
+              240,
+              29,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              64,
+              2,
+              14,
+              105,
+              9,
+              8,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              6,
+              2,
+              19,
+              238,
+              196,
+              5,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              210,
+              4,
+              0,
+              70,
+              53,
+              10,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              7,
+              2,
+              15,
+              20,
+              48,
+              2,
+              22,
+              2
+            ]
+          }
+        ]
+      },
+      "stability": 31,
+      "previousEchoWasQuestEcho": true,
+      "previousEchoHexIndex": 208,
+      "previousEchoIslandType": 0,
+      "hasRerolledOptions": false,
+      "modIndexs": [
+        11
+      ],
+      "modRemainingDurations": [
+        1
+      ],
+      "modEffectModifiers": [
+        0.0
+      ],
+      "options": [
+        {
+          "zoneIndex": 8,
+          "modIndex": 22,
+          "duration": 2,
+          "effectModifier": 0.0,
+          "questEcho": false
+        },
+        {
+          "zoneIndex": 16,
+          "modIndex": 1,
+          "duration": 3,
+          "effectModifier": 0.0,
+          "questEcho": false
+        }
+      ]
+    },
+    {
+      "timelineID": 4,
+      "difficultyIndex": 0,
+      "depth": 24,
+      "questCompletion": 0,
+      "questBranch": 0,
+      "bossLootDropped": false,
+      "savedEchoWeb": {
+        "version": 0,
+        "corruption": 0,
+        "echoesSinceLastDeath": 0,
+        "gazeOfOrobyss": 0,
+        "islands": [
+          {
+            "data": [
+              6,
+              3,
+              0,
+              0,
+              26,
+              0,
+              127,
+              127
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              5,
+              49,
+              14,
+              232,
+              76,
+              0,
+              9,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              4,
+              25,
+              0,
+              175,
+              139,
+              1,
+              6,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              2,
+              41,
+              24,
+              19,
+              161,
+              8,
+              19,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              16,
+              2,
+              3,
+              239,
+              62,
+              0,
+              12,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              15,
+              1,
+              21,
+              218,
+              242,
+              0,
+              9,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              12,
+              1,
+              7,
+              21,
+              93,
+              1,
+              15,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              13,
+              1,
+              14,
+              96,
+              120,
+              0,
+              22,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              8,
+              53,
+              1,
+              170,
+              249,
+              1,
+              21,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              10,
+              50,
+              9,
+              242,
+              232,
+              1,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              20,
+              1,
+              3,
+              124,
+              184,
+              4,
+              0,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              7,
+              4,
+              14,
+              151,
+              59,
+              0,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              21,
+              2,
+              22,
+              105,
+              48,
+              8,
+              10,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              24,
+              42,
+              6,
+              91,
+              81,
+              0,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              23,
+              21,
+              3,
+              74,
+              78,
+              4,
+              14,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              25,
+              18,
+              17,
+              144,
+              65,
+              7,
+              21,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              44,
+              2,
+              13,
+              175,
+              234,
+              6,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              42,
+              53,
+              6,
+              212,
+              94,
+              10,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              22,
+              28,
+              3,
+              48,
+              15,
+              2,
+              24,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              67,
+              49,
+              23,
+              101,
+              236,
+              0,
+              2,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              41,
+              13,
+              1,
+              194,
+              199,
+              6,
+              17,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              68,
+              50,
+              23,
+              16,
+              96,
+              16,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              40,
+              1,
+              25,
+              10,
+              46,
+              1,
+              11,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              99,
+              19,
+              9,
+              136,
+              179,
+              7,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              98,
+              1,
+              14,
+              74,
+              2,
+              1,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              65,
+              37,
+              7,
+              170,
+              173,
+              1,
+              24,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              100,
+              42,
+              3,
+              175,
+              223,
+              36,
+              15,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              96,
+              2,
+              17,
+              186,
+              17,
+              15,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              64,
+              8,
+              12,
+              123,
+              249,
+              10,
+              9,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              138,
+              50,
+              21,
+              54,
+              92,
+              10,
+              22,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              101,
+              13,
+              21,
+              201,
+              189,
+              8,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              136,
+              1,
+              1,
+              204,
+              158,
+              10,
+              13,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              182,
+              2,
+              18,
+              105,
+              153,
+              12,
+              22,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              181,
+              1,
+              21,
+              85,
+              148,
+              10,
+              18,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              102,
+              44,
+              20,
+              228,
+              145,
+              1,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              70,
+              25,
+              16,
+              192,
+              62,
+              7,
+              22,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              45,
+              13,
+              6,
+              191,
+              115,
+              7,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              71,
+              50,
+              20,
+              195,
+              4,
+              10,
+              2,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              103,
+              19,
+              24,
+              70,
+              153,
+              0,
+              7,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              140,
+              2,
+              2,
+              118,
+              87,
+              28,
+              10,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              46,
+              4,
+              2,
+              208,
+              0,
+              1,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              104,
+              42,
+              17,
+              107,
+              90,
+              37,
+              8,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              105,
+              44,
+              12,
+              109,
+              245,
+              0,
+              2,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              143,
+              50,
+              2,
+              18,
+              34,
+              13,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              141,
+              1,
+              9,
+              47,
+              142,
+              1,
+              15,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              144,
+              42,
+              9,
+              130,
+              253,
+              0,
+              11,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              106,
+              45,
+              16,
+              91,
+              224,
+              7,
+              21,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              188,
+              2,
+              22,
+              160,
+              161,
+              1,
+              15,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              187,
+              1,
+              18,
+              127,
+              34,
+              1,
+              10,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              145,
+              38,
+              9,
+              156,
+              22,
+              7,
+              15,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              189,
+              2,
+              1,
+              150,
+              129,
+              7,
+              25,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              74,
+              25,
+              22,
+              230,
+              157,
+              1,
+              14,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              107,
+              12,
+              24,
+              124,
+              175,
+              4,
+              13,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              48,
+              25,
+              19,
+              137,
+              228,
+              4,
+              12,
+              2
+            ]
+          },
+          {
+            "data": [
+              3,
+              11,
+              0,
+              75,
+              12,
+              21,
+              13,
+              100
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              108,
+              36,
+              13,
+              144,
+              76,
+              10,
+              24,
+              3
+            ]
+          },
+          {
+            "data": [
+              3,
+              0,
+              0,
+              190,
+              2,
+              9,
+              197,
+              85
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              28,
+              12,
+              4,
+              164,
+              2,
+              0,
+              24,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              49,
+              2,
+              2,
+              227,
+              50,
+              8,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              76,
+              22,
+              19,
+              74,
+              104,
+              22,
+              2,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              109,
+              49,
+              0,
+              23,
+              221,
+              24,
+              21,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              77,
+              44,
+              8,
+              188,
+              125,
+              5,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              29,
+              4,
+              18,
+              251,
+              205,
+              4,
+              7,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              147,
+              2,
+              27,
+              139,
+              210,
+              23,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              78,
+              13,
+              27,
+              48,
+              3,
+              10,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              111,
+              50,
+              13,
+              55,
+              251,
+              0,
+              3,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              149,
+              26,
+              15,
+              108,
+              50,
+              4,
+              8,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              148,
+              1,
+              12,
+              108,
+              84,
+              19,
+              19,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              79,
+              4,
+              14,
+              172,
+              1,
+              0,
+              22,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              51,
+              16,
+              13,
+              41,
+              129,
+              4,
+              11,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              11,
+              0,
+              150,
+              37,
+              0,
+              192,
+              117,
+              37,
+              21,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              151,
+              58,
+              2,
+              124,
+              52,
+              10,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              3,
+              11,
+              0,
+              196,
+              51,
+              3,
+              214,
+              224
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              152,
+              13,
+              2,
+              90,
+              102,
+              6,
+              1,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              197,
+              2,
+              8,
+              87,
+              137,
+              7,
+              14,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              248,
+              26,
+              26,
+              91,
+              95,
+              2,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              247,
+              21,
+              20,
+              109,
+              240,
+              1,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              194,
+              21,
+              16,
+              6,
+              55,
+              3,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              49,
+              37,
+              11,
+              125,
+              5,
+              5,
+              24,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              249,
+              44,
+              3,
+              43,
+              69,
+              23,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              48,
+              29,
+              16,
+              143,
+              155,
+              8,
+              15,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              246,
+              24,
+              12,
+              222,
+              90,
+              4,
+              8,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              113,
+              16,
+              9,
+              133,
+              9,
+              8,
+              25,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              153,
+              4,
+              1,
+              151,
+              223,
+              6,
+              7,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              245,
+              1,
+              26,
+              177,
+              111,
+              5,
+              23,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              193,
+              4,
+              2,
+              54,
+              247,
+              7,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              47,
+              9,
+              4,
+              102,
+              131,
+              8,
+              7,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              250,
+              4,
+              2,
+              202,
+              222,
+              8,
+              25,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              51,
+              2,
+              0,
+              102,
+              150,
+              0,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              111,
+              1,
+              22,
+              80,
+              28,
+              22,
+              25,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              113,
+              2,
+              17,
+              209,
+              53,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      "stability": 62,
+      "previousEchoWasQuestEcho": true,
+      "previousEchoHexIndex": 196,
+      "previousEchoIslandType": 3,
+      "hasRerolledOptions": false,
+      "modIndexs": [],
+      "modRemainingDurations": [],
+      "modEffectModifiers": [],
+      "options": [
+        {
+          "zoneIndex": 13,
+          "modIndex": 15,
+          "duration": 3,
+          "effectModifier": 0.0,
+          "questEcho": false
+        },
+        {
+          "zoneIndex": 26,
+          "modIndex": 11,
+          "duration": 2,
+          "effectModifier": 0.0,
+          "questEcho": false
+        }
+      ]
+    },
+    {
+      "timelineID": 5,
+      "difficultyIndex": 0,
+      "depth": 16,
+      "questCompletion": 0,
+      "questBranch": 0,
+      "bossLootDropped": false,
+      "savedEchoWeb": {
+        "version": 0,
+        "corruption": 0,
+        "echoesSinceLastDeath": 0,
+        "gazeOfOrobyss": 0,
+        "islands": [
+          {
+            "data": [
+              6,
+              3,
+              0,
+              0,
+              40,
+              0,
+              127,
+              127
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              4,
+              57,
+              22,
+              175,
+              178,
+              4,
+              4,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              6,
+              41,
+              2,
+              117,
+              126,
+              8,
+              23,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              12,
+              1,
+              11,
+              98,
+              154,
+              1,
+              18,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              13,
+              1,
+              3,
+              71,
+              120,
+              22,
+              14,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              14,
+              2,
+              2,
+              216,
+              86,
+              7,
+              10,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              18,
+              58,
+              22,
+              246,
+              66,
+              4,
+              3,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              16,
+              49,
+              2,
+              141,
+              54,
+              4,
+              15,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              35,
+              21,
+              20,
+              59,
+              247,
+              7,
+              12,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              36,
+              42,
+              15,
+              217,
+              220,
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              7,
+              38,
+              5,
+              53,
+              36,
+              4,
+              15,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              32,
+              1,
+              3,
+              127,
+              184,
+              1,
+              19,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              33,
+              2,
+              13,
+              254,
+              204,
+              9,
+              10,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              58,
+              53,
+              18,
+              7,
+              214,
+              1,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              34,
+              28,
+              25,
+              9,
+              164,
+              2,
+              3,
+              1
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              60,
+              2,
+              1,
+              10,
+              43,
+              2,
+              11,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              19,
+              2,
+              25,
+              83,
+              110,
+              4,
+              21,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              20,
+              2,
+              22,
+              95,
+              0,
+              7,
+              7,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              8,
+              4,
+              10,
+              127,
+              136,
+              23,
+              14,
+              1
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              57,
+              13,
+              0,
+              237,
+              85,
+              4,
+              9,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              87,
+              49,
+              6,
+              222,
+              152,
+              8,
+              23,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              88,
+              42,
+              20,
+              122,
+              190,
+              15,
+              20,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              56,
+              1,
+              1,
+              228,
+              74,
+              4,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              85,
+              5,
+              5,
+              191,
+              249,
+              6,
+              19,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              123,
+              58,
+              0,
+              10,
+              29,
+              14,
+              18,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              122,
+              21,
+              24,
+              221,
+              88,
+              18,
+              15,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              0,
+              89,
+              4,
+              1,
+              49,
+              118,
+              22,
+              15,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              124,
+              6,
+              21,
+              71,
+              164,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              165,
+              2,
+              9,
+              225,
+              234,
+              1,
+              0,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              164,
+              37,
+              2,
+              107,
+              155,
+              4,
+              0,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              163,
+              29,
+              2,
+              84,
+              201,
+              7,
+              21,
+              2
+            ]
+          },
+          {
+            "data": [
+              3,
+              11,
+              0,
+              121,
+              14,
+              17,
+              2,
+              152
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              162,
+              22,
+              8,
+              174,
+              49,
+              4,
+              14,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              210,
+              49,
+              11,
+              1,
+              253,
+              9,
+              9,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              120,
+              28,
+              16,
+              213,
+              240,
+              14,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              161,
+              41,
+              5,
+              25,
+              165,
+              43,
+              10,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              0,
+              160,
+              17,
+              12,
+              51,
+              237,
+              10,
+              8,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              119,
+              28,
+              0,
+              128,
+              195,
+              7,
+              19,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              208,
+              50,
+              21,
+              107,
+              59,
+              16,
+              12,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              209,
+              17,
+              8,
+              181,
+              77,
+              4,
+              12,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              212,
+              2,
+              16,
+              106,
+              204,
+              4,
+              2,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              7,
+              1,
+              3,
+              240,
+              249,
+              10,
+              3,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              1,
+              8,
+              2,
+              3,
+              157,
+              110,
+              19,
+              4,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              84,
+              8,
+              16,
+              15,
+              183,
+              6,
+              10,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              0,
+              118,
+              8,
+              13,
+              50,
+              77,
+              22,
+              5,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              0,
+              159,
+              33,
+              19,
+              227,
+              210,
+              13,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              15,
+              0,
+              206,
+              39,
+              14,
+              144,
+              34,
+              5,
+              18,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              4,
+              17,
+              4,
+              60,
+              249,
+              4,
+              17,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              5,
+              2,
+              4,
+              206,
+              136,
+              23,
+              18,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              6,
+              1,
+              25,
+              52,
+              64,
+              0,
+              5,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              2,
+              0,
+              205,
+              28,
+              5,
+              54,
+              162,
+              8,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              1,
+              3,
+              50,
+              17,
+              31,
+              150,
+              23,
+              9,
+              3
+            ]
+          },
+          {
+            "data": [
+              3,
+              0,
+              0,
+              204,
+              8,
+              5,
+              69,
+              155
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              3,
+              198,
+              238,
+              0,
+              12,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              11,
+              1,
+              62,
+              51,
+              20,
+              55,
+              14,
+              5,
+              8,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              61,
+              53,
+              25,
+              31,
+              50,
+              8,
+              22,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              127,
+              42,
+              5,
+              136,
+              205,
+              24,
+              19,
+              3
+            ]
+          },
+          {
+            "data": [
+              0,
+              2,
+              1,
+              126,
+              19,
+              6,
+              40,
+              40,
+              7,
+              6,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              125,
+              1,
+              10,
+              109,
+              167,
+              1,
+              6,
+              3
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              1,
+              60,
+              8,
+              1,
+              8,
+              85,
+              23,
+              16,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              198,
+              2,
+              9,
+              70,
+              203,
+              21,
+              6,
+              2
+            ]
+          },
+          {
+            "data": [
+              1,
+              0,
+              1,
+              128,
+              4,
+              1,
+              44,
+              186,
+              0,
+              17,
+              2
+            ]
+          },
+          {
+            "data": [
+              0,
+              0,
+              1,
+              196,
+              1,
+              7,
+              66,
+              122,
+              6,
+              14,
+              3
+            ]
+          }
+        ]
+      },
+      "stability": 89,
+      "previousEchoWasQuestEcho": true,
+      "previousEchoHexIndex": 318,
+      "previousEchoIslandType": 0,
+      "hasRerolledOptions": false,
+      "modIndexs": [
+        8
+      ],
+      "modRemainingDurations": [
+        1
+      ],
+      "modEffectModifiers": [
+        0.0
+      ],
+      "options": [
+        {
+          "zoneIndex": 5,
+          "modIndex": 22,
+          "duration": 2,
+          "effectModifier": 0.0,
+          "questEcho": false
+        },
+        {
+          "zoneIndex": 8,
+          "modIndex": 0,
+          "duration": 3,
+          "effectModifier": 0.0,
+          "questEcho": false
+        }
+      ]
+    }
+  ],
+  "timelineCompletion": [
+    {
+      "timelineID": 1,
+      "progress": [
+        1
+      ]
+    },
+    {
+      "timelineID": 2,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 3,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 4,
+      "progress": [
+        1,
+        0
+      ]
+    },
+    {
+      "timelineID": 5,
+      "progress": [
+        0
+      ]
+    }
+  ],
+  "timelineDifficultyCompletion": [
+    {
+      "timelineID": 1,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 2,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 3,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 4,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 5,
+      "progress": [
+        0
+      ]
+    }
+  ],
+  "timelineDifficultyUnlocks": [
+    {
+      "timelineID": 1,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 2,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 3,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 4,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 5,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 6,
+      "progress": [
+        0
+      ]
+    },
+    {
+      "timelineID": 7,
+      "progress": [
+        0
+      ]
+    }
+  ],
+  "currentMonolithRunTimelineID": 0,
+  "currentMonolithRunDifficultyIndex": 0,
+  "currentMonolithRunToSetBack": 0,
+  "currentMonolithRunToSetBackDifficultyIndex": 0,
+  "previousMonolithEchoTimelineID": 2,
+  "previousMonolithEchoDifficultyIndex": 0,
+  "monolithEchoesConquered": 84,
+  "monolithTimelinesConquered": 6,
+  "monolithOptions": [],
+  "activeMonolithMods": [],
+  "monolithDepth": 0,
+  "hasRerolledMonolithOptions": false,
+  "chosenMastery": 2,
+  "clickedUnlockMasteriesButton": false,
+  "currentArenaRunWaves": 0,
+  "previousArenaRunWaves": 0,
+  "arenaTiersCompleted": [],
+  "blessingsDiscovered": [
+    113,
+    10,
+    8,
+    61,
+    67,
+    68,
+    14,
+    23,
+    15,
+    28,
+    36,
+    34,
+    60,
+    19,
+    17,
+    72,
+    86,
+    82
+  ],
+  "dungeonCompletion": [
+    {
+      "dungeonID": 0,
+      "tiersCompleted": [
+        0
+      ]
+    }
+  ],
+  "lanternLuminance": 0.0,
+  "soulEmbers": 0,
+  "_ts": 0,
+  "lastPlayed": "2024-03-14T09:33:13.0069367+01:00",
+  "cycle": 2,
+  "factions": {
+    "0": {
+      "id": 0,
+      "isMember": true,
+      "hasEverJoined": true,
+      "rank": 5,
+      "reputation": 63644,
+      "favor": 4222,
+      "factionSpecific": {
+        "prophecies": [
+          {
+            "prophecyNameID": 1597232986,
+            "prophecyTargetID": -1090798172,
+            "prophecyRewardID": 1078063061,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1416526987,
+            "prophecyTargetID": 993704430,
+            "prophecyRewardID": -1421133585,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 4,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1416526987,
+            "prophecyTargetID": 932515202,
+            "prophecyRewardID": -1981615049,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 2
+          },
+          {
+            "prophecyNameID": 292393620,
+            "prophecyTargetID": 93416683,
+            "prophecyRewardID": 1078063061,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1110422192,
+            "prophecyTargetID": 42048842,
+            "prophecyRewardID": 1078063061,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": -1820208544,
+            "prophecyTargetID": 1851162869,
+            "prophecyRewardID": -703683038,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          }
+        ],
+        "northConstellationID": 3,
+        "southConstellationID": 15,
+        "eastConstellationID": 8,
+        "westConstellationID": 6,
+        "northConstellationProphecies": [
+          {
+            "prophecyNameID": 1416526987,
+            "prophecyTargetID": -173742191,
+            "prophecyRewardID": -1475932819,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1110422192,
+            "prophecyTargetID": 877066161,
+            "prophecyRewardID": 396746472,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": -875766996,
+            "prophecyTargetID": 42048842,
+            "prophecyRewardID": 1443755184,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1110422192,
+            "prophecyTargetID": 993704430,
+            "prophecyRewardID": -1421133585,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1416526987,
+            "prophecyTargetID": -1502788639,
+            "prophecyRewardID": -1981615049,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          }
+        ],
+        "southConstellationProphecies": [
+          {
+            "prophecyNameID": -1820208544,
+            "prophecyTargetID": -840140138,
+            "prophecyRewardID": 1708284617,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1597232986,
+            "prophecyTargetID": 1976107925,
+            "prophecyRewardID": -969349977,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 18820170,
+            "prophecyTargetID": -1848264692,
+            "prophecyRewardID": 2091191728,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1597232986,
+            "prophecyTargetID": 2007181961,
+            "prophecyRewardID": 2091191728,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1567849792,
+            "prophecyTargetID": 2053109475,
+            "prophecyRewardID": -969349977,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          }
+        ],
+        "eastConstellationProphecies": [
+          {
+            "prophecyNameID": -671025150,
+            "prophecyTargetID": -1502788639,
+            "prophecyRewardID": -1055448617,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1567849792,
+            "prophecyTargetID": -1567519345,
+            "prophecyRewardID": -985148392,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": -671025150,
+            "prophecyTargetID": -1940439492,
+            "prophecyRewardID": 1683807860,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 1227290436,
+            "prophecyTargetID": 1508780316,
+            "prophecyRewardID": 1345527467,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": 873344049,
+            "prophecyTargetID": -131777391,
+            "prophecyRewardID": 967142032,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          }
+        ],
+        "westConstellationProphecies": [
+          {
+            "prophecyNameID": 1428606794,
+            "prophecyTargetID": 2053109475,
+            "prophecyRewardID": 1441539151,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": -366781076,
+            "prophecyTargetID": -840140138,
+            "prophecyRewardID": -1550361465,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": -366781076,
+            "prophecyTargetID": -662813756,
+            "prophecyRewardID": -1358186528,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          },
+          {
+            "prophecyNameID": -2118030886,
+            "prophecyTargetID": -1872161605,
+            "prophecyRewardID": 1441705324,
+            "prophecyRewardModID": -981104937,
+            "currentUses": 0,
+            "currentKills": 0
+          }
+        ]
+      }
+    }
+  },
+  "createdAt": null,
+  "id": "2",
+  "seqNo": 7132,
+  "_etag": null,
+  "version": 0
+}

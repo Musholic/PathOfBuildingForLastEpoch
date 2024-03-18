@@ -907,10 +907,7 @@ data.printMissingMinionSkills = function()
 end
 
 -- Item bases
-data.itemBases = { }
-for _, type in pairs(itemTypes) do
-	LoadModule("Data/Bases/"..type, data.itemBases)
-end
+data.itemBases = readJsonFile("Data/Bases/bases.json")
 
 -- Build lists of item bases, separated by type
 data.itemBaseLists = { }
@@ -946,7 +943,7 @@ end
 table.sort(data.itemBaseTypeList)
 
 -- Rare templates
-data.rares = LoadModule("Data/Rares")
+data.rares = {}
 
 data.casterTagCrucibleUniques = {
 	["Atziri's Rule"] = true,
@@ -994,23 +991,4 @@ data.minionTagCrucibleUniques = {
 
 -- Uniques (loaded after version-specific data because reasons)
 data.uniques = { }
-for _, type in pairs(itemTypes) do
-	data.uniques[type] = LoadModule("Data/Uniques/"..type)
-end
-data.uniques['race'] = LoadModule("Data/Uniques/Special/race")
 data.uniqueMods = { }
-data.uniqueMods["Watcher's Eye"] = { }
-local unsortedMods = LoadModule("Data/Uniques/Special/WatchersEye")
-local sortedMods = { }
-for modId in pairs(unsortedMods) do
-	table.insert(sortedMods, modId)
-end
-table.sort(sortedMods)
-for _, modId in ipairs(sortedMods) do
-	table.insert(data.uniqueMods["Watcher's Eye"], {
-		Id = modId,
-		mod = unsortedMods[modId],
-	})
-end
-LoadModule("Data/Uniques/Special/Generated")
-LoadModule("Data/Uniques/Special/New")

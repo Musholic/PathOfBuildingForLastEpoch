@@ -352,24 +352,8 @@ function ImportTabClass:DownloadCharacterList()
     for _, save in ipairs(saves) do
         local saveFile = io.open(localSaveFolder .. "\\" .. save, "r")
         local saveFileContent = saveFile:read("*a")
-        local saveContent = self:ProcessJSON(saveFileContent:sub(6))
-        local classId = saveContent["characterClass"]
-        local className = self.build.latestTree.classes[classId].name
-        local char = {
-            ["league"] = "Cycle",
-            ["name"] = saveContent["characterName"],
-            ["level"] = saveContent["level"],
-            ["class"] = className,
-            ["classId"] = classId,
-            ["items"] = {},
-            ["hashes"] = { }
-        }
-        for passiveIdx, passive in ipairs(saveContent["savedCharacterTree"]["nodeIDs"]) do
-            local nbPoints = saveContent["savedCharacterTree"]["nodePoints"][passiveIdx]
-            for point = 0, nbPoints - 1 do
-                table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
-            end
-        end
+        saveFile:close()
+        local char = self:ReadJsonSaveData(saveFileContent:sub(6))
         table.insert(charList, char)
     end
 
@@ -442,26 +426,49 @@ function ImportTabClass:DownloadPassiveTree()
     self:ImportPassiveTreeAndJewels(charData)
 end
 
+function ImportTabClass:ReadJsonSaveData(saveFileContent)
+    local saveContent = self:ProcessJSON(saveFileContent)
+    local classId = saveContent["characterClass"]
+    local className = self.build.latestTree.classes[classId].name
+    local char = {
+        ["league"] = "Cycle",
+        ["name"] = saveContent["characterName"],
+        ["level"] = saveContent["level"],
+        ["class"] = className,
+        ["classId"] = classId,
+        ["items"] = {},
+        ["hashes"] = { }
+    }
+    for passiveIdx, passive in ipairs(saveContent["savedCharacterTree"]["nodeIDs"]) do
+        local nbPoints = saveContent["savedCharacterTree"]["nodePoints"][passiveIdx]
+        for point = 0, nbPoints - 1 do
+            table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
+        end
+    end
+    for _,itemData in ipairs(saveContent["savedItems"]) do
+        if itemData["containerID"] <= 12 then
+            local item = {
+                ["inventoryId"] = itemData["containerID"],
+            }
+            local baseTypeID = itemData["data"][2]
+            local subTypeID = itemData["data"][3]
+            for itemBaseName, itemBase in pairs(self.build.data.itemBases) do
+                if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
+                    item["name"] = itemBaseName
+                    table.insert(char["items"], item)
+                end
+            end
+        end
+    end
+
+    return char
+end
+
 function ImportTabClass:DownloadItems()
-    self.charImportMode = "IMPORTING"
     self.charImportStatus = "Retrieving character items..."
-    local realm = realmList[self.controls.accountRealm.selIndex]
-    local accountName = self.controls.accountName.buf
-    local sessionID = #self.controls.sessionInput.buf == 32 and self.controls.sessionInput.buf or (main.gameAccounts[accountName] and main.gameAccounts[accountName].sessionID)
     local charSelect = self.controls.charSelect
     local charData = charSelect.list[charSelect.selIndex].char
-    launch:DownloadPage(realm.hostName .. "character-window/get-items?accountName=" .. accountName .. "&character=" .. charData.name .. "&realm=" .. realm.realmCode, function(response, errMsg)
-        self.charImportMode = "SELECTCHAR"
-        if errMsg then
-            self.charImportStatus = colorCodes.NEGATIVE .. "Error importing character data, try again (" .. errMsg:gsub("\n", " ") .. ")"
-            return
-        elseif response.body == "false" then
-            self.charImportStatus = colorCodes.NEGATIVE .. "Failed to retrieve character data, try again."
-            return
-        end
-        self.lastCharacterHash = common.sha1(charData.name)
-        self:ImportItemsAndSkills(response.body)
-    end, sessionID and { header = "Cookie: POESESSID=" .. sessionID })
+    self:ImportItemsAndSkills(charData)
 end
 
 function ImportTabClass:ImportPassiveTreeAndJewels(charData)
@@ -490,15 +497,7 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
     main:SetWindowTitleSubtext(string.format("%s (%s, %s, %s)", self.build.buildName, charData.name, charData.class, charData.league))
 end
 
-function ImportTabClass:ImportItemsAndSkills(json)
-    --local out = io.open("get-items.json", "w")
-    --out:write(json)
-    --out:close()
-    local charItemData, errMsg = self:ProcessJSON(json)
-    if errMsg then
-        self.charImportStatus = colorCodes.NEGATIVE .. "Error processing character data, try again later."
-        return
-    end
+function ImportTabClass:ImportItemsAndSkills(charData)
     if self.controls.charImportItemsClearItems.state then
         for _, slot in pairs(self.build.itemsTab.slots) do
             if slot.selItemId ~= 0 and not slot.nodeId then
@@ -507,86 +506,25 @@ function ImportTabClass:ImportItemsAndSkills(json)
         end
     end
 
-    local mainSkillEmpty = #self.build.skillsTab.socketGroupList == 0
-    local skillOrder
-    if self.controls.charImportItemsClearSkills.state then
-        skillOrder = { }
-        for _, socketGroup in ipairs(self.build.skillsTab.socketGroupList) do
-            for _, gem in ipairs(socketGroup.gemList) do
-                if gem.grantedEffect and not gem.grantedEffect.support then
-                    t_insert(skillOrder, gem.grantedEffect.name)
-                end
-            end
-        end
-        wipeTable(self.build.skillsTab.socketGroupList)
-    end
     self.charImportStatus = colorCodes.POSITIVE .. "Items and skills successfully imported."
     --ConPrintTable(charItemData)
-    for _, itemData in pairs(charItemData.items) do
+    for _, itemData in pairs(charData.items) do
         self:ImportItem(itemData)
-    end
-    if skillOrder then
-        local groupOrder = { }
-        for index, socketGroup in ipairs(self.build.skillsTab.socketGroupList) do
-            groupOrder[socketGroup] = index
-        end
-        table.sort(self.build.skillsTab.socketGroupList, function(a, b)
-            local orderA
-            for _, gem in ipairs(a.gemList) do
-                if gem.grantedEffect and not gem.grantedEffect.support then
-                    local i = isValueInArray(skillOrder, gem.grantedEffect.name)
-                    if i and (not orderA or i < orderA) then
-                        orderA = i
-                    end
-                end
-            end
-            local orderB
-            for _, gem in ipairs(b.gemList) do
-                if gem.grantedEffect and not gem.grantedEffect.support then
-                    local i = isValueInArray(skillOrder, gem.grantedEffect.name)
-                    if i and (not orderB or i < orderB) then
-                        orderB = i
-                    end
-                end
-            end
-            if orderA and orderB then
-                if orderA ~= orderB then
-                    return orderA < orderB
-                else
-                    return groupOrder[a] < groupOrder[b]
-                end
-            elseif not orderA and not orderB then
-                return groupOrder[a] < groupOrder[b]
-            else
-                return orderA
-            end
-        end)
-    end
-    if mainSkillEmpty then
-        self.build.mainSocketGroup = self:GuessMainSocketGroup()
     end
     self.build.itemsTab:PopulateSlots()
     self.build.itemsTab:AddUndoState()
-    self.build.skillsTab:AddUndoState()
-    self.build.characterLevel = charItemData.character.level
+    self.build.characterLevel = charData.level
     self.build.configTab:UpdateLevel()
-    self.build.controls.characterLevel:SetText(charItemData.character.level)
+    self.build.controls.characterLevel:SetText(charData.level)
     self.build.buildFlag = true
-    return charItemData.character -- For the wrapper
+    return charData -- For the wrapper
 end
 
-local rarityMap = { [0] = "NORMAL", "MAGIC", "RARE", "UNIQUE", [9] = "RELIC", [10] = "RELIC" }
-local slotMap = { ["Weapon"] = "Weapon 1", ["Offhand"] = "Weapon 2", ["Weapon2"] = "Weapon 1 Swap", ["Offhand2"] = "Weapon 2 Swap", ["Helm"] = "Helmet", ["BodyArmour"] = "Body Armour", ["Gloves"] = "Gloves", ["Boots"] = "Boots", ["Amulet"] = "Amulet", ["Ring"] = "Ring 1", ["Ring2"] = "Ring 2", ["Belt"] = "Belt" }
+local slotMap = { [4] = "Weapon 1", [5] = "Weapon 2", [2] = "Helmet", [3] = "Body Armour", [6] = "Gloves", [8] = "Boots", [11] = "Amulet", [9] = "Ring 1", [10] = "Ring 2", [7] = "Belt" }
 
 function ImportTabClass:ImportItem(itemData, slotName)
     if not slotName then
-        if itemData.inventoryId == "PassiveJewels" then
-            slotName = "Jewel " .. self.build.latestTree.jewelSlots[itemData.x + 1]
-        elseif itemData.inventoryId == "Flask" then
-            slotName = "Flask " .. (itemData.x + 1)
-        elseif not (self.controls.charImportItemsIgnoreWeaponSwap.state and (itemData.inventoryId == "Weapon2" or itemData.inventoryId == "Offhand2")) then
-            slotName = slotMap[itemData.inventoryId]
-        end
+        slotName = slotMap[itemData.inventoryId]
     end
     if not slotName then
         -- Ignore any items that won't go into known slots
@@ -596,69 +534,25 @@ function ImportTabClass:ImportItem(itemData, slotName)
     local item = new("Item")
 
     -- Determine rarity, display name and base type of the item
-    item.rarity = rarityMap[itemData.frameType]
+    item.rarity = "RARE"
     if #itemData.name > 0 then
-        item.title = sanitiseText(itemData.name)
-        item.baseName = sanitiseText(itemData.typeLine):gsub("Synthesised ", "")
-        item.name = item.title .. ", " .. item.baseName
-        if item.baseName == "Two-Toned Boots" then
-            -- Hack for Two-Toned Boots
-            item.baseName = "Two-Toned Boots (Armour/Energy Shield)"
-        end
+        item.title = itemData.name
+        item.baseName = itemData.name
+        item.name = itemData.name
         item.base = self.build.data.itemBases[item.baseName]
         if item.base then
             item.type = item.base.type
         else
             ConPrintf("Unrecognised base in imported item: %s", item.baseName)
         end
-    else
-        item.name = sanitiseText(itemData.typeLine)
-        if item.name:match("Energy Blade") then
-            local oneHanded = false
-            for _, p in ipairs(itemData.properties) do
-                if self.build.data.weaponTypeInfo[p.name] and self.build.data.weaponTypeInfo[p.name].oneHand then
-                    oneHanded = true
-                    break
-                end
-            end
-            item.name = oneHanded and "Energy Blade One Handed" or "Energy Blade Two Handed"
-            item.rarity = "NORMAL"
-            itemData.implicitMods = { }
-            itemData.explicitMods = { }
-        end
-        for baseName, baseData in pairs(self.build.data.itemBases) do
-            local s, e = item.name:find(baseName, 1, true)
-            if s then
-                item.baseName = baseName
-                item.namePrefix = item.name:sub(1, s - 1)
-                item.nameSuffix = item.name:sub(e + 1)
-                item.type = baseData.type
-                break
-            end
-        end
-        if not item.baseName then
-            local s, e = item.name:find("Two-Toned Boots", 1, true)
-            if s then
-                -- Hack for Two-Toned Boots
-                item.baseName = "Two-Toned Boots (Armour/Energy Shield)"
-                item.namePrefix = item.name:sub(1, s - 1)
-                item.nameSuffix = item.name:sub(e + 1)
-                item.type = "Boots"
-            end
-        end
-        item.base = self.build.data.itemBases[item.baseName]
     end
     if not item.base or not item.rarity then
         return
     end
 
     -- Import item data
-    item.uniqueID = itemData.id
-    if itemData.influences then
-        for _, curInfluenceInfo in ipairs(influenceInfo) do
-            item[curInfluenceInfo.key] = itemData.influences[curInfluenceInfo.display:lower()]
-        end
-    end
+    item.uniqueID = itemData.inventoryId
+    itemData.ilvl = 0
     if itemData.ilvl > 0 then
         item.itemLevel = itemData.ilvl
     end
@@ -699,21 +593,6 @@ function ImportTabClass:ImportItem(itemData, slotName)
     item.corrupted = itemData.corrupted
     item.fractured = itemData.fractured
     item.synthesised = itemData.synthesised
-    if itemData.sockets and itemData.sockets[1] then
-        item.sockets = { }
-        for i, socket in pairs(itemData.sockets) do
-            if socket.sColour == "A" then
-                item.abyssalSocketCount = item.abyssalSocketCount or 0 + 1
-            end
-            item.sockets[i] = { group = socket.group, color = socket.sColour }
-        end
-        if item.abyssalSocketCount and item.abyssalSocketCount > 0 and item.name:match("Energy Blade") then
-            t_insert(itemData.explicitMods, "Has " .. item.abyssalSocketCount .. " Abyssal Sockets")
-        end
-    end
-    if itemData.socketedItems then
-        self:ImportSocketedItems(item, itemData.socketedItems, slotName)
-    end
     if itemData.requirements and (not itemData.socketedItems or not itemData.socketedItems[1]) then
         -- Requirements cannot be trusted if there are socketed gems, as they may override the item's natural requirements
         item.requirements = { }
@@ -731,22 +610,6 @@ function ImportTabClass:ImportItem(itemData, slotName)
     item.implicitModLines = { }
     item.explicitModLines = { }
     item.crucibleModLines = { }
-    if itemData.enchantMods then
-        for _, line in ipairs(itemData.enchantMods) do
-            for line in line:gmatch("[^\n]+") do
-                local modList, extra = modLib.parseMod(line)
-                t_insert(item.enchantModLines, { line = line, extra = extra, mods = modList or { }, crafted = true })
-            end
-        end
-    end
-    if itemData.scourgeMods then
-        for _, line in ipairs(itemData.scourgeMods) do
-            for line in line:gmatch("[^\n]+") do
-                local modList, extra = modLib.parseMod(line)
-                t_insert(item.scourgeModLines, { line = line, extra = extra, mods = modList or { }, scourge = true })
-            end
-        end
-    end
     if itemData.implicitMods then
         for _, line in ipairs(itemData.implicitMods) do
             for line in line:gmatch("[^\n]+") do
@@ -755,59 +618,11 @@ function ImportTabClass:ImportItem(itemData, slotName)
             end
         end
     end
-    if itemData.fracturedMods then
-        for _, line in ipairs(itemData.fracturedMods) do
-            for line in line:gmatch("[^\n]+") do
-                local modList, extra = modLib.parseMod(line)
-                t_insert(item.explicitModLines, { line = line, extra = extra, mods = modList or { }, fractured = true })
-            end
-        end
-    end
     if itemData.explicitMods then
         for _, line in ipairs(itemData.explicitMods) do
             for line in line:gmatch("[^\n]+") do
                 local modList, extra = modLib.parseMod(line)
                 t_insert(item.explicitModLines, { line = line, extra = extra, mods = modList or { } })
-            end
-        end
-    end
-    if itemData.crucibleMods then
-        for _, line in ipairs(itemData.crucibleMods) do
-            for line in line:gmatch("[^\n]+") do
-                local modList, extra = modLib.parseMod(line)
-                t_insert(item.crucibleModLines, { line = line, extra = extra, mods = modList or { }, crucible = true })
-            end
-        end
-    end
-    if itemData.craftedMods then
-        for _, line in ipairs(itemData.craftedMods) do
-            for line in line:gmatch("[^\n]+") do
-                local modList, extra = modLib.parseMod(line)
-                t_insert(item.explicitModLines, { line = line, extra = extra, mods = modList or { }, crafted = true })
-            end
-        end
-    end
-    -- Sometimes flavour text has actual mods that PoB cares about
-    -- Right now, the only known one is "This item can be anointed by Cassia"
-    if itemData.flavourText then
-        for _, line in ipairs(itemData.flavourText) do
-            for line in line:gmatch("[^\n]+") do
-                -- Remove any text outside of curly braces, if they exist.
-                -- This fixes lines such as:
-                --   "<default>{This item can be anointed by Cassia}"
-                -- To now be:
-                --   "This item can be anointed by Cassia"
-                local startBracket = line:find("{")
-                local endBracket = line:find("}")
-                if startBracket and endBracket and endBracket > startBracket then
-                    line = line:sub(startBracket + 1, endBracket - 1)
-                end
-
-                -- If the line parses, then it should be included as an explicit mod
-                local modList, extra = modLib.parseMod(line)
-                if modList then
-                    t_insert(item.explicitModLines, { line = line, extra = extra, mods = modList or { } })
-                end
             end
         end
     end

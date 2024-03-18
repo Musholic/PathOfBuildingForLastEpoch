@@ -193,11 +193,10 @@ function loadBuildFromXML(xmlText, name)
 	mainObject.main:SetMode("BUILD", false, name or "", xmlText)
 	runCallback("OnFrame")
 end
-function loadBuildFromJSON(getItemsJSON, getPassiveSkillsJSON)
+function loadBuildFromJSON(saveFileContent)
 	mainObject.main:SetMode("BUILD", false, "")
 	runCallback("OnFrame")
-	local charData = build.importTab:ImportItemsAndSkills(getItemsJSON)
-	build.importTab:ImportPassiveTreeAndJewels(getPassiveSkillsJSON, charData)
-	-- You now have a build without a correct main skill selected, or any configuration options set
-	-- Good luck!
+	local charData = build.importTab:ReadJsonSaveData(saveFileContent)
+	build.importTab:ImportPassiveTreeAndJewels(charData)
+	build.importTab:ImportItemsAndSkills(charData)
 end

@@ -18,7 +18,7 @@ end
 expose("test all builds #builds", function()
     local buildList = fetchBuilds("../spec/TestBuilds")
     for buildName, testBuild in pairs(buildList) do
-        loadBuildFromXML(testBuild.xml, buildName)
+        loadBuildFromJSON(testBuild.json)
         testBuild.result = {}
         for key, value in pairs(testBuild.output) do
             -- Have to assign it to a temporary table here, as the tests will run later, when the 'build' isn't changing

@@ -85,12 +85,7 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 	end
 
 	-- Add json data from game files extracts
-	local treeJsonFile = io.open("TreeData/"..treeVersion.."/tree.json", "r")
-	if treeFile then
-		treeText = "return " .. jsonToLua(treeJsonFile:read("*a"))
-		treeJsonFile:close()
-	end
-	for k, v in pairs(assert(loadstring(treeText))()) do
+	for k, v in pairs(readJsonFile("TreeData/"..treeVersion.."/tree.json")) do
 		self[k] = v
 	end
 
@@ -413,9 +408,6 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			end
 		end
 	end
-
-	-- Late load the Generated data so we can take advantage of a tree existing
-	buildTreeDependentUniques(self)
 end)
 
 function PassiveTreeClass:ProcessStats(node, startIndex)

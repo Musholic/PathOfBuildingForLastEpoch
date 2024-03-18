@@ -1860,32 +1860,7 @@ function ItemsTabClass:IsItemValidForSlot(item, slotName, itemSet)
 	if not slotType then
 		slotType = slotName
 	end
-	if slotType == "Jewel" then
-		-- Special checks for jewel sockets
-		local node = self.build.spec.tree.nodes[tonumber(slotId)] or self.build.spec.nodes[tonumber(slotId)]
-		if not node or item.type ~= "Jewel" then
-			return false
-		elseif node.charmSocket or item.base.subType == "Charm" then
-			-- Charm sockets can only have charms, and charms can only be in charm sockets
-			if node.charmSocket and item.base.subType == "Charm" then
-				return true
-			end
-			return false
-		elseif item.clusterJewel and not node.expansionJewel then
-			-- Don't allow cluster jewels in inner sockets
-			return false
-		elseif not node.expansionJewel or node.expansionJewel.size == 2 then
-			-- Outer sockets can fit anything
-			return true
-		else
-			-- Only allow jewels that fit in this socket
-			return not item.clusterJewel or item.clusterJewel.sizeIndex <= node.expansionJewel.size
-		end
-	elseif item.type == slotType then
-		return true
-	elseif item.type == "Tincture" and slotType == "Flask" then
-		return true
-	elseif item.type == "Jewel" and item.base.subType == "Abyss" and slotName:match("Abyssal Socket") then
+	if item.type == slotType then
 		return true
 	elseif slotName == "Weapon 1" or slotName == "Weapon 1 Swap" or slotName == "Weapon" then
 		return item.base.weapon ~= nil
@@ -1893,11 +1868,11 @@ function ItemsTabClass:IsItemValidForSlot(item, slotName, itemSet)
 		local weapon1Sel = itemSet[slotName == "Weapon 2" and "Weapon 1" or "Weapon 1 Swap"].selItemId or 0
 		local weapon1Type = self.items[weapon1Sel] and self.items[weapon1Sel].base.type or "None"
 		if weapon1Type == "None" then
-			return item.type == "Shield" or (self.build.data.weaponTypeInfo[item.type] and self.build.data.weaponTypeInfo[item.type].oneHand)
+			return item.type == "Shield" or item.type == "Off-Hand Catalyst" or (self.build.data.weaponTypeInfo[item.type] and self.build.data.weaponTypeInfo[item.type].oneHand)
 		elseif weapon1Type == "Bow" then
 			return item.type == "Quiver"
 		elseif self.build.data.weaponTypeInfo[weapon1Type].oneHand then
-			return item.type == "Shield" or (self.build.data.weaponTypeInfo[item.type] and self.build.data.weaponTypeInfo[item.type].oneHand and ((weapon1Type == "Wand" and item.type == "Wand") or (weapon1Type ~= "Wand" and item.type ~= "Wand")))
+			return item.type == "Shield" or item.type == "Off-Hand Catalyst" or (self.build.data.weaponTypeInfo[item.type] and self.build.data.weaponTypeInfo[item.type].oneHand)
 		end
 	end
 end

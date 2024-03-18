@@ -330,6 +330,25 @@ function jsonToLua(json)
 		:gsub("\\u(%x%x%x%x)",function(hex) return codePointToUTF8(tonumber(hex,16)) end)
 end
 
+function readJsonFile(fileName)
+	local jsonFile = io.open(fileName, "r")
+	local luaFileContent = ""
+	if jsonFile then
+		luaFileContent = "return " .. jsonToLua(jsonFile:read("*a"))
+		jsonFile:close()
+	end
+	local func, errMsg = loadstring(luaFileContent)
+	if errMsg then
+		error(errMsg)
+	end
+	setfenv(func, { }) -- Sandbox the function just in case
+	local data = func()
+	if type(data) ~= "table" then
+		error("Return type is not a table, got " .. type(data))
+	end
+	return data
+end
+
 -- Check if mouse is currently inside area defined by region.x, region.y, region.width, region.height
 function isMouseInRegion(region)
 	local cursorX, cursorY = GetCursorPos()

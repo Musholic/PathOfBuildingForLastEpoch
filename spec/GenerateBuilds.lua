@@ -8,7 +8,7 @@ local function fetchBuilds(path, buildList)
             if attr.mode == "directory" then
                 fetchBuilds(f, buildList)
             else
-                if file:match("^.+(%..+)$") == ".xml" then
+                if file:match("^.+(%..+)$") == ".json" then
                     local fileHnd, errMsg = io.open(f, "r")
                     if not fileHnd then
                         return nil, errMsg
@@ -43,9 +43,10 @@ end
 
 local buildList = fetchBuilds("../spec/TestBuilds")
 for filename, testBuild in pairs(buildList) do
-    loadBuildFromXML(testBuild)
+    print("Loading build " .. filename)
+    loadBuildFromJSON(testBuild)
     local fileHnd, errMsg = io.open(filename:gsub("^(.+)%..+$", "%1.lua"), "w+")
-    fileHnd:write("return {\n   xml = [[")
+    fileHnd:write("return {\n   json = [[")
     fileHnd:write(testBuild)
     fileHnd:write("]],\n    ")
     fileHnd:write(buildTable("output", build.calcsTab.mainOutput) .. "\n}")
