@@ -9,10 +9,18 @@ modList = {}
 
 for affixData in data["singleAffixes"]:
     for tier, tierData in enumerate(affixData["tiers"]):
-        valueRange = "+(" + str(tierData["minRoll"]) + "-" + str(tierData["maxRoll"]) + ") "
+        minRoll = tierData["minRoll"]
+        maxRoll = tierData["maxRoll"]
+        isPercentage = isinstance(minRoll, float)
+        if isPercentage:
+            minRoll = int(100 * minRoll)
+            maxRoll = int(100 * maxRoll)
+        valueRange = "+(" + str(minRoll) + "-" + str(maxRoll) + ")"
+        if isPercentage:
+            valueRange += "%"
         modData = {
             "affix": affixData["affixTitle"],
-            "value": valueRange + affixData["affixName"]
+            "value": valueRange + " " + affixData["affixName"]
         }
         if affixData["rollsOn"]:
             modData["type"] = "Prefix"
@@ -33,7 +41,8 @@ modList = {}
 
 for affixData in data["propertyInfoList"]:
     modData = {
-        "value": affixData["propertyName"]
+        "value": affixData["propertyName"],
+        "isPercentage": bool(affixData["displayAddedAsPercentage"])
     }
     modList[str(affixData["property"])] = modData
 

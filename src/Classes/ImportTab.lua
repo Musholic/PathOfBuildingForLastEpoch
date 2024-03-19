@@ -459,7 +459,17 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                     for i,implicit in ipairs(itemBase.implicits) do
                         local range = itemData["data"][5 + i ] / 256.0
                         local modData = data.implicitItemMods[implicit.property]
-                        local mod = "+(" .. implicit.min .. "-" .. implicit.max .. ") " .. modData.value
+                        local min = implicit.min
+                        local max = implicit.max
+                        if modData.isPercentage then
+                            min = min * 100
+                            max = max * 100
+                        end
+                        local valueRange = "+(" .. min .. "-" .. max .. ")"
+                        if modData.isPercentage then
+                            valueRange = valueRange .. "%"
+                        end
+                        local mod =  valueRange .. " " .. modData.value
                         mod = itemLib.applyRange(mod, range, 1)
                         table.insert(item.implicitMods, mod)
                     end

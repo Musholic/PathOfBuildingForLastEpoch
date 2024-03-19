@@ -1,317 +1,422 @@
 {
     "0": {
-        "value": "Damage"
+        "value": "Damage",
+        "isPercentage": false
     },
     "1": {
-        "value": "Ailment Chance"
+        "value": "Ailment Chance",
+        "isPercentage": true
     },
     "2": {
-        "value": "Attack Speed"
+        "value": "Attack Speed",
+        "isPercentage": false
     },
     "3": {
-        "value": "Cast Speed"
+        "value": "Cast Speed",
+        "isPercentage": false
     },
     "4": {
-        "value": "Critical Strike Chance"
+        "value": "Critical Strike Chance",
+        "isPercentage": true
     },
     "5": {
-        "value": "Critical Strike Multiplier"
+        "value": "Critical Strike Multiplier",
+        "isPercentage": true
     },
     "6": {
-        "value": "Damage Taken"
+        "value": "Damage Taken",
+        "isPercentage": false
     },
     "7": {
-        "value": "Health"
+        "value": "Health",
+        "isPercentage": false
     },
     "8": {
-        "value": "Mana"
+        "value": "Mana",
+        "isPercentage": false
     },
     "9": {
-        "value": "Movement Speed"
+        "value": "Movement Speed",
+        "isPercentage": false
     },
     "10": {
-        "value": "Armor"
+        "value": "Armor",
+        "isPercentage": false
     },
     "11": {
-        "value": "Dodge Rating"
+        "value": "Dodge Rating",
+        "isPercentage": false
     },
     "12": {
-        "value": "Stun Avoidance"
+        "value": "Stun Avoidance",
+        "isPercentage": false
     },
     "13": {
-        "value": "Fire Resistance"
+        "value": "Fire Resistance",
+        "isPercentage": true
     },
     "14": {
-        "value": "Cold Resistance"
+        "value": "Cold Resistance",
+        "isPercentage": true
     },
     "15": {
-        "value": "Lightning Resistance"
+        "value": "Lightning Resistance",
+        "isPercentage": true
     },
     "16": {
-        "value": "Ward Retention"
+        "value": "Ward Retention",
+        "isPercentage": true
     },
     "17": {
-        "value": "Health Regen"
+        "value": "Health Regen",
+        "isPercentage": false
     },
     "18": {
-        "value": "Mana Regen"
+        "value": "Mana Regen",
+        "isPercentage": false
     },
     "19": {
-        "value": "Strength"
+        "value": "Strength",
+        "isPercentage": false
     },
     "20": {
-        "value": "Vitality"
+        "value": "Vitality",
+        "isPercentage": false
     },
     "21": {
-        "value": "Intelligence"
+        "value": "Intelligence",
+        "isPercentage": false
     },
     "22": {
-        "value": "Dexterity"
+        "value": "Dexterity",
+        "isPercentage": false
     },
     "23": {
-        "value": "Attunement"
+        "value": "Attunement",
+        "isPercentage": false
     },
     "24": {
-        "value": "Damage Dealt to Mana Before Health"
+        "value": "Damage Dealt to Mana Before Health",
+        "isPercentage": false
     },
     "25": {
-        "value": "Channel Cost"
+        "value": "Channel Cost",
+        "isPercentage": false
     },
     "26": {
-        "value": "Void Resistance"
+        "value": "Void Resistance",
+        "isPercentage": true
     },
     "27": {
-        "value": "Necrotic Resistance"
+        "value": "Necrotic Resistance",
+        "isPercentage": true
     },
     "28": {
-        "value": "Poison Resistance"
+        "value": "Poison Resistance",
+        "isPercentage": true
     },
     "29": {
-        "value": "Block Chance"
+        "value": "Block Chance",
+        "isPercentage": true
     },
     "30": {
-        "value": "All Resistances"
+        "value": "All Resistances",
+        "isPercentage": true
     },
     "31": {
-        "value": "Damage Taken as Physical"
+        "value": "Damage Taken as Physical",
+        "isPercentage": true
     },
     "32": {
-        "value": "Damage Taken as Fire"
+        "value": "Damage Taken as Fire",
+        "isPercentage": true
     },
     "33": {
-        "value": "Damage Taken as Cold"
+        "value": "Damage Taken as Cold",
+        "isPercentage": true
     },
     "34": {
-        "value": "Damage Taken as Lightning"
+        "value": "Damage Taken as Lightning",
+        "isPercentage": true
     },
     "35": {
-        "value": "Damage Taken as Necrotic"
+        "value": "Damage Taken as Necrotic",
+        "isPercentage": true
     },
     "36": {
-        "value": "Damage Taken as Void"
+        "value": "Damage Taken as Void",
+        "isPercentage": true
     },
     "37": {
-        "value": "Damage Taken as Poison"
+        "value": "Damage Taken as Poison",
+        "isPercentage": true
     },
     "38": {
-        "value": "Health Gain"
+        "value": "Health Gain",
+        "isPercentage": false
     },
     "39": {
-        "value": "Ward Gain"
+        "value": "Ward Gain",
+        "isPercentage": false
     },
     "40": {
-        "value": "Mana Gain"
+        "value": "Mana Gain",
+        "isPercentage": false
     },
     "41": {
-        "value": "Adaptive Spell Damage"
+        "value": "Adaptive Spell Damage",
+        "isPercentage": false
     },
     "42": {
-        "value": "Increased Ailment Duration"
+        "value": "Increased Ailment Duration",
+        "isPercentage": true
     },
     "43": {
-        "value": "Increased Ailment Effect"
+        "value": "Increased Ailment Effect",
+        "isPercentage": true
     },
     "44": {
-        "value": "Increased Healing Effectiveness"
+        "value": "Increased Healing Effectiveness",
+        "isPercentage": true
     },
     "45": {
-        "value": "Increased Stun Chance"
+        "value": "Increased Stun Chance",
+        "isPercentage": true
     },
     "46": {
-        "value": "All Attributes"
+        "value": "All Attributes",
+        "isPercentage": false
     },
     "47": {
-        "value": "Increased Chance To Find Potions"
+        "value": "Increased Chance To Find Potions",
+        "isPercentage": true
     },
     "48": {
-        "value": "Health Gained on Potion Use"
+        "value": "Health Gained on Potion Use",
+        "isPercentage": false
     },
     "49": {
-        "value": "Potion Slots"
+        "value": "Potion Slots",
+        "isPercentage": false
     },
     "50": {
-        "value": "Chance to gain Haste for 1 second on Hit"
+        "value": "Chance to gain Haste for 1 second on Hit",
+        "isPercentage": true
     },
     "51": {
-        "value": "Damage Leeched as Health"
+        "value": "Damage Leeched as Health",
+        "isPercentage": true
     },
     "52": {
-        "value": "Elemental Resistance"
+        "value": "Elemental Resistance",
+        "isPercentage": true
     },
     "53": {
-        "value": "Block Effectiveness"
+        "value": "Block Effectiveness",
+        "isPercentage": false
     },
     "55": {
-        "value": "Increased Stun Immunity Duration"
+        "value": "Increased Stun Immunity Duration",
+        "isPercentage": true
     },
     "56": {
-        "value": "Stun Immunity"
+        "value": "Stun Immunity",
+        "isPercentage": false
     },
     "58": {
-        "value": "Dark Protection (deprecated)"
+        "value": "Dark Protection (deprecated)",
+        "isPercentage": false
     },
     "59": {
-        "value": "Penetration"
+        "value": "Penetration",
+        "isPercentage": true
     },
     "60": {
-        "value": "Current Health Drained per Second"
+        "value": "Current Health Drained per Second",
+        "isPercentage": true
     },
     "61": {
-        "value": "Maximum Companions"
+        "value": "Maximum Companions",
+        "isPercentage": false
     },
     "62": {
-        "value": "Chance to receive a Glancing Blow when hit"
+        "value": "Chance to receive a Glancing Blow when hit",
+        "isPercentage": true
     },
     "64": {
-        "value": "Physical Resistance"
+        "value": "Physical Resistance",
+        "isPercentage": true
     },
     "65": {
-        "value": "Cull on Hit"
+        "value": "Cull on Hit",
+        "isPercentage": true
     },
     "66": {
-        "value": "Mana Cost"
+        "value": "Mana Cost",
+        "isPercentage": false
     },
     "67": {
-        "value": "Freeze Rate Multiplier"
+        "value": "Freeze Rate Multiplier",
+        "isPercentage": true
     },
     "69": {
-        "value": "Mana Efficiency"
+        "value": "Mana Efficiency",
+        "isPercentage": true
     },
     "70": {
-        "value": "Increased Cooldown Recovery Speed"
+        "value": "Increased Cooldown Recovery Speed",
+        "isPercentage": true
     },
     "71": {
-        "value": "Duration of Stuns Received"
+        "value": "Duration of Stuns Received",
+        "isPercentage": false
     },
     "73": {
-        "value": "Chance to Chill Attackers"
+        "value": "Chance to Chill Attackers",
+        "isPercentage": true
     },
     "74": {
-        "value": "Chance to Slow Attackers"
+        "value": "Chance to Slow Attackers",
+        "isPercentage": true
     },
     "75": {
-        "value": "Endurance"
+        "value": "Endurance",
+        "isPercentage": true
     },
     "76": {
-        "value": "Endurance Threshold"
+        "value": "Endurance Threshold",
+        "isPercentage": false
     },
     "85": {
-        "value": "Damage Reflected to Attackers"
+        "value": "Damage Reflected to Attackers",
+        "isPercentage": false
     },
     "86": {
-        "value": "Damage Reflected"
+        "value": "Damage Reflected",
+        "isPercentage": true
     },
     "87": {
-        "value": "Chance to Shock Attackers"
+        "value": "Chance to Shock Attackers",
+        "isPercentage": true
     },
     "88": {
-        "value": "Level of Skills"
+        "value": "Level of Skills",
+        "isPercentage": false
     },
     "89": {
-        "value": "Critical Strike Avoidance"
+        "value": "Critical Strike Avoidance",
+        "isPercentage": true
     },
     "90": {
-        "value": "Potion Health Converted to Ward"
+        "value": "Potion Health Converted to Ward",
+        "isPercentage": true
     },
     "91": {
-        "value": "Ward Gained on Potion Use"
+        "value": "Ward Gained on Potion Use",
+        "isPercentage": false
     },
     "92": {
-        "value": "Ward per Second"
+        "value": "Ward per Second",
+        "isPercentage": false
     },
     "93": {
-        "value": "Overkill Damage Leeched as Health"
+        "value": "Overkill Damage Leeched as Health",
+        "isPercentage": true
     },
     "94": {
-        "value": "Damage Dealt to Mana Before Health or Ward"
+        "value": "Damage Dealt to Mana Before Health or Ward",
+        "isPercentage": false
     },
     "95": {
-        "value": "Increased Stun Duration"
+        "value": "Increased Stun Duration",
+        "isPercentage": true
     },
     "96": {
-        "value": "Maximum Health gained as Endurance Threshold"
+        "value": "Maximum Health gained as Endurance Threshold",
+        "isPercentage": true
     },
     "97": {
-        "value": "Chance to Gain 30 Ward when Hit"
+        "value": "Chance to Gain 30 Ward when Hit",
+        "isPercentage": true
     },
     "99": {
-        "value": "Mana Spent Gained as Ward"
+        "value": "Mana Spent Gained as Ward",
+        "isPercentage": true
     },
     "100": {
-        "value": "Ailment Conversion"
+        "value": "Ailment Conversion",
+        "isPercentage": true
     },
     "102": {
-        "value": "Increased Leech Rate"
+        "value": "Increased Leech Rate",
+        "isPercentage": true
     },
     "103": {
-        "value": "Freeze Rate per stack of Chill"
+        "value": "Freeze Rate per stack of Chill",
+        "isPercentage": true
     },
     "104": {
-        "value": "Increased Drop Rate"
+        "value": "Increased Drop Rate",
+        "isPercentage": true
     },
     "105": {
-        "value": "Increased Experience"
+        "value": "Increased Experience",
+        "isPercentage": true
     },
     "106": {
-        "value": "Physical and Void Resistance"
+        "value": "Physical and Void Resistance",
+        "isPercentage": true
     },
     "107": {
-        "value": "Necrotic and Poison Resistance"
+        "value": "Necrotic and Poison Resistance",
+        "isPercentage": true
     },
     "110": {
-        "value": "Damage Taken From Nearby Enemies"
+        "value": "Damage Taken From Nearby Enemies",
+        "isPercentage": false
     },
     "111": {
-        "value": "Block Chance Against Distant Enemies"
+        "value": "Block Chance Against Distant Enemies",
+        "isPercentage": true
     },
     "112": {
-        "value": "Chance to Receive a Critical Strike"
+        "value": "Chance to Receive a Critical Strike",
+        "isPercentage": true
     },
     "113": {
-        "value": "Damage Taken While Moving"
+        "value": "Damage Taken While Moving",
+        "isPercentage": false
     },
     "114": {
-        "value": "reduced Bonus Damage Taken from Critical Strikes"
+        "value": "reduced Bonus Damage Taken from Critical Strikes",
+        "isPercentage": true
     },
     "115": {
-        "value": "More Damage Per Stack"
+        "value": "More Damage Per Stack",
+        "isPercentage": true
     },
     "116": {
-        "value": "increased Area for Area Skills"
+        "value": "increased Area for Area Skills",
+        "isPercentage": true
     },
     "117": {
-        "value": "Global Conditional Damage"
+        "value": "Global Conditional Damage",
+        "isPercentage": false
     },
     "118": {
-        "value": "Armor Mitigation also applies to Damage over Time"
+        "value": "Armor Mitigation also applies to Damage over Time",
+        "isPercentage": false
     },
     "119": {
-        "value": "Ward Decay Threshold"
+        "value": "Ward Decay Threshold",
+        "isPercentage": false
     },
     "121": {
-        "value": "Parry Chance"
+        "value": "Parry Chance",
+        "isPercentage": true
     },
     "122": {
-        "value": "Lens"
+        "value": "Lens",
+        "isPercentage": true
     }
 }
