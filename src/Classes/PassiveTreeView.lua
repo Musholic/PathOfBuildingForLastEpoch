@@ -856,38 +856,6 @@ end
 function PassiveTreeViewClass:AddNodeName(tooltip, node, build)
 	tooltip:SetRecipe(node.recipe)
 	tooltip:AddLine(24, "^7"..node.dn..(launch.devModeAlt and " ["..node.id.."]" or ""))
-	if launch.devModeAlt and node.id > 65535 then
-		-- Decompose cluster node Id
-		local index = band(node.id, 0xF)
-		local size = band(b_rshift(node.id, 4), 0x3)
-		local large = band(b_rshift(node.id, 6), 0x7)
-		local medium = band(b_rshift(node.id, 9), 0x3)
-		tooltip:AddLine(16, string.format("^7Cluster node index: %d, size: %d, large index: %d, medium index: %d", index, size, large, medium))
-	end
-	if node.type == "Socket" and node.nodesInRadius then
-		local attribTotals = { }
-		for nodeId in pairs(node.nodesInRadius[2]) do
-			local specNode = build.spec.nodes[nodeId]
-			for _, attrib in ipairs{"Str","Dex","Int"} do
-				attribTotals[attrib] = (attribTotals[attrib] or 0) + specNode.finalModList:Sum("BASE", nil, attrib)
-			end
-		end
-		if attribTotals["Str"] >= 40 then
-			tooltip:AddLine(16, "^7Can support "..colorCodes.STRENGTH.."Strength ^7threshold jewels")
-		end
-		if attribTotals["Dex"] >= 40 then
-			tooltip:AddLine(16, "^7Can support "..colorCodes.DEXTERITY.."Dexterity ^7threshold jewels")
-		end
-		if attribTotals["Int"] >= 40 then
-			tooltip:AddLine(16, "^7Can support "..colorCodes.INTELLIGENCE.."Intelligence ^7threshold jewels")
-		end
-	end
-	if node.type == "Socket" and node.alloc then
-		if node.distanceToClassStart and node.distanceToClassStart > 0 then
-			tooltip:AddSeparator(14)
-			tooltip:AddLine(16, string.format("^7Distance to start: %d", node.distanceToClassStart))
-		end
-	end
 end
 
 function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
