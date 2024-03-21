@@ -57,7 +57,8 @@ for affixData in data["singleAffixes"]:
         affixName = affixStrings[str(affixData["affixId"])]
         modData = {
             "affix": affixData["affixTitle"],
-            "value": valueRange + " " + affixName
+            "value": valueRange + " " + affixName,
+            "level": affixData["levelRequirement"]
         }
         if affixData["rollsOn"]:
             modData["type"] = "Prefix"
