@@ -199,4 +199,5 @@ function loadBuildFromJSON(saveFileContent)
 	local charData = build.importTab:ReadJsonSaveData(saveFileContent)
 	build.importTab:ImportPassiveTreeAndJewels(charData)
 	build.importTab:ImportItemsAndSkills(charData)
+	runCallback("OnFrame")
 end

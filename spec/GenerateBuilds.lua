@@ -46,9 +46,7 @@ for filename, testBuild in pairs(buildList) do
     print("Loading build " .. filename)
     loadBuildFromJSON(testBuild)
     local fileHnd, errMsg = io.open(filename:gsub("^(.+)%..+$", "%1.lua"), "w+")
-    fileHnd:write("return {\n   json = [[")
-    fileHnd:write(testBuild)
-    fileHnd:write("]],\n    ")
+    fileHnd:write("return {\n    ")
     fileHnd:write(buildTable("output", build.calcsTab.mainOutput) .. "\n}")
     fileHnd:close()
 end

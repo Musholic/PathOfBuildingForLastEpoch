@@ -9,6 +9,10 @@ local function fetchBuilds(path, buildList)
                 fetchBuilds(f, buildList)
             elseif file:match("^.+(%..+)$") == ".lua" then
                 buildList[file] = LoadModule(f)
+                local fileHnd = io.open(f:gsub(".lua$", ".json"), "r")
+                local fileText = fileHnd:read("*a")
+                fileHnd:close()
+                buildList[file].json = fileText
             end
         end
     end
