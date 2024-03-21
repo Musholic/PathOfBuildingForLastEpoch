@@ -6,6 +6,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -21,6 +22,7 @@
         "req": {
             "level": 7
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -46,6 +48,7 @@
         "req": {
             "level": 10
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -61,6 +64,7 @@
         "req": {
             "level": 20
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -81,6 +85,7 @@
         "req": {
             "level": 24
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -96,6 +101,7 @@
         "req": {
             "level": 39
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -111,6 +117,7 @@
         "req": {
             "level": 65
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -126,6 +133,7 @@
         "req": {
             "level": 35
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -141,6 +149,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -156,6 +165,7 @@
         "req": {
             "level": 3
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -176,6 +186,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -196,6 +207,7 @@
         "req": {
             "level": 13
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -211,6 +223,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -231,6 +244,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -251,6 +265,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -276,6 +291,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -301,6 +317,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -316,6 +333,7 @@
         "req": {
             "level": 3
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -331,6 +349,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -351,6 +370,7 @@
         "req": {
             "level": 22
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -371,6 +391,7 @@
         "req": {
             "level": 33
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -391,6 +412,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -411,6 +433,7 @@
         "req": {
             "level": 56
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -431,6 +454,7 @@
         "req": {
             "level": 63
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -456,6 +480,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -471,6 +496,7 @@
         "req": {
             "level": 7
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -491,6 +517,7 @@
         "req": {
             "level": 13
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -516,6 +543,7 @@
         "req": {
             "level": 21
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -536,6 +564,7 @@
         "req": {
             "level": 30
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -561,6 +590,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -586,6 +616,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -611,6 +642,7 @@
         "req": {
             "level": 64
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -636,6 +668,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -651,6 +684,7 @@
         "req": {
             "level": 3
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -666,6 +700,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -686,6 +721,7 @@
         "req": {
             "level": 20
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -701,6 +737,7 @@
         "req": {
             "level": 40
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -721,6 +758,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -741,6 +779,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -766,6 +805,7 @@
         "req": {
             "level": 72
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -791,6 +831,7 @@
         "req": {
             "level": 75
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -811,6 +852,7 @@
         "req": {
             "level": 73
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -836,6 +878,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -851,6 +894,7 @@
         "req": {
             "level": 3
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -871,6 +915,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -886,6 +931,7 @@
         "req": {
             "level": 24
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -911,6 +957,7 @@
         "req": {
             "level": 28
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -936,6 +983,7 @@
         "req": {
             "level": 37
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -956,6 +1004,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -981,6 +1030,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1001,6 +1051,7 @@
         "req": {
             "level": 68
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1026,6 +1077,7 @@
         "req": {
             "level": 73
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1051,6 +1103,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1076,6 +1129,7 @@
         "req": {
             "level": 3
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1096,6 +1150,7 @@
         "req": {
             "level": 43
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1116,6 +1171,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1136,6 +1192,7 @@
         "req": {
             "level": 86
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1161,6 +1218,7 @@
         "req": {
             "level": 14
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1181,6 +1239,7 @@
         "req": {
             "level": 84
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1206,6 +1265,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1226,6 +1286,7 @@
         "req": {
             "level": 27
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1251,6 +1312,7 @@
         "req": {
             "level": 85
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1271,6 +1333,7 @@
         "req": {
             "level": 21
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1291,6 +1354,7 @@
         "req": {
             "level": 39
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1316,6 +1380,7 @@
         "req": {
             "level": 79
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1341,6 +1406,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1361,6 +1427,7 @@
         "req": {
             "level": 53
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1386,6 +1453,7 @@
         "req": {
             "level": 74
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1411,6 +1479,7 @@
         "req": {
             "level": 81
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1436,6 +1505,7 @@
         "req": {
             "level": 86
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1461,6 +1531,7 @@
         "req": {
             "level": 85
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -1486,6 +1557,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1501,6 +1573,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1516,6 +1589,7 @@
         "req": {
             "level": 15
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1531,6 +1605,7 @@
         "req": {
             "level": 23
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1551,6 +1626,7 @@
         "req": {
             "level": 27
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1566,6 +1642,7 @@
         "req": {
             "level": 41
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1586,6 +1663,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1601,6 +1679,7 @@
         "req": {
             "level": 35
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1621,6 +1700,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1636,6 +1716,7 @@
         "req": {
             "level": 1
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1651,6 +1732,7 @@
         "req": {
             "level": 4
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1671,6 +1753,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1686,6 +1769,7 @@
         "req": {
             "level": 27
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1706,6 +1790,7 @@
         "req": {
             "level": 53
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1731,6 +1816,7 @@
         "req": {
             "level": 61
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1756,6 +1842,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1776,6 +1863,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1791,6 +1879,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1811,6 +1900,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1831,6 +1921,7 @@
         "req": {
             "level": 21
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1851,6 +1942,7 @@
         "req": {
             "level": 40
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1876,6 +1968,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1896,6 +1989,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1921,6 +2015,7 @@
         "req": {
             "level": 64
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1946,6 +2041,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1961,6 +2057,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1976,6 +2073,7 @@
         "req": {
             "level": 14
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -1996,6 +2094,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2021,6 +2120,7 @@
         "req": {
             "level": 36
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2046,6 +2146,7 @@
         "req": {
             "level": 46
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2066,6 +2167,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2086,6 +2188,7 @@
         "req": {
             "level": 63
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2111,6 +2214,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2126,6 +2230,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2141,6 +2246,7 @@
         "req": {
             "level": 13
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2161,6 +2267,7 @@
         "req": {
             "level": 19
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2176,6 +2283,7 @@
         "req": {
             "level": 42
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2196,6 +2304,7 @@
         "req": {
             "level": 53
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2216,6 +2325,7 @@
         "req": {
             "level": 59
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2236,6 +2346,7 @@
         "req": {
             "level": 68
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2261,6 +2372,7 @@
         "req": {
             "level": 79
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2286,6 +2398,7 @@
         "req": {
             "level": 77
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2311,6 +2424,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2336,6 +2450,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2351,6 +2466,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2366,6 +2482,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2386,6 +2503,7 @@
         "req": {
             "level": 23
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2406,6 +2524,7 @@
         "req": {
             "level": 27
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2426,6 +2545,7 @@
         "req": {
             "level": 39
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2446,6 +2566,7 @@
         "req": {
             "level": 44
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2471,6 +2592,7 @@
         "req": {
             "level": 61
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2496,6 +2618,7 @@
         "req": {
             "level": 67
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2521,6 +2644,7 @@
         "req": {
             "level": 71
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2546,6 +2670,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2566,6 +2691,7 @@
         "req": {
             "level": 22
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2586,6 +2712,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2611,6 +2738,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2631,6 +2759,7 @@
         "req": {
             "level": 30
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2656,6 +2785,7 @@
         "req": {
             "level": 87
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2681,6 +2811,7 @@
         "req": {
             "level": 4
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2696,6 +2827,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2716,6 +2848,7 @@
         "req": {
             "level": 86
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2736,6 +2869,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2756,6 +2890,7 @@
         "req": {
             "level": 41
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2781,6 +2916,7 @@
         "req": {
             "level": 77
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2806,6 +2942,7 @@
         "req": {
             "level": 11
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2826,6 +2963,7 @@
         "req": {
             "level": 54
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2851,6 +2989,7 @@
         "req": {
             "level": 73
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2876,6 +3015,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2901,6 +3041,7 @@
         "req": {
             "level": 85
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2926,6 +3067,7 @@
         "req": {
             "level": 84
         },
+        "affixEffectModifier": 0.5,
         "implicits": [
             {
                 "property": 10,
@@ -2951,6 +3093,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 49,
@@ -2966,6 +3109,7 @@
         "req": {
             "level": 9
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 49,
@@ -2981,6 +3125,7 @@
         "req": {
             "level": 19
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3001,6 +3146,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 49,
@@ -3016,6 +3162,7 @@
         "req": {
             "level": 31
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 119,
@@ -3036,6 +3183,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 49,
@@ -3051,6 +3199,7 @@
         "req": {
             "level": 14
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -3071,6 +3220,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 28,
@@ -3096,6 +3246,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3116,6 +3267,7 @@
         "req": {
             "level": 73
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 49,
@@ -3131,6 +3283,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 9,
@@ -3151,6 +3304,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 49,
@@ -3166,6 +3320,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3186,6 +3341,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3206,6 +3362,7 @@
         "req": {
             "level": 8
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3226,6 +3383,7 @@
         "req": {
             "level": 16
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3246,6 +3404,7 @@
         "req": {
             "level": 23
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3271,6 +3430,7 @@
         "req": {
             "level": 30
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3291,6 +3451,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3316,6 +3477,7 @@
         "req": {
             "level": 67
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3341,6 +3503,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 9,
@@ -3356,6 +3519,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3381,6 +3545,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3406,6 +3571,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3431,6 +3597,7 @@
         "req": {
             "level": 85
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3456,6 +3623,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3481,6 +3649,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3506,6 +3675,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 9,
@@ -3526,6 +3696,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3541,6 +3712,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3561,6 +3733,7 @@
         "req": {
             "level": 15
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3576,6 +3749,7 @@
         "req": {
             "level": 25
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3596,6 +3770,7 @@
         "req": {
             "level": 31
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3616,6 +3791,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3636,6 +3812,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3656,6 +3833,7 @@
         "req": {
             "level": 64
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3676,6 +3854,7 @@
         "req": {
             "level": 91
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3701,6 +3880,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3726,6 +3906,7 @@
         "req": {
             "level": 54
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3751,6 +3932,7 @@
         "req": {
             "level": 79
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3771,6 +3953,7 @@
         "req": {
             "level": 86
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3791,6 +3974,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3811,6 +3995,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -3826,6 +4011,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -3845,6 +4031,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -3864,6 +4051,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -3888,6 +4076,7 @@
         "req": {
             "level": 24
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -3912,6 +4101,7 @@
         "req": {
             "level": 35
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -3941,6 +4131,7 @@
         "req": {
             "level": 46
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -3970,6 +4161,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -3999,6 +4191,7 @@
         "req": {
             "level": 59
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4028,6 +4221,7 @@
         "req": {
             "level": 63
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4057,6 +4251,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4086,6 +4281,7 @@
         "req": {
             "level": 71
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4110,6 +4306,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4139,6 +4336,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4163,6 +4361,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4187,6 +4386,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4211,6 +4411,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4235,6 +4436,7 @@
         "req": {
             "level": 25
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4264,6 +4466,7 @@
         "req": {
             "level": 27
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4288,6 +4491,7 @@
         "req": {
             "level": 44
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4312,6 +4516,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4341,6 +4546,7 @@
         "req": {
             "level": 55
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4365,6 +4571,7 @@
         "req": {
             "level": 61
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4394,6 +4601,7 @@
         "req": {
             "level": 65
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4423,6 +4631,7 @@
         "req": {
             "level": 68
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4452,6 +4661,7 @@
         "req": {
             "level": 71
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4481,6 +4691,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4510,6 +4721,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4539,6 +4751,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4558,6 +4771,7 @@
         "req": {
             "level": 8
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4582,6 +4796,7 @@
         "req": {
             "level": 18
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4606,6 +4821,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4630,6 +4846,7 @@
         "req": {
             "level": 37
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4649,6 +4866,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4673,6 +4891,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4697,6 +4916,7 @@
         "req": {
             "level": 54
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4726,6 +4946,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4755,6 +4976,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4779,6 +5001,7 @@
         "req": {
             "level": 78
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4808,6 +5031,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4832,6 +5056,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4856,6 +5081,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4880,6 +5106,7 @@
         "req": {
             "level": 43
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4909,6 +5136,7 @@
         "req": {
             "level": 35
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4938,6 +5166,7 @@
         "req": {
             "level": 11
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4962,6 +5191,7 @@
         "req": {
             "level": 21
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -4991,6 +5221,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5015,6 +5246,7 @@
         "req": {
             "level": 63
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5044,6 +5276,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5068,6 +5301,7 @@
         "req": {
             "level": 75
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5092,6 +5326,7 @@
         "req": {
             "level": 67
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5121,6 +5356,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5150,6 +5386,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5179,6 +5416,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5198,6 +5436,7 @@
         "req": {
             "level": 20
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5217,6 +5456,7 @@
         "req": {
             "level": 39
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5241,6 +5481,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5260,6 +5501,7 @@
         "req": {
             "level": 15
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5284,6 +5526,7 @@
         "req": {
             "level": 30
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5303,6 +5546,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5322,6 +5566,7 @@
         "req": {
             "level": 54
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5346,6 +5591,7 @@
         "req": {
             "level": 64
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5375,6 +5621,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5399,6 +5646,7 @@
         "req": {
             "level": 75
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5418,6 +5666,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5447,6 +5696,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5471,6 +5721,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5500,6 +5751,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5524,6 +5776,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5548,6 +5801,7 @@
         "req": {
             "level": 55
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5577,6 +5831,7 @@
         "req": {
             "level": 47
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5606,6 +5861,7 @@
         "req": {
             "level": 14
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5635,6 +5891,7 @@
         "req": {
             "level": 31
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5664,6 +5921,7 @@
         "req": {
             "level": 20
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5693,6 +5951,7 @@
         "req": {
             "level": 67
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5722,6 +5981,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5751,6 +6011,7 @@
         "req": {
             "level": 77
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5780,6 +6041,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5809,6 +6071,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -5838,6 +6101,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -5857,6 +6121,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -5876,6 +6141,7 @@
         "req": {
             "level": 14
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -5900,6 +6166,7 @@
         "req": {
             "level": 21
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -5924,6 +6191,7 @@
         "req": {
             "level": 33
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -5948,6 +6216,7 @@
         "req": {
             "level": 47
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -5977,6 +6246,7 @@
         "req": {
             "level": 54
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6001,6 +6271,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6025,6 +6296,7 @@
         "req": {
             "level": 64
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6054,6 +6326,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6083,6 +6356,7 @@
         "req": {
             "level": 71
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6107,6 +6381,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6136,6 +6411,7 @@
         "req": {
             "level": 83
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6165,6 +6441,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6194,6 +6471,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6223,6 +6501,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6247,6 +6526,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6266,6 +6546,7 @@
         "req": {
             "level": 7
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6290,6 +6571,7 @@
         "req": {
             "level": 19
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6314,6 +6596,7 @@
         "req": {
             "level": 28
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6338,6 +6621,7 @@
         "req": {
             "level": 39
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6362,6 +6646,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6386,6 +6671,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6410,6 +6696,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6439,6 +6726,7 @@
         "req": {
             "level": 74
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6468,6 +6756,7 @@
         "req": {
             "level": 78
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6492,6 +6781,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6521,6 +6811,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6545,6 +6836,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6564,6 +6856,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6588,6 +6881,7 @@
         "req": {
             "level": 46
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6612,6 +6906,7 @@
         "req": {
             "level": 16
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6636,6 +6931,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6660,6 +6956,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6684,6 +6981,7 @@
         "req": {
             "level": 22
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6703,6 +7001,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6732,6 +7031,7 @@
         "req": {
             "level": 82
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6761,6 +7061,7 @@
         "req": {
             "level": 63
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6790,6 +7091,7 @@
         "req": {
             "level": 38
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6814,6 +7116,7 @@
         "req": {
             "level": 56
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6843,6 +7146,7 @@
         "req": {
             "level": 68
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6867,6 +7171,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6891,6 +7196,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6915,6 +7221,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6939,6 +7246,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6963,6 +7271,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -6992,6 +7301,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7021,6 +7331,7 @@
         "req": {
             "level": 13
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7050,6 +7361,7 @@
         "req": {
             "level": 23
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7079,6 +7391,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7108,6 +7421,7 @@
         "req": {
             "level": 38
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7137,6 +7451,7 @@
         "req": {
             "level": 46
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7166,6 +7481,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7195,6 +7511,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7224,6 +7541,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7253,6 +7571,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7282,6 +7601,7 @@
         "req": {
             "level": 74
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7311,6 +7631,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7340,6 +7661,7 @@
         "req": {
             "level": 85
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7369,6 +7691,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7398,6 +7721,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7427,6 +7751,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7456,6 +7781,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7475,6 +7801,7 @@
         "req": {
             "level": 10
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7494,6 +7821,7 @@
         "req": {
             "level": 24
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7518,6 +7846,7 @@
         "req": {
             "level": 36
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7537,6 +7866,7 @@
         "req": {
             "level": 46
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7561,6 +7891,7 @@
         "req": {
             "level": 56
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7585,6 +7916,7 @@
         "req": {
             "level": 61
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7609,6 +7941,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7628,6 +7961,7 @@
         "req": {
             "level": 77
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7657,6 +7991,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7681,6 +8016,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7700,6 +8036,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7724,6 +8061,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 2.2,
         "implicits": [
             {
                 "property": 0,
@@ -7748,6 +8086,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 2,
@@ -7763,6 +8102,7 @@
         "req": {
             "level": 7
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -7783,6 +8123,7 @@
         "req": {
             "level": 23
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 64,
@@ -7803,6 +8144,7 @@
         "req": {
             "level": 44
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -7818,6 +8160,7 @@
         "req": {
             "level": 48
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -7833,6 +8176,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 5,
@@ -7848,6 +8192,7 @@
         "req": {
             "level": 65
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -7868,6 +8213,7 @@
         "req": {
             "level": 68
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -7888,6 +8234,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -7908,6 +8255,7 @@
         "req": {
             "level": 3
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -7933,6 +8281,7 @@
         "req": {
             "level": 15
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -7958,6 +8307,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -7978,6 +8328,7 @@
         "req": {
             "level": 24
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -7998,6 +8349,7 @@
         "req": {
             "level": 30
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8018,6 +8370,7 @@
         "req": {
             "level": 36
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8043,6 +8396,7 @@
         "req": {
             "level": 41
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8068,6 +8422,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8093,6 +8448,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8113,6 +8469,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8138,6 +8495,7 @@
         "req": {
             "level": 59
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8163,6 +8521,7 @@
         "req": {
             "level": 64
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8188,6 +8547,7 @@
         "req": {
             "level": 72
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8208,6 +8568,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8228,6 +8589,7 @@
         "req": {
             "level": 65
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8248,6 +8610,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8273,6 +8636,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8298,6 +8662,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8323,6 +8688,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 29,
@@ -8343,6 +8709,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8358,6 +8725,7 @@
         "req": {
             "level": 4
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8378,6 +8746,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8398,6 +8767,7 @@
         "req": {
             "level": 24
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8418,6 +8788,7 @@
         "req": {
             "level": 32
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8438,6 +8809,7 @@
         "req": {
             "level": 38
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8458,6 +8830,7 @@
         "req": {
             "level": 46
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8478,6 +8851,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8503,6 +8877,7 @@
         "req": {
             "level": 54
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8528,6 +8903,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8548,6 +8924,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8573,6 +8950,7 @@
         "req": {
             "level": 74
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8598,6 +8976,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8623,6 +9002,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8643,6 +9023,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8668,6 +9049,7 @@
         "req": {
             "level": 36
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8688,6 +9070,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8713,6 +9096,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 21,
@@ -8738,6 +9122,7 @@
         "req": {
             "level": 18
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 15,
@@ -8758,6 +9143,7 @@
         "req": {
             "level": 4
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 2,
@@ -8778,6 +9164,7 @@
         "req": {
             "level": 24
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 4,
@@ -8793,6 +9180,7 @@
         "req": {
             "level": 4
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 3,
@@ -8808,6 +9196,7 @@
         "req": {
             "level": 36
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 0,
@@ -8828,6 +9217,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 7,
@@ -8843,6 +9233,7 @@
         "req": {
             "level": 44
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 67,
@@ -8863,6 +9254,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 64,
@@ -8883,6 +9275,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 6,
@@ -8898,6 +9291,7 @@
         "req": {
             "level": 71
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 13,
@@ -8918,6 +9312,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 6,
@@ -8933,6 +9328,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.17,
         "implicits": [
             {
                 "property": 15,
@@ -8948,6 +9344,7 @@
         "req": {
             "level": 14
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 4,
@@ -8963,6 +9360,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 13,
@@ -8983,6 +9381,7 @@
         "req": {
             "level": 40
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -9003,6 +9402,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 9,
@@ -9018,6 +9418,7 @@
         "req": {
             "level": 25
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 52,
@@ -9033,6 +9434,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 12,
@@ -9048,6 +9450,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 11,
@@ -9063,6 +9466,7 @@
         "req": {
             "level": 31
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9088,6 +9492,7 @@
         "req": {
             "level": 66
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 27,
@@ -9108,6 +9513,7 @@
         "req": {
             "level": 48
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 20,
@@ -9128,6 +9534,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 70,
@@ -9148,6 +9555,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 119,
@@ -9163,6 +9571,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 70,
@@ -9178,6 +9587,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -9193,6 +9603,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 14,
@@ -9213,6 +9624,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 7,
@@ -9233,6 +9645,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 17,
@@ -9248,6 +9661,7 @@
         "req": {
             "level": 15
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -9263,6 +9677,7 @@
         "req": {
             "level": 37
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 17,
@@ -9278,6 +9693,7 @@
         "req": {
             "level": 34
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -9293,6 +9709,7 @@
         "req": {
             "level": 35
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 23,
@@ -9313,6 +9730,7 @@
         "req": {
             "level": 61
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9333,6 +9751,7 @@
         "req": {
             "level": 46
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 2,
@@ -9348,6 +9767,7 @@
         "req": {
             "level": 65
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 17,
@@ -9363,6 +9783,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9378,6 +9799,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 91,
@@ -9398,6 +9820,7 @@
         "req": {
             "level": 13
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -9413,6 +9836,7 @@
         "req": {
             "level": 33
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 13,
@@ -9433,6 +9857,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9458,6 +9883,7 @@
         "req": {
             "level": 59
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9478,6 +9904,7 @@
         "req": {
             "level": 63
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9498,6 +9925,7 @@
         "req": {
             "level": 65
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -9518,6 +9946,7 @@
         "req": {
             "level": 71
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 28,
@@ -9538,6 +9967,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9553,6 +9983,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 39,
@@ -9568,6 +9999,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 64,
@@ -9593,6 +10025,7 @@
         "req": {
             "level": 41
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 92,
@@ -9608,6 +10041,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 42,
@@ -9633,6 +10067,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 5,
@@ -9648,6 +10083,7 @@
         "req": {
             "level": 64
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -9668,6 +10104,7 @@
         "req": {
             "level": 72
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9683,6 +10120,7 @@
         "req": {
             "level": 76
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9708,6 +10146,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 7,
@@ -9728,6 +10167,7 @@
         "req": {
             "level": 4
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9748,6 +10188,7 @@
         "req": {
             "level": 11
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -9768,6 +10209,7 @@
         "req": {
             "level": 18
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 75,
@@ -9783,6 +10225,7 @@
         "req": {
             "level": 45
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9808,6 +10251,7 @@
         "req": {
             "level": 53
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -9828,6 +10272,7 @@
         "req": {
             "level": 67
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9848,6 +10293,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 14,
@@ -9868,6 +10314,7 @@
         "req": {
             "level": 75
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -9888,6 +10335,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -9903,6 +10351,7 @@
         "req": {
             "level": 5
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -9923,6 +10372,7 @@
         "req": {
             "level": 12
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 7,
@@ -9943,6 +10393,7 @@
         "req": {
             "level": 29
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -9963,6 +10414,7 @@
         "req": {
             "level": 44
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 29,
@@ -9983,6 +10435,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -10003,6 +10456,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 14,
@@ -10023,6 +10477,7 @@
         "req": {
             "level": 63
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -10043,6 +10498,7 @@
         "req": {
             "level": 77
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -10063,6 +10519,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 4,
@@ -10078,6 +10535,7 @@
         "req": {
             "level": 4
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -10093,6 +10551,7 @@
         "req": {
             "level": 16
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -10108,6 +10567,7 @@
         "req": {
             "level": 44
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -10128,6 +10588,7 @@
         "req": {
             "level": 51
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -10148,6 +10609,7 @@
         "req": {
             "level": 55
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 11,
@@ -10163,6 +10625,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 13,
@@ -10183,6 +10646,7 @@
         "req": {
             "level": 68
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 28,
@@ -10203,6 +10667,7 @@
         "req": {
             "level": 74
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 4,
@@ -10223,6 +10688,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -10238,6 +10704,7 @@
         "req": {
             "level": 78
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 64,
@@ -10253,6 +10720,7 @@
         "req": {
             "level": 80
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 7,
@@ -10268,6 +10736,7 @@
         "req": {
             "level": 70
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 58,
@@ -10283,6 +10752,7 @@
         "req": {
             "level": 36
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 16,
@@ -10298,6 +10768,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10317,6 +10788,7 @@
         "req": {
             "level": 6
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10341,6 +10813,7 @@
         "req": {
             "level": 13
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10365,6 +10838,7 @@
         "req": {
             "level": 23
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10389,6 +10863,7 @@
         "req": {
             "level": 30
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10413,6 +10888,7 @@
         "req": {
             "level": 43
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10437,6 +10913,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10456,6 +10933,7 @@
         "req": {
             "level": 58
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10485,6 +10963,7 @@
         "req": {
             "level": 60
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10514,6 +10993,7 @@
         "req": {
             "level": 62
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10543,6 +11023,7 @@
         "req": {
             "level": 72
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10572,6 +11053,7 @@
         "req": {
             "level": 50
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10591,6 +11073,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10620,6 +11103,7 @@
         "req": {
             "level": 52
         },
+        "affixEffectModifier": 0.75,
         "implicits": [
             {
                 "property": 0,
@@ -10649,6 +11133,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.83,
         "implicits": []
     },
     "Small Lagonian Idol": {
@@ -10658,6 +11143,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.83,
         "implicits": []
     },
     "Humble Eterran Idol": {
@@ -10667,6 +11153,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.62,
         "implicits": []
     },
     "Stout Lagonian Idol": {
@@ -10676,6 +11163,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.62,
         "implicits": []
     },
     "Grand Heorot Idol": {
@@ -10685,6 +11173,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Grand Glass Idol": {
@@ -10694,6 +11183,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Grand Solar Idol": {
@@ -10703,6 +11193,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Grand Bone Idol": {
@@ -10712,6 +11203,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Grand Majasan Idol": {
@@ -10721,6 +11213,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Large Nomad Idol": {
@@ -10730,6 +11223,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Large Arcane Idol": {
@@ -10739,6 +11233,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Large Rahyeh Idol": {
@@ -10748,6 +11243,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Large Immortal Idol": {
@@ -10757,6 +11253,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Large Shadow Idol": {
@@ -10766,6 +11263,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.33,
         "implicits": []
     },
     "Ornate Heorot Idol": {
@@ -10775,6 +11273,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Ornate Glass Idol": {
@@ -10784,6 +11283,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Ornate Solar Idol": {
@@ -10793,6 +11293,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Ornate Bone Idol": {
@@ -10802,6 +11303,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Ornate Majasan Idol": {
@@ -10811,6 +11313,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Huge Nomad Idol": {
@@ -10820,6 +11323,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Huge Arcane Idol": {
@@ -10829,6 +11333,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Huge Rahyeh Idol": {
@@ -10838,6 +11343,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Huge Immortal Idol": {
@@ -10847,6 +11353,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Huge Shadow Idol": {
@@ -10856,6 +11363,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": []
     },
     "Adorned Heorot Idol": {
@@ -10865,6 +11373,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.05,
         "implicits": []
     },
     "Adorned Arcane Idol": {
@@ -10874,6 +11383,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.05,
         "implicits": []
     },
     "Adorned Rahyeh Idol": {
@@ -10883,6 +11393,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.05,
         "implicits": []
     },
     "Adorned Immortal Idol": {
@@ -10892,6 +11403,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.05,
         "implicits": []
     },
     "Adorned Majasan Idol": {
@@ -10901,6 +11413,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.05,
         "implicits": []
     },
     "Adorned Silver Idol": {
@@ -10910,6 +11423,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.05,
         "implicits": []
     },
     "Adorned Volcano Idol": {
@@ -10919,6 +11433,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": -0.05,
         "implicits": []
     },
     "Pride of Rebellion": {
@@ -10928,6 +11443,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -10943,6 +11459,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -10958,6 +11475,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -10973,6 +11491,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -10988,6 +11507,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11003,6 +11523,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11018,6 +11539,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11033,6 +11555,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11048,6 +11571,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11063,6 +11587,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11078,6 +11603,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11093,6 +11619,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11108,6 +11635,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11123,6 +11651,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11138,6 +11667,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11153,6 +11683,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11168,6 +11699,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11183,6 +11715,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11198,6 +11731,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11213,6 +11747,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11228,6 +11763,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11243,6 +11779,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11258,6 +11795,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11273,6 +11811,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11288,6 +11827,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 7,
@@ -11303,6 +11843,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 7,
@@ -11318,6 +11859,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 26,
@@ -11333,6 +11875,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 26,
@@ -11348,6 +11891,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 11,
@@ -11363,6 +11907,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 11,
@@ -11378,6 +11923,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -11393,6 +11939,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -11408,6 +11955,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -11423,6 +11971,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -11438,6 +11987,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -11453,6 +12003,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -11468,6 +12019,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -11483,6 +12035,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -11498,6 +12051,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 38,
@@ -11513,6 +12067,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 38,
@@ -11528,6 +12083,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 4,
@@ -11543,6 +12099,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 4,
@@ -11558,6 +12115,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -11573,6 +12131,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -11588,6 +12147,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 39,
@@ -11608,6 +12168,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 39,
@@ -11628,6 +12189,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 5,
@@ -11643,6 +12205,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 5,
@@ -11658,6 +12221,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 102,
@@ -11673,6 +12237,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 102,
@@ -11688,6 +12253,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11703,6 +12269,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11718,6 +12285,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11733,6 +12301,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11748,6 +12317,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11763,6 +12333,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11778,6 +12349,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11793,6 +12365,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11808,6 +12381,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11823,6 +12397,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11838,6 +12413,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11853,6 +12429,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11868,6 +12445,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11883,6 +12461,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11898,6 +12477,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11913,6 +12493,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11928,6 +12509,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11943,6 +12525,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11958,6 +12541,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11973,6 +12557,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -11988,6 +12573,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12003,6 +12589,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12018,6 +12605,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 15,
@@ -12033,6 +12621,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 15,
@@ -12048,6 +12637,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -12063,6 +12653,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 8,
@@ -12078,6 +12669,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 17,
@@ -12098,6 +12690,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 17,
@@ -12118,6 +12711,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -12133,6 +12727,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -12148,6 +12743,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -12163,6 +12759,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -12178,6 +12775,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 92,
@@ -12193,6 +12791,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 92,
@@ -12208,6 +12807,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12223,6 +12823,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12238,6 +12839,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12253,6 +12855,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12268,6 +12871,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 67,
@@ -12283,6 +12887,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 67,
@@ -12298,6 +12903,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 45,
@@ -12313,6 +12919,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 45,
@@ -12328,6 +12935,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 42,
@@ -12343,6 +12951,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 42,
@@ -12358,6 +12967,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 97,
@@ -12373,6 +12983,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 97,
@@ -12388,6 +12999,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 91,
@@ -12408,6 +13020,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 91,
@@ -12428,6 +13041,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 30,
@@ -12443,6 +13057,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 89,
@@ -12458,6 +13073,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 27,
@@ -12473,6 +13089,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -12488,6 +13105,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -12503,6 +13121,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -12518,6 +13137,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12533,6 +13153,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12548,6 +13169,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -12563,6 +13185,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 30,
@@ -12578,6 +13201,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 28,
@@ -12593,6 +13217,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12608,6 +13233,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -12623,6 +13249,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12638,6 +13265,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12653,6 +13281,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 105,
@@ -12668,6 +13297,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 105,
@@ -12683,6 +13313,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12698,6 +13329,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12713,6 +13345,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12728,6 +13361,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12743,6 +13377,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12758,6 +13393,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12773,6 +13409,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12788,6 +13425,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12803,6 +13441,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12818,6 +13457,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12833,6 +13473,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12848,6 +13489,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12863,6 +13505,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12878,6 +13521,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12893,6 +13537,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12908,6 +13553,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12923,6 +13569,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12938,6 +13585,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12953,6 +13601,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12968,6 +13617,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12983,6 +13633,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -12998,6 +13649,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13013,6 +13665,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13028,6 +13681,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13043,6 +13697,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13058,6 +13713,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13073,6 +13729,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13088,6 +13745,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13103,6 +13761,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13118,6 +13777,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13133,6 +13793,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13148,6 +13809,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13163,6 +13825,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13178,6 +13841,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13193,6 +13857,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 30,
@@ -13208,6 +13873,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 89,
@@ -13223,6 +13889,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 27,
@@ -13238,6 +13905,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -13253,6 +13921,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -13268,6 +13937,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -13283,6 +13953,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13298,6 +13969,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13313,6 +13985,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 51,
@@ -13328,6 +14001,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 30,
@@ -13343,6 +14017,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 28,
@@ -13358,6 +14033,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13373,6 +14049,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13388,6 +14065,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13403,6 +14081,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13418,6 +14097,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13433,6 +14113,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13448,6 +14129,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13463,6 +14145,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13478,6 +14161,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13493,6 +14177,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13508,6 +14193,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13523,6 +14209,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13538,6 +14225,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13553,6 +14241,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13568,6 +14257,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13583,6 +14273,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13598,6 +14289,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13613,6 +14305,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13628,6 +14321,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13643,6 +14337,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 104,
@@ -13658,6 +14353,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 64,
@@ -13673,6 +14369,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 64,
@@ -13688,6 +14385,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 14,
@@ -13703,6 +14401,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 14,
@@ -13718,6 +14417,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 76,
@@ -13733,6 +14433,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 76,
@@ -13748,6 +14449,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13763,6 +14465,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13778,6 +14481,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 103,
@@ -13793,6 +14497,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 103,
@@ -13808,6 +14513,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13823,6 +14529,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13838,6 +14545,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13853,6 +14561,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13868,6 +14577,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13883,6 +14593,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -13898,6 +14609,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 29,
@@ -13918,6 +14630,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 29,
@@ -13938,6 +14651,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -13953,6 +14667,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -13968,6 +14683,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -13983,6 +14699,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -13998,6 +14715,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 13,
@@ -14013,6 +14731,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 13,
@@ -14028,6 +14747,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -14043,6 +14763,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -14058,6 +14779,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -14073,6 +14795,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -14088,6 +14811,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 75,
@@ -14103,6 +14827,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 75,
@@ -14118,6 +14843,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 11,
@@ -14133,6 +14859,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 11,
@@ -14148,6 +14875,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -14163,6 +14891,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -14178,6 +14907,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -14193,6 +14923,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 1,
@@ -14208,6 +14939,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -14223,6 +14955,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -14238,6 +14971,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 95,
@@ -14253,6 +14987,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 95,
@@ -14268,6 +15003,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -14283,6 +15019,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 0,
@@ -14298,6 +15035,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -14313,6 +15051,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 10,
@@ -14328,6 +15067,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14343,6 +15083,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14358,6 +15099,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14373,6 +15115,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14388,6 +15131,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14403,6 +15147,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14418,6 +15163,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14433,6 +15179,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14448,6 +15195,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14463,6 +15211,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14478,6 +15227,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14493,6 +15243,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14508,6 +15259,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14523,6 +15275,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14538,6 +15291,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14553,6 +15307,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14568,6 +15323,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14583,6 +15339,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14598,6 +15355,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14613,6 +15371,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14628,6 +15387,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14643,6 +15403,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14658,6 +15419,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14673,6 +15435,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14688,6 +15451,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14703,6 +15467,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14718,6 +15483,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14733,6 +15499,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14748,6 +15515,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14763,6 +15531,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14778,6 +15547,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14793,6 +15563,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14808,6 +15579,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14823,6 +15595,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14838,6 +15611,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14853,6 +15627,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14868,6 +15643,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14883,6 +15659,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14898,6 +15675,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14913,6 +15691,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14928,6 +15707,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14943,6 +15723,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14958,6 +15739,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14973,6 +15755,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -14988,6 +15771,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,
@@ -15003,6 +15787,7 @@
         "req": {
             "level": 0
         },
+        "affixEffectModifier": 0,
         "implicits": [
             {
                 "property": 122,

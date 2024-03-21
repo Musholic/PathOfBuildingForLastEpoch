@@ -496,7 +496,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                                 if modData then
                                     local mod = modData.value
                                     local range = itemData["data"][dataId + 1] / 256.0
-                                    mod = itemLib.applyRange(mod, range, 1)
+                                    mod = itemLib.applyRange(mod, range, 1 + itemBase.affixEffectModifier)
                                     table.insert(item.explicitMods, mod)
                                 end
                             end

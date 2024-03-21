@@ -5317,52 +5317,6 @@ local jewelThresholdFuncs = {
 	-- [""] = getThreshold("", "", "", , { type = "SkillName", skillName = "" }),
 }
 
--- Unified list of jewel functions
-local jewelFuncList = { }
--- Jewels that modify nodes
-for k, v in pairs(jewelOtherFuncs) do
-	jewelFuncList[k:lower()] = { func = function(cap1, cap2, cap3, cap4, cap5)
-		-- Need to not modify any nodes already modified by timeless jewels
-		-- Some functions return a function instead of simply adding mods, so if
-		-- we don't see a node right away, run the outer function first
-		if cap1 and type(cap1) == "table" and cap1.conqueredBy then
-			return
-		end
-		local innerFuncOrNil = v(cap1, cap2, cap3, cap4, cap5)
-		-- In all (current) cases, there is only one nested layer, so no need for recursion
-		return function(node, out, other)
-			if node and type(node) == "table" and node.conqueredBy then
-				return
-			end
-			return innerFuncOrNil(node, out, other)
-		end
-	end, type = "Other" }
-end
-for k, v in pairs(jewelSelfFuncs) do
-	jewelFuncList[k:lower()] = { func = v, type = "Self" }
-end
-for k, v in pairs(jewelSelfUnallocFuncs) do
-	jewelFuncList[k:lower()] = { func = v, type = "SelfUnalloc" }
-end
--- Threshold Jewels
-for k, v in pairs(jewelThresholdFuncs) do
-	jewelFuncList[k:lower()] = { func = v, type = "Threshold" }
-end
-
--- Generate list of cluster jewel skills
-local clusterJewelSkills = {}
-for baseName, jewel in pairs(data.clusterJewels.jewels) do
-	for skillId, skill in pairs(jewel.skills) do
-		clusterJewelSkills[table.concat(skill.enchant, " "):lower()] = { mod("JewelData", "LIST", { key = "clusterJewelSkill", value = skillId }) }
-	end
-end
-for notable in pairs(data.clusterJewels.notableSortOrder) do
-	clusterJewelSkills["1 added passive skill is "..notable:lower()] = { mod("ClusterJewelNotable", "LIST", notable) }
-end
-for _, keystone in ipairs(data.clusterJewels.keystones) do
-	clusterJewelSkills["adds "..keystone:lower()] = { mod("JewelData", "LIST", { key = "clusterJewelKeystone", value = keystone }) }
-end
-
 -- Scan a line for the earliest and longest match from the pattern list
 -- If a match is found, returns the corresponding value from the pattern list, plus the remainder of the line and a table of captures
 local function scan(line, patternList, plain)
@@ -5392,20 +5346,6 @@ end
 local function parseMod(line, order)
 	-- Check if this is a special modifier
 	local lineLower = line:lower()
-	for pattern, patternVal in pairs(jewelFuncList) do
-		local _, _, cap1, cap2, cap3, cap4, cap5 = lineLower:find(pattern, 1)
-		if cap1 then
-			return {mod("JewelFunc", "LIST", {func = patternVal.func(cap1, cap2, cap3, cap4, cap5), type = patternVal.type }) }
-		end
-	end
-	local jewelFunc = jewelFuncList[lineLower]
-	if jewelFunc then
-		return { mod("JewelFunc", "LIST", jewelFunc) }
-	end
-	local clusterJewelSkill = clusterJewelSkills[lineLower]
-	if clusterJewelSkill then
-		return clusterJewelSkill
-	end
 	if unsupportedModList[lineLower] then
 		return { }, line
 	end

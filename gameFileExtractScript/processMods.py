@@ -4,7 +4,7 @@ import re
 from natsort import natsorted
 
 
-def get_value_range(tier_data):
+def get_value_range(tier_data, is_increased):
     min_roll = tier_data["minRoll"]
     max_roll = tier_data["maxRoll"]
     is_percentage = isinstance(min_roll, float)
@@ -14,6 +14,8 @@ def get_value_range(tier_data):
     value_range = "+(" + str(min_roll) + "-" + str(max_roll) + ")"
     if is_percentage:
         value_range += "%"
+    if is_increased:
+        value_range += " increased"
     return value_range
 
 
@@ -60,7 +62,7 @@ modList = {}
 
 for affixData in data["singleAffixes"]:
     for tier, tierData in enumerate(affixData["tiers"]):
-        valueRange = get_value_range(tierData)
+        valueRange = get_value_range(tierData, affixData["modifierType"])
         affixName = affixStrings[str(affixData["affixId"]) + "_A"]
         modData = {
             "affix": affixData["affixTitle"],
@@ -75,10 +77,10 @@ for affixData in data["singleAffixes"]:
 
 for affixData in data["multiAffixes"]:
     for tier, tierData in enumerate(affixData["tiers"]):
-        valueRange = get_value_range(tierData)
+        valueRange = get_value_range(tierData, affixData["affixProperties"][0]["modifierType"])
         affixName = affixStrings[str(affixData["affixId"]) + "_A"]
         value = valueRange + " " + affixName + "\n"
-        valueRange = get_value_range(tierData["extraRolls"][0])
+        valueRange = get_value_range(tierData["extraRolls"][0], affixData["affixProperties"][0]["modifierType"])
         affixName = affixStrings[str(affixData["affixId"]) + "_B"]
         value += valueRange + " " + affixName
         modData = {

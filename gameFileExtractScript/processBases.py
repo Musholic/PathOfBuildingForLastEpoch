@@ -17,6 +17,7 @@ for itemData in data["EquippableItems"]:
             "req": {
                 "level": subItemData["levelRequirement"]
             },
+            "affixEffectModifier": itemData["affixEffectModifier"],
             "implicits": []
         }
         if itemData["isWeapon"]:
