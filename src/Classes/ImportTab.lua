@@ -476,15 +476,17 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                     item["explicitMods"] = {}
                     for i=0,3 do
                         local dataId = 12 + i * 3
-                        local affixId = itemData["data"][dataId]
-                        if affixId then
-                            local affixTier = itemData["data"][dataId - 1] / 16
-                            local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
-                            if modData then
-                                local mod = modData.value
-                                local range = itemData["data"][dataId + 1] / 256.0
-                                mod = itemLib.applyRange(mod, range, 1)
-                                table.insert(item.explicitMods, mod)
+                        if #itemData["data"] > dataId then
+                            local affixId = itemData["data"][dataId] + (itemData["data"][dataId - 1] % 4) * 256
+                            if affixId then
+                                local affixTier = math.floor(itemData["data"][dataId - 1] / 16)
+                                local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+                                if modData then
+                                    local mod = modData.value
+                                    local range = itemData["data"][dataId + 1] / 256.0
+                                    mod = itemLib.applyRange(mod, range, 1)
+                                    table.insert(item.explicitMods, mod)
+                                end
                             end
                         end
                     end
