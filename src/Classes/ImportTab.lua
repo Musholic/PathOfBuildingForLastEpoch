@@ -446,12 +446,24 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
         end
     end
     for _,itemData in ipairs(saveContent["savedItems"]) do
-        if itemData["containerID"] <= 12 then
+        if itemData["containerID"] <= 12 or itemData["containerID"] == 29 then
             local item = {
                 ["inventoryId"] = itemData["containerID"],
             }
             local baseTypeID = itemData["data"][2]
             local subTypeID = itemData["data"][3]
+            if itemData["containerID"] == 29 then
+                local posX = itemData["inventoryPosition"]["x"]
+                local posY = itemData["inventoryPosition"]["y"]
+                local idolPosition = posX + posY * 5
+                if posY > 0 then
+                    idolPosition = idolPosition - 2
+                end
+                if posY == 4 then
+                    idolPosition = idolPosition - 1
+                end
+                item["inventoryId"] = "Idol " .. idolPosition
+            end
             for itemBaseName, itemBase in pairs(self.build.data.itemBases) do
                 if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
                     item["name"] = itemBaseName
@@ -556,6 +568,10 @@ function ImportTabClass:ImportItemsAndSkills(charData)
 end
 
 local slotMap = { [4] = "Weapon 1", [5] = "Weapon 2", [2] = "Helmet", [3] = "Body Armour", [6] = "Gloves", [8] = "Boots", [11] = "Amulet", [9] = "Ring 1", [10] = "Ring 2", [7] = "Belt" }
+
+for i=1,20 do
+    slotMap["Idol " .. i] = "Idol " .. i
+end
 
 function ImportTabClass:ImportItem(itemData, slotName)
     if not slotName then
