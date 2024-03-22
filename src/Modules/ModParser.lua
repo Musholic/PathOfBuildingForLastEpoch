@@ -161,6 +161,8 @@ local modNameList = {
 	-- Life/mana
 	["life"] = "Life",
 	["health"] = "Life",
+	["health regen"] = "LifeRegen",
+	["health regeneration"] = "LifeRegen",
 	["maximum life"] = "Life",
 	["life regeneration rate"] = "LifeRegen",
 	["mana"] = "Mana",
