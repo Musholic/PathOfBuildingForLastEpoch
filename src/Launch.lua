@@ -6,7 +6,7 @@
 --
 
 local startTime = GetTime()
-APP_NAME = "Path of Building"
+APP_NAME = "Path of Building for Last Epoch"
 
 SetWindowTitle(APP_NAME)
 ConExecute("set vid_mode 8")
