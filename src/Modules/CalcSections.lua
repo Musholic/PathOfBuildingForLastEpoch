@@ -1326,6 +1326,7 @@ return {
 	{ label = "Strength", { format = "{0:output:Str}", { breakdown = "Str" }, { modName = "Str" }, }, },
 	{ label = "Dexterity", { format = "{0:output:Dex}", { breakdown = "Dex" }, { modName = "Dex" }, }, },
 	{ label = "Intelligence", { format = "{0:output:Int}", { breakdown = "Int" }, { modName = "Int" }, }, },
+	{ label = "Attunement", { format = "{0:output:Att}", { breakdown = "Att" }, { modName = "Att" }, }, },
 	{ label = "Vitality", { format = "{0:output:Vit}", { breakdown = "Vit" }, { modName = "Vit" }, }, },
 	{ label = "Omniscience", haveOutput = "Omni", { format = "{0:output:Omni}", { breakdown = "Omni" }, { modName = "Omni" }, }, },
 	{ notFlag = "minionSkill", label = "Str. Required", { format = "{output:ReqStrString}", { breakdown = "ReqStr" }, }, },

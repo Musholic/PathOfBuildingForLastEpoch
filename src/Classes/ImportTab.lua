@@ -540,6 +540,9 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
     self.build.configTab:UpdateLevel()
     self.build.controls.characterLevel:SetText(charData.level)
     self.build:EstimatePlayerProgress()
+    self.build.configTab.input["campaignBonuses"] = true
+    self.build.configTab:BuildModList()
+    self.build.configTab:UpdateControls()
     self.build.buildFlag = true
     main:SetWindowTitleSubtext(string.format("%s (%s, %s, %s)", self.build.buildName, charData.name, charData.class, charData.league))
 end

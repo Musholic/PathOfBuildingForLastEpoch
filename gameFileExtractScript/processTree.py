@@ -43,15 +43,16 @@ for classInfo in data["trees"].values():
 
     classes[className] = {
         "name": className,
-        "base_str": 14,
-        "base_dex": 14,
-        "base_int": 32,
         "ascendancies": []
     }
 
     with open("originalAssets/" + className + ".asset", "r") as yamlFile:
         classData = yaml.safe_load(yamlFile)
         classData = classData["MonoBehaviour"]
+        classes[className]["base_str"] = classData["baseStrength"]
+        classes[className]["base_dex"] = classData["baseDexterity"]
+        classes[className]["base_int"] = classData["baseIntelligence"]
+        classes[className]["base_att"] = classData["baseAttunement"]
         classes[className]["base_vit"] = classData["baseVitality"]
 
     tree["nodes"]["root"]["out"].append(className)

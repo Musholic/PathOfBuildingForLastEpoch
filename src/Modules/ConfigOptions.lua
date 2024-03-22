@@ -132,6 +132,13 @@ end
 return {
 	-- Section: General options
 	{ section = "General", col = 1 },
+	{ var = "campaignBonuses", type = "check", label = "Campaign bonuses?", apply = function(val, modList, enemyModList)
+		modList:NewMod("Str", "BASE", 1, "Quest")
+		modList:NewMod("Dex", "BASE", 1, "Quest")
+		modList:NewMod("Int", "BASE", 1, "Quest")
+		modList:NewMod("Att", "BASE", 1, "Quest")
+		modList:NewMod("Vit", "BASE", 1, "Quest")
+	end },
 	{ var = "resistancePenalty", type = "list", label = "Resistance penalty:", list = {{val=0,label="None"},{val=-30,label="Act 5 (-30%)"},{val=-60,label="Act 10 (-60%)"}}, defaultIndex = 3 },
 	{ var = "bandit", type = "list", label = "Bandit quest:", tooltipFunc = banditTooltip, list = {{val="None",label="Kill all"},{val="Oak",label="Help Oak"},{val="Kraityn",label="Help Kraityn"},{val="Alira",label="Help Alira"}} },
 	{ var = "pantheonMajorGod", type = "list", label = "Major God:", tooltipFunc = applyPantheonDescription, list = {

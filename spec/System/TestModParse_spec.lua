@@ -14,5 +14,16 @@ describe("TestModParse", function()
         runCallback("OnFrame")
         assert.are.equals(240, build.calcsTab.calcsOutput.Life)
     end)
-    
+
+    it("attributes", function()
+        build.configTab.input.customMods = "+2 to All Attributes"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+        assert.are.equals(4, build.calcsTab.calcsOutput.Str)
+        assert.are.equals(2, build.calcsTab.calcsOutput.Dex)
+        assert.are.equals(2, build.calcsTab.calcsOutput.Int)
+        assert.are.equals(3, build.calcsTab.calcsOutput.Att)
+        assert.are.equals(2, build.calcsTab.calcsOutput.Vit)
+    end)
+
 end)

@@ -60875,42 +60875,47 @@
     "classes": [
         {
             "name": "Primalist",
-            "base_str": 14,
-            "base_dex": 14,
-            "base_int": 32,
             "ascendancies": [],
+            "base_str": 2,
+            "base_dex": 0,
+            "base_int": 0,
+            "base_att": 1,
             "base_vit": 0
         },
         {
             "name": "Mage",
-            "base_str": 14,
-            "base_dex": 14,
-            "base_int": 32,
             "ascendancies": [],
+            "base_str": 0,
+            "base_dex": 0,
+            "base_int": 3,
+            "base_att": 0,
             "base_vit": 0
         },
         {
             "name": "Sentinel",
-            "base_str": 14,
-            "base_dex": 14,
-            "base_int": 32,
             "ascendancies": [],
+            "base_str": 2,
+            "base_dex": 0,
+            "base_int": 0,
+            "base_att": 0,
             "base_vit": 1
         },
         {
             "name": "Acolyte",
-            "base_str": 14,
-            "base_dex": 14,
-            "base_int": 32,
             "ascendancies": [],
+            "base_str": 0,
+            "base_dex": 0,
+            "base_int": 2,
+            "base_att": 0,
             "base_vit": 1
         },
         {
             "name": "Rogue",
-            "base_str": 14,
-            "base_dex": 14,
-            "base_int": 32,
             "ascendancies": [],
+            "base_str": 0,
+            "base_dex": 3,
+            "base_int": 0,
+            "base_att": 0,
             "base_vit": 0
         }
     ]
