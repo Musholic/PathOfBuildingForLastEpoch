@@ -43,85 +43,85 @@
     },
     "1_0": {
         "affix": "of Defense",
-        "value": "+(10-12)% increased Armor",
+        "value": "(10-12)% increased Armor",
         "level": 14,
         "type": "Suffix"
     },
     "1_1": {
         "affix": "of Defense",
-        "value": "+(13-16)% increased Armor",
+        "value": "(13-16)% increased Armor",
         "level": 14,
         "type": "Suffix"
     },
     "1_2": {
         "affix": "of Defense",
-        "value": "+(17-21)% increased Armor",
+        "value": "(17-21)% increased Armor",
         "level": 14,
         "type": "Suffix"
     },
     "1_3": {
         "affix": "of Defense",
-        "value": "+(22-26)% increased Armor",
+        "value": "(22-26)% increased Armor",
         "level": 14,
         "type": "Suffix"
     },
     "1_4": {
         "affix": "of Defense",
-        "value": "+(27-32)% increased Armor",
+        "value": "(27-32)% increased Armor",
         "level": 14,
         "type": "Suffix"
     },
     "1_5": {
         "affix": "of Defense",
-        "value": "+(40-48)% increased Armor",
+        "value": "(40-48)% increased Armor",
         "level": 14,
         "type": "Suffix"
     },
     "1_6": {
         "affix": "of Defense",
-        "value": "+(49-60)% increased Armor",
+        "value": "(49-60)% increased Armor",
         "level": 14,
         "type": "Suffix"
     },
     "2_0": {
         "affix": "Deft",
-        "value": "+(4-5)% increased Melee Attack Speed",
+        "value": "(4-5)% increased Melee Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "2_1": {
         "affix": "Deft",
-        "value": "+(6-7)% increased Melee Attack Speed",
+        "value": "(6-7)% increased Melee Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "2_2": {
         "affix": "Deft",
-        "value": "+(8-9)% increased Melee Attack Speed",
+        "value": "(8-9)% increased Melee Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "2_3": {
         "affix": "Deft",
-        "value": "+(10-11)% increased Melee Attack Speed",
+        "value": "(10-11)% increased Melee Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "2_4": {
         "affix": "Deft",
-        "value": "+(12-15)% increased Melee Attack Speed",
+        "value": "(12-15)% increased Melee Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "2_5": {
         "affix": "Deft",
-        "value": "+(18-23)% increased Melee Attack Speed",
+        "value": "(18-23)% increased Melee Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "2_6": {
         "affix": "Deft",
-        "value": "+(24-30)% increased Melee Attack Speed",
+        "value": "(24-30)% increased Melee Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
@@ -169,85 +169,85 @@
     },
     "4_0": {
         "affix": "Shade's",
-        "value": "+(4-5)% increased Cast Speed",
+        "value": "(4-5)% increased Cast Speed",
         "level": 0,
         "type": "Suffix"
     },
     "4_1": {
         "affix": "Shade's",
-        "value": "+(6-7)% increased Cast Speed",
+        "value": "(6-7)% increased Cast Speed",
         "level": 0,
         "type": "Suffix"
     },
     "4_2": {
         "affix": "Shade's",
-        "value": "+(8-9)% increased Cast Speed",
+        "value": "(8-9)% increased Cast Speed",
         "level": 0,
         "type": "Suffix"
     },
     "4_3": {
         "affix": "Shade's",
-        "value": "+(10-11)% increased Cast Speed",
+        "value": "(10-11)% increased Cast Speed",
         "level": 0,
         "type": "Suffix"
     },
     "4_4": {
         "affix": "Shade's",
-        "value": "+(12-15)% increased Cast Speed",
+        "value": "(12-15)% increased Cast Speed",
         "level": 0,
         "type": "Suffix"
     },
     "4_5": {
         "affix": "Shade's",
-        "value": "+(18-23)% increased Cast Speed",
+        "value": "(18-23)% increased Cast Speed",
         "level": 0,
         "type": "Suffix"
     },
     "4_6": {
         "affix": "Shade's",
-        "value": "+(24-30)% increased Cast Speed",
+        "value": "(24-30)% increased Cast Speed",
         "level": 0,
         "type": "Suffix"
     },
     "5_0": {
         "affix": "Assassin's",
-        "value": "+(15-20)% increased Critical Strike Chance",
+        "value": "(15-20)% increased Critical Strike Chance",
         "level": 0,
         "type": "Suffix"
     },
     "5_1": {
         "affix": "Assassin's",
-        "value": "+(21-25)% increased Critical Strike Chance",
+        "value": "(21-25)% increased Critical Strike Chance",
         "level": 0,
         "type": "Suffix"
     },
     "5_2": {
         "affix": "Assassin's",
-        "value": "+(26-30)% increased Critical Strike Chance",
+        "value": "(26-30)% increased Critical Strike Chance",
         "level": 0,
         "type": "Suffix"
     },
     "5_3": {
         "affix": "Assassin's",
-        "value": "+(31-35)% increased Critical Strike Chance",
+        "value": "(31-35)% increased Critical Strike Chance",
         "level": 0,
         "type": "Suffix"
     },
     "5_4": {
         "affix": "Assassin's",
-        "value": "+(36-50)% increased Critical Strike Chance",
+        "value": "(36-50)% increased Critical Strike Chance",
         "level": 0,
         "type": "Suffix"
     },
     "5_5": {
         "affix": "Assassin's",
-        "value": "+(60-75)% increased Critical Strike Chance",
+        "value": "(60-75)% increased Critical Strike Chance",
         "level": 0,
         "type": "Suffix"
     },
     "5_6": {
         "affix": "Assassin's",
-        "value": "+(76-100)% increased Critical Strike Chance",
+        "value": "(76-100)% increased Critical Strike Chance",
         "level": 0,
         "type": "Suffix"
     },
@@ -379,43 +379,43 @@
     },
     "9_0": {
         "affix": "Shimmering",
-        "value": "+(5-9)% increased Elemental Damage",
+        "value": "(5-9)% increased Elemental Damage",
         "level": 8,
         "type": "Suffix"
     },
     "9_1": {
         "affix": "Shimmering",
-        "value": "+(10-16)% increased Elemental Damage",
+        "value": "(10-16)% increased Elemental Damage",
         "level": 8,
         "type": "Suffix"
     },
     "9_2": {
         "affix": "Shimmering",
-        "value": "+(17-24)% increased Elemental Damage",
+        "value": "(17-24)% increased Elemental Damage",
         "level": 8,
         "type": "Suffix"
     },
     "9_3": {
         "affix": "Shimmering",
-        "value": "+(25-32)% increased Elemental Damage",
+        "value": "(25-32)% increased Elemental Damage",
         "level": 8,
         "type": "Suffix"
     },
     "9_4": {
         "affix": "Shimmering",
-        "value": "+(33-45)% increased Elemental Damage",
+        "value": "(33-45)% increased Elemental Damage",
         "level": 8,
         "type": "Suffix"
     },
     "9_5": {
         "affix": "Shimmering",
-        "value": "+(55-70)% increased Elemental Damage",
+        "value": "(55-70)% increased Elemental Damage",
         "level": 8,
         "type": "Suffix"
     },
     "9_6": {
         "affix": "Shimmering",
-        "value": "+(71-90)% increased Elemental Damage",
+        "value": "(71-90)% increased Elemental Damage",
         "level": 8,
         "type": "Suffix"
     },
@@ -505,43 +505,43 @@
     },
     "12_0": {
         "affix": "Pyromancer's",
-        "value": "+(6-12)% increased Fire Damage",
+        "value": "(6-12)% increased Fire Damage",
         "level": 0,
         "type": "Suffix"
     },
     "12_1": {
         "affix": "Pyromancer's",
-        "value": "+(13-21)% increased Fire Damage",
+        "value": "(13-21)% increased Fire Damage",
         "level": 0,
         "type": "Suffix"
     },
     "12_2": {
         "affix": "Pyromancer's",
-        "value": "+(22-30)% increased Fire Damage",
+        "value": "(22-30)% increased Fire Damage",
         "level": 0,
         "type": "Suffix"
     },
     "12_3": {
         "affix": "Pyromancer's",
-        "value": "+(31-39)% increased Fire Damage",
+        "value": "(31-39)% increased Fire Damage",
         "level": 0,
         "type": "Suffix"
     },
     "12_4": {
         "affix": "Pyromancer's",
-        "value": "+(40-60)% increased Fire Damage",
+        "value": "(40-60)% increased Fire Damage",
         "level": 0,
         "type": "Suffix"
     },
     "12_5": {
         "affix": "Pyromancer's",
-        "value": "+(75-95)% increased Fire Damage",
+        "value": "(75-95)% increased Fire Damage",
         "level": 0,
         "type": "Suffix"
     },
     "12_6": {
         "affix": "Pyromancer's",
-        "value": "+(96-120)% increased Fire Damage",
+        "value": "(96-120)% increased Fire Damage",
         "level": 0,
         "type": "Suffix"
     },
@@ -631,85 +631,85 @@
     },
     "15_0": {
         "affix": "Abyssal",
-        "value": "+(6-12)% increased Void Damage",
+        "value": "(6-12)% increased Void Damage",
         "level": 15,
         "type": "Suffix"
     },
     "15_1": {
         "affix": "Abyssal",
-        "value": "+(13-21)% increased Void Damage",
+        "value": "(13-21)% increased Void Damage",
         "level": 15,
         "type": "Suffix"
     },
     "15_2": {
         "affix": "Abyssal",
-        "value": "+(22-30)% increased Void Damage",
+        "value": "(22-30)% increased Void Damage",
         "level": 15,
         "type": "Suffix"
     },
     "15_3": {
         "affix": "Abyssal",
-        "value": "+(31-39)% increased Void Damage",
+        "value": "(31-39)% increased Void Damage",
         "level": 15,
         "type": "Suffix"
     },
     "15_4": {
         "affix": "Abyssal",
-        "value": "+(40-60)% increased Void Damage",
+        "value": "(40-60)% increased Void Damage",
         "level": 15,
         "type": "Suffix"
     },
     "15_5": {
         "affix": "Abyssal",
-        "value": "+(75-95)% increased Void Damage",
+        "value": "(75-95)% increased Void Damage",
         "level": 15,
         "type": "Suffix"
     },
     "15_6": {
         "affix": "Abyssal",
-        "value": "+(96-120)% increased Void Damage",
+        "value": "(96-120)% increased Void Damage",
         "level": 15,
         "type": "Suffix"
     },
     "16_0": {
         "affix": "Cryomancer's",
-        "value": "+(6-12)% increased Cold Damage",
+        "value": "(6-12)% increased Cold Damage",
         "level": 0,
         "type": "Suffix"
     },
     "16_1": {
         "affix": "Cryomancer's",
-        "value": "+(13-21)% increased Cold Damage",
+        "value": "(13-21)% increased Cold Damage",
         "level": 0,
         "type": "Suffix"
     },
     "16_2": {
         "affix": "Cryomancer's",
-        "value": "+(22-30)% increased Cold Damage",
+        "value": "(22-30)% increased Cold Damage",
         "level": 0,
         "type": "Suffix"
     },
     "16_3": {
         "affix": "Cryomancer's",
-        "value": "+(31-39)% increased Cold Damage",
+        "value": "(31-39)% increased Cold Damage",
         "level": 0,
         "type": "Suffix"
     },
     "16_4": {
         "affix": "Cryomancer's",
-        "value": "+(40-60)% increased Cold Damage",
+        "value": "(40-60)% increased Cold Damage",
         "level": 0,
         "type": "Suffix"
     },
     "16_5": {
         "affix": "Cryomancer's",
-        "value": "+(75-95)% increased Cold Damage",
+        "value": "(75-95)% increased Cold Damage",
         "level": 0,
         "type": "Suffix"
     },
     "16_6": {
         "affix": "Cryomancer's",
-        "value": "+(96-120)% increased Cold Damage",
+        "value": "(96-120)% increased Cold Damage",
         "level": 0,
         "type": "Suffix"
     },
@@ -757,43 +757,43 @@
     },
     "18_0": {
         "affix": "Occultist's",
-        "value": "+(6-12)% increased Necrotic Damage",
+        "value": "(6-12)% increased Necrotic Damage",
         "level": 6,
         "type": "Suffix"
     },
     "18_1": {
         "affix": "Occultist's",
-        "value": "+(13-21)% increased Necrotic Damage",
+        "value": "(13-21)% increased Necrotic Damage",
         "level": 6,
         "type": "Suffix"
     },
     "18_2": {
         "affix": "Occultist's",
-        "value": "+(22-30)% increased Necrotic Damage",
+        "value": "(22-30)% increased Necrotic Damage",
         "level": 6,
         "type": "Suffix"
     },
     "18_3": {
         "affix": "Occultist's",
-        "value": "+(31-39)% increased Necrotic Damage",
+        "value": "(31-39)% increased Necrotic Damage",
         "level": 6,
         "type": "Suffix"
     },
     "18_4": {
         "affix": "Occultist's",
-        "value": "+(40-60)% increased Necrotic Damage",
+        "value": "(40-60)% increased Necrotic Damage",
         "level": 6,
         "type": "Suffix"
     },
     "18_5": {
         "affix": "Occultist's",
-        "value": "+(75-95)% increased Necrotic Damage",
+        "value": "(75-95)% increased Necrotic Damage",
         "level": 6,
         "type": "Suffix"
     },
     "18_6": {
         "affix": "Occultist's",
-        "value": "+(96-120)% increased Necrotic Damage",
+        "value": "(96-120)% increased Necrotic Damage",
         "level": 6,
         "type": "Suffix"
     },
@@ -925,85 +925,85 @@
     },
     "22_0": {
         "affix": "of Regrowth",
-        "value": "+(5-15)% increased Health Regen",
+        "value": "(5-15)% increased Health Regen",
         "level": 0,
         "type": "Suffix"
     },
     "22_1": {
         "affix": "of Regrowth",
-        "value": "+(16-25)% increased Health Regen",
+        "value": "(16-25)% increased Health Regen",
         "level": 0,
         "type": "Suffix"
     },
     "22_2": {
         "affix": "of Regrowth",
-        "value": "+(26-35)% increased Health Regen",
+        "value": "(26-35)% increased Health Regen",
         "level": 0,
         "type": "Suffix"
     },
     "22_3": {
         "affix": "of Regrowth",
-        "value": "+(36-45)% increased Health Regen",
+        "value": "(36-45)% increased Health Regen",
         "level": 0,
         "type": "Suffix"
     },
     "22_4": {
         "affix": "of Regrowth",
-        "value": "+(46-70)% increased Health Regen",
+        "value": "(46-70)% increased Health Regen",
         "level": 0,
         "type": "Suffix"
     },
     "22_5": {
         "affix": "of Regrowth",
-        "value": "+(90-110)% increased Health Regen",
+        "value": "(90-110)% increased Health Regen",
         "level": 0,
         "type": "Suffix"
     },
     "22_6": {
         "affix": "of Regrowth",
-        "value": "+(111-140)% increased Health Regen",
+        "value": "(111-140)% increased Health Regen",
         "level": 0,
         "type": "Suffix"
     },
     "23_0": {
         "affix": "Conduit's",
-        "value": "+(6-12)% increased Lightning Damage",
+        "value": "(6-12)% increased Lightning Damage",
         "level": 0,
         "type": "Suffix"
     },
     "23_1": {
         "affix": "Conduit's",
-        "value": "+(13-21)% increased Lightning Damage",
+        "value": "(13-21)% increased Lightning Damage",
         "level": 0,
         "type": "Suffix"
     },
     "23_2": {
         "affix": "Conduit's",
-        "value": "+(22-30)% increased Lightning Damage",
+        "value": "(22-30)% increased Lightning Damage",
         "level": 0,
         "type": "Suffix"
     },
     "23_3": {
         "affix": "Conduit's",
-        "value": "+(31-39)% increased Lightning Damage",
+        "value": "(31-39)% increased Lightning Damage",
         "level": 0,
         "type": "Suffix"
     },
     "23_4": {
         "affix": "Conduit's",
-        "value": "+(40-60)% increased Lightning Damage",
+        "value": "(40-60)% increased Lightning Damage",
         "level": 0,
         "type": "Suffix"
     },
     "23_5": {
         "affix": "Conduit's",
-        "value": "+(75-95)% increased Lightning Damage",
+        "value": "(75-95)% increased Lightning Damage",
         "level": 0,
         "type": "Suffix"
     },
     "23_6": {
         "affix": "Conduit's",
-        "value": "+(96-120)% increased Lightning Damage",
+        "value": "(96-120)% increased Lightning Damage",
         "level": 0,
         "type": "Suffix"
     },
@@ -1093,43 +1093,43 @@
     },
     "26_0": {
         "affix": "Commander's",
-        "value": "+(6-12)% increased Minion Damage",
+        "value": "(6-12)% increased Minion Damage",
         "level": 0,
         "type": "Suffix"
     },
     "26_1": {
         "affix": "Commander's",
-        "value": "+(13-21)% increased Minion Damage",
+        "value": "(13-21)% increased Minion Damage",
         "level": 0,
         "type": "Suffix"
     },
     "26_2": {
         "affix": "Commander's",
-        "value": "+(22-30)% increased Minion Damage",
+        "value": "(22-30)% increased Minion Damage",
         "level": 0,
         "type": "Suffix"
     },
     "26_3": {
         "affix": "Commander's",
-        "value": "+(31-39)% increased Minion Damage",
+        "value": "(31-39)% increased Minion Damage",
         "level": 0,
         "type": "Suffix"
     },
     "26_4": {
         "affix": "Commander's",
-        "value": "+(40-60)% increased Minion Damage",
+        "value": "(40-60)% increased Minion Damage",
         "level": 0,
         "type": "Suffix"
     },
     "26_5": {
         "affix": "Commander's",
-        "value": "+(75-95)% increased Minion Damage",
+        "value": "(75-95)% increased Minion Damage",
         "level": 0,
         "type": "Suffix"
     },
     "26_6": {
         "affix": "Commander's",
-        "value": "+(96-120)% increased Minion Damage",
+        "value": "(96-120)% increased Minion Damage",
         "level": 0,
         "type": "Suffix"
     },
@@ -1177,43 +1177,43 @@
     },
     "28_0": {
         "affix": "Mercurial",
-        "value": "+(5-7)% increased Movement Speed",
+        "value": "(5-7)% increased Movement Speed",
         "level": 0,
         "type": "Suffix"
     },
     "28_1": {
         "affix": "Mercurial",
-        "value": "+(8-9)% increased Movement Speed",
+        "value": "(8-9)% increased Movement Speed",
         "level": 0,
         "type": "Suffix"
     },
     "28_2": {
         "affix": "Mercurial",
-        "value": "+(10-11)% increased Movement Speed",
+        "value": "(10-11)% increased Movement Speed",
         "level": 0,
         "type": "Suffix"
     },
     "28_3": {
         "affix": "Mercurial",
-        "value": "+(12-14)% increased Movement Speed",
+        "value": "(12-14)% increased Movement Speed",
         "level": 0,
         "type": "Suffix"
     },
     "28_4": {
         "affix": "Mercurial",
-        "value": "+(15-18)% increased Movement Speed",
+        "value": "(15-18)% increased Movement Speed",
         "level": 0,
         "type": "Suffix"
     },
     "28_5": {
         "affix": "Mercurial",
-        "value": "+(22-25)% increased Movement Speed",
+        "value": "(22-25)% increased Movement Speed",
         "level": 0,
         "type": "Suffix"
     },
     "28_6": {
         "affix": "Mercurial",
-        "value": "+(26-30)% increased Movement Speed",
+        "value": "(26-30)% increased Movement Speed",
         "level": 0,
         "type": "Suffix"
     },
@@ -1261,43 +1261,43 @@
     },
     "30_0": {
         "affix": "Warrior's",
-        "value": "+(6-12)% increased Physical Damage",
+        "value": "(6-12)% increased Physical Damage",
         "level": 0,
         "type": "Suffix"
     },
     "30_1": {
         "affix": "Warrior's",
-        "value": "+(13-21)% increased Physical Damage",
+        "value": "(13-21)% increased Physical Damage",
         "level": 0,
         "type": "Suffix"
     },
     "30_2": {
         "affix": "Warrior's",
-        "value": "+(22-30)% increased Physical Damage",
+        "value": "(22-30)% increased Physical Damage",
         "level": 0,
         "type": "Suffix"
     },
     "30_3": {
         "affix": "Warrior's",
-        "value": "+(31-39)% increased Physical Damage",
+        "value": "(31-39)% increased Physical Damage",
         "level": 0,
         "type": "Suffix"
     },
     "30_4": {
         "affix": "Warrior's",
-        "value": "+(40-60)% increased Physical Damage",
+        "value": "(40-60)% increased Physical Damage",
         "level": 0,
         "type": "Suffix"
     },
     "30_5": {
         "affix": "Warrior's",
-        "value": "+(75-95)% increased Physical Damage",
+        "value": "(75-95)% increased Physical Damage",
         "level": 0,
         "type": "Suffix"
     },
     "30_6": {
         "affix": "Warrior's",
-        "value": "+(96-120)% increased Physical Damage",
+        "value": "(96-120)% increased Physical Damage",
         "level": 0,
         "type": "Suffix"
     },
@@ -1597,43 +1597,43 @@
     },
     "38_0": {
         "affix": "Imbued",
-        "value": "+(6-12)% increased Spell Damage",
+        "value": "(6-12)% increased Spell Damage",
         "level": 0,
         "type": "Suffix"
     },
     "38_1": {
         "affix": "Imbued",
-        "value": "+(13-21)% increased Spell Damage",
+        "value": "(13-21)% increased Spell Damage",
         "level": 0,
         "type": "Suffix"
     },
     "38_2": {
         "affix": "Imbued",
-        "value": "+(22-30)% increased Spell Damage",
+        "value": "(22-30)% increased Spell Damage",
         "level": 0,
         "type": "Suffix"
     },
     "38_3": {
         "affix": "Imbued",
-        "value": "+(31-39)% increased Spell Damage",
+        "value": "(31-39)% increased Spell Damage",
         "level": 0,
         "type": "Suffix"
     },
     "38_4": {
         "affix": "Imbued",
-        "value": "+(40-60)% increased Spell Damage",
+        "value": "(40-60)% increased Spell Damage",
         "level": 0,
         "type": "Suffix"
     },
     "38_5": {
         "affix": "Imbued",
-        "value": "+(75-95)% increased Spell Damage",
+        "value": "(75-95)% increased Spell Damage",
         "level": 0,
         "type": "Suffix"
     },
     "38_6": {
         "affix": "Imbued",
-        "value": "+(96-120)% increased Spell Damage",
+        "value": "(96-120)% increased Spell Damage",
         "level": 0,
         "type": "Suffix"
     },
@@ -2185,43 +2185,43 @@
     },
     "52_0": {
         "affix": "of the Ox",
-        "value": "+(3-3)% increased Health",
+        "value": "(3-3)% increased Health",
         "level": 25,
         "type": "Suffix"
     },
     "52_1": {
         "affix": "of the Ox",
-        "value": "+(4-5)% increased Health",
+        "value": "(4-5)% increased Health",
         "level": 25,
         "type": "Suffix"
     },
     "52_2": {
         "affix": "of the Ox",
-        "value": "+(6-7)% increased Health",
+        "value": "(6-7)% increased Health",
         "level": 25,
         "type": "Suffix"
     },
     "52_3": {
         "affix": "of the Ox",
-        "value": "+(8-9)% increased Health",
+        "value": "(8-9)% increased Health",
         "level": 25,
         "type": "Suffix"
     },
     "52_4": {
         "affix": "of the Ox",
-        "value": "+(10-12)% increased Health",
+        "value": "(10-12)% increased Health",
         "level": 25,
         "type": "Suffix"
     },
     "52_5": {
         "affix": "of the Ox",
-        "value": "+(15-19)% increased Health",
+        "value": "(15-19)% increased Health",
         "level": 25,
         "type": "Suffix"
     },
     "52_6": {
         "affix": "of the Ox",
-        "value": "+(20-24)% increased Health",
+        "value": "(20-24)% increased Health",
         "level": 25,
         "type": "Suffix"
     },
@@ -2479,43 +2479,43 @@
     },
     "59_0": {
         "affix": "of the Fox",
-        "value": "+(10-14)% increased Dodge Rating",
+        "value": "(10-14)% increased Dodge Rating",
         "level": 16,
         "type": "Suffix"
     },
     "59_1": {
         "affix": "of the Fox",
-        "value": "+(15-19)% increased Dodge Rating",
+        "value": "(15-19)% increased Dodge Rating",
         "level": 16,
         "type": "Suffix"
     },
     "59_2": {
         "affix": "of the Fox",
-        "value": "+(20-24)% increased Dodge Rating",
+        "value": "(20-24)% increased Dodge Rating",
         "level": 16,
         "type": "Suffix"
     },
     "59_3": {
         "affix": "of the Fox",
-        "value": "+(25-28)% increased Dodge Rating",
+        "value": "(25-28)% increased Dodge Rating",
         "level": 16,
         "type": "Suffix"
     },
     "59_4": {
         "affix": "of the Fox",
-        "value": "+(30-38)% increased Dodge Rating",
+        "value": "(30-38)% increased Dodge Rating",
         "level": 16,
         "type": "Suffix"
     },
     "59_5": {
         "affix": "of the Fox",
-        "value": "+(48-60)% increased Dodge Rating",
+        "value": "(48-60)% increased Dodge Rating",
         "level": 16,
         "type": "Suffix"
     },
     "59_6": {
         "affix": "of the Fox",
-        "value": "+(61-75)% increased Dodge Rating",
+        "value": "(61-75)% increased Dodge Rating",
         "level": 16,
         "type": "Suffix"
     },
@@ -2563,43 +2563,43 @@
     },
     "61_0": {
         "affix": "Toxic",
-        "value": "+(6-12)% increased Poison Damage",
+        "value": "(6-12)% increased Poison Damage",
         "level": 11,
         "type": "Suffix"
     },
     "61_1": {
         "affix": "Toxic",
-        "value": "+(13-21)% increased Poison Damage",
+        "value": "(13-21)% increased Poison Damage",
         "level": 11,
         "type": "Suffix"
     },
     "61_2": {
         "affix": "Toxic",
-        "value": "+(22-30)% increased Poison Damage",
+        "value": "(22-30)% increased Poison Damage",
         "level": 11,
         "type": "Suffix"
     },
     "61_3": {
         "affix": "Toxic",
-        "value": "+(31-39)% increased Poison Damage",
+        "value": "(31-39)% increased Poison Damage",
         "level": 11,
         "type": "Suffix"
     },
     "61_4": {
         "affix": "Toxic",
-        "value": "+(40-60)% increased Poison Damage",
+        "value": "(40-60)% increased Poison Damage",
         "level": 11,
         "type": "Suffix"
     },
     "61_5": {
         "affix": "Toxic",
-        "value": "+(75-95)% increased Poison Damage",
+        "value": "(75-95)% increased Poison Damage",
         "level": 11,
         "type": "Suffix"
     },
     "61_6": {
         "affix": "Toxic",
-        "value": "+(96-120)% increased Poison Damage",
+        "value": "(96-120)% increased Poison Damage",
         "level": 11,
         "type": "Suffix"
     },
@@ -2941,43 +2941,43 @@
     },
     "70_0": {
         "affix": "Ursine",
-        "value": "+(15-35)% increased Minion Health",
+        "value": "(15-35)% increased Minion Health",
         "level": 6,
         "type": "Suffix"
     },
     "70_1": {
         "affix": "Ursine",
-        "value": "+(36-55)% increased Minion Health",
+        "value": "(36-55)% increased Minion Health",
         "level": 6,
         "type": "Suffix"
     },
     "70_2": {
         "affix": "Ursine",
-        "value": "+(56-75)% increased Minion Health",
+        "value": "(56-75)% increased Minion Health",
         "level": 6,
         "type": "Suffix"
     },
     "70_3": {
         "affix": "Ursine",
-        "value": "+(76-100)% increased Minion Health",
+        "value": "(76-100)% increased Minion Health",
         "level": 6,
         "type": "Suffix"
     },
     "70_4": {
         "affix": "Ursine",
-        "value": "+(101-150)% increased Minion Health",
+        "value": "(101-150)% increased Minion Health",
         "level": 6,
         "type": "Suffix"
     },
     "70_5": {
         "affix": "Ursine",
-        "value": "+(190-229)% increased Minion Health",
+        "value": "(190-229)% increased Minion Health",
         "level": 6,
         "type": "Suffix"
     },
     "70_6": {
         "affix": "Ursine",
-        "value": "+(231-300)% increased Minion Health",
+        "value": "(231-300)% increased Minion Health",
         "level": 6,
         "type": "Suffix"
     },
@@ -3025,43 +3025,43 @@
     },
     "72_0": {
         "affix": "Blighted",
-        "value": "+(6-12)% increased Damage Over Time",
+        "value": "(6-12)% increased Damage Over Time",
         "level": 0,
         "type": "Suffix"
     },
     "72_1": {
         "affix": "Blighted",
-        "value": "+(13-21)% increased Damage Over Time",
+        "value": "(13-21)% increased Damage Over Time",
         "level": 0,
         "type": "Suffix"
     },
     "72_2": {
         "affix": "Blighted",
-        "value": "+(22-30)% increased Damage Over Time",
+        "value": "(22-30)% increased Damage Over Time",
         "level": 0,
         "type": "Suffix"
     },
     "72_3": {
         "affix": "Blighted",
-        "value": "+(31-39)% increased Damage Over Time",
+        "value": "(31-39)% increased Damage Over Time",
         "level": 0,
         "type": "Suffix"
     },
     "72_4": {
         "affix": "Blighted",
-        "value": "+(40-60)% increased Damage Over Time",
+        "value": "(40-60)% increased Damage Over Time",
         "level": 0,
         "type": "Suffix"
     },
     "72_5": {
         "affix": "Blighted",
-        "value": "+(75-95)% increased Damage Over Time",
+        "value": "(75-95)% increased Damage Over Time",
         "level": 0,
         "type": "Suffix"
     },
     "72_6": {
         "affix": "Blighted",
-        "value": "+(96-120)% increased Damage Over Time",
+        "value": "(96-120)% increased Damage Over Time",
         "level": 0,
         "type": "Suffix"
     },
@@ -3109,43 +3109,43 @@
     },
     "74_0": {
         "affix": "of the Defender",
-        "value": "+(-4--4)% increased Damage Taken on Block",
+        "value": "(-4--4)% increased Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "74_1": {
         "affix": "of the Defender",
-        "value": "+(-5--5)% increased Damage Taken on Block",
+        "value": "(-5--5)% increased Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "74_2": {
         "affix": "of the Defender",
-        "value": "+(-6--6)% increased Damage Taken on Block",
+        "value": "(-6--6)% increased Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "74_3": {
         "affix": "of the Defender",
-        "value": "+(-7--8)% increased Damage Taken on Block",
+        "value": "(-7--8)% increased Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "74_4": {
         "affix": "of the Defender",
-        "value": "+(-9--10)% increased Damage Taken on Block",
+        "value": "(-9--10)% increased Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "74_5": {
         "affix": "of the Defender",
-        "value": "+(-13--14)% increased Damage Taken on Block",
+        "value": "(-13--14)% increased Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "74_6": {
         "affix": "of the Defender",
-        "value": "+(-15--17)% increased Damage Taken on Block",
+        "value": "(-15--17)% increased Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
@@ -3529,43 +3529,43 @@
     },
     "84_0": {
         "affix": "Witch's",
-        "value": "+(20-25)% increased Spell Critical Strike Chance",
+        "value": "(20-25)% increased Spell Critical Strike Chance",
         "level": 15,
         "type": "Suffix"
     },
     "84_1": {
         "affix": "Witch's",
-        "value": "+(26-34)% increased Spell Critical Strike Chance",
+        "value": "(26-34)% increased Spell Critical Strike Chance",
         "level": 15,
         "type": "Suffix"
     },
     "84_2": {
         "affix": "Witch's",
-        "value": "+(35-43)% increased Spell Critical Strike Chance",
+        "value": "(35-43)% increased Spell Critical Strike Chance",
         "level": 15,
         "type": "Suffix"
     },
     "84_3": {
         "affix": "Witch's",
-        "value": "+(44-54)% increased Spell Critical Strike Chance",
+        "value": "(44-54)% increased Spell Critical Strike Chance",
         "level": 15,
         "type": "Suffix"
     },
     "84_4": {
         "affix": "Witch's",
-        "value": "+(55-75)% increased Spell Critical Strike Chance",
+        "value": "(55-75)% increased Spell Critical Strike Chance",
         "level": 15,
         "type": "Suffix"
     },
     "84_5": {
         "affix": "Witch's",
-        "value": "+(95-114)% increased Spell Critical Strike Chance",
+        "value": "(95-114)% increased Spell Critical Strike Chance",
         "level": 15,
         "type": "Suffix"
     },
     "84_6": {
         "affix": "Witch's",
-        "value": "+(115-150)% increased Spell Critical Strike Chance",
+        "value": "(115-150)% increased Spell Critical Strike Chance",
         "level": 15,
         "type": "Suffix"
     },
@@ -3655,43 +3655,43 @@
     },
     "87_0": {
         "affix": "Slinger's",
-        "value": "+(5-7)% increased Throwing Attack Speed",
+        "value": "(5-7)% increased Throwing Attack Speed",
         "level": 17,
         "type": "Suffix"
     },
     "87_1": {
         "affix": "Slinger's",
-        "value": "+(8-10)% increased Throwing Attack Speed",
+        "value": "(8-10)% increased Throwing Attack Speed",
         "level": 17,
         "type": "Suffix"
     },
     "87_2": {
         "affix": "Slinger's",
-        "value": "+(11-14)% increased Throwing Attack Speed",
+        "value": "(11-14)% increased Throwing Attack Speed",
         "level": 17,
         "type": "Suffix"
     },
     "87_3": {
         "affix": "Slinger's",
-        "value": "+(15-18)% increased Throwing Attack Speed",
+        "value": "(15-18)% increased Throwing Attack Speed",
         "level": 17,
         "type": "Suffix"
     },
     "87_4": {
         "affix": "Slinger's",
-        "value": "+(19-23)% increased Throwing Attack Speed",
+        "value": "(19-23)% increased Throwing Attack Speed",
         "level": 17,
         "type": "Suffix"
     },
     "87_5": {
         "affix": "Slinger's",
-        "value": "+(26-30)% increased Throwing Attack Speed",
+        "value": "(26-30)% increased Throwing Attack Speed",
         "level": 17,
         "type": "Suffix"
     },
     "87_6": {
         "affix": "Slinger's",
-        "value": "+(31-36)% increased Throwing Attack Speed",
+        "value": "(31-36)% increased Throwing Attack Speed",
         "level": 17,
         "type": "Suffix"
     },
@@ -3739,43 +3739,43 @@
     },
     "89_0": {
         "affix": "Rending",
-        "value": "+(6-12)% increased Melee Damage",
+        "value": "(6-12)% increased Melee Damage",
         "level": 0,
         "type": "Suffix"
     },
     "89_1": {
         "affix": "Rending",
-        "value": "+(13-21)% increased Melee Damage",
+        "value": "(13-21)% increased Melee Damage",
         "level": 0,
         "type": "Suffix"
     },
     "89_2": {
         "affix": "Rending",
-        "value": "+(22-30)% increased Melee Damage",
+        "value": "(22-30)% increased Melee Damage",
         "level": 0,
         "type": "Suffix"
     },
     "89_3": {
         "affix": "Rending",
-        "value": "+(31-39)% increased Melee Damage",
+        "value": "(31-39)% increased Melee Damage",
         "level": 0,
         "type": "Suffix"
     },
     "89_4": {
         "affix": "Rending",
-        "value": "+(40-60)% increased Melee Damage",
+        "value": "(40-60)% increased Melee Damage",
         "level": 0,
         "type": "Suffix"
     },
     "89_5": {
         "affix": "Rending",
-        "value": "+(75-95)% increased Melee Damage",
+        "value": "(75-95)% increased Melee Damage",
         "level": 0,
         "type": "Suffix"
     },
     "89_6": {
         "affix": "Rending",
-        "value": "+(96-120)% increased Melee Damage",
+        "value": "(96-120)% increased Melee Damage",
         "level": 0,
         "type": "Suffix"
     },
@@ -4117,43 +4117,43 @@
     },
     "98_0": {
         "affix": "of Sorrow",
-        "value": "+(10-20)% increased Minion Damage Over Time",
+        "value": "(10-20)% increased Minion Damage Over Time",
         "level": 48,
         "type": "Suffix"
     },
     "98_1": {
         "affix": "of Sorrow",
-        "value": "+(21-30)% increased Minion Damage Over Time",
+        "value": "(21-30)% increased Minion Damage Over Time",
         "level": 48,
         "type": "Suffix"
     },
     "98_2": {
         "affix": "of Sorrow",
-        "value": "+(31-40)% increased Minion Damage Over Time",
+        "value": "(31-40)% increased Minion Damage Over Time",
         "level": 48,
         "type": "Suffix"
     },
     "98_3": {
         "affix": "of Sorrow",
-        "value": "+(41-50)% increased Minion Damage Over Time",
+        "value": "(41-50)% increased Minion Damage Over Time",
         "level": 48,
         "type": "Suffix"
     },
     "98_4": {
         "affix": "of Sorrow",
-        "value": "+(51-70)% increased Minion Damage Over Time",
+        "value": "(51-70)% increased Minion Damage Over Time",
         "level": 48,
         "type": "Suffix"
     },
     "98_5": {
         "affix": "of Sorrow",
-        "value": "+(90-110)% increased Minion Damage Over Time",
+        "value": "(90-110)% increased Minion Damage Over Time",
         "level": 48,
         "type": "Suffix"
     },
     "98_6": {
         "affix": "of Sorrow",
-        "value": "+(111-140)% increased Minion Damage Over Time",
+        "value": "(111-140)% increased Minion Damage Over Time",
         "level": 48,
         "type": "Suffix"
     },
@@ -4201,43 +4201,43 @@
     },
     "100_0": {
         "affix": "Infernal",
-        "value": "+(10-20)% increased Elemental Damage Over Time",
+        "value": "(10-20)% increased Elemental Damage Over Time",
         "level": 50,
         "type": "Suffix"
     },
     "100_1": {
         "affix": "Infernal",
-        "value": "+(21-35)% increased Elemental Damage Over Time",
+        "value": "(21-35)% increased Elemental Damage Over Time",
         "level": 50,
         "type": "Suffix"
     },
     "100_2": {
         "affix": "Infernal",
-        "value": "+(36-50)% increased Elemental Damage Over Time",
+        "value": "(36-50)% increased Elemental Damage Over Time",
         "level": 50,
         "type": "Suffix"
     },
     "100_3": {
         "affix": "Infernal",
-        "value": "+(51-70)% increased Elemental Damage Over Time",
+        "value": "(51-70)% increased Elemental Damage Over Time",
         "level": 50,
         "type": "Suffix"
     },
     "100_4": {
         "affix": "Infernal",
-        "value": "+(71-110)% increased Elemental Damage Over Time",
+        "value": "(71-110)% increased Elemental Damage Over Time",
         "level": 50,
         "type": "Suffix"
     },
     "100_5": {
         "affix": "Infernal",
-        "value": "+(140-170)% increased Elemental Damage Over Time",
+        "value": "(140-170)% increased Elemental Damage Over Time",
         "level": 50,
         "type": "Suffix"
     },
     "100_6": {
         "affix": "Infernal",
-        "value": "+(171-220)% increased Elemental Damage Over Time",
+        "value": "(171-220)% increased Elemental Damage Over Time",
         "level": 50,
         "type": "Suffix"
     },
@@ -4327,43 +4327,43 @@
     },
     "103_0": {
         "affix": "Channeller's",
-        "value": "+(6-12)% increased Damage While Channelling",
+        "value": "(6-12)% increased Damage While Channelling",
         "level": 38,
         "type": "Suffix"
     },
     "103_1": {
         "affix": "Channeller's",
-        "value": "+(13-21)% increased Damage While Channelling",
+        "value": "(13-21)% increased Damage While Channelling",
         "level": 38,
         "type": "Suffix"
     },
     "103_2": {
         "affix": "Channeller's",
-        "value": "+(22-30)% increased Damage While Channelling",
+        "value": "(22-30)% increased Damage While Channelling",
         "level": 38,
         "type": "Suffix"
     },
     "103_3": {
         "affix": "Channeller's",
-        "value": "+(31-39)% increased Damage While Channelling",
+        "value": "(31-39)% increased Damage While Channelling",
         "level": 38,
         "type": "Suffix"
     },
     "103_4": {
         "affix": "Channeller's",
-        "value": "+(40-60)% increased Damage While Channelling",
+        "value": "(40-60)% increased Damage While Channelling",
         "level": 38,
         "type": "Suffix"
     },
     "103_5": {
         "affix": "Channeller's",
-        "value": "+(75-95)% increased Damage While Channelling",
+        "value": "(75-95)% increased Damage While Channelling",
         "level": 38,
         "type": "Suffix"
     },
     "103_6": {
         "affix": "Channeller's",
-        "value": "+(96-120)% increased Damage While Channelling",
+        "value": "(96-120)% increased Damage While Channelling",
         "level": 38,
         "type": "Suffix"
     },
@@ -4423,13 +4423,13 @@
     },
     "107_0": {
         "affix": "Vigorous",
-        "value": "+(5-14)% increased Health",
+        "value": "(5-14)% increased Health",
         "level": 0,
         "type": "Prefix"
     },
     "108_0": {
         "affix": "Bountiful",
-        "value": "+(25-68)% increased Health Regen",
+        "value": "(25-68)% increased Health Regen",
         "level": 0,
         "type": "Prefix"
     },
@@ -4495,7 +4495,7 @@
     },
     "119_0": {
         "affix": "Blighted",
-        "value": "+(22-60)% increased Damage Over Time",
+        "value": "(22-60)% increased Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
@@ -4543,7 +4543,7 @@
     },
     "127_0": {
         "affix": "of Cinders",
-        "value": "+(33-90)% increased Fire Damage Over Time",
+        "value": "(33-90)% increased Fire Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
@@ -4555,13 +4555,13 @@
     },
     "129_0": {
         "affix": "of the Stronghold",
-        "value": "+(5-12)% increased Armor\n+(5-12)% increased Mana",
+        "value": "(5-12)% increased Armor\n(5-12)% increased Mana",
         "level": 0,
         "type": "Prefix"
     },
     "130_0": {
         "affix": "of Farwood",
-        "value": "+(61-165)% increased Health for Totems",
+        "value": "(61-165)% increased Health for Totems",
         "level": 0,
         "type": "Prefix"
     },
@@ -4573,7 +4573,7 @@
     },
     "132_0": {
         "affix": "Of Harmony",
-        "value": "+(35-100)% increased Health Regen While Transformed",
+        "value": "(35-100)% increased Health Regen While Transformed",
         "level": 0,
         "type": "Prefix"
     },
@@ -4585,7 +4585,7 @@
     },
     "134_0": {
         "affix": "Assassin's",
-        "value": "+(20-55)% increased Critical Strike Chance",
+        "value": "(20-55)% increased Critical Strike Chance",
         "level": 0,
         "type": "Prefix"
     },
@@ -4645,7 +4645,7 @@
     },
     "144_0": {
         "affix": "Empowered",
-        "value": "+(11-30)% increased Cast Speed for Totems",
+        "value": "(11-30)% increased Cast Speed for Totems",
         "level": 0,
         "type": "Prefix"
     },
@@ -4663,7 +4663,7 @@
     },
     "147_0": {
         "affix": "of Fury",
-        "value": "+(9-24)% increased Minion Melee Attack Speed",
+        "value": "(9-24)% increased Minion Melee Attack Speed",
         "level": 0,
         "type": "Prefix"
     },
@@ -4687,7 +4687,7 @@
     },
     "151_0": {
         "affix": "of Savagery",
-        "value": "+(22-60)% increased Minion Critical Strike Chance",
+        "value": "(22-60)% increased Minion Critical Strike Chance",
         "level": 0,
         "type": "Prefix"
     },
@@ -4717,19 +4717,19 @@
     },
     "156_0": {
         "affix": "Flaying",
-        "value": "+(22-60)% increased Melee Damage While Transformed",
+        "value": "(22-60)% increased Melee Damage While Transformed",
         "level": 0,
         "type": "Prefix"
     },
     "157_0": {
         "affix": "Dryad's",
-        "value": "+(22-60)% increased Spell Damage While Transformed",
+        "value": "(22-60)% increased Spell Damage While Transformed",
         "level": 0,
         "type": "Prefix"
     },
     "158_0": {
         "affix": "Efficacious",
-        "value": "+(22-60)% increased Damage Over Time While Transformed",
+        "value": "(22-60)% increased Damage Over Time While Transformed",
         "level": 0,
         "type": "Prefix"
     },
@@ -4771,7 +4771,7 @@
     },
     "165_0": {
         "affix": "of Resolve",
-        "value": "+(-6--16)% increased Damage Over Time Taken While Channelling",
+        "value": "(-6--16)% increased Damage Over Time Taken While Channelling",
         "level": 0,
         "type": "Prefix"
     },
@@ -4789,37 +4789,37 @@
     },
     "168_0": {
         "affix": "of Thunder",
-        "value": "+(19-50)% increased Lightning Critical Strike Chance\n+(19-50)% increased Minion Lightning Critical Strike Chance",
+        "value": "(19-50)% increased Lightning Critical Strike Chance\n(19-50)% increased Minion Lightning Critical Strike Chance",
         "level": 0,
         "type": "Prefix"
     },
     "169_0": {
         "affix": "of the Tempest",
-        "value": "+(18-48)% increased Cold Damage\n+(18-48)% increased Lightning Damage",
+        "value": "(18-48)% increased Cold Damage\n(18-48)% increased Lightning Damage",
         "level": 0,
         "type": "Prefix"
     },
     "170_0": {
         "affix": "of Stars",
-        "value": "+(18-48)% increased Spell Damage\n+(18-48)% increased Minion Spell Damage",
+        "value": "(18-48)% increased Spell Damage\n(18-48)% increased Minion Spell Damage",
         "level": 0,
         "type": "Prefix"
     },
     "171_0": {
         "affix": "of War",
-        "value": "+(18-48)% increased Melee Damage\n+(18-48)% increased Minion Melee Damage",
+        "value": "(18-48)% increased Melee Damage\n(18-48)% increased Minion Melee Damage",
         "level": 0,
         "type": "Prefix"
     },
     "172_0": {
         "affix": "of the Scorpion",
-        "value": "+(18-48)% increased Physical Damage\n+(18-48)% increased Poison Damage",
+        "value": "(18-48)% increased Physical Damage\n(18-48)% increased Poison Damage",
         "level": 0,
         "type": "Prefix"
     },
     "173_0": {
         "affix": "of the Hive",
-        "value": "+(18-48)% increased Damage Over Time\n+(18-48)% increased Minion Damage Over Time",
+        "value": "(18-48)% increased Damage Over Time\n(18-48)% increased Minion Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
@@ -4837,13 +4837,13 @@
     },
     "176_0": {
         "affix": "of Rime",
-        "value": "+(30-75)% increased Cold Damage Over Time",
+        "value": "(30-75)% increased Cold Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
     "177_0": {
         "affix": "of Cinders",
-        "value": "+(22-60)% increased Fire Damage Over Time",
+        "value": "(22-60)% increased Fire Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
@@ -4855,7 +4855,7 @@
     },
     "179_0": {
         "affix": "Gleaming",
-        "value": "+(28-70)% increased Melee Elemental Damage",
+        "value": "(28-70)% increased Melee Elemental Damage",
         "level": 0,
         "type": "Prefix"
     },
@@ -4891,7 +4891,7 @@
     },
     "185_0": {
         "affix": "Crackling",
-        "value": "+(22-60)% increased Lightning Critical Strike Chance",
+        "value": "(22-60)% increased Lightning Critical Strike Chance",
         "level": 0,
         "type": "Prefix"
     },
@@ -4975,7 +4975,7 @@
     },
     "193_0": {
         "affix": "of Blood Loss",
-        "value": "+(33-90)% increased Physical Damage Over Time",
+        "value": "(33-90)% increased Physical Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
@@ -4993,7 +4993,7 @@
     },
     "196_0": {
         "affix": "of the Fortress",
-        "value": "+(15-35)% increased Armor",
+        "value": "(15-35)% increased Armor",
         "level": 0,
         "type": "Prefix"
     },
@@ -5359,7 +5359,7 @@
     },
     "257_0": {
         "affix": "Vigorous",
-        "value": "+(5-14)% increased Health",
+        "value": "(5-14)% increased Health",
         "level": 0,
         "type": "Prefix"
     },
@@ -5371,7 +5371,7 @@
     },
     "259_0": {
         "affix": "Banshee's",
-        "value": "+(26-70)% increased Damage Over Time while at Low Health",
+        "value": "(26-70)% increased Damage Over Time while at Low Health",
         "level": 0,
         "type": "Prefix"
     },
@@ -5383,13 +5383,13 @@
     },
     "261_0": {
         "affix": "Abominable",
-        "value": "+(26-70)% increased Damage While Transformed",
+        "value": "(26-70)% increased Damage While Transformed",
         "level": 0,
         "type": "Prefix"
     },
     "262_0": {
         "affix": "Abiding",
-        "value": "+(-5--12)% increased Damage Over Time Taken While Transformed",
+        "value": "(-5--12)% increased Damage Over Time Taken While Transformed",
         "level": 0,
         "type": "Prefix"
     },
@@ -5419,7 +5419,7 @@
     },
     "267_0": {
         "affix": "of Coagulation",
-        "value": "+(-4--10)% increased Health Regen\n+(-4--10)% increased Damage Over Time Taken",
+        "value": "(-4--10)% increased Health Regen\n(-4--10)% increased Damage Over Time Taken",
         "level": 0,
         "type": "Prefix"
     },
@@ -5515,7 +5515,7 @@
     },
     "283_0": {
         "affix": "Deep",
-        "value": "+(12-24)% increased Increased Abyssal Decay Duration ",
+        "value": "(12-24)% increased Increased Abyssal Decay Duration ",
         "level": 0,
         "type": "Prefix"
     },
@@ -5551,7 +5551,7 @@
     },
     "289_0": {
         "affix": "of Suspension",
-        "value": "+(-4--9)% increased Damage Over Time Taken",
+        "value": "(-4--9)% increased Damage Over Time Taken",
         "level": 0,
         "type": "Prefix"
     },
@@ -5569,25 +5569,25 @@
     },
     "292_0": {
         "affix": "of Bloodwrath",
-        "value": "+(20-75)% increased Spell Damage while at Low Health",
+        "value": "(20-75)% increased Spell Damage while at Low Health",
         "level": 0,
         "type": "Prefix"
     },
     "293_0": {
         "affix": "Cremating",
-        "value": "+(39-108)% increased Minion Fire Damage",
+        "value": "(39-108)% increased Minion Fire Damage",
         "level": 0,
         "type": "Prefix"
     },
     "294_0": {
         "affix": "Brittle",
-        "value": "+(39-108)% increased Minion Cold Damage",
+        "value": "(39-108)% increased Minion Cold Damage",
         "level": 0,
         "type": "Prefix"
     },
     "295_0": {
         "affix": "of Impact",
-        "value": "+(24-65)% increased Physical Spell Critical Strike Chance",
+        "value": "(24-65)% increased Physical Spell Critical Strike Chance",
         "level": 0,
         "type": "Prefix"
     },
@@ -5599,7 +5599,7 @@
     },
     "297_0": {
         "affix": "of Cruelty",
-        "value": "+(15-40)% increased Critical Strike Chance\n+(15-40)% increased Minion Critical Strike Chance",
+        "value": "(15-40)% increased Critical Strike Chance\n(15-40)% increased Minion Critical Strike Chance",
         "level": 0,
         "type": "Prefix"
     },
@@ -5731,49 +5731,49 @@
     },
     "319_0": {
         "affix": "of Iron",
-        "value": "+(17-45)% increased Physical Damage\n+(17-45)% increased Minion Physical Damage",
+        "value": "(17-45)% increased Physical Damage\n(17-45)% increased Minion Physical Damage",
         "level": 0,
         "type": "Prefix"
     },
     "320_0": {
         "affix": "of Storms",
-        "value": "+(17-45)% increased Lightning Damage\n+(17-45)% increased Minion Lightning Damage",
+        "value": "(17-45)% increased Lightning Damage\n(17-45)% increased Minion Lightning Damage",
         "level": 0,
         "type": "Prefix"
     },
     "321_0": {
         "affix": "of Ice",
-        "value": "+(17-45)% increased Cold Damage\n+(17-45)% increased Minion Cold Damage",
+        "value": "(17-45)% increased Cold Damage\n(17-45)% increased Minion Cold Damage",
         "level": 0,
         "type": "Prefix"
     },
     "322_0": {
         "affix": "of Fire",
-        "value": "+(17-45)% increased Fire Damage\n+(17-45)% increased Minion Fire Damage",
+        "value": "(17-45)% increased Fire Damage\n(17-45)% increased Minion Fire Damage",
         "level": 0,
         "type": "Prefix"
     },
     "323_0": {
         "affix": "of Doom",
-        "value": "+(17-45)% increased Void Damage\n+(17-45)% increased Minion Void Damage",
+        "value": "(17-45)% increased Void Damage\n(17-45)% increased Minion Void Damage",
         "level": 0,
         "type": "Prefix"
     },
     "324_0": {
         "affix": "of Souls",
-        "value": "+(17-45)% increased Necrotic Damage\n+(17-45)% increased Minion Necrotic Damage",
+        "value": "(17-45)% increased Necrotic Damage\n(17-45)% increased Minion Necrotic Damage",
         "level": 0,
         "type": "Prefix"
     },
     "325_0": {
         "affix": "of Poison",
-        "value": "+(17-45)% increased Poison Damage\n+(17-45)% increased Minion Poison Damage",
+        "value": "(17-45)% increased Poison Damage\n(17-45)% increased Minion Poison Damage",
         "level": 0,
         "type": "Prefix"
     },
     "326_0": {
         "affix": "of Despair",
-        "value": "+(33-90)% increased Melee Void Damage",
+        "value": "(33-90)% increased Melee Void Damage",
         "level": 0,
         "type": "Prefix"
     },
@@ -5791,91 +5791,91 @@
     },
     "329_0": {
         "affix": "of Reverence",
-        "value": "+(30-80)% increased Damage for Totems",
+        "value": "(30-80)% increased Damage for Totems",
         "level": 0,
         "type": "Prefix"
     },
     "330_0": {
         "affix": "Rejuvenating",
-        "value": "+(10-14)% increased Mana Regen",
+        "value": "(10-14)% increased Mana Regen",
         "level": 0,
         "type": "Suffix"
     },
     "330_1": {
         "affix": "Rejuvenating",
-        "value": "+(15-19)% increased Mana Regen",
+        "value": "(15-19)% increased Mana Regen",
         "level": 0,
         "type": "Suffix"
     },
     "330_2": {
         "affix": "Rejuvenating",
-        "value": "+(20-24)% increased Mana Regen",
+        "value": "(20-24)% increased Mana Regen",
         "level": 0,
         "type": "Suffix"
     },
     "330_3": {
         "affix": "Rejuvenating",
-        "value": "+(25-28)% increased Mana Regen",
+        "value": "(25-28)% increased Mana Regen",
         "level": 0,
         "type": "Suffix"
     },
     "330_4": {
         "affix": "Rejuvenating",
-        "value": "+(30-35)% increased Mana Regen",
+        "value": "(30-35)% increased Mana Regen",
         "level": 0,
         "type": "Suffix"
     },
     "330_5": {
         "affix": "Rejuvenating",
-        "value": "+(40-45)% increased Mana Regen",
+        "value": "(40-45)% increased Mana Regen",
         "level": 0,
         "type": "Suffix"
     },
     "330_6": {
         "affix": "Rejuvenating",
-        "value": "+(46-55)% increased Mana Regen",
+        "value": "(46-55)% increased Mana Regen",
         "level": 0,
         "type": "Suffix"
     },
     "331_0": {
         "affix": "Azure",
-        "value": "+(4-4)% increased Mana",
+        "value": "(4-4)% increased Mana",
         "level": 0,
         "type": "Suffix"
     },
     "331_1": {
         "affix": "Azure",
-        "value": "+(5-5)% increased Mana",
+        "value": "(5-5)% increased Mana",
         "level": 0,
         "type": "Suffix"
     },
     "331_2": {
         "affix": "Azure",
-        "value": "+(6-6)% increased Mana",
+        "value": "(6-6)% increased Mana",
         "level": 0,
         "type": "Suffix"
     },
     "331_3": {
         "affix": "Azure",
-        "value": "+(7-7)% increased Mana",
+        "value": "(7-7)% increased Mana",
         "level": 0,
         "type": "Suffix"
     },
     "331_4": {
         "affix": "Azure",
-        "value": "+(8-10)% increased Mana",
+        "value": "(8-10)% increased Mana",
         "level": 0,
         "type": "Suffix"
     },
     "331_5": {
         "affix": "Azure",
-        "value": "+(12-15)% increased Mana",
+        "value": "(12-15)% increased Mana",
         "level": 0,
         "type": "Suffix"
     },
     "331_6": {
         "affix": "Azure",
-        "value": "+(16-20)% increased Mana",
+        "value": "(16-20)% increased Mana",
         "level": 0,
         "type": "Suffix"
     },
@@ -5923,43 +5923,43 @@
     },
     "333_0": {
         "affix": null,
-        "value": "+(25-27)% increased Lightning Damage\n+(25-27)% increased Minion Lightning Damage",
+        "value": "(25-27)% increased Lightning Damage\n(25-27)% increased Minion Lightning Damage",
         "level": 48,
         "type": "Suffix"
     },
     "333_1": {
         "affix": null,
-        "value": "+(28-30)% increased Lightning Damage\n+(28-30)% increased Minion Lightning Damage",
+        "value": "(28-30)% increased Lightning Damage\n(28-30)% increased Minion Lightning Damage",
         "level": 48,
         "type": "Suffix"
     },
     "333_2": {
         "affix": null,
-        "value": "+(31-33)% increased Lightning Damage\n+(31-33)% increased Minion Lightning Damage",
+        "value": "(31-33)% increased Lightning Damage\n(31-33)% increased Minion Lightning Damage",
         "level": 48,
         "type": "Suffix"
     },
     "333_3": {
         "affix": null,
-        "value": "+(34-36)% increased Lightning Damage\n+(34-36)% increased Minion Lightning Damage",
+        "value": "(34-36)% increased Lightning Damage\n(34-36)% increased Minion Lightning Damage",
         "level": 48,
         "type": "Suffix"
     },
     "333_4": {
         "affix": null,
-        "value": "+(37-50)% increased Lightning Damage\n+(37-50)% increased Minion Lightning Damage",
+        "value": "(37-50)% increased Lightning Damage\n(37-50)% increased Minion Lightning Damage",
         "level": 48,
         "type": "Suffix"
     },
     "333_5": {
         "affix": null,
-        "value": "+(60-75)% increased Lightning Damage\n+(60-75)% increased Minion Lightning Damage",
+        "value": "(60-75)% increased Lightning Damage\n(60-75)% increased Minion Lightning Damage",
         "level": 48,
         "type": "Suffix"
     },
     "333_6": {
         "affix": null,
-        "value": "+(76-100)% increased Lightning Damage\n+(76-100)% increased Minion Lightning Damage",
+        "value": "(76-100)% increased Lightning Damage\n(76-100)% increased Minion Lightning Damage",
         "level": 48,
         "type": "Suffix"
     },
@@ -6091,43 +6091,43 @@
     },
     "337_0": {
         "affix": null,
-        "value": "+(30-33)% increased Minion Spell Critical Strike Chance",
+        "value": "(30-33)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "337_1": {
         "affix": null,
-        "value": "+(34-37)% increased Minion Spell Critical Strike Chance",
+        "value": "(34-37)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "337_2": {
         "affix": null,
-        "value": "+(38-42)% increased Minion Spell Critical Strike Chance",
+        "value": "(38-42)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "337_3": {
         "affix": null,
-        "value": "+(43-47)% increased Minion Spell Critical Strike Chance",
+        "value": "(43-47)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "337_4": {
         "affix": null,
-        "value": "+(48-56)% increased Minion Spell Critical Strike Chance",
+        "value": "(48-56)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "337_5": {
         "affix": null,
-        "value": "+(70-85)% increased Minion Spell Critical Strike Chance",
+        "value": "(70-85)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "337_6": {
         "affix": null,
-        "value": "+(86-105)% increased Minion Spell Critical Strike Chance",
+        "value": "(86-105)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
@@ -6217,43 +6217,43 @@
     },
     "340_0": {
         "affix": null,
-        "value": "+(25-27)% increased Cold Damage\n+(25-27)% increased Minion Cold Damage",
+        "value": "(25-27)% increased Cold Damage\n(25-27)% increased Minion Cold Damage",
         "level": 36,
         "type": "Suffix"
     },
     "340_1": {
         "affix": null,
-        "value": "+(28-30)% increased Cold Damage\n+(28-30)% increased Minion Cold Damage",
+        "value": "(28-30)% increased Cold Damage\n(28-30)% increased Minion Cold Damage",
         "level": 36,
         "type": "Suffix"
     },
     "340_2": {
         "affix": null,
-        "value": "+(31-33)% increased Cold Damage\n+(31-33)% increased Minion Cold Damage",
+        "value": "(31-33)% increased Cold Damage\n(31-33)% increased Minion Cold Damage",
         "level": 36,
         "type": "Suffix"
     },
     "340_3": {
         "affix": null,
-        "value": "+(34-36)% increased Cold Damage\n+(34-36)% increased Minion Cold Damage",
+        "value": "(34-36)% increased Cold Damage\n(34-36)% increased Minion Cold Damage",
         "level": 36,
         "type": "Suffix"
     },
     "340_4": {
         "affix": null,
-        "value": "+(37-50)% increased Cold Damage\n+(37-50)% increased Minion Cold Damage",
+        "value": "(37-50)% increased Cold Damage\n(37-50)% increased Minion Cold Damage",
         "level": 36,
         "type": "Suffix"
     },
     "340_5": {
         "affix": null,
-        "value": "+(60-75)% increased Cold Damage\n+(60-75)% increased Minion Cold Damage",
+        "value": "(60-75)% increased Cold Damage\n(60-75)% increased Minion Cold Damage",
         "level": 36,
         "type": "Suffix"
     },
     "340_6": {
         "affix": null,
-        "value": "+(76-100)% increased Cold Damage\n+(76-100)% increased Minion Cold Damage",
+        "value": "(76-100)% increased Cold Damage\n(76-100)% increased Minion Cold Damage",
         "level": 36,
         "type": "Suffix"
     },
@@ -6301,43 +6301,43 @@
     },
     "342_0": {
         "affix": null,
-        "value": "+(8-9)% increased Cast Speed for Totems",
+        "value": "(8-9)% increased Cast Speed for Totems",
         "level": 27,
         "type": "Suffix"
     },
     "342_1": {
         "affix": null,
-        "value": "+(10-11)% increased Cast Speed for Totems",
+        "value": "(10-11)% increased Cast Speed for Totems",
         "level": 27,
         "type": "Suffix"
     },
     "342_2": {
         "affix": null,
-        "value": "+(12-13)% increased Cast Speed for Totems",
+        "value": "(12-13)% increased Cast Speed for Totems",
         "level": 27,
         "type": "Suffix"
     },
     "342_3": {
         "affix": null,
-        "value": "+(14-15)% increased Cast Speed for Totems",
+        "value": "(14-15)% increased Cast Speed for Totems",
         "level": 27,
         "type": "Suffix"
     },
     "342_4": {
         "affix": null,
-        "value": "+(16-19)% increased Cast Speed for Totems",
+        "value": "(16-19)% increased Cast Speed for Totems",
         "level": 27,
         "type": "Suffix"
     },
     "342_5": {
         "affix": null,
-        "value": "+(24-28)% increased Cast Speed for Totems",
+        "value": "(24-28)% increased Cast Speed for Totems",
         "level": 27,
         "type": "Suffix"
     },
     "342_6": {
         "affix": null,
-        "value": "+(28-36)% increased Cast Speed for Totems",
+        "value": "(28-36)% increased Cast Speed for Totems",
         "level": 27,
         "type": "Suffix"
     },
@@ -6385,85 +6385,85 @@
     },
     "344_0": {
         "affix": null,
-        "value": "+(25-27)% increased Spell Damage\n+(25-27)% increased Minion Spell Damage",
+        "value": "(25-27)% increased Spell Damage\n(25-27)% increased Minion Spell Damage",
         "level": 27,
         "type": "Suffix"
     },
     "344_1": {
         "affix": null,
-        "value": "+(28-30)% increased Spell Damage\n+(28-30)% increased Minion Spell Damage",
+        "value": "(28-30)% increased Spell Damage\n(28-30)% increased Minion Spell Damage",
         "level": 27,
         "type": "Suffix"
     },
     "344_2": {
         "affix": null,
-        "value": "+(31-33)% increased Spell Damage\n+(31-33)% increased Minion Spell Damage",
+        "value": "(31-33)% increased Spell Damage\n(31-33)% increased Minion Spell Damage",
         "level": 27,
         "type": "Suffix"
     },
     "344_3": {
         "affix": null,
-        "value": "+(34-36)% increased Spell Damage\n+(34-36)% increased Minion Spell Damage",
+        "value": "(34-36)% increased Spell Damage\n(34-36)% increased Minion Spell Damage",
         "level": 27,
         "type": "Suffix"
     },
     "344_4": {
         "affix": null,
-        "value": "+(37-50)% increased Spell Damage\n+(37-50)% increased Minion Spell Damage",
+        "value": "(37-50)% increased Spell Damage\n(37-50)% increased Minion Spell Damage",
         "level": 27,
         "type": "Suffix"
     },
     "344_5": {
         "affix": null,
-        "value": "+(60-75)% increased Spell Damage\n+(60-75)% increased Minion Spell Damage",
+        "value": "(60-75)% increased Spell Damage\n(60-75)% increased Minion Spell Damage",
         "level": 27,
         "type": "Suffix"
     },
     "344_6": {
         "affix": null,
-        "value": "+(76-100)% increased Spell Damage\n+(76-100)% increased Minion Spell Damage",
+        "value": "(76-100)% increased Spell Damage\n(76-100)% increased Minion Spell Damage",
         "level": 27,
         "type": "Suffix"
     },
     "345_0": {
         "affix": null,
-        "value": "+(25-27)% increased Melee Damage\n+(25-27)% increased Minion Melee Damage",
+        "value": "(25-27)% increased Melee Damage\n(25-27)% increased Minion Melee Damage",
         "level": 48,
         "type": "Suffix"
     },
     "345_1": {
         "affix": null,
-        "value": "+(28-30)% increased Melee Damage\n+(28-30)% increased Minion Melee Damage",
+        "value": "(28-30)% increased Melee Damage\n(28-30)% increased Minion Melee Damage",
         "level": 48,
         "type": "Suffix"
     },
     "345_2": {
         "affix": null,
-        "value": "+(31-33)% increased Melee Damage\n+(31-33)% increased Minion Melee Damage",
+        "value": "(31-33)% increased Melee Damage\n(31-33)% increased Minion Melee Damage",
         "level": 48,
         "type": "Suffix"
     },
     "345_3": {
         "affix": null,
-        "value": "+(34-36)% increased Melee Damage\n+(34-36)% increased Minion Melee Damage",
+        "value": "(34-36)% increased Melee Damage\n(34-36)% increased Minion Melee Damage",
         "level": 48,
         "type": "Suffix"
     },
     "345_4": {
         "affix": null,
-        "value": "+(37-50)% increased Melee Damage\n+(37-50)% increased Minion Melee Damage",
+        "value": "(37-50)% increased Melee Damage\n(37-50)% increased Minion Melee Damage",
         "level": 48,
         "type": "Suffix"
     },
     "345_5": {
         "affix": null,
-        "value": "+(60-75)% increased Melee Damage\n+(60-75)% increased Minion Melee Damage",
+        "value": "(60-75)% increased Melee Damage\n(60-75)% increased Minion Melee Damage",
         "level": 48,
         "type": "Suffix"
     },
     "345_6": {
         "affix": null,
-        "value": "+(76-100)% increased Melee Damage\n+(76-100)% increased Minion Melee Damage",
+        "value": "(76-100)% increased Melee Damage\n(76-100)% increased Minion Melee Damage",
         "level": 48,
         "type": "Suffix"
     },
@@ -6595,169 +6595,169 @@
     },
     "349_0": {
         "affix": null,
-        "value": "+(30-33)% increased Melee Damage While Transformed",
+        "value": "(30-33)% increased Melee Damage While Transformed",
         "level": 28,
         "type": "Suffix"
     },
     "349_1": {
         "affix": null,
-        "value": "+(34-37)% increased Melee Damage While Transformed",
+        "value": "(34-37)% increased Melee Damage While Transformed",
         "level": 28,
         "type": "Suffix"
     },
     "349_2": {
         "affix": null,
-        "value": "+(38-42)% increased Melee Damage While Transformed",
+        "value": "(38-42)% increased Melee Damage While Transformed",
         "level": 28,
         "type": "Suffix"
     },
     "349_3": {
         "affix": null,
-        "value": "+(43-47)% increased Melee Damage While Transformed",
+        "value": "(43-47)% increased Melee Damage While Transformed",
         "level": 28,
         "type": "Suffix"
     },
     "349_4": {
         "affix": null,
-        "value": "+(48-56)% increased Melee Damage While Transformed",
+        "value": "(48-56)% increased Melee Damage While Transformed",
         "level": 28,
         "type": "Suffix"
     },
     "349_5": {
         "affix": null,
-        "value": "+(70-85)% increased Melee Damage While Transformed",
+        "value": "(70-85)% increased Melee Damage While Transformed",
         "level": 28,
         "type": "Suffix"
     },
     "349_6": {
         "affix": null,
-        "value": "+(86-105)% increased Melee Damage While Transformed",
+        "value": "(86-105)% increased Melee Damage While Transformed",
         "level": 28,
         "type": "Suffix"
     },
     "350_0": {
         "affix": null,
-        "value": "+(30-33)% increased Spell Damage While Transformed",
+        "value": "(30-33)% increased Spell Damage While Transformed",
         "level": 39,
         "type": "Suffix"
     },
     "350_1": {
         "affix": null,
-        "value": "+(34-37)% increased Spell Damage While Transformed",
+        "value": "(34-37)% increased Spell Damage While Transformed",
         "level": 39,
         "type": "Suffix"
     },
     "350_2": {
         "affix": null,
-        "value": "+(38-42)% increased Spell Damage While Transformed",
+        "value": "(38-42)% increased Spell Damage While Transformed",
         "level": 39,
         "type": "Suffix"
     },
     "350_3": {
         "affix": null,
-        "value": "+(43-47)% increased Spell Damage While Transformed",
+        "value": "(43-47)% increased Spell Damage While Transformed",
         "level": 39,
         "type": "Suffix"
     },
     "350_4": {
         "affix": null,
-        "value": "+(48-56)% increased Spell Damage While Transformed",
+        "value": "(48-56)% increased Spell Damage While Transformed",
         "level": 39,
         "type": "Suffix"
     },
     "350_5": {
         "affix": null,
-        "value": "+(70-85)% increased Spell Damage While Transformed",
+        "value": "(70-85)% increased Spell Damage While Transformed",
         "level": 39,
         "type": "Suffix"
     },
     "350_6": {
         "affix": null,
-        "value": "+(86-105)% increased Spell Damage While Transformed",
+        "value": "(86-105)% increased Spell Damage While Transformed",
         "level": 39,
         "type": "Suffix"
     },
     "351_0": {
         "affix": null,
-        "value": "+(30-33)% increased Damage Over Time While Transformed",
+        "value": "(30-33)% increased Damage Over Time While Transformed",
         "level": 41,
         "type": "Suffix"
     },
     "351_1": {
         "affix": null,
-        "value": "+(34-37)% increased Damage Over Time While Transformed",
+        "value": "(34-37)% increased Damage Over Time While Transformed",
         "level": 41,
         "type": "Suffix"
     },
     "351_2": {
         "affix": null,
-        "value": "+(38-42)% increased Damage Over Time While Transformed",
+        "value": "(38-42)% increased Damage Over Time While Transformed",
         "level": 41,
         "type": "Suffix"
     },
     "351_3": {
         "affix": null,
-        "value": "+(43-47)% increased Damage Over Time While Transformed",
+        "value": "(43-47)% increased Damage Over Time While Transformed",
         "level": 41,
         "type": "Suffix"
     },
     "351_4": {
         "affix": null,
-        "value": "+(48-56)% increased Damage Over Time While Transformed",
+        "value": "(48-56)% increased Damage Over Time While Transformed",
         "level": 41,
         "type": "Suffix"
     },
     "351_5": {
         "affix": null,
-        "value": "+(70-85)% increased Damage Over Time While Transformed",
+        "value": "(70-85)% increased Damage Over Time While Transformed",
         "level": 41,
         "type": "Suffix"
     },
     "351_6": {
         "affix": null,
-        "value": "+(86-105)% increased Damage Over Time While Transformed",
+        "value": "(86-105)% increased Damage Over Time While Transformed",
         "level": 41,
         "type": "Suffix"
     },
     "352_0": {
         "affix": null,
-        "value": "+(45-51)% increased Critical Strike Chance for Totems",
+        "value": "(45-51)% increased Critical Strike Chance for Totems",
         "level": 57,
         "type": "Suffix"
     },
     "352_1": {
         "affix": null,
-        "value": "+(52-57)% increased Critical Strike Chance for Totems",
+        "value": "(52-57)% increased Critical Strike Chance for Totems",
         "level": 57,
         "type": "Suffix"
     },
     "352_2": {
         "affix": null,
-        "value": "+(59-65)% increased Critical Strike Chance for Totems",
+        "value": "(59-65)% increased Critical Strike Chance for Totems",
         "level": 57,
         "type": "Suffix"
     },
     "352_3": {
         "affix": null,
-        "value": "+(66-72)% increased Critical Strike Chance for Totems",
+        "value": "(66-72)% increased Critical Strike Chance for Totems",
         "level": 57,
         "type": "Suffix"
     },
     "352_4": {
         "affix": null,
-        "value": "+(73-95)% increased Critical Strike Chance for Totems",
+        "value": "(73-95)% increased Critical Strike Chance for Totems",
         "level": 57,
         "type": "Suffix"
     },
     "352_5": {
         "affix": null,
-        "value": "+(114-140)% increased Critical Strike Chance for Totems",
+        "value": "(114-140)% increased Critical Strike Chance for Totems",
         "level": 57,
         "type": "Suffix"
     },
     "352_6": {
         "affix": null,
-        "value": "+(141-180)% increased Critical Strike Chance for Totems",
+        "value": "(141-180)% increased Critical Strike Chance for Totems",
         "level": 57,
         "type": "Suffix"
     },
@@ -6931,43 +6931,43 @@
     },
     "357_0": {
         "affix": null,
-        "value": "+(30-33)% increased Damage for Totems",
+        "value": "(30-33)% increased Damage for Totems",
         "level": 30,
         "type": "Suffix"
     },
     "357_1": {
         "affix": null,
-        "value": "+(34-37)% increased Damage for Totems",
+        "value": "(34-37)% increased Damage for Totems",
         "level": 30,
         "type": "Suffix"
     },
     "357_2": {
         "affix": null,
-        "value": "+(38-42)% increased Damage for Totems",
+        "value": "(38-42)% increased Damage for Totems",
         "level": 30,
         "type": "Suffix"
     },
     "357_3": {
         "affix": null,
-        "value": "+(43-47)% increased Damage for Totems",
+        "value": "(43-47)% increased Damage for Totems",
         "level": 30,
         "type": "Suffix"
     },
     "357_4": {
         "affix": null,
-        "value": "+(48-56)% increased Damage for Totems",
+        "value": "(48-56)% increased Damage for Totems",
         "level": 30,
         "type": "Suffix"
     },
     "357_5": {
         "affix": null,
-        "value": "+(70-85)% increased Damage for Totems",
+        "value": "(70-85)% increased Damage for Totems",
         "level": 30,
         "type": "Suffix"
     },
     "357_6": {
         "affix": null,
-        "value": "+(86-105)% increased Damage for Totems",
+        "value": "(86-105)% increased Damage for Totems",
         "level": 30,
         "type": "Suffix"
     },
@@ -7057,127 +7057,127 @@
     },
     "360_0": {
         "affix": null,
-        "value": "+(25-28)% increased Physical Damage\n+(15-15)% increased Increased Bleed Duration ",
+        "value": "(25-28)% increased Physical Damage\n(15-15)% increased Increased Bleed Duration ",
         "level": 60,
         "type": "Suffix"
     },
     "360_1": {
         "affix": null,
-        "value": "+(28-32)% increased Physical Damage\n+(16-16)% increased Increased Bleed Duration ",
+        "value": "(28-32)% increased Physical Damage\n(16-16)% increased Increased Bleed Duration ",
         "level": 60,
         "type": "Suffix"
     },
     "360_2": {
         "affix": null,
-        "value": "+(33-36)% increased Physical Damage\n+(17-18)% increased Increased Bleed Duration ",
+        "value": "(33-36)% increased Physical Damage\n(17-18)% increased Increased Bleed Duration ",
         "level": 60,
         "type": "Suffix"
     },
     "360_3": {
         "affix": null,
-        "value": "+(37-40)% increased Physical Damage\n+(19-20)% increased Increased Bleed Duration ",
+        "value": "(37-40)% increased Physical Damage\n(19-20)% increased Increased Bleed Duration ",
         "level": 60,
         "type": "Suffix"
     },
     "360_4": {
         "affix": null,
-        "value": "+(41-50)% increased Physical Damage\n+(21-24)% increased Increased Bleed Duration ",
+        "value": "(41-50)% increased Physical Damage\n(21-24)% increased Increased Bleed Duration ",
         "level": 60,
         "type": "Suffix"
     },
     "360_5": {
         "affix": null,
-        "value": "+(60-70)% increased Physical Damage\n+(28-34)% increased Increased Bleed Duration ",
+        "value": "(60-70)% increased Physical Damage\n(28-34)% increased Increased Bleed Duration ",
         "level": 60,
         "type": "Suffix"
     },
     "360_6": {
         "affix": null,
-        "value": "+(71-90)% increased Physical Damage\n+(35-42)% increased Increased Bleed Duration ",
+        "value": "(71-90)% increased Physical Damage\n(35-42)% increased Increased Bleed Duration ",
         "level": 60,
         "type": "Suffix"
     },
     "361_0": {
         "affix": null,
-        "value": "+(25-28)% increased Fire Damage\n+(15-15)% increased Increased Ignite Duration ",
+        "value": "(25-28)% increased Fire Damage\n(15-15)% increased Increased Ignite Duration ",
         "level": 55,
         "type": "Suffix"
     },
     "361_1": {
         "affix": null,
-        "value": "+(28-32)% increased Fire Damage\n+(16-16)% increased Increased Ignite Duration ",
+        "value": "(28-32)% increased Fire Damage\n(16-16)% increased Increased Ignite Duration ",
         "level": 55,
         "type": "Suffix"
     },
     "361_2": {
         "affix": null,
-        "value": "+(33-36)% increased Fire Damage\n+(17-18)% increased Increased Ignite Duration ",
+        "value": "(33-36)% increased Fire Damage\n(17-18)% increased Increased Ignite Duration ",
         "level": 55,
         "type": "Suffix"
     },
     "361_3": {
         "affix": null,
-        "value": "+(37-40)% increased Fire Damage\n+(19-20)% increased Increased Ignite Duration ",
+        "value": "(37-40)% increased Fire Damage\n(19-20)% increased Increased Ignite Duration ",
         "level": 55,
         "type": "Suffix"
     },
     "361_4": {
         "affix": null,
-        "value": "+(41-50)% increased Fire Damage\n+(21-24)% increased Increased Ignite Duration ",
+        "value": "(41-50)% increased Fire Damage\n(21-24)% increased Increased Ignite Duration ",
         "level": 55,
         "type": "Suffix"
     },
     "361_5": {
         "affix": null,
-        "value": "+(60-70)% increased Fire Damage\n+(28-34)% increased Increased Ignite Duration ",
+        "value": "(60-70)% increased Fire Damage\n(28-34)% increased Increased Ignite Duration ",
         "level": 55,
         "type": "Suffix"
     },
     "361_6": {
         "affix": null,
-        "value": "+(71-90)% increased Fire Damage\n+(35-42)% increased Increased Ignite Duration ",
+        "value": "(71-90)% increased Fire Damage\n(35-42)% increased Increased Ignite Duration ",
         "level": 55,
         "type": "Suffix"
     },
     "362_0": {
         "affix": null,
-        "value": "+(30-33)% increased Void Damage\n+(4-4) increased Spell Void Damage",
+        "value": "(30-33)% increased Void Damage\n(4-4) increased Spell Void Damage",
         "level": 53,
         "type": "Suffix"
     },
     "362_1": {
         "affix": null,
-        "value": "+(34-37)% increased Void Damage\n+(4-4) increased Spell Void Damage",
+        "value": "(34-37)% increased Void Damage\n(4-4) increased Spell Void Damage",
         "level": 53,
         "type": "Suffix"
     },
     "362_2": {
         "affix": null,
-        "value": "+(38-41)% increased Void Damage\n+(5-5) increased Spell Void Damage",
+        "value": "(38-41)% increased Void Damage\n(5-5) increased Spell Void Damage",
         "level": 53,
         "type": "Suffix"
     },
     "362_3": {
         "affix": null,
-        "value": "+(42-46)% increased Void Damage\n+(5-5) increased Spell Void Damage",
+        "value": "(42-46)% increased Void Damage\n(5-5) increased Spell Void Damage",
         "level": 53,
         "type": "Suffix"
     },
     "362_4": {
         "affix": null,
-        "value": "+(47-60)% increased Void Damage\n+(6-7) increased Spell Void Damage",
+        "value": "(47-60)% increased Void Damage\n(6-7) increased Spell Void Damage",
         "level": 53,
         "type": "Suffix"
     },
     "362_5": {
         "affix": null,
-        "value": "+(70-85)% increased Void Damage\n+(9-11) increased Spell Void Damage",
+        "value": "(70-85)% increased Void Damage\n(9-11) increased Spell Void Damage",
         "level": 53,
         "type": "Suffix"
     },
     "362_6": {
         "affix": null,
-        "value": "+(86-110)% increased Void Damage\n+(12-14) increased Spell Void Damage",
+        "value": "(86-110)% increased Void Damage\n(12-14) increased Spell Void Damage",
         "level": 53,
         "type": "Suffix"
     },
@@ -7393,85 +7393,85 @@
     },
     "368_0": {
         "affix": null,
-        "value": "+(45-51)% increased Throwing Critical Strike Chance",
+        "value": "(45-51)% increased Throwing Critical Strike Chance",
         "level": 48,
         "type": "Suffix"
     },
     "368_1": {
         "affix": null,
-        "value": "+(52-57)% increased Throwing Critical Strike Chance",
+        "value": "(52-57)% increased Throwing Critical Strike Chance",
         "level": 48,
         "type": "Suffix"
     },
     "368_2": {
         "affix": null,
-        "value": "+(59-65)% increased Throwing Critical Strike Chance",
+        "value": "(59-65)% increased Throwing Critical Strike Chance",
         "level": 48,
         "type": "Suffix"
     },
     "368_3": {
         "affix": null,
-        "value": "+(66-72)% increased Throwing Critical Strike Chance",
+        "value": "(66-72)% increased Throwing Critical Strike Chance",
         "level": 48,
         "type": "Suffix"
     },
     "368_4": {
         "affix": null,
-        "value": "+(73-95)% increased Throwing Critical Strike Chance",
+        "value": "(73-95)% increased Throwing Critical Strike Chance",
         "level": 48,
         "type": "Suffix"
     },
     "368_5": {
         "affix": null,
-        "value": "+(114-140)% increased Throwing Critical Strike Chance",
+        "value": "(114-140)% increased Throwing Critical Strike Chance",
         "level": 48,
         "type": "Suffix"
     },
     "368_6": {
         "affix": null,
-        "value": "+(141-180)% increased Throwing Critical Strike Chance",
+        "value": "(141-180)% increased Throwing Critical Strike Chance",
         "level": 48,
         "type": "Suffix"
     },
     "369_0": {
         "affix": null,
-        "value": "+(-12--15)% increased Channel Cost",
+        "value": "(-12--15)% increased Channel Cost",
         "level": 36,
         "type": "Suffix"
     },
     "369_1": {
         "affix": null,
-        "value": "+(-16--19)% increased Channel Cost",
+        "value": "(-16--19)% increased Channel Cost",
         "level": 36,
         "type": "Suffix"
     },
     "369_2": {
         "affix": null,
-        "value": "+(-20--23)% increased Channel Cost",
+        "value": "(-20--23)% increased Channel Cost",
         "level": 36,
         "type": "Suffix"
     },
     "369_3": {
         "affix": null,
-        "value": "+(-24--27)% increased Channel Cost",
+        "value": "(-24--27)% increased Channel Cost",
         "level": 36,
         "type": "Suffix"
     },
     "369_4": {
         "affix": null,
-        "value": "+(-28--32)% increased Channel Cost",
+        "value": "(-28--32)% increased Channel Cost",
         "level": 36,
         "type": "Suffix"
     },
     "369_5": {
         "affix": null,
-        "value": "+(-36--40)% increased Channel Cost",
+        "value": "(-36--40)% increased Channel Cost",
         "level": 36,
         "type": "Suffix"
     },
     "369_6": {
         "affix": null,
-        "value": "+(-41--45)% increased Channel Cost",
+        "value": "(-41--45)% increased Channel Cost",
         "level": 36,
         "type": "Suffix"
     },
@@ -7519,85 +7519,85 @@
     },
     "371_0": {
         "affix": null,
-        "value": "+(40-45)% increased Fire Damage Over Time",
+        "value": "(40-45)% increased Fire Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "371_1": {
         "affix": null,
-        "value": "+(46-51)% increased Fire Damage Over Time",
+        "value": "(46-51)% increased Fire Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "371_2": {
         "affix": null,
-        "value": "+(52-56)% increased Fire Damage Over Time",
+        "value": "(52-56)% increased Fire Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "371_3": {
         "affix": null,
-        "value": "+(57-63)% increased Fire Damage Over Time",
+        "value": "(57-63)% increased Fire Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "371_4": {
         "affix": null,
-        "value": "+(64-75)% increased Fire Damage Over Time",
+        "value": "(64-75)% increased Fire Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "371_5": {
         "affix": null,
-        "value": "+(90-110)% increased Fire Damage Over Time",
+        "value": "(90-110)% increased Fire Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "371_6": {
         "affix": null,
-        "value": "+(111-140)% increased Fire Damage Over Time",
+        "value": "(111-140)% increased Fire Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "372_0": {
         "affix": null,
-        "value": "+(40-45)% increased Void Damage Over Time",
+        "value": "(40-45)% increased Void Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "372_1": {
         "affix": null,
-        "value": "+(46-51)% increased Void Damage Over Time",
+        "value": "(46-51)% increased Void Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "372_2": {
         "affix": null,
-        "value": "+(52-56)% increased Void Damage Over Time",
+        "value": "(52-56)% increased Void Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "372_3": {
         "affix": null,
-        "value": "+(57-63)% increased Void Damage Over Time",
+        "value": "(57-63)% increased Void Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "372_4": {
         "affix": null,
-        "value": "+(64-75)% increased Void Damage Over Time",
+        "value": "(64-75)% increased Void Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "372_5": {
         "affix": null,
-        "value": "+(90-110)% increased Void Damage Over Time",
+        "value": "(90-110)% increased Void Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
     "372_6": {
         "affix": null,
-        "value": "+(111-140)% increased Void Damage Over Time",
+        "value": "(111-140)% increased Void Damage Over Time",
         "level": 32,
         "type": "Suffix"
     },
@@ -8233,127 +8233,127 @@
     },
     "388_0": {
         "affix": null,
-        "value": "+(40-45)% increased Cold Damage Over Time",
+        "value": "(40-45)% increased Cold Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "388_1": {
         "affix": null,
-        "value": "+(46-51)% increased Cold Damage Over Time",
+        "value": "(46-51)% increased Cold Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "388_2": {
         "affix": null,
-        "value": "+(52-56)% increased Cold Damage Over Time",
+        "value": "(52-56)% increased Cold Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "388_3": {
         "affix": null,
-        "value": "+(57-63)% increased Cold Damage Over Time",
+        "value": "(57-63)% increased Cold Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "388_4": {
         "affix": null,
-        "value": "+(64-75)% increased Cold Damage Over Time",
+        "value": "(64-75)% increased Cold Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "388_5": {
         "affix": null,
-        "value": "+(90-110)% increased Cold Damage Over Time",
+        "value": "(90-110)% increased Cold Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "388_6": {
         "affix": null,
-        "value": "+(111-140)% increased Cold Damage Over Time",
+        "value": "(111-140)% increased Cold Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "389_0": {
         "affix": null,
-        "value": "+(40-45)% increased Fire Damage Over Time",
+        "value": "(40-45)% increased Fire Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "389_1": {
         "affix": null,
-        "value": "+(46-51)% increased Fire Damage Over Time",
+        "value": "(46-51)% increased Fire Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "389_2": {
         "affix": null,
-        "value": "+(52-56)% increased Fire Damage Over Time",
+        "value": "(52-56)% increased Fire Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "389_3": {
         "affix": null,
-        "value": "+(57-63)% increased Fire Damage Over Time",
+        "value": "(57-63)% increased Fire Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "389_4": {
         "affix": null,
-        "value": "+(64-75)% increased Fire Damage Over Time",
+        "value": "(64-75)% increased Fire Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "389_5": {
         "affix": null,
-        "value": "+(90-110)% increased Fire Damage Over Time",
+        "value": "(90-110)% increased Fire Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "389_6": {
         "affix": null,
-        "value": "+(111-140)% increased Fire Damage Over Time",
+        "value": "(111-140)% increased Fire Damage Over Time",
         "level": 25,
         "type": "Suffix"
     },
     "390_0": {
         "affix": null,
-        "value": "+(30-33)% increased Melee Elemental Damage",
+        "value": "(30-33)% increased Melee Elemental Damage",
         "level": 36,
         "type": "Suffix"
     },
     "390_1": {
         "affix": null,
-        "value": "+(34-37)% increased Melee Elemental Damage",
+        "value": "(34-37)% increased Melee Elemental Damage",
         "level": 36,
         "type": "Suffix"
     },
     "390_2": {
         "affix": null,
-        "value": "+(38-43)% increased Melee Elemental Damage",
+        "value": "(38-43)% increased Melee Elemental Damage",
         "level": 36,
         "type": "Suffix"
     },
     "390_3": {
         "affix": null,
-        "value": "+(43-48)% increased Melee Elemental Damage",
+        "value": "(43-48)% increased Melee Elemental Damage",
         "level": 36,
         "type": "Suffix"
     },
     "390_4": {
         "affix": null,
-        "value": "+(48-56)% increased Melee Elemental Damage",
+        "value": "(48-56)% increased Melee Elemental Damage",
         "level": 36,
         "type": "Suffix"
     },
     "390_5": {
         "affix": null,
-        "value": "+(70-85)% increased Melee Elemental Damage",
+        "value": "(70-85)% increased Melee Elemental Damage",
         "level": 36,
         "type": "Suffix"
     },
     "390_6": {
         "affix": null,
-        "value": "+(86-110)% increased Melee Elemental Damage",
+        "value": "(86-110)% increased Melee Elemental Damage",
         "level": 36,
         "type": "Suffix"
     },
@@ -8779,175 +8779,175 @@
     },
     "401_0": {
         "affix": null,
-        "value": "+(45-51)% increased Physical Damage While Transformed",
+        "value": "(45-51)% increased Physical Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "401_1": {
         "affix": null,
-        "value": "+(52-57)% increased Physical Damage While Transformed",
+        "value": "(52-57)% increased Physical Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "401_2": {
         "affix": null,
-        "value": "+(59-65)% increased Physical Damage While Transformed",
+        "value": "(59-65)% increased Physical Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "401_3": {
         "affix": null,
-        "value": "+(66-72)% increased Physical Damage While Transformed",
+        "value": "(66-72)% increased Physical Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "401_4": {
         "affix": null,
-        "value": "+(73-90)% increased Physical Damage While Transformed",
+        "value": "(73-90)% increased Physical Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "401_5": {
         "affix": null,
-        "value": "+(110-130)% increased Physical Damage While Transformed",
+        "value": "(110-130)% increased Physical Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "401_6": {
         "affix": null,
-        "value": "+(131-160)% increased Physical Damage While Transformed",
+        "value": "(131-160)% increased Physical Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "402_0": {
         "affix": null,
-        "value": "+(45-51)% increased Necrotic Damage While Transformed",
+        "value": "(45-51)% increased Necrotic Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "402_1": {
         "affix": null,
-        "value": "+(52-57)% increased Necrotic Damage While Transformed",
+        "value": "(52-57)% increased Necrotic Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "402_2": {
         "affix": null,
-        "value": "+(59-65)% increased Necrotic Damage While Transformed",
+        "value": "(59-65)% increased Necrotic Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "402_3": {
         "affix": null,
-        "value": "+(66-72)% increased Necrotic Damage While Transformed",
+        "value": "(66-72)% increased Necrotic Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "402_4": {
         "affix": null,
-        "value": "+(73-90)% increased Necrotic Damage While Transformed",
+        "value": "(73-90)% increased Necrotic Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "402_5": {
         "affix": null,
-        "value": "+(110-130)% increased Necrotic Damage While Transformed",
+        "value": "(110-130)% increased Necrotic Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "402_6": {
         "affix": null,
-        "value": "+(131-160)% increased Necrotic Damage While Transformed",
+        "value": "(131-160)% increased Necrotic Damage While Transformed",
         "level": 25,
         "type": "Suffix"
     },
     "403_0": {
         "affix": "of Decay",
-        "value": "+(33-90)% increased Void Damage Over Time",
+        "value": "(33-90)% increased Void Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
     "404_0": {
         "affix": null,
-        "value": "+(30-33)% increased Fire Damage\n+(30-33)% increased Minion Fire Damage",
+        "value": "(30-33)% increased Fire Damage\n(30-33)% increased Minion Fire Damage",
         "level": 36,
         "type": "Suffix"
     },
     "404_1": {
         "affix": null,
-        "value": "+(34-37)% increased Fire Damage\n+(34-37)% increased Minion Fire Damage",
+        "value": "(34-37)% increased Fire Damage\n(34-37)% increased Minion Fire Damage",
         "level": 36,
         "type": "Suffix"
     },
     "404_2": {
         "affix": null,
-        "value": "+(38-41)% increased Fire Damage\n+(38-41)% increased Minion Fire Damage",
+        "value": "(38-41)% increased Fire Damage\n(38-41)% increased Minion Fire Damage",
         "level": 36,
         "type": "Suffix"
     },
     "404_3": {
         "affix": null,
-        "value": "+(42-46)% increased Fire Damage\n+(42-46)% increased Minion Fire Damage",
+        "value": "(42-46)% increased Fire Damage\n(42-46)% increased Minion Fire Damage",
         "level": 36,
         "type": "Suffix"
     },
     "404_4": {
         "affix": null,
-        "value": "+(47-60)% increased Fire Damage\n+(47-60)% increased Minion Fire Damage",
+        "value": "(47-60)% increased Fire Damage\n(47-60)% increased Minion Fire Damage",
         "level": 36,
         "type": "Suffix"
     },
     "404_5": {
         "affix": null,
-        "value": "+(70-85)% increased Fire Damage\n+(70-85)% increased Minion Fire Damage",
+        "value": "(70-85)% increased Fire Damage\n(70-85)% increased Minion Fire Damage",
         "level": 36,
         "type": "Suffix"
     },
     "404_6": {
         "affix": null,
-        "value": "+(86-110)% increased Fire Damage\n+(86-110)% increased Minion Fire Damage",
+        "value": "(86-110)% increased Fire Damage\n(86-110)% increased Minion Fire Damage",
         "level": 36,
         "type": "Suffix"
     },
     "405_0": {
         "affix": null,
-        "value": "+(25-27)% increased Necrotic Damage\n+(25-27)% increased Minion Necrotic Damage",
+        "value": "(25-27)% increased Necrotic Damage\n(25-27)% increased Minion Necrotic Damage",
         "level": 36,
         "type": "Suffix"
     },
     "405_1": {
         "affix": null,
-        "value": "+(28-30)% increased Necrotic Damage\n+(28-30)% increased Minion Necrotic Damage",
+        "value": "(28-30)% increased Necrotic Damage\n(28-30)% increased Minion Necrotic Damage",
         "level": 36,
         "type": "Suffix"
     },
     "405_2": {
         "affix": null,
-        "value": "+(31-33)% increased Necrotic Damage\n+(31-33)% increased Minion Necrotic Damage",
+        "value": "(31-33)% increased Necrotic Damage\n(31-33)% increased Minion Necrotic Damage",
         "level": 36,
         "type": "Suffix"
     },
     "405_3": {
         "affix": null,
-        "value": "+(34-36)% increased Necrotic Damage\n+(34-36)% increased Minion Necrotic Damage",
+        "value": "(34-36)% increased Necrotic Damage\n(34-36)% increased Minion Necrotic Damage",
         "level": 36,
         "type": "Suffix"
     },
     "405_4": {
         "affix": null,
-        "value": "+(37-50)% increased Necrotic Damage\n+(37-50)% increased Minion Necrotic Damage",
+        "value": "(37-50)% increased Necrotic Damage\n(37-50)% increased Minion Necrotic Damage",
         "level": 36,
         "type": "Suffix"
     },
     "405_5": {
         "affix": null,
-        "value": "+(60-75)% increased Necrotic Damage\n+(60-75)% increased Minion Necrotic Damage",
+        "value": "(60-75)% increased Necrotic Damage\n(60-75)% increased Minion Necrotic Damage",
         "level": 36,
         "type": "Suffix"
     },
     "405_6": {
         "affix": null,
-        "value": "+(76-100)% increased Necrotic Damage\n+(76-100)% increased Minion Necrotic Damage",
+        "value": "(76-100)% increased Necrotic Damage\n(76-100)% increased Minion Necrotic Damage",
         "level": 36,
         "type": "Suffix"
     },
@@ -9289,43 +9289,43 @@
     },
     "414_0": {
         "affix": null,
-        "value": "+(25-27)% increased Poison Damage\n+(10-11)% increased Poison Resistance",
+        "value": "(25-27)% increased Poison Damage\n(10-11)% increased Poison Resistance",
         "level": 32,
         "type": "Suffix"
     },
     "414_1": {
         "affix": null,
-        "value": "+(28-30)% increased Poison Damage\n+(12-14)% increased Poison Resistance",
+        "value": "(28-30)% increased Poison Damage\n(12-14)% increased Poison Resistance",
         "level": 32,
         "type": "Suffix"
     },
     "414_2": {
         "affix": null,
-        "value": "+(31-33)% increased Poison Damage\n+(15-17)% increased Poison Resistance",
+        "value": "(31-33)% increased Poison Damage\n(15-17)% increased Poison Resistance",
         "level": 32,
         "type": "Suffix"
     },
     "414_3": {
         "affix": null,
-        "value": "+(34-36)% increased Poison Damage\n+(18-20)% increased Poison Resistance",
+        "value": "(34-36)% increased Poison Damage\n(18-20)% increased Poison Resistance",
         "level": 32,
         "type": "Suffix"
     },
     "414_4": {
         "affix": null,
-        "value": "+(37-50)% increased Poison Damage\n+(21-25)% increased Poison Resistance",
+        "value": "(37-50)% increased Poison Damage\n(21-25)% increased Poison Resistance",
         "level": 32,
         "type": "Suffix"
     },
     "414_5": {
         "affix": null,
-        "value": "+(60-75)% increased Poison Damage\n+(28-32)% increased Poison Resistance",
+        "value": "(60-75)% increased Poison Damage\n(28-32)% increased Poison Resistance",
         "level": 32,
         "type": "Suffix"
     },
     "414_6": {
         "affix": null,
-        "value": "+(76-100)% increased Poison Damage\n+(33-40)% increased Poison Resistance",
+        "value": "(76-100)% increased Poison Damage\n(33-40)% increased Poison Resistance",
         "level": 32,
         "type": "Suffix"
     },
@@ -9373,43 +9373,43 @@
     },
     "416_0": {
         "affix": null,
-        "value": "+(40-45)% increased Critical Strike Chance\n+(40-45)% increased Minion Critical Strike Chance",
+        "value": "(40-45)% increased Critical Strike Chance\n(40-45)% increased Minion Critical Strike Chance",
         "level": 29,
         "type": "Suffix"
     },
     "416_1": {
         "affix": null,
-        "value": "+(46-51)% increased Critical Strike Chance\n+(46-51)% increased Minion Critical Strike Chance",
+        "value": "(46-51)% increased Critical Strike Chance\n(46-51)% increased Minion Critical Strike Chance",
         "level": 29,
         "type": "Suffix"
     },
     "416_2": {
         "affix": null,
-        "value": "+(52-56)% increased Critical Strike Chance\n+(52-56)% increased Minion Critical Strike Chance",
+        "value": "(52-56)% increased Critical Strike Chance\n(52-56)% increased Minion Critical Strike Chance",
         "level": 29,
         "type": "Suffix"
     },
     "416_3": {
         "affix": null,
-        "value": "+(57-63)% increased Critical Strike Chance\n+(57-63)% increased Minion Critical Strike Chance",
+        "value": "(57-63)% increased Critical Strike Chance\n(57-63)% increased Minion Critical Strike Chance",
         "level": 29,
         "type": "Suffix"
     },
     "416_4": {
         "affix": null,
-        "value": "+(64-80)% increased Critical Strike Chance\n+(64-80)% increased Minion Critical Strike Chance",
+        "value": "(64-80)% increased Critical Strike Chance\n(64-80)% increased Minion Critical Strike Chance",
         "level": 29,
         "type": "Suffix"
     },
     "416_5": {
         "affix": null,
-        "value": "+(1-1.2) increased Critical Strike Chance\n+(1-1.2) increased Minion Critical Strike Chance",
+        "value": "(1-1.2) increased Critical Strike Chance\n(1-1.2) increased Minion Critical Strike Chance",
         "level": 29,
         "type": "Suffix"
     },
     "416_6": {
         "affix": null,
-        "value": "+(121-150)% increased Critical Strike Chance\n+(121-150)% increased Minion Critical Strike Chance",
+        "value": "(121-150)% increased Critical Strike Chance\n(121-150)% increased Minion Critical Strike Chance",
         "level": 29,
         "type": "Suffix"
     },
@@ -9709,43 +9709,43 @@
     },
     "424_0": {
         "affix": null,
-        "value": "+(45-51)% increased Physical Spell Critical Strike Chance",
+        "value": "(45-51)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "424_1": {
         "affix": null,
-        "value": "+(52-57)% increased Physical Spell Critical Strike Chance",
+        "value": "(52-57)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "424_2": {
         "affix": null,
-        "value": "+(59-65)% increased Physical Spell Critical Strike Chance",
+        "value": "(59-65)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "424_3": {
         "affix": null,
-        "value": "+(66-72)% increased Physical Spell Critical Strike Chance",
+        "value": "(66-72)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "424_4": {
         "affix": null,
-        "value": "+(73-95)% increased Physical Spell Critical Strike Chance",
+        "value": "(73-95)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "424_5": {
         "affix": null,
-        "value": "+(114-140)% increased Physical Spell Critical Strike Chance",
+        "value": "(114-140)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
     "424_6": {
         "affix": null,
-        "value": "+(141-180)% increased Physical Spell Critical Strike Chance",
+        "value": "(141-180)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "type": "Suffix"
     },
@@ -9967,85 +9967,85 @@
     },
     "431_0": {
         "affix": "Ranger's",
-        "value": "+(6-12)% increased Bow Damage",
+        "value": "(6-12)% increased Bow Damage",
         "level": 0,
         "type": "Suffix"
     },
     "431_1": {
         "affix": "Ranger's",
-        "value": "+(13-21)% increased Bow Damage",
+        "value": "(13-21)% increased Bow Damage",
         "level": 0,
         "type": "Suffix"
     },
     "431_2": {
         "affix": "Ranger's",
-        "value": "+(22-30)% increased Bow Damage",
+        "value": "(22-30)% increased Bow Damage",
         "level": 0,
         "type": "Suffix"
     },
     "431_3": {
         "affix": "Ranger's",
-        "value": "+(31-39)% increased Bow Damage",
+        "value": "(31-39)% increased Bow Damage",
         "level": 0,
         "type": "Suffix"
     },
     "431_4": {
         "affix": "Ranger's",
-        "value": "+(40-60)% increased Bow Damage",
+        "value": "(40-60)% increased Bow Damage",
         "level": 0,
         "type": "Suffix"
     },
     "431_5": {
         "affix": "Ranger's",
-        "value": "+(75-95)% increased Bow Damage",
+        "value": "(75-95)% increased Bow Damage",
         "level": 0,
         "type": "Suffix"
     },
     "431_6": {
         "affix": "Ranger's",
-        "value": "+(96-120)% increased Bow Damage",
+        "value": "(96-120)% increased Bow Damage",
         "level": 0,
         "type": "Suffix"
     },
     "432_0": {
         "affix": "Swift",
-        "value": "+(4-5)% increased Bow Attack Speed",
+        "value": "(4-5)% increased Bow Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "432_1": {
         "affix": "Swift",
-        "value": "+(6-7)% increased Bow Attack Speed",
+        "value": "(6-7)% increased Bow Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "432_2": {
         "affix": "Swift",
-        "value": "+(8-9)% increased Bow Attack Speed",
+        "value": "(8-9)% increased Bow Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "432_3": {
         "affix": "Swift",
-        "value": "+(10-11)% increased Bow Attack Speed",
+        "value": "(10-11)% increased Bow Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "432_4": {
         "affix": "Swift",
-        "value": "+(12-15)% increased Bow Attack Speed",
+        "value": "(12-15)% increased Bow Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "432_5": {
         "affix": "Swift",
-        "value": "+(18-23)% increased Bow Attack Speed",
+        "value": "(18-23)% increased Bow Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
     "432_6": {
         "affix": "Swift",
-        "value": "+(24-30)% increased Bow Attack Speed",
+        "value": "(24-30)% increased Bow Attack Speed",
         "level": 0,
         "type": "Suffix"
     },
@@ -10897,7 +10897,7 @@
     },
     "466_0": {
         "affix": "of Blood Loss",
-        "value": "+(33-90)% increased Physical Damage Over Time",
+        "value": "(33-90)% increased Physical Damage Over Time",
         "level": 0,
         "type": "Prefix"
     },
@@ -10993,49 +10993,49 @@
     },
     "470_0": {
         "affix": "of the Swallow",
-        "value": "+(22-60)% increased Throwing Physical Damage",
+        "value": "(22-60)% increased Throwing Physical Damage",
         "level": 0,
         "type": "Prefix"
     },
     "471_0": {
         "affix": null,
-        "value": "+(26-30)% increased Throwing Physical Damage",
+        "value": "(26-30)% increased Throwing Physical Damage",
         "level": 41,
         "type": "Suffix"
     },
     "471_1": {
         "affix": null,
-        "value": "+(31-35)% increased Throwing Physical Damage",
+        "value": "(31-35)% increased Throwing Physical Damage",
         "level": 41,
         "type": "Suffix"
     },
     "471_2": {
         "affix": null,
-        "value": "+(36-40)% increased Throwing Physical Damage",
+        "value": "(36-40)% increased Throwing Physical Damage",
         "level": 41,
         "type": "Suffix"
     },
     "471_3": {
         "affix": null,
-        "value": "+(41-47)% increased Throwing Physical Damage",
+        "value": "(41-47)% increased Throwing Physical Damage",
         "level": 41,
         "type": "Suffix"
     },
     "471_4": {
         "affix": null,
-        "value": "+(48-60)% increased Throwing Physical Damage",
+        "value": "(48-60)% increased Throwing Physical Damage",
         "level": 41,
         "type": "Suffix"
     },
     "471_5": {
         "affix": null,
-        "value": "+(75-95)% increased Throwing Physical Damage",
+        "value": "(75-95)% increased Throwing Physical Damage",
         "level": 41,
         "type": "Suffix"
     },
     "471_6": {
         "affix": null,
-        "value": "+(96-120)% increased Throwing Physical Damage",
+        "value": "(96-120)% increased Throwing Physical Damage",
         "level": 41,
         "type": "Suffix"
     },
@@ -11425,67 +11425,67 @@
     },
     "488_0": {
         "affix": "Devastating",
-        "value": "+(20-50)% increased Bow Elemental Damage",
+        "value": "(20-50)% increased Bow Elemental Damage",
         "level": 0,
         "type": "Prefix"
     },
     "489_0": {
         "affix": null,
-        "value": "+(26-30)% increased Bow Elemental Damage",
+        "value": "(26-30)% increased Bow Elemental Damage",
         "level": 27,
         "type": "Suffix"
     },
     "489_1": {
         "affix": null,
-        "value": "+(31-35)% increased Bow Elemental Damage",
+        "value": "(31-35)% increased Bow Elemental Damage",
         "level": 27,
         "type": "Suffix"
     },
     "489_2": {
         "affix": null,
-        "value": "+(36-40)% increased Bow Elemental Damage",
+        "value": "(36-40)% increased Bow Elemental Damage",
         "level": 27,
         "type": "Suffix"
     },
     "489_3": {
         "affix": null,
-        "value": "+(41-47)% increased Bow Elemental Damage",
+        "value": "(41-47)% increased Bow Elemental Damage",
         "level": 27,
         "type": "Suffix"
     },
     "489_4": {
         "affix": null,
-        "value": "+(48-60)% increased Bow Elemental Damage",
+        "value": "(48-60)% increased Bow Elemental Damage",
         "level": 27,
         "type": "Suffix"
     },
     "489_5": {
         "affix": null,
-        "value": "+(75-95)% increased Bow Elemental Damage",
+        "value": "(75-95)% increased Bow Elemental Damage",
         "level": 27,
         "type": "Suffix"
     },
     "489_6": {
         "affix": null,
-        "value": "+(96-120)% increased Bow Elemental Damage",
+        "value": "(96-120)% increased Bow Elemental Damage",
         "level": 27,
         "type": "Suffix"
     },
     "490_0": {
         "affix": "of the Catapult",
-        "value": "+(17-45)% increased Throwing Damage",
+        "value": "(17-45)% increased Throwing Damage",
         "level": 0,
         "type": "Prefix"
     },
     "491_0": {
         "affix": "of the Ranger",
-        "value": "+(17-45)% increased Bow Damage",
+        "value": "(17-45)% increased Bow Damage",
         "level": 0,
         "type": "Prefix"
     },
     "492_0": {
         "affix": "of the Eagle",
-        "value": "+(24-65)% increased Bow Critical Strike Chance",
+        "value": "(24-65)% increased Bow Critical Strike Chance",
         "level": 0,
         "type": "Prefix"
     },
@@ -11893,43 +11893,43 @@
     },
     "506_0": {
         "affix": "Spellslinger's",
-        "value": "+(5-10)% increased Spell Damage\n+(-3--3) increased Spell Mana Cost",
+        "value": "(5-10)% increased Spell Damage\n(-3--3) increased Spell Mana Cost",
         "level": 0,
         "type": "Suffix"
     },
     "506_1": {
         "affix": "Spellslinger's",
-        "value": "+(11-20)% increased Spell Damage\n+(-3--3) increased Spell Mana Cost",
+        "value": "(11-20)% increased Spell Damage\n(-3--3) increased Spell Mana Cost",
         "level": 0,
         "type": "Suffix"
     },
     "506_2": {
         "affix": "Spellslinger's",
-        "value": "+(21-30)% increased Spell Damage\n+(-3--3) increased Spell Mana Cost",
+        "value": "(21-30)% increased Spell Damage\n(-3--3) increased Spell Mana Cost",
         "level": 0,
         "type": "Suffix"
     },
     "506_3": {
         "affix": "Spellslinger's",
-        "value": "+(31-40)% increased Spell Damage\n+(-3--3) increased Spell Mana Cost",
+        "value": "(31-40)% increased Spell Damage\n(-3--3) increased Spell Mana Cost",
         "level": 0,
         "type": "Suffix"
     },
     "506_4": {
         "affix": "Spellslinger's",
-        "value": "+(41-50)% increased Spell Damage\n+(-3--3) increased Spell Mana Cost",
+        "value": "(41-50)% increased Spell Damage\n(-3--3) increased Spell Mana Cost",
         "level": 0,
         "type": "Suffix"
     },
     "506_5": {
         "affix": "Spellslinger's",
-        "value": "+(60-75)% increased Spell Damage\n+(-4--4) increased Spell Mana Cost",
+        "value": "(60-75)% increased Spell Damage\n(-4--4) increased Spell Mana Cost",
         "level": 0,
         "type": "Suffix"
     },
     "506_6": {
         "affix": "Spellslinger's",
-        "value": "+(76-100)% increased Spell Damage\n+(-5--5) increased Spell Mana Cost",
+        "value": "(76-100)% increased Spell Damage\n(-5--5) increased Spell Mana Cost",
         "level": 0,
         "type": "Suffix"
     },
@@ -18331,43 +18331,43 @@
     },
     "679_0": {
         "affix": null,
-        "value": "+(16-23)% increased Minion Damage\n+(2-2) increased Minions teleported around you after you use a Traversal Skill",
+        "value": "(16-23)% increased Minion Damage\n(2-2) increased Minions teleported around you after you use a Traversal Skill",
         "level": 0,
         "type": "Suffix"
     },
     "679_1": {
         "affix": null,
-        "value": "+(24-31)% increased Minion Damage\n+(3-3) increased Minions teleported around you after you use a Traversal Skill",
+        "value": "(24-31)% increased Minion Damage\n(3-3) increased Minions teleported around you after you use a Traversal Skill",
         "level": 0,
         "type": "Suffix"
     },
     "679_2": {
         "affix": null,
-        "value": "+(32-39)% increased Minion Damage\n+(4-4) increased Minions teleported around you after you use a Traversal Skill",
+        "value": "(32-39)% increased Minion Damage\n(4-4) increased Minions teleported around you after you use a Traversal Skill",
         "level": 0,
         "type": "Suffix"
     },
     "679_3": {
         "affix": null,
-        "value": "+(40-49)% increased Minion Damage\n+(5-5) increased Minions teleported around you after you use a Traversal Skill",
+        "value": "(40-49)% increased Minion Damage\n(5-5) increased Minions teleported around you after you use a Traversal Skill",
         "level": 0,
         "type": "Suffix"
     },
     "679_4": {
         "affix": null,
-        "value": "+(50-70)% increased Minion Damage\n+(6-7) increased Minions teleported around you after you use a Traversal Skill",
+        "value": "(50-70)% increased Minion Damage\n(6-7) increased Minions teleported around you after you use a Traversal Skill",
         "level": 0,
         "type": "Suffix"
     },
     "679_5": {
         "affix": null,
-        "value": "+(80-105)% increased Minion Damage\n+(8-9) increased Minions teleported around you after you use a Traversal Skill",
+        "value": "(80-105)% increased Minion Damage\n(8-9) increased Minions teleported around you after you use a Traversal Skill",
         "level": 0,
         "type": "Suffix"
     },
     "679_6": {
         "affix": null,
-        "value": "+(106-140)% increased Minion Damage\n+(10-12) increased Minions teleported around you after you use a Traversal Skill",
+        "value": "(106-140)% increased Minion Damage\n(10-12) increased Minions teleported around you after you use a Traversal Skill",
         "level": 0,
         "type": "Suffix"
     },
@@ -18991,43 +18991,43 @@
     },
     "699_0": {
         "affix": "of the Timelost Outcast",
-        "value": "+(-7--7)% increased Necrotic Damage Taken\n+(7-7)% increased Cold Damage Taken",
+        "value": "(-7--7)% increased Necrotic Damage Taken\n(7-7)% increased Cold Damage Taken",
         "level": 0,
         "type": "Suffix"
     },
     "699_1": {
         "affix": "of the Timelost Outcast",
-        "value": "+(-8--8)% increased Necrotic Damage Taken\n+(8-8)% increased Cold Damage Taken",
+        "value": "(-8--8)% increased Necrotic Damage Taken\n(8-8)% increased Cold Damage Taken",
         "level": 0,
         "type": "Suffix"
     },
     "699_2": {
         "affix": "of the Timelost Outcast",
-        "value": "+(-9--9)% increased Necrotic Damage Taken\n+(9-9)% increased Cold Damage Taken",
+        "value": "(-9--9)% increased Necrotic Damage Taken\n(9-9)% increased Cold Damage Taken",
         "level": 0,
         "type": "Suffix"
     },
     "699_3": {
         "affix": "of the Timelost Outcast",
-        "value": "+(-10--10)% increased Necrotic Damage Taken\n+(10-10)% increased Cold Damage Taken",
+        "value": "(-10--10)% increased Necrotic Damage Taken\n(10-10)% increased Cold Damage Taken",
         "level": 0,
         "type": "Suffix"
     },
     "699_4": {
         "affix": "of the Timelost Outcast",
-        "value": "+(-11--12)% increased Necrotic Damage Taken\n+(11-12)% increased Cold Damage Taken",
+        "value": "(-11--12)% increased Necrotic Damage Taken\n(11-12)% increased Cold Damage Taken",
         "level": 0,
         "type": "Suffix"
     },
     "699_5": {
         "affix": "of the Timelost Outcast",
-        "value": "+(-17--15)% increased Necrotic Damage Taken\n+(15-17)% increased Cold Damage Taken",
+        "value": "(-17--15)% increased Necrotic Damage Taken\n(15-17)% increased Cold Damage Taken",
         "level": 0,
         "type": "Suffix"
     },
     "699_6": {
         "affix": "of the Timelost Outcast",
-        "value": "+(-20--18)% increased Necrotic Damage Taken\n+(18-20)% increased Cold Damage Taken",
+        "value": "(-20--18)% increased Necrotic Damage Taken\n(18-20)% increased Cold Damage Taken",
         "level": 0,
         "type": "Suffix"
     },
@@ -19117,85 +19117,85 @@
     },
     "702_0": {
         "affix": "Solar Deserter's",
-        "value": "+(3-3)% increased Movement Speed\n+(-13--14)% increased Fire Damage Taken on Block",
+        "value": "(3-3)% increased Movement Speed\n(-13--14)% increased Fire Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "702_1": {
         "affix": "Solar Deserter's",
-        "value": "+(4-4)% increased Movement Speed\n+(-15--16)% increased Fire Damage Taken on Block",
+        "value": "(4-4)% increased Movement Speed\n(-15--16)% increased Fire Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "702_2": {
         "affix": "Solar Deserter's",
-        "value": "+(5-5)% increased Movement Speed\n+(-17--18)% increased Fire Damage Taken on Block",
+        "value": "(5-5)% increased Movement Speed\n(-17--18)% increased Fire Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "702_3": {
         "affix": "Solar Deserter's",
-        "value": "+(6-6)% increased Movement Speed\n+(-19--20)% increased Fire Damage Taken on Block",
+        "value": "(6-6)% increased Movement Speed\n(-19--20)% increased Fire Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "702_4": {
         "affix": "Solar Deserter's",
-        "value": "+(7-7)% increased Movement Speed\n+(-21--23)% increased Fire Damage Taken on Block",
+        "value": "(7-7)% increased Movement Speed\n(-21--23)% increased Fire Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "702_5": {
         "affix": "Solar Deserter's",
-        "value": "+(9-10)% increased Movement Speed\n+(-26--28)% increased Fire Damage Taken on Block",
+        "value": "(9-10)% increased Movement Speed\n(-26--28)% increased Fire Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "702_6": {
         "affix": "Solar Deserter's",
-        "value": "+(11-12)% increased Movement Speed\n+(-30--35)% increased Fire Damage Taken on Block",
+        "value": "(11-12)% increased Movement Speed\n(-30--35)% increased Fire Damage Taken on Block",
         "level": 0,
         "type": "Suffix"
     },
     "703_0": {
         "affix": "Bloom Tender's",
-        "value": "+(4-4)% increased Movement Speed\n+(20-23)% increased Poison Resistance",
+        "value": "(4-4)% increased Movement Speed\n(20-23)% increased Poison Resistance",
         "level": 0,
         "type": "Suffix"
     },
     "703_1": {
         "affix": "Bloom Tender's",
-        "value": "+(5-5)% increased Movement Speed\n+(24-27)% increased Poison Resistance",
+        "value": "(5-5)% increased Movement Speed\n(24-27)% increased Poison Resistance",
         "level": 0,
         "type": "Suffix"
     },
     "703_2": {
         "affix": "Bloom Tender's",
-        "value": "+(6-6)% increased Movement Speed\n+(28-31)% increased Poison Resistance",
+        "value": "(6-6)% increased Movement Speed\n(28-31)% increased Poison Resistance",
         "level": 0,
         "type": "Suffix"
     },
     "703_3": {
         "affix": "Bloom Tender's",
-        "value": "+(7-7)% increased Movement Speed\n+(32-35)% increased Poison Resistance",
+        "value": "(7-7)% increased Movement Speed\n(32-35)% increased Poison Resistance",
         "level": 0,
         "type": "Suffix"
     },
     "703_4": {
         "affix": "Bloom Tender's",
-        "value": "+(8-8)% increased Movement Speed\n+(36-42)% increased Poison Resistance",
+        "value": "(8-8)% increased Movement Speed\n(36-42)% increased Poison Resistance",
         "level": 0,
         "type": "Suffix"
     },
     "703_5": {
         "affix": "Bloom Tender's",
-        "value": "+(10-12)% increased Movement Speed\n+(50-60)% increased Poison Resistance",
+        "value": "(10-12)% increased Movement Speed\n(50-60)% increased Poison Resistance",
         "level": 0,
         "type": "Suffix"
     },
     "703_6": {
         "affix": "Bloom Tender's",
-        "value": "+(13-15)% increased Movement Speed\n+(61-75)% increased Poison Resistance",
+        "value": "(13-15)% increased Movement Speed\n(61-75)% increased Poison Resistance",
         "level": 0,
         "type": "Suffix"
     },
@@ -19285,43 +19285,43 @@
     },
     "706_0": {
         "affix": "Hirish's",
-        "value": "+(12-12)% increased Mana Regen\n+(12-12)% increased Damage Dealt to Mana Before Health",
+        "value": "(12-12)% increased Mana Regen\n(12-12)% increased Damage Dealt to Mana Before Health",
         "level": 0,
         "type": "Suffix"
     },
     "706_1": {
         "affix": "Hirish's",
-        "value": "+(13-13)% increased Mana Regen\n+(13-13)% increased Damage Dealt to Mana Before Health",
+        "value": "(13-13)% increased Mana Regen\n(13-13)% increased Damage Dealt to Mana Before Health",
         "level": 0,
         "type": "Suffix"
     },
     "706_2": {
         "affix": "Hirish's",
-        "value": "+(14-14)% increased Mana Regen\n+(14-14)% increased Damage Dealt to Mana Before Health",
+        "value": "(14-14)% increased Mana Regen\n(14-14)% increased Damage Dealt to Mana Before Health",
         "level": 0,
         "type": "Suffix"
     },
     "706_3": {
         "affix": "Hirish's",
-        "value": "+(15-15)% increased Mana Regen\n+(15-15)% increased Damage Dealt to Mana Before Health",
+        "value": "(15-15)% increased Mana Regen\n(15-15)% increased Damage Dealt to Mana Before Health",
         "level": 0,
         "type": "Suffix"
     },
     "706_4": {
         "affix": "Hirish's",
-        "value": "+(16-18)% increased Mana Regen\n+(16-18)% increased Damage Dealt to Mana Before Health",
+        "value": "(16-18)% increased Mana Regen\n(16-18)% increased Damage Dealt to Mana Before Health",
         "level": 0,
         "type": "Suffix"
     },
     "706_5": {
         "affix": "Hirish's",
-        "value": "+(22-26)% increased Mana Regen\n+(22-26)% increased Damage Dealt to Mana Before Health",
+        "value": "(22-26)% increased Mana Regen\n(22-26)% increased Damage Dealt to Mana Before Health",
         "level": 0,
         "type": "Suffix"
     },
     "706_6": {
         "affix": "Hirish's",
-        "value": "+(27-32)% increased Mana Regen\n+(27-32)% increased Damage Dealt to Mana Before Health",
+        "value": "(27-32)% increased Mana Regen\n(27-32)% increased Damage Dealt to Mana Before Health",
         "level": 0,
         "type": "Suffix"
     },

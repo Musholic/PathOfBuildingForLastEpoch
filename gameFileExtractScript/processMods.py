@@ -11,11 +11,13 @@ def get_value_range(tier_data, is_increased):
     if is_percentage:
         min_roll = int(100 * min_roll)
         max_roll = int(100 * max_roll)
-    value_range = "+(" + str(min_roll) + "-" + str(max_roll) + ")"
+    value_range = "(" + str(min_roll) + "-" + str(max_roll) + ")"
     if is_percentage:
         value_range += "%"
     if is_increased:
         value_range += " increased"
+    else:
+        value_range = "+" + value_range
     return value_range
 
 

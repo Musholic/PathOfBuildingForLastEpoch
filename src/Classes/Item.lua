@@ -683,19 +683,6 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 				local catalystScalar = getCatalystScalar(self.catalyst, modLine.modTags, self.catalystQuality)
 				local rangedLine = itemLib.applyRange(line, 1, catalystScalar)
 				local modList, extra = modLib.parseMod(rangedLine)
-				if (not modList or extra) and self.rawLines[l+1] then
-					-- Try to combine it with the next line
-					local nextLine = self.rawLines[l+1]:gsub("%b{}", ""):gsub(" ?%(%l+%)","")
-					local combLine = line.." "..nextLine
-					rangedLine = itemLib.applyRange(combLine, 1, catalystScalar)
-					modList, extra = modLib.parseMod(rangedLine, true)
-					if modList and not extra then
-						line = line.."\n"..nextLine
-						l = l + 1
-					else
-						modList, extra = modLib.parseMod(rangedLine)
-					end
-				end
 
 				local lineLower = line:lower()
 				if lineLower == "this item can be anointed by cassia" then
