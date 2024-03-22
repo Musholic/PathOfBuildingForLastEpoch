@@ -180,11 +180,6 @@ function PassiveSpecClass:Save(xml)
 		nodes = table.concat(allocNodeIdList, ","),
 		masteryEffects = table.concat(masterySelections, ",")
 	}
-	t_insert(xml, {
-		-- Legacy format
-		elem = "URL",
-		[1] = self:EncodeURL("https://www.pathofexile.com/passive-skill-tree/")
-	})
 
 	local sockets = {
 		elem = "Sockets"
@@ -465,53 +460,6 @@ function PassiveSpecClass:DecodeURL(url)
 	local masteryEnd = masteryStart + (b:byte(masteryStart) * 4)
 	local masteryEffects = b:sub(masteryStart + 1, masteryEnd)
 	self:AllocateMasteryEffects(masteryEffects, "big")
-end
-
--- Encodes the current spec into a URL, using the official skill tree's format
--- Prepends the URL with an optional prefix
-function PassiveSpecClass:EncodeURL(prefix)
-	local a = { 0, 0, 0, 6, self.curClassId, bor(b_lshift(self.curSecondaryAscendClassId or 0, 2), self.curAscendClassId) }
-
-	local nodeCount = 0
-	local clusterCount = 0
-	local masteryCount = 0
-
-	local clusterNodeIds = {}
-	local masteryNodeIds = {}
-
-	for id, node in pairs(self.allocNodes) do
-		if node.type ~= "ClassStart" and node.type ~= "AscendClassStart" and id < 65536 and nodeCount < 255 then
-			t_insert(a, m_floor(id / 256))
-			t_insert(a, id % 256)
-			nodeCount = nodeCount + 1
-			if self.masterySelections[node.id] then
-				local effect_id = self.masterySelections[node.id]
-				t_insert(masteryNodeIds, m_floor(effect_id / 256))
-				t_insert(masteryNodeIds, effect_id % 256)
-				t_insert(masteryNodeIds, m_floor(node.id / 256))
-				t_insert(masteryNodeIds, node.id % 256)
-				masteryCount = masteryCount + 1
-			end
-		elseif id >= 65536 then
-			local clusterId = id - 65536
-			t_insert(clusterNodeIds, m_floor(clusterId / 256))
-			t_insert(clusterNodeIds, clusterId % 256)
-			clusterCount = clusterCount + 1
-		end
-	end
-	t_insert(a, 7, nodeCount)
-
-	t_insert(a, clusterCount)
-	for _, id in pairs(clusterNodeIds) do
-		t_insert(a, id)
-	end
-
-	t_insert(a, masteryCount)
-	for _, id in pairs(masteryNodeIds) do
-		t_insert(a, id)
-	end
-
-	return (prefix or "")..common.base64.encode(string.char(unpack(a))):gsub("+","-"):gsub("/","_")
 end
 
 -- Change the current class, preserving currently allocated nodes if they connect to the new class's starting node

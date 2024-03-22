@@ -423,13 +423,15 @@ local function doActorAttribsConditions(env, actor)
 		end
 		if not modDB:Flag(nil, "NoIntelligenceAttributeBonuses") then
 			if not modDB:Flag(nil, "NoIntBonusToMana") then
-				modDB:NewMod("Mana", "BASE", m_floor(output.Att * 2), "Attunement")
+				modDB:NewMod("Mana", "BASE", output.Att * 2, "Attunement")
 			end
 			if not modDB:Flag(nil, "NoIntBonusToES") then
 				modDB:NewMod("EnergyShield", "INC", m_floor(output.Int / 5), "Intelligence")
 			end
 		end
 	end
+
+	modDB:NewMod("Armour", "INC", output.Str * 4, "Strength")
 
 	doActorLifeMana(actor)
 end
