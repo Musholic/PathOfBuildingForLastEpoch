@@ -62,7 +62,7 @@ local conquerorList = {
 }
 -- List of modifier forms
 local formList = {
-	["^(%d+)%% increased"] = "INC",
+	["^([%d%.]+)%% increased"] = "INC",
 	["^(%d+)%% faster"] = "INC",
 	["^(%d+)%% reduced"] = "RED",
 	["^(%d+)%% slower"] = "RED",

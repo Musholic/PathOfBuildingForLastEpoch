@@ -23,25 +23,6 @@ itemLib.influenceInfo = {
 	{ key="tangle", display="Eater of Worlds", color=colorCodes.TANGLE },
 }
 
--- Apply a value scalar to the first n of any numbers present
-function itemLib.applyValueScalar(line, valueScalar, numbers, precision)
-	if valueScalar and type(valueScalar) == "number" and valueScalar ~= 1 then
-		if precision then
-			return line:gsub("(%d+%.?%d*)", function(num)
-				local power = 10 ^ precision
-				local numVal = m_floor(tonumber(num) * valueScalar * power) / power
-				return tostring(numVal)
-			end, numbers)
-		else
-			return line:gsub("(%d+)([^%.])", function(num, suffix)
-				local numVal = m_floor(num * valueScalar + 0.001)
-				return tostring(numVal)..suffix
-			end, numbers)
-		end
-	end
-	return line
-end
-
 local antonyms = {
 	["increased"] = "reduced",
 	["reduced"] = "increased",
@@ -56,57 +37,35 @@ end
 
 -- Apply range value (0 to 1) to a modifier that has a range: "(x-x)" or "(x-x) to (x-x)"
 function itemLib.applyRange(line, range, valueScalar)
-	local precisionSame = true
-	-- Create a line with ranges removed to check if the mod is a high precision mod.
-	local testLine = not line:find("-", 1, true) and line or
-		line:gsub("(%+?)%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)",
-		function(plus, min, max)
-			min = tonumber(min)
-			local maxPrecision = min + range * (tonumber(max) - min)
-			local minPrecision = m_floor(maxPrecision + 0.5)
-			if minPrecision ~= maxPrecision then
-				precisionSame = false
-			end
-			return (minPrecision < 0 and "" or plus) .. tostring(minPrecision)
-		end)
-		:gsub("%-(%d+%%) (%a+)", antonymFunc)
-
-	if precisionSame and (not valueScalar or valueScalar == 1) then
-		return testLine
-	end
-
-	local precision = nil
-	local modList, extra = modLib.parseMod(testLine)
+	local modList, extra = modLib.parseMod(line)
 	if modList and not extra then
 		for _, mod in pairs(modList) do
 			local subMod = mod
 			if type(mod.value) == "table" and mod.value.mod then
 				subMod = mod.value.mod
 			end
-			if type(subMod.value) == "number" and data.highPrecisionMods[subMod.name] and data.highPrecisionMods[subMod.name][subMod.type] then
-				precision = data.highPrecisionMods[subMod.name][subMod.type]
-			end
 		end
 	end
-	if not precision and line:match("(%d+%.%d*)") then
-		precision = data.defaultHighPrecision
-	end
+	-- High precision for increased modifier
+	local highPrecision = line:match("%% increased")
 
 	local numbers = 0
 	line = line:gsub("(%+?)%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)",
 		function(plus, min, max)
+			min = m_floor(min * valueScalar + 0.5)
+			max = m_floor(max * valueScalar + 0.5)
 			numbers = numbers + 1
-			local power = 10 ^ (precision or 0)
-			local numVal = m_floor((tonumber(min) + range * (tonumber(max) - tonumber(min))) * power + 0.5) / power
+			local numVal = (tonumber(min) + range * (tonumber(max) - tonumber(min)))
+			if highPrecision then
+				numVal = m_floor(numVal * 100 + 0.5) / 100
+			else
+				numVal = m_floor(numVal + 0.5)
+			end
 			return (numVal < 0 and "" or plus) .. tostring(numVal)
 		end)
 		:gsub("%-(%d+%%) (%a+)", antonymFunc)
 
-	if numbers == 0 and line:match("(%d+%.?%d*)%%? ") then --If a mod contains x or x% and is not already a ranged value, then only the first number will be scalable as any following numbers will always be conditions or unscalable values.
-		numbers = 1
-	end
-
-	return itemLib.applyValueScalar(line, valueScalar, numbers, precision)
+	return line
 end
 
 function itemLib.formatModLine(modLine, dbMode)
