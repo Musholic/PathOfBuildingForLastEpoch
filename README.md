@@ -29,6 +29,9 @@ The current build can be run by running `./runtime/Path{space}of{space}Building.
 ## Contribute
 You can find instructions on how to contribute code and bug reports [here](CONTRIBUTING.md).
 
+## Contributors
+Special thanks for all the work made prior to this fork (and also to all future work that may be integrated in some ways) to the Path of Building Community contributors at https://github.com/PathOfBuildingCommunity/PathOfBuilding
+
 ## Changelog
 You can find the full version history [here](CHANGELOG.md).
 
