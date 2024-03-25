@@ -739,6 +739,31 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 	--]]
 
 	self.abortSave = false
+
+	if buildXML and buildXML:match("^%{%s*\"data\": ?{") then
+		-- We are importing from LastEpochTools so we do the load here after the init finished
+		local saveContent = processJson(buildXML).data
+		local classId = saveContent.bio.characterClass
+		local className = self.latestTree.classes[classId].name
+		local char = {
+			["league"] = "Cycle",
+			["name"] = "LETools import",
+			["level"] = saveContent.bio.level,
+			["class"] = className,
+			["classId"] = classId,
+			["items"] = {},
+			["hashes"] = { }
+		}
+		for passive, nbPoints in pairs(saveContent["charTree"]["selected"]) do
+			for point = 0, nbPoints - 1 do
+				table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
+			end
+		end
+		for _,itemData in ipairs(saveContent["equipment"]) do
+			-- TODO: LETools is not using the same ids for items and affixes than the save data
+		end
+		self.importTab:ImportPassiveTreeAndJewels(char)
+	end
 end
 
 local acts = { 
@@ -1613,6 +1638,10 @@ do
 end
 
 function buildMode:LoadDB(xmlText, fileName)
+	if xmlText:match("^%{%s*\"data\": ?{") then
+		-- We are importing from LastEpochTools so we delay the load in order to do it after the init finished
+		return
+	end
 	-- Parse the XML
 	local dbXML, errMsg = common.xml.ParseXML(xmlText)
 	if not dbXML then

@@ -9,6 +9,9 @@ buildSites = { }
 -- Import/Export websites list used in dropdowns
 buildSites.websiteList = {
 	{
+		label = "lastepochtools.com", id = "lastepochtools", matchURL = "lastepochtools.com/planner/.+", regexURL = "lastepochtools.com/planner/(.+)$", downloadURL = "lastepochtools.com/planner/%1"
+	},
+	{
 		label = "pobb.in", id = "POBBin", matchURL = "pobb%.in/.+", regexURL = "pobb%.in/(.+)%s*$", downloadURL = "pobb.in/pob/%1",
 		codeOut = "https://pobb.in/", postUrl = "https://pobb.in/pob/", postFields = ""
 	},

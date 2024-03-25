@@ -25,7 +25,7 @@ local ImportTabClass = newClass("ImportTab", "ControlHost", "Control", function(
     end)
 
     -- Stage: input account name
-    self.controls.accountNameHeader = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 40, 200, 16, "^7To start importing a character, click Start:")
+    self.controls.accountNameHeader = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 40, 200, 16, "^7To start importing an **offline** character, click Start:")
     self.controls.accountNameHeader.shown = function()
         return self.charImportMode == "GETACCOUNTNAME"
     end
@@ -113,7 +113,7 @@ You can get this from your web browser's cookies while logged into the Path of E
     end)
 
     -- Build import/export
-    self.controls.sectionBuild = new("SectionControl", { "TOPLEFT", self.controls.sectionCharImport, "BOTTOMLEFT" }, 0, 18, 650, 182, "Build Sharing")
+    self.controls.sectionBuild = new("SectionControl", { "TOPLEFT", self.controls.sectionCharImport, "BOTTOMLEFT" }, 0, 18, 650, 182 + 16, "Build Sharing")
     self.controls.generateCodeLabel = new("LabelControl", { "TOPLEFT", self.controls.sectionBuild, "TOPLEFT" }, 6, 14, 0, 16, "^7Generate a code to share this build with other Path of Building users:")
     self.controls.generateCode = new("ButtonControl", { "LEFT", self.controls.generateCodeLabel, "RIGHT" }, 4, 0, 80, 20, "Generate", function()
         self.controls.generateCodeOut:SetText(common.base64.encode(Deflate(self.build:SaveDB("code"))):gsub("+", "-"):gsub("/", "_"))
@@ -184,7 +184,7 @@ You can get this from your web browser's cookies while logged into the Path of E
         return #self.controls.generateCodeOut.buf > 0
     end
     self.controls.generateCodeNote = new("LabelControl", { "TOPLEFT", self.controls.generateCodeOut, "BOTTOMLEFT" }, 0, 4, 0, 14, "^7Note: this code can be very long; you can use 'Share' to shrink it.")
-    self.controls.importCodeHeader = new("LabelControl", { "TOPLEFT", self.controls.generateCodeNote, "BOTTOMLEFT" }, 0, 26, 0, 16, "^7To import a build, enter URL or code here:")
+    self.controls.importCodeHeader = new("LabelControl", { "TOPLEFT", self.controls.generateCodeNote, "BOTTOMLEFT" }, 0, 26, 0, 16, "^7To import a build, enter URL or code here:\nNote that you can import from LETools (WIP)")
 
     local importCodeHandle = function(buf)
         self.importCodeSite = nil
@@ -215,6 +215,9 @@ You can get this from your web browser's cookies while logged into the Path of E
                 self.importCodeSite = j
                 if buf ~= urlText then
                     self.controls.importCodeIn:SetText(urlText, false)
+                end
+                if buildSites.websiteList[j].id == "lastepochtools" then
+                    self.importCodeXML = buf:match("window%[\"buildInfo\"%] = (%b{})")
                 end
                 return
             end
@@ -250,7 +253,7 @@ You can get this from your web browser's cookies while logged into the Path of E
         end
     end
 
-    self.controls.importCodeIn = new("EditControl", { "TOPLEFT", self.controls.importCodeHeader, "BOTTOMLEFT" }, 0, 4, 328, 20, "", nil, nil, nil, importCodeHandle, nil, nil, true)
+    self.controls.importCodeIn = new("EditControl", { "TOPLEFT", self.controls.importCodeHeader, "BOTTOMLEFT" }, 0, 4 + 16, 328, 20, "", nil, nil, nil, importCodeHandle, nil, nil, true)
     self.controls.importCodeIn.enterFunc = function()
         if self.importCodeValid then
             self.controls.importCodeGo.onClick()
@@ -426,7 +429,7 @@ function ImportTabClass:DownloadPassiveTree()
 end
 
 function ImportTabClass:ReadJsonSaveData(saveFileContent)
-    local saveContent = self:ProcessJSON(saveFileContent)
+    local saveContent = processJson(saveFileContent)
     local classId = saveContent["characterClass"]
     local className = self.build.latestTree.classes[classId].name
     local char = {
@@ -807,17 +810,4 @@ function UrlDecode(url)
     url = url:gsub("+", " ")
     url = url:gsub("%%(%x%x)", HexToChar)
     return url
-end
-
-function ImportTabClass:ProcessJSON(json)
-    local func, errMsg = loadstring("return " .. jsonToLua(json))
-    if errMsg then
-        return nil, errMsg
-    end
-    setfenv(func, { }) -- Sandbox the function just in case
-    local data = func()
-    if type(data) ~= "table" then
-        return nil, "Return type is not a table"
-    end
-    return data
 end

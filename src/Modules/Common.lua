@@ -326,25 +326,30 @@ end
 
 -- Quick hack to convert JSON to valid lua
 function jsonToLua(json)
-	return json:gsub("%[","{"):gsub("%]","}"):gsub('"(%d[%d%.]*)":','[%1]='):gsub('"([^"]+)":','["%1"]='):gsub("\\/","/"):gsub("{(%w+)}","{[0]=%1}")
+	return json:gsub("%[","{"):gsub("%]","}"):gsub('"(%d[%d%.]*)":','[%1]='):gsub('([^\\])"([^"]+)":','%1["%2"]='):gsub("\\/","/"):gsub("{(%w+)}","{[0]=%1}")
 		:gsub("\\u(%x%x%x%x)",function(hex) return codePointToUTF8(tonumber(hex,16)) end)
 end
 
 function readJsonFile(fileName)
 	local jsonFile = io.open(fileName, "r")
-	local luaFileContent = ""
+	local jsonFileContent = ""
 	if jsonFile then
-		luaFileContent = "return " .. jsonToLua(jsonFile:read("*a"))
+		jsonFileContent = jsonFile:read("*a")
 		jsonFile:close()
 	end
-	local func, errMsg = loadstring(luaFileContent)
+	return processJson(jsonFileContent)
+end
+
+function processJson(json)
+	local luaContent = jsonToLua(json)
+	local func, errMsg = loadstring("return " .. luaContent)
 	if errMsg then
-		error(errMsg)
+		return nil, errMsg
 	end
 	setfenv(func, { }) -- Sandbox the function just in case
 	local data = func()
 	if type(data) ~= "table" then
-		error("Return type is not a table, got " .. type(data))
+		return nil, "Return type is not a table"
 	end
 	return data
 end
