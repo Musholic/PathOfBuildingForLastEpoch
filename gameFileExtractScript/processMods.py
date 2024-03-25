@@ -68,10 +68,13 @@ for affixData in data["singleAffixes"]:
         affixName = affixStrings[str(affixData["affixId"]) + "_A"]
         modData = {
             "affix": affixData["affixTitle"],
-            "value": valueRange + " " + affixName,
-            "level": affixData["levelRequirement"]
+            1: valueRange + " " + affixName,
+            "level": affixData["levelRequirement"],
+            "statOrderKey": affixData["affixId"],
+            "statOrder": [affixData["affixId"]],
+            "tier": tier
         }
-        if affixData["rollsOn"]:
+        if affixData["type"]:
             modData["type"] = "Prefix"
         else:
             modData["type"] = "Suffix"
@@ -87,10 +90,13 @@ for affixData in data["multiAffixes"]:
         value += valueRange + " " + affixName
         modData = {
             "affix": affixData["affixTitle"],
-            "value": value,
-            "level": affixData["levelRequirement"]
+            1: value,
+            "level": affixData["levelRequirement"],
+            "statOrderKey": affixData["affixId"],
+            "statOrder": [affixData["affixId"]],
+            "tier": tier
         }
-        if affixData["rollsOn"]:
+        if affixData["type"]:
             modData["type"] = "Prefix"
         else:
             modData["type"] = "Suffix"

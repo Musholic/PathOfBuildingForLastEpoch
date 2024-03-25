@@ -50,6 +50,9 @@ function itemLib.applyRange(line, range, valueScalar)
 	local highPrecision = line:match("%% increased")
 
 	local numbers = 0
+	if not valueScalar then
+		valueScalar = 1.0
+	end
 	line = line:gsub("(%+?)%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)",
 		function(plus, min, max)
 			min = m_floor(min * valueScalar + 0.5)

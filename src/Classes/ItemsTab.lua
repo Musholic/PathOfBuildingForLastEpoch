@@ -818,7 +818,7 @@ holding Shift will put it in the second.]])
 				end
 				tooltip:AddSeparator(10)
 				if #modList > 1 then
-					tooltip:AddLine(16, "^7Affix: Tier "..(#modList - isValueInArray(modList, modId) + 1).." ("..mod.affix..")")
+					tooltip:AddLine(16, "^7Affix: Tier "..isValueInArray(modList, modId).." ("..mod.affix..")")
 				else
 					tooltip:AddLine(16, "^7Affix: "..mod.affix)
 				end
@@ -1687,7 +1687,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 				return modA.statOrder[i] < modB.statOrder[i]
 			end
 		end
-		return modA.level > modB.level
+		return modA.tier > modB.tier
 	end)
 	control.selIndex = 1
 	control.list = { "None" }
