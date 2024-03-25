@@ -57,27 +57,38 @@ for classInfo in data["trees"].values():
 
     tree["nodes"]["root"]["out"].append(className)
 
-    posX = 0
-    posY = classStartIndex * 6000
 
     tree["nodes"][className] = {
         "skill": className,
         "name": className,
         "classStartIndex": classStartIndex,
         "x": 0,
-        "y": posY,
+        "y": 0,
         "out": [],
         "in": []
     }
 
+    posX = 0
+    posY = 0
+    mastery = 0
+    posYMastery = 0
+    maxPosY = 0
     masteryReq = 0
 
     for node in classInfo["nodeList"]:
         passiveData = data["passives"][node['fileID']]
 
-        if masteryReq != passiveData['masteryRequirement']:
+        if maxPosY < posY:
+            maxPosY = posY
+
+        if mastery != passiveData['mastery']:
+            mastery = passiveData['mastery']
+            posYMastery = maxPosY + 400
+            posY = posYMastery
+            posX = 0
+        elif masteryReq != passiveData['masteryRequirement']:
             masteryReq = passiveData['masteryRequirement']
-            posY = classStartIndex * 6000
+            posY = posYMastery
             posX += 200
         else:
             posY += 200

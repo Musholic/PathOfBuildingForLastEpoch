@@ -96,6 +96,12 @@ end
 function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 	local spec = build.spec
 	local tree = spec.tree
+	local visibleNodes = {}
+	for nodeId, node in pairs(spec.nodes) do
+		if nodeId:match("^" .. spec.curClassName) then
+			visibleNodes[nodeId] = node
+		end
+	end
 
 	local cursorX, cursorY = GetCursorPos()
 	local mOver = cursorX >= viewPort.x and cursorX < viewPort.x + viewPort.width and cursorY >= viewPort.y and cursorY < viewPort.y + viewPort.height
@@ -196,7 +202,7 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 	if mOver then
 		-- Cursor is over the tree, check if it is over a node
 		local curTreeX, curTreeY = screenToTree(cursorX, cursorY)
-		for nodeId, node in pairs(spec.nodes) do
+		for nodeId, node in pairs(visibleNodes) do
 			if node.rsq and not node.isProxy then
 				-- Node has a defined size (i.e. has artwork)
 				local vX = curTreeX - node.x
@@ -393,7 +399,9 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 	-- Draw the connecting lines between nodes
 	SetDrawLayer(nil, 20)
 	for _, connector in pairs(tree.connectors) do
-		renderConnector(connector)
+		if connector.nodeId1:match("^" .. spec.curClassName) then
+			renderConnector(connector)
+		end
 	end
 	for _, subGraph in pairs(spec.subGraphs) do
 		for _, connector in pairs(subGraph.connectors) do
@@ -428,13 +436,13 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 		end
 		self.searchParams = prepSearch(self.searchStr)
 
-		for nodeId, node in pairs(spec.nodes) do
+		for nodeId, node in pairs(visibleNodes) do
 			self.searchStrResults[nodeId] = #self.searchParams > 0 and self:DoesNodeMatchSearchParams(node)
 		end
 	end
 
 	-- Draw the nodes
-	for nodeId, node in pairs(spec.nodes) do
+	for nodeId, node in pairs(visibleNodes) do
 		-- Determine the base and overlay images for this node based on type and state
 		local compareNode = self.compareSpec and self.compareSpec.nodes[nodeId] or nil
 
