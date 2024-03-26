@@ -1,27 +1,25 @@
+from common import *
 import yaml
 import json
 from natsort import natsorted
 
-
-def insert_newlines(string, every=128):
-    return '\n'.join(string[i:i + every] for i in range(0, len(string), every))
-
-
 with open("generatedAssets/passiveTreeExtract.yaml", "r") as yamlFile:
     data = yaml.safe_load(yamlFile)
 
-tree = {
-    "nodes": {
-        "root": {
-            "out": [],
-            "in": []
-        }
-    }
-}
+with open("generatedAssets/skillTreesExtract.yaml", "r") as yamlFile:
+    skillTreesData = yaml.safe_load(yamlFile)
 
-classes = {}
 
 for classInfo in data["trees"].values():
+    tree = {
+        "nodes": {
+            "root": {
+                "out": [],
+                "in": []
+            }
+        }
+    }
+    classes = {}
     classId = classInfo["treeID"]
     className = classId
 
@@ -46,7 +44,7 @@ for classInfo in data["trees"].values():
         "ascendancies": []
     }
 
-    with open("originalAssets/" + className + ".asset", "r") as yamlFile:
+    with open(extractPath + "MonoBehaviour/" + className + ".asset", "r") as yamlFile:
         classData = yaml.safe_load(yamlFile)
         classData = classData["MonoBehaviour"]
         classes[className]["base_str"] = classData["baseStrength"]
@@ -54,9 +52,19 @@ for classInfo in data["trees"].values():
         classes[className]["base_int"] = classData["baseIntelligence"]
         classes[className]["base_att"] = classData["baseAttunement"]
         classes[className]["base_vit"] = classData["baseVitality"]
+        classes[className]["skills"] = []
+        for abilityData in classData["unlockableAbilities"]:
+            classes[className]["skills"].append(abilityData['ability']['guid'])
+        for abilityData in classData["knownAbilities"]:
+            classes[className]["skills"].append(abilityData['guid'])
+        for masteryData in classData["masteries"]:
+            guid = masteryData['masteryAbility'].get('guid')
+            if guid:
+                classes[className]["skills"].append(guid)
+            for abilityData in masteryData["abilities"]:
+                classes[className]["skills"].append(abilityData['ability']['guid'])
 
     tree["nodes"]["root"]["out"].append(className)
-
 
     tree["nodes"][className] = {
         "skill": className,
@@ -70,19 +78,22 @@ for classInfo in data["trees"].values():
 
     posX = 0
     posY = 0
-    mastery = 0
+    mastery = '0'
     posYMastery = 0
     maxPosY = 0
-    masteryReq = 0
+    masteryReq = '0'
 
+    nodeList = []
     for node in classInfo["nodeList"]:
-        passiveData = data["passives"][node['fileID']]
-
+        nodeList.append(data["passives"][node['fileID']])
+    nodeList = natsorted(nodeList, key=lambda x: x['mastery']+"_"+x['masteryRequirement'])
+    for passiveData in nodeList:
         if maxPosY < posY:
             maxPosY = posY
 
         if mastery != passiveData['mastery']:
             mastery = passiveData['mastery']
+            masteryReq = '0'
             posYMastery = maxPosY + 400
             posY = posYMastery
             posX = 0
@@ -103,7 +114,6 @@ for classInfo in data["trees"].values():
                 "y": posY,
                 "stats": [],
                 "reminderText": [
-                    #     insert_newlines(str(passiveData))
                 ],
                 "in": [],
                 "out": [],
@@ -111,7 +121,7 @@ for classInfo in data["trees"].values():
 
             for statData in passiveData["stats"]:
                 stat = ""
-                if (statData["value"]):
+                if statData["value"]:
                     stat = statData["value"] + " "
                 stat += statData["statName"]
                 tree["nodes"][passiveId]["stats"].append(stat)
@@ -128,22 +138,68 @@ for classInfo in data["trees"].values():
                 previousPassiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint - 1)
                 tree["nodes"][passiveId]["in"].append(previousPassiveId)
 
-tree["nodes"] = dict(natsorted(tree["nodes"].items()))
+    posYStart = -800
 
-for node in tree["nodes"].values():
-    for req in node["in"]:
-        tree["nodes"][req]["out"].append(node["skill"])
+    for skillTreeData in skillTreesData['trees'].values():
+        posX = 3000
+        posYStart += 800
+        if skillTreeData["ability"]["guid"] in classes[className]["skills"]:
+            nodeList = []
+            for node in skillTreeData["nodeList"]:
+                nodeList.append(skillTreesData['nodes'][node['fileID']])
+            nodeList = natsorted(nodeList, key=lambda x: x['id'])
+            for skillData in nodeList:
+                posY = posYStart
+                posX += 200
+                maxPoints = int(skillData['maxPoints'])
+                if maxPoints == 0:
+                    maxPoints = 1
+                for nbPoint in range(maxPoints):
+                    skillId = className + "-" + skillTreeData['treeID'] + "-" + skillData['id'] + "-" + str(nbPoint)
+                    posY += 100
+                    tree["nodes"][skillId] = {
+                        "skill": skillId,
+                        "name": skillData["nodeName"] + "#" + str(nbPoint + 1),
+                        "x": posX,
+                        "y": posY,
+                        "stats": [],
+                        "reminderText": [
+                        ],
+                        "in": [],
+                        "out": [],
+                    }
+                    for statData in skillData["stats"]:
+                        stat = ""
+                        if statData["value"]:
+                            stat = statData["value"] + " "
+                        stat += statData["statName"]
+                        tree["nodes"][skillId]["stats"].append(stat)
 
-# Add the classes in the correct order
-tree["classes"] = [
-    classes["Primalist"],
-    classes["Mage"],
-    classes["Sentinel"],
-    classes["Acolyte"],
-    classes["Rogue"],
-]
+                    if nbPoint == 0:
+                        if not skillData["requirements"]:
+                            tree["nodes"][skillId]["in"].append(className)
+                        else:
+                            for req in skillData["requirements"]:
+                                reqPoints = int(req["requirement"])
+                                if reqPoints == 0:
+                                    reqPoints = 1
+                                reqId = (className + "-" + skillTreeData['treeID'] + "-" +
+                                         skillTreesData["nodes"][req["node"]["fileID"]]["id"] + "-"
+                                         + str(reqPoints - 1))
+                                tree["nodes"][skillId]["in"].append(reqId)
+                    else:
+                        previousSkillId = (className + "-" + skillTreeData['treeID'] + "-" + skillData['id'] + "-"
+                                           + str(nbPoint - 1))
+                        tree["nodes"][skillId]["in"].append(previousSkillId)
 
-with open("../src/TreeData/1_0/tree.json", "w") as jsonFile:
-    json.dump(tree, jsonFile, indent=4)
+    tree["nodes"] = dict(natsorted(tree["nodes"].items()))
+    tree["classes"] = [classes[className]]
+
+    for node in tree["nodes"].values():
+        for req in node["in"]:
+            tree["nodes"][req]["out"].append(node["skill"])
+
+    with open("../src/TreeData/1_0/tree_" + str(classStartIndex) + ".json", "w") as jsonFile:
+        json.dump(tree, jsonFile, indent=4)
 
 print("passive tree processed with success")
