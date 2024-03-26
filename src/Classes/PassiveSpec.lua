@@ -214,7 +214,7 @@ function PassiveSpecClass:PostLoad()
 end
 
 -- Import passive spec from the provided class IDs and node hash list
-function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, secondaryAscendClassId, hashList, hashOverrides, masteryEffects, treeVersion)
+function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, hashList, hashOverrides, masteryEffects, treeVersion)
   if hashOverrides == nil then hashOverrides = {} end
 	if treeVersion and treeVersion ~= self.treeVersion then
 		self:Init(treeVersion)
@@ -223,7 +223,9 @@ function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, secondaryAs
 	self:ResetNodes()
 	self:SelectClass(classId)
 	self:SelectAscendClass(ascendClassId)
-	self:SelectSecondaryAscendClass(secondaryAscendClassId)
+	if abilities then
+		self.curAbilities = abilities
+	end
 	self.hashOverrides = hashOverrides
 	-- move above setting allocNodes so we can compare mastery with selection
 	wipeTable(self.masterySelections)
@@ -429,14 +431,12 @@ function PassiveSpecClass:DecodeURL(url)
 	local classId = b:byte(5)
 	local ascendancyIds = (ver >= 4) and b:byte(6) or 0
 	local ascendClassId = band(ascendancyIds, 3)
-	local secondaryAscendClassId = b_rshift(band(ascendancyIds, 12), 2)
 	if not self.tree.classes[classId] then
 		return "Invalid tree link (bad class ID '"..classId.."')"
 	end
 	self:ResetNodes()
 	self:SelectClass(classId)
 	self:SelectAscendClass(ascendClassId)
-	self:SelectSecondaryAscendClass(secondaryAscendClassId)
 
 	local nodesStart = ver >= 4 and 8 or 7
 	local nodesEnd = ver >= 5 and 7 + (b:byte(7) * 2) or -1
@@ -477,6 +477,7 @@ function PassiveSpecClass:SelectClass(classId)
 	local class = self.tree.classes[classId]
 	self.curClass = class
 	self.curClassName = class.name
+	self.curAbilities = {}
 
 	-- Allocate the new class's starting node
 	local startNode = self.nodes[class.startNodeId]
@@ -513,44 +514,6 @@ function PassiveSpecClass:SelectAscendClass(ascendClassId)
 		local startNode = self.nodes[ascendClass.startNodeId]
 		startNode.alloc = true
 		self.allocNodes[startNode.id] = startNode
-	end
-
-	-- Rebuild all the node paths and dependencies
-	self:BuildAllDependsAndPaths()
-end
-
-function PassiveSpecClass:SelectSecondaryAscendClass(ascendClassId)
-	-- if Secondary Ascendancy does not exist on this tree version
-	if not self.tree.alternate_ascendancies then
-		return
-	end
-	if self.curSecondaryAscendClassId then
-		-- Deallocate the current ascendancy class's start node
-		local ascendClass = self.tree.alternate_ascendancies[self.curSecondaryAscendClassId]
-		if ascendClass then
-			local oldStartNodeId = ascendClass.startNodeId
-			if oldStartNodeId then
-				self.nodes[oldStartNodeId].alloc = false
-				self.allocNodes[oldStartNodeId] = nil
-			end
-		end
-	end
-	
-	self.curSecondaryAscendClassId = ascendClassId
-	if ascendClassId == 0 then
-		self.curSecondaryAscendClass = nil
-		self.curSecondaryAscendClassName = "None"
-	elseif self.tree.alternate_ascendancies[self.curSecondaryAscendClassId] then
-		local ascendClass = self.tree.alternate_ascendancies[self.curSecondaryAscendClassId]
-		self.curSecondaryAscendClass = ascendClass
-		self.curSecondaryAscendClassName = ascendClass.name
-
-		if ascendClass.startNodeId then
-			-- Allocate the new ascendancy class's start node
-			local startNode = self.nodes[ascendClass.startNodeId]
-			startNode.alloc = true
-			self.allocNodes[startNode.id] = startNode
-		end
 	end
 
 	-- Rebuild all the node paths and dependencies
@@ -733,8 +696,7 @@ function PassiveSpecClass:BuildPathFromNode(root)
 			-- 3. They must not pass away from mastery nodes
 			if not other.pathDist then
 				ConPrintTable(other, true)
-			end
-			if node.type ~= "Mastery" and other.type ~= "ClassStart" and other.type ~= "AscendClassStart" and other.pathDist > curDist and (node.ascendancyName == other.ascendancyName or (curDist == 1 and not other.ascendancyName)) then
+			elseif node.type ~= "Mastery" and other.type ~= "ClassStart" and other.type ~= "AscendClassStart" and other.pathDist > curDist and (node.ascendancyName == other.ascendancyName or (curDist == 1 and not other.ascendancyName)) then
 				-- The shortest path to the other node is through the current node
 				other.pathDist = curDist
 				other.path = wipeTable(other.path)
@@ -815,8 +777,19 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 	-- This table will keep track of which nodes have been visited during each path-finding attempt
 	local visited = { }
 	local attributes = { "Dexterity", "Intelligence", "Strength" }
+	self.visibleNodes = {}
+	for nodeId, node in pairs(self.nodes) do
+		if nodeId:match("^" .. self.curClassName) then
+			self.visibleNodes[nodeId] = node
+		end
+		for _,ability in pairs(self.curAbilities) do
+			if ability and nodeId:match("^" .. ability) then
+				self.visibleNodes[nodeId] = node
+			end
+		end
+	end
 	-- Check all nodes for other nodes which depend on them (i.e. are only connected to the tree through that node)
-	for id, node in pairs(self.nodes) do
+	for id, node in pairs(self.visibleNodes) do
 		node.depends = wipeTable(node.depends)
 		node.dependsOnIntuitiveLeapLike = false
 		node.conqueredBy = nil
@@ -864,233 +837,11 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 		end
 	end
 
-	for id, node in pairs(self.nodes) do
-		-- If node is tattooed, replace it
-		if self.hashOverrides[node.id] then
-			self:ReplaceNode(node, self.hashOverrides[node.id])
-		end
-
-		-- If node is conquered, replace it or add mods
-		if node.conqueredBy and node.type ~= "Socket" then
-			local conqueredBy = node.conqueredBy
-			local legionNodes = self.tree.legion.nodes
-			local legionAdditions = self.tree.legion.additions
-
-			-- FIXME - continue implementing
-			local jewelType = 5
-			if conqueredBy.conqueror.type == "vaal" then
-				jewelType = 1
-			elseif conqueredBy.conqueror.type == "karui" then
-				jewelType = 2
-			elseif conqueredBy.conqueror.type == "maraketh" then
-				jewelType = 3
-			elseif conqueredBy.conqueror.type == "templar" then
-				jewelType = 4
-			end
-			local seed = conqueredBy.id
-			if jewelType == 5 then
-				seed = seed / 20
-			end
-
-			local replaceHelperFunc = function(statToFix, statKey, statMod, value)
-				if statMod.fmt == "g" then -- note the only one we actually care about is "Ritual of Flesh" life regen
-					if statKey:find("per_minute") then
-						value = round(value / 60, 1)
-					elseif statKey:find("permyriad") then
-						value = value / 100
-					elseif statKey:find("_ms") then
-						value = value / 1000
-					end
-				end
-				--if statMod.fmt == "d" then -- only ever d or g, and we want both past here
-				if statMod.min ~= statMod.max then
-					return statToFix:gsub("%(" .. statMod.min .. "%-" .. statMod.max .. "%)", value)
-				elseif statMod.min ~= value then -- only true for might/legacy of the vaal which can combine stats
-					return statToFix:gsub(statMod.min, value)
-				end
-				return statToFix -- if it doesn't need to be changed
-			end
-
-			if node.type == "Notable" then
-				local jewelDataTbl = { }
-				if seed ~= m_max(m_min(seed, data.timelessJewelSeedMax[jewelType]), data.timelessJewelSeedMin[jewelType]) then
-					ConPrintf("ERROR: Seed " .. seed .. " is outside of valid range [" .. data.timelessJewelSeedMin[jewelType] .. " - " .. data.timelessJewelSeedMax[jewelType] .. "] for jewel type: " .. data.timelessJewelTypes[jewelType])
-				else
-					jewelDataTbl = data.readLUT(conqueredBy.id, node.id, jewelType)
-				end
-				--print("Need to Update: " .. node.id .. " [" .. node.dn .. "]")
-				if not next(jewelDataTbl) then
-					ConPrintf("Missing LUT: " .. data.timelessJewelTypes[jewelType])
-				else
-					if jewelType == 1 then
-						local headerSize = #jewelDataTbl
-						-- FIXME: complete implementation of this. Need to set roll values for stats
-						--        based on their `fmt` specification
-						if headerSize == 2 or headerSize == 3 then
-							self:ReplaceNode(node, legionNodes[jewelDataTbl[1] + 1 - data.timelessJewelAdditions])
-
-							for i, repStat in ipairs(legionNodes[jewelDataTbl[1] + 1 - data.timelessJewelAdditions].sd) do
-								local statKey = legionNodes[jewelDataTbl[1] + 1 - data.timelessJewelAdditions].sortedStats[i]
-								local statMod = legionNodes[jewelDataTbl[1] + 1 - data.timelessJewelAdditions].stats[statKey]
-								repStat = replaceHelperFunc(repStat, statKey, statMod, jewelDataTbl[statMod.index + 1])
-								self:NodeAdditionOrReplacementFromString(node, repStat, i == 1) -- wipe mods on first run
-							end
-							-- should fix the stat values here (note headerSize == 3 has 2 values)
-						elseif headerSize == 6 or headerSize == 8 then
-							local bias = 0
-							for i,val in ipairs(jewelDataTbl) do
-								if i > (headerSize / 2) then
-									break
-								elseif val <= 21 then
-									bias = bias + 1
-								else
-									bias = bias - 1
-								end
-							end
-							if bias >= 0 then
-								self:ReplaceNode(node, legionNodes[77]) -- might of the vaal
-							else
-								self:ReplaceNode(node, legionNodes[78]) -- legacy of the vaal
-							end
-							local additions = {}
-							for i,val in ipairs(jewelDataTbl) do
-								if i <= (headerSize / 2) then
-									local roll = jewelDataTbl[i + headerSize / 2]
-									if not additions[val] then
-										additions[val] = roll
-									else
-										additions[val] = additions[val] + roll
-									end
-								else
-									break
-								end
-							end
-							for add, val in pairs(additions) do
-								local addition = legionAdditions[add + 1]
-								for _, addStat in ipairs(addition.sd) do
-									for k,statMod in pairs(addition.stats) do -- should only be 1 big, these didn't get changed so can't just grab index
-										addStat = replaceHelperFunc(addStat, k, statMod, val)
-									end
-									self:NodeAdditionOrReplacementFromString(node, addStat)
-								end
-							end
-						else
-							ConPrintf("Unhandled Glorious Vanity headerSize: " .. headerSize)
-						end
-					else
-						for _, jewelData in ipairs(jewelDataTbl) do
-							if jewelData >= data.timelessJewelAdditions then -- replace
-								jewelData = jewelData + 1 - data.timelessJewelAdditions
-								local legionNode = legionNodes[jewelData]
-								if legionNode then
-									self:ReplaceNode(node, legionNode)
-								else
-									ConPrintf("Unhandled 'replace' ID: " .. jewelData)
-								end
-							elseif jewelData then -- add
-								local addition = legionAdditions[jewelData + 1]
-								for _, addStat in ipairs(addition.sd) do
-									self:NodeAdditionOrReplacementFromString(node, " \n" .. addStat)
-								end
-							elseif next(jewelData) then
-								ConPrintf("Unhandled OP: " .. jewelData + 1)
-							end
-						end
-					end
-				end
-			elseif node.type == "Keystone" then
-				local matchStr = conqueredBy.conqueror.type .. "_keystone_" .. conqueredBy.conqueror.id
-				for _, legionNode in ipairs(legionNodes) do
-					if legionNode.id == matchStr then
-						self:ReplaceNode(node, legionNode)
-						break
-					end
-				end
-			elseif node.type == "Normal" then
-				if conqueredBy.conqueror.type == "vaal" then
-					local jewelDataTbl = { }
-					if seed ~= m_max(m_min(seed, data.timelessJewelSeedMax[jewelType]), data.timelessJewelSeedMin[jewelType]) then
-						ConPrintf("ERROR: Seed " .. seed .. " is outside of valid range [" .. data.timelessJewelSeedMin[jewelType] .. " - " .. data.timelessJewelSeedMax[jewelType] .. "] for jewel type: " .. data.timelessJewelTypes[jewelType])
-					else
-						jewelDataTbl = data.readLUT(conqueredBy.id, node.id, jewelType)
-					end
-					--print("Need to Update: " .. node.id .. " [" .. node.dn .. "]")
-					if not next(jewelDataTbl) then
-						ConPrintf("Missing LUT: " .. data.timelessJewelTypes[jewelType])
-					else
-						self:ReplaceNode(node, legionNodes[jewelDataTbl[1] + 1 - data.timelessJewelAdditions])
-						for i, repStat in ipairs(node.sd) do
-							local statKey = legionNodes[jewelDataTbl[1] + 1 - data.timelessJewelAdditions].sortedStats[i]
-							local statMod = legionNodes[jewelDataTbl[1] + 1 - data.timelessJewelAdditions].stats[statKey]
-							repStat = replaceHelperFunc(repStat, statKey, statMod, jewelDataTbl[2])
-							self:NodeAdditionOrReplacementFromString(node, repStat, true)
-						end
-					end
-				elseif conqueredBy.conqueror.type == "karui" then
-					local str = (isValueInArray(attributes, node.dn) or node.isTattoo) and "2" or "4"
-					self:NodeAdditionOrReplacementFromString(node, " \n+" .. str .. " to Strength")
-				elseif conqueredBy.conqueror.type == "maraketh" then
-					local dex = (isValueInArray(attributes, node.dn) or node.isTattoo) and "2" or "4"
-					self:NodeAdditionOrReplacementFromString(node, " \n+" .. dex .. " to Dexterity")
-				elseif conqueredBy.conqueror.type == "templar" then
-					if (isValueInArray(attributes, node.dn) or node.isTattoo) then
-						local legionNode = legionNodes[91] -- templar_devotion_node
-						self:ReplaceNode(node, legionNode)
-					else
-						self:NodeAdditionOrReplacementFromString(node, " \n+5 to Devotion")
-					end
-				elseif conqueredBy.conqueror.type == "eternal" then
-					local legionNode = legionNodes[110] -- eternal_small_blank
-					self:ReplaceNode(node, legionNode)
-				end
-			end
-			self:ReconnectNodeToClassStart(node)
-		end
-	end
-
 	-- Add selected mastery effect mods to mastery nodes
 	self.allocatedMasteryCount = 0
 	self.allocatedNotableCount = 0
 	self.allocatedMasteryTypes = { }
 	self.allocatedMasteryTypeCount = 0
-	for id, node in pairs(self.nodes) do
-		if self.ignoredNodes[id] and self.allocNodes[id] then
-			self.nodes[id].alloc = false
-			self.allocNodes[id] = nil
-			-- remove once processed to avoid allocation issue after convert
-			self.ignoredNodes[id] = nil
-		else
-			if node.type == "Mastery" and self.masterySelections[id] then
-				local effect = self.tree.masteryEffects[self.masterySelections[id]]
-				if effect and self.allocNodes[id] then
-					node.sd = effect.sd
-					node.allMasteryOptions = false
-					node.reminderText = { "Tip: Right click to select a different effect" }
-					self.tree:ProcessStats(node)
-					self.allocatedMasteryCount = self.allocatedMasteryCount + 1
-					if not self.allocatedMasteryTypes[self.allocNodes[id].name] then
-						self.allocatedMasteryTypes[self.allocNodes[id].name] = 1
-						self.allocatedMasteryTypeCount = self.allocatedMasteryTypeCount + 1
-					else
-						local prevCount = self.allocatedMasteryTypes[self.allocNodes[id].name]
-						self.allocatedMasteryTypes[self.allocNodes[id].name] = prevCount + 1
-						if prevCount == 0 then
-							self.allocatedMasteryTypeCount = self.allocatedMasteryTypeCount + 1
-						end
-					end
-				-- if the tree doesn't recognize the mastery selection or if we have a selection on a mastery that isn't allocated
-				else
-					self.nodes[id].alloc = false
-					self.allocNodes[id] = nil
-					self.masterySelections[id] = nil
-				end
-			elseif node.type == "Mastery" then
-				self:AddMasteryEffectOptionsToNode(node)
-			elseif node.type == "Notable" and node.alloc then
-				self.allocatedNotableCount = self.allocatedNotableCount + 1
-			end
-		end
-	end
 
 	for id, node in pairs(self.allocNodes) do
 		node.visited = true
@@ -1183,7 +934,7 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 	end
 
 	-- Reset and rebuild all node paths
-	for id, node in pairs(self.nodes) do
+	for id, node in pairs(self.visibleNodes) do
 		node.pathDist = (node.alloc and not node.dependsOnIntuitiveLeapLike) and 0 or 1000
 		node.path = nil
 		if node.isJewelSocket or node.expansionJewel then

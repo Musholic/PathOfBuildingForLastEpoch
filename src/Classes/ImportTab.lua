@@ -438,6 +438,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
         ["level"] = saveContent["level"],
         ["class"] = className,
         ["classId"] = classId,
+        ["abilities"] = {},
         ["items"] = {},
         ["hashes"] = { }
     }
@@ -449,6 +450,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
     end
     for _, skillTree in ipairs(saveContent["savedSkillTrees"]) do
         table.insert(char["hashes"], className .. "-" .. skillTree['treeID'] .. "-" .. 0 .. "-" .. 0)
+        table.insert(char["abilities"], skillTree['treeID'])
         for skillIdx, skill in ipairs(skillTree["nodeIDs"]) do
             local nbPoints = skillTree["nodePoints"][skillIdx]
             for point = 0, nbPoints - 1 do
@@ -544,7 +546,7 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
     self.build.itemsTab:PopulateSlots()
     self.build.itemsTab:AddUndoState()
 
-    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.alternate_ascendancy or 0, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
+    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
     self.build.spec:AddUndoState()
     self.build.characterLevel = charData.level
     self.build.characterLevelAutoMode = false

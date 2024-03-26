@@ -53,16 +53,17 @@ for classInfo in data["trees"].values():
         classes[className]["base_att"] = classData["baseAttunement"]
         classes[className]["base_vit"] = classData["baseVitality"]
         classes[className]["skills"] = []
+        classes[className]["skillIds"] = []
         for abilityData in classData["unlockableAbilities"]:
-            classes[className]["skills"].append(abilityData['ability']['guid'])
+            classes[className]["skillIds"].append(abilityData['ability']['guid'])
         for abilityData in classData["knownAbilities"]:
-            classes[className]["skills"].append(abilityData['guid'])
+            classes[className]["skillIds"].append(abilityData['guid'])
         for masteryData in classData["masteries"]:
             guid = masteryData['masteryAbility'].get('guid')
             if guid:
-                classes[className]["skills"].append(guid)
+                classes[className]["skillIds"].append(guid)
             for abilityData in masteryData["abilities"]:
-                classes[className]["skills"].append(abilityData['ability']['guid'])
+                classes[className]["skillIds"].append(abilityData['ability']['guid'])
 
     tree["nodes"]["root"]["out"].append(className)
 
@@ -138,24 +139,26 @@ for classInfo in data["trees"].values():
                 previousPassiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint - 1)
                 tree["nodes"][passiveId]["in"].append(previousPassiveId)
 
-    posYStart = -800
 
     for skillTreeData in skillTreesData['trees'].values():
-        posX = 3000
-        posYStart += 800
-        if skillTreeData["ability"]["guid"] in classes[className]["skills"]:
+        if skillTreeData["ability"]["guid"] in classes[className]["skillIds"]:
             nodeList = []
             for node in skillTreeData["nodeList"]:
                 nodeList.append(skillTreesData['nodes'][node['fileID']])
             nodeList = natsorted(nodeList, key=lambda x: x['id'])
+            classes[className]["skills"].append({
+                "label": nodeList[0]["nodeName"],
+                "treeId": skillTreeData['treeID']
+            })
+            posX = 3000
             for skillData in nodeList:
-                posY = posYStart
+                posY = 0
                 posX += 200
                 maxPoints = int(skillData['maxPoints'])
                 if maxPoints == 0:
                     maxPoints = 1
                 for nbPoint in range(maxPoints):
-                    skillId = className + "-" + skillTreeData['treeID'] + "-" + skillData['id'] + "-" + str(nbPoint)
+                    skillId = skillTreeData['treeID'] + "-" + skillData['id'] + "-" + str(nbPoint)
                     posY += 100
                     tree["nodes"][skillId] = {
                         "skill": skillId,
@@ -180,15 +183,16 @@ for classInfo in data["trees"].values():
                             tree["nodes"][skillId]["in"].append(className)
                         else:
                             for req in skillData["requirements"]:
-                                reqId = (className + "-" + skillTreeData['treeID'] + "-" +
+                                reqId = (skillTreeData['treeID'] + "-" +
                                          skillTreesData["nodes"][req["node"]["fileID"]]["id"] + "-0")
                                 tree["nodes"][skillId]["in"].append(reqId)
                     else:
-                        previousSkillId = (className + "-" + skillTreeData['treeID'] + "-" + skillData['id'] + "-"
+                        previousSkillId = (skillTreeData['treeID'] + "-" + skillData['id'] + "-"
                                            + str(nbPoint - 1))
                         tree["nodes"][skillId]["in"].append(previousSkillId)
 
     tree["nodes"] = dict(natsorted(tree["nodes"].items()))
+    del classes[className]["skillIds"]
     tree["classes"] = [classes[className]]
 
     for node in tree["nodes"].values():
