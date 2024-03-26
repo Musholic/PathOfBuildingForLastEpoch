@@ -180,12 +180,8 @@ for classInfo in data["trees"].values():
                             tree["nodes"][skillId]["in"].append(className)
                         else:
                             for req in skillData["requirements"]:
-                                reqPoints = int(req["requirement"])
-                                if reqPoints == 0:
-                                    reqPoints = 1
                                 reqId = (className + "-" + skillTreeData['treeID'] + "-" +
-                                         skillTreesData["nodes"][req["node"]["fileID"]]["id"] + "-"
-                                         + str(reqPoints - 1))
+                                         skillTreesData["nodes"][req["node"]["fileID"]]["id"] + "-0")
                                 tree["nodes"][skillId]["in"].append(reqId)
                     else:
                         previousSkillId = (className + "-" + skillTreeData['treeID'] + "-" + skillData['id'] + "-"

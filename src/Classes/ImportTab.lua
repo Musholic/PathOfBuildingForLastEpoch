@@ -447,6 +447,15 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
             table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
         end
     end
+    for _, skillTree in ipairs(saveContent["savedSkillTrees"]) do
+        table.insert(char["hashes"], className .. "-" .. skillTree['treeID'] .. "-" .. 0 .. "-" .. 0)
+        for skillIdx, skill in ipairs(skillTree["nodeIDs"]) do
+            local nbPoints = skillTree["nodePoints"][skillIdx]
+            for point = 0, nbPoints - 1 do
+                table.insert(char["hashes"], className .. "-" .. skillTree['treeID'] .. "-" .. skill .. "-" .. point)
+            end
+        end
+    end
     for _,itemData in ipairs(saveContent["savedItems"]) do
         if itemData["containerID"] <= 12 or itemData["containerID"] == 29 then
             local item = {
