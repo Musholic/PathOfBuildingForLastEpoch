@@ -758,7 +758,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 		l = l + 1
 	end
 	if self.baseName and self.title then
-		self.name = self.baseName
+		self.name = self.title .. ", " .. self.baseName:gsub(" %(.+%)","")
 	end
 	if self.base and not self.requirements.level then
 		if importedLevelReq and #self.sockets == 0 then

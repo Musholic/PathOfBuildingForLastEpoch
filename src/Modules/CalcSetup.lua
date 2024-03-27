@@ -1566,7 +1566,15 @@ function calcs.initEnv(build, mode, override, specEnv)
 		if not env.player.mainSkill then
 			-- Add a default main skill if none are specified
 			local defaultEffect = {
-				grantedEffect = env.data.skills.Melee,
+				grantedEffect = {
+					name = "Default",
+					skillTypes = {},
+					baseFlags = {},
+					stats = {},
+					levels = {
+						[1] = {},
+					},
+				},
 				level = 1,
 				quality = 0,
 				enabled = true,

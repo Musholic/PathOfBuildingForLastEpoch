@@ -123,14 +123,21 @@ function main:Init()
 	self.rareDB = { list = { }, loading = true }
 
 	local function loadItemDBs()
-		for type, typeList in pairsYield(data.uniques) do
-			for _, raw in pairs(typeList) do
-				newItem = new("Item", raw, "UNIQUE", true)
-				if newItem.base then
-					self.uniqueDB.list[newItem.name] = newItem
-				elseif launch.devMode then
-					ConPrintf("Unique DB unrecognised item of type '%s':\n%s", type, raw)
+		for _, itemData in pairs(data.uniques) do
+			newItem = new("Item", "", "UNIQUE")
+			local baseTypeID = itemData.baseTypeID
+			local subTypeID = itemData.subTypeID
+			for itemBaseName, itemBase in pairs(data.itemBases) do
+				if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
+					newItem.title = itemData.name
+					newItem.baseName = itemBaseName
+					newItem:BuildAndParseRaw()
 				end
+			end
+			if newItem.base then
+				self.uniqueDB.list[itemData.name] = newItem
+			elseif launch.devMode then
+				ConPrintf("Unique DB unrecognised item of type '%s':\n%s", type, raw)
 			end
 		end
 
@@ -240,9 +247,6 @@ the "Releases" section of the GitHub page.]])
 	self.onFrameFuncs = {
 		["FirstFrame"] = function()
 			self.onFrameFuncs["FirstFrame"] = nil
-			if launch.devMode then
-				data.printMissingMinionSkills()
-			end
 			ConPrintf("Startup time: %d ms", GetTime() - launch.startTime)
 		end
 	}

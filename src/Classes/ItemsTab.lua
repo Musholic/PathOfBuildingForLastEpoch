@@ -3252,35 +3252,6 @@ function ItemsTabClass:AddItemTooltip(tooltip, item, slot, dbMode)
 		tooltip:AddSeparator(10)
 	end
 
-	if #item.sockets > 0 then
-		-- Sockets/links
-		local group = 0
-		local line = ""
-		for i, socket in ipairs(item.sockets) do
-			if i > 1 then
-				if socket.group == group then
-					line = line .. "^7="
-				else
-					line = line .. "  "
-				end
-				group = socket.group
-			end
-			local code
-			if socket.color == "R" then
-				code = colorCodes.STRENGTH
-			elseif socket.color == "G" then
-				code = colorCodes.DEXTERITY
-			elseif socket.color == "B" then
-				code = colorCodes.INTELLIGENCE
-			elseif socket.color == "W" then
-				code = colorCodes.SCION
-			elseif socket.color == "A" then
-				code = "^xB0B0B0"
-			end
-			line = line .. code .. socket.color
-		end
-		tooltip:AddLine(16, "^x7F7F7FSockets: "..line)
-	end
 	tooltip:AddSeparator(10)
 
 	if item.talismanTier then

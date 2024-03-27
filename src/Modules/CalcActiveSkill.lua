@@ -51,7 +51,7 @@ end
 -- Merge skill modifiers with given mod list
 function calcs.mergeSkillInstanceMods(env, modList, skillEffect, extraStats)
 	calcLib.validateGemLevel(skillEffect)
-	local grantedEffect = skillEffect.grantedEffect	
+	local grantedEffect = skillEffect.grantedEffect
 	local stats = calcLib.buildSkillInstanceStats(skillEffect, grantedEffect)
 	if extraStats and extraStats[1] then
 		for _, stat in pairs(extraStats) do
@@ -191,7 +191,7 @@ local function getWeaponFlags(env, weaponData, weaponTypes)
 			end
 		end
 	end
-	local flags = ModFlag[info.flag]
+	local flags = ModFlag[info.flag] or 0
 	if weaponData.countsAsAll1H then
 		flags = bor(ModFlag.Axe, ModFlag.Claw, ModFlag.Dagger, ModFlag.Mace, ModFlag.Sword)
 	end

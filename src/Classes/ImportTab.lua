@@ -480,6 +480,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
             for itemBaseName, itemBase in pairs(self.build.data.itemBases) do
                 if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
                     item["name"] = itemBaseName
+                    item.base = itemBase
                     item.implicitMods= {}
                     for i,implicit in ipairs(itemBase.implicits) do
                         local range = itemData["data"][5 + i ] / 256.0
@@ -498,19 +499,28 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                         mod = itemLib.applyRange(mod, range, 1)
                         table.insert(item.implicitMods, mod)
                     end
+                    local rarity = itemData["data"][4]
                     item["explicitMods"] = {}
-                    for i=0,3 do
-                        local dataId = 12 + i * 3
-                        if #itemData["data"] > dataId then
-                            local affixId = itemData["data"][dataId] + (itemData["data"][dataId - 1] % 4) * 256
-                            if affixId then
-                                local affixTier = math.floor(itemData["data"][dataId - 1] / 16)
-                                local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
-                                if modData then
-                                    local mod = modData[1]
-                                    local range = itemData["data"][dataId + 1] / 256.0
-                                    mod = itemLib.applyRange(mod, range, 1 + itemBase.affixEffectModifier)
-                                    table.insert(item.explicitMods, mod)
+                    if rarity == 7 then
+                        item["rarity"] = "UNIQUE"
+                        local uniqueID = itemData["data"][10]
+                        local uniqueBase = self.build.data.uniques[uniqueID]
+                        item["name"] = uniqueBase.name
+                    else
+                        item["rarity"] = "RARE"
+                        for i=0,3 do
+                            local dataId = 12 + i * 3
+                            if #itemData["data"] > dataId then
+                                local affixId = itemData["data"][dataId] + (itemData["data"][dataId - 1] % 4) * 256
+                                if affixId then
+                                    local affixTier = math.floor(itemData["data"][dataId - 1] / 16)
+                                    local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+                                    if modData then
+                                        local mod = modData[1]
+                                        local range = itemData["data"][dataId + 1] / 256.0
+                                        mod = itemLib.applyRange(mod, range, 1 + itemBase.affixEffectModifier)
+                                        table.insert(item.explicitMods, mod)
+                                    end
                                 end
                             end
                         end
@@ -601,12 +611,12 @@ function ImportTabClass:ImportItem(itemData, slotName)
     local item = new("Item")
 
     -- Determine rarity, display name and base type of the item
-    item.rarity = "RARE"
+    item.rarity = itemData.rarity
     if #itemData.name > 0 then
         item.title = itemData.name
         item.baseName = itemData.name
         item.name = itemData.name
-        item.base = self.build.data.itemBases[item.baseName]
+        item.base = itemData.base
         if item.base then
             item.type = item.base.type
         else
