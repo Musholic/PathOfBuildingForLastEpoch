@@ -1,5 +1,7 @@
-import yaml
 import json
+from common import *
+
+construct_mod_data_list()
 
 with open("originalAssets/MasterItemsList.asset", "r") as yamlFile:
     data = yaml.safe_load(yamlFile)["MonoBehaviour"]
@@ -26,11 +28,7 @@ for itemData in data["EquippableItems"]:
                 "Range": 1 + subItemData["addedWeaponRange"],
             }
         for implicit in subItemData["implicits"]:
-            itemBase["implicits"].append({
-                "property": implicit["property"],
-                "min": implicit["implicitValue"],
-                "max": implicit["implicitMaxValue"],
-            })
+            itemBase["implicits"].append(get_mod_value(implicit))
 
         itemBases[subItemName] = itemBase
 

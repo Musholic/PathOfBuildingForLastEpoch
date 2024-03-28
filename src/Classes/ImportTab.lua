@@ -479,25 +479,12 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
             end
             for itemBaseName, itemBase in pairs(self.build.data.itemBases) do
                 if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
-                    item["name"] = itemBaseName
+                    item.baseName = itemBaseName
                     item.base = itemBase
                     item.implicitMods= {}
                     for i,implicit in ipairs(itemBase.implicits) do
                         local range = itemData["data"][5 + i ] / 256.0
-                        local modData = data.implicitItemMods[implicit.property]
-                        local min = implicit.min
-                        local max = implicit.max
-                        if modData.isPercentage then
-                            min = min * 100
-                            max = max * 100
-                        end
-                        local valueRange = "+(" .. min .. "-" .. max .. ")"
-                        if modData.isPercentage then
-                            valueRange = valueRange .. "%"
-                        end
-                        local mod =  valueRange .. " " .. modData.value
-                        mod = itemLib.applyRange(mod, range, 1)
-                        table.insert(item.implicitMods, mod)
+                        table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
                     end
                     local rarity = itemData["data"][4]
                     item["explicitMods"] = {}
@@ -506,7 +493,12 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                         local uniqueID = itemData["data"][10]
                         local uniqueBase = self.build.data.uniques[uniqueID]
                         item["name"] = uniqueBase.name
+                        for _, modLine in ipairs(uniqueBase.mods) do
+                            local range = 0.5
+                            table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
+                        end
                     else
+                        item["name"] = itemBaseName
                         item["rarity"] = "RARE"
                         for i=0,3 do
                             local dataId = 12 + i * 3
@@ -518,8 +510,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                                     if modData then
                                         local mod = modData[1]
                                         local range = itemData["data"][dataId + 1] / 256.0
-                                        mod = itemLib.applyRange(mod, range, 1 + itemBase.affixEffectModifier)
-                                        table.insert(item.explicitMods, mod)
+                                        table.insert(item.explicitMods, "{range: " .. range .. "}".. mod)
                                     end
                                 end
                             end
@@ -550,11 +541,6 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
             end
         end
     end
-    for _, itemData in pairs(charData.items) do
-        self:ImportItem(itemData)
-    end
-    self.build.itemsTab:PopulateSlots()
-    self.build.itemsTab:AddUndoState()
 
     self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
     self.build.spec:AddUndoState()
@@ -614,8 +600,7 @@ function ImportTabClass:ImportItem(itemData, slotName)
     item.rarity = itemData.rarity
     if #itemData.name > 0 then
         item.title = itemData.name
-        item.baseName = itemData.name
-        item.name = itemData.name
+        item.baseName = itemData.baseName
         item.base = itemData.base
         if item.base then
             item.type = item.base.type

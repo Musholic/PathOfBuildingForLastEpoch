@@ -680,8 +680,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					foundImplicit = true
 					gameModeStage = "IMPLICIT"
 				end
-				local catalystScalar = getCatalystScalar(self.catalyst, modLine.modTags, self.catalystQuality)
-				local rangedLine = itemLib.applyRange(line, 1, catalystScalar)
+				local modScalar = 1 + self.base.affixEffectModifier
+				local rangedLine = itemLib.applyRange(line, 1, modScalar)
 				local modList, extra = modLib.parseMod(rangedLine)
 
 				local lineLower = line:lower()
@@ -724,7 +724,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 				if modList then
 					modLine.modList = modList
 					modLine.extra = extra
-					modLine.valueScalar = catalystScalar
+					modLine.valueScalar = modScalar
 					modLine.range = modLine.range or main.defaultItemAffixQuality
 					t_insert(modLines, modLine)
 					if mode == "GAME" then
@@ -758,7 +758,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 		l = l + 1
 	end
 	if self.baseName and self.title then
-		self.name = self.title .. ", " .. self.baseName:gsub(" %(.+%)","")
+		self.name = self.title
 	end
 	if self.base and not self.requirements.level then
 		if importedLevelReq and #self.sockets == 0 then
@@ -1509,9 +1509,9 @@ function ItemClass:BuildModList()
 					-- Check if line actually has a range
 					if modLine.line:find("%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)") then
 						local strippedModeLine = modLine.line:gsub("\n"," ")						
-						local catalystScalar = getCatalystScalar(self.catalyst, modLine.modTags, self.catalystQuality)
+						local modScalar = 1 + self.base.affixEffectModifier
 						-- Put the modified value into the string
-						local line = itemLib.applyRange(strippedModeLine, modLine.range, catalystScalar)
+						local line = itemLib.applyRange(strippedModeLine, modLine.range, modScalar)
 						-- Check if we can parse it before adding the mods
 						local list, extra = modLib.parseMod(line)
 						if list and not extra then

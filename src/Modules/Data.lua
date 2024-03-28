@@ -473,8 +473,6 @@ LoadModule("Data/Misc", data)
 data.describeStats = LoadModule("Modules/StatDescriber")
 
 -- Load item modifiers
-data.implicitItemMods = readJsonFile("Data/ImplicitModItem.json")
-
 data.itemMods = {
 	Item = readJsonFile("Data/ModItem.json"),
 	Flask = LoadModule("Data/ModFlask"),

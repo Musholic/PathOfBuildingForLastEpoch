@@ -131,6 +131,12 @@ function main:Init()
 				if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
 					newItem.title = itemData.name
 					newItem.baseName = itemBaseName
+					for _,mod in ipairs(itemBase.implicits) do
+						table.insert(newItem.implicitModLines, { line = mod })
+					end
+					for _,mod in ipairs(itemData.mods) do
+						table.insert(newItem.explicitModLines, { line = mod })
+					end
 					newItem:BuildAndParseRaw()
 				end
 			end

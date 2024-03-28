@@ -1,4 +1,6 @@
 import os
+import yaml
+import re
 
 extractPath = os.getenv("LE_EXTRACT_DIR")
 prefabPath = extractPath + "PrefabInstance/"
@@ -32,3 +34,98 @@ def fix_and_filter_yaml_file(filepath, output_file_name):
 
 def insert_newlines(string, every=128):
     return '\n'.join(string[i:i + every] for i in range(0, len(string), every))
+
+
+def get_value_range(mod_data, is_increased):
+    min_roll = mod_data.get("value") or mod_data["implicitValue"]
+    max_roll = mod_data.get("maxValue")
+    if max_roll is None:
+        max_roll = mod_data["implicitMaxValue"]
+    is_percentage = isinstance(min_roll, float) or isinstance(max_roll, float)
+    if is_percentage:
+        min_roll = int(100 * min_roll)
+        max_roll = int(100 * max_roll)
+    if min_roll >= max_roll:
+        value_range = str(min_roll)
+    else:
+        value_range = "(" + str(min_roll) + "-" + str(max_roll) + ")"
+    if is_percentage or is_increased:
+        value_range += "%"
+    if is_increased:
+        value_range += " increased"
+    else:
+        value_range = "+" + value_range
+    return value_range
+
+
+def get_mod_value(mod_data):
+    mod_key = str(mod_data["property"]) + "_" + str(mod_data["specialTag"]) + "_" + str(mod_data["tags"])
+    if mod_key not in modDataList:
+        mod_key = str(mod_data["property"]) + "_" + str(mod_data["specialTag"]) + "_0"
+    if mod_key not in modDataList:
+        mod_key = str(mod_data["property"]) + "_0_0"
+    mod_base_data = modDataList[mod_key]
+    value_range = get_value_range(mod_data, mod_base_data.get("modifierType") or 0)
+    return value_range + " " + mod_base_data["name"]
+
+
+modDataList = {}
+
+
+def construct_mod_data_list():
+    with open(extractPath + "Resources/MasterAffixesList.asset", "r") as yamlFile:
+        mod_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]
+
+    with open("originalAssets/Item_Affixes Shared Data.asset", "r") as yamlFile:
+        affix_keys_data = yaml.safe_load(yamlFile)["MonoBehaviour"]["m_Entries"]
+
+    with open("originalAssets/Item_Affixes_en.asset", "r") as yamlFile:
+        affix_strings_data = yaml.safe_load(yamlFile)["MonoBehaviour"]["m_TableData"]
+
+    affix_strings_by_id = {}
+    for affixStringData in affix_strings_data:
+        affix_strings_by_id[affixStringData["m_Id"]] = affixStringData["m_Localized"]
+    affix_strings = {}
+    for affixKeyData in affix_keys_data:
+        match = re.search(r'Item_?Affix_(\d+)_Affix_([AB])', affixKeyData["m_Key"])
+        if match:
+            affix_id = match.group(1)
+            affix_ab = match.group(2)
+            affix_strings[affix_id + "_" + affix_ab] = affix_strings_by_id[affixKeyData["m_Id"]]
+
+    for mod_data in mod_data_list0["singleAffixes"]:
+        modDataList[
+            str(mod_data["property"]) + "_" + str(mod_data["specialTag"]) + "_" + str(mod_data["tags"])] = mod_data
+        mod_data["name"] = affix_strings[str(mod_data["affixId"]) + "_A"]
+    for mod_data in mod_data_list0["multiAffixes"]:
+        mod_data0 = mod_data["affixProperties"][0]
+        mod_data1 = mod_data["affixProperties"][1]
+        modDataList[
+            str(mod_data0["property"]) + "_" + str(mod_data0["specialTag"]) + "_" + str(mod_data0["tags"])] = mod_data0
+        mod_data0["name"] = affix_strings[str(mod_data["affixId"]) + "_A"]
+        modDataList[
+            str(mod_data1["property"]) + "_" + str(mod_data1["specialTag"]) + "_" + str(mod_data1["tags"])] = mod_data1
+        mod_data1["name"] = affix_strings[str(mod_data["affixId"]) + "_B"]
+
+    with open(extractPath + "Resources/MasterPropertyList.asset", "r") as yamlFile:
+        property_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]["propertyInfoList"]
+
+    for propertyData in property_data_list0:
+        mod_key = str(propertyData["property"]) + "_0_0"
+        if mod_key not in modDataList:
+            modDataList[mod_key] = propertyData
+            propertyData["name"] = propertyData["propertyName"]
+        for altText in propertyData["altTextOverrides"]:
+            mod_key = str(altText["property"]) + "_" + str(altText["specialTag"]) + "_" + str(altText["tags"])
+            if mod_key not in modDataList:
+                modDataList[mod_key] = propertyData
+                modDataList[mod_key]["name"] = altText["overrideAltText"]
+
+    with open(extractPath + "Resources/PlayerPropertyList.asset", "r") as yamlFile:
+        player_property_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]["list"]
+
+    for idx, propertyData in enumerate(player_property_data_list0):
+        mod_key = "98_0_" + str(idx)
+        if mod_key not in modDataList:
+            modDataList[mod_key] = propertyData
+            propertyData["name"] = propertyData["propertyName"]

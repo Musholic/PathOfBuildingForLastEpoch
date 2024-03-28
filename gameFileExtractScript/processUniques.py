@@ -1,12 +1,14 @@
-import yaml
 import json
 from common import *
+
+construct_mod_data_list()
 
 with open(extractPath + "Resources/UniqueList.asset", "r", encoding='utf-8') as yamlFile:
     data = yaml.safe_load(yamlFile)["MonoBehaviour"]['uniques']
 
 uniques = {
 }
+
 
 for itemData in data:
     subItemName = itemData["displayName"] or itemData["name"]
@@ -20,11 +22,7 @@ for itemData in data:
         "mods": []
     }
     for mod in itemData["mods"]:
-        itemBase["mods"].append({
-            "property": mod["property"],
-            "min": mod["value"],
-            "max": mod["maxValue"],
-        })
+        itemBase["mods"].append(get_mod_value(mod))
 
     uniques[itemData["uniqueID"]] = itemBase
 
