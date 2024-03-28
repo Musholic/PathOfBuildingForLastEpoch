@@ -12,14 +12,14 @@ body:
     attributes:
       label: Check version
       options:
-        - label: I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/PathOfBuildingCommunity/PathOfBuilding/blob/master/CHANGELOG.md)
+        - label: I'm running the latest version of Path of Building and I've verified this by checking the [changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/blob/master/CHANGELOG.md)
           required: true
   - type: checkboxes
     id: duplicates
     attributes:
       label: Check for duplicates
       options:
-        - label: I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/PathOfBuildingCommunity/PathOfBuilding/issues?q=is%3Aissue)
+        - label: I've checked for duplicate open **and closed** issues by using the search function of the [issue tracker](https://github.com/Musholic/PathOfBuildingForLastEpoch/issues?q=is%3Aissue)
           required: true
   - type: checkboxes
     id: validity

@@ -58,7 +58,7 @@ The easiest way to make and test changes is by setting up a development installa
 
 1. Clone the repository using this command:
 
-       git clone -b dev https://github.com/PathOfBuildingCommunity/PathOfBuilding.git
+       git clone -b dev https://github.com/Musholic/PathOfBuildingForLastEpoch.git
 
 2. Go to the actual folder on your computer where you cloned Path of Building. (e.g. C:/XX/GitHub/PathOfBuilding/runtime/)
 
@@ -105,7 +105,7 @@ Note: If you've configured a remote already, you can skip ahead to step 3.
 
 1. Add a new remote repository and name it `upstream`.
 
-       git remote add upstream https://github.com/PathOfBuildingCommunity/PathOfBuilding.git
+       git remote add upstream https://github.com/Musholic/PathOfBuildingForLastEpoch.git
 2. Verify that adding the remote worked.
 
        git remote -v

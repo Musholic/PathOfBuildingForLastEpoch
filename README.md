@@ -1,6 +1,6 @@
-# Path of Building Community Fork *For Last Epoch*
+# Path of Building For Last Epoch
 
-This is a fork of Path Of Building adapted to work for the game Last Epoch. The following features are supported (or partially):
+This is a fork of Path Of Building adapted to work for the game **Last Epoch**. The following features are supported (or partially):
 * Passive tree: stats are displayed but most of them have no effect (or not the intended one)
 * Character import: for offline character
 * Items: Imported from character import (not all stats have effect)

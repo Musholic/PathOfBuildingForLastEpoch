@@ -12,10 +12,10 @@ Releases are done via GitHub actions in order to simplify release note generatio
 
 Steps:
 1. First, update any GGPK files and tree files needed in the dev branch.  This will minimize what you have to update later.
-2. [Navigate to the "Release new version" action](https://github.com/PathOfBuildingCommunity/PathOfBuilding/actions/workflows/release.yml)
+2. [Navigate to the "Release new version" action](https://github.com/Musholic/PathOfBuildingForLastEpoch/actions/workflows/release.yml)
 3. Click "Run workflow" on the right, and fill in the values
     - Run the workflow from the 'dev' branch
-    - Fill in the [most recent tag](https://github.com/PathOfBuildingCommunity/PathOfBuilding/tags)
+    - Fill in the [most recent tag](https://github.com/Musholic/PathOfBuildingForLastEpoch/tags)
     - Choose a new version number (see above)
 4. This will run and create a new branch and PR so you can review the changes, making tweaks to any of the release notes that don't make sense
 5. If you changed any files after the PR was created, you'll have to update [the manifest file](manifest.xml)
@@ -75,7 +75,7 @@ Prerequisites:
 Installation:
 - Clone this repository to a directory of your choice:
 
-      git clone https://github.com/PathOfBuildingCommunity/PathOfBuildingInstaller.git
+      git clone https://github.com/Musholic/PathOfBuildingForLastEpochInstaller.git
 - Please note that you might not have access to this repository if you're not a Path of
   Building Community maintainer.
   
