@@ -4,7 +4,9 @@ This is a fork of Path Of Building adapted to work for the game Last Epoch. The 
 * Passive tree: stats are displayed but most of them have no effect (or not the intended one)
 * Character import: for offline character
 * Items: Imported from character import (not all stats have effect)
+* Unique items (not all stats have effect)
 * Basic support for following stat calculation: health, mana, armor, attributes
+* Skills: Can select up to 5 skills which allows to spend points in the associated skill trees
 
 Note that **most content (docs or code) is outdated** since they only apply to the original project. Everything should be migrated as time goes by.
 
@@ -13,8 +15,6 @@ The current build can be run by running `./runtime/Path{space}of{space}Building.
 
 ## Roadmap
 * Add online character import
-* Add skills passives
-* Add unique items support
 * Have a selected skill dps correctly computed
 * Work on other stats (ward, ...)
 * Work on other skills ...
