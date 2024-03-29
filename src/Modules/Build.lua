@@ -761,10 +761,96 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 				table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
 			end
 		end
-		for _,itemData in ipairs(saveContent["equipment"]) do
-			-- TODO: LETools is not using the same ids for items and affixes than the save data
+		local slotMap = {
+			["weapon1"] = 4,
+			["weapon2"] = 5,
+			["head"] = 2,
+			["chest"] = 3,
+			["hands"] = 6,
+			["feet"] = 8,
+			["amulet"] = 11,
+			["ring1"] = 9,
+			["ring2"] = 10,
+			["waist"] = 7
+		}
+		function processItemData(slotName, itemData)
+			local item = {
+				["inventoryId"] = slotMap[slotName]
+			}
+			if slotName == "idol" then
+				local posX = itemData["x"] - 1
+				local posY = itemData["y"] - 1
+				local idolPosition = posX + posY * 5
+				if posY > 0 then
+					idolPosition = idolPosition - 2
+				end
+				if posY == 4 then
+					idolPosition = idolPosition - 1
+				end
+				item["inventoryId"] = "Idol " .. idolPosition
+			end
+			local itemName = data.LETools_itemBases[itemData.id]
+			item["name"] = itemName
+			item["rarity"] = "RARE"
+			item["explicitMods"] = {}
+			local foundItemBase = data.itemBases[itemName]
+			if not foundItemBase then
+				for _, uniqueBase in pairs(data.uniques) do
+					if uniqueBase.name == itemName then
+						item["rarity"] = "UNIQUE"
+						local baseTypeID = uniqueBase["baseTypeID"]
+						local subTypeID = uniqueBase["subTypeID"]
+						for itemBaseName, itemBase in pairs(data.itemBases) do
+							if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
+								item.baseName = itemBaseName
+								foundItemBase = itemBase
+							end
+						end
+						for i, modLine in ipairs(uniqueBase.mods) do
+							local range = itemData["ur"][i] / 256.0
+							table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
+						end
+					end
+				end
+			else
+				item.baseName = itemName
+				for _, affixData in ipairs(itemData["affixes"]) do
+					local affixId = data.LETools_affixes[affixData.id]
+					if affixId then
+						local affixTier = affixData.tier - 1
+						local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+						if modData then
+							local mod = modData[1]
+							local range = affixData.r / 256.0
+							table.insert(item.explicitMods, "{range: " .. range .. "}".. mod)
+						end
+					end
+				end
+			end
+			if foundItemBase then
+				item.base = foundItemBase
+				item.implicitMods= {}
+				for i,implicit in ipairs(foundItemBase.implicits) do
+					local range = itemData["ir"][i] / 256.0
+					table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
+				end
+				return item
+			end
+		end
+		for slotName,itemData in pairs(saveContent["equipment"]) do
+			local item = processItemData(slotName, itemData)
+			if item then
+				table.insert(char["items"], item)
+			end
+		end
+		for _,itemData in pairs(saveContent["idols"]) do
+			local item = processItemData("idol", itemData)
+			if item then
+				table.insert(char["items"], item)
+			end
 		end
 		self.importTab:ImportPassiveTreeAndJewels(char)
+		self.importTab:ImportItemsAndSkills(char)
 	end
 end
 

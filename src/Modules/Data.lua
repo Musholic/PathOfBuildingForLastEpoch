@@ -649,6 +649,8 @@ LoadModule("Data/Minions", data.minions, makeSkillMod, makeFlagMod)
 
 -- Item bases
 data.itemBases = readJsonFile("Data/Bases/bases.json")
+data.LETools_itemBases = readJsonFile("Data/LEToolsImport/bases.json")
+data.LETools_affixes = readJsonFile("Data/LEToolsImport/affixes.json")
 
 -- Build lists of item bases, separated by type
 data.itemBaseLists = { }
