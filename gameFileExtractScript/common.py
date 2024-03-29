@@ -1,6 +1,7 @@
 import os
 import yaml
 import re
+from natsort import natsorted
 
 extractPath = os.getenv("LE_EXTRACT_DIR")
 prefabPath = extractPath + "PrefabInstance/"
@@ -65,7 +66,10 @@ def get_mod_value(mod_data):
     if mod_key not in modDataList:
         mod_key = str(mod_data["property"]) + "_0_0"
     mod_base_data = modDataList[mod_key]
-    value_range = get_value_range(mod_data, mod_base_data.get("modifierType") or 0)
+    modifier_type = mod_data.get("modifierType")
+    if modifier_type is None:
+        modifier_type = mod_base_data.get("modifierType") or 0
+    value_range = get_value_range(mod_data, modifier_type)
     return value_range + " " + mod_base_data["name"]
 
 
@@ -73,6 +77,7 @@ modDataList = {}
 
 
 def construct_mod_data_list():
+    global modDataList
     with open(extractPath + "Resources/MasterAffixesList.asset", "r") as yamlFile:
         mod_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]
 
@@ -129,3 +134,5 @@ def construct_mod_data_list():
         if mod_key not in modDataList:
             modDataList[mod_key] = propertyData
             propertyData["name"] = propertyData["propertyName"]
+
+    modDataList = dict(natsorted(modDataList.items()))

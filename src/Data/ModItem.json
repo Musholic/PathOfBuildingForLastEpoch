@@ -78,7 +78,7 @@
     },
     "1_0": {
         "affix": "of Defense",
-        "1": "+(10-12)% Armor",
+        "1": "(10-12)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -89,7 +89,7 @@
     },
     "1_1": {
         "affix": "of Defense",
-        "1": "+(13-16)% Armor",
+        "1": "(13-16)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -100,7 +100,7 @@
     },
     "1_2": {
         "affix": "of Defense",
-        "1": "+(17-21)% Armor",
+        "1": "(17-21)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -111,7 +111,7 @@
     },
     "1_3": {
         "affix": "of Defense",
-        "1": "+(22-26)% Armor",
+        "1": "(22-26)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -122,7 +122,7 @@
     },
     "1_4": {
         "affix": "of Defense",
-        "1": "+(27-32)% Armor",
+        "1": "(27-32)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -133,7 +133,7 @@
     },
     "1_5": {
         "affix": "of Defense",
-        "1": "+(40-48)% Armor",
+        "1": "(40-48)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -144,7 +144,7 @@
     },
     "1_6": {
         "affix": "of Defense",
-        "1": "+(49-60)% Armor",
+        "1": "(49-60)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -386,7 +386,7 @@
     },
     "5_0": {
         "affix": "Assassin's",
-        "1": "+(15-20)% Critical Strike Chance",
+        "1": "(15-20)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 5,
         "statOrder": [
@@ -397,7 +397,7 @@
     },
     "5_1": {
         "affix": "Assassin's",
-        "1": "+(21-25)% Critical Strike Chance",
+        "1": "(21-25)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 5,
         "statOrder": [
@@ -408,7 +408,7 @@
     },
     "5_2": {
         "affix": "Assassin's",
-        "1": "+(26-30)% Critical Strike Chance",
+        "1": "(26-30)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 5,
         "statOrder": [
@@ -419,7 +419,7 @@
     },
     "5_3": {
         "affix": "Assassin's",
-        "1": "+(31-35)% Critical Strike Chance",
+        "1": "(31-35)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 5,
         "statOrder": [
@@ -430,7 +430,7 @@
     },
     "5_4": {
         "affix": "Assassin's",
-        "1": "+(36-50)% Critical Strike Chance",
+        "1": "(36-50)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 5,
         "statOrder": [
@@ -441,7 +441,7 @@
     },
     "5_5": {
         "affix": "Assassin's",
-        "1": "+(60-75)% Critical Strike Chance",
+        "1": "(60-75)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 5,
         "statOrder": [
@@ -452,7 +452,7 @@
     },
     "5_6": {
         "affix": "Assassin's",
-        "1": "+(76-100)% Critical Strike Chance",
+        "1": "(76-100)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 5,
         "statOrder": [
@@ -2773,7 +2773,7 @@
     },
     "36_0": {
         "affix": "of the Giant",
-        "1": "+(14-21) Health\n+3% Health",
+        "1": "+(14-21) Health\n3% increased Health",
         "level": 45,
         "statOrderKey": 36,
         "statOrder": [
@@ -2784,7 +2784,7 @@
     },
     "36_1": {
         "affix": "of the Giant",
-        "1": "+(22-29) Health\n+3% Health",
+        "1": "+(22-29) Health\n3% increased Health",
         "level": 45,
         "statOrderKey": 36,
         "statOrder": [
@@ -2795,7 +2795,7 @@
     },
     "36_2": {
         "affix": "of the Giant",
-        "1": "+(30-37) Health\n+4% Health",
+        "1": "+(30-37) Health\n4% increased Health",
         "level": 45,
         "statOrderKey": 36,
         "statOrder": [
@@ -2806,7 +2806,7 @@
     },
     "36_3": {
         "affix": "of the Giant",
-        "1": "+(38-45) Health\n+4% Health",
+        "1": "+(38-45) Health\n4% increased Health",
         "level": 45,
         "statOrderKey": 36,
         "statOrder": [
@@ -2817,7 +2817,7 @@
     },
     "36_4": {
         "affix": "of the Giant",
-        "1": "+(46-68) Health\n+5% Health",
+        "1": "+(46-68) Health\n5% increased Health",
         "level": 45,
         "statOrderKey": 36,
         "statOrder": [
@@ -2828,7 +2828,7 @@
     },
     "36_5": {
         "affix": "of the Giant",
-        "1": "+(85-105) Health\n+(6-7)% Health",
+        "1": "+(85-105) Health\n(6-7)% increased Health",
         "level": 45,
         "statOrderKey": 36,
         "statOrder": [
@@ -2839,7 +2839,7 @@
     },
     "36_6": {
         "affix": "of the Giant",
-        "1": "+(106-135) Health\n+(8-10)% Health",
+        "1": "+(106-135) Health\n(8-10)% increased Health",
         "level": 45,
         "statOrderKey": 36,
         "statOrder": [
@@ -3774,7 +3774,7 @@
     },
     "49_0": {
         "affix": "Spellblade's",
-        "1": "(3-5)% increased Spell Damage",
+        "1": "+(3-5) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3785,7 +3785,7 @@
     },
     "49_1": {
         "affix": "Spellblade's",
-        "1": "(6-8)% increased Spell Damage",
+        "1": "+(6-8) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3796,7 +3796,7 @@
     },
     "49_2": {
         "affix": "Spellblade's",
-        "1": "(9-11)% increased Spell Damage",
+        "1": "+(9-11) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3807,7 +3807,7 @@
     },
     "49_3": {
         "affix": "Spellblade's",
-        "1": "(12-14)% increased Spell Damage",
+        "1": "+(12-14) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3818,7 +3818,7 @@
     },
     "49_4": {
         "affix": "Spellblade's",
-        "1": "(15-24)% increased Spell Damage",
+        "1": "+(15-24) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3829,7 +3829,7 @@
     },
     "49_5": {
         "affix": "Spellblade's",
-        "1": "(30-38)% increased Spell Damage",
+        "1": "+(30-38) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3840,7 +3840,7 @@
     },
     "49_6": {
         "affix": "Spellblade's",
-        "1": "(39-48)% increased Spell Damage",
+        "1": "+(39-48) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -4005,7 +4005,7 @@
     },
     "52_0": {
         "affix": "of the Ox",
-        "1": "+3% Health",
+        "1": "3% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4016,7 +4016,7 @@
     },
     "52_1": {
         "affix": "of the Ox",
-        "1": "+(4-5)% Health",
+        "1": "(4-5)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4027,7 +4027,7 @@
     },
     "52_2": {
         "affix": "of the Ox",
-        "1": "+(6-7)% Health",
+        "1": "(6-7)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4038,7 +4038,7 @@
     },
     "52_3": {
         "affix": "of the Ox",
-        "1": "+(8-9)% Health",
+        "1": "(8-9)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4049,7 +4049,7 @@
     },
     "52_4": {
         "affix": "of the Ox",
-        "1": "+(10-12)% Health",
+        "1": "(10-12)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4060,7 +4060,7 @@
     },
     "52_5": {
         "affix": "of the Ox",
-        "1": "+(15-19)% Health",
+        "1": "(15-19)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4071,7 +4071,7 @@
     },
     "52_6": {
         "affix": "of the Ox",
-        "1": "+(20-24)% Health",
+        "1": "(20-24)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4544,7 +4544,7 @@
     },
     "59_0": {
         "affix": "of the Fox",
-        "1": "+(10-14)% Dodge Rating",
+        "1": "(10-14)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4555,7 +4555,7 @@
     },
     "59_1": {
         "affix": "of the Fox",
-        "1": "+(15-19)% Dodge Rating",
+        "1": "(15-19)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4566,7 +4566,7 @@
     },
     "59_2": {
         "affix": "of the Fox",
-        "1": "+(20-24)% Dodge Rating",
+        "1": "(20-24)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4577,7 +4577,7 @@
     },
     "59_3": {
         "affix": "of the Fox",
-        "1": "+(25-28)% Dodge Rating",
+        "1": "(25-28)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4588,7 +4588,7 @@
     },
     "59_4": {
         "affix": "of the Fox",
-        "1": "+(30-38)% Dodge Rating",
+        "1": "(30-38)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4599,7 +4599,7 @@
     },
     "59_5": {
         "affix": "of the Fox",
-        "1": "+(48-60)% Dodge Rating",
+        "1": "(48-60)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4610,7 +4610,7 @@
     },
     "59_6": {
         "affix": "of the Fox",
-        "1": "+(61-75)% Dodge Rating",
+        "1": "(61-75)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -5853,7 +5853,7 @@
     },
     "76_0": {
         "affix": "Dark",
-        "1": "(3-6)% increased Melee Void Damage",
+        "1": "+(3-6) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5864,7 +5864,7 @@
     },
     "76_1": {
         "affix": "Dark",
-        "1": "(7-10)% increased Melee Void Damage",
+        "1": "+(7-10) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5875,7 +5875,7 @@
     },
     "76_2": {
         "affix": "Dark",
-        "1": "(11-15)% increased Melee Void Damage",
+        "1": "+(11-15) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5886,7 +5886,7 @@
     },
     "76_3": {
         "affix": "Dark",
-        "1": "(16-20)% increased Melee Void Damage",
+        "1": "+(16-20) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5897,7 +5897,7 @@
     },
     "76_4": {
         "affix": "Dark",
-        "1": "(21-26)% increased Melee Void Damage",
+        "1": "+(21-26) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5908,7 +5908,7 @@
     },
     "76_5": {
         "affix": "Dark",
-        "1": "(36-44)% increased Melee Void Damage",
+        "1": "+(36-44) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5919,7 +5919,7 @@
     },
     "76_6": {
         "affix": "Dark",
-        "1": "(45-55)% increased Melee Void Damage",
+        "1": "+(45-55) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -6777,7 +6777,7 @@
     },
     "88_0": {
         "affix": "Catapult's",
-        "1": "(2-4)% increased Throwing Damage",
+        "1": "+(2-4) Throwing Damage",
         "level": 0,
         "statOrderKey": 88,
         "statOrder": [
@@ -6788,7 +6788,7 @@
     },
     "88_1": {
         "affix": "Catapult's",
-        "1": "(5-7)% increased Throwing Damage",
+        "1": "+(5-7) Throwing Damage",
         "level": 0,
         "statOrderKey": 88,
         "statOrder": [
@@ -6799,7 +6799,7 @@
     },
     "88_2": {
         "affix": "Catapult's",
-        "1": "(8-10)% increased Throwing Damage",
+        "1": "+(8-10) Throwing Damage",
         "level": 0,
         "statOrderKey": 88,
         "statOrder": [
@@ -6810,7 +6810,7 @@
     },
     "88_3": {
         "affix": "Catapult's",
-        "1": "(11-14)% increased Throwing Damage",
+        "1": "+(11-14) Throwing Damage",
         "level": 0,
         "statOrderKey": 88,
         "statOrder": [
@@ -6821,7 +6821,7 @@
     },
     "88_4": {
         "affix": "Catapult's",
-        "1": "(15-20)% increased Throwing Damage",
+        "1": "+(15-20) Throwing Damage",
         "level": 0,
         "statOrderKey": 88,
         "statOrder": [
@@ -6832,7 +6832,7 @@
     },
     "88_5": {
         "affix": "Catapult's",
-        "1": "(25-30)% increased Throwing Damage",
+        "1": "+(25-30) Throwing Damage",
         "level": 0,
         "statOrderKey": 88,
         "statOrder": [
@@ -6843,7 +6843,7 @@
     },
     "88_6": {
         "affix": "Catapult's",
-        "1": "(31-37)% increased Throwing Damage",
+        "1": "+(31-37) Throwing Damage",
         "level": 0,
         "statOrderKey": 88,
         "statOrder": [
@@ -6931,7 +6931,7 @@
     },
     "90_0": {
         "affix": "of Renewal",
-        "1": "(2-3)% increased Health Regen",
+        "1": "+(2-3) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -6942,7 +6942,7 @@
     },
     "90_1": {
         "affix": "of Renewal",
-        "1": "(4-5)% increased Health Regen",
+        "1": "+(4-5) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -6953,7 +6953,7 @@
     },
     "90_2": {
         "affix": "of Renewal",
-        "1": "(6-7)% increased Health Regen",
+        "1": "+(6-7) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -6964,7 +6964,7 @@
     },
     "90_3": {
         "affix": "of Renewal",
-        "1": "(8-10)% increased Health Regen",
+        "1": "+(8-10) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -6975,7 +6975,7 @@
     },
     "90_4": {
         "affix": "of Renewal",
-        "1": "(11-14)% increased Health Regen",
+        "1": "+(11-14) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -6986,7 +6986,7 @@
     },
     "90_5": {
         "affix": "of Renewal",
-        "1": "(18-23)% increased Health Regen",
+        "1": "+(18-23) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -6997,7 +6997,7 @@
     },
     "90_6": {
         "affix": "of Renewal",
-        "1": "(24-30)% increased Health Regen",
+        "1": "+(24-30) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -8108,7 +8108,7 @@
     },
     "107_0": {
         "affix": "Vigorous",
-        "1": "+(5-14)% Health",
+        "1": "(5-14)% increased Health",
         "level": 0,
         "statOrderKey": 107,
         "statOrder": [
@@ -8350,7 +8350,7 @@
     },
     "129_0": {
         "affix": "of the Stronghold",
-        "1": "+(5-12)% Armor\n+(5-12)% Mana",
+        "1": "(5-12)% increased Armor\n(5-12)% increased Mana",
         "level": 0,
         "statOrderKey": 129,
         "statOrder": [
@@ -8405,7 +8405,7 @@
     },
     "134_0": {
         "affix": "Assassin's",
-        "1": "+(20-55)% Critical Strike Chance",
+        "1": "(20-55)% increased Critical Strike Chance",
         "level": 0,
         "statOrderKey": 134,
         "statOrder": [
@@ -8735,7 +8735,7 @@
     },
     "164_0": {
         "affix": "Attuned",
-        "1": "(2-4)% increased Critical Strike Chance for Totems",
+        "1": "+(2-4)% Critical Strike Chance for Totems",
         "level": 0,
         "statOrderKey": 164,
         "statOrder": [
@@ -8801,7 +8801,7 @@
     },
     "170_0": {
         "affix": "of Stars",
-        "1": "(18-48)% increased Spell Damage\n+(18-48)% Minion Spell Damage",
+        "1": "(18-48)% increased Spell Damage\n(18-48)% increased Minion Spell Damage",
         "level": 0,
         "statOrderKey": 170,
         "statOrder": [
@@ -8812,7 +8812,7 @@
     },
     "171_0": {
         "affix": "of War",
-        "1": "(18-48)% increased Melee Damage\n+(18-48)% Minion Melee Damage",
+        "1": "(18-48)% increased Melee Damage\n(18-48)% increased Minion Melee Damage",
         "level": 0,
         "statOrderKey": 171,
         "statOrder": [
@@ -9153,7 +9153,7 @@
     },
     "196_0": {
         "affix": "of the Fortress",
-        "1": "+(15-35)% Armor",
+        "1": "(15-35)% increased Armor",
         "level": 0,
         "statOrderKey": 196,
         "statOrder": [
@@ -9824,7 +9824,7 @@
     },
     "257_0": {
         "affix": "Vigorous",
-        "1": "+(5-14)% Health",
+        "1": "(5-14)% increased Health",
         "level": 0,
         "statOrderKey": 257,
         "statOrder": [
@@ -10110,7 +10110,7 @@
     },
     "283_0": {
         "affix": "Deep",
-        "1": "+(12-24)% Increased Abyssal Decay Duration ",
+        "1": "(12-24)% increased Increased Abyssal Decay Duration ",
         "level": 0,
         "statOrderKey": 283,
         "statOrder": [
@@ -10264,7 +10264,7 @@
     },
     "297_0": {
         "affix": "of Cruelty",
-        "1": "+(15-40)% Critical Strike Chance\n(15-40)% increased Minion Critical Strike Chance",
+        "1": "(15-40)% increased Critical Strike Chance\n(15-40)% increased Minion Critical Strike Chance",
         "level": 0,
         "statOrderKey": 297,
         "statOrder": [
@@ -10704,7 +10704,7 @@
     },
     "331_0": {
         "affix": "Azure",
-        "1": "+4% Mana",
+        "1": "4% increased Mana",
         "level": 0,
         "statOrderKey": 331,
         "statOrder": [
@@ -10715,7 +10715,7 @@
     },
     "331_1": {
         "affix": "Azure",
-        "1": "+5% Mana",
+        "1": "5% increased Mana",
         "level": 0,
         "statOrderKey": 331,
         "statOrder": [
@@ -10726,7 +10726,7 @@
     },
     "331_2": {
         "affix": "Azure",
-        "1": "+6% Mana",
+        "1": "6% increased Mana",
         "level": 0,
         "statOrderKey": 331,
         "statOrder": [
@@ -10737,7 +10737,7 @@
     },
     "331_3": {
         "affix": "Azure",
-        "1": "+7% Mana",
+        "1": "7% increased Mana",
         "level": 0,
         "statOrderKey": 331,
         "statOrder": [
@@ -10748,7 +10748,7 @@
     },
     "331_4": {
         "affix": "Azure",
-        "1": "+(8-10)% Mana",
+        "1": "(8-10)% increased Mana",
         "level": 0,
         "statOrderKey": 331,
         "statOrder": [
@@ -10759,7 +10759,7 @@
     },
     "331_5": {
         "affix": "Azure",
-        "1": "+(12-15)% Mana",
+        "1": "(12-15)% increased Mana",
         "level": 0,
         "statOrderKey": 331,
         "statOrder": [
@@ -10770,7 +10770,7 @@
     },
     "331_6": {
         "affix": "Azure",
-        "1": "+(16-20)% Mana",
+        "1": "(16-20)% increased Mana",
         "level": 0,
         "statOrderKey": 331,
         "statOrder": [
@@ -11705,7 +11705,7 @@
     },
     "344_0": {
         "affix": null,
-        "1": "(25-27)% increased Spell Damage\n+(25-27)% Minion Spell Damage",
+        "1": "(25-27)% increased Spell Damage\n(25-27)% increased Minion Spell Damage",
         "level": 27,
         "statOrderKey": 344,
         "statOrder": [
@@ -11716,7 +11716,7 @@
     },
     "344_1": {
         "affix": null,
-        "1": "(28-30)% increased Spell Damage\n+(28-30)% Minion Spell Damage",
+        "1": "(28-30)% increased Spell Damage\n(28-30)% increased Minion Spell Damage",
         "level": 27,
         "statOrderKey": 344,
         "statOrder": [
@@ -11727,7 +11727,7 @@
     },
     "344_2": {
         "affix": null,
-        "1": "(31-33)% increased Spell Damage\n+(31-33)% Minion Spell Damage",
+        "1": "(31-33)% increased Spell Damage\n(31-33)% increased Minion Spell Damage",
         "level": 27,
         "statOrderKey": 344,
         "statOrder": [
@@ -11738,7 +11738,7 @@
     },
     "344_3": {
         "affix": null,
-        "1": "(34-36)% increased Spell Damage\n+(34-36)% Minion Spell Damage",
+        "1": "(34-36)% increased Spell Damage\n(34-36)% increased Minion Spell Damage",
         "level": 27,
         "statOrderKey": 344,
         "statOrder": [
@@ -11749,7 +11749,7 @@
     },
     "344_4": {
         "affix": null,
-        "1": "(37-50)% increased Spell Damage\n+(37-50)% Minion Spell Damage",
+        "1": "(37-50)% increased Spell Damage\n(37-50)% increased Minion Spell Damage",
         "level": 27,
         "statOrderKey": 344,
         "statOrder": [
@@ -11760,7 +11760,7 @@
     },
     "344_5": {
         "affix": null,
-        "1": "(60-75)% increased Spell Damage\n+(60-75)% Minion Spell Damage",
+        "1": "(60-75)% increased Spell Damage\n(60-75)% increased Minion Spell Damage",
         "level": 27,
         "statOrderKey": 344,
         "statOrder": [
@@ -11771,7 +11771,7 @@
     },
     "344_6": {
         "affix": null,
-        "1": "(76-100)% increased Spell Damage\n+(76-100)% Minion Spell Damage",
+        "1": "(76-100)% increased Spell Damage\n(76-100)% increased Minion Spell Damage",
         "level": 27,
         "statOrderKey": 344,
         "statOrder": [
@@ -11782,7 +11782,7 @@
     },
     "345_0": {
         "affix": null,
-        "1": "(25-27)% increased Melee Damage\n+(25-27)% Minion Melee Damage",
+        "1": "(25-27)% increased Melee Damage\n(25-27)% increased Minion Melee Damage",
         "level": 48,
         "statOrderKey": 345,
         "statOrder": [
@@ -11793,7 +11793,7 @@
     },
     "345_1": {
         "affix": null,
-        "1": "(28-30)% increased Melee Damage\n+(28-30)% Minion Melee Damage",
+        "1": "(28-30)% increased Melee Damage\n(28-30)% increased Minion Melee Damage",
         "level": 48,
         "statOrderKey": 345,
         "statOrder": [
@@ -11804,7 +11804,7 @@
     },
     "345_2": {
         "affix": null,
-        "1": "(31-33)% increased Melee Damage\n+(31-33)% Minion Melee Damage",
+        "1": "(31-33)% increased Melee Damage\n(31-33)% increased Minion Melee Damage",
         "level": 48,
         "statOrderKey": 345,
         "statOrder": [
@@ -11815,7 +11815,7 @@
     },
     "345_3": {
         "affix": null,
-        "1": "(34-36)% increased Melee Damage\n+(34-36)% Minion Melee Damage",
+        "1": "(34-36)% increased Melee Damage\n(34-36)% increased Minion Melee Damage",
         "level": 48,
         "statOrderKey": 345,
         "statOrder": [
@@ -11826,7 +11826,7 @@
     },
     "345_4": {
         "affix": null,
-        "1": "(37-50)% increased Melee Damage\n+(37-50)% Minion Melee Damage",
+        "1": "(37-50)% increased Melee Damage\n(37-50)% increased Minion Melee Damage",
         "level": 48,
         "statOrderKey": 345,
         "statOrder": [
@@ -11837,7 +11837,7 @@
     },
     "345_5": {
         "affix": null,
-        "1": "(60-75)% increased Melee Damage\n+(60-75)% Minion Melee Damage",
+        "1": "(60-75)% increased Melee Damage\n(60-75)% increased Minion Melee Damage",
         "level": 48,
         "statOrderKey": 345,
         "statOrder": [
@@ -11848,7 +11848,7 @@
     },
     "345_6": {
         "affix": null,
-        "1": "(76-100)% increased Melee Damage\n+(76-100)% Minion Melee Damage",
+        "1": "(76-100)% increased Melee Damage\n(76-100)% increased Minion Melee Damage",
         "level": 48,
         "statOrderKey": 345,
         "statOrder": [
@@ -17183,7 +17183,7 @@
     },
     "416_0": {
         "affix": null,
-        "1": "+(40-45)% Critical Strike Chance\n(40-45)% increased Minion Critical Strike Chance",
+        "1": "(40-45)% increased Critical Strike Chance\n(40-45)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17194,7 +17194,7 @@
     },
     "416_1": {
         "affix": null,
-        "1": "+(46-51)% Critical Strike Chance\n(46-51)% increased Minion Critical Strike Chance",
+        "1": "(46-51)% increased Critical Strike Chance\n(46-51)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17205,7 +17205,7 @@
     },
     "416_2": {
         "affix": null,
-        "1": "+(52-56)% Critical Strike Chance\n(52-56)% increased Minion Critical Strike Chance",
+        "1": "(52-56)% increased Critical Strike Chance\n(52-56)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17216,7 +17216,7 @@
     },
     "416_3": {
         "affix": null,
-        "1": "+(57-63)% Critical Strike Chance\n(57-63)% increased Minion Critical Strike Chance",
+        "1": "(57-63)% increased Critical Strike Chance\n(57-63)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17227,7 +17227,7 @@
     },
     "416_4": {
         "affix": null,
-        "1": "+(64-80)% Critical Strike Chance\n(64-80)% increased Minion Critical Strike Chance",
+        "1": "(64-80)% increased Critical Strike Chance\n(64-80)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17238,7 +17238,7 @@
     },
     "416_5": {
         "affix": null,
-        "1": "+(100-120)% Critical Strike Chance\n(100-120)% increased Minion Critical Strike Chance",
+        "1": "(100-120)% increased Critical Strike Chance\n(100-120)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17249,7 +17249,7 @@
     },
     "416_6": {
         "affix": null,
-        "1": "+(121-150)% Critical Strike Chance\n(121-150)% increased Minion Critical Strike Chance",
+        "1": "(121-150)% increased Critical Strike Chance\n(121-150)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -21880,7 +21880,7 @@
     },
     "507_0": {
         "affix": "Ballista's",
-        "1": "(3-4)% increased Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(3-4) Throwing Damage\n+-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21891,7 +21891,7 @@
     },
     "507_1": {
         "affix": "Ballista's",
-        "1": "(5-6)% increased Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(5-6) Throwing Damage\n+-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21902,7 +21902,7 @@
     },
     "507_2": {
         "affix": "Ballista's",
-        "1": "(7-8)% increased Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(7-8) Throwing Damage\n+-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21913,7 +21913,7 @@
     },
     "507_3": {
         "affix": "Ballista's",
-        "1": "(9-10)% increased Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(9-10) Throwing Damage\n+-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21924,7 +21924,7 @@
     },
     "507_4": {
         "affix": "Ballista's",
-        "1": "(11-13)% increased Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(11-13) Throwing Damage\n+-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21935,7 +21935,7 @@
     },
     "507_5": {
         "affix": "Ballista's",
-        "1": "(17-21)% increased Throwing Damage\n+-4 Throwing Attack Mana Cost",
+        "1": "+(17-21) Throwing Damage\n+-4 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21946,7 +21946,7 @@
     },
     "507_6": {
         "affix": "Ballista's",
-        "1": "(22-26)% increased Throwing Damage\n+-5 Throwing Attack Mana Cost",
+        "1": "+(22-26) Throwing Damage\n+-5 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -27138,7 +27138,7 @@
     },
     "589_0": {
         "affix": null,
-        "1": "+1 Rebuke\n+(3-5)% Armor",
+        "1": "+1 Rebuke\n(3-5)% increased Armor",
         "level": 7,
         "statOrderKey": 589,
         "statOrder": [
@@ -27149,7 +27149,7 @@
     },
     "589_1": {
         "affix": null,
-        "1": "+1 Rebuke\n+(6-10)% Armor",
+        "1": "+1 Rebuke\n(6-10)% increased Armor",
         "level": 7,
         "statOrderKey": 589,
         "statOrder": [
@@ -27160,7 +27160,7 @@
     },
     "589_2": {
         "affix": null,
-        "1": "+1 Rebuke\n+(11-15)% Armor",
+        "1": "+1 Rebuke\n(11-15)% increased Armor",
         "level": 7,
         "statOrderKey": 589,
         "statOrder": [
@@ -27171,7 +27171,7 @@
     },
     "589_3": {
         "affix": null,
-        "1": "+1 Rebuke\n+(16-20)% Armor",
+        "1": "+1 Rebuke\n(16-20)% increased Armor",
         "level": 7,
         "statOrderKey": 589,
         "statOrder": [
@@ -27182,7 +27182,7 @@
     },
     "589_4": {
         "affix": null,
-        "1": "+2 Rebuke\n+(21-28)% Armor",
+        "1": "+2 Rebuke\n(21-28)% increased Armor",
         "level": 7,
         "statOrderKey": 589,
         "statOrder": [
@@ -27193,7 +27193,7 @@
     },
     "589_5": {
         "affix": null,
-        "1": "+3 Rebuke\n+(30-34)% Armor",
+        "1": "+3 Rebuke\n(30-34)% increased Armor",
         "level": 7,
         "statOrderKey": 589,
         "statOrder": [
@@ -27204,7 +27204,7 @@
     },
     "589_6": {
         "affix": null,
-        "1": "+4 Rebuke\n+(35-40)% Armor",
+        "1": "+4 Rebuke\n(35-40)% increased Armor",
         "level": 7,
         "statOrderKey": 589,
         "statOrder": [
