@@ -12,7 +12,7 @@ This is a fork of Path Of Building adapted to work for the game **Last Epoch**. 
 Note that **most content (docs or code) is outdated** since they only apply to the original project. Everything should be migrated as time goes by.
 
 ## Running
-The current build can be run by running `./runtime/Path{space}of{space}Building.exe`. 
+The current build can be run by running `./runtime/Path{space}of{space}Building{space}for{space}Last{space}Epoch.exe`. 
 
 ## Roadmap
 * Add the relic slot
