@@ -781,7 +781,8 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 			["amulet"] = 11,
 			["ring1"] = 9,
 			["ring2"] = 10,
-			["waist"] = 7
+			["waist"] = 7,
+			["relic"] = 12
 		}
 		function processItemData(slotName, itemData)
 			local item = {

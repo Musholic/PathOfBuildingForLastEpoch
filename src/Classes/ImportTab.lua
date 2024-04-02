@@ -579,7 +579,7 @@ function ImportTabClass:ImportItemsAndSkills(charData)
     return charData -- For the wrapper
 end
 
-local slotMap = { [4] = "Weapon 1", [5] = "Weapon 2", [2] = "Helmet", [3] = "Body Armour", [6] = "Gloves", [8] = "Boots", [11] = "Amulet", [9] = "Ring 1", [10] = "Ring 2", [7] = "Belt" }
+local slotMap = { [4] = "Weapon 1", [5] = "Weapon 2", [2] = "Helmet", [3] = "Body Armour", [6] = "Gloves", [8] = "Boots", [11] = "Amulet", [9] = "Ring 1", [10] = "Ring 2", [7] = "Belt", [12] = "Relic" }
 
 for i=1,20 do
     slotMap["Idol " .. i] = "Idol " .. i

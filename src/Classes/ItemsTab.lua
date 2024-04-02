@@ -30,7 +30,7 @@ local socketDropList = {
 	{ label = colorCodes.SCION.."W", color = "W" }
 }
 
-local baseSlots = { "Weapon 1", "Weapon 2", "Helmet", "Body Armour", "Gloves", "Boots", "Amulet", "Ring 1", "Ring 2", "Belt" }
+local baseSlots = { "Weapon 1", "Weapon 2", "Helmet", "Body Armour", "Gloves", "Boots", "Amulet", "Ring 1", "Ring 2", "Belt", "Relic" }
 
 for i = 1, 20 do
 	table.insert(baseSlots, "Idol " .. i)
@@ -133,21 +133,6 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 					return not abyssal.inactive and self.activeItemSet.useSecondWeaponSet
 				end
 				swapSlot.abyssalSocketList[i] = abyssal
-			end
-		end
-		if slotName == "Weapon 1" or slotName == "Weapon 2" or slotName == "Helmet" or slotName == "Gloves" or slotName == "Body Armour" or slotName == "Boots" or slotName == "Belt" then
-			-- Add Abyssal Socket slots
-			for i = 1, 6 do
-				local abyssal = new("ItemSlotControl", {"TOPLEFT",prevSlot,"BOTTOMLEFT"}, 0, 2, self, slotName.." Abyssal Socket "..i, "Abyssal #"..i)
-				addSlot(abyssal)
-				abyssal.parentSlot = slot
-				if slotName:match("Weapon") then
-					abyssal.weaponSet = 1
-					abyssal.shown = function()
-						return not abyssal.inactive and not self.activeItemSet.useSecondWeaponSet
-					end
-				end
-				slot.abyssalSocketList[i] = abyssal
 			end
 		end
 	end
