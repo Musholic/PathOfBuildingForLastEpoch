@@ -3,9 +3,6 @@ from common import *
 
 # Read the YAML file
 dataNodes = []
-yamlFile = fix_and_filter_yaml_file(prefabPath + "PassiveTree2021.prefab")
-
-with open("generatedAssets/passiveTree.yaml", "w") as yamlOutput:
-    yamlOutput.write(yamlFile)
+fix_and_filter_yaml_file(prefabPath + "PassiveTree2021.prefab", "generatedAssets/passiveTree.yaml")
 
 print("passiveTree.yaml generated with success")

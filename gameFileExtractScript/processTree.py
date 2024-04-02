@@ -9,7 +9,6 @@ with open("generatedAssets/passiveTreeExtract.yaml", "r") as yamlFile:
 with open("generatedAssets/skillTreesExtract.yaml", "r") as yamlFile:
     skillTreesData = yaml.safe_load(yamlFile)
 
-
 for classInfo in data["trees"].values():
     tree = {
         "nodes": {
@@ -82,28 +81,35 @@ for classInfo in data["trees"].values():
     mastery = '0'
     posYMastery = 0
     maxPosY = 0
+    maxPosX = 0
+    minPosY = 0
     masteryReq = '0'
 
     nodeList = []
     for node in classInfo["nodeList"]:
-        nodeList.append(data["passives"][node['fileID']])
-    nodeList = natsorted(nodeList, key=lambda x: x['mastery']+"_"+x['masteryRequirement'])
+        nodeData = data["passives"][node['fileID']]
+        nodeData['x'] *= 5
+        nodeData['y'] *= -15
+        nodeList.append(nodeData)
+        if minPosY > nodeData['y']:
+            minPosY = nodeData['y']
+
+    nodeList = natsorted(nodeList, key=lambda x: x['mastery'] + "_" + x['masteryRequirement'])
     for passiveData in nodeList:
+        if maxPosX < posX:
+            maxPosX = posX
         if maxPosY < posY:
             maxPosY = posY
 
+        posX = passiveData['x']
         if mastery != passiveData['mastery']:
             mastery = passiveData['mastery']
             masteryReq = '0'
-            posYMastery = maxPosY + 400
-            posY = posYMastery
-            posX = 0
+            posYMastery = (maxPosY - minPosY) + 1600
         elif masteryReq != passiveData['masteryRequirement']:
             masteryReq = passiveData['masteryRequirement']
-            posY = posYMastery
-            posX += 200
-        else:
-            posY += 200
+
+        posY = posYMastery + passiveData['y']
 
         for nbPoint in range(int(passiveData['maxPoints'])):
             posY += 100
@@ -139,21 +145,26 @@ for classInfo in data["trees"].values():
                 previousPassiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint - 1)
                 tree["nodes"][passiveId]["in"].append(previousPassiveId)
 
-
+    minPosX = 0
+    minPosY = 0
     for skillTreeData in skillTreesData['trees'].values():
         if skillTreeData["ability"]["guid"] in classes[className]["skillIds"]:
             nodeList = []
             for node in skillTreeData["nodeList"]:
-                nodeList.append(skillTreesData['nodes'][node['fileID']])
-            nodeList = natsorted(nodeList, key=lambda x: x['id'])
+                nodeData = skillTreesData['nodes'][node['fileID']]
+                nodeData['x'] *= 5
+                nodeData['y'] *= -15
+                nodeList.append(nodeData)
+                if minPosX > nodeData['x']:
+                    minPosX = nodeData['x']
+
             classes[className]["skills"].append({
                 "label": nodeList[0]["nodeName"],
                 "treeId": skillTreeData['treeID']
             })
-            posX = 3000
             for skillData in nodeList:
-                posY = 0
-                posX += 200
+                posX = (maxPosX - minPosX) + 2000 + skillData['x']
+                posY = skillData['y']
                 maxPoints = int(skillData['maxPoints'])
                 if maxPoints == 0:
                     maxPoints = 1

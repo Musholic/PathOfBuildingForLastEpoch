@@ -19,7 +19,7 @@ def fix_and_filter_yaml_file(filepath, output_file_name):
             discard = False
         else:
             if not discard:
-                if next_id and not line.startswith("MonoBehaviour"):
+                if next_id and not (line.startswith("MonoBehaviour") or line.startswith("GameObject") or line.startswith("RectTransform")):
                     discard = True
                 elif next_id:
                     output_file.write("--- " + next_id)

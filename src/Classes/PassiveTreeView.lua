@@ -203,7 +203,7 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 				local nodeY = node.y
 				for id,ability in pairs(spec.curAbilities) do
 					if ability and nodeId:match("^" .. ability) then
-						nodeY = nodeY + id * 800
+						nodeY = nodeY + (id - 1) * (tree.decAbilityPosY + 1000)
 					end
 				end
 				local vY = curTreeY - nodeY
@@ -382,7 +382,7 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 		local decY = 0
 		for id,ability in pairs(spec.curAbilities) do
 			if ability and connector.nodeId1:match("^" .. ability) then
-				decY =  id * 800
+				decY =  (id - 1) * (tree.decAbilityPosY + 1000)
 			end
 		end
 		local vert = connector.vert[state]
@@ -544,7 +544,7 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 		local nodeY = node.y
 		for id,ability in pairs(spec.curAbilities) do
 			if ability and nodeId:match("^" .. ability) then
-				nodeY = nodeY + id * 800
+				nodeY = nodeY + (id - 1) * (tree.decAbilityPosY + 1000)
 			end
 		end
 		local scrX, scrY = treeToScreen(node.x, nodeY)

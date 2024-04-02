@@ -94,15 +94,27 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
     -- Add json data from game files extracts
     self.nodes = {}
     self.classes = {}
+    local minAbilityPosY = 0
+    local maxAbilityPosY = 0
     for i = 0, 4 do
         local treeData = readJsonFile("TreeData/" .. treeVersion .. "/tree_" .. i .. ".json")
         for k,v in pairs(treeData["nodes"]) do
             self.nodes[k] = v
+            if not k:match('^[A-Z]') then
+                if v.y and maxAbilityPosY < v.y then
+                    maxAbilityPosY = v.y
+                end
+                if v.y and minAbilityPosY > v.y then
+                    minAbilityPosY = v.y
+                end
+            end
         end
         for k,v in pairs(treeData["classes"]) do
             table.insert(self.classes, v)
         end
     end
+
+    self.decAbilityPosY = (maxAbilityPosY - minAbilityPosY)
 
     local cdnRoot = ""
 
