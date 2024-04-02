@@ -128,10 +128,10 @@
 	<File name="Data/TattooPassives.lua" part="program" sha1="3d9a63a663f875ffce59430d7a0ce01fabb9f2bd" />
 	<File name="Data/Uniques/uniques.json" part="program" sha1="9cd7b21cefb73a99a13b50ac74635cf49f83bc3a" />
 	<File name="GameVersions.lua" part="program" sha1="c905b6aed5e0ba333aa1912e6b98d49d4cb62aec" />
-	<File name="Launch.lua" part="program" sha1="3c5f9eb4c7267d7fd1ae3f54e00fc6332d26f315" />
+	<File name="Launch.lua" part="program" sha1="5b6e8a1990cc282398fc96e268c3da6f1f0735f2" />
 	<File name="Modules/Build.lua" part="program" sha1="70f4dc4de0c49e0dbe3f173f0febc7b72364f163" />
 	<File name="Modules/BuildList.lua" part="program" sha1="9d0030971c89398b3bfd7a8bebbbcfa688a35b50" />
-	<File name="Modules/BuildSiteTools.lua" part="program" sha1="63a6d24fe8e585389aa49db2c5f9106d3935492e" />
+	<File name="Modules/BuildSiteTools.lua" part="program" sha1="5f9f115478248b43b8e0db5d273ea6b7ddc37fda" />
 	<File name="Modules/CalcActiveSkill.lua" part="program" sha1="1b17ff445ffa42c78c73d57f461017ca466913c3" />
 	<File name="Modules/CalcBreakdown.lua" part="program" sha1="edd6c08679fa4c7ed667895f86c7ee67257bfcf0" />
 	<File name="Modules/CalcDefence.lua" part="program" sha1="55e9fe5061789f467fe27bb16fdef839a1409a1d" />
@@ -148,7 +148,7 @@
 	<File name="Modules/Data.lua" part="program" sha1="6ddd0022507f8206a75827eb393fde8354026813" />
 	<File name="Modules/DataLegionLookUpTableHelper.lua" part="program" sha1="170699925a438275137ba621206800e29f453eb3" />
 	<File name="Modules/ItemTools.lua" part="program" sha1="490252a1f964913db95557682c6e66de169dace1" />
-	<File name="Modules/Main.lua" part="program" sha1="862407cd7996f8b08d6d85d2abcfbd413b71cc7c" />
+	<File name="Modules/Main.lua" part="program" sha1="761fd603c222ce7f4f5d3787c2f461543411d97f" />
 	<File name="Modules/ModParser.lua" part="program" sha1="65c3059f69c6ca7fc10cbf5823a347f85a81eca6" />
 	<File name="Modules/ModTools.lua" part="program" sha1="3e598acc265c118cdeb9da2bea0de3e33d6511ff" />
 	<File name="Modules/PantheonTools.lua" part="program" sha1="ebe91a7d8f8444a6061acf4758da0e775cc8c314" />

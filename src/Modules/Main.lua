@@ -54,7 +54,7 @@ function main:Init()
 		-- If running in dev mode or standalone mode, put user data in the script path
 		self.userPath = GetScriptPath().."/"
 	else
-		self.userPath = GetUserPath().."/Path of Building/"
+		self.userPath = GetUserPath().."/Path of Building for Last Epoch/"
 		MakeDir(self.userPath)
 	end
 	self.defaultBuildPath = self.userPath.."Builds/"
@@ -1137,8 +1137,8 @@ function main:OpenAboutPopup(helpSectionIndex)
 	controls.close = new("ButtonControl", {"TOPRIGHT",nil,"TOPRIGHT"}, -10, 10, 50, 20, "Close", function()
 		self:ClosePopup()
 	end)
-	controls.version = new("LabelControl", nil, 0, 18, 0, 18, "^7Path of Building Community Fork v"..launch.versionNumber)
-	controls.forum = new("LabelControl", nil, 0, 36, 0, 18, "^7Based on Openarl's Path of Building")
+	controls.version = new("LabelControl", nil, 0, 18, 0, 18, "^7Path of Building for Last Epoch v"..launch.versionNumber)
+	controls.forum = new("LabelControl", nil, 0, 36, 0, 18, "^7Based on Path of Building Community")
 	controls.github = new("ButtonControl", nil, 0, 62, 438, 18, "^7GitHub page: ^x4040FFhttps://github.com/Musholic/PathOfBuildingForLastEpoch", function(control)
 		OpenURL("https://github.com/Musholic/PathOfBuildingForLastEpoch")
 	end)

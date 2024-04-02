@@ -264,7 +264,7 @@ function launch:DownloadPage(url, callback, params)
 			easy:setopt(curl.OPT_HTTPHEADER, header)
 		end
 		easy:setopt_url(url)
-		easy:setopt(curl.OPT_USERAGENT, "Path of Building/]]..self.versionNumber..[[")
+		easy:setopt(curl.OPT_USERAGENT, "Path of Building for Last Epoch/]]..self.versionNumber..[[")
 		easy:setopt(curl.OPT_ACCEPT_ENCODING, "")
 		if requestBody then
 			easy:setopt(curl.OPT_POST, true)

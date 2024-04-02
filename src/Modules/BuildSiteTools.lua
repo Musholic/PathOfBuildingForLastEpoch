@@ -39,7 +39,7 @@ function buildSites.UploadBuild(buildCode, websiteInfo)
 			local easy = curl.easy()
 			easy:setopt_url(']]..websiteInfo.postUrl..[[')
 			easy:setopt(curl.OPT_POST, true)
-			easy:setopt(curl.OPT_USERAGENT, "Path of Building/]]..launch.versionNumber..[[")
+			easy:setopt(curl.OPT_USERAGENT, "Path of Building for Last Epoch/]]..launch.versionNumber..[[")
 			easy:setopt(curl.OPT_POSTFIELDS, ']]..websiteInfo.postFields..[['..code)
 			easy:setopt(curl.OPT_ACCEPT_ENCODING, "")
 			if connectionProtocol then
