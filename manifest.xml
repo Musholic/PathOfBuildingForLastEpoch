@@ -155,9 +155,16 @@
 	<File name="Modules/StatDescriber.lua" part="program" sha1="26371bf6ebdc95ae383bba5f5742fd17bad541c7" />
 	<File name="UpdateApply.lua" part="program" sha1="4dd42f413cb89a963e4ae1b40e214985b909c05b" />
 	<File name="UpdateCheck.lua" part="program" sha1="f43b012b0379868c5df520c3efb4426a868c031d" />
-	<File name="lcurl.dll" part="runtime" runtime="win32" sha1="fe399dbe89c02c597bbad8323ef5c29b24af4870" />
-	<File name="libcurl.dll" part="runtime" runtime="win32" sha1="5f68674e22a389dddeb72078b7d9d69d29881bdd" />
-	<File name="lua51.dll" part="runtime" runtime="win32" sha1="7a973d3c0b5121e6aad0dcb9323be5b432fc63e7" />
+	<File name="abseil_dll.dll" part="runtime" runtime="win32" sha1="4030a884bd6986ab29806e1f0e3c64641558d888" />
+	<File name="concrt140.dll" part="runtime" runtime="win32" sha1="75b1dcafc21ddc7c3877caeac06bb04ebf09ea40" />
+	<File name="d3dcompiler_47.dll" part="runtime" runtime="win32" sha1="27a4eff95e7f4a359718fda7138a528147969b27" />
+	<File name="fmt.dll" part="runtime" runtime="win32" sha1="3763ef853ce3801d85433dad5a22951b094a1f34" />
+	<File name="glfw3.dll" part="runtime" runtime="win32" sha1="c11b9fea864ed766f82b700e7918a484a9c3d95b" />
+	<File name="lcurl.dll" part="runtime" runtime="win32" sha1="d59d3269a275cc4e2295b79fc86b8afde727f9b4" />
+	<File name="libcurl.dll" part="runtime" runtime="win32" sha1="1a782bdbe250e6aeee537fd0fd734985f6565f2d" />
+	<File name="libEGL.dll" part="runtime" runtime="win32" sha1="511fe06c8fb1ccc46b53195ca3c7cd086ab32d76" />
+	<File name="libGLESv2.dll" part="runtime" runtime="win32" sha1="fb3b1070a7f83bf45ce92bbdd773a2ad2c96abb0" />
+	<File name="lua51.dll" part="runtime" runtime="win32" sha1="c59b85f4d28e73e49fd38d74b13795b7ec3798a7" />
 	<File name="lua/base64.lua" part="runtime" sha1="18629865eb351e483178b6524fb3935cbc9b8297" />
 	<File name="lua/dkjson.lua" part="runtime" sha1="d2c9e5433a24b8593886a36cfc267cb05d3bc529" />
 	<File name="lua/sha1/bit32_ops.lua" part="runtime" sha1="25bc8def626fd8d8bd3d37dcd96808c6b8b00087" />
@@ -167,9 +174,15 @@
 	<File name="lua/sha1/lua53_ops.lua" part="runtime" sha1="b10c732f322358c4112226df61af61f53a21b911" />
 	<File name="lua/sha1/pure_lua_ops.lua" part="runtime" sha1="0dff15b1cfd171a3572032346613adcf5e9962c2" />
 	<File name="lua/xml.lua" part="runtime" sha1="859e09104842f91a4aaa9a4d9fadf667535877e2" />
-	<File name="lzip.dll" part="runtime" runtime="win32" sha1="fe73e74330bf2943036139c32a5c773558fc62a5" />
-	<File name="Path{space}of{space}Building{space}for{space}Last{space}Epoch.exe" part="runtime" runtime="win32" sha1="7486cf4f0289df72ccce93a69a4198ad069f79b9" />
-	<File name="SimpleGraphic.dll" part="runtime" runtime="win32" sha1="fe91680283bd2ca112c341134befc8922487bfca" />
+	<File name="lzip.dll" part="runtime" runtime="win32" sha1="ee5f3dd9bde945312f7fa2f6ae07fb6a01204c8a" />
+	<File name="msvcp140.dll" part="runtime" runtime="win32" sha1="295998a6455cc230da9517408f59569ea4ed7b02" />
+	<File name="msvcp140_1.dll" part="runtime" runtime="win32" sha1="9b9c827f8c6e7f497e88b83f0654bdf97c50c50f" />
+	<File name="msvcp140_2.dll" part="runtime" runtime="win32" sha1="d58a5e3d76403ee5a65a07201aa8a2fad1a173d2" />
+	<File name="msvcp140_atomic_wait.dll" part="runtime" runtime="win32" sha1="36aa8ef02d3a308464c1ee8f75d6d118314202a0" />
+	<File name="msvcp140_codecvt_ids.dll" part="runtime" runtime="win32" sha1="510969622b7f3c92c152ecfdc5ff08edefcb9594" />
+	<File name="Path of Building for Last Epoch.exe" part="runtime" runtime="win32" sha1="65555f21c70c0de2f8df626be99fc57619f88735" />
+	<File name="re2.dll" part="runtime" runtime="win32" sha1="6e20a0fea06252d9aab058035221eb70bf2088c5" />
+	<File name="SimpleGraphic.dll" part="runtime" runtime="win32" sha1="6d64ed1913cd037e4c77ef6868f95d22177ee72a" />
 	<File name="SimpleGraphic/Fonts/Bitstream Vera Sans Mono.10.tga" part="runtime" sha1="74cc6c47e7cda18211e57b9e062368eab3c26bab" />
 	<File name="SimpleGraphic/Fonts/Bitstream Vera Sans Mono.12.tga" part="runtime" sha1="1977206f0efc5035834ecbf93ca7d046010d8aab" />
 	<File name="SimpleGraphic/Fonts/Bitstream Vera Sans Mono.14.tga" part="runtime" sha1="93a4309dc814914be7d2dee708e3821494f145a2" />
@@ -200,6 +213,9 @@
 	<File name="SimpleGraphic/Fonts/Liberation Sans.28.tga" part="runtime" sha1="3175f25ff2ba00f95f10078bea790ff591943c46" />
 	<File name="SimpleGraphic/Fonts/Liberation Sans.32.tga" part="runtime" sha1="526edb97597a06ed0d9689107a4e130a22faf810" />
 	<File name="SimpleGraphic/Fonts/Liberation Sans.tgf" part="runtime" sha1="31fdef9c0e2ad46df47123e7d81f5e8d4fe399ed" />
+	<File name="vcruntime140.dll" part="runtime" runtime="win32" sha1="c199a4beac341abc218257080b741ada0fadecaf" />
+	<File name="vcruntime140_1.dll" part="runtime" runtime="win32" sha1="61786eb9f3f996d85a5f5eea4c555093dd0daab6" />
+	<File name="zlib1.dll" part="runtime" runtime="win32" sha1="f69440276f87d8c078f769047d78dee278db99b1" />
 	<File name="TreeData/1_0/tree.lua" part="tree" sha1="dcc2e541bc79a9daace6bded75344f503a88e58b" />
 	<File name="TreeData/1_0/tree_0.json" part="tree" sha1="6f95c49da87c40e19baf99202883b667ccfa3ee2" />
 	<File name="TreeData/1_0/tree_1.json" part="tree" sha1="69a96ff22072c99ff6df6071f0df586a7cc7ecb0" />
