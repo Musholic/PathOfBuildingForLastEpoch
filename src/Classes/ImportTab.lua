@@ -342,13 +342,18 @@ function ImportTabClass:DownloadCharacterList()
 
     local localSaveFolder = os.getenv('UserProfile') .. "\\AppData\\LocalLow\\Eleventh Hour Games\\Last Epoch\\Saves\\"
     local saves = {}
-    local dirCmd = io.popen('dir "' .. localSaveFolder .. '" /b')
-    for fileName in dirCmd:lines() do
-        if (fileName:find("1CHARACTERSLOT_BETA_") and fileName:sub(-4) ~= ".bak") then
+    local handle = NewFileSearch(localSaveFolder.."1CHARACTERSLOT_BETA_*")
+    while handle do
+        local fileName = handle:GetFileName()
+
+        if fileName:sub(-4) ~= ".bak" then
             table.insert(saves, fileName)
         end
+
+        if not handle:NextFile() then
+            break
+        end
     end
-    dirCmd:close()
 
     local charList = {}
     for _, save in ipairs(saves) do
