@@ -15,7 +15,6 @@ Note that **most content (docs or code) is outdated** since they only apply to t
 The current build can be run by running `./runtime/Path{space}of{space}Building{space}for{space}Last{space}Epoch.exe`. 
 
 ## Roadmap
-* Add the relic slot
 * Have a selected skill dps correctly computed
 * Work on other stats (ward, ...)
 * Work on other skills ...
