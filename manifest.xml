@@ -5,7 +5,7 @@
 	<Source part="runtime" platform="win32" url="https://raw.githubusercontent.com/Musholic/PathOfBuildingForLastEpoch/{branch}/runtime/" />
 	<Source part="program" url="https://raw.githubusercontent.com/Musholic/PathOfBuildingForLastEpoch/{branch}/src/" />
 	<Source part="tree" url="https://raw.githubusercontent.com/Musholic/PathOfBuildingForLastEpoch/{branch}/src/" />
-	<File name="changelog.txt" part="default" sha1="e8c3b8a48f939ea2a7dfbb6555e7a1f372956e68" />
+	<File name="changelog.txt" part="default" sha1="be5ae15102d32789fb2a4539b71649a2f40414c8" />
 	<File name="help.txt" part="default" sha1="3343967a2d5f374228fd217a7a3f9612ee046bde" />
 	<File name="LICENSE.md" part="default" sha1="d358a0e74b55e3d180dc0e0859a004d9ab2b3a2a" />
 	<File name="Assets/game_ui_small.png" part="program" sha1="3e3f01a7c21ffe5ee7dfb644e9f3b7188c319d4d" />
@@ -148,7 +148,7 @@
 	<File name="Modules/Data.lua" part="program" sha1="6ddd0022507f8206a75827eb393fde8354026813" />
 	<File name="Modules/DataLegionLookUpTableHelper.lua" part="program" sha1="170699925a438275137ba621206800e29f453eb3" />
 	<File name="Modules/ItemTools.lua" part="program" sha1="490252a1f964913db95557682c6e66de169dace1" />
-	<File name="Modules/Main.lua" part="program" sha1="761fd603c222ce7f4f5d3787c2f461543411d97f" />
+	<File name="Modules/Main.lua" part="program" sha1="eb45ea0297b8bb454f1acf706b24c54662e4f8d4" />
 	<File name="Modules/ModParser.lua" part="program" sha1="65c3059f69c6ca7fc10cbf5823a347f85a81eca6" />
 	<File name="Modules/ModTools.lua" part="program" sha1="3e598acc265c118cdeb9da2bea0de3e33d6511ff" />
 	<File name="Modules/PantheonTools.lua" part="program" sha1="ebe91a7d8f8444a6061acf4758da0e775cc8c314" />

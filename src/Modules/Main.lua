@@ -215,7 +215,7 @@ function main:Init()
 	end
 	self.controls.forkLabel = new("LabelControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, 148, -26, 0, 16, "")
 	self.controls.forkLabel.label = function()
-		return "^8PoB Community Fork"
+		return "^8PoB for Last Epoch"
 	end
 	self.controls.versionLabel = new("LabelControl", {"BOTTOMLEFT",self.anchorMain,"BOTTOMLEFT"}, 148, -2, 0, 16, "")
 	self.controls.versionLabel.label = function()
