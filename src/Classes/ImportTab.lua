@@ -83,7 +83,7 @@ You can get this from your web browser's cookies while logged into the Path of E
         return self.charImportMode == "SELECTCHAR"
     end
     self.controls.charImportHeader = new("LabelControl", { "TOPLEFT", self.controls.charSelect, "BOTTOMLEFT" }, 0, 16, 200, 16, "Import:")
-    self.controls.charImportTree = new("ButtonControl", { "LEFT", self.controls.charImportHeader, "RIGHT" }, 8, 0, 170, 20, "Passive Tree and Jewels", function()
+    self.controls.charImportTree = new("ButtonControl", { "LEFT", self.controls.charImportHeader, "RIGHT" }, 8, 0, 170, 20, "Passive Tree and Skills", function()
         if self.build.spec:CountAllocNodes() > 0 then
             main:OpenConfirmPopup("Character Import", "Importing the passive tree will overwrite your current tree.", "Import", function()
                 self:DownloadPassiveTree()
@@ -95,16 +95,14 @@ You can get this from your web browser's cookies while logged into the Path of E
     self.controls.charImportTree.enabled = function()
         return self.charImportMode == "SELECTCHAR"
     end
-    self.controls.charImportTreeClearJewels = new("CheckBoxControl", { "LEFT", self.controls.charImportTree, "RIGHT" }, 90, 0, 18, "Delete jewels:", nil, "Delete all existing jewels when importing.", true)
-    self.controls.charImportItems = new("ButtonControl", { "LEFT", self.controls.charImportTree, "LEFT" }, 0, 36, 110, 20, "Items and Skills", function()
+    self.controls.charImportItems = new("ButtonControl", { "LEFT", self.controls.charImportTree, "LEFT" }, 0, 36, 110, 20, "Items", function()
         self:DownloadItems()
     end)
     self.controls.charImportItems.enabled = function()
         return self.charImportMode == "SELECTCHAR"
     end
-    self.controls.charImportItemsClearSkills = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 85, 0, 18, "Delete skills:", nil, "Delete all existing skills when importing.", true)
-    self.controls.charImportItemsClearItems = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 220, 0, 18, "Delete equipment:", nil, "Delete all equipped items when importing.", true)
-    self.controls.charImportItemsIgnoreWeaponSwap = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 380, 0, 18, "Ignore weapon swap:", nil, "Ignore items and skills in weapon swap.", false)
+    self.controls.charImportItemsClearItems = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 120, 0, 18, "Delete equipment:", nil, "Delete all equipped items when importing.", true)
+    self.controls.charImportItemsIgnoreWeaponSwap = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 280, 0, 18, "Ignore weapon swap:", nil, "Ignore items and skills in weapon swap.", false)
     self.controls.charBanditNote = new("LabelControl", { "TOPLEFT", self.controls.charImportHeader, "BOTTOMLEFT" }, 0, 50, 200, 14, "^7Tip: After you finish importing a character, make sure you update the bandit choice,\nas it cannot be imported.")
 
     self.controls.charClose = new("ButtonControl", { "TOPLEFT", self.controls.charImportHeader, "BOTTOMLEFT" }, 0, 90, 60, 20, "Close", function()
@@ -538,16 +536,7 @@ function ImportTabClass:DownloadItems()
 end
 
 function ImportTabClass:ImportPassiveTreeAndJewels(charData)
-    if self.controls.charImportTreeClearJewels.state then
-        for _, slot in pairs(self.build.itemsTab.slots) do
-            if slot.selItemId ~= 0 and slot.nodeId then
-                self.build.itemsTab.build.spec.ignoreAllocatingSubgraph = true -- ignore allocated cluster nodes on Import when Delete Jewel is true, clean slate
-                self.build.itemsTab:DeleteItem(self.build.itemsTab.items[slot.selItemId])
-            end
-        end
-    end
-
-    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
+    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
     self.build.spec:AddUndoState()
     self.build.characterLevel = charData.level
     self.build.characterLevelAutoMode = false

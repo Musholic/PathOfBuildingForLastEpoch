@@ -154,7 +154,7 @@ function PassiveSpecClass:Load(xml, dbFileName)
 				end
 			end
 		end
-		self:ImportFromNodeList(tonumber(xml.attrib.classId), tonumber(xml.attrib.ascendClassId), hashList, self.hashOverrides, masteryEffects)
+		self:ImportFromNodeList(tonumber(xml.attrib.classId), tonumber(xml.attrib.ascendClassId), nil, hashList, self.hashOverrides, masteryEffects)
 	elseif url then
 		self:DecodeURL(url)
 	end
@@ -214,7 +214,7 @@ function PassiveSpecClass:PostLoad()
 end
 
 -- Import passive spec from the provided class IDs and node hash list
-function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, hashList, hashOverrides, masteryEffects, treeVersion)
+function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, hashList, hashOverrides, masteryEffects, treeVersion)
   if hashOverrides == nil then hashOverrides = {} end
 	if treeVersion and treeVersion ~= self.treeVersion then
 		self:Init(treeVersion)
@@ -257,6 +257,12 @@ function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, hashList, h
 		if node then
 			node.alloc = true
 			self.allocNodes[id] = node
+		end
+	end
+
+	if abilities then
+		for index, skillId in ipairs(abilities) do
+			self.build.skillsTab:SelSkill(index, skillId)
 		end
 	end
 
@@ -1488,7 +1494,7 @@ function PassiveSpecClass:CreateUndoState()
 end
 
 function PassiveSpecClass:RestoreUndoState(state, treeVersion)
-	self:ImportFromNodeList(state.classId, state.ascendClassId, state.hashList, state.hashOverrides, state.masteryEffects, treeVersion or state.treeVersion)
+	self:ImportFromNodeList(state.classId, state.ascendClassId, state.abilities, state.hashList, state.hashOverrides, state.masteryEffects, treeVersion or state.treeVersion)
 	self:SetWindowTitleWithBuildClass()
 end
 

@@ -59,6 +59,7 @@ local SkillsTabClass = newClass("SkillsTab", "UndoHandler", "ControlHost", "Cont
 		self.controls['skillLabel-' .. i] = new("LabelControl", { "TOPLEFT", self.controls.skillsSection, "TOPLEFT" }, 20, 24 * i, 0, 16, "^7Skill " .. i .. ":")
 		self.controls['skill-' .. i] = new("DropDownControl", { "LEFT", self.controls['skillLabel-' .. i], "RIGHT" }, 10, 0, 140, 20, nil, function(index, value)
 			self:SelSkill(i, value.treeId)
+			self.build.spec:BuildAllDependsAndPaths()
 		end)
 	end
 
@@ -327,33 +328,6 @@ function SkillsTabClass:Save(xml)
 				mainActiveSkill = tostring(socketGroup.mainActiveSkill),
 				mainActiveSkillCalcs = tostring(socketGroup.mainActiveSkillCalcs),
 			} }
-			for _, gemInstance in ipairs(socketGroup.gemList) do
-				t_insert(node, { elem = "Gem", attrib = {
-					nameSpec = gemInstance.nameSpec,
-					skillId = gemInstance.skillId,
-					gemId = gemInstance.gemData and gemInstance.gemData.gameId,
-					variantId = gemInstance.gemData and gemInstance.gemData.variantId,
-					level = tostring(gemInstance.level),
-					quality = tostring(gemInstance.quality),
-					qualityId = gemInstance.qualityId,
-					enabled = tostring(gemInstance.enabled),
-					enableGlobal1 = tostring(gemInstance.enableGlobal1),
-					enableGlobal2 = tostring(gemInstance.enableGlobal2),
-					count = tostring(gemInstance.count),
-					skillPart = gemInstance.skillPart and tostring(gemInstance.skillPart),
-					skillPartCalcs = gemInstance.skillPartCalcs and tostring(gemInstance.skillPartCalcs),
-					skillStageCount = gemInstance.skillStageCount and tostring(gemInstance.skillStageCount),
-					skillStageCountCalcs = gemInstance.skillStageCountCalcs and tostring(gemInstance.skillStageCountCalcs),
-					skillMineCount = gemInstance.skillMineCount and tostring(gemInstance.skillMineCount),
-					skillMineCountCalcs = gemInstance.skillMineCountCalcs and tostring(gemInstance.skillMineCountCalcs),
-					skillMinion = gemInstance.skillMinion,
-					skillMinionCalcs = gemInstance.skillMinionCalcs,
-					skillMinionItemSet = gemInstance.skillMinionItemSet and tostring(gemInstance.skillMinionItemSet),
-					skillMinionItemSetCalcs = gemInstance.skillMinionItemSetCalcs and tostring(gemInstance.skillMinionItemSetCalcs),
-					skillMinionSkill = gemInstance.skillMinionSkill and tostring(gemInstance.skillMinionSkill),
-					skillMinionSkillCalcs = gemInstance.skillMinionSkillCalcs and tostring(gemInstance.skillMinionSkillCalcs),
-				} })
-			end
 			t_insert(child, node)
 		end
 	end
@@ -662,7 +636,6 @@ function SkillsTabClass:SelSkill(index, skillId)
 	else
 		self.socketGroupList[index] = nil
 	end
-	self.build.spec:BuildAllDependsAndPaths()
 	self:AddUndoState()
 	self.build.buildFlag = true
 end

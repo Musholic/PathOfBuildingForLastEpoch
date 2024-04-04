@@ -229,6 +229,7 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 	for i=1,5 do
 		self.controls["skillDrops-"..i] = new("DropDownControl", {"LEFT",self.controls.ascendDrop,"RIGHT"}, 8 + 128 * (i - 1), 0, 120, 20, nil, function(index, value)
 			self.skillsTab:SelSkill(i, value.treeId)
+			self.spec:BuildAllDependsAndPaths()
 		end)
 	end
 
