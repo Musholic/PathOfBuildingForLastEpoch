@@ -227,11 +227,8 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 		self.buildFlag = true
 	end)
 	for i=1,5 do
-		self.controls["abilityDrops-"..i] = new("DropDownControl", {"LEFT",self.controls.ascendDrop,"RIGHT"}, 8 + 128 * (i - 1), 0, 120, 20, nil, function(index, value)
-			self.spec.curAbilities[i] = value.treeId
-			self.spec:BuildAllDependsAndPaths()
-			self.spec:AddUndoState()
-			self.buildFlag = true
+		self.controls["skillDrops-"..i] = new("DropDownControl", {"LEFT",self.controls.ascendDrop,"RIGHT"}, 8 + 128 * (i - 1), 0, 120, 20, nil, function(index, value)
+			self.skillsTab:SelSkill(i, value.treeId)
 		end)
 	end
 
@@ -496,24 +493,12 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 	-- Skills
 	self.controls.mainSkillLabel = new("LabelControl", {"TOPLEFT",self.anchorSideBar,"TOPLEFT"}, 0, 80, 300, 16, "^7Main Skill:")
 	self.controls.mainSocketGroup = new("DropDownControl", {"TOPLEFT",self.controls.mainSkillLabel,"BOTTOMLEFT"}, 0, 2, 300, 18, nil, function(index, value)
-		self.mainSocketGroup = index
+		self.mainSocketGroup = value.val
 		self.modFlag = true
 		self.buildFlag = true
 	end)
 	self.controls.mainSocketGroup.maxDroppedWidth = 500
-	self.controls.mainSocketGroup.tooltipFunc = function(tooltip, mode, index, value)
-		local socketGroup = self.skillsTab.socketGroupList[index]
-		if socketGroup and tooltip:CheckForUpdate(socketGroup, self.outputRevision) then
-			self.skillsTab:AddSocketGroupTooltip(tooltip, socketGroup)
-		end
-	end
-	self.controls.mainSkill = new("DropDownControl", {"TOPLEFT",self.controls.mainSocketGroup,"BOTTOMLEFT"}, 0, 2, 300, 18, nil, function(index, value)
-		local mainSocketGroup = self.skillsTab.socketGroupList[self.mainSocketGroup]
-		mainSocketGroup.mainActiveSkill = index
-		self.modFlag = true
-		self.buildFlag = true
-	end)
-	self.controls.mainSkillPart = new("DropDownControl", {"TOPLEFT",self.controls.mainSkill,"BOTTOMLEFT",true}, 0, 2, 300, 18, nil, function(index, value)
+	self.controls.mainSkillPart = new("DropDownControl", {"TOPLEFT",self.controls.mainSocketGroup,"BOTTOMLEFT",true}, 0, 2, 300, 18, nil, function(index, value)
 		local mainSocketGroup = self.skillsTab.socketGroupList[self.mainSocketGroup]
 		local srcInstance = mainSocketGroup.displaySkillList[mainSocketGroup.mainActiveSkill].activeEffect.srcInstance
 		srcInstance.skillPart = index
@@ -624,8 +609,8 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 	self.partyTab = new("PartyTab", self)
 	self.configTab = new("ConfigTab", self)
 	self.itemsTab = new("ItemsTab", self)
-	self.treeTab = new("TreeTab", self)
 	self.skillsTab = new("SkillsTab", self)
+	self.treeTab = new("TreeTab", self)
 	self.calcsTab = new("CalcsTab", self)
 
 	-- Load sections from the build file
@@ -1140,16 +1125,16 @@ function buildMode:OnFrame(inputEvents)
 	self.controls.classDrop:SelByValue(self.spec.curClassId, "classId")
 	self.controls.ascendDrop.list = self.controls.classDrop:GetSelValue("ascendancies")
 	self.controls.ascendDrop:SelByValue(self.spec.curAscendClassId, "ascendClassId")
-	local abilityList = {{label = "None"}}
+
+	local skillList = { { label = "None"}}
 	for k,v in ipairs(self.spec.curClass.skills) do
-		table.insert(abilityList, v)
+		table.insert(skillList, v)
 	end
 	for i = 1,5 do
-		self.controls["abilityDrops-"..i].list = abilityList
-		self.controls["abilityDrops-"..i]:SelByValue(self.spec.curAbilities[i], "treeId")
+		self.controls["skillDrops-"..i].list = skillList
+		self.controls["skillDrops-"..i]:SelByValue(self.skillsTab.socketGroupList[i] and self.skillsTab.socketGroupList[i].id, "treeId")
 	end
 
-	local checkFabricatedGroups = self.buildFlag
 	if self.buildFlag then
 		-- Wipe Global Cache
 		wipeGlobalCache()
@@ -1175,12 +1160,6 @@ function buildMode:OnFrame(inputEvents)
 
 	-- Update contents of main skill dropdowns
 	self:RefreshSkillSelectControls(self.controls, self.mainSocketGroup, "")
-
-	-- Delete any possible fabricated groups
-	if checkFabricatedGroups then
-		deleteFabricatedGroup(self.skillsTab)
-		checkFabricatedGroups = false
-	end
 
 	-- Draw contents of current tab
 	local sideBarWidth = 312
@@ -1366,35 +1345,30 @@ end
 
 -- Refresh the set of controls used to select main group/skill/minion
 function buildMode:RefreshSkillSelectControls(controls, mainGroup, suffix)
-	controls.mainSocketGroup.selIndex = mainGroup
 	wipeTable(controls.mainSocketGroup.list)
 	for i, socketGroup in pairs(self.skillsTab.socketGroupList) do
-		controls.mainSocketGroup.list[i] = { val = i, label = socketGroup.displayLabel }
+		table.insert(controls.mainSocketGroup.list, { val = i, label = socketGroup.displayLabel })
+		if i == mainGroup then
+			controls.mainSocketGroup.selIndex = #controls.mainSocketGroup.list
+		end
 	end
-  controls.mainSocketGroup:CheckDroppedWidth(true)
+	controls.mainSocketGroup:CheckDroppedWidth(true)
 	if controls.warnings then controls.warnings.shown = #controls.warnings.lines > 0 end
 	if #controls.mainSocketGroup.list == 0 then
 		controls.mainSocketGroup.list[1] = { val = 1, label = "<No skills added yet>" }
-		controls.mainSkill.shown = false
 		controls.mainSkillPart.shown = false
 		controls.mainSkillMineCount.shown = false
 		controls.mainSkillStageCount.shown = false
 		controls.mainSkillMinion.shown = false
 		controls.mainSkillMinionSkill.shown = false
 	else
+		if not self.skillsTab.socketGroupList[mainGroup] then
+			controls.mainSocketGroup.selIndex = 1
+			mainGroup = controls.mainSocketGroup.list[1].val
+		end
 		local mainSocketGroup = self.skillsTab.socketGroupList[mainGroup]
 		local displaySkillList = mainSocketGroup["displaySkillList"..suffix]
 		local mainActiveSkill = mainSocketGroup["mainActiveSkill"..suffix] or 1
-		wipeTable(controls.mainSkill.list)
-		for i, activeSkill in ipairs(displaySkillList) do
-			local explodeSource = activeSkill.activeEffect.srcInstance.explodeSource
-			local explodeSourceName = explodeSource and (explodeSource.name or explodeSource.dn)
-			local colourCoded = explodeSourceName and ("From "..colorCodes[explodeSource.rarity or "NORMAL"]..explodeSourceName)
-			t_insert(controls.mainSkill.list, { val = i, label = colourCoded or activeSkill.activeEffect.grantedEffect.name })
-		end
-		controls.mainSkill.enabled = #displaySkillList > 1
-		controls.mainSkill.selIndex = mainActiveSkill
-		controls.mainSkill.shown = true
 		controls.mainSkillPart.shown = false
 		controls.mainSkillMineCount.shown = false
 		controls.mainSkillStageCount.shown = false

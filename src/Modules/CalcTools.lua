@@ -38,25 +38,6 @@ function calcLib.val(modStore, name, cfg)
 	end
 end
 
--- Validate the level of the given gem
-function calcLib.validateGemLevel(gemInstance)
-	local grantedEffect = gemInstance.grantedEffect or gemInstance.gemData.grantedEffect
-	if not grantedEffect.levels[gemInstance.level] then
-		-- Try limiting to the level range of the skill
-		gemInstance.level = m_max(1, gemInstance.level)
-		if #grantedEffect.levels > 0 then
-			gemInstance.level = m_min(#grantedEffect.levels, gemInstance.level)
-		end
-	end
-	if not grantedEffect.levels[gemInstance.level] and gemInstance.gemData and gemInstance.gemData.naturalMaxLevel then
-		gemInstance.level = gemInstance.gemData.naturalMaxLevel
-	end
-	if not grantedEffect.levels[gemInstance.level] then
-		-- That failed, so just grab any level
-		gemInstance.level = next(grantedEffect.levels)
-	end
-end
-
 -- Evaluate a skill type postfix expression
 function calcLib.doesTypeExpressionMatch(checkTypes, skillTypes, minionTypes)
 	local stack = { }
@@ -153,60 +134,8 @@ end
 -- Build table of stats for the given skill instance
 function calcLib.buildSkillInstanceStats(skillInstance, grantedEffect)
 	local stats = { }
-	if skillInstance.quality > 0 and grantedEffect.qualityStats then
-		local qualityId = skillInstance.qualityId or "Default"
-		local qualityStats = grantedEffect.qualityStats[qualityId]
-		if not qualityStats then
-			qualityStats = grantedEffect.qualityStats
-		end
-		for _, stat in ipairs(qualityStats) do
-			stats[stat[1]] = (stats[stat[1]] or 0) + math.modf(stat[2] * skillInstance.quality)
-		end
-	end
-	local level = grantedEffect.levels[skillInstance.level] or { }
-	local availableEffectiveness
-	local actorLevel = skillInstance.actorLevel or level.levelRequirement or 1
 	for index, stat in ipairs(grantedEffect.stats) do
-		-- Static value used as default (assumes statInterpolation == 1)
-		local statValue = level[index] or 1
-		if level.statInterpolation then
-			if level.statInterpolation[index] == 3 then
-				-- Effectiveness interpolation
-				if not availableEffectiveness then
-					availableEffectiveness =
-					(data.gameConstants["SkillDamageBaseEffectiveness"] + data.gameConstants["SkillDamageIncrementalEffectiveness"] * (actorLevel - 1)) * (grantedEffect.baseEffectiveness or 1)
-							* (1 + (grantedEffect.incrementalEffectiveness or 0)) ^ (actorLevel - 1)
-				end
-				statValue = round(availableEffectiveness * level[index])
-			elseif level.statInterpolation[index] == 2 then
-				-- Linear interpolation; I'm actually just guessing how this works
-
-				-- Order the levels, since sometimes they skip around
-				local orderedLevels = { }
-				local currentLevelIndex
-				for level, _ in pairs(grantedEffect.levels) do
-					t_insert(orderedLevels, level)
-				end
-				table.sort(orderedLevels)
-				for idx, level in ipairs(orderedLevels) do
-					if skillInstance.level == level then
-						currentLevelIndex = idx
-					end
-				end
-
-				if #orderedLevels > 1 then
-					local nextLevelIndex = m_min(currentLevelIndex + 1, #orderedLevels)
-					local nextReq = grantedEffect.levels[orderedLevels[nextLevelIndex]].levelRequirement
-					local prevReq = grantedEffect.levels[orderedLevels[nextLevelIndex - 1]].levelRequirement
-					local nextStat = grantedEffect.levels[orderedLevels[nextLevelIndex]][index]
-					local prevStat = grantedEffect.levels[orderedLevels[nextLevelIndex - 1]][index]
-					statValue = round(prevStat + (nextStat - prevStat) * (actorLevel - prevReq) / (nextReq - prevReq))
-				else
-					statValue = round(grantedEffect.levels[orderedLevels[currentLevelIndex]][index])
-				end
-			end
-		end
-		stats[stat] = (stats[stat] or 0) + statValue
+		stats[stat] = (stats[stat] or 0) + 1
 	end
 	if grantedEffect.constantStats then
 		for _, stat in ipairs(grantedEffect.constantStats) do

@@ -781,7 +781,7 @@ function cacheSkillUUID(skill, env)
 		end
 	end
 
-	for i, group in ipairs(env.build.skillsTab.socketGroupList) do
+	for i, group in pairs(env.build.skillsTab.socketGroupList) do
 		if skill.socketGroup == group then
 			groupIdx = i
 			break
@@ -832,24 +832,6 @@ end
 function removeDeleteGroupEntry(name)
 	if GlobalCache.deleteGroup[name] then
 		GlobalCache.deleteGroup[name] = nil
-	end
-end
-
--- Delete a skill-group entry from the skill list if it has
---   been marked for deletion and nothing over-wrote that
-function deleteFabricatedGroup(skillsTab)
-	for index, socketGroup in ipairs(skillsTab.controls.groupList.list) do
-		if GlobalCache.deleteGroup[socketGroup.label] then
-			t_remove(skillsTab.controls.groupList.list, index)
-			if skillsTab.displayGroup == socketGroup then
-				skillsTab:SetDisplayGroup()
-			end
-			skillsTab:AddUndoState()
-			skillsTab.build.buildFlag = true
-			skillsTab.controls.groupList.selValue = nil
-			wipeTable(GlobalCache.deleteGroup)
-			break
-		end
 	end
 end
 

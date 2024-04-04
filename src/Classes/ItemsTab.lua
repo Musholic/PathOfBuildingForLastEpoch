@@ -176,7 +176,7 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 			self.build.buildFlag = true
 			local mainSocketGroup = self.build.skillsTab.socketGroupList[self.build.mainSocketGroup]
 			if mainSocketGroup and mainSocketGroup.slot and self.slots[mainSocketGroup.slot].weaponSet == 2 then
-				for index, socketGroup in ipairs(self.build.skillsTab.socketGroupList) do
+				for index, socketGroup in pairs(self.build.skillsTab.socketGroupList) do
 					if socketGroup.slot and self.slots[socketGroup.slot].weaponSet == 1 then
 						self.build.mainSocketGroup = index
 						break
@@ -196,7 +196,7 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 			self.build.buildFlag = true
 			local mainSocketGroup = self.build.skillsTab.socketGroupList[self.build.mainSocketGroup]
 			if mainSocketGroup and mainSocketGroup.slot and self.slots[mainSocketGroup.slot].weaponSet == 1 then
-				for index, socketGroup in ipairs(self.build.skillsTab.socketGroupList) do
+				for index, socketGroup in pairs(self.build.skillsTab.socketGroupList) do
 					if socketGroup.slot and self.slots[socketGroup.slot].weaponSet == 2 then
 						self.build.mainSocketGroup = index
 						break
@@ -2035,7 +2035,7 @@ function ItemsTabClass:EnchantDisplayItem(enchantSlot)
 	local skillList = { }
 	local skillsUsed = { }
 	if haveSkills then
-		for _, socketGroup in ipairs(self.build.skillsTab.socketGroupList) do
+		for _, socketGroup in pairs(self.build.skillsTab.socketGroupList) do
 			for _, gemInstance in ipairs(socketGroup.gemList) do
 				if gemInstance.gemData then
 					for _, grantedEffect in ipairs(gemInstance.gemData.grantedEffectList) do

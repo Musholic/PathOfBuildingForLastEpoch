@@ -50,7 +50,6 @@ end
 
 -- Merge skill modifiers with given mod list
 function calcs.mergeSkillInstanceMods(env, modList, skillEffect, extraStats)
-	calcLib.validateGemLevel(skillEffect)
 	local grantedEffect = skillEffect.grantedEffect
 	local stats = calcLib.buildSkillInstanceStats(skillEffect, grantedEffect)
 	if extraStats and extraStats[1] then
@@ -420,7 +419,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	activeSkill.skillCfg = {
 		flags = bor(skillModFlags, activeSkill.weapon1Flags or activeSkill.weapon2Flags or 0),
 		keywordFlags = skillKeywordFlags,
-		skillName = activeGrantedEffect.name:gsub("^Vaal ",""):gsub("Summon Skeletons","Summon Skeleton"), -- This allows modifiers that target specific skills to also apply to their Vaal counterpart
+		skillName = activeGrantedEffect.name,
 		summonSkillName = activeSkill.summonSkill and activeSkill.summonSkill.activeEffect.grantedEffect.name,
 		skillGem = activeEffect.gemData,
 		skillGrantedEffect = activeGrantedEffect,
@@ -506,33 +505,12 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	-- Add active gem modifiers
 	activeEffect.actorLevel = activeSkill.actor.minionData and activeSkill.actor.level
 	calcs.mergeSkillInstanceMods(env, skillModList, activeEffect, skillModList:List(activeSkill.skillCfg, "ExtraSkillStat"))
-	activeEffect.grantedEffectLevel = activeGrantedEffect.levels[activeEffect.level]
+	activeEffect.grantedEffectLevel = {}
 
 	-- Add extra modifiers from granted effect level
 	local level = activeEffect.grantedEffectLevel
 	activeSkill.skillData.CritChance = level.critChance
-	if level.damageMultiplier then
-		skillModList:NewMod("Damage", "MORE", level.damageMultiplier, activeEffect.grantedEffect.modSource, ModFlag.Attack)
-	end
-	if level.attackTime then
-		activeSkill.skillData.attackTime = level.attackTime
-	end
-	if level.attackSpeedMultiplier then
-		skillModList:NewMod("Speed", "MORE", level.attackSpeedMultiplier, activeEffect.grantedEffect.modSource, ModFlag.Attack)
-	end
-	if level.cooldown then
-		activeSkill.skillData.cooldown = level.cooldown
-	end
-	if level.storedUses then
-		activeSkill.skillData.storedUses = level.storedUses
-	end
-	if level.soulPreventionDuration then
-		activeSkill.skillData.soulPreventionDuration = level.soulPreventionDuration
-	end
-	if level.PvPDamageMultiplier then
-		skillModList:NewMod("PvpDamageMultiplier", "MORE", level.PvPDamageMultiplier, activeEffect.grantedEffect.modSource)
-	end
-	
+
 	-- Add extra modifiers from other sources
 	activeSkill.extraSkillModList = { }
 	for _, value in ipairs(skillModList:List(activeSkill.skillCfg, "ExtraSkillMod")) do

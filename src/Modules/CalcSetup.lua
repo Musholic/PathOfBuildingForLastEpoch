@@ -1271,235 +1271,36 @@ function calcs.initEnv(build, mode, override, specEnv)
 
 		local supportLists = { }
 		local groupCfgList = { }
-		local processedSockets = {}
-		-- Process support gems adding them to applicable support lists
-		for index, group in ipairs(build.skillsTab.socketGroupList) do
-			local slot = group.slot and build.itemsTab.slots[group.slot]
-			group.slotEnabled = not slot or not slot.weaponSet or slot.weaponSet == (build.itemsTab.activeItemSet.useSecondWeaponSet and 2 or 1)
-			-- if group is main skill or group is enabled 
-			if index == env.mainSocketGroup or (group.enabled and group.slotEnabled) then
-				local slotName = group.slot and group.slot:gsub(" Swap","")
-				groupCfgList[slotName or "noSlot"] = groupCfgList[slotName or "noSlot"] or {}
-				groupCfgList[slotName or "noSlot"][group] = groupCfgList[slotName or "noSlot"][group] or {
-					slotName = slotName,
-					propertyModList = env.modDB:List({slotName = slotName}, "GemProperty")
-				}
-				local groupCfg = groupCfgList[slotName or "noSlot"][group]
-				local propertyModList = groupCfg.propertyModList
-				local targetListList = {}
-				if groupCfg.slotName then
-					supportLists[groupCfg.slotName] = supportLists[groupCfg.slotName] or {}
-					supportLists[groupCfg.slotName][group] = supportLists[groupCfg.slotName][group] or {}
-					t_insert(targetListList, supportLists[groupCfg.slotName][group])
-				else
-					supportLists[group] = supportLists[group] or {}
-					t_insert(targetListList, supportLists[group])
-				end
-
-				-- if not unique item that provides skills
-				if not group.source then
-					-- Add extra supports from the item this group is socketed in
-					for _, value in ipairs(env.modDB:List(groupCfg, "ExtraSupport")) do
-						local grantedEffect = env.data.skills[value.skillId]
-						-- Some skill gems share the same name as support gems, e.g. Barrage.
-						-- Since a support gem is expected here, if the first lookup returns a skill, then
-						-- prepending "Support" to the skillId will find the support version of the gem.
-						if grantedEffect and not grantedEffect.support then
-							grantedEffect = env.data.skills["Support"..value.skillId]
-						end
-						if grantedEffect then
-							for _, targetList in ipairs(targetListList) do
-								t_insert(targetList, {
-									grantedEffect = grantedEffect,
-									gemData = env.data.gems[env.data.gemForBaseName[grantedEffect.name:lower()] or env.data.gemForBaseName[(grantedEffect.name .. " Support"):lower()]],
-									level = value.level,
-									quality = 0,
-									enabled = true,
-								})
-							end
-						end
-					end
-				end
-
-				for gemIndex, gemInstance in ipairs(group.gemList) do
-					-- Add support gems from this group
-					if env.mode == "MAIN" then
-						gemInstance.displayEffect = nil
-						gemInstance.supportEffect = nil
-					end
-					if gemInstance.enabled then
-						local function processGrantedEffect(grantedEffect)
-							if not grantedEffect or not grantedEffect.support then
-								return
-							end
-							local supportEffect = {
-								grantedEffect = grantedEffect,
-								level = gemInstance.level,
-								quality = gemInstance.quality,
-								qualityId = gemInstance.qualityId,
-								srcInstance = gemInstance,
-								gemData = gemInstance.gemData,
-								superseded = false,
-								isSupporting = { },
-							}
-							if env.mode == "MAIN" then
-								gemInstance.displayEffect = supportEffect
-								gemInstance.supportEffect = supportEffect
-							end
-							if gemInstance.gemData then
-								local playerItems = env.player.itemList
-								local socketedIn = playerItems[groupCfg.slotName] and playerItems[groupCfg.slotName].sockets and playerItems[groupCfg.slotName].sockets[gemIndex]
-								applyGemMods(supportEffect, socketedIn and getGemModList(env, groupCfg, socketedIn.color, gemIndex) or propertyModList)
-								if not processedSockets[gemInstance] then
-									processedSockets[gemInstance] = true
-									applySocketMods(env, gemInstance.gemData, groupCfg, gemIndex, playerItems[groupCfg.slotName] and playerItems[groupCfg.slotName].name)
-									-- Keep track of the gem count for each color socketed in this group
-									groupCfg.intelligenceGems = (groupCfg.intelligenceGems or 0) + (gemInstance.gemData.tags.intelligence and 1 or 0)
-									groupCfg.dexterityGems = (groupCfg.dexterityGems or 0) + (gemInstance.gemData.tags.dexterity and 1 or 0)
-									groupCfg.strengthGems = (groupCfg.strengthGems or 0) + (gemInstance.gemData.tags.strength and 1 or 0)
-								end
-							end
-							-- Validate support gem level in case there is no active skill (and no full calculation)
-							calcLib.validateGemLevel(supportEffect)
-
-							for _, targetList in ipairs(targetListList) do
-								addBestSupport(supportEffect, targetList, env.mode)
-							end
-						end
-						if gemInstance.gemData then
-							processGrantedEffect(gemInstance.gemData.grantedEffect)
-							processGrantedEffect(gemInstance.gemData.secondaryGrantedEffect)
-						else
-							processGrantedEffect(gemInstance.grantedEffect)
-						end
-					end
-				end
-			end
-		end
-
 		-- Process active skills adding the applicable supports
 		local socketGroupSkillListList = { }
-		for index, group in ipairs(build.skillsTab.socketGroupList) do
-			if index == env.mainSocketGroup or (group.enabled and group.slotEnabled) then
-				local slotName = group.slot and group.slot:gsub(" Swap","")
-				groupCfgList[slotName or "noSlot"][group] = groupCfgList[slotName or "noSlot"][group] or {
+		for index, group in pairs(build.skillsTab.socketGroupList) do
+			if index == env.mainSocketGroup or group.enabled then
+				local slotName = group.slot
+				groupCfgList[slotName] = groupCfgList[slotName] or {}
+				groupCfgList[slotName][group] = groupCfgList[slotName][group] or {
 					slotName = slotName,
 					propertyModList = env.modDB:List({slotName = slotName}, "GemProperty")
 				}
-				local groupCfg = groupCfgList[slotName or "noSlot"][group]
-				local propertyModList = groupCfg.propertyModList
-				socketGroupSkillListList[slotName or "noSlot"] = socketGroupSkillListList[slotName or "noSlot"] or {}
-				socketGroupSkillListList[slotName or "noSlot"][group] = socketGroupSkillListList[slotName or "noSlot"][group] or {}
-				local socketGroupSkillList = socketGroupSkillListList[slotName or "noSlot"][group]
-				local slotHasActiveSkill = false
-
-				-- Create active skills
-				for gemIndex, gemInstance in ipairs(group.gemList) do
-					if gemInstance.enabled and (gemInstance.gemData or gemInstance.grantedEffect) then
-						local grantedEffectList = gemInstance.gemData and gemInstance.gemData.grantedEffectList or { gemInstance.grantedEffect }
-						for index, grantedEffect in ipairs(grantedEffectList) do
-							if not grantedEffect.support and not grantedEffect.unsupported and (not grantedEffect.hasGlobalEffect or gemInstance["enableGlobal"..index]) then
-								slotHasActiveSkill = true
-								local activeEffect = {
-									grantedEffect = grantedEffect,
-									level = gemInstance.level,
-									quality = gemInstance.quality,
-									qualityId = gemInstance.qualityId,
-									srcInstance = gemInstance,
-									gemData = gemInstance.gemData,
-								}
-								if gemInstance.gemData then
-									local playerItems = env.player.itemList
-									local socketedIn = playerItems[groupCfg.slotName] and playerItems[groupCfg.slotName].sockets and playerItems[groupCfg.slotName].sockets[gemIndex]
-									applyGemMods(activeEffect, socketedIn and getGemModList(env, groupCfg, socketedIn.color, gemIndex) or propertyModList)
-									if not processedSockets[gemInstance] then
-										processedSockets[gemInstance] = true
-										applySocketMods(env, gemInstance.gemData, groupCfg, gemIndex, playerItems[groupCfg.slotName] and playerItems[groupCfg.slotName].name)
-										-- Keep track of the gem count for each color socketed in this group
-										groupCfg.intelligenceGems = (groupCfg.intelligenceGems or 0) + (gemInstance.gemData.tags.intelligence and 1 or 0)
-										groupCfg.dexterityGems = (groupCfg.dexterityGems or 0) + (gemInstance.gemData.tags.dexterity and 1 or 0)
-										groupCfg.strengthGems = (groupCfg.strengthGems or 0) + (gemInstance.gemData.tags.strength and 1 or 0)
-									end
-								end
-								if env.mode == "MAIN" then
-									gemInstance.displayEffect = activeEffect
-								end
-								local appliedSupportList = {}
-								if not group.noSupports then
-									appliedSupportList = copyTable(supportLists[group] or supportLists[slotName][group], true)
-									-- add displayGemList for tooltip to display all gems linked to active skills
-									group.displayGemList = copyTable(group.gemList, true)
-									-- if skill granted by unique item, go through all support groups in slot
-									if group.source then 
-										if supportLists[slotName] then
-											-- add socketed supports from other socketGroups
-											for _, otherSocketGroup in ipairs(build.skillsTab.socketGroupList) do
-												if otherSocketGroup.slot and otherSocketGroup.slot == group.slot then
-													for _, gem in ipairs(otherSocketGroup.gemList) do
-														if gem.gemData and gem.gemData.grantedEffect and gem.gemData.grantedEffect.support then
-															t_insert(group.displayGemList, gem)
-														end
-													end
-												end
-											end
-											for _, supportGroup in pairs(supportLists[slotName]) do
-												for _, supportEffect in ipairs(supportGroup) do
-													addBestSupport(supportEffect, appliedSupportList, env.mode)
-												end
-											end
-										end
-									end
-									-- then add supports from crossLinked socketGroups
-									for crossLinkedSupportSlot, crossLinkedSupportGroup in pairs(env.crossLinkedSupportGroups) do
-										for _, crossLinkedSupportedSlot in ipairs(crossLinkedSupportGroup) do
-											if crossLinkedSupportedSlot == slotName and supportLists[crossLinkedSupportSlot] then
-												for _, otherSocketGroup in ipairs(build.skillsTab.socketGroupList) do 
-													if otherSocketGroup.slot and otherSocketGroup.slot == crossLinkedSupportSlot then 
-														for _, gem in ipairs(otherSocketGroup.gemList) do
-															if gem.gemData and gem.gemData.grantedEffect and gem.gemData.grantedEffect.support then
-																t_insert(group.displayGemList, gem)
-															end
-														end
-													end
-												end
-												for _, supportGroup in pairs(supportLists[crossLinkedSupportSlot]) do
-													for _, supportEffect in ipairs(supportGroup) do
-														addBestSupport(supportEffect, appliedSupportList, env.mode)
-													end
-												end
-											end
-										end
-									end
-								end
-								local activeSkill = calcs.createActiveSkill(activeEffect, appliedSupportList, env.player, group)
-								if gemInstance.gemData then
-									activeSkill.slotName = groupCfg.slotName
-								end
-								t_insert(socketGroupSkillList, activeSkill)
-								t_insert(env.player.activeSkillList, activeSkill)
-							end
-						end
-						if gemInstance.gemData and not accelerate.requirementsGems then
-							t_insert(env.requirementsTableGems, {
-								source = "Gem",
-								sourceGem = gemInstance,
-								Str = gemInstance.reqStr,
-								Dex = gemInstance.reqDex,
-								Int = gemInstance.reqInt,
-							})
-						end
-					end
-				end
-				
-				if not slotHasActiveSkill and group.displayGemList then
-					group.displayGemList = nil
-				end
+				socketGroupSkillListList[slotName] = socketGroupSkillListList[slotName] or {}
+				socketGroupSkillListList[slotName][group] = socketGroupSkillListList[slotName][group] or {}
+				local socketGroupSkillList = socketGroupSkillListList[slotName][group]
+				local groupCfg = groupCfgList[slotName][group]
+				local activeEffect = {
+					grantedEffect = group.grantedEffect,
+					srcInstance = group,
+					gemData = {group.grantedEffect},
+				}
+				applyGemMods(activeEffect, getGemModList(env, groupCfg))
+				local activeSkill = calcs.createActiveSkill(activeEffect, {}, env.player, group)
+				activeSkill.slotName = groupCfg.slotName
+				t_insert(socketGroupSkillList, activeSkill)
+				t_insert(env.player.activeSkillList, activeSkill)
 			end
 		end
 
 		-- Process calculated active skill lists
-		for index, group in ipairs(build.skillsTab.socketGroupList) do
-			local slotName = group.slot and group.slot:gsub(" Swap","")
+		for index, group in pairs(build.skillsTab.socketGroupList) do
+			local slotName = group.slot
 			socketGroupSkillListList[slotName or "noSlot"] = socketGroupSkillListList[slotName or "noSlot"] or {}
 			socketGroupSkillListList[slotName or "noSlot"][group] = socketGroupSkillListList[slotName or "noSlot"][group] or {}
 			local socketGroupSkillList = socketGroupSkillListList[slotName or "noSlot"][group]
@@ -1535,11 +1336,9 @@ function calcs.initEnv(build, mode, override, specEnv)
 					group.displayLabel = group.label
 				else
 					group.displayLabel = nil
-					for _, gemInstance in ipairs(group.gemList) do
-						local grantedEffect = gemInstance.gemData and gemInstance.gemData.grantedEffect or gemInstance.grantedEffect
-						if grantedEffect and not grantedEffect.support and gemInstance.enabled then
-							group.displayLabel = (group.displayLabel and group.displayLabel..", " or "") .. grantedEffect.name
-						end
+					local grantedEffect = group.grantedEffect
+					if grantedEffect and not grantedEffect.support and group.enabled then
+						group.displayLabel = grantedEffect.name
 					end
 					group.displayLabel = group.displayLabel or "<No active skills>"
 				end
@@ -1548,18 +1347,6 @@ function calcs.initEnv(build, mode, override, specEnv)
 				group.displaySkillList = socketGroupSkillList
 			elseif env.mode == "CALCS" then
 				group.displaySkillListCalcs = socketGroupSkillList
-			end
-
-			-- Check for enabled energy blade to see if we need to regenerate everything.
-			if not modDB.conditions["AffectedByEnergyBlade"] and group.enabled and group.slotEnabled then
-				for _, gemInstance in ipairs(group.gemList) do
-					local grantedEffect = gemInstance.gemData and gemInstance.gemData.grantedEffect or gemInstance.grantedEffect
-					if grantedEffect and not grantedEffect.support and gemInstance.enabled and grantedEffect.name == "Energy Blade" then
-						override.conditions = override.conditions or { }
-						t_insert(override.conditions, "AffectedByEnergyBlade")
-						return calcs.initEnv(build, mode, override, specEnv)
-					end
-				end
 			end
 		end
 

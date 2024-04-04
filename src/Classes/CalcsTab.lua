@@ -34,28 +34,14 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 
 	-- Special section for skill/mode selection
 	self:NewSection(3, "SkillSelect", 1, colorCodes.NORMAL, {{ defaultCollapsed = false, label = "View Skill Details", data = {
-		{ label = "Socket Group", { controlName = "mainSocketGroup", 
+		{ label = "Active Skill", { controlName = "mainSocketGroup",
 			control = new("DropDownControl", nil, 0, 0, 300, 16, nil, function(index, value) 
 				self.input.skill_number = index
 				self:AddUndoState()
 				self.build.buildFlag = true
-			end) {
-				tooltipFunc = function(tooltip, mode, index, value)
-					local socketGroup = self.build.skillsTab.socketGroupList[index]
-					if socketGroup and tooltip:CheckForUpdate(socketGroup, self.build.outputRevision) then
-						self.build.skillsTab:AddSocketGroupTooltip(tooltip, socketGroup)
-					end
-				end
-			}
-		}, },
-		{ label = "Active Skill", { controlName = "mainSkill", 
-			control = new("DropDownControl", nil, 0, 0, 300, 16, nil, function(index, value)
-				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
-				mainSocketGroup.mainActiveSkillCalcs = index
-				self.build.buildFlag = true
 			end)
 		}, },
-		{ label = "Skill Part", playerFlag = "multiPart", { controlName = "mainSkillPart", 
+		{ label = "Skill Part", playerFlag = "multiPart", { controlName = "mainSkillPart",
 			control = new("DropDownControl", nil, 0, 0, 250, 16, nil, function(index, value)
 				local mainSocketGroup = self.build.skillsTab.socketGroupList[self.input.skill_number]
 				local srcInstance = mainSocketGroup.displaySkillListCalcs[mainSocketGroup.mainActiveSkillCalcs].activeEffect.srcInstance

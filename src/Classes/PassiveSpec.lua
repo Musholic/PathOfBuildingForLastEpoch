@@ -154,7 +154,7 @@ function PassiveSpecClass:Load(xml, dbFileName)
 				end
 			end
 		end
-		self:ImportFromNodeList(tonumber(xml.attrib.classId), tonumber(xml.attrib.ascendClassId), tonumber(xml.attrib.secondaryAscendClassId or 0), hashList, self.hashOverrides, masteryEffects)
+		self:ImportFromNodeList(tonumber(xml.attrib.classId), tonumber(xml.attrib.ascendClassId), hashList, self.hashOverrides, masteryEffects)
 	elseif url then
 		self:DecodeURL(url)
 	end
@@ -214,7 +214,7 @@ function PassiveSpecClass:PostLoad()
 end
 
 -- Import passive spec from the provided class IDs and node hash list
-function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, hashList, hashOverrides, masteryEffects, treeVersion)
+function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, hashList, hashOverrides, masteryEffects, treeVersion)
   if hashOverrides == nil then hashOverrides = {} end
 	if treeVersion and treeVersion ~= self.treeVersion then
 		self:Init(treeVersion)
@@ -223,9 +223,6 @@ function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, 
 	self:ResetNodes()
 	self:SelectClass(classId)
 	self:SelectAscendClass(ascendClassId)
-	if abilities then
-		self.curAbilities = abilities
-	end
 	self.hashOverrides = hashOverrides
 	-- move above setting allocNodes so we can compare mastery with selection
 	wipeTable(self.masterySelections)
@@ -477,7 +474,6 @@ function PassiveSpecClass:SelectClass(classId)
 	local class = self.tree.classes[classId]
 	self.curClass = class
 	self.curClassName = class.name
-	self.curAbilities = {}
 
 	-- Allocate the new class's starting node
 	local startNode = self.nodes[class.startNodeId]
@@ -782,8 +778,8 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 		if nodeId:match("^" .. self.curClassName) then
 			self.visibleNodes[nodeId] = node
 		end
-		for _,ability in pairs(self.curAbilities) do
-			if ability and nodeId:match("^" .. ability) then
+		for _,ability in pairs(self.build.skillsTab.socketGroupList) do
+			if ability.id and nodeId:match("^" .. ability.id) then
 				self.visibleNodes[nodeId] = node
 			end
 		end
@@ -1492,7 +1488,7 @@ function PassiveSpecClass:CreateUndoState()
 end
 
 function PassiveSpecClass:RestoreUndoState(state, treeVersion)
-	self:ImportFromNodeList(state.classId, state.ascendClassId, state.secondaryAscendClassId, state.hashList, state.hashOverrides, state.masteryEffects, treeVersion or state.treeVersion)
+	self:ImportFromNodeList(state.classId, state.ascendClassId, state.hashList, state.hashOverrides, state.masteryEffects, treeVersion or state.treeVersion)
 	self:SetWindowTitleWithBuildClass()
 end
 

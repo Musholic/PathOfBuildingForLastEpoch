@@ -201,8 +201,8 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 				-- Node has a defined size (i.e. has artwork)
 				local vX = curTreeX - node.x
 				local nodeY = node.y
-				for id,ability in pairs(spec.curAbilities) do
-					if ability and nodeId:match("^" .. ability) then
+				for id,ability in pairs(build.skillsTab.socketGroupList) do
+					if ability.id and nodeId:match("^" .. ability.id) then
 						nodeY = nodeY + (id - 1) * (tree.decAbilityPosY + 1000)
 					end
 				end
@@ -380,8 +380,8 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 
 		-- Convert vertex coordinates to screen-space and add them to the coordinate array
 		local decY = 0
-		for id,ability in pairs(spec.curAbilities) do
-			if ability and connector.nodeId1:match("^" .. ability) then
+		for id,ability in pairs(build.skillsTab.socketGroupList) do
+			if ability.id and connector.nodeId1:match("^" .. ability.id) then
 				decY =  (id - 1) * (tree.decAbilityPosY + 1000)
 			end
 		end
@@ -408,8 +408,8 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 		if connector.nodeId1:match("^" .. spec.curClassName) then
 			renderConnector(connector)
 		else
-			for id,ability in pairs(spec.curAbilities) do
-				if ability and connector.nodeId1:match("^" .. ability) then
+			for _,ability in pairs(build.skillsTab.socketGroupList) do
+				if ability.id and connector.nodeId1:match("^" .. ability.id) then
 					renderConnector(connector)
 				end
 			end
@@ -542,8 +542,8 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 
 		-- Convert node position to screen-space
 		local nodeY = node.y
-		for id,ability in pairs(spec.curAbilities) do
-			if ability and nodeId:match("^" .. ability) then
+		for id,ability in pairs(build.skillsTab.socketGroupList) do
+			if ability.id and nodeId:match("^" .. ability.id) then
 				nodeY = nodeY + (id - 1) * (tree.decAbilityPosY + 1000)
 			end
 		end

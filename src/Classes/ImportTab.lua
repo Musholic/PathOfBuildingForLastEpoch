@@ -547,7 +547,7 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
         end
     end
 
-    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
+    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
     self.build.spec:AddUndoState()
     self.build.characterLevel = charData.level
     self.build.characterLevelAutoMode = false
@@ -801,7 +801,7 @@ end
 function ImportTabClass:GuessMainSocketGroup()
     local largestGroupSize = 0
     local largestGroupIndex = 1
-    for i, socketGroup in ipairs(self.build.skillsTab.socketGroupList) do
+    for i, socketGroup in pairs(self.build.skillsTab.socketGroupList) do
         if #socketGroup.gemList > largestGroupSize then
             largestGroupSize = #socketGroup.gemList
             largestGroupIndex = i
