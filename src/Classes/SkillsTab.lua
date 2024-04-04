@@ -338,7 +338,7 @@ function SkillsTabClass:Draw(viewPort, inputEvents)
 	end
 	for i = 1,5 do
 		self.controls['skill-' .. i].list = skillList
-		self.controls["skill-"..i]:SelByValue(self.socketGroupList[i] and self.socketGroupList[i].id, "treeId")
+		self.controls["skill-"..i]:SelByValue(self.socketGroupList[i] and self.socketGroupList[i].skillId, "treeId")
 	end
 
 	self:DrawControls(viewPort)

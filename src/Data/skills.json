@@ -1,8 +1,15 @@
 {
     "lu25ng": {
         "name": "Lunge",
-        "skillTypes": [],
-        "baseFlags": [],
-        "stats": []
+        "skillTypes": {
+            "2": true,
+            "10": true,
+            "32": true
+        },
+        "baseFlags": {
+            "spell": true
+        },
+        "stats": ["spell_minimum_base_fire_damage", "spell_maximum_base_fire_damage"],
+        "level": [10,20]
     }
 }

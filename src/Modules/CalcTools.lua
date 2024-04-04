@@ -134,8 +134,50 @@ end
 -- Build table of stats for the given skill instance
 function calcLib.buildSkillInstanceStats(skillInstance, grantedEffect)
 	local stats = { }
+	local level = grantedEffect.level
+	local availableEffectiveness
+	local actorLevel = skillInstance.actorLevel or 1
 	for index, stat in ipairs(grantedEffect.stats) do
-		stats[stat] = (stats[stat] or 0) + 1
+		-- Static value used as default (assumes statInterpolation == 1)
+		local statValue = level[index] or 1
+		if level.statInterpolation then
+			if level.statInterpolation[index] == 3 then
+				-- Effectiveness interpolation
+				if not availableEffectiveness then
+					availableEffectiveness =
+					(data.gameConstants["SkillDamageBaseEffectiveness"] + data.gameConstants["SkillDamageIncrementalEffectiveness"] * (actorLevel - 1)) * (grantedEffect.baseEffectiveness or 1)
+							* (1 + (grantedEffect.incrementalEffectiveness or 0)) ^ (actorLevel - 1)
+				end
+				statValue = round(availableEffectiveness * level[index])
+			elseif level.statInterpolation[index] == 2 then
+				-- Linear interpolation; I'm actually just guessing how this works
+
+				-- Order the levels, since sometimes they skip around
+				local orderedLevels = { }
+				local currentLevelIndex
+				for level, _ in pairs(grantedEffect.levels) do
+					t_insert(orderedLevels, level)
+				end
+				table.sort(orderedLevels)
+				for idx, level in ipairs(orderedLevels) do
+					if skillInstance.level == level then
+						currentLevelIndex = idx
+					end
+				end
+
+				if #orderedLevels > 1 then
+					local nextLevelIndex = m_min(currentLevelIndex + 1, #orderedLevels)
+					local nextReq = grantedEffect.levels[orderedLevels[nextLevelIndex]].levelRequirement
+					local prevReq = grantedEffect.levels[orderedLevels[nextLevelIndex - 1]].levelRequirement
+					local nextStat = grantedEffect.levels[orderedLevels[nextLevelIndex]][index]
+					local prevStat = grantedEffect.levels[orderedLevels[nextLevelIndex - 1]][index]
+					statValue = round(prevStat + (nextStat - prevStat) * (actorLevel - prevReq) / (nextReq - prevReq))
+				else
+					statValue = round(grantedEffect.levels[orderedLevels[currentLevelIndex]][index])
+				end
+			end
+		end
+		stats[stat] = (stats[stat] or 0) + statValue
 	end
 	if grantedEffect.constantStats then
 		for _, stat in ipairs(grantedEffect.constantStats) do

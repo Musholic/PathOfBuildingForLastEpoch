@@ -1133,7 +1133,7 @@ function buildMode:OnFrame(inputEvents)
 	end
 	for i = 1,5 do
 		self.controls["skillDrops-"..i].list = skillList
-		self.controls["skillDrops-"..i]:SelByValue(self.skillsTab.socketGroupList[i] and self.skillsTab.socketGroupList[i].id, "treeId")
+		self.controls["skillDrops-"..i]:SelByValue(self.skillsTab.socketGroupList[i] and self.skillsTab.socketGroupList[i].skillId, "treeId")
 	end
 
 	if self.buildFlag then
