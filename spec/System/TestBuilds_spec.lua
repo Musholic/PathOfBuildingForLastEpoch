@@ -9,10 +9,10 @@ local function fetchBuilds(path, buildList)
                 fetchBuilds(f, buildList)
             elseif file:match("^.+(%..+)$") == ".lua" then
                 buildList[file] = LoadModule(f)
-                local fileHnd = io.open(f:gsub(".lua$", ".json"), "r")
+                local fileHnd = io.open(f:gsub(".lua$", ".xml"), "r")
                 local fileText = fileHnd:read("*a")
                 fileHnd:close()
-                buildList[file].json = fileText
+                buildList[file].xml = fileText
             end
         end
     end
@@ -22,7 +22,7 @@ end
 expose("test all builds #builds", function()
     local buildList = fetchBuilds("../spec/TestBuilds")
     for buildName, testBuild in pairs(buildList) do
-        loadBuildFromJSON(testBuild.json)
+        loadBuildFromXML(testBuild.xml, buildName)
         testBuild.result = {}
         for key, value in pairs(testBuild.output) do
             -- Have to assign it to a temporary table here, as the tests will run later, when the 'build' isn't changing

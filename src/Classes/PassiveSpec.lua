@@ -785,7 +785,7 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 			self.visibleNodes[nodeId] = node
 		end
 		for _,ability in pairs(self.build.skillsTab.socketGroupList) do
-			if ability.id and nodeId:match("^" .. ability.id) then
+			if ability.skillId and nodeId:match("^" .. ability.skillId) then
 				self.visibleNodes[nodeId] = node
 			end
 		end

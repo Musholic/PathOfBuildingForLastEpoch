@@ -207,70 +207,17 @@ function SkillsTabClass:LoadSkill(node, skillSetId)
 	socketGroup.mainActiveSkill = tonumber(node.attrib.mainActiveSkill) or 1
 	socketGroup.mainActiveSkillCalcs = tonumber(node.attrib.mainActiveSkillCalcs) or 1
 	socketGroup.gemList = { }
-	for _, child in ipairs(node) do
-		local gemInstance = { }
-		gemInstance.nameSpec = sanitiseText(child.attrib.nameSpec or "")
-		if child.attrib.gemId then
-			local gemData
-			local possibleVariants = self.build.data.gemsByGameId[child.attrib.gemId]
-			if possibleVariants then
-				-- If it is a known gem, try to determine which variant is used
-				if child.attrib.variantId then
-					-- New save format from 3.23 that stores the specific variation (transfiguration)
-					gemData = possibleVariants[child.attrib.variantId]
-				elseif child.attrib.skillId then
-					-- Old format relying on the uniqueness of the granted effects id
-					for _, variant in pairs(possibleVariants) do
-						if variant.grantedEffectId == child.attrib.skillId then
-							gemData = variant
-							break
-						end
-					end
-				end
-			end
-			if gemData then
-				gemInstance.gemId = gemData.id
-				gemInstance.skillId = gemData.grantedEffectId
-				gemInstance.nameSpec = gemData.nameSpec
-			end
-		elseif child.attrib.skillId then
-			local grantedEffect = self.build.data.skills[child.attrib.skillId]
-			if grantedEffect then
-				gemInstance.gemId = self.build.data.gemForSkill[grantedEffect]
-				gemInstance.skillId = grantedEffect.id
-				gemInstance.nameSpec = grantedEffect.name
-			end
-		end
-		gemInstance.level = tonumber(child.attrib.level)
-		gemInstance.quality = tonumber(child.attrib.quality)
-		local nameSpecOverride, qualityOverrideId = SkillsTabClass:GetBaseNameAndQuality(gemInstance.nameSpec, child.attrib.qualityId)
-		gemInstance.nameSpec = nameSpecOverride
-		gemInstance.qualityId = qualityOverrideId
-
-		if gemInstance.gemData then
-			gemInstance.qualityId.list = self:getGemAltQualityList(gemInstance.gemData)
-		end
-		gemInstance.enabled = not child.attrib.enabled and true or child.attrib.enabled == "true"
-		gemInstance.enableGlobal1 = not child.attrib.enableGlobal1 or child.attrib.enableGlobal1 == "true"
-		gemInstance.enableGlobal2 = child.attrib.enableGlobal2 == "true"
-		gemInstance.count = tonumber(child.attrib.count) or 1
-		gemInstance.skillPart = tonumber(child.attrib.skillPart)
-		gemInstance.skillPartCalcs = tonumber(child.attrib.skillPartCalcs)
-		gemInstance.skillStageCount = tonumber(child.attrib.skillStageCount)
-		gemInstance.skillStageCountCalcs = tonumber(child.attrib.skillStageCountCalcs)
-		gemInstance.skillMineCount = tonumber(child.attrib.skillMineCount)
-		gemInstance.skillMineCountCalcs = tonumber(child.attrib.skillMineCountCalcs)
-		gemInstance.skillMinion = child.attrib.skillMinion
-		gemInstance.skillMinionCalcs = child.attrib.skillMinionCalcs
-		gemInstance.skillMinionItemSet = tonumber(child.attrib.skillMinionItemSet)
-		gemInstance.skillMinionItemSetCalcs = tonumber(child.attrib.skillMinionItemSetCalcs)
-		gemInstance.skillMinionSkill = tonumber(child.attrib.skillMinionSkill)
-		gemInstance.skillMinionSkillCalcs = tonumber(child.attrib.skillMinionSkillCalcs)
-		t_insert(socketGroup.gemList, gemInstance)
-	end
-	if node.attrib.skillPart and socketGroup.gemList[1] then
-		socketGroup.gemList[1].skillPart = tonumber(node.attrib.skillPart)
-	end
+	local skillId = node.attrib.skillId
+	local grantedEffect = self.build.data.skills[skillId] or {
+		--TODO: have exported data with necessary skill info (including name) into Data/skills directory
+		id = skillId,
+		name = skillId,
+		skillTypes = {},
+		baseFlags = {},
+		stats = {},
+	}
+	socketGroup.skillId = skillId
+	socketGroup.grantedEffect = grantedEffect
 	self:ProcessSocketGroup(socketGroup)
 	t_insert(self.skillSets[skillSetId].socketGroupList, socketGroup)
 end
@@ -327,6 +274,7 @@ function SkillsTabClass:Save(xml)
 				source = socketGroup.source,
 				mainActiveSkill = tostring(socketGroup.mainActiveSkill),
 				mainActiveSkillCalcs = tostring(socketGroup.mainActiveSkillCalcs),
+				skillId = socketGroup.skillId,
 			} }
 			t_insert(child, node)
 		end
@@ -621,7 +569,7 @@ end
 function SkillsTabClass:SelSkill(index, skillId)
 	if skillId then
 		self.socketGroupList[index] = {
-			grantedEffect = {
+			grantedEffect = self.build.data.skills[skillId] or {
 				--TODO: have exported data with necessary skill info (including name) into Data/skills directory
 				id = skillId,
 				name = skillId,
@@ -629,7 +577,7 @@ function SkillsTabClass:SelSkill(index, skillId)
 				baseFlags = {},
 				stats = {},
 			},
-			id = skillId,
+			skillId = skillId,
 			slot = "Skill " .. index,
 			enabled = true
 		}

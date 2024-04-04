@@ -5,6 +5,7 @@ from natsort import natsorted
 
 extractPath = os.getenv("LE_EXTRACT_DIR")
 prefabPath = extractPath + "PrefabInstance/"
+monoPath = extractPath + "MonoBehaviour/"
 
 
 def fix_and_filter_yaml_file(filepath, output_file_name):
@@ -31,6 +32,14 @@ def fix_and_filter_yaml_file(filepath, output_file_name):
 
     source_file.close()
     output_file.close()
+
+
+def load_yaml_file_with_tag_error(filepath):
+    fixed_filepath = filepath + '-fixed.yaml'
+    if not os.path.isfile(fixed_filepath):
+        fix_and_filter_yaml_file(filepath, fixed_filepath)
+    with open(fixed_filepath, "r", encoding='utf-8') as yamlFile:
+        return yaml.safe_load(yamlFile)
 
 
 def insert_newlines(string, every=128):

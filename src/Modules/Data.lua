@@ -12,42 +12,6 @@ local m_floor = math.floor
 local t_insert = table.insert
 local t_concat = table.concat
 
-local skillTypes = {
-	"act_str",
-	"act_dex",
-	"act_int",
-	"other",
-	"glove",
-	"minion",
-	"spectre",
-	"sup_str",
-	"sup_dex",
-	"sup_int",
-}
-local itemTypes = {
-	"axe",
-	"bow",
-	"claw",
-	"dagger",
-	"fishing",
-	"mace",
-	"staff",
-	"sword",
-	"wand",
-	"helmet",
-	"body",
-	"gloves",
-	"boots",
-	"shield",
-	"quiver",
-	"amulet",
-	"ring",
-	"belt",
-	"jewel",
-	"flask",
-	"tincture",
-}
-
 local function makeSkillMod(modName, modType, modVal, flags, keywordFlags, ...)
 	return {
 		name = modName,
@@ -641,6 +605,25 @@ Uber Pinnacle Boss adds the following modifiers:
 	]]..tostring(m_floor(data.misc.uberBossDPSMult * 100))..[[% of monster Damage of each type
 	]]..tostring(m_floor(data.misc.uberBossDPSMult * 4.25 * 100))..[[% of monster Damage total
 	]]..tostring(data.misc.uberBossPen)..[[% penetration]]
+end
+
+-- Load skills
+data.skills = readJsonFile("Data/skills.json")
+for skillId, grantedEffect in pairs(data.skills) do
+	grantedEffect.id = skillId
+	grantedEffect.modSource = "Skill:"..skillId
+	-- Add sources for skill mods, and check for global effects
+	for _, list in pairs({grantedEffect.baseMods, grantedEffect.qualityMods, grantedEffect.levelMods}) do
+		for _, mod in pairs(list) do
+			if mod.name then
+				processMod(grantedEffect, mod)
+			else
+				for _, mod in ipairs(mod) do
+					processMod(grantedEffect, mod)
+				end
+			end
+		end
+	end
 end
 
 -- Load minions

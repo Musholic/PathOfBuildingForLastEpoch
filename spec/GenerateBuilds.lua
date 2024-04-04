@@ -49,4 +49,6 @@ for filename, testBuild in pairs(buildList) do
     fileHnd:write("return {\n    ")
     fileHnd:write(buildTable("output", build.calcsTab.mainOutput) .. "\n}")
     fileHnd:close()
+    build.dbFileName = filename:gsub("^(.+)%..+$", "%1.xml")
+    build:SaveDBFile()
 end
