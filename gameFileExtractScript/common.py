@@ -6,6 +6,7 @@ from natsort import natsorted
 extractPath = os.getenv("LE_EXTRACT_DIR")
 prefabPath = extractPath + "PrefabInstance/"
 monoPath = extractPath + "MonoBehaviour/"
+resourcesPath = extractPath + "Resources/"
 
 
 def fix_and_filter_yaml_file(filepath, output_file_name):
@@ -20,14 +21,16 @@ def fix_and_filter_yaml_file(filepath, output_file_name):
             discard = False
         else:
             if not discard:
-                if next_id and not (line.startswith("MonoBehaviour") or line.startswith("GameObject") or line.startswith("RectTransform")):
+                if next_id and not (line.startswith("MonoBehaviour") or line.startswith("GameObject")
+                                    or line.startswith("RectTransform")):
                     discard = True
                 elif next_id:
                     output_file.write("--- " + next_id)
                     output_file.write(line)
                     output_file.write("  __fileId: " + next_id.replace("&", ""))
                     next_id = None
-                elif not line.endswith("{fileID: 0}\n") or line.replace(" ", "").startswith("-"):
+                elif not line.endswith("{fileID: 0}\n") or (line.replace(" ", "").startswith("-")
+                                                            and not line.replace(" ", "").startswith("-{fileID:0}")):
                     output_file.write(line)
 
     source_file.close()
@@ -39,7 +42,13 @@ def load_yaml_file_with_tag_error(filepath):
     if not os.path.isfile(fixed_filepath):
         fix_and_filter_yaml_file(filepath, fixed_filepath)
     with open(fixed_filepath, "r", encoding='utf-8') as yamlFile:
-        return yaml.safe_load(yamlFile)
+        if filepath.endswith(".asset"):
+            return yaml.safe_load(yamlFile)
+        else:
+            result = []
+            for data in yaml.load_all(yamlFile, Loader=yaml.BaseLoader):
+                result.append(data)
+            return result
 
 
 def insert_newlines(string, every=128):

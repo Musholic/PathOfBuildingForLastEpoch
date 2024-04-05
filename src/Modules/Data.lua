@@ -654,6 +654,13 @@ for skillId, grantedEffect in pairs(data.skills) do
 			end
 		end
 	end
+	--- Compute skill types
+	grantedEffect.skillTypes = {}
+	for name, type in pairs(SkillType) do
+		if bit.band(grantedEffect.skillTypeTags, type) > 0 then
+			grantedEffect.skillTypes[type] = true
+		end
+	end
 end
 
 -- Load minions

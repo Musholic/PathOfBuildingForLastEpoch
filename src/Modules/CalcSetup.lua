@@ -1358,9 +1358,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 					skillTypes = {},
 					baseFlags = {},
 					stats = {},
-					levels = {
-						[1] = {},
-					},
+					level = {},
 				},
 				level = 1,
 				quality = 0,

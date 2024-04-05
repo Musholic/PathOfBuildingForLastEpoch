@@ -505,7 +505,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	-- Add active gem modifiers
 	activeEffect.actorLevel = activeSkill.actor.minionData and activeSkill.actor.level
 	calcs.mergeSkillInstanceMods(env, skillModList, activeEffect, skillModList:List(activeSkill.skillCfg, "ExtraSkillStat"))
-	activeEffect.grantedEffectLevel = {}
+	activeEffect.grantedEffectLevel = activeGrantedEffect.level
 
 	-- Add extra modifiers from granted effect level
 	local level = activeEffect.grantedEffectLevel
