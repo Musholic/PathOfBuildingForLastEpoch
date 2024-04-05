@@ -21,65 +21,13 @@ return {
 	skill("durationTertiary", nil),
 	div = 1000,
 },
-["spell_minimum_base_physical_damage"] = {
+["spell_base_physical_damage"] = {
 	skill("PhysicalMin", nil),
-},
-["secondary_minimum_base_physical_damage"] = {
-	skill("PhysicalMin", nil),
-},
-["spell_maximum_base_physical_damage"] = {
 	skill("PhysicalMax", nil),
 },
-["secondary_maximum_base_physical_damage"] = {
-	skill("PhysicalMax", nil),
-},
-["spell_minimum_base_lightning_damage"] = {
-	skill("LightningMin", nil),
-},
-["secondary_minimum_base_lightning_damage"] = {
-	skill("LightningMin", nil),
-},
-["spell_maximum_base_lightning_damage"] = {
-	skill("LightningMax", nil),
-},
-["secondary_maximum_base_lightning_damage"] = {
-	skill("LightningMax", nil),
-},
-["spell_minimum_base_cold_damage"] = {
-	skill("ColdMin", nil),
-},
-["secondary_minimum_base_cold_damage"] = {
-	skill("ColdMin", nil),
-},
-["spell_maximum_base_cold_damage"] = {
-	skill("ColdMax", nil),
-},
-["secondary_maximum_base_cold_damage"] = {
-	skill("ColdMax", nil),
-},
-["spell_minimum_base_fire_damage"] = {
-	skill("FireMin", nil),
-},
-["secondary_minimum_base_fire_damage"] = {
-	skill("FireMin", nil),
-},
-["spell_maximum_base_fire_damage"] = {
-	skill("FireMax", nil),
-},
-["secondary_maximum_base_fire_damage"] = {
-	skill("FireMax", nil),
-},
-["spell_minimum_base_chaos_damage"] = {
-	skill("ChaosMin", nil),
-},
-["secondary_minimum_base_chaos_damage"] = {
-	skill("ChaosMin", nil),
-},
-["spell_maximum_base_chaos_damage"] = {
-	skill("ChaosMax", nil),
-},
-["secondary_maximum_base_chaos_damage"] = {
-	skill("ChaosMax", nil),
+["melee_base_physical_damage"] = {
+	mod("PhysicalMin", "BASE", nil, 0, KeywordFlag.Attack),
+	mod("PhysicalMax", "BASE", nil, 0, KeywordFlag.Attack),
 },
 ["spell_minimum_base_lightning_damage_per_removable_power_charge"] = {
 	skill("LightningMin", nil, { type = "Multiplier", var = "RemovablePowerCharge" }),

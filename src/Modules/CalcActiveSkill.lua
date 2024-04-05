@@ -386,7 +386,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	elseif not skillTypes[SkillType.Triggered] then
 		skillFlags.selfCast = true
 	end
-	if skillTypes[SkillType.Attack] then
+	if skillTypes[SkillType.Melee] then
 		skillKeywordFlags = bor(skillKeywordFlags, KeywordFlag.Attack)
 	end
 	if skillTypes[SkillType.Spell] and not skillFlags.cast then

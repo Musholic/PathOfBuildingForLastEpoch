@@ -38,6 +38,8 @@ def fix_and_filter_yaml_file(filepath, output_file_name):
 
 
 def load_yaml_file_with_tag_error(filepath):
+    if not os.path.isfile(filepath):
+        return {}
     fixed_filepath = filepath + '-fixed.yaml'
     if not os.path.isfile(fixed_filepath):
         fix_and_filter_yaml_file(filepath, fixed_filepath)

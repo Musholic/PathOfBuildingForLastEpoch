@@ -118,6 +118,7 @@ local formList = {
 	["^(%d+) to (%d+) (%a+) damage"] = "DMG",
 	["adds (%d+) to (%d+) (%a+) damage"] = "DMG",
 	["adds (%d+)%-(%d+) (%a+) damage"] = "DMG",
+	["^+(([%d%.]+)) melee (%a+) damage"] = "DMGATTACKS",
 	["adds (%d+) to (%d+) (%a+) damage to attacks"] = "DMGATTACKS",
 	["adds (%d+)%-(%d+) (%a+) damage to attacks"] = "DMGATTACKS",
 	["adds (%d+) to (%d+) (%a+) attack damage"] = "DMGATTACKS",

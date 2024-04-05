@@ -51,15 +51,11 @@
     "arcas": {
         "name": "Arcane Ascendance",
         "skillTypeTags": 131328,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "dot_base_lightning_damage"
         ],
         "level": [
-            9.0,
             9.0
         ]
     },
@@ -101,15 +97,11 @@
     "bh2": {
         "name": "Black Hole",
         "skillTypeTags": 4356,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_cold_damage",
-            "spell_maximum_base_cold_damage"
+            "dot_base_cold_damage"
         ],
         "level": [
-            18.0,
             18.0
         ]
     },
@@ -117,29 +109,24 @@
         "name": "Marrow Shards",
         "skillTypeTags": 257,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "spell_base_physical_damage"
         ],
         "level": [
-            22.0,
             22.0
         ]
     },
     "ch0fs": {
         "name": "Chthonic Fissure",
         "skillTypeTags": 16781608,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "264_base_fire_damage"
         ],
         "level": [
-            5.0,
             5.0
         ]
     },
@@ -168,14 +155,13 @@
         "name": "Shadow Cascade",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            20.0,
             20.0
         ]
     },
@@ -200,29 +186,21 @@
             "hit": true
         },
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "bow_base_lightning_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
     "dig5": {
         "name": "Disintegrate",
         "skillTypeTags": 4362,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage",
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "dot_base_fire_damage",
+            "dot_base_lightning_damage"
         ],
         "level": [
-            7.5,
-            7.5,
             7.5,
             7.5
         ]
@@ -230,15 +208,11 @@
     "dl73": {
         "name": "Drain Life",
         "skillTypeTags": 4384,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_necrotic_damage",
-            "spell_maximum_base_necrotic_damage"
+            "dot_base_necrotic_damage"
         ],
         "level": [
-            13.2,
             13.2
         ]
     },
@@ -246,14 +220,13 @@
         "name": "Devouring Orb",
         "skillTypeTags": 272,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_void_damage",
-            "spell_maximum_base_void_damage"
+            "spell_base_void_damage"
         ],
         "level": [
-            80.0,
             80.0
         ]
     },
@@ -289,20 +262,15 @@
         "name": "Elemental Nova",
         "skillTypeTags": 270,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage",
-            "spell_minimum_base_cold_damage",
-            "spell_maximum_base_cold_damage",
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "spell_base_fire_damage",
+            "spell_base_cold_damage",
+            "spell_base_lightning_damage"
         ],
         "level": [
-            6.0,
-            6.0,
-            6.0,
             6.0,
             6.0,
             6.0
@@ -312,14 +280,13 @@
         "name": "Earthquake",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -327,14 +294,13 @@
         "name": "Entangling Roots",
         "skillTypeTags": 4353,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "spell_base_physical_damage"
         ],
         "level": [
-            20.0,
             20.0
         ]
     },
@@ -355,15 +321,11 @@
     "exvol8": {
         "name": "Hail of Arrows",
         "skillTypeTags": 6145,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "6144_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -371,14 +333,13 @@
         "name": "Firebrand",
         "skillTypeTags": 520,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "melee_base_fire_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -393,14 +354,13 @@
         "name": "Runebolt",
         "skillTypeTags": 264,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "spell_base_fire_damage"
         ],
         "level": [
-            20.0,
             20.0
         ]
     },
@@ -408,14 +368,13 @@
         "name": "Soul Feast",
         "skillTypeTags": 288,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_necrotic_damage",
-            "spell_maximum_base_necrotic_damage"
+            "spell_base_necrotic_damage"
         ],
         "level": [
-            50.0,
             50.0
         ]
     },
@@ -423,14 +382,13 @@
         "name": "Fireball",
         "skillTypeTags": 264,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "spell_base_fire_damage"
         ],
         "level": [
-            25.0,
             25.0
         ]
     },
@@ -448,11 +406,9 @@
             "hit": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "0_base_fire_damage"
         ],
         "level": [
-            20.0,
             20.0
         ]
     },
@@ -467,14 +423,12 @@
         "name": "Frost Wall",
         "skillTypeTags": 4356,
         "baseFlags": {
-            "hit": true
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_cold_damage",
-            "spell_maximum_base_cold_damage"
+            "spell_base_cold_damage"
         ],
         "level": [
-            20.0,
             20.0
         ]
     },
@@ -482,14 +436,13 @@
         "name": "Flame Reave",
         "skillTypeTags": 520,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "melee_base_fire_damage"
         ],
         "level": [
-            16.0,
             16.0
         ]
     },
@@ -504,29 +457,24 @@
         "name": "Forge Strike",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
     "fs11": {
         "name": "Infernal Aura",
         "skillTypeTags": 131336,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "dot_base_fire_damage"
         ],
         "level": [
-            5.0,
             5.0
         ]
     },
@@ -541,32 +489,25 @@
         "name": "Gathering Storm",
         "skillTypeTags": 514,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "melee_base_lightning_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
     "gh0fl": {
         "name": "Ghostflame",
         "skillTypeTags": 4392,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage",
-            "spell_minimum_base_necrotic_damage",
-            "spell_maximum_base_necrotic_damage"
+            "dot_base_fire_damage",
+            "dot_base_necrotic_damage"
         ],
         "level": [
-            17.5,
-            17.5,
             17.5,
             17.5
         ]
@@ -582,29 +523,24 @@
         "name": "Vengeance",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
     "gy2dm": {
         "name": "Glyph of Dominion",
         "skillTypeTags": 4354,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "dot_base_lightning_damage"
         ],
         "level": [
-            7.5,
             7.5
         ]
     },
@@ -612,14 +548,13 @@
         "name": "Harvest",
         "skillTypeTags": 544,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_necrotic_damage",
-            "spell_maximum_base_necrotic_damage"
+            "melee_base_necrotic_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -634,14 +569,13 @@
         "name": "Hungering Souls",
         "skillTypeTags": 4384,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_necrotic_damage",
-            "spell_maximum_base_necrotic_damage"
+            "spell_base_necrotic_damage"
         ],
         "level": [
-            9.0,
             9.0
         ]
     },
@@ -649,14 +583,13 @@
         "name": "Hammer Throw",
         "skillTypeTags": 1025,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "projectile": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "throwing_base_physical_damage"
         ],
         "level": [
-            21.0,
             21.0
         ]
     },
@@ -670,15 +603,11 @@
     "is40": {
         "name": "Infernal Shade",
         "skillTypeTags": 4360,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "dot_base_fire_damage"
         ],
         "level": [
-            16.5,
             16.5
         ]
     },
@@ -693,14 +622,13 @@
         "name": "Javelin",
         "skillTypeTags": 1025,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "projectile": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "throwing_base_physical_damage"
         ],
         "level": [
-            36.0,
             36.0
         ]
     },
@@ -708,23 +636,29 @@
         "name": "Lightning Blast",
         "skillTypeTags": 258,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "spell_base_lightning_damage"
         ],
         "level": [
-            21.0,
             21.0
         ]
     },
     "lu25ng": {
         "name": "Lunge",
         "skillTypeTags": 513,
-        "baseFlags": {},
-        "stats": [],
-        "level": []
+        "baseFlags": {
+            "hit": true,
+            "melee": true
+        },
+        "stats": [
+            "melee_base_physical_damage"
+        ],
+        "level": [
+            2.0
+        ]
     },
     "ma6hdr": {
         "name": "Manifest Armor",
@@ -736,15 +670,11 @@
     "mas54": {
         "name": "Maelstrom",
         "skillTypeTags": 4356,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_cold_damage",
-            "spell_maximum_base_cold_damage"
+            "dot_base_cold_damage"
         ],
         "level": [
-            6.0,
             6.0
         ]
     },
@@ -773,14 +703,13 @@
         "name": "Mana Strike",
         "skillTypeTags": 514,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "melee_base_lightning_damage"
         ],
         "level": [
-            15.0,
             15.0
         ]
     },
@@ -788,14 +717,13 @@
         "name": "Multistrike",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -806,11 +734,9 @@
             "hit": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "bow_base_physical_damage"
         ],
         "level": [
-            6.0,
             6.0
         ]
     },
@@ -832,14 +758,12 @@
         "name": "Profane Veil",
         "skillTypeTags": 4384,
         "baseFlags": {
-            "hit": true
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_necrotic_damage",
-            "spell_maximum_base_necrotic_damage"
+            "spell_base_necrotic_damage"
         ],
         "level": [
-            10.0,
             10.0
         ]
     },
@@ -847,14 +771,13 @@
         "name": "Puncture",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -862,23 +785,29 @@
         "name": "Rip Blood",
         "skillTypeTags": 257,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "spell_base_physical_damage"
         ],
         "level": [
-            15.0,
             15.0
         ]
     },
     "re82ke": {
         "name": "Rebuke",
         "skillTypeTags": 257,
-        "baseFlags": {},
-        "stats": [],
-        "level": []
+        "baseFlags": {
+            "hit": true,
+            "spell": true
+        },
+        "stats": [
+            "spell_base_physical_damage"
+        ],
+        "level": [
+            40.0
+        ]
     },
     "rf1azz": {
         "name": "Reaper Form",
@@ -912,14 +841,13 @@
         "name": "Shield Bash",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -955,14 +883,13 @@
         "name": "Sacrifice",
         "skillTypeTags": 257,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "spell_base_physical_damage"
         ],
         "level": [
-            40.0,
             40.0
         ]
     },
@@ -998,14 +925,13 @@
         "name": "Smite",
         "skillTypeTags": 264,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "spell_base_fire_damage"
         ],
         "level": [
-            30.0,
             30.0
         ]
     },
@@ -1020,14 +946,13 @@
         "name": "Rive",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -1035,14 +960,13 @@
         "name": "Static Orb",
         "skillTypeTags": 258,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "spell_base_lightning_damage"
         ],
         "level": [
-            20.0,
             20.0
         ]
     },
@@ -1064,11 +988,12 @@
         "name": "Shield Rush",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage",
+            "melee_base_physical_damage"
         ],
         "level": [
             2.0,
@@ -1079,14 +1004,13 @@
         "name": "Shurikens",
         "skillTypeTags": 1025,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "projectile": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "throwing_base_physical_damage"
         ],
         "level": [
-            16.0,
             16.0
         ]
     },
@@ -1121,22 +1045,30 @@
     "st4th": {
         "name": "Smelter's Wrath",
         "skillTypeTags": 521,
-        "baseFlags": {},
-        "stats": [],
-        "level": []
+        "baseFlags": {
+            "hit": true,
+            "melee": true
+        },
+        "stats": [
+            "melee_base_physical_damage",
+            "melee_base_fire_damage"
+        ],
+        "level": [
+            1.0,
+            1.0
+        ]
     },
     "st31et": {
         "name": "Serpent Strike",
         "skillTypeTags": 577,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -1144,14 +1076,13 @@
         "name": "Shield Throw",
         "skillTypeTags": 1025,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "projectile": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "throwing_base_physical_damage"
         ],
         "level": [
-            45.0,
             45.0
         ]
     },
@@ -1166,14 +1097,13 @@
         "name": "Static",
         "skillTypeTags": 258,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "spell_base_lightning_damage"
         ],
         "level": [
-            50.0,
             50.0
         ]
     },
@@ -1181,14 +1111,13 @@
         "name": "Surge",
         "skillTypeTags": 514,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_lightning_damage",
-            "spell_maximum_base_lightning_damage"
+            "melee_base_lightning_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -1217,39 +1146,42 @@
         "name": "Swipe",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
     "sync5": {
         "name": "Synchronized Strike",
         "skillTypeTags": 513,
-        "baseFlags": {},
-        "stats": [],
-        "level": []
+        "baseFlags": {
+            "hit": true,
+            "melee": true
+        },
+        "stats": [
+            "melee_base_physical_damage"
+        ],
+        "level": [
+            5.0
+        ]
     },
     "tb47": {
         "name": "Ice Thorns",
         "skillTypeTags": 261,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage",
-            "spell_minimum_base_cold_damage",
-            "spell_maximum_base_cold_damage"
+            "spell_base_physical_damage",
+            "spell_base_cold_damage"
         ],
         "level": [
-            9.0,
-            9.0,
             9.0,
             9.0
         ]
@@ -1257,9 +1189,15 @@
     "te44": {
         "name": "Teleport",
         "skillTypeTags": 256,
-        "baseFlags": {},
-        "stats": [],
-        "level": []
+        "baseFlags": {
+            "hit": true
+        },
+        "stats": [
+            "258_base_lightning_damage"
+        ],
+        "level": [
+            2.0
+        ]
     },
     "th39": {
         "name": "Summon Thorn Totem",
@@ -1271,15 +1209,11 @@
     "to50": {
         "name": "Tornado",
         "skillTypeTags": 4353,
-        "baseFlags": {
-            "hit": true
-        },
+        "baseFlags": {},
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "dot_base_physical_damage"
         ],
         "level": [
-            6.0,
             6.0
         ]
     },
@@ -1294,14 +1228,13 @@
         "name": "Tempest Strike",
         "skillTypeTags": 519,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_cold_damage",
-            "spell_maximum_base_cold_damage"
+            "melee_base_cold_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -1309,14 +1242,13 @@
         "name": "Umbral Blades",
         "skillTypeTags": 1025,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "projectile": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "throwing_base_physical_damage"
         ],
         "level": [
-            12.0,
             12.0
         ]
     },
@@ -1324,14 +1256,13 @@
         "name": "Upheaval",
         "skillTypeTags": 513,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_physical_damage",
-            "spell_maximum_base_physical_damage"
+            "melee_base_physical_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -1339,14 +1270,13 @@
         "name": "Void Cleave",
         "skillTypeTags": 528,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "melee": true
         },
         "stats": [
-            "spell_minimum_base_void_damage",
-            "spell_maximum_base_void_damage"
+            "melee_base_void_damage"
         ],
         "level": [
-            2.0,
             2.0
         ]
     },
@@ -1368,14 +1298,13 @@
         "name": "Volcanic Orb",
         "skillTypeTags": 264,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "spell_minimum_base_fire_damage",
-            "spell_maximum_base_fire_damage"
+            "spell_base_fire_damage"
         ],
         "level": [
-            20.0,
             20.0
         ]
     },
