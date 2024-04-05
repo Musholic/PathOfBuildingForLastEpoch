@@ -53,7 +53,7 @@ local SkillsTabClass = newClass("SkillsTab", "UndoHandler", "ControlHost", "Cont
 	end)
 
 	-- Socket group list
-	self.controls.skillsSection = new("SectionControl", { "TOPLEFT", self, "TOPLEFT" }, 20, 54, 360, 160, "Skills")
+	self.controls.skillsSection = new("SectionControl", { "TOPLEFT", self, "TOPLEFT" }, 20, 54, 500, 160, "Skills")
 
 	for i = 1, 5 do
 		self.controls['skillLabel-' .. i] = new("LabelControl", { "TOPLEFT", self.controls.skillsSection, "TOPLEFT" }, 20, 24 * i, 0, 16, "^7Skill " .. i .. ":")
@@ -61,6 +61,22 @@ local SkillsTabClass = newClass("SkillsTab", "UndoHandler", "ControlHost", "Cont
 			self:SelSkill(i, value.treeId)
 			self.build.spec:BuildAllDependsAndPaths()
 		end)
+		self.controls['groupEnabled-'..i] = new("CheckBoxControl", { "LEFT", self.controls['skill-' .. i], "RIGHT" }, 70, 0, 20, "Enabled:", function(state)
+			self.socketGroupList[i].enabled = state
+			self:AddUndoState()
+			self.build.buildFlag = true
+		end)
+		self.controls['groupEnabled-'..i].shown = function()
+			return self.socketGroupList[i] ~= nil
+		end
+		self.controls['includeInFullDPS-'..i] = new("CheckBoxControl", { "LEFT", self.controls['groupEnabled-'..i], "RIGHT" }, 145, 0, 20, "Include in Full DPS:", function(state)
+			self.socketGroupList[i].includeInFullDPS = state
+			self:AddUndoState()
+			self.build.buildFlag = true
+		end)
+		self.controls['includeInFullDPS-'..i].shown = function()
+			return self.socketGroupList[i] ~= nil
+		end
 	end
 
 	-- Socket group details
@@ -101,28 +117,6 @@ local SkillsTabClass = newClass("SkillsTab", "UndoHandler", "ControlHost", "Cont
 	end
 	self.controls.groupSlot.enabled = function()
 		return self.displayGroup.source == nil
-	end
-	self.controls.groupEnabled = new("CheckBoxControl", { "LEFT", self.controls.groupSlot, "RIGHT" }, 70, 0, 20, "Enabled:", function(state)
-		self.displayGroup.enabled = state
-		self:AddUndoState()
-		self.build.buildFlag = true
-	end)
-	self.controls.includeInFullDPS = new("CheckBoxControl", { "LEFT", self.controls.groupEnabled, "RIGHT" }, 145, 0, 20, "Include in Full DPS:", function(state)
-		self.displayGroup.includeInFullDPS = state
-		self:AddUndoState()
-		self.build.buildFlag = true
-	end)
-	self.controls.groupCountLabel = new("LabelControl", { "LEFT", self.controls.includeInFullDPS, "RIGHT" }, 16, 0, 0, 16, "Count:")
-	self.controls.groupCountLabel.shown = function()
-		return self.displayGroup.source ~= nil
-	end
-	self.controls.groupCount = new("EditControl", { "LEFT", self.controls.groupCountLabel, "RIGHT" }, 4, 0, 60, 20, nil, nil, "%D", 2, function(buf)
-		self.displayGroup.groupCount = tonumber(buf) or 1
-		self:AddUndoState()
-		self.build.buildFlag = true
-	end)
-	self.controls.groupCount.shown = function()
-		return self.displayGroup.source ~= nil
 	end
 	self.controls.sourceNote = new("LabelControl", { "TOPLEFT", self.controls.groupSlotLabel, "TOPLEFT" }, 0, 30, 0, 16)
 	self.controls.sourceNote.shown = function()
@@ -337,8 +331,13 @@ function SkillsTabClass:Draw(viewPort, inputEvents)
 		table.insert(skillList, v)
 	end
 	for i = 1,5 do
+		local socketGroup = self.socketGroupList[i]
 		self.controls['skill-' .. i].list = skillList
-		self.controls["skill-"..i]:SelByValue(self.socketGroupList[i] and self.socketGroupList[i].skillId, "treeId")
+		self.controls["skill-"..i]:SelByValue(socketGroup and socketGroup.skillId, "treeId")
+		if socketGroup then
+			self.controls['groupEnabled-'..i].state = socketGroup.enabled
+			self.controls['includeInFullDPS-'..i].state = socketGroup.includeInFullDPS and socketGroup.enabled
+		end
 	end
 
 	self:DrawControls(viewPort)
