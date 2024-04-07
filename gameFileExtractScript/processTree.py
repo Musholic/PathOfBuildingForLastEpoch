@@ -3,11 +3,35 @@ import yaml
 import json
 from natsort import natsorted
 
+
+def get_tree_mod_value(stat_data):
+    value = str(stat_data['value'])
+    if not value:
+        return stat_data['statName']
+    value = float(value.replace("+", "").replace("%", "").replace("#", "")
+                  .replace('s', '').replace('x', '').replace('m', '') or 0)
+    if "%" in str(stat_data['value']):
+        value /= 100
+    elif int(value) == value:
+        value = int(value)
+    stat_data['baseValue'] = stat_data['value']
+    stat_data['value'] = value
+    if "Increased" in stat_data['statName']:
+        stat_data['type'] = 1
+    stat_data['tags'] = int(stat_data['tags'])
+    for k, v in skillTypes.items():
+        if k in stat_data['statName']:
+            stat_data['tags'] |= v
+    return get_mod_value(stat_data)
+
+
 with open("generatedAssets/passiveTreeExtract.yaml", "r") as yamlFile:
     data = yaml.safe_load(yamlFile)
 
 with open("generatedAssets/skillTreesExtract.yaml", "r") as yamlFile:
     skillTreesData = yaml.safe_load(yamlFile)
+
+construct_mod_data_list()
 
 for classInfo in data["trees"].values():
     tree = {
@@ -132,6 +156,7 @@ for classInfo in data["trees"].values():
                     stat = statData["value"] + " "
                 stat += statData["statName"]
                 tree["nodes"][passiveId]["stats"].append(stat)
+                # tree["nodes"][passiveId]["stats"].append(get_tree_mod_value(statData.copy()))
 
             if nbPoint == 0:
                 if not passiveData["requirements"]:
@@ -188,6 +213,7 @@ for classInfo in data["trees"].values():
                             stat = statData["value"] + " "
                         stat += statData["statName"]
                         tree["nodes"][skillId]["stats"].append(stat)
+                        # tree["nodes"][skillId]["stats"].append(get_tree_mod_value(statData.copy()))
 
                     if nbPoint == 0:
                         if not skillData["requirements"]:

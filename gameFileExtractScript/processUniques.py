@@ -22,7 +22,8 @@ for itemData in data:
         "mods": []
     }
     for mod in itemData["mods"]:
-        itemBase["mods"].append(get_mod_value(mod))
+        modValue = get_mod_value(mod)
+        itemBase["mods"].append(modValue)
 
     uniques[itemData["uniqueID"]] = itemBase
 

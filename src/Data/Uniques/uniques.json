@@ -9,7 +9,7 @@
         "mods": [
             "+(100-150)% Chance to Ignite on Fire Hit",
             "(20-80)% increased Fire Damage",
-            "(5-10)% increased Cast Speed"
+            "(5-10)% increased Fire Cast Speed"
         ]
     },
     "1": {
@@ -21,8 +21,8 @@
         },
         "mods": [
             "+(20-50)% Damage Dealt to Mana Before Health",
-            "+(70-130)% Critical Strike Multiplier",
-            "+(15-30)% Mana"
+            "+(70-130)% Spell Critical Strike Multiplier",
+            "(15-30)% increased Mana"
         ]
     },
     "2": {
@@ -36,8 +36,8 @@
             "+(20-40)% Cold Resistance",
             "+(40-200)% Freeze Rate Multiplier",
             "+40 Armor",
-            "+40% Chance to Chill on Hit",
-            "+40% Chance to Blind on Hit"
+            "+40% Cold Chance to Chill on Hit",
+            "+40% Cold Chance to Blind on Hit"
         ]
     },
     "3": {
@@ -49,10 +49,10 @@
         },
         "mods": [
             "+1 Maximum Companions",
-            "+(20-40)% Chance to Chill on Hit",
-            "+(20-50)% Increases the duration of doom you inflict",
+            "+(20-40)% Melee Chance to Chill on Hit",
+            "+(20-50)% Increased Chill Duration",
             "(20-30)% increased Melee Attack Speed",
-            "+(1-2) Level of Skills"
+            "+(1-2) Minion Level of Skills"
         ]
     },
     "4": {
@@ -68,7 +68,7 @@
             "+20% Void Damage Taken as Physical",
             "+20% Necrotic Damage Taken as Physical",
             "+(30-100) Armor",
-            "+(3-10)% Armor"
+            "(3-10)% more Armor"
         ]
     },
     "5": {
@@ -82,7 +82,7 @@
             "+(6-12)% Necrotic Penetration",
             "+(180-300) Stun Avoidance",
             "+(40-82) Health",
-            "+(36-48)% Increases the duration of doom you inflict"
+            "+(36-48)% Spell Necrotic Increased Chill Duration"
         ]
     },
     "6": {
@@ -111,8 +111,8 @@
             "+(30-70) Dodge Rating",
             "+1 Level of Skills",
             "+(30-45)% Chance to gain Haste for 1 second on Hit",
-            "(15-30)% increased Effect of Haste on You",
-            "(5-7)% increased Movement Speed"
+            "+(15-30)% Effect of Haste on You",
+            "+(5-7)% Movement Speed"
         ]
     },
     "8": {
@@ -136,10 +136,10 @@
             "level": 0
         },
         "mods": [
-            "+-30% Reduces the fire damage you take. Multiplicative with other modifiers.",
+            "30% less Elemental Damage Taken",
             "30% increased Elemental Damage",
-            "+30% Critical Strike Chance",
-            "+(30-80)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "30% increased Critical Strike Chance",
+            "+(30-80)% Elemental Damage Leeched as Health"
         ]
     },
     "10": {
@@ -164,9 +164,9 @@
             "level": 0
         },
         "mods": [
-            "+(15-30)% Attack Speed",
-            "(15-30)% increased Cast Speed",
-            "+(15-30)% Increases your movement speed if you have used a potion in the past 4 seconds",
+            "(15-30)% increased Potion Attack Speed",
+            "(15-30)% increased Potion Cast Speed",
+            "(15-30)% increased Potion Movement Speed",
             "+20% Current Health Lost per second",
             "+20% Missing Health gained as Ward per second"
         ]
@@ -191,9 +191,9 @@
         },
         "mods": [
             "+(50-100) Armor",
-            "-1% increased Health Regen",
+            "1% less Health Regen",
             "+15% Less Damage Taken while wielding a Two Handed Melee Weapon",
-            "+(30-40)% Health",
+            "(30-40)% increased Health",
             "(30-40)% increased Melee Damage"
         ]
     },
@@ -210,7 +210,7 @@
             "+(60-80) Mana",
             "+(60-80) Damage Reflected to Attackers",
             "+1 Spriggan Form",
-            "+(12-20)% Dark Protection (deprecated)"
+            "+(12-20)% Increased Area with Thorn Shield"
         ]
     },
     "15": {
@@ -224,8 +224,8 @@
             "+(50-70)% Chance to Poison on Hit",
             "+(50-70)% Chance to Slow on Hit",
             "(5-10)% increased Melee Attack Speed",
-            "+(45-60)% Dodge Rating",
-            "+(7-10)% Dark Protection (deprecated)"
+            "(45-60)% increased Dodge Rating",
+            "+(7-10)% Chance to Summon a Primal Serpent on kill with Serpent Strike"
         ]
     },
     "16": {
@@ -238,7 +238,7 @@
         "mods": [
             "+200 Armor",
             "(10-15)% increased Cast Speed",
-            "+(20-35)% Armor",
+            "(20-35)% increased Armor",
             "+80% Increased Necrotic Damage if you have been Hit Recently"
         ]
     },
@@ -263,10 +263,10 @@
             "level": 0
         },
         "mods": [
-            "+12% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+25% Ward Gained on Potion Use",
+            "12% increased Damage",
+            "25% increased Ward Gained on Potion Use",
             "+(24-60)% Necrotic Resistance",
-            "+-24% Duration of Stuns Received",
+            "24% reduced Duration of Stuns Received",
             "+1 Potion Health Converted to Ward"
         ]
     },
@@ -278,7 +278,7 @@
             "level": 0
         },
         "mods": [
-            "+(30-100)% Freeze Rate Multiplier",
+            "(30-100)% increased Freeze Rate Multiplier",
             "(10-20)% increased Movement Speed"
         ]
     },
@@ -291,7 +291,7 @@
         },
         "mods": [
             "(25-30)% increased Movement Speed",
-            "+(114-185)% Chance to Shock on Lightning Hit",
+            "+(115-185)% Chance to Shock on Lightning Hit",
             "+(10-15)% Increased Shock Duration "
         ]
     },
@@ -304,7 +304,7 @@
         },
         "mods": [
             "20% increased Movement Speed",
-            "+20% Increases your movement speed if you have used a potion in the past 4 seconds",
+            "20% increased Minion Movement Speed",
             "+(20-28)% Increased Healing Effectiveness",
             "+(20-28)% Minion Increased Healing Effectiveness",
             "+(80-120) Health",
@@ -321,7 +321,7 @@
         },
         "mods": [
             "+(17-37)% Poison Resistance",
-            "+(17-37)% Poison Resistance"
+            "+(17-37)% Minion Poison Resistance"
         ]
     },
     "23": {
@@ -334,8 +334,8 @@
         "mods": [
             "(50-100)% increased Throwing Damage",
             "+(30-60) Health",
-            "+(30-60)% Dodge Rating",
-            "+(5-10) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "(30-60)% increased Dodge Rating",
+            "+(5-10) Throwing Cold Damage",
             "+(18-30)% Chance to Throw an Axe at a nearby enemy on hit (1 second cooldown)"
         ]
     },
@@ -348,7 +348,7 @@
         },
         "mods": [
             "(65-85)% increased Melee Damage",
-            "+(5-10)% Reduces the fire damage you take. Multiplicative with other modifiers.",
+            "(5-10)% increased Damage Taken",
             "+(15-25) Health Gain on Kill",
             "(5-10)% increased Movement Speed"
         ]
@@ -362,10 +362,10 @@
         },
         "mods": [
             "+(140-240)% Increased Melee Stun Chance",
-            "+-1 A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "1% less Damage Leeched as Health",
             "+160 Armor",
             "+(50-100) Health",
-            "+(14-24)% Increased Stun Duration"
+            "+(14-24)% Melee Increased Stun Duration"
         ]
     },
     "26": {
@@ -390,7 +390,7 @@
         "mods": [
             "+(135-200) Dodge Rating",
             "(30-40)% increased Melee Attack Speed",
-            "+-1 Critical Strike Chance",
+            "1% less Critical Strike Chance",
             "+(18-28)% Chance to gain Haste for 1 second on Hit"
         ]
     },
@@ -444,7 +444,7 @@
         "mods": [
             "+(17-21) Melee Lightning Damage",
             "+(17-21) Spell Lightning Damage",
-            "+(-6--3) Mana Cost",
+            "-6 Totem Mana Cost",
             "+(3-6) Attunement",
             "+(3-6) Strength"
         ]
@@ -468,8 +468,8 @@
             "level": 50
         },
         "mods": [
-            "+90% Spell Lightning Damage",
-            "+90% Critical Strike Chance",
+            "90% increased Spell Lightning Damage",
+            "90% increased Spell Lightning Critical Strike Chance",
             "(16-24)% increased Mana Regen",
             "+(16-24) Spell Lightning Damage"
         ]
@@ -498,7 +498,7 @@
         },
         "mods": [
             "+(25-45) Melee Fire Damage",
-            "+(1-2) Chance to Ignite on Hit",
+            "+(1-2) Melee Chance to Ignite on Hit",
             "+(75-100)% Chance to gain a stack of Reen's Ire for 5 seconds on melee crit"
         ]
     },
@@ -527,12 +527,12 @@
             "level": 40
         },
         "mods": [
-            "+-3 Mana Cost",
-            "+(15-25)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "-3 Spell Fire Mana Cost",
+            "+(15-25)% SpreadingFlames Chance",
             "(120-170)% increased Fire Damage",
             "+(17-22) Spell Fire Damage",
-            "+2 Dark Protection (deprecated)",
-            "+1 Level of Skills"
+            "+2 Projectiles for Fireball",
+            "+1 Spell Fire Level of Skills"
         ]
     },
     "38": {
@@ -543,13 +543,13 @@
             "level": 0
         },
         "mods": [
-            "+(20-45)% Chance to Ignite on Hit",
+            "+(20-45)% Melee Chance to Ignite on Hit",
             "+(20-35)% Chance to Bleed on Melee Hit",
-            "+(20-45)% Chance to Chill on Hit",
-            "+(15-35)% Chance to Shock on Hit",
-            "+(20-45)% Chance to Slow on Hit",
-            "+(20-45)% Chance to Poison on Hit",
-            "+(20-45)% Chance to Blind on Hit",
+            "+(20-45)% Melee Chance to Chill on Hit",
+            "+(15-35)% Melee Chance to Shock on Hit",
+            "+(20-45)% Melee Chance to Slow on Hit",
+            "+(20-45)% Melee Chance to Poison on Hit",
+            "+(20-45)% Melee Chance to Blind on Hit",
             "13% increased Melee Attack Speed"
         ]
     },
@@ -561,12 +561,12 @@
             "level": 0
         },
         "mods": [
-            "+(70-120)% Minion Bow Damage",
-            "+(70-120)% Minion Spell Damage",
-            "+1 A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+1 A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(7-12)% Attack Speed",
-            "+(7-12)% Increases the number of spells your minions can cast per second"
+            "(70-120)% increased Minion Bow Damage",
+            "(70-120)% increased Minion Spell Damage",
+            "+1 Minion Bow Damage Leeched as Health",
+            "+1 Minion Spell Damage Leeched as Health",
+            "(7-12)% increased Minion Bow Attack Speed",
+            "(7-12)% increased Minion Cast Speed"
         ]
     },
     "40": {
@@ -577,7 +577,7 @@
             "level": 21
         },
         "mods": [
-            "+(45-60) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(45-60) Melee Necrotic Damage",
             "+(9-13) Intelligence"
         ]
     },
@@ -601,10 +601,10 @@
             "level": 20
         },
         "mods": [
-            "+13 Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+13 Spell Necrotic Damage",
             "+(130-170)% Chance to Ignite on Hit",
             "(130-170)% increased Fire Damage Over Time",
-            "+13% Reduces the fire damage you take. Multiplicative with other modifiers."
+            "13% increased Fire Damage Taken"
         ]
     },
     "43": {
@@ -631,10 +631,10 @@
             "level": 0
         },
         "mods": [
-            "(-12--5)% increased Melee Attack Speed",
+            "12% less Melee Attack Speed",
             "175% increased Poison Damage",
-            "+(120-180)% Chance to Poison on Hit",
-            "+1 Level of Skills"
+            "+(120-180)% Melee Chance to Poison on Hit",
+            "+1 Melee Poison Level of Skills"
         ]
     },
     "45": {
@@ -646,11 +646,11 @@
         },
         "mods": [
             "+(20-30) Melee Cold Damage",
-            "+(10-15)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+(10-15)% Cold Damage Leeched as Health",
             "+(5-15) Strength",
-            "+5 You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
-            "+(20-30) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(20-30)% Penetration can reduce effective resistance below 0%, increasing damage even against enemies with no resistance."
+            "+5 Melee Frostbite Chance",
+            "+(20-30) Minion Melee Cold Damage",
+            "+(20-30)% Melee Cold Penetration"
         ]
     },
     "46": {
@@ -674,7 +674,7 @@
         },
         "mods": [
             "+(50-66) Melee Physical Damage",
-            "+(15-25)% Cull on Hit",
+            "+(15-25)% Melee Cull on Hit",
             "+5 Strength",
             "+50% Overkill Damage Leeched as Health",
             "(15-25)% increased Melee Attack Speed",
@@ -690,8 +690,8 @@
         },
         "mods": [
             "+(37-57) Melee Fire Damage",
-            "(37-56)% increased Fire Damage",
-            "+70% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "(37-57)% increased Fire Damage",
+            "+70% Fire Damage Leeched as Health",
             "+(37-57) Spell Fire Damage"
         ]
     },
@@ -703,7 +703,7 @@
             "level": 15
         },
         "mods": [
-            "40% increased Melee Void Damage",
+            "+40 Melee Void Damage",
             "+(40-12500)% Void Penetration",
             "+(10-20)% Block Chance",
             "+(20-40) Health Gain on Block",
@@ -718,8 +718,8 @@
             "level": 0
         },
         "mods": [
-            "-1% increased Damage Taken on Block",
-            "+(-60--56)% Block Chance",
+            "(1-1000000)% less Damage Taken on Block",
+            "60% reduced Block Chance",
             "+(35-65) Health"
         ]
     },
@@ -731,7 +731,7 @@
             "level": 3
         },
         "mods": [
-            "+-50% Block Effectiveness",
+            "50% less Block Effectiveness",
             "+(80-180) Dodge Rating",
             "+(4-5) Health gained when you Dodge"
         ]
@@ -758,7 +758,7 @@
         },
         "mods": [
             "75% increased Fire Damage",
-            "(-25--5)% increased Fire Damage Taken on Block",
+            "25% less Fire Damage Taken on Block",
             "+75% Fire Resistance",
             "+1 Judgement",
             "+75% Increased Healing Effectiveness"
@@ -783,8 +783,8 @@
             "level": 0
         },
         "mods": [
-            "(-35--25)% increased Health Regen",
-            "+(50-90)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "35% less Health Regen",
+            "+(50-90)% Damage Leeched as Health"
         ]
     },
     "56": {
@@ -796,8 +796,8 @@
         },
         "mods": [
             "(100-160)% increased Damage While Transformed",
-            "(6-12)% increased Movement Speed",
-            "+(-25--15)% All Resistances"
+            "(6-12)% increased Transform Movement Speed",
+            "-25% Transform All Resistances"
         ]
     },
     "57": {
@@ -808,10 +808,10 @@
             "level": 0
         },
         "mods": [
-            "13% increased Cast Speed",
+            "13% increased Cold Cast Speed",
             "+(30-75)% Freeze Rate Multiplier",
             "+1 Snap Freeze",
-            "+(30-75)% Dark Protection (deprecated)"
+            "+(30-75)% increased Freeze Duration with Snap Freeze"
         ]
     },
     "58": {
@@ -823,8 +823,8 @@
         },
         "mods": [
             "+(30-50) Health",
-            "+(5-9) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+1 Dark Protection (deprecated)"
+            "+(5-9) Minion Melee Physical Damage",
+            "+1 You can Summon Wolves up to your Maximum Number of Companions"
         ]
     },
     "59": {
@@ -835,7 +835,7 @@
             "level": 0
         },
         "mods": [
-            "+(10-30)% Reduces the fire damage you take. Multiplicative with other modifiers.",
+            "(10-30)% increased Minion Damage Taken",
             "+(35-65)% Minion Critical Strike Multiplier",
             "+(5-10) Intelligence",
             "+(1-3) Sacrifice"
@@ -850,9 +850,9 @@
         },
         "mods": [
             "+(50-75) Health",
-            "+(10-16) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+1 Stun Immunity",
-            "+1 Dark Protection (deprecated)"
+            "+(10-16) Minion Melee Physical Damage",
+            "+1 Minion Stun Immunity",
+            "+1 You can Summon Wolves up to your Maximum Number of Companions"
         ]
     },
     "61": {
@@ -863,8 +863,8 @@
             "level": 0
         },
         "mods": [
-            "+1 Damage Taken as Fire",
-            "+(-15--10)% Reduces the fire damage you take. Multiplicative with other modifiers.",
+            "+1 Void Damage Taken as Fire",
+            "15% less Fire Damage Taken",
             "+(75-150) Mana",
             "+(75-150)% Increased Stun Immunity Duration"
         ]
@@ -877,8 +877,8 @@
             "level": 0
         },
         "mods": [
-            "+30% Critical Strike Chance",
-            "+-30% Critical Strike Multiplier",
+            "30% increased Critical Strike Chance",
+            "-30% Critical Strike Multiplier",
             "+(15-18) Ward Gained On 30% of Crits"
         ]
     },
@@ -892,7 +892,7 @@
         "mods": [
             "+(30-75)% Chance to Ignite on Hit",
             "(30-75)% increased Fire Damage Over Time",
-            "(13-1300)% increased Cast Speed",
+            "(13-1300)% increased Fire Cast Speed",
             "+1 Flame Ward"
         ]
     },
@@ -904,7 +904,7 @@
             "level": 29
         },
         "mods": [
-            "+(30-75)% Chance to Shock on Hit",
+            "+(30-75)% Spell Chance to Shock on Hit",
             "+(5-10)% Chance to Gain 75 Ward when you hit a Shocked Enemy",
             "+13 Spell Lightning Damage",
             "+1 Static"
@@ -920,7 +920,7 @@
         "mods": [
             "+(300-900) Minion Armor",
             "(5-10)% increased Movement Speed",
-            "+(5-10)% Increases your movement speed if you have used a potion in the past 4 seconds"
+            "(5-10)% increased Minion Movement Speed"
         ]
     },
     "66": {
@@ -932,7 +932,7 @@
         },
         "mods": [
             "+(40-70)% Chance to Chill on Hit",
-            "+13 Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+13 Melee Necrotic Damage",
             "+(7-13)% Cold Resistance",
             "+1 Maximum Skeletons"
         ]
@@ -945,11 +945,11 @@
             "level": 0
         },
         "mods": [
-            "+(15-45)% Chance to Ignite on Hit",
-            "+(15-45)% Chance to Chill on Hit",
-            "+(15-45)% Chance to Shock on Hit",
-            "+20% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(10-15)% Increases the duration of doom you inflict",
+            "+(15-45)% Elemental Chance to Ignite on Hit",
+            "+(15-45)% Elemental Chance to Chill on Hit",
+            "+(15-45)% Elemental Chance to Shock on Hit",
+            "+20% Elemental Damage Leeched as Health",
+            "+(10-15)% Increased Chill Duration",
             "+(10-15)% Increased Shock Duration ",
             "+(10-15)% Increased Ignite Duration "
         ]
@@ -962,13 +962,13 @@
             "level": 0
         },
         "mods": [
-            "+(-40--30)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+(-40--30)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+(-40--30)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+(30-40) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "40% less Potion Poison Damage Taken",
+            "40% less Potion Necrotic Damage Taken",
+            "40% less Potion Void Damage Taken",
+            "+(30-40) Potion Melee Necrotic Damage",
             "+(2-4) Vitality",
-            "+5% Current Health Drained per Second",
-            "+(30-40) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+5% Potion Current Health Drained per Second",
+            "+(30-40) Potion Spell Necrotic Damage"
         ]
     },
     "69": {
@@ -991,10 +991,10 @@
             "level": 0
         },
         "mods": [
-            "+(6-10)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
+            "(6-10)% more Spell Global Conditional Damage",
             "+(100-160)% Chance to Ignite on Fire Hit",
-            "+(100-160)% Chance to Ignite on Hit",
-            "+1 Dark Protection (deprecated)"
+            "+(100-160)% Necrotic Chance to Ignite on Hit",
+            "+1 Hungering Souls Base Damage Converted to Fire"
         ]
     },
     "71": {
@@ -1008,7 +1008,7 @@
             "+100% Damage Reflected",
             "+(40-50)% Chance to Bleed on Hit",
             "+(40-50)% Increased Bleed Duration ",
-            "+(20-40)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+(20-40)% Damage over Time Physical Damage Leeched as Health",
             "+20 Health gained on Kill per stack of Bleed on the Target"
         ]
     },
@@ -1021,11 +1021,11 @@
         },
         "mods": [
             "8% increased Mana Regen",
-            "13% increased Cast Speed",
+            "13% increased Physical Cast Speed",
             "21% increased Physical Spell Critical Strike Chance",
-            "+34% Increased Stun Chance",
+            "+34% Spell Physical Increased Stun Chance",
             "55% increased Health Regen",
-            "+89% Spell Physical Damage"
+            "89% increased Spell Physical Damage"
         ]
     },
     "73": {
@@ -1038,7 +1038,7 @@
         "mods": [
             "+(100-220)% Chance to Poison on Hit",
             "+1 Chance to inflict Plague on Hit",
-            "+(10-20)% More Damage Per Stack",
+            "(10-20)% more Damage over Time More Damage Per Stack",
             "+(3-6)% Current Health Drained per Second",
             "+(10-200)% Poison  Penetration with Plague "
         ]
@@ -1052,7 +1052,7 @@
         },
         "mods": [
             "(60-95)% increased Fire Damage",
-            "+(50-150)% Chance to Ignite on Hit",
+            "+(50-150)% Channelling Chance to Ignite on Hit",
             "+(60-95)% Increased Fire Aura Area"
         ]
     },
@@ -1065,7 +1065,7 @@
         },
         "mods": [
             "+(40-120)% Increased Chance To Find Potions",
-            "+(30-45)% Dodge Rating"
+            "(30-45)% increased Dodge Rating"
         ]
     },
     "76": {
@@ -1076,8 +1076,8 @@
             "level": 45
         },
         "mods": [
-            "+75% Elemental Resistance",
-            "+(15-30)% Chance to Gain 30 Ward when Hit",
+            "+75% Channelling Elemental Resistance",
+            "+(15-30)% Channelling Chance to Gain 30 Ward when Hit",
             "(45-75)% increased Lightning Damage"
         ]
     },
@@ -1123,7 +1123,7 @@
         },
         "mods": [
             "+(50-70) Melee Physical Damage",
-            "+70% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+70% Melee Physical Damage Leeched as Health",
             "+(30-50)% Increased Leech Rate",
             "+(30-50)% Increased Stun Duration",
             "+(4-8) Health Gain"
@@ -1154,9 +1154,9 @@
             "+(25-55) Melee Physical Damage",
             "+1 Chance to summon Arek's Flesh when a hit leaves you below half health",
             "+(60-90)% Chance to Shred Armor on Hit",
-            "+(60-90)% Chance to Shred Armor on Hit",
+            "+(60-90)% Minion Chance to Shred Armor on Hit",
             "+(1-2) Increased Shred Armor Effect",
-            "+(1-2) Increased Shred Armor Effect"
+            "+(1-2) Minion Increased Shred Armor Effect"
         ]
     },
     "83": {
@@ -1167,7 +1167,7 @@
             "level": 47
         },
         "mods": [
-            "+1 Ailment Conversion",
+            "+1 Physical Bleed Conversion",
             "+(3-6) Vitality",
             "+(3-6) Intelligence",
             "(30-60)% increased Fire Damage Over Time"
@@ -1185,7 +1185,7 @@
             "+(14-40)% Cold Resistance",
             "+(14-40)% Void Resistance",
             "+(20-40)% Increased Stun Duration",
-            "+(80-90)% Duration of Stuns Received",
+            "(80-90)% increased Duration of Stuns Received",
             "+1 Potion Use Cleanses Stun and Freeze"
         ]
     },
@@ -1200,9 +1200,9 @@
             "+(25-42)% Increased Stun Duration",
             "+(25-42) Melee Physical Damage",
             "+(250-420)% Increased Stun Chance",
-            "+(10-15) Dark Protection (deprecated)",
-            "+(18-25) Dark Protection (deprecated)",
-            "+(25-42)% Dark Protection (deprecated)"
+            "+(10-15) Melee Fire Damage with Forge Strike per Forged Weapon",
+            "+(18-25) Melee Fire Damage with Smelter's Wrath per Forged Weapon",
+            "+(25-42)% Ignite Chance per Forged Weapon"
         ]
     },
     "86": {
@@ -1216,7 +1216,7 @@
             "+(400-500) Armor",
             "+(40-50)% Fire Resistance",
             "+(8-12)% Chance to forge a weapon when hit",
-            "+(15-25)% Dark Protection (deprecated)"
+            "+(15-25)% Increased Fire Damage per Forged Weapon"
         ]
     },
     "87": {
@@ -1227,10 +1227,10 @@
             "level": 0
         },
         "mods": [
-            "+(15-20)% Armor",
+            "(15-20)% increased Armor",
             "+(150-200) Armor",
-            "+(10-12)% Dark Protection (deprecated)",
-            "+(2-5) Dark Protection (deprecated)"
+            "+(10-12)% Increased Armour per Forged Weapon",
+            "+(2-5) Health Regen per Forged Weapon"
         ]
     },
     "88": {
@@ -1241,12 +1241,12 @@
             "level": 60
         },
         "mods": [
-            "(25-35)% increased Melee Void Damage",
+            "+(25-35) Melee Void Damage",
             "+(35-50) Spell Void Damage",
             "(30-70)% increased Void Damage",
             "+(10-15)% Chance to gain Haste for 1 second on Hit",
             "15% increased Cast Speed",
-            "+15% Attack Speed"
+            "15% increased Attack Speed"
         ]
     },
     "89": {
@@ -1260,8 +1260,8 @@
             "(70-105)% increased Void Damage",
             "+(7-14)% Block Chance",
             "+(21-28)% Chance to apply Time Rot to Attackers when Hit",
-            "(5-7)% increased Melee Void Damage",
-            "(-50--30)% increased Damage Taken on Block",
+            "+(5-7) Melee Void Damage",
+            "50% less Void Damage Taken on Block",
             "+(21-28)% Chance to inflict Time Rot on Hit"
         ]
     },
@@ -1273,8 +1273,8 @@
             "level": 0
         },
         "mods": [
-            "(28-70)% increased Void Damage",
-            "+(2-3)% Critical Strike Chance",
+            "(29-70)% increased Void Damage",
+            "+(2-3)% Void Critical Strike Chance",
             "+(21-28)% Chance to inflict Time Rot on Hit",
             "+(15-20)% Chance to create a Void Rift when you hit an enemy (2 second cooldown)"
         ]
@@ -1307,7 +1307,7 @@
             "+(5-10) Dexterity",
             "(25-50)% increased Physical Damage",
             "(25-50)% increased Minion Physical Damage",
-            "+(25-50)% Dodge Rating",
+            "(25-50)% increased Potion Dodge Rating",
             "+10% More Dodge Rating for 4 seconds when you use a Potion"
         ]
     },
@@ -1319,12 +1319,12 @@
             "level": 54
         },
         "mods": [
-            "+2 Dark Protection (deprecated)",
+            "+2 Rage Gained on Kill in Werebear Form",
             "+(12-20)% Elemental Resistance",
             "+5 Strength",
             "(65-105)% increased Elemental Damage",
-            "+(10-20) Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)"
+            "+(10-20) Melee cold damage in Werebear Form",
+            "+1 White Fur in Werebear Form"
         ]
     },
     "94": {
@@ -1335,10 +1335,10 @@
             "level": 31
         },
         "mods": [
-            "+(30-75)% Melee Physical Damage",
+            "(30-75)% increased Melee Physical Damage",
             "+3% Increased Health Regen per point of Strength",
             "+(30-100)% Increased Melee Stun Chance",
-            "+3% Dark Protection (deprecated)"
+            "+3% Critical Strike Chance with Swipe"
         ]
     },
     "95": {
@@ -1351,7 +1351,7 @@
         "mods": [
             "+10 Strength",
             "+1 Increased health regen if you have stunned an enemy recently",
-            "+(15-25)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+(15-25)% Physical Damage Leeched as Health",
             "+(20-30)% Endurance"
         ]
     },
@@ -1365,7 +1365,7 @@
         "mods": [
             "+(25-45)% Void Resistance",
             "+(45-105) Endurance Threshold",
-            "(10-15)% increased Health Regen",
+            "+(10-15) Health Regen",
             "+1 Chance to taunt nearby enemies for 2 seconds when you stun an enemy"
         ]
     },
@@ -1407,9 +1407,9 @@
         },
         "mods": [
             "+(30-60)% Increased cold spell damage if you have directly cast a physical spell recently",
-            "+(30-60)% Increased Stun Chance",
-            "+(50-100)% Chance to Shred Armor on Hit",
-            "+(50-100)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(30-60)% Spell Increased Stun Chance",
+            "+(50-100)% Spell Chance to Shred Armor on Hit",
+            "+(50-100)% Spell Frostbite Chance"
         ]
     },
     "100": {
@@ -1420,8 +1420,8 @@
             "level": 30
         },
         "mods": [
-            "+(80-120)% Minion Melee Damage",
-            "+(3-20) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "(80-120)% increased Minion Melee Damage",
+            "+(3-20) Minion Melee Lightning Damage",
             "+3 Intelligence",
             "+(24-42)% Lightning Resistance"
         ]
@@ -1437,7 +1437,7 @@
             "(24-42)% increased Minion Damage",
             "+3 Intelligence",
             "+(24-42)% Cold Resistance",
-            "+3 Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+3 Minion Melee Cold Damage"
         ]
     },
     "102": {
@@ -1451,7 +1451,7 @@
             "(24-42)% increased Minion Damage",
             "+3 Intelligence",
             "+(24-42)% Fire Resistance",
-            "+3 Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+3 Minion Melee Fire Damage"
         ]
     },
     "103": {
@@ -1465,8 +1465,8 @@
             "+(90-245) Armor",
             "+(30-45)% Void Resistance",
             "+(30-45)% Poison Resistance",
-            "+(30-45)% Poison Resistance",
-            "+(15-20) Dark Protection (deprecated)"
+            "+(30-45)% Transform Poison Resistance",
+            "+(15-20) Rage gained every 3 seconds while in Spriggan Form"
         ]
     },
     "104": {
@@ -1477,9 +1477,9 @@
             "level": 57
         },
         "mods": [
-            "+(70-105)% Increases the damage dealt by your melee critical strikes",
+            "+(70-105)% Melee Critical Strike Multiplier",
             "(17-22)% increased Movement Speed",
-            "+(-75-0)% Physical Resistance"
+            "-75% Physical Resistance"
         ]
     },
     "105": {
@@ -1492,9 +1492,9 @@
         "mods": [
             "+200% All Attributes",
             "+(10-20)% Increased Stun Duration",
-            "+1 Dark Protection (deprecated)",
-            "+(40-80)% Damage Taken as Fire",
-            "+(40-80)% Increased Stun Chance"
+            "+1 Elemental Nova is now cast at the target location",
+            "+(40-80)% Physical Damage Taken as Fire",
+            "+(40-80)% Spell Increased Stun Chance"
         ]
     },
     "106": {
@@ -1520,8 +1520,8 @@
             "level": 0
         },
         "mods": [
-            "+(85-130)% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "(30-50)% increased Cast Speed",
+            "(85-130)% increased Curse Damage",
+            "(30-50)% increased Curse Cast Speed",
             "+(4-6) Mana Gained when you use Harvest"
         ]
     },
@@ -1534,8 +1534,8 @@
         },
         "mods": [
             "+1 Crossbow Mercenaries",
-            "+(70-90)% Minion Bow Damage",
-            "+(2-3)% Critical Strike Chance",
+            "(70-90)% increased Minion Bow Damage",
+            "+(2-3)% Minion Bow Critical Strike Chance",
             "+(20-40)% Increased Chance To Find Potions",
             "+(6-8) Dexterity"
         ]
@@ -1550,9 +1550,9 @@
         "mods": [
             "+1 Chance to gain Deicide for 15 seconds when you kill a rare or boss enemy",
             "+(70-85) Melee Cold Damage",
-            "+(70-100)% Melee Cold Damage",
+            "(70-100)% increased Melee Cold Damage",
             "+(100-150)% Freeze Rate Multiplier",
-            "(5-10)% increased Health Regen"
+            "+(5-10) Health Regen"
         ]
     },
     "110": {
@@ -1566,7 +1566,7 @@
             "(70-100)% increased Health Regen",
             "+(40-80)% Freeze Rate Multiplier",
             "+(10-13) Health Gain",
-            "+(50-70)% Melee Cold Damage"
+            "(50-70)% increased Melee Cold Damage"
         ]
     },
     "111": {
@@ -1577,9 +1577,9 @@
             "level": 51
         },
         "mods": [
-            "+(2-4)% Health",
+            "(2-4)% increased Health",
             "+(20-40)% Overkill Damage Leeched as Health",
-            "+(20-40)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "(20-40)% increased Damage Leeched as Health",
             "+(20-40)% Increased Leech Rate",
             "+1 Critical Strike Avoidance"
         ]
@@ -1607,10 +1607,10 @@
             "level": 53
         },
         "mods": [
-            "+(7-10)% Health",
-            "+(4-7) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(20-40)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(20-40)% Increased Leech Rate",
+            "(7-10)% increased Health",
+            "+(4-7) Minion Melee Physical Damage",
+            "+(20-40)% Minion Melee Damage Leeched as Health",
+            "+(20-40)% Minion Increased Leech Rate",
             "+1 Minion Critical Strike Avoidance"
         ]
     },
@@ -1622,9 +1622,9 @@
             "level": 70
         },
         "mods": [
-            "+(4-8) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(4-8) Spell Necrotic Damage",
             "+(50-80)% Freeze Rate per stack of Chill",
-            "+(150-300)% Freeze Rate per stack of Chill",
+            "+(150-300)% Minion Freeze Rate per stack of Chill",
             "+(25-40)% Chance to Chill on Hit",
             "(80-140)% increased Minion Cold Damage"
         ]
@@ -1640,7 +1640,7 @@
             "+(11-15)% Current Health Lost per second",
             "+(11-15)% Missing Health gained as Ward per second",
             "(30-36)% increased Movement Speed",
-            "+(3-4) Freeze Rate Multiplier",
+            "+(3-4) LowLife Freeze Rate Multiplier",
             "+1 You are chilled every 3 seconds"
         ]
     },
@@ -1655,8 +1655,8 @@
             "+(20-40)% Increased Time Rot Duration ",
             "+(20-40)% Chance to Slow on Hit",
             "+(20-40)% Chance to Slow Attackers",
-            "+(1-2) Increases the duration of doom you inflict",
-            "+(20-25)% Penetration can reduce effective resistance below 0%, increasing damage even against enemies with no resistance."
+            "+(1-2) Increased Slow Duration",
+            "+(20-25)% Damage over Time Penetration"
         ]
     },
     "117": {
@@ -1669,9 +1669,9 @@
         "mods": [
             "+(17-25)% Chance to Blind on Hit",
             "+(7-12) Spell Void Damage",
-            "(12-17)% increased Cast Speed",
+            "(12-17)% increased Fire Cast Speed",
             "+(17-25)% Chance to cast Fire Aura when Hit (1 second cooldown)",
-            "+(30-50)% Dark Protection (deprecated)"
+            "+(30-50)% Increased Void Damage per Fire Aura"
         ]
     },
     "118": {
@@ -1683,11 +1683,11 @@
         },
         "mods": [
             "+(13-18) Spell Fire Damage",
-            "+(5-13)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+(13-18) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(5-13)% Reduces the fire damage you take. Multiplicative with other modifiers.",
+            "(5-13)% increased Fire Damage Taken",
+            "+(13-18) Spell Necrotic Damage",
+            "(5-13)% increased Necrotic Damage Taken",
             "+(13-18) Spell Void Damage",
-            "+(5-13)% Reduces the fire damage you take. Multiplicative with other modifiers."
+            "(5-13)% increased Void Damage Taken"
         ]
     },
     "119": {
@@ -1699,7 +1699,7 @@
         },
         "mods": [
             "+(10-20)% Block Chance",
-            "+(40-90)% Armor",
+            "(40-90)% increased Armor",
             "+1 Every 3 seconds if you are on high health you lose 25% of your current health and gain Apocalypse for 3 seconds"
         ]
     },
@@ -1711,11 +1711,11 @@
             "level": 79
         },
         "mods": [
-            "(40-60)% increased Melee Void Damage",
+            "+(40-60) Melee Void Damage",
             "(50-90)% increased Void Damage",
             "+1 Chance to cast Abyssal Echoes on Melee Kill (4 second cooldown)",
             "+(75-9000)% Void Resistance",
-            "+(50-70)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(50-70)% Void Damage Leeched as Health"
         ]
     },
     "121": {
@@ -1727,7 +1727,7 @@
         },
         "mods": [
             "+(30-43)% Lightning Resistance",
-            "(-35--30)% increased Damage Taken on Block",
+            "35% less Lightning Damage Taken on Block",
             "+(300-430)% Chance to Shock Attackers",
             "+(50-80)% Increased Stun Duration",
             "+(8-12) Health Gain",
@@ -1744,7 +1744,7 @@
         "mods": [
             "+(30-62) Melee Cold Damage",
             "+(30-62) Melee Lightning Damage",
-            "(46-62)% increased Spell Damage",
+            "+(46-62) Spell Damage",
             "+(20-40)% Cold Resistance",
             "+(20-40)% Lightning Resistance",
             "+1 Chance to cast Tidal Wave when you use a Melee Attack (2 second cooldown)"
@@ -1771,9 +1771,9 @@
             "level": 81
         },
         "mods": [
-            "+(1-2) Chance to Ignite on Hit",
+            "+(1-2) Minion Chance to Ignite on Hit",
             "(1-2)% increased Minion Fire Damage",
-            "+(50-75)% Fire Resistance",
+            "+(50-75)% Minion Fire Resistance",
             "+(20-50)% Damage Reflected",
             "+60% Chance for the nearest minion to the target location to cast Dragonflame Nova when you use a minion skill"
         ]
@@ -1787,11 +1787,11 @@
         },
         "mods": [
             "+(24-40)% Chance to Chill on Hit",
-            "+(10-20)% Increases the duration of doom you inflict",
+            "+(10-20)% Increased Chill Duration",
             "+(1-2) Freeze Rate per stack of Chill",
             "+(24-40)% Chance to Shock on Hit",
             "+(10-20)% Increased Shock Duration ",
-            "+(1-20)% More Damage Per Stack"
+            "(1-20)% more More Damage Per Stack"
         ]
     },
     "126": {
@@ -1802,7 +1802,7 @@
             "level": 62
         },
         "mods": [
-            "+(30-45)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "+(30-45)% Spell Necrotic MarkedForDeath Chance",
             "+(313-373) Ward gained when damage leaves you at low health",
             "+(73-113) Health"
         ]
@@ -1815,10 +1815,10 @@
             "level": 63
         },
         "mods": [
-            "+21% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+21 Dark Protection (deprecated)",
-            "+(30-75)% Dark Protection (deprecated)"
+            "+21% Chance to summon a Storm Totem on hit with Tempest Strike",
+            "+1 Storm Totem enrages companions on hit",
+            "+21 Lightning damage to spells and attacks when you are hit by Lightning from Storm Totem for 4 seconds. (stacks up to 3 times)",
+            "+(30-75)% Physical resistance to allies nearby Storm Totem"
         ]
     },
     "128": {
@@ -1829,11 +1829,11 @@
             "level": 63
         },
         "mods": [
-            "+(30-75)% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+(10-21)% Dark Protection (deprecated)",
+            "+(30-75)% Cold resistance to allies nearby Storm Totem",
+            "+1 Storm Totem frenzy you on hit",
+            "+(10-21)% Increased aura area of Storm Totem",
             "(221-321)% increased Minion Health",
-            "+(221-321)% Minion Health Regen",
+            "(221-321)% increased Minion Health Regen",
             "+(10-21)% Minion Lightning Penetration"
         ]
     },
@@ -1845,12 +1845,12 @@
             "level": 63
         },
         "mods": [
-            "+(30-75)% Dark Protection (deprecated)",
-            "+21% Attack Speed",
-            "+21% Increases the number of spells your minions can cast per second",
-            "+(-21-0)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+1 Dark Protection (deprecated)",
-            "+(10-21)% Dark Protection (deprecated)"
+            "+(30-75)% Lightning resistance to allies nearby Storm Totem",
+            "21% increased Minion Attack Speed",
+            "21% increased Minion Cast Speed",
+            "21% less Totem Damage Taken",
+            "+1 Storm Totem haste you on hit",
+            "+(10-21)% Increased aura area of Storm Totem"
         ]
     },
     "130": {
@@ -1861,7 +1861,7 @@
             "level": 0
         },
         "mods": [
-            "+(-1-0) Critical strike chance if you have dealt a critical strike recently",
+            "-1 Critical strike chance if you have dealt a critical strike recently",
             "+1 Critical Strike Chance",
             "+50% less Critical strike chance if you have dealt a critical strike recently",
             "+(10-15) Health Gain"
@@ -1875,7 +1875,7 @@
             "level": 0
         },
         "mods": [
-            "+30% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+30% Elemental Damage Leeched as Health",
             "+(30-39)% Increased Leech Rate",
             "+13% Elemental Resistance"
         ]
@@ -1904,9 +1904,9 @@
         },
         "mods": [
             "+1 Potion Health Converted to Ward",
-            "+(-1-0) A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "(-1-0)% increased Health Regen",
-            "+(25-30)% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "1% less Damage Leeched as Health",
+            "1% less Health Regen",
+            "(25-30)% more FullLife Physical Damage"
         ]
     },
     "134": {
@@ -1917,9 +1917,9 @@
             "level": 0
         },
         "mods": [
-            "+(60-130)% Chance to Poison on Hit",
+            "+(60-130)% Throwing Chance to Poison on Hit",
             "+(60-130)% Throwing Critical Strike Multiplier",
-            "+2 Dark Protection (deprecated)"
+            "+2 Projectiles with Shurikens"
         ]
     },
     "135": {
@@ -1934,7 +1934,7 @@
             "(5-10)% increased Melee Attack Speed",
             "(5-10)% increased Bow Attack Speed",
             "(40-60)% increased Health Regen",
-            "+1 Dark Protection (deprecated)"
+            "+1 Critical Strike Chance with the Third Strike of Flurry"
         ]
     },
     "136": {
@@ -1946,10 +1946,10 @@
         },
         "mods": [
             "+(40-50) Melee Physical Damage",
-            "+(20-35)% Chance to Blind on Hit",
+            "+(20-35)% Melee Chance to Blind on Hit",
             "+(250-410) Dodge Rating",
-            "+(20-25)% Dark Protection (deprecated)",
-            "+(20-25)% Dark Protection (deprecated)"
+            "+(20-25)% Reduced Shift Distance",
+            "+(20-25)% Increased Cooldown Recovery Speed for Shift"
         ]
     },
     "137": {
@@ -1960,10 +1960,10 @@
             "level": 36
         },
         "mods": [
-            "+(20-30)% Mana",
+            "(20-30)% increased Mana",
             "+(45-60)% Cold Resistance",
             "+(45-60)% Physical Resistance",
-            "+(15-25) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(15-25) Minion Bow Physical Damage",
             "+2 Maximum Ballistae"
         ]
     },
@@ -1975,11 +1975,11 @@
             "level": 49
         },
         "mods": [
-            "+1 Critical Strike Avoidance",
+            "+1 Potion Critical Strike Avoidance",
             "+(125-375) Dodge Rating",
-            "+75% Poison Resistance",
-            "+(15-20)% Attack Speed",
-            "+(15-20)% Attack Speed"
+            "+75% Potion Poison Resistance",
+            "(15-20)% increased Potion Melee Attack Speed",
+            "(15-20)% increased Potion Throwing Attack Speed"
         ]
     },
     "139": {
@@ -1990,7 +1990,7 @@
             "level": 57
         },
         "mods": [
-            "+(30-40)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+(30-40)% Damage Leeched as Health",
             "(100-130)% increased Damage Over Time",
             "+(130-390) Dodge Rating"
         ]
@@ -2003,8 +2003,8 @@
             "level": 52
         },
         "mods": [
-            "+(30-50)% Critical Strike Multiplier",
-            "+(30-50)% Critical Strike Multiplier",
+            "+(30-50)% FullLife Melee Critical Strike Multiplier",
+            "+(30-50)% FullLife Throwing Critical Strike Multiplier",
             "(15-23)% increased Movement Speed",
             "+(23-35)% Increased Leech Rate"
         ]
@@ -2031,9 +2031,9 @@
         },
         "mods": [
             "+(40-50) Bow Physical Damage",
-            "+(40-50)% Increased Stun Chance",
-            "+(-4--2) Mana Cost",
-            "+4 Dark Protection (deprecated)"
+            "+(40-50)% Bow Increased Stun Chance",
+            "-4 Bow Mana Cost",
+            "+4 Arrows with Multishot"
         ]
     },
     "143": {
@@ -2046,9 +2046,9 @@
         "mods": [
             "(10-15)% increased Melee Attack Speed",
             "+(20-40)% Increased Area with Dancing Strikes",
-            "+1 Dark Protection (deprecated)",
+            "+1 Melee Critical Strike Chance while in Dancing Strikes' Fighting Arena",
             "+(10-15)% Critical Strike Multiplier while Dual Wielding",
-            "+0% Melee Critical Strike Chance"
+            "0.01% increased Melee Critical Strike Chance"
         ]
     },
     "144": {
@@ -2060,7 +2060,7 @@
         },
         "mods": [
             "(80-130)% increased Poison Damage",
-            "+1 Dark Protection (deprecated)",
+            "+1 Hail of Arrows Damage converted to Poison",
             "+(30-60)% increased Hail of Arrows Duration",
             "+(80-130)% Chance to Shred Armor on Bow Hit",
             "+(80-130)% Increased Shred Armor Effect"
@@ -2076,7 +2076,7 @@
         "mods": [
             "+5% Current Health Lost per second",
             "+(30-50) Health Gain on Block",
-            "+(25-45)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "+(25-45)% Melee SpiritPlague Chance",
             "(3-5)% increased Melee Attack Speed",
             "(3-5)% increased Movement Speed"
         ]
@@ -2089,11 +2089,11 @@
             "level": 0
         },
         "mods": [
-            "+(60-90)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "+(60-90)% Bow Frostbite Chance",
             "+(12-16) Bow Cold Damage",
             "+(120-180)% Freeze Rate Multiplier",
             "(60-90)% increased Cold Damage",
-            "+1 Dark Protection (deprecated)"
+            "+1 Bleed and Poison Chance converted to Frostbite Chance with Puncture"
         ]
     },
     "147": {
@@ -2132,11 +2132,11 @@
             "level": 0
         },
         "mods": [
-            "+1 Level of Skills",
-            "+(-5-0) Mana Cost",
-            "(15-20)% increased Cast Speed",
+            "+1 Spell Void Level of Skills",
+            "-5 Spell Void Mana Cost",
+            "(15-20)% increased Void Cast Speed",
             "+(50-100)% Damage Reflected",
-            "+(2-3) Spell Void Damage"
+            "(2-3)% increased Spell Void Damage"
         ]
     },
     "150": {
@@ -2147,11 +2147,11 @@
             "level": 21
         },
         "mods": [
-            "+(40-80)% Chance to Ignite on Hit",
+            "+(40-80)% Melee Chance to Ignite on Hit",
             "(40-80)% increased Fire Damage Over Time",
             "+14 Melee Fire Damage",
-            "+(4-10) Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)"
+            "+(4-10) Flame Reave Mana Cost",
+            "+1 Flame Reave is a circle"
         ]
     },
     "151": {
@@ -2163,11 +2163,11 @@
         },
         "mods": [
             "+(30-40) Melee Cold Damage",
-            "+(10-16) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(10-16) Minion Melee Cold Damage",
             "+1 Chance to Bleed on Melee Hit",
             "+(30-40)% Increased Bleed Duration ",
-            "+(30-40)% Dark Protection (deprecated)",
-            "+(13-20) Dark Protection (deprecated)"
+            "+(30-40)% Chance to Cast Rip Blood at 5 nearby targets on Melee Hit (3 second cooldown)",
+            "+(13-20) Health Gained from Rip Blood"
         ]
     },
     "152": {
@@ -2193,12 +2193,12 @@
             "level": 82
         },
         "mods": [
-            "+(40-160)% Melee Fire Damage",
-            "+(40-160)% Melee Cold Damage",
+            "(40-160)% increased Melee Fire Damage",
+            "(40-160)% increased Melee Cold Damage",
             "+20% Chance to gain Haste for 1 second on Hit",
-            "+(-20-0)% Damage Taken While Moving",
-            "+2 Level of Skills",
-            "+2 Level of Skills"
+            "20% less Damage Taken While Moving",
+            "+2 Melee Fire Level of Skills",
+            "+2 Melee Cold Level of Skills"
         ]
     },
     "154": {
@@ -2212,7 +2212,7 @@
             "+(33-45)% Cold Resistance",
             "+(33-45)% Lightning Resistance",
             "+(33-45)% Chance to cast Maelstrom every 5 seconds",
-            "+(6-8)% Dark Protection (deprecated)",
+            "+(6-8)% Increased Lightning Damage per Active Maelstrom",
             "+(10-18) Melee Lightning Damage"
         ]
     },
@@ -2226,7 +2226,7 @@
         "mods": [
             "(60-120)% increased Melee Damage",
             "+2 Mana Gain",
-            "+50% Mana Cost",
+            "50% increased Mana Cost",
             "+(600-1000) Block Effectiveness",
             "+(10-16) Strength"
         ]
@@ -2240,9 +2240,9 @@
         },
         "mods": [
             "+(7-12) Spell Void Damage",
-            "+(135-245)% Chance to Ignite on Hit",
-            "(14-28)% increased Cast Speed",
-            "+1 Dark Protection (deprecated)"
+            "+(135-245)% Spell Void Chance to Ignite on Hit",
+            "(14-28)% increased Fire Cast Speed",
+            "+1 Chance to cast Decimate when you use a Fire Spell (4 second cooldown)"
         ]
     },
     "157": {
@@ -2254,9 +2254,9 @@
         },
         "mods": [
             "+(35-45)% Void Resistance",
-            "+(235-345)% Chance to Shock on Hit",
-            "(7-12)% increased Cast Speed",
-            "+1 Dark Protection (deprecated)",
+            "+(235-345)% Spell Void Chance to Shock on Hit",
+            "(7-12)% increased Lightning Cast Speed",
+            "+1 Chance to cast Decimate when you use a Lightning Spell (4 second cooldown)",
             "+(35-45)% Lightning Resistance"
         ]
     },
@@ -2270,8 +2270,8 @@
         "mods": [
             "+(35-45)% Void Resistance",
             "+(135-185)% Freeze Rate Multiplier",
-            "(7-12)% increased Cast Speed",
-            "+1 Dark Protection (deprecated)",
+            "(7-12)% increased Cold Cast Speed",
+            "+1 Chance to cast Decimate when you use a Cold Spell (4 second cooldown)",
             "+(35-45)% Cold Resistance"
         ]
     },
@@ -2299,9 +2299,9 @@
         },
         "mods": [
             "+(1-4) Warcry",
-            "+1 Dark Protection (deprecated)",
+            "+1 Warcry Converted To Cold",
             "+(80-100) Health",
-            "(10-18)% increased Health Regen",
+            "+(10-18) Health Regen",
             "+(10-18) Health Gain",
             "+(10-18) Melee Cold Damage"
         ]
@@ -2317,7 +2317,7 @@
             "+(15-20) Health Gain",
             "+(15-20) Health Gain on Block",
             "+75% Cold Resistance",
-            "(-20--15)% increased Damage Taken on Block",
+            "20% less Cold Damage Taken on Block",
             "+(75-150)% Freeze Rate Multiplier"
         ]
     },
@@ -2330,8 +2330,8 @@
         },
         "mods": [
             "+(65-90) Melee Fire Damage",
-            "+1 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
+            "+1 Chance to use Earthquake after using a Non-Channelled Movement Ability every 5 seconds",
+            "+1 Earthquake Converted To Fire",
             "+(2-4) Chance to Shred Armor on Hit"
         ]
     },
@@ -2344,10 +2344,10 @@
         },
         "mods": [
             "(60-100)% increased Fire Damage",
-            "+(6-10) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(6-10) Potion Spell Fire Damage",
             "+(30-60)% Increased Fire Aura Area",
             "+(60-100) Health Gained on Potion Use",
-            "+100% Dark Protection (deprecated)"
+            "+100% Chance to cast Fire Aura on Potion Use"
         ]
     },
     "164": {
@@ -2358,11 +2358,11 @@
             "level": 82
         },
         "mods": [
-            "+(2-3)% Critical Strike Chance",
-            "+(50-80)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+(2-3)% Fire Critical Strike Chance",
+            "+(50-80)% Fire Damage Leeched as Health",
             "+(50-80)% Increased Leech Rate",
-            "(2-3)% increased Minion Critical Strike Chance",
-            "+2 Level of Skills"
+            "+(2-3)% Minion Critical Strike Chance",
+            "+2 Minion Fire Level of Skills"
         ]
     },
     "165": {
@@ -2374,9 +2374,9 @@
         },
         "mods": [
             "+2 Chance to Poison on Minion Hit",
-            "(-90-0)% increased Minion Poison Damage",
+            "90% less Minion Poison Damage",
             "(50-75)% increased Poison Damage",
-            "(5-7)% increased Health Regen",
+            "+(5-7) Health Regen",
             "+(50-75)% Poison Resistance"
         ]
     },
@@ -2403,9 +2403,9 @@
             "level": 62
         },
         "mods": [
-            "+(20-28)% Increases your movement speed if you have used a potion in the past 4 seconds",
-            "+(-28--20)% Damage Taken While Moving",
-            "+2 Level of Skills",
+            "(20-28)% increased Minion Movement Speed",
+            "28% less Minion Damage Taken While Moving",
+            "+2 Minion Spell Level of Skills",
             "+(20-28)% Lightning Resistance",
             "+(20-28)% Necrotic Resistance"
         ]
@@ -2419,7 +2419,7 @@
         },
         "mods": [
             "5% increased Movement Speed",
-            "5% increased Bow Critical Strike Chance",
+            "+5% Bow Critical Strike Chance",
             "+2 Seconds of Ancient Flight when you move after attacking"
         ]
     },
@@ -2436,7 +2436,7 @@
             "+(100-750) Ward gained when you cast Flame Ward",
             "+(10-20) Intelligence",
             "+75% Fire Resistance",
-            "+(-10-0)% Damage Taken if you have at least 1000 Ward"
+            "10% less Damage Taken if you have at least 1000 Ward"
         ]
     },
     "170": {
@@ -2447,11 +2447,11 @@
             "level": 60
         },
         "mods": [
-            "+25% All Resistances",
-            "+(60-166)% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+25% Minion All Resistances",
+            "(60-166)% increased Curse Damage",
             "+(60-66) Curse Spell Damage",
             "+(25-100)% All Resistances",
-            "+(60-66)% Block Effectiveness"
+            "(60-66)% increased Block Effectiveness"
         ]
     },
     "171": {
@@ -2462,8 +2462,8 @@
             "level": 60
         },
         "mods": [
-            "(30-36)% increased Cast Speed",
-            "+(16-20)% Dark Protection (deprecated)",
+            "(30-36)% increased Curse Cast Speed",
+            "+(16-20)% chance when one of your Skeletons dies to resummon a new one after 3 seconds",
             "+(1-3) Minion Critical Strike Avoidance",
             "(100-166)% increased Minion Health",
             "+(6-100)% Block Chance"
@@ -2477,12 +2477,12 @@
             "level": 0
         },
         "mods": [
-            "+(10-30)% Health",
-            "+(5-75)% Minion Dodge Rating",
+            "(10-30)% increased Health",
+            "(5-75)% increased Minion Dodge Rating",
             "+(1-3) Summon Wolf",
-            "+(5-75)% Dark Protection (deprecated)",
-            "+(5-75)% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)"
+            "+(5-75)% Chance to Bleed on Hit for Squirrels",
+            "+(5-75)% Chance to Shred Physical Resistance on Hit for Squirrels",
+            "+1 Summon 2 squirrels in place of each wolf"
         ]
     },
     "173": {
@@ -2494,9 +2494,9 @@
         },
         "mods": [
             "+(55-75) Melee Fire Damage",
-            "+(55-75)% Chance to Poison on Hit",
+            "+(55-75)% Melee Chance to Poison on Hit",
             "(7-300)% increased Melee Attack Speed",
-            "+(35-50)% Increases the damage of doom and the size of its increase to melee damage taken",
+            "+(35-50)% Melee Increased Poison Effect",
             "+75% Poison Resistance"
         ]
     },
@@ -2508,8 +2508,8 @@
             "level": 55
         },
         "mods": [
-            "+(55-75)% Chance to Poison on Hit",
-            "+(-25--7)% Reduces the fire damage you take. Multiplicative with other modifiers.",
+            "+(55-75)% Fire Chance to Poison on Hit",
+            "25% less Poison Damage Taken",
             "+(75-300)% Fire Resistance",
             "+100% Chance to gain a stack of Ruby Venom for 8 seconds on Block"
         ]
@@ -2541,7 +2541,7 @@
         },
         "mods": [
             "+(11-15)% Endurance",
-            "+(6-18)% Attack Speed",
+            "(6-18)% increased Attack Speed",
             "(6-18)% increased Cast Speed",
             "+(20-60)% Ward Retention",
             "+(3-6) Seconds of Haste Duration and Full Recovery when damage leaves you below 30% health (20 second cooldown)"
@@ -2556,9 +2556,9 @@
         },
         "mods": [
             "+(10-30)% Melee Damage Leeched as Health",
-            "+(10-30)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(10-30)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
-            "+(10-30)% Increases the damage of doom and the size of its increase to melee damage taken",
+            "+(10-30)% Void Damage Leeched as Health",
+            "+(10-30)% Doom Chance",
+            "+(10-30)% Increased Doom Effect",
             "(3-8)% increased Movement Speed",
             "+(10-30)% Increased Leech Rate"
         ]
@@ -2572,12 +2572,12 @@
         },
         "mods": [
             "(64-128)% increased Damage Over Time",
-            "+(14-22)% Dark Protection (deprecated)",
-            "+(14-22)% Dark Protection (deprecated)",
-            "+(14-22)% Dark Protection (deprecated)",
+            "+(14-22)% Increased Cooldown Recovery Speed for Teleport",
+            "+(14-22)% Increased Cooldown Recovery Speed for Fury Leap",
+            "+(14-22)% Increased Cooldown Recovery Speed for Lunge",
             "+(14-22)% Increased Cooldown Recovery Speed for Transplant",
-            "+(14-22)% Dark Protection (deprecated)",
-            "+(14-22)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "+(14-22)% Increased Cooldown Recovery Speed for Shift",
+            "+(14-22)% Doom Chance",
             "+(14-22)% Chance to gain Haste for 1 second on Hit"
         ]
     },
@@ -2589,10 +2589,10 @@
             "level": 65
         },
         "mods": [
-            "(90-120)% increased Melee Void Damage",
-            "+1 You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
-            "+(20-50)% Increases the damage of doom and the size of its increase to melee damage taken",
-            "+(20-50)% Increases the duration of doom you inflict",
+            "+(90-120) Melee Void Damage",
+            "+1 Doom Chance",
+            "+(20-50)% Increased Doom Effect",
+            "+(20-50)% Increased Doom Duration",
             "(50-100)% increased Melee Damage",
             "+(50-100)% Increased Leech Rate"
         ]
@@ -2605,12 +2605,12 @@
             "level": 70
         },
         "mods": [
-            "+(50-70)% Armor",
-            "(5-10)% increased Melee Void Damage",
+            "(50-70)% increased Armor",
+            "+(5-10) Melee Void Damage",
             "(50-70)% increased Melee Damage",
             "+1 Potion Use Cleanses Stun and Freeze",
-            "+1 Stun Immunity",
-            "+5% More Damage Per Stack"
+            "+1 Potion Stun Immunity",
+            "5% more Melee More Damage Per Stack"
         ]
     },
     "181": {
@@ -2621,11 +2621,11 @@
             "level": 78
         },
         "mods": [
-            "+(10-25) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(10-25) Spell Necrotic Damage",
             "(100-160)% increased Spell Damage",
             "(12-20)% increased Cast Speed",
-            "+-10% Health",
-            "+20% Dark Protection (deprecated)",
+            "10% reduced Health",
+            "+20% Necrotic Penetration with Possess per stack of Damned on You (up to 7)",
             "+1 You are Damned when you cast a spell"
         ]
     },
@@ -2638,9 +2638,9 @@
         },
         "mods": [
             "+(70-120)% Increased Volcanic Orb Damage",
-            "+(30-44)% Dark Protection (deprecated)",
-            "+(44-70)% Dark Protection (deprecated)",
-            "+(22-30)% Dark Protection (deprecated)",
+            "+(30-44)% Increased Volcanic Orb Speed",
+            "+(44-70)% Increased Cooldown Recovery Speed for Volcanic Orb ",
+            "+(22-30)% Increased Volcanic Orb Shrapnel Speed",
             "(10-22)% increased Cast Speed"
         ]
     },
@@ -2653,10 +2653,10 @@
         },
         "mods": [
             "+(60-90) Melee Physical Damage",
-            "+(200-280)% Melee Physical Damage",
+            "(200-280)% increased Melee Physical Damage",
             "+(6-12)% Physical Penetration",
             "+70% reduced Bonus Damage Taken from Critical Strikes",
-            "+(-1-0) Critical Strike Avoidance"
+            "1% less Critical Strike Avoidance"
         ]
     },
     "184": {
@@ -2669,9 +2669,9 @@
         "mods": [
             "(150-210)% increased Melee Damage",
             "(150-210)% increased Minion Damage",
-            "+25% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+80% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+25% Chance to cast Jade Dust on Hit with Harvest\r",
+            "+1 Player Poison Damage Applies to Skeleton Rogues",
+            "+80% Minion Poison Damage Leeched as Health"
         ]
     },
     "185": {
@@ -2682,7 +2682,7 @@
             "level": 0
         },
         "mods": [
-            "+1 Level of Skills",
+            "+1 Spell Lightning Level of Skills",
             "+(6-16)% Lightning Penetration",
             "+(4-8) Intelligence",
             "+1% Shock Chance per Intelligence"
@@ -2698,7 +2698,7 @@
         "mods": [
             "(65-130)% increased Lightning Damage",
             "+(65-130) Mana",
-            "+1 Dark Protection (deprecated)",
+            "+1 Meteor Base Damage Converted to Lightning",
             "+1% increased Shock Duration per Intelligence"
         ]
     },
@@ -2727,7 +2727,7 @@
         },
         "mods": [
             "+1 Using a potion grants you Falsewater Fury until you run out of mana",
-            "(20-26)% increased Health Regen",
+            "+(20-26) Health Regen",
             "(20-60)% increased Fire Damage"
         ]
     },
@@ -2739,12 +2739,12 @@
             "level": 0
         },
         "mods": [
-            "+(100-125)% Dark Protection (deprecated)",
+            "+(100-125)% Chance to Bleed on Hit gained as Bleed Chance per second with Hail of Arrows",
             "25% increased Bow Attack Speed",
-            "+(-15--10) Dark Protection (deprecated)",
+            "-15 Hail of Arrows Mana Cost",
             "+(25-45) Health",
             "+(25-45) Mana",
-            "+20% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+20% Damage over Time Damage Leeched as Health"
         ]
     },
     "190": {
@@ -2755,7 +2755,7 @@
             "level": 0
         },
         "mods": [
-            "(55-75)% increased Melee Damage",
+            "+(55-75) Melee Damage",
             "+(13-18)% Block Chance",
             "+(400-700) Block Effectiveness",
             "+(1-3) Flame Reave",
@@ -2772,8 +2772,8 @@
             "level": 0
         },
         "mods": [
-            "+1% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
+            "+1% Increased Cast Speed with Smite per 2% Missing Mana",
+            "+1 Spell Damage with Smite per 5 Missing Mana",
             "+(3-15)% Endurance",
             "+(30-90)% Increased Healing Effectiveness",
             "(30-90)% increased Lightning Damage",
@@ -2790,11 +2790,11 @@
         "mods": [
             "+(6-16)% Lightning Penetration",
             "+(16-26) Lightning Damage with Shurikens",
-            "+(61-81) Dark Protection (deprecated)",
+            "+(61-81) Lightning Damage with Lethal Mirage",
             "(41-61)% increased Lightning Damage",
-            "+(11-21)% Dark Protection (deprecated)",
+            "+(11-21)% Increased Cooldown Recovery Speed with Lethal Mirage",
             "+60% Shurikens Base Damage converted to Lightning",
-            "+60% Dark Protection (deprecated)"
+            "+60% Shuriken Base Damage converted to Lightning"
         ]
     },
     "193": {
@@ -2821,7 +2821,7 @@
         },
         "mods": [
             "+(17-35)% Physical  Penetration with Bleed ",
-            "+(17-35)% Block Effectiveness",
+            "(17-35)% increased Block Effectiveness",
             "+(17-35)% Increased Bleed Duration ",
             "+(35-85)% Increased Area of mirage attacks with Lethal Mirage",
             "+(35-85)% Increased Chance To Find Potions"
@@ -2899,10 +2899,10 @@
         },
         "mods": [
             "+30% Chance to cast stationary fire Tornado at a nearby enemy on hit (3 second cooldown)",
-            "+(50-150)% Dark Protection (deprecated)",
+            "+(50-150)% Chance to shred fire resistance each second with Tornado",
             "(40-60)% increased Fire Damage",
             "+(30-50)% Fire Resistance",
-            "+(20-30)% Armor"
+            "(20-30)% increased Armor"
         ]
     },
     "200": {
@@ -2917,7 +2917,7 @@
             "+(30-40)% Chance to Poison on Spell Hit",
             "+3 All Attributes",
             "+13% Damage Reflected",
-            "+1 Level of Skills"
+            "+1 Spell Poison Level of Skills"
         ]
     },
     "201": {
@@ -2945,14 +2945,14 @@
             "level": 6
         },
         "mods": [
-            "+(30-45) Dark Protection (deprecated)",
+            "+(30-45) Melee Lightning Damage with Swipe (3 second cooldown)",
             "(30-45)% increased Cold Damage",
             "+1 Swipe",
             "+(30-45) Health",
             "+(30-45)% Cold Resistance",
             "+1 All Attributes",
             "(30-45)% increased Lightning Damage",
-            "+(1-30) Dark Protection (deprecated)"
+            "+(1-30) Base Damage converted to Lightning for Swipe (3 second cooldown)"
         ]
     },
     "203": {
@@ -2963,9 +2963,9 @@
             "level": 19
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
+            "+1 Charge for Void Cleave",
             "+(2-4)% Increased Movement Speed per Added Melee Void Damage",
-            "10% increased Melee Void Damage",
+            "+10 Melee Void Damage",
             "(8-10)% increased Movement Speed",
             "(18-42)% increased Void Damage"
         ]
@@ -2994,11 +2994,11 @@
         },
         "mods": [
             "(13-63)% increased Necrotic Damage",
-            "+1 Level of Skills",
-            "+1 Dark Protection (deprecated)",
+            "+1 Spell Necrotic Level of Skills",
+            "+1 Hungering Souls projectiles are fired in sequence and can all hit the same target",
             "+(63-73) Health",
-            "+10% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+-63% Dark Protection (deprecated)"
+            "+10% Necrotic Damage Leeched as Health",
+            "63% less Hungering Souls Damage"
         ]
     },
     "206": {
@@ -3009,9 +3009,9 @@
             "level": 0
         },
         "mods": [
-            "+(10-20)% Dodge Rating",
+            "(10-20)% increased Dodge Rating",
             "+(100-300) Dodge Rating if you have been hit recently",
-            "+(-5-0)% Damage Taken While Moving",
+            "5% less Damage Taken While Moving",
             "(5-10)% increased Movement Speed",
             "+(3-5) Dexterity"
         ]
@@ -3024,9 +3024,9 @@
             "level": 38
         },
         "mods": [
-            "+(-88-0)% Dark Protection (deprecated)",
-            "+(100-160)% Dark Protection (deprecated)",
-            "+(40-48)% Chance to Ignite on Hit",
+            "-88% Increased Decoy Duration",
+            "+(100-160)% Increased Cooldown Recovery Speed for Decoy",
+            "+(40-48)% Throwing Chance to Ignite on Hit",
             "+(80-120)% Increased Ignite Duration ",
             "+(12-18)% Fire Penetration"
         ]
@@ -3041,8 +3041,8 @@
         "mods": [
             "+1 Gain a stack of Void Barrier every 3 seconds while above your endurance threshold\r",
             "+(60-100) Endurance Threshold",
-            "+(10-15)% Damage Taken as Void",
-            "+(-15--10)% Reduces the fire damage you take. Multiplicative with other modifiers."
+            "+(10-15)% Physical Damage Taken as Void",
+            "15% less Void Damage Taken"
         ]
     },
     "209": {
@@ -3054,11 +3054,11 @@
         },
         "mods": [
             "+(1-3) Summon Wraith",
-            "+(6-12) Dark Protection (deprecated)",
-            "+6% Current Health Drained per Second",
+            "+(6-12) Maximum Wraiths",
+            "+6% Minion Current Health Drained per Second",
             "(36-62)% increased Mana Regen",
-            "+(63-126)% Minion Melee Damage",
-            "+(13-35)% Increases your movement speed if you have used a potion in the past 4 seconds"
+            "(63-126)% increased Minion Melee Damage",
+            "(13-35)% increased Minion Movement Speed"
         ]
     },
     "210": {
@@ -3069,8 +3069,8 @@
             "level": 0
         },
         "mods": [
-            "+(-13--12)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+(-13--12)% Reduces the fire damage you take. Multiplicative with other modifiers.",
+            "13% less Physical Damage Taken",
+            "13% less Damage over Time Physical Damage Taken",
             "+(26-39)% Physical  Penetration with Bleed ",
             "+(65-91)% Chance to Bleed on Hit",
             "+(26-39) Health Gain on Kill",
@@ -3115,7 +3115,7 @@
             "level": 74
         },
         "mods": [
-            "+(103-143)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "+(103-143)% Frostbite Chance",
             "+(23-33)% Increased Frostbite Duration ",
             "+(143-183)% Freeze Rate Multiplier",
             "+(13-23) Ward Gain",
@@ -3130,12 +3130,12 @@
             "level": 0
         },
         "mods": [
-            "+(12-94)% Penetration can reduce effective resistance below 0%, increasing damage even against enemies with no resistance.",
-            "+6 Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(60-94)% Chance to Shock on Hit",
+            "+(12-94)% Totem Lightning Penetration",
+            "+6 Totem Spell Lightning Damage",
+            "+(60-94)% Totem Chance to Shock on Hit",
             "+12% Chance to summon a Storm Totem on hit (8 second cooldown)",
             "+(36-44)% Lightning Resistance",
-            "+(36-44)% Lightning Resistance",
+            "+(36-44)% Totem Lightning Resistance",
             "+(60-94) Mana",
             "+6 Attunement",
             "+(12-94)% Lightning Penetration",
@@ -3151,12 +3151,12 @@
             "level": 0
         },
         "mods": [
-            "+(14-40)% Chance to Blind on Hit",
-            "+100 Increases the damage of doom and the size of its increase to melee damage taken",
-            "+(100-154)% Increases the duration of doom you inflict",
-            "+(54-84) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(10-14)% Attack Speed",
-            "+(10-14)% Dark Protection (deprecated)"
+            "+(14-40)% Bow Chance to Blind on Hit",
+            "+100 Increased Blind Effect",
+            "+(100-154)% Increased Blind Duration",
+            "+(54-84) LowLife Bow Void Damage",
+            "(10-14)% increased LowLife Bow Attack Speed",
+            "+(10-14)% more hit damage to Blinded Enemies with Multishot"
         ]
     },
     "216": {
@@ -3169,8 +3169,8 @@
         "mods": [
             "+(5-8)% Current Health converted to Ward when you directly cast a Necrotic Spell",
             "+(5-8)% Current Health converted to Ward when you directly cast an Elemental Spell",
-            "+1 Level of Skills",
-            "+1 Level of Skills",
+            "+1 Spell Necrotic Level of Skills",
+            "+1 Spell Elemental Level of Skills",
             "+(10-16) Strength",
             "(10-16)% increased Cast Speed"
         ]
@@ -3186,7 +3186,7 @@
             "+(28-56)% Chance to gain a stack of Abyssal Rite on Crit",
             "(100-128)% increased Void Damage",
             "(12-20)% increased Melee Attack Speed",
-            "+(-1-0) Critical Strike Multiplier"
+            "1% less Critical Strike Multiplier"
         ]
     },
     "218": {
@@ -3197,13 +3197,13 @@
             "level": 79
         },
         "mods": [
-            "+(41-113)% Increased Healing Effectiveness",
+            "+(41-114)% Increased Healing Effectiveness",
             "+(10-40)% Fire Resistance",
             "+(10-40)% Necrotic Resistance",
             "+(11-14)% Endurance",
             "(14-18)% increased Movement Speed",
-            "+1 Dark Protection (deprecated)",
-            "+(2-4) Dark Protection (deprecated)"
+            "+1 Maelstrom base damage converted to Necrotic",
+            "+(2-4) Melee Necrotic Damage for Minions when you cast Maelstrom"
         ]
     },
     "219": {
@@ -3215,7 +3215,7 @@
         },
         "mods": [
             "+1 Chance for every 3rd fire spell to crit with 18% less hit damage",
-            "+(12-16)% Spell Fire Damage",
+            "(12-16)% increased Spell Fire Damage",
             "+(12-16)% Chance to Ignite on Hit"
         ]
     },
@@ -3227,11 +3227,11 @@
             "level": 75
         },
         "mods": [
-            "+(40-60) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(50-90)% Increases the damage dealt by your melee critical strikes",
-            "+1 Dark Protection (deprecated)",
-            "+(12-24) Dark Protection (deprecated)",
-            "+(18-36)% Dark Protection (deprecated)",
+            "+(40-60) Melee Necrotic Damage",
+            "+(50-90)% Melee Critical Strike Multiplier",
+            "+1 Gain Harvest big hit stacks when you hit an enemy",
+            "+(12-24) Mana consumed by Grim Harvest",
+            "+(18-36)% Current Health consumed by Grim Harvest",
             "+(60-78)% reduced Bonus Damage Taken from Critical Strikes"
         ]
     },
@@ -3243,12 +3243,12 @@
             "level": 85
         },
         "mods": [
-            "+(-40--30)% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
+            "-40% Increased Cooldown Recovery Speed for Lunge",
+            "+1 Lunge Does Not Require a Target",
             "(33-71)% increased Void Damage",
             "+(16-37)% Critical Strike Avoidance",
             "+(1-3) Lunge",
-            "+(-13--7)% Damage Taken While Moving"
+            "13% less Damage Taken While Moving"
         ]
     },
     "222": {
@@ -3259,10 +3259,10 @@
             "level": 60
         },
         "mods": [
-            "+5 Dark Protection (deprecated)",
+            "+5 Max Prism Shards",
             "+(2-4)% Critical Strike Chance",
-            "+40% Critical Strike Chance",
-            "+(-10--5)% Reduces the fire damage you take. Multiplicative with other modifiers."
+            "40% increased Critical Strike Chance",
+            "10% less Elemental Damage Taken"
         ]
     },
     "223": {
@@ -3276,7 +3276,7 @@
             "+(500-2000) Ward consumed when you use a melee attack",
             "+(50-80) Ward per Second",
             "+(6-10) Intelligence",
-            "+(10-15)% Attack Speed"
+            "(10-15)% increased Attack Speed"
         ]
     },
     "224": {
@@ -3293,8 +3293,8 @@
             "+2 Javelin",
             "+(60-120)% Increased Healing Effectiveness",
             "+(20-26)% chance to cast Smite at a nearby enemy on Kill",
-            "+(20-26)% Dark Protection (deprecated)",
-            "+(20-26)% Dark Protection (deprecated)"
+            "+(20-26)% Increased Cooldown Recovery Speed for Judgement",
+            "+(20-26)% Increased Cooldown Recovery Speed for Javelin"
         ]
     },
     "225": {
@@ -3307,11 +3307,11 @@
         "mods": [
             "+(20-28) Melee Lightning Damage",
             "+(20-28) Spell Lightning Damage",
-            "+(40-48)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "+(40-48)% Melee Electrify Chance",
             "+(1-2) Multistrike",
             "+(1-2) Smite",
-            "+(44-84)% Increases the damage of doom and the size of its increase to melee damage taken",
-            "+1 Dark Protection (deprecated)"
+            "+(44-84)% Increased Electrify Effect",
+            "+1 Chance to cast Smite after you use Multistrike and hit a Boss or Rare enemy"
         ]
     },
     "226": {
@@ -3322,10 +3322,10 @@
             "level": 48
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
+            "+1 Javelin Damage Converted To Lightning",
             "+(16-22) Lightning Throwing Damage with Javelin",
-            "+(8-12) Dark Protection (deprecated)",
-            "+(100-160)% Increases the damage of doom and the size of its increase to melee damage taken",
+            "+(8-12) Spell Lightning Damage for 4 seconds when you use Javelin",
+            "+(100-160)% Increased Electrify Effect",
             "+(16-22)% Lightning Penetration"
         ]
     },
@@ -3337,10 +3337,10 @@
             "level": 71
         },
         "mods": [
-            "+(10-15) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(10-15) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(10-15) Totem Melee Physical Damage",
+            "+(10-15) Totem Spell Physical Damage",
             "+1% Critical Strike Chance for Totems per Intelligence",
-            "+(15-35)% Critical Strike Multiplier",
+            "+(15-35)% Totem Critical Strike Multiplier",
             "+50 Mana"
         ]
     },
@@ -3355,8 +3355,8 @@
             "+(100-181) Armor",
             "+(100-181) Armor for Totems",
             "+(10-18) Intelligence",
-            "(10-18)% increased Health Regen",
-            "(10-18)% increased Health Regen"
+            "+(10-18) Health Regen",
+            "+(10-18) Totem Health Regen"
         ]
     },
     "229": {
@@ -3368,10 +3368,10 @@
         },
         "mods": [
             "15% increased Movement Speed",
-            "+(2-3) Dark Protection (deprecated)",
-            "+(100-160)% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+(20-26) Dark Protection (deprecated)"
+            "+(2-3) Projectiles with Spirit Thorns",
+            "+(100-160)% Increased damage while in Spriggan Form",
+            "+1 You Cannot Move While in Spriggan Form",
+            "+(20-26) Health Regen while in Spriggan Form"
         ]
     },
     "230": {
@@ -3382,9 +3382,9 @@
             "level": 0
         },
         "mods": [
-            "+(1-2) Level of Skills",
+            "+(1-2) Minion Level of Skills",
             "+(52-113) Health",
-            "+100% Stun Immunity",
+            "+100% Minion Stun Immunity",
             "+(13-26)% Chance to gain 50 Health on Minion Hit",
             "+(13-26)% Chance to gain 50 Health on Minion Death"
         ]
@@ -3400,8 +3400,8 @@
             "+(4-10) Bow Fire Damage",
             "+(4-10) Bow Cold Damage",
             "+(4-10) Bow Lightning Damage",
-            "+1 Dark Protection (deprecated)",
-            "+40% Dark Protection (deprecated)",
+            "+1 Puncture cannot be dodged",
+            "+40% More Hit Damage to Distant Enemies with Puncture",
             "+40 Bow Physical Damage if you have at least 40 Dexterity"
         ]
     },
@@ -3416,8 +3416,8 @@
             "(120-200)% increased Melee Damage",
             "+(12-20) Melee Fire Damage",
             "+(12-20)% Fire Penetration",
-            "+(12-20) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(1-2) Level of Skills",
+            "+(12-20) Minion Melee Fire Damage",
+            "+(1-2) Melee Level of Skills",
             "+1 Chance for Downed Minions to Revive after 2 seconds (10 second cooldown)"
         ]
     },
@@ -3431,12 +3431,12 @@
         "mods": [
             "+2% Cold Penetration with Frostbite per 10% Freeze Rate Multiplier",
             "+1% Increased Movement Speed per 2 Dexterity (up to 20%)",
-            "+(16-32)% Dodge Rating",
+            "(16-32)% increased Dodge Rating",
             "+(5-10) Melee Cold Damage",
             "+(5-10) Spell Cold Damage",
-            "+(5-10) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(5-10) Throwing Cold Damage",
             "+(5-10) Bow Cold Damage",
-            "+(16-32)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(16-32)% Frostbite Chance"
         ]
     },
     "234": {
@@ -3462,11 +3462,11 @@
             "level": 44
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+7 Dark Protection (deprecated)",
+            "+1 When you directly cast Summon Vines you teleport to the target location",
+            "+7 Seconds Cooldown Duration for Summon Vines",
             "+(20-30)% Increased Attack and Cast Speed for Summoned Vines",
-            "+1 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)"
+            "+1 Summoned Vines are Immune to Poison",
+            "+1 Increased Vines Summoned when you directly cast Summon Vines"
         ]
     },
     "236": {
@@ -3494,7 +3494,7 @@
         "mods": [
             "+(50-90) Damage Reflected to Attackers",
             "+(5-9)% Increased Flat Damage Reflected to Attackers per Attunement",
-            "+(15-18)% Armor",
+            "(15-18)% increased Armor",
             "+(32-45)% Poison Resistance",
             "+(32-45)% Lightning Resistance"
         ]
@@ -3536,7 +3536,7 @@
         "mods": [
             "+(5-40)% Cold Resistance",
             "+(5-40)% Lightning Resistance",
-            "(3-10)% increased Spell Damage",
+            "+(3-10) Spell Damage",
             "+1 Stats on your gloves also apply to your minions"
         ]
     },
@@ -3563,10 +3563,10 @@
             "level": 11
         },
         "mods": [
-            "+(111-211)% Critical Strike Chance",
+            "(111-211)% increased Critical Strike Chance",
             "+(11-111) Ward gained when you use Shift",
-            "+1 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
+            "+1 Charge for Shift",
+            "+1 Charge for Smoke Bomb",
             "+(11-111) Ward gained when you use Smoke Bomb"
         ]
     },
@@ -3578,15 +3578,15 @@
             "level": 36
         },
         "mods": [
-            "+(4-7)% Critical Strike Chance",
+            "+(4-7)% Fire Critical Strike Chance",
             "+(24-34)% Chance to Cast Dragon Fire on Crit",
             "+(12-17) Spell Fire Damage",
             "+(12-17) Melee Fire Damage",
-            "+(12-17) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(12-17) Throwing Fire Damage",
             "+(12-17) Bow Fire Damage",
-            "+2 Level of Skills",
-            "+(12-17)% Attack Speed",
-            "(12-17)% increased Cast Speed"
+            "+2 Fire Level of Skills",
+            "(12-17)% increased Fire Attack Speed",
+            "(12-17)% increased Fire Cast Speed"
         ]
     },
     "244": {
@@ -3613,7 +3613,7 @@
         },
         "mods": [
             "+(3-5) Vengeance",
-            "+(35-53)% Dark Protection (deprecated)",
+            "+(35-53)% more hit damage with Vengeance against bosses and rare enemies (multiplicative with other modifiers)",
             "(35-53)% increased Melee Attack Speed",
             "+5 All Attributes",
             "5% increased Movement Speed"
@@ -3628,7 +3628,7 @@
         },
         "mods": [
             "+(8-20)% More Hit Damage if you have only one Singularity equipped",
-            "+(-1-0) Critical Strike Chance",
+            "1% less Critical Strike Chance",
             "+1 Singularities Equipped"
         ]
     },
@@ -3642,8 +3642,8 @@
         "mods": [
             "+1 Wandering Spirits",
             "+1 Hungering Souls",
-            "+(11-16)% Dark Protection (deprecated)",
-            "+(6-11) Dark Protection (deprecated)",
+            "+(11-16)% Chance to inflict Damned on Hit with Hungering Souls per Active Wandering Spirit",
+            "+(6-11) Ward gained each second per Active Wandering Spirit",
             "+(16-26)% Chance to Reveal a Wandering Spirit on Kill (1 Second Cooldown)"
         ]
     },
@@ -3656,9 +3656,9 @@
         },
         "mods": [
             "+1 Current Health is set to Endurance Threshold",
-            "+(-1-0) A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "(30-40)% increased Health Regen",
-            "+(50-75)% Physical Resistance"
+            "1% less Damage Leeched as Health",
+            "+(30-40) Health Regen",
+            "(50-75)% increased Physical Resistance"
         ]
     },
     "249": {
@@ -3669,8 +3669,8 @@
             "level": 58
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+2% Dark Protection (deprecated)",
+            "+1 You are inflicted with bleed when you hit an enemy with Shatter Strike",
+            "+2% Cold Penetration with Shatter Strike per stack of bleed on you",
             "+1 Shatter Strike",
             "+(4-8) Dexterity",
             "+(15-25)% Critical Strike Multiplier",
@@ -3702,7 +3702,7 @@
         },
         "mods": [
             "+(12-32) Bow Lightning Damage",
-            "+(12-32) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+(12-32) Throwing Lightning Damage",
             "+(62-92)% Lightning Penetration with your next Throwing Attack within two seconds when you directly use a Lightning Bow Attack",
             "+(62-92)% Lightning Penetration with your next Throwing Attack within two seconds when you directly use a Lightning Bow Attack",
             "+1 Seconds of Haste when you proc both of Zeurial's Hunt's effects within 2 seconds"
@@ -3716,13 +3716,13 @@
             "level": 71
         },
         "mods": [
-            "+(11-26)% Attack Speed",
+            "(11-26)% increased Attack Speed",
             "(11-26)% increased Cast Speed",
             "+(36-49) Melee Physical Damage",
-            "+(41-56) Dark Protection (deprecated)",
+            "+(41-56) Spell Physical Damage with Sacrifice",
             "+(26-39)% Chance to apply Frailty on Hit",
             "+(36-49)% Chance to cast Sacrifice on your lowest health minion on minion death (1 second cooldown)",
-            "+(26-39)% Dark Protection (deprecated)"
+            "+(26-39)% Increased Area with Sacrifice"
         ]
     },
     "253": {
@@ -3749,7 +3749,7 @@
             "+1% Block Chance per 2% Endurance above the Cap",
             "+(12-24)% Endurance",
             "+(225-550) Block Effectiveness",
-            "+(-12--6)% Reduces the fire damage you take. Multiplicative with other modifiers."
+            "12% less Physical Damage Taken"
         ]
     },
     "255": {
@@ -3760,7 +3760,7 @@
             "level": 80
         },
         "mods": [
-            "+(30-45)% Armor",
+            "(30-45)% increased Armor",
             "+(4-10) All Attributes",
             "+3 Seconds of Damage Immunity After being Hit (15 second cooldown)",
             "+(11-14)% Endurance",
@@ -3775,8 +3775,8 @@
             "level": 12
         },
         "mods": [
-            "+(240-290)% Critical Strike Chance",
-            "+(-1-0) A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "(240-290)% increased Critical Strike Chance",
+            "1% less Damage Leeched as Health",
             "+(2-5) All Attributes"
         ]
     },
@@ -3820,14 +3820,14 @@
         "mods": [
             "+(13-23) Ward Gain on Kill",
             "+1 Chance to Ignite yourself on Kill",
-            "+(-23--13)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+(-23--13)% Reduces the fire damage you take. Multiplicative with other modifiers.",
-            "+1 Dark Protection (deprecated)",
+            "23% less Damage over Time Necrotic Damage Taken",
+            "23% less Damage over Time Fire Damage Taken",
+            "+1 Chance to Convert every stack of Ignite on you to Damned when you directly cast Transplant",
             "+(10-16)% Necrotic Penetration with Damned per stack of Damned on you (up to 40) for Spells you cast while Damned",
             "+(20-26)% Fire Penetration",
             "+(20-26)% Necrotic Penetration",
             "+(13-46)% Chance to apply Damned on Hit",
-            "+(460-694) Dark Protection (deprecated)"
+            "+(460-694) Ward Gained when you cast Transplant"
         ]
     },
     "260": {
@@ -3838,11 +3838,11 @@
             "level": 64
         },
         "mods": [
-            "+(14-24) Dark Protection (deprecated)",
-            "+(28-48)% Dark Protection (deprecated)",
-            "+(14-24) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(-14--8) Dark Protection (deprecated)",
-            "+(-14--8) Dark Protection (deprecated)"
+            "+(14-24) Spell Fire Damage for Infernal Shade per Active Dread Shade",
+            "+(28-48)% Increased Area for Infernal Shade per Active Dread Shade",
+            "+(14-24) Damage over Time Spell Fire Damage",
+            "-14 Mana Cost for Infernal Shade",
+            "-14 Mana Cost for Dread Shade"
         ]
     },
     "261": {
@@ -3853,11 +3853,11 @@
             "level": 63
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+(9-13)% Dark Protection (deprecated)",
-            "+(93-153)% Dark Protection (deprecated)",
-            "+(5-13) Dark Protection (deprecated)",
-            "+1% Dark Protection (deprecated)"
+            "+1 Dread Shade Converted to Cold",
+            "+(9-13)% Frostbite Chance for Minions affected by Dread Shade",
+            "+(93-153)% Freeze Rate Multiplier for Minions affected by Dread Shade",
+            "+(5-13) Cold Damage with Spells and Attacks per Attached Infernal Shade for Minions affected by Dread Shade",
+            "+1% Cold Penetration for Minions affected by Dread Shade per Intelligence"
         ]
     },
     "262": {
@@ -3868,9 +3868,9 @@
             "level": 45
         },
         "mods": [
-            "+(65-114)% Increased Damage for skills used by Shadows",
+            "+(65-115)% Increased Damage for skills used by Shadows",
             "+(10-15)% Physical  Penetration with Shadow Daggers ",
-            "+50% Dark Protection (deprecated)",
+            "+50% Chance to apply a Shadow Dagger on Hit with Lethal Mirage",
             "+(15-25)% Critical Strike Multiplier",
             "+(5-10) Health Gain"
         ]
@@ -3883,11 +3883,11 @@
             "level": 48
         },
         "mods": [
-            "+(10-17)% Dark Protection (deprecated)",
+            "+(10-17)% Increased Cooldown Recovery Speed for Summon Storm Totem",
             "+1 Heal all totems and give them 2 seconds of Damage Immunity when you use a Potion",
             "+(24-34) Spell Lightning Damage for all existing totems when you directly cast Summon Storm Totem",
-            "+(10-17)% Penetration can reduce effective resistance below 0%, increasing damage even against enemies with no resistance.",
-            "+1 Level of Skills"
+            "+(10-17)% Totem Lightning Penetration",
+            "+1 Totem Level of Skills"
         ]
     },
     "264": {
@@ -3913,12 +3913,12 @@
             "level": 41
         },
         "mods": [
-            "+(-1-0) Critical strike chance if you have dealt a critical strike recently",
+            "-1 Critical strike chance if you have dealt a critical strike recently",
             "+1 Critical Strike Chance",
             "+50% less Critical strike chance if you have dealt a critical strike recently",
             "+(10-15) Ward Gain",
             "+(10-15)% Critical Strike Multiplier",
-            "+1 Level of Skills"
+            "+1 Necrotic Level of Skills"
         ]
     },
     "266": {
@@ -3929,10 +3929,10 @@
             "level": 46
         },
         "mods": [
-            "+30% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+30% Elemental Damage Leeched as Health",
             "+(30-39)% Increased Leech Rate",
             "+13% Elemental Resistance",
-            "+30% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
+            "+30% Necrotic Damage Leeched as Health",
             "+(13-19)% Fire  Penetration with Ignite "
         ]
     },
@@ -3945,14 +3945,14 @@
         },
         "mods": [
             "8% increased Mana Regen",
-            "13% increased Cast Speed",
+            "13% increased Physical Cast Speed",
             "21% increased Physical Spell Critical Strike Chance",
-            "+34% Increased Stun Chance",
+            "+34% Spell Physical Increased Stun Chance",
             "55% increased Health Regen",
             "89% increased Physical Damage",
-            "13% increased Cast Speed",
-            "+(21-34)% Critical Strike Chance",
-            "+34% Increased Stun Chance",
+            "13% increased Fire Cast Speed",
+            "(21-34)% increased Spell Fire Critical Strike Chance",
+            "+34% Spell Fire Increased Stun Chance",
             "89% increased Fire Damage"
         ]
     },
@@ -3964,13 +3964,13 @@
             "level": 0
         },
         "mods": [
-            "+(7-12) Dark Protection (deprecated)",
-            "+(7-12)% Dark Protection (deprecated)",
-            "+(4-6)% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+(32-56)% Dark Protection (deprecated)",
+            "+(7-12) Added Health for Bees per Attunement",
+            "+(7-12)% Increased Damage for Bees per Attunement",
+            "+(4-6)% Physical Penetration with Bleed inflicted by Bees per Strength",
+            "+1 When you directly cast Thorn Shield, the nearest Bee also gains Thorn Shield",
+            "+(32-56)% Chance to apply Frailty on hit for Bees",
             "+30% Minion Physical Damage Leeched as Health",
-            "(-1-0)% increased Minion Critical Strike Chance"
+            "1% less Minion Critical Strike Chance"
         ]
     },
     "269": {
@@ -3984,11 +3984,11 @@
             "(270-330)% increased Minion Damage",
             "(120-180)% increased Minion Health",
             "+(70-105) Health",
-            "+1 Dark Protection (deprecated)",
-            "+30% Dark Protection (deprecated)",
-            "+25% Dark Protection (deprecated)",
-            "+2 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)"
+            "+1 You can only control one Shade",
+            "+30% Increased Buff Effect for Dread Shade",
+            "+25% Increased Decay Rate for Dread Shade",
+            "+2 Chance to Apply Frailty and Slow to nearby enemies every second for Infernal Shade",
+            "+1 Temporary Minion Immunity for Infernal Shade"
         ]
     },
     "270": {
@@ -3999,12 +3999,12 @@
             "level": 58
         },
         "mods": [
-            "+(6-10) Dark Protection (deprecated)",
+            "+(6-10) Bees released when Decoy explodes",
             "+(22-34)% Mana efficiency for Decoy",
             "+(40-90) Health",
             "+110 Armor",
             "+60% Poison Resistance",
-            "+1 Dark Protection (deprecated)"
+            "+1 When you hit a Bee with Acid Flask, it gains Toxic Coating"
         ]
     },
     "271": {
@@ -4027,14 +4027,14 @@
             "level": 75
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+(2-4)% Dark Protection (deprecated)",
-            "+(6-18)% Health",
+            "+1 Maximum Bone Golems per 4 maximum Skeletons",
+            "+1 Can't Summon Skeletons",
+            "+(2-4)% Bone Golems have 6% chance on hit to grant you a percentage of their missing health as ward.",
+            "(6-18)% increased Health",
             "(60-180)% increased Minion Health",
-            "(60-180)% increased Minion Health",
-            "+1 Level of Skills",
-            "+3 Dark Protection (deprecated)"
+            "+(60-180) Minion Health",
+            "+1 Minion Level of Skills",
+            "+3 Seconds Cooldown for Bone Shatter"
         ]
     },
     "273": {
@@ -4045,10 +4045,10 @@
             "level": 0
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
+            "+1 Volcanic Orb Base Damage Converted to Void",
             "+(18-30)% Remaining Volcanic Orb Cooldown Recovered when you use a Melee Attack and hit at least one Enemy",
-            "+1 Dark Protection (deprecated)",
-            "+(24-36)% Dark Protection (deprecated)"
+            "+1 chance to gain Corrupted Heraldry when you cast Volcanic Orb",
+            "+(24-36)% chance to gain Corrupted Heraldry when hit by Shrapnel from Volcanic Orb"
         ]
     },
     "274": {
@@ -4060,10 +4060,10 @@
         },
         "mods": [
             "(150-220)% increased Spell Damage While Transformed",
-            "(80-90)% increased Spell Damage",
-            "+2 Level of Skills",
+            "+(80-90) Spell Damage",
+            "+2 Cold Level of Skills",
             "+400 Ward Gain on Transform",
-            "+(3-4) Dark Protection (deprecated)",
+            "+(3-4) Ward per second per Active Maelstrom",
             "+(150-220)% Ward Retention on Transform"
         ]
     },
@@ -4075,13 +4075,13 @@
             "level": 77
         },
         "mods": [
-            "+(200-350)% Dark Protection (deprecated)",
+            "+(200-350)% Increased Area With Supernova",
             "(30-150)% increased Elemental Damage",
             "+(10-120) Mana",
-            "+1 Level of Skills",
-            "+1 Level of Skills",
-            "+1 Level of Skills",
-            "+(40-100) Dark Protection (deprecated)"
+            "+1 Lightning Level of Skills",
+            "+1 Fire Level of Skills",
+            "+1 Cold Level of Skills",
+            "+(40-100) Added Spell Damage With Supernova"
         ]
     },
     "276": {
@@ -4092,12 +4092,12 @@
             "level": 26
         },
         "mods": [
-            "+50% Dark Protection (deprecated)",
+            "+50% Fireball Base Damage Converted to Lightning",
             "(45-75)% increased Lightning Damage",
             "+2 Fireball",
-            "+(20-28)% Dark Protection (deprecated)",
+            "+(20-28)% Chance to apply a Spark Charge on Hit with Fireball",
             "+(20-28) Ward per Second",
-            "+1 Dark Protection (deprecated)"
+            "+1 Ignite Chance Converted to Shock Chance for Fireball"
         ]
     },
     "277": {
@@ -4112,8 +4112,8 @@
             "+(15-20)% All Resistances",
             "(15-20)% increased Health Regen",
             "(15-20)% increased Mana Regen",
-            "+(15-20)% Dodge Rating",
-            "+(-10-0)% Damage Taken if you have at least 180 Total Attributes"
+            "(15-20)% increased Dodge Rating",
+            "10% less Damage Taken if you have at least 180 Total Attributes"
         ]
     },
     "278": {
@@ -4124,9 +4124,9 @@
             "level": 28
         },
         "mods": [
-            "(4-8)% increased Movement Speed",
-            "+(16-32)% Armor",
-            "+(2-3) Dark Protection (deprecated)",
+            "(4-8)% increased Transform Movement Speed",
+            "(16-32)% increased Transform Armor",
+            "+(2-3) Rage Gained per Second per Summoned Vine",
             "+(32-64) Mana",
             "+1 Spriggan Form",
             "+1 Summon Spriggan"
@@ -4140,13 +4140,13 @@
             "level": 51
         },
         "mods": [
-            "(50-105)% increased Melee Void Damage",
+            "+(50-105) Melee Void Damage",
             "+(50-105) Spell Void Damage",
-            "+(1-2) Level of Skills",
+            "+(1-2) Void Level of Skills",
             "+(50-105) Endurance Threshold",
-            "+(10-15)% Spell Damage",
-            "+1 Dark Protection (deprecated)",
-            "+(-10--5) Dark Protection (deprecated)"
+            "+(10-15)% Void Spell Damage",
+            "+1 Chance to transport Devouring Orbs around the target location when you use Erasing Strike",
+            "-10 Erasing Strike Mana Cost"
         ]
     },
     "280": {
@@ -4158,9 +4158,9 @@
         },
         "mods": [
             "(18-20)% increased Movement Speed",
-            "(-18-0)% increased Movement Speed",
-            "+(112-172)% Dodge Rating",
-            "+(112-172) Dodge Rating",
+            "18% reduced Channelling Movement Speed",
+            "(112-172)% increased Channelling Dodge Rating",
+            "+(112-172) Channelling Dodge Rating",
             "+(18-36) Ward gained when you Dodge While Channelling",
             "+2 Mana gained when you Dodge While Channelling",
             "+(6-12) Intelligence"
@@ -4174,11 +4174,11 @@
             "level": 0
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+2% Dark Protection (deprecated)",
+            "+1 Axe Throw every second while channelling Warpath",
+            "+2% increased Axe Throw Frequency per 10% increased physical damage",
             "+1 Warpath",
             "(13-52)% increased Physical Damage",
-            "+1 Level of Skills",
+            "+1 Throwing Level of Skills",
             "+(24-124)% Increased Physical Damage while Dual Wielding"
         ]
     },
@@ -4190,10 +4190,10 @@
             "level": 0
         },
         "mods": [
-            "+(14-26)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
-            "+(26-42)% More Damage Per Stack",
+            "+(14-26)% SpreadingFlames Chance",
+            "(26-42)% more Fire More Damage Per Stack",
             "(42-72)% increased Fire Damage Over Time",
-            "+(-4-0) Mana Cost",
+            "-4 Spell Fire Mana Cost",
             "4% increased Movement Speed"
         ]
     },
@@ -4205,11 +4205,11 @@
             "level": 31
         },
         "mods": [
-            "+(17-29) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+1 Level of Skills",
-            "(-17-0)% increased Damage Over Time Taken",
-            "+10% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(10-17)% Spell Damage"
+            "+(17-29) Damage over Time Spell Poison Damage",
+            "+1 Damage over Time Spell Level of Skills",
+            "17% less Damage Over Time Taken",
+            "+10% Poison Damage Leeched as Health",
+            "+(10-17)% Damage over Time Spell Damage"
         ]
     },
     "284": {
@@ -4221,14 +4221,14 @@
         },
         "mods": [
             "+(61-66) Ward Gain on Kill",
-            "+(36-61)% Dark Protection (deprecated)",
-            "+(36-61)% Dark Protection (deprecated)",
-            "+(11-16)% Dark Protection (deprecated)",
-            "+(11-16)% Dark Protection (deprecated)",
-            "+(22-36)% Dark Protection (deprecated)",
-            "+(22-36)% Dark Protection (deprecated)",
-            "+(61-66)% Dark Protection (deprecated)",
-            "+(61-66) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+(36-61)% Increased Melee Attack Area for Summoned Wraiths",
+            "+(36-61)% Increased Area for Infernal Shade",
+            "+(11-16)% Chance to Cast Summon Wraith on Kill",
+            "+(11-16)% Chance to Cast Summon Wraith when a Wraith kills an enemy",
+            "+(22-36)% Chance to Cast Infernal Shade on Kill",
+            "+(22-36)% Chance to Cast Infernal Shade when a Wraith kills an enemy",
+            "+(61-66)% More Infernal Shade Damage per active Wraith against Bosses and Rare Enemies",
+            "+(61-66) Damage over Time Spell Necrotic Damage"
         ]
     },
     "285": {
@@ -4239,10 +4239,10 @@
             "level": 36
         },
         "mods": [
-            "+(48-65) Dark Protection (deprecated)",
+            "+(48-65) Melee Damage for Detonating Arrow",
             "+3 Detonating Arrow",
-            "+(-6--3) Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)"
+            "-6 Mana Cost for Detonating Arrow",
+            "+1 Detonating Arrow Converted to a Melee Attack"
         ]
     },
     "286": {
@@ -4253,12 +4253,12 @@
             "level": 0
         },
         "mods": [
-            "+1 Level of Skills",
-            "+(120-240)% Dark Protection (deprecated)",
-            "+(65-125)% Increases the damage of doom and the size of its increase to melee damage taken",
-            "+(10-12)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
-            "+2 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)"
+            "+1 Lightning Level of Skills",
+            "+(120-240)% increased Spark Charge Explosion Area ",
+            "+(65-125)% Melee Increased SparkCharge Effect",
+            "+(10-12)% SparkCharge Chance",
+            "+2 Lightning Damage for Spark Charge per Intelligence",
+            "+1 Spark Charge to all targets around the destination when you Teleport"
         ]
     },
     "287": {
@@ -4269,10 +4269,10 @@
             "level": 24
         },
         "mods": [
-            "+(16-64)% Dark Protection (deprecated)",
-            "+3 Dark Protection (deprecated)",
-            "+(2-100)% Dark Protection (deprecated)",
-            "+(-12--8) Dark Protection (deprecated)",
+            "+(16-64)% Increased Cooldown Recovery Speed for Judgement",
+            "+3 Melee Damage per Attunement for Judgement while Unarmed",
+            "+(2-100)% increased Area per Attunement for Judgement while Unarmed",
+            "-12 Judgement Mana Cost while Unarmed",
             "+(8-24)% Fire Penetration",
             "+(4-16) Attunement"
         ]
@@ -4286,8 +4286,8 @@
         },
         "mods": [
             "+100% Meteor",
-            "+(-1-0)% Damage Taken for each Meteor you have cast recently (up to 18)",
-            "+(30-60)% Dark Protection (deprecated)",
+            "1% less Damage Taken for each Meteor you have cast recently (up to 18)",
+            "+(30-60)% increased Meteor Fall Speed",
             "+(6-9)% Chance to Cast Meteor on Crit if above 0 Mana",
             "+(9-12) Mana gained on Potion Use for each Meteor you have cast recently",
             "+3 Potion Slots if you have at least 900 Mana"
@@ -4302,12 +4302,12 @@
         },
         "mods": [
             "+3 Shurikens",
-            "+(30-48)% Dark Protection (deprecated)",
-            "+-3 Throwing Attack Mana Cost",
+            "+(30-48)% chance for Shurikens to Ricochet 3 additional times",
+            "-3 Throwing Attack Mana Cost",
             "+(24-30)% Block Chance",
             "+(240-420) Block Effectiveness",
             "+(30-48)% Chance to throw Shurikens on Block",
-            "+(12-18)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect."
+            "(12-18)% more Throwing Global Conditional Damage"
         ]
     },
     "290": {
@@ -4319,10 +4319,10 @@
         },
         "mods": [
             "+(6-10) Vitality",
-            "+(6-14)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
+            "(6-14)% more Global Conditional Damage",
             "+2 Health per Vitality",
             "+(36-48)% Current Health and Ward lost when you directly cast a Spell",
-            "+8 Dark Protection (deprecated)",
+            "+8 Ward per Second per 1% uncapped Physical Resistance while channelling Rebuke",
             "+4 Seconds of Disabled Health Leech after you directy cast a Spell "
         ]
     },
@@ -4335,8 +4335,8 @@
         },
         "mods": [
             "+(50-85)% Increased Leech Rate",
-            "+(5-8)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
-            "+1 Dark Protection (deprecated)",
+            "(5-8)% more Global Conditional Damage",
+            "+1 Throwing Fire Damage with Burning Daggers per 2% increased chance to find potions",
             "+(35-50)% chance to throw a Burning Dagger on hit (1 second cooldown)",
             "+1 Chance to throw a Burning Dagger when you drink a Potion"
         ]
@@ -4350,12 +4350,12 @@
         },
         "mods": [
             "+(38-76) Melee Cold Damage",
-            "+3 Level of Skills",
-            "+(14-24)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
-            "+(24-38)% Chance to Chill Attackers",
-            "+3 Level of Skills",
+            "+3 Minion Cold Level of Skills",
+            "(14-24)% more Minion Necrotic Global Conditional Damage",
+            "+(24-38)% Minion Chance to Chill Attackers",
+            "+3 Minion Necrotic Level of Skills",
             "+1 chance to gain Frozen Vengeance on Minion Death",
-            "+(14-24)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect."
+            "(14-24)% more Minion Cold Global Conditional Damage"
         ]
     },
     "293": {
@@ -4366,9 +4366,9 @@
             "level": 15
         },
         "mods": [
-            "+(12-17)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
-            "+(12-17)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
-            "+(6-12)% Attack Speed",
+            "(12-17)% more Melee Global Conditional Damage",
+            "(12-17)% more Spell Global Conditional Damage",
+            "(6-12)% increased Attack Speed",
             "(6-12)% increased Cast Speed",
             "+(2-6) All Attributes"
         ]
@@ -4382,8 +4382,8 @@
         },
         "mods": [
             "+(14-30)% Mana Spent Gained as Ward",
-            "+(4-10)% Health",
-            "+(4-10)% Mana",
+            "(4-10)% increased Health",
+            "(4-10)% increased Mana",
             "+1 Ward gained on hit per 10 missing mana if your current ward is lower than your missing health"
         ]
     },
@@ -4412,7 +4412,7 @@
             "(5-11)% increased Movement Speed",
             "+(30-60) Ward gained when you gain Haste or refresh its duration",
             "+(5-11)% chance to gain Haste for 3 seconds when a nearby enemy dies",
-            "+(-35--15)% Damage over Time taken while you have Haste",
+            "35% less Damage over Time taken while you have Haste",
             "+3 seconds of Haste and Frenzy for your minions when you gain Haste or refresh its duration"
         ]
     },
@@ -4426,7 +4426,7 @@
         "mods": [
             "+1 Level of Skills",
             "+(28-48)% chance on Hit to grant one of your minions Aspect of the Spider (2 second cooldown)",
-            "+(-12--8)% Damage over Time Taken from Slowed Enemies"
+            "12% less Damage over Time Taken from Slowed Enemies"
         ]
     },
     "298": {
@@ -4451,7 +4451,7 @@
         },
         "mods": [
             "+1 Level of Skills",
-            "+(20-30)% Armor",
+            "(20-30)% increased Armor",
             "+(20-30)% Armor Mitigation also applies to Damage over Time"
         ]
     },
@@ -4479,7 +4479,7 @@
         "mods": [
             "+1 Level of Skills",
             "+(24-54) Dodge Rating",
-            "+(-25--15)% Damage Taken per Active Shadow (1 in 6 chance)"
+            "25% less Damage Taken per Active Shadow (1 in 6 chance)"
         ]
     },
     "302": {
@@ -4490,12 +4490,12 @@
             "level": 24
         },
         "mods": [
-            "+30% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
+            "+30% chance for Wolves to Retaliate with Lightning Strike when hit",
+            "+1 Wolves cannot be Stunned",
             "+(31-47)% chance on hit with Lightning Skills to grant your Wolves additional Melee Lightning Damage equal to your Melee Lightning Damage",
-            "+(31-47)% Chance to Shock on Hit",
+            "+(31-47)% Melee Chance to Shock on Hit",
             "+(7-13) Melee Lightning Damage",
-            "+(30-37)% Increases your movement speed if you have used a potion in the past 4 seconds"
+            "(30-37)% increased Minion Movement Speed"
         ]
     },
     "303": {
@@ -4506,11 +4506,11 @@
             "level": 0
         },
         "mods": [
-            "+(18-27) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+1 Dark Protection (deprecated)",
-            "+(27-36)% Fire Resistance",
-            "+(36-81)% Minion Spell Damage",
-            "+1 Level of Skills"
+            "+(18-27) Minion Damage over Time Poison Damage",
+            "+1 chance for Volatile Zombies to resurrect after 1 second (divided by the number of zombies)",
+            "+(27-36)% Minion Fire Resistance",
+            "(36-81)% increased Minion Spell Damage",
+            "+1 Minion Damage over Time Level of Skills"
         ]
     },
     "304": {
@@ -4522,10 +4522,10 @@
         },
         "mods": [
             "+(21-45)% Chance to Shock Attackers",
-            "+(105-175)% Armour against Shocked Enemies",
-            "+(7-15)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
-            "+(21-45)% Dark Protection (deprecated)",
-            "+(7-15)% Dark Protection (deprecated)"
+            "(105-175)% more Armour against Shocked Enemies",
+            "(7-15)% more Lightning Global Conditional Damage",
+            "+(21-45)% Chance to gain 15 Static Charges when Hit",
+            "+(7-15)% Chance to cast Static when Hit"
         ]
     },
     "305": {
@@ -4537,11 +4537,11 @@
         },
         "mods": [
             "+(3-6) All Attributes",
-            "+(12-18) Dark Protection (deprecated)",
-            "+(30-36) Armor per Rah Rune",
+            "+(12-18) Spell Damage per Active Rune",
+            "+(30-36) Armour per Rah Rune",
             "+(48-54) Dodge Rating per Heo Rune",
             "+(12-18) Ward per Second per Gon Rune",
-            "+1 Dark Protection (deprecated)",
+            "+1 Spell Damage with Runic Invocation per 10 Armour, Dodge Rating, or Ward, whichever is lowest.",
             "+(1-3) Runic Invocation"
         ]
     },
@@ -4555,7 +4555,7 @@
         "mods": [
             "30% increased Movement Speed",
             "+(30-67)% Increased Bleed Duration ",
-            "+(30-40)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
+            "(30-40)% more Frailty Physical Global Conditional Damage",
             "+(8-12) Strength",
             "+(8-12) Dexterity",
             "+(8-12) Intelligence"
@@ -4571,9 +4571,9 @@
         "mods": [
             "+(30-60)% Increased Area with Elemental Nova",
             "+(3-6) Elemental Nova",
-            "+(1-30)% Dark Protection (deprecated)",
-            "+(-18--9)% Damage Taken from Ignited Shocked or Chilled Enemies",
-            "+1 Dark Protection (deprecated)"
+            "+(1-30)% Elemental Penetration with Elemental Nova per 10% uncapped Total Elemental Resistance",
+            "18% less Damage Taken from Ignited Shocked or Chilled Enemies",
+            "+1 Elemental Nova is always Tri-Elemental"
         ]
     },
     "308": {
@@ -4584,9 +4584,9 @@
             "level": 50
         },
         "mods": [
-            "(50-55)% increased Spell Damage",
-            "+1 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
+            "+(50-55) Spell Damage",
+            "+1 Runebolt's element always matches the last skill you used directly that had a single elemental tag",
+            "+1 Runebolts that have a different element to the last Runebolt you cast grant you a stack of Numeromancy (up to 5) and refresh the duration of existing stacks",
             "+(1-5) Runebolt"
         ]
     },
@@ -4598,9 +4598,9 @@
             "level": 40
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+(125-180)% Dark Protection (deprecated)",
-            "+(1-2) Level of Skills",
+            "+1 Throwing an Acid Flask consumes a potion in order to throw an additional flask that deals more damage",
+            "(125-180)% more Damage with an Acid Flask thrown by consuming a potion",
+            "+(1-2) Throwing Level of Skills",
             "+(25-32)% increased area for Throwing Area Skills",
             "+(1-2) Potion Slots",
             "(5-8)% increased Movement Speed",
@@ -4617,8 +4617,8 @@
         "mods": [
             "+(10-35)% Chance to gain Haste for 1 second on Hit",
             "+3% increased Spell Damage per 1% increased Movement Speed",
-            "+1 Dark Protection (deprecated)",
-            "+(10-18)% Dark Protection (deprecated)",
+            "+1 Wrongwarp with Teleport or Transplant",
+            "+(10-18)% Increased Cooldown Recovery Speed for Teleport",
             "+(10-18)% Increased Cooldown Recovery Speed for Transplant"
         ]
     },
@@ -4630,12 +4630,12 @@
             "level": 48
         },
         "mods": [
-            "+(60-64)% Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+(40-80)% Dark Protection (deprecated)",
-            "+(4-8) Dark Protection (deprecated)",
-            "+(16-24)% Penetration can reduce effective resistance below 0%, increasing damage even against enemies with no resistance.",
-            "(16-24)% increased Spell Damage"
+            "+(60-64)% Volcanic Orb speed modifiers also apply to Flame Rush speed and distance",
+            "+1 Increases to Fire Aura Area also apply to Glyph of Dominion",
+            "+(40-80)% chance to cast Fire Aura each second while standing on your Glyph of Dominion",
+            "+(4-8) Spell Damage with Flame Rush per stack of Fire Aura",
+            "+(16-24)% Elemental Penetration",
+            "+(16-24) Spell Damage"
         ]
     },
     "312": {
@@ -4650,8 +4650,8 @@
             "+(9-18)% chance to Invoke Hydrahedron on kill with fire skills (9 second cooldown)",
             "+(9-18) Ward Gained on Hit with Hydrahedron",
             "+(9-18)% Fire Penetration with Fire Invocations",
-            "+(9-63)% Dark Protection (deprecated)",
-            "+(9-36)% Dark Protection (deprecated)",
+            "+(9-63)% increased Hydrahedron Area",
+            "+(9-36)% increased Hydrahedron Cast Rate",
             "+(18-108) Ward Decay Threshold"
         ]
     },
@@ -4664,12 +4664,12 @@
         },
         "mods": [
             "+(1-3) Runic Invocation",
-            "+(18-36)% Dark Protection (deprecated)",
-            "+(18-36)% Dark Protection (deprecated)",
-            "+(18-36)% Dark Protection (deprecated)",
-            "+3% Dark Protection (deprecated)",
-            "+3% Dark Protection (deprecated)",
-            "+3% Dark Protection (deprecated)"
+            "(18-36)% more Damage while using a Wand for Invocations with Heo as their first Rune",
+            "(18-36)% more Damage while using a Staff for Invocations with Gon as their first Rune",
+            "(18-36)% more Damage while using a Sceptre for Invocations with Rah as their first Rune",
+            "3% more Damage per Strength for Invocations with Heo as their second Rune",
+            "3% more Damage per Dexterity for Invocations with Gon as their second Rune",
+            "3% more Damage per Attunement for Invocations with Rah as their second Rune"
         ]
     },
     "314": {
@@ -4682,7 +4682,7 @@
         "mods": [
             "+1 Intelligence Equals Strength",
             "+(36-54) Melee Physical Damage",
-            "+(6-16)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
+            "(6-16)% more Global Conditional Damage",
             "+(3-9) Strength",
             "+1 Level of Skills"
         ]
@@ -4695,10 +4695,10 @@
             "level": 37
         },
         "mods": [
-            "+(37-47)% Dark Protection (deprecated)",
-            "+(7-17) Dark Protection (deprecated)",
+            "+(37-47)% Chance to Cast Lightning Blast on Crit with Frost Claw (up to 3 casts per second)",
+            "+(7-17) Ward Gained on Crit with Frost Claw",
             "+(7-17)% All Resistances",
-            "+(37-47)% Critical Strike Multiplier"
+            "+(37-47)% Spell Critical Strike Multiplier"
         ]
     },
     "316": {
@@ -4711,14 +4711,14 @@
         "mods": [
             "+(39-91) Ward per Second for you or your allies while standing on your Glyph of Dominion",
             "+(78-182) Ward Decay Threshold",
-            "+1 Dark Protection (deprecated)",
-            "+(1-2) Level of Skills",
+            "+1 Ignite Shock and Chill Chance converted to Fire Lightning and Cold Resistance Shred Chance while standing on your Glyph of Dominion",
+            "+(1-2) Buff Level of Skills",
             "+(39-52)% Increased Ignite Duration ",
-            "+(39-52)% Increases the duration of doom you inflict",
+            "+(39-52)% Increased Chill Duration",
             "+(39-52)% Increased Shock Duration ",
-            "+(39-52)% Increases the duration of doom you inflict",
-            "+(39-52)% Increases the duration of doom you inflict",
-            "+(39-52)% Increases the duration of doom you inflict"
+            "+(39-52)% Increased FireResShred Duration",
+            "+(39-52)% Increased ColdResShred Duration",
+            "+(39-52)% Increased LightningResShred Duration"
         ]
     },
     "317": {
@@ -4731,9 +4731,9 @@
         "mods": [
             "+(1-4) Frost Wall",
             "+(16-40)% increased Frost Wall Duration",
-            "+1 Dark Protection (deprecated)",
+            "+1 When you directly cast Frost Wall it is cast directly in front of you and you leap backwards a short distance and invoke Revik's Blizzard at the wall.",
             "(48-108)% increased Cold Damage Over Time",
-            "+(16-24)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect."
+            "(16-24)% more Damage over Time Cold Global Conditional Damage"
         ]
     },
     "318": {
@@ -4744,7 +4744,7 @@
             "level": 72
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
+            "+1 Gain Dawn to Dusk and Dusk to Midnight with Runic Invocation",
             "+(1-2) Runic Invocation",
             "(24-36)% increased Cast Speed",
             "(24-36)% increased Mana Regen"
@@ -4760,8 +4760,8 @@
         "mods": [
             "+1 Level of Skills",
             "+(10-17)% Increased Leech Rate",
-            "+(-17--10)% Damage Taken while Leeching",
-            "+(100-170)% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "17% less Damage Taken while Leeching",
+            "(100-170)% increased Damage"
         ]
     },
     "320": {
@@ -4774,7 +4774,7 @@
         "mods": [
             "+(12-36)% Physical Penetration",
             "+(60-84) Melee Physical Damage",
-            "+1 Dark Protection (deprecated)",
+            "+1 Javelin splits on hit into 2 piercing spears plus 1 additional spear per 12 dexterity",
             "+1% increased Area for Area Skills per 3 Dexterity",
             "+(3-12) Dexterity"
         ]
@@ -4787,12 +4787,12 @@
             "level": 17
         },
         "mods": [
-            "+(8-48)% Chance to Slow on Hit",
-            "+(8-48)% Chance to apply Frailty on Hit",
-            "+(8-48)% Chance to Shred Armor on Hit",
-            "+(8-48)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times.",
+            "+(8-48)% Spell Chance to Slow on Hit",
+            "+(8-48)% Spell Chance to apply Frailty on Hit",
+            "+(8-48)% Spell Chance to Shred Armor on Hit",
+            "+(8-48)% Spell Electrify Chance",
             "+(8-48)% Chance to Poison on Spell Hit",
-            "+6% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect.",
+            "6% more Spell Global Conditional Damage",
             "+1% increased Cast Speed per 2 Intelligence",
             "+1 Mana Gained on Potion Use per 4 Intelligence"
         ]
@@ -4808,8 +4808,8 @@
             "+1 The Cuckoo may permanently change into a random exalted item when a nearby enemy dies",
             "+(9-17) Ward Gain on Kill",
             "+(66-290) Ward Decay Threshold",
-            "+(17-28)% Critical Strike Avoidance",
-            "+(17-28)% Dodge Rating"
+            "+(17-29)% Critical Strike Avoidance",
+            "(17-29)% increased Dodge Rating"
         ]
     },
     "323": {
@@ -4820,14 +4820,14 @@
             "level": 75
         },
         "mods": [
-            "+(1-3) Level of Skills",
+            "+(1-3) Spell Level of Skills",
             "(45-63)% increased Effect of Haste on You",
             "+(9-15) Intelligence",
-            "+1 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "+3 Dark Protection (deprecated)",
-            "+(15-21)% Dark Protection (deprecated)",
-            "+(15-90)% Increases the damage of doom and the size of its increase to melee damage taken"
+            "+1 Enemies per 10 Intelligence to Torment when you directly cast Soul Feast",
+            "+1 You inflict Torment on yourself when you directly cast Soul Feast",
+            "+3 Seconds of Haste when you directly cast Soul Feast",
+            "+(15-21)% Chance to cast Chthonic Fissure when you hit a boss or rare enemy with Soul Feast and don't have an active Fissure",
+            "+(15-90)% Increased Torment Effect"
         ]
     },
     "324": {
@@ -4838,8 +4838,8 @@
             "level": 31
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+1% Dark Protection (deprecated)"
+            "+1 Once you have one Rune for Runic Invocation your runes cannot change until they are consumed",
+            "+1% Chance per Intelligence for 11% more Elemental Damage with One Rune Invocations"
         ]
     },
     "325": {
@@ -4850,8 +4850,8 @@
             "level": 32
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+2% Dark Protection (deprecated)"
+            "+1 Once you have two Runes for Runic Invocation your runes cannot change until they are consumed",
+            "+2% Chance per Intelligence for +22% Elemental Penetration with Two Rune Invocations"
         ]
     },
     "326": {
@@ -4862,8 +4862,8 @@
             "level": 33
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
-            "+3% Dark Protection (deprecated)"
+            "+1 Once you have three Runes for Runic Invocation your runes cannot change until they are consumed",
+            "+3% Chance per Intelligence for 33% increased Elemental Damage with Three Rune Invocations"
         ]
     },
     "327": {
@@ -4876,9 +4876,9 @@
         "mods": [
             "+1 Belt Stat Multiplier for 1 second on Potion Use",
             "+1 Potion Slot per equipped Weaver Item",
-            "+(24-54)% Armor",
+            "(24-54)% increased Armor",
             "+(24-54)% Mana Spent Gained as Ward",
-            "+(6-14)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect."
+            "(6-14)% more Global Conditional Damage"
         ]
     },
     "328": {
@@ -4889,12 +4889,12 @@
             "level": 0
         },
         "mods": [
-            "+(6-84) Ward per Second",
-            "+1 Dark Protection (deprecated)",
-            "+1% Dark Protection (deprecated)",
-            "+3% Dark Protection (deprecated)",
-            "+(6-84)% Chance to Ignite on Hit",
-            "+(6-84)% Chance to apply Damned on Hit"
+            "+(6-84) Channelling Ward per Second",
+            "+1 Drain Life casts Stygian Beams instead",
+            "+1% increased Stygian Beam frequency per Intelligence",
+            "3% more Stygian Beam Damage per 10 Current Mana",
+            "+(6-84)% Channelling Chance to Ignite on Hit",
+            "+(6-84)% Channelling Chance to apply Damned on Hit"
         ]
     },
     "329": {
@@ -4909,7 +4909,7 @@
             "+(35-115) Damage Reflected to Attackers",
             "+(25-35)% Chance to retaliate with Shield Throw on Block (0.5 second cooldown)",
             "+(1-3) Shield Throw",
-            "+1 Dark Protection (deprecated)"
+            "+1 Throwing Damage for Shield Throw per 10 Damage Reflected to Attackers"
         ]
     },
     "330": {
@@ -4920,13 +4920,13 @@
             "level": 61
         },
         "mods": [
+            "+(1-3) Fire Level of Skills",
+            "+(1-3) Damage over Time Level of Skills",
             "+(1-3) Level of Skills",
-            "+(1-3) Level of Skills",
-            "+(1-3) Level of Skills",
-            "+1 Dark Protection (deprecated)",
-            "+1 Dark Protection (deprecated)",
-            "(61-72)% increased Spell Damage",
-            "+(6-9)% Dark Protection (deprecated)"
+            "+1 Chance for Chthonic Fissures to cast Flame Whip instead of releasing Spirits",
+            "+1 Chthonic Fissure Tree applies to Flame Whip",
+            "+(61-72) Spell Damage",
+            "+(6-9)% Critical Strike Multiplier with Flame Whip per 10% Uncapped Necrotic Resistance"
         ]
     },
     "331": {
@@ -4937,9 +4937,9 @@
             "level": 0
         },
         "mods": [
-            "+1 Dark Protection (deprecated)",
+            "+1 Acid Flask Base Damage converted to Cold",
             "+(45-85)% Chance to apply Frostbite on Cold Hit",
-            "+(17-45)% Spell Damage",
+            "+(17-45)% Cold Spell Damage",
             "+(45-85)% Freeze Rate Multiplier",
             "(17-45)% increased Cold Damage"
         ]
@@ -4952,11 +4952,11 @@
             "level": 59
         },
         "mods": [
-            "+(30-50)% Increases your movement speed if you have used a potion in the past 4 seconds",
+            "(30-50)% increased Minion Movement Speed",
             "+(10-30)% Physical Penetration for Bleed inflicted by Minions ",
             "+(130-300)% your Bleed Chance granted to your Falcon",
             "+(3-15) Dexterity",
-            "+1 Dark Protection (deprecated)",
+            "+1 Health gained per Dexterity when your Falcon hits an enemy",
             "+(1-3) Falconry"
         ]
     },
@@ -4968,15 +4968,15 @@
             "level": 27
         },
         "mods": [
-            "+(12-16) Dark Protection (deprecated)",
-            "+(3-4)% Dark Protection (deprecated)",
+            "+(12-16) Cinder Strike Melee Damage per Level of Falconry While Unarmed",
+            "+(3-4)% increased Cinder Strike Area per Level of Falconry While Unarmed",
             "+4 Cinder Strike Melee Damage per Falcon Hit in the past 6 seconds if you are unarmed",
             "+1% increased Cinder Strike Area per Falcon Hit in the past 6 seconds if you are unarmed",
             "+(1-4) Cinder Strike",
             "+(1-4) Falconry",
             "(12-27)% increased Melee Attack Speed",
             "+(12-27) Melee Fire Damage",
-            "+(12-27) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+(12-27) Minion Melee Fire Damage"
         ]
     },
     "334": {
@@ -5004,11 +5004,11 @@
             "level": 65
         },
         "mods": [
-            "+(28-48)% Increases your movement speed if you have used a potion in the past 4 seconds",
+            "(28-48)% increased Minion Movement Speed",
             "+(6-13) Minion Melee Damage",
             "+(6-13) Minion Spell Damage",
             "+1 Summon Wraith",
-            "+1 Dark Protection (deprecated)"
+            "+1 chance for Summoned Wraith to Summon a Wraithlord instead"
         ]
     }
 }

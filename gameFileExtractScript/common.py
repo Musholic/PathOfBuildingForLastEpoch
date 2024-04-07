@@ -57,40 +57,257 @@ def insert_newlines(string, every=128):
     return '\n'.join(string[i:i + every] for i in range(0, len(string), every))
 
 
-def get_value_range(mod_data, is_increased):
-    min_roll = mod_data.get("value") or mod_data["implicitValue"]
+def get_value_range(mod_data, mod_type):
+    min_roll = mod_data.get("value") or mod_data.get("implicitValue") or 0
     max_roll = mod_data.get("maxValue")
     if max_roll is None:
-        max_roll = mod_data["implicitMaxValue"]
+        max_roll = mod_data.get("implicitMaxValue")
+    if max_roll is None:
+        max_roll = min_roll
     is_percentage = isinstance(min_roll, float) or isinstance(max_roll, float)
     if is_percentage:
-        min_roll = int(100 * min_roll)
-        max_roll = int(100 * max_roll)
-    if min_roll >= max_roll:
+        min_roll = 100 * float(min_roll)
+        max_roll = 100 * float(max_roll)
+
+    modifier = ""
+    if mod_type == 1:
+        if float(min_roll) > 0:
+            modifier = " increased"
+        else:
+            modifier = " reduced"
+            min_roll = float(min_roll) * -1
+            max_roll = float(max_roll) * -1
+    elif mod_type == 2:
+        if float(min_roll) > 0:
+            modifier = " more"
+        else:
+            modifier = " less"
+            min_roll = float(min_roll) * -1
+            max_roll = float(max_roll) * -1
+
+    if round(min_roll, 5).is_integer() and round(max_roll, 5).is_integer():
+        min_roll = round(min_roll)
+        max_roll = round(max_roll)
+
+    if abs(min_roll) >= abs(max_roll):
         value_range = str(min_roll)
     else:
         value_range = "(" + str(min_roll) + "-" + str(max_roll) + ")"
-    if is_percentage or is_increased:
+    if is_percentage or mod_type > 0:
         value_range += "%"
-    if is_increased:
-        value_range += " increased"
-    else:
+
+    if not modifier and float(min_roll) > 0:
         value_range = "+" + value_range
-    return value_range
+    return value_range + modifier
 
 
 def get_mod_value(mod_data):
-    mod_key = str(mod_data["property"]) + "_" + str(mod_data["specialTag"]) + "_" + str(mod_data["tags"])
+    apply_tags = False
+    apply_special_tag = False
+    mod_key = str(mod_data["property"]) + "_" + str(mod_data.get("specialTag") or 0) + "_" + str(mod_data["tags"])
     if mod_key not in modDataList:
-        mod_key = str(mod_data["property"]) + "_" + str(mod_data["specialTag"]) + "_0"
+        apply_tags = True
+        mod_key = str(mod_data["property"]) + "_" + str(mod_data.get("specialTag") or 0) + "_0"
     if mod_key not in modDataList:
+        apply_tags = True
+        apply_special_tag = True
         mod_key = str(mod_data["property"]) + "_0_0"
+    if mod_key not in modDataList:
+        return str(mod_data.get('baseValue') or mod_data["value"]) + " " + mod_data["statName"]
     mod_base_data = modDataList[mod_key]
-    modifier_type = mod_data.get("modifierType")
-    if modifier_type is None:
-        modifier_type = mod_base_data.get("modifierType") or 0
+    if "modifierType" in mod_data:
+        modifier_type = mod_data.get("modifierType")
+    elif "type" in mod_data:
+        modifier_type = mod_data.get("type")
+    else:
+        modifier_type = mod_base_data.get("modType") or 0
     value_range = get_value_range(mod_data, modifier_type)
-    return value_range + " " + mod_base_data["name"]
+    stat_name = mod_base_data['name']
+    if apply_tags or mod_base_data.get('needs_tag_apply'):
+        stat_name = add_tags_modifier(stat_name, mod_data["tags"])
+    if apply_special_tag or mod_base_data.get('needs_tag_apply'):
+        stat_name = add_special_tag_modifier(stat_name, mod_data['specialTag'])
+    return value_range + " " + stat_name
+
+
+skillTypes = {
+    "Physical": 1,
+    "Lightning": 2,
+    "Cold": 4,
+    "Fire": 8,
+    "Void": 16,
+    "Necrotic": 32,
+    "Poison": 64,
+    "Elemental": 128,
+    "Spell": 256,
+    "Melee": 512,
+    "Throwing": 1024,
+    "Bow": 2048,
+    "Damage over Time": 4096,
+    "Minion": 8192,
+    "Totem": 16384,
+    "PetResisted": 32768,
+    "Potion": 65536,
+    "Buff": 131072,
+    "Channelling": 262144,
+    "Transform": 524288,
+    "LowLife": 1048576,
+    "HighLife": 2097152,
+    "FullLife": 4194304,
+    "Hit": 8388608,
+    "Curse": 16777216,
+    "Ailment": 33554432,
+    # Custom addition
+    "Companion": 67108864
+}
+ailmentTags = ["None",
+               "Ignite",
+               "Bleed",
+               "Chill",
+               "Possess",
+               "Shock",
+               "Slow",
+               "Poison",
+               "ArmourShred",
+               "TimeRot",
+               "FutureAttack",
+               "Laceration",
+               "AbyssalDecay",
+               "StackingAbyssalDecay",
+               "Blind",
+               "SerpentVenom",
+               "Frailty",
+               "MarkedForDeath",
+               "Plague",
+               "Ravage",
+               "Root",
+               "Fear",
+               "DamageBoost",
+               "Frostbite",
+               "SpreadingFlames",
+               "FireballStackForExplosion",
+               "VoidEssence",
+               "HolyAuraStackForFlamBurst",
+               "PoisonResShred",
+               "NecroticResShred",
+               "VoidResShred",
+               "Stagger",
+               "DivineEssence",
+               "Haste",
+               "Frenzy",
+               "Swiftness",
+               "PoisonStackForExplosion",
+               "AvalancheStackForFissure",
+               "TempestsMight",
+               "Damned",
+               "Pestilence",
+               "DisintegrateStackForExplosion",
+               "FireResShred",
+               "MeleeDefShred",
+               "Stalwart",
+               "Inspiration",
+               "DummyHealingWhileNotTakingDamage",
+               "Deadly",
+               "AspectOfTheBoarVisuals",
+               "AspectOfTheSharkVisuals",
+               "StackingAspectOfTheSharkVisuals",
+               "AspectOfTheViperVisuals",
+               "AspectOfTheLynxVisuals",
+               "ArcaneMark",
+               "Immobilized",
+               "SparkCharge",
+               "CriticalEffluence",
+               "ArcaneAscendance",
+               "BoneCurse",
+               "SpiritPlague",
+               "ShrineHaste",
+               "Contempt",
+               "ShrineReflect",
+               "ShrineStun",
+               "ShrineCrit",
+               "ShrineManatee",
+               "Shapeshifter",
+               "Ferocity",
+               "DoomBrand",
+               "NecroticBoneCurse",
+               "Apocalypse",
+               "Flurry1Tag",
+               "Flurry2Tag",
+               "PhysicalResShred",
+               "ColdResShred",
+               "LightningResShred",
+               "Enrage",
+               "LightningInfusion",
+               "EfficaciousToxin",
+               "ShadowDaggers",
+               "MirageForm",
+               "SilverShroud",
+               "DuskShroud",
+               "CrimsonShroud",
+               "SmokeBlades",
+               "CriticalVulnerability",
+               "Sharpshooter",
+               "ShrineExperienceBuff",
+               "AspectOfTheCrow",
+               "AncientFlight",
+               "Doom",
+               "MoltenInfusion",
+               "StoneStare",
+               "Electrify",
+               "TotemArmor",
+               "SciurineRage",
+               "Darkness",
+               "CorruptedHeraldry",
+               "MimicFeast",
+               "VoidBarrierVisuals",
+               "Immunity",
+               "SnakeInfection",
+               "AmbushBuff",
+               "AspectOfTheSpider",
+               "TempestPaws",
+               "BrandOfTrespass",
+               "BrandOfSubjugation",
+               "BrandOfDeception",
+               "RunewordCataclysm",
+               "RunewordHurricane",
+               "RunewordAvalanche",
+               "RunewordInferno",
+               "UNUSED",
+               "Decrepify",
+               "SpiritKindling",
+               "Withering",
+               "Revolution",
+               "Penance",
+               "Torment",
+               "UNUSED2",
+               "AcidSkin",
+               "Anguish",
+               "Witchfire",
+               "Chained",
+               "TheGate",
+               "FalconMark",
+               "Netted",
+               "TalonBlades",
+               "HealingHandsHealOverTime"]
+
+
+def add_tags_modifier(stat_name, tags):
+    for k, v in skillTypes.items():
+        stat_name = add_tag_modifier(stat_name, tags, v, k)
+    return stat_name
+
+
+def add_special_tag_modifier(stat_name, special_tag):
+    for ailmentId, v in enumerate(ailmentTags):
+        if special_tag == ailmentId:
+            stat_name = stat_name.replace("Ailment", v)
+    return stat_name
+
+
+def add_tag_modifier(stat_name, tags, tag_value, tag_name):
+    if tags & tag_value and tag_name not in stat_name:
+        stat_name = tag_name + " " + stat_name
+    return stat_name
 
 
 modDataList = {}
@@ -137,14 +354,15 @@ def construct_mod_data_list():
 
     for propertyData in property_data_list0:
         mod_key = str(propertyData["property"]) + "_0_0"
+        propertyData["name"] = propertyData["propertyName"]
         if mod_key not in modDataList:
             modDataList[mod_key] = propertyData
-            propertyData["name"] = propertyData["propertyName"]
         for altText in propertyData["altTextOverrides"]:
             mod_key = str(altText["property"]) + "_" + str(altText["specialTag"]) + "_" + str(altText["tags"])
             if mod_key not in modDataList:
-                modDataList[mod_key] = propertyData
-                modDataList[mod_key]["name"] = altText["overrideAltText"]
+                modDataList[mod_key] = propertyData.copy()
+                modDataList[mod_key]["modifierType"] = altText["modType"]
+                modDataList[mod_key]["needs_tag_apply"] = True
 
     with open(extractPath + "Resources/PlayerPropertyList.asset", "r") as yamlFile:
         player_property_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]["list"]
@@ -152,6 +370,15 @@ def construct_mod_data_list():
     for idx, propertyData in enumerate(player_property_data_list0):
         mod_key = "98_0_" + str(idx)
         if mod_key not in modDataList:
+            modDataList[mod_key] = propertyData
+            propertyData["name"] = propertyData["propertyName"]
+
+    with open(extractPath + "Resources/AbilityPropertyList.asset", "r") as yamlFile:
+        player_property_ability_list = yaml.safe_load(yamlFile)["MonoBehaviour"]["list"]
+
+    for abilityData in player_property_ability_list:
+        for idx, propertyData in enumerate(abilityData['properties']):
+            mod_key = "58_" + str(idx) + "_" + str(abilityData['abilityID'])
             modDataList[mod_key] = propertyData
             propertyData["name"] = propertyData["propertyName"]
 

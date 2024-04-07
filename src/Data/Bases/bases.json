@@ -133,7 +133,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+9 Armor",
-            "(2-3)% increased Spell Damage"
+            "+(2-3) Spell Damage"
         ]
     },
     "Death Mask": {
@@ -185,7 +185,7 @@
         "implicits": [
             "+129 Armor",
             "+(9-23)% Spell Damage",
-            "+(9-23)% Spell Damage"
+            "+(9-23)% Minion Spell Damage"
         ]
     },
     "Revenant Mask": {
@@ -288,7 +288,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+96 Armor",
-            "+(40-72)% Critical Strike Chance"
+            "(40-72)% increased Critical Strike Chance"
         ]
     },
     "Runed Visage": {
@@ -368,7 +368,7 @@
         "implicits": [
             "+65 Armor",
             "+(2-3)% Critical Strike Chance",
-            "(2-3)% increased Minion Critical Strike Chance"
+            "+(2-3)% Minion Critical Strike Chance"
         ]
     },
     "Icewolf Pelt": {
@@ -526,7 +526,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+130 Armor",
-            "+(10-30)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(10-30)% Elemental Damage Leeched as Health"
         ]
     },
     "Tusked Greathelm": {
@@ -539,8 +539,8 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+124 Armor",
-            "+(6-12)% Health",
-            "+(20-30)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "(6-12)% increased Health",
+            "+(20-30)% Damage Leeched as Health"
         ]
     },
     "Cloth Hood": {
@@ -645,7 +645,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+142 Armor",
-            "+(10-20)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(10-20)% Damage Leeched as Health"
         ]
     },
     "Falconry Helm": {
@@ -659,7 +659,7 @@
         "implicits": [
             "+108 Armor",
             "+(3-6) Dexterity",
-            "+(12-24) Dark Protection (deprecated)"
+            "+(12-24) Melee and Throwing Damage for your Falcon"
         ]
     },
     "Necropolis Helm": {
@@ -767,7 +767,7 @@
         "implicits": [
             "+117 Armor",
             "+(7-15)% Increased Cooldown Recovery Speed",
-            "+(7-15)% Mana"
+            "(7-15)% increased Mana"
         ]
     },
     "Arena Helm": {
@@ -861,7 +861,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+44 Armor",
-            "+(10-20)% Critical Strike Chance"
+            "(10-20)% increased Critical Strike Chance"
         ]
     },
     "Scalebane Grimace": {
@@ -930,7 +930,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+115 Armor",
-            "(10-15)% increased Spell Damage",
+            "+(10-15) Spell Damage",
             "+(10-15) Minion Spell Damage"
         ]
     },
@@ -980,7 +980,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+32 Armor",
-            "(2-7)% increased Spell Damage"
+            "+(2-7) Spell Damage"
         ]
     },
     "Banded Armor": {
@@ -1119,7 +1119,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+191 Armor",
-            "+(37-61)% Critical Strike Chance",
+            "(37-61)% increased Critical Strike Chance",
             "(37-61)% increased Minion Critical Strike Chance"
         ]
     },
@@ -1171,7 +1171,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+41 Armor",
-            "+(11-24)% Void Resistance"
+            "(11-24)% increased Void Resistance"
         ]
     },
     "Temple Garb": {
@@ -1276,7 +1276,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+42 Armor",
-            "(3-7)% increased Health Regen"
+            "+(3-7) Health Regen"
         ]
     },
     "Icewolf Garb": {
@@ -1343,7 +1343,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+185 Armor",
-            "(8-15)% increased Spell Damage",
+            "+(8-15) Spell Damage",
             "+(8-15) Minion Spell Damage"
         ]
     },
@@ -1419,7 +1419,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+280 Armor",
-            "+(25-60)% Critical Strike Chance"
+            "(25-60)% increased Critical Strike Chance"
         ]
     },
     "Augury Plate": {
@@ -1474,7 +1474,7 @@
         "implicits": [
             "+147 Armor",
             "(5-14)% increased Cast Speed",
-            "(5-14)% increased Spell Damage"
+            "+(5-14) Spell Damage"
         ]
     },
     "Ancestral Garb": {
@@ -1487,7 +1487,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+172 Armor",
-            "+(6-12)% Health",
+            "(6-12)% increased Health",
             "+(6-12)% Increased Cooldown Recovery Speed"
         ]
     },
@@ -1577,8 +1577,8 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+94 Armor",
-            "+(14-34)% Critical Strike Chance",
-            "+(14-34)% Dodge Rating"
+            "(14-34)% increased Critical Strike Chance",
+            "(14-34)% increased Dodge Rating"
         ]
     },
     "Elite Regalia": {
@@ -1606,7 +1606,7 @@
         "implicits": [
             "+202 Armor",
             "+(4-8) Dexterity",
-            "+(12-24) Dark Protection (deprecated)"
+            "+(12-24) Melee and Throwing Damage for your Falcon"
         ]
     },
     "Necropolis Plate": {
@@ -1660,7 +1660,7 @@
         "implicits": [
             "+156 Armor",
             "(5-10)% increased Movement Speed",
-            "(5-16)% increased Health Regen"
+            "+(5-16) Health Regen"
         ]
     },
     "Keeper Raiment": {
@@ -1700,7 +1700,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+196 Armor",
-            "+(7-14)% Mana",
+            "(7-14)% increased Mana",
             "(21-42)% increased Mana Regen"
         ]
     },
@@ -1766,7 +1766,7 @@
         "implicits": [
             "+83 Armor",
             "(8-15)% increased Cast Speed",
-            "(15-28)% increased Mana Regen"
+            "(15-29)% increased Mana Regen"
         ]
     },
     "Immortal Regalia": {
@@ -1780,7 +1780,7 @@
         "implicits": [
             "+213 Armor",
             "+(7-13)% All Resistances",
-            "+(7-13)% All Resistances"
+            "+(7-13)% Minion All Resistances"
         ]
     },
     "Grolehide Coat": {
@@ -1820,7 +1820,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+168 Armor",
-            "+(25-50)% Dodge Rating",
+            "(25-50)% increased Dodge Rating",
             "(25-50)% increased Damage Over Time"
         ]
     },
@@ -1862,8 +1862,8 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+261 Armor",
-            "+(10-20)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(10-20)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(10-20)% Damage Leeched as Health",
+            "+(10-20)% Minion Damage Leeched as Health"
         ]
     },
     "Sash": {
@@ -2080,7 +2080,7 @@
         "implicits": [
             "+20 Armor",
             "(10-12)% increased Movement Speed",
-            "+(10-20)% Dodge Rating"
+            "(10-20)% increased Dodge Rating"
         ]
     },
     "Brigandine Boots": {
@@ -2147,7 +2147,7 @@
         "implicits": [
             "+8 Armor",
             "(15-18)% increased Movement Speed",
-            "+(-10--20)% Duration of Stuns Received"
+            "(10-20)% reduced Duration of Stuns Received"
         ]
     },
     "Arcane Boots": {
@@ -2175,7 +2175,7 @@
         "implicits": [
             "+72 Armor",
             "(15-18)% increased Movement Speed",
-            "(24-50)% increased Effect of Haste on You"
+            "+(24-50)% Effect of Haste on You"
         ]
     },
     "Citadel Boots": {
@@ -2217,7 +2217,7 @@
         "implicits": [
             "+25 Armor",
             "(15-18)% increased Movement Speed",
-            "(20-30)% increased Effect of Haste on You"
+            "+(20-30)% Effect of Haste on You"
         ]
     },
     "Veteran's Boots": {
@@ -2230,7 +2230,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "3% increased Movement Speed",
-            "+1% Chance to gain Haste for 3 seconds when you Summon a Totem"
+            "+1% increased Movement Speed per 4 Character Levels"
         ]
     },
     "Hide Gloves": {
@@ -2319,7 +2319,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+45 Armor",
-            "+(15-40)% Critical Strike Chance"
+            "(15-40)% increased Critical Strike Chance"
         ]
     },
     "Crusader Gauntlets": {
@@ -2346,7 +2346,7 @@
         "implicits": [
             "+80 Armor",
             "+(5-10) Vitality",
-            "+(5-10)% Health"
+            "(5-10)% increased Health"
         ]
     },
     "Serrated Bracers": {
@@ -2437,7 +2437,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "11% increased Melee Damage"
+            "+11 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.05,
@@ -2453,7 +2453,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "18% increased Melee Damage"
+            "+18 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -2469,7 +2469,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "19% increased Melee Damage",
+            "+19 Melee Damage",
             "+(13-19)% Chance to Bleed on Hit"
         ],
         "weapon": {
@@ -2486,7 +2486,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "28% increased Melee Damage",
+            "+28 Melee Damage",
             "+(20-28)% Chance to Bleed on Hit"
         ],
         "weapon": {
@@ -2503,7 +2503,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "+33 Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+33 Melee Necrotic Damage",
             "(23-39)% increased Necrotic Damage",
             "(23-39)% increased Minion Damage"
         ],
@@ -2521,7 +2521,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "36% increased Melee Damage",
+            "+36 Melee Damage",
             "+(36-66)% Chance to Bleed on Melee Hit",
             "+(10-16)% Increased Bleed Duration "
         ],
@@ -2539,7 +2539,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "28% increased Melee Damage",
+            "+28 Melee Damage",
             "+(14-28) Melee Lightning Damage",
             "+(7-14)% Lightning Penetration"
         ],
@@ -2557,8 +2557,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "47% increased Melee Damage",
-            "+(47-74)% Chance to Poison on Hit",
+            "+47 Melee Damage",
+            "+(47-74)% Melee Chance to Poison on Hit",
             "+(10-17)% Increased Poison Duration "
         ],
         "weapon": {
@@ -2575,7 +2575,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "48% increased Melee Damage",
+            "+48 Melee Damage",
             "+(3-4)% Critical Strike Chance",
             "(3-4)% increased Movement Speed"
         ],
@@ -2593,8 +2593,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "+46 Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(100-166)% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
+            "+46 Melee Necrotic Damage",
+            "(100-166)% increased Melee Necrotic Damage",
             "(100-166)% increased Minion Necrotic Damage"
         ],
         "weapon": {
@@ -2611,8 +2611,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "32% increased Melee Damage",
-            "(30-44)% increased Melee Void Damage"
+            "+32 Melee Damage",
+            "+(30-44) Melee Void Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -2628,7 +2628,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "51% increased Melee Damage",
+            "+51 Melee Damage",
             "+(10-14) Minion Melee Damage",
             "+(70-100)% Chance to Bleed on Hit"
         ],
@@ -2646,8 +2646,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "32% increased Melee Damage",
-            "(25-42)% increased Melee Void Damage"
+            "+32 Melee Damage",
+            "+(25-42) Melee Void Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -2663,7 +2663,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "50% increased Melee Damage",
+            "+50 Melee Damage",
             "+(65-100)% Chance to Bleed on Hit"
         ],
         "weapon": {
@@ -2680,7 +2680,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "9% increased Melee Damage",
+            "+9 Melee Damage",
             "+2% Critical Strike Chance"
         ],
         "weapon": {
@@ -2697,7 +2697,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "13% increased Melee Damage",
+            "+13 Melee Damage",
             "+2% Critical Strike Chance"
         ],
         "weapon": {
@@ -2714,7 +2714,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "14% increased Melee Damage",
+            "+14 Melee Damage",
             "+(20-35)% Chance to Bleed on Hit",
             "+2% Critical Strike Chance"
         ],
@@ -2732,7 +2732,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "25% increased Melee Damage",
+            "+25 Melee Damage",
             "+(35-65)% Critical Strike Multiplier"
         ],
         "weapon": {
@@ -2749,7 +2749,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "33% increased Melee Damage",
+            "+33 Melee Damage",
             "+3% Critical Strike Chance"
         ],
         "weapon": {
@@ -2766,7 +2766,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "28% increased Melee Damage",
+            "+28 Melee Damage",
             "+(2-3)% Critical Strike Chance",
             "+(14-21) Melee Lightning Damage"
         ],
@@ -2784,7 +2784,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "44% increased Melee Damage",
+            "+44 Melee Damage",
             "+4% Critical Strike Chance"
         ],
         "weapon": {
@@ -2801,9 +2801,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "36% increased Melee Damage",
+            "+36 Melee Damage",
             "+(3-4)% Critical Strike Chance",
-            "(30-40)% increased Spell Damage"
+            "+(30-40) Spell Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.14,
@@ -2819,9 +2819,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "37% increased Melee Damage",
+            "+37 Melee Damage",
             "+(2-4)% Critical Strike Chance",
-            "+(20-50)% Dodge Rating"
+            "(20-50)% increased Dodge Rating"
         ],
         "weapon": {
             "AttackRateBase": 1.18,
@@ -2837,7 +2837,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "41% increased Melee Damage",
+            "+41 Melee Damage",
             "+4% Critical Strike Chance",
             "+(40-80)% Chance to Poison on Hit"
         ],
@@ -2855,7 +2855,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "43% increased Melee Damage",
+            "+43 Melee Damage",
             "+4% Critical Strike Chance",
             "(20-80)% increased Physical Damage"
         ],
@@ -2873,9 +2873,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "35% increased Melee Damage",
+            "+35 Melee Damage",
             "+(3-4)% Critical Strike Chance",
-            "(30-35)% increased Spell Damage"
+            "+(30-35) Spell Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.14,
@@ -2891,7 +2891,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "39% increased Melee Damage",
+            "+39 Melee Damage",
             "+3% Critical Strike Chance",
             "+(40-75)% Chance to Poison on Hit"
         ],
@@ -2909,7 +2909,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "13% increased Melee Damage"
+            "+13 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -2925,7 +2925,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "20% increased Melee Damage",
+            "+20 Melee Damage",
             "(20-30)% increased Physical Damage"
         ],
         "weapon": {
@@ -2942,7 +2942,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "30% increased Melee Damage",
+            "+30 Melee Damage",
             "+(30-48)% Increased Stun Chance"
         ],
         "weapon": {
@@ -2959,7 +2959,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "42% increased Melee Damage",
+            "+42 Melee Damage",
             "(22-42)% increased Physical Damage"
         ],
         "weapon": {
@@ -2976,7 +2976,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "52% increased Melee Damage"
+            "+52 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -2992,7 +2992,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "53% increased Melee Damage",
+            "+53 Melee Damage",
             "+(53-75)% Increased Stun Chance"
         ],
         "weapon": {
@@ -3009,7 +3009,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "55% increased Melee Damage",
+            "+55 Melee Damage",
             "+(5-9)% Physical Penetration"
         ],
         "weapon": {
@@ -3026,7 +3026,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "53% increased Melee Damage",
+            "+53 Melee Damage",
             "(53-93)% increased Poison Damage",
             "+(53-75)% Poison Resistance"
         ],
@@ -3044,7 +3044,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "60% increased Melee Damage",
+            "+60 Melee Damage",
             "+(60-90)% Increased Stun Chance",
             "+(6-12)% Fire Penetration"
         ],
@@ -3062,8 +3062,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "59% increased Melee Damage",
-            "+(50-90)% Increases the damage dealt by your melee critical strikes"
+            "+59 Melee Damage",
+            "+(50-90)% Melee Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -3079,9 +3079,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "64% increased Melee Damage",
+            "+64 Melee Damage",
             "+(80-128)% Increased Stun Chance",
-            "+1 Level of Skills"
+            "+1 Lightning Level of Skills"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -3097,8 +3097,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "55% increased Melee Damage",
-            "+(50-75)% Increases the damage dealt by your melee critical strikes"
+            "+55 Melee Damage",
+            "+(50-75)% Melee Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -3114,7 +3114,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "60% increased Melee Damage",
+            "+60 Melee Damage",
             "+(82-120)% Increased Stun Chance"
         ],
         "weapon": {
@@ -3131,8 +3131,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "10% increased Melee Damage",
-            "3% increased Spell Damage"
+            "+10 Melee Damage",
+            "+3 Spell Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -3166,8 +3166,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "25% increased Melee Damage",
-            "(25-30)% increased Spell Damage",
+            "+25 Melee Damage",
+            "+(25-30) Spell Damage",
             "(25-60)% increased Elemental Damage"
         ],
         "weapon": {
@@ -3184,8 +3184,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "16% increased Melee Damage",
-            "(6-10)% increased Spell Damage"
+            "+16 Melee Damage",
+            "+(6-10) Spell Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -3201,8 +3201,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "21% increased Melee Damage",
-            "(10-17)% increased Spell Damage",
+            "+21 Melee Damage",
+            "+(10-17) Spell Damage",
             "(15-35)% increased Minion Damage"
         ],
         "weapon": {
@@ -3219,8 +3219,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "38% increased Melee Damage",
-            "(38-48)% increased Spell Damage"
+            "+38 Melee Damage",
+            "+(38-48) Spell Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -3236,8 +3236,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "50% increased Melee Damage",
-            "(48-58)% increased Spell Damage",
+            "+50 Melee Damage",
+            "+(48-58) Spell Damage",
             "(50-80)% increased Damage Over Time"
         ],
         "weapon": {
@@ -3254,8 +3254,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "9% increased Melee Damage",
-            "2% increased Spell Damage"
+            "+9 Melee Damage",
+            "+2 Spell Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -3271,8 +3271,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "55% increased Melee Damage",
-            "(55-65)% increased Spell Damage"
+            "+55 Melee Damage",
+            "+(55-65) Spell Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -3288,8 +3288,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "47% increased Melee Damage",
-            "(53-59)% increased Spell Damage",
+            "+47 Melee Damage",
+            "+(53-59) Spell Damage",
             "(35-75)% increased Minion Damage"
         ],
         "weapon": {
@@ -3306,8 +3306,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "42% increased Melee Damage",
-            "(48-52)% increased Spell Damage",
+            "+42 Melee Damage",
+            "+(48-52) Spell Damage",
             "(48-72)% increased Damage Over Time"
         ],
         "weapon": {
@@ -3324,8 +3324,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "46% increased Melee Damage",
-            "(50-56)% increased Spell Damage",
+            "+46 Melee Damage",
+            "+(50-56) Spell Damage",
             "(40-70)% increased Minion Damage"
         ],
         "weapon": {
@@ -3342,7 +3342,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "14% increased Melee Damage"
+            "+14 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.1,
@@ -3358,7 +3358,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "22% increased Melee Damage"
+            "+22 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.16,
@@ -3374,7 +3374,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "31% increased Melee Damage",
+            "+31 Melee Damage",
             "+(15-35)% Chance to Poison on Hit"
         ],
         "weapon": {
@@ -3391,7 +3391,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "10% increased Melee Damage"
+            "+10 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.12,
@@ -3407,8 +3407,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "11% increased Melee Damage",
-            "(3-9)% increased Melee Void Damage"
+            "+11 Melee Damage",
+            "+(3-9) Melee Void Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.2,
@@ -3424,7 +3424,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "27% increased Melee Damage"
+            "+27 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.2,
@@ -3440,7 +3440,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "50% increased Melee Damage"
+            "+50 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.08,
@@ -3456,7 +3456,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "36% increased Melee Damage",
+            "+36 Melee Damage",
             "(35-65)% increased Damage Over Time"
         ],
         "weapon": {
@@ -3473,9 +3473,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "40% increased Melee Damage",
+            "+40 Melee Damage",
             "(40-100)% increased Melee Elemental Damage",
-            "+(8-14)% Attack Speed"
+            "(8-14)% increased Melee Elemental Attack Speed"
         ],
         "weapon": {
             "AttackRateBase": 1.16,
@@ -3491,7 +3491,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "38% increased Melee Damage",
+            "+38 Melee Damage",
             "+(30-50)% Critical Strike Multiplier"
         ],
         "weapon": {
@@ -3508,7 +3508,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "54% increased Melee Damage"
+            "+54 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.2,
@@ -3524,9 +3524,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "39% increased Melee Damage",
+            "+39 Melee Damage",
             "(52-72)% increased Melee Elemental Damage",
-            "+(50-12)% Attack Speed"
+            "50% increased Melee Elemental Attack Speed"
         ],
         "weapon": {
             "AttackRateBase": 1.16,
@@ -3542,7 +3542,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "36% increased Melee Damage",
+            "+36 Melee Damage",
             "+(26-46)% Critical Strike Multiplier"
         ],
         "weapon": {
@@ -3560,8 +3560,8 @@
         "affixEffectModifier": 0.75,
         "implicits": [
             "+(41-51) Spell Lightning Damage",
-            "+(15-51)% Chance to Shock on Hit",
-            "+-3 Spell Mana Cost"
+            "+(15-51)% Spell Chance to Shock on Hit",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3577,8 +3577,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "3% increased Spell Damage",
-            "+-3 Spell Mana Cost"
+            "+3 Spell Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3594,8 +3594,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(4-6)% increased Spell Damage",
-            "+-3 Spell Mana Cost"
+            "+(4-6) Spell Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3611,9 +3611,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(44-51)% increased Spell Damage",
+            "+(44-51) Spell Damage",
             "+(22-61)% Chance to Poison on Spell Hit",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3629,9 +3629,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(36-44)% increased Spell Damage",
+            "+(36-44) Spell Damage",
             "(40-80)% increased Health Regen",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3649,7 +3649,7 @@
         "implicits": [
             "+(8-13) Spell Void Damage",
             "(13-19)% increased Damage Over Time",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3665,9 +3665,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(20-26)% increased Spell Damage",
+            "+(20-26) Spell Damage",
             "+(20-30)% Ward Retention",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3683,9 +3683,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(12-16)% increased Spell Damage",
+            "+(12-16) Spell Damage",
             "+(20-30) Mana",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3701,9 +3701,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "+(56-66) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+(56-66)% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges.",
-            "+-3 Spell Mana Cost"
+            "+(56-66) Spell Necrotic Damage",
+            "(56-66)% increased Curse Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3719,9 +3719,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(50-60)% increased Spell Damage",
+            "+(50-60) Spell Damage",
             "+(50-60) Mana",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3737,9 +3737,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(54-60)% increased Spell Damage",
+            "+(54-60) Spell Damage",
             "(6-12)% increased Cast Speed",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3755,9 +3755,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(52-56)% increased Spell Damage",
+            "+(52-56) Spell Damage",
             "(5-10)% increased Cast Speed",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3773,9 +3773,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "(52-58)% increased Spell Damage",
+            "+(52-58) Spell Damage",
             "+(40-52) Mana",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3791,7 +3791,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "23% increased Melee Damage"
+            "+23 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -3807,7 +3807,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "25% increased Melee Damage"
+            "+25 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.95,
@@ -3823,7 +3823,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "31% increased Melee Damage",
+            "+31 Melee Damage",
             "+(43-71)% Chance to Bleed on Melee Hit"
         ],
         "weapon": {
@@ -3840,7 +3840,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "42% increased Melee Damage",
+            "+42 Melee Damage",
             "(24-50)% increased Minion Damage"
         ],
         "weapon": {
@@ -3857,7 +3857,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "60% increased Melee Damage",
+            "+60 Melee Damage",
             "+(60-90)% Chance to Bleed on Melee Hit"
         ],
         "weapon": {
@@ -3874,7 +3874,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "31% increased Melee Damage",
+            "+31 Melee Damage",
             "+(31-41) Melee Cold Damage",
             "(41-131)% increased Cold Damage"
         ],
@@ -3892,7 +3892,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "70% increased Melee Damage",
+            "+70 Melee Damage",
             "+(70-100)% Chance to Bleed on Melee Hit"
         ],
         "weapon": {
@@ -3909,7 +3909,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "110% increased Melee Damage",
+            "+110 Melee Damage",
             "+75% Poison Resistance"
         ],
         "weapon": {
@@ -3926,7 +3926,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "101% increased Melee Damage",
+            "+101 Melee Damage",
             "(75-110)% increased Physical Damage",
             "(75-110)% increased Minion Physical Damage"
         ],
@@ -3944,9 +3944,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "113% increased Melee Damage",
-            "+(13-28)% Necrotic Penetration",
-            "+(13-28)% Minion Necrotic Penetration"
+            "+113 Melee Damage",
+            "+(13-29)% Necrotic Penetration",
+            "+(13-29)% Minion Necrotic Penetration"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -3962,7 +3962,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "130% increased Melee Damage",
+            "+130 Melee Damage",
             "+(130-190)% Chance to Bleed on Melee Hit"
         ],
         "weapon": {
@@ -3979,7 +3979,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "60% increased Melee Damage",
+            "+60 Melee Damage",
             "+60 Melee Fire Damage",
             "+(8-16)% Fire Penetration"
         ],
@@ -3997,7 +3997,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "122% increased Melee Damage",
+            "+122 Melee Damage",
             "+(1-2) Chance to Bleed on Hit",
             "(5-10)% increased Movement Speed"
         ],
@@ -4015,9 +4015,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "146% increased Melee Damage",
+            "+146 Melee Damage",
             "+(46-60) Spell Fire Damage",
-            "+(46-60) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+(46-60) Spell Necrotic Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4033,7 +4033,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "100% increased Melee Damage",
+            "+100 Melee Damage",
             "(50-100)% increased Physical Damage",
             "(50-100)% increased Minion Physical Damage"
         ],
@@ -4051,7 +4051,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "125% increased Melee Damage",
+            "+125 Melee Damage",
             "+(125-175)% Chance to Bleed on Melee Hit"
         ],
         "weapon": {
@@ -4068,7 +4068,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "24% increased Melee Damage"
+            "+24 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.9,
@@ -4084,7 +4084,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "29% increased Melee Damage",
+            "+29 Melee Damage",
             "+(19-39)% Chance to Bleed on Melee Hit"
         ],
         "weapon": {
@@ -4101,7 +4101,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "38% increased Melee Damage",
+            "+38 Melee Damage",
             "+(20-60)% Increased Melee Stun Chance"
         ],
         "weapon": {
@@ -4118,7 +4118,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "46% increased Melee Damage",
+            "+46 Melee Damage",
             "(20-60)% increased Physical Damage"
         ],
         "weapon": {
@@ -4135,7 +4135,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "64% increased Melee Damage",
+            "+64 Melee Damage",
             "+(24-64)% Increased Melee Stun Chance"
         ],
         "weapon": {
@@ -4152,7 +4152,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "82% increased Melee Damage",
+            "+82 Melee Damage",
             "+(82-160)% Increased Stun Chance"
         ],
         "weapon": {
@@ -4169,7 +4169,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "96% increased Melee Damage",
+            "+96 Melee Damage",
             "+(16-32) Strength"
         ],
         "weapon": {
@@ -4186,9 +4186,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "106% increased Melee Damage",
+            "+106 Melee Damage",
             "+(106-166)% Increased Melee Stun Chance",
-            "+(16-36)% Increased Stun Duration"
+            "+(16-36)% Melee Increased Stun Duration"
         ],
         "weapon": {
             "AttackRateBase": 0.9,
@@ -4204,8 +4204,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "110% increased Melee Damage",
-            "+(40-60)% Increased Melee Stun Chance",
+            "+110 Melee Damage",
+            "(40-60)% increased Increased Melee Stun Chance",
             "+(6-10)% Melee Critical Strike Chance"
         ],
         "weapon": {
@@ -4222,7 +4222,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "140% increased Melee Damage",
+            "+140 Melee Damage",
             "+(40-140)% Increased Melee Stun Chance"
         ],
         "weapon": {
@@ -4239,9 +4239,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "104% increased Melee Damage",
+            "+104 Melee Damage",
             "+(78-104)% Increased Melee Stun Chance",
-            "+(13-25)% Increased Stun Duration"
+            "+(13-25)% Melee Increased Stun Duration"
         ],
         "weapon": {
             "AttackRateBase": 0.9,
@@ -4257,7 +4257,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "126% increased Melee Damage",
+            "+126 Melee Damage",
             "+(60-126)% Increased Melee Stun Chance"
         ],
         "weapon": {
@@ -4274,7 +4274,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "26% increased Melee Damage"
+            "+26 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4290,7 +4290,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "18% increased Melee Damage",
+            "+18 Melee Damage",
             "+(2-4)% Melee Critical Strike Chance"
         ],
         "weapon": {
@@ -4324,8 +4324,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "33% increased Melee Damage",
-            "+(30-39)% Increases the damage dealt by your melee critical strikes"
+            "+33 Melee Damage",
+            "+(30-39)% Melee Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4341,8 +4341,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "80% increased Melee Damage",
-            "+(100-180)% Increases the damage dealt by your melee critical strikes"
+            "+80 Melee Damage",
+            "+(100-180)% Melee Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4358,7 +4358,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "49% increased Melee Damage",
+            "+49 Melee Damage",
             "+(3-6)% Melee Critical Strike Chance"
         ],
         "weapon": {
@@ -4375,7 +4375,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "43% increased Melee Damage"
+            "+43 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4391,7 +4391,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "107% increased Melee Damage",
+            "+107 Melee Damage",
             "+(4-7)% Melee Critical Strike Chance",
             "+75% Fire Resistance"
         ],
@@ -4409,9 +4409,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "115% increased Melee Damage",
+            "+115 Melee Damage",
             "+(5-15)% Physical Penetration",
-            "+(5-15)% Penetration can reduce effective resistance below 0%, increasing damage even against enemies with no resistance."
+            "+(5-15)% Elemental Penetration"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4427,7 +4427,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "45% increased Melee Damage",
+            "+45 Melee Damage",
             "+(30-50) Melee Fire Damage",
             "+(3-6)% Melee Critical Strike Chance"
         ],
@@ -4445,8 +4445,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "57% increased Melee Damage",
-            "+(47-67)% Chance to Poison on Hit"
+            "+57 Melee Damage",
+            "+(47-67)% Melee Chance to Poison on Hit"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4462,8 +4462,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "86% increased Melee Damage",
-            "+(60-86)% Chance to Poison on Hit",
+            "+86 Melee Damage",
+            "+(60-86)% Melee Chance to Poison on Hit",
             "(60-86)% increased Poison Damage"
         ],
         "weapon": {
@@ -4480,7 +4480,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "94% increased Melee Damage",
+            "+94 Melee Damage",
             "+(94-194)% Chance to Shred Armor on Melee Hit"
         ],
         "weapon": {
@@ -4497,7 +4497,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "78% increased Melee Damage",
+            "+78 Melee Damage",
             "(80-120)% increased Poison Damage"
         ],
         "weapon": {
@@ -4514,7 +4514,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "160% increased Melee Damage",
+            "+160 Melee Damage",
             "+(92-108) Spell Void Damage"
         ],
         "weapon": {
@@ -4531,7 +4531,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "97% increased Melee Damage",
+            "+97 Melee Damage",
             "+(4-7)% Melee Critical Strike Chance"
         ],
         "weapon": {
@@ -4548,7 +4548,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "90% increased Melee Damage",
+            "+90 Melee Damage",
             "+(90-156)% Chance to Shred Armor on Melee Hit"
         ],
         "weapon": {
@@ -4565,9 +4565,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "16% increased Melee Damage",
-            "(3-5)% increased Spell Damage",
-            "+-3 Spell Mana Cost"
+            "+16 Melee Damage",
+            "+(3-5) Spell Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4583,9 +4583,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "19% increased Melee Damage",
-            "(7-9)% increased Spell Damage",
-            "+-3 Spell Mana Cost"
+            "+19 Melee Damage",
+            "+(7-9) Spell Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4601,8 +4601,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "21% increased Melee Damage",
-            "(11-14)% increased Spell Damage",
+            "+21 Melee Damage",
+            "+(11-14) Spell Damage",
             "+(25-40)% Reduced Health Cost of Spells"
         ],
         "weapon": {
@@ -4619,8 +4619,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "42% increased Melee Damage",
-            "(20-24)% increased Spell Damage",
+            "+42 Melee Damage",
+            "+(20-24) Spell Damage",
             "(20-24)% increased Melee Attack Speed"
         ],
         "weapon": {
@@ -4637,9 +4637,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "45% increased Melee Damage",
-            "(23-35)% increased Spell Damage",
-            "+-3 Spell Mana Cost"
+            "+45 Melee Damage",
+            "+(23-35) Spell Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4655,8 +4655,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "53% increased Melee Damage",
-            "(39-47)% increased Spell Damage",
+            "+53 Melee Damage",
+            "+(39-47) Spell Damage",
             "(39-93)% increased Damage Over Time"
         ],
         "weapon": {
@@ -4673,8 +4673,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "56% increased Melee Damage",
-            "(39-47)% increased Spell Damage",
+            "+56 Melee Damage",
+            "+(39-47) Spell Damage",
             "(46-86)% increased Damage for Totems"
         ],
         "weapon": {
@@ -4691,9 +4691,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "78% increased Melee Damage",
-            "(60-68)% increased Spell Damage",
-            "+-3 Spell Mana Cost"
+            "+78 Melee Damage",
+            "+(60-68) Spell Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -4709,8 +4709,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "72% increased Melee Damage",
-            "(72-80)% increased Spell Damage",
+            "+72 Melee Damage",
+            "+(72-80) Spell Damage",
             "+(60-80) Mana"
         ],
         "weapon": {
@@ -4727,9 +4727,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "79% increased Melee Damage",
-            "(79-91)% increased Spell Damage",
-            "+1 Level of Skills"
+            "+79 Melee Damage",
+            "+(79-91) Spell Damage",
+            "+1 Minion Level of Skills"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4745,9 +4745,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "(90-100)% increased Spell Damage",
+            "+(90-100) Spell Damage",
             "(20-30)% increased Mana Regen",
-            "+-3 Spell Mana Cost"
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4763,9 +4763,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "94% increased Melee Damage",
-            "(84-104)% increased Spell Damage",
-            "+1 Level of Skills"
+            "+94 Melee Damage",
+            "+(84-104) Spell Damage",
+            "+1 Melee Level of Skills"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -4781,9 +4781,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "92% increased Melee Damage",
-            "(102-122)% increased Spell Damage",
-            "+(20-52)% Spell Mana Cost"
+            "+92 Melee Damage",
+            "+(102-122) Spell Damage",
+            "(20-52)% increased Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4799,9 +4799,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "95% increased Melee Damage",
-            "(85-95)% increased Spell Damage",
-            "+1 Level of Skills"
+            "+95 Melee Damage",
+            "+(85-95) Spell Damage",
+            "+1 Elemental Level of Skills"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4817,9 +4817,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "70% increased Melee Damage",
-            "(63-80)% increased Spell Damage",
-            "+-3 Spell Mana Cost"
+            "+70 Melee Damage",
+            "+(63-80) Spell Damage",
+            "-3 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4835,9 +4835,9 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "66% increased Melee Damage",
-            "(72-86)% increased Spell Damage",
-            "+1 Level of Skills"
+            "+66 Melee Damage",
+            "+(72-86) Spell Damage",
+            "+1 Minion Level of Skills"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4853,8 +4853,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "67% increased Melee Damage",
-            "(67-76)% increased Spell Damage",
+            "+67 Melee Damage",
+            "+(67-76) Spell Damage",
             "+(60-67) Mana"
         ],
         "weapon": {
@@ -4871,7 +4871,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "20% increased Melee Damage"
+            "+20 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.06,
@@ -4887,7 +4887,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "30% increased Melee Damage"
+            "+30 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -4903,7 +4903,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "40% increased Melee Damage",
+            "+40 Melee Damage",
             "+(10-25)% Chance to Shred Armor on Melee Hit"
         ],
         "weapon": {
@@ -4920,7 +4920,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "50% increased Melee Damage"
+            "+50 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.1,
@@ -4936,7 +4936,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "60% increased Melee Damage",
+            "+60 Melee Damage",
             "+(35-45)% Cold Resistance"
         ],
         "weapon": {
@@ -4953,8 +4953,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "70% increased Melee Damage",
-            "+(100-170)% Increases the damage dealt by your melee critical strikes"
+            "+70 Melee Damage",
+            "+(100-170)% Melee Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -4970,7 +4970,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "80% increased Melee Damage",
+            "+80 Melee Damage",
             "+(50-150)% Melee Damage Leeched as Health"
         ],
         "weapon": {
@@ -4987,7 +4987,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "90% increased Melee Damage"
+            "+90 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.1,
@@ -5003,8 +5003,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "66% increased Melee Damage",
-            "(22-42)% increased Melee Void Damage",
+            "+66 Melee Damage",
+            "+(22-42) Melee Void Damage",
             "+(6-12)% Void Penetration"
         ],
         "weapon": {
@@ -5021,7 +5021,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "100% increased Melee Damage",
+            "+100 Melee Damage",
             "+(5-15)% Physical Penetration"
         ],
         "weapon": {
@@ -5038,7 +5038,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "120% increased Melee Damage"
+            "+120 Melee Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.76,
@@ -5054,7 +5054,7 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "77% increased Melee Damage",
+            "+77 Melee Damage",
             "+(70-120)% Melee Damage Leeched as Health"
         ],
         "weapon": {
@@ -5071,8 +5071,8 @@
         },
         "affixEffectModifier": 2.2,
         "implicits": [
-            "67% increased Melee Damage",
-            "+(100-167)% Increases the damage dealt by your melee critical strikes"
+            "+67 Melee Damage",
+            "+(100-167)% Melee Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -5101,7 +5101,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "(15-30)% increased Bow Damage",
-            "+(15-30)% Increased Stun Chance"
+            "+(15-30)% Bow Increased Stun Chance"
         ]
     },
     "Ivory Quiver": {
@@ -5150,7 +5150,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-35)% Critical Strike Multiplier"
+            "+(15-35)% Bow Critical Strike Multiplier"
         ]
     },
     "Nagasa Quiver": {
@@ -5162,7 +5162,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-60)% Chance to Poison on Hit",
+            "+(30-60)% Bow Chance to Poison on Hit",
             "(30-60)% increased Damage Over Time"
         ]
     },
@@ -5176,7 +5176,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(25-60)% Chance to Slow on Bow Hit",
-            "+(6-10)% Multiplicative with other modifiers. Each ailment is only counted once, additional stacks of the same ailment do not count towards this effect."
+            "(6-10)% more Global Conditional Damage"
         ]
     },
     "Wooden Shield": {
@@ -5325,7 +5325,7 @@
         "implicits": [
             "+23% Block Chance",
             "+(325-425) Block Effectiveness",
-            "+(45-75)% Melee Physical Damage"
+            "(45-75)% increased Melee Physical Damage"
         ]
     },
     "Mountain Shield": {
@@ -5498,7 +5498,7 @@
         "affixEffectModifier": 0.17,
         "implicits": [
             "+(5-9) Intelligence",
-            "(2-3)% increased Spell Critical Strike Chance"
+            "+(2-3)% Spell Critical Strike Chance"
         ]
     },
     "Sapphire Tome": {
@@ -5524,7 +5524,7 @@
         "affixEffectModifier": 0.17,
         "implicits": [
             "+(7-11) Intelligence",
-            "(3-5)% increased Spell Critical Strike Chance"
+            "+(3-5)% Spell Critical Strike Chance"
         ]
     },
     "Rune Stone": {
@@ -5578,7 +5578,7 @@
         "affixEffectModifier": 0.17,
         "implicits": [
             "+(12-18) Intelligence",
-            "+(18-40)% Critical Strike Multiplier"
+            "+(18-40)% Spell Critical Strike Multiplier"
         ]
     },
     "Fleshbound Tome": {
@@ -5605,7 +5605,7 @@
         "affixEffectModifier": 0.17,
         "implicits": [
             "+(10-16) Intelligence",
-            "(3-6)% increased Spell Critical Strike Chance",
+            "+(3-6)% Spell Critical Strike Chance",
             "+(12-18)% Ward Retention"
         ]
     },
@@ -5633,7 +5633,7 @@
         "affixEffectModifier": 0.17,
         "implicits": [
             "+(8-14) Intelligence",
-            "(2-6)% increased Spell Critical Strike Chance"
+            "+(2-6)% Spell Critical Strike Chance"
         ]
     },
     "Avian Puppet": {
@@ -5726,7 +5726,7 @@
         },
         "affixEffectModifier": 0.17,
         "implicits": [
-            "+(5-35)% Critical Strike Chance"
+            "(5-35)% increased Critical Strike Chance"
         ]
     },
     "Brass Amulet": {
@@ -5801,7 +5801,7 @@
         },
         "affixEffectModifier": 0.17,
         "implicits": [
-            "(-6--20)% increased Damage Over Time Taken"
+            "(6-20)% less Damage Over Time Taken"
         ]
     },
     "Gold Amulet": {
@@ -5826,7 +5826,7 @@
         },
         "affixEffectModifier": 0.17,
         "implicits": [
-            "(-6--12)% increased Damage Over Time Taken"
+            "(6-12)% less Damage Over Time Taken"
         ]
     },
     "Mercantile Amulet": {
@@ -5850,7 +5850,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-50)% Critical Strike Chance"
+            "(25-50)% increased Critical Strike Chance"
         ]
     },
     "Ruby Ring": {
@@ -5964,7 +5964,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(3-6) Vitality",
-            "(3-6)% increased Health Regen"
+            "+(3-6) Health Regen"
         ]
     },
     "Opal Ring": {
@@ -6039,7 +6039,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(30-40) Health",
-            "(-12--2)% increased Health Regen"
+            "12% reduced Health Regen"
         ]
     },
     "Copper Chalice": {
@@ -6051,7 +6051,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "(2-3)% increased Health Regen"
+            "+(2-3) Health Regen"
         ]
     },
     "Silver Grail": {
@@ -6075,7 +6075,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "(4-6)% increased Health Regen"
+            "+(4-6) Health Regen"
         ]
     },
     "Grave Lantern": {
@@ -6137,7 +6137,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "(3-4)% increased Health Regen"
+            "+(3-4) Health Regen"
         ]
     },
     "Defiled Bones": {
@@ -6162,7 +6162,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(9-29) Ward Gained on Potion Use",
-            "+(9-28)% Ward Retention"
+            "+(9-29)% Ward Retention"
         ]
     },
     "Homunculus Bile": {
@@ -6187,7 +6187,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(13-45)% Fire Resistance",
-            "+(13-63)% Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "(13-63)% increased Curse Damage"
         ]
     },
     "Runed Bones": {
@@ -6200,7 +6200,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "(6-36)% increased Minion Damage",
-            "+(6-16)% Increases your movement speed if you have used a potion in the past 4 seconds",
+            "(6-16)% increased Minion Movement Speed",
             "(6-66)% increased Minion Health"
         ]
     },
@@ -6265,7 +6265,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "(2-3)% increased Spell Damage"
+            "+(2-3) Spell Damage"
         ]
     },
     "Arcane Quill": {
@@ -6315,7 +6315,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(6-12)% Increases the duration of doom you inflict",
+            "+(6-12)% Increased Chill Duration",
             "+(6-12)% Increased Shock Duration ",
             "+(6-12)% Increased Ignite Duration "
         ]
@@ -6329,7 +6329,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-24)% Critical Strike Multiplier"
+            "+(12-24)% Elemental Critical Strike Multiplier"
         ]
     },
     "Warding Scroll": {
@@ -6406,8 +6406,8 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-24)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(10-24)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(10-24)% Damage Leeched as Health",
+            "+(10-24)% Minion Damage Leeched as Health"
         ]
     },
     "Ochre Antler": {
@@ -6432,8 +6432,8 @@
         "affixEffectModifier": 0,
         "implicits": [
             "(16-32)% increased Minion Damage",
-            "+(12-24)% Chance to gain Haste for 3 seconds when you Summon a Totem",
-            "+(12-24)% Chance to gain Haste for 3 seconds when you Summon a Totem"
+            "+(12-24)% Increased Companion Revive Range",
+            "+(12-24)% Increased Companion Revive Speed"
         ]
     },
     "Blood Catcher": {
@@ -6485,7 +6485,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(4-10) Melee Cold Damage",
-            "+(4-10) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+(4-10) Minion Melee Cold Damage"
         ]
     },
     "Sunrise Emblem": {
@@ -6509,7 +6509,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(5-12)% Armor",
+            "(5-12)% increased Armor",
             "+(5-12)% Void Resistance"
         ]
     },
@@ -6536,7 +6536,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(10-30) Mana",
-            "+-3 Mana Cost"
+            "-3 Melee Mana Cost"
         ]
     },
     "Solarum Banner": {
@@ -6588,7 +6588,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "(43-73)% increased Void Damage",
-            "+(15-30)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(15-30)% Melee FutureAttack Chance"
         ]
     },
     "Tainted Effigy": {
@@ -6600,7 +6600,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "(5-10)% increased Melee Void Damage",
+            "+(5-10) Melee Void Damage",
             "+(5-10) Spell Void Damage"
         ]
     },
@@ -6613,7 +6613,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(16-28)% Critical Strike Chance"
+            "(16-28)% increased Critical Strike Chance"
         ]
     },
     "Venom Phial": {
@@ -6649,8 +6649,8 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time.",
-            "+(10-20)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(10-20)% Damage Leeched as Health",
+            "(10-20)% increased Damage Leeched as Health"
         ]
     },
     "Oil Vial": {
@@ -6675,7 +6675,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(6-24)% Dodge Rating"
+            "(6-24)% increased Dodge Rating"
         ]
     },
     "Ruby Dice": {
@@ -6713,7 +6713,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-100)% Critical Strike Chance",
+            "(10-100)% increased Critical Strike Chance",
             "+(3-6) Health Gain"
         ]
     },
@@ -6726,7 +6726,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-25)% Armor"
+            "(15-25)% increased Armor"
         ]
     },
     "Stone Tablet": {
@@ -6750,7 +6750,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-20)% Health"
+            "(12-20)% increased Health"
         ]
     },
     "Blood Encased Hive": {
@@ -6762,7 +6762,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(6-10) Dark Protection (deprecated)"
+            "+(6-10) Bees per 10 seconds while in Spriggan Form"
         ]
     },
     "Runed Box": {
@@ -6786,7 +6786,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "12% increased Bow Damage"
+            "+12 Bow Damage"
         ],
         "weapon": {
             "AttackRateBase": 1.05,
@@ -6802,7 +6802,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "18% increased Bow Damage",
+            "+18 Bow Damage",
             "+(2-3)% Critical Strike Chance"
         ],
         "weapon": {
@@ -6819,7 +6819,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "19% increased Bow Damage",
+            "+19 Bow Damage",
             "(15-30)% increased Damage Over Time"
         ],
         "weapon": {
@@ -6836,8 +6836,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "24% increased Bow Damage",
-            "+(2-3)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+24 Bow Damage",
+            "+(2-3)% Bow Damage Leeched as Health"
         ],
         "weapon": {
             "AttackRateBase": 0.95,
@@ -6853,8 +6853,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "33% increased Bow Damage",
-            "(2-4)% increased Bow Critical Strike Chance"
+            "+33 Bow Damage",
+            "+(2-4)% Bow Critical Strike Chance"
         ],
         "weapon": {
             "AttackRateBase": 1.05,
@@ -6870,7 +6870,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "38% increased Bow Damage",
+            "+38 Bow Damage",
             "+(25-45)% Chance to Bleed on Bow Hit"
         ],
         "weapon": {
@@ -6887,7 +6887,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "60% increased Bow Damage"
+            "+60 Bow Damage"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -6903,9 +6903,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "48% increased Bow Damage",
-            "(3-4)% increased Bow Critical Strike Chance",
-            "+(31-61)% Critical Strike Multiplier"
+            "+48 Bow Damage",
+            "+(3-4)% Bow Critical Strike Chance",
+            "+(31-61)% Bow Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -6921,8 +6921,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "42% increased Bow Damage",
-            "+(35-70)% Chance to Poison on Hit",
+            "+42 Bow Damage",
+            "+(35-70)% Bow Chance to Poison on Hit",
             "+(10-20)% Increased Poison Duration "
         ],
         "weapon": {
@@ -6939,7 +6939,7 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "30% increased Bow Damage",
+            "+30 Bow Damage",
             "+(16-26) Bow Fire Damage",
             "(60-90)% increased Bow Elemental Damage"
         ],
@@ -6957,8 +6957,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "45% increased Bow Damage",
-            "(3-4)% increased Bow Critical Strike Chance",
+            "+45 Bow Damage",
+            "+(3-4)% Bow Critical Strike Chance",
             "(40-100)% increased Physical Damage"
         ],
         "weapon": {
@@ -6991,9 +6991,9 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "47% increased Bow Damage",
-            "(3-4)% increased Bow Critical Strike Chance",
-            "+(30-47)% Critical Strike Multiplier"
+            "+47 Bow Damage",
+            "+(3-4)% Bow Critical Strike Chance",
+            "+(30-47)% Bow Critical Strike Multiplier"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -7009,8 +7009,8 @@
         },
         "affixEffectModifier": 0.75,
         "implicits": [
-            "39% increased Bow Damage",
-            "3% increased Bow Critical Strike Chance",
+            "+39 Bow Damage",
+            "+3% Bow Critical Strike Chance",
             "(30-90)% increased Physical Damage"
         ],
         "weapon": {
@@ -7337,7 +7337,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-50)% Increased Drop Rate"
+            "+(30-50)% Void Fire Cold Physical Increased Drop Rate"
         ]
     },
     "Grand Pride of Rebellion": {
@@ -7349,7 +7349,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(51-100)% Increased Drop Rate"
+            "+(51-100)% Void Fire Cold Physical Increased Drop Rate"
         ]
     },
     "Sight of the Outcasts": {
@@ -7361,7 +7361,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-50)% Increased Drop Rate"
+            "+(30-50)% Void Fire Cold Lightning Increased Drop Rate"
         ]
     },
     "Grand Sight of the Outcasts": {
@@ -7373,7 +7373,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(51-100)% Increased Drop Rate"
+            "+(51-100)% Void Fire Cold Lightning Increased Drop Rate"
         ]
     },
     "Curse of Flesh": {
@@ -7385,7 +7385,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-50)% Increased Drop Rate"
+            "+(30-50)% Necrotic Increased Drop Rate"
         ]
     },
     "Grand Curse of Flesh": {
@@ -7397,7 +7397,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(51-100)% Increased Drop Rate"
+            "+(51-100)% Necrotic Increased Drop Rate"
         ]
     },
     "Favor of Souls": {
@@ -7409,7 +7409,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-50)% Increased Drop Rate"
+            "+(30-50)% Void Fire Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Favor of Souls": {
@@ -7421,7 +7421,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(51-100)% Increased Drop Rate"
+            "+(51-100)% Void Fire Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Mark of Agony": {
@@ -7433,7 +7433,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-50)% Increased Drop Rate"
+            "+(30-50)% Necrotic Physical Increased Drop Rate"
         ]
     },
     "Grand Mark of Agony": {
@@ -7445,7 +7445,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(51-100)% Increased Drop Rate"
+            "+(51-100)% Necrotic Physical Increased Drop Rate"
         ]
     },
     "Memory of the Living": {
@@ -7457,7 +7457,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-15)% Increased Drop Rate"
+            "+(10-15)% Lightning Increased Drop Rate"
         ]
     },
     "Grand Memory of the Living": {
@@ -7469,7 +7469,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(16-25)% Increased Drop Rate"
+            "+(16-25)% Lightning Increased Drop Rate"
         ]
     },
     "Sign of Torment": {
@@ -7481,7 +7481,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-15)% Increased Drop Rate"
+            "+(10-15)% Physical Increased Drop Rate"
         ]
     },
     "Grand Sign of Torment": {
@@ -7493,7 +7493,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(16-25)% Increased Drop Rate"
+            "+(16-25)% Physical Increased Drop Rate"
         ]
     },
     "Cruelty of Formosus": {
@@ -7505,7 +7505,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Lightning Increased Drop Rate"
         ]
     },
     "Savior of the North": {
@@ -7517,7 +7517,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Increased Drop Rate"
         ]
     },
     "Chill of Death": {
@@ -7529,7 +7529,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Enmity of the Clans": {
@@ -7541,7 +7541,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Physical Increased Drop Rate"
         ]
     },
     "Ambition of the Empire": {
@@ -7553,7 +7553,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Void Increased Drop Rate"
         ]
     },
     "Scars of Blood": {
@@ -7565,7 +7565,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Cold Physical Increased Drop Rate"
         ]
     },
     "Favor of the Wengari": {
@@ -7577,7 +7577,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Cold Increased Drop Rate"
         ]
     },
     "Resolve of Frost": {
@@ -7589,7 +7589,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Shards of Unity": {
@@ -7601,7 +7601,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Cold Physical Increased Drop Rate"
         ]
     },
     "Remorse of Heorot": {
@@ -7613,7 +7613,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Cold Lightning Increased Drop Rate"
         ]
     },
     "Memory of Light": {
@@ -7697,7 +7697,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-20)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(12-20)% Throwing Damage Leeched as Health"
         ]
     },
     "Grand Wrath of Rahyeh": {
@@ -7709,7 +7709,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-35)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(22-35)% Throwing Damage Leeched as Health"
         ]
     },
     "Whisper of Orobyss": {
@@ -7769,7 +7769,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-20)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(12-20)% Spell Damage Leeched as Health"
         ]
     },
     "Grand Hunger of the Void": {
@@ -7781,7 +7781,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-35)% A percentage of the damage dealt by your hits is returned to you as health over three seconds. This does not apply to damage over time."
+            "+(22-35)% Spell Damage Leeched as Health"
         ]
     },
     "Strength of the Mountain": {
@@ -7817,7 +7817,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-50)% Critical Strike Chance"
+            "(30-50)% increased Critical Strike Chance"
         ]
     },
     "Grand Winds of Oblivion": {
@@ -7829,7 +7829,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(51-80)% Critical Strike Chance"
+            "(51-80)% increased Critical Strike Chance"
         ]
     },
     "Depths of Infinity": {
@@ -7841,7 +7841,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(10-20)% VoidResShred Chance"
         ]
     },
     "Grand Depths of Infinity": {
@@ -7853,7 +7853,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-50)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(25-50)% VoidResShred Chance"
         ]
     },
     "Greed of Darkness": {
@@ -7951,7 +7951,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% Increased Drop Rate"
+            "+(10-20)% Void Cold Increased Drop Rate"
         ]
     },
     "Remnants of the Living": {
@@ -7963,7 +7963,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(20-30)% Increased Drop Rate"
+            "+(20-30)% Void Cold Physical Increased Drop Rate"
         ]
     },
     "Visions of Death": {
@@ -7975,7 +7975,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-35)% Increased Drop Rate"
+            "+(25-35)% Fire Cold Lightning Increased Drop Rate"
         ]
     },
     "Inevitability of the Void": {
@@ -7987,7 +7987,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(16-26)% Increased Drop Rate"
+            "+(16-26)% Fire Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Rot of the World": {
@@ -7999,7 +7999,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-35)% Increased Drop Rate"
+            "+(25-35)% Fire Lightning Increased Drop Rate"
         ]
     },
     "Boon of the Scarab": {
@@ -8011,7 +8011,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-35)% Increased Drop Rate"
+            "+(25-35)% Void Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Shadows of Infinity": {
@@ -8023,7 +8023,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% Increased Drop Rate"
+            "+(10-20)% Void Cold Lightning Increased Drop Rate"
         ]
     },
     "Despair of the Empire": {
@@ -8035,7 +8035,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-40)% Increased Drop Rate"
+            "+(25-40)% Cold Increased Drop Rate"
         ]
     },
     "Vigilance of the Damned": {
@@ -8047,7 +8047,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Void Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Subtlety of Slaughter": {
@@ -8059,7 +8059,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Cold Lightning Increased Drop Rate"
         ]
     },
     "Apex of Fortune": {
@@ -8071,7 +8071,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Void Physical Increased Drop Rate"
         ]
     },
     "Arrogance of Argentus": {
@@ -8095,7 +8095,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% Increased Drop Rate"
+            "+(10-20)% Physical Increased Drop Rate"
         ]
     },
     "Grip of the Lance": {
@@ -8107,7 +8107,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Cold Increased Drop Rate"
         ]
     },
     "Right of Conquest": {
@@ -8119,7 +8119,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Lightning Physical Increased Drop Rate"
         ]
     },
     "Reach of Flame": {
@@ -8131,7 +8131,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Void Lightning Physical Increased Drop Rate"
         ]
     },
     "Binds of Sanctuary": {
@@ -8143,7 +8143,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Void Lightning Increased Drop Rate"
         ]
     },
     "Slumber of Morditas": {
@@ -8155,7 +8155,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-25)% Increased Drop Rate"
+            "+(12-25)% Void Cold Lightning Increased Drop Rate"
         ]
     },
     "Talon of Granduer": {
@@ -8167,7 +8167,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Void Cold Physical Increased Drop Rate"
         ]
     },
     "Vision of the Aurora": {
@@ -8179,7 +8179,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Void Cold Increased Drop Rate"
         ]
     },
     "Might of the Siege": {
@@ -8191,7 +8191,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-30)% Increased Drop Rate"
+            "+(15-30)% Lightning Increased Drop Rate"
         ]
     },
     "Bastion of Divinity": {
@@ -8252,7 +8252,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "(60-100)% increased Health Regen",
-            "(6-10)% increased Health Regen"
+            "+(6-10) Health Regen"
         ]
     },
     "Grand Rhythm of the Tide": {
@@ -8265,7 +8265,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "(120-200)% increased Health Regen",
-            "(12-20)% increased Health Regen"
+            "+(12-20) Health Regen"
         ]
     },
     "Chaos of Lagon": {
@@ -8349,7 +8349,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(10-20)% LightningResShred Chance"
         ]
     },
     "Grand Mysteries of the Deep": {
@@ -8361,7 +8361,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-50)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(25-50)% LightningResShred Chance"
         ]
     },
     "Cruelty of the Meruna": {
@@ -8627,7 +8627,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(8-15)% All Resistances"
+            "+(8-15)% Minion All Resistances"
         ]
     },
     "Persistance of Will": {
@@ -8651,7 +8651,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(60-90)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(60-90)% PoisonResShred Chance"
         ]
     },
     "Allure of Apathy": {
@@ -8723,7 +8723,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-40)% Increased Drop Rate"
+            "+(25-40)% Physical Increased Drop Rate"
         ]
     },
     "Grand Scales of Greed": {
@@ -8735,7 +8735,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(45-70)% Increased Drop Rate"
+            "+(45-70)% Physical Increased Drop Rate"
         ]
     },
     "Grand Arrogance of Argentus": {
@@ -8759,7 +8759,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-50)% Increased Drop Rate"
+            "+(22-50)% Physical Increased Drop Rate"
         ]
     },
     "Grand Grip of the Lance": {
@@ -8771,7 +8771,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(35-75)% Increased Drop Rate"
+            "+(35-75)% Cold Increased Drop Rate"
         ]
     },
     "Grand Right of Conquest": {
@@ -8783,7 +8783,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(35-75)% Increased Drop Rate"
+            "+(35-75)% Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Reach of Flame": {
@@ -8795,7 +8795,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(35-75)% Increased Drop Rate"
+            "+(35-75)% Void Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Binds of Sanctuary": {
@@ -8807,7 +8807,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(35-75)% Increased Drop Rate"
+            "+(35-75)% Void Lightning Increased Drop Rate"
         ]
     },
     "Grand Slumber of Morditas": {
@@ -8819,7 +8819,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-60)% Increased Drop Rate"
+            "+(30-60)% Void Cold Lightning Increased Drop Rate"
         ]
     },
     "Grand Talon of Granduer": {
@@ -8831,7 +8831,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(35-75)% Increased Drop Rate"
+            "+(35-75)% Void Cold Physical Increased Drop Rate"
         ]
     },
     "Grand Vision of the Aurora": {
@@ -8843,7 +8843,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(35-75)% Increased Drop Rate"
+            "+(35-75)% Void Cold Increased Drop Rate"
         ]
     },
     "Grand Might of the Siege": {
@@ -8855,7 +8855,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(35-75)% Increased Drop Rate"
+            "+(35-75)% Lightning Increased Drop Rate"
         ]
     },
     "Grand Cruelty of Formosus": {
@@ -8867,7 +8867,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Fire Lightning Increased Drop Rate"
         ]
     },
     "Grand Savior of the North": {
@@ -8879,7 +8879,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Fire Increased Drop Rate"
         ]
     },
     "Grand Chill of Death": {
@@ -8891,7 +8891,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Fire Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Enmity of the Clans": {
@@ -8903,7 +8903,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Fire Physical Increased Drop Rate"
         ]
     },
     "Grand Ambition of the Empire": {
@@ -8915,7 +8915,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Void Increased Drop Rate"
         ]
     },
     "Grand Scars of Blood": {
@@ -8927,7 +8927,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Cold Physical Increased Drop Rate"
         ]
     },
     "Grand Favor of the Wengari": {
@@ -8939,7 +8939,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Fire Cold Increased Drop Rate"
         ]
     },
     "Grand Resolve of Frost": {
@@ -8951,7 +8951,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Shards of Unity": {
@@ -8963,7 +8963,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Fire Cold Physical Increased Drop Rate"
         ]
     },
     "Grand Remorse of Heorot": {
@@ -8975,7 +8975,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-90)% Increased Drop Rate"
+            "+(50-90)% Fire Cold Lightning Increased Drop Rate"
         ]
     },
     "Grand Hope of the Beginning": {
@@ -8999,7 +8999,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-35)% Increased Drop Rate"
+            "+(22-35)% Void Cold Increased Drop Rate"
         ]
     },
     "Grand Remnants of the Living": {
@@ -9011,7 +9011,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(33-50)% Increased Drop Rate"
+            "+(33-50)% Void Cold Physical Increased Drop Rate"
         ]
     },
     "Grand Visions of Death": {
@@ -9023,7 +9023,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(40-60)% Increased Drop Rate"
+            "+(40-60)% Fire Cold Lightning Increased Drop Rate"
         ]
     },
     "Grand Inevitability of the Void": {
@@ -9035,7 +9035,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(30-45)% Increased Drop Rate"
+            "+(30-45)% Fire Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Rot of the World": {
@@ -9047,7 +9047,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(40-60)% Increased Drop Rate"
+            "+(40-60)% Fire Lightning Increased Drop Rate"
         ]
     },
     "Grand Boon of the Scarab": {
@@ -9059,7 +9059,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(40-60)% Increased Drop Rate"
+            "+(40-60)% Void Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Shadows of Infinity": {
@@ -9071,7 +9071,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-35)% Increased Drop Rate"
+            "+(22-35)% Void Cold Lightning Increased Drop Rate"
         ]
     },
     "Grand Despair of the Empire": {
@@ -9083,7 +9083,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(45-70)% Increased Drop Rate"
+            "+(45-70)% Cold Increased Drop Rate"
         ]
     },
     "Grand Vigilance of the Damned": {
@@ -9095,7 +9095,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-75)% Increased Drop Rate"
+            "+(50-75)% Void Cold Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Subtlety of Slaughter": {
@@ -9107,7 +9107,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(50-75)% Increased Drop Rate"
+            "+(50-75)% Cold Lightning Increased Drop Rate"
         ]
     },
     "Grand Apex of Fortune": {
@@ -9119,7 +9119,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(41-60)% Increased Drop Rate"
+            "+(41-60)% Void Physical Increased Drop Rate"
         ]
     },
     "Grand Resolve of Humanity": {
@@ -9215,7 +9215,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(65-10)% Chance to Poison on Hit"
+            "+65% Chance to Poison on Hit"
         ]
     },
     "Grand Hunger of Dragons": {
@@ -9239,7 +9239,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(16-25)% All Resistances"
+            "+(16-25)% Minion All Resistances"
         ]
     },
     "Grand Persistance of Will": {
@@ -9263,7 +9263,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(100-150)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(100-150)% PoisonResShred Chance"
         ]
     },
     "Grand Allure of Apathy": {
@@ -9311,7 +9311,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-20)% Increased Drop Rate"
+            "+(12-20)% Physical Increased Drop Rate"
         ]
     },
     "Grand Bastion of the Heart": {
@@ -9323,7 +9323,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-35)% Increased Drop Rate"
+            "+(22-35)% Physical Increased Drop Rate"
         ]
     },
     "Binding of Ruin": {
@@ -9335,7 +9335,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(20-30)% Increased Drop Rate"
+            "+(20-30)% Lightning Increased Drop Rate"
         ]
     },
     "Grand Binding of Ruin": {
@@ -9347,7 +9347,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(32-50)% Increased Drop Rate"
+            "+(32-50)% Lightning Increased Drop Rate"
         ]
     },
     "Refuge of Despair": {
@@ -9359,7 +9359,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(20-30)% Increased Drop Rate"
+            "+(20-30)% Void Lightning Increased Drop Rate"
         ]
     },
     "Grand Refuge of Despair": {
@@ -9371,7 +9371,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(32-50)% Increased Drop Rate"
+            "+(32-50)% Void Lightning Increased Drop Rate"
         ]
     },
     "Comfort of the End": {
@@ -9383,7 +9383,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-20)% Increased Drop Rate"
+            "+(12-20)% Physical Increased Drop Rate"
         ]
     },
     "Grand Comfort of the End": {
@@ -9395,7 +9395,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-35)% Increased Drop Rate"
+            "+(22-35)% Physical Increased Drop Rate"
         ]
     },
     "Memory of Masters": {
@@ -9407,7 +9407,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-18)% Increased Drop Rate"
+            "+(10-18)% Lightning Increased Drop Rate"
         ]
     },
     "Grand Memory of Masters": {
@@ -9419,7 +9419,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(20-30)% Increased Drop Rate"
+            "+(20-30)% Lightning Increased Drop Rate"
         ]
     },
     "Grasp of Hope": {
@@ -9431,7 +9431,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(20-30)% Increased Drop Rate"
+            "+(20-30)% Cold Increased Drop Rate"
         ]
     },
     "Grand Grasp of Hope": {
@@ -9443,7 +9443,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(32-50)% Increased Drop Rate"
+            "+(32-50)% Cold Increased Drop Rate"
         ]
     },
     "Remnants of the Elders": {
@@ -9455,7 +9455,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(20-30)% Increased Drop Rate"
+            "+(20-30)% Void Lightning Physical Increased Drop Rate"
         ]
     },
     "Grand Remnants of the Elders": {
@@ -9467,7 +9467,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(32-50)% Increased Drop Rate"
+            "+(32-50)% Void Lightning Physical Increased Drop Rate"
         ]
     },
     "Knowledge of Skill": {
@@ -9479,7 +9479,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-20)% Increased Drop Rate"
+            "+(12-20)% Cold Physical Increased Drop Rate"
         ]
     },
     "Grand Knowledge of Skill": {
@@ -9491,7 +9491,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(22-35)% Increased Drop Rate"
+            "+(22-35)% Cold Physical Increased Drop Rate"
         ]
     },
     "Resolve of Grael": {
@@ -9575,7 +9575,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(40-60)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(40-60)% Frostbite Chance"
         ]
     },
     "Grand Maw of Artor": {
@@ -9587,7 +9587,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(65-100)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(65-100)% Frostbite Chance"
         ]
     },
     "Winds of Frost": {
@@ -9623,7 +9623,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(10-20)% ColdResShred Chance"
         ]
     },
     "Grand Rage of Winter": {
@@ -9635,7 +9635,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-50)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(25-50)% ColdResShred Chance"
         ]
     },
     "Fury of the North": {
@@ -9647,7 +9647,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(10-20)% PhysicalResShred Chance"
         ]
     },
     "Grand Fury of the North": {
@@ -9659,7 +9659,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-50)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(25-50)% PhysicalResShred Chance"
         ]
     },
     "Heart of Ice": {
@@ -9721,7 +9721,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(12-24)% Armor"
+            "(12-24)% increased Armor"
         ]
     },
     "Grand Bulwark of the Tundra": {
@@ -9733,7 +9733,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-55)% Armor"
+            "(25-55)% increased Armor"
         ]
     },
     "Defiance of Yulia": {
@@ -9745,7 +9745,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(5-10) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+(5-10) Channelling Spell Cold Damage"
         ]
     },
     "Grand Defiance of Yulia": {
@@ -9757,7 +9757,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(11-20) Increases the damage of ailments such as ignite, poison, bleed, and frostbite. Does not affect triggered effects such as shadow daggers or spark charges."
+            "+(11-20) Channelling Spell Cold Damage"
         ]
     },
     "Heart of the Caldera": {
@@ -9865,7 +9865,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(15-35)% Dodge Rating"
+            "(15-35)% increased Dodge Rating"
         ]
     },
     "Grand Swiftness of Logi": {
@@ -9877,7 +9877,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(40-70)% Dodge Rating"
+            "(40-70)% increased Dodge Rating"
         ]
     },
     "Breath of Cinders": {
@@ -9889,7 +9889,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(10-20)% FireResShred Chance"
         ]
     },
     "Grand Breath of Cinders": {
@@ -9901,7 +9901,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-50)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(25-50)% FireResShred Chance"
         ]
     },
     "Promise of Death": {
@@ -9913,7 +9913,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(10-20)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(10-20)% NecroticResShred Chance"
         ]
     },
     "Grand Promise of Death": {
@@ -9925,7 +9925,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(25-50)% You gain +5% glancing blow chance and 50 dodge rating for 2 seconds. This effect can stack an unlimited number of times."
+            "+(25-50)% NecroticResShred Chance"
         ]
     },
     "Spirit of Command": {
@@ -10009,7 +10009,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(200-350) Armor"
+            "+(200-350) Channelling Armor"
         ]
     },
     "Grand Patience of Herkir": {
@@ -10021,7 +10021,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(400-650) Armor"
+            "+(400-650) Channelling Armor"
         ]
     },
     "Obscuring Lens of Battle": {

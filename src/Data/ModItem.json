@@ -573,7 +573,7 @@
     },
     "7_3": {
         "affix": "of Hope",
-        "1": "+(22-28)% Void Resistance",
+        "1": "+(22-29)% Void Resistance",
         "level": 6,
         "statOrderKey": 7,
         "statOrder": [
@@ -804,7 +804,7 @@
     },
     "10_3": {
         "affix": "of Purity",
-        "1": "+(22-28)% Necrotic Resistance",
+        "1": "+(22-29)% Necrotic Resistance",
         "level": 19,
         "statOrderKey": 10,
         "statOrder": [
@@ -903,7 +903,7 @@
     },
     "11_5": {
         "affix": "of Freezing",
-        "1": "+(229-300)% Freeze Rate Multiplier",
+        "1": "+(230-300)% Freeze Rate Multiplier",
         "level": 10,
         "statOrderKey": 11,
         "statOrder": [
@@ -1035,7 +1035,7 @@
     },
     "13_3": {
         "affix": "of Embers",
-        "1": "+(22-28)% Fire Resistance",
+        "1": "+(22-29)% Fire Resistance",
         "level": 0,
         "statOrderKey": 13,
         "statOrder": [
@@ -1343,7 +1343,7 @@
     },
     "17_3": {
         "affix": "of Frost",
-        "1": "+(22-28)% Cold Resistance",
+        "1": "+(22-29)% Cold Resistance",
         "level": 8,
         "statOrderKey": 17,
         "statOrder": [
@@ -1497,7 +1497,7 @@
     },
     "19_3": {
         "affix": "of Remedy",
-        "1": "+(22-28)% Poison Resistance",
+        "1": "+(22-29)% Poison Resistance",
         "level": 10,
         "statOrderKey": 19,
         "statOrder": [
@@ -1882,7 +1882,7 @@
     },
     "24_3": {
         "affix": "of Sparks",
-        "1": "+(22-28)% Lightning Resistance",
+        "1": "+(22-29)% Lightning Resistance",
         "level": 0,
         "statOrderKey": 24,
         "statOrder": [
@@ -3103,7 +3103,7 @@
     },
     "40_2": {
         "affix": "of the Feast",
-        "1": "+(24-28)% Increased Leech Rate",
+        "1": "+(24-29)% Increased Leech Rate",
         "level": 0,
         "statOrderKey": 40,
         "statOrder": [
@@ -3499,7 +3499,7 @@
     },
     "45_3": {
         "affix": "of Deflection",
-        "1": "+(22-28)% Physical Resistance",
+        "1": "+(22-29)% Physical Resistance",
         "level": 0,
         "statOrderKey": 45,
         "statOrder": [
@@ -4577,7 +4577,7 @@
     },
     "59_3": {
         "affix": "of the Fox",
-        "1": "(25-28)% increased Dodge Rating",
+        "1": "(25-29)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -5215,7 +5215,7 @@
     },
     "67_5": {
         "affix": "Drenching",
-        "1": "+(229-300)% Freeze Rate Multiplier\n+1 chance to cast Freezing Concoction on Potion Use",
+        "1": "+(230-300)% Freeze Rate Multiplier\n+1 chance to cast Freezing Concoction on Potion Use",
         "level": 35,
         "statOrderKey": 67,
         "statOrder": [
@@ -5314,7 +5314,7 @@
     },
     "69_0": {
         "affix": "Leeching",
-        "1": "+(23-28)% Melee Damage Leeched as Health",
+        "1": "+(23-29)% Melee Damage Leeched as Health",
         "level": 10,
         "statOrderKey": 69,
         "statOrder": [
@@ -5446,7 +5446,7 @@
     },
     "70_5": {
         "affix": "Ursine",
-        "1": "(190-229)% increased Minion Health",
+        "1": "(190-230)% increased Minion Health",
         "level": 6,
         "statOrderKey": 70,
         "statOrder": [
@@ -5699,7 +5699,7 @@
     },
     "74_0": {
         "affix": "of the Defender",
-        "1": "-4% increased Damage Taken on Block",
+        "1": "4% reduced Damage Taken on Block",
         "level": 0,
         "statOrderKey": 74,
         "statOrder": [
@@ -5710,7 +5710,7 @@
     },
     "74_1": {
         "affix": "of the Defender",
-        "1": "-5% increased Damage Taken on Block",
+        "1": "5% reduced Damage Taken on Block",
         "level": 0,
         "statOrderKey": 74,
         "statOrder": [
@@ -5721,7 +5721,7 @@
     },
     "74_2": {
         "affix": "of the Defender",
-        "1": "-6% increased Damage Taken on Block",
+        "1": "6% reduced Damage Taken on Block",
         "level": 0,
         "statOrderKey": 74,
         "statOrder": [
@@ -5732,7 +5732,7 @@
     },
     "74_3": {
         "affix": "of the Defender",
-        "1": "-7% increased Damage Taken on Block",
+        "1": "(7-8)% reduced Damage Taken on Block",
         "level": 0,
         "statOrderKey": 74,
         "statOrder": [
@@ -5743,7 +5743,7 @@
     },
     "74_4": {
         "affix": "of the Defender",
-        "1": "-9% increased Damage Taken on Block",
+        "1": "(9-10)% reduced Damage Taken on Block",
         "level": 0,
         "statOrderKey": 74,
         "statOrder": [
@@ -5754,7 +5754,7 @@
     },
     "74_5": {
         "affix": "of the Defender",
-        "1": "-13% increased Damage Taken on Block",
+        "1": "(13-14)% reduced Damage Taken on Block",
         "level": 0,
         "statOrderKey": 74,
         "statOrder": [
@@ -5765,7 +5765,7 @@
     },
     "74_6": {
         "affix": "of the Defender",
-        "1": "-15% increased Damage Taken on Block",
+        "1": "(15-17)% reduced Damage Taken on Block",
         "level": 0,
         "statOrderKey": 74,
         "statOrder": [
@@ -6425,7 +6425,7 @@
     },
     "83_3": {
         "affix": "Philosopher's",
-        "1": "+(25-28)% Potion Health Converted to Ward",
+        "1": "+(25-29)% Potion Health Converted to Ward",
         "level": 35,
         "statOrderKey": 83,
         "statOrder": [
@@ -6524,7 +6524,7 @@
     },
     "84_5": {
         "affix": "Witch's",
-        "1": "(95-114)% increased Spell Critical Strike Chance",
+        "1": "(95-115)% increased Spell Critical Strike Chance",
         "level": 15,
         "statOrderKey": 84,
         "statOrder": [
@@ -6535,7 +6535,7 @@
     },
     "84_6": {
         "affix": "Witch's",
-        "1": "(115-150)% increased Spell Critical Strike Chance",
+        "1": "(116-150)% increased Spell Critical Strike Chance",
         "level": 15,
         "statOrderKey": 84,
         "statOrder": [
@@ -7041,7 +7041,7 @@
     },
     "91_3": {
         "affix": "of Stone",
-        "1": "+(96-114)% Increased Melee Stun Chance",
+        "1": "+(96-115)% Increased Melee Stun Chance",
         "level": 0,
         "statOrderKey": 91,
         "statOrder": [
@@ -7052,7 +7052,7 @@
     },
     "91_4": {
         "affix": "of Stone",
-        "1": "+(115-140)% Increased Melee Stun Chance",
+        "1": "+(116-140)% Increased Melee Stun Chance",
         "level": 0,
         "statOrderKey": 91,
         "statOrder": [
@@ -7833,7 +7833,7 @@
     },
     "101_5": {
         "affix": "Conqueror's",
-        "1": "+(25-28)% Spell Damage",
+        "1": "+(25-29)% Spell Damage",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -8746,7 +8746,7 @@
     },
     "165_0": {
         "affix": "of Resolve",
-        "1": "-6% increased Damage Over Time Taken While Channelling",
+        "1": "(6-16)% less Damage Over Time Taken While Channelling",
         "level": 0,
         "statOrderKey": 165,
         "statOrder": [
@@ -9076,7 +9076,7 @@
     },
     "192_3": {
         "affix": null,
-        "1": "+1 Maximum Skeletons\n+(25-28)% Increased Skeleton Damage",
+        "1": "+1 Maximum Skeletons\n+(25-29)% Increased Skeleton Damage",
         "level": 60,
         "statOrderKey": 192,
         "statOrder": [
@@ -9879,7 +9879,7 @@
     },
     "262_0": {
         "affix": "Abiding",
-        "1": "-5% increased Damage Over Time Taken While Transformed",
+        "1": "(5-12)% less Damage Over Time Taken While Transformed",
         "level": 0,
         "statOrderKey": 262,
         "statOrder": [
@@ -9934,7 +9934,7 @@
     },
     "267_0": {
         "affix": "of Coagulation",
-        "1": "-4% increased Health Regen\n-4% increased Damage Over Time Taken",
+        "1": "(4-10)% less Health Regen\n(4-10)% less Damage Over Time Taken",
         "level": 0,
         "statOrderKey": 267,
         "statOrder": [
@@ -10176,7 +10176,7 @@
     },
     "289_0": {
         "affix": "of Suspension",
-        "1": "-4% increased Damage Over Time Taken",
+        "1": "(4-9)% less Damage Over Time Taken",
         "level": 0,
         "statOrderKey": 289,
         "statOrder": [
@@ -10660,7 +10660,7 @@
     },
     "330_3": {
         "affix": "Rejuvenating",
-        "1": "(25-28)% increased Mana Regen",
+        "1": "(25-29)% increased Mana Regen",
         "level": 0,
         "statOrderKey": 330,
         "statOrder": [
@@ -11210,7 +11210,7 @@
     },
     "337_4": {
         "affix": null,
-        "1": "(48-56)% increased Minion Spell Critical Strike Chance",
+        "1": "(48-57)% increased Minion Spell Critical Strike Chance",
         "level": 41,
         "statOrderKey": 337,
         "statOrder": [
@@ -11364,7 +11364,7 @@
     },
     "339_4": {
         "affix": null,
-        "1": "+(28-40)% Cold  Penetration with Frostbite ",
+        "1": "+(29-40)% Cold  Penetration with Frostbite ",
         "level": 34,
         "statOrderKey": 339,
         "statOrder": [
@@ -11518,7 +11518,7 @@
     },
     "341_4": {
         "affix": "Boreal",
-        "1": "+(48-56)% Freeze Rate per stack of Chill",
+        "1": "+(48-57)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -11617,7 +11617,7 @@
     },
     "342_6": {
         "affix": null,
-        "1": "(28-36)% increased Cast Speed for Totems",
+        "1": "(29-36)% increased Cast Speed for Totems",
         "level": 27,
         "statOrderKey": 342,
         "statOrder": [
@@ -12134,7 +12134,7 @@
     },
     "349_4": {
         "affix": null,
-        "1": "(48-56)% increased Melee Damage While Transformed",
+        "1": "(48-57)% increased Melee Damage While Transformed",
         "level": 28,
         "statOrderKey": 349,
         "statOrder": [
@@ -12211,7 +12211,7 @@
     },
     "350_4": {
         "affix": null,
-        "1": "(48-56)% increased Spell Damage While Transformed",
+        "1": "(48-57)% increased Spell Damage While Transformed",
         "level": 39,
         "statOrderKey": 350,
         "statOrder": [
@@ -12288,7 +12288,7 @@
     },
     "351_4": {
         "affix": null,
-        "1": "(48-56)% increased Damage Over Time While Transformed",
+        "1": "(48-57)% increased Damage Over Time While Transformed",
         "level": 41,
         "statOrderKey": 351,
         "statOrder": [
@@ -12332,7 +12332,7 @@
     },
     "352_1": {
         "affix": null,
-        "1": "(52-57)% increased Critical Strike Chance for Totems",
+        "1": "(52-58)% increased Critical Strike Chance for Totems",
         "level": 57,
         "statOrderKey": 352,
         "statOrder": [
@@ -12376,7 +12376,7 @@
     },
     "352_5": {
         "affix": null,
-        "1": "(114-140)% increased Critical Strike Chance for Totems",
+        "1": "(115-140)% increased Critical Strike Chance for Totems",
         "level": 57,
         "statOrderKey": 352,
         "statOrder": [
@@ -12585,7 +12585,7 @@
     },
     "355_3": {
         "affix": null,
-        "1": "+(28-31)% Increased Aspect of the Viper Effect",
+        "1": "+(29-31)% Increased Aspect of the Viper Effect",
         "level": 46,
         "statOrderKey": 355,
         "statOrder": [
@@ -12750,7 +12750,7 @@
     },
     "357_4": {
         "affix": null,
-        "1": "(48-56)% increased Damage for Totems",
+        "1": "(48-57)% increased Damage for Totems",
         "level": 30,
         "statOrderKey": 357,
         "statOrder": [
@@ -12948,7 +12948,7 @@
     },
     "360_1": {
         "affix": null,
-        "1": "(28-32)% increased Physical Damage\n+16% Increased Bleed Duration ",
+        "1": "(29-32)% increased Physical Damage\n+16% Increased Bleed Duration ",
         "level": 60,
         "statOrderKey": 360,
         "statOrder": [
@@ -13025,7 +13025,7 @@
     },
     "361_1": {
         "affix": null,
-        "1": "(28-32)% increased Fire Damage\n+16% Increased Ignite Duration ",
+        "1": "(29-32)% increased Fire Damage\n+16% Increased Ignite Duration ",
         "level": 55,
         "statOrderKey": 361,
         "statOrder": [
@@ -13564,7 +13564,7 @@
     },
     "368_1": {
         "affix": null,
-        "1": "(52-57)% increased Throwing Critical Strike Chance",
+        "1": "(52-58)% increased Throwing Critical Strike Chance",
         "level": 48,
         "statOrderKey": 368,
         "statOrder": [
@@ -13608,7 +13608,7 @@
     },
     "368_5": {
         "affix": null,
-        "1": "(114-140)% increased Throwing Critical Strike Chance",
+        "1": "(115-140)% increased Throwing Critical Strike Chance",
         "level": 48,
         "statOrderKey": 368,
         "statOrder": [
@@ -13630,7 +13630,7 @@
     },
     "369_0": {
         "affix": null,
-        "1": "-12% increased Channel Cost",
+        "1": "(12-15)% reduced Channel Cost",
         "level": 36,
         "statOrderKey": 369,
         "statOrder": [
@@ -13641,7 +13641,7 @@
     },
     "369_1": {
         "affix": null,
-        "1": "-16% increased Channel Cost",
+        "1": "(16-19)% reduced Channel Cost",
         "level": 36,
         "statOrderKey": 369,
         "statOrder": [
@@ -13652,7 +13652,7 @@
     },
     "369_2": {
         "affix": null,
-        "1": "-20% increased Channel Cost",
+        "1": "(20-23)% reduced Channel Cost",
         "level": 36,
         "statOrderKey": 369,
         "statOrder": [
@@ -13663,7 +13663,7 @@
     },
     "369_3": {
         "affix": null,
-        "1": "-24% increased Channel Cost",
+        "1": "(24-27)% reduced Channel Cost",
         "level": 36,
         "statOrderKey": 369,
         "statOrder": [
@@ -13674,7 +13674,7 @@
     },
     "369_4": {
         "affix": null,
-        "1": "-28% increased Channel Cost",
+        "1": "(28-32)% reduced Channel Cost",
         "level": 36,
         "statOrderKey": 369,
         "statOrder": [
@@ -13685,7 +13685,7 @@
     },
     "369_5": {
         "affix": null,
-        "1": "-36% increased Channel Cost",
+        "1": "(36-40)% reduced Channel Cost",
         "level": 36,
         "statOrderKey": 369,
         "statOrder": [
@@ -13696,7 +13696,7 @@
     },
     "369_6": {
         "affix": null,
-        "1": "-41% increased Channel Cost",
+        "1": "(41-45)% reduced Channel Cost",
         "level": 36,
         "statOrderKey": 369,
         "statOrder": [
@@ -13718,7 +13718,7 @@
     },
     "370_1": {
         "affix": null,
-        "1": "+(52-57)% Increased Shred Armor Effect",
+        "1": "+(52-58)% Increased Shred Armor Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -13806,7 +13806,7 @@
     },
     "371_2": {
         "affix": null,
-        "1": "(52-56)% increased Fire Damage Over Time",
+        "1": "(52-57)% increased Fire Damage Over Time",
         "level": 32,
         "statOrderKey": 371,
         "statOrder": [
@@ -13817,7 +13817,7 @@
     },
     "371_3": {
         "affix": null,
-        "1": "(57-63)% increased Fire Damage Over Time",
+        "1": "(58-63)% increased Fire Damage Over Time",
         "level": 32,
         "statOrderKey": 371,
         "statOrder": [
@@ -13883,7 +13883,7 @@
     },
     "372_2": {
         "affix": null,
-        "1": "(52-56)% increased Void Damage Over Time",
+        "1": "(52-57)% increased Void Damage Over Time",
         "level": 32,
         "statOrderKey": 372,
         "statOrder": [
@@ -13894,7 +13894,7 @@
     },
     "372_3": {
         "affix": null,
-        "1": "(57-63)% increased Void Damage Over Time",
+        "1": "(58-63)% increased Void Damage Over Time",
         "level": 32,
         "statOrderKey": 372,
         "statOrder": [
@@ -14037,7 +14037,7 @@
     },
     "374_2": {
         "affix": null,
-        "1": "+(24-28)% Increased Abyssal Decay Duration ",
+        "1": "+(24-29)% Increased Abyssal Decay Duration ",
         "level": 43,
         "statOrderKey": 374,
         "statOrder": [
@@ -14411,7 +14411,7 @@
     },
     "379_1": {
         "affix": null,
-        "1": "+(52-57)% Increased critical strike chance with Shield Throw",
+        "1": "+(52-58)% Increased critical strike chance with Shield Throw",
         "level": 18,
         "statOrderKey": 379,
         "statOrder": [
@@ -14455,7 +14455,7 @@
     },
     "379_5": {
         "affix": null,
-        "1": "+(114-140)% Increased critical strike chance with Shield Throw",
+        "1": "+(115-140)% Increased critical strike chance with Shield Throw",
         "level": 18,
         "statOrderKey": 379,
         "statOrder": [
@@ -14906,7 +14906,7 @@
     },
     "385_4": {
         "affix": null,
-        "1": "+(24-28)% Lightning Critical Strike Multiplier",
+        "1": "+(24-29)% Lightning Critical Strike Multiplier",
         "level": 60,
         "statOrderKey": 385,
         "statOrder": [
@@ -14983,7 +14983,7 @@
     },
     "386_4": {
         "affix": null,
-        "1": "+(48-56)% Spell Damage Leeched as Health While Channelling",
+        "1": "+(48-57)% Spell Damage Leeched as Health While Channelling",
         "level": 46,
         "statOrderKey": 386,
         "statOrder": [
@@ -15071,7 +15071,7 @@
     },
     "387_5": {
         "affix": null,
-        "1": "+(95-114)% Chance to apply Frostbite on Cold Hit",
+        "1": "+(95-115)% Chance to apply Frostbite on Cold Hit",
         "level": 27,
         "statOrderKey": 387,
         "statOrder": [
@@ -15082,7 +15082,7 @@
     },
     "387_6": {
         "affix": null,
-        "1": "+(115-140)% Chance to apply Frostbite on Cold Hit",
+        "1": "+(116-140)% Chance to apply Frostbite on Cold Hit",
         "level": 27,
         "statOrderKey": 387,
         "statOrder": [
@@ -15115,7 +15115,7 @@
     },
     "388_2": {
         "affix": null,
-        "1": "(52-56)% increased Cold Damage Over Time",
+        "1": "(52-57)% increased Cold Damage Over Time",
         "level": 25,
         "statOrderKey": 388,
         "statOrder": [
@@ -15126,7 +15126,7 @@
     },
     "388_3": {
         "affix": null,
-        "1": "(57-63)% increased Cold Damage Over Time",
+        "1": "(58-63)% increased Cold Damage Over Time",
         "level": 25,
         "statOrderKey": 388,
         "statOrder": [
@@ -15192,7 +15192,7 @@
     },
     "389_2": {
         "affix": null,
-        "1": "(52-56)% increased Fire Damage Over Time",
+        "1": "(52-57)% increased Fire Damage Over Time",
         "level": 25,
         "statOrderKey": 389,
         "statOrder": [
@@ -15203,7 +15203,7 @@
     },
     "389_3": {
         "affix": null,
-        "1": "(57-63)% increased Fire Damage Over Time",
+        "1": "(58-63)% increased Fire Damage Over Time",
         "level": 25,
         "statOrderKey": 389,
         "statOrder": [
@@ -15291,7 +15291,7 @@
     },
     "390_4": {
         "affix": null,
-        "1": "(48-56)% increased Melee Elemental Damage",
+        "1": "(48-57)% increased Melee Elemental Damage",
         "level": 36,
         "statOrderKey": 390,
         "statOrder": [
@@ -15379,7 +15379,7 @@
     },
     "391_5": {
         "affix": null,
-        "1": "+(95-114)% Chance to Ignite on Fire Hit",
+        "1": "+(95-115)% Chance to Ignite on Fire Hit",
         "level": 41,
         "statOrderKey": 391,
         "statOrder": [
@@ -15390,7 +15390,7 @@
     },
     "391_6": {
         "affix": null,
-        "1": "+(115-140)% Chance to Ignite on Fire Hit",
+        "1": "+(116-140)% Chance to Ignite on Fire Hit",
         "level": 41,
         "statOrderKey": 391,
         "statOrder": [
@@ -15456,7 +15456,7 @@
     },
     "392_5": {
         "affix": null,
-        "1": "+(95-114)% Chance to Shock on Lightning Hit",
+        "1": "+(95-115)% Chance to Shock on Lightning Hit",
         "level": 41,
         "statOrderKey": 392,
         "statOrder": [
@@ -15467,7 +15467,7 @@
     },
     "392_6": {
         "affix": null,
-        "1": "+(115-140)% Chance to Shock on Lightning Hit",
+        "1": "+(116-140)% Chance to Shock on Lightning Hit",
         "level": 41,
         "statOrderKey": 392,
         "statOrder": [
@@ -16105,7 +16105,7 @@
     },
     "401_1": {
         "affix": null,
-        "1": "(52-57)% increased Physical Damage While Transformed",
+        "1": "(52-58)% increased Physical Damage While Transformed",
         "level": 25,
         "statOrderKey": 401,
         "statOrder": [
@@ -16182,7 +16182,7 @@
     },
     "402_1": {
         "affix": null,
-        "1": "(52-57)% increased Necrotic Damage While Transformed",
+        "1": "(52-58)% increased Necrotic Damage While Transformed",
         "level": 25,
         "statOrderKey": 402,
         "statOrder": [
@@ -16710,7 +16710,7 @@
     },
     "409_6": {
         "affix": null,
-        "1": "+(28-36)% Physical Damage Leeched as Health\n+(28-36)% Minion Physical Damage Leeched as Health",
+        "1": "+(29-36)% Physical Damage Leeched as Health\n+(29-36)% Minion Physical Damage Leeched as Health",
         "level": 60,
         "statOrderKey": 409,
         "statOrder": [
@@ -16776,7 +16776,7 @@
     },
     "410_5": {
         "affix": null,
-        "1": "+(114-140)% Increased Skeletal Mage Damage",
+        "1": "+(115-140)% Increased Skeletal Mage Damage",
         "level": 45,
         "statOrderKey": 410,
         "statOrder": [
@@ -17205,7 +17205,7 @@
     },
     "416_2": {
         "affix": null,
-        "1": "(52-56)% increased Critical Strike Chance\n(52-56)% increased Minion Critical Strike Chance",
+        "1": "(52-57)% increased Critical Strike Chance\n(52-57)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17216,7 +17216,7 @@
     },
     "416_3": {
         "affix": null,
-        "1": "(57-63)% increased Critical Strike Chance\n(57-63)% increased Minion Critical Strike Chance",
+        "1": "(58-63)% increased Critical Strike Chance\n(58-63)% increased Minion Critical Strike Chance",
         "level": 29,
         "statOrderKey": 416,
         "statOrder": [
@@ -17623,7 +17623,7 @@
     },
     "421_5": {
         "affix": null,
-        "1": "+(95-114)% Chance to apply Damned on Hit",
+        "1": "+(95-115)% Chance to apply Damned on Hit",
         "level": 34,
         "statOrderKey": 421,
         "statOrder": [
@@ -17634,7 +17634,7 @@
     },
     "421_6": {
         "affix": null,
-        "1": "+(115-140)% Chance to apply Damned on Hit",
+        "1": "+(116-140)% Chance to apply Damned on Hit",
         "level": 34,
         "statOrderKey": 421,
         "statOrder": [
@@ -17810,7 +17810,7 @@
     },
     "424_1": {
         "affix": null,
-        "1": "(52-57)% increased Physical Spell Critical Strike Chance",
+        "1": "(52-58)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "statOrderKey": 424,
         "statOrder": [
@@ -17854,7 +17854,7 @@
     },
     "424_5": {
         "affix": null,
-        "1": "(114-140)% increased Physical Spell Critical Strike Chance",
+        "1": "(115-140)% increased Physical Spell Critical Strike Chance",
         "level": 41,
         "statOrderKey": 424,
         "statOrder": [
@@ -19042,7 +19042,7 @@
     },
     "443_4": {
         "affix": null,
-        "1": "+(28-35)% Chance to gain Crimson Shroud when you use a Melee Attack that hits",
+        "1": "+(29-35)% Chance to gain Crimson Shroud when you use a Melee Attack that hits",
         "level": 48,
         "statOrderKey": 443,
         "statOrder": [
@@ -20527,7 +20527,7 @@
     },
     "479_1": {
         "affix": null,
-        "1": "+(52-57)% Increased Shred Armor Effect",
+        "1": "+(52-58)% Increased Shred Armor Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20736,7 +20736,7 @@
     },
     "483_4": {
         "affix": null,
-        "1": "+(28-35)% Chance to Ignite on Bow Hit",
+        "1": "+(29-35)% Chance to Ignite on Bow Hit",
         "level": 55,
         "statOrderKey": 483,
         "statOrder": [
@@ -20824,7 +20824,7 @@
     },
     "485_4": {
         "affix": null,
-        "1": "+(28-35)% Chance to Slow on Bow Hit",
+        "1": "+(29-35)% Chance to Slow on Bow Hit",
         "level": 57,
         "statOrderKey": 485,
         "statOrder": [
@@ -21121,7 +21121,7 @@
     },
     "494_4": {
         "affix": null,
-        "1": "+(28-35)% Chance to Bleed on Bow Hit",
+        "1": "+(29-35)% Chance to Bleed on Bow Hit",
         "level": 27,
         "statOrderKey": 494,
         "statOrder": [
@@ -21803,7 +21803,7 @@
     },
     "506_0": {
         "affix": "Spellslinger's",
-        "1": "(5-10)% increased Spell Damage\n+-3 Spell Mana Cost",
+        "1": "(5-10)% increased Spell Damage\n-3 Spell Mana Cost",
         "level": 0,
         "statOrderKey": 506,
         "statOrder": [
@@ -21814,7 +21814,7 @@
     },
     "506_1": {
         "affix": "Spellslinger's",
-        "1": "(11-20)% increased Spell Damage\n+-3 Spell Mana Cost",
+        "1": "(11-20)% increased Spell Damage\n-3 Spell Mana Cost",
         "level": 0,
         "statOrderKey": 506,
         "statOrder": [
@@ -21825,7 +21825,7 @@
     },
     "506_2": {
         "affix": "Spellslinger's",
-        "1": "(21-30)% increased Spell Damage\n+-3 Spell Mana Cost",
+        "1": "(21-30)% increased Spell Damage\n-3 Spell Mana Cost",
         "level": 0,
         "statOrderKey": 506,
         "statOrder": [
@@ -21836,7 +21836,7 @@
     },
     "506_3": {
         "affix": "Spellslinger's",
-        "1": "(31-40)% increased Spell Damage\n+-3 Spell Mana Cost",
+        "1": "(31-40)% increased Spell Damage\n-3 Spell Mana Cost",
         "level": 0,
         "statOrderKey": 506,
         "statOrder": [
@@ -21847,7 +21847,7 @@
     },
     "506_4": {
         "affix": "Spellslinger's",
-        "1": "(41-50)% increased Spell Damage\n+-3 Spell Mana Cost",
+        "1": "(41-50)% increased Spell Damage\n-3 Spell Mana Cost",
         "level": 0,
         "statOrderKey": 506,
         "statOrder": [
@@ -21858,7 +21858,7 @@
     },
     "506_5": {
         "affix": "Spellslinger's",
-        "1": "(60-75)% increased Spell Damage\n+-4 Spell Mana Cost",
+        "1": "(60-75)% increased Spell Damage\n-4 Spell Mana Cost",
         "level": 0,
         "statOrderKey": 506,
         "statOrder": [
@@ -21869,7 +21869,7 @@
     },
     "506_6": {
         "affix": "Spellslinger's",
-        "1": "(76-100)% increased Spell Damage\n+-5 Spell Mana Cost",
+        "1": "(76-100)% increased Spell Damage\n-5 Spell Mana Cost",
         "level": 0,
         "statOrderKey": 506,
         "statOrder": [
@@ -21880,7 +21880,7 @@
     },
     "507_0": {
         "affix": "Ballista's",
-        "1": "+(3-4) Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(3-4) Throwing Damage\n-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21891,7 +21891,7 @@
     },
     "507_1": {
         "affix": "Ballista's",
-        "1": "+(5-6) Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(5-6) Throwing Damage\n-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21902,7 +21902,7 @@
     },
     "507_2": {
         "affix": "Ballista's",
-        "1": "+(7-8) Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(7-8) Throwing Damage\n-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21913,7 +21913,7 @@
     },
     "507_3": {
         "affix": "Ballista's",
-        "1": "+(9-10) Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(9-10) Throwing Damage\n-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21924,7 +21924,7 @@
     },
     "507_4": {
         "affix": "Ballista's",
-        "1": "+(11-13) Throwing Damage\n+-3 Throwing Attack Mana Cost",
+        "1": "+(11-13) Throwing Damage\n-3 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21935,7 +21935,7 @@
     },
     "507_5": {
         "affix": "Ballista's",
-        "1": "+(17-21) Throwing Damage\n+-4 Throwing Attack Mana Cost",
+        "1": "+(17-21) Throwing Damage\n-4 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -21946,7 +21946,7 @@
     },
     "507_6": {
         "affix": "Ballista's",
-        "1": "+(22-26) Throwing Damage\n+-5 Throwing Attack Mana Cost",
+        "1": "+(22-26) Throwing Damage\n-5 Throwing Attack Mana Cost",
         "level": 6,
         "statOrderKey": 507,
         "statOrder": [
@@ -22441,7 +22441,7 @@
     },
     "519_3": {
         "affix": null,
-        "1": "+(16-19) Lightning Damage with Shurikens\n+56% Shurikens Base Damage converted to Lightning",
+        "1": "+(16-19) Lightning Damage with Shurikens\n+(56-57)% Shurikens Base Damage converted to Lightning",
         "level": 4,
         "statOrderKey": 519,
         "statOrder": [
@@ -22452,7 +22452,7 @@
     },
     "519_4": {
         "affix": null,
-        "1": "+(20-27) Lightning Damage with Shurikens\n+(57-60)% Shurikens Base Damage converted to Lightning",
+        "1": "+(20-27) Lightning Damage with Shurikens\n+(58-60)% Shurikens Base Damage converted to Lightning",
         "level": 4,
         "statOrderKey": 519,
         "statOrder": [
@@ -29734,7 +29734,7 @@
     },
     "622_5": {
         "affix": null,
-        "1": "+3 Gathering Storm\n+(25-28)% Spell Damage",
+        "1": "+3 Gathering Storm\n+(25-29)% Spell Damage",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -30900,7 +30900,7 @@
     },
     "637_6": {
         "affix": null,
-        "1": "+4 Ice Barrage\n+(200-260)% Freeze Rate Multiplier",
+        "1": "+4 Ice Barrage\n+(201-260)% Freeze Rate Multiplier",
         "level": 25,
         "statOrderKey": 637,
         "statOrder": [
@@ -31791,7 +31791,7 @@
     },
     "649_3": {
         "affix": null,
-        "1": "+(26-28)% increased Volatile Zombie Movement Speed\n+(65-80)% increased Volatile Zombie Damage",
+        "1": "+(26-29)% increased Volatile Zombie Movement Speed\n+(65-80)% increased Volatile Zombie Damage",
         "level": 28,
         "statOrderKey": 649,
         "statOrder": [
@@ -32506,7 +32506,7 @@
     },
     "663_0": {
         "affix": null,
-        "1": "+(14-19)% Armor Shred Chance for Locusts",
+        "1": "+(14-19)% Armour Shred Chance for Locusts",
         "level": 49,
         "statOrderKey": 663,
         "statOrder": [
@@ -32517,7 +32517,7 @@
     },
     "663_1": {
         "affix": null,
-        "1": "+(20-27)% Armor Shred Chance for Locusts",
+        "1": "+(20-27)% Armour Shred Chance for Locusts",
         "level": 49,
         "statOrderKey": 663,
         "statOrder": [
@@ -32528,7 +32528,7 @@
     },
     "663_2": {
         "affix": null,
-        "1": "+(28-35)% Armor Shred Chance for Locusts",
+        "1": "+(28-35)% Armour Shred Chance for Locusts",
         "level": 49,
         "statOrderKey": 663,
         "statOrder": [
@@ -32539,7 +32539,7 @@
     },
     "663_3": {
         "affix": null,
-        "1": "+(36-45)% Armor Shred Chance for Locusts",
+        "1": "+(36-45)% Armour Shred Chance for Locusts",
         "level": 49,
         "statOrderKey": 663,
         "statOrder": [
@@ -32550,7 +32550,7 @@
     },
     "663_4": {
         "affix": null,
-        "1": "+(46-60)% Armor Shred Chance for Locusts",
+        "1": "+(46-60)% Armour Shred Chance for Locusts",
         "level": 49,
         "statOrderKey": 663,
         "statOrder": [
@@ -32561,7 +32561,7 @@
     },
     "663_5": {
         "affix": null,
-        "1": "+(75-90)% Armor Shred Chance for Locusts",
+        "1": "+(75-90)% Armour Shred Chance for Locusts",
         "level": 49,
         "statOrderKey": 663,
         "statOrder": [
@@ -32572,7 +32572,7 @@
     },
     "663_6": {
         "affix": null,
-        "1": "+(91-120)% Armor Shred Chance for Locusts",
+        "1": "+(91-120)% Armour Shred Chance for Locusts",
         "level": 49,
         "statOrderKey": 663,
         "statOrder": [
@@ -34420,7 +34420,7 @@
     },
     "693_0": {
         "affix": null,
-        "1": "+(8-10)% Fire Penetration with Fire Invocations\n+(25-32) Armor per Rah Rune",
+        "1": "+(8-10)% Fire Penetration with Fire Invocations\n+(25-32) Armour per Rah Rune",
         "level": 39,
         "statOrderKey": 693,
         "statOrder": [
@@ -34431,7 +34431,7 @@
     },
     "693_1": {
         "affix": null,
-        "1": "+(11-13)% Fire Penetration with Fire Invocations\n+(33-40) Armor per Rah Rune",
+        "1": "+(11-13)% Fire Penetration with Fire Invocations\n+(33-40) Armour per Rah Rune",
         "level": 39,
         "statOrderKey": 693,
         "statOrder": [
@@ -34442,7 +34442,7 @@
     },
     "693_2": {
         "affix": null,
-        "1": "+(14-17)% Fire Penetration with Fire Invocations\n+(41-50) Armor per Rah Rune",
+        "1": "+(14-17)% Fire Penetration with Fire Invocations\n+(41-50) Armour per Rah Rune",
         "level": 39,
         "statOrderKey": 693,
         "statOrder": [
@@ -34453,7 +34453,7 @@
     },
     "693_3": {
         "affix": null,
-        "1": "+(18-21)% Fire Penetration with Fire Invocations\n+(51-63) Armor per Rah Rune",
+        "1": "+(18-21)% Fire Penetration with Fire Invocations\n+(51-63) Armour per Rah Rune",
         "level": 39,
         "statOrderKey": 693,
         "statOrder": [
@@ -34464,7 +34464,7 @@
     },
     "693_4": {
         "affix": null,
-        "1": "+(22-27)% Fire Penetration with Fire Invocations\n+(64-80) Armor per Rah Rune",
+        "1": "+(22-27)% Fire Penetration with Fire Invocations\n+(64-80) Armour per Rah Rune",
         "level": 39,
         "statOrderKey": 693,
         "statOrder": [
@@ -34475,7 +34475,7 @@
     },
     "693_5": {
         "affix": null,
-        "1": "+(30-35)% Fire Penetration with Fire Invocations\n+(100-120) Armor per Rah Rune",
+        "1": "+(30-35)% Fire Penetration with Fire Invocations\n+(100-120) Armour per Rah Rune",
         "level": 39,
         "statOrderKey": 693,
         "statOrder": [
@@ -34486,7 +34486,7 @@
     },
     "693_6": {
         "affix": null,
-        "1": "+(36-42)% Fire Penetration with Fire Invocations\n+(121-150) Armor per Rah Rune",
+        "1": "+(36-42)% Fire Penetration with Fire Invocations\n+(121-150) Armour per Rah Rune",
         "level": 39,
         "statOrderKey": 693,
         "statOrder": [
@@ -34607,7 +34607,7 @@
     },
     "695_3": {
         "affix": null,
-        "1": "+(18-21)% increased Frost Wall Duration\n+(85-114)% Frostbite Chance per Second with Frost Wall",
+        "1": "+(18-21)% increased Frost Wall Duration\n+(85-115)% Frostbite Chance per Second with Frost Wall",
         "level": 35,
         "statOrderKey": 695,
         "statOrder": [
@@ -34618,7 +34618,7 @@
     },
     "695_4": {
         "affix": null,
-        "1": "+(22-27)% increased Frost Wall Duration\n+(115-140)% Frostbite Chance per Second with Frost Wall",
+        "1": "+(22-27)% increased Frost Wall Duration\n+(116-140)% Frostbite Chance per Second with Frost Wall",
         "level": 35,
         "statOrderKey": 695,
         "statOrder": [
@@ -34640,7 +34640,7 @@
     },
     "695_6": {
         "affix": null,
-        "1": "+(36-42)% increased Frost Wall Duration\n+(200-300)% Frostbite Chance per Second with Frost Wall",
+        "1": "+(36-42)% increased Frost Wall Duration\n+(201-300)% Frostbite Chance per Second with Frost Wall",
         "level": 35,
         "statOrderKey": 695,
         "statOrder": [
@@ -34816,7 +34816,7 @@
     },
     "699_0": {
         "affix": "of the Timelost Outcast",
-        "1": "-7% increased Necrotic Damage Taken\n7% increased Cold Damage Taken",
+        "1": "7% less Necrotic Damage Taken\n7% more Cold Damage Taken",
         "level": 0,
         "statOrderKey": 699,
         "statOrder": [
@@ -34827,7 +34827,7 @@
     },
     "699_1": {
         "affix": "of the Timelost Outcast",
-        "1": "-8% increased Necrotic Damage Taken\n8% increased Cold Damage Taken",
+        "1": "8% less Necrotic Damage Taken\n8% more Cold Damage Taken",
         "level": 0,
         "statOrderKey": 699,
         "statOrder": [
@@ -34838,7 +34838,7 @@
     },
     "699_2": {
         "affix": "of the Timelost Outcast",
-        "1": "-9% increased Necrotic Damage Taken\n9% increased Cold Damage Taken",
+        "1": "9% less Necrotic Damage Taken\n9% more Cold Damage Taken",
         "level": 0,
         "statOrderKey": 699,
         "statOrder": [
@@ -34849,7 +34849,7 @@
     },
     "699_3": {
         "affix": "of the Timelost Outcast",
-        "1": "-10% increased Necrotic Damage Taken\n10% increased Cold Damage Taken",
+        "1": "10% less Necrotic Damage Taken\n10% more Cold Damage Taken",
         "level": 0,
         "statOrderKey": 699,
         "statOrder": [
@@ -34860,7 +34860,7 @@
     },
     "699_4": {
         "affix": "of the Timelost Outcast",
-        "1": "-11% increased Necrotic Damage Taken\n(11-12)% increased Cold Damage Taken",
+        "1": "(11-12)% less Necrotic Damage Taken\n(11-12)% more Cold Damage Taken",
         "level": 0,
         "statOrderKey": 699,
         "statOrder": [
@@ -34871,7 +34871,7 @@
     },
     "699_5": {
         "affix": "of the Timelost Outcast",
-        "1": "(-17--15)% increased Necrotic Damage Taken\n(15-17)% increased Cold Damage Taken",
+        "1": "17% less Necrotic Damage Taken\n(15-17)% more Cold Damage Taken",
         "level": 0,
         "statOrderKey": 699,
         "statOrder": [
@@ -34882,7 +34882,7 @@
     },
     "699_6": {
         "affix": "of the Timelost Outcast",
-        "1": "(-20--18)% increased Necrotic Damage Taken\n(18-20)% increased Cold Damage Taken",
+        "1": "20% less Necrotic Damage Taken\n(18-20)% more Cold Damage Taken",
         "level": 0,
         "statOrderKey": 699,
         "statOrder": [
@@ -35047,7 +35047,7 @@
     },
     "702_0": {
         "affix": "Solar Deserter's",
-        "1": "3% increased Movement Speed\n-13% increased Fire Damage Taken on Block",
+        "1": "3% increased Movement Speed\n(13-14)% less Fire Damage Taken on Block",
         "level": 0,
         "statOrderKey": 702,
         "statOrder": [
@@ -35058,7 +35058,7 @@
     },
     "702_1": {
         "affix": "Solar Deserter's",
-        "1": "4% increased Movement Speed\n-15% increased Fire Damage Taken on Block",
+        "1": "4% increased Movement Speed\n(15-16)% less Fire Damage Taken on Block",
         "level": 0,
         "statOrderKey": 702,
         "statOrder": [
@@ -35069,7 +35069,7 @@
     },
     "702_2": {
         "affix": "Solar Deserter's",
-        "1": "5% increased Movement Speed\n-17% increased Fire Damage Taken on Block",
+        "1": "5% increased Movement Speed\n(17-18)% less Fire Damage Taken on Block",
         "level": 0,
         "statOrderKey": 702,
         "statOrder": [
@@ -35080,7 +35080,7 @@
     },
     "702_3": {
         "affix": "Solar Deserter's",
-        "1": "6% increased Movement Speed\n-19% increased Fire Damage Taken on Block",
+        "1": "6% increased Movement Speed\n(19-20)% less Fire Damage Taken on Block",
         "level": 0,
         "statOrderKey": 702,
         "statOrder": [
@@ -35091,7 +35091,7 @@
     },
     "702_4": {
         "affix": "Solar Deserter's",
-        "1": "7% increased Movement Speed\n-21% increased Fire Damage Taken on Block",
+        "1": "7% increased Movement Speed\n(21-23)% less Fire Damage Taken on Block",
         "level": 0,
         "statOrderKey": 702,
         "statOrder": [
@@ -35102,7 +35102,7 @@
     },
     "702_5": {
         "affix": "Solar Deserter's",
-        "1": "(9-10)% increased Movement Speed\n-26% increased Fire Damage Taken on Block",
+        "1": "(9-10)% increased Movement Speed\n(26-29)% less Fire Damage Taken on Block",
         "level": 0,
         "statOrderKey": 702,
         "statOrder": [
@@ -35113,7 +35113,7 @@
     },
     "702_6": {
         "affix": "Solar Deserter's",
-        "1": "(11-12)% increased Movement Speed\n-30% increased Fire Damage Taken on Block",
+        "1": "(11-12)% increased Movement Speed\n(30-35)% less Fire Damage Taken on Block",
         "level": 0,
         "statOrderKey": 702,
         "statOrder": [
@@ -35223,7 +35223,7 @@
     },
     "704_2": {
         "affix": "Orian's",
-        "1": "+(11-15) Spell Fire Damage\n+(26-28)% Chance to cast Fire Aura on Kill with Fire Skills (1 second cooldown)",
+        "1": "+(11-15) Spell Fire Damage\n+(26-29)% Chance to cast Fire Aura on Kill with Fire Skills (1 second cooldown)",
         "level": 0,
         "statOrderKey": 704,
         "statOrder": [
@@ -35850,7 +35850,7 @@
     },
     "712_3": {
         "affix": null,
-        "1": "+(18-20) Mana Gained on Potion Use\n(24-28)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(18-20) Mana Gained on Potion Use\n(24-29)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35927,7 +35927,7 @@
     },
     "713_3": {
         "affix": null,
-        "1": "+(110-120)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(24-28)% Increased Chance To Find Potions",
+        "1": "+(110-120)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(24-29)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -36246,7 +36246,7 @@
     },
     "718_3": {
         "affix": "Manaforged",
-        "1": "+(35-45) Mana\n(25-28)% increased Mana Regen",
+        "1": "+(35-45) Mana\n(25-29)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -37885,7 +37885,7 @@
     },
     "747_3": {
         "affix": null,
-        "1": "+(25-28)% Chance for 3 additional projectiles when you directly cast Chaos Bolts",
+        "1": "+(25-29)% Chance for 3 additional projectiles when you directly cast Chaos Bolts",
         "level": 41,
         "statOrderKey": 747,
         "statOrder": [
@@ -37962,7 +37962,7 @@
     },
     "748_3": {
         "affix": null,
-        "1": "+(24-28)% Increased Spirit Frequency with Chthonic Fissure",
+        "1": "+(24-29)% Increased Spirit Frequency with Chthonic Fissure",
         "level": 13,
         "statOrderKey": 748,
         "statOrder": [
@@ -38204,7 +38204,7 @@
     },
     "758_3": {
         "affix": "Cursed",
-        "1": "+53% to 75% less Damage depending on Area Level for You and your Minions\n+114% to 200% more Damage Taken depending on Area Level for You and your Minions",
+        "1": "+53% to 75% less Damage depending on Area Level for You and your Minions\n+115% to 200% more Damage Taken depending on Area Level for You and your Minions",
         "level": 0,
         "statOrderKey": 758,
         "statOrder": [
