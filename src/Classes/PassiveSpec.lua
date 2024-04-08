@@ -128,8 +128,8 @@ function PassiveSpecClass:Load(xml, dbFileName)
 			return true
 		end
 		local hashList = { }
-		for hash in xml.attrib.nodes:gmatch("%d+") do
-			t_insert(hashList, tonumber(hash))
+		for hash in xml.attrib.nodes:gmatch("[^,]+") do
+			t_insert(hashList, hash)
 		end
 		local masteryEffects = { }
 		if xml.attrib.masteryEffects then
