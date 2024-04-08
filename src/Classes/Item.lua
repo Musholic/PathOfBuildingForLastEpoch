@@ -10,7 +10,7 @@ local m_min = math.min
 local m_max = math.max
 local m_floor = math.floor
 
-local dmgTypeList = {"Physical", "Lightning", "Cold", "Fire", "Chaos"}
+local dmgTypeList = DamageTypes
 local catalystList = {"Abrasive", "Accelerating", "Fertile", "Imbued", "Intrinsic", "Noxious", "Prismatic", "Tempering", "Turbulent", "Unstable"}
 local catalystTags = {
 	{ "attack" },

@@ -23,9 +23,9 @@ local isElemental = { Fire = true, Cold = true, Lightning = true }
 
 -- List of all damage types, ordered according to the conversion sequence
 local hitSourceList = {"Attack", "Spell"}
-local dmgTypeList = {"Physical", "Lightning", "Cold", "Fire", "Chaos"}
+local dmgTypeList = DamageTypes
 
-local resistTypeList = { "Fire", "Cold", "Lightning", "Chaos" }
+local resistTypeList = dmgTypeList
 
 -- Calculate hit chance
 function calcs.hitChance(evasion, accuracy)
@@ -1931,13 +1931,6 @@ function calcs.buildDefenceEstimations(env, actor)
 			output[damageType.."EnergyShieldBypass"] = modDB:Override(nil, damageType.."EnergyShieldBypass") or modDB:Sum("BASE", nil, damageType.."EnergyShieldBypass") or 0
 			if output[damageType.."EnergyShieldBypass"] ~= 0 then
 				output.AnyBypass = true
-			end
-			if damageType == "Chaos" then
-				if not modDB:Flag(nil, "ChaosNotBypassEnergyShield") then
-					output[damageType.."EnergyShieldBypass"] = output[damageType.."EnergyShieldBypass"] + 100
-				else
-					output.AnyBypass = true
-				end
 			end
 		end
 		output[damageType.."EnergyShieldBypass"] = m_max(m_min(output[damageType.."EnergyShieldBypass"], 100), 0)

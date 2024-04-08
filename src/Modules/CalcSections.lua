@@ -162,10 +162,7 @@ return {
 		{ format = "{0:output:FireMin} to {0:output:FireMax}", 
 			{ breakdown = "Fire" }, 
 			{ label = "Conversions", modType = "BASE", cfg = "skill", modName = fireConvert }, 
-		},
-		{ format = "{0:output:ChaosMin} to {0:output:ChaosMax}", 
-			{ breakdown = "Chaos" }, 
-		},
+		}
 	},
 	{ label = "Skill Average Hit", notFlag = "attack", { format = "{1:output:AverageHit}", { breakdown = "AverageHit" }, }, },
 	{ label = "Skill PvP Average Hit", flag = "notAttackPvP", { format = "{1:output:PvpAverageHit}", { breakdown = "PvpAverageHit" }, 

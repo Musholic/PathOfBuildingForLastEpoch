@@ -68,12 +68,6 @@ local formList = {
 	["^(%d+)%% slower"] = "RED",
 	["^(%d+)%% more"] = "MORE",
 	["^(%d+)%% less"] = "LESS",
-	["^([%+%-][%d%.]+)%%?"] = "BASE",
-	["^([%+%-][%d%.]+)%%? to"] = "BASE",
-	["^([%+%-]?[%d%.]+)%%? of"] = "BASE",
-	["^([%+%-][%d%.]+)%%? base"] = "BASE",
-	["^([%+%-]?[%d%.]+)%%? additional"] = "BASE",
-	["(%d+) additional hits?"] = "BASE",
 	["^you gain ([%d%.]+)"] = "GAIN",
 	["^gains? ([%d%.]+)%% of"] = "GAIN",
 	["^gain ([%d%.]+)"] = "GAIN",
@@ -111,30 +105,9 @@ local formList = {
 	["^you lose ([%d%.]+)%% of (.-) per second"] = "DEGENPERCENT",
 	["^([%d%.]+) (%a+) damage taken per second"] = "DEGEN",
 	["^([%d%.]+) (%a+) damage per second"] = "DEGEN",
-	["(%d+) to (%d+) added (%a+) damage"] = "DMG",
-	["(%d+)%-(%d+) added (%a+) damage"] = "DMG",
-	["(%d+) to (%d+) additional (%a+) damage"] = "DMG",
-	["(%d+)%-(%d+) additional (%a+) damage"] = "DMG",
-	["^(%d+) to (%d+) (%a+) damage"] = "DMG",
-	["adds (%d+) to (%d+) (%a+) damage"] = "DMG",
-	["adds (%d+)%-(%d+) (%a+) damage"] = "DMG",
-	["^+(([%d%.]+)) melee (%a+) damage"] = "DMGATTACKS",
-	["adds (%d+) to (%d+) (%a+) damage to attacks"] = "DMGATTACKS",
-	["adds (%d+)%-(%d+) (%a+) damage to attacks"] = "DMGATTACKS",
-	["adds (%d+) to (%d+) (%a+) attack damage"] = "DMGATTACKS",
-	["adds (%d+)%-(%d+) (%a+) attack damage"] = "DMGATTACKS",
-	["(%d+) to (%d+) added attack (%a+) damage"] = "DMGATTACKS",
-	["adds (%d+) to (%d+) (%a+) damage to spells"] = "DMGSPELLS",
-	["adds (%d+)%-(%d+) (%a+) damage to spells"] = "DMGSPELLS",
-	["adds (%d+) to (%d+) (%a+) spell damage"] = "DMGSPELLS",
-	["adds (%d+)%-(%d+) (%a+) spell damage"] = "DMGSPELLS",
-	["(%d+) to (%d+) added spell (%a+) damage"] = "DMGSPELLS",
-	["adds (%d+) to (%d+) (%a+) damage to attacks and spells"] = "DMGBOTH",
-	["adds (%d+)%-(%d+) (%a+) damage to attacks and spells"] = "DMGBOTH",
-	["adds (%d+) to (%d+) (%a+) damage to spells and attacks"] = "DMGBOTH", -- o_O
-	["adds (%d+)%-(%d+) (%a+) damage to spells and attacks"] = "DMGBOTH", -- o_O
-	["adds (%d+) to (%d+) (%a+) damage to hits"] = "DMGBOTH",
-	["adds (%d+)%-(%d+) (%a+) damage to hits"] = "DMGBOTH",
+	["^%+([%d%.]+) damage"] = "DMG",
+	["^%+([%d%.]+) (%a+) damage"] = "DMG",
+	["^%+([%d%.]+) (%a+) (%a+) damage"] = "DMG",
 	["^you have "] = "FLAG",
 	["^have "] = "FLAG",
 	["^you are "] = "FLAG",
@@ -625,13 +598,10 @@ local modNameList = {
 	["melee damage"] = { "Damage", flags = ModFlag.Melee },
 	["physical melee damage"] = { "PhysicalDamage", flags = ModFlag.Melee },
 	["melee physical damage"] = { "PhysicalDamage", flags = ModFlag.Melee },
-	["projectile damage"] = { "Damage", flags = ModFlag.Projectile },
-	["projectile attack damage"] = { "Damage", flags = bor(ModFlag.Projectile, ModFlag.Attack) },
 	["bow damage"] = { "Damage", flags = bor(ModFlag.Bow, ModFlag.Hit) },
 	["damage with arrow hits"] = { "Damage", flags = bor(ModFlag.Bow, ModFlag.Hit) },
 	["wand damage"] = { "Damage", flags = bor(ModFlag.Wand, ModFlag.Hit) },
 	["wand physical damage"] = { "PhysicalDamage", flags = bor(ModFlag.Wand, ModFlag.Hit) },
-	["claw physical damage"] = { "PhysicalDamage", flags = bor(ModFlag.Claw, ModFlag.Hit) },
 	["sword physical damage"] = { "PhysicalDamage", flags = bor(ModFlag.Sword, ModFlag.Hit) },
 	["damage over time"] = { "Damage", flags = ModFlag.Dot },
 	["physical damage over time"] = { "PhysicalDamage", keywordFlags = KeywordFlag.PhysicalDot },
@@ -801,12 +771,6 @@ local modFlagList = {
 	["with bows"] = { flags = bor(ModFlag.Bow, ModFlag.Hit) },
 	["to bow attacks"] = { flags = bor(ModFlag.Bow, ModFlag.Hit) },
 	["with bow attacks"] = { flags = bor(ModFlag.Bow, ModFlag.Hit) },
-	["with claws"] = { flags = bor(ModFlag.Claw, ModFlag.Hit) },
-	["with claws or daggers"] = { flags = ModFlag.Hit, tag = { type = "ModFlagOr", modFlags = bor(ModFlag.Claw, ModFlag.Dagger) } },
-	["to claw attacks"] = { flags = bor(ModFlag.Claw, ModFlag.Hit) },
-	["with claw attacks"] = { flags = bor(ModFlag.Claw, ModFlag.Hit) },
-	["claw attacks"] = { flags = bor(ModFlag.Claw, ModFlag.Hit) },
-	["dealt with claws"] = { flags = bor(ModFlag.Claw, ModFlag.Hit) },
 	["with daggers"] = { flags = bor(ModFlag.Dagger, ModFlag.Hit) },
 	["to dagger attacks"] = { flags = bor(ModFlag.Dagger, ModFlag.Hit) },
 	["with dagger attacks"] = { flags = bor(ModFlag.Dagger, ModFlag.Hit) },
@@ -881,37 +845,12 @@ local modFlagList = {
 	["trap"] = { keywordFlags = KeywordFlag.Trap },
 	["with traps"] = { keywordFlags = KeywordFlag.Trap },
 	["for traps"] = { keywordFlags = KeywordFlag.Trap },
-	["that place mines or throw traps"] = { keywordFlags = bor(KeywordFlag.Mine, KeywordFlag.Trap) },
-	["that throw mines"] = { keywordFlags = KeywordFlag.Mine },
-	["that throw traps"] = { keywordFlags = KeywordFlag.Trap },
-	["brand"] = { tag = { type = "SkillType", skillType = SkillType.Brand } },
-	["totem"] = { keywordFlags = KeywordFlag.Totem },
-	["with totem skills"] = { keywordFlags = KeywordFlag.Totem },
-	["for skills used by totems"] = { keywordFlags = KeywordFlag.Totem },
-	["totem skills that cast an aura"] = { tag = { type = "SkillType", skillType = SkillType.Aura }, keywordFlags = KeywordFlag.Totem },
-	["aura skills that summon totems"] = { tag = { type = "SkillType", skillType = SkillType.Aura }, keywordFlags = KeywordFlag.Totem },
-	["of aura skills"] = { tag = { type = "SkillType", skillType = SkillType.Aura } },
 	["curse skills"] = { keywordFlags = KeywordFlag.Curse },
 	["of curse skills"] = { keywordFlags = KeywordFlag.Curse },
 	["with curse skills"] = { keywordFlags = KeywordFlag.Curse },
-	["of curse aura skills"] = { tag = { type = "SkillType", skillType = SkillType.Aura }, keywordFlags = KeywordFlag.Curse },
-	["of curse auras"] = { keywordFlags = bor(KeywordFlag.Curse, KeywordFlag.Aura, KeywordFlag.MatchAll) },
-	["of hex skills"] = { tag = { type = "SkillType", skillType = SkillType.Hex } },
-	["with hex skills"] = { tag = { type = "SkillType", skillType = SkillType.Hex } },
-	["of herald skills"] = { tag = { type = "SkillType", skillType = SkillType.Herald } },
-	["with herald skills"] = { tag = { type = "SkillType", skillType = SkillType.Herald } },
-	["with hits from herald skills"] = { tag = { type = "SkillType", skillType = SkillType.Herald }, keywordFlags = KeywordFlag.Hit },
 	["minion skills"] = { tag = { type = "SkillType", skillType = SkillType.Minion } },
 	["of minion skills"] = { tag = { type = "SkillType", skillType = SkillType.Minion } },
-	["link skills"] = { tag = { type = "SkillType", skillType = SkillType.Link } },
-	["of link skills"] = { tag = { type = "SkillType", skillType = SkillType.Link } },
 	["for curses"] = { keywordFlags = KeywordFlag.Curse },
-	["for hexes"] = { tag = { type = "SkillType", skillType = SkillType.Hex } },
-	["warcry"] = { keywordFlags = KeywordFlag.Warcry },
-	["vaal"] = { keywordFlags = KeywordFlag.Vaal },
-	["vaal skill"] = { keywordFlags = KeywordFlag.Vaal },
-	["with vaal skills"] = { keywordFlags = KeywordFlag.Vaal },
-	["with non-vaal skills"] = { tag = { type = "SkillType", skillType = SkillType.Vaal, neg = true } },
 	["with movement skills"] = { keywordFlags = KeywordFlag.Movement },
 	["of movement skills"] = { keywordFlags = KeywordFlag.Movement },
 	["of movement skills used"] = { keywordFlags = KeywordFlag.Movement },
@@ -975,7 +914,6 @@ local preFlagList = {
 	["^axe or sword attacks [hd][ae][va][el] "] = { tag = { type = "ModFlagOr", modFlags = bor(ModFlag.Axe, ModFlag.Sword) } },
 	["^bow attacks [hd][ae][va][el] "] = { flags = ModFlag.Bow },
 	["^claw attacks [hd][ae][va][el] "] = { flags = ModFlag.Claw },
-	["^claw or dagger attacks [hd][ae][va][el] "] = { tag = { type = "ModFlagOr", modFlags = bor(ModFlag.Claw, ModFlag.Dagger) } },
 	["^dagger attacks [hd][ae][va][el] "] = { flags = ModFlag.Dagger },
 	["^mace or sceptre attacks [hd][ae][va][el] "] = { flags = ModFlag.Mace },
 	["^mace, sceptre or staff attacks [hd][ae][va][el] "] = { tag = { type = "ModFlagOr", modFlags = bor(ModFlag.Mace, ModFlag.Staff) } },
@@ -1040,14 +978,6 @@ local preFlagList = {
 	["^summoned sentinels have "] = { addToMinion = true, addToMinionTag = { type = "SkillName", skillNameList = { "Herald of Purity", "Dominating Blow", "Absolution" }, includeTransfigured = true } },
 	["^raised zombies' slam attack has "] = { addToMinion = true, tag = { type = "SkillId", skillId = "ZombieSlam" } },
 	["^raised spectres, raised zombies, and summoned skeletons have "] = { addToMinion = true, addToMinionTag = { type = "SkillName", skillNameList = { "Raise Spectre", "Raise Zombie", "Summon Skeleton" }, includeTransfigured = true } },
-	-- Totem/trap/mine
-	["^attacks used by totems have "] = { flags = ModFlag.Attack, keywordFlags = KeywordFlag.Totem },
-	["^spells cast by totems [hd][ae][va][el] "] = { flags = ModFlag.Spell, keywordFlags = KeywordFlag.Totem },
-	["^trap and mine damage "] = { keywordFlags = bor(KeywordFlag.Trap, KeywordFlag.Mine) },
-	["^skills used by traps [hgd][ae][via][enl] "] = { keywordFlags = KeywordFlag.Trap },
-	["^skills which throw traps [hgd][ae][via][enl] "] = { keywordFlags = KeywordFlag.Trap },
-	["^skills used by mines [hgd][ae][via][enl] "] = { keywordFlags = KeywordFlag.Mine },
-	["^skills which throw mines [hgd][ae][via][enl] "] = { keywordFlags = KeywordFlag.Mine },
 	-- Local damage
 	["^attacks with this weapon "] = { tagList = { { type = "Condition", var = "{Hand}Attack" }, { type = "SkillType", skillType = SkillType.Attack } } },
 	["^attacks with this weapon [hd][ae][va][el] "] = { tagList = { { type = "Condition", var = "{Hand}Attack" }, { type = "SkillType", skillType = SkillType.Attack } } },
@@ -2174,6 +2104,7 @@ local function parseMod(line, order)
 	modFlag, line = scan(line, modFlagList, true)
 
 	-- Find modifier value and type according to form
+	local keywordFlags
 	local modValue = tonumber(formCap[1]) or formCap[1]
 	local modType = "BASE"
 	local modSuffix
@@ -2229,36 +2160,26 @@ local function parseMod(line, order)
 		modName = damageType .. "Degen"
 		modSuffix = ""
 	elseif modForm == "DMG" then
-		local damageType = dmgTypes[formCap[3]]
-		if not damageType then
-			return { }, line
+		local damageTypes = {"Physical", "Fire", "Cold", "Lightning"} -- TODO: have a list of all damage types to reuse
+		local baseFlags = KeywordFlag.MatchAll
+		modFlag = {flags = 0, keywordFlags = 0}
+		for i=2,#formCap do
+			if formCap[i] == "melee" then
+				modFlag.flags = ModFlag.Melee
+			end
+			if formCap[i] == "physical" then
+				damageTypes = {"Physical"}
+			end
 		end
-		modValue = { tonumber(formCap[1]), tonumber(formCap[2]) }
-		modName = { damageType.."Min", damageType.."Max" }
-	elseif modForm == "DMGATTACKS" then
-		local damageType = dmgTypes[formCap[3]]
-		if not damageType then
-			return { }, line
+		modValue = formCap[1]
+		modName = {}
+		keywordFlags = {}
+		for _,damageType in ipairs(damageTypes) do
+			table.insert(keywordFlags, KeywordFlag[damageType])
+			table.insert(modName,damageType.."Min")
+			table.insert(keywordFlags, KeywordFlag[damageType])
+			table.insert(modName,damageType.."Max")
 		end
-		modValue = { tonumber(formCap[1]), tonumber(formCap[2]) }
-		modName = { damageType.."Min", damageType.."Max" }
-		modFlag = modFlag or { keywordFlags = KeywordFlag.Attack }
-	elseif modForm == "DMGSPELLS" then
-		local damageType = dmgTypes[formCap[3]]
-		if not damageType then
-			return { }, line
-		end
-		modValue = { tonumber(formCap[1]), tonumber(formCap[2]) }
-		modName = { damageType.."Min", damageType.."Max" }
-		modFlag = modFlag or { keywordFlags = KeywordFlag.Spell }
-	elseif modForm == "DMGBOTH" then
-		local damageType = dmgTypes[formCap[3]]
-		if not damageType then
-			return { }, line
-		end
-		modValue = { tonumber(formCap[1]), tonumber(formCap[2]) }
-		modName = { damageType.."Min", damageType.."Max" }
-		modFlag = modFlag or { keywordFlags = bor(KeywordFlag.Attack, KeywordFlag.Spell) }
 	elseif modForm == "FLAG" then
 		modName = type(modValue) == "table" and modValue.name or modValue
 		modType = type(modValue) == "table" and modValue.type or "FLAG"
@@ -2272,13 +2193,13 @@ local function parseMod(line, order)
 
 	-- Combine flags and tags
 	local flags = 0
-	local keywordFlags = 0
+	local baseKeywordFlags = 0
 	local tagList = { }
 	local misc = { }
 	for _, data in pairs({ modName, preFlag, modFlag, modTag, modTag2, skillTag, modExtraTags }) do
 		if type(data) == "table" then
 			flags = bor(flags, data.flags or 0)
-			keywordFlags = bor(keywordFlags, data.keywordFlags or 0)
+			baseKeywordFlags = bor(baseKeywordFlags, data.keywordFlags or 0)
 			if data.tag then
 				t_insert(tagList, copyTable(data.tag))
 			elseif data.tagList then
@@ -2301,7 +2222,7 @@ local function parseMod(line, order)
 			type = modType,
 			value = type(modValue) == "table" and modValue[i] or modValue,
 			flags = flags,
-			keywordFlags = keywordFlags,
+			keywordFlags = bor(type(keywordFlags) == "table" and keywordFlags[i] or 0, baseKeywordFlags),
 			unpack(tagList)
 		}
 	end

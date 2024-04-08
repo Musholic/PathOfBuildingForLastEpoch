@@ -30,15 +30,11 @@ local tempTable3 = { }
 local isElemental = { Fire = true, Cold = true, Lightning = true }
 
 -- List of all damage types, ordered according to the conversion sequence
-local dmgTypeList = {"Physical", "Lightning", "Cold", "Fire", "Chaos"}
-local dmgTypeFlags = {
-	Physical	= 0x01,
-	Lightning	= 0x02,
-	Cold		= 0x04,
-	Fire		= 0x08,
-	Elemental	= 0x0E,
-	Chaos		= 0x10,
-}
+local dmgTypeList = DamageTypes
+local dmgTypeFlags = {}
+for id,v in ipairs(dmgTypeList) do
+	dmgTypeFlags[v] = bit.lshift(0,id)
+end
 
 -- List of all ailments
 local ailmentTypeList = data.ailmentTypeList
@@ -1651,13 +1647,13 @@ function calcs.offence(env, actor, activeSkill)
 
 	-- Calculate damage conversion percentages
 	activeSkill.conversionTable = wipeTable(activeSkill.conversionTable)
-	for damageTypeIndex = 1, 4 do
+	for damageTypeIndex = 1, #dmgTypeList - 1 do
 		local damageType = dmgTypeList[damageTypeIndex]
 		local globalConv = wipeTable(tempTable1)
 		local skillConv = wipeTable(tempTable2)
 		local add = wipeTable(tempTable3)
 		local globalTotal, skillTotal = 0, 0
-		for otherTypeIndex = damageTypeIndex + 1, 5 do
+		for otherTypeIndex = damageTypeIndex + 1, #dmgTypeList do
 			-- For all possible destination types, check for global and skill conversions
 			otherType = dmgTypeList[otherTypeIndex]
 			globalConv[otherType] = m_max(skillModList:Sum("BASE", skillCfg, damageType.."DamageConvertTo"..otherType, isElemental[damageType] and "ElementalDamageConvertTo"..otherType or nil, damageType ~= "Chaos" and "NonChaosDamageConvertTo"..otherType or nil), 0)
@@ -1691,7 +1687,7 @@ function calcs.offence(env, actor, activeSkill)
 		dmgTable.mult = 1 - m_min((globalTotal + skillTotal) / 100, 1)
 		activeSkill.conversionTable[damageType] = dmgTable
 	end
-	activeSkill.conversionTable["Chaos"] = { mult = 1 }
+	activeSkill.conversionTable[dmgTypeList[#dmgTypeList]] = { mult = 1 }
 
 	-- Configure damage passes
 	local passList = { }

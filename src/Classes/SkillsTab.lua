@@ -569,7 +569,6 @@ function SkillsTabClass:SelSkill(index, skillId)
 	if skillId then
 		self.socketGroupList[index] = {
 			grantedEffect = self.build.data.skills[skillId] or {
-				--TODO: have exported data with necessary skill info (including name) into Data/skills directory
 				id = skillId,
 				name = skillId,
 				skillTypes = {},

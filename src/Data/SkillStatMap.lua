@@ -26,8 +26,8 @@ return {
 	skill("PhysicalMax", nil),
 },
 ["melee_base_physical_damage"] = {
-	mod("PhysicalMin", "BASE", nil, 0, KeywordFlag.Attack),
-	mod("PhysicalMax", "BASE", nil, 0, KeywordFlag.Attack),
+	mod("PhysicalMin", "BASE", nil, 0, KeywordFlag.Melee),
+	mod("PhysicalMax", "BASE", nil, 0, KeywordFlag.Melee),
 },
 ["spell_minimum_base_lightning_damage_per_removable_power_charge"] = {
 	skill("LightningMin", nil, { type = "Multiplier", var = "RemovablePowerCharge" }),

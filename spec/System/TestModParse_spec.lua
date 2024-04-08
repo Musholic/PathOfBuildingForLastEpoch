@@ -44,4 +44,13 @@ describe("TestModParse", function()
         assert.are.equals(2, build.calcsTab.calcsOutput.Vit)
     end)
 
+    it("damage types", function()
+        build.configTab.input.customMods = "+10 damage\n+20 melee physical damage"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+
+        assert.are.equals(10, build.configTab.modList:Sum("BASE", nil, "PhysicalMin"))
+        assert.are.equals(30, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Attack }, "PhysicalMin"))
+    end)
+
 end)

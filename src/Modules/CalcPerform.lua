@@ -1212,7 +1212,7 @@ function calcs.perform(env, fullDPSSkipEHP)
 				-- Special handling for the minion side to add the flat damage bonus
 				if env.minion then
 					-- Add all damage types
-					local dmgTypeList = {"Physical", "Lightning", "Cold", "Fire", "Chaos"}
+					local dmgTypeList = DamageTypes
 					for _, damageType in ipairs(dmgTypeList) do
 						env.minion.modDB:NewMod(damageType.."Min", "BASE", m_floor((env.player.weaponData1[damageType.."Min"] or 0) * rallyingBonusMoreMultiplier * rallyingWeaponEffect / 100) * uptime, "Rallying Cry", { type = "Multiplier", actor = "parent", var = "WarcryPower", div = 5, limit = 6.6667})
 						env.minion.modDB:NewMod(damageType.."Max", "BASE", m_floor((env.player.weaponData1[damageType.."Max"] or 0) * rallyingBonusMoreMultiplier * rallyingWeaponEffect / 100) * uptime, "Rallying Cry", { type = "Multiplier", actor = "parent", var = "WarcryPower", div = 5, limit = 6.6667})
@@ -3059,7 +3059,7 @@ function calcs.perform(env, fullDPSSkipEHP)
             end
         end
 
-		for _, damageType in ipairs({"Physical", "Lightning", "Cold", "Fire", "Chaos"}) do
+		for _, damageType in ipairs(DamageTypes) do
 			if env.modDB:Flag(nil, "Enemy"..damageType.."ResistEqualToYours") and output[damageType.."Resist"] then
 				buffExports.PlayerMods["Enemy"..damageType.."ResistEqualToYours"] = true
 				buffExports.PlayerMods[damageType.."Resist="..tostring(output[damageType.."Resist"])] = true
