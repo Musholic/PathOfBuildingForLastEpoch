@@ -68,6 +68,12 @@ local formList = {
 	["^(%d+)%% slower"] = "RED",
 	["^(%d+)%% more"] = "MORE",
 	["^(%d+)%% less"] = "LESS",
+	["^([%+%-][%d%.]+)%%?"] = "BASE",
+	["^([%+%-][%d%.]+)%%? to"] = "BASE",
+	["^([%+%-]?[%d%.]+)%%? of"] = "BASE",
+	["^([%+%-][%d%.]+)%%? base"] = "BASE",
+	["^([%+%-]?[%d%.]+)%%? additional"] = "BASE",
+	["(%d+) additional hits?"] = "BASE",
 	["^you gain ([%d%.]+)"] = "GAIN",
 	["^gains? ([%d%.]+)%% of"] = "GAIN",
 	["^gain ([%d%.]+)"] = "GAIN",
@@ -2160,14 +2166,22 @@ local function parseMod(line, order)
 		modName = damageType .. "Degen"
 		modSuffix = ""
 	elseif modForm == "DMG" then
-		local damageTypes = {"Physical", "Fire", "Cold", "Lightning"} -- TODO: have a list of all damage types to reuse
+		local damageTypes = DamageTypes
 		modFlag = {flags = 0, keywordFlags = 0}
 		for i=2,#formCap do
 			if formCap[i] == "melee" then
 				modFlag.flags = ModFlag.Melee
 			end
-			if formCap[i] == "physical" then
-				damageTypes = {"Physical"}
+			if formCap[i] == "spell" then
+				modFlag.flags = ModFlag.Spell
+			end
+			if formCap[i] == "bow" then
+				modFlag.flags = ModFlag.Bow
+			end
+			for _,v in ipairs(DamageTypes) do
+				if formCap[i] == v:lower() then
+					damageTypes = {v}
+				end
 			end
 		end
 		modValue = formCap[1]

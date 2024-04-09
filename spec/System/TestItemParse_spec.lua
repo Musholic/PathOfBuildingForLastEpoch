@@ -6,7 +6,7 @@ describe("TestItemParse #itemParse", function()
         item.explicitModLines = { { line = "+(10-20) Armor" } }
         item:BuildAndParseRaw()
         --print(item:BuildRaw())
-        assert.are.equals("Calamity, Jewelled Circlet", item.name)
+        assert.are.equals("Calamity", item.name)
     end)
 
 end)
