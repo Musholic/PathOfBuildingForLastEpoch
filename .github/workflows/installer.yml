@@ -11,7 +11,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v3
               with:
-                repository: 'PathOfBuildingCommunity/PathOfBuilding-Installer'
+                repository: 'Musholic/PathOfBuildingForLastEpoch-Installer'
                 ref: 'master'
                 ssh-key: '${{ secrets.POB_INSTALLER_KEY }}'
             - name: Create installer
