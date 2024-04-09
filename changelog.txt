@@ -1,3 +1,8 @@
+VERSION[0.2.0][2024/04/09]
+<!-- Release notes generated using configuration in .github/release.yml at dev -->
+
+
+
 VERSION[0.1.0][2024/04/02]
 First release, it started as a fork of Path of Building which is slowly adapted to Last Epoch
 so most content is not yet relevant to the game.
