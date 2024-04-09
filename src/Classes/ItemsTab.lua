@@ -86,16 +86,6 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 		self:OpenItemSetManagePopup()
 	end)
 
-	-- Price Items
-	self.controls.priceDisplayItem = new("ButtonControl", {"TOPLEFT",self,"TOPLEFT"}, 96, 32, 310, 20, "Trade for these items", function()
-		self.tradeQuery:PriceItem()
-	end)
-	self.controls.priceDisplayItem.tooltipFunc = function(tooltip)
-		tooltip:Clear()
-		tooltip:AddLine(16, "^7Contains searches from the official trading site to help find")
-		tooltip:AddLine(16, "^7similar or better items for this build")
-	end
-
 	-- Item slots
 	self.slots = { }
 	self.orderedSlots = { }
