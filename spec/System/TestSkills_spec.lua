@@ -18,18 +18,21 @@ describe("TestSkills #skills", function()
         assert.are.equals(35, build.calcsTab.mainOutput.TotalDPS)
     end)
 
-    it("Test spell skill with basic weapon", function()
+    it("Test spell skill with basic weapon #inTest", function()
         build.itemsTab:CreateDisplayItemFromRaw([[ Rarity: RARE
         Forestry Axe
         Forestry Axe
+        100% increased Fire Damage
+        100% more Fire Damage
         +23 Spell Damage
         +10 Spell Fire Damage]])
         build.itemsTab:AddDisplayItem()
 
         -- Use fire skill Fireball with 25 base fire damage
         build.skillsTab:SelSkill(1, "fi9")
+
         runCallback("OnFrame")
 
-        assert.are.equals(58, build.calcsTab.mainOutput.TotalDPS)
+        assert.are.equals(232, build.calcsTab.mainOutput.TotalDPS)
     end)
 end)

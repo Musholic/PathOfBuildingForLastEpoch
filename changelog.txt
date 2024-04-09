@@ -1,7 +1,15 @@
 VERSION[0.2.0][2024/04/09]
-<!-- Release notes generated using configuration in .github/release.yml at dev -->
 
+--- New to Path of Building for Last Epoch ---
 
+This release introduces DPS calculation. It takes into account a large variety of skills, but it does not support yet a lot of mods.
+
+So do not expect passives in the skill tree to have the intended effect for example. What is probably working is mods like "+x melee physical damage" or "x% increased fire damage"
+
+* Basic DPS calculation support for several skills
+* Fixed several mods from imported data (display value)
+* A bit of cleaning (removing some irrelevant files)
+* A few minor fixes (save/load fix, display of damage types in breakdown,...)
 
 VERSION[0.1.0][2024/04/02]
 First release, it started as a fork of Path of Building which is slowly adapted to Last Epoch
