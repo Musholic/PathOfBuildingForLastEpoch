@@ -131,7 +131,6 @@
 	<File name="d3dcompiler_47.dll" part="runtime" runtime="win32" sha1="27a4eff95e7f4a359718fda7138a528147969b27" />
 	<File name="fmt.dll" part="runtime" runtime="win32" sha1="3763ef853ce3801d85433dad5a22951b094a1f34" />
 	<File name="glfw3.dll" part="runtime" runtime="win32" sha1="c11b9fea864ed766f82b700e7918a484a9c3d95b" />
-	<File name="imgui.ini" part="runtime" sha1="39ca5d116eb3fb2f5fc69e8b97a32aefe43b8e9d" />
 	<File name="lcurl.dll" part="runtime" runtime="win32" sha1="d59d3269a275cc4e2295b79fc86b8afde727f9b4" />
 	<File name="libcurl.dll" part="runtime" runtime="win32" sha1="1a782bdbe250e6aeee537fd0fd734985f6565f2d" />
 	<File name="libEGL.dll" part="runtime" runtime="win32" sha1="511fe06c8fb1ccc46b53195ca3c7cd086ab32d76" />
