@@ -2161,7 +2161,6 @@ local function parseMod(line, order)
 		modSuffix = ""
 	elseif modForm == "DMG" then
 		local damageTypes = {"Physical", "Fire", "Cold", "Lightning"} -- TODO: have a list of all damage types to reuse
-		local baseFlags = KeywordFlag.MatchAll
 		modFlag = {flags = 0, keywordFlags = 0}
 		for i=2,#formCap do
 			if formCap[i] == "melee" then

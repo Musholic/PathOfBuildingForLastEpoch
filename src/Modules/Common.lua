@@ -414,6 +414,25 @@ function writeLuaTable(out, t, indent)
 	out:write('}')
 end
 
+-- Replace string in table, making multiple copy per values
+function replaceStringInTableByValues(tblInit, tbl, str, values)
+	local outs = tblInit
+	for _, value in ipairs(values) do
+		local out = {}
+		for k, v in pairs(tbl) do
+			if type(v) == "table" then
+				out[k] = replaceStringInTableByValues({}, v, str, {value})[1]
+			elseif type(v) == "string" then
+				out[k] = v:gsub(str, value)
+			else
+				out[k] = v
+			end
+		end
+		table.insert(outs, out)
+	end
+	return outs
+end
+
 -- Make a copy of a table and all subtables
 function copyTable(tbl, noRecurse)
 	local out = {}

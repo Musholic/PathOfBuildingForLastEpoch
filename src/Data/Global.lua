@@ -19,10 +19,14 @@ colorCodes = {
 	UNSUPPORTED = "^xF05050",
 	WARNING = "^xFF9922",
 	TIP = "^x80A080",
-	FIRE = "^xB97123",
-	COLD = "^x3F6DB3",
-	LIGHTNING = "^xADAA47",
-	CHAOS = "^xD02090",
+	PHYSICAL = "^xFCDFC0",
+	FIRE = "^xEC4D29",
+	COLD = "^x17BBEA",
+	LIGHTNING = "^x286AFF",
+	VOID = "^x7E1BC5",
+	POISON = "^x1DA546",
+	NECROTIC = "^x2DBF9C",
+	CHAOS = "^x2dbf9c",
 	POSITIVE = "^x33FF77",
 	NEGATIVE = "^xDD0022",
 	HIGHLIGHT ="^xFF0000",
@@ -100,6 +104,16 @@ DamageTypes = {
 	"Void",
 	"Necrotic",
 	"Poison"
+}
+
+DamageTypesColored = {
+	colorCodes.PHYSICAL.."Physical",
+	colorCodes.LIGHTNING .. "Lightning",
+	colorCodes.COLD .. "Cold",
+	colorCodes.FIRE.."Fire",
+	colorCodes.VOID.."Void",
+	colorCodes.NECROTIC.."Necrotic",
+	colorCodes.POISON.."Poison"
 }
 -- Active skill types
 SkillType = {
