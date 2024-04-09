@@ -33,7 +33,7 @@ local isElemental = { Fire = true, Cold = true, Lightning = true }
 local dmgTypeList = DamageTypes
 local dmgTypeFlags = {}
 for id,v in ipairs(dmgTypeList) do
-	dmgTypeFlags[v] = bit.lshift(0,id)
+	dmgTypeFlags[v] = bit.lshift(1,id)
 end
 
 -- List of all ailments
