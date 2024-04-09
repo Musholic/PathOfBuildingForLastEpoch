@@ -2169,14 +2169,10 @@ local function parseMod(line, order)
 		local damageTypes = DamageTypes
 		modFlag = {flags = 0, keywordFlags = 0}
 		for i=2,#formCap do
-			if formCap[i] == "melee" then
-				modFlag.flags = ModFlag.Melee
-			end
-			if formCap[i] == "spell" then
-				modFlag.flags = ModFlag.Spell
-			end
-			if formCap[i] == "bow" then
-				modFlag.flags = ModFlag.Bow
+			for _,v in ipairs(DamageSourceTypes) do
+				if formCap[i] == v:lower() then
+					modFlag.flags = ModFlag[v]
+				end
 			end
 			for _,v in ipairs(DamageTypes) do
 				if formCap[i] == v:lower() then

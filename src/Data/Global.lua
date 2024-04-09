@@ -115,6 +115,9 @@ DamageTypesColored = {
 	colorCodes.NECROTIC.."Necrotic",
 	colorCodes.POISON.."Poison"
 }
+
+DamageSourceTypes = { "Spell", "Melee", "Throwing", "Bow"}
+
 -- Active skill types
 SkillType = {
 	Physical = 1,

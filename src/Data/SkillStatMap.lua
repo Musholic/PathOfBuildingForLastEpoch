@@ -5,7 +5,7 @@
 --
 local mod, flag, skill = ...
 
-return {
+local result = {
 --
 -- Skill data modifiers
 --
@@ -20,14 +20,6 @@ return {
 ["base_tertiary_skill_effect_duration"] = {
 	skill("durationTertiary", nil),
 	div = 1000,
-},
-["spell_base_physical_damage"] = {
-	skill("PhysicalMin", nil),
-	skill("PhysicalMax", nil),
-},
-["melee_base_physical_damage"] = {
-	mod("PhysicalMin", "BASE", nil, 0, KeywordFlag.Melee),
-	mod("PhysicalMax", "BASE", nil, 0, KeywordFlag.Melee),
 },
 ["spell_minimum_base_lightning_damage_per_removable_power_charge"] = {
 	skill("LightningMin", nil, { type = "Multiplier", var = "RemovablePowerCharge" }),
@@ -2044,3 +2036,14 @@ return {
 	-- Display only
 },
 }
+
+for _,sourceType in ipairs(DamageSourceTypes) do
+	for _,damageType in ipairs(DamageTypes) do
+		result[sourceType:lower().."_base_".. damageType:lower() .."_damage"] = {
+			mod(damageType.."Min", "BASE", nil, 0, KeywordFlag[sourceType]),
+			mod(damageType.."Max", "BASE", nil, 0, KeywordFlag[sourceType]),
+		}
+	end
+end
+
+return result
