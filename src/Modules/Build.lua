@@ -804,7 +804,10 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 							end
 						end
 						for i, modLine in ipairs(uniqueBase.mods) do
-							local range = itemData["ur"][i] / 256.0
+							local range = 0.5
+							if itemData['ur'] then
+								range = itemData["ur"][i] / 256.0
+							end
 							table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
 						end
 					end
@@ -818,7 +821,7 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 						local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
 						if modData then
 							local mod = modData[1]
-							local range = affixData.r / 256.0
+							local range = (affixData.r or 128) / 256.0
 							table.insert(item.explicitMods, "{range: " .. range .. "}".. mod)
 						end
 					end
@@ -828,7 +831,10 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 				item.base = foundItemBase
 				item.implicitMods= {}
 				for i,implicit in ipairs(foundItemBase.implicits) do
-					local range = itemData["ir"][i] / 256.0
+					local range = 0.5
+					if itemData['ir'] then
+						range = itemData["ir"][i] / 256.0
+					end
 					table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
 				end
 				return item
