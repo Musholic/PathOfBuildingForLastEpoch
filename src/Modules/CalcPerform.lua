@@ -962,9 +962,9 @@ function calcs.perform(env, fullDPSSkipEHP)
 			env.minion.modDB:NewMod("EnergyShield", "BASE", m_floor(env.data.monsterAllyLifeTable[env.minion.level] * env.minion.minionData.life * env.minion.minionData.energyShield), "Base")
 		end
 		--Armour formula is math.floor((10 + 2 * level) * 1.067 ^ level)
-		env.minion.modDB:NewMod("Armour", "BASE", round(env.data.monsterArmourTable[env.minion.level] * (env.minion.minionData.armour or 1)), "Base")
+		env.minion.modDB:NewMod("Armour", "BASE", 0, "Base")
 		--Evasion formula is math.floor((50 + 16 * level + 16 * level * (MonsterType.Evasion / 100)) * (1.0212 ^ level)
-		env.minion.modDB:NewMod("Evasion", "BASE", round(env.data.monsterEvasionTable[env.minion.level] * (env.minion.minionData.evasion or 1)), "Base")
+		env.minion.modDB:NewMod("Evasion", "BASE", 0, "Base")
 		if modDB:Flag(nil, "MinionAccuracyEqualsAccuracy") then
 			env.minion.modDB:NewMod("Accuracy", "BASE", calcLib.val(modDB, "Accuracy") + calcLib.val(modDB, "Dex") * (modDB:Override(nil, "DexAccBonusOverride") or data.misc.AccuracyPerDexBase), "Player")
 		else

@@ -110,7 +110,7 @@ end
 
 function breakdown.effMult(damageType, resist, pen, taken, mult, takenMore, sourceRes, useRes, invertChance)
 	local out = { }
-	local resistForm = (damageType == "Physical") and "physical damage reduction" or "resistance"
+	local resistForm = "resistance"
 	local resistLabel = resistForm
 
 	if invertChance and invertChance ~= 0 then
