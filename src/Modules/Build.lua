@@ -790,6 +790,20 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 			item["name"] = itemName
 			item["rarity"] = "RARE"
 			item["explicitMods"] = {}
+
+			for _, affixData in ipairs(itemData["affixes"]) do
+				local affixId = data.LETools_affixes[affixData.id]
+				if affixId then
+					local affixTier = affixData.tier - 1
+					local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+					if modData then
+						local mod = modData[1]
+						local range = (affixData.r or 128) / 256.0
+						table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
+					end
+				end
+			end
+
 			local foundItemBase = data.itemBases[itemName]
 			if not foundItemBase then
 				for _, uniqueBase in pairs(data.uniques) do
@@ -814,18 +828,6 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 				end
 			else
 				item.baseName = itemName
-				for _, affixData in ipairs(itemData["affixes"]) do
-					local affixId = data.LETools_affixes[affixData.id]
-					if affixId then
-						local affixTier = affixData.tier - 1
-						local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
-						if modData then
-							local mod = modData[1]
-							local range = (affixData.r or 128) / 256.0
-							table.insert(item.explicitMods, "{range: " .. range .. "}".. mod)
-						end
-					end
-				end
 			end
 			if foundItemBase then
 				item.base = foundItemBase

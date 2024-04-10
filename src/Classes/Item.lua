@@ -681,7 +681,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					gameModeStage = "IMPLICIT"
 				end
 				local modScalar = 1;
-				if self.rarity ~= "UNIQUE" then
+				if self.rarity ~= "UNIQUE" or modLine.crafted then
 					-- There is no modifier to apply for unique mods
 					modScalar = 1 + self.base.affixEffectModifier
 				end
