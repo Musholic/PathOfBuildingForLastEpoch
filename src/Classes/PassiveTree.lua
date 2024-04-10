@@ -107,6 +107,7 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
                 if v.y and minAbilityPosY > v.y then
                     minAbilityPosY = v.y
                 end
+                self.nodes[k].skillId = k:match("^[^-]+")
             end
         end
         for k,v in pairs(treeData["classes"]) do
@@ -507,6 +508,9 @@ function PassiveTreeClass:ProcessStats(node, startIndex)
         if mod.list and not mod.extra then
             for i, mod in ipairs(mod.list) do
                 mod = modLib.setSource(mod, "Tree:" .. node.id)
+                if node.skillId then
+                    table.insert(mod, {type = "SkillId", skillId = node.skillId})
+                end
                 node.modList:AddMod(mod)
             end
         end
