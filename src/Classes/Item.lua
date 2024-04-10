@@ -680,7 +680,11 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					foundImplicit = true
 					gameModeStage = "IMPLICIT"
 				end
-				local modScalar = 1 + self.base.affixEffectModifier
+				local modScalar = 1;
+				if self.rarity ~= "UNIQUE" then
+					-- There is no modifier to apply for unique mods
+					modScalar = 1 + self.base.affixEffectModifier
+				end
 				local rangedLine = itemLib.applyRange(line, 1, modScalar)
 				local modList, extra = modLib.parseMod(rangedLine)
 
@@ -1508,10 +1512,9 @@ function ItemClass:BuildModList()
 				if modLine.range then
 					-- Check if line actually has a range
 					if modLine.line:find("%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)") then
-						local strippedModeLine = modLine.line:gsub("\n"," ")						
-						local modScalar = 1 + self.base.affixEffectModifier
+						local strippedModeLine = modLine.line:gsub("\n"," ")
 						-- Put the modified value into the string
-						local line = itemLib.applyRange(strippedModeLine, modLine.range, modScalar)
+						local line = itemLib.applyRange(strippedModeLine, modLine.range, modLine.valueScalar)
 						-- Check if we can parse it before adding the mods
 						local list, extra = modLib.parseMod(line)
 						if list and not extra then
