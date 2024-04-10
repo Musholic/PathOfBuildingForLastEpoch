@@ -400,10 +400,9 @@ function CalcBreakdownClass:AddModSection(sectionData, modList)
 			end
 		elseif sourceType == "Tree" then
 			-- Modifier is from a passive node, add node name, and add node ID (used to show node location)
-			local nodeId = row.mod.source:match("Tree:(%d+)")
+			local nodeId = row.mod.source:match("Tree:(.+)")
 			if nodeId then
-				local nodeIdNumber = tonumber(nodeId)
-				local node = build.spec.nodes[nodeIdNumber] or build.spec.tree.nodes[nodeIdNumber]
+				local node = build.spec.nodes[nodeId] or build.spec.tree.nodes[nodeId]
 				row.sourceName = node.dn
 				row.sourceNameNode = node
 			end
