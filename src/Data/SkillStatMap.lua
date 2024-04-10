@@ -2040,8 +2040,8 @@ local result = {
 for _,sourceType in ipairs(DamageSourceTypes) do
 	for _,damageType in ipairs(DamageTypes) do
 		result[sourceType:lower().."_base_".. damageType:lower() .."_damage"] = {
-			mod(damageType.."Min", "BASE", nil, 0, KeywordFlag[sourceType]),
-			mod(damageType.."Max", "BASE", nil, 0, KeywordFlag[sourceType]),
+			skill(damageType.."Min", "BASE", nil, 0, KeywordFlag[sourceType]),
+			skill(damageType.."Max", "BASE", nil, 0, KeywordFlag[sourceType]),
 		}
 	end
 end

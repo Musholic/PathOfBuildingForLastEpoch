@@ -26,13 +26,14 @@ for skillTreeData in skillTreesData:
             "skillTypeTags": skillData['tags'],
             "baseFlags": {},
             "stats": [],
-            "level": []
+            "level": {}
         }
         for prefabSuffix in {"", "End"}:
             skillPrefabData = load_file_from_guid(skillData['abilityPrefab'], prefabSuffix)
             for data in skillPrefabData:
                 if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
                     skillDamageData = data['MonoBehaviour']['baseDamageStats']
+                    skill["level"]['damageEffectiveness'] = float(skillDamageData['addedDamageScaling'])
                     if skillDamageData['isHit'] == "1":
                         skill["baseFlags"]["hit"] = True
                     match int(data['MonoBehaviour']['damageTags']):
@@ -70,7 +71,7 @@ for skillTreeData in skillTreesData:
                                 case _:
                                     damageType = "poison"
                             skill['stats'].append(damageTag + "_base_" + damageType + "_damage")
-                            skill['level'].append(damage)
+                            skill['level'][1] = damage
         skills[skillData['playerAbilityID']] = skill
 
 
