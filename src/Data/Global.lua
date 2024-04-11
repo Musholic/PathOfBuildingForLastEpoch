@@ -106,6 +106,8 @@ DamageTypes = {
 	"Poison"
 }
 
+Attributes = {"Str","Dex","Int","Vit","Att"}
+
 DamageTypesColored = {
 	colorCodes.PHYSICAL.."Physical",
 	colorCodes.LIGHTNING .. "Lightning",

@@ -28,6 +28,28 @@ for skillTreeData in skillTreesData:
             "stats": [],
             "level": {}
         }
+        for attributeScalingData in skillData['attributeScaling']:
+            if len(attributeScalingData['stats']):
+                match int(attributeScalingData['attribute']):
+                    case 0:
+                        attribute = "str"
+                    case 1:
+                        attribute = "vit"
+                    case 2:
+                        attribute = "int"
+                    case 3:
+                        attribute = "dex"
+                    case 4:
+                        attribute = "att"
+                    case other:
+                        attribute = str(other)
+                stats = attributeScalingData['stats'][0]
+                if stats['increasedValue']:
+                    skill['stats'].append("damage_+%_per_" + attribute)
+                    skill['level'][len(skill['stats'])] = stats['increasedValue'] * 100
+                # if stats['addedValue']:
+                #     skill['stats'].append("added_damage_per_" + attribute)
+                #     skill['level'][len(skill['stats'])] = stats['addedValue']
         for prefabSuffix in {"", "End"}:
             skillPrefabData = load_file_from_guid(skillData['abilityPrefab'], prefabSuffix)
             for data in skillPrefabData:
@@ -37,18 +59,18 @@ for skillTreeData in skillTreesData:
                     if skillDamageData['isHit'] == "1":
                         skill["baseFlags"]["hit"] = True
                     match int(data['MonoBehaviour']['damageTags']):
-                        case 256:
+                        case val if val & 256:
                             damageTag = "spell"
                             skill["baseFlags"]["spell"] = True
-                        case 512:
+                        case val if val & 512:
                             damageTag = "melee"
                             skill["baseFlags"]["melee"] = True
-                        case 1024:
+                        case val if val & 1024:
                             damageTag = "throwing"
                             skill["baseFlags"]["projectile"] = True
-                        case 2048:
+                        case val if val & 2048:
                             damageTag = "bow"
-                        case 4352:
+                        case val if val & 4096:
                             damageTag = "dot"
                         case other:
                             damageTag = str(other)
@@ -71,7 +93,7 @@ for skillTreeData in skillTreesData:
                                 case _:
                                     damageType = "poison"
                             skill['stats'].append(damageTag + "_base_" + damageType + "_damage")
-                            skill['level'][1] = damage
+                            skill['level'][len(skill['stats'])] = damage
         skills[skillData['playerAbilityID']] = skill
 
 

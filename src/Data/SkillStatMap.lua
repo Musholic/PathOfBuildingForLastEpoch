@@ -2046,4 +2046,13 @@ for _,sourceType in ipairs(DamageSourceTypes) do
 	end
 end
 
+for _, attribute in ipairs(Attributes) do
+	result["damage_+%_per_" .. attribute:lower()] = {
+		mod("Damage", "INC", nil, 0, 0, { type = "PerStat", stat = attribute }),
+	}
+	result["added_damage_per_" .. attribute:lower()] = {
+		mod("Damage", "INC", nil, 0, 0, { type = "PerStat", stat = attribute }),
+	}
+end
+
 return result

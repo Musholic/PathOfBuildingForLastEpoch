@@ -3,22 +3,34 @@
         "name": "Assemble Abomination",
         "skillTypeTags": 1,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "aa989": {
         "name": "Aerial Assault",
         "skillTypeTags": 8193,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "aacfl": {
         "name": "Acid Flask",
         "skillTypeTags": 1089,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "ab0lh": {
         "name": "Abyssal Echoes",
@@ -31,8 +43,12 @@
         "name": "Aura Of Decay",
         "skillTypeTags": 4160,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "ah443": {
         "name": "Holy Aura",
@@ -51,9 +67,11 @@
     "arcas": {
         "name": "Arcane Ascendance",
         "skillTypeTags": 131328,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_lightning_damage"
+            "spell_base_lightning_damage"
         ],
         "level": {
             "damageEffectiveness": 0.45000002,
@@ -64,22 +82,34 @@
         "name": "Avalanche",
         "skillTypeTags": 261,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_att"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "ba1574": {
         "name": "Ballista",
         "skillTypeTags": 0,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "bc53": {
         "name": "Bone Curse",
         "skillTypeTags": 16777473,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "be36ar": {
         "name": "Summon Bear",
@@ -98,13 +128,17 @@
     "bh2": {
         "name": "Black Hole",
         "skillTypeTags": 4356,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_cold_damage"
+            "damage_+%_per_int",
+            "spell_base_cold_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.9,
-            "1": 18.0
+            "2": 18.0
         }
     },
     "bp2nk": {
@@ -115,45 +149,63 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.1,
-            "1": 22.0
+            "2": 22.0
         }
     },
     "ch0fs": {
         "name": "Chthonic Fissure",
         "skillTypeTags": 16781608,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "264_base_fire_damage"
+            "damage_+%_per_int",
+            "spell_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.25,
-            "1": 5.0
+            "2": 5.0
         }
     },
     "ch4bo": {
         "name": "Chaos Bolts",
         "skillTypeTags": 296,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "cstri": {
         "name": "Cinder Strike",
         "skillTypeTags": 521,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "dacn33": {
         "name": "Dancing Strikes",
         "skillTypeTags": 513,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "dagg3": {
         "name": "Shadow Cascade",
@@ -163,26 +215,36 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 2.0,
-            "1": 20.0
+            "2": 20.0
         }
     },
     "db992": {
         "name": "Dive Bomb",
         "skillTypeTags": 8705,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "deeco": {
         "name": "Decoy",
         "skillTypeTags": 1032,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "detar": {
         "name": "Detonating Arrow",
@@ -191,36 +253,47 @@
             "hit": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "bow_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.25,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "dig5": {
         "name": "Disintegrate",
         "skillTypeTags": 4362,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_fire_damage",
-            "dot_base_lightning_damage"
+            "damage_+%_per_int",
+            "spell_base_fire_damage",
+            "spell_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.75,
-            "1": 7.5
+            "2": 7.5,
+            "3": 7.5
         }
     },
     "dl73": {
         "name": "Drain Life",
         "skillTypeTags": 4384,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_necrotic_damage"
+            "damage_+%_per_int",
+            "spell_base_necrotic_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.66,
-            "1": 13.2
+            "2": 13.2
         }
     },
     "do5vr": {
@@ -256,8 +329,12 @@
         "name": "Death Seal",
         "skillTypeTags": 131360,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "eb5656": {
         "name": "Eterra's Blessing",
@@ -274,13 +351,17 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_fire_damage",
             "spell_base_cold_damage",
             "spell_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 6.0
+            "2": 6.0,
+            "3": 6.0,
+            "4": 6.0
         }
     },
     "eq5s": {
@@ -291,11 +372,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_att",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 3.5,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "er6no": {
@@ -306,37 +391,49 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_att",
             "spell_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 20.0
+            "2": 20.0
         }
     },
     "es6ai": {
         "name": "Erasing Strike",
         "skillTypeTags": 528,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_str"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "ex4tp": {
         "name": "Explosive Trap",
         "skillTypeTags": 1032,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "exvol8": {
         "name": "Hail of Arrows",
         "skillTypeTags": 6145,
         "baseFlags": {},
         "stats": [
-            "6144_base_physical_damage"
+            "damage_+%_per_dex",
+            "bow_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.65,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "f1b4d": {
@@ -347,19 +444,27 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_int",
+            "damage_+%_per_dex",
             "melee_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "falc0": {
         "name": "Falconry",
         "skillTypeTags": 0,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "fb8fe": {
         "name": "Runebolt",
@@ -369,11 +474,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 20.0
+            "2": 20.0
         }
     },
     "fe8at": {
@@ -384,11 +491,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_necrotic_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 2.5,
-            "1": 50.0
+            "2": 50.0
         }
     },
     "fi9": {
@@ -399,19 +508,25 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.25,
-            "1": 25.0
+            "2": 25.0
         }
     },
     "fl13": {
         "name": "Fury Leap",
         "skillTypeTags": 513,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_str"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "fl71ds": {
         "name": "Flame Rush",
@@ -420,19 +535,25 @@
             "hit": true
         },
         "stats": [
+            "damage_+%_per_int",
             "0_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 20.0
+            "2": 20.0
         }
     },
     "flur3": {
         "name": "Flurry",
         "skillTypeTags": 513,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "fr4wl": {
         "name": "Frost Wall",
@@ -441,11 +562,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_cold_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 20.0
+            "2": 20.0
         }
     },
     "fr11mv": {
@@ -456,19 +579,27 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_int",
+            "damage_+%_per_dex",
             "melee_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.6,
-            "1": 16.0
+            "3": 16.0
         }
     },
     "frc87w": {
         "name": "Frost Claw",
         "skillTypeTags": 260,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "fs3e3": {
         "name": "Forge Strike",
@@ -478,19 +609,25 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_att",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 5.0,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "fs11": {
         "name": "Infernal Aura",
         "skillTypeTags": 131336,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_fire_damage"
+            "spell_base_fire_damage"
         ],
         "level": {
             "damageEffectiveness": 0.25,
@@ -501,8 +638,12 @@
         "name": "Flame Ward",
         "skillTypeTags": 131336,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "ga2st": {
         "name": "Gathering Storm",
@@ -512,32 +653,43 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "gh0fl": {
         "name": "Ghostflame",
         "skillTypeTags": 4392,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_fire_damage",
-            "dot_base_necrotic_damage"
+            "damage_+%_per_int",
+            "spell_base_fire_damage",
+            "spell_base_necrotic_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.75,
-            "1": 17.5
+            "2": 17.5,
+            "3": 17.5
         }
     },
     "gl14": {
         "name": "Glacier",
         "skillTypeTags": 260,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "gs15de": {
         "name": "Vengeance",
@@ -547,23 +699,29 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "gy2dm": {
         "name": "Glyph of Dominion",
         "skillTypeTags": 4354,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_lightning_damage"
+            "damage_+%_per_int",
+            "spell_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.375,
-            "1": 7.5
+            "2": 7.5
         }
     },
     "ha84": {
@@ -574,11 +732,13 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "melee_base_necrotic_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.7,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "hh7pa3": {
@@ -596,11 +756,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_necrotic_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.45,
-            "1": 9.0
+            "2": 9.0
         }
     },
     "ht16aw": {
@@ -611,30 +773,42 @@
             "projectile": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_dex",
             "throwing_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.05,
-            "1": 21.0
+            "3": 21.0
         }
     },
     "ib5g3": {
         "name": "Ice Barrage",
         "skillTypeTags": 260,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "is40": {
         "name": "Infernal Shade",
         "skillTypeTags": 4360,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_fire_damage"
+            "damage_+%_per_int",
+            "spell_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.825,
-            "1": 16.5
+            "2": 16.5
         }
     },
     "is58": {
@@ -652,11 +826,15 @@
             "projectile": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_dex",
             "throwing_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.8,
-            "1": 36.0
+            "3": 36.0
         }
     },
     "lb23il": {
@@ -667,11 +845,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 21.0
+            "2": 21.0
         }
     },
     "lu25ng": {
@@ -682,11 +862,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_dex",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "ma6hdr": {
@@ -699,13 +883,17 @@
     "mas54": {
         "name": "Maelstrom",
         "skillTypeTags": 4356,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_cold_damage"
+            "damage_+%_per_att",
+            "spell_base_cold_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.3,
-            "1": 6.0
+            "2": 6.0
         }
     },
     "md26kh": {
@@ -719,15 +907,23 @@
         "name": "Meteor",
         "skillTypeTags": 264,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "mira59": {
         "name": "Lethal Mirage",
         "skillTypeTags": 513,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "ms26": {
         "name": "Mana Strike",
@@ -737,11 +933,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_int",
+            "damage_+%_per_dex",
             "melee_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 15.0
+            "3": 15.0
         }
     },
     "multis": {
@@ -752,11 +952,13 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "mush9": {
@@ -766,26 +968,38 @@
             "hit": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "bow_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 6.0
+            "2": 6.0
         }
     },
     "ne01t": {
         "name": "Net",
         "skillTypeTags": 1025,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "pa67ju": {
         "name": "Judgement",
         "skillTypeTags": 4616,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_att"
+        ],
+        "level": {
+            "1": 4.0,
+            "2": 4.0
+        }
     },
     "pr5fm": {
         "name": "Profane Veil",
@@ -794,11 +1008,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_necrotic_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.5,
-            "1": 10.0
+            "2": 10.0
         }
     },
     "pun22": {
@@ -809,11 +1025,13 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "rb31pl": {
@@ -824,11 +1042,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 15.0
+            "2": 15.0
         }
     },
     "re82ke": {
@@ -839,11 +1059,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_att",
             "spell_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 2.0,
-            "1": 40.0
+            "2": 40.0
         }
     },
     "rf1azz": {
@@ -857,8 +1079,12 @@
         "name": "Runic Invocation",
         "skillTypeTags": 270,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "rs31hi": {
         "name": "Ring Of Shields",
@@ -882,11 +1108,13 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "sb44eQ": {
@@ -925,11 +1153,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 2.0,
-            "1": 40.0
+            "2": 40.0
         }
     },
     "sf37": {
@@ -968,11 +1198,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_att",
             "spell_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.5,
-            "1": 30.0
+            "2": 30.0
         }
     },
     "smbmb": {
@@ -990,11 +1222,13 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "so35a": {
@@ -1005,19 +1239,25 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 20.0
+            "2": 20.0
         }
     },
     "sp5g2": {
         "name": "Spirit Plague",
         "skillTypeTags": 16781600,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "sp38": {
         "name": "Summon Spriggan",
@@ -1034,12 +1274,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_physical_damage",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0,
+            "3": 2.0
         }
     },
     "srk21": {
@@ -1050,11 +1293,13 @@
             "projectile": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "throwing_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 16.0
+            "2": 16.0
         }
     },
     "srtor": {
@@ -1068,8 +1313,14 @@
         "name": "Shatter Strike",
         "skillTypeTags": 516,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_dex",
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0,
+            "2": 4.0
+        }
     },
     "ss37kl": {
         "name": "Summon Skeleton",
@@ -1093,12 +1344,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_physical_damage",
             "melee_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 4.0,
-            "1": 1.0
+            "2": 1.0,
+            "3": 1.0
         }
     },
     "st31et": {
@@ -1109,11 +1363,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_dex",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "st31io": {
@@ -1124,11 +1382,15 @@
             "projectile": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_dex",
             "throwing_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 2.25,
-            "1": 45.0
+            "3": 45.0
         }
     },
     "st38ml": {
@@ -1146,11 +1408,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 2.5,
-            "1": 50.0
+            "2": 50.0
         }
     },
     "su5g3": {
@@ -1161,11 +1425,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_int",
+            "damage_+%_per_dex",
             "melee_base_lightning_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 2.0,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "svz81": {
@@ -1197,11 +1465,13 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "2": 2.0
         }
     },
     "sync5": {
@@ -1212,11 +1482,13 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 5.0
+            "2": 5.0
         }
     },
     "tb47": {
@@ -1227,22 +1499,26 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_att",
             "spell_base_physical_damage",
             "spell_base_cold_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 9.0
+            "2": 9.0,
+            "3": 9.0
         }
     },
     "te44": {
         "name": "Teleport",
         "skillTypeTags": 256,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "spell": true
         },
         "stats": [
-            "258_base_lightning_damage"
+            "spell_base_lightning_damage"
         ],
         "level": {
             "damageEffectiveness": 1.0,
@@ -1259,21 +1535,29 @@
     "to50": {
         "name": "Tornado",
         "skillTypeTags": 4353,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": [
-            "dot_base_physical_damage"
+            "damage_+%_per_att",
+            "spell_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.3,
-            "1": 6.0
+            "2": 6.0
         }
     },
     "ts50pl": {
         "name": "Transplant",
         "skillTypeTags": 257,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "ts85i": {
         "name": "Tempest Strike",
@@ -1283,11 +1567,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_att",
             "melee_base_cold_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "ub5d9": {
@@ -1298,11 +1586,13 @@
             "projectile": true
         },
         "stats": [
+            "damage_+%_per_dex",
             "throwing_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 0.6,
-            "1": 12.0
+            "2": 12.0
         }
     },
     "uph41": {
@@ -1313,11 +1603,15 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_att",
             "melee_base_physical_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 1.35,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "v01cv": {
@@ -1328,19 +1622,27 @@
             "melee": true
         },
         "stats": [
+            "damage_+%_per_str",
+            "damage_+%_per_vit",
             "melee_base_void_damage"
         ],
         "level": {
+            "1": 4.0,
+            "2": 4.0,
             "damageEffectiveness": 4.0,
-            "1": 2.0
+            "3": 2.0
         }
     },
     "va53st": {
         "name": "Warpath",
         "skillTypeTags": 513,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_str"
+        ],
+        "level": {
+            "1": 4.0
+        }
     },
     "vm53dx": {
         "name": "Focus",
@@ -1357,11 +1659,13 @@
             "spell": true
         },
         "stats": [
+            "damage_+%_per_int",
             "spell_base_fire_damage"
         ],
         "level": {
+            "1": 4.0,
             "damageEffectiveness": 1.0,
-            "1": 20.0
+            "2": 20.0
         }
     },
     "vr53sl": {
@@ -1396,7 +1700,11 @@
         "name": "Wandering Spirits",
         "skillTypeTags": 4384,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "damage_+%_per_int"
+        ],
+        "level": {
+            "1": 4.0
+        }
     }
 }

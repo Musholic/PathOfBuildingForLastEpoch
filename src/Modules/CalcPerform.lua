@@ -303,7 +303,7 @@ local function doActorAttribsConditions(env, actor)
 	-- Calculate attributes
 	local calculateAttributes = function()
 		for pass = 1, 2 do -- Calculate twice because of circular dependency (X attribute higher than Y attribute)
-			for _, stat in pairs({"Str","Dex","Int","Vit","Att"}) do
+			for _, stat in pairs(Attributes) do
 				output[stat] = m_max(round(calcLib.val(modDB, stat)), 0)
 				if breakdown then
 					breakdown[stat] = breakdown.simple(nil, nil, output[stat], stat)
@@ -333,7 +333,7 @@ local function doActorAttribsConditions(env, actor)
 
 		for pass = 1, 2 do -- Calculate twice because of circular dependency (X attribute higher than Y attribute)
 			if pass ~= 1 then
-				for _, stat in pairs({"Str","Dex","Int"}) do
+				for _, stat in pairs(Attributes) do
 					local base = classStats["base_"..stat:lower()]
 					output[stat] = m_min(round(calcLib.val(modDB, stat)), base)
 					if breakdown then
@@ -362,7 +362,7 @@ local function doActorAttribsConditions(env, actor)
 				modDB:NewMod("Omni", "MORE", -reduction["MORE"], "Reduction from Double/Triple Dipped attributes to Omniscience")
 			end
 
-			for _, stat in pairs({"Str","Dex","Int","Vit","Att"}) do
+			for _, stat in pairs(Attributes) do
 				local base = classStats["base_"..stat:lower()]
 				output[stat] = base
 			end
