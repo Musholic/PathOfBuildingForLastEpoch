@@ -560,12 +560,21 @@
     "fl13": {
         "name": "Fury Leap",
         "skillTypeTags": 513,
-        "baseFlags": {},
+        "baseFlags": {
+            "hit": true,
+            "melee": true
+        },
         "stats": [
-            "damage_+%_per_str"
+            "damage_+%_per_str",
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "damageEffectiveness": 2.5,
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "fl71ds": {
@@ -988,12 +997,21 @@
     "me27": {
         "name": "Meteor",
         "skillTypeTags": 264,
-        "baseFlags": {},
+        "baseFlags": {
+            "hit": true,
+            "spell": true
+        },
         "stats": [
-            "damage_+%_per_int"
+            "damage_+%_per_int",
+            "spell_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "damageEffectiveness": 9.0,
+            "2": 180.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "mira59": {
@@ -1082,14 +1100,23 @@
     "pa67ju": {
         "name": "Judgement",
         "skillTypeTags": 4616,
-        "baseFlags": {},
+        "baseFlags": {
+            "hit": true,
+            "melee": true
+        },
         "stats": [
             "damage_+%_per_str",
-            "damage_+%_per_att"
+            "damage_+%_per_att",
+            "melee_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
-            "2": 4.0
+            "2": 4.0,
+            "damageEffectiveness": 3.5,
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "pr5fm": {

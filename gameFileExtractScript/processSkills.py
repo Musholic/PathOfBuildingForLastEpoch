@@ -50,7 +50,7 @@ for skillTreeData in skillTreesData:
                 # if stats['addedValue']:
                 #     skill['stats'].append("added_damage_per_" + attribute)
                 #     skill['level'][len(skill['stats'])] = stats['addedValue']
-        for prefabSuffix in {"", "End"}:
+        for prefabSuffix in {"", "End", "Aoe"}:
             skillPrefabData = load_file_from_guid(skillData['abilityPrefab'], prefabSuffix)
             for data in skillPrefabData:
                 if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
