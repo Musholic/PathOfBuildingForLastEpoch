@@ -1626,12 +1626,5 @@ function ItemClass:BuildModList()
 		-- Hack to remove the energy shield
 		baseList:NewMod("ArmourData", "LIST", { key = "EnergyShield", value = 0 })
 	end
-	if self.base.weapon or self.type == "Ring" then
-		self.slotModList = { }
-		for i = 1, 2 do
-			self.slotModList[i] = self:BuildModListForSlotNum(baseList, i)
-		end
-	else
-		self.modList = self:BuildModListForSlotNum(baseList)
-	end
+	self.modList = baseList
 end

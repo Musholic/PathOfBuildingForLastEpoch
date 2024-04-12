@@ -9,6 +9,7 @@ describe("TestSkills #skills", function()
         Forestry Axe
         +8 Strength
         +23 Melee Damage
+        100% increased Critical Strike Chance
         +10 Melee Physical Damage]])
         build.itemsTab:AddDisplayItem()
 
@@ -17,7 +18,7 @@ describe("TestSkills #skills", function()
         runCallback("OnFrame")
 
         assert.are.equals(10, build.calcsTab.mainOutput.Str)
-        assert.are.equals((2+10+23) * (1 + 0.04 * 10), build.calcsTab.mainOutput.TotalDPS)
+        assert.are.equals((2+10+23) * (1 + 0.04 * 10) * 1.1, build.calcsTab.mainOutput.TotalDPS)
     end)
 
     it("Test spell skill with basic weapon", function()
@@ -35,6 +36,6 @@ describe("TestSkills #skills", function()
 
         runCallback("OnFrame")
 
-        assert.are.equals((25+(10+30) * 1.25) * 4, build.calcsTab.mainOutput.TotalDPS)
+        assert.are.equals((25+(10+30) * 1.25) * 4 * 1.05, build.calcsTab.mainOutput.TotalDPS)
     end)
 end)
