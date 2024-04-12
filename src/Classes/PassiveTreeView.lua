@@ -290,6 +290,7 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 			-- User right-clicked on a node
 			if hoverNode.alloc > 1 then
 				hoverNode.alloc = hoverNode.alloc - 1
+				tree:ProcessStats(hoverNode)
 				spec:AddUndoState()
 				build.buildFlag = true
 			else
