@@ -24,6 +24,7 @@ for skillTreeData in skillTreesData:
         skill = {
             "name": skillData['abilityName'],
             "skillTypeTags": skillData['tags'],
+            "castTime": skillData['useDuration'] / (skillData['speedMultiplier'] * 1.1),
             "baseFlags": {},
             "stats": [],
             "level": {}
