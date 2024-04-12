@@ -182,7 +182,7 @@ You can get this from your web browser's cookies while logged into the Path of E
         return #self.controls.generateCodeOut.buf > 0
     end
     self.controls.generateCodeNote = new("LabelControl", { "TOPLEFT", self.controls.generateCodeOut, "BOTTOMLEFT" }, 0, 4, 0, 14, "^7Note: this code can be very long; you can use 'Share' to shrink it.")
-    self.controls.importCodeHeader = new("LabelControl", { "TOPLEFT", self.controls.generateCodeNote, "BOTTOMLEFT" }, 0, 26, 0, 16, "^7To import a build, enter URL or code here:\nNote that you can import from LETools (WIP)")
+    self.controls.importCodeHeader = new("LabelControl", { "TOPLEFT", self.controls.generateCodeNote, "BOTTOMLEFT" }, 0, 26, 0, 16, "^7To import a build, enter URL or code here:\nNote that you can import from LETools")
 
     local importCodeHandle = function(buf)
         self.importCodeSite = nil
@@ -447,18 +447,14 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
     }
     for passiveIdx, passive in pairs(saveContent["savedCharacterTree"]["nodeIDs"]) do
         local nbPoints = saveContent["savedCharacterTree"]["nodePoints"][passiveIdx]
-        for point = 0, nbPoints - 1 do
-            table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
-        end
+        table.insert(char["hashes"], className .. "-" .. passive .. "#" .. nbPoints)
     end
     for _, skillTree in pairs(saveContent["savedSkillTrees"]) do
-        table.insert(char["hashes"], skillTree['treeID'] .. "-" .. 0 .. "-" .. 0)
+        table.insert(char["hashes"], skillTree['treeID'] .. "-" .. 0 .. "#1")
         table.insert(char["abilities"], skillTree['treeID'])
         for skillIdx, skill in pairs(skillTree["nodeIDs"]) do
             local nbPoints = skillTree["nodePoints"][skillIdx]
-            for point = 0, nbPoints - 1 do
-                table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "-" .. point)
-            end
+            table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "#" .. nbPoints)
         end
     end
     for _,itemData in pairs(saveContent["savedItems"]) do

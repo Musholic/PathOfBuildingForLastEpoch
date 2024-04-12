@@ -164,7 +164,7 @@ end
 function PassiveSpecClass:Save(xml)
 	local allocNodeIdList = { }
 	for nodeId in pairs(self.allocNodes) do
-		t_insert(allocNodeIdList, nodeId)
+		t_insert(allocNodeIdList, nodeId .. "#" .. self.nodes[nodeId].alloc)
 	end
 	local masterySelections = { }
 	for mastery, effect in pairs(self.masterySelections) do

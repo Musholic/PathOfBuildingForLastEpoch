@@ -744,17 +744,13 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 			["hashes"] = { }
 		}
 		for passive, nbPoints in pairs(saveContent["charTree"]["selected"]) do
-			for point = 0, nbPoints - 1 do
-				table.insert(char["hashes"], className .. "-" .. passive .. "-" .. point)
-			end
+			table.insert(char["hashes"], className .. "-" .. passive .. "#" .. nbPoints)
 		end
 		for _, skillTree in pairs(saveContent["skillTrees"]) do
-			table.insert(char["hashes"], skillTree['treeID'] .. "-" .. 0 .. "-" .. 0)
+			table.insert(char["hashes"], skillTree['treeID'] .. "-" .. 0 .. "#1")
 			table.insert(char["abilities"], skillTree['treeID'])
 			for skill, nbPoints in pairs(skillTree["selected"]) do
-				for point = 0, nbPoints - 1 do
-					table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "-" .. point)
-				end
+				table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "#" .. nbPoints)
 			end
 		end
 		local slotMap = {

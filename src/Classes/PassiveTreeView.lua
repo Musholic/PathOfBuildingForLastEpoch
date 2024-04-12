@@ -51,7 +51,7 @@ local PassiveTreeViewClass = newClass("PassiveTreeView", function(self)
 
 	self.tooltip = new("Tooltip")
 
-	self.zoomLevel = 3
+	self.zoomLevel = 12
 	self.zoom = 1.2 ^ self.zoomLevel
 	self.zoomX = 0
 	self.zoomY = 0
@@ -827,6 +827,13 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 				end
 			end
 			tooltip:AddLine(16, ((node.mods[i].extra or not node.mods[i].list) and colorCodes.UNSUPPORTED or colorCodes.MAGIC)..line)
+		end
+	end
+
+	if node.sd[1] then
+		tooltip:AddLine(16, "")
+		for i, line in ipairs(node.sd) do
+			addModInfoToTooltip(node, i, line)
 		end
 	end
 
