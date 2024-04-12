@@ -1,5 +1,33 @@
 {
     "nodes": {
+        "Beastmaster": {
+            "skill": "Beastmaster",
+            "name": "Beastmaster",
+            "ascendancyName": "Beastmaster",
+            "isAscendancyStart": true,
+            "stats": [
+                "+1 Companion Summon Limit",
+                "You and your minions deal 50% increased melee damage"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Druid": {
+            "skill": "Druid",
+            "name": "Druid",
+            "ascendancyName": "Druid",
+            "isAscendancyStart": true,
+            "stats": [
+                "When leaving a transformed state, you gain 70% damage reduction for 2 seconds",
+                "20% increased health and mana"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
         "Primalist": {
             "skill": "Primalist",
             "name": "Primalist",
@@ -2348,6 +2376,21 @@
                 1
             ],
             "out": []
+        },
+        "Shaman": {
+            "skill": "Shaman",
+            "name": "Shaman",
+            "ascendancyName": "Shaman",
+            "isAscendancyStart": true,
+            "stats": [
+                "-5 Totem mana cost",
+                "+10 Attunement",
+                "+50% elemental resistance while you control a totem"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
         },
         "av75ch-0": {
             "skill": "av75ch-0",
@@ -17363,7 +17406,20 @@
     "classes": [
         {
             "name": "Primalist",
-            "ascendancies": [],
+            "ascendancies": [
+                {
+                    "id": "Beastmaster",
+                    "name": "Beastmaster"
+                },
+                {
+                    "id": "Shaman",
+                    "name": "Shaman"
+                },
+                {
+                    "id": "Druid",
+                    "name": "Druid"
+                }
+            ],
             "base_str": 2,
             "base_dex": 0,
             "base_int": 0,

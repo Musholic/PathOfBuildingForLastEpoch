@@ -2258,6 +2258,48 @@
                 "Mage-102"
             ]
         },
+        "Runemaster": {
+            "skill": "Runemaster",
+            "name": "Runemaster",
+            "ascendancyName": "Runemaster",
+            "isAscendancyStart": true,
+            "stats": [
+                "30% increased Elemental Damage",
+                "10% increased Cast Speed with Elemental Spells"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Sorcerer": {
+            "skill": "Sorcerer",
+            "name": "Sorcerer",
+            "ascendancyName": "Sorcerer",
+            "isAscendancyStart": true,
+            "stats": [
+                "+50 mana",
+                "Spells deal increased damage equal to their mana cost"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Spellblade": {
+            "skill": "Spellblade",
+            "name": "Spellblade",
+            "ascendancyName": "Spellblade",
+            "isAscendancyStart": true,
+            "stats": [
+                "4 ward gained on melee hit",
+                "Mana spent on melee attacks is converted to ward"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
         "arcas-0": {
             "skill": "arcas-0",
             "name": "Arcane Ascendance",
@@ -18593,7 +18635,20 @@
     "classes": [
         {
             "name": "Mage",
-            "ascendancies": [],
+            "ascendancies": [
+                {
+                    "id": "Sorcerer",
+                    "name": "Sorcerer"
+                },
+                {
+                    "id": "Spellblade",
+                    "name": "Spellblade"
+                },
+                {
+                    "id": "Runemaster",
+                    "name": "Runemaster"
+                }
+            ],
             "base_str": 0,
             "base_dex": 0,
             "base_int": 3,

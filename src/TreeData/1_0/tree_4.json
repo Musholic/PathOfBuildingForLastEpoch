@@ -1,5 +1,45 @@
 {
     "nodes": {
+        "Bladedancer": {
+            "skill": "Bladedancer",
+            "name": "Bladedancer",
+            "ascendancyName": "Bladedancer",
+            "isAscendancyStart": true,
+            "stats": [
+                "+1 max Shadows",
+                "+15 melee physical damage",
+                "15% more dodge rating (multiplicative with other modifiers)"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Falconer": {
+            "skill": "Falconer",
+            "name": "Falconer",
+            "ascendancyName": "Falconer",
+            "isAscendancyStart": true,
+            "stats": [],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Marksman": {
+            "skill": "Marksman",
+            "name": "Marksman",
+            "ascendancyName": "Marksman",
+            "isAscendancyStart": true,
+            "stats": [
+                "Using a bow attack grants 5% increased attack speed. Can stack 5 times. All stacks fall off after if you have not used a bow attack recently.",
+                "50% increased damage while using a bow"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
         "Rogue": {
             "skill": "Rogue",
             "name": "Rogue",
@@ -16325,7 +16365,20 @@
     "classes": [
         {
             "name": "Rogue",
-            "ascendancies": [],
+            "ascendancies": [
+                {
+                    "id": "Bladedancer",
+                    "name": "Bladedancer"
+                },
+                {
+                    "id": "Marksman",
+                    "name": "Marksman"
+                },
+                {
+                    "id": "Falconer",
+                    "name": "Falconer"
+                }
+            ],
             "base_str": 0,
             "base_dex": 3,
             "base_int": 0,

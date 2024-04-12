@@ -1,5 +1,33 @@
 {
     "nodes": {
+        "Forge_Guard": {
+            "skill": "Forge_Guard",
+            "name": "Forge Guard",
+            "ascendancyName": "Forge Guard",
+            "isAscendancyStart": true,
+            "stats": [
+                "+35% physical and fire resistance",
+                "3% increased armor for each hit you have taken in the last 10 seconds"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Paladin": {
+            "skill": "Paladin",
+            "name": "Paladin",
+            "ascendancyName": "Paladin",
+            "isAscendancyStart": true,
+            "stats": [
+                "You deal increased fire, lightning, and physical damage equal to your percent health remaining.",
+                "1% increased healing effectiveness per point of attunement"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
         "Sentinel": {
             "skill": "Sentinel",
             "name": "Sentinel",
@@ -2205,6 +2233,20 @@
                 "1"
             ],
             "out": []
+        },
+        "VoidKnight": {
+            "skill": "VoidKnight",
+            "name": "Void Knight",
+            "ascendancyName": "Void Knight",
+            "isAscendancyStart": true,
+            "stats": [
+                "75% increased melee void damage",
+                "Your melee attacks, throwing attacks and void spells have a 10% chance to be repeated by an echo 0.5s later (excludes movement abilities and Anomaly)."
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
         },
         "ab0lh-0": {
             "skill": "ab0lh-0",
@@ -17043,7 +17085,20 @@
     "classes": [
         {
             "name": "Sentinel",
-            "ascendancies": [],
+            "ascendancies": [
+                {
+                    "id": "VoidKnight",
+                    "name": "Void Knight"
+                },
+                {
+                    "id": "Forge_Guard",
+                    "name": "Forge Guard"
+                },
+                {
+                    "id": "Paladin",
+                    "name": "Paladin"
+                }
+            ],
             "base_str": 2,
             "base_dex": 0,
             "base_int": 0,

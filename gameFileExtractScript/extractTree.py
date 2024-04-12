@@ -2,7 +2,8 @@ import yaml
 
 extractedNodes = {
     "trees": {},
-    "passives": {}
+    "passives": {},
+    "masteryClasses": []
 }
 transforms = {}
 gameObjects = {}
@@ -15,6 +16,8 @@ with open("generatedAssets/passiveTree.yaml", "r") as yamlFile:
                 extractedNodes["trees"][data.get('__fileId')] = data
             if data.get('masteryRequirement'):
                 extractedNodes["passives"][data.get('__fileId')] = data
+            if data.get('isMasteryClass') == '1':
+                extractedNodes["masteryClasses"].append(data)
         data = dataNode.get('RectTransform')
         if data:
             transforms[data.get('__fileId')] = data

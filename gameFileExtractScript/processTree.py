@@ -33,6 +33,13 @@ with open("generatedAssets/skillTreesExtract.yaml", "r") as yamlFile:
 
 construct_mod_data_list()
 
+masteryClassToMods = {}
+
+for masteryClassData in data["masteryClasses"]:
+    key = (masteryClassData['classDescriptionLocalizationKey'].replace("Mastery_", "").replace("_Description", "")
+           .replace("Class_", "").replace("MasteryPanel_", ""))
+    masteryClassToMods[key] = masteryClassData['passiveBonuses']
+
 for classInfo in data["trees"].values():
     tree = {
         "nodes": {
@@ -45,26 +52,97 @@ for classInfo in data["trees"].values():
     classes = {}
     classId = classInfo["treeID"]
     className = classId
+    ascendancies = []
 
     if classId == 'pr-1':
         className = "Primalist"
         classStartIndex = 0
+        ascendancies = [
+            {
+                "id": "Beastmaster",
+                "name": "Beastmaster"
+            },
+            {
+                "id": "Shaman",
+                "name": "Shaman"
+            },
+            {
+                "id": "Druid",
+                "name": "Druid"
+            }
+        ]
     elif classId == 'mg-1':
         className = "Mage"
         classStartIndex = 1
+        ascendancies = [
+            {
+                "id": "Sorcerer",
+                "name": "Sorcerer"
+            },
+            {
+                "id": "Spellblade",
+                "name": "Spellblade"
+            },
+            {
+                "id": "Runemaster",
+                "name": "Runemaster"
+            }
+        ]
     elif classId == 'kn-1':
         className = "Sentinel"
         classStartIndex = 2
+        ascendancies = [
+            {
+                "id": "VoidKnight",
+                "name": "Void Knight"
+            },
+            {
+                "id": "Forge_Guard",
+                "name": "Forge Guard"
+            },
+            {
+                "id": "Paladin",
+                "name": "Paladin"
+            }
+        ]
     elif classId == 'ac-1':
         className = "Acolyte"
         classStartIndex = 3
+        ascendancies = [
+            {
+                "id": "Necromancer",
+                "name": "Necromancer"
+            },
+            {
+                "id": "Lich",
+                "name": "Lich"
+            },
+            {
+                "id": "Warlock",
+                "name": "Warlock"
+            }
+        ]
     else:
         className = "Rogue"
         classStartIndex = 4
+        ascendancies = [
+            {
+                "id": "Bladedancer",
+                "name": "Bladedancer"
+            },
+            {
+                "id": "Marksman",
+                "name": "Marksman"
+            },
+            {
+                "id": "Falconer",
+                "name": "Falconer"
+            }
+        ]
 
     classes[className] = {
         "name": className,
-        "ascendancies": []
+        "ascendancies": ascendancies
     }
 
     with open(extractPath + "MonoBehaviour/" + className + ".asset", "r") as yamlFile:
@@ -99,6 +177,19 @@ for classInfo in data["trees"].values():
         "out": [],
         "in": []
     }
+
+    for ascendancy in ascendancies:
+        tree["nodes"][ascendancy['id']] = {
+            "skill": ascendancy['id'],
+            "name": ascendancy['name'],
+            "ascendancyName": ascendancy['name'],
+            "isAscendancyStart": True,
+            "stats": masteryClassToMods[ascendancy['id']],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        }
 
     posX = 0
     posY = 0

@@ -2261,6 +2261,49 @@
             ],
             "out": []
         },
+        "Lich": {
+            "skill": "Lich",
+            "name": "Lich",
+            "ascendancyName": "Lich",
+            "isAscendancyStart": true,
+            "stats": [
+                "1% of damage dealt is leeched as health",
+                "Spells and Melee attacks deal increased damage equal to your missing health"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Necromancer": {
+            "skill": "Necromancer",
+            "name": "Necromancer",
+            "ascendancyName": "Necromancer",
+            "isAscendancyStart": true,
+            "stats": [
+                "+1 max Skeleton",
+                "+1 max Skeleton Mage",
+                "Your minions deal 50% increased damage"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
+        "Warlock": {
+            "skill": "Warlock",
+            "name": "Warlock",
+            "ascendancyName": "Warlock",
+            "isAscendancyStart": true,
+            "stats": [
+                "5% more damage per curse on the target",
+                "+35% fire and necrotic resistance"
+            ],
+            "x": 0,
+            "y": 0,
+            "out": [],
+            "in": []
+        },
         "aa710-0": {
             "skill": "aa710-0",
             "name": "Assemble Abomination",
@@ -18182,7 +18225,20 @@
     "classes": [
         {
             "name": "Acolyte",
-            "ascendancies": [],
+            "ascendancies": [
+                {
+                    "id": "Necromancer",
+                    "name": "Necromancer"
+                },
+                {
+                    "id": "Lich",
+                    "name": "Lich"
+                },
+                {
+                    "id": "Warlock",
+                    "name": "Warlock"
+                }
+            ],
             "base_str": 0,
             "base_dex": 0,
             "base_int": 2,
