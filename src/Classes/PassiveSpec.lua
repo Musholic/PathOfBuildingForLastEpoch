@@ -246,6 +246,7 @@ function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, 
 		local node = self.nodes[id]
 		if node then
 			node.alloc = nbPoint
+			self.tree:ProcessStats(node)
 			self.allocNodes[id] = node
 		else
 			t_insert(self.allocSubgraphNodes, id)
@@ -525,11 +526,7 @@ function PassiveSpecClass:AllocNode(node, altPath)
 
 	-- Allocate all nodes along the path
 	for _, pathNode in ipairs(altPath or node.path) do
-		if node == pathNode then
-			node.alloc = node.alloc + 1
-		else
-			pathNode.alloc = 1
-		end
+		pathNode.alloc = 1
 		self.allocNodes[pathNode.id] = pathNode
 	end
 
@@ -732,9 +729,6 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 	local attributes = { "Dexterity", "Intelligence", "Strength" }
 	self.visibleNodes = {}
 	for nodeId, node in pairs(self.nodes) do
-		if node.alloc == nil then
-			node.alloc = 0
-		end
 		if nodeId:match("^" .. self.curClassName) then
 			self.visibleNodes[nodeId] = node
 		end

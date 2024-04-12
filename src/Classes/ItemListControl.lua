@@ -91,16 +91,12 @@ end
 function ItemListClass:GetRowValue(column, index, itemId)
 	local item = self.itemsTab.items[itemId]
 	if column == 1 then
-		local used = self:FindEquippedAbyssJewel(itemId, true) or self:FindSocketedJewel(itemId, true) or ""
-		if used == "" then
-			local slot, itemSet = self.itemsTab:GetEquippedSlotForItem(item)
-			if not slot then
-				used = "  ^9(Unused)"
-			elseif itemSet then
-				used = "  ^9(Used in '" .. (itemSet.title or "Default") .. "')"
-			end
-		else
-			used = "  ^9(Used in '" .. used .. "')"
+		local used = ""
+		local slot, itemSet = self.itemsTab:GetEquippedSlotForItem(item)
+		if not slot then
+			used = "  ^9(Unused)"
+		elseif itemSet then
+			used = "  ^9(Used in '" .. (itemSet.title or "Default") .. "')"
 		end
 		return colorCodes[item.rarity] .. item.name .. used
 	end

@@ -275,6 +275,7 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 			if hoverNode.alloc > 0 then
 				if hoverNode.alloc < hoverNode.maxPoints then
 					hoverNode.alloc = hoverNode.alloc + 1
+					tree:ProcessStats(hoverNode)
 					spec:AddUndoState()
 					build.buildFlag = true
 				end

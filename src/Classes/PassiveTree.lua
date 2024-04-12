@@ -275,6 +275,7 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
     self.masteryEffects = { }
     local nodeMap = { }
     for _, node in pairs(self.nodes) do
+        node.alloc = 0
         -- Migration...
         -- To old format
         node.id = node.skill
@@ -510,6 +511,9 @@ function PassiveTreeClass:ProcessStats(node, startIndex)
                 mod = modLib.setSource(mod, "Tree:" .. node.id)
                 if node.skillId then
                     table.insert(mod, {type = "SkillId", skillId = node.skillId})
+                end
+                if node.alloc > 1 then
+                    mod.value = mod.value * node.alloc
                 end
                 node.modList:AddMod(mod)
             end
