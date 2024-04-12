@@ -94,6 +94,15 @@ for skillTreeData in skillTreesData:
                                     damageType = "poison"
                             skill['stats'].append(damageTag + "_base_" + damageType + "_damage")
                             skill['level'][len(skill['stats'])] = damage
+                    critMultiplier = float(skillDamageData['critMultiplier']) * 100 - 100
+                    if critMultiplier == -100:
+                        skill['stats'].append('no_critical_strike_multiplier')
+                    elif critMultiplier:
+                        skill['stats'].append('base_critical_strike_multiplier_+')
+                        skill["level"][len(skill['stats'])] = critMultiplier
+                    critChance = float(skillDamageData['critChance']) * 100
+                    if critChance:
+                        skill["level"]['critChance'] = critChance
         skills[skillData['playerAbilityID']] = skill
 
 

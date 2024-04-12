@@ -133,7 +133,8 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_cold_damage"
+            "spell_base_cold_damage",
+            "no_critical_strike_multiplier"
         ],
         "level": {
             "1": 4.0,
@@ -150,12 +151,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_physical_damage"
+            "spell_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.1,
-            "2": 22.0
+            "2": 22.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "ch0fs": {
@@ -216,12 +220,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 2.0,
-            "2": 20.0
+            "2": 20.0,
+            "3": 100.0,
+            "critChance": 10.0
         }
     },
     "db992": {
@@ -254,12 +261,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "bow_base_lightning_damage"
+            "bow_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.25,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "dig5": {
@@ -271,13 +281,16 @@
         "stats": [
             "damage_+%_per_int",
             "spell_base_fire_damage",
-            "spell_base_lightning_damage"
+            "spell_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.75,
             "2": 7.5,
-            "3": 7.5
+            "3": 7.5,
+            "4": 100.0,
+            "critChance": 50.0
         }
     },
     "dl73": {
@@ -304,11 +317,14 @@
             "spell": true
         },
         "stats": [
-            "spell_base_void_damage"
+            "spell_base_void_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "damageEffectiveness": 2.0,
-            "1": 80.0
+            "1": 80.0,
+            "2": 100.0,
+            "critChance": 5.0
         }
     },
     "dqv5": {
@@ -354,14 +370,17 @@
             "damage_+%_per_int",
             "spell_base_fire_damage",
             "spell_base_cold_damage",
-            "spell_base_lightning_damage"
+            "spell_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
             "2": 6.0,
             "3": 6.0,
-            "4": 6.0
+            "4": 6.0,
+            "5": 100.0,
+            "critChance": 5.0
         }
     },
     "eq5s": {
@@ -374,13 +393,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_att",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 3.5,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "er6no": {
@@ -392,12 +414,15 @@
         },
         "stats": [
             "damage_+%_per_att",
-            "spell_base_physical_damage"
+            "spell_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 20.0
+            "2": 20.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "es6ai": {
@@ -428,12 +453,15 @@
         "baseFlags": {},
         "stats": [
             "damage_+%_per_dex",
-            "bow_base_physical_damage"
+            "bow_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.65,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "f1b4d": {
@@ -446,13 +474,16 @@
         "stats": [
             "damage_+%_per_int",
             "damage_+%_per_dex",
-            "melee_base_fire_damage"
+            "melee_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "falc0": {
@@ -475,12 +506,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_fire_damage"
+            "spell_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 20.0
+            "2": 20.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "fe8at": {
@@ -492,12 +526,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_necrotic_damage"
+            "spell_base_necrotic_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 2.5,
-            "2": 50.0
+            "2": 50.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "fi9": {
@@ -509,12 +546,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_fire_damage"
+            "spell_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.25,
-            "2": 25.0
+            "2": 25.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "fl13": {
@@ -536,12 +576,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "0_base_fire_damage"
+            "0_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 20.0
+            "2": 20.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "flur3": {
@@ -581,13 +624,16 @@
         "stats": [
             "damage_+%_per_int",
             "damage_+%_per_dex",
-            "melee_base_fire_damage"
+            "melee_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.6,
-            "3": 16.0
+            "3": 16.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "frc87w": {
@@ -611,13 +657,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_att",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 5.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "fs11": {
@@ -654,12 +703,15 @@
         },
         "stats": [
             "damage_+%_per_str",
-            "melee_base_lightning_damage"
+            "melee_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "gh0fl": {
@@ -671,13 +723,16 @@
         "stats": [
             "damage_+%_per_int",
             "spell_base_fire_damage",
-            "spell_base_necrotic_damage"
+            "spell_base_necrotic_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.75,
             "2": 17.5,
-            "3": 17.5
+            "3": 17.5,
+            "4": 100.0,
+            "critChance": 50.0
         }
     },
     "gl14": {
@@ -700,12 +755,15 @@
         },
         "stats": [
             "damage_+%_per_str",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "gy2dm": {
@@ -733,12 +791,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "melee_base_necrotic_damage"
+            "melee_base_necrotic_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.7,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "hh7pa3": {
@@ -757,12 +818,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_necrotic_damage"
+            "spell_base_necrotic_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.45,
-            "2": 9.0
+            "2": 9.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "ht16aw": {
@@ -775,13 +839,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_dex",
-            "throwing_base_physical_damage"
+            "throwing_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.05,
-            "3": 21.0
+            "3": 21.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "ib5g3": {
@@ -803,12 +870,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_fire_damage"
+            "spell_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.825,
-            "2": 16.5
+            "2": 16.5,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "is58": {
@@ -828,13 +898,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_dex",
-            "throwing_base_physical_damage"
+            "throwing_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.8,
-            "3": 36.0
+            "3": 36.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "lb23il": {
@@ -846,12 +919,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_lightning_damage"
+            "spell_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 21.0
+            "2": 21.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "lu25ng": {
@@ -864,13 +940,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_dex",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "ma6hdr": {
@@ -888,12 +967,15 @@
         },
         "stats": [
             "damage_+%_per_att",
-            "spell_base_cold_damage"
+            "spell_base_cold_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.3,
-            "2": 6.0
+            "2": 6.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "md26kh": {
@@ -935,13 +1017,16 @@
         "stats": [
             "damage_+%_per_int",
             "damage_+%_per_dex",
-            "melee_base_lightning_damage"
+            "melee_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.0,
-            "3": 15.0
+            "3": 15.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "multis": {
@@ -953,12 +1038,15 @@
         },
         "stats": [
             "damage_+%_per_str",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "mush9": {
@@ -969,12 +1057,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "bow_base_physical_damage"
+            "bow_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 6.0
+            "2": 6.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "ne01t": {
@@ -1026,12 +1117,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "rb31pl": {
@@ -1043,12 +1137,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_physical_damage"
+            "spell_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 15.0
+            "2": 15.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "re82ke": {
@@ -1060,12 +1157,15 @@
         },
         "stats": [
             "damage_+%_per_att",
-            "spell_base_physical_damage"
+            "spell_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 2.0,
-            "2": 40.0
+            "2": 40.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "rf1azz": {
@@ -1109,12 +1209,15 @@
         },
         "stats": [
             "damage_+%_per_str",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "sb44eQ": {
@@ -1154,12 +1257,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_physical_damage"
+            "spell_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 2.0,
-            "2": 40.0
+            "2": 40.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "sf37": {
@@ -1199,12 +1305,15 @@
         },
         "stats": [
             "damage_+%_per_att",
-            "spell_base_fire_damage"
+            "spell_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.5,
-            "2": 30.0
+            "2": 30.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "smbmb": {
@@ -1223,12 +1332,15 @@
         },
         "stats": [
             "damage_+%_per_str",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "so35a": {
@@ -1240,12 +1352,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_lightning_damage"
+            "spell_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 20.0
+            "2": 20.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "sp5g2": {
@@ -1276,13 +1391,16 @@
         "stats": [
             "damage_+%_per_str",
             "melee_base_physical_damage",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
             "2": 2.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "srk21": {
@@ -1294,12 +1412,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "throwing_base_physical_damage"
+            "throwing_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 16.0
+            "2": 16.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "srtor": {
@@ -1346,13 +1467,16 @@
         "stats": [
             "damage_+%_per_str",
             "melee_base_physical_damage",
-            "melee_base_fire_damage"
+            "melee_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 4.0,
             "2": 1.0,
-            "3": 1.0
+            "3": 1.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "st31et": {
@@ -1365,13 +1489,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_dex",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "st31io": {
@@ -1384,13 +1511,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_dex",
-            "throwing_base_physical_damage"
+            "throwing_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 2.25,
-            "3": 45.0
+            "3": 45.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "st38ml": {
@@ -1409,12 +1539,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_lightning_damage"
+            "spell_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 2.5,
-            "2": 50.0
+            "2": 50.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "su5g3": {
@@ -1427,13 +1560,16 @@
         "stats": [
             "damage_+%_per_int",
             "damage_+%_per_dex",
-            "melee_base_lightning_damage"
+            "melee_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 2.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "svz81": {
@@ -1466,12 +1602,15 @@
         },
         "stats": [
             "damage_+%_per_str",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 2.0
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "sync5": {
@@ -1483,12 +1622,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 5.0
+            "2": 5.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "tb47": {
@@ -1501,13 +1643,16 @@
         "stats": [
             "damage_+%_per_att",
             "spell_base_physical_damage",
-            "spell_base_cold_damage"
+            "spell_base_cold_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
             "2": 9.0,
-            "3": 9.0
+            "3": 9.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "te44": {
@@ -1518,11 +1663,14 @@
             "spell": true
         },
         "stats": [
-            "spell_base_lightning_damage"
+            "spell_base_lightning_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "damageEffectiveness": 1.0,
-            "1": 2.0
+            "1": 2.0,
+            "2": 100.0,
+            "critChance": 5.0
         }
     },
     "th39": {
@@ -1540,7 +1688,8 @@
         },
         "stats": [
             "damage_+%_per_att",
-            "spell_base_physical_damage"
+            "spell_base_physical_damage",
+            "no_critical_strike_multiplier"
         ],
         "level": {
             "1": 4.0,
@@ -1569,13 +1718,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_att",
-            "melee_base_cold_damage"
+            "melee_base_cold_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "ub5d9": {
@@ -1587,12 +1739,15 @@
         },
         "stats": [
             "damage_+%_per_dex",
-            "throwing_base_physical_damage"
+            "throwing_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.6,
-            "2": 12.0
+            "2": 12.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "uph41": {
@@ -1605,13 +1760,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_att",
-            "melee_base_physical_damage"
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 1.35,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "v01cv": {
@@ -1624,13 +1782,16 @@
         "stats": [
             "damage_+%_per_str",
             "damage_+%_per_vit",
-            "melee_base_void_damage"
+            "melee_base_void_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "2": 4.0,
             "damageEffectiveness": 4.0,
-            "3": 2.0
+            "3": 2.0,
+            "4": 100.0,
+            "critChance": 5.0
         }
     },
     "va53st": {
@@ -1660,12 +1821,15 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_fire_damage"
+            "spell_base_fire_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
-            "2": 20.0
+            "2": 20.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "vr53sl": {
