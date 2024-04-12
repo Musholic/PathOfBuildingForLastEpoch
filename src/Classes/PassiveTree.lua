@@ -513,7 +513,13 @@ function PassiveTreeClass:ProcessStats(node, startIndex)
                     table.insert(mod, {type = "SkillId", skillId = node.skillId})
                 end
                 if node.alloc > 1 then
-                    mod.value = mod.value * node.alloc
+                    if type(mod.value) == "table" then
+                        for _, mod in ipairs(mod.value) do
+                            mod.value = mod.value * node.alloc
+                        end
+                    else
+                        mod.value = mod.value * node.alloc
+                    end
                 end
                 node.modList:AddMod(mod)
             end

@@ -26,7 +26,12 @@ end
 function buildTable(tableName, values, string)
     string = string or ""
     string = string .. tableName .. " = {"
-    for key, value in pairs(values) do
+    -- Sort by keys
+    local keys = {}
+    for k in pairs(values) do table.insert(keys, k) end
+    table.sort(keys)
+    for _, key in pairs(keys) do
+        local value = values[key]
         if type(value) == "table" then
             buildTable(key, value, string)
         elseif type(value) == "boolean" then

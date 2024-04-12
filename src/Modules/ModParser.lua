@@ -2119,7 +2119,6 @@ local function parseMod(line, order)
 				end
 			end
 		end
-		modValue = formCap[1]
 		modName = {}
 		keywordFlags = {}
 		for _,damageType in ipairs(damageTypes) do
