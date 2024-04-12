@@ -1439,10 +1439,10 @@ function ItemsTabClass:DeleteItem(item, deferUndoState)
 				-- Deallocate all nodes that required this jewel
 				if spec.nodes[nodeId] then
 					for depNodeId, depNode in ipairs(spec.nodes[nodeId].depends) do
-						depNode.alloc = false
+						depNode.alloc = 0
 						spec.allocNodes[depNodeId] = nil
 					end
-					spec.nodes[nodeId].alloc = false
+					spec.nodes[nodeId].alloc = 0
 					spec.allocNodes[nodeId] = nil
 				end
 			end

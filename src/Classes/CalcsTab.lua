@@ -468,7 +468,7 @@ function CalcsTabClass:PowerBuilder()
 	for nodeId, node in pairs(self.build.spec.nodes) do
 		wipeTable(node.power)
 		if self.nodePowerMaxDepth == nil or self.nodePowerMaxDepth >= node.pathDist then
-			if not node.alloc and node.modKey ~= "" and not self.mainEnv.grantedPassives[nodeId] then
+			if node.alloc == 0 and node.modKey ~= "" and not self.mainEnv.grantedPassives[nodeId] then
 				if not cache[node.modKey] then
 					cache[node.modKey] = calcFunc({ addNodes = { [node] = true } }, { requirementsItems = true, requirementsGems = true, skills = true })
 				end
@@ -506,7 +506,7 @@ function CalcsTabClass:PowerBuilder()
 
 					end
 				end
-			elseif node.alloc and node.modKey ~= "" and not self.mainEnv.grantedPassives[nodeId] then
+			elseif node.alloc > 0 and node.modKey ~= "" and not self.mainEnv.grantedPassives[nodeId] then
 				local output = calcFunc({ removeNodes = { [node] = true } }, { requirementsItems = true, requirementsGems = true, skills = true })
 				if self.powerStat and self.powerStat.stat and not self.powerStat.ignoreForNodes then
 					node.power.singleStat = self:CalculatePowerStat(self.powerStat, output, calcBase)
@@ -529,27 +529,6 @@ function CalcsTabClass:PowerBuilder()
 		end
 	end
 
-	-- Calculate the impact of every cluster notable
-	-- used for the power report screen
-	for nodeName, node in pairs(self.build.spec.tree.clusterNodeMap) do
-		if not node.power then
-			node.power = {}
-		end
-		wipeTable(node.power)
-		if not node.alloc and node.modKey ~= "" and not self.mainEnv.grantedPassives[nodeId] then
-			if not cache[node.modKey] then
-				cache[node.modKey] = calcFunc({ addNodes = { [node] = true } }, { requirementsItems = true, requirementsGems = true, skills = true })
-			end
-			local output = cache[node.modKey]
-			if self.powerStat and self.powerStat.stat and not self.powerStat.ignoreForNodes then
-				node.power.singleStat = self:CalculatePowerStat(self.powerStat, output, calcBase)
-			end
-		end
-		if coroutine.running() and GetTime() - start > 100 then
-			coroutine.yield()
-			start = GetTime()
-		end
-	end
 	self.powerMax = newPowerMax
 	self.powerBuilderInitialized = true
 	--ConPrintf("Power Build time: %d ms", GetTime() - timer_start)

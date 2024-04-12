@@ -789,52 +789,6 @@ function TreeTabClass:ModifyNodePopup(selectedNode)
 	constructUI(modGroups[1])
 end
 
-function TreeTabClass:SaveMasteryPopup(node, listControl)
-		if listControl.selValue == nil then
-			return
-		end
-		local effect = self.build.spec.tree.masteryEffects[listControl.selValue.id]
-		node.sd = effect.sd
-		node.allMasteryOptions = false
-		node.reminderText = { "Tip: Right click to select a different effect" }
-		self.build.spec.tree:ProcessStats(node)
-		self.build.spec.masterySelections[node.id] = effect.id
-		if not node.alloc then
-			self.build.spec:AllocNode(node, self.viewer.tracePath and node == self.viewer.tracePath[#self.viewer.tracePath] and self.viewer.tracePath)
-		end
-		self.build.spec:AddUndoState()
-		self.modFlag = true
-		self.build.buildFlag = true
-		main:ClosePopup()
-end
-
-function TreeTabClass:OpenMasteryPopup(node, viewPort)
-	local controls = { }
-	local effects = { }
-	local cachedSd = node.sd
-	local cachedAllMasteryOption = node.allMasteryOptions
-
-	wipeTable(effects)
-	for _, effect in pairs(node.masteryEffects) do
-		local assignedNodeId = isValueInTable(self.build.spec.masterySelections, effect.effect)
-		if not assignedNodeId or assignedNodeId == node.id then
-			t_insert(effects, {label = t_concat(effect.stats, " / "), id = effect.effect})
-		end
-	end
-	--Check to make sure that the effects list has a potential mod to apply to a mastery
-	if not (next(effects) == nil) then
-		local passiveMasteryControlHeight = (#effects + 1) * 14 + 2
-		controls.close =  new("ButtonControl", nil, 0, 30 + passiveMasteryControlHeight, 90, 20, "Cancel", function()
-			node.sd = cachedSd
-			node.allMasteryOptions = cachedAllMasteryOption
-			self.build.spec.tree:ProcessStats(node)
-			main:ClosePopup()
-		end)
-		controls.effect = new("PassiveMasteryControl", {"TOPLEFT",nil,"TOPLEFT"}, 6, 25, 0, passiveMasteryControlHeight, effects, self, node, controls.save)
-		main:OpenPopup(controls.effect.width + 12, controls.effect.height + 60, node.name, controls)
-	end
-end
-
 function TreeTabClass:SetPowerCalc(powerStat)
 	self.viewer.showHeatMap = true
 	self.build.buildFlag = true
@@ -874,7 +828,7 @@ function TreeTabClass:BuildPowerReportList(currentStat)
 
 	-- search all nodes, ignoring ascendancies, sockets, etc.
 	for nodeId, node in pairs(self.build.spec.nodes) do
-		local isAlloc = node.alloc or self.build.calcsTab.mainEnv.grantedPassives[nodeId]
+		local isAlloc = node.alloc > 0 or self.build.calcsTab.mainEnv.grantedPassives[nodeId]
 		if (node.type == "Normal" or node.type == "Keystone" or node.type == "Notable") and not node.ascendancyName then
 			local pathDist
 			if isAlloc then
@@ -919,7 +873,7 @@ function TreeTabClass:BuildPowerReportList(currentStat)
 
 	-- search all cluster notables and add to the list
 	for nodeName, node in pairs(self.build.spec.tree.clusterNodeMap) do
-		local isAlloc = node.alloc
+		local isAlloc = node.alloc > 0
 		if not isAlloc then
 			local nodePower = (node.power and node.power.singleStat or 0) * ((displayStat.pc or displayStat.mod) and 100 or 1)
 			local nodePowerStr = s_format("%"..displayStat.fmt, nodePower)

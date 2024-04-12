@@ -67,29 +67,6 @@ local ItemListClass = newClass("ItemListControl", "ListControl", function(self, 
 	end)
 end)
 
-function ItemListClass:FindSocketedJewel(jewelId, excludeActiveSpec)
-	if not self.itemsTab.items[jewelId] or self.itemsTab.items[jewelId].type ~= "Jewel" then
-		return nil
-	end
-	local treeTab = self.itemsTab.build.treeTab
-	local equipTree = nil
-	local matchActive = false
-	for specId = #treeTab.specList, 1, -1 do
-		local spec = treeTab.specList[specId]
-		for nodeId, itemId in pairs(spec.jewels) do
-			if itemId == jewelId and spec.nodes[nodeId] and spec.nodes[nodeId].alloc then
-				if excludeActiveSpec and (specId == treeTab.activeSpec or matchActive) then
-					equipTree = nil
-					matchActive = true
-				else
-					equipTree = spec.title or "Default"
-				end
-			end
-		end
-	end
-	return equipTree
-end
-
 function ItemListClass:FindEquippedAbyssJewel(jewelId, excludeActiveSet)
 	if not self.itemsTab.items[jewelId] or self.itemsTab.items[jewelId].base.subType ~= "Abyss" then
 		return nil

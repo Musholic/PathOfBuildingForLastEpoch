@@ -117,44 +117,24 @@ return {
     ["skillSprites"]= {
         ["normalInactive"]= {
             {
-                ["filename"]= "https://web.poecdn.com/image/passive-skill/skills-disabled-0.jpg?3a3f8d0b",
-                ["coords"]= {
-                    ["Art/2DArt/SkillIcons/passives/MasteryBlank.png"]= {
-                        ["x"]= 360,
-                        ["y"]= 18,
-                        ["w"]= 9,
-                        ["h"]= 9
-                    },
-                }
-            },
-            {
-                ["filename"]= "https://web.poecdn.com/image/passive-skill/skills-disabled-1.jpg?bfb71a71",
-                ["coords"]= {
-                    ["Art/2DArt/SkillIcons/passives/MasteryBlank.png"]= {
-                        ["x"]= 448,
-                        ["y"]= 28,
-                        ["w"]= 14,
-                        ["h"]= 14
-                    },
-                }
-            },
-            {
-                ["filename"]= "https://web.poecdn.com/image/passive-skill/skills-disabled-2.jpg?3521ca30",
-                ["coords"]= {
-                    ["Art/2DArt/SkillIcons/passives/MasteryBlank.png"]= {
-                        ["x"]= 640,
-                        ["y"]= 40,
-                        ["w"]= 20,
-                        ["h"]= 20
-                    },
-                }
-            },
-            {
                 ["filename"]= "https://web.poecdn.com/image/passive-skill/skills-disabled-3.jpg?c661252e",
                 ["coords"]= {
                     ["Art/2DArt/SkillIcons/passives/MasteryBlank.png"]= {
-                        ["x"]= 884,
-                        ["y"]= 52,
+                        ["x"]= 312,
+                        ["y"]= 104,
+                        ["w"]= 26,
+                        ["h"]= 26
+                    },
+                }
+            }
+        },
+        ["normalActive"]= {
+            {
+                ["filename"]= "https://web.poecdn.com/image/passive-skill/skills-3.jpg?911d3130",
+                ["coords"]= {
+                    ["Art/2DArt/SkillIcons/passives/MasteryBlank.png"]= {
+                        ["x"]= 312,
+                        ["y"]= 104,
                         ["w"]= 26,
                         ["h"]= 26
                     },

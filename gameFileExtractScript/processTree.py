@@ -112,8 +112,8 @@ for classInfo in data["trees"].values():
     nodeList = []
     for node in classInfo["nodeList"]:
         nodeData = data["passives"][node['fileID']]
-        nodeData['x'] *= 5
-        nodeData['y'] *= -15
+        nodeData['x'] *= 4
+        nodeData['y'] *= -4
         nodeList.append(nodeData)
         if minPosY > nodeData['y']:
             minPosY = nodeData['y']
@@ -135,40 +135,38 @@ for classInfo in data["trees"].values():
 
         posY = posYMastery + passiveData['y']
 
-        for nbPoint in range(int(passiveData['maxPoints'])):
-            posY += 100
-            passiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint)
-            tree["nodes"][passiveId] = {
-                "skill": passiveId,
-                "name": passiveData["nodeName"] + "#" + str(nbPoint + 1),
-                "x": posX,
-                "y": posY,
-                "stats": [],
-                "reminderText": [
-                ],
-                "in": [],
-                "out": [],
-            }
+        maxPoints = int(passiveData['maxPoints'])
+        passiveId = className + "-" + passiveData["id"]
+        tree["nodes"][passiveId] = {
+            "skill": passiveId,
+            "name": passiveData["nodeName"],
+            "x": posX,
+            "y": posY,
+            "maxPoints": maxPoints,
+            "stats": [],
+            "reminderText": [
+            ],
+            "in": [],
+            "reqPoints": [],
+            "out": [],
+        }
 
-            for statData in passiveData["stats"]:
-                stat = ""
-                if statData["value"]:
-                    stat = statData["value"] + " "
-                stat += statData["statName"]
-                tree["nodes"][passiveId]["stats"].append(stat)
-                # tree["nodes"][passiveId]["stats"].append(get_tree_mod_value(statData.copy()))
+        for statData in passiveData["stats"]:
+            stat = ""
+            if statData["value"]:
+                stat = statData["value"] + " "
+            stat += statData["statName"]
+            tree["nodes"][passiveId]["stats"].append(stat)
+            # tree["nodes"][passiveId]["stats"].append(get_tree_mod_value(statData.copy()))
 
-            if nbPoint == 0:
-                if not passiveData["requirements"]:
-                    tree["nodes"][passiveId]["in"].append(className)
-                else:
-                    for req in passiveData["requirements"]:
-                        reqId = className + "-" + data["passives"][req["node"]["fileID"]]["id"] + "-" + str(
-                            int(req["requirement"]) - 1)
-                        tree["nodes"][passiveId]["in"].append(reqId)
-            else:
-                previousPassiveId = className + "-" + passiveData["id"] + "-" + str(nbPoint - 1)
-                tree["nodes"][passiveId]["in"].append(previousPassiveId)
+        if not passiveData["requirements"]:
+            tree["nodes"][passiveId]["in"].append(className)
+            tree["nodes"][passiveId]["reqPoints"].append(1)
+        else:
+            for req in passiveData["requirements"]:
+                reqId = className + "-" + data["passives"][req["node"]["fileID"]]["id"]
+                tree["nodes"][passiveId]["reqPoints"].append(req["requirement"])
+                tree["nodes"][passiveId]["in"].append(reqId)
 
     minPosX = 0
     minPosY = 0
@@ -177,8 +175,8 @@ for classInfo in data["trees"].values():
             nodeList = []
             for node in skillTreeData["nodeList"]:
                 nodeData = skillTreesData['nodes'][node['fileID']]
-                nodeData['x'] *= 5
-                nodeData['y'] *= -15
+                nodeData['x'] *= 4
+                nodeData['y'] *= -4
                 nodeList.append(nodeData)
                 if minPosX > nodeData['x']:
                     minPosX = nodeData['x']
@@ -193,40 +191,37 @@ for classInfo in data["trees"].values():
                 maxPoints = int(skillData['maxPoints'])
                 if maxPoints == 0:
                     maxPoints = 1
-                for nbPoint in range(maxPoints):
-                    skillId = skillTreeData['treeID'] + "-" + skillData['id'] + "-" + str(nbPoint)
-                    posY += 100
-                    tree["nodes"][skillId] = {
-                        "skill": skillId,
-                        "name": skillData["nodeName"] + "#" + str(nbPoint + 1),
-                        "x": posX,
-                        "y": posY,
-                        "stats": [],
-                        "reminderText": [
-                        ],
-                        "in": [],
-                        "out": [],
-                    }
-                    for statData in skillData["stats"]:
-                        stat = ""
-                        if statData["value"]:
-                            stat = statData["value"] + " "
-                        stat += statData["statName"]
-                        tree["nodes"][skillId]["stats"].append(stat)
-                        # tree["nodes"][skillId]["stats"].append(get_tree_mod_value(statData.copy()))
+                skillId = skillTreeData['treeID'] + "-" + skillData['id']
+                tree["nodes"][skillId] = {
+                    "skill": skillId,
+                    "name": skillData["nodeName"],
+                    "x": posX,
+                    "y": posY,
+                    "maxPoints": maxPoints,
+                    "stats": [],
+                    "reminderText": [
+                    ],
+                    "in": [],
+                    "reqPoints": [],
+                    "out": [],
+                }
+                for statData in skillData["stats"]:
+                    stat = ""
+                    if statData["value"]:
+                        stat = statData["value"] + " "
+                    stat += statData["statName"]
+                    tree["nodes"][skillId]["stats"].append(stat)
+                    # tree["nodes"][skillId]["stats"].append(get_tree_mod_value(statData.copy()))
 
-                    if nbPoint == 0:
-                        if not skillData["requirements"]:
-                            tree["nodes"][skillId]["in"].append(className)
-                        else:
-                            for req in skillData["requirements"]:
-                                reqId = (skillTreeData['treeID'] + "-" +
-                                         skillTreesData["nodes"][req["node"]["fileID"]]["id"] + "-0")
-                                tree["nodes"][skillId]["in"].append(reqId)
-                    else:
-                        previousSkillId = (skillTreeData['treeID'] + "-" + skillData['id'] + "-"
-                                           + str(nbPoint - 1))
-                        tree["nodes"][skillId]["in"].append(previousSkillId)
+                if not skillData["requirements"]:
+                    tree["nodes"][skillId]["in"].append(className)
+                    tree["nodes"][skillId]["reqPoints"].append(1)
+                else:
+                    for req in skillData["requirements"]:
+                        reqId = (skillTreeData['treeID'] + "-" +
+                                 skillTreesData["nodes"][req["node"]["fileID"]]["id"])
+                        tree["nodes"][skillId]["reqPoints"].append(req["requirement"])
+                        tree["nodes"][skillId]["in"].append(reqId)
 
     tree["nodes"] = dict(natsorted(tree["nodes"].items()))
     del classes[className]["skillIds"]
