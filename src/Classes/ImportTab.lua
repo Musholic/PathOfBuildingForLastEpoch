@@ -469,7 +469,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                 local posY = itemData["inventoryPosition"]["y"]
                 local idolPosition = posX + posY * 5
                 if posY > 0 then
-                    idolPosition = idolPosition - 2
+                    idolPosition = idolPosition - 1
                 end
                 if posY == 4 then
                     idolPosition = idolPosition - 1

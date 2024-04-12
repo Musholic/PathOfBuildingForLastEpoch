@@ -681,7 +681,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					gameModeStage = "IMPLICIT"
 				end
 				local modScalar = 1;
-				if self.rarity ~= "UNIQUE" or modLine.crafted then
+				modLine.implicit = modLine.implicit or (not modLine.crafted and #self.implicitModLines < implicitLines)
+				if not modLine.implicit and (self.rarity ~= "UNIQUE" or modLine.crafted) then
 					-- There is no modifier to apply for unique mods
 					modScalar = 1 + self.base.affixEffectModifier
 				end
@@ -717,7 +718,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					modLines = self.scourgeModLines
 				elseif line:find("Requires Class") then
 					modLines = self.classRequirementModLines
-				elseif modLine.implicit or (not modLine.crafted and #self.enchantModLines + #self.scourgeModLines + #self.implicitModLines < implicitLines) then
+				elseif modLine.implicit then
 					modLines = self.implicitModLines
 				elseif modLine.crucible then
 					modLines = self.crucibleModLines
