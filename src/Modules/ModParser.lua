@@ -14,52 +14,6 @@ local function firstToUpper(str)
 	return (str:gsub("^%l", string.upper))
 end
 
--- Radius jewels that modify other nodes
-local function getSimpleConv(srcList, dst, type, remove, factor)
-	return function(node, out, data)
-		local attributes = {["Dex"] = true, ["Int"] = true, ["Str"] = true}
-		if node then
-			for _, src in pairs(srcList) do
-				for _, mod in ipairs(node.modList) do
-					-- do not convert stats from tattoos
-					if mod.name == src and mod.type == type and not (node.isTattoo and attributes[src]) then
-						if remove then
-							out:MergeNewMod(src, type, -mod.value, mod.source, mod.flags, mod.keywordFlags, unpack(mod))
-						end
-						if factor then
-							out:MergeNewMod(dst, type, math.floor(mod.value * factor), mod.source, mod.flags, mod.keywordFlags, unpack(mod))
-						else
-							out:MergeNewMod(dst, type, mod.value, mod.source, mod.flags, mod.keywordFlags, unpack(mod))
-						end
-					end
-				end
-			end
-		end
-	end
-end
-
-local conquerorList = {
-	["xibaqua"]		=	{ id = 1, type = "vaal" },
-	["zerphi"]		=	{ id = 2, type = "vaal" },
-	["doryani"]		=	{ id = 3, type = "vaal" },
-	["ahuana"]		=	{ id = "2_v2", type = "vaal" },
-	["deshret"]		=	{ id = 1, type = "maraketh" },
-	["asenath"]		=	{ id = 2, type = "maraketh" },
-	["nasima"]		=	{ id = 3, type = "maraketh" },
-	["balbala"]		=	{ id = "1_v2", type = "maraketh" },
-	["cadiro"]		=	{ id = 1, type = "eternal" },
-	["victario"]	=	{ id = 2, type = "eternal" },
-	["chitus"]		=	{ id = 3, type = "eternal" },
-	["caspiro"]		=	{ id = "3_v2", type = "eternal" },
-	["kaom"]		=	{ id = 1, type = "karui" },
-	["rakiata"]		=	{ id = 2, type = "karui" },
-	["kiloava"]		=	{ id = 3, type = "karui" },
-	["akoya"]		=	{ id = "3_v2", type = "karui" },
-	["venarius"]	=	{ id = 1, type = "templar" },
-	["dominus"]		=	{ id = 2, type = "templar" },
-	["avarius"]		=	{ id = 3, type = "templar" },
-	["maxarius"]	=	{ id = "1_v2", type = "templar" },
-}
 -- List of modifier forms
 local formList = {
 	["^([%d%.]+)%% increased"] = "INC",
@@ -111,7 +65,6 @@ local formList = {
 	["^you lose ([%d%.]+)%% of (.-) per second"] = "DEGENPERCENT",
 	["^([%d%.]+) (%a+) damage taken per second"] = "DEGEN",
 	["^([%d%.]+) (%a+) damage per second"] = "DEGEN",
-	["^%+([%d%.]+)%% damage"] = "MOREDMG",
 	["^%+([%d%.]+) damage"] = "DMG",
 	["^%+([%d%.]+) (%a+) damage"] = "DMG",
 	["^%+([%d%.]+) (%a+) (%a+) damage"] = "DMG",
@@ -1734,13 +1687,12 @@ local explodeFunc = function(chance, amount, type, ...)
 end
 
 -- List of special modifiers
+local specialQuickFixModList = {
+	["^%+([%d%.]+%%) (Damage)"] = "%1 more Damage",
+	["^%+([%d%.]+%%) (Cast Speed)"] = "%1 increased Cast Speed",
+}
 local specialModList = {
 }
-local oldList = specialModList
-specialModList = { }
-for k, v in pairs(oldList) do
-	specialModList["^"..k.."$"] = v
-end
 
 -- Modifiers that are recognised but unsupported
 local unsupportedModList = {
@@ -1954,6 +1906,10 @@ local function parseMod(line, order)
 		end
 	end
 
+	for pattern, replacement in pairs(specialQuickFixModList) do
+		line = line:gsub(pattern, replacement)
+	end
+
 	-- Check for add-to-cluster-jewel special
 	local addToCluster = line:match("^Added Small Passive Skills also grant: (.+)$")
 	if addToCluster then
@@ -2033,8 +1989,6 @@ local function parseMod(line, order)
 			return nil, line
 		end
 		modName, line = scan(line, modNameList, true)
-	elseif modForm == "MOREDMG" then
-		modName, line = scan("damage " .. line, modNameList, true)
 	else
 		modName, line = scan(line, modNameList, true)
 	end
@@ -2058,8 +2012,6 @@ local function parseMod(line, order)
 		modValue = -modValue
 		modType = "INC"
 	elseif modForm == "MORE" then
-		modType = "MORE"
-	elseif modForm == "MOREDMG" then
 		modType = "MORE"
 	elseif modForm == "LESS" then
 		modValue = -modValue
