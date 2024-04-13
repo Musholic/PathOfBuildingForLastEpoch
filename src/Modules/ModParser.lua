@@ -1669,6 +1669,10 @@ local modTagList = {
 	["for each spider's web on the enemy"] = { tag = { type = "Multiplier", actor = "enemy", var = "Spider's WebStack" } },
 }
 
+for i,stat in ipairs(LongAttributes) do
+	modTagList["per " .. stat:lower()] = { tag = { type = "PerStat", stat = Attributes[i] } }
+end
+
 local mod = modLib.createMod
 local function flag(name, ...)
 	return mod(name, "FLAG", true, ...)
