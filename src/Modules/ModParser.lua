@@ -16,7 +16,7 @@ end
 
 -- List of modifier forms
 local formList = {
-	["^([%d%.]+)%% increased"] = "INC",
+	["^+?([%d%.]+)%% increased"] = "INC",
 	["^(%d+)%% faster"] = "INC",
 	["^(%d+)%% reduced"] = "RED",
 	["^(%d+)%% slower"] = "RED",
@@ -546,7 +546,7 @@ local modNameList = {
 	["fire damage"] = "FireDamage",
 	["chaos damage"] = "ChaosDamage",
 	["non-chaos damage"] = "NonChaosDamage",
-	["elemental damage"] = "ElementalDamage",
+	["elemental damage"] = {"FireDamage", "ColdDamage", "LightningDamage"},
 	-- Other damage forms
 	["attack damage"] = { "Damage", flags = ModFlag.Attack },
 	["attack physical damage"] = { "PhysicalDamage", flags = ModFlag.Attack },
@@ -819,7 +819,7 @@ local modFlagList = {
 	["with lightning skills"] = { keywordFlags = KeywordFlag.Lightning },
 	["with cold skills"] = { keywordFlags = KeywordFlag.Cold },
 	["with fire skills"] = { keywordFlags = KeywordFlag.Fire },
-	["with elemental skills"] = { keywordFlags = bor(KeywordFlag.Lightning, KeywordFlag.Cold, KeywordFlag.Fire) },
+	["with elemental spells"] = { keywordFlags = bor(KeywordFlag.Lightning, KeywordFlag.Cold, KeywordFlag.Fire) },
 	["with chaos skills"] = { keywordFlags = KeywordFlag.Chaos },
 	["with physical skills"] = { keywordFlags = KeywordFlag.Physical },
 	["with channelling skills"] = { tag = { type = "SkillType", skillType = SkillType.Channel } },
@@ -1062,6 +1062,7 @@ local preFlagList = {
 
 -- List of modifier tags
 local modTagList = {
+	[". this effect is doubled if you have (%d+) or more maximum mana."] = function(num) return { tag = { type = "PerStat", stat = "Mana", div = num, limit = 2, baseMult = 1 } } end,
 	["on enemies"] = { },
 	["while active"] = { },
 	["for (%d+) seconds"] = { },

@@ -63,4 +63,21 @@ describe("TestModParse", function()
         assert.are.equals(10, build.configTab.modList:Sum("MORE", nil, "Damage"))
     end)
 
+    it("effect doubled", function()
+        build.configTab.input.customMods = "+40% Increased fire damage. This effect is doubled if you have 300 or more maximum mana."
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+        build.skillsTab:SelSkill(1, "fi9")
+        runCallback("OnFrame")
+
+        assert.are.equals(51, build.calcsTab.calcsOutput.Mana)
+        assert.are.equals(40, build.calcsTab.mainEnv.player.mainSkill.skillModList:Sum("INC", nil, "FireDamage"))
+
+        build.configTab.input.customMods = "+900 maximum mana\n\z+40% Increased fire damage. This effect is doubled if you have 300 or more maximum mana."
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+
+        assert.are.equals(951, build.calcsTab.calcsOutput.Mana)
+        assert.are.equals(80, build.calcsTab.mainEnv.player.mainSkill.skillModList:Sum("INC", nil, "FireDamage"))
+    end)
 end)
