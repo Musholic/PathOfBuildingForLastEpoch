@@ -373,9 +373,6 @@ function ModStoreClass:EvalMod(mod, cfg)
 				base = target:GetStat(tag.stat, cfg)
 			end
 			local mult = m_floor(base / (tag.div or 1) + 0.0001)
-			if tag.baseMult then
-				mult = mult + tag.baseMult
-			end
 			local limitTotal
 			if tag.limit or tag.limitVar then
 				local limit = tag.limit or self:GetMultiplier(tag.limitVar, cfg)
@@ -466,7 +463,11 @@ function ModStoreClass:EvalMod(mod, cfg)
 				threshold = threshold * (thresholdPercent and thresholdPercent / 100 or 1)
 			end
 			if (tag.upper and stat > threshold) or (not tag.upper and stat < threshold) then
-				return
+				if not tag.mult then
+					return
+				end
+			elseif tag.mult then
+				value = value * tag.mult
 			end
 		elseif tag.type == "DistanceRamp" then
 			if not cfg or not cfg.skillDist then

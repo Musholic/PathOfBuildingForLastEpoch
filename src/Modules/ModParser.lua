@@ -1062,7 +1062,7 @@ local preFlagList = {
 
 -- List of modifier tags
 local modTagList = {
-	[". this effect is doubled if you have (%d+) or more maximum mana."] = function(num) return { tag = { type = "PerStat", stat = "Mana", div = num, limit = 2, baseMult = 1 } } end,
+	[". this effect is doubled if you have (%d+) or more maximum mana."] = function(num) return { tag = { type = "StatThreshold", stat = "Mana", threshold = num, mult = 2 } } end,
 	["on enemies"] = { },
 	["while active"] = { },
 	["for (%d+) seconds"] = { },
