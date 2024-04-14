@@ -235,6 +235,8 @@ for classInfo in data["trees"].values():
             "y": posY,
             "maxPoints": maxPoints,
             "stats": [],
+            "notScalingStats": [],
+            "noScalingPointThreshold": int(passiveData['noScalingPointThreshold']),
             "reminderText": [
             ],
             "in": [],
@@ -247,7 +249,10 @@ for classInfo in data["trees"].values():
             if statData["value"]:
                 stat = statData["value"] + " "
             stat += statData["statName"]
-            tree["nodes"][passiveId]["stats"].append(stat)
+            if statData['noScaling'] == '1':
+                tree["nodes"][passiveId]["notScalingStats"].append(stat)
+            else:
+                tree["nodes"][passiveId]["stats"].append(stat)
             # tree["nodes"][passiveId]["stats"].append(get_tree_mod_value(statData.copy()))
 
         if not passiveData["requirements"]:

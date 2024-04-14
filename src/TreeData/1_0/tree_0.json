@@ -142,6 +142,8 @@
                 "+1 Strength",
                 "4% Increased Health Regeneration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -164,6 +166,8 @@
                 "+3% Lightning Resistance",
                 "+3% Cold Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -185,6 +189,8 @@
                 "+10 Health",
                 "5% Increased Minion Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -204,6 +210,8 @@
                 "2% Increased Health",
                 "8 Health Restored"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -225,6 +233,8 @@
                 "+5% Increased Minion Damage",
                 "50% Percent Of Potion Healing Received By Minions"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -248,6 +258,8 @@
                 "5% Minion Increased Melee Damage",
                 "0.5% Minion Melee Damage Leeched as Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-0"
@@ -269,6 +281,8 @@
                 "7% Increased Spell Damage",
                 "7% Increased Minion Spell Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-1"
@@ -292,6 +306,8 @@
                 "4% Increased Lightning Damage",
                 "Doubled while you have a minion"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -308,9 +324,12 @@
             "y": 307.600096,
             "maxPoints": 5,
             "stats": [
-                "Hunter's Restoration Also Heals Minions",
                 "11% Increased Minion Damage Granted"
             ],
+            "notScalingStats": [
+                "Hunter's Restoration Also Heals Minions"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-3"
@@ -331,6 +350,8 @@
                 "10% Increased Companion Health",
                 "+5% Companion Revival Speed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-4"
@@ -351,6 +372,8 @@
                 "Can Equip Swords in Offhand",
                 "+9% Damage Taken While Dual Wielding"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -370,6 +393,8 @@
                 "+1 Strength",
                 "-2% Damage Taken From Nearby Enemies"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -389,6 +414,8 @@
                 "7% Increased Melee Damage",
                 "7% Increased Minion Melee Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -412,6 +439,8 @@
                 "85% More Companion Damage",
                 "Limited To One Companion"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -431,6 +460,8 @@
                 "25% Increased Next Melee Attack Damage",
                 "Aspect Of The Shark Granted On Melee Attack"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-13"
@@ -453,6 +484,8 @@
                 "1.5% Minion Melee Damage Leeched as Health",
                 "20% Increased Minion Health Leech"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-13"
@@ -473,6 +506,8 @@
                 "+10 Companion Dodge Rating",
                 "10% Increased Companion Revive Range"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -492,6 +527,8 @@
                 "5% Increased Physical Damage Granted",
                 "+5% Bleed Chance Granted"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-19"
@@ -512,6 +549,8 @@
             "stats": [
                 "1 Aspect Of The Boar Duration When Hit (Seconds)"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -535,6 +574,8 @@
                 "10% Increased Minion Dodge Rating",
                 "10% Haste Chance On Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -551,10 +592,13 @@
             "y": 2830.400101035156,
             "maxPoints": 8,
             "stats": [
-                "Casting Companion Abilities Grants Aspect Of The Lynx",
                 "5% Increased Critical Strike Chance",
                 "1 Aspect Of The Lynx Duration (Seconds)"
             ],
+            "notScalingStats": [
+                "Casting Companion Abilities Grants Aspect Of The Lynx"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -578,6 +622,8 @@
                 "+4% Minion Movespeed",
                 "5% Increased Companion Revive Speed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -598,6 +644,8 @@
                 "+8% Minion Melee Poison Chance",
                 "+8% Poison Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -618,6 +666,8 @@
                 "+12 Companion Health",
                 "20 Heal Amount On Companion Ability Use"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -636,6 +686,8 @@
             "stats": [
                 "+20% Aspect Of The Shark Armour Shred Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-15"
@@ -657,6 +709,8 @@
                 "15% Increased Aspect Of The Viper Duration",
                 "+4% Poison Penetration with Aspects of the Viper"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-58"
@@ -677,6 +731,8 @@
                 "+10 Endurance Threshold",
                 "Your Endurance Also Applies to Companions"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -697,6 +753,8 @@
                 "+10% Companion Critical Multiplier",
                 "+10% Aspect Of The Lynx Critical Multiplier"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-21"
@@ -719,6 +777,8 @@
                 "4% Physical Resistance",
                 "4% Minion Physical Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -738,6 +798,8 @@
                 "10 Max Aspect Of The Shark Stacks",
                 "-60% Less Aspect Of The Shark Effect"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-109"
@@ -756,6 +818,8 @@
             "stats": [
                 "3% Damage Leeched as Health on Crit with Aspect of the Lynx"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-28"
@@ -776,6 +840,8 @@
                 "75% More Companion Damage",
                 "Limited To One Companion"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -794,6 +860,8 @@
             "stats": [
                 "10% Increased Aspect Buff Duration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -814,6 +882,8 @@
                 "+1 Melee Physical Damage",
                 "+1 Minion Melee Physical Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -832,6 +902,8 @@
             "stats": [
                 "+10% Increased Totem Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-40"
@@ -849,10 +921,13 @@
             "maxPoints": 8,
             "stats": [
                 "5% Increased Damage",
-                "5% Increased Minion Damage",
+                "5% Increased Minion Damage"
+            ],
+            "notScalingStats": [
                 "10% Increased Cooldown Recovery Speed for Fury Leap",
                 "10% Increased Cooldown Recovery Speed for Crowstorm"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -872,6 +947,8 @@
                 "7% Increased Totem Cast Speed",
                 "7% Haste Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -891,6 +968,8 @@
                 "5% Increased Attack Speed With Active Totem",
                 "5% Increased Cast Speed With Active Totem"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-40"
@@ -909,6 +988,8 @@
             "stats": [
                 "+6 Next Melee Attack Lightning Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-65"
@@ -930,6 +1011,8 @@
                 "25 Armor With Active Totem",
                 "3% Increased Mana Regen With Active Totem"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -952,6 +1035,8 @@
                 "+1 Attunement",
                 "1% Penetration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -972,6 +1057,8 @@
                 "5% Increased Physical Damage",
                 "+5 Dodge Rating"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -996,6 +1083,8 @@
                 "5% Increased Minion Lightning Damage",
                 "+5% Minion Lightning Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1018,6 +1107,8 @@
                 "+10% Freeze Rate Multiplier",
                 "+10% Cold Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-42"
@@ -1037,6 +1128,8 @@
                 "+2 Spell Damage",
                 "+2 Minion Spell Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1056,6 +1149,8 @@
                 "10% Increased Minion Cold Damage",
                 "10% Increased Minion Lightning Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1075,6 +1170,8 @@
                 "3% Resistance Per Active Totem",
                 "3% Elemental Resistance Per Totem"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1097,6 +1194,8 @@
                 "+5 Health",
                 "+5 Mana"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-50"
@@ -1113,9 +1212,12 @@
             "y": 5660.800141035156,
             "maxPoints": 8,
             "stats": [
-                "+1 Attunement",
+                "+1 Attunement"
+            ],
+            "notScalingStats": [
                 "2% Increased Mana Regen Per 3 Attunement"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1134,9 +1236,12 @@
             "y": 5353.200104,
             "maxPoints": 8,
             "stats": [
-                "1 Strength",
+                "1 Strength"
+            ],
+            "notScalingStats": [
                 "+40 Next Attack Cold Damage"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1157,6 +1262,8 @@
                 "10% Chance to Chill Attackers When Hit",
                 "10% Chance to Shock Attackers When Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1175,6 +1282,8 @@
             "stats": [
                 "4% Increased Spell Damage Per Active Totem"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1193,6 +1302,8 @@
             "stats": [
                 "+1 Maximum Companions"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1211,6 +1322,8 @@
             "stats": [
                 "+15% Physical Penetration with Bleed with Aspect of the Boar"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-18"
@@ -1230,6 +1343,8 @@
                 "+3% Damage Reduction Granted",
                 "15% Increased Health Regeneration Granted"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-19"
@@ -1249,6 +1364,8 @@
                 "5% Aspect Of The Shark Chance On Kill",
                 "+7 Health Gain On Kill"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1272,6 +1389,8 @@
                 "5% Increased Companion Melee Attack Speed",
                 "3% Aspect Of The Viper Chance On Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1292,6 +1411,8 @@
             "stats": [
                 "Aspect Of The Shark Chance On Hit Against Rares And Bosses"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-57"
@@ -1309,9 +1430,12 @@
             "maxPoints": 5,
             "stats": [
                 "+1 Melee Damage",
-                "+1 Spell Damage",
+                "+1 Spell Damage"
+            ],
+            "notScalingStats": [
                 "25% Chance To Cast Storm Bolt When Hit"
             ],
+            "noScalingPointThreshold": 4,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1330,9 +1454,12 @@
             "stats": [
                 "+10 Health",
                 "+5% Shock Chance On Hit",
-                "+5% Chill Chance On Hit",
+                "+5% Chill Chance On Hit"
+            ],
+            "notScalingStats": [
                 "5 Mana Gained On Gathering Storm Hit"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1353,6 +1480,8 @@
                 "+10 Stun Avoidance",
                 "10% Increased Stun Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1374,6 +1503,8 @@
                 "+2 Spell Lightning Damage",
                 "+2 Minion Spell Lightning Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-43"
@@ -1392,6 +1523,8 @@
             "stats": [
                 "+2 Cold Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-42"
@@ -1410,6 +1543,8 @@
             "stats": [
                 "10% Increased Elemental Melee Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1430,6 +1565,8 @@
             "stats": [
                 "4% Increased Melee Damage Per Active Totem"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-48"
@@ -1446,9 +1583,12 @@
             "y": 3445.60012,
             "maxPoints": 4,
             "stats": [
-                "Companions Gain Aspect Of The Shark",
                 "15% Increased Aspect Of The Shark Duration"
             ],
+            "notScalingStats": [
+                "Companions Gain Aspect Of The Shark"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-25"
@@ -1465,9 +1605,12 @@
             "y": 6276.00016,
             "maxPoints": 5,
             "stats": [
-                "10% Chance To Cast Storm Bolt",
+                "10% Chance To Cast Storm Bolt"
+            ],
+            "notScalingStats": [
                 "10% Attack Speed"
             ],
+            "noScalingPointThreshold": 4,
             "reminderText": [],
             "in": [
                 "Primalist-39"
@@ -1489,6 +1632,8 @@
                 "8% Chance To Cast Storm Bolt On Spell Cast",
                 "20% Chance To Cast Storm Bolt Every Second While Channelling"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1508,9 +1653,12 @@
             "maxPoints": 8,
             "stats": [
                 "3% Increased Area for Area Skills",
-                "1% Less Damage Taken from Shocked Enemies",
+                "1% Less Damage Taken from Shocked Enemies"
+            ],
+            "notScalingStats": [
                 "20% Chance for Indirect Storm Bolt Casts to Doublecast"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist-69",
@@ -1530,9 +1678,12 @@
             "maxPoints": 7,
             "stats": [
                 "+9 Health",
-                "+3 Mana",
+                "+3 Mana"
+            ],
+            "notScalingStats": [
                 "Mana Or Rage Cost As Health On Spell Cast"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1550,9 +1701,12 @@
             "maxPoints": 10,
             "stats": [
                 "10% Increased Healing",
-                "10% Increased Minion Healing",
+                "10% Increased Minion Healing"
+            ],
+            "notScalingStats": [
                 "Eterra's Blessing On Nearby Ally On Spell Or Movement Skill Use"
             ],
+            "noScalingPointThreshold": 8,
             "reminderText": [],
             "in": [
                 "Primalist-98"
@@ -1576,6 +1730,8 @@
                 "7% Increased Poison Damage",
                 "7% Increased Minion Poison Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1597,6 +1753,8 @@
                 "7% Increased Damage Over Time While Transformed",
                 "3% Less Damage Over Tme Taken In Human Form"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1616,6 +1774,8 @@
                 "+10% Melee Bleed Chance",
                 "+10% Spell Poison Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-73"
@@ -1636,6 +1796,8 @@
                 "4% Increased Armor",
                 "+12 Damage Reflect"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-89"
@@ -1657,6 +1819,8 @@
                 "30% Increased Damage With An Active Companion",
                 "75 Armour With An Active Companion"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-84"
@@ -1676,10 +1840,13 @@
             "maxPoints": 5,
             "stats": [
                 "+3% Attack And Cast Speed",
-                "+3% Minion Attack And Cast Speed",
+                "+3% Minion Attack And Cast Speed"
+            ],
+            "notScalingStats": [
                 "+10% Summoned Spriggan Movement Speed",
                 "+10% Spriggan Form Movement Speed"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1697,9 +1864,12 @@
             "maxPoints": 5,
             "stats": [
                 "10% Increased Minion Health",
-                "10% Increased Minion Healing",
+                "10% Increased Minion Healing"
+            ],
+            "notScalingStats": [
                 "10% Chance To Summon Healing Totem When Hit"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist-72"
@@ -1719,6 +1889,8 @@
                 "6% Increased Damage While Transformed",
                 "6% Reduced Rage Decay"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1737,9 +1909,12 @@
             "y": 7876.00016,
             "maxPoints": 5,
             "stats": [
-                "10% Increased Crit Chance",
+                "10% Increased Crit Chance"
+            ],
+            "notScalingStats": [
                 "+4% Health Leech On Crit"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1759,10 +1934,13 @@
                 "5% Increased Cold Damage",
                 "5% Increased Minion Cold Damage",
                 "+10% Freeze Rate Multiplier",
-                "+10% Minion Freeze Rate Multiplier",
+                "+10% Minion Freeze Rate Multiplier"
+            ],
+            "notScalingStats": [
                 "+40% Frostbite Chance",
                 "+40% Minion Frostbite Chance"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist-98"
@@ -1782,6 +1960,8 @@
                 "8% Increased Minion Damage",
                 "8% Increased Minion Healing"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1801,9 +1981,12 @@
             "y": 8798.800216,
             "maxPoints": 6,
             "stats": [
-                "100 Healing For You And Your Minions On Transform",
+                "100 Healing For You And Your Minions On Transform"
+            ],
+            "notScalingStats": [
                 "Shapeshifter Applies To Minions On Transform"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist-93"
@@ -1820,9 +2003,12 @@
             "y": -615.19996,
             "maxPoints": 5,
             "stats": [
-                "20% Increased Totem Health",
+                "20% Increased Totem Health"
+            ],
+            "notScalingStats": [
                 "Totems Are Immune To Poison Damage"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-115"
@@ -1840,9 +2026,12 @@
             "maxPoints": 8,
             "stats": [
                 "8% Increased Health Regen",
-                "3% Increased Mana Regen",
+                "3% Increased Mana Regen"
+            ],
+            "notScalingStats": [
                 "+10 Health Regen"
             ],
+            "noScalingPointThreshold": 6,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1859,9 +2048,12 @@
             "y": 9106.4002,
             "maxPoints": 10,
             "stats": [
-                "+1 Attunement",
+                "+1 Attunement"
+            ],
+            "notScalingStats": [
                 "+3% Crit Avoidance Per 5 Attunement"
             ],
+            "noScalingPointThreshold": 8,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1879,9 +2071,12 @@
             "maxPoints": 7,
             "stats": [
                 "+2% Endurance",
-                "+15 Armor",
+                "+15 Armor"
+            ],
+            "notScalingStats": [
                 "+300 Minion Armor (doubled for Locusts)"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1903,9 +2098,12 @@
                 "+1 Melee Physical Damage",
                 "+1 Spell Physical Damage",
                 "+1 Minion Melee Physical Damage",
-                "+1 Minion Spell Physical Damage",
+                "+1 Minion Spell Physical Damage"
+            ],
+            "notScalingStats": [
                 "+25% Locusts Armor Shred Chance"
             ],
+            "noScalingPointThreshold": 8,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1925,6 +2123,8 @@
                 "+1 Spell Damage",
                 "+4 Companion Spell Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-78"
@@ -1944,6 +2144,8 @@
                 "15% Increased Crit Chance With Buff",
                 "+10% Critical Multiplier With Buff"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-93"
@@ -1960,10 +2162,13 @@
             "y": 8798.800216,
             "maxPoints": 8,
             "stats": [
-                "+2 Shapeshifter Duration On Transform (seconds)",
+                "+2 Shapeshifter Duration On Transform (seconds)"
+            ],
+            "notScalingStats": [
                 "50% Increased Armor With Buff",
                 "50% Increased Damage With Buff"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -1983,11 +2188,14 @@
             "y": 9106.4002,
             "maxPoints": 5,
             "stats": [
-                "1 Max Stacks",
+                "1 Max Stacks"
+            ],
+            "notScalingStats": [
                 "4% Less Hit Damage Taken Per Stack",
                 "Lose A Stack When Hit",
                 "Lose All Stacks After 10 Seconds Of Inactivity"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2005,9 +2213,12 @@
             "maxPoints": 7,
             "stats": [
                 "+1 Attunement",
-                "+1 Strength",
+                "+1 Strength"
+            ],
+            "notScalingStats": [
                 "+1 All Attributes"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2029,6 +2240,8 @@
                 "7% Increased Healing",
                 "7% Increased Minion Healing"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2048,9 +2261,12 @@
             "y": 8491.200181035156,
             "maxPoints": 10,
             "stats": [
-                "15% Increased Crit Chance",
+                "15% Increased Crit Chance"
+            ],
+            "notScalingStats": [
                 "+3 Rage Gain On Crit"
             ],
+            "noScalingPointThreshold": 8,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2068,9 +2284,12 @@
             "maxPoints": 10,
             "stats": [
                 "+6% Poison Chance",
-                "+6% Minion Poison Chance",
+                "+6% Minion Poison Chance"
+            ],
+            "notScalingStats": [
                 "36% Chance To Summon A Vine On Kill"
             ],
+            "noScalingPointThreshold": 8,
             "reminderText": [],
             "in": [
                 "Primalist-84"
@@ -2090,6 +2309,8 @@
                 "+2 Melee Physical Damage",
                 "+2 Minion Melee Physical Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2109,6 +2330,8 @@
                 "18% Increased Stun Chance",
                 "18% Minion Increased Stun Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-62"
@@ -2128,6 +2351,8 @@
                 "+30% Freeze Rate Multiplier",
                 "+30% Minion Freeze Rate Multiplier"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2149,6 +2374,8 @@
                 "+15 Health",
                 "+1% Maximum Health Gained As Endurance Threshold"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2165,10 +2392,13 @@
             "y": 5045.60012,
             "maxPoints": 4,
             "stats": [
-                "Random Totem Healed To Full On Frozen Kill",
-                "Random Totem Duration Refreshed On Frozen Kill",
                 "+25% Increased Totem Damage Granted"
             ],
+            "notScalingStats": [
+                "Random Totem Healed To Full On Frozen Kill",
+                "Random Totem Duration Refreshed On Frozen Kill"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-103"
@@ -2185,10 +2415,13 @@
             "y": 5353.200104,
             "maxPoints": 10,
             "stats": [
-                "Totems Cannot Be Stunned",
                 "+20 Totem Health",
                 "+20 Totem Armor"
             ],
+            "notScalingStats": [
+                "Totems Cannot Be Stunned"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2208,6 +2441,8 @@
                 "+1 Strength",
                 "4% Aspect Of The Boar Chance On Melee Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2227,6 +2462,8 @@
                 "+15% Aspect Of The Shark Effect",
                 "15% Increased Aspect Of The Shark Duration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-57"
@@ -2247,6 +2484,8 @@
             "stats": [
                 "No Rage Decay Out Of Combat"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-81"
@@ -2263,10 +2502,13 @@
             "y": 7876.00016,
             "maxPoints": 10,
             "stats": [
-                "+1 Strength",
+                "+1 Strength"
+            ],
+            "notScalingStats": [
                 "1% Increased Armor Per Strength In Human Or Spriggan",
                 "1% Increased Melee Damage Per Strength In Bear Or Swarmblade"
             ],
+            "noScalingPointThreshold": 8,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2284,10 +2526,13 @@
             "maxPoints": 8,
             "stats": [
                 "+2% Cold Penetration",
-                "+2% Minion Cold Penetration",
+                "+2% Minion Cold Penetration"
+            ],
+            "notScalingStats": [
                 "16% Increased Locusts Attack, Cast And Move Speed",
                 "16% Increased Crows Attack, Cast And Move Speed"
             ],
+            "noScalingPointThreshold": 6,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2307,6 +2552,8 @@
                 "15% More Melee Damage on Low Health",
                 "4% Less Damage Taken on Low Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist"
@@ -2327,6 +2574,8 @@
                 "+1 Totem Spell Damage",
                 "Tripled while using an Axe"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-6"
@@ -2349,6 +2598,8 @@
                 "+4 Melee Physical Damage with a Two Handed Axe",
                 "+3 Melee Lightning Damage with a Staff"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Primalist-5"
@@ -2365,9 +2616,12 @@
             "y": 9106.4002,
             "maxPoints": 7,
             "stats": [
-                "5% Increased Damage",
+                "5% Increased Damage"
+            ],
+            "notScalingStats": [
                 "+7% Elemental Penetration While Transformed"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Primalist"

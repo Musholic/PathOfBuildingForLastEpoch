@@ -107,6 +107,7 @@ DamageTypes = {
 }
 
 Attributes = {"Str","Dex","Int","Vit","Att"}
+LongAttributes = {"Strength","Dexterity","Intelligence","Vitality","Attunement"}
 
 DamageTypesColored = {
 	colorCodes.PHYSICAL.."Physical",

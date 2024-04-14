@@ -113,6 +113,8 @@
                 "+20 Armor",
                 "+20 Minion Armor"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -132,6 +134,8 @@
                 "+1 Intelligence",
                 "+5% Necrotic Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -151,6 +155,8 @@
                 "6% Increased Damage",
                 "6% Increased Minion Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -169,9 +175,12 @@
             "y": 615.20008,
             "maxPoints": 10,
             "stats": [
-                "10% Chance To Gain Ward On Nearby Death",
                 "13 Ward Gained On Nearby Death"
             ],
+            "notScalingStats": [
+                "10% Chance To Gain Ward On Nearby Death"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -193,6 +202,8 @@
                 "+1 Vitality",
                 "+9% Increased Minion Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -211,10 +222,13 @@
             "y": 307.600096,
             "maxPoints": 6,
             "stats": [
-                "Summons A Revenant",
                 "50% More Revenant Damage",
                 "50% More Revenant Health"
             ],
+            "notScalingStats": [
+                "Summons A Revenant"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-55"
@@ -234,6 +248,8 @@
                 "12% Increased Damage",
                 "1% Health Drained Per Second"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-2"
@@ -256,6 +272,8 @@
                 "+4% Necrotic Resistance",
                 "+4% Poison Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-3"
@@ -275,6 +293,8 @@
                 "8% Chance To Poison Nearby Enemies On Kill",
                 "+4% Poison Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -296,6 +316,8 @@
                 "+5 Health",
                 "1 Hunger Duration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -316,6 +338,8 @@
                 "2% Increased Minion Attack Speed",
                 "2% Increased Minion Cast Speed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -334,6 +358,8 @@
             "stats": [
                 "+1 Maximum Number Of Skeletons"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-16"
@@ -350,9 +376,12 @@
             "y": 2522.800064,
             "maxPoints": 5,
             "stats": [
-                "20% Percent Of Minion's Current HP Consumed",
+                "20% Percent Of Minion's Current HP Consumed"
+            ],
+            "notScalingStats": [
                 "Kills Targeted Minion"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-15"
@@ -376,6 +405,8 @@
                 "6% Increased  Minion Physical Damage",
                 "6% Increased Minion Necrotic Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -397,6 +428,8 @@
                 "+7% Ward Retention",
                 "7 Ward Granted On Minion Death"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -417,6 +450,8 @@
             "stats": [
                 "15% Increased Minion Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-21"
@@ -437,6 +472,8 @@
             "stats": [
                 "13# Ward Gain Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -456,6 +493,8 @@
                 "10% Excess Healing Granted As Ward",
                 "100 Maximum Ward Granted"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-13"
@@ -474,6 +513,8 @@
             "stats": [
                 "10% Chance To Mark Nearby Enemy On Minion Death"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -491,9 +532,12 @@
             "maxPoints": 3,
             "stats": [
                 "4% Skeleton Vanguard on Kill Chance",
-                "+4 Skeleton Vanguards Melee Physical Damage",
+                "+4 Skeleton Vanguards Melee Physical Damage"
+            ],
+            "notScalingStats": [
                 "3 Vanguard Limit"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -513,6 +557,8 @@
                 "10% Increased Health Regen",
                 "+2 Minion Health Regen Per Second"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -533,6 +579,8 @@
             "stats": [
                 "Health Leech -> Increased Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-30"
@@ -552,6 +600,8 @@
                 "3% Increased Health",
                 "3% Reduced Minion Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -574,6 +624,8 @@
                 "+1 Vitality",
                 "+2% Minion All Resistances"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-23"
@@ -597,6 +649,8 @@
                 "15% Increased Minion Necrotic Damage",
                 "15% Increased Minion Elemental Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-76"
@@ -619,6 +673,8 @@
                 "+7% Minion Melee Poison Chance",
                 "+7% Minion Poison Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-62"
@@ -638,6 +694,8 @@
                 "+1 Intelligence",
                 "5% Increased Minion Critical Strike Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-63"
@@ -660,6 +718,8 @@
                 "+7% Minion Chill Chance",
                 "7% Increased Minion Cold Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-27",
@@ -678,9 +738,12 @@
             "y": 6276.00016,
             "maxPoints": 8,
             "stats": [
-                "5% Increased Damage",
+                "5% Increased Damage"
+            ],
+            "notScalingStats": [
                 "Effect Tripled At Low Life"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -700,6 +763,8 @@
                 "+5 Health",
                 "0.5% Spell Damage Leeched as Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -719,9 +784,12 @@
             "maxPoints": 2,
             "stats": [
                 "5% Skeleton Vanguard on Kill Chance",
-                "30% Skeleton Vanguards Increased Health",
+                "30% Skeleton Vanguards Increased Health"
+            ],
+            "notScalingStats": [
                 "3 Vanguard Limit"
             ],
+            "noScalingPointThreshold": 2,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -743,6 +811,8 @@
                 "+7% Bleed Chance",
                 "+7% Minion Bleed Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -761,6 +831,8 @@
             "stats": [
                 "9 Ward Granted"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -783,6 +855,8 @@
                 "7% Increased Damage Over Time",
                 "7% Increased Minion Damage Over Time"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -801,6 +875,8 @@
             "stats": [
                 "2% Kill Threshold"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-31"
@@ -819,6 +895,8 @@
             "stats": [
                 "Vitality -> Ward"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-33"
@@ -837,6 +915,8 @@
             "stats": [
                 "10% Reduced Soul Barrier Cooldown"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-33"
@@ -856,6 +936,8 @@
                 "+2 Intelligence",
                 "5% Reduced Health Regeneration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -876,6 +958,8 @@
                 "4% Increased Health Regen",
                 "4% Increased Minion Health Regen"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -895,6 +979,8 @@
                 "+5 Mana",
                 "+5% Ward Retention"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -916,6 +1002,8 @@
                 "+2 Minion Spell Necrotic Damage",
                 "+2 Minion Melee Necrotic Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -935,6 +1023,8 @@
                 "5% Reduced Health Drain",
                 "10% Chance To Cast Wave Of Blood When Stunned"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -953,6 +1043,8 @@
             "stats": [
                 "10% Increased Damage Over Time"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -973,6 +1065,8 @@
                 "5% Less Necrotic Damage Taken",
                 "1% Current Health Drained Per Second On Potion Use"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -992,6 +1086,8 @@
                 "+13% Poison Chance",
                 "3% Increased Poison Damage Taken"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1010,6 +1106,8 @@
             "stats": [
                 "10% Increased Spell Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1029,6 +1127,8 @@
                 "+2 Intelligence",
                 "1% Current Health Drained Per Second"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1048,6 +1148,8 @@
                 "1% Damage Leeched as Health",
                 "5% Increased Health Leech"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1065,10 +1167,13 @@
             "maxPoints": 8,
             "stats": [
                 "4% Increased Mana Regen",
-                "13% Chance Per Curse to gain Mana on hit",
-                "13 Mana Gain ",
                 "3 Effect Cooldown (seconds)"
             ],
+            "notScalingStats": [
+                "13% Chance Per Curse to gain Mana on hit",
+                "13 Mana Gain "
+            ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1088,9 +1193,12 @@
                 "6% Increased Fire Damage",
                 "+6% Ignite Chance with Fire Skills",
                 "6% Increased Necrotic Damage",
-                "+6% Damned Chance with Necrotic Skills",
+                "+6% Damned Chance with Necrotic Skills"
+            ],
+            "notScalingStats": [
                 "Applies to Minions"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1108,9 +1216,12 @@
             "maxPoints": 8,
             "stats": [
                 "4% Increased Damage Over Time",
-                "+4 Health",
+                "+4 Health"
+            ],
+            "notScalingStats": [
                 "4% More Damage over Time to Cursed"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1130,9 +1241,12 @@
             "maxPoints": 8,
             "stats": [
                 "+10 Armor",
-                "+10 Health",
+                "+10 Health"
+            ],
+            "notScalingStats": [
                 "3% More Armor per Curse on Target"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1152,9 +1266,12 @@
             "maxPoints": 5,
             "stats": [
                 "+4% Increased Minion Attack Speed",
-                "+4% Increased Minion Cast Speed",
+                "+4% Increased Minion Cast Speed"
+            ],
+            "notScalingStats": [
                 "Applies To Player For 10 Seconds On Minion Skill Use"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1178,6 +1295,8 @@
                 "5% Increased Minion Health Regen",
                 "5% Reduced Health Drain"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-6",
@@ -1201,6 +1320,8 @@
                 "14% Increased Damage",
                 "1% Current Health Drained Per Second"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1220,6 +1341,8 @@
                 "+1 Intelligence",
                 "2% Increased Mana Regen"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1240,6 +1363,8 @@
                 "5% Increased Minion Armor",
                 "5 Minion Damage Reflected"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1260,6 +1385,8 @@
                 "+1 Minion Bow Physical Damage",
                 "5% Increased Minion Physical Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1277,9 +1404,12 @@
             "maxPoints": 5,
             "stats": [
                 "5% Summoned Skeleton Physical Penetration",
-                "5% Summoned Skeleton Poison Penetration",
+                "5% Summoned Skeleton Poison Penetration"
+            ],
+            "notScalingStats": [
                 "+1 Maximum Number Of Skeletons"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-23"
@@ -1301,6 +1431,8 @@
                 "4% Increased Cast Speed",
                 "4% Increased Minion Cast Speed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1327,6 +1459,8 @@
                 "20% Increased Minion Health Leech",
                 "+20% Minion Freeze Rate Multiplier"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-62"
@@ -1348,6 +1482,8 @@
                 "2% Increased Health Regen Per Minion",
                 "+4 Armor Per Minion"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-24"
@@ -1368,6 +1504,8 @@
             "stats": [
                 "+1 Maximum Skeletal Mages"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-64",
@@ -1388,6 +1526,8 @@
             "stats": [
                 "12% Increased Necrotic Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1408,6 +1548,8 @@
                 "+3% Necrotic Penetration",
                 "+3% Poison Penetration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1430,6 +1572,8 @@
                 "3% Increased Attack Speed",
                 "3% Increased Cast Speed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1451,6 +1595,8 @@
             "stats": [
                 "20% Increased Damage Over Time On Recent Kill"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-67"
@@ -1470,6 +1616,8 @@
                 "10% Increased Critical Strike Chance",
                 "+2 Ward Gained On Critical Strike"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-68"
@@ -1491,6 +1639,8 @@
                 "1% Increased Movespeed",
                 "1% Damage Leeched as Health on Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1510,6 +1660,8 @@
                 "7% Increased Poison Damage",
                 "7% Increased Poison Duration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1528,6 +1680,8 @@
             "stats": [
                 "+10% Critical Multiplier"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-68"
@@ -1548,6 +1702,8 @@
                 "10% Increased Minion Fire Damage",
                 "10% Increased Minion Bow Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1566,6 +1722,8 @@
             "stats": [
                 "+25% Minion Armor Shred Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-14"
@@ -1585,6 +1743,8 @@
                 "+1 Minion Fire Damage",
                 "+1 Minion Necrotic Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1605,6 +1765,8 @@
             "stats": [
                 "1 Minion Haste And Frenzy Duration (Seconds)"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1624,6 +1786,8 @@
                 "7% Increased Spell Damage",
                 "7% Increased Damage Over Time"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1643,6 +1807,8 @@
                 "+3 Spell Damage for Curses",
                 "3% Increased Area for Curses"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1661,6 +1827,8 @@
             "stats": [
                 "3 Minion Armor Per Level"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-55"
@@ -1681,6 +1849,8 @@
                 "6% Damned Chance",
                 "12% Increased Minion Necrotic Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1700,6 +1870,8 @@
                 "7% Increased Poison Damage",
                 "+7% Minion Poison Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-8"
@@ -1721,6 +1893,8 @@
                 "6% Increased Bleed Duration",
                 "6% Increased Minion Bleed Duration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-56"
@@ -1737,10 +1911,13 @@
             "y": 8183.600143999999,
             "maxPoints": 8,
             "stats": [
-                "+6% Bleed Chance",
+                "+6% Bleed Chance"
+            ],
+            "notScalingStats": [
                 "12s Bleed Overload duration",
                 "Rip Blood on up to 5 enemies"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte-53"
@@ -1759,9 +1936,12 @@
             "y": 9106.4002,
             "maxPoints": 7,
             "stats": [
-                "5 Ward per second",
+                "5 Ward per second"
+            ],
+            "notScalingStats": [
                 "2% Less Damage Taken Per Curse On Target"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte-54"
@@ -1778,9 +1958,12 @@
             "y": 8183.600143999999,
             "maxPoints": 8,
             "stats": [
-                "+6% Poison Chance",
+                "+6% Poison Chance"
+            ],
+            "notScalingStats": [
                 "12s Poison Overload Duration"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1803,6 +1986,8 @@
                 "+3 Ward Gained On Kill",
                 "+1 Ward Per Second Per 2 Intelligence While Channeling"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1823,9 +2008,12 @@
             "maxPoints": 6,
             "stats": [
                 "6% Increased Physical Damage",
-                "+6% Bleed Chance With Rip Blood",
+                "+6% Bleed Chance With Rip Blood"
+            ],
+            "notScalingStats": [
                 "1 Rip Blood Casts Each Second With Bleed Overload"
             ],
+            "noScalingPointThreshold": 4,
             "reminderText": [],
             "in": [
                 "Acolyte-86"
@@ -1842,9 +2030,12 @@
             "y": 8491.200181035156,
             "maxPoints": 5,
             "stats": [
-                "+1 Vitality",
+                "+1 Vitality"
+            ],
+            "notScalingStats": [
                 "+1 Ward Decay Threshold Per 1% Necro Res"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Acolyte-89"
@@ -1864,6 +2055,8 @@
                 "3% Less Damage Taken while Channeling",
                 "3% More Damage to Damned while Channeling"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-89"
@@ -1883,6 +2076,8 @@
                 "+0.25% Health Leech",
                 "+0.25% Health Leech against Cursed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1900,10 +2095,13 @@
             "maxPoints": 6,
             "stats": [
                 "8 Ward On Potion Use",
-                "2 Mana Gain on Potion Use",
+                "2 Mana Gain on Potion Use"
+            ],
+            "notScalingStats": [
                 "Potion Spreads Poisons during Poison Overload",
                 "2 Number of Poison Spreads within 15m"
             ],
+            "noScalingPointThreshold": 4,
             "reminderText": [],
             "in": [
                 "Acolyte-88"
@@ -1920,9 +2118,12 @@
             "y": 9106.4002,
             "maxPoints": 5,
             "stats": [
-                "+20% Withering Chance On Hit",
+                "+20% Withering Chance On Hit"
+            ],
+            "notScalingStats": [
                 "8% Less Damage Taken from Withered"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1939,11 +2140,14 @@
             "y": 8798.800216,
             "maxPoints": 8,
             "stats": [
-                "+13% Ignite Chance",
+                "+13% Ignite Chance"
+            ],
+            "notScalingStats": [
                 "Consume up to 25 Ignites",
                 "3 Enemies Flame Whipped",
                 "12s Ignite Overload Duration"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1963,10 +2167,13 @@
             "y": 8183.600143999999,
             "maxPoints": 8,
             "stats": [
-                "+13% Damned Chance",
+                "+13% Damned Chance"
+            ],
+            "notScalingStats": [
                 "12 Damned Overload Duration (seconds)",
                 "2 Chain Duration (seconds)"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -1989,6 +2196,8 @@
                 "+1 Intelligence",
                 "+1 Vitality"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -2007,6 +2216,8 @@
             "stats": [
                 "1 Enemies Anguished on Curse Cast"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -2026,9 +2237,12 @@
             "maxPoints": 8,
             "stats": [
                 "8% Increased Necrotic Damage",
-                "8% Increased Elemental Damage",
+                "8% Increased Elemental Damage"
+            ],
+            "notScalingStats": [
                 "Witchfire on Ignite or Damned Overload"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte-97",
@@ -2052,6 +2266,8 @@
                 "+1% Double Damage Chance",
                 "+0.2% Double Damage Chance per Curse"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -2070,9 +2286,12 @@
             "y": 8798.800216,
             "maxPoints": 7,
             "stats": [
-                "8% Increased Fire Damage",
+                "8% Increased Fire Damage"
+            ],
+            "notScalingStats": [
                 "Flame Whip on Hit or Kill against Ignited"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte-97"
@@ -2090,9 +2309,12 @@
             "maxPoints": 6,
             "stats": [
                 "5% Increased Chains Duration",
-                "5% Increased Damned Duration",
+                "5% Increased Damned Duration"
+            ],
+            "notScalingStats": [
                 "30% Chance to Chain Damned enemies each second"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte-98"
@@ -2109,9 +2331,12 @@
             "y": 9106.4002,
             "maxPoints": 6,
             "stats": [
-                "+3 Spell Damage for Curses",
+                "+3 Spell Damage for Curses"
+            ],
+            "notScalingStats": [
                 "Hitting Boss or Rare triggers Anguish"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Acolyte-100"
@@ -2132,6 +2357,8 @@
                 "+5% Haste Chance when Hitting Boss or Rare",
                 "10% Increased Haste Effect"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -2148,9 +2375,12 @@
             "y": 8183.600143999999,
             "maxPoints": 7,
             "stats": [
-                "7% Increased Damage Over Time",
+                "7% Increased Damage Over Time"
+            ],
+            "notScalingStats": [
                 "3% More Damage Over Time per Overload"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -2167,9 +2397,12 @@
             "y": 7876.00016,
             "maxPoints": 5,
             "stats": [
-                "+8% Critical Multiplier",
+                "+8% Critical Multiplier"
+            ],
+            "notScalingStats": [
                 "+30% Critical Multiplier with Chaotic Strikes"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Acolyte-102"
@@ -2187,10 +2420,13 @@
             "maxPoints": 5,
             "stats": [
                 "4% Increased Cast Speed",
-                "5% Increased Cast Speed for Curses",
+                "5% Increased Cast Speed for Curses"
+            ],
+            "notScalingStats": [
                 "Cleanse all Curses when reaching Low Health",
                 "100 Ward Gain per Cleansed Curse on You"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -2209,9 +2445,12 @@
             "stats": [
                 "1% More Witchfire Damage",
                 "3% More Witchfire Damage",
-                "Hits Spread Witchfire during Overloads",
                 "1 Number of Witchfire Spreads within 10m"
             ],
+            "notScalingStats": [
+                "Hits Spread Witchfire during Overloads"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Acolyte-101"
@@ -2229,10 +2468,13 @@
             "maxPoints": 5,
             "stats": [
                 "3% Increased Health",
-                "0.1% More Damage per Negative Ailment on You",
+                "0.1% More Damage per Negative Ailment on You"
+            ],
+            "notScalingStats": [
                 "Damn Yourself on Kill or Minion Kill",
                 "Damn Yourself when Hit"
             ],
+            "noScalingPointThreshold": 3,
             "reminderText": [],
             "in": [
                 "Acolyte"
@@ -2249,9 +2491,12 @@
             "y": 8798.800216,
             "maxPoints": 8,
             "stats": [
-                "+1 Intelligence",
+                "+1 Intelligence"
+            ],
+            "notScalingStats": [
                 "+1 Mana Per Intelligence"
             ],
+            "noScalingPointThreshold": 5,
             "reminderText": [],
             "in": [
                 "Acolyte"

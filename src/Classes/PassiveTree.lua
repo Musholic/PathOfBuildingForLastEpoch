@@ -447,6 +447,24 @@ function PassiveTreeClass:ProcessStats(node, startIndex)
         node.modList = new("ModList")
     end
 
+    node.sd = {}
+    if node.stats then
+        for _, stat in ipairs(node.stats) do
+            if node.alloc > 1 and stat:match("%d") then
+                stat = stat:gsub("(%d[%d.]*)", function(valueStr)
+                    value = tonumber(valueStr)
+                    return tostring(value * node.alloc)
+                end)
+            end
+            table.insert(node.sd, stat)
+        end
+    end
+    if node.noScalingPointThreshold and node.alloc >= node.noScalingPointThreshold then
+        for _,stat in ipairs(node.notScalingStats) do
+            table.insert(node.sd, stat)
+        end
+    end
+
     if not node.sd then
         return
     end
@@ -515,10 +533,10 @@ function PassiveTreeClass:ProcessStats(node, startIndex)
                 if node.alloc > 1 then
                     if type(mod.value) == "table" then
                         for _, mod in ipairs(mod.value) do
-                            mod.value = mod.value * node.alloc
+                            mod.value = mod.value
                         end
                     else
-                        mod.value = mod.value * node.alloc
+                        mod.value = mod.value
                     end
                 end
                 node.modList:AddMod(mod)

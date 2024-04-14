@@ -142,6 +142,8 @@
                 "4% Fire Resistance",
                 "4% Void Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -158,9 +160,12 @@
             "y": 615.20008,
             "maxPoints": 5,
             "stats": [
-                "+3% Block Chance",
                 "+30 Block Effectiveness"
             ],
+            "notScalingStats": [
+                "+3% Block Chance"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-49"
@@ -182,6 +187,8 @@
                 "+15 Armor",
                 "-2% Damage Taken From Nearby Enemies"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -202,6 +209,8 @@
             "stats": [
                 "10 Health Gained On Block"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-1"
@@ -221,6 +230,8 @@
                 "5% Increased Damage",
                 "+20 Stun Avoidance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -242,6 +253,8 @@
                 "+1 Melee Physical Damage",
                 "8% Increased Melee Stun Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -263,6 +276,8 @@
                 "Can Equip Swords in Offhand",
                 "+9% Damage Taken While Dual Wielding"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -281,6 +296,8 @@
             "stats": [
                 "8% Chance To Cast Axe Throw On Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -300,6 +317,8 @@
                 "6% Increased Cooldown Recovery Speed for Movement Skills",
                 "+6 Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-2",
@@ -320,6 +339,8 @@
             "stats": [
                 "10% Increased Damage On Recent Kill"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -340,6 +361,8 @@
                 "+4% Void Resistance",
                 "+4% Physical Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -359,6 +382,8 @@
                 "1% Melee Damage Leeched as Health",
                 "1% Void Damage Leeched as Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -378,6 +403,8 @@
                 "7% Increased Physical Damage",
                 "7% Increased Void Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -396,6 +423,8 @@
             "stats": [
                 "30% Next Attack Increased Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -414,6 +443,8 @@
             "stats": [
                 "+3 Melee Void Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-58"
@@ -432,6 +463,8 @@
             "stats": [
                 "5% Chance To Absorb Health On Kill"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -450,10 +483,13 @@
             "y": 2215.20008,
             "maxPoints": 5,
             "stats": [
-                "+1 Vitality",
+                "+1 Vitality"
+            ],
+            "notScalingStats": [
                 "1 Smite Scaling Attunement -> Vitality",
                 "1 Smite Void Spell Damage per Vitality"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -473,6 +509,8 @@
                 "5% Increased Melee Void Damage",
                 "2% Melee Kill Threshold"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -491,6 +529,8 @@
             "stats": [
                 "10% Future Strike Chance On Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -509,6 +549,8 @@
             "stats": [
                 "+1% Dark Maw Health Absorption"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-16"
@@ -528,6 +570,8 @@
                 "+1 Vitality",
                 "2% Increased Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -549,6 +593,8 @@
                 "+5 Mana",
                 "2% Increased Mana Regen"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -569,6 +615,8 @@
             "stats": [
                 "5% Void Aegis Chance When Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-23",
@@ -589,6 +637,8 @@
             "stats": [
                 "4% Void Essence Chance On Kill"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -610,6 +660,8 @@
                 "8% Increased Void Damage",
                 "+1% Movespeed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -628,9 +680,12 @@
             "y": 6276.00016,
             "maxPoints": 5,
             "stats": [
-                "+2% Block Chance",
                 "+50 Block Effectiveness"
             ],
+            "notScalingStats": [
+                "+2% Block Chance"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -652,6 +707,8 @@
                 "4% Physical Resistance When Hit",
                 "6% Increased Armor When Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -668,9 +725,12 @@
             "y": 6276.00016,
             "maxPoints": 8,
             "stats": [
-                "+15 Armor on Block",
+                "+15 Armor on Block"
+            ],
+            "notScalingStats": [
                 "10 Max Stacks"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-27"
@@ -690,6 +750,8 @@
                 "6% Increased Throwing Attack Damage",
                 "6% Increased Throwing Attack Stun Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-65"
@@ -712,6 +774,8 @@
                 "+1 Strength",
                 "2% Increased Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -733,6 +797,8 @@
                 "+40 Stun Avoidance",
                 "-3% Received Stun Duration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -752,6 +818,8 @@
                 "+12 Health",
                 "6% Increased Stun Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -771,6 +839,8 @@
                 "+30 Armour",
                 "30 Damage Taken by Attackers when Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -791,6 +861,8 @@
                 "50% Increased Minion Health",
                 "50% Increased Minion Armour"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-48"
@@ -810,6 +882,8 @@
                 "0.5% Increased Damage Per 1 Mana Cost",
                 "3% Increased Mana Regen"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -831,6 +905,8 @@
                 "Also Applies To Minions",
                 "Doubled for you with a 2h weapon"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -850,6 +926,8 @@
                 "20% Increased Armor On Potion Use",
                 "20% Increased Chance To Find Potions On Potion Use"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -871,6 +949,8 @@
                 "5% More/Less Damage Taken",
                 "5% More/Less Damage Dealt"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-52"
@@ -889,6 +969,8 @@
             "stats": [
                 "2% Echo Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -907,9 +989,12 @@
             "y": 5968.400176,
             "maxPoints": 5,
             "stats": [
-                "+3% Block Chance with a Shield",
                 "+50 Armour with a Shield"
             ],
+            "notScalingStats": [
+                "+3% Block Chance with a Shield"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -932,6 +1017,8 @@
                 "2 Dexterity",
                 "Dodge Rating -> Armour"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -952,6 +1039,8 @@
             "stats": [
                 "15% Increased Melee Critical Strike Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-31"
@@ -972,6 +1061,8 @@
             "stats": [
                 "15% Increased Throwing Attack Critical Strike Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-42"
@@ -992,6 +1083,8 @@
             "stats": [
                 "+10% Melee Critical Multiplier"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-43"
@@ -1010,6 +1103,8 @@
             "stats": [
                 "+10% Throwing Attack Critical Multiplier"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-44"
@@ -1029,6 +1124,8 @@
                 "+3% Elemental Resistance with a Shield",
                 "12% Increased Fire Damage over Time with a Shield"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-41"
@@ -1048,6 +1145,8 @@
                 "-3% Fire Damage Taken on Block",
                 "10% Increased Damage if Blocked"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-41"
@@ -1069,6 +1168,8 @@
                 "+1 Vitality",
                 "10% Increased Health Regen"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1089,6 +1190,8 @@
             "stats": [
                 "6% Retribution Chance When Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-5"
@@ -1110,6 +1213,8 @@
                 "+2 Throwing Void Damage",
                 "+2 Spell Void Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-58"
@@ -1130,6 +1235,8 @@
                 "1 Physical Shred Stacks",
                 "1 Fire Shred Stacks"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-30"
@@ -1153,6 +1260,8 @@
                 "+4 Next Throwing Attack Physical Damage",
                 "+4 Next Throwing Attack Fire Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-65"
@@ -1173,6 +1282,8 @@
             "stats": [
                 "Consume 3 Void Essences To Refund Mana"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-25"
@@ -1192,6 +1303,8 @@
                 "10% Retribution Increased Damage",
                 "+25% Retribution Critical Strike Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-50"
@@ -1210,6 +1323,8 @@
             "stats": [
                 "1% Critical Multiplier Per Point Spent In Void Knight"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1229,6 +1344,8 @@
                 "+5% Time Rot Duration",
                 "17# Time Rot Spread On Kill Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1246,9 +1363,12 @@
             "maxPoints": 6,
             "stats": [
                 "+2 Void Damage",
-                "Smite -> Void",
                 "Smite No Longer Heals"
             ],
+            "notScalingStats": [
+                "Smite -> Void"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1270,6 +1390,8 @@
             "stats": [
                 "1 Haste Duration (Seconds)"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1288,6 +1410,8 @@
             "stats": [
                 "+10% Melee Time Rot Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1310,6 +1434,8 @@
                 "10% Reduced Block Chance",
                 "10% Reduced Block Effectiveness"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-60",
@@ -1331,6 +1457,8 @@
                 "+1 Strength",
                 "+5 Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1351,6 +1479,8 @@
                 "5% Increased Void Damage On Melee Kill",
                 "5% Increased Armor On Melee Kill"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1371,6 +1501,8 @@
             "stats": [
                 "Time Shift Nearby Enemies At 20% Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1391,6 +1523,8 @@
                 "3% Increased Throwing Attack Damage",
                 "3% Increased Melee Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1414,6 +1548,8 @@
                 "+8 Armor",
                 "+16 Minion Armor"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1434,6 +1570,8 @@
                 "3% Physical Resistance",
                 "Doubled if you have used a potion recently"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-38"
@@ -1454,6 +1592,8 @@
                 "25% Melee Bleed Chance with a 2h Axe",
                 "5% Increased Melee Attack Speed with a 2h Sword"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1473,6 +1613,8 @@
                 "15 Health",
                 "5% Increased Healing Effectiveness"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1492,6 +1634,8 @@
                 "+1 Attunement",
                 "2% Increased Mana Regen"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1511,6 +1655,8 @@
                 "+1 Attunement",
                 "3% Elemental Resistance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1527,10 +1673,13 @@
             "y": 8798.800216,
             "maxPoints": 5,
             "stats": [
-                "+2% Block Chance",
                 "+40 Block Effectiveness",
                 "+15 Stun Avoidance"
             ],
+            "notScalingStats": [
+                "+2% Block Chance"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1553,6 +1702,8 @@
                 "+1 Strength",
                 "4% Increased Fire Damage On Recent Melee Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-84"
@@ -1571,6 +1722,8 @@
             "stats": [
                 "20% Chance To Cast Divine Bolt On Melee Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1592,6 +1745,8 @@
                 "7% Increased Damage Granted",
                 "7% Increased Healing Granted"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1608,9 +1763,12 @@
             "y": 9106.4002,
             "maxPoints": 6,
             "stats": [
-                "Cast Holy Symbol On Block",
                 "15 Holy Symbol Healing"
             ],
+            "notScalingStats": [
+                "Cast Holy Symbol On Block"
+            ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-72"
@@ -1636,6 +1794,8 @@
                 "+2% Fire Penetration",
                 "+2% Lightning Penetration"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1654,6 +1814,8 @@
             "stats": [
                 "Holy Symbol Heals Nearby Allies"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-76"
@@ -1674,6 +1836,8 @@
                 "+2% Time Rot Chance",
                 "+1% Echo Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-40"
@@ -1695,6 +1859,8 @@
                 "+1 Additional Divine Bolts",
                 "10% Reduced Chance To Cast Divine Bolt On Melee Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-74"
@@ -1717,6 +1883,8 @@
                 "+15% Throwing Bleed Chance",
                 "3% Chance To Bleed When Hit"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1737,6 +1905,8 @@
             "stats": [
                 "Divine Bolt Heals Allies"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-80"
@@ -1757,6 +1927,8 @@
                 "+7% Necrotic Resistance",
                 "7 Health"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1775,6 +1947,8 @@
             "stats": [
                 "+12% Melee Ignite Chance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1797,6 +1971,8 @@
                 "20% Increased Throwing Crit Chance",
                 "+10% Crit Multiplier With Lightning Skills"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1817,6 +1993,8 @@
                 "7% Chance To Be Granted Damage",
                 "7% Increased Damage Granted"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-81"
@@ -1835,6 +2013,8 @@
             "stats": [
                 "+2 Melee Fire Damage On Recent Spell Cast"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1857,6 +2037,8 @@
                 "10 Health Gained on Block",
                 "Cannot Dodge"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-90"
@@ -1876,6 +2058,8 @@
                 "+50 Armour While With A Shield",
                 "+2 Spell Damage With A Shield"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1898,6 +2082,8 @@
                 "+6 Endurance Threshold",
                 "Haste On Heal When Below Endurance Threshold"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-104"
@@ -1916,6 +2102,8 @@
             "stats": [
                 "+15% Melee Ignite Chance On Recent Spell Cast"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-88"
@@ -1936,6 +2124,8 @@
                 "8% Increased Lightning Damage",
                 "+1% Movespeed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1955,6 +2145,8 @@
                 "+5% Blind Chance",
                 "+2% Endurance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -1973,6 +2165,8 @@
             "stats": [
                 "10% Chance To Resurrect To Full"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-96"
@@ -1991,6 +2185,8 @@
             "stats": [
                 "6% Divine Essence Chance On Heal"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2011,6 +2207,8 @@
             "stats": [
                 "30% Next Spell Increased Healing"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2032,6 +2230,8 @@
                 "2% Increased Healing Effectiveness",
                 "2% Increased Mana"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2049,9 +2249,12 @@
             "maxPoints": 10,
             "stats": [
                 "+6 Manifest Armour Melee Physical Damage",
-                "+4 Forged Weapon Melee Physical Damage",
+                "+4 Forged Weapon Melee Physical Damage"
+            ],
+            "notScalingStats": [
                 "+2 Maximum Forged Weapons"
             ],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2072,6 +2275,8 @@
                 "10% Reduced Attack Speed",
                 "10% Increased Mana Cost"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-26",
@@ -2093,6 +2298,8 @@
                 "5% Increased Armor",
                 "+5% Critical Strike Avoidance"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2114,6 +2321,8 @@
                 "5 Health Gain",
                 "2 Mana Gained"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2133,6 +2342,8 @@
                 "12% Mace Increased Damage",
                 "12% Sceptre Increased Damage"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2152,6 +2363,8 @@
                 "+6% Sword Attack And Cast Speed",
                 "+6% Axe Attack And Cast Speed"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2171,6 +2384,8 @@
                 "+50 Block Effectiveness with a Shield",
                 "+2 Physical Throwing Attack Damage with a Shield"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-30"
@@ -2189,6 +2404,8 @@
             "stats": [
                 "10% Increased Melee Damage with a 2h Weapon"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-53"
@@ -2207,6 +2424,8 @@
             "stats": [
                 "1% Increased Melee Damage per Hit Taken"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel"
@@ -2225,6 +2444,8 @@
             "stats": [
                 "+3 Spell Damage With A Shield"
             ],
+            "notScalingStats": [],
+            "noScalingPointThreshold": 0,
             "reminderText": [],
             "in": [
                 "Sentinel-72"

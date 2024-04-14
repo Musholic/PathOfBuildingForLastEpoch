@@ -210,7 +210,6 @@ function PassiveSpecClass:Save(xml)
 end
 
 function PassiveSpecClass:PostLoad()
-	self:BuildClusterJewelGraphs()
 end
 
 -- Import passive spec from the provided class IDs and node hash list
@@ -903,7 +902,7 @@ end
 
 function PassiveSpecClass:ReplaceNode(old, newNode)
 	-- Edited nodes can share a name
-	if old.sd == newNode.sd then
+	if old.stats == newNode.stats then
 		return 1
 	end
 	old.dn = newNode.dn
@@ -920,6 +919,7 @@ function PassiveSpecClass:ReplaceNode(old, newNode)
 	old.spriteId = newNode.spriteId
 	old.activeEffectImage = newNode.activeEffectImage
 	old.reminderText = newNode.reminderText or { }
+	self.tree:ProcessStats(old)
 end
 
 ---Reconnects altered timeless jewel to class start, for Pure Talent
@@ -932,71 +932,6 @@ function PassiveSpecClass:ReconnectNodeToClassStart(node)
 			end
 		end
 	end
-end
-
-function PassiveSpecClass:BuildClusterJewelGraphs()
-	-- Remove old subgraphs
-	for id, subGraph in pairs(self.subGraphs) do
-		for _, node in ipairs(subGraph.nodes) do
-			if node.id then
-				self.nodes[node.id] = nil
-				if self.allocNodes[node.id] then
-					-- Reserve the allocation in case the node is regenerated
-					self.allocNodes[node.id] = nil
-					if not self.ignoreAllocatingSubgraph then -- do not carry over alloc nodes, e.g. cluster jewels on Import when Delete Jewel is true
-						t_insert(self.allocSubgraphNodes, node.id)
-					end
-				end
-			end
-		end
-		local index = isValueInArray(subGraph.parentSocket.linked, subGraph.entranceNode)
-		assert(index, "Entrance for subGraph not linked to parent socket???")
-		t_remove(subGraph.parentSocket.linked, index)
-	end
-	wipeTable(self.subGraphs)
-	self.ignoreAllocatingSubgraph = false -- reset after subGraph logic
-
-	local importedGroups = { }
-	local importedNodes = { }
-	if self.jewel_data then
-		for _, value in pairs(self.jewel_data) do
-			if value.subgraph then
-				for groupId, groupData in pairs(value.subgraph.groups) do
-					importedGroups[groupId] = groupData
-				end
-				for nodeId, nodeValue in pairs(value.subgraph.nodes) do
-					importedNodes[nodeId] = nodeValue
-				end
-			end
-		end
-	end
-	for nodeId in pairs(self.tree.sockets) do
-		local node = self.tree.nodes[nodeId]
-		local jewel = self:GetJewel(self.jewels[nodeId])
-		if node and node.expansionJewel and node.expansionJewel.size == 2 and jewel and jewel.jewelData.clusterJewelValid then
-			-- This is a Large Jewel Socket, and it has a cluster jewel in it
-			self:BuildSubgraph(jewel, self.nodes[nodeId], nil, nil, importedNodes, importedGroups)
-		end
-	end
-
-	-- (Re-)allocate subgraph nodes
-	for _, nodeId in ipairs(self.allocSubgraphNodes) do
-		local node = self.nodes[nodeId]
-		if node then
-			node.alloc = 1
-			if not self.allocNodes[nodeId] then
-				self.allocNodes[nodeId] = node
-				t_insert(self.allocExtendedNodes, nodeId)
-			end
-		end
-	end
-	wipeTable(self.allocSubgraphNodes)
-
-	-- Rebuild paths to account for new/removed nodes
-	self:BuildAllDependsAndPaths()
-
-	-- Rebuild node search cache because the tree might have changed
-	self.build.treeTab.viewer.searchStrCached = ""
 end
 
 function PassiveSpecClass:BuildSubgraph(jewel, parentSocket, id, upSize, importedNodes, importedGroups)
