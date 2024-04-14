@@ -80,4 +80,12 @@ describe("TestModParse", function()
         assert.are.equals(951, build.calcsTab.calcsOutput.Mana)
         assert.are.equals(80, build.calcsTab.mainEnv.player.mainSkill.skillModList:Sum("INC", nil, "FireDamage"))
     end)
+
+    it("elemental cast speed", function()
+        build.configTab.input.customMods = "+10% increased elemental cast speed"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+
+        assert.are.equals(10, build.configTab.modList:Sum("INC", {keywordFlags = KeywordFlag.Fire, flags = ModFlag.Cast}, "Speed"))
+    end)
 end)
