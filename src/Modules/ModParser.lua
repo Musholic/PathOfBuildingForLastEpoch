@@ -578,6 +578,7 @@ local modNameList = {
 	["chaos damage over time multiplier"] = "ChaosDotMultiplier",
 	["damage over time multiplier"] = "DotMultiplier",
 	-- Crit/accuracy/speed modifiers
+	["crit chance"] = "CritChance",
 	["critical strike chance"] = "CritChance",
 	["attack critical strike chance"] = { "CritChance", flags = ModFlag.Attack },
 	["critical strike multiplier"] = "CritMultiplier",

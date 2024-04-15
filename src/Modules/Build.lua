@@ -738,6 +738,7 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 			["name"] = "LETools import",
 			["level"] = saveContent.bio.level,
 			["class"] = className,
+			["ascendancy"] = saveContent.bio.chosenMastery,
 			["classId"] = classId,
 			["abilities"] = {},
 			["items"] = {},

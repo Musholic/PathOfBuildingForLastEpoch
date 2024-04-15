@@ -392,8 +392,9 @@ function ImportTabClass:BuildCharacterList(league)
     wipeTable(self.controls.charSelect.list)
     for i, char in ipairs(self.lastCharList) do
         if not league or char.league == league then
+            local class = char.ascendancy > 0 and char.ascendancyName or char.class or "?"
             t_insert(self.controls.charSelect.list, {
-                label = string.format("%s: Level %d %s in %s", char.name or "?", char.level or 0, char.class or "?", char.league or "?"),
+                label = string.format("%s: Level %d %s in %s", char.name or "?", char.level or 0, class, char.league or "?"),
                 char = char,
             })
         end
@@ -440,6 +441,8 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
         ["name"] = saveContent["characterName"],
         ["level"] = saveContent["level"],
         ["class"] = className,
+        ["ascendancy"] = saveContent['chosenMastery'],
+        ["ascendancyName"] = self.build.latestTree.classes[classId].ascendancies[saveContent['chosenMastery']].name,
         ["classId"] = classId,
         ["abilities"] = {},
         ["items"] = {},
@@ -532,6 +535,7 @@ function ImportTabClass:DownloadItems()
 end
 
 function ImportTabClass:ImportPassiveTreeAndJewels(charData)
+    local mainSkillEmpty = #self.build.skillsTab.socketGroupList == 0
     self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
     self.build.spec:AddUndoState()
     self.build.characterLevel = charData.level
@@ -543,6 +547,14 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
     self.build.configTab:BuildModList()
     self.build.configTab:UpdateControls()
     self.build.buildFlag = true
+    if mainSkillEmpty then
+        local mainSocketGroup = self:GuessMainSocketGroup()
+        if mainSocketGroup then
+            self.build.calcsTab.input.skill_number = mainSocketGroup
+            self.build.mainSocketGroup = mainSocketGroup
+            self.build.skillsTab.socketGroupList[mainSocketGroup].includeInFullDPS = true
+        end
+    end
     main:SetWindowTitleSubtext(string.format("%s (%s, %s, %s)", self.build.buildName, charData.name, charData.class, charData.league))
 end
 
@@ -784,15 +796,18 @@ end
 
 -- Return the index of the group with the most gems
 function ImportTabClass:GuessMainSocketGroup()
-    local largestGroupSize = 0
-    local largestGroupIndex = 1
+    local bestDps = 0
+    local bestSocketGroup = nil
     for i, socketGroup in pairs(self.build.skillsTab.socketGroupList) do
-        if #socketGroup.gemList > largestGroupSize then
-            largestGroupSize = #socketGroup.gemList
-            largestGroupIndex = i
+        self.build.mainSocketGroup = i
+        local mainOutput = self.build.calcsTab.calcs.buildOutput(self.build, "MAIN").player.output
+        local dps = mainOutput.TotalDPS
+        if dps > bestDps then
+            bestDps = dps
+            bestSocketGroup = i
         end
     end
-    return largestGroupIndex
+    return bestSocketGroup
 end
 
 function HexToChar(x)
