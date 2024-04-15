@@ -3,11 +3,12 @@
 This is a fork of Path Of Building adapted to work for the game **Last Epoch**. The following features are supported (or partially):
 * Passive tree
 * Character import: for offline character and from LE tools build planner
-* Most stats and mods/affixes are not working correctly (either not recognized or not applied correctly)
+* A lot of stats and mods/affixes are not working correctly (either not recognized or not applied correctly)
 * Items: Imported from character import and can be crafted / modified
 * Unique items
 * Basic support for following stat calculation: health, mana, armor, attributes
 * Skills: Can select up to 5 skills which allows to spend points in the associated skill trees
+* DPS calculation: basic support for several skills, **does not** take ailments into account
 
 Note that **most content (docs or code) is outdated** since they only apply to the original project. Everything should be migrated as time goes by.
 
@@ -18,12 +19,15 @@ The current build can be run by running `./runtime/Path{space}of{space}Building{
 For linux, there may be a native support in the future but for now it runs fine with wine
 
 ## Roadmap
+* Legendary items (for offline import)
+* Ailments and Dot support
+* Blessings support
 * Have a selected skill dps correctly computed
 * Work on other stats (ward, ...)
 * Work on other skills ...
 
 ## Features to be (possibly) automated from game files extracts
-* Passive tree and skills sprites and relative positions
+* Passive tree and skills sprites
 * Any incorrect display names
 * Item sprites
 * Some stats formula data may be extracted
