@@ -108,8 +108,6 @@ data.powerStatList = {
 }
 
 data.misc = { -- magic numbers
-	ServerTickTime = 0.033,
-	ServerTickRate = 1 / 0.033,
 	AccuracyPerDexBase = 2,
 	LowPoolThreshold = 0.5,
 	TemporalChainsEffectCap = 75,

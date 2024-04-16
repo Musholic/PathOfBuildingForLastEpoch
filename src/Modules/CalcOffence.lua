@@ -267,8 +267,6 @@ function calcSkillCooldown(skillModList, skillCfg, skillData)
 	if (skillData.storedUses and skillData.storedUses > 1) or (skillData.VaalStoredUses and skillData.VaalStoredUses > 1) or skillModList:Sum("BASE", skillCfg, "AdditionalCooldownUses") > 0 then
 		return cooldown, rounded
 	else
-		cooldown = m_ceil(cooldown * data.misc.ServerTickRate) / data.misc.ServerTickRate
-		rounded = true
 		return cooldown, rounded, addedCooldown
 	end
 end
@@ -276,7 +274,6 @@ end
 local function calcWarcryCastTime(skillModList, skillCfg, actor)
 	local baseSpeed = 1 / skillModList:Sum("BASE", skillCfg, "WarcryCastTime")
 	local warcryCastTime = baseSpeed * calcLib.mod(skillModList, skillCfg, "WarcrySpeed") * calcs.actionSpeedMod(actor)
-	warcryCastTime = m_min(warcryCastTime, data.misc.ServerTickRate)
 	warcryCastTime = 1 / warcryCastTime
 	if skillModList:Flag(skillCfg, "InstantWarcry") then
 		warcryCastTime = 0
@@ -1080,7 +1077,6 @@ function calcs.offence(env, actor, activeSkill)
 			baseSpeed = baseSpeed * (1 / timeMod)
 		end
 		output.TrapThrowingSpeed = baseSpeed * calcLib.mod(skillModList, skillCfg, "TrapThrowingSpeed") * output.ActionSpeedMod
-		output.TrapThrowingSpeed = m_min(output.TrapThrowingSpeed, data.misc.ServerTickRate)
 		output.TrapThrowingTime = 1 / output.TrapThrowingSpeed
 		skillData.timeOverride = output.TrapThrowingTime
 		if breakdown then
@@ -1107,12 +1103,10 @@ function calcs.offence(env, actor, activeSkill)
 		local baseCooldown = skillData.trapCooldown or skillData.cooldown
 		if baseCooldown then
 			output.TrapCooldown = baseCooldown / calcLib.mod(skillModList, skillCfg, "CooldownRecovery")
-			output.TrapCooldown = m_ceil(output.TrapCooldown * data.misc.ServerTickRate) / data.misc.ServerTickRate
 			if breakdown then
 				breakdown.TrapCooldown = {
 					s_format("%.2fs ^8(base)", skillData.trapCooldown or skillData.cooldown or 4),
 					s_format("/ %.2f ^8(increased/reduced cooldown recovery)", 1 + skillModList:Sum("INC", skillCfg, "CooldownRecovery") / 100),
-					"rounded up to nearest server tick",
 					s_format("= %.3fs", output.TrapCooldown)
 				}
 			end
@@ -1133,9 +1127,6 @@ function calcs.offence(env, actor, activeSkill)
 				s_format("%.2fs ^8(base)", skillData.cooldown or 0 + addedCooldown),
 				s_format("/ %.2f ^8(increased/reduced cooldown recovery)", 1 + skillModList:Sum("INC", skillCfg, "CooldownRecovery") / 100),
 			}
-			if rounded then
-				t_insert(breakdown.Cooldown, s_format("rounded up to nearest server tick"))
-			end
 			t_insert(breakdown.Cooldown, s_format("= %.3fs", output.Cooldown))
 		end
 	end
@@ -1158,7 +1149,6 @@ function calcs.offence(env, actor, activeSkill)
 			baseSpeed = baseSpeed * (1 / timeMod)
 		end
 		output.MineLayingSpeed = baseSpeed * calcLib.mod(skillModList, skillCfg, "MineLayingSpeed") * output.ActionSpeedMod
-		output.MineLayingSpeed = m_min(output.MineLayingSpeed, data.misc.ServerTickRate)
 		output.MineLayingTime = 1 / output.MineLayingSpeed
 		skillData.timeOverride = output.MineLayingTime
 		if breakdown then
@@ -1296,7 +1286,6 @@ function calcs.offence(env, actor, activeSkill)
 			if skillData.debuff then
 				output.Duration = output.Duration * debuffDurationMult
 			end
-			output.Duration = m_ceil(output.Duration * data.misc.ServerTickRate) / data.misc.ServerTickRate
 			if breakdown and output.Duration ~= durationBase then
 				breakdown.Duration = {
 					s_format("%.2fs ^8(base)", durationBase),
@@ -1307,7 +1296,6 @@ function calcs.offence(env, actor, activeSkill)
 				if skillData.debuff and debuffDurationMult ~= 1 then
 					t_insert(breakdown.Duration, s_format("/ %.3f ^8(debuff expires slower/faster)", 1 / debuffDurationMult))
 				end
-				t_insert(breakdown.Duration, s_format("rounded up to nearest server tick"))
 				t_insert(breakdown.Duration, s_format("= %.3fs", output.Duration))
 			end
 		end
@@ -1319,7 +1307,6 @@ function calcs.offence(env, actor, activeSkill)
 			if skillData.debuffSecondary then
 				output.DurationSecondary = output.DurationSecondary * debuffDurationMult
 			end
-			output.DurationSecondary = m_ceil(output.DurationSecondary * data.misc.ServerTickRate) / data.misc.ServerTickRate
 			if breakdown and output.DurationSecondary ~= durationBase then
 				breakdown.SecondaryDurationMod = breakdown.mod(skillModList, skillCfg, "Duration", "SecondaryDuration", "SkillAndDamagingAilmentDuration", skillData.mineDurationAppliesToSkill and "MineDuration" or nil)
 				if breakdown.SecondaryDurationMod then
@@ -1334,7 +1321,6 @@ function calcs.offence(env, actor, activeSkill)
 				if skillData.debuffSecondary and debuffDurationMult ~= 1 then
 					t_insert(breakdown.DurationSecondary, s_format("/ %.3f ^8(debuff expires slower/faster)", 1 / debuffDurationMult))
 				end
-				t_insert(breakdown.DurationSecondary, s_format("rounded up to nearest server tick"))
 				t_insert(breakdown.DurationSecondary, s_format("= %.3fs", output.DurationSecondary))
 			end
 		end
@@ -1346,7 +1332,6 @@ function calcs.offence(env, actor, activeSkill)
 			if skillData.debuffTertiary then
 				output.DurationTertiary = output.DurationTertiary * debuffDurationMult
 			end
-			output.DurationTertiary = m_ceil(output.DurationTertiary * data.misc.ServerTickRate) / data.misc.ServerTickRate
 			if breakdown and output.DurationTertiary ~= durationBase then
 				breakdown.TertiaryDurationMod = breakdown.mod(skillModList, skillCfg, "Duration", "TertiaryDuration", "SkillAndDamagingAilmentDuration", skillData.mineDurationAppliesToSkill and "MineDuration" or nil)
 				if breakdown.TertiaryDurationMod then
@@ -1361,7 +1346,6 @@ function calcs.offence(env, actor, activeSkill)
 				if skillData.debuffTertiary and debuffDurationMult ~= 1 then
 					t_insert(breakdown.DurationTertiary, s_format("/ %.3f ^8(debuff expires slower/faster)", 1 / debuffDurationMult))
 				end
-				t_insert(breakdown.DurationTertiary, s_format("rounded up to nearest server tick"))
 				t_insert(breakdown.DurationTertiary, s_format("= %.3fs", output.DurationTertiary))
 			end
 		end
@@ -1370,12 +1354,10 @@ function calcs.offence(env, actor, activeSkill)
 			local durationMod = calcLib.mod(skillModList, skillCfg, "Duration", "SkillAndDamagingAilmentDuration")
 			durationMod = m_max(durationMod, 0)
 			output.AuraDuration = durationBase * durationMod
-			output.AuraDuration = m_ceil(output.AuraDuration * data.misc.ServerTickRate) / data.misc.ServerTickRate
 			if breakdown and output.AuraDuration ~= durationBase then
 				breakdown.AuraDuration = {
 					s_format("%.2fs ^8(base)", durationBase),
 					s_format("x %.4f ^8(duration modifier)", durationMod),
-					"rounded up to nearest server tick",
 					s_format("= %.3fs", output.AuraDuration),
 				}
 			end
@@ -1385,35 +1367,18 @@ function calcs.offence(env, actor, activeSkill)
 			local durationMod = calcLib.mod(skillModList, skillCfg, "Duration", "SkillAndDamagingAilmentDuration")
 			durationMod = m_max(durationMod, 0)
 			output.ReserveDuration = durationBase * durationMod
-			output.ReserveDuration = m_ceil(output.ReserveDuration * data.misc.ServerTickRate) / data.misc.ServerTickRate
 			if breakdown and output.ReserveDuration ~= durationBase then
 				breakdown.ReserveDuration = {
 					s_format("%.2fs ^8(base)", durationBase),
 					s_format("x %.4f ^8(duration modifier)", durationMod),
-					"rounded up to nearest server tick",
 					s_format("= %.3fs", output.ReserveDuration),
-				}
-			end
-		end
-		durationBase = (skillData.soulPreventionDuration or 0)
-		if durationBase > 0 then
-			local durationMod = calcLib.mod(skillModList, skillCfg, "SoulGainPreventionDuration", skillData.skillEffectAppliesToSoulGainPrevention and "Duration" or "SkillAndDamagingAilmentDuration" or nil, skillData.mineDurationAppliesToSkill and "MineDuration" or nil)
-			durationMod = m_max(durationMod, 0)
-			output.SoulGainPreventionDuration = durationBase * durationMod
-			output.SoulGainPreventionDuration = m_max(m_ceil(output.SoulGainPreventionDuration * data.misc.ServerTickRate), 1) / data.misc.ServerTickRate
-			if breakdown and output.SoulGainPreventionDuration ~= durationBase then
-				breakdown.SoulGainPreventionDuration = {
-					s_format("%.2fs ^8(base)", durationBase),
-					s_format("x %.4f ^8(duration modifier)", durationMod),
-					s_format("rounded up to nearest server tick"),
-					s_format("= %.3fs", output.SoulGainPreventionDuration),
 				}
 			end
 		end
 		output.TotemDurationMod = calcLib.mod(skillModList, skillCfg, "TotemDuration")
 		output.TotemDurationMod = m_max(output.TotemDurationMod, 0)
 		local TotemDurationBase = skillModList:Sum("BASE", skillCfg, "TotemDuration")
-		output.TotemDuration = m_ceil(TotemDurationBase * output.TotemDurationMod * data.misc.ServerTickRate) / data.misc.ServerTickRate
+		output.TotemDuration = TotemDurationBase * output.TotemDurationMod
 		if breakdown then
 			breakdown.TotemDurationMod = breakdown.mod(skillModList, skillCfg, "TotemDuration")
 			breakdown.TotemDuration = {
@@ -1422,7 +1387,6 @@ function calcs.offence(env, actor, activeSkill)
 			if output.TotemDurationMod ~= 1 then
 				t_insert(breakdown.TotemDuration, s_format("x %.4f ^8(duration modifier)", output.TotemDurationMod))
 			end
-			t_insert(breakdown.TotemDuration, s_format("rounded up to nearest server tick"))
 			t_insert(breakdown.TotemDuration, s_format("= %.3fs", output.TotemDuration))
 		end
 	end
@@ -1996,9 +1960,6 @@ function calcs.offence(env, actor, activeSkill)
 				skillFlags.showAverage = false
 				skillData.showAverage = false
 			end
-			if not activeSkill.skillTypes[SkillType.Channel] then
-				output.Speed = m_min(output.Speed, data.misc.ServerTickRate * output.Repeats)
-			end
 			if output.Speed == 0 then
 				output.Time = 0
 			else
@@ -2110,7 +2071,7 @@ function calcs.offence(env, actor, activeSkill)
 			elseif output.Cooldown then
 				output.HitSpeed = 1 / (output.HitTime + output.Cooldown)
 			else
-				output.HitSpeed = m_min(1 / output.HitTime, data.misc.ServerTickRate)
+				output.HitSpeed = 1 / output.HitTime
 			end
 		end
 	end

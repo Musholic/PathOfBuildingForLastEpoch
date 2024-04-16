@@ -17,7 +17,9 @@ describe("TestSkills #skills", function()
         build.skillsTab:SelSkill(1, "lu25ng")
         runCallback("OnFrame")
 
-        local castSpeed = 1 / build.calcsTab.mainEnv.player.mainSkill.activeEffect.grantedEffect.castTime
+        -- TODO: support for weapon attack speed
+
+        local castSpeed = 1 / build.calcsTab.mainEnv.player.mainSkill.activeEffect.grantedEffect.level.cooldown
         assert.are.equals(10, build.calcsTab.mainOutput.Str)
         assert.are.equals((2+10+23) * (1 + 0.04 * 10) * 1.1 * castSpeed, build.calcsTab.mainOutput.TotalDPS)
     end)

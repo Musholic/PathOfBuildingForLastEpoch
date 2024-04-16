@@ -1807,8 +1807,8 @@ function calcs.buildDefenceEstimations(env, actor)
 			local baseStunDuration = data.misc.StunBaseDuration
 			local stunRecovery = (1 + modDB:Sum("INC", nil, "StunRecovery") / 100)
 			local stunAndBlockRecovery = (1 + modDB:Sum("INC", nil, "StunRecovery", "BlockRecovery") / 100)
-			output.StunDuration = m_ceil(baseStunDuration * stunDuration / stunRecovery * data.misc.ServerTickRate) / data.misc.ServerTickRate
-			output.BlockDuration = m_ceil(baseStunDuration * stunDuration / stunAndBlockRecovery * data.misc.ServerTickRate) / data.misc.ServerTickRate
+			output.StunDuration = baseStunDuration * stunDuration / stunRecovery
+			output.BlockDuration = baseStunDuration * stunDuration / stunAndBlockRecovery
 			if breakdown then
 				breakdown.StunDuration = {s_format("%.2fs ^8(base)", baseStunDuration)}
 				breakdown.BlockDuration = {s_format("%.2fs ^8(base)", baseStunDuration)}
@@ -1822,10 +1822,8 @@ function calcs.buildDefenceEstimations(env, actor)
 				if stunAndBlockRecovery ~= 1 then
 					t_insert(breakdown.BlockDuration, s_format("/ %.2f ^8(increased/reduced block recovery)", stunAndBlockRecovery))
 				end
-				t_insert(breakdown.StunDuration, s_format("rounded up to nearest server tick"))
 				t_insert(breakdown.StunDuration, s_format("= %.2fs", output.StunDuration))
 				
-				t_insert(breakdown.BlockDuration, s_format("rounded up to nearest server tick"))
 				t_insert(breakdown.BlockDuration, s_format("= %.2fs", output.BlockDuration))
 			end
 		end
