@@ -914,6 +914,15 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 				tooltip:AddLine(14, string.format("^7No changes from %s this node%s.", node.alloc > 0 and "unallocating" or "allocating", not node.dependsOnIntuitiveLeapLike and pathLength > 1 and " or the nodes leading to it" or ""))
 			end
 		end
+		if node.alloc > 0 and node.alloc < node.maxPoints then
+			tooltip:AddSeparator(14)
+			node.alloc = node.alloc + 1
+			build.spec.tree:ProcessStats(node)
+			nodeOutput = calcFunc()
+			build:AddStatComparesToTooltip(tooltip, calcBase, nodeOutput, "^7Allocating one more point to this node will give you:")
+			node.alloc = node.alloc - 1
+			build.spec.tree:ProcessStats(node)
+		end
 		tooltip:AddLine(14, colorCodes.TIP.."Tip: Press Ctrl+D to disable the display of stat differences.")
 	else
 		tooltip:AddSeparator(14)
