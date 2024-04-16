@@ -1718,19 +1718,8 @@ function calcs.offence(env, actor, activeSkill)
 				}
 			end
 		end
-		if not isAttack or skillModList:Flag(cfg, "CannotBeEvaded") or skillData.cannotBeEvaded or (env.mode_effective and enemyDB:Flag(nil, "CannotEvade")) then
-			output.AccuracyHitChance = 100
-		else
-			local enemyEvasion = m_max(round(calcLib.val(enemyDB, "Evasion")), 0)
-			output.AccuracyHitChance = calcs.hitChance(enemyEvasion, accuracyVsEnemy) * calcLib.mod(skillModList, cfg, "HitChance")
-			if breakdown then
-				breakdown.AccuracyHitChance = {
-					"Enemy level: "..env.enemyLevel..(env.configInput.enemyLevel and " ^8(overridden from the Configuration tab" or " ^8(can be overridden in the Configuration tab)"),
-					"Enemy evasion: "..enemyEvasion,
-					"Approximate hit chance: "..output.AccuracyHitChance.."%",
-				}
-			end
-		end
+		-- A hit cannot miss in Last Epoch
+		output.AccuracyHitChance = 100
 		--enemy block chance
 		output.enemyBlockChance = m_max(m_min((enemyDB:Sum("BASE", cfg, "BlockChance") or 0), 100) - skillModList:Sum("BASE", cfg, "reduceEnemyBlock"), 0)
 		if enemyDB:Flag(nil, "CannotBlockAttacks") and isAttack then
