@@ -591,10 +591,6 @@ function ImportTabClass:ImportItem(itemData, slotName)
     if not slotName then
         slotName = slotMap[itemData.inventoryId]
     end
-    if not slotName then
-        -- Ignore any items that won't go into known slots
-        return
-    end
 
     local item = new("Item")
 
@@ -711,7 +707,9 @@ function ImportTabClass:ImportItem(itemData, slotName)
         else
             self.build.itemsTab:AddItem(item, true)
         end
-        self.build.itemsTab.slots[slotName]:SetSelItemId(item.id)
+        if slotName then
+            self.build.itemsTab.slots[slotName]:SetSelItemId(item.id)
+        end
     end
 end
 
