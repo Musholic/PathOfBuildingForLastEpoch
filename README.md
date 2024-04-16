@@ -6,9 +6,10 @@ This is a fork of Path Of Building adapted to work for the game **Last Epoch**. 
 * A lot of stats and mods/affixes are not working correctly (either not recognized or not applied correctly)
 * Items: Imported from character import and can be crafted / modified
 * Unique items
+* Legendary items supported through LE tools import
 * Basic support for following stat calculation: health, mana, armor, attributes
 * Skills: Can select up to 5 skills which allows to spend points in the associated skill trees
-* DPS calculation: basic support for several skills, **does not** take ailments into account
+* DPS calculation: basic support for several skills, **does not** take ailments and DoT into account
 
 Note that **most content (docs or code) is outdated** since they only apply to the original project. Everything should be migrated as time goes by.
 
@@ -23,6 +24,7 @@ For linux, there may be a native support in the future but for now it runs fine 
 * Ailments and Dot support
 * Blessings support
 * Have a selected skill dps correctly computed
+* Points requirements and constraints in skills and passives
 * Work on other stats (ward, ...)
 * Work on other skills ...
 

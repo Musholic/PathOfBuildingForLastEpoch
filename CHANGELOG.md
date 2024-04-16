@@ -4,10 +4,19 @@
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.2.0...v0.3.0)
 
-<!-- Release notes generated using configuration in .github/release.yml at dev -->
+## What's Changed
+Major improvement to skill Hit DPS calculations and improvement to the passives and skills tree looks (multiple points can now be allocated to a single node).
 
+There are still a lot of unrecognized mods but DPS indication can already provide useful feedback for several skills.
 
+There is no support yet for ailments and DoT.
 
+* Skill nodes only affect the related skill
+* Support for skill added damage effectiveness, increased damage scaling per attribute, cooldown, cast time, critical chance
+* Support for several mods: more damage in skill nodes, cooldown, cast speed, elemental damage, per attribute suffixes ...
+* Support for mastery class passive bonuses (if the mods are recognized only)
+* Guess main skill at import time (based on DPS calculation somehow)
+* Support for weapon attack rate for attack skills
 
 ## [v0.2.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.2.0) (2024/04/09)
 
