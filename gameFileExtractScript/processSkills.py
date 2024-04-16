@@ -51,7 +51,7 @@ for skillTreeData in skillTreesData:
                 # if stats['addedValue']:
                 #     skill['stats'].append("added_damage_per_" + attribute)
                 #     skill['level'][len(skill['stats'])] = stats['addedValue']
-        for prefabSuffix in {"", "End", "Aoe"}:
+        for prefabSuffix in {"", "End", "Aoe", "Hit"}:
             skillPrefabData = load_file_from_guid(skillData['abilityPrefab'], prefabSuffix)
             for data in skillPrefabData:
                 if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
@@ -111,7 +111,11 @@ for skillTreeData in skillTreesData:
         skills[skillData['playerAbilityID']] = skill
         maxCharges = skillData['maxCharges']
         if maxCharges:
-            skill["level"]['cooldown'] = 1 / skillData['chargesGainedPerSecond']
+            if skillData['channelled'] == 1:
+                skill["castTime"] /= skillData['chargesGainedPerSecond']
+            else:
+                skill["level"]['cooldown'] = 1 / skillData['chargesGainedPerSecond']
+
 
 
 skills = dict(natsorted(skills.items()))

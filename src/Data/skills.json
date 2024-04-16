@@ -2,14 +2,13 @@
     "aa710": {
         "name": "Assemble Abomination",
         "skillTypeTags": 1,
-        "castTime": 0.6818181818181818,
+        "castTime": 2.0454545045454555,
         "baseFlags": {},
         "stats": [
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0,
-            "cooldown": 2.9999999400000013
+            "1": 4.0
         }
     },
     "aa989": {
@@ -319,7 +318,7 @@
     "dig5": {
         "name": "Disintegrate",
         "skillTypeTags": 4362,
-        "castTime": 0.06060606060606061,
+        "castTime": 0.048484848484848485,
         "baseFlags": {
             "spell": true
         },
@@ -335,14 +334,13 @@
             "2": 7.5,
             "3": 7.5,
             "4": 100.0,
-            "critChance": 50.0,
-            "cooldown": 0.8
+            "critChance": 50.0
         }
     },
     "dl73": {
         "name": "Drain Life",
         "skillTypeTags": 4384,
-        "castTime": 0.06060606060606061,
+        "castTime": 0.048484848484848485,
         "baseFlags": {
             "spell": true
         },
@@ -353,8 +351,7 @@
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.66,
-            "2": 13.2,
-            "cooldown": 0.8
+            "2": 13.2
         }
     },
     "do5vr": {
@@ -490,12 +487,22 @@
         "name": "Erasing Strike",
         "skillTypeTags": 528,
         "castTime": 0.8522727272727272,
-        "baseFlags": {},
+        "baseFlags": {
+            "hit": true,
+            "melee": true,
+            "attack": true
+        },
         "stats": [
-            "damage_+%_per_str"
+            "damage_+%_per_str",
+            "melee_base_void_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
+            "damageEffectiveness": 5.5,
+            "2": 2.0,
+            "3": 100.0,
+            "critChance": 5.0,
             "cooldown": 5.0
         }
     },
@@ -820,7 +827,7 @@
     "gh0fl": {
         "name": "Ghostflame",
         "skillTypeTags": 4392,
-        "castTime": 0.06060606060606061,
+        "castTime": 0.048484848484848485,
         "baseFlags": {
             "spell": true
         },
@@ -836,8 +843,7 @@
             "2": 17.5,
             "3": 17.5,
             "4": 100.0,
-            "critChance": 50.0,
-            "cooldown": 0.8
+            "critChance": 50.0
         }
     },
     "gl14": {
@@ -1320,7 +1326,7 @@
     "re82ke": {
         "name": "Rebuke",
         "skillTypeTags": 257,
-        "castTime": 0.18181818181818182,
+        "castTime": 1.4545454545454546,
         "baseFlags": {
             "hit": true,
             "spell": true
@@ -1335,8 +1341,7 @@
             "damageEffectiveness": 2.0,
             "2": 40.0,
             "3": 100.0,
-            "critChance": 5.0,
-            "cooldown": 8.0
+            "critChance": 5.0
         }
     },
     "rf1azz": {
@@ -1707,8 +1712,7 @@
             "2": 1.0,
             "3": 1.0,
             "4": 100.0,
-            "critChance": 5.0,
-            "cooldown": 1.0
+            "critChance": 5.0
         }
     },
     "st31et": {
@@ -2068,25 +2072,32 @@
     "va53st": {
         "name": "Warpath",
         "skillTypeTags": 513,
-        "castTime": 0.6818181818181818,
-        "baseFlags": {},
+        "castTime": 0.3409090909090909,
+        "baseFlags": {
+            "hit": true,
+            "melee": true,
+            "attack": true
+        },
         "stats": [
-            "damage_+%_per_str"
+            "damage_+%_per_str",
+            "melee_base_physical_damage",
+            "base_critical_strike_multiplier_+"
         ],
         "level": {
             "1": 4.0,
-            "cooldown": 0.5
+            "damageEffectiveness": 0.6,
+            "2": 1.0,
+            "3": 100.0,
+            "critChance": 5.0
         }
     },
     "vm53dx": {
         "name": "Focus",
         "skillTypeTags": 131328,
-        "castTime": 0.6818181818181818,
+        "castTime": 2.727272727272727,
         "baseFlags": {},
         "stats": [],
-        "level": {
-            "cooldown": 4.0
-        }
+        "level": {}
     },
     "vo54": {
         "name": "Volcanic Orb",
