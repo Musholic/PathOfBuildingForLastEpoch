@@ -839,11 +839,23 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 		end
 	end
 
+	-- Description
+	if node.description then
+		tooltip:AddSeparator(14)
+		for _, line in ipairs(node.description) do
+			line = line:gsub("{%[%d%]=(.-)}", "^xFFFFFF%1^xBCB199")
+			line = line:gsub("{(.-)}", "^xFFFFFF%1^xBCB199")
+			tooltip:AddLine(14, "^xBCB199".. line)
+		end
+	end
+
 	-- Reminder text
 	if node.reminderText then
 		tooltip:AddSeparator(14)
 		for _, line in ipairs(node.reminderText) do
-			tooltip:AddLine(14, "^xA0A080"..line)
+			line = line:gsub("{%[%d%]=(.-)}", "^xFFFFFF%1^x808080")
+			line = line:gsub("{(.-)}", "^xFFFFFF%1^x808080")
+			tooltip:AddLine(14, "^x808080"..line)
 		end
 	end
 

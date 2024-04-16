@@ -237,12 +237,14 @@ for classInfo in data["trees"].values():
             "stats": [],
             "notScalingStats": [],
             "noScalingPointThreshold": int(passiveData['noScalingPointThreshold']),
-            "reminderText": [
-            ],
             "in": [],
             "reqPoints": [],
             "out": [],
         }
+        if passiveData['description']:
+            tree["nodes"][passiveId]['description'] = [passiveData['description']]
+        if passiveData['altText']:
+            tree["nodes"][passiveId]['reminderText'] = [passiveData['altText']]
 
         for statData in passiveData["stats"]:
             stat = ""
@@ -295,12 +297,14 @@ for classInfo in data["trees"].values():
                     "y": posY,
                     "maxPoints": maxPoints,
                     "stats": [],
-                    "reminderText": [
-                    ],
                     "in": [],
                     "reqPoints": [],
                     "out": [],
                 }
+                if skillData['description']:
+                    tree["nodes"][skillId]['description'] = [skillData['description']]
+                if skillData['altText']:
+                    tree["nodes"][skillId]['reminderText'] = [skillData['altText']]
                 for statData in skillData["stats"]:
                     stat = ""
                     if statData["value"]:
