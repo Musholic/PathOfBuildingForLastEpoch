@@ -252,7 +252,8 @@
         "castTime": 1.0176390773405697,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -298,7 +299,9 @@
         "skillTypeTags": 2050,
         "castTime": 0.8181818181818181,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "projectile": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -444,7 +447,8 @@
         "castTime": 0.7575757575757576,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -511,7 +515,10 @@
         "name": "Hail of Arrows",
         "skillTypeTags": 6145,
         "castTime": 0.9090909090909091,
-        "baseFlags": {},
+        "baseFlags": {
+            "projectile": true,
+            "attack": true
+        },
         "stats": [
             "damage_+%_per_dex",
             "bow_base_physical_damage",
@@ -532,7 +539,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_int",
@@ -630,7 +638,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -702,7 +711,8 @@
         "castTime": 0.7272727272727273,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_int",
@@ -737,7 +747,8 @@
         "castTime": 0.7177033492822967,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -790,7 +801,8 @@
         "castTime": 0.7272727272727273,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -846,7 +858,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -884,7 +897,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -934,7 +948,8 @@
         "castTime": 0.6493506493506492,
         "baseFlags": {
             "hit": true,
-            "projectile": true
+            "projectile": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1000,7 +1015,8 @@
         "castTime": 0.6818181818181817,
         "baseFlags": {
             "hit": true,
-            "projectile": true
+            "projectile": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1044,7 +1060,8 @@
         "castTime": 0.45454545454545453,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1140,7 +1157,8 @@
         "castTime": 0.5909090909090908,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_int",
@@ -1163,7 +1181,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1183,7 +1202,9 @@
         "skillTypeTags": 2049,
         "castTime": 0.6818181818181818,
         "baseFlags": {
-            "hit": true
+            "hit": true,
+            "projectile": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -1216,7 +1237,8 @@
         "castTime": 0.8556149732620321,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1258,7 +1280,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -1364,7 +1387,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1514,7 +1538,8 @@
         "castTime": 0.5454545454545454,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1578,7 +1603,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1602,7 +1628,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "projectile": true
+            "projectile": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -1665,7 +1692,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1689,7 +1717,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1712,7 +1741,8 @@
         "castTime": 0.6293706293706293,
         "baseFlags": {
             "hit": true,
-            "projectile": true
+            "projectile": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1768,7 +1798,8 @@
         "castTime": 0.12121212121212122,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_int",
@@ -1818,7 +1849,8 @@
         "castTime": 0.6363636363636362,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1839,7 +1871,8 @@
         "castTime": 1.8181818181818181,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -1943,7 +1976,8 @@
         "castTime": 0.5454545454545454,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -1966,7 +2000,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "hit": true,
-            "projectile": true
+            "projectile": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_dex",
@@ -1987,7 +2022,8 @@
         "castTime": 0.7272727272727273,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",
@@ -2010,7 +2046,8 @@
         "castTime": 2.2727272727272725,
         "baseFlags": {
             "hit": true,
-            "melee": true
+            "melee": true,
+            "attack": true
         },
         "stats": [
             "damage_+%_per_str",

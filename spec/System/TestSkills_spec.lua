@@ -3,7 +3,7 @@ describe("TestSkills #skills", function()
         newBuild()
     end)
 
-	it("Test melee skill with basic weapon", function()
+	it("Test melee skill with cooldown and basic weapon", function()
         build.itemsTab:CreateDisplayItemFromRaw([[ Rarity: RARE
         Forestry Axe
         Forestry Axe
@@ -16,8 +16,6 @@ describe("TestSkills #skills", function()
         -- Use melee skill Lunge
         build.skillsTab:SelSkill(1, "lu25ng")
         runCallback("OnFrame")
-
-        -- TODO: support for weapon attack speed
 
         local castSpeed = 1 / build.calcsTab.mainEnv.player.mainSkill.activeEffect.grantedEffect.level.cooldown
         assert.are.equals(10, build.calcsTab.mainOutput.Str)
@@ -41,5 +39,21 @@ describe("TestSkills #skills", function()
 
         local castSpeed = 1 / build.calcsTab.mainEnv.player.mainSkill.activeEffect.grantedEffect.castTime
         assert.are.equals((25+(10+30) * 1.25) * 4 * 1.05 * castSpeed, build.calcsTab.mainOutput.TotalDPS)
+    end)
+
+    it("Test melee skill with weapon attack speed", function()
+        build.itemsTab:CreateDisplayItemFromRaw([[ Rarity: RARE
+        Forestry Axe
+        Forestry Axe
+        +8 Strength
+        +48 Melee Damage]])
+        build.itemsTab:AddDisplayItem()
+
+        -- Use melee skill Rive
+        build.skillsTab:SelSkill(1, "sndr1")
+        runCallback("OnFrame")
+
+        local castSpeed = 1 / build.calcsTab.mainEnv.player.mainSkill.activeEffect.grantedEffect.castTime
+        assert.are.equals(round((2+48) * (1 + 0.04 * 10) * 1.05 * 0.92 * castSpeed, 4), round(build.calcsTab.mainOutput.TotalDPS, 4))
     end)
 end)

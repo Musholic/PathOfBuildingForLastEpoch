@@ -1655,149 +1655,13 @@ function calcs.offence(env, actor, activeSkill)
 
 	-- Configure damage passes
 	local passList = { }
-	if isAttack then
-		output.MainHand = { }
-		output.OffHand = { }
-		output.PreciseTechnique = env.keystonesAdded["Precise Technique"]
-		local critOverride = skillModList:Override(skillCfg, "WeaponBaseCritChance")
-		if skillFlags.weapon1Attack then
-			if breakdown then
-				breakdown.MainHand = LoadModule(calcs.breakdownModule, skillModList, output.MainHand)
-			end
-			activeSkill.weapon1Cfg.skillStats = output.MainHand
-			local source = copyTable(actor.weaponData1)
-			if critOverride and source.type and source.type ~= "None" then
-				source.CritChance = critOverride
-			end
-			t_insert(passList, {
-				label = "Main Hand",
-				source = source,
-				cfg = activeSkill.weapon1Cfg,
-				output = output.MainHand,
-				breakdown = breakdown and breakdown.MainHand,
-			})
-		end
-		if skillFlags.weapon2Attack then
-			if breakdown then
-				breakdown.OffHand = LoadModule(calcs.breakdownModule, skillModList, output.OffHand)
-			end
-			activeSkill.weapon2Cfg.skillStats = output.OffHand
-			local source = copyTable(actor.weaponData2)
-			if critOverride and source.type and source.type ~= "None" then
-				source.CritChance = critOverride
-			end
-			if skillData.CritChance then
-				source.CritChance = skillData.CritChance
-			end
-			if skillData.setOffHandPhysicalMin and skillData.setOffHandPhysicalMax then
-				source.PhysicalMin = skillData.setOffHandPhysicalMin
-				source.PhysicalMax = skillData.setOffHandPhysicalMax
-			end
-			if skillData.setOffHandFireMin and skillData.setOffHandFireMax then
-				source.FireMin = skillData.setOffHandFireMin
-				source.FireMax = skillData.setOffHandFireMax
-			end
-			if skillData.setOffHandColdMin and skillData.setOffHandColdMax then
-				source.ColdMin = skillData.setOffHandColdMin
-				source.ColdMax = skillData.setOffHandColdMax
-			end
-			if skillData.attackTime then
-				source.AttackRate = 1000 / skillData.attackTime
-			end
-			t_insert(passList, {
-				label = "Off Hand",
-				source = source,
-				cfg = activeSkill.weapon2Cfg,
-				output = output.OffHand,
-				breakdown = breakdown and breakdown.OffHand,
-			})
-		end
-	else
-		t_insert(passList, {
-			label = "Skill",
-			source = skillData,
-			cfg = skillCfg,
-			output = output,
-			breakdown = breakdown,
-		})
-	end
-
-	local function combineStat(stat, mode, ...)
-		-- Combine stats from Main Hand and Off Hand according to the mode
-		if mode == "OR" or not skillFlags.bothWeaponAttack then
-			output[stat] = output.MainHand[stat] or output.OffHand[stat]
-		elseif mode == "ADD" then
-			output[stat] = (output.MainHand[stat] or 0) + (output.OffHand[stat] or 0)
-		elseif mode == "AVERAGE" then
-			output[stat] = ((output.MainHand[stat] or 0) + (output.OffHand[stat] or 0)) / 2
-		elseif mode == "CHANCE" then
-			if output.MainHand[stat] and output.OffHand[stat] then
-				local mainChance = output.MainHand[...] * output.MainHand.HitChance
-				local offChance = output.OffHand[...] * output.OffHand.HitChance
-				local mainPortion = mainChance / (mainChance + offChance)
-				local offPortion = offChance / (mainChance + offChance)
-				output[stat] = output.MainHand[stat] * mainPortion + output.OffHand[stat] * offPortion
-				if breakdown then
-					if not breakdown[stat] then
-						breakdown[stat] = { }
-					end
-					t_insert(breakdown[stat], "Contribution from Main Hand:")
-					t_insert(breakdown[stat], s_format("%.1f", output.MainHand[stat]))
-					t_insert(breakdown[stat], s_format("x %.3f ^8(portion of instances created by main hand)", mainPortion))
-					t_insert(breakdown[stat], s_format("= %.1f", output.MainHand[stat] * mainPortion))
-					t_insert(breakdown[stat], "Contribution from Off Hand:")
-					t_insert(breakdown[stat], s_format("%.1f", output.OffHand[stat]))
-					t_insert(breakdown[stat], s_format("x %.3f ^8(portion of instances created by off hand)", offPortion))
-					t_insert(breakdown[stat], s_format("= %.1f", output.OffHand[stat] * offPortion))
-					t_insert(breakdown[stat], "Total:")
-					t_insert(breakdown[stat], s_format("%.1f + %.1f", output.MainHand[stat] * mainPortion, output.OffHand[stat] * offPortion))
-					t_insert(breakdown[stat], s_format("= %.1f", output[stat]))
-				end
-			else
-				output[stat] = output.MainHand[stat] or output.OffHand[stat]
-			end
-		elseif mode == "CHANCE_AILMENT" then
-			if output.MainHand[stat] and output.OffHand[stat] then
-				local mainChance = output.MainHand[...] * output.MainHand.HitChance
-				local offChance = output.OffHand[...] * output.OffHand.HitChance
-				local mainPortion = mainChance / (mainChance + offChance)
-				local offPortion = offChance / (mainChance + offChance)
-				local maxInstance = m_max(output.MainHand[stat], output.OffHand[stat])
-				local minInstance = m_min(output.MainHand[stat], output.OffHand[stat])
-				local stackName = stat:gsub("DPS","") .. "Stacks"
-				local maxInstanceStacks = m_min(1, (globalOutput[stackName] or 1) / (globalOutput[stackName.."Max"] or 1))
-				output[stat] = maxInstance * maxInstanceStacks + minInstance * (1 - maxInstanceStacks)
-				if breakdown then
-					if not breakdown[stat] then breakdown[stat] = { } end
-					t_insert(breakdown[stat], s_format(""))
-					t_insert(breakdown[stat], s_format("%.2f%% of ailment stacks use maximum damage", maxInstanceStacks * 100))
-					t_insert(breakdown[stat], s_format("Max Damage comes from %s", output.MainHand[stat] >= output.OffHand[stat] and "Main Hand" or "Off Hand"))
-					t_insert(breakdown[stat], s_format("= %.1f", maxInstance * maxInstanceStacks))
-					if maxInstanceStacks < 1 then
-						t_insert(breakdown[stat], s_format("%.2f%% of ailment stacks use non-maximum damage", (1-maxInstanceStacks) * 100))
-						t_insert(breakdown[stat], s_format("= %.1f", minInstance * (1 - maxInstanceStacks)))
-					end
-					t_insert(breakdown[stat], "")
-					t_insert(breakdown[stat], "Total:")
-					if maxInstanceStacks < 1 then
-						t_insert(breakdown[stat], s_format("%.1f + %.1f", maxInstance * maxInstanceStacks, minInstance * (1 - maxInstanceStacks)))
-					end
-					t_insert(breakdown[stat], s_format("= %.1f", output[stat]))
-				end
-			else
-				output[stat] = output.MainHand[stat] or output.OffHand[stat]
-				if breakdown then
-					if not breakdown[stat] then breakdown[stat] = { } end
-					t_insert(breakdown[stat], s_format("All ailment stacks comes from %s", output.MainHand[stat] and "Main Hand" or "Off Hand"))
-				end
-			end
-		elseif mode == "DPS" then
-			output[stat] = (output.MainHand[stat] or 0) + (output.OffHand[stat] or 0)
-			if not skillData.doubleHitsWhenDualWielding then
-				output[stat] = output[stat] / 2
-			end
-		end
-	end
+	t_insert(passList, {
+		label = "Skill",
+		source = skillData,
+		cfg = skillCfg,
+		output = output,
+		breakdown = breakdown,
+	})
 
 	local storedMainHandAccuracy = nil
 	local storedMainHandAccuracyVsEnemy = nil
@@ -1921,23 +1785,16 @@ function calcs.offence(env, actor, activeSkill)
 			output.Speed = skillData.triggerRate
 			skillData.showAverage = false
 		else
-			local baseTime
-			if isAttack then
-				if skillData.castTimeOverridesAttackTime then
-					-- Skill is overriding weapon attack speed
-					baseTime = activeSkill.activeEffect.grantedEffect.castTime / (1 + (source.AttackSpeedInc or 0) / 100)
-				elseif calcLib.mod(skillModList, skillCfg, "SkillAttackTime") > 0 then
-					baseTime = (1 / ( source.AttackRate or 1 ) + skillModList:Sum("BASE", cfg, "Speed")) * calcLib.mod(skillModList, skillCfg, "SkillAttackTime")
-				else
-					baseTime = 1 / ( source.AttackRate or 1 ) + skillModList:Sum("BASE", cfg, "Speed")
-				end
-			else
-				baseTime = skillData.castTimeOverride or activeSkill.activeEffect.grantedEffect.castTime or 1
-			end
+			local baseTime = skillData.castTimeOverride or activeSkill.activeEffect.grantedEffect.castTime or 1
 			local more = skillModList:More(cfg, "Speed")
 			output.Repeats = globalOutput.Repeats or 1
 			local inc = skillModList:Sum("INC", cfg, "Speed")
+			local attackRate = nil
 			output.Speed = 1 / baseTime * round((1 + inc/100) * more, 2)
+			if isAttack then
+				attackRate = env.player.weaponData1.AttackRate
+				output.Speed = output.Speed * attackRate
+			end
 			output.CastRate = output.Speed
 			if skillFlags.selfCast then
 				-- Self-cast skill; apply action speed
@@ -1969,6 +1826,7 @@ function calcs.offence(env, actor, activeSkill)
 				breakdown.Speed = { }
 				breakdown.multiChain(breakdown.Speed, {
 					base = { "%.2f ^8(base)", 1 / baseTime },
+					{ "%.2f ^8weapon attack rate", attackRate },
 					{ "%.2f ^8(increased/reduced)", 1 + inc/100 },
 					{ "%.2f ^8(more/less)", more },
 					{ "%.2f ^8(action speed modifier)", (skillFlags.totem and output.TotemActionSpeed) or (skillFlags.selfCast and globalOutput.ActionSpeedMod) or 1 },
@@ -2027,54 +1885,6 @@ function calcs.offence(env, actor, activeSkill)
 	--Mantra of Flames buff count
 	modDB.multipliers["BuffOnSelf"] = (modDB.multipliers["BuffOnSelf"] or 0) + skillModList:Sum("BASE", cfg, "Multiplier:TraumaStacks")
 	modDB.multipliers["BuffOnSelf"] = (modDB.multipliers["BuffOnSelf"] or 0) + skillModList:Sum("BASE", cfg, "Multiplier:VoltaxicWaitingStages")
-	if isAttack then
-		-- Combine hit chance and attack speed
-		combineStat("AccuracyHitChance", "AVERAGE")
-		combineStat("HitChance", "AVERAGE")
-		combineStat("Speed", "AVERAGE")
-		combineStat("HitSpeed", "OR")
-		combineStat("HitTime", "OR")
-		if output.Speed == 0 then
-			output.Time = 0
-		else
-			output.Time = 1 / output.Speed
-		end
-
-		if output.Time > 1 then
-			modDB:NewMod("Condition:OneSecondAttackTime", "FLAG", true)
-		end
-		if skillModList:Flag(nil, "UseOffhandAttackSpeed") then
-			output.Speed = output.OffHand.Speed
-			output.Time = output.OffHand.Time
-			if breakdown then
-				breakdown.Speed = {
-					"Use Offhand Weapon Attack Speed:",
-					s_format("= %.2f", output.Speed),
-				}
-			end
-		elseif skillFlags.bothWeaponAttack then
-			if breakdown then
-				breakdown.Speed = {
-					"Both weapons:",
-					s_format("(%.2f + %.2f) / 2", output.MainHand.Speed, output.OffHand.Speed),
-					s_format("= %.2f", output.Speed),
-				}
-			end
-		end
-		if skillData.hitTimeOverride and not skillData.triggeredOnDeath then
-			output.HitTime = skillData.hitTimeOverride
-			output.HitSpeed = 1 / output.HitTime
-		elseif skillData.hitTimeMultiplier and output.Time and not skillData.triggeredOnDeath then
-			output.HitTime = output.Time * skillData.hitTimeMultiplier
-			if output.Cooldown and skillData.triggered then
-				output.HitSpeed = 1 / (m_max(output.HitTime, output.Cooldown))
-			elseif output.Cooldown then
-				output.HitSpeed = 1 / (output.HitTime + output.Cooldown)
-			else
-				output.HitSpeed = 1 / output.HitTime
-			end
-		end
-	end
 	if breakdown then
 		if skillData.hitTimeOverride and not skillData.triggeredOnDeath then
 			breakdown.HitSpeed = { }
@@ -3209,62 +3019,6 @@ function calcs.offence(env, actor, activeSkill)
 		end
 	end
 
-	if isAttack then
-		-- Combine crit stats, average damage and DPS
-		combineStat("PreEffectiveCritChance", "AVERAGE")
-		combineStat("CritChance", "AVERAGE")
-		combineStat("CritMultiplier", "AVERAGE")
-		combineStat("AverageDamage", "DPS")
-		combineStat("PvpAverageDamage", "DPS")
-		combineStat("TotalDPS", "DPS")
-		combineStat("PvpTotalDPS", "DPS")
-		combineStat("LifeLeechDuration", "DPS")
-		combineStat("LifeLeechInstances", "DPS")
-		combineStat("LifeLeechInstant", "DPS")
-		combineStat("LifeLeechInstantRate", "DPS")
-		combineStat("LifeLeechInstantProportion", "DPS")
-		combineStat("EnergyShieldLeechDuration", "DPS")
-		combineStat("EnergyShieldLeechInstances", "DPS")
-		combineStat("EnergyShieldLeechInstant", "DPS")
-		combineStat("EnergyShieldLeechInstantRate", "DPS")
-		combineStat("EnergyShieldLeechInstantProportion", "DPS")
-		combineStat("ManaLeechDuration", "DPS")
-		combineStat("ManaLeechInstances", "DPS")
-		combineStat("ManaLeechInstant", "DPS")
-		combineStat("ManaLeechInstantRate", "DPS")
-		combineStat("ManaLeechInstantProportion", "DPS")
-		combineStat("LifeOnHit", "DPS")
-		combineStat("LifeOnHitRate", "DPS")
-		combineStat("LifeOnKill", "DPS")
-		combineStat("EnergyShieldOnHit", "DPS")
-		combineStat("EnergyShieldOnHitRate", "DPS")
-		combineStat("EnergyShieldOnKill", "DPS")
-		combineStat("ManaOnHit", "DPS")
-		combineStat("ManaOnHitRate", "DPS")
-		combineStat("ManaOnKill", "DPS")
-		if skillFlags.bothWeaponAttack then
-			if breakdown then
-				breakdown.AverageDamage = { }
-				t_insert(breakdown.AverageDamage, "Both weapons:")
-				if skillData.doubleHitsWhenDualWielding then
-					t_insert(breakdown.AverageDamage, s_format("%.1f + %.1f ^8(skill hits with both weapons at once)", output.MainHand.AverageDamage, output.OffHand.AverageDamage))
-				else
-					t_insert(breakdown.AverageDamage, s_format("(%.1f + %.1f) / 2 ^8(skill alternates weapons)", output.MainHand.AverageDamage, output.OffHand.AverageDamage))
-				end
-				t_insert(breakdown.AverageDamage, s_format("= %.1f", output.AverageDamage))
-				if skillFlags.isPvP then
-					breakdown.PvpAverageDamage = { }
-					t_insert(breakdown.PvpAverageDamage, "Both weapons:")
-					if skillData.doubleHitsWhenDualWielding then
-						t_insert(breakdown.PvpAverageDamage, s_format("%.1f + %.1f ^8(skill hits with both weapons at once)", output.MainHand.PvpAverageDamage, output.OffHand.PvpAverageDamage))
-					else
-						t_insert(breakdown.PvpAverageDamage, s_format("(%.1f + %.1f) / 2 ^8(skill alternates weapons)", output.MainHand.PvpAverageDamage, output.OffHand.PvpAverageDamage))
-					end
-					t_insert(breakdown.PvpAverageDamage, s_format("= %.1f", output.PvpAverageDamage))
-				end
-			end
-		end
-	end
 	if env.mode == "CALCS" then
 		if skillData.showAverage then
 			output.DisplayDamage = formatNumSep(s_format("%.1f", output.AverageDamage)) .. " average damage"
@@ -4715,53 +4469,6 @@ function calcs.offence(env, actor, activeSkill)
 				t_insert(breakdown.ImpaleModifier, s_format("= %.3f ^8(impale damage multiplier)", impaleDMGModifier))
 			end
 		end
-	end
-
-	-- Combine secondary effect stats
-	if isAttack then
-		combineStat("BleedChance", "AVERAGE")
-		combineStat("BleedDPS", "CHANCE_AILMENT", "BleedChance")
-		combineStat("PoisonChance", "AVERAGE")
-		combineStat("PoisonDPS", "CHANCE", "PoisonChance")
-		combineStat("TotalPoisonDPS", "DPS")
-		combineStat("PoisonDamage", "CHANCE", "PoisonChance")
-		if skillData.showAverage then
-			combineStat("TotalPoisonAverageDamage", "DPS")
-		else
-			combineStat("TotalPoisonStacks", "DPS")
-		end
-		combineStat("IgniteChance", "AVERAGE")
-		combineStat("IgniteDPS", "CHANCE_AILMENT", "IgniteChance")
-		if skillFlags.igniteCanStack then
-			combineStat("IgniteDamage", "CHANCE", "IgniteChance")
-			if skillData.showAverage then
-				combineStat("TotalIgniteAverageDamage", "DPS")
-				combineStat("IgniteStacksMax", "DPS")
-				combineStat("TotalIgniteDPS", "DPS")
-			else
-				combineStat("IgniteStacksMax", "DPS")
-				combineStat("TotalIgniteDPS", "DPS")
-			end
-		end
-		combineStat("ChillEffectMod", "AVERAGE")
-		combineStat("ChillDuration", "AVERAGE")
-		combineStat("ShockChance", "AVERAGE")
-		combineStat("ShockDuration", "AVERAGE")
-		combineStat("ShockEffectMod", "AVERAGE")
-		combineStat("FreezeChance", "AVERAGE")
-		combineStat("FreezeDurationMod", "AVERAGE")
-		combineStat("ScorchChance", "AVERAGE")
-		combineStat("ScorchEffectMod", "AVERAGE")
-		combineStat("ScorchDuration", "AVERAGE")
-		combineStat("BrittleChance", "AVERAGE")
-		combineStat("BrittleEffectMod", "AVERAGE")
-		combineStat("BrittleDuration", "AVERAGE")
-		combineStat("SapChance", "AVERAGE")
-		combineStat("SapEffectMod", "AVERAGE")
-		combineStat("SapDuration", "AVERAGE")
-		combineStat("ImpaleChance", "AVERAGE")
-		combineStat("ImpaleStoredDamage", "AVERAGE")
-		combineStat("ImpaleModifier", "CHANCE", "ImpaleChance")
 	end
 
 	if skillFlags.hit and skillData.decay and canDeal.Chaos then

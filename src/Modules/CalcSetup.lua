@@ -1243,7 +1243,13 @@ function calcs.initEnv(build, mode, override, specEnv)
 		end
 
 		-- Get the weapon data tables for the equipped weapons
-		env.player.weaponData1 = env.player.itemList["Weapon 1"] and env.player.itemList["Weapon 1"].weaponData and env.player.itemList["Weapon 1"].weaponData[1] or copyTable(env.data.unarmedWeaponData[env.classId])
+		env.player.weaponData1 = env.player.itemList["Weapon 1"] and env.player.itemList["Weapon 1"].base.weapon
+		if env.player.weaponData1 then
+			env.player.weaponData1.type = env.player.itemList["Weapon 1"].base.type
+			env.player.weaponData1.AttackRate = env.player.weaponData1.AttackRateBase
+		else
+			env.player.weaponData1 = copyTable(env.data.unarmedWeaponData[env.classId])
+		end
 		if env.player.weaponData1.countsAsDualWielding then
 			env.player.weaponData2 = env.player.itemList["Weapon 1"].weaponData[2]
 		else
