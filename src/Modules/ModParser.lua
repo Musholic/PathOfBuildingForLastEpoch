@@ -2085,9 +2085,14 @@ local function parseMod(line, order)
 		modName = {}
 		keywordFlags = {}
 		for _,damageType in ipairs(damageTypes) do
-			table.insert(keywordFlags, KeywordFlag[damageType])
+			-- If the damage type is specific, then it is applied regardless of the type of the skill
+			if #damageTypes > 1 then
+				table.insert(keywordFlags, KeywordFlag[damageType])
+			end
 			table.insert(modName,damageType.."Min")
-			table.insert(keywordFlags, KeywordFlag[damageType])
+			if #damageTypes > 1 then
+				table.insert(keywordFlags, KeywordFlag[damageType])
+			end
 			table.insert(modName,damageType.."Max")
 		end
 	elseif modForm == "FLAG" then
