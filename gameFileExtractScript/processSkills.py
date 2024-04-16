@@ -105,6 +105,9 @@ for skillTreeData in skillTreesData:
                     if critChance:
                         skill["level"]['critChance'] = critChance
         skills[skillData['playerAbilityID']] = skill
+        maxCharges = skillData['maxCharges']
+        if maxCharges:
+            skill["level"]['cooldown'] = 1 / skillData['chargesGainedPerSecond']
 
 
 skills = dict(natsorted(skills.items()))

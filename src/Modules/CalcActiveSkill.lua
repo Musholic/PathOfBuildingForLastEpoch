@@ -510,6 +510,9 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	-- Add extra modifiers from granted effect level
 	local level = activeEffect.grantedEffectLevel
 	activeSkill.skillData.CritChance = level.critChance
+	if level.cooldown then
+		activeSkill.skillData.cooldown = level.cooldown
+	end
 
 	-- Add extra modifiers from other sources
 	activeSkill.extraSkillModList = { }

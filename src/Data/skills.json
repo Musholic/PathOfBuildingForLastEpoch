@@ -8,7 +8,8 @@
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 2.9999999400000013
         }
     },
     "aa989": {
@@ -20,7 +21,8 @@
             "damage_+%_per_dex"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 4.0
         }
     },
     "aacfl": {
@@ -41,7 +43,9 @@
         "castTime": 0.6363636363636362,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 2.999400119976005
+        }
     },
     "ad0ry": {
         "name": "Aura Of Decay",
@@ -52,7 +56,8 @@
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 1.0
         }
     },
     "ah443": {
@@ -61,7 +66,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 10.0
+        }
     },
     "an0my": {
         "name": "Anomaly",
@@ -69,7 +76,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 11.990407673860911
+        }
     },
     "arcas": {
         "name": "Arcane Ascendance",
@@ -83,7 +92,8 @@
         ],
         "level": {
             "damageEffectiveness": 0.45000002,
-            "1": 9.0
+            "1": 9.0,
+            "cooldown": 5.0
         }
     },
     "av75ch": {
@@ -128,7 +138,9 @@
         "castTime": 1.3636363636363635,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "bg36nl": {
         "name": "Summon Bone Golem",
@@ -136,7 +148,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 10.0
+        }
     },
     "bh2": {
         "name": "Black Hole",
@@ -153,7 +167,8 @@
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.9,
-            "2": 18.0
+            "2": 18.0,
+            "cooldown": 13.999720005599888
         }
     },
     "bp2nk": {
@@ -227,7 +242,8 @@
             "damage_+%_per_dex"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 0.700000210000063
         }
     },
     "dagg3": {
@@ -260,7 +276,8 @@
             "damage_+%_per_dex"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 5.0
         }
     },
     "deeco": {
@@ -272,7 +289,8 @@
             "damage_+%_per_dex"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 13.999720005599888
         }
     },
     "detar": {
@@ -314,7 +332,8 @@
             "2": 7.5,
             "3": 7.5,
             "4": 100.0,
-            "critChance": 50.0
+            "critChance": 50.0,
+            "cooldown": 0.8
         }
     },
     "dl73": {
@@ -331,7 +350,8 @@
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.66,
-            "2": 13.2
+            "2": 13.2,
+            "cooldown": 0.8
         }
     },
     "do5vr": {
@@ -350,7 +370,8 @@
             "damageEffectiveness": 2.0,
             "1": 80.0,
             "2": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.0
         }
     },
     "dqv5": {
@@ -359,7 +380,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 5.9998800023999515
+        }
     },
     "ds4d3": {
         "name": "Dread Shade",
@@ -378,7 +401,8 @@
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 5.0
         }
     },
     "eb5656": {
@@ -467,7 +491,8 @@
             "damage_+%_per_str"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 5.0
         }
     },
     "ex4tp": {
@@ -497,7 +522,8 @@
             "damageEffectiveness": 0.65,
             "2": 2.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 2.0
         }
     },
     "f1b4d": {
@@ -616,7 +642,8 @@
             "damageEffectiveness": 2.5,
             "2": 2.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 5.99880023995201
         }
     },
     "fl71ds": {
@@ -636,7 +663,8 @@
             "damageEffectiveness": 1.0,
             "2": 20.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 3.499999825000009
         }
     },
     "flur3": {
@@ -723,7 +751,8 @@
             "damageEffectiveness": 5.0,
             "3": 2.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.0
         }
     },
     "fs11": {
@@ -738,7 +767,8 @@
         ],
         "level": {
             "damageEffectiveness": 0.25,
-            "1": 5.0
+            "1": 5.0,
+            "cooldown": 1.0
         }
     },
     "fw3d": {
@@ -750,7 +780,8 @@
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 14.999250037498127
         }
     },
     "ga2st": {
@@ -793,7 +824,8 @@
             "2": 17.5,
             "3": 17.5,
             "4": 100.0,
-            "critChance": 50.0
+            "critChance": 50.0,
+            "cooldown": 0.8
         }
     },
     "gl14": {
@@ -928,7 +960,8 @@
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 3.0003000300030003
         }
     },
     "is40": {
@@ -957,7 +990,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 1.0
+        }
     },
     "javeli": {
         "name": "Javelin",
@@ -1023,7 +1058,8 @@
             "damageEffectiveness": 1.0,
             "3": 2.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.0
         }
     },
     "ma6hdr": {
@@ -1032,7 +1068,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 10.0
+        }
     },
     "mas54": {
         "name": "Maelstrom",
@@ -1092,7 +1130,8 @@
             "damage_+%_per_dex"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 10.0
         }
     },
     "ms26": {
@@ -1191,7 +1230,8 @@
             "damageEffectiveness": 3.5,
             "3": 2.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.0
         }
     },
     "pr5fm": {
@@ -1208,7 +1248,8 @@
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.5,
-            "2": 10.0
+            "2": 10.0,
+            "cooldown": 10.0
         }
     },
     "pun22": {
@@ -1271,7 +1312,8 @@
             "damageEffectiveness": 2.0,
             "2": 40.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 8.0
         }
     },
     "rf1azz": {
@@ -1280,7 +1322,9 @@
         "castTime": 0.5,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 20.0
+        }
     },
     "rn7iv": {
         "name": "Runic Invocation",
@@ -1300,7 +1344,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 14.992503748125937
+        }
     },
     "sa36oh": {
         "name": "Summon Sabertooth",
@@ -1308,7 +1354,9 @@
         "castTime": 1.3636363636363635,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "sb4h": {
         "name": "Shield Bash",
@@ -1328,7 +1376,8 @@
             "damageEffectiveness": 1.0,
             "2": 2.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 10.0
         }
     },
     "sb44eQ": {
@@ -1337,7 +1386,9 @@
         "castTime": 0.3409090909090909,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 14.999250037498127
+        }
     },
     "sbf4m": {
         "name": "Swarmblade Form",
@@ -1345,7 +1396,9 @@
         "castTime": 0.7272727272727273,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 5.9999998800000025
+        }
     },
     "sc36pi": {
         "name": "Summon Scorpion",
@@ -1353,7 +1406,9 @@
         "castTime": 1.3636363636363635,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "sf5rd": {
         "name": "Spriggan Form",
@@ -1361,7 +1416,9 @@
         "castTime": 0.6363636363636362,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 5.9999998800000025
+        }
     },
     "sf31rc": {
         "name": "Sacrifice",
@@ -1390,7 +1447,9 @@
         "castTime": 0.5454545454545454,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 5.999988000024
+        }
     },
     "shiif": {
         "name": "Shift",
@@ -1398,7 +1457,9 @@
         "castTime": 0.18181818181818182,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 3.5001750087504373
+        }
     },
     "si4lgl": {
         "name": "Sigils Of Hope",
@@ -1443,7 +1504,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 10.0
+        }
     },
     "sndr1": {
         "name": "Rive",
@@ -1505,7 +1568,9 @@
         "castTime": 1.3636363636363635,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "sr31hu": {
         "name": "Shield Rush",
@@ -1527,7 +1592,8 @@
             "2": 2.0,
             "3": 2.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.5004500450045
         }
     },
     "srk21": {
@@ -1557,7 +1623,9 @@
         "castTime": 1.3636363636363635,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "ss3tre": {
         "name": "Shatter Strike",
@@ -1587,7 +1655,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "st4th": {
         "name": "Smelter's Wrath",
@@ -1609,7 +1679,8 @@
             "2": 1.0,
             "3": 1.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 1.0
         }
     },
     "st31et": {
@@ -1655,7 +1726,8 @@
             "damageEffectiveness": 2.25,
             "3": 45.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 2.0
         }
     },
     "st38ml": {
@@ -1664,7 +1736,9 @@
         "castTime": 0.5454545454545454,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 3.0003000300030003
+        }
     },
     "st47ic": {
         "name": "Static",
@@ -1684,7 +1758,8 @@
             "damageEffectiveness": 2.5,
             "2": 50.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.0
         }
     },
     "su5g3": {
@@ -1707,7 +1782,8 @@
             "damageEffectiveness": 2.0,
             "3": 2.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.0
         }
     },
     "svz81": {
@@ -1724,7 +1800,9 @@
         "castTime": 0.5454545454545454,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 18.000180001800018
+        }
     },
     "sw42ih": {
         "name": "Summon Wraith",
@@ -1773,7 +1851,8 @@
             "damageEffectiveness": 1.0,
             "2": 5.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 1.0
         }
     },
     "tb47": {
@@ -1815,7 +1894,8 @@
             "damageEffectiveness": 1.0,
             "1": 2.0,
             "2": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 5.0
         }
     },
     "th39": {
@@ -1853,7 +1933,8 @@
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 5.0
         }
     },
     "ts85i": {
@@ -1943,7 +2024,8 @@
             "damageEffectiveness": 4.0,
             "3": 2.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 4.0
         }
     },
     "va53st": {
@@ -1955,7 +2037,8 @@
             "damage_+%_per_str"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 0.5
         }
     },
     "vm53dx": {
@@ -1964,7 +2047,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "vo54": {
         "name": "Volcanic Orb",
@@ -1984,7 +2069,8 @@
             "damageEffectiveness": 1.0,
             "2": 20.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 3.0303030303030303
         }
     },
     "vr53sl": {
@@ -1993,7 +2079,9 @@
         "castTime": 0.22727272727272727,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 23.999999232000025
+        }
     },
     "wb8fo": {
         "name": "Werebear Form",
@@ -2001,7 +2089,9 @@
         "castTime": 0.5454545454545454,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 5.9999998800000025
+        }
     },
     "wc57": {
         "name": "Warcry",
@@ -2009,7 +2099,9 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 10.0
+        }
     },
     "wo42": {
         "name": "Summon Wolf",
@@ -2017,7 +2109,9 @@
         "castTime": 1.3636363636363635,
         "baseFlags": {},
         "stats": [],
-        "level": {}
+        "level": {
+            "cooldown": 4.0
+        }
     },
     "ws54hm": {
         "name": "Wandering Spirits",
@@ -2028,7 +2122,8 @@
             "damage_+%_per_int"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "cooldown": 13.000013000012999
         }
     }
 }
