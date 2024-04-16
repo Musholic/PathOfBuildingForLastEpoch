@@ -66,11 +66,15 @@ for skillTreeData in skillTreesData:
                         case val if val & 512:
                             damageTag = "melee"
                             skill["baseFlags"]["melee"] = True
+                            skill["baseFlags"]["attack"] = True
                         case val if val & 1024:
                             damageTag = "throwing"
                             skill["baseFlags"]["projectile"] = True
+                            skill["baseFlags"]["attack"] = True
                         case val if val & 2048:
                             damageTag = "bow"
+                            skill["baseFlags"]["projectile"] = True
+                            skill["baseFlags"]["attack"] = True
                         case val if val & 4096:
                             damageTag = "dot"
                         case other:
