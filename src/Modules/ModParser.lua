@@ -513,6 +513,7 @@ local modNameList = {
 	["aspect of the spider debuff duration"] = { "Duration", tag = { type = "SkillName", skillName = "Aspect of the Spider" } },
 	["fire trap burning ground duration"] = { "Duration", tag = { type = "SkillName", skillName = "Fire Trap" } },
 	["sentinel of absolution duration"] = { "SecondaryDuration", tag = { type = "SkillName", skillName = "Absolution", includeTransfigured = true } },
+	["cooldown duration"] = "CooldownRecovery",
 	["cooldown recovery"] = "CooldownRecovery",
 	["cooldown recovery speed"] = "CooldownRecovery",
 	["cooldown recovery rate"] = "CooldownRecovery",
@@ -1695,10 +1696,13 @@ end
 
 -- List of special modifiers
 local specialQuickFixModList = {
-	["^%+([%d%.]+%%) (Damage)"] = "%1 more Damage",
-	["^%+([%d%.]+%%) (Cast Speed)"] = "%1 increased Cast Speed",
+	["^%+([%d%.]+%%) Damage"] = "%1 more Damage",
+	["^%+([%d%.]+%%) Cast Speed"] = "%1 increased Cast Speed",
+	["^%+([%d%.]+%%) Cooldown Recovery Speed"] = "%1 increased Cooldown Recovery Speed",
 }
+
 local specialModList = {
+	["no cooldown"] = { flag("NoCooldown") },
 }
 
 -- Modifiers that are recognised but unsupported

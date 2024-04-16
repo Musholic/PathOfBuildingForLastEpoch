@@ -945,4 +945,5 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 	else
 		tooltip:AddLine(14, colorCodes.TIP.."Tip: Hold Ctrl to hide this tooltip.")
 	end
+	tooltip:AddLine(14, colorCodes.TIP.."Tip: Right click to remove allocated points.")
 end
