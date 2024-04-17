@@ -41,8 +41,11 @@
         "skillTypeTags": 4368,
         "castTime": 0.6363636363636362,
         "baseFlags": {},
-        "stats": [],
+        "stats": [
+            "base_chance_to_AbyssalDecay_%"
+        ],
         "level": {
+            "1": 100.0,
             "cooldown": 2.999400119976005
         }
     },
@@ -52,10 +55,14 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [
-            "damage_+%_per_int"
+            "damage_+%_per_int",
+            "base_chance_to_Poison_%",
+            "base_chance_to_Poison_%"
         ],
         "level": {
             "1": 4.0,
+            "2": 100.0,
+            "3": 100.0,
             "cooldown": 1.0
         }
     },
@@ -87,11 +94,13 @@
             "spell": true
         },
         "stats": [
+            "base_chance_to_ArcaneAscendance_%",
             "spell_base_lightning_damage"
         ],
         "level": {
+            "1": 100.0,
             "damageEffectiveness": 0.45000002,
-            "1": 9.0,
+            "2": 9.0,
             "cooldown": 5.0
         }
     },
@@ -125,10 +134,12 @@
         "castTime": 0.45454545454545453,
         "baseFlags": {},
         "stats": [
-            "damage_+%_per_int"
+            "damage_+%_per_int",
+            "base_chance_to_BoneCurse_%"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "2": 100.0
         }
     },
     "be36ar": {
@@ -629,14 +640,16 @@
         "stats": [
             "damage_+%_per_int",
             "spell_base_fire_damage",
-            "base_critical_strike_multiplier_+"
+            "base_critical_strike_multiplier_+",
+            "base_chance_to_Ignite_%"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.25,
             "2": 25.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "4": 40.0
         }
     },
     "fl13": {
@@ -704,12 +717,14 @@
         },
         "stats": [
             "damage_+%_per_int",
+            "base_chance_to_Chill_%",
             "spell_base_cold_damage"
         ],
         "level": {
             "1": 4.0,
+            "2": 100.0,
             "damageEffectiveness": 1.0,
-            "2": 20.0
+            "3": 20.0
         }
     },
     "fr11mv": {
@@ -889,12 +904,14 @@
         },
         "stats": [
             "damage_+%_per_int",
-            "spell_base_lightning_damage"
+            "spell_base_lightning_damage",
+            "base_chance_to_Slow_%"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.375,
-            "2": 7.5
+            "2": 7.5,
+            "3": 100.0
         }
     },
     "ha84": {
@@ -924,8 +941,12 @@
         "skillTypeTags": 131328,
         "castTime": 0.6818181818181818,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "base_chance_to_HealingHandsHealOverTime_%"
+        ],
+        "level": {
+            "1": 100.0
+        }
     },
     "hs18gu": {
         "name": "Hungering Souls",
@@ -938,14 +959,16 @@
         "stats": [
             "damage_+%_per_int",
             "spell_base_necrotic_damage",
-            "base_critical_strike_multiplier_+"
+            "base_critical_strike_multiplier_+",
+            "base_chance_to_Possess_%"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 0.45,
             "2": 9.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "4": 100.0
         }
     },
     "ht16aw": {
@@ -1120,8 +1143,12 @@
         "skillTypeTags": 256,
         "castTime": 0.45454545454545453,
         "baseFlags": {},
-        "stats": [],
-        "level": {}
+        "stats": [
+            "base_chance_to_MarkedForDeath_%"
+        ],
+        "level": {
+            "1": 100.0
+        }
     },
     "me27": {
         "name": "Meteor",
@@ -1292,14 +1319,16 @@
         "stats": [
             "damage_+%_per_dex",
             "melee_base_physical_damage",
-            "base_critical_strike_multiplier_+"
+            "base_critical_strike_multiplier_+",
+            "base_chance_to_Bleed_%"
         ],
         "level": {
             "1": 4.0,
             "damageEffectiveness": 1.0,
             "2": 2.0,
             "3": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "4": 30.0
         }
     },
     "rb31pl": {
@@ -1532,8 +1561,13 @@
         "skillTypeTags": 1024,
         "castTime": 0.6818181818181818,
         "baseFlags": {},
-        "stats": [],
+        "stats": [
+            "base_chance_to_Haste_%",
+            "base_chance_to_Blind_%"
+        ],
         "level": {
+            "1": 100.0,
+            "2": 100.0,
             "cooldown": 10.0
         }
     },
@@ -1586,10 +1620,12 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": [
-            "damage_+%_per_int"
+            "damage_+%_per_int",
+            "base_chance_to_SpiritPlague_%"
         ],
         "level": {
-            "1": 4.0
+            "1": 4.0,
+            "2": 100.0
         }
     },
     "sp38": {
@@ -1728,7 +1764,8 @@
             "damage_+%_per_str",
             "damage_+%_per_dex",
             "melee_base_physical_damage",
-            "base_critical_strike_multiplier_+"
+            "base_critical_strike_multiplier_+",
+            "base_chance_to_Poison_%"
         ],
         "level": {
             "1": 4.0,
@@ -1736,7 +1773,8 @@
             "damageEffectiveness": 1.0,
             "3": 2.0,
             "4": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "5": 140.0
         }
     },
     "st31io": {
