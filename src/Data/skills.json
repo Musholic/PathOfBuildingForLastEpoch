@@ -3,11 +3,12 @@
         "name": "Abyssal Decay",
         "skillTypeTags": 4352,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
         "stats": {
+            "base_skill_effect_duration": 6000.0,
             "damageEffectiveness": 3.05,
             "spell_base_void_damage": 120.0
         }
@@ -16,11 +17,12 @@
         "name": "Acid Skin",
         "skillTypeTags": 16781312,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 5.0,
         "stats": {
+            "base_skill_effect_duration": 5000.0,
             "damageEffectiveness": 4.0,
             "dot_base_poison_damage": 80.0
         }
@@ -29,31 +31,36 @@
         "name": "Ambusher",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 600.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 600000.0
+        }
     },
     "Ailment_AncientFlight": {
         "name": "Ancient Flight",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 2.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 2000.0
+        }
     },
     "Ailment_Anguish": {
         "name": "Anguish",
         "skillTypeTags": 16777472,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 10.0,
         "stats": {
+            "base_skill_effect_duration": 10000.0,
             "damageEffectiveness": 2.0,
             "spell_base_necrotic_damage": 40.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -64,19 +71,23 @@
         "name": "Apocalypse",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 3000.0
+        }
     },
     "Ailment_ArcaneAscendance": {
         "name": "Arcane Ascendance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 1.0,
         "stats": {
+            "base_skill_effect_duration": 1000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -84,19 +95,23 @@
         "name": "Arcane Mark",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 500.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 500000.0
+        }
     },
     "Ailment_ArmourShred": {
         "name": "Shred Armour",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -104,69 +119,84 @@
         "name": "Aspect of the Spider",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 8.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 8000.0
+        }
     },
     "Ailment_AspectOfTheBoarVisuals": {
         "name": "Aspect of the Boar",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 5.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 5000.0
+        }
     },
     "Ailment_AspectOfTheCrow": {
         "name": "Aspect of the Crow",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 8.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 8000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_AspectOfTheLynxVisuals": {
         "name": "Aspect of the Lynx",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 3000.0
+        }
     },
     "Ailment_AspectOfTheSharkVisuals": {
         "name": "Aspect of the Shark",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 3000.0
+        }
     },
     "Ailment_AspectOfTheViperVisuals": {
         "name": "Aspect of the Viper",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 3000.0
+        }
     },
     "Ailment_AvalancheStackForFissure": {
         "name": "Avalanche Fissure Proc Ailment",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 60.0,
         "stats": {
+            "base_skill_effect_duration": 60000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -174,21 +204,25 @@
         "name": "Bleed",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 3.0,
         "stats": {
-            "dot_base_physical_damage": 53.0
+            "base_skill_effect_duration": 3000.0,
+            "dot_base_physical_damage": 53.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Blind": {
         "name": "Blind",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -196,11 +230,12 @@
         "name": "Bone Curse",
         "skillTypeTags": 16777472,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 8.0,
         "stats": {
+            "base_skill_effect_duration": 8000.0,
             "damageEffectiveness": 0.2,
             "spell_base_physical_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -211,11 +246,12 @@
         "name": "Brand of Deception",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "dot_base_lightning_damage": 400.0
         }
     },
@@ -223,11 +259,12 @@
         "name": "Brand of Subjugation",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "dot_base_cold_damage": 400.0
         }
     },
@@ -235,11 +272,12 @@
         "name": "Brand of Trespass",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "dot_base_fire_damage": 400.0
         }
     },
@@ -247,11 +285,12 @@
         "name": "Chained",
         "skillTypeTags": 4352,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 2.0,
         "stats": {
+            "base_skill_effect_duration": 2000.0,
             "damageEffectiveness": 2.0,
             "spell_base_necrotic_damage": 40.0
         }
@@ -259,20 +298,24 @@
     "Ailment_Chill": {
         "name": "Chill",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 3,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_ColdResistanceShred": {
         "name": "Shred Cold Resistance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -280,19 +323,24 @@
         "name": "Contempt",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 5,
-        "duration": 500.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 500000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_CorruptedHeraldry": {
         "name": "Corrupted Heraldry",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 12,
-        "duration": 12.0,
         "stats": {
+            "base_skill_effect_duration": 12000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -300,39 +348,49 @@
         "name": "Crimson Shroud",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 3,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_CriticalEffluence": {
         "name": "Critical Effluence",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 6000.0
+        }
     },
     "Ailment_CriticalVulnerability": {
         "name": "Critical Vulnerability",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 10,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_DamageBoost": {
         "name": "Damage Boost",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -340,31 +398,38 @@
         "name": "Damage Immunity",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 3.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 3000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_Damned": {
         "name": "Damned",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 2.5,
         "stats": {
-            "dot_base_necrotic_damage": 35.0
+            "base_skill_effect_duration": 2500.0,
+            "dot_base_necrotic_damage": 35.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Darkness": {
         "name": "Darkness",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 10000.0,
         "stats": {
+            "base_skill_effect_duration": 10000000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -372,21 +437,24 @@
         "name": "Deadly",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 90000.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 90000000.0
+        }
     },
     "Ailment_Decrepify": {
         "name": "Decrepify",
         "skillTypeTags": 16781568,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 10.0,
         "stats": {
+            "base_skill_effect_duration": 10000.0,
             "damageEffectiveness": 10.0,
             "spell_base_physical_damage": 200.0
         }
@@ -394,10 +462,12 @@
     "Ailment_DisintegrateStackForExplosion": {
         "name": "Disintegrate Explosion Proc Ailment",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 60.0,
         "stats": {
+            "base_skill_effect_duration": 60000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -405,31 +475,38 @@
         "name": "Divine Essence",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 3,
-        "duration": 10.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 10000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_Doom": {
         "name": "Doom",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 4,
-        "duration": 4.0,
         "stats": {
-            "dot_base_void_damage": 400.0
+            "base_skill_effect_duration": 4000.0,
+            "dot_base_void_damage": 400.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_DoomBrand": {
         "name": "Doom Brand",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 99999.0,
         "stats": {
+            "base_skill_effect_duration": 99999000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -437,29 +514,36 @@
         "name": "Healing",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 90000.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 90000000.0
+        }
     },
     "Ailment_DuskShroud": {
         "name": "Dusk Shroud",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_EfficaciousToxin": {
         "name": "Efficacious Toxin",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -467,33 +551,38 @@
         "name": "Electrify",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 2.5,
         "stats": {
-            "dot_base_lightning_damage": 44.0
+            "base_skill_effect_duration": 2500.0,
+            "dot_base_lightning_damage": 44.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Enrage": {
         "name": "Enrage",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 6000.0
+        }
     },
     "Ailment_Falcon Mark": {
         "name": "Falconer's Mark",
         "skillTypeTags": 16777472,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 8.0,
         "stats": {
+            "base_skill_effect_duration": 8000.0,
             "damageEffectiveness": 0.2,
             "spell_base_physical_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -503,38 +592,47 @@
     "Ailment_Fear": {
         "name": "Fear",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 5.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 5000.0
+        }
     },
     "Ailment_Ferocity": {
         "name": "Ferocity",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0
+        }
     },
     "Ailment_FireResistanceShred": {
         "name": "Shred Fire Resistance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_FireballStackForExplosion": {
         "name": "Fireball Explosion Proc Ailment",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 60.0,
         "stats": {
+            "base_skill_effect_duration": 60000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -542,29 +640,35 @@
         "name": "Flurry 1 Hit",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 0.5,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 500.0
+        }
     },
     "Ailment_Flurry2Tag": {
         "name": "Flurry 2 Hit",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 0.5,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 500.0
+        }
     },
     "Ailment_Frailty": {
         "name": "Frailty",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 3,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -572,65 +676,77 @@
         "name": "Frenzy",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 1.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 1000.0
+        }
     },
     "Ailment_Frostbite": {
         "name": "Frostbite",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 3.0,
         "stats": {
-            "dot_base_cold_damage": 36.0
+            "base_skill_effect_duration": 3000.0,
+            "dot_base_cold_damage": 36.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_FutureAttack": {
         "name": "Future Strike",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "dot_base_void_damage": 60.0,
             "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Haste": {
         "name": "Haste",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0
+        }
     },
     "Ailment_HealingHandsHealOverTime": {
         "name": "Healing Hands Lingering Warmth",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 3000.0
+        }
     },
     "Ailment_HolyAuraStackForFlameBurst": {
         "name": "Holy Aura Flame Burst Proc Ailment",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 30.0,
         "stats": {
+            "base_skill_effect_duration": 30000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -638,31 +754,37 @@
         "name": "Ignite",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 2.5,
         "stats": {
-            "dot_base_fire_damage": 40.0
+            "base_skill_effect_duration": 2500.0,
+            "dot_base_fire_damage": 40.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Immobilized": {
         "name": "Immobilize",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 1.0,
         "stats": {
+            "base_skill_effect_duration": 1000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_Inspiration": {
         "name": "Inspiration",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -670,12 +792,13 @@
         "name": "Laceration",
         "skillTypeTags": 4608,
         "baseFlags": {
+            "duration": true,
             "melee": true,
             "attack": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "damageEffectiveness": 1.0,
             "melee_base_physical_damage": 1.0
         }
@@ -683,40 +806,48 @@
     "Ailment_LightningInfusion": {
         "name": "Lightning Infusion",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 3,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_LightningResistanceShred": {
         "name": "Shred Lightning Resistance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_MarkedForDeath": {
         "name": "Marked For Death",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 8.0,
         "stats": {
+            "base_skill_effect_duration": 8000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_MeleeDefShred": {
         "name": "Melee Defense Shred",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -724,43 +855,51 @@
         "name": "Mimic Feast",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 12,
-        "duration": 15.0,
         "stats": {
-            "dot_base_void_damage": 200.0
+            "base_skill_effect_duration": 15000.0,
+            "dot_base_void_damage": 200.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_MirageForm": {
         "name": "Mirage Form",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0
+        }
     },
     "Ailment_MoltenInfusion": {
         "name": "Molten Infusion",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_NecroticBoneCurse": {
         "name": "Bone Curse",
         "skillTypeTags": 16777472,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 8.0,
         "stats": {
+            "base_skill_effect_duration": 8000.0,
             "damageEffectiveness": 0.2,
             "spell_base_necrotic_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -770,10 +909,12 @@
     "Ailment_NecroticResistanceShred": {
         "name": "Shred Necrotic Resistance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -781,11 +922,12 @@
         "name": "Netted",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "dot_base_void_damage": 400.0
         }
     },
@@ -793,11 +935,12 @@
         "name": "Penance",
         "skillTypeTags": 16777472,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 15.0,
         "stats": {
+            "base_skill_effect_duration": 15000.0,
             "damageEffectiveness": 1.0,
             "spell_base_fire_damage": 20.0
         }
@@ -806,21 +949,25 @@
         "name": "Pestilence",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 2,
-        "duration": 0.5,
         "stats": {
-            "dot_base_poison_damage": 30.0
+            "base_skill_effect_duration": 500.0,
+            "dot_base_poison_damage": 30.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_PhysicalResistanceShred": {
         "name": "Shred Physical Resistance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -828,11 +975,12 @@
         "name": "Plague",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "dot_base_poison_damage": 150.0
         }
     },
@@ -840,31 +988,37 @@
         "name": "Poison",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 3.0,
         "stats": {
-            "dot_base_poison_damage": 28.0
+            "base_skill_effect_duration": 3000.0,
+            "dot_base_poison_damage": 28.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_PoisonResistanceShred": {
         "name": "Shred Poison Resistance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_PoisonStackForExplosion": {
         "name": "Poison Explosion Proc Ailment",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 60.0,
         "stats": {
+            "base_skill_effect_duration": 60000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -872,11 +1026,12 @@
         "name": "Possess",
         "skillTypeTags": 4352,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 1.5,
         "stats": {
+            "base_skill_effect_duration": 1500.0,
             "damageEffectiveness": 1.0,
             "spell_base_necrotic_damage": 20.0
         }
@@ -885,11 +1040,12 @@
         "name": "Ravage",
         "skillTypeTags": 4352,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
         "stats": {
+            "base_skill_effect_duration": 6000.0,
             "spell_base_void_damage": 135.0
         }
     },
@@ -897,19 +1053,23 @@
         "name": "Revolution",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 13.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 13000.0
+        }
     },
     "Ailment_Root": {
         "name": "Root",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 0.7,
         "stats": {
+            "base_skill_effect_duration": 700.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -917,71 +1077,84 @@
         "name": "Runeword Avalanche",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 6000.0
+        }
     },
     "Ailment_Runeword Cataclysm": {
         "name": "Runeword Cataclysm",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 6000.0
+        }
     },
     "Ailment_Runeword Hurricane": {
         "name": "Runeword Hurricane",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 6000.0
+        }
     },
     "Ailment_Runeword Inferno": {
         "name": "Runeword Inferno",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 6.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 6000.0
+        }
     },
     "Ailment_Sciurine Rage": {
         "name": "Sciurine Rage",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0
+        }
     },
     "Ailment_SerpentVenom": {
         "name": "Serpent Venom",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "dot_base_poison_damage": 300.0
         }
     },
     "Ailment_ShadowDaggers": {
         "name": "Shadow Daggers",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 60.0,
         "stats": {
+            "base_skill_effect_duration": 60000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -989,29 +1162,36 @@
         "name": "Shapeshifter",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0
+        }
     },
     "Ailment_Sharpshooter": {
         "name": "Sharpshooter",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 10,
-        "duration": 8.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 8000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_Shock": {
         "name": "Shock",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1019,79 +1199,96 @@
         "name": "Critical Shrine",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 60.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 60000.0
+        }
     },
     "Ailment_ShrineExperienceBuff": {
         "name": "Shrine Experience Buff",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 60.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 60000.0
+        }
     },
     "Ailment_ShrineHaste": {
         "name": "Shrine Haste",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 60.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 60000.0
+        }
     },
     "Ailment_ShrineManatee": {
         "name": "Water Shrine",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 45.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 45000.0
+        }
     },
     "Ailment_ShrineReflect": {
         "name": "Reflective Shrine",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 60.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 60000.0
+        }
     },
     "Ailment_ShrineStun": {
         "name": "Stunning Shrine",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 60.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 60000.0
+        }
     },
     "Ailment_SilverShroud": {
         "name": "Silver Shroud",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 10.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 10000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_Slow": {
         "name": "Slow",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 3,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1099,31 +1296,37 @@
         "name": "Smoke Blades",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_SnakeInfection": {
         "name": "Snake Infection",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 12.0,
         "stats": {
+            "base_skill_effect_duration": 12000.0,
             "dot_base_poison_damage": 400.0
         }
     },
     "Ailment_SparkCharge": {
         "name": "Spark Charge",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 1.0,
         "stats": {
+            "base_skill_effect_duration": 1000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1131,21 +1334,25 @@
         "name": "Spirit Kindling",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 100,
-        "duration": 5.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 5000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_SpiritPlague": {
         "name": "Spirit Plague",
         "skillTypeTags": 16781568,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "damageEffectiveness": 4.5,
             "spell_base_necrotic_damage": 90.0
         }
@@ -1154,11 +1361,12 @@
         "name": "Spreading Flames",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "dot_base_fire_damage": 200.0
         }
     },
@@ -1166,11 +1374,12 @@
         "name": "Abyssal Decay",
         "skillTypeTags": 4352,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 0,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "damageEffectiveness": 1.5,
             "spell_base_void_damage": 30.0
         }
@@ -1179,39 +1388,48 @@
         "name": "Aspect of the Shark",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 10,
-        "duration": 3.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 3000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_Stagger": {
         "name": "Stagger",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 1,
-        "duration": 10.0,
         "stats": {
+            "base_skill_effect_duration": 10000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_Stalwart": {
         "name": "Stalwart",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 10.0,
         "stats": {
+            "base_skill_effect_duration": 10000.0,
             "damageEffectiveness": 1.0
         }
     },
     "Ailment_StoneStare": {
         "name": "Stone Stare",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 0,
-        "duration": 5.0,
         "stats": {
+            "base_skill_effect_duration": 5000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1219,11 +1437,12 @@
         "name": "Swiftness",
         "skillTypeTags": 4352,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 10,
-        "duration": 30.0,
         "stats": {
+            "base_skill_effect_duration": 30000.0,
             "spell_base_void_damage": 25.0
         }
     },
@@ -1231,33 +1450,38 @@
         "name": "Talon Blades",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 18.0,
         "stats": {
-            "dot_base_fire_damage": 40.0
+            "base_skill_effect_duration": 18000.0,
+            "dot_base_fire_damage": 40.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_TempestPaws": {
         "name": "Tempest Paws",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 5.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 5000.0
+        }
     },
     "Ailment_TempestsMight": {
         "name": "Tempest's Might",
         "skillTypeTags": 4352,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "spell_base_void_damage": 25.0
         }
     },
@@ -1265,11 +1489,12 @@
         "name": "The Gate",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 10.0,
         "stats": {
+            "base_skill_effect_duration": 10000.0,
             "dot_base_cold_damage": 400.0
         }
     },
@@ -1277,23 +1502,26 @@
         "name": "Time Rot",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 12,
-        "duration": 3.0,
         "stats": {
-            "dot_base_void_damage": 55.0
+            "base_skill_effect_duration": 3000.0,
+            "dot_base_void_damage": 55.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Torment": {
         "name": "Torment",
         "skillTypeTags": 16781568,
         "baseFlags": {
+            "duration": true,
             "spell": true
         },
         "maxStacks": 1,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "damageEffectiveness": 6.0,
             "spell_base_necrotic_damage": 120.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -1304,39 +1532,50 @@
         "name": "Totem Armor",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 0,
-        "duration": 4.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 4000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_VoidBarrierVisuals": {
         "name": "Void Barrier",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 6,
-        "duration": 999999.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 999999000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_VoidEssence": {
         "name": "Void Essence",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 3,
-        "duration": 7.0,
-        "stats": {}
+        "stats": {
+            "base_skill_effect_duration": 7000.0,
+            "dot_can_stack": 1
+        }
     },
     "Ailment_VoidResistanceShred": {
         "name": "Shred Void Resistance",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 10,
-        "duration": 4.0,
         "stats": {
+            "base_skill_effect_duration": 4000.0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1344,11 +1583,12 @@
         "name": "Witchfire",
         "skillTypeTags": 4096,
         "baseFlags": {
+            "duration": true,
             "dot": true
         },
         "maxStacks": 1,
-        "duration": 12.0,
         "stats": {
+            "base_skill_effect_duration": 12000.0,
             "dot_base_fire_damage": 300.0,
             "dot_base_necrotic_damage": 300.0
         }
@@ -1356,10 +1596,12 @@
     "Ailment_Withering": {
         "name": "Withering",
         "skillTypeTags": 0,
-        "baseFlags": {},
+        "baseFlags": {
+            "duration": true
+        },
         "maxStacks": 20,
-        "duration": 3.0,
         "stats": {
+            "base_skill_effect_duration": 3000.0,
             "damageEffectiveness": 1.0
         }
     },

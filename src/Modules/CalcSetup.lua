@@ -1169,7 +1169,9 @@ function calcs.initEnv(build, mode, override, specEnv)
 				group.nameSpec = grantedSkill.nameSpec
 				group.noSupports = grantedSkill.noSupports
 				group.triggered = grantedSkill.triggered
+				group.triggeredOnHit = grantedSkill.triggeredOnHit
 				group.triggerChance = grantedSkill.triggerChance
+				group.includeInFullDPS = grantedSkill.includeInFullDPS
 				build.skillsTab:ProcessSocketGroup(group)
 			end
 

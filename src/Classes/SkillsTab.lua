@@ -425,11 +425,6 @@ function SkillsTabClass:ProcessSocketGroup(socketGroup)
 		-- Used for skills granted by items
 		gemInstance.errMsg = nil
 		gemInstance.grantedEffect = data.skills[gemInstance.skillId]
-		if gemInstance.triggered then
-			if gemInstance.grantedEffect.levels[gemInstance.level] then
-				gemInstance.grantedEffect.levels[gemInstance.level].cost = {}
-			end
-		end
 	elseif gemInstance.nameSpec:match("%S") then
 		-- Specified by gem/skill name, try to match it
 		-- Used to migrate pre-1.4.20 builds

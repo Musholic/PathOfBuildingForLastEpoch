@@ -2035,6 +2035,9 @@ local result = {
 ["quality_display_active_skill_bleed_damage_final_is_gem"] = {
 	-- Display only
 },
+["dot_can_stack"] = {
+	flag("DotCanStack"),
+},
 }
 
 for _,sourceType in ipairs(DamageSourceTypes) do
@@ -2044,6 +2047,11 @@ for _,sourceType in ipairs(DamageSourceTypes) do
 			skill(damageType.."Max", "BASE", nil, 0, KeywordFlag[sourceType]),
 		}
 	end
+end
+for _,damageType in ipairs(DamageTypes) do
+	result["dot_base_".. damageType:lower() .."_damage"] = {
+		skill(damageType.."Dot", nil),
+	}
 end
 
 for _, attribute in ipairs(Attributes) do

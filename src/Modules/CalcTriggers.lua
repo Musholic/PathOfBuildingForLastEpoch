@@ -588,16 +588,10 @@ local function defaultTriggerHandler(env, config)
 
 			local triggeredCDAdjusted = ( (triggeredCD or 0) + (addedCooldown or 0) ) / icdr
 			local triggerCDAdjusted = ( (triggerCD or 0) + (output.addsCastTime or 0) ) / icdr
-			local triggeredCDTickRounded = actor.mainSkill.skillData and actor.mainSkill.skillData.ignoresTickRate and triggeredCDAdjusted or m_ceil(triggeredCDAdjusted * data.misc.ServerTickRate) / data.misc.ServerTickRate
-			local triggerCDTickRounded = actor.mainSkill.triggeredBy and actor.mainSkill.triggeredBy.ignoresTickRate and triggerCDAdjusted or m_ceil(triggerCDAdjusted * data.misc.ServerTickRate) / data.misc.ServerTickRate
 			local actionCooldown = cooldownOverride or m_max((triggerCD or 0) + (output.addsCastTime or 0), (triggeredCD or 0) + (addedCooldown or 0))
 			local actionCooldownAdjusted = cooldownOverride or m_max(triggerCDAdjusted, triggeredCDAdjusted)
-			local actionCooldownTickRounded = cooldownOverride and (m_ceil(cooldownOverride * data.misc.ServerTickRate) / data.misc.ServerTickRate) or m_max(triggerCDTickRounded, triggeredCDTickRounded)
 
 			output.TriggerRateCap = source == actor.mainSkill and actor.mainSkill.skillData.triggerRateCapOverride or m_huge
-			if actionCooldownTickRounded ~= 0 then
-				output.TriggerRateCap = 1 / actionCooldownTickRounded
-			end
 			if config.triggerName == "Doom Blast" and env.build.configTab.input["doomBlastSource"] == "expiration" then
 				local expirationRate = 1 / GlobalCache.cachedData["CACHE"][uuid].Env.player.output.Duration
 				if breakdown and breakdown.EffectiveSourceRate then
@@ -672,34 +666,6 @@ local function defaultTriggerHandler(env, config)
 					t_insert(breakdown.TriggerRateCap, s_format("%.3f ^8(biggest of trigger cooldown and triggered skill cooldown)", actionCooldownAdjusted))
 				end
 
-				local displayCooldownRounding = (actor.mainSkill.skillData and not actor.mainSkill.skillData.ignoresTickRate and triggeredCDAdjusted ~= 0) or (actor.mainSkill.triggeredBy and not actor.mainSkill.triggeredBy.ignoresTickRate and triggerCDAdjusted ~= 0)
-				if displayCooldownRounding then
-					t_insert(breakdown.TriggerRateCap, s_format("%.3f ^8(adjusted for server tick rate)", actionCooldownTickRounded))
-				end
-
-				local function extraIncreaseNeeded(affectedCD)
-					if not cooldownOverride then
-						local nextBreakpoint = actionCooldownTickRounded - data.misc.ServerTickTime
-						local timeOverBreakpoint = actionCooldownAdjusted - nextBreakpoint
-						local alreadyReducedTime = actionCooldown - actionCooldownAdjusted
-						if timeOverBreakpoint < affectedCD then
-							local divNeeded = affectedCD / (affectedCD - timeOverBreakpoint - alreadyReducedTime)
-							local incTotal = m_ceil(( divNeeded - 1 ) * 100)
-							return incTotal - (icdr - 1) * 100
-						end
-					end
-				end
-
-				local extraICDRNeeded = extraIncreaseNeeded(actionCooldown)
-				if extraICDRNeeded then
-					t_insert(breakdown.TriggerRateCap, s_format("^8(extra ICDR of %d%% would reach next breakpoint)", extraICDRNeeded))
-				end
-
-				local extraCSIncNeeded = output.addsCastTime and extraIncreaseNeeded(output.addsCastTime)
-				if extraCSIncNeeded then
-					t_insert(breakdown.TriggerRateCap, s_format("^8(extra ICS  of %d%% would reach next breakpoint)", extraCSIncNeeded))
-				end
-
 				t_insert(breakdown.TriggerRateCap, "")
 
 				if not (triggeredCD or triggerCD or cooldownOverride) then
@@ -740,7 +706,7 @@ local function defaultTriggerHandler(env, config)
 
 			if output.EffectiveSourceRate ~= 0 then
 				-- If the current triggered skill ignores tick rate and is the only triggered skill by this trigger use charge based calcs
-				if actor.mainSkill.skillData.ignoresTickRate and ( not config.triggeredSkillCond or (triggeredSkills and #triggeredSkills == 1 and triggeredSkills[1] == packageSkillDataForSimulation(actor.mainSkill, env)) ) then
+				if ( not config.triggeredSkillCond or (triggeredSkills and #triggeredSkills == 1 and triggeredSkills[1] == packageSkillDataForSimulation(actor.mainSkill, env)) ) then
 					local overlaps = config.stagesAreOverlaps and env.player.mainSkill.skillPart == config.stagesAreOverlaps and env.player.mainSkill.activeEffect.srcInstance.skillStageCount or config.overlaps
 					output.SkillTriggerRate = m_min(output.TriggerRateCap, output.EffectiveSourceRate * (overlaps or 1))
 					if breakdown then
@@ -833,6 +799,16 @@ local function defaultTriggerHandler(env, config)
 end
 
 local configTable = {
+	["cast on hit"] = function(env)
+		local source, trigRate, uuid
+		for _, skill in ipairs(env.player.activeSkillList) do
+			if skill.activeEffect.grantedEffect.name == env.player.mainSkill.activeEffect.srcInstance.triggeredOnHit then
+				source, trigRate, uuid = findTriggerSkill(env, skill, source, trigRate)
+				break
+			end
+		end
+		return {trigRate = trigRate, source = source, uuid = uuid, useCastRate = true, triggeredSkills = {env.player.mainSkill}}
+	end,
 	["cast when damage taken"] = function(env)
 		local thresholdMod = calcLib.mod(env.player.mainSkill.skillModList, nil, "CWDTThreshold")
 		env.player.output.CWDTThreshold = env.player.mainSkill.skillData.triggeredByDamageTaken * thresholdMod
@@ -874,6 +850,7 @@ end
 function calcs.triggers(env, actor)
 	if actor and not actor.mainSkill.skillFlags.disable and not actor.mainSkill.skillData.limitedProcessing then
 		local skillName = actor.mainSkill.activeEffect.grantedEffect.name
+		local triggerOnHit = actor.mainSkill.activeEffect.srcInstance and actor.mainSkill.activeEffect.srcInstance.triggeredOnHit
 		local triggerName = actor.mainSkill.triggeredBy and actor.mainSkill.triggeredBy.grantedEffect.name
 		local uniqueName = isTriggered(actor.mainSkill) and getUniqueItemTriggerName(actor.mainSkill)
 		local skillNameLower = skillName and skillName:lower()
@@ -884,10 +861,15 @@ function calcs.triggers(env, actor)
         config = config or triggerNameLower and configTable[triggerNameLower] and configTable[triggerNameLower](env)
         config = config or awakenedTriggerNameLower and configTable[awakenedTriggerNameLower] and configTable[awakenedTriggerNameLower](env)
         config = config or uniqueNameLower and configTable[uniqueNameLower] and configTable[uniqueNameLower](env)
+		config = config or triggerOnHit and configTable["cast on hit"](env)
 		if config then
 		    config.actor = config.actor or actor
 			config.triggerName = config.triggerName or triggerName or uniqueName or skillName
 			config.triggerChance = config.triggerChance or (actor.mainSkill.activeEffect.srcInstance and actor.mainSkill.activeEffect.srcInstance.triggerChance)
+			if triggerOnHit then
+				config.triggerName = triggerOnHit
+				config.triggerChance = 100
+			end
 			local triggerHandler = config.customHandler or defaultTriggerHandler
 		    triggerHandler(env, config)
 		else
