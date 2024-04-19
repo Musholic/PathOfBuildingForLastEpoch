@@ -51,7 +51,7 @@ end
 -- Merge skill modifiers with given mod list
 function calcs.mergeSkillInstanceMods(env, modList, skillEffect, extraStats)
 	local grantedEffect = skillEffect.grantedEffect
-	local stats = calcLib.buildSkillInstanceStats(skillEffect, grantedEffect)
+	local stats = grantedEffect.stats
 	if extraStats and extraStats[1] then
 		for _, stat in pairs(extraStats) do
 			stats[stat.key] = (stats[stat.key] or 0) + stat.value
@@ -460,8 +460,6 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	if skillFlags.disable then
 		wipeTable(skillFlags)
 		skillFlags.disable = true
-		calcLib.validateGemLevel(activeEffect)
-		activeEffect.grantedEffectLevel = activeGrantedEffect.levels[activeEffect.level]
 		return
 	end
 
@@ -505,13 +503,12 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 	-- Add active gem modifiers
 	activeEffect.actorLevel = activeSkill.actor.minionData and activeSkill.actor.level
 	calcs.mergeSkillInstanceMods(env, skillModList, activeEffect, skillModList:List(activeSkill.skillCfg, "ExtraSkillStat"))
-	activeEffect.grantedEffectLevel = activeGrantedEffect.level
 
 	-- Add extra modifiers from granted effect level
-	local level = activeEffect.grantedEffectLevel
-	activeSkill.skillData.CritChance = level.critChance
-	if level.cooldown and not skillModList:Flag(activeSkill.skillCfg, "NoCooldown") then
-		activeSkill.skillData.cooldown = level.cooldown
+	local stats = activeGrantedEffect.stats
+	activeSkill.skillData.CritChance = stats.critChance
+	if stats.cooldown and not skillModList:Flag(activeSkill.skillCfg, "NoCooldown") then
+		activeSkill.skillData.cooldown = stats.cooldown
 	end
 
 	-- Add extra modifiers from other sources

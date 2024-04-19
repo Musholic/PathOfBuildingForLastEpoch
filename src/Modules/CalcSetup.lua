@@ -1148,7 +1148,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 				local group
 				for index, socketGroup in pairs(build.skillsTab.socketGroupList) do
 					if socketGroup.source == grantedSkill.source and socketGroup.slot == grantedSkill.slotName then
-						if socketGroup.gemList[1] and socketGroup.gemList[1].skillId == grantedSkill.skillId and socketGroup.gemList[1].level == grantedSkill.level then
+						if socketGroup.skillId == grantedSkill.skillId then
 							group = socketGroup
 							markList[socketGroup] = true
 							break
@@ -1157,7 +1157,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 				end
 				if not group then
 					-- Create a new group for this skill
-					group = { label = "", enabled = true, gemList = { }, source = grantedSkill.source, slot = grantedSkill.slotName }
+					group = { label = "", enabled = true, source = grantedSkill.source, slot = grantedSkill.slotName }
 					t_insert(build.skillsTab.socketGroupList, group)
 					markList[group] = true
 				end
@@ -1165,22 +1165,11 @@ function calcs.initEnv(build, mode, override, specEnv)
 				-- Update the group
 				group.sourceItem = grantedSkill.sourceItem
 				group.sourceNode = grantedSkill.sourceNode
-				local activeGemInstance = group.gemList[1] or {
-					skillId = grantedSkill.skillId,
-					nameSpec = grantedSkill.nameSpec,
-					quality = 0,
-					enabled = true,
-				}
-				activeGemInstance.fromItem = grantedSkill.sourceItem ~= nil
-				activeGemInstance.gemId = nil
-				activeGemInstance.level = grantedSkill.level
-				activeGemInstance.enableGlobal1 = true
-				activeGemInstance.noSupports = grantedSkill.noSupports
+				group.skillId = grantedSkill.skillId
+				group.nameSpec = grantedSkill.nameSpec
 				group.noSupports = grantedSkill.noSupports
-				activeGemInstance.triggered = grantedSkill.triggered
-				activeGemInstance.triggerChance = grantedSkill.triggerChance
-				wipeTable(group.gemList)
-				t_insert(group.gemList, activeGemInstance)
+				group.triggered = grantedSkill.triggered
+				group.triggerChance = grantedSkill.triggerChance
 				build.skillsTab:ProcessSocketGroup(group)
 			end
 
@@ -1278,7 +1267,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 		local socketGroupSkillListList = { }
 		for index, group in pairs(build.skillsTab.socketGroupList) do
 			if index == env.mainSocketGroup or group.enabled then
-				local slotName = group.slot
+				local slotName = group.slot or "noSlot"
 				groupCfgList[slotName] = groupCfgList[slotName] or {}
 				groupCfgList[slotName][group] = groupCfgList[slotName][group] or {
 					slotName = slotName,

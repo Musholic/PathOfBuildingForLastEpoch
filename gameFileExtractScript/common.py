@@ -383,3 +383,59 @@ def construct_mod_data_list():
             propertyData["name"] = propertyData["propertyName"]
 
     modDataList = dict(natsorted(modDataList.items()))
+
+
+def set_stats_from_damage_data(skill, damage_data, skill_tags):
+    damage_effectiveness = float(damage_data['addedDamageScaling'])
+    if damage_effectiveness > 0:
+        skill['stats']['damageEffectiveness'] = damage_effectiveness
+    if damage_data['isHit'] == "1":
+        skill["baseFlags"]["hit"] = True
+    match int(skill_tags):
+        case val if val & 256:
+            damage_tag = "spell"
+            skill["baseFlags"]["spell"] = True
+        case val if val & 512:
+            damage_tag = "melee"
+            skill["baseFlags"]["melee"] = True
+            skill["baseFlags"]["attack"] = True
+        case val if val & 1024:
+            damage_tag = "throwing"
+            skill["baseFlags"]["projectile"] = True
+            skill["baseFlags"]["attack"] = True
+        case val if val & 2048:
+            damage_tag = "bow"
+            skill["baseFlags"]["projectile"] = True
+            skill["baseFlags"]["attack"] = True
+        case val if val & 4096:
+            damage_tag = "dot"
+            skill["baseFlags"]["dot"] = True
+        case other:
+            damage_tag = str(other)
+    for i, damageStr in enumerate(damage_data['damage']):
+        damage = float(damageStr)
+        if damage:
+            match i:
+                case 0:
+                    damage_type = "physical"
+                case 1:
+                    damage_type = "fire"
+                case 2:
+                    damage_type = "cold"
+                case 3:
+                    damage_type = "lightning"
+                case 4:
+                    damage_type = "necrotic"
+                case 5:
+                    damage_type = "void"
+                case _:
+                    damage_type = "poison"
+            skill['stats'][damage_tag + "_base_" + damage_type + "_damage"] = damage
+    crit_multiplier = float(damage_data['critMultiplier']) * 100 - 100
+    if crit_multiplier == -100:
+        skill['stats']['no_critical_strike_multiplier'] = 1
+    elif crit_multiplier:
+        skill['stats']['base_critical_strike_multiplier_+'] = crit_multiplier
+    crit_chance = float(damage_data['critChance']) * 100
+    if crit_chance:
+        skill["stats"]['critChance'] = crit_chance

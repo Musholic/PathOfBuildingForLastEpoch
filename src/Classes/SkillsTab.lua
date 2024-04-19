@@ -202,14 +202,7 @@ function SkillsTabClass:LoadSkill(node, skillSetId)
 	socketGroup.mainActiveSkillCalcs = tonumber(node.attrib.mainActiveSkillCalcs) or 1
 	socketGroup.gemList = { }
 	local skillId = node.attrib.skillId
-	local grantedEffect = self.build.data.skills[skillId] or {
-		--TODO: have exported data with necessary skill info (including name) into Data/skills directory
-		id = skillId,
-		name = skillId,
-		skillTypes = {},
-		baseFlags = {},
-		stats = {},
-	}
+	local grantedEffect = self.build.data.skills[skillId]
 	socketGroup.skillId = skillId
 	socketGroup.grantedEffect = grantedEffect
 	self:ProcessSocketGroup(socketGroup)
@@ -413,74 +406,67 @@ end
 function SkillsTabClass:ProcessSocketGroup(socketGroup)
 	-- Loop through the skill gem list
 	local data = self.build.data
-	for _, gemInstance in ipairs(socketGroup.gemList) do
-		gemInstance.color = "^8"
-		gemInstance.nameSpec = gemInstance.nameSpec or ""
-		local prevDefaultLevel = gemInstance.gemData and gemInstance.gemData.naturalMaxLevel or (gemInstance.new and 20)
-		gemInstance.gemData, gemInstance.grantedEffect = nil
-		if gemInstance.gemId then
-			-- Specified by gem ID
-			-- Used for skills granted by skill gems
-			gemInstance.errMsg = nil
-			gemInstance.gemData = data.gems[gemInstance.gemId]
-			if gemInstance.gemData then
-				gemInstance.nameSpec = gemInstance.gemData.name
-				gemInstance.skillId = gemInstance.gemData.grantedEffectId
+	local gemInstance = socketGroup
+	gemInstance.color = "^8"
+	gemInstance.nameSpec = gemInstance.nameSpec or ""
+	local prevDefaultLevel = gemInstance.gemData and gemInstance.gemData.naturalMaxLevel or (gemInstance.new and 20)
+	gemInstance.gemData, gemInstance.grantedEffect = nil
+	if gemInstance.gemId then
+		-- Specified by gem ID
+		-- Used for skills granted by skill gems
+		gemInstance.errMsg = nil
+		gemInstance.gemData = data.gems[gemInstance.gemId]
+		if gemInstance.gemData then
+			gemInstance.nameSpec = gemInstance.gemData.name
+			gemInstance.skillId = gemInstance.gemData.grantedEffectId
+		end
+	elseif gemInstance.skillId then
+		-- Specified by skill ID
+		-- Used for skills granted by items
+		gemInstance.errMsg = nil
+		gemInstance.grantedEffect = data.skills[gemInstance.skillId]
+		if gemInstance.triggered then
+			if gemInstance.grantedEffect.levels[gemInstance.level] then
+				gemInstance.grantedEffect.levels[gemInstance.level].cost = {}
 			end
-		elseif gemInstance.skillId then
-			-- Specified by skill ID
-			-- Used for skills granted by items
-			gemInstance.errMsg = nil
-			local gemId = data.gemForSkill[gemInstance.skillId]
-			if gemId then
-				gemInstance.gemData = data.gems[gemId]
-			else
-				gemInstance.grantedEffect = data.skills[gemInstance.skillId]
-			end
-			if gemInstance.triggered then
-				if gemInstance.grantedEffect.levels[gemInstance.level] then
-					gemInstance.grantedEffect.levels[gemInstance.level].cost = {}
-				end
-			end
-		elseif gemInstance.nameSpec:match("%S") then
-			-- Specified by gem/skill name, try to match it
-			-- Used to migrate pre-1.4.20 builds
-			gemInstance.errMsg, gemInstance.gemData = self:FindSkillGem(gemInstance.nameSpec)
-			gemInstance.gemId = gemInstance.gemData and gemInstance.gemData.id
-			gemInstance.skillId = gemInstance.gemData and gemInstance.gemData.grantedEffectId
-			if gemInstance.gemData then
-				gemInstance.nameSpec = gemInstance.gemData.name
-			end
+		end
+	elseif gemInstance.nameSpec:match("%S") then
+		-- Specified by gem/skill name, try to match it
+		-- Used to migrate pre-1.4.20 builds
+		gemInstance.errMsg, gemInstance.gemData = self:FindSkillGem(gemInstance.nameSpec)
+		gemInstance.gemId = gemInstance.gemData and gemInstance.gemData.id
+		gemInstance.skillId = gemInstance.gemData and gemInstance.gemData.grantedEffectId
+		if gemInstance.gemData then
+			gemInstance.nameSpec = gemInstance.gemData.name
+		end
+	else
+		gemInstance.errMsg, gemInstance.gemData, gemInstance.skillId = nil
+	end
+	if gemInstance.gemData and gemInstance.gemData.grantedEffect.unsupported then
+		gemInstance.errMsg = gemInstance.nameSpec .. " is not supported yet"
+		gemInstance.gemData = nil
+	end
+	if gemInstance.gemData or gemInstance.grantedEffect then
+		gemInstance.new = nil
+		local grantedEffect = gemInstance.grantedEffect or gemInstance.gemData.grantedEffect
+		if grantedEffect.color == 1 then
+			gemInstance.color = colorCodes.STRENGTH
+		elseif grantedEffect.color == 2 then
+			gemInstance.color = colorCodes.DEXTERITY
+		elseif grantedEffect.color == 3 then
+			gemInstance.color = colorCodes.INTELLIGENCE
 		else
-			gemInstance.errMsg, gemInstance.gemData, gemInstance.skillId = nil
+			gemInstance.color = colorCodes.NORMAL
 		end
-		if gemInstance.gemData and gemInstance.gemData.grantedEffect.unsupported then
-			gemInstance.errMsg = gemInstance.nameSpec .. " is not supported yet"
-			gemInstance.gemData = nil
+		if prevDefaultLevel and gemInstance.gemData and gemInstance.gemData.naturalMaxLevel ~= prevDefaultLevel then
+			gemInstance.level = gemInstance.gemData.naturalMaxLevel
+			gemInstance.naturalMaxLevel = gemInstance.level
 		end
-		if gemInstance.gemData or gemInstance.grantedEffect then
-			gemInstance.new = nil
-			local grantedEffect = gemInstance.grantedEffect or gemInstance.gemData.grantedEffect
-			if grantedEffect.color == 1 then
-				gemInstance.color = colorCodes.STRENGTH
-			elseif grantedEffect.color == 2 then
-				gemInstance.color = colorCodes.DEXTERITY
-			elseif grantedEffect.color == 3 then
-				gemInstance.color = colorCodes.INTELLIGENCE
-			else
-				gemInstance.color = colorCodes.NORMAL
-			end
-			if prevDefaultLevel and gemInstance.gemData and gemInstance.gemData.naturalMaxLevel ~= prevDefaultLevel then
-				gemInstance.level = gemInstance.gemData.naturalMaxLevel
-				gemInstance.naturalMaxLevel = gemInstance.level
-			end
-			calcLib.validateGemLevel(gemInstance)
-			if gemInstance.gemData then
-				gemInstance.reqLevel = grantedEffect.levels[gemInstance.level].levelRequirement
-				gemInstance.reqStr = calcLib.getGemStatRequirement(gemInstance.reqLevel, grantedEffect.support, gemInstance.gemData.reqStr)
-				gemInstance.reqDex = calcLib.getGemStatRequirement(gemInstance.reqLevel, grantedEffect.support, gemInstance.gemData.reqDex)
-				gemInstance.reqInt = calcLib.getGemStatRequirement(gemInstance.reqLevel, grantedEffect.support, gemInstance.gemData.reqInt)
-			end
+		if gemInstance.gemData then
+			gemInstance.reqLevel = grantedEffect.levels[gemInstance.level].levelRequirement
+			gemInstance.reqStr = calcLib.getGemStatRequirement(gemInstance.reqLevel, grantedEffect.support, gemInstance.gemData.reqStr)
+			gemInstance.reqDex = calcLib.getGemStatRequirement(gemInstance.reqLevel, grantedEffect.support, gemInstance.gemData.reqDex)
+			gemInstance.reqInt = calcLib.getGemStatRequirement(gemInstance.reqLevel, grantedEffect.support, gemInstance.gemData.reqInt)
 		end
 	end
 end
