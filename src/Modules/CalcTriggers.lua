@@ -807,6 +807,9 @@ local configTable = {
 				break
 			end
 		end
+
+		-- The triggered skill inherits the source skill mods
+		calcs.mergeSkillInstanceMods(env, env.player.mainSkill.skillModList, source.activeEffect)
 		return {trigRate = trigRate, source = source, uuid = uuid, useCastRate = true, triggeredSkills = {env.player.mainSkill}}
 	end,
 	["cast when damage taken"] = function(env)
