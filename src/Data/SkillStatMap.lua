@@ -2063,4 +2063,10 @@ for _, attribute in ipairs(Attributes) do
 	}
 end
 
+for skillId, grantedEffect in pairs(data.skills) do
+	result["chance_to_cast_" .. skillId .. "_on_hit"] = {
+		skill("chanceToTriggerOnHit", nil, { type = "SkillId", skillId = skillId }),
+	}
+end
+
 return result

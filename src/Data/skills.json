@@ -1639,7 +1639,7 @@
         "castTime": 0.6363636363636362,
         "baseFlags": {},
         "stats": {
-            "base_chance_to_AbyssalDecay_%": 100.0,
+            "chance_to_cast_Ailment_AbyssalDecay_on_hit_%": 100.0,
             "cooldown": 2.999400119976005
         }
     },
@@ -1650,7 +1650,7 @@
         "baseFlags": {},
         "stats": {
             "damage_+%_per_int": 4.0,
-            "base_chance_to_Poison_%": 100.0,
+            "chance_to_cast_Ailment_Poison_on_hit_%": 100.0,
             "cooldown": 1.0
         }
     },
@@ -1680,7 +1680,7 @@
             "spell": true
         },
         "stats": {
-            "base_chance_to_ArcaneAscendance_%": 100.0,
+            "chance_to_cast_Ailment_ArcaneAscendance_on_hit_%": 100.0,
             "damageEffectiveness": 0.45000002,
             "spell_base_lightning_damage": 9.0,
             "cooldown": 5.0
@@ -1711,7 +1711,7 @@
         "baseFlags": {},
         "stats": {
             "damage_+%_per_int": 4.0,
-            "base_chance_to_BoneCurse_%": 100.0
+            "chance_to_cast_Ailment_BoneCurse_on_hit_%": 100.0
         }
     },
     "be36ar": {
@@ -2105,7 +2105,7 @@
             "spell_base_fire_damage": 25.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
-            "base_chance_to_Ignite_%": 40.0
+            "chance_to_cast_Ailment_Ignite_on_hit_%": 40.0
         }
     },
     "fl13": {
@@ -2160,7 +2160,7 @@
         },
         "stats": {
             "damage_+%_per_int": 4.0,
-            "base_chance_to_Chill_%": 100.0,
+            "chance_to_cast_Ailment_Chill_on_hit_%": 100.0,
             "damageEffectiveness": 1.0,
             "spell_base_cold_damage": 20.0
         }
@@ -2304,7 +2304,7 @@
             "damage_+%_per_int": 4.0,
             "damageEffectiveness": 0.375,
             "spell_base_lightning_damage": 7.5,
-            "base_chance_to_Slow_%": 100.0
+            "chance_to_cast_Ailment_Slow_on_hit_%": 100.0
         }
     },
     "ha84": {
@@ -2330,7 +2330,7 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": {
-            "base_chance_to_HealingHandsHealOverTime_%": 100.0
+            "chance_to_cast_Ailment_HealingHandsHealOverTime_on_hit_%": 100.0
         }
     },
     "hs18gu": {
@@ -2347,7 +2347,7 @@
             "spell_base_necrotic_damage": 9.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
-            "base_chance_to_Possess_%": 100.0
+            "chance_to_cast_Ailment_Possess_on_hit_%": 100.0
         }
     },
     "ht16aw": {
@@ -2485,7 +2485,7 @@
         "castTime": 0.45454545454545453,
         "baseFlags": {},
         "stats": {
-            "base_chance_to_MarkedForDeath_%": 100.0
+            "chance_to_cast_Ailment_MarkedForDeath_on_hit_%": 100.0
         }
     },
     "me27": {
@@ -2623,7 +2623,7 @@
             "melee_base_physical_damage": 2.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
-            "base_chance_to_Bleed_%": 30.0
+            "chance_to_cast_Ailment_Bleed_on_hit_%": 30.0
         }
     },
     "rb31pl": {
@@ -2818,8 +2818,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {},
         "stats": {
-            "base_chance_to_Haste_%": 100.0,
-            "base_chance_to_Blind_%": 100.0,
+            "chance_to_cast_Ailment_Haste_on_hit_%": 100.0,
+            "chance_to_cast_Ailment_Blind_on_hit_%": 100.0,
             "cooldown": 10.0
         }
     },
@@ -2863,7 +2863,7 @@
         "baseFlags": {},
         "stats": {
             "damage_+%_per_int": 4.0,
-            "base_chance_to_SpiritPlague_%": 100.0
+            "chance_to_cast_Ailment_SpiritPlague_on_hit_%": 100.0
         }
     },
     "sp38": {
@@ -2979,7 +2979,7 @@
             "melee_base_physical_damage": 2.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
-            "base_chance_to_Poison_%": 140.0
+            "chance_to_cast_Ailment_Poison_on_hit_%": 140.0
         }
     },
     "st31io": {

@@ -58,7 +58,8 @@ for skillTreeData in skillTreesData:
                 if data.get('MonoBehaviour') and data['MonoBehaviour'].get('ailments'):
                     for ailmentData in data['MonoBehaviour'].get('ailments'):
                         ailmentName = load_file_from_guid(ailmentData['ailment'])['MonoBehaviour']['m_Name']
-                        skill['stats']["base_chance_to_" + ailmentName + "_%"] = float(ailmentData['chance']) * 100
+                        skill['stats']["chance_to_cast_Ailment_" + ailmentName + "_on_hit_%"] = float(
+                            ailmentData['chance']) * 100
 
         skills[skillData['playerAbilityID']] = skill
         maxCharges = skillData['maxCharges']

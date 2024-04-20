@@ -1139,6 +1139,24 @@ function calcs.initEnv(build, mode, override, specEnv)
 	-- Merge Granted Skills Tables
 	env.grantedSkills = tableConcat(env.grantedSkillsNodes, env.grantedSkillsItems)
 
+	-- Add triggered skills
+	for _, group in pairs(build.skillsTab.socketGroupList) do
+		for statName, _ in pairs(group.grantedEffect.stats) do
+			local triggeredOnCast = statName:match("chance_to_cast_(.*)_on_hit_%%")
+
+			if triggeredOnCast then
+				t_insert(env.grantedSkills, {
+					skillId = triggeredOnCast,
+					source = "SkillId:"..group.grantedEffect.id,
+					triggered = true,
+					triggeredOnHit = group.grantedEffect.name,
+					includeInFullDPS = group.includeInFullDPS
+				})
+
+			end
+		end
+	end
+
 	if not accelerate.skills then
 		if env.mode == "MAIN" then
 			-- Process extra skills granted by items or tree nodes
@@ -1169,7 +1187,10 @@ function calcs.initEnv(build, mode, override, specEnv)
 				group.nameSpec = grantedSkill.nameSpec
 				group.noSupports = grantedSkill.noSupports
 				group.triggered = grantedSkill.triggered
-				group.triggeredOnHit = grantedSkill.triggeredOnHit
+				if grantedSkill.triggeredOnHit then
+					group.triggeredOnHit = grantedSkill.triggeredOnHit
+					group.label = data.skills[grantedSkill.skillId].name .. " (from " .. grantedSkill.triggeredOnHit ..")"
+				end
 				group.triggerChance = grantedSkill.triggerChance
 				group.includeInFullDPS = grantedSkill.includeInFullDPS
 				build.skillsTab:ProcessSocketGroup(group)
