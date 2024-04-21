@@ -583,6 +583,7 @@ local modNameList = {
 	["critical strike chance"] = "CritChance",
 	["attack critical strike chance"] = { "CritChance", flags = ModFlag.Attack },
 	["critical strike multiplier"] = "CritMultiplier",
+	["critical multiplier"] = "CritMultiplier",
 	["attack critical strike multiplier"] = { "CritMultiplier", flags = ModFlag.Attack },
 	["accuracy"] = "Accuracy",
 	["accuracy rating"] = "Accuracy",
@@ -1674,6 +1675,9 @@ local modTagList = {
 
 for i,stat in ipairs(LongAttributes) do
 	modTagList["per " .. stat:lower()] = { tag = { type = "PerStat", stat = Attributes[i] } }
+end
+for _, weapon in ipairs({ "Wand", "Bow", "Axe", "Sceptre", "Staff" }) do
+	modTagList["with an? " .. weapon:lower()] = { tag = { type = "Condition", var = "Using" .. weapon } }
 end
 
 local mod = modLib.createMod

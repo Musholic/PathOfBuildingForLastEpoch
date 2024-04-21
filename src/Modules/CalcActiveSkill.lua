@@ -427,9 +427,11 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 		skillTypes = activeSkill.skillTypes,
 		skillCond = { },
 		skillDist = env.mode_effective and effectiveRange,
-		slotName = activeSkill.slotName,
-		groupSource = activeSkill.socketGroup.source
+		slotName = activeSkill.slotName
 	}
+	if activeSkill.socketGroup then
+		activeSkill.skillCfg.groupSource = activeSkill.socketGroup.source
+	end
 	if skillFlags.weapon1Attack then
 		activeSkill.weapon1Cfg = copyTable(activeSkill.skillCfg, true)
 		activeSkill.weapon1Cfg.skillCond = setmetatable({ ["MainHandAttack"] = true }, { __index = activeSkill.skillCfg.skillCond })
