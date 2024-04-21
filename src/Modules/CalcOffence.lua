@@ -3142,34 +3142,6 @@ function calcs.offence(env, actor, activeSkill)
 		end
 	end
 
-	local baseDropsBurningGround = modDB:Sum("BASE", nil, "DropsBurningGround")
-	if baseDropsBurningGround > 0 then
-		if canDeal.Fire then
-			local dotCfg = {
-				flags = bor(ModFlag.Dot),
-				keywordFlags = 0
-			}
-			local dotTakenCfg = copyTable(dotCfg, true)
-			local dotTypeCfg = copyTable(dotCfg, true)
-			dotTypeCfg.keywordFlags = bor(dotTypeCfg.keywordFlags, KeywordFlag.FireDot)
-			local effMult = 1
-			if env.mode_effective then
-				local resist = calcResistForType("Fire", dotTypeCfg)
-				local takenInc = enemyDB:Sum("INC", dotTakenCfg, "DamageTaken", "DamageTakenOverTime", "FireDamageTaken", "FireDamageTakenOverTime", "ElementalDamageTaken")
-				local takenMore = enemyDB:More(dotTakenCfg, "DamageTaken", "DamageTakenOverTime", "FireDamageTaken", "FireDamageTakenOverTime", "ElementalDamageTaken")
-				effMult = (1 - resist / 100) * (1 + takenInc / 100) * takenMore
-			end
-			local inc = modDB:Sum("INC", dotTypeCfg, "Damage", "FireDamage", "ElementalDamage")
-			local more = modDB:More(dotTypeCfg, "Damage", "FireDamage", "ElementalDamage")
-			local mult = modDB:Sum("BASE", dotTypeCfg, "DotMultiplier", "FireDotMultiplier")
-			local total = baseDropsBurningGround * (1 + inc/100) * more * (1 + mult/100) * effMult
-			if not output.BurningGroundDPS or output.BurningGroundDPS < total then
-				output.BurningGroundDPS = total
-				output.BurningGroundFromIgnite = false
-			end
-		end
-	end
-
 	-- Calculate skill DOT components
 	local dotCfg = {
 		skillName = skillCfg.skillName,
@@ -3218,6 +3190,10 @@ function calcs.offence(env, actor, activeSkill)
 			baseVal = 0
 		end
 		if baseVal > 0 or (output[damageType.."Dot"] or 0) > 0 then
+			if skillData.duration then
+				-- Base damage is applied over the given base duration
+				baseVal = baseVal / skillData.duration
+			end
 			skillFlags.dot = true
 			local effMult = 1
 			if env.mode_effective then
