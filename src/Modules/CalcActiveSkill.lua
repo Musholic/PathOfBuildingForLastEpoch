@@ -428,6 +428,7 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 		skillCond = { },
 		skillDist = env.mode_effective and effectiveRange,
 		slotName = activeSkill.slotName,
+		groupSource = activeSkill.socketGroup.source
 	}
 	if skillFlags.weapon1Attack then
 		activeSkill.weapon1Cfg = copyTable(activeSkill.skillCfg, true)

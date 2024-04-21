@@ -3178,6 +3178,7 @@ function calcs.offence(env, actor, activeSkill)
 		slotName = skillCfg.slotName,
 		flags = bor(ModFlag.Dot, skillCfg.flags),
 		keywordFlags = band(skillCfg.keywordFlags, bnot(KeywordFlag.Hit)),
+		groupSource = skillCfg.groupSource
 	}
 	if bor(dotCfg.flags, ModFlag.Area) == dotCfg.flags and not skillData.dotIsArea then
 		dotCfg.flags = band(dotCfg.flags, bnot(ModFlag.Area))

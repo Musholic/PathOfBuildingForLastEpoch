@@ -1141,7 +1141,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 
 	-- Add triggered skills
 	for _, group in pairs(build.skillsTab.socketGroupList) do
-		for statName, _ in pairs(group.grantedEffect.stats) do
+		for statName, statValue in pairs(group.grantedEffect.stats) do
 			local triggeredOnCast = statName:match("chance_to_cast_(.*)_on_hit_%%")
 
 			if triggeredOnCast then
@@ -1150,6 +1150,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 					source = "SkillId:"..group.grantedEffect.id,
 					triggered = true,
 					triggeredOnHit = group.grantedEffect.name,
+					triggerChance = statValue,
 					includeInFullDPS = group.includeInFullDPS
 				})
 
