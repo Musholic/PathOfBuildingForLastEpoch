@@ -1150,7 +1150,6 @@ function calcs.initEnv(build, mode, override, specEnv)
 					source = "SkillId:"..group.grantedEffect.id,
 					triggered = true,
 					triggeredOnHit = group.grantedEffect.name,
-					triggerChance = statValue,
 					includeInFullDPS = group.includeInFullDPS
 				})
 

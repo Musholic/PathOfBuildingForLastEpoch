@@ -274,13 +274,17 @@ function CalcBreakdownClass:AddModSection(sectionData, modList)
 	cfg.actor = sectionData.actor
 	local rowList
 	local modStore = (sectionData.enemy and actor.enemy.modDB) or (sectionData.cfg and actor.mainSkill.skillModList) or actor.modDB
+	local sectionDataModName = sectionData.modName
 	if modList then
 		rowList = copyTable(modList)
 	else
 		if type(sectionData.modName) == "table" then
 			rowList = modStore:Tabulate(sectionData.modType, cfg, unpack(sectionData.modName))
 		else
-			rowList = modStore:Tabulate(sectionData.modType, cfg, sectionData.modName)
+			if sectionData.modName and sectionData.modName:match("{skillId}") then
+				sectionDataModName = sectionData.modName:gsub("%{skillId%}", actor.mainSkill.activeEffect.grantedEffect.id)
+			end
+			rowList = modStore:Tabulate(sectionData.modType, cfg, sectionDataModName)
 		end
 	end
 	if #rowList == 0 then
@@ -352,7 +356,7 @@ function CalcBreakdownClass:AddModSection(sectionData, modList)
 						end
 					end
 				else
-					local total = modStore:Combine(modType, cfg, sectionData.modName)
+					local total = modStore:Combine(modType, cfg, sectionDataModName)
 					if modType == "MORE" then
 						total = round((total - 1) * 100)
 					end

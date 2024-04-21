@@ -65,6 +65,7 @@ local formList = {
 	["^you lose ([%d%.]+)%% of (.-) per second"] = "DEGENPERCENT",
 	["^([%d%.]+) (%a+) damage taken per second"] = "DEGEN",
 	["^([%d%.]+) (%a+) damage per second"] = "DEGEN",
+	-- TODO: support for increased DMG (e.g. melee void damage)
 	["^%+([%d%.]+) damage"] = "DMG",
 	["^%+([%d%.]+) (%a+) damage"] = "DMG",
 	["^%+([%d%.]+) (%a+) (%a+) damage"] = "DMG",
@@ -593,16 +594,6 @@ local modNameList = {
 	["warcry speed"] = { "WarcrySpeed", keywordFlags = KeywordFlag.Warcry },
 	["attack and cast speed"] = "Speed",
 	["dps"] = "DPS",
-	-- Elemental ailments
-	["to shock"] = "EnemyShockChance",
-	["shock chance"] = "EnemyShockChance",
-	["to freeze"] = "EnemyFreezeChance",
-	["freeze chance"] = "EnemyFreezeChance",
-	["to ignite"] = "EnemyIgniteChance",
-	["ignite chance"] = "EnemyIgniteChance",
-	["to freeze, shock and ignite"] = { "EnemyFreezeChance", "EnemyShockChance", "EnemyIgniteChance" },
-	["to scorch enemies"] = "EnemyScorchChance",
-	["to inflict brittle"] = "EnemyBrittleChance",
 	["to sap enemies"] = "EnemySapChance",
 	["effect of scorch"] = "EnemyScorchEffect",
 	["effect of sap"] = "EnemySapEffect",
@@ -723,6 +714,10 @@ local modNameList = {
 	["diamond shrine buff"] = "Condition:DiamondShrine",
 	["massive shrine buff"] = "Condition:MassiveShrine",
 }
+
+for skillId, skill in pairs(data.skills) do
+	modNameList["to " .. skill.name:lower()] = "ChanceToTriggerOnHit_"..skillId
+end
 
 -- List of modifier flags
 local modFlagList = {
@@ -870,6 +865,10 @@ local modFlagList = {
 	["from body armour"] = { tag = { type = "SlotName", slotName = "Body Armour" } },
 	["from your body armour"] = { tag = { type = "SlotName", slotName = "Body Armour" } },
 }
+
+for _, damageType in ipairs(DamageTypes) do
+	modFlagList["on " .. damageType:lower() .. " hit"] = { keywordFlags = KeywordFlag[damageType], flags = ModFlag.Hit }
+end
 
 -- List of modifier flags/tags that appear at the start of a line
 local preFlagList = {

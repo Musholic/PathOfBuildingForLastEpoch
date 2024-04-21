@@ -810,7 +810,10 @@ local configTable = {
 
 		-- The triggered skill inherits the source skill mods
 		calcs.mergeSkillInstanceMods(env, env.player.mainSkill.skillModList, source.activeEffect)
-		return {trigRate = trigRate, source = source, uuid = uuid, useCastRate = true, triggeredSkills = {env.player.mainSkill}}
+		local triggerChance = source.skillModList:Sum("BASE", source.skillCfg, "ChanceToTriggerOnHit_"..env.player.mainSkill.activeEffect.grantedEffect.id)
+		env.player.output.TriggerChance = triggerChance
+		env.player.mainSkill.triggerSourceCfg = source.skillCfg
+		return {trigRate = trigRate, triggerChance = triggerChance, source = source, uuid = uuid, useCastRate = true, triggeredSkills = {env.player.mainSkill}}
 	end,
 	["cast when damage taken"] = function(env)
 		local thresholdMod = calcLib.mod(env.player.mainSkill.skillModList, nil, "CWDTThreshold")

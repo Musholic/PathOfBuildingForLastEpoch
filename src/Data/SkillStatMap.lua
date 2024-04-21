@@ -2064,8 +2064,8 @@ for _, attribute in ipairs(Attributes) do
 end
 
 for skillId, grantedEffect in pairs(data.skills) do
-	result["chance_to_cast_" .. skillId .. "_on_hit"] = {
-		skill("chanceToTriggerOnHit", nil, { type = "SkillId", skillId = skillId }),
+	result["chance_to_cast_" .. skillId .. "_on_hit_%"] = {
+		mod("ChanceToTriggerOnHit_"..skillId, "BASE", nil, 0, 0),
 	}
 end
 
