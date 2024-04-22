@@ -1414,7 +1414,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 			end
 		end
 	end
-	if not GlobalCache.grantedTriggeredSkills or #GlobalCache.grantedTriggeredSkills < #grantedTriggeredSkills then
+	if not GlobalCache.grantedTriggeredSkills or #GlobalCache.grantedTriggeredSkills ~= #grantedTriggeredSkills then
 		GlobalCache.grantedTriggeredSkills = grantedTriggeredSkills
 		build.buildFlag = true
 	end

@@ -814,6 +814,9 @@ local configTable = {
 				break
 			end
 		end
+		if not source then
+			return
+		end
 
 		-- The triggered skill inherits the source skill mods
 		calcs.mergeSkillInstanceMods(env, env.player.mainSkill.skillModList, source.activeEffect)
