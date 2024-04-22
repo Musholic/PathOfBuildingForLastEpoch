@@ -273,37 +273,10 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 				t_insert(fullDPS.skills, { name = activeSkill.activeEffect.grantedEffect.name, dps = usedEnv.player.output.TotalDPS, count = activeSkillCount, trigger = activeSkill.infoTrigger, skillPart = minionName and activeSkill.infoMessage2 or activeSkill.skillPartName })
 				fullDPS.combinedDPS = fullDPS.combinedDPS + usedEnv.player.output.TotalDPS * activeSkillCount
 			end
-			if usedEnv.player.output.BleedDPS and usedEnv.player.output.BleedDPS > fullDPS.bleedDPS then
-				fullDPS.bleedDPS = usedEnv.player.output.BleedDPS
-				bleedSource = activeSkill.activeEffect.grantedEffect.name
-			end
-			if usedEnv.player.output.CorruptingBloodDPS and usedEnv.player.output.CorruptingBloodDPS > fullDPS.corruptingBloodDPS then
-				fullDPS.corruptingBloodDPS = usedEnv.player.output.CorruptingBloodDPS
-				corruptingBloodSource = activeSkill.activeEffect.grantedEffect.name
-			end
-			if usedEnv.player.output.IgniteDPS and usedEnv.player.output.IgniteDPS > fullDPS.igniteDPS then
-				fullDPS.igniteDPS = usedEnv.player.output.IgniteDPS
-				igniteSource = activeSkill.activeEffect.grantedEffect.name
-			end
-			if usedEnv.player.output.BurningGroundDPS and usedEnv.player.output.BurningGroundDPS > fullDPS.burningGroundDPS then
-				fullDPS.burningGroundDPS = usedEnv.player.output.BurningGroundDPS
-				burningGroundSource = activeSkill.activeEffect.grantedEffect.name
-			end
-			if usedEnv.player.output.PoisonDPS and usedEnv.player.output.PoisonDPS > 0 then
-				fullDPS.poisonDPS = fullDPS.poisonDPS + usedEnv.player.output.PoisonDPS * (usedEnv.player.output.TotalPoisonStacks or 1) * activeSkillCount
-			end
-			if usedEnv.player.output.CausticGroundDPS and usedEnv.player.output.CausticGroundDPS > fullDPS.causticGroundDPS then
-				fullDPS.causticGroundDPS = usedEnv.player.output.CausticGroundDPS
-				causticGroundSource = activeSkill.activeEffect.grantedEffect.name
-			end
-			if usedEnv.player.output.ImpaleDPS and usedEnv.player.output.ImpaleDPS > 0 then
-				fullDPS.impaleDPS = fullDPS.impaleDPS + usedEnv.player.output.ImpaleDPS * activeSkillCount
-			end
-			if usedEnv.player.output.DecayDPS and usedEnv.player.output.DecayDPS > 0 then
-				fullDPS.decayDPS = fullDPS.decayDPS + usedEnv.player.output.DecayDPS
-			end
 			if usedEnv.player.output.TotalDot and usedEnv.player.output.TotalDot > 0 then
-				fullDPS.dotDPS = fullDPS.dotDPS + usedEnv.player.output.TotalDot * (activeSkill.skillFlags.DotCanStack and activeSkillCount or 1)
+				local count = (activeSkill.skillFlags.DotCanStack and activeSkillCount or 1)
+				t_insert(fullDPS.skills, { name = activeSkill.activeEffect.grantedEffect.name, dps = usedEnv.player.output.TotalDot, count = count, trigger = activeSkill.infoTrigger, skillPart = minionName and activeSkill.infoMessage2 or activeSkill.skillPartName })
+				fullDPS.dotDPS = fullDPS.dotDPS + usedEnv.player.output.TotalDot * count
 			end
 			if usedEnv.player.output.CullMultiplier and usedEnv.player.output.CullMultiplier > 1 and usedEnv.player.output.CullMultiplier > fullDPS.cullingMulti then
 				fullDPS.cullingMulti = usedEnv.player.output.CullMultiplier
@@ -323,41 +296,7 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 
 	-- Re-Add ailment DPS components
 	fullDPS.TotalDotDPS = 0
-	if fullDPS.bleedDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Best Bleed DPS", dps = fullDPS.bleedDPS, count = 1, source = bleedSource })
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.bleedDPS
-	end
-	if fullDPS.corruptingBloodDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Corrupting Blood DPS", dps = fullDPS.corruptingBloodDPS, count = 1, source = corruptingBloodSource })
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.corruptingBloodDPS
-	end
-	if fullDPS.igniteDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Best Ignite DPS", dps = fullDPS.igniteDPS, count = 1, source = igniteSource })
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.igniteDPS
-	end
-	if fullDPS.burningGroundDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Best Burning Ground DPS", dps = fullDPS.burningGroundDPS, count = 1, source = burningGroundSource })
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.burningGroundDPS
-	end
-	if fullDPS.poisonDPS > 0 then
-		fullDPS.poisonDPS = m_min(fullDPS.poisonDPS, data.misc.DotDpsCap)
-		t_insert(fullDPS.skills, { name = "Full Poison DPS", dps = fullDPS.poisonDPS, count = 1 })
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.poisonDPS
-	end
-	if fullDPS.causticGroundDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Best Caustic Ground DPS", dps = fullDPS.causticGroundDPS, count = 1, source = causticGroundSource })
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.causticGroundDPS
-	end
-	if fullDPS.impaleDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Full Impale DPS", dps = fullDPS.impaleDPS, count = 1 })
-		fullDPS.combinedDPS = fullDPS.combinedDPS + fullDPS.impaleDPS
-	end
-	if fullDPS.decayDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Full Decay DPS", dps = fullDPS.decayDPS, count = 1 })
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.decayDPS
-	end
 	if fullDPS.dotDPS > 0 then
-		t_insert(fullDPS.skills, { name = "Full DoT DPS", dps = fullDPS.dotDPS, count = 1 })
 		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.dotDPS
 	end
 	fullDPS.TotalDotDPS = m_min(fullDPS.TotalDotDPS, data.misc.DotDpsCap)
