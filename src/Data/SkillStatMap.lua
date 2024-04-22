@@ -2065,7 +2065,7 @@ end
 
 for skillId, grantedEffect in pairs(data.skills) do
 	result["chance_to_cast_" .. skillId .. "_on_hit_%"] = {
-		mod("ChanceToTriggerOnHit_"..skillId, "BASE", nil, 0, 0),
+		mod("ChanceToTriggerOnHit_"..skillId, "BASE", nil, ModFlag.Hit, 0),
 	}
 end
 

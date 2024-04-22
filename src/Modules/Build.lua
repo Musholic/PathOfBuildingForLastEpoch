@@ -695,10 +695,10 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 	end
 
 	-- Build calculation output tables
+	self.buildFlag = false
 	self.outputRevision = 1
 	self.calcsTab:BuildOutput()
 	self:RefreshStatList()
-	self.buildFlag = false
 
 	self.spec:SetWindowTitleWithBuildClass()
 

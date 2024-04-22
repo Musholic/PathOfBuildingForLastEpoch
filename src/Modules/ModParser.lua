@@ -716,7 +716,8 @@ local modNameList = {
 }
 
 for skillId, skill in pairs(data.skills) do
-	modNameList["to " .. skill.name:lower()] = "ChanceToTriggerOnHit_"..skillId
+	modNameList["to " .. skill.name:lower()] = {"ChanceToTriggerOnHit_"..skillId, flags = ModFlag.Hit}
+	modNameList[skill.name:lower() .. " chance"] = {"ChanceToTriggerOnHit_"..skillId, flags = ModFlag.Hit}
 end
 
 -- List of modifier flags

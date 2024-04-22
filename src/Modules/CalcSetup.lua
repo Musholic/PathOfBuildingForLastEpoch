@@ -394,6 +394,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 		env.extraRadiusNodeList = wipeTable(env.extraRadiusNodeList)
 		env.player.itemList = { }
 		env.grantedSkills = { }
+		env.grantedTriggeredSkills = GlobalCache.grantedTriggeredSkills or { }
 		env.grantedSkillsNodes = { }
 		env.grantedSkillsItems = { }
 		env.explodeSources = { }
@@ -1138,24 +1139,8 @@ function calcs.initEnv(build, mode, override, specEnv)
 
 	-- Merge Granted Skills Tables
 	env.grantedSkills = tableConcat(env.grantedSkillsNodes, env.grantedSkillsItems)
+	env.grantedSkills = tableConcat(env.grantedSkills, env.grantedTriggeredSkills)
 
-	-- Add triggered skills
-	for _, group in pairs(build.skillsTab.socketGroupList) do
-		for statName, statValue in pairs(group.grantedEffect.stats) do
-			local triggeredOnCast = statName:match("chance_to_cast_(.*)_on_hit_%%")
-
-			if triggeredOnCast then
-				t_insert(env.grantedSkills, {
-					skillId = triggeredOnCast,
-					source = "SkillId:"..group.grantedEffect.id,
-					triggered = true,
-					triggeredOnHit = group.grantedEffect.name,
-					includeInFullDPS = group.includeInFullDPS
-				})
-
-			end
-		end
-	end
 
 	if not accelerate.skills then
 		if env.mode == "MAIN" then
@@ -1409,6 +1394,31 @@ function calcs.initEnv(build, mode, override, specEnv)
 			activeSkill.skillData.manaReservationPercent = skillData.manaReservationPercent
 		end
 	end
+
+	-- Add triggered skills
+	-- We need the skillModList computed to calculate the skill chance to trigger a given skill
+	-- Then since we need to process the triggered skills (transforming them to active skill),
+	-- we add them as granted skills the next time we init the build env through the GlobalCache
+	local grantedTriggeredSkills = {}
+	for _, activeSkill in pairs(env.player.activeSkillList) do
+		for skillId, skill in pairs(data.skills) do
+			local triggerChance = activeSkill.skillModList:Sum("BASE", activeSkill.skillCfg, "ChanceToTriggerOnHit_"..skillId)
+			if triggerChance > 0 then
+				t_insert(grantedTriggeredSkills, {
+					skillId = skillId,
+					source = "SkillId:"..activeSkill.activeEffect.grantedEffect.id,
+					triggered = true,
+					triggeredOnHit = activeSkill.activeEffect.grantedEffect.name,
+					includeInFullDPS = activeSkill.socketGroup.includeInFullDPS
+				})
+			end
+		end
+	end
+	if not GlobalCache.grantedTriggeredSkills or #GlobalCache.grantedTriggeredSkills < #grantedTriggeredSkills then
+		GlobalCache.grantedTriggeredSkills = grantedTriggeredSkills
+		build.buildFlag = true
+	end
+
 
 	-- Merge Requirements Tables
 	env.requirementsTable = tableConcat(env.requirementsTableItems, env.requirementsTableGems)

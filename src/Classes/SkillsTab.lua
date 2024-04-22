@@ -547,6 +547,7 @@ function SkillsTabClass:SetActiveSkillSet(skillSetId)
 end
 
 function SkillsTabClass:SelSkill(index, skillId)
+	self.build.spec:ResetSkill(index)
 	if skillId then
 		self.socketGroupList[index] = {
 			grantedEffect = self.build.data.skills[skillId] or {

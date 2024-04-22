@@ -459,6 +459,18 @@ function PassiveSpecClass:ResetAscendClass()
 	end
 end
 
+function PassiveSpecClass:ResetSkill(index)
+	if self.build.skillsTab.socketGroupList[index] then
+		-- Deallocate the skillId start node
+		local skillId = self.build.skillsTab.socketGroupList[index].skillId
+		local oldStartNodeId = skillId .. "-0"
+		if oldStartNodeId then
+			self.nodes[oldStartNodeId].alloc = 0
+			self.allocNodes[oldStartNodeId] = nil
+		end
+	end
+end
+
 function PassiveSpecClass:SelectAscendClass(ascendClassId)
 	self:ResetAscendClass()
 
