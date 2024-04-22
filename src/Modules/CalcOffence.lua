@@ -2574,12 +2574,6 @@ function calcs.offence(env, actor, activeSkill)
 							return not skillModList:Flag(cfg, "Ignore"..damageType.."Resistance", isElemental[damageType] and "IgnoreElementalResistances" or nil) and not enemyDB:Flag(nil, "SelfIgnore"..damageType.."Resistance")
 						end
 						if damageType == "Physical" then
-							-- store pre-armour physical damage from attacks for impale calculations
-							if pass == 1 then
-								output.impaleStoredHitAvg = output.impaleStoredHitAvg + damageTypeHitAvg * (output.CritChance / 100)
-							else
-								output.impaleStoredHitAvg = output.impaleStoredHitAvg + damageTypeHitAvg * (1 - output.CritChance / 100)
-							end
 							local enemyArmour = m_max(calcLib.val(enemyDB, "Armour"), 0)
 							local armourReduction = calcs.armourReductionF(enemyArmour, damageTypeHitAvg * skillModList:More(cfg, "CalcArmourAsThoughDealing"))
 							if skillModList:Flag(cfg, "IgnoreEnemyPhysicalDamageReduction") then
@@ -2589,45 +2583,9 @@ function calcs.offence(env, actor, activeSkill)
 								resist = resist > 0 and resist * (1 - (skillModList:Sum("BASE", nil, "PartialIgnoreEnemyPhysicalDamageReduction") / 100)) or resist
 							end
 						else
-							resist = calcResistForType(damageType, dotCfg)
-							if ((skillModList:Flag(cfg, "ChaosDamageUsesLowestResistance") or skillModList:Flag(cfg, "ChaosDamageUsesHighestResistance")) and damageType == "Chaos") or
-							   (skillModList:Flag(cfg, "ElementalDamageUsesLowestResistance") and isElemental[damageType]) then
-								-- Default to using the current damage type
-								local elementUsed = damageType
-								if isElemental[damageType] then
-									takenInc = takenInc + enemyDB:Sum("INC", cfg, "ElementalDamageTaken")
-								end
-								-- Find the lowest resist of all the elements and use that if it's lower
-								for _, eleDamageType in ipairs(dmgTypeList) do
-									if isElemental[eleDamageType] and useThisResist(eleDamageType) and damageType ~= eleDamageType then
-										local currentElementResist = calcResistForType(eleDamageType, dotCfg)
-										-- If it's explicitly lower, then use the resist and update which element we're using to account for penetration
-										if skillModList:Flag(cfg, "ChaosDamageUsesHighestResistance") then
-											if resist < currentElementResist then
-												resist = currentElementResist
-												elementUsed = eleDamageType
-											end
-										else
-											if resist > currentElementResist then
-												resist = currentElementResist
-												elementUsed = eleDamageType
-											end
-										end
-									end
-								end
-								-- Update the penetration based on the element used
-								if isElemental[elementUsed] then
-									pen = skillModList:Sum("BASE", cfg, elementUsed.."Penetration", "ElementalPenetration")
-								elseif elementUsed == "Chaos" then
-									pen = skillModList:Sum("BASE", cfg, "ChaosPenetration")
-								end
-								sourceRes = elementUsed
-							elseif isElemental[damageType] then
-								pen = skillModList:Sum("BASE", cfg, damageType.."Penetration", "ElementalPenetration")
-								takenInc = takenInc + enemyDB:Sum("INC", cfg, "ElementalDamageTaken")
-							elseif damageType == "Chaos" then
-								pen = skillModList:Sum("BASE", cfg, "ChaosPenetration")
-							end
+							resist = calcResistForType(damageType, cfg)
+							pen = skillModList:Sum("BASE", cfg, damageType.."Penetration", "Penetration")
+							takenInc = takenInc + enemyDB:Sum("INC", cfg, "ElementalDamageTaken")
 						end
 						local invertChance = m_max(m_min(skillModList:Sum("CHANCE", cfg, "HitsInvertEleResChance"), 1), 0)
 						if isElemental[damageType] and invertChance > 0 then
@@ -3098,56 +3056,13 @@ function calcs.offence(env, actor, activeSkill)
 
 	skillFlags.impale = false
 
-	if skillFlags.hit and skillData.decay and canDeal.Chaos then
-		-- Calculate DPS for Essence of Delirium's Decay effect
-		skillFlags.decay = true
-		activeSkill.decayCfg = {
-			skillName = skillCfg.skillName,
-			skillPart = skillCfg.skillPart,
-			skillTypes = skillCfg.skillTypes,
-			slotName = skillCfg.slotName,
-			flags = ModFlag.Dot,
-			keywordFlags = bor(band(skillCfg.keywordFlags, bnot(KeywordFlag.Hit)), KeywordFlag.ChaosDot),
-		}
-		local dotCfg = activeSkill.decayCfg
-		local effMult = 1
-		if env.mode_effective then
-			local resist = calcResistForType("Chaos", dotCfg)
-			local takenInc = enemyDB:Sum("INC", nil, "DamageTaken", "DamageTakenOverTime", "ChaosDamageTaken", "ChaosDamageTakenOverTime")
-			local takenMore = enemyDB:More(nil, "DamageTaken", "DamageTakenOverTime", "ChaosDamageTaken", "ChaosDamageTakenOverTime")
-			effMult = (1 - resist / 100) * (1 + takenInc / 100) * takenMore
-			output["DecayEffMult"] = effMult
-			if breakdown and effMult ~= 1 then
-				local sourceRes = env.modDB:Flag(nil, "EnemyChaosResistEqualToYours") and "Your Chaos Resistance" or (env.partyMembers.modDB:Flag(nil, "EnemyChaosResistEqualToYours") and "Party Member Chaos Resistance" or "Chaos")
-				breakdown.DecayEffMult = breakdown.effMult("Chaos", resist, 0, takenInc, effMult, takenMore, sourceRes, true)
-			end
-		end
-		local inc = skillModList:Sum("INC", dotCfg, "Damage", "ChaosDamage")
-		local more = skillModList:More(dotCfg, "Damage", "ChaosDamage")
-		local mult = skillModList:Sum("BASE", dotTypeCfg, "DotMultiplier", "ChaosDotMultiplier")
-		output.DecayDPS = skillData.decay * (1 + inc/100) * more * (1 + mult/100) * effMult
-		output.DecayDuration = 8 * debuffDurationMult
-		if breakdown then
-			breakdown.DecayDPS = { }
-			breakdown.dot(breakdown.DecayDPS, skillData.decay, inc, more, mult, nil, nil, effMult, output.DecayDPS)
-			if output.DecayDuration ~= 8 then
-				breakdown.DecayDuration = {
-					s_format("%.2fs ^8(base duration)", 8)
-				}
-				if debuffDurationMult ~= 1 then
-					t_insert(breakdown.DecayDuration, s_format("/ %.2f ^8(debuff expires slower/faster)", 1 / debuffDurationMult))
-				end
-				t_insert(breakdown.DecayDuration, s_format("= %.2fs", output.DecayDuration))
-			end
-		end
-	end
-
 	-- Calculate skill DOT components
 	local dotCfg = {
 		skillName = skillCfg.skillName,
 		skillPart = skillCfg.skillPart,
 		skillTypes = skillCfg.skillTypes,
 		slotName = skillCfg.slotName,
+		skillGrantedEffect = skillCfg.skillGrantedEffect,
 		flags = bor(ModFlag.Dot, skillCfg.flags),
 		keywordFlags = band(skillCfg.keywordFlags, bnot(KeywordFlag.Hit)),
 		groupSource = skillCfg.groupSource
@@ -3200,16 +3115,17 @@ function calcs.offence(env, actor, activeSkill)
 				local resist = 0
 				local takenInc = enemyDB:Sum("INC", dotTakenCfg, "DamageTaken", "DamageTakenOverTime", damageType.."DamageTaken", damageType.."DamageTakenOverTime") + (isElemental[damageType] and enemyDB:Sum("INC", dotTakenCfg, "ElementalDamageTaken") or 0)
 				local takenMore = enemyDB:More(dotTakenCfg, "DamageTaken", "DamageTakenOverTime", damageType.."DamageTaken", damageType.."DamageTakenOverTime") * (isElemental[damageType] and enemyDB:More(dotTakenCfg, "ElementalDamageTaken") or 1)
+				local pen = skillModList:Sum("BASE", dotCfg, damageType.."Penetration", "Penetration")
 				if damageType == "Physical" then
 					resist = m_max(0, m_min(enemyDB:Sum("BASE", nil, "PhysicalDamageReduction"), data.misc.DamageReductionCap))
 				else
 					resist = calcResistForType(damageType, dotTypeCfg)
 				end
-				effMult = (1 - resist / 100) * (1 + takenInc / 100) * takenMore
+				effMult = (1 - (resist - pen) / 100) * (1 + takenInc / 100) * takenMore
 				output[damageType.."DotEffMult"] = effMult
 				if breakdown and effMult ~= 1 then
 					local sourceRes = env.modDB:Flag(nil, "Enemy"..damageType.."ResistEqualToYours") and "Your "..damageType.." Resistance" or (env.partyMembers.modDB:Flag(nil, "Enemy"..damageType.."ResistEqualToYours") and "Party Member "..damageType.." Resistance" or damageType)
-					breakdown[damageType.."DotEffMult"] = breakdown.effMult(damageType, resist, 0, takenInc, effMult, takenMore, sourceRes, true)
+					breakdown[damageType.."DotEffMult"] = breakdown.effMult(damageType, resist, pen, takenInc, effMult, takenMore, sourceRes, true)
 				end
 			end
 			local inc = skillModList:Sum("INC", dotTypeCfg, "Damage", damageType.."Damage", isElemental[damageType] and "ElementalDamage" or nil)

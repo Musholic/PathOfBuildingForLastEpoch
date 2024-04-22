@@ -44,9 +44,6 @@ local formList = {
 	["^([%+%-]?%d+)%% additional chance"] = "CHANCE",
 	["costs? ([%+%-]?%d+)"] = "TOTALCOST",
 	["skills cost ([%+%-]?%d+)"] = "BASECOST",
-	["penetrates? (%d+)%%"] = "PEN",
-	["penetrates (%d+)%% of"] = "PEN",
-	["penetrates (%d+)%% of enemy"] = "PEN",
 	["^([%d%.]+) (.+) regenerated per second"] = "REGENFLAT",
 	["^([%d%.]+)%% (.+) regenerated per second"] = "REGENPERCENT",
 	["^([%d%.]+)%% of (.+) regenerated per second"] = "REGENPERCENT",
@@ -719,6 +716,12 @@ for skillId, skill in pairs(data.skills) do
 	modNameList["to " .. skill.name:lower()] = {"ChanceToTriggerOnHit_"..skillId, flags = ModFlag.Hit}
 	modNameList[skill.name:lower() .. " chance"] = {"ChanceToTriggerOnHit_"..skillId, flags = ModFlag.Hit}
 end
+
+for _, damageType in ipairs(DamageTypes) do
+	modNameList[damageType:lower() .. " penetration"] = damageType .. "Penetration"
+end
+
+modNameList["penetration"] = "Penetration"
 
 -- List of modifier flags
 local modFlagList = {
@@ -1758,14 +1761,6 @@ local dmgTypes = {
 	["fire"] = "Fire",
 	["chaos"] = "Chaos",
 }
-local penTypes = {
-	["lightning resistance"] = "LightningPenetration",
-	["cold resistance"] = "ColdPenetration",
-	["fire resistance"] = "FirePenetration",
-	["elemental resistance"] = "ElementalPenetration",
-	["elemental resistances"] = "ElementalPenetration",
-	["chaos resistance"] = "ChaosPenetration",
-}
 local resourceTypes = {
 	["life"] = "Life",
 	["mana"] = "Mana",
@@ -1838,8 +1833,12 @@ local flagTypes = {
 
 -- Build active skill name lookup
 local skillNameList = {
-	[" corpse cremation " ] = { tag = { type = "SkillName", skillName = "Cremation", includeTransfigured = true }}, -- Sigh.
 }
+
+for skillId, skill in pairs(data.skills) do
+	skillNameList[skill.name:lower()] = { tag = { type = "SkillId", skillId = skillId } }
+end
+
 local preSkillNameList = { }
 
 -- Radius jewels that modify the jewel itself based on nearby allocated nodes
@@ -1977,14 +1976,7 @@ local function parseMod(line, order)
 	if order == 2 and not skillTag then
 		skillTag, line = scan(line, skillNameList)
 	end
-	if modForm == "PEN" then
-		modName, line = scan(line, penTypes, true)
-		if not modName then
-			return { }, line
-		end
-		local _
-		_, line = scan(line, modNameList, true)
-	elseif modForm == "BASECOST" then
+	if modForm == "BASECOST" then
 		modName, line = scan(line, baseCostTypes, true)
 		if not modName then
 			return { }, line
