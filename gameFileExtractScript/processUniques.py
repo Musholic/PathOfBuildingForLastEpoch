@@ -3,8 +3,7 @@ from common import *
 
 construct_mod_data_list()
 
-with open(extractPath + "Resources/UniqueList.asset", "r", encoding='utf-8') as yamlFile:
-    data = yaml.safe_load(yamlFile)["MonoBehaviour"]['uniques']
+data = load_yaml_file_with_tag_error(extractPath + "Resources/UniqueList.asset")["MonoBehaviour"]['uniques']
 
 uniques = {
 }

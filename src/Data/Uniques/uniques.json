@@ -225,7 +225,7 @@
             "+(50-70)% Chance to Slow on Hit",
             "(5-10)% increased Melee Attack Speed",
             "(45-60)% increased Dodge Rating",
-            "+(7-10)% Chance to Summon a Primal Serpent on kill with Serpent Strike"
+            "+7% Chance to Summon a Primal Serpent on kill with Serpent Strike"
         ]
     },
     "16": {
@@ -290,7 +290,7 @@
             "level": 24
         },
         "mods": [
-            "(25-30)% increased Movement Speed",
+            "25% increased Movement Speed",
             "+(115-185)% Chance to Shock on Lightning Hit",
             "+(10-15)% Increased Shock Duration "
         ]
@@ -618,7 +618,7 @@
             "+(60-90) Melee Lightning Damage",
             "+30% Chance to Shock on Hit",
             "+(1-2) Lightning Damage Leeched as Health",
-            "+(36-15000)% Lightning Resistance",
+            "+36% Lightning Resistance",
             "+(60-90) Mana",
             "+36% Chance to Cast Lightning Strike when you use a skill that costs at least 10 Mana"
         ]
@@ -704,7 +704,7 @@
         },
         "mods": [
             "+40 Melee Void Damage",
-            "+(40-12500)% Void Penetration",
+            "+40% Void Penetration",
             "+(10-20)% Block Chance",
             "+(20-40) Health Gain on Block",
             "+(250-450) Block Effectiveness"
@@ -718,7 +718,7 @@
             "level": 0
         },
         "mods": [
-            "(1-1000000)% less Damage Taken on Block",
+            "1% less Damage Taken on Block",
             "60% reduced Block Chance",
             "+(35-65) Health"
         ]
@@ -733,7 +733,7 @@
         "mods": [
             "50% less Block Effectiveness",
             "+(80-180) Dodge Rating",
-            "+(4-5) Health gained when you Dodge"
+            "+4 Health gained when you Dodge"
         ]
     },
     "52": {
@@ -892,7 +892,7 @@
         "mods": [
             "+(30-75)% Chance to Ignite on Hit",
             "(30-75)% increased Fire Damage Over Time",
-            "(13-1300)% increased Fire Cast Speed",
+            "13% increased Fire Cast Speed",
             "+1 Flame Ward"
         ]
     },
@@ -1005,10 +1005,10 @@
             "level": 64
         },
         "mods": [
-            "+100% Damage Reflected",
+            "+1 Damage Reflected",
             "+(40-50)% Chance to Bleed on Hit",
             "+(40-50)% Increased Bleed Duration ",
-            "+(20-40)% Damage over Time Physical Damage Leeched as Health",
+            "+20% Damage over Time Physical Damage Leeched as Health",
             "+20 Health gained on Kill per stack of Bleed on the Target"
         ]
     },
@@ -1089,7 +1089,7 @@
             "level": 0
         },
         "mods": [
-            "+(5-10) Bees Per 10 Seconds"
+            "+5 Bees Per 10 Seconds"
         ]
     },
     "78": {
@@ -1421,7 +1421,7 @@
         },
         "mods": [
             "(80-120)% increased Minion Melee Damage",
-            "+(3-20) Minion Melee Lightning Damage",
+            "+3 Minion Melee Lightning Damage",
             "+3 Intelligence",
             "+(24-42)% Lightning Resistance"
         ]
@@ -1490,7 +1490,7 @@
             "level": 0
         },
         "mods": [
-            "+200% All Attributes",
+            "+2 All Attributes",
             "+(10-20)% Increased Stun Duration",
             "+1 Elemental Nova is now cast at the target location",
             "+(40-80)% Physical Damage Taken as Fire",
@@ -1714,7 +1714,7 @@
             "+(40-60) Melee Void Damage",
             "(50-90)% increased Void Damage",
             "+1 Chance to cast Abyssal Echoes on Melee Kill (4 second cooldown)",
-            "+(75-9000)% Void Resistance",
+            "+75% Void Resistance",
             "+(50-70)% Void Damage Leeched as Health"
         ]
     },
@@ -1791,7 +1791,7 @@
             "+(1-2) Freeze Rate per stack of Chill",
             "+(24-40)% Chance to Shock on Hit",
             "+(10-20)% Increased Shock Duration ",
-            "(1-20)% more More Damage Per Stack"
+            "1% more More Damage Per Stack"
         ]
     },
     "126": {
@@ -2107,7 +2107,7 @@
             "+(205-305) Dodge Rating if you have been hit recently",
             "+(13-20) Health gained when you Dodge",
             "(70-95)% increased Cold Damage",
-            "+200% All Attributes",
+            "+2 All Attributes",
             "10% increased Movement Speed"
         ]
     },
@@ -2239,7 +2239,7 @@
             "level": 0
         },
         "mods": [
-            "+(7-12) Spell Void Damage",
+            "+7 Spell Void Damage",
             "+(135-245)% Spell Void Chance to Ignite on Hit",
             "(14-28)% increased Fire Cast Speed",
             "+1 Chance to cast Decimate when you use a Fire Spell (4 second cooldown)"
@@ -2347,7 +2347,7 @@
             "+(6-10) Potion Spell Fire Damage",
             "+(30-60)% Increased Fire Aura Area",
             "+(60-100) Health Gained on Potion Use",
-            "+100% Chance to cast Fire Aura on Potion Use"
+            "+1 Chance to cast Fire Aura on Potion Use"
         ]
     },
     "164": {
@@ -2450,7 +2450,7 @@
             "+25% Minion All Resistances",
             "(60-166)% increased Curse Damage",
             "+(60-66) Curse Spell Damage",
-            "+(25-100)% All Resistances",
+            "+25% All Resistances",
             "(60-66)% increased Block Effectiveness"
         ]
     },
@@ -2464,9 +2464,9 @@
         "mods": [
             "(30-36)% increased Curse Cast Speed",
             "+(16-20)% chance when one of your Skeletons dies to resummon a new one after 3 seconds",
-            "+(1-3) Minion Critical Strike Avoidance",
+            "+1 Minion Critical Strike Avoidance",
             "(100-166)% increased Minion Health",
-            "+(6-100)% Block Chance"
+            "+6% Block Chance"
         ]
     },
     "172": {
@@ -2495,7 +2495,7 @@
         "mods": [
             "+(55-75) Melee Fire Damage",
             "+(55-75)% Melee Chance to Poison on Hit",
-            "(7-300)% increased Melee Attack Speed",
+            "7% increased Melee Attack Speed",
             "+(35-50)% Melee Increased Poison Effect",
             "+75% Poison Resistance"
         ]
@@ -2510,8 +2510,8 @@
         "mods": [
             "+(55-75)% Fire Chance to Poison on Hit",
             "25% less Poison Damage Taken",
-            "+(75-300)% Fire Resistance",
-            "+100% Chance to gain a stack of Ruby Venom for 8 seconds on Block"
+            "+75% Fire Resistance",
+            "+1 Chance to gain a stack of Ruby Venom for 8 seconds on Block"
         ]
     },
     "175": {
@@ -2522,7 +2522,7 @@
             "level": 76
         },
         "mods": [
-            "+100% Level of Skills",
+            "+1 Level of Skills",
             "+(1-45)% Physical Resistance",
             "+(1-45)% Fire Resistance",
             "+(1-45)% Cold Resistance",
@@ -2952,7 +2952,7 @@
             "+(30-45)% Cold Resistance",
             "+1 All Attributes",
             "(30-45)% increased Lightning Damage",
-            "+(1-30) Base Damage converted to Lightning for Swipe (3 second cooldown)"
+            "+1 Base Damage converted to Lightning for Swipe (3 second cooldown)"
         ]
     },
     "203": {
@@ -2964,7 +2964,7 @@
         },
         "mods": [
             "+1 Charge for Void Cleave",
-            "+(2-4)% Increased Movement Speed per Added Melee Void Damage",
+            "+2% Increased Movement Speed per Added Melee Void Damage",
             "+10 Melee Void Damage",
             "(8-10)% increased Movement Speed",
             "(18-42)% increased Void Damage"
@@ -3074,7 +3074,7 @@
             "+(26-39)% Physical  Penetration with Bleed ",
             "+(65-91)% Chance to Bleed on Hit",
             "+(26-39) Health Gain on Kill",
-            "+(13-21) Intelligence",
+            "+13 Intelligence",
             "+(65-91)% Reduced Health Cost of Spells"
         ]
     },
@@ -3130,7 +3130,7 @@
             "level": 0
         },
         "mods": [
-            "+(12-94)% Totem Lightning Penetration",
+            "+12% Totem Lightning Penetration",
             "+6 Totem Spell Lightning Damage",
             "+(60-94)% Totem Chance to Shock on Hit",
             "+12% Chance to summon a Storm Totem on hit (8 second cooldown)",
@@ -3138,7 +3138,7 @@
             "+(36-44)% Totem Lightning Resistance",
             "+(60-94) Mana",
             "+6 Attunement",
-            "+(12-94)% Lightning Penetration",
+            "+12% Lightning Penetration",
             "+6 Spell Lightning Damage",
             "+(60-94)% Chance to Shock on Hit"
         ]
@@ -3384,7 +3384,7 @@
         "mods": [
             "+(1-2) Minion Level of Skills",
             "+(52-113) Health",
-            "+100% Minion Stun Immunity",
+            "+1 Minion Stun Immunity",
             "+(13-26)% Chance to gain 50 Health on Minion Hit",
             "+(13-26)% Chance to gain 50 Health on Minion Death"
         ]
@@ -3951,7 +3951,7 @@
             "55% increased Health Regen",
             "89% increased Physical Damage",
             "13% increased Fire Cast Speed",
-            "(21-34)% increased Spell Fire Critical Strike Chance",
+            "21% increased Spell Fire Critical Strike Chance",
             "+34% Spell Fire Increased Stun Chance",
             "89% increased Fire Damage"
         ]
@@ -4126,7 +4126,7 @@
         "mods": [
             "(4-8)% increased Transform Movement Speed",
             "(16-32)% increased Transform Armor",
-            "+(2-3) Rage Gained per Second per Summoned Vine",
+            "+2 Rage Gained per Second per Summoned Vine",
             "+(32-64) Mana",
             "+1 Spriggan Form",
             "+1 Summon Spriggan"
@@ -4157,7 +4157,7 @@
             "level": 53
         },
         "mods": [
-            "(18-20)% increased Movement Speed",
+            "18% increased Movement Speed",
             "18% reduced Channelling Movement Speed",
             "(112-172)% increased Channelling Dodge Rating",
             "+(112-172) Channelling Dodge Rating",
@@ -4271,7 +4271,7 @@
         "mods": [
             "+(16-64)% Increased Cooldown Recovery Speed for Judgement",
             "+3 Melee Damage per Attunement for Judgement while Unarmed",
-            "+(2-100)% increased Area per Attunement for Judgement while Unarmed",
+            "+2% increased Area per Attunement for Judgement while Unarmed",
             "-12 Judgement Mana Cost while Unarmed",
             "+(8-24)% Fire Penetration",
             "+(4-16) Attunement"
@@ -4285,7 +4285,7 @@
             "level": 36
         },
         "mods": [
-            "+100% Meteor",
+            "+1 Meteor",
             "1% less Damage Taken for each Meteor you have cast recently (up to 18)",
             "+(30-60)% increased Meteor Fall Speed",
             "+(6-9)% Chance to Cast Meteor on Crit if above 0 Mana",
@@ -4397,7 +4397,7 @@
         "mods": [
             "+1 Gain a stack of Golden Aegis each second",
             "+(10-13)% Block Chance per stack of Golden Aegis",
-            "+(2-8) Block Effectiveness per 1% Total Uncapped Resistance",
+            "+2 Block Effectiveness per 1% Total Uncapped Resistance",
             "+(13-20) Ward Gain"
         ]
     },
@@ -4571,7 +4571,7 @@
         "mods": [
             "+(30-60)% Increased Area with Elemental Nova",
             "+(3-6) Elemental Nova",
-            "+(1-30)% Elemental Penetration with Elemental Nova per 10% uncapped Total Elemental Resistance",
+            "+1% Elemental Penetration with Elemental Nova per 10% uncapped Total Elemental Resistance",
             "18% less Damage Taken from Ignited Shocked or Chilled Enemies",
             "+1 Elemental Nova is always Tri-Elemental"
         ]

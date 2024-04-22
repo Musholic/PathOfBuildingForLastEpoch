@@ -5,8 +5,7 @@ from common import *
 construct_mod_data_list()
 
 
-with open("originalAssets/MasterAffixesList.asset", "r") as yamlFile:
-    data = yaml.safe_load(yamlFile)["MonoBehaviour"]
+data = load_yaml_file_with_tag_error(resourcesPath + "MasterAffixesList.asset")["MonoBehaviour"]
 
 modList = {}
 

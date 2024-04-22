@@ -10,8 +10,8 @@ resourcesPath = extractPath + "Resources/"
 
 
 def fix_and_filter_yaml_file(filepath, output_file_name):
-    source_file = open(filepath, 'r')
-    output_file = open(output_file_name, 'w')
+    source_file = open(filepath, 'r', encoding='utf-8')
+    output_file = open(output_file_name, 'w', encoding='utf-8')
     next_id = None
     discard = False
 
@@ -59,7 +59,10 @@ def insert_newlines(string, every=128):
 
 def get_value_range(mod_data, mod_type):
     min_roll = mod_data.get("value") or mod_data.get("implicitValue") or 0
-    max_roll = mod_data.get("maxValue")
+    if mod_data.get('canRoll') == 0:
+        max_roll = min_roll
+    else:
+        max_roll = mod_data.get("maxValue")
     if max_roll is None:
         max_roll = mod_data.get("implicitMaxValue")
     if max_roll is None:
@@ -315,14 +318,11 @@ modDataList = {}
 
 def construct_mod_data_list():
     global modDataList
-    with open(extractPath + "Resources/MasterAffixesList.asset", "r") as yamlFile:
-        mod_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]
+    mod_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/MasterAffixesList.asset")["MonoBehaviour"]
 
-    with open("originalAssets/Item_Affixes Shared Data.asset", "r") as yamlFile:
-        affix_keys_data = yaml.safe_load(yamlFile)["MonoBehaviour"]["m_Entries"]
+    affix_keys_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes Shared Data.asset")["MonoBehaviour"]["m_Entries"]
 
-    with open("originalAssets/Item_Affixes_en.asset", "r") as yamlFile:
-        affix_strings_data = yaml.safe_load(yamlFile)["MonoBehaviour"]["m_TableData"]
+    affix_strings_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes_en.asset")["MonoBehaviour"]["m_TableData"]
 
     affix_strings_by_id = {}
     for affixStringData in affix_strings_data:
@@ -349,8 +349,7 @@ def construct_mod_data_list():
             str(mod_data1["property"]) + "_" + str(mod_data1["specialTag"]) + "_" + str(mod_data1["tags"])] = mod_data1
         mod_data1["name"] = affix_strings[str(mod_data["affixId"]) + "_B"]
 
-    with open(extractPath + "Resources/MasterPropertyList.asset", "r") as yamlFile:
-        property_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]["propertyInfoList"]
+    property_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/MasterPropertyList.asset")["MonoBehaviour"]["propertyInfoList"]
 
     for propertyData in property_data_list0:
         mod_key = str(propertyData["property"]) + "_0_0"
@@ -364,8 +363,7 @@ def construct_mod_data_list():
                 modDataList[mod_key]["modifierType"] = altText["modType"]
                 modDataList[mod_key]["needs_tag_apply"] = True
 
-    with open(extractPath + "Resources/PlayerPropertyList.asset", "r") as yamlFile:
-        player_property_data_list0 = yaml.safe_load(yamlFile)["MonoBehaviour"]["list"]
+    player_property_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/PlayerPropertyList.asset")["MonoBehaviour"]["list"]
 
     for idx, propertyData in enumerate(player_property_data_list0):
         mod_key = "98_0_" + str(idx)
@@ -373,8 +371,7 @@ def construct_mod_data_list():
             modDataList[mod_key] = propertyData
             propertyData["name"] = propertyData["propertyName"]
 
-    with open(extractPath + "Resources/AbilityPropertyList.asset", "r") as yamlFile:
-        player_property_ability_list = yaml.safe_load(yamlFile)["MonoBehaviour"]["list"]
+    player_property_ability_list = load_yaml_file_with_tag_error(extractPath + "Resources/AbilityPropertyList.asset")["MonoBehaviour"]["list"]
 
     for abilityData in player_property_ability_list:
         for idx, propertyData in enumerate(abilityData['properties']):
