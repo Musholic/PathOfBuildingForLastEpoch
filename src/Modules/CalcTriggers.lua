@@ -592,6 +592,9 @@ local function defaultTriggerHandler(env, config)
 			local actionCooldownAdjusted = cooldownOverride or m_max(triggerCDAdjusted, triggeredCDAdjusted)
 
 			output.TriggerRateCap = source == actor.mainSkill and actor.mainSkill.skillData.triggerRateCapOverride or m_huge
+			if actor.mainSkill.skillData.maxStacks and actor.mainSkill.skillData.maxStacks > 0 then
+				output.TriggerRateCap = actor.mainSkill.skillData.maxStacks / actor.mainSkill.skillData.duration
+			end
 			if config.triggerName == "Doom Blast" and env.build.configTab.input["doomBlastSource"] == "expiration" then
 				local expirationRate = 1 / GlobalCache.cachedData["CACHE"][uuid].Env.player.output.Duration
 				if breakdown and breakdown.EffectiveSourceRate then
@@ -624,56 +627,60 @@ local function defaultTriggerHandler(env, config)
 			if breakdown and not breakdown.TriggerRateCap then
 				breakdown.TriggerRateCap = {}
 
-				if cooldownOverride then
-					t_insert(breakdown.TriggerRateCap, s_format("%.2f ^8(hard override of cooldown of %s)", cooldownOverride, triggeredName))
-				elseif triggeredCDAdjusted == 0 then
-					t_insert(breakdown.TriggerRateCap, triggeredName .. " has no base cooldown or cooldown override")
-				else -- triggeredCDAdjusted ~= 0 triggered skill has some kind of cooldown
-					if triggeredCD then
-						t_insert(breakdown.TriggerRateCap, s_format("%.2f ^8(base cooldown of triggered skill)", triggeredCD))
-					else
+				if actor.mainSkill.skillData.maxStacks and actor.mainSkill.skillData.maxStacks > 0 then
+					t_insert(breakdown.TriggerRateCap, s_format("%s can have a maximum of %d stacks per %.2fs", triggeredName, actor.mainSkill.skillData.maxStacks, actor.mainSkill.skillData.duration))
+				else
+					if cooldownOverride then
+						t_insert(breakdown.TriggerRateCap, s_format("%.2f ^8(hard override of cooldown of %s)", cooldownOverride, triggeredName))
+					elseif triggeredCDAdjusted == 0 then
 						t_insert(breakdown.TriggerRateCap, triggeredName .. " has no base cooldown or cooldown override")
-					end
-					if addedCooldown then
-						t_insert(breakdown.TriggerRateCap, s_format("+ %.2f ^8(flat added cooldown)", addedCooldown))
-					end
-					t_insert(breakdown.TriggerRateCap, s_format("/ %.2f ^8(increased/reduced cooldown recovery)", icdr))
-					t_insert(breakdown.TriggerRateCap, s_format("= %.4f ^8(final cooldown of triggered skill)", triggeredCDAdjusted))
-				end
-
-				t_insert(breakdown.TriggerRateCap, "")
-
-				if actor ~= env.minion then -- Minion triggers have internal triggers
-					if triggerCDAdjusted == 0 then
-						t_insert(breakdown.TriggerRateCap, s_format("Trigger rate based on %s cooldown", triggeredName))
-					else -- triggerCDAdjusted ~= 0 trigger has some kind of cooldown
-						if triggerCD then
-							t_insert(breakdown.TriggerRateCap, s_format("%.2f ^8(base cooldown of %s)", triggerCD, config.triggerName))
+					else -- triggeredCDAdjusted ~= 0 triggered skill has some kind of cooldown
+						if triggeredCD then
+							t_insert(breakdown.TriggerRateCap, s_format("%.2f ^8(base cooldown of triggered skill)", triggeredCD))
 						else
-							t_insert(breakdown.TriggerRateCap, config.triggerName .. " has no base cooldown")
+							t_insert(breakdown.TriggerRateCap, triggeredName .. " has no base cooldown or cooldown override")
 						end
-						if output.addsCastTime then
-							t_insert(breakdown.TriggerRateCap, s_format("+ %.2f ^8(this skill adds cast time to cooldown when triggered)", output.addsCastTime))
+						if addedCooldown then
+							t_insert(breakdown.TriggerRateCap, s_format("+ %.2f ^8(flat added cooldown)", addedCooldown))
 						end
 						t_insert(breakdown.TriggerRateCap, s_format("/ %.2f ^8(increased/reduced cooldown recovery)", icdr))
-						t_insert(breakdown.TriggerRateCap, s_format("= %.4f ^8(final cooldown of trigger)", triggerCDAdjusted))
+						t_insert(breakdown.TriggerRateCap, s_format("= %.4f ^8(final cooldown of triggered skill)", triggeredCDAdjusted))
 					end
-				end
 
-				t_insert(breakdown.TriggerRateCap, "")
+					t_insert(breakdown.TriggerRateCap, "")
 
-				if triggeredCDAdjusted ~= 0 and triggerCDAdjusted ~= 0 then
-					t_insert(breakdown.TriggerRateCap, s_format("%.3f ^8(biggest of trigger cooldown and triggered skill cooldown)", actionCooldownAdjusted))
-				end
+					if actor ~= env.minion then -- Minion triggers have internal triggers
+						if triggerCDAdjusted == 0 then
+							t_insert(breakdown.TriggerRateCap, s_format("Trigger rate based on %s cooldown", triggeredName))
+						else -- triggerCDAdjusted ~= 0 trigger has some kind of cooldown
+							if triggerCD then
+								t_insert(breakdown.TriggerRateCap, s_format("%.2f ^8(base cooldown of %s)", triggerCD, config.triggerName))
+							else
+								t_insert(breakdown.TriggerRateCap, config.triggerName .. " has no base cooldown")
+							end
+							if output.addsCastTime then
+								t_insert(breakdown.TriggerRateCap, s_format("+ %.2f ^8(this skill adds cast time to cooldown when triggered)", output.addsCastTime))
+							end
+							t_insert(breakdown.TriggerRateCap, s_format("/ %.2f ^8(increased/reduced cooldown recovery)", icdr))
+							t_insert(breakdown.TriggerRateCap, s_format("= %.4f ^8(final cooldown of trigger)", triggerCDAdjusted))
+						end
+					end
 
-				t_insert(breakdown.TriggerRateCap, "")
+					t_insert(breakdown.TriggerRateCap, "")
 
-				if not (triggeredCD or triggerCD or cooldownOverride) then
-					t_insert(breakdown.TriggerRateCap, "Assuming cast on every kill/attack/hit")
-				else
-					t_insert(breakdown.TriggerRateCap, "Trigger rate:")
-					t_insert(breakdown.TriggerRateCap, s_format("1 / %.3f", actionCooldownTickRounded))
-					t_insert(breakdown.TriggerRateCap, s_format("= %.2f ^8per second", output.TriggerRateCap))
+					if triggeredCDAdjusted ~= 0 and triggerCDAdjusted ~= 0 then
+						t_insert(breakdown.TriggerRateCap, s_format("%.3f ^8(biggest of trigger cooldown and triggered skill cooldown)", actionCooldownAdjusted))
+					end
+
+					t_insert(breakdown.TriggerRateCap, "")
+
+					if not (triggeredCD or triggerCD or cooldownOverride) then
+						t_insert(breakdown.TriggerRateCap, "Assuming cast on every kill/attack/hit")
+					else
+						t_insert(breakdown.TriggerRateCap, "Trigger rate:")
+						t_insert(breakdown.TriggerRateCap, s_format("1 / %.3f", actionCooldownTickRounded))
+						t_insert(breakdown.TriggerRateCap, s_format("= %.2f ^8per second", output.TriggerRateCap))
+					end
 				end
 			end
 

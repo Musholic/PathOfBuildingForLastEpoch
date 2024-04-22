@@ -6,9 +6,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 3.05,
             "spell_base_void_damage": 120.0
         }
@@ -20,11 +20,12 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 5000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 4.0,
-            "dot_base_poison_damage": 80.0
+            "dot_base_poison_damage": 80.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Ambusher Buff": {
@@ -34,9 +35,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 600000.0
+            "base_skill_effect_duration": 600000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_AncientFlight": {
@@ -46,9 +48,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 2000.0
+            "base_skill_effect_duration": 2000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Anguish": {
@@ -58,9 +61,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 10000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 2.0,
             "spell_base_necrotic_damage": 40.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -74,9 +77,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 3000.0
+            "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ArcaneAscendance": {
@@ -85,9 +89,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 1000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -98,9 +102,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 500000.0
+            "base_skill_effect_duration": 500000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ArmourShred": {
@@ -109,9 +114,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -122,9 +127,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 8000.0
+            "base_skill_effect_duration": 8000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_AspectOfTheBoarVisuals": {
@@ -134,9 +140,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 5000.0
+            "base_skill_effect_duration": 5000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_AspectOfTheCrow": {
@@ -146,9 +153,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 8000.0,
+            "maximum_stacks": 0,
             "dot_can_stack": 1
         }
     },
@@ -159,9 +166,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 3000.0
+            "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_AspectOfTheSharkVisuals": {
@@ -171,9 +179,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 3000.0
+            "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_AspectOfTheViperVisuals": {
@@ -183,9 +192,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 3000.0
+            "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_AvalancheStackForFissure": {
@@ -194,9 +204,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -207,9 +217,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 0,
             "dot_base_physical_damage": 53.0,
             "dot_can_stack": 1
         }
@@ -220,9 +230,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -233,9 +243,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 8000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 0.2,
             "spell_base_physical_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -249,10 +259,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
-            "dot_base_lightning_damage": 400.0
+            "maximum_stacks": 1,
+            "dot_base_lightning_damage": 400.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Brand of Subjugation": {
@@ -262,10 +273,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
-            "dot_base_cold_damage": 400.0
+            "maximum_stacks": 1,
+            "dot_base_cold_damage": 400.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Brand of Trespass": {
@@ -275,10 +287,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
-            "dot_base_fire_damage": 400.0
+            "maximum_stacks": 1,
+            "dot_base_fire_damage": 400.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Chained": {
@@ -288,9 +301,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 2000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 2.0,
             "spell_base_necrotic_damage": 40.0
         }
@@ -301,9 +314,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 3,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 3,
             "damageEffectiveness": 1.0
         }
     },
@@ -313,9 +326,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -326,9 +339,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 5,
         "stats": {
             "base_skill_effect_duration": 500000.0,
+            "maximum_stacks": 5,
             "dot_can_stack": 1
         }
     },
@@ -338,9 +351,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 12,
         "stats": {
             "base_skill_effect_duration": 12000.0,
+            "maximum_stacks": 12,
             "damageEffectiveness": 1.0
         }
     },
@@ -351,9 +364,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 3,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 3,
             "dot_can_stack": 1
         }
     },
@@ -364,9 +377,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 6000.0
+            "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_CriticalVulnerability": {
@@ -376,9 +390,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "dot_can_stack": 1
         }
     },
@@ -388,9 +402,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -401,9 +415,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 0,
             "dot_can_stack": 1
         }
     },
@@ -414,9 +428,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 2500.0,
+            "maximum_stacks": 0,
             "dot_base_necrotic_damage": 35.0,
             "dot_can_stack": 1
         }
@@ -427,9 +441,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 10000000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -440,9 +454,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 90000000.0
+            "base_skill_effect_duration": 90000000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Decrepify": {
@@ -452,9 +467,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 10000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 10.0,
             "spell_base_physical_damage": 200.0
         }
@@ -465,9 +480,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -478,9 +493,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 3,
         "stats": {
             "base_skill_effect_duration": 10000.0,
+            "maximum_stacks": 3,
             "dot_can_stack": 1
         }
     },
@@ -491,9 +506,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 4,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 4,
             "dot_base_void_damage": 400.0,
             "dot_can_stack": 1
         }
@@ -504,9 +519,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 99999000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -517,9 +532,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 90000000.0
+            "base_skill_effect_duration": 90000000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_DuskShroud": {
@@ -529,9 +545,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 0,
             "dot_can_stack": 1
         }
     },
@@ -541,9 +557,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -554,9 +570,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 2500.0,
+            "maximum_stacks": 0,
             "dot_base_lightning_damage": 44.0,
             "dot_can_stack": 1
         }
@@ -568,9 +584,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 6000.0
+            "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Falcon Mark": {
@@ -580,9 +597,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 8000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 0.2,
             "spell_base_physical_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -595,9 +612,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
-            "base_skill_effect_duration": 5000.0
+            "base_skill_effect_duration": 5000.0,
+            "maximum_stacks": 0
         }
     },
     "Ailment_Ferocity": {
@@ -607,9 +624,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 4000.0
+            "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_FireResistanceShred": {
@@ -618,9 +636,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -630,9 +648,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -643,9 +661,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 500.0
+            "base_skill_effect_duration": 500.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Flurry2Tag": {
@@ -655,9 +674,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 500.0
+            "base_skill_effect_duration": 500.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Frailty": {
@@ -666,9 +686,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 3,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 3,
             "damageEffectiveness": 1.0
         }
     },
@@ -679,9 +699,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 1000.0
+            "base_skill_effect_duration": 1000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Frostbite": {
@@ -691,9 +712,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 0,
             "dot_base_cold_damage": 36.0,
             "dot_can_stack": 1
         }
@@ -705,9 +726,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 0,
             "dot_base_void_damage": 60.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
@@ -721,9 +742,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 4000.0
+            "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_HealingHandsHealOverTime": {
@@ -733,9 +755,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 3000.0
+            "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_HolyAuraStackForFlameBurst": {
@@ -744,9 +767,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 30000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -757,9 +780,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 2500.0,
+            "maximum_stacks": 0,
             "dot_base_fire_damage": 40.0,
             "dot_can_stack": 1
         }
@@ -770,9 +793,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 1000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -782,9 +805,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -796,9 +819,9 @@
             "melee": true,
             "attack": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0,
             "melee_base_physical_damage": 1.0
         }
@@ -809,9 +832,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 3,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 3,
             "damageEffectiveness": 1.0
         }
     },
@@ -821,9 +844,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -833,9 +856,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 8000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -845,9 +868,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -858,9 +881,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 12,
         "stats": {
             "base_skill_effect_duration": 15000.0,
+            "maximum_stacks": 12,
             "dot_base_void_damage": 200.0,
             "dot_can_stack": 1
         }
@@ -872,9 +895,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 4000.0
+            "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_MoltenInfusion": {
@@ -884,9 +908,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 0,
             "dot_can_stack": 1
         }
     },
@@ -897,9 +921,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 8000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 0.2,
             "spell_base_necrotic_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -912,9 +936,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -925,10 +949,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
-            "dot_base_void_damage": 400.0
+            "maximum_stacks": 1,
+            "dot_base_void_damage": 400.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Penance": {
@@ -938,9 +963,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 15000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0,
             "spell_base_fire_damage": 20.0
         }
@@ -952,9 +977,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 2,
         "stats": {
             "base_skill_effect_duration": 500.0,
+            "maximum_stacks": 2,
             "dot_base_poison_damage": 30.0,
             "dot_can_stack": 1
         }
@@ -965,9 +990,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -978,10 +1003,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 4000.0,
-            "dot_base_poison_damage": 150.0
+            "maximum_stacks": 1,
+            "dot_base_poison_damage": 150.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Poison": {
@@ -991,9 +1017,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 0,
             "dot_base_poison_damage": 28.0,
             "dot_can_stack": 1
         }
@@ -1004,9 +1030,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -1016,9 +1042,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1029,9 +1055,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 1500.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0,
             "spell_base_necrotic_damage": 20.0
         }
@@ -1043,9 +1069,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
             "spell_base_void_damage": 135.0
         }
     },
@@ -1056,9 +1082,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 13000.0
+            "base_skill_effect_duration": 13000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Root": {
@@ -1067,9 +1094,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 700.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -1080,9 +1107,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 6000.0
+            "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Runeword Cataclysm": {
@@ -1092,9 +1120,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 6000.0
+            "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Runeword Hurricane": {
@@ -1104,9 +1133,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 6000.0
+            "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Runeword Inferno": {
@@ -1116,9 +1146,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 6000.0
+            "base_skill_effect_duration": 6000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Sciurine Rage": {
@@ -1128,9 +1159,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 4000.0
+            "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_SerpentVenom": {
@@ -1140,10 +1172,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
-            "dot_base_poison_damage": 300.0
+            "maximum_stacks": 1,
+            "dot_base_poison_damage": 300.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ShadowDaggers": {
@@ -1152,9 +1185,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1165,9 +1198,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 4000.0
+            "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Sharpshooter": {
@@ -1177,9 +1211,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 8000.0,
+            "maximum_stacks": 10,
             "dot_can_stack": 1
         }
     },
@@ -1189,9 +1223,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -1202,9 +1236,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 60000.0
+            "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ShrineExperienceBuff": {
@@ -1214,9 +1249,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 60000.0
+            "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ShrineHaste": {
@@ -1226,9 +1262,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 60000.0
+            "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ShrineManatee": {
@@ -1238,9 +1275,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 45000.0
+            "base_skill_effect_duration": 45000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ShrineReflect": {
@@ -1250,9 +1288,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 60000.0
+            "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ShrineStun": {
@@ -1262,9 +1301,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 60000.0
+            "base_skill_effect_duration": 60000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_SilverShroud": {
@@ -1274,9 +1314,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 10000.0,
+            "maximum_stacks": 0,
             "dot_can_stack": 1
         }
     },
@@ -1286,9 +1326,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 3,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 3,
             "damageEffectiveness": 1.0
         }
     },
@@ -1299,9 +1339,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 0,
             "dot_can_stack": 1
         }
     },
@@ -1312,10 +1352,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 12000.0,
-            "dot_base_poison_damage": 400.0
+            "maximum_stacks": 1,
+            "dot_base_poison_damage": 400.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_SparkCharge": {
@@ -1324,9 +1365,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 1000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1337,9 +1378,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 100,
         "stats": {
             "base_skill_effect_duration": 5000.0,
+            "maximum_stacks": 100,
             "dot_can_stack": 1
         }
     },
@@ -1350,9 +1391,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 4.5,
             "spell_base_necrotic_damage": 90.0
         }
@@ -1364,10 +1405,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 4000.0,
-            "dot_base_fire_damage": 200.0
+            "maximum_stacks": 1,
+            "dot_base_fire_damage": 200.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_StackingAbyssalDecay": {
@@ -1377,9 +1419,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.5,
             "spell_base_void_damage": 30.0
         }
@@ -1391,9 +1433,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 10,
             "dot_can_stack": 1
         }
     },
@@ -1403,9 +1445,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 10000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 1.0
         }
     },
@@ -1415,9 +1457,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 10000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1427,9 +1469,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 5000.0,
+            "maximum_stacks": 0,
             "damageEffectiveness": 1.0
         }
     },
@@ -1440,9 +1482,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 30000.0,
+            "maximum_stacks": 10,
             "spell_base_void_damage": 25.0
         }
     },
@@ -1453,9 +1495,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 18000.0,
+            "maximum_stacks": 0,
             "dot_base_fire_damage": 40.0,
             "dot_can_stack": 1
         }
@@ -1467,9 +1509,10 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
-            "base_skill_effect_duration": 5000.0
+            "base_skill_effect_duration": 5000.0,
+            "maximum_stacks": 1,
+            "dot_can_stack": 1
         }
     },
     "Ailment_TempestsMight": {
@@ -1479,9 +1522,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 1,
             "spell_base_void_damage": 25.0
         }
     },
@@ -1492,10 +1535,11 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 10000.0,
-            "dot_base_cold_damage": 400.0
+            "maximum_stacks": 1,
+            "dot_base_cold_damage": 400.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_TimeRot": {
@@ -1505,9 +1549,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 12,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 12,
             "dot_base_void_damage": 55.0,
             "dot_can_stack": 1
         }
@@ -1519,9 +1563,9 @@
             "duration": true,
             "spell": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 1,
             "damageEffectiveness": 6.0,
             "spell_base_necrotic_damage": 120.0,
             "base_critical_strike_multiplier_+": 100.0,
@@ -1535,9 +1579,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 0,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 0,
             "dot_can_stack": 1
         }
     },
@@ -1548,9 +1592,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 6,
         "stats": {
             "base_skill_effect_duration": 999999000.0,
+            "maximum_stacks": 6,
             "dot_can_stack": 1
         }
     },
@@ -1561,9 +1605,9 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 3,
         "stats": {
             "base_skill_effect_duration": 7000.0,
+            "maximum_stacks": 3,
             "dot_can_stack": 1
         }
     },
@@ -1573,9 +1617,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 10,
         "stats": {
             "base_skill_effect_duration": 4000.0,
+            "maximum_stacks": 10,
             "damageEffectiveness": 1.0
         }
     },
@@ -1586,11 +1630,12 @@
             "duration": true,
             "dot": true
         },
-        "maxStacks": 1,
         "stats": {
             "base_skill_effect_duration": 12000.0,
+            "maximum_stacks": 1,
             "dot_base_fire_damage": 300.0,
-            "dot_base_necrotic_damage": 300.0
+            "dot_base_necrotic_damage": 300.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Withering": {
@@ -1599,9 +1644,9 @@
         "baseFlags": {
             "duration": true
         },
-        "maxStacks": 20,
         "stats": {
             "base_skill_effect_duration": 3000.0,
+            "maximum_stacks": 20,
             "damageEffectiveness": 1.0
         }
     },

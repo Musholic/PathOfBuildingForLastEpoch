@@ -21,6 +21,9 @@ local result = {
 	skill("durationTertiary", nil),
 	div = 1000,
 },
+["maximum_stacks"] = {
+	skill("maxStacks", nil)
+},
 ["spell_minimum_base_lightning_damage_per_removable_power_charge"] = {
 	skill("LightningMin", nil, { type = "Multiplier", var = "RemovablePowerCharge" }),
 },

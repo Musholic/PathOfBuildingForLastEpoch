@@ -79,14 +79,15 @@ for ailmentGuidData in ailmentListData:
         "baseFlags": {
             "duration": True
         },
-        "maxStacks": int(ailmentData['maxInstances']),
         "stats": {
-            "base_skill_effect_duration": float(ailmentData['duration']) * 1000
+            "base_skill_effect_duration": float(ailmentData['duration']) * 1000,
+            "maximum_stacks": int(ailmentData['maxInstances']),
         },
     }
     set_stats_from_damage_data(ailment, ailmentData['baseDamage'], ailmentData['tags'])
     skills["Ailment_" + ailmentData['m_Name']] = ailment
-    if ailment['baseFlags'].get('dot') and ailment["maxStacks"] != 1:
+    if ailment['baseFlags'].get('dot'):
+        # We consider that all ailments can stack for simplification
         ailment['stats']['dot_can_stack'] = 1
 
 skills = dict(natsorted(skills.items()))
