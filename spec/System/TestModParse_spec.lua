@@ -55,6 +55,14 @@ describe("TestModParse", function()
         assert.are.equals(35, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Fire, flags = KeywordFlag.Spell }, "FireMin"))
     end)
 
+    it("increased damage", function()
+        build.configTab.input.customMods = "50% increased melee void damage"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+
+        assert.are.equals(50, build.configTab.modList:Sum("INC", { keywordFlags = KeywordFlag.Void, flags = ModFlag.Melee }, "VoidDamage"))
+    end)
+
     it("passive node more damage", function()
         build.configTab.input.customMods = "+10% Damage"
         build.configTab:BuildModList()

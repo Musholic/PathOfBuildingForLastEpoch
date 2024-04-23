@@ -62,10 +62,12 @@ local formList = {
 	["^you lose ([%d%.]+)%% of (.-) per second"] = "DEGENPERCENT",
 	["^([%d%.]+) (%a+) damage taken per second"] = "DEGEN",
 	["^([%d%.]+) (%a+) damage per second"] = "DEGEN",
-	-- TODO: support for increased DMG (e.g. melee void damage)
 	["^%+([%d%.]+) damage"] = "DMG",
 	["^%+([%d%.]+) (%a+) damage"] = "DMG",
 	["^%+([%d%.]+) (%a+) (%a+) damage"] = "DMG",
+	["^([%d%.]+)%% increased damage"] = "INCDMG",
+	["^([%d%.]+)%% increased (%a+) damage"] = "INCDMG",
+	["^([%d%.]+)%% increased (%a+) (%a+) damage"] = "INCDMG",
 	["^you have "] = "FLAG",
 	["^have "] = "FLAG",
 	["^you are "] = "FLAG",
@@ -2063,7 +2065,7 @@ local function parseMod(line, order)
 		end
 		modName = damageType .. "Degen"
 		modSuffix = ""
-	elseif modForm == "DMG" then
+	elseif modForm == "DMG" or modForm == "INCDMG" then
 		local damageTypes = DamageTypes
 		modFlag = {flags = 0, keywordFlags = 0}
 		for i=2,#formCap do
@@ -2077,19 +2079,34 @@ local function parseMod(line, order)
 					damageTypes = {v}
 				end
 			end
+			if formCap[i] == "minion" then
+				modFlag.addToMinion = true
+			end
+		end
+		if modForm == "INCDMG" then
+			modType = "INC"
 		end
 		modName = {}
 		keywordFlags = {}
-		for _,damageType in ipairs(damageTypes) do
-			-- If the damage type is specific, then it is applied regardless of the type of the skill
-			if #damageTypes > 1 then
-				table.insert(keywordFlags, KeywordFlag[damageType])
+		if modForm == "DMG" then
+			for _,damageType in ipairs(damageTypes) do
+				-- If the damage type is specific, then it is applied regardless of the type of the skill
+					if #damageTypes > 1 then
+						table.insert(keywordFlags, KeywordFlag[damageType])
+					end
+					table.insert(modName,damageType.."Min")
+					if #damageTypes > 1 then
+						table.insert(keywordFlags, KeywordFlag[damageType])
+					end
+					table.insert(modName,damageType.."Max")
 			end
-			table.insert(modName,damageType.."Min")
-			if #damageTypes > 1 then
-				table.insert(keywordFlags, KeywordFlag[damageType])
+		else
+			if #damageTypes == 1 then
+				table.insert(modName,damageTypes[1].."Damage")
+			else
+				-- Increase damage for all damage types
+				table.insert(modName,"Damage")
 			end
-			table.insert(modName,damageType.."Max")
 		end
 	elseif modForm == "FLAG" then
 		modName = type(modValue) == "table" and modValue.name or modValue
