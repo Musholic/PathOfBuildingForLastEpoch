@@ -717,6 +717,9 @@ local modNameList = {
 for skillId, skill in pairs(data.skills) do
 	modNameList["to " .. skill.name:lower()] = {"ChanceToTriggerOnHit_"..skillId, flags = ModFlag.Hit}
 	modNameList[skill.name:lower() .. " chance"] = {"ChanceToTriggerOnHit_"..skillId, flags = ModFlag.Hit}
+	if skill.altName then
+		modNameList[skill.altName:lower() .. " chance"] = {"ChanceToTriggerOnHit_"..skillId, flags = ModFlag.Hit}
+	end
 end
 
 for _, damageType in ipairs(DamageTypes) do
@@ -1709,6 +1712,10 @@ local specialQuickFixModList = {
 	["^%+([%d%.]+%%) Cast Speed"] = "%1 increased Cast Speed",
 	["^%+([%d%.]+%%) Cooldown Recovery Speed"] = "%1 increased Cooldown Recovery Speed",
 }
+
+for _, damageType in ipairs(DamageTypes) do
+	specialQuickFixModList[damageType .. " Shred Chance"] = "Shred " .. damageType .. " Resistance Chance"
+end
 
 local specialModList = {
 	["no cooldown"] = { flag("NoCooldown") },

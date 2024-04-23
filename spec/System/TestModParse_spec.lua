@@ -96,4 +96,12 @@ describe("TestModParse", function()
 
         assert.are.equals(10, build.configTab.modList:Sum("INC", {keywordFlags = KeywordFlag.Fire, flags = ModFlag.Cast}, "Speed"))
     end)
+
+    it("shred chance", function()
+        build.configTab.input.customMods = "+10% Void Shred Chance"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+
+        assert.are.equals(10, build.configTab.modList:Sum("BASE", {flags = ModFlag.Hit}, "ChanceToTriggerOnHit_Ailment_VoidResistanceShred"))
+    end)
 end)

@@ -84,6 +84,8 @@ for ailmentGuidData in ailmentListData:
             "maximum_stacks": int(ailmentData['maxInstances']),
         },
     }
+    if ailmentData['displayName'] != ailmentData['instanceName']:
+        ailment["altName"] = ailmentData['instanceName']
     set_stats_from_damage_data(ailment, ailmentData['baseDamage'], ailmentData['tags'])
     skills["Ailment_" + ailmentData['m_Name']] = ailment
     if ailment['baseFlags'].get('dot'):
