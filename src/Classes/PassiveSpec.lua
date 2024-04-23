@@ -464,7 +464,7 @@ function PassiveSpecClass:ResetSkill(index)
 		-- Deallocate the skillId start node
 		local skillId = self.build.skillsTab.socketGroupList[index].skillId
 		local oldStartNodeId = skillId .. "-0"
-		if oldStartNodeId then
+		if oldStartNodeId and self.nodes[oldStartNodeId] then
 			self.nodes[oldStartNodeId].alloc = 0
 			self.allocNodes[oldStartNodeId] = nil
 		end

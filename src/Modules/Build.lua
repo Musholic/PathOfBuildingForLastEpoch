@@ -751,7 +751,9 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 			table.insert(char["hashes"], skillTree['treeID'] .. "-" .. 0 .. "#1")
 			table.insert(char["abilities"], skillTree['treeID'])
 			for skill, nbPoints in pairs(skillTree["selected"]) do
-				table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "#" .. nbPoints)
+				if nbPoints > 0 then
+					table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "#" .. nbPoints)
+				end
 			end
 		end
 		local slotMap = {
