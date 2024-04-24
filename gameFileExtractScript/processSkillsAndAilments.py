@@ -1,6 +1,7 @@
 import json
 from common import *
 
+construct_mod_data_list()
 
 def load_file_from_guid(ability_guid, suffix=None):
     filepath = guidToFilenames[ability_guid['guid']]
@@ -86,11 +87,23 @@ for ailmentGuidData in ailmentListData:
     }
     if ailmentData['displayName'] != ailmentData['instanceName']:
         ailment["altName"] = ailmentData['instanceName']
+    if ailmentData['buffs']:
+        ailment['buffs'] = []
+    for buffData in ailmentData['buffs']:
+        if buffData['addedValue']:
+            buffData['value'] = buffData['addedValue']
+        if buffData['increasedValue']:
+            buffData['value'] = buffData['increasedValue']
+            buffData['modType'] = 1
+        if buffData['moreValues']:
+            buffData['value'] = buffData['moreValues'][0]
+            buffData['modType'] = 2
+
+        ailment['buffs'].append(get_mod_value(buffData))
     set_stats_from_damage_data(ailment, ailmentData['baseDamage'], ailmentData['tags'])
     skills["Ailment_" + ailmentData['m_Name']] = ailment
-    if ailment['baseFlags'].get('dot'):
-        # We consider that all ailments can stack for simplification
-        ailment['stats']['dot_can_stack'] = 1
+    # We consider that all ailments can stack for simplification
+    ailment['stats']['dot_can_stack'] = 1
 
 skills = dict(natsorted(skills.items()))
 

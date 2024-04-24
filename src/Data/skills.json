@@ -10,7 +10,8 @@
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
             "damageEffectiveness": 3.05,
-            "spell_base_void_damage": 120.0
+            "spell_base_void_damage": 120.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_AcidSkin": {
@@ -26,7 +27,10 @@
             "damageEffectiveness": 4.0,
             "dot_base_poison_damage": 80.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+20% Chance to Receive a Critical Strike"
+        ]
     },
     "Ailment_Ambusher Buff": {
         "name": "Ambusher",
@@ -39,7 +43,11 @@
             "base_skill_effect_duration": 600000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "-30% Damage Taken",
+            "+30% Movement Speed"
+        ]
     },
     "Ailment_AncientFlight": {
         "name": "Ancient Flight",
@@ -52,7 +60,13 @@
             "base_skill_effect_duration": 2000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+2 Arrows with Flurry while using a Bow",
+            "+2 Arrows with Multishot",
+            "+1 Critical Strike Chance",
+            "+1 Critical Strike Avoidance"
+        ]
     },
     "Ailment_Anguish": {
         "name": "Anguish",
@@ -67,8 +81,12 @@
             "damageEffectiveness": 2.0,
             "spell_base_necrotic_damage": 40.0,
             "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0
-        }
+            "critChance": 5.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "-15% Damage Over Time"
+        ]
     },
     "Ailment_Apocalypse": {
         "name": "Apocalypse",
@@ -81,7 +99,11 @@
             "base_skill_effect_duration": 3000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+70% Void Damage",
+            "+70% Melee Critical Strike Multiplier"
+        ]
     },
     "Ailment_ArcaneAscendance": {
         "name": "Arcane Ascendance",
@@ -92,7 +114,8 @@
         "stats": {
             "base_skill_effect_duration": 1000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_ArcaneMark": {
@@ -117,9 +140,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Armour Shred"
+        "altName": "Armour Shred",
+        "buffs": [
+            "-100 Armour"
+        ]
     },
     "Ailment_Aspect of the Spider": {
         "name": "Aspect of the Spider",
@@ -132,7 +159,11 @@
             "base_skill_effect_duration": 8000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+1 Chance to Slow on Hit",
+            "+15% Global Conditional Damage"
+        ]
     },
     "Ailment_AspectOfTheBoarVisuals": {
         "name": "Aspect of the Boar",
@@ -158,7 +189,11 @@
             "base_skill_effect_duration": 8000.0,
             "maximum_stacks": 0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+3 Melee Lightning Damage",
+            "+3 Spell Lightning Damage"
+        ]
     },
     "Ailment_AspectOfTheLynxVisuals": {
         "name": "Aspect of the Lynx",
@@ -208,7 +243,8 @@
         "stats": {
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Bleed": {
@@ -235,9 +271,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Blindness"
+        "altName": "Blindness",
+        "buffs": [
+            "-50% Critical Strike Chance"
+        ]
     },
     "Ailment_BoneCurse": {
         "name": "Bone Curse",
@@ -252,7 +292,8 @@
             "damageEffectiveness": 0.2,
             "spell_base_physical_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Brand of Deception": {
@@ -311,7 +352,8 @@
             "base_skill_effect_duration": 2000.0,
             "maximum_stacks": 1,
             "damageEffectiveness": 2.0,
-            "spell_base_necrotic_damage": 40.0
+            "spell_base_necrotic_damage": 40.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Chill": {
@@ -323,8 +365,14 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 3,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "-12% Attack Speed",
+            "-12% Cast Speed",
+            "-12% Movement Speed"
+        ]
     },
     "Ailment_ColdResistanceShred": {
         "name": "Shred Cold Resistance",
@@ -335,9 +383,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Cold Resistance Shred"
+        "altName": "Cold Resistance Shred",
+        "buffs": [
+            "-5% Cold Resistance"
+        ]
     },
     "Ailment_Contempt": {
         "name": "Contempt",
@@ -350,7 +402,11 @@
             "base_skill_effect_duration": 500000.0,
             "maximum_stacks": 5,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+10% All Resistances",
+            "+10% Armor"
+        ]
     },
     "Ailment_CorruptedHeraldry": {
         "name": "Corrupted Heraldry",
@@ -361,8 +417,14 @@
         "stats": {
             "base_skill_effect_duration": 12000.0,
             "maximum_stacks": 12,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+5% Movement Speed",
+            "+5% Mana Regen",
+            "+5 Spell Void Damage"
+        ]
     },
     "Ailment_CrimsonShroud": {
         "name": "Crimson Shroud",
@@ -375,7 +437,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 3,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+50% Chance to Bleed on Hit",
+            "-5% Damage Over Time Taken"
+        ]
     },
     "Ailment_CriticalEffluence": {
         "name": "Critical Effluence",
@@ -388,7 +454,10 @@
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+1 Spell Critical Strike Chance"
+        ]
     },
     "Ailment_CriticalVulnerability": {
         "name": "Critical Vulnerability",
@@ -401,7 +470,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+2% Chance to Receive a Critical Strike",
+            "-10% Critical Strike Avoidance"
+        ]
     },
     "Ailment_DamageBoost": {
         "name": "Damage Boost",
@@ -412,8 +485,12 @@
         "stats": {
             "base_skill_effect_duration": 3000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+10% Damage"
+        ]
     },
     "Ailment_DamageImmunity": {
         "name": "Damage Immunity",
@@ -426,7 +503,10 @@
             "base_skill_effect_duration": 3000.0,
             "maximum_stacks": 0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "-1 Damage Taken"
+        ]
     },
     "Ailment_Damned": {
         "name": "Damned",
@@ -440,7 +520,10 @@
             "maximum_stacks": 0,
             "dot_base_necrotic_damage": 35.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "-20% Health Regen"
+        ]
     },
     "Ailment_Darkness": {
         "name": "Darkness",
@@ -451,8 +534,13 @@
         "stats": {
             "base_skill_effect_duration": 10000000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+1 Damage",
+            "-90% Damage Taken Buff"
+        ]
     },
     "Ailment_Deadly": {
         "name": "Deadly",
@@ -465,7 +553,10 @@
             "base_skill_effect_duration": 90000000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+1 Damage"
+        ]
     },
     "Ailment_Decrepify": {
         "name": "Decrepify",
@@ -478,8 +569,12 @@
             "base_skill_effect_duration": 10000.0,
             "maximum_stacks": 1,
             "damageEffectiveness": 10.0,
-            "spell_base_physical_damage": 200.0
-        }
+            "spell_base_physical_damage": 200.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+15% Damage Over Time Taken"
+        ]
     },
     "Ailment_DisintegrateStackForExplosion": {
         "name": "Disintegrate Explosion Proc Ailment",
@@ -490,7 +585,8 @@
         "stats": {
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_DivineEssence": {
@@ -504,7 +600,12 @@
             "base_skill_effect_duration": 10000.0,
             "maximum_stacks": 3,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+10% Armor",
+            "+10% Increased Healing Effectiveness",
+            "-10% Duration of Stuns Received"
+        ]
     },
     "Ailment_Doom": {
         "name": "Doom",
@@ -518,7 +619,10 @@
             "maximum_stacks": 4,
             "dot_base_void_damage": 400.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+4% Melee Damage Taken"
+        ]
     },
     "Ailment_DoomBrand": {
         "name": "Doom Brand",
@@ -529,7 +633,8 @@
         "stats": {
             "base_skill_effect_duration": 99999000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_DummyHealingWhileNotTakingDamage": {
@@ -556,7 +661,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+5% Chance to receive a Glancing Blow when hit",
+            "+50 Dodge Rating"
+        ]
     },
     "Ailment_EfficaciousToxin": {
         "name": "Efficacious Toxin",
@@ -567,8 +676,12 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+10% Damage Over Time Taken"
+        ]
     },
     "Ailment_Electrify": {
         "name": "Electrify",
@@ -595,7 +708,12 @@
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+60% Attack Speed",
+            "+60% Cast Speed",
+            "+35% Movement Speed"
+        ]
     },
     "Ailment_Falcon Mark": {
         "name": "Falconer's Mark",
@@ -610,7 +728,8 @@
             "damageEffectiveness": 0.2,
             "spell_base_physical_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Fear": {
@@ -621,7 +740,8 @@
         },
         "stats": {
             "base_skill_effect_duration": 5000.0,
-            "maximum_stacks": 0
+            "maximum_stacks": 0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Ferocity": {
@@ -635,7 +755,10 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+50% Physical Damage"
+        ]
     },
     "Ailment_FireResistanceShred": {
         "name": "Shred Fire Resistance",
@@ -646,9 +769,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Fire Resistance Shred"
+        "altName": "Fire Resistance Shred",
+        "buffs": [
+            "-5% Fire Resistance"
+        ]
     },
     "Ailment_FireballStackForExplosion": {
         "name": "Fireball Explosion Proc Ailment",
@@ -659,7 +786,8 @@
         "stats": {
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Flurry1Tag": {
@@ -697,8 +825,12 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 3,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "-6% Damage"
+        ]
     },
     "Ailment_Frenzy": {
         "name": "Frenzy",
@@ -711,7 +843,11 @@
             "base_skill_effect_duration": 1000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+20% Attack Speed",
+            "+20% Cast Speed"
+        ]
     },
     "Ailment_Frostbite": {
         "name": "Frostbite",
@@ -725,7 +861,10 @@
             "maximum_stacks": 0,
             "dot_base_cold_damage": 36.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+20% Increased Chance To Be Frozen"
+        ]
     },
     "Ailment_FutureAttack": {
         "name": "Future Strike",
@@ -755,7 +894,10 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+30% Movement Speed"
+        ]
     },
     "Ailment_HealingHandsHealOverTime": {
         "name": "Healing Hands Lingering Warmth",
@@ -779,7 +921,8 @@
         "stats": {
             "base_skill_effect_duration": 30000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Ignite": {
@@ -805,7 +948,8 @@
         "stats": {
             "base_skill_effect_duration": 1000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
         "altName": "Immobilized"
     },
@@ -818,8 +962,12 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+20% Increased Cooldown Recovery Speed"
+        ]
     },
     "Ailment_Laceration": {
         "name": "Laceration",
@@ -833,7 +981,8 @@
             "base_skill_effect_duration": 3000.0,
             "maximum_stacks": 1,
             "damageEffectiveness": 1.0,
-            "melee_base_physical_damage": 1.0
+            "melee_base_physical_damage": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_LightningInfusion": {
@@ -845,8 +994,12 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 3,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+21 Lightning Damage"
+        ]
     },
     "Ailment_LightningResistanceShred": {
         "name": "Shred Lightning Resistance",
@@ -857,9 +1010,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Lightning Resistance Shred"
+        "altName": "Lightning Resistance Shred",
+        "buffs": [
+            "-5% Lightning Resistance"
+        ]
     },
     "Ailment_MarkedForDeath": {
         "name": "Marked For Death",
@@ -870,9 +1027,13 @@
         "stats": {
             "base_skill_effect_duration": 8000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Mark For Death"
+        "altName": "Mark For Death",
+        "buffs": [
+            "-25% All Resistances"
+        ]
     },
     "Ailment_MeleeDefShred": {
         "name": "Melee Defense Shred",
@@ -883,8 +1044,12 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+10% Melee Damage Taken"
+        ]
     },
     "Ailment_MimicFeast": {
         "name": "Mimic Feast",
@@ -898,7 +1063,10 @@
             "maximum_stacks": 12,
             "dot_base_void_damage": 200.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "-1 Damage Leeched as Health"
+        ]
     },
     "Ailment_MirageForm": {
         "name": "Mirage Form",
@@ -924,7 +1092,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+15 Melee Fire Damage",
+            "+30% Chance to Ignite on Hit"
+        ]
     },
     "Ailment_NecroticBoneCurse": {
         "name": "Bone Curse",
@@ -939,7 +1111,8 @@
             "damageEffectiveness": 0.2,
             "spell_base_necrotic_damage": 4.0,
             "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_NecroticResistanceShred": {
@@ -951,9 +1124,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Necrotic Resistance Shred"
+        "altName": "Necrotic Resistance Shred",
+        "buffs": [
+            "-5% Necrotic Resistance"
+        ]
     },
     "Ailment_Netted": {
         "name": "Netted",
@@ -967,7 +1144,10 @@
             "maximum_stacks": 1,
             "dot_base_void_damage": 400.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "-35% Movement Speed"
+        ]
     },
     "Ailment_Penance": {
         "name": "Penance",
@@ -980,7 +1160,8 @@
             "base_skill_effect_duration": 15000.0,
             "maximum_stacks": 1,
             "damageEffectiveness": 1.0,
-            "spell_base_fire_damage": 20.0
+            "spell_base_fire_damage": 20.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Pestilence": {
@@ -1006,9 +1187,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Physical Resistance Shred"
+        "altName": "Physical Resistance Shred",
+        "buffs": [
+            "-5% Physical Resistance"
+        ]
     },
     "Ailment_Plague": {
         "name": "Plague",
@@ -1037,7 +1222,10 @@
             "maximum_stacks": 0,
             "dot_base_poison_damage": 28.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "-5% Poison Resistance"
+        ]
     },
     "Ailment_PoisonResistanceShred": {
         "name": "Shred Poison Resistance",
@@ -1048,9 +1236,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Poison Resistance Shred"
+        "altName": "Poison Resistance Shred",
+        "buffs": [
+            "-5% Poison Resistance"
+        ]
     },
     "Ailment_PoisonStackForExplosion": {
         "name": "Poison Explosion Proc Ailment",
@@ -1061,7 +1253,8 @@
         "stats": {
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Possess": {
@@ -1075,7 +1268,8 @@
             "base_skill_effect_duration": 1500.0,
             "maximum_stacks": 1,
             "damageEffectiveness": 1.0,
-            "spell_base_necrotic_damage": 20.0
+            "spell_base_necrotic_damage": 20.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Ravage": {
@@ -1088,7 +1282,8 @@
         "stats": {
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
-            "spell_base_void_damage": 135.0
+            "spell_base_void_damage": 135.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_Revolution": {
@@ -1113,9 +1308,13 @@
         "stats": {
             "base_skill_effect_duration": 700.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "A Root"
+        "altName": "A Root",
+        "buffs": [
+            "-93% Movement Speed"
+        ]
     },
     "Ailment_Runeword Avalanche": {
         "name": "Runeword Avalanche",
@@ -1128,7 +1327,11 @@
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+10 Spell Cold Damage",
+            "+2 Endurance Threshold per stack of Ignite on the Attacker"
+        ]
     },
     "Ailment_Runeword Cataclysm": {
         "name": "Runeword Cataclysm",
@@ -1141,7 +1344,10 @@
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+15% Global Conditional Damage"
+        ]
     },
     "Ailment_Runeword Hurricane": {
         "name": "Runeword Hurricane",
@@ -1154,7 +1360,11 @@
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+10 Spell Lightning Damage",
+            "+90% Freeze Rate Multiplier"
+        ]
     },
     "Ailment_Runeword Inferno": {
         "name": "Runeword Inferno",
@@ -1167,7 +1377,11 @@
             "base_skill_effect_duration": 6000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+10 Spell Lightning Damage",
+            "+3% Armour per stack of Shock on the Attacker"
+        ]
     },
     "Ailment_Sciurine Rage": {
         "name": "Sciurine Rage",
@@ -1180,7 +1394,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+40% Movement Speed",
+            "+40% Melee Attack Speed"
+        ]
     },
     "Ailment_SerpentVenom": {
         "name": "Serpent Venom",
@@ -1194,7 +1412,10 @@
             "maximum_stacks": 1,
             "dot_base_poison_damage": 300.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "-1 Critical Strike Chance"
+        ]
     },
     "Ailment_ShadowDaggers": {
         "name": "Shadow Daggers",
@@ -1205,7 +1426,8 @@
         "stats": {
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
         "altName": "Shadow Dagger"
     },
@@ -1220,7 +1442,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+50% Damage",
+            "+50% Armor"
+        ]
     },
     "Ailment_Sharpshooter": {
         "name": "Sharpshooter",
@@ -1233,7 +1459,10 @@
             "base_skill_effect_duration": 8000.0,
             "maximum_stacks": 10,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+25% Bow Damage"
+        ]
     },
     "Ailment_Shock": {
         "name": "Shock",
@@ -1244,8 +1473,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+20% Increased Chance To Be Stunned",
+            "-5% Lightning Resistance"
+        ]
     },
     "Ailment_ShrineCrit": {
         "name": "Critical Shrine",
@@ -1258,7 +1492,10 @@
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+1 Critical Strike Chance"
+        ]
     },
     "Ailment_ShrineExperienceBuff": {
         "name": "Shrine Experience Buff",
@@ -1271,7 +1508,10 @@
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+50% Increased Experience"
+        ]
     },
     "Ailment_ShrineHaste": {
         "name": "Shrine Haste",
@@ -1284,7 +1524,12 @@
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+30% Movement Speed",
+            "+30% Attack Speed",
+            "+30% Cast Speed"
+        ]
     },
     "Ailment_ShrineManatee": {
         "name": "Water Shrine",
@@ -1297,7 +1542,11 @@
             "base_skill_effect_duration": 45000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+1 Mana Regen",
+            "+1 Increased Cooldown Recovery Speed"
+        ]
     },
     "Ailment_ShrineReflect": {
         "name": "Reflective Shrine",
@@ -1310,7 +1559,10 @@
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+3 Damage Reflected"
+        ]
     },
     "Ailment_ShrineStun": {
         "name": "Stunning Shrine",
@@ -1323,7 +1575,11 @@
             "base_skill_effect_duration": 60000.0,
             "maximum_stacks": 1,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+2 Increased Stun Chance",
+            "+2 Increased Stun Duration"
+        ]
     },
     "Ailment_SilverShroud": {
         "name": "Silver Shroud",
@@ -1347,8 +1603,12 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 3,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "-20% Movement Speed"
+        ]
     },
     "Ailment_SmokeBlades": {
         "name": "Smoke Blades",
@@ -1361,7 +1621,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+4 Melee Damage",
+            "+4 Throwing Damage"
+        ]
     },
     "Ailment_SnakeInfection": {
         "name": "Snake Infection",
@@ -1386,7 +1650,8 @@
         "stats": {
             "base_skill_effect_duration": 1000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_SpiritKindling": {
@@ -1400,7 +1665,12 @@
             "base_skill_effect_duration": 5000.0,
             "maximum_stacks": 100,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+20% Movement Speed",
+            "+10% Melee Attack Speed",
+            "+2% Current Health Drained per Second"
+        ]
     },
     "Ailment_SpiritPlague": {
         "name": "Spirit Plague",
@@ -1413,7 +1683,8 @@
             "base_skill_effect_duration": 3000.0,
             "maximum_stacks": 1,
             "damageEffectiveness": 4.5,
-            "spell_base_necrotic_damage": 90.0
+            "spell_base_necrotic_damage": 90.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_SpreadingFlames": {
@@ -1441,7 +1712,8 @@
             "base_skill_effect_duration": 3000.0,
             "maximum_stacks": 0,
             "damageEffectiveness": 1.5,
-            "spell_base_void_damage": 30.0
+            "spell_base_void_damage": 30.0,
+            "dot_can_stack": 1
         }
     },
     "Ailment_StackingAspectOfTheSharkVisuals": {
@@ -1466,8 +1738,13 @@
         "stats": {
             "base_skill_effect_duration": 10000.0,
             "maximum_stacks": 1,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "-100 Armor",
+            "+10% Damage Taken"
+        ]
     },
     "Ailment_Stalwart": {
         "name": "Stalwart",
@@ -1478,8 +1755,12 @@
         "stats": {
             "base_skill_effect_duration": 10000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+3% Armor"
+        ]
     },
     "Ailment_StoneStare": {
         "name": "Stone Stare",
@@ -1490,9 +1771,13 @@
         "stats": {
             "base_skill_effect_duration": 5000.0,
             "maximum_stacks": 0,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Stone"
+        "altName": "Stone",
+        "buffs": [
+            "-20% Movement Speed"
+        ]
     },
     "Ailment_Swiftness": {
         "name": "Swiftness",
@@ -1504,8 +1789,12 @@
         "stats": {
             "base_skill_effect_duration": 30000.0,
             "maximum_stacks": 10,
-            "spell_base_void_damage": 25.0
-        }
+            "spell_base_void_damage": 25.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+1% Movement Speed"
+        ]
     },
     "Ailment_TalonBlades": {
         "name": "Talon Blades",
@@ -1520,7 +1809,11 @@
             "dot_base_fire_damage": 40.0,
             "dot_can_stack": 1
         },
-        "altName": "a Talon Blade"
+        "altName": "a Talon Blade",
+        "buffs": [
+            "+6% Critical Strike Chance",
+            "+3% Critical Strike Multiplier"
+        ]
     },
     "Ailment_TempestPaws": {
         "name": "Tempest Paws",
@@ -1545,8 +1838,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 1,
-            "spell_base_void_damage": 25.0
-        }
+            "spell_base_void_damage": 25.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+3 Melee Cold Damage",
+            "+3 Melee Lightning Damage"
+        ]
     },
     "Ailment_The Gate": {
         "name": "The Gate",
@@ -1574,7 +1872,10 @@
             "maximum_stacks": 12,
             "dot_base_void_damage": 55.0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+5% Duration of Stuns Received"
+        ]
     },
     "Ailment_Torment": {
         "name": "Torment",
@@ -1589,8 +1890,12 @@
             "damageEffectiveness": 6.0,
             "spell_base_necrotic_damage": 120.0,
             "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0
-        }
+            "critChance": 5.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "-18% Movement Speed"
+        ]
     },
     "Ailment_Totem Armor": {
         "name": "Totem Armor",
@@ -1603,7 +1908,11 @@
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 0,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+80% Armor",
+            "+15% Damage"
+        ]
     },
     "Ailment_VoidBarrierVisuals": {
         "name": "Void Barrier",
@@ -1629,7 +1938,12 @@
             "base_skill_effect_duration": 7000.0,
             "maximum_stacks": 3,
             "dot_can_stack": 1
-        }
+        },
+        "buffs": [
+            "+15% Void Damage",
+            "+15% Melee Damage",
+            "-10% Duration of Stuns Received"
+        ]
     },
     "Ailment_VoidResistanceShred": {
         "name": "Shred Void Resistance",
@@ -1640,9 +1954,13 @@
         "stats": {
             "base_skill_effect_duration": 4000.0,
             "maximum_stacks": 10,
-            "damageEffectiveness": 1.0
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
         },
-        "altName": "Void Resistance Shred"
+        "altName": "Void Resistance Shred",
+        "buffs": [
+            "-5% Void Resistance"
+        ]
     },
     "Ailment_Witchfire": {
         "name": "Witchfire",
@@ -1668,8 +1986,12 @@
         "stats": {
             "base_skill_effect_duration": 3000.0,
             "maximum_stacks": 20,
-            "damageEffectiveness": 1.0
-        }
+            "damageEffectiveness": 1.0,
+            "dot_can_stack": 1
+        },
+        "buffs": [
+            "+10% Curse Damage Taken"
+        ]
     },
     "aa710": {
         "name": "Assemble Abomination",

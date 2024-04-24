@@ -521,6 +521,25 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 		t_insert(activeSkill.extraSkillModList, value.mod)
 	end
 
+	-- Add buff mods
+	if activeGrantedEffect.buffs then
+		for _, buff in ipairs(activeGrantedEffect.buffs) do
+			local mods, extra = modLib.parseMod(buff)
+
+			if mods and not extra then
+				local source = activeGrantedEffect.modSource
+				for i = 1, #mods do
+					local mod = mods[i]
+					if mod then
+						mod = modLib.setSource(mod, source)
+						t_insert(mod, { type = "GlobalEffect", effectType = "Debuff", effectStackVar = activeGrantedEffect.id.."Stack"})
+						skillModList:AddMod(mod)
+					end
+				end
+			end
+		end
+	end
+
 	-- Find totem level
 	if skillFlags.totem then
 		activeSkill.skillData.totemLevel = activeEffect.grantedEffectLevel.levelRequirement

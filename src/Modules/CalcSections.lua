@@ -234,6 +234,7 @@ return {
 			  { format = "{1:output:TotalDotInstance}", } },
 			{ format = "{1:output:PhysicalDot}", { breakdown = "PhysicalDot" }, },
 			"Physical", DamageTypes),
+	{ label = "Skill Stacks", { format = "{2:output:MaxStacks}", { breakdown = "MaxStacks" }, }, },
 	{ label = "Skill DoT DPS", { format = "{1:output:TotalDotCalcSection}", { breakdown = "TotalDot" }, }, },
 } }
 } },

@@ -116,8 +116,16 @@ def get_mod_value(mod_data):
         apply_special_tag = True
         mod_key = str(mod_data["property"]) + "_0_0"
     if mod_key not in modDataList:
-        return str(mod_data.get('baseValue') or mod_data["value"]) + " " + mod_data["statName"]
-    mod_base_data = modDataList[mod_key]
+        mod_base_data = {
+            "name": mod_data.get("statName") or propertiesEnum[mod_data["property"]]
+        }
+    else:
+        mod_base_data = modDataList[mod_key]
+    if mod_base_data['name'].lower().startswith("negative ") and mod_data.get('value'):
+        mod_data['value'] = mod_data['value'] * -1
+        mod_base_data['name'] = mod_base_data['name'][9:]
+        pass
+
     if "modifierType" in mod_data:
         modifier_type = mod_data.get("modifierType")
     elif "type" in mod_data:
@@ -293,6 +301,132 @@ ailmentTags = ["None",
                "TalonBlades",
                "HealingHandsHealOverTime"]
 
+propertiesEnum = ["Damage",
+                  "AilmentChance",
+                  "AttackSpeed",
+                  "CastSpeed",
+                  "CriticalChance",
+                  "CriticalMultiplier",
+                  "DamageTaken",
+                  "Health",
+                  "Mana",
+                  "Movespeed",
+                  "Armour",
+                  "DodgeRating",
+                  "StunAvoidance",
+                  "FireResistance",
+                  "ColdResistance",
+                  "LightningResistance",
+                  "WardRetention",
+                  "HealthRegen",
+                  "ManaRegen",
+                  "Strength",
+                  "Vitality",
+                  "Intelligence",
+                  "Dexterity",
+                  "Attunement",
+                  "ManaBeforeHealthPercent",
+                  "ChannelCost",
+                  "VoidResistance",
+                  "NecroticResistance",
+                  "PoisonResistance",
+                  "BlockChance",
+                  "AllResistances",
+                  "DamageTakenAsPhysical",
+                  "DamageTakenAsFire",
+                  "DamageTakenAsCold",
+                  "DamageTakenAsLightning",
+                  "DamageTakenAsNecrotic",
+                  "DamageTakenAsVoid",
+                  "DamageTakenAsPoison",
+                  "HealthGain",
+                  "WardGain",
+                  "ManaGain",
+                  "AdaptiveSpellDamage",
+                  "IncreasedAilmentDuration",
+                  "IncreasedAilmentEffect",
+                  "IncreasedHealing",
+                  "IncreasedStunChance",
+                  "AllAttributes",
+                  "IncreasedPotionDropRate",
+                  "PotionHealth",
+                  "PotionSlots",
+                  "HasteOnHitChance",
+                  "HealthLeech",
+                  "ElementalResistance",
+                  "BlockEffectiveness",
+                  "None",
+                  "IncreasedStunImmunityDuration",
+                  "StunImmunity",
+                  "ManaDrain",
+                  "AbilityProperty",
+                  "Penetration",
+                  "CurrentHealthDrain",
+                  "MaximumCompanions",
+                  "GlancingBlowChance",
+                  "CullPercentFromPassives",
+                  "PhysicalResistance",
+                  "CullPercentFromWeapon",
+                  "ManaCost",
+                  "FreezeRateMultiplier",
+                  "IncreasedChanceToBeFrozen",
+                  "ManaEfficiency",
+                  "IncreasedCooldownRecoverySpeed",
+                  "ReceivedStunDuration",
+                  "NegativePhysicalResistance",
+                  "ChillRetaliationChance",
+                  "SlowRetaliationChance",
+                  "Endurance",
+                  "EnduranceThreshold",
+                  "NegativeArmour",
+                  "NegativeFireResistance",
+                  "NegativeColdResistance",
+                  "NegativeLightningResistance",
+                  "NegativeVoidResistance",
+                  "NegativeNecroticResistance",
+                  "NegativePoisonResistance",
+                  "NegativeElementalResistance",
+                  "Thorns",
+                  "PercentReflect",
+                  "ShockRetaliationChance",
+                  "LevelOfSkills",
+                  "CritAvoidance",
+                  "PotionHealthConvertedToWard",
+                  "WardOnPotionUse",
+                  "WardRegen",
+                  "OverkillLeech",
+                  "ManaBeforeWardPercent",
+                  "IncreasedStunDuration",
+                  "MaximumHealthGainedAsEnduranceThreshold",
+                  "ChanceToGain30WardWhenHit",
+                  "PlayerProperty",
+                  "ManaSpentGainedAsWard",
+                  "AilmentConversion",
+                  "PerceivedUnimportanceModifier",
+                  "IncreasedLeechRate",
+                  "MoreFreezeRatePerStackOfChill",
+                  "IncreasedDropRate",
+                  "IncreasedExperience",
+                  "PhysicalAndVoidResistance",
+                  "NecroticAndPoisonResistance",
+                  "DamageTakenBuff",
+                  "IncreasedChanceToBeStunned",
+                  "DamageTakenFromNearbyEnemies",
+                  "BlockChanceAgainstDistantEnemies",
+                  "ChanceToBeCrit",
+                  "DamageTakenWhileMoving",
+                  "ReducedBonusDamageTakenFromCrits",
+                  "DamagePerStackOfAilment",
+                  "IncreasedAreaForAreaSkills",
+                  "GlobalConditionalDamage",
+                  "ArmourMitigationAppliesToDamageOverTime",
+                  "WardDecayThreshold",
+                  "EffectOfAilmentOnYou",
+                  "ParryChance",
+                  "CircleOfFortuneLensEffect"]
+
+for i, property in enumerate(propertiesEnum):
+    propertiesEnum[i] = re.sub('(.)([A-Z]+)', r'\1 \2',property)
 
 def add_tags_modifier(stat_name, tags):
     for k, v in skillTypes.items():
@@ -320,9 +454,11 @@ def construct_mod_data_list():
     global modDataList
     mod_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/MasterAffixesList.asset")["MonoBehaviour"]
 
-    affix_keys_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes Shared Data.asset")["MonoBehaviour"]["m_Entries"]
+    affix_keys_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes Shared Data.asset")["MonoBehaviour"][
+        "m_Entries"]
 
-    affix_strings_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes_en.asset")["MonoBehaviour"]["m_TableData"]
+    affix_strings_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes_en.asset")["MonoBehaviour"][
+        "m_TableData"]
 
     affix_strings_by_id = {}
     for affixStringData in affix_strings_data:
@@ -349,7 +485,9 @@ def construct_mod_data_list():
             str(mod_data1["property"]) + "_" + str(mod_data1["specialTag"]) + "_" + str(mod_data1["tags"])] = mod_data1
         mod_data1["name"] = affix_strings[str(mod_data["affixId"]) + "_B"]
 
-    property_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/MasterPropertyList.asset")["MonoBehaviour"]["propertyInfoList"]
+    property_data_list0 = \
+        load_yaml_file_with_tag_error(extractPath + "Resources/MasterPropertyList.asset")["MonoBehaviour"][
+            "propertyInfoList"]
 
     for propertyData in property_data_list0:
         mod_key = str(propertyData["property"]) + "_0_0"
@@ -363,7 +501,8 @@ def construct_mod_data_list():
                 modDataList[mod_key]["modifierType"] = altText["modType"]
                 modDataList[mod_key]["needs_tag_apply"] = True
 
-    player_property_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/PlayerPropertyList.asset")["MonoBehaviour"]["list"]
+    player_property_data_list0 = \
+        load_yaml_file_with_tag_error(extractPath + "Resources/PlayerPropertyList.asset")["MonoBehaviour"]["list"]
 
     for idx, propertyData in enumerate(player_property_data_list0):
         mod_key = "98_0_" + str(idx)
@@ -371,7 +510,8 @@ def construct_mod_data_list():
             modDataList[mod_key] = propertyData
             propertyData["name"] = propertyData["propertyName"]
 
-    player_property_ability_list = load_yaml_file_with_tag_error(extractPath + "Resources/AbilityPropertyList.asset")["MonoBehaviour"]["list"]
+    player_property_ability_list = \
+        load_yaml_file_with_tag_error(extractPath + "Resources/AbilityPropertyList.asset")["MonoBehaviour"]["list"]
 
     for abilityData in player_property_ability_list:
         for idx, propertyData in enumerate(abilityData['properties']):

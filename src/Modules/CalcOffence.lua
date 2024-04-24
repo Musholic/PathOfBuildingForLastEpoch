@@ -3000,7 +3000,7 @@ function calcs.offence(env, actor, activeSkill)
 			t_insert(breakdown.PvpTotalDPS, s_format("= %.1f", output.PvpTotalDPS))
 		end
 	end
-	
+
 	if skillFlags.minion then
 		skillData.summonSpeed = output.SummonedMinionsPerCast * (output.HitSpeed or output.Speed) * skillData.dpsMultiplier
 	end
@@ -3150,11 +3150,20 @@ function calcs.offence(env, actor, activeSkill)
 		local speed = output.Speed
 		output.TotalDot = output.TotalDotInstance * speed * output.Duration * skillData.dpsMultiplier * quantityMultiplier
 		output.TotalDotCalcSection = output.TotalDot
+		output.MaxStacks = round(speed * output.Duration * quantityMultiplier, 2)
+		local skillId = activeSkill.activeEffect.grantedEffect.id
+		if GlobalCache.ailmentsStacks[skillId] ~= output.MaxStacks then
+			GlobalCache.ailmentsStacks[skillId] = output.MaxStacks
+			env.build.buildFlag = true
+		end
 		if breakdown then
+			breakdown.MaxStacks = {
+				s_format("%.2f ^8(hits per second)", speed),
+				s_format("x %.2f ^8(skill duration)", output.Duration),
+			}
 			breakdown.TotalDot = {
 				s_format("%.1f ^8(Damage per Instance)", output.TotalDotInstance),
-				s_format("x %.2f ^8(hits per second)", speed),
-				s_format("x %.2f ^8(skill duration)", output.Duration),
+				s_format("x %.2f ^8(max stacks)", output.MaxStacks),
 			}
 			if skillData.dpsMultiplier ~= 1 then
 				t_insert(breakdown.TotalDot, s_format("x %g ^8(DPS multiplier for this skill)", skillData.dpsMultiplier))

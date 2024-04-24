@@ -208,5 +208,6 @@ GlobalCache = {
 	noCache = nil,
 	useFullDPS = false,
 	numActiveSkillInFullDPS = 0,
+	ailmentsStacks = {}
 }
 

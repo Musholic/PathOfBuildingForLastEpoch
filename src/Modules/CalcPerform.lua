@@ -905,6 +905,12 @@ function calcs.perform(env, fullDPSSkipEHP)
 	env.keystonesAdded = { }
 	mergeKeystones(env)
 
+	if GlobalCache.ailmentsStacks then
+		for skillId, stackCount in pairs(GlobalCache.ailmentsStacks) do
+			modDB:NewMod("Multiplier:" .. skillId .. "Stack", "BASE", stackCount)
+		end
+	end
+
 	-- Build minion skills
 	for _, activeSkill in ipairs(env.player.activeSkillList) do
 		activeSkill.skillModList = new("ModList", activeSkill.baseSkillModList)
