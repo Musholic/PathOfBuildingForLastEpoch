@@ -53,14 +53,24 @@ local SkillsTabClass = newClass("SkillsTab", "UndoHandler", "ControlHost", "Cont
 	end)
 
 	-- Socket group list
-	self.controls.skillsSection = new("SectionControl", { "TOPLEFT", self, "TOPLEFT" }, 20, 54, 500, 160, "Skills")
+	self.controls.skillsSection = new("SectionControl", { "TOPLEFT", self, "TOPLEFT" }, 20, 54, 600, 350, "Skills")
 
-	for i = 1, 5 do
-		self.controls['skillLabel-' .. i] = new("LabelControl", { "TOPLEFT", self.controls.skillsSection, "TOPLEFT" }, 20, 24 * i, 0, 16, "^7Skill " .. i .. ":")
-		self.controls['skill-' .. i] = new("DropDownControl", { "LEFT", self.controls['skillLabel-' .. i], "RIGHT" }, 10, 0, 140, 20, nil, function(index, value)
-			self:SelSkill(i, value.treeId)
-			self.build.spec:BuildAllDependsAndPaths()
-		end)
+	for i = 1, 15 do
+		if i <= 5 then
+			self.controls['skillLabel-' .. i] = new("LabelControl", { "TOPLEFT", self.controls.skillsSection, "TOPLEFT" }, 20, 24 * i, 0, 16, "^7Skill " .. i .. ":")
+			self.controls['skill-' .. i] = new("DropDownControl", { "LEFT", self.controls['skillLabel-' .. i], "RIGHT" }, 10, 0, 140, 20, nil, function(index, value)
+				self:SelSkill(i, value.treeId)
+				self.build.spec:BuildAllDependsAndPaths()
+			end)
+		else
+			self.controls['skill-' .. i] = new("LabelControl", { "TOPLEFT", self.controls.skillsSection, "TOPLEFT" }, 20, 24 * i, 0, 16, "^7Skill " .. i .. ":")
+			self.controls['skill-' .. i].shown = function()
+				return self.socketGroupList[i] ~= nil
+			end
+			self.controls['skill-' .. i].label = function()
+				return self.socketGroupList[i].displayLabel or ""
+			end
+		end
 		self.controls['groupEnabled-'..i] = new("CheckBoxControl", { "LEFT", self.controls['skill-' .. i], "RIGHT" }, 70, 0, 20, "Enabled:", function(state)
 			self.socketGroupList[i].enabled = state
 			self:AddUndoState()
@@ -76,6 +86,9 @@ local SkillsTabClass = newClass("SkillsTab", "UndoHandler", "ControlHost", "Cont
 		end)
 		self.controls['includeInFullDPS-'..i].shown = function()
 			return self.socketGroupList[i] ~= nil
+		end
+		if i > 5 then
+			self.controls['includeInFullDPS-'..i].enabled = false
 		end
 	end
 
@@ -323,10 +336,12 @@ function SkillsTabClass:Draw(viewPort, inputEvents)
 	for k,v in ipairs(self.build.spec.curClass.skills) do
 		table.insert(skillList, v)
 	end
-	for i = 1,5 do
+	for i = 1,15 do
 		local socketGroup = self.socketGroupList[i]
-		self.controls['skill-' .. i].list = skillList
-		self.controls["skill-"..i]:SelByValue(socketGroup and socketGroup.skillId, "treeId")
+		if i <=5 then
+			self.controls['skill-' .. i].list = skillList
+			self.controls["skill-"..i]:SelByValue(socketGroup and socketGroup.skillId, "treeId")
+		end
 		if socketGroup then
 			self.controls['groupEnabled-'..i].state = socketGroup.enabled
 			self.controls['includeInFullDPS-'..i].state = socketGroup.includeInFullDPS and socketGroup.enabled
