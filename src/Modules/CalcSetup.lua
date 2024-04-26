@@ -394,7 +394,6 @@ function calcs.initEnv(build, mode, override, specEnv)
 		env.extraRadiusNodeList = wipeTable(env.extraRadiusNodeList)
 		env.player.itemList = { }
 		env.grantedSkills = { }
-		env.grantedTriggeredSkills = GlobalCache.grantedTriggeredSkills or { }
 		env.grantedSkillsNodes = { }
 		env.grantedSkillsItems = { }
 		env.explodeSources = { }
@@ -1137,9 +1136,43 @@ function calcs.initEnv(build, mode, override, specEnv)
 		end
 	end
 
+	-- Add triggered skills
+	-- We need the skillModList computed to calculate the skill chance to trigger a given skill
+	local grantedTriggeredSkills = {}
+	if env.mode ~= "CACHE" then
+		for index, group in pairs(build.skillsTab.socketGroupList) do
+			-- Ailments cannot trigger spells and ailments
+			if not group.grantedEffect.baseFlags.ailment and group.enabled then
+				local uuid = cacheSkillUUIDFromGroup(group, env)
+				local cache = GlobalCache.cachedData["CACHE"][uuid]
+				if not GlobalCache.cachedData["CACHE"][uuid]  then
+					local activeEffect = {
+						grantedEffect = group.grantedEffect,
+						srcInstance = group
+					}
+					local activeSkill = calcs.createActiveSkill(activeEffect, {}, env.player, group)
+					calcs.buildActiveSkill(env, "CACHE", activeSkill)
+				end
+				cache = GlobalCache.cachedData["CACHE"][uuid]
+				local activeSkill = cache.ActiveSkill
+				for skillId, skill in pairs(data.skills) do
+					local triggerChance = activeSkill.skillModList:Sum("BASE", activeSkill.skillCfg, "ChanceToTriggerOnHit_"..skillId)
+					if triggerChance > 0 then
+						t_insert(grantedTriggeredSkills, {
+							skillId = skillId,
+							source = "SkillId:"..activeSkill.activeEffect.grantedEffect.id,
+							triggered = true,
+							triggeredOnHit = activeSkill.activeEffect.grantedEffect.id
+						})
+					end
+				end
+			end
+		end
+	end
+
 	-- Merge Granted Skills Tables
 	env.grantedSkills = tableConcat(env.grantedSkillsNodes, env.grantedSkillsItems)
-	env.grantedSkills = tableConcat(env.grantedSkills, env.grantedTriggeredSkills)
+	env.grantedSkills = tableConcat(env.grantedSkills, grantedTriggeredSkills)
 
 
 	if not accelerate.skills then
@@ -1400,33 +1433,6 @@ function calcs.initEnv(build, mode, override, specEnv)
 			activeSkill.skillData.damageEffectiveness = skillData.damageEffectiveness
 			activeSkill.skillData.manaReservationPercent = skillData.manaReservationPercent
 		end
-	end
-
-	-- Add triggered skills
-	-- We need the skillModList computed to calculate the skill chance to trigger a given skill
-	-- Then since we need to process the triggered skills (transforming them to active skill),
-	-- we add them as granted skills the next time we init the build env through the GlobalCache
-	local grantedTriggeredSkills = {}
-	for _, activeSkill in pairs(env.player.activeSkillList) do
-		-- Ailments cannot trigger spells and ailments
-		if not activeSkill.skillFlags.ailment and activeSkill.socketGroup and activeSkill.socketGroup.enabled then
-			for skillId, skill in pairs(data.skills) do
-				local triggerChance = activeSkill.skillModList:Sum("BASE", activeSkill.skillCfg, "ChanceToTriggerOnHit_"..skillId)
-				-- TODO: Get trigger chance through cache?
-				if triggerChance > 0 then
-					t_insert(grantedTriggeredSkills, {
-						skillId = skillId,
-						source = "SkillId:"..activeSkill.activeEffect.grantedEffect.id,
-						triggered = true,
-						triggeredOnHit = activeSkill.activeEffect.grantedEffect.id
-					})
-				end
-			end
-		end
-	end
-	if not GlobalCache.grantedTriggeredSkills or not tableDeepEquals(GlobalCache.grantedTriggeredSkills, grantedTriggeredSkills) then
-		GlobalCache.grantedTriggeredSkills = grantedTriggeredSkills
-		build.buildFlag = true
 	end
 
 

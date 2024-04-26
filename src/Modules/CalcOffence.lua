@@ -3151,11 +3151,6 @@ function calcs.offence(env, actor, activeSkill)
 		output.TotalDot = output.TotalDotInstance * speed * output.Duration * skillData.dpsMultiplier * quantityMultiplier
 		output.TotalDotCalcSection = output.TotalDot
 		output.MaxStacks = round(speed * output.Duration * quantityMultiplier, 2)
-		local skillId = activeSkill.activeEffect.grantedEffect.id
-		if GlobalCache.ailmentsStacks[skillId] ~= output.MaxStacks then
-			GlobalCache.ailmentsStacks[skillId] = output.MaxStacks
-			env.build.buildFlag = true
-		end
 		if breakdown then
 			breakdown.MaxStacks = {
 				s_format("%.2f ^8(hits per second)", speed),

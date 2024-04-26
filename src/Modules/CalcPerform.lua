@@ -905,9 +905,21 @@ function calcs.perform(env, fullDPSSkipEHP)
 	env.keystonesAdded = { }
 	mergeKeystones(env)
 
-	if GlobalCache.ailmentsStacks then
-		for skillId, stackCount in pairs(GlobalCache.ailmentsStacks) do
-			modDB:NewMod("Multiplier:" .. skillId .. "Stack", "BASE", stackCount)
+	-- Process ailment debuffs stack count
+	if env.mode ~= "CACHE" then
+		for _, activeSkill in ipairs(env.player.activeSkillList) do
+			if activeSkill.skillFlags.ailment and activeSkill.skillFlags.buffs then
+				local uuid = cacheSkillUUID(activeSkill, env)
+				local cache = GlobalCache.cachedData["CACHE"][uuid]
+				if not GlobalCache.cachedData["CACHE"][uuid] then
+					calcs.buildActiveSkill(env, "CACHE", activeSkill)
+				end
+				cache = GlobalCache.cachedData["CACHE"][uuid]
+				local skillId = activeSkill.activeEffect.grantedEffect.id
+				if cache.Env.player.output.MaxStacks > 0 then
+					modDB:NewMod("Multiplier:" .. skillId .. "Stack", "BASE", cache.Env.player.output.MaxStacks)
+				end
+			end
 		end
 	end
 

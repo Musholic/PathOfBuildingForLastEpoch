@@ -122,7 +122,7 @@ function calcs.mirages(env)
 			compareFunc = function(skill, env, config, mirageSkill)
 				if skill ~= env.player.mainSkill and skill.skillTypes[SkillType.Attack] and not skill.skillTypes[SkillType.Totem] and not skill.skillTypes[SkillType.SummonsTotem] and band(skill.skillCfg.flags, bor(ModFlag.Sword, ModFlag.Weapon1H)) == bor(ModFlag.Sword, ModFlag.Weapon1H) and not skill.skillCfg.skillCond["usedByMirage"] then
 					local uuid = cacheSkillUUID(skill, env)
-					if not GlobalCache.cachedData["CACHE"][uuid] or GlobalCache.noCache then
+					if not GlobalCache.cachedData["CACHE"][uuid] then
 						calcs.buildActiveSkill(env, "CACHE", skill)
 					end
 
@@ -191,7 +191,7 @@ function calcs.mirages(env)
 				local isDisabled = skill.skillFlags and skill.skillFlags.disable
 				if skill ~= env.player.mainSkill and (skill.skillTypes[SkillType.Slam] or skill.skillTypes[SkillType.Melee]) and skill.skillTypes[SkillType.Attack] and not skill.skillTypes[SkillType.Vaal] and not isTriggered(skill) and not isDisabled and not skill.skillTypes[SkillType.Totem] and not skill.skillTypes[SkillType.SummonsTotem] and not skill.skillCfg.skillCond["usedByMirage"] then
 					local uuid = cacheSkillUUID(skill, env)
-					if not GlobalCache.cachedData["CACHE"][uuid] or GlobalCache.noCache then
+					if not GlobalCache.cachedData["CACHE"][uuid] then
 						calcs.buildActiveSkill(env, "CACHE", skill)
 					end
 

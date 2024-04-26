@@ -75,9 +75,7 @@ local function getCalculator(build, fullInit, modFunc)
 
 	-- Run base calculation pass
 	calcs.perform(env)
-	GlobalCache.noCache = true
 	local fullDPS = calcs.calcFullDPS(build, "CALCULATOR", {}, { cachedPlayerDB = cachedPlayerDB, cachedEnemyDB = cachedEnemyDB, cachedMinionDB = cachedMinionDB, env = nil })
-	GlobalCache.noCache = nil
 	env.player.output.SkillDPS = fullDPS.skills
 	env.player.output.FullDPS = fullDPS.combinedDPS
 	env.player.output.FullDotDPS = fullDPS.TotalDotDPS
@@ -134,7 +132,6 @@ function calcs.getMiscCalculator(build)
 
 	return function(override, accelerate)
 		local env, cachedPlayerDB, cachedEnemyDB, cachedMinionDB = calcs.initEnv(build, "CALCULATOR", override)
-		GlobalCache.noCache = true
 		-- we need to preserve the override somewhere for use by possible trigger-based build-outs with overrides
 		env.override = override
 		calcs.perform(env)
@@ -148,7 +145,6 @@ function calcs.getMiscCalculator(build)
 			env.player.output.FullDPS = fullDPS.combinedDPS
 			env.player.output.FullDotDPS = fullDPS.TotalDotDPS
 		end
-		GlobalCache.noCache = nil
 		return env.player.output
 	end, baseOutput	
 end
@@ -193,7 +189,7 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 			local activeSkillCount = 1
 			GlobalCache.numActiveSkillInFullDPS = GlobalCache.numActiveSkillInFullDPS + 1
 			local cachedData = GlobalCache.cachedData[mode][cacheSkillUUID(activeSkill, fullEnv)]
-			if cachedData and next(override) == nil and not GlobalCache.noCache then
+			if cachedData and next(override) == nil then
 				usedEnv = cachedData.Env
 				activeSkill = usedEnv.player.mainSkill
 			else
@@ -333,9 +329,7 @@ function calcs.buildOutput(build, mode)
 	local output = env.player.output
 
 	-- Build output across all skills added to FullDPS skills
-	GlobalCache.noCache = true
-	local fullDPS = calcs.calcFullDPS(build, "CACHE", {}, { cachedPlayerDB = cachedPlayerDB, cachedEnemyDB = cachedEnemyDB, cachedMinionDB = cachedMinionDB, env = nil })
-	GlobalCache.noCache = nil
+	local fullDPS = calcs.calcFullDPS(build, "CALCULATOR", {}, { cachedPlayerDB = cachedPlayerDB, cachedEnemyDB = cachedEnemyDB, cachedMinionDB = cachedMinionDB, env = nil })
 
 	-- Add Full DPS data to main `env`
 	env.player.output.SkillDPS = fullDPS.skills

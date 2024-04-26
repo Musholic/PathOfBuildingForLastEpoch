@@ -205,10 +205,7 @@ GlobalCache = {
 	cachedData = { MAIN = {}, CALCS = {}, CALCULATOR = {}, CACHE = {}, },
 	deleteGroup = { },
 	excludeFullDpsList = { },
-	noCache = nil,
 	useFullDPS = false,
-	numActiveSkillInFullDPS = 0,
-	grantedTriggeredSkills = {},
-	ailmentsStacks = {}
+	numActiveSkillInFullDPS = 0
 }
 

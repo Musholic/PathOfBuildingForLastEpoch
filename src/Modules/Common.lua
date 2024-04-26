@@ -785,29 +785,25 @@ end
 
 -- Generate a UUID for a skill
 function cacheSkillUUID(skill, env)
-	local strName = skill.activeEffect.grantedEffect.name:gsub("%s+", "") -- strip spaces
-	local strSlotName = (skill.socketGroup and skill.socketGroup.slot and skill.socketGroup.slot:upper() or "NO_SLOT"):gsub("%s+", "") -- strip spaces
-	local slotIndx = 1
-	local groupIdx = 1
-	if skill.socketGroup and skill.socketGroup.gemList and skill.activeEffect.srcInstance then
-		for idx, gem in ipairs(skill.socketGroup.gemList) do
-			-- we compare table addresses rather than names since two of the same gem
-			-- can be socketed in the same slot
-			if gem == skill.activeEffect.srcInstance then
-				slotIndx = idx
-				break
-			end
-		end
+	if not skill.socketGroup then
+		return skill.activeEffect.grantedEffect.name:gsub("%s+", "") -- strip spaces
 	end
+	return cacheSkillUUIDFromGroup(skill.socketGroup, env)
+end
 
-	for i, group in pairs(env.build.skillsTab.socketGroupList) do
-		if skill.socketGroup == group then
+function cacheSkillUUIDFromGroup(group, env)
+	local strName = group.grantedEffect.name:gsub("%s+", "") -- strip spaces
+	local strSlotName = (group.slot and group.slot:upper() or "NO_SLOT"):gsub("%s+", "") -- strip spaces
+	local groupIdx = 1
+
+	for i, groupOther in pairs(env.build.skillsTab.socketGroupList) do
+		if group == groupOther then
 			groupIdx = i
 			break
 		end
 	end
 
-	return strName.."_"..strSlotName.."_"..tostring(slotIndx) .. "_" .. tostring(groupIdx)
+	return strName .. "_" .. strSlotName .. "_" .. tostring(groupIdx)
 end
 
 -- Global Cache related
@@ -862,7 +858,6 @@ function wipeGlobalCache()
 	wipeTable(GlobalCache.cachedData.CACHE)
 	wipeTable(GlobalCache.excludeFullDpsList)
 	wipeTable(GlobalCache.deleteGroup)
-	GlobalCache.noCache = nil
 end
 
 -- Check if a specific named gem is enabled in a socket group belonging to a skill
