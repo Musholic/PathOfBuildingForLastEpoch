@@ -1,5 +1,17 @@
 # Changelog
 
+## [v0.4.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.4.0) (2024/04/26)
+
+[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.3.0...v0.4.0)
+
+## What's Changed
+Major improvement to DPS calculations with the support of ailments, debuffs, channeled skills, and DOT skills. I decided to consider the ailments as triggered skills since it seemed more flexible this way.
+
+* Support for channeled skills
+* Support for ailments, they are displayed as triggered skills
+* Support for debuffs (shred resistance, chill, ...)
+* Support for DOT
+
 ## [v0.3.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.3.0) (2024/04/16)
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.2.0...v0.3.0)
