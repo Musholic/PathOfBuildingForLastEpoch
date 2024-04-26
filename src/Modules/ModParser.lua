@@ -40,6 +40,7 @@ local formList = {
 	["^removes? ([%d%.]+) ?o?f? ?y?o?u?r?"] = "REMOVES", -- local
 	["^(%d+)"] = "BASE",
 	["^([%+%-]?%d+)%% chance"] = "CHANCE",
+	["^([%+%-]?%d+)%% (%a+) chance"] = "CHANCE",
 	["^([%+%-]?%d+)%% chance to gain "] = "FLAG",
 	["^([%+%-]?%d+)%% additional chance"] = "CHANCE",
 	["costs? ([%+%-]?%d+)"] = "TOTALCOST",
@@ -2053,6 +2054,14 @@ local function parseMod(line, order)
 		modExtraTags = { tag = { type = "Condition", var = "{Hand}Attack" } }
 		modSuffix, line = scan(line, suffixTypes, true)
 	elseif modForm == "CHANCE" then
+		modFlag = {flags = 0, keywordFlags = 0}
+		for i=2,#formCap do
+			for _, damageSourceType in ipairs(DamageSourceTypes) do
+				if formCap[i] == damageSourceType:lower() then
+					modFlag.flags = ModFlag[damageSourceType]
+				end
+			end
+		end
 	elseif modForm == "REGENPERCENT" then
 		modName = regenTypes[formCap[2]]
 		modSuffix = "Percent"

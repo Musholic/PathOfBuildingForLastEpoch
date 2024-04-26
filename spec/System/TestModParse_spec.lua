@@ -104,4 +104,13 @@ describe("TestModParse", function()
 
         assert.are.equals(10, build.configTab.modList:Sum("BASE", {flags = ModFlag.Hit}, "ChanceToTriggerOnHit_Ailment_VoidResistanceShred"))
     end)
+
+    it("melee chance", function()
+        build.configTab.input.customMods = "+10% Melee Chance to Ignite on Hit"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+
+        assert.are.equals(0, build.configTab.modList:Sum("BASE", {flags = bit.bor(ModFlag.Hit)}, "ChanceToTriggerOnHit_Ailment_Ignite"))
+        assert.are.equals(10, build.configTab.modList:Sum("BASE", {flags = bit.bor(ModFlag.Hit, ModFlag.Melee)}, "ChanceToTriggerOnHit_Ailment_Ignite"))
+    end)
 end)
