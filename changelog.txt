@@ -1,7 +1,13 @@
 VERSION[0.4.0][2024/04/26]
-<!-- Release notes generated using configuration in .github/release.yml at dev -->
 
+--- New to Path of Building for Last Epoch ---
 
+Major improvement to DPS calculations with the support of ailments, debuffs, channeled skills and DOT skills. I decided to consider the ailments as triggered skills since it seemed more flexible this way.
+
+* Support for channeled skills
+* Support for ailments, they are displayed as triggered skills
+* Support for debuffs (shred resistance, chill, ...)
+* Support for DOT
 
 VERSION[0.3.0][2024/04/16]
 
