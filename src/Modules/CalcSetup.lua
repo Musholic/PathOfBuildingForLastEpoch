@@ -1172,12 +1172,19 @@ function calcs.initEnv(build, mode, override, specEnv)
 				group.nameSpec = grantedSkill.nameSpec
 				group.noSupports = grantedSkill.noSupports
 				group.triggered = grantedSkill.triggered
+				group.includeInFullDPS = grantedSkill.includeInFullDPS
 				if grantedSkill.triggeredOnHit then
 					group.triggeredOnHit = grantedSkill.triggeredOnHit
-					group.label = data.skills[grantedSkill.skillId].name .. " (from " .. grantedSkill.triggeredOnHit ..")"
+					group.label = data.skills[grantedSkill.skillId].name .. " (from " .. data.skills[grantedSkill.triggeredOnHit].name ..")"
+					for index, socketGroup in pairs(build.skillsTab.socketGroupList) do
+						-- find the source socket group and inherit the includeInFullDPS stats
+						if socketGroup.skillId == group.triggeredOnHit then
+							group.includeInFullDPS = socketGroup.includeInFullDPS
+							break
+						end
+					end
 				end
 				group.triggerChance = grantedSkill.triggerChance
-				group.includeInFullDPS = grantedSkill.includeInFullDPS
 				build.skillsTab:ProcessSocketGroup(group)
 			end
 
@@ -1401,16 +1408,19 @@ function calcs.initEnv(build, mode, override, specEnv)
 	-- we add them as granted skills the next time we init the build env through the GlobalCache
 	local grantedTriggeredSkills = {}
 	for _, activeSkill in pairs(env.player.activeSkillList) do
-		for skillId, skill in pairs(data.skills) do
-			local triggerChance = activeSkill.skillModList:Sum("BASE", activeSkill.skillCfg, "ChanceToTriggerOnHit_"..skillId)
-			if triggerChance > 0 then
-				t_insert(grantedTriggeredSkills, {
-					skillId = skillId,
-					source = "SkillId:"..activeSkill.activeEffect.grantedEffect.id,
-					triggered = true,
-					triggeredOnHit = activeSkill.activeEffect.grantedEffect.name,
-					includeInFullDPS = activeSkill.socketGroup.includeInFullDPS
-				})
+		-- Ailments cannot trigger spells and ailments
+		if not activeSkill.skillFlags.ailment and activeSkill.socketGroup and activeSkill.socketGroup.enabled then
+			for skillId, skill in pairs(data.skills) do
+				local triggerChance = activeSkill.skillModList:Sum("BASE", activeSkill.skillCfg, "ChanceToTriggerOnHit_"..skillId)
+				-- TODO: Get trigger chance through cache?
+				if triggerChance > 0 then
+					t_insert(grantedTriggeredSkills, {
+						skillId = skillId,
+						source = "SkillId:"..activeSkill.activeEffect.grantedEffect.id,
+						triggered = true,
+						triggeredOnHit = activeSkill.activeEffect.grantedEffect.id
+					})
+				end
 			end
 		end
 	end

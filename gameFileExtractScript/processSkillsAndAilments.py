@@ -29,6 +29,18 @@ for skillTreeData in skillTreesData:
             "baseFlags": {},
             "stats": {}
         }
+        match int(skillData['tags']):
+            case val if val & 256:
+                skill["baseFlags"]["spell"] = True
+            case val if val & 512:
+                skill["baseFlags"]["melee"] = True
+                skill["baseFlags"]["attack"] = True
+            case val if val & 1024:
+                skill["baseFlags"]["projectile"] = True
+                skill["baseFlags"]["attack"] = True
+            case val if val & 2048:
+                skill["baseFlags"]["projectile"] = True
+                skill["baseFlags"]["attack"] = True
         for attributeScalingData in skillData['attributeScaling']:
             if len(attributeScalingData['stats']):
                 match int(attributeScalingData['attribute']):
@@ -50,7 +62,7 @@ for skillTreeData in skillTreesData:
                 # if stats['addedValue']:
                 #     skill['stats'].append("added_damage_per_" + attribute)
                 #     skill['level'][len(skill['stats'])] = stats['addedValue']
-        for prefabSuffix in {"", "End", "Aoe", "Hit"}:
+        for prefabSuffix in {"", "End", "Aoe", "Hit", " Damage"}:
             skillPrefabData = load_file_from_guid(skillData['abilityPrefab'], prefabSuffix)
             for data in skillPrefabData:
                 if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
@@ -78,7 +90,8 @@ for ailmentGuidData in ailmentListData:
         "name": ailmentData['displayName'],
         "skillTypeTags": ailmentData['tags'],
         "baseFlags": {
-            "duration": True
+            "duration": True,
+            "ailment": True
         },
         "stats": {
             "base_skill_effect_duration": float(ailmentData['duration']) * 1000,

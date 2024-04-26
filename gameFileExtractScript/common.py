@@ -529,6 +529,9 @@ def set_stats_from_damage_data(skill, damage_data, skill_tags):
     if damage_data['isHit'] == "1":
         skill["baseFlags"]["hit"] = True
     match int(skill_tags):
+        case val if val & 4096:
+            damage_tag = "dot"
+            skill["baseFlags"]["dot"] = True
         case val if val & 256:
             damage_tag = "spell"
             skill["baseFlags"]["spell"] = True
@@ -544,9 +547,6 @@ def set_stats_from_damage_data(skill, damage_data, skill_tags):
             damage_tag = "bow"
             skill["baseFlags"]["projectile"] = True
             skill["baseFlags"]["attack"] = True
-        case val if val & 4096:
-            damage_tag = "dot"
-            skill["baseFlags"]["dot"] = True
         case other:
             damage_tag = str(other)
     for i, damageStr in enumerate(damage_data['damage']):

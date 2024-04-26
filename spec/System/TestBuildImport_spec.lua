@@ -19,6 +19,6 @@ expose("BuildImport #buildImport", function()
 
         --TODO: Ignite dps, Blessing support
         assert.are.equals("Fireball", build.calcsTab.mainEnv.player.mainSkill.skillCfg.skillName)
-        assert.are.equals(7030, round(build.calcsTab.mainOutput.FullDPS))
+        assert.are.equals(9183, round(build.calcsTab.mainOutput.FullDPS))
     end)
 end)

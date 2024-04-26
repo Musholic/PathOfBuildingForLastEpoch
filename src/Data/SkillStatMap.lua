@@ -2046,8 +2046,8 @@ local result = {
 for _,sourceType in ipairs(DamageSourceTypes) do
 	for _,damageType in ipairs(DamageTypes) do
 		result[sourceType:lower().."_base_".. damageType:lower() .."_damage"] = {
-			skill(damageType.."Min", "BASE", nil, 0, KeywordFlag[sourceType]),
-			skill(damageType.."Max", "BASE", nil, 0, KeywordFlag[sourceType]),
+			skill(damageType.."Min", nil),
+			skill(damageType.."Max", nil),
 		}
 	end
 end
@@ -2068,7 +2068,7 @@ end
 
 for skillId, grantedEffect in pairs(data.skills) do
 	result["chance_to_cast_" .. skillId .. "_on_hit_%"] = {
-		mod("ChanceToTriggerOnHit_"..skillId, "BASE", nil, ModFlag.Hit, 0),
+		mod("ChanceToTriggerOnHit_"..skillId, "BASE", nil, 0, 0),
 	}
 end
 
