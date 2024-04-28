@@ -2089,7 +2089,7 @@ c["+10% Bleed Chance"]={{}," "}
 c["+10% Bleed Chance +20% Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="BASE",value=10}}," +20%  "}
 c["+10% Bleed Chance +5% Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=10}}," +5%   "}
 c["+10% Bleed Chance With Spear"]={{}," With Spear "}
-c["+10% Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="BASE",value=10}},nil}
+c["+10% Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=10}},nil}
 c["+10% Blind Chance"]={{}," "}
 c["+10% Blind Chance +10% Hit Damage vs Blinded"]={{[1]={[1]={skillId="Ailment_Blind",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," +10% Hit  vs ed "}
 c["+10% Block Chance"]={{}," "}
@@ -2252,7 +2252,7 @@ c["+10% Ignite Chance with Fire Skills"]={{},"  "}
 c["+10% Ignite Chance with Fire Skills +10% Shock Chance with Lightning Skills"]={{},"  +10%  Chance with Lightning Skills "}
 c["+10% Ignite Chance with Fire Skills +10% Shock Chance with Lightning Skills +10% Chill Chance with Cold Skills"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=10}},"  +10%  Chance with Lightning Skills +10%  with Cold Skills "}
 c["+10% Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="BASE",value=10}},nil}
-c["+10% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=10}},nil}
+c["+10% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=10}},nil}
 c["+10% Increased Cold Damage From Lightning Skill Use"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=10}},"  From Lightning Skill Use "}
 c["+10% Increased Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=10}},nil}
 c["+10% Increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
@@ -2270,7 +2270,7 @@ c["+10% Increased Health Leech Rate"]={{[1]={flags=0,keywordFlags=0,name="Life",
 c["+10% Increased Lightning Damage From Fire Skill Use"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=10}},"  From Fire Skill Use "}
 c["+10% Increased Lightning Damage From Fire Skill Use +10% Increased Fire Damage From Cold Skill Use"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=10}},"  From Fire Skill Use +10% Increased Fire Damage From Cold Skill Use "}
 c["+10% Increased Lightning Damage From Fire Skill Use +10% Increased Fire Damage From Cold Skill Use +10% Increased Cold Damage From Lightning Skill Use"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=10}},"  From Fire Skill Use +10% Increased Fire Damage From Cold Skill Use +10% Increased Cold Damage From Lightning Skill Use "}
-c["+10% Increased Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="INC",value=10}},nil}
+c["+10% Increased Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=10}},nil}
 c["+10% Increased Totem Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}}," Totem  "}
 c["+10% Initial Hit Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," Initial Hit  "}
 c["+10% Initial Hit Damage +25% Increased Stun Chance"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," Initial Hit  +25% Increased Stun Chance "}
@@ -2333,7 +2333,7 @@ c["+10% Poison Chance In Poison Pool"]={{}," In  Pool "}
 c["+10% Poison Chance Per Stack"]={{}," Per Stack "}
 c["+10% Poison Chance Per Stack 10% Chance To Grant Putrid Coating When Hit"]={{}," Per Stack 10% Chance To Grant Putrid Coating When Hit "}
 c["+10% Poison Damage Leeched as Health"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}},"   Leeched as Health "}
-c["+10% Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="BASE",value=10}},nil}
+c["+10% Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=10}},nil}
 c["+10% Poison Penetration"]={{[1]={flags=0,keywordFlags=0,name="PoisonPenetration",type="BASE",value=10}},nil}
 c["+10% Poison Penetration with Poison"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=64,name="Penetration",type="BASE",value=10}},nil}
 c["+10% Primal Serpent Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=10}}," Primal Serpent  "}
@@ -2692,7 +2692,7 @@ c["+12% Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="NecroticPenet
 c["+12% Orb Speed and Range"]={{}," Orb Speed and Range "}
 c["+12% Physical Penetration"]={{[1]={flags=0,keywordFlags=0,name="PhysicalPenetration",type="BASE",value=12}},nil}
 c["+12% Plague Chance"]={{}," "}
-c["+12% Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="BASE",value=12}},nil}
+c["+12% Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=12}},nil}
 c["+12% Projectile Speed"]={{[1]={flags=0,keywordFlags=0,name="ProjectileSpeed",type="BASE",value=12}},nil}
 c["+12% Range"]={{}," Range "}
 c["+12% Roots Damage Over Time"]={{[1]={[1]={skillId="Ailment_Root",type="SkillId"},flags=4096,keywordFlags=0,name="Damage",type="BASE",value=12}}," s  "}
@@ -2772,7 +2772,7 @@ c["+13% Damned Chance"]={{}," "}
 c["+13% Elemental Resistance"]={{[1]={flags=0,keywordFlags=0,name="ElementalResist",type="BASE",value=13}},nil}
 c["+13% Frostbite Chance for Minions affected by Dread Shade"]={{}," for s affected by  "}
 c["+13% Ignite Chance"]={{}," "}
-c["+13% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=13}},nil}
+c["+13% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=13}},nil}
 c["+13% Increased Chill Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyChillDuration",type="INC",value=13}},nil}
 c["+13% Increased Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=13}},nil}
 c["+13% Increased Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="INC",value=13}},nil}
@@ -2802,7 +2802,7 @@ c["+130% Necrotic Chance to Ignite on Hit"]={{[1]={flags=8388608,keywordFlags=0,
 c["+130% Range when consuming 12 stacks"]={{}," Range when consuming 12 stacks "}
 c["+130% Range when consuming 12 stacks +130% Damage when consuming 12 stacks"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=130}}," Range when consuming 12 stacks +130%  when consuming 12 stacks "}
 c["+130% Spell Critical Strike Multiplier"]={{[1]={flags=256,keywordFlags=0,name="CritMultiplier",type="BASE",value=130}},nil}
-c["+130% Throwing Chance to Poison on Hit"]={{[1]={flags=1024,keywordFlags=0,name="PoisonChance",type="BASE",value=130}},nil}
+c["+130% Throwing Chance to Poison on Hit"]={{[1]={flags=8389632,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=130}},nil}
 c["+130% Throwing Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=130}}," Throwing  "}
 c["+137 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=137}},nil}
 c["+14 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=14}},nil}
@@ -2926,7 +2926,7 @@ c["+15% Bleed Chance +15% Slow Chance Doubled With 2h Weapon"]={{}," +15%  Chanc
 c["+15% Bleed Chance 3 Bleeding Fury Max Stacks"]={{}," 3 ing Fury Max Stacks "}
 c["+15% Bleed Chance 3 Bleeding Fury Max Stacks 3 Bleeding Fury Duration (seconds)"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=15}}," 3 ing Fury Max Stacks 3 Bleeding Fury  (seconds) "}
 c["+15% Bleed Chance With Shield"]={{}," With Shield "}
-c["+15% Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="BASE",value=15}},nil}
+c["+15% Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=15}},nil}
 c["+15% Bleed Effect"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=15}},nil}
 c["+15% Blind Chance"]={{}," "}
 c["+15% Block Chance"]={{}," "}
@@ -3037,11 +3037,11 @@ c["+15% Ignite Chance with Rah Rune +15% Shock Chance with Gon Rune"]={{}," with
 c["+15% Ignite Chance with Rah Rune +15% Shock Chance with Gon Rune +15% Frostbite Chance with Heo Rune"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Frostbite",type="BASE",value=15}}," with Rah Rune +15%  Chance with Gon Rune +15%  with Heo Rune "}
 c["+15% Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="BASE",value=15}},nil}
 c["+15% Immobilize Duration"]={{[1]={[1]={skillId="Ailment_Immobilized",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=15}},nil}
-c["+15% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=15}},nil}
+c["+15% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=15}},nil}
 c["+15% Increased Chill Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyChillDuration",type="INC",value=15}},nil}
 c["+15% Increased Cooldown Length"]={{}," Cooldown Length "}
 c["+15% Increased Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="INC",value=15}},nil}
-c["+15% Increased Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="INC",value=15}},nil}
+c["+15% Increased Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=15}},nil}
 c["+15% Increased Shock Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyShockDuration",type="INC",value=15}},nil}
 c["+15% Increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=15}},nil}
 c["+15% Increased Spirit Frequency"]={{}," Spirit Frequency "}
@@ -3097,7 +3097,7 @@ c["+15% Physical Resistance"]={{}," Physical Resistance "}
 c["+15% Physical Resistance +15% Poison Resistance"]={{}," Physical Resistance +15%  Resistance "}
 c["+15% Physical Resistance +15% Poison Resistance +8% Size"]={{}," Physical Resistance +15%  Resistance +8% Size "}
 c["+15% Poison Chance"]={{}," "}
-c["+15% Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="BASE",value=15}},nil}
+c["+15% Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=15}},nil}
 c["+15% Poison Penetration"]={{[1]={flags=0,keywordFlags=0,name="PoisonPenetration",type="BASE",value=15}},nil}
 c["+15% Poison Resistance"]={{},"  Resistance "}
 c["+15% Poison Resistance +8% Size"]={{},"  Resistance +8% Size "}
@@ -3187,7 +3187,7 @@ c["+150% Greater Ice Vortex Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage"
 c["+150% Greater Ice Vortex Damage +60% Greater Ice Vortex Radius"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=150}}," Greater Ice Vortex  +60% Greater Ice Vortex Radius "}
 c["+150% Increased Stun Immunity Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=150}}," Stun Immunity  "}
 c["+150% Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=150}},nil}
-c["+150% Melee Chance to Poison on Hit"]={{[1]={flags=512,keywordFlags=0,name="PoisonChance",type="BASE",value=150}},nil}
+c["+150% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=150}},nil}
 c["+150% Melee Damage Leeched as Health"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=150}},"  Leeched as Health "}
 c["+150% Molten Infusion Effect"]={{[1]={[1]={skillId="Ailment_MoltenInfusion",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=150}},nil}
 c["+150% Poison Resistance Shred Chance"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_PoisonResistanceShred",type="BASE",value=150}},nil}
@@ -3227,7 +3227,7 @@ c["+16% Chance to inflict Damned on Hit with Hungering Souls per Active Wanderin
 c["+16% Damage To Feared Enemies"]={{[1]={[1]={skillId="Ailment_Fear",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=16}},"  To ed Enemies "}
 c["+16% Elemental Resistance"]={{[1]={flags=0,keywordFlags=0,name="ElementalResist",type="BASE",value=16}},nil}
 c["+16% Fire Penetration"]={{[1]={flags=0,keywordFlags=0,name="FirePenetration",type="BASE",value=16}},nil}
-c["+16% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=16}},nil}
+c["+16% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=16}},nil}
 c["+16% Increased Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="INC",value=16}},nil}
 c["+16% Increased Stun Chance"]={{}," Stun Chance "}
 c["+16% Increased Stun Chance Also Applies to Forged Weapons"]={{}," Stun Chance Also Applies to Forged s "}
@@ -3247,7 +3247,7 @@ c["+160 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="
 c["+160 Primal Serpent Armour"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=160}}," Primal Serpent  "}
 c["+160% Area"]={{},"  "}
 c["+160% Chance to Ignite on Fire Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=160}},nil}
-c["+160% Chance to Poison on Hit"]={{[1]={flags=0,keywordFlags=0,name="PoisonChance",type="BASE",value=160}},nil}
+c["+160% Chance to Poison on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=160}},nil}
 c["+160% Increased Cooldown Recovery Speed for Decoy"]={{[1]={[1]={skillId="deeco",type="SkillId"},flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=160}},"  for  "}
 c["+160% Increased Electrify Effect"]={{[1]={[1]={skillId="Ailment_Electrify",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=160}},nil}
 c["+160% Increased Stun Chance"]={{}," Stun Chance "}
@@ -3320,7 +3320,7 @@ c["+180 Dodge Rating"]={{}," Dodge Rating "}
 c["+180 Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="BASE",value=180}}}},nil}
 c["+180% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
 c["+180% Mana Spent Gained as Ward"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=180}},"  Spent Gained as Ward "}
-c["+180% Melee Chance to Poison on Hit"]={{[1]={flags=512,keywordFlags=0,name="PoisonChance",type="BASE",value=180}},nil}
+c["+180% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=180}},nil}
 c["+180% Melee Critical Strike Multiplier"]={{[1]={flags=512,keywordFlags=0,name="CritMultiplier",type="BASE",value=180}},nil}
 c["+181 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=181}},nil}
 c["+181 Armor for Totems"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=181}},"  for Totems "}
@@ -3521,7 +3521,7 @@ c["+2% Base Crit Chance For Maul And Rampage 50% Global Increased Crit Chance"]=
 c["+2% Base Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="BASE",value=2}},nil}
 c["+2% Bleed Chance per Maelstrom"]={{}," per  "}
 c["+2% Bleed Chance per Maelstrom +2% Damage over Time per Maelstrom"]={{[1]={[1]={skillId="mas54",type="SkillId"},flags=4096,keywordFlags=0,name="Damage",type="BASE",value=2}}," per  +2%  per Maelstrom "}
-c["+2% Bleed Duration Per Dexterity"]={{[1]={[1]={stat="Dex",type="PerStat"},flags=0,keywordFlags=0,name="EnemyBleedDuration",type="BASE",value=2}},nil}
+c["+2% Bleed Duration Per Dexterity"]={{[1]={[1]={stat="Dex",type="PerStat"},[2]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=2}},nil}
 c["+2% Block Chance"]={{}," "}
 c["+2% Brand of Subjugation Damage Per 1% Chill Chance"]={{[1]={[1]={skillId="Ailment_Brand of Subjugation",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}},"   Per 1% Chill Chance "}
 c["+2% Chance To Cast Thorn Shield On You When Hit"]={{}," To Cast Thorn Shield On You When Hit "}
@@ -3837,7 +3837,7 @@ c["+20% Increased Doom Effect"]={{[1]={[1]={skillId="Ailment_Doom",type="SkillId
 c["+20% Increased Hail of Arrows Area"]={{},"   "}
 c["+20% Increased Healing"]={{},"  "}
 c["+20% Increased Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="INC",value=20}},nil}
-c["+20% Increased Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="INC",value=20}},nil}
+c["+20% Increased Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=20}},nil}
 c["+20% Increased Shock Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyShockDuration",type="INC",value=20}},nil}
 c["+20% Increased Stun Chance"]={{}," Stun Chance "}
 c["+20% Increased Stun Chance Per Second"]={{}," Stun Chance Per Second "}
@@ -3919,7 +3919,7 @@ c["+20% Poison Chance with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20%
 c["+20% Poison Chance with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20% Bleed Chance with an Axe and a Sword 2% Physical Damage Leeched as Health with an Axe and Dagger"]={{[1]={[1]={type="Condition",var="UsingAxe"},[2]={type="Condition",var="UsingAxe"},[3]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=20}}," with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20%  Chance  and a Sword 2%  Leeched as Health  and Dagger "}
 c["+20% Poison Chance with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20% Bleed Chance with an Axe and a Sword 2% Physical Damage Leeched as Health with an Axe and Dagger 20% Increased Stun Duration with a Mace and Sword"]={{[1]={[1]={type="Condition",var="UsingAxe"},[2]={type="Condition",var="UsingAxe"},[3]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=20}}," with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20%  Chance  and a Sword 2%  Leeched as Health  and Dagger 20% Increased Stun Duration with a Mace and Sword "}
 c["+20% Poison Chance with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20% Bleed Chance with an Axe and a Sword 2% Physical Damage Leeched as Health with an Axe and Dagger 20% Increased Stun Duration with a Mace and Sword +20% Frailty Chance with a Mace and Dagger"]={{[1]={[1]={type="Condition",var="UsingAxe"},[2]={type="Condition",var="UsingAxe"},[3]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=20}}," with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20%  Chance  and a Sword 2%  Leeched as Health  and Dagger 20% Increased Stun Duration with a Mace and Sword +20% Frailty Chance with a Mace and Dagger "}
-c["+20% Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="BASE",value=20}},nil}
+c["+20% Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=20}},nil}
 c["+20% Poison Resistance"]={{},"  Resistance "}
 c["+20% Poison Resistance Cleanses Ailments"]={{},"  Resistance Cleanses Ailments "}
 c["+20% Rampage Damage"]={{[1]={flags=0,keywordFlags=0,name="Condition:Rampage",type="BASE",value=20}},"  Damage "}
@@ -4042,7 +4042,7 @@ c["+22% Increased Cooldown Recovery Speed for Transplant"]={{[1]={[1]={skillId="
 c["+22% Lightning Penetration"]={{[1]={flags=0,keywordFlags=0,name="LightningPenetration",type="BASE",value=22}},nil}
 c["+22% Void Rift Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=22}}," Void Rift  "}
 c["+220 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=220}},nil}
-c["+220% Chance to Poison on Hit"]={{[1]={flags=0,keywordFlags=0,name="PoisonChance",type="BASE",value=220}},nil}
+c["+220% Chance to Poison on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=220}},nil}
 c["+220% Ward Retention on Transform"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=220}},"  Retention on Transform "}
 c["+225 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=225}},nil}
 c["+23 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=23}},nil}
@@ -4141,7 +4141,7 @@ c["+25% Avalanche And Boulder Impact Area"]={{},"  And Boulder Impact  "}
 c["+25% Bleed Chance"]={{}," "}
 c["+25% Bleed Chance +10% Health Cost"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=25}}," +10%  Cost "}
 c["+25% Bleed Chance +10% Physical Penetration with Bleed"]={{}," +10% Physical Peration with Bleed "}
-c["+25% Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="BASE",value=25}},nil}
+c["+25% Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=25}},nil}
 c["+25% Blind Chance"]={{}," "}
 c["+25% Block Chance"]={{}," "}
 c["+25% Blood Spectre Health Leech"]={{[1]={[1]={includeTransfigured=true,skillName="Raise Spectre",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="BASE",value=25}}}}," Blood   Leech "}
@@ -4311,7 +4311,7 @@ c["+25% Overcharge Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BA
 c["+25% Overcharge Damage +40% Overcharge Stun Chance"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=25}}," Overcharge  +40% Overcharge Stun Chance "}
 c["+25% Physical Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=25}},"  Leeched as Health "}
 c["+25% Physical Penetration with Bleed"]={{}," Physical Peration with Bleed "}
-c["+25% Physical Penetration with Bleed +10% Bleed Duration"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="EnemyBleedDuration",type="BASE",value=25}}," Physical Peration with Bleed +10%  "}
+c["+25% Physical Penetration with Bleed +10% Bleed Duration"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=25}}," Physical Peration with Bleed +10% Bleed  "}
 c["+25% Pierce Chance"]={{}," "}
 c["+25% Pierce Chance +33% Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=25}}," +33%  "}
 c["+25% Poison Chance"]={{}," "}
@@ -4402,7 +4402,7 @@ c["+26% Chance to Reveal a Wandering Spirit on Kill (1 Second Cooldown)"]={{}," 
 c["+26% Chance to gain 50 Health on Minion Death"]={nil,"50 Health on Minion Death "}
 c["+26% Chance to gain 50 Health on Minion Hit"]={nil,"50 Health on Minion Hit "}
 c["+26% Fire Penetration"]={{[1]={flags=0,keywordFlags=0,name="FirePenetration",type="BASE",value=26}},nil}
-c["+26% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=26}},nil}
+c["+26% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=26}},nil}
 c["+26% Increased Cooldown Recovery Speed for Javelin"]={{[1]={[1]={skillId="javeli",type="SkillId"},flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=26}},"  for  "}
 c["+26% Increased Cooldown Recovery Speed for Judgement"]={{[1]={[1]={skillId="pa67ju",type="SkillId"},flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=26}},"  for  "}
 c["+26% Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="NecroticPenetration",type="BASE",value=26}},nil}
@@ -4908,7 +4908,7 @@ c["+33% Marrow Orb Chance To Gain Mana 15 Marrow Orb Mana Gained"]={{[1]={flags=
 c["+33% Melee Chance to Blind on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Blind",type="BASE",value=33}},nil}
 c["+33% Melee Chance to Chill on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=33}},nil}
 c["+33% Melee Chance to Ignite on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=33}},nil}
-c["+33% Melee Chance to Poison on Hit"]={{[1]={flags=512,keywordFlags=0,name="PoisonChance",type="BASE",value=33}},nil}
+c["+33% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=33}},nil}
 c["+33% Melee Chance to Slow on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Slow",type="BASE",value=33}},nil}
 c["+34 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=34},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=34}},nil}
 c["+34 Spell Lightning Damage for all existing totems when you directly cast Summon Storm Totem"]={{[1]={[1]={skillId="st38ml",type="SkillId"},flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=34},[2]={[1]={skillId="st38ml",type="SkillId"},flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=34}}," for all existing totems when you directly cast  "}
@@ -4961,7 +4961,7 @@ c["+35% Heal Area"]={{}," Heal  "}
 c["+35% Hit Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=35}}," Hit  "}
 c["+35% Hit Damage +50% Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=35}}," Hit  +50% Mana Cost "}
 c["+35% Hit Damage +50% Mana Cost -40% Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=35}}," Hit  +50% Mana Cost -40% Cast Speed "}
-c["+35% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=35}},nil}
+c["+35% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=35}},nil}
 c["+35% Increased Chill Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyChillDuration",type="INC",value=35}},nil}
 c["+35% Increased Doom Duration"]={{[1]={[1]={skillId="Ailment_Doom",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=35}},nil}
 c["+35% Increased Doom Effect"]={{[1]={[1]={skillId="Ailment_Doom",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=35}},nil}
@@ -4988,7 +4988,7 @@ c["+35% Primal Serpent Frailty Chance"]={{}," Primal Serpent  Chance "}
 c["+35% Primal Serpent Poison Chance"]={{}," Primal Serpent  Chance "}
 c["+35% Primal Serpent Poison Chance +35% Primal Serpent Frailty Chance"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Frailty",type="BASE",value=35}}," Primal Serpent  Chance +35% Primal Serpent  "}
 c["+35% Reap Poison Chance"]={{}," Reap  Chance "}
-c["+35% Reap Poison Chance +10% Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="BASE",value=35}}," Reap  Chance +10%  "}
+c["+35% Reap Poison Chance +10% Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=35}}," Reap  Chance +10% Poison  "}
 c["+35% Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=35}},nil}
 c["+35% Storm Bolt Retaliation Chance"]={{}," Storm Bolt Retaliation Chance "}
 c["+35% Storm Bolt Retaliation Chance +35% Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=35}}," Storm Bolt Retaliation Chance +35%   "}
@@ -5339,7 +5339,7 @@ c["+40% Ignite Chance Per Second"]={{}," Per Second "}
 c["+40% Ignite Chance per second"]={{}," per second "}
 c["+40% Ignite Chance per second +40% Damned Chance per second"]={{}," per second +40%  Chance per second "}
 c["+40% Increased Area with Dancing Strikes"]={{},"  with  "}
-c["+40% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=40}},nil}
+c["+40% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=40}},nil}
 c["+40% Increased Chance To Find Potions"]={{}," To Find Potions "}
 c["+40% Increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=40}},nil}
 c["+40% Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}},nil}
@@ -5468,13 +5468,13 @@ c["+45% Elemental Chance to Shock on Hit"]={{[1]={flags=8388608,keywordFlags=0,n
 c["+45% Final Hit Echo Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=45}}," Final Hit Echo  "}
 c["+45% Final Hit Echo Damage +20% Delay Between Hits"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=45}}," Final Hit Echo  +20% Delay Between Hits "}
 c["+45% Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=45}},nil}
-c["+45% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=45}},nil}
+c["+45% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=45}},nil}
 c["+45% Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=45}},nil}
 c["+45% Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=45}},nil}
 c["+45% Melee Chance to Blind on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Blind",type="BASE",value=45}},nil}
 c["+45% Melee Chance to Chill on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=45}},nil}
 c["+45% Melee Chance to Ignite on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=45}},nil}
-c["+45% Melee Chance to Poison on Hit"]={{[1]={flags=512,keywordFlags=0,name="PoisonChance",type="BASE",value=45}},nil}
+c["+45% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=45}},nil}
 c["+45% Melee Chance to Slow on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Slow",type="BASE",value=45}},nil}
 c["+45% Melee SpiritPlague Chance"]={{},"  Spirit Chance "}
 c["+45% Necrotic Resistance"]={{}," Necrotic Resistance "}
@@ -5528,7 +5528,7 @@ c["+48% chance on Hit to grant one of your minions Aspect of the Spider (2 secon
 c["+49 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=49},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=49},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=49},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=49},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=49},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=49},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=49},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=49},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=49},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=49},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=49},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=49},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=49},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=49}},nil}
 c["+49 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=49},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=49}},nil}
 c["+49% Chance to cast Sacrifice on your lowest health minion on minion death (1 second cooldown)"]={{[1]={[1]={skillId="sf31rc",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=49}}," to cast  on your lowest   on minion death (1 second cooldown) "}
-c["+49% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=49}},nil}
+c["+49% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=49}},nil}
 c["+5 Added Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}}," Added   "}
 c["+5 Added Melee Cold Damage 20% Increased Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}}," Added   20% Increased Melee Cold Damage "}
 c["+5 Added Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=5}}," Added   "}
@@ -5621,7 +5621,7 @@ c["+5% Autofire Chance On Bow Attack 100% Increased Stun Chance +100% Mana Cost"
 c["+5% Base Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="BASE",value=5}},nil}
 c["+5% Bleed Chance Granted"]={{}," Granted "}
 c["+5% Bleed Chance Per Stack"]={{}," Per Stack "}
-c["+5% Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="BASE",value=5}},nil}
+c["+5% Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=5}},nil}
 c["+5% Blind Chance"]={{}," "}
 c["+5% Blind Chance +2% Endurance"]={{}," +2% Endurance "}
 c["+5% Block Chance"]={{}," "}
@@ -5902,7 +5902,7 @@ c["+50% Ignite Chance +25% Fire Penetration with Ignite"]={{}," +25% Fire Perati
 c["+50% Ignite Chance -5% Damage Taken from Ignited Enemies"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=50}}," -5%  from d Enemies "}
 c["+50% Ignite Chance per Second"]={{}," per Second "}
 c["+50% Ignite Frequency"]={{},"  Frequency "}
-c["+50% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=50}},nil}
+c["+50% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=50}},nil}
 c["+50% Increased Chill Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyChillDuration",type="INC",value=50}},nil}
 c["+50% Increased Doom Duration"]={{[1]={[1]={skillId="Ailment_Doom",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=50}},nil}
 c["+50% Increased Doom Effect"]={{[1]={[1]={skillId="Ailment_Doom",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=50}},nil}
@@ -6010,7 +6010,7 @@ c["+53 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticMin
 c["+53 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=53},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=53},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=53},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=53},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=53},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=53},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=53},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=53},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=53},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=53},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=53},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=53},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=53},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=53}},nil}
 c["+53 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=53},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=53}},nil}
 c["+53 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=53},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=53}},nil}
-c["+53% Bow Chance to Poison on Hit"]={{[1]={flags=2048,keywordFlags=0,name="PoisonChance",type="BASE",value=53}},nil}
+c["+53% Bow Chance to Poison on Hit"]={{[1]={flags=8390656,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=53}},nil}
 c["+53% Chance to Ignite on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=53}},nil}
 c["+53% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=53}},nil}
 c["+53% Increased Torment Effect"]={{[1]={[1]={skillId="Ailment_Torment",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=53}},nil}
@@ -6184,7 +6184,7 @@ c["+60 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin
 c["+60 Ward Burst after Flame Rush"]={{[1]={[1]={skillId="fl71ds",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=60}},"  Burst after  "}
 c["+60 Ward gained when you gain Haste or refresh its duration"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=60}},"  gained when you gain  or refresh its duration "}
 c["+60% Chance for the nearest minion to the target location to cast Dragonflame Nova when you use a minion skill"]={{}," for the nearest  to the target location to cast Dragonflame Nova when you use a minion skill "}
-c["+60% Chance to Poison on Hit"]={{[1]={flags=0,keywordFlags=0,name="PoisonChance",type="BASE",value=60}},nil}
+c["+60% Chance to Poison on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=60}},nil}
 c["+60% Chance to Slow on Bow Hit"]={{}," to  on Bow Hit "}
 c["+60% Chance to Slow on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Slow",type="BASE",value=60}},nil}
 c["+60% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=60}},nil}
@@ -6269,9 +6269,9 @@ c["+65 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="B
 c["+65% Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=65}},nil}
 c["+65% Damage on Low Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=65}},"  on Low Health "}
 c["+65% Damage on Low Health +5% Melee Leech on Low Health"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="MORE",value=65}},"  on Low Health +5%  Leech on Low Health "}
-c["+65% Fire Chance to Poison on Hit"]={{[1]={flags=0,keywordFlags=0,name="PoisonChance",type="BASE",value=65}},nil}
+c["+65% Fire Chance to Poison on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=65}},nil}
 c["+65% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=65}},nil}
-c["+65% Melee Chance to Poison on Hit"]={{[1]={flags=512,keywordFlags=0,name="PoisonChance",type="BASE",value=65}},nil}
+c["+65% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=65}},nil}
 c["+65% Minion Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=65}}}},nil}
 c["+65% Necrotic Resistance"]={{}," Necrotic Resistance "}
 c["+65% Width when consuming 12 stacks"]={{}," Width when consuming 12 stacks "}
@@ -6290,7 +6290,7 @@ c["+66% Health Regen also applies to Ward"]={{[1]={flags=0,keywordFlags=0,name="
 c["+66% More Infernal Shade Damage per active Wraith against Bosses and Rare Enemies"]={{[1]={[1]={skillId="is40",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=66}}," More   per active Wraith against Bosses and Rare Enemies "}
 c["+66% Ward Retention"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=66}},"  Retention "}
 c["+67 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=67},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=67},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=67},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=67},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=67},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=67},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=67},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=67},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=67},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=67},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=67},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=67},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=67},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=67}},nil}
-c["+67% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=67}},nil}
+c["+67% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=67}},nil}
 c["+68 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=68}},nil}
 c["+68 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=68},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=68}},nil}
 c["+68 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=68},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=68},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=68},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=68},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=68},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=68},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=68},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=68},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=68},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=68},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=68},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=68},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=68},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=68}},nil}
@@ -6384,9 +6384,9 @@ c["+70 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",val
 c["+70 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=70},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=70},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=70},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=70},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=70},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=70},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=70},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=70},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=70},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=70},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=70},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=70},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=70},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=70}},nil}
 c["+70 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=70},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=70}},nil}
 c["+70% Attack Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=70}}," Attack  "}
-c["+70% Bow Chance to Poison on Hit"]={{[1]={flags=2048,keywordFlags=0,name="PoisonChance",type="BASE",value=70}},nil}
+c["+70% Bow Chance to Poison on Hit"]={{[1]={flags=8390656,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=70}},nil}
 c["+70% Chance to Chill on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=70}},nil}
-c["+70% Chance to Poison on Hit"]={{[1]={flags=0,keywordFlags=0,name="PoisonChance",type="BASE",value=70}},nil}
+c["+70% Chance to Poison on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=70}},nil}
 c["+70% Chance to Slow on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Slow",type="BASE",value=70}},nil}
 c["+70% Fire Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=70}},"  Leeched as Health "}
 c["+70% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
@@ -6432,7 +6432,7 @@ c["+75% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="
 c["+75% Cold resistance to allies nearby Storm Totem"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=75}},"  to allies nearby Storm Totem "}
 c["+75% Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=75}},nil}
 c["+75% Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=75}},nil}
-c["+75% Fire Chance to Poison on Hit"]={{[1]={flags=0,keywordFlags=0,name="PoisonChance",type="BASE",value=75}},nil}
+c["+75% Fire Chance to Poison on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=75}},nil}
 c["+75% Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=75}},nil}
 c["+75% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
 c["+75% Ignite Chance per second"]={{}," per second "}
@@ -6441,7 +6441,7 @@ c["+75% Increased Stun Chance"]={{}," Stun Chance "}
 c["+75% Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=75}},nil}
 c["+75% Lightning resistance to allies nearby Storm Totem"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=75}},"  to allies nearby Storm Totem "}
 c["+75% Mark Of Thunder Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=75}}," Mark Of Thunder  "}
-c["+75% Melee Chance to Poison on Hit"]={{[1]={flags=512,keywordFlags=0,name="PoisonChance",type="BASE",value=75}},nil}
+c["+75% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=75}},nil}
 c["+75% Minion Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=75}}}},nil}
 c["+75% More Companion Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=75}}," More Companion  "}
 c["+75% More Companion Health 30% Increased Damage With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=75}}," More Companion  30% Increased Damage With An Active Companion "}
@@ -6726,7 +6726,7 @@ c["+95 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="B
 c["+95 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=95},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=95},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=95},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=95},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=95},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=95},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=95},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=95},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=95},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=95},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=95},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=95},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=95},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=95}},nil}
 c["+95% Increased Fire Aura Area"]={{}," Fire Aura  "}
 c["+95% Increased Volcanic Orb Damage"]={{[1]={[1]={skillId="vo54",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="INC",value=95}},nil}
-c["+95% Throwing Chance to Poison on Hit"]={{[1]={flags=1024,keywordFlags=0,name="PoisonChance",type="BASE",value=95}},nil}
+c["+95% Throwing Chance to Poison on Hit"]={{[1]={flags=8389632,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=95}},nil}
 c["+9500 Starting Armour Near Dead Golem"]={{[1]={[1]={type="SkillType"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=9500}}}}," Starting  Near Dead  "}
 c["+9500 Starting Armour Near Dead Golem +15% Size if no other living Golems"]={{[1]={[1]={type="SkillType"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=9500}}}}," Starting  Near Dead  +15% Size if no other living Golems "}
 c["+9500 Starting Armour Near Dead Golem +15% Size if no other living Golems +25% Damage if no other living Golems"]={{[1]={[1]={type="SkillType"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=9500}}}}," Starting  Near Dead  +15% Size if no other living Golems +25% Damage if no other living Golems "}
@@ -9628,7 +9628,7 @@ c["6% Healing Effectiveness Per Intelligence"]={{[1]={[1]={stat="Int",type="PerS
 c["6% Increased  Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=6}}}},nil}
 c["6% Increased Aegis Effect Per Point Of Attunement"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=6}}," Aegis  Per Point Of Attunement "}
 c["6% Increased Armor When Hit"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=6}},"  When Hit "}
-c["6% Increased Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=6}},nil}
+c["6% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=6}},nil}
 c["6% Increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=6}},nil}
 c["6% Increased Cooldown Recovery Speed for Movement Skills"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=6}},"  for Movement Skills "}
 c["6% Increased Cooldown Recovery Speed for Movement Skills +6 Health"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=6}},"  for Movement Skills +6 Health "}
@@ -9643,7 +9643,7 @@ c["6% Increased Damage With Spear +10% Bleed Chance With Spear"]={{[1]={[1]={ski
 c["6% Increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=6}},nil}
 c["6% Increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=6}},nil}
 c["6% Increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=6}},nil}
-c["6% Increased Minion Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="EnemyBleedDuration",type="INC",value=6}}}},nil}
+c["6% Increased Minion Bleed Duration"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=6}}}},nil}
 c["6% Increased Minion Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritChance",type="INC",value=6}}}},nil}
 c["6% Increased Minion Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}}}},nil}
 c["6% Increased Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=6}}}},nil}
@@ -9781,7 +9781,7 @@ c["7% Increased Minion Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="Minio
 c["7% Increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Damage",type="INC",value=7}}}},nil}
 c["7% Increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=7}},nil}
 c["7% Increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=7}},nil}
-c["7% Increased Poison Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyPoisonDuration",type="INC",value=7}},nil}
+c["7% Increased Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=7}},nil}
 c["7% Increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
 c["7% Increased Throwing Attack Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
 c["7% Increased Throwing Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
