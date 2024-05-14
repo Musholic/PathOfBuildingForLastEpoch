@@ -58,7 +58,7 @@ local function calcDamage(activeSkill, output, cfg, breakdown, damageType, typeF
 	typeFlags = bor(typeFlags, dmgTypeFlags[damageType])
 
 	-- Calculate conversions
-	local addMin, addMax = 0, 0
+	local addDmg = 0
 	local conversionTable = activeSkill.conversionTable
 	for _, otherType in ipairs(dmgTypeList) do
 		if otherType == damageType then
@@ -68,29 +68,26 @@ local function calcDamage(activeSkill, output, cfg, breakdown, damageType, typeF
 		local convMult = conversionTable[otherType][damageType]
 		if convMult > 0 then
 			-- Damage is being converted/gained from the other damage type
-			local min, max = calcDamage(activeSkill, output, cfg, breakdown, otherType, typeFlags, damageType)
-			addMin = addMin + min * convMult
-			addMax = addMax + max * convMult
+			local dmg = calcDamage(activeSkill, output, cfg, breakdown, otherType, typeFlags, damageType)
+			addDmg = addDmg + dmg * convMult
 		end
 	end
-	if addMin ~= 0 and addMax ~= 0 then
-		addMin = round(addMin)
-		addMax = round(addMax)
+	if addDmg ~= 0 then
+		addDmg = round(addDmg)
 	end
 
-	local baseMin = output[damageType.."MinBase"]
-	local baseMax = output[damageType.."MaxBase"]
-	if baseMin == 0 and baseMax == 0 then
+	local baseDmg = output[damageType.."DamageBase"]
+	if baseDmg == 0 then
 		-- No base damage for this type, don't need to calculate modifiers
-		if breakdown and (addMin ~= 0 or addMax ~= 0) then
+		if breakdown and (addDmg ~= 0 or addMax ~= 0) then
 			t_insert(breakdown.damageTypes, {
 				source = damageType,
-				convSrc = (addMin ~= 0 or addMax ~= 0) and (addMin .. " to " .. addMax),
-				total = addMin .. " to " .. addMax,
+				convSrc = (addDmg ~= 0) and (addDmg .. ""),
+				total = addDmg .. "",
 				convDst = convDst and s_format("%d%% to %s", conversionTable[damageType][convDst] * 100, convDst),
 			})
 		end
-		return addMin, addMax
+		return addDmg
 	end
 
 	-- Combine modifiers
@@ -98,24 +95,21 @@ local function calcDamage(activeSkill, output, cfg, breakdown, damageType, typeF
 	local inc = 1 + skillModList:Sum("INC", cfg, unpack(modNames)) / 100
 	local more = skillModList:More(cfg, unpack(modNames))
 	local genericMoreMinDamage = skillModList:More(cfg, "MinDamage")
-	local genericMoreMaxDamage = skillModList:More(cfg, "MaxDamage")
 	local moreMinDamage = skillModList:More(cfg, "Min"..damageType.."Damage")
-	local moreMaxDamage = skillModList:More(cfg, "Max"..damageType.."Damage")
 
 	if breakdown then
 		t_insert(breakdown.damageTypes, {
 			source = damageType,
-			base = baseMin .. " to " .. baseMax,
+			base = baseDmg .. "",
 			inc = (inc ~= 1 and "x "..inc),
 			more = (more ~= 1 and "x "..more),
-			convSrc = (addMin ~= 0 or addMax ~= 0) and (addMin .. " to " .. addMax),
-			total = (round(baseMin * inc * more) + addMin) .. " to " .. (round(baseMax * inc * more) + addMax),
+			convSrc = (addDmg ~= 0) and (addDmg .. ""),
+			total = (round(baseDmg * inc * more) + addDmg) .. "",
 			convDst = convDst and conversionTable[damageType][convDst] > 0 and s_format("%d%% to %s", conversionTable[damageType][convDst] * 100, convDst),
 		})
 	end
 
-	return 	round(((baseMin * inc * more) * genericMoreMinDamage + addMin) * moreMinDamage),
-			round(((baseMax * inc * more) * genericMoreMaxDamage + addMax) * moreMaxDamage)
+	return 	round(((baseDmg * inc * more) * genericMoreMinDamage + addDmg) * moreMinDamage)
 end
 
 ---Calculates skill radius
@@ -2448,31 +2442,29 @@ function calcs.offence(env, actor, activeSkill)
 
 		-- Calculate base hit damage
 		for _, damageType in ipairs(dmgTypeList) do
-			local damageTypeMin = damageType.."Min"
-			local damageTypeMax = damageType.."Max"
+			local damageTypeMod = damageType.."Damage"
 			local baseMultiplier = activeSkill.activeEffect.grantedEffect.stats.baseMultiplier or skillData.baseMultiplier or 1
 			local damageEffectiveness = activeSkill.activeEffect.grantedEffect.stats.damageEffectiveness or skillData.damageEffectiveness or 1
-			local addedMin = skillModList:Sum("BASE", cfg, damageTypeMin) + enemyDB:Sum("BASE", cfg, "Self"..damageTypeMin)
-			local addedMax = skillModList:Sum("BASE", cfg, damageTypeMax) + enemyDB:Sum("BASE", cfg, "Self"..damageTypeMax)
+			local typeAddedDmg = skillModList:Sum("BASE", cfg, damageTypeMod) + enemyDB:Sum("BASE", cfg, "Self".. damageTypeMod)
+			local allAddedDmg = source[damageTypeMod] and skillModList:Sum("BASE", cfg, "Damage") or 0
+			local addedDmg = typeAddedDmg + allAddedDmg
 			local addedMult = calcLib.mod(skillModList, cfg, "Added"..damageType.."Damage", "AddedDamage")
-			local baseMin = ((source[damageTypeMin] or 0) + (source[damageType.."BonusMin"] or 0)) * baseMultiplier + addedMin * damageEffectiveness * addedMult
-			local baseMax = ((source[damageTypeMax] or 0) + (source[damageType.."BonusMax"] or 0)) * baseMultiplier + addedMax * damageEffectiveness * addedMult
-			output[damageTypeMin.."Base"] = baseMin
-			output[damageTypeMax.."Base"] = baseMax
+			local baseDmg = ((source[damageTypeMod] or 0) + (source[damageType.."BonusMin"] or 0)) * baseMultiplier + addedDmg * damageEffectiveness * addedMult
+			output[damageTypeMod .."Base"] = baseDmg
 			if breakdown then
 				breakdown[damageType] = { damageTypes = { } }
-				if baseMin ~= 0 and baseMax ~= 0 then
+				if baseDmg ~= 0 and baseMax ~= 0 then
 					t_insert(breakdown[damageType], "Base damage:")
 					local plus = ""
-					if (source[damageTypeMin] or 0) ~= 0 or (source[damageTypeMax] or 0) ~= 0 then
-						t_insert(breakdown[damageType], s_format("%d to %d ^8(base damage from %s)", source[damageTypeMin], source[damageTypeMax], source.type and "weapon" or "skill"))
+					if (source[damageTypeMod] or 0) ~= 0 then
+						t_insert(breakdown[damageType], s_format("%d ^8(base damage from %s)", source[damageTypeMod], source.type and "weapon" or "skill"))
 						if baseMultiplier ~= 1 then
 							t_insert(breakdown[damageType], s_format("x %.2f ^8(base damage multiplier)", baseMultiplier))
 						end
 						plus = "+ "
 					end
-					if addedMin ~= 0 or addedMax ~= 0 then
-						t_insert(breakdown[damageType], s_format("%s%d to %d ^8(added damage)", plus, addedMin, addedMax))
+					if addedDmg ~= 0 or addedMax ~= 0 then
+						t_insert(breakdown[damageType], s_format("%s(%d + %d) ^8(added damage, including all types)", plus, typeAddedDmg, allAddedDmg))
 						if damageEffectiveness ~= 1 then
 							t_insert(breakdown[damageType], s_format("x %.2f ^8(damage effectiveness)", damageEffectiveness))
 						end
@@ -2480,14 +2472,14 @@ function calcs.offence(env, actor, activeSkill)
 							t_insert(breakdown[damageType], s_format("x %.2f ^8(added damage multiplier)", addedMult))
 						end
 					end
-					t_insert(breakdown[damageType], s_format("= %.1f to %.1f", baseMin, baseMax))
+					t_insert(breakdown[damageType], s_format("= %.1f", baseDmg))
 				end
 			end
 		end
 
 		-- Calculate hit damage for each damage type
-		local totalHitMin, totalHitMax, totalHitAvg = 0, 0, 0
-		local totalCritMin, totalCritMax, totalCritAvg = 0, 0, 0
+		local totalHitAvg = 0
+		local totalCritAvg = 0
 		local ghostReaver = skillModList:Flag(nil, "GhostReaver")
 		output.LifeLeech = 0
 		output.LifeLeechInstant = 0
@@ -2506,13 +2498,13 @@ function calcs.offence(env, actor, activeSkill)
 			local noEnergyShieldLeech = skillModList:Flag(cfg, "CannotLeechEnergyShield") or enemyDB:Flag(nil, "CannotLeechEnergyShieldFromSelf") or skillModList:Flag(cfg, "CannotGainEnergyShield")
 			local noManaLeech = skillModList:Flag(cfg, "CannotLeechMana") or enemyDB:Flag(nil, "CannotLeechManaFromSelf") or skillModList:Flag(cfg, "CannotGainMana")
 			for _, damageType in ipairs(dmgTypeList) do
-				local damageTypeHitMin, damageTypeHitMax, damageTypeHitAvg, damageTypeLuckyChance, damageTypeHitAvgLucky, damageTypeHitAvgNotLucky = 0, 0, 0, 0, 0
+				local damageTypeHitAvg = 0
 				if skillFlags.hit and canDeal[damageType] then
-					damageTypeHitMin, damageTypeHitMax = calcDamage(activeSkill, output, cfg, pass == 2 and breakdown and breakdown[damageType], damageType, 0)
+					damageTypeHitAvg = calcDamage(activeSkill, output, cfg, pass == 2 and breakdown and breakdown[damageType], damageType, 0)
 					local convMult = activeSkill.conversionTable[damageType].mult
 					if pass == 2 and breakdown then
 						t_insert(breakdown[damageType], "Hit damage:")
-						t_insert(breakdown[damageType], s_format("%d to %d ^8(total damage)", damageTypeHitMin, damageTypeHitMax))
+						t_insert(breakdown[damageType], s_format("%d ^8(total damage)", damageTypeHitAvg))
 						if convMult ~= 1 then
 							t_insert(breakdown[damageType], s_format("x %g ^8(%g%% converted to other damage types)", convMult, (1-convMult)*100))
 						end
@@ -2548,21 +2540,8 @@ function calcs.offence(env, actor, activeSkill)
 						-- Apply crit multiplier
 						allMult = allMult * output.CritMultiplier
 					end
-					damageTypeHitMin = damageTypeHitMin * allMult
-					damageTypeHitMax = damageTypeHitMax * allMult
-					if skillModList:Flag(skillCfg, "LuckyHits")
-					or (pass == 2 and damageType == "Lightning" and skillModList:Flag(skillCfg, "LightningNoCritLucky"))
-					or (pass == 1 and skillModList:Flag(skillCfg, "CritLucky"))
-					or (damageType == "Lightning" and modDB:Flag(nil, "LightningLuckHits"))
-					or ((damageType == "Lightning" or damageType == "Cold" or damageType == "Fire") and skillModList:Flag(skillCfg, "ElementalLuckHits")) then
-						damageTypeLuckyChance = 1
-					else
-						damageTypeLuckyChance = m_min(skillModList:Sum("BASE", skillCfg, "LuckyHitsChance"), 100) / 100
-					end
-					damageTypeHitAvgNotLucky = (damageTypeHitMin / 2 + damageTypeHitMax / 2)
-					damageTypeHitAvgLucky = (damageTypeHitMin / 3 + 2 * damageTypeHitMax / 3)
-					damageTypeHitAvg = damageTypeHitAvgNotLucky * (1 - damageTypeLuckyChance) + damageTypeHitAvgLucky * damageTypeLuckyChance
-					if (damageTypeHitMin ~= 0 or damageTypeHitMax ~= 0) and env.mode_effective then
+					damageTypeHitAvg = damageTypeHitAvg * allMult
+					if (damageTypeHitAvg ~= 0) and env.mode_effective then
 						-- Apply enemy resistances and damage taken modifiers
 						local resist = 0
 						local pen = 0
@@ -2609,8 +2588,6 @@ function calcs.offence(env, actor, activeSkill)
 						elseif useRes then
 							effMult = effMult * (1 - (resist - pen) / 100)
 						end
-						damageTypeHitMin = damageTypeHitMin * effMult
-						damageTypeHitMax = damageTypeHitMax * effMult
 						damageTypeHitAvg = damageTypeHitAvg * effMult
 						if env.mode == "CALCS" then
 							output[damageType.."EffMult"] = effMult
@@ -2624,7 +2601,7 @@ function calcs.offence(env, actor, activeSkill)
 						end
 					end
 					if pass == 2 and breakdown then
-						t_insert(breakdown[damageType], s_format("= %d to %d", damageTypeHitMin, damageTypeHitMax))
+						t_insert(breakdown[damageType], s_format("= %d", damageTypeHitAvg))
 					end
 
 					-- Beginning of Leech Calculation for this DamageType
@@ -2669,17 +2646,12 @@ function calcs.offence(env, actor, activeSkill)
 				if pass == 1 then
 					output[damageType.."CritAverage"] = damageTypeHitAvg
 					totalCritAvg = totalCritAvg + damageTypeHitAvg
-					totalCritMin = totalCritMin + damageTypeHitMin
-					totalCritMax = totalCritMax + damageTypeHitMax
 				else
 					if env.mode == "CALCS" then
-						output[damageType.."Min"] = damageTypeHitMin
-						output[damageType.."Max"] = damageTypeHitMax
+						output[damageType.."Damage"] = damageTypeHitAvg
 					end
 					output[damageType.."HitAverage"] = damageTypeHitAvg
 					totalHitAvg = totalHitAvg + damageTypeHitAvg
-					totalHitMin = totalHitMin + damageTypeHitMin
-					totalHitMax = totalHitMax + damageTypeHitMax
 				end
 			end
 			if skillData.lifeLeechPerUse then
@@ -2699,8 +2671,7 @@ function calcs.offence(env, actor, activeSkill)
 			output.EnergyShieldLeech = output.EnergyShieldLeech + energyShieldLeechTotal * portion
 			output.ManaLeech = output.ManaLeech + manaLeechTotal * portion
 		end
-		output.TotalMin = totalHitMin
-		output.TotalMax = totalHitMax
+		output.TotalAvg = totalHitAvg
 
 		if skillModList:Flag(skillCfg, "ElementalEquilibrium") and not env.configInput.EEIgnoreHitDamage and (output.FireHitAverage + output.ColdHitAverage + output.LightningHitAverage > 0) then
 			-- Update enemy hit-by-damage-type conditions
@@ -2808,13 +2779,6 @@ function calcs.offence(env, actor, activeSkill)
 		if breakdown then
 			if output.CritEffect ~= 1 then
 				breakdown.AverageHit = { }
-				if skillModList:Flag(skillCfg, "LuckyHits") then
-					t_insert(breakdown.AverageHit, s_format("(1/3) x %d + (2/3) x %d = %.1f ^8(average from non-crits)", totalHitMin, totalHitMax, totalHitAvg))
-				end
-				if skillModList:Flag(skillCfg, "CritLucky") or skillModList:Flag(skillCfg, "LuckyHits") then
-					t_insert(breakdown.AverageHit, s_format("(1/3) x %d + (2/3) x %d = %.1f ^8(average from crits)", totalCritMin, totalCritMax, totalCritAvg))
-					t_insert(breakdown.AverageHit, "")
-				end
 				t_insert(breakdown.AverageHit, s_format("%.1f x (1 - %.4f) ^8(damage from non-crits)", totalHitAvg, output.CritChance / 100))
 				t_insert(breakdown.AverageHit, s_format("+ %.1f x %.4f ^8(damage from crits)", totalCritAvg, output.CritChance / 100))
 				t_insert(breakdown.AverageHit, s_format("= %.1f", output.AverageHit))
@@ -2890,7 +2854,7 @@ function calcs.offence(env, actor, activeSkill)
 			local PvpElemental1 = data.misc.PvpElemental1
 			local PvpElemental2 = data.misc.PvpElemental2
 
-			local percentageNonElemental = ((output["PhysicalHitAverage"] + output["ChaosHitAverage"]) / (totalHitMin + totalHitMax) * 2)
+			local percentageNonElemental = ((output["PhysicalHitAverage"] + output["ChaosHitAverage"]) / totalHitAvg)
 			local percentageElemental = 1 - percentageNonElemental
 			local portionNonElemental = (output.AverageHit / PvpTvalue / PvpNonElemental2 ) ^ PvpNonElemental1 * PvpTvalue * PvpNonElemental2 * percentageNonElemental
 			local portionElemental = (output.AverageHit / PvpTvalue / PvpElemental2 ) ^ PvpElemental1 * PvpTvalue * PvpElemental2 * percentageElemental

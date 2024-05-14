@@ -2046,8 +2046,7 @@ local result = {
 for _,sourceType in ipairs(DamageSourceTypes) do
 	for _,damageType in ipairs(DamageTypes) do
 		result[sourceType:lower().."_base_".. damageType:lower() .."_damage"] = {
-			skill(damageType.."Min", nil),
-			skill(damageType.."Max", nil),
+			skill(damageType.."Damage", nil),
 		}
 	end
 end

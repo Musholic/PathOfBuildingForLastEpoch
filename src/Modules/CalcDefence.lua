@@ -1364,8 +1364,8 @@ function calcs.buildDefenceEstimations(env, actor)
 				enemyOverwhelm = tonumber(env.configPlaceholder["enemy"..damageType.."enemyOverwhelm"]) or 0
 			end
 			
-			-- Add min-max enemy damage from mods
-			enemyDamage = enemyDamage + (enemyDB:Sum("BASE", enemyCfg, (damageType.."Min")) + enemyDB:Sum("BASE", enemyCfg, (damageType.."Max"))) / 2
+			-- Add enemy damage from mods
+			enemyDamage = enemyDamage + enemyDB:Sum("BASE", enemyCfg, (damageType.."Damage"))
 			
 			-- Conversion and Gain As Mods
 			local conversionTotal = 0

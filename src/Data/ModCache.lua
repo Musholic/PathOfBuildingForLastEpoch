@@ -1298,7 +1298,7 @@ c["+(90-245) Armor"]={nil,"+(90-245) Armor "}
 c["+(92-108) Spell Void Damage"]={nil,"+(92-108) Spell Void Damage "}
 c["+(93-130) Dodge Rating"]={nil,"+(93-130) Dodge Rating "}
 c["+(93-153)% Freeze Rate Multiplier for Minions affected by Dread Shade"]={nil,"+(93-153)% Freeze Rate Multiplier for Minions affected by Dread Shade "}
-c["+0.2% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=0.2}}," more  "}
+c["+0.2% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=0.2}},nil}
 c["+0.2% Double Damage Chance per Curse"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=0.2}}," Double  Chance per Curse "}
 c["+0.25 Ward Gained Per Charge"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=0.25}},"  Gained Per Charge "}
 c["+0.25 Ward Gained Per Charge +1 Cooldown (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=0.25}},"  Gained Per Charge +1 Cooldown (seconds) "}
@@ -1313,7 +1313,7 @@ c["+0.3% Cold Damage Leech"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",typ
 c["+0.3% Fire Damage Leech"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=0.3}},"  Leech "}
 c["+0.3% Lightning Damage Leech"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=0.3}},"  Leech "}
 c["+0.5 Duration Extension (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=0.5}},"  Extension (seconds) "}
-c["+0.5% Damage per Level of Specialised Buff Skills"]={{[1]={[1]={type="Multiplier",var="Level"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=0.5}}," more   of Specialised Buff Skills "}
+c["+0.5% Damage per Level of Specialised Buff Skills"]={{[1]={[1]={type="Multiplier",var="Level"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=0.5}},"   of Specialised Buff Skills "}
 c["+0.5% Elemental Damage per stack of Armor Shred"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=0.5},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="BASE",value=0.5},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=0.5}},"  per stack of Armor Shred "}
 c["+0.5% Elemental Damage per stack of Armor Shred 7% Maximum Damage Boost per stack of Runeweave"]={{[1]={[1]={skillId="Ailment_DamageBoost",type="SkillId"},flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=0.5},[2]={[1]={skillId="Ailment_DamageBoost",type="SkillId"},flags=0,keywordFlags=0,name="ColdDamage",type="BASE",value=0.5},[3]={[1]={skillId="Ailment_DamageBoost",type="SkillId"},flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=0.5}},"  per stack of Armor Shred 7% Maximum  per stack of Runeweave "}
 c["+0.5% Fissure Health Leech"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=0.5}}," Fissure  Leech "}
@@ -1392,7 +1392,7 @@ c["+1 Armour Shred Stacks"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BA
 c["+1 Armour Shred Stacks -3 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=1}},"  Shred Stacks -3 Mana Cost "}
 c["+1 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=1}},nil}
 c["+1 Axe Throw every second while channelling Warpath"]={{}," Axe Throw every second   "}
-c["+1 Base Damage converted to Lightning for Swipe (3 second cooldown)"]={{[1]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," converted to Lightning for  (3 second cooldown) "}
+c["+1 Base Damage converted to Lightning for Swipe (3 second cooldown)"]={{[1]={[1]={skillId="sw43",type="SkillId"},flags=0,keywordFlags=0,name="DamageConvertToLightning",type="BASE",value=1}},"   for  (3 second cooldown) "}
 c["+1 Belt Stat Multiplier for 1 second on Potion Use"]={{}," Belt Stat Multiplier for 1 second on Potion Use "}
 c["+1 Berserk Stacks On Hit While Berserk"]={{}," Berserk Stacks  While Berserk "}
 c["+1 Berserk Stacks On Hit While Berserk 10 Maximum Stacks"]={{}," Berserk Stacks  While Berserk 10 Maximum Stacks "}
@@ -1403,8 +1403,8 @@ c["+1 Bleed and Poison Chance converted to Frostbite Chance with Puncture"]={{[1
 c["+1 Bleeding Fury Max Stacks"]={{}," ing Fury Max Stacks "}
 c["+1 Bone Armor Duration"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=1}}," Bone  Duration "}
 c["+1 Bone Armor Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=1}}," Bone  Duration (seconds) "}
-c["+1 Bow Damage Per 3 Dex"]={{[1]={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per 3 Dex "}
-c["+1 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={flags=2048,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},nil}
+c["+1 Bow Damage Per 3 Dex"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Per 3 Dex "}
+c["+1 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},nil}
 c["+1 Can't Summon Skeletons"]={{}," Can't s "}
 c["+1 Chance for Chthonic Fissures to cast Flame Whip instead of releasing Spirits"]={{}," Chance for s to cast Flame Whip instead of releasing Spirits "}
 c["+1 Chance for Downed Minions to Revive after 2 seconds (10 second cooldown)"]={{}," Chance for Downed s to Revive after 2 seconds (10 second cooldown) "}
@@ -1437,7 +1437,7 @@ c["+1 Charges -50% Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name=
 c["+1 Charges Gained When Hit"]={{}," Charges Gained When Hit "}
 c["+1 Chill stacks on Cursed Rares and Bosses"]={{},"  stacks on Cursed Rares and Bosses "}
 c["+1 Chthonic Fissure Tree applies to Flame Whip"]={{},"  Tree applies to Flame Whip "}
-c["+1 Cold Damage For Cold Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="ColdMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="ColdMax",type="BASE",value=1}}," For Cold  Attacks "}
+c["+1 Cold Damage For Cold Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=1}},"  For Cold  Attacks "}
 c["+1 Cold Level of Skills"]={{}," Cold Level of Skills "}
 c["+1 Companion Summon Limit"]={{}," Companion Summon Limit "}
 c["+1 Companion Summon Limit You and your minions deal 50% increased melee damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}}}}," Companion Summon Limit You and your s deal 50% increased  "}
@@ -1453,10 +1453,10 @@ c["+1 Critical Vulnerability Stacks 50% Increased Crit Chance"]={{[1]={[1]={skil
 c["+1 Crossbow Mercenaries"]={{}," Crossbow Mercenaries "}
 c["+1 Current Health is set to Endurance Threshold"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}}," Current  is set to Endurance Threshold "}
 c["+1 Cursed Ground Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}}," Cursed Ground  (seconds) "}
-c["+1 Damage Per Dusk Shroud"]={{[1]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per  "}
-c["+1 Damage Reflected"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Reflected "}
-c["+1 Damage Reflected Per Point Of Attunement"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Reflected Per Point Of  "}
-c["+1 Damage over Time Spell Level of Skills"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," over Time  Level of Skills "}
+c["+1 Damage Per Dusk Shroud"]={{[1]={[1]={skillId="Ailment_DuskShroud",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Per  "}
+c["+1 Damage Reflected"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Reflected "}
+c["+1 Damage Reflected Per Point Of Attunement"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Reflected Per Point Of Attunement "}
+c["+1 Damage over Time Spell Level of Skills"]={{[1]={flags=4352,keywordFlags=0,name="Damage",type="BASE",value=1}},"   Level of Skills "}
 c["+1 Damned Stacks"]={{},"  Stacks "}
 c["+1 Damned Stacks Per Second"]={{},"  Stacks Per Second "}
 c["+1 Dark Shackle Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}}," Dark Shackle  (Seconds) "}
@@ -1499,17 +1499,17 @@ c["+1 Fault Lines"]={{}," Fault Lines "}
 c["+1 Fault Lines +4 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=1}}," Fault Lines +4  "}
 c["+1 Fear Duration (seconds)"]={{[1]={[1]={skillId="Ailment_Fear",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}},"   (seconds) "}
 c["+1 Fear For Duration (seconds)"]={{[1]={[1]={skillId="Ailment_Fear",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}},"  For  (seconds) "}
-c["+1 Fire Damage For Fire Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=1}}," For Fire  Attacks "}
-c["+1 Fire Damage For Fire Melee Attacks +1 Cold Damage For Cold Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=1}}," For Fire  Attacks +1  For Cold Melee Attacks "}
-c["+1 Fire Damage Per Active Sigil"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=1}}," Per Active Sigil "}
-c["+1 Fire Damage per Attunement with a Mace"]={{[1]={[1]={stat="Att",type="PerStat"},flags=0,keywordFlags=0,name="FireMin",type="BASE",value=1},[2]={[1]={stat="Att",type="PerStat"},flags=0,keywordFlags=0,name="FireMax",type="BASE",value=1}},"  with a Mace "}
+c["+1 Fire Damage For Fire Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=1}},"  For Fire  Attacks "}
+c["+1 Fire Damage For Fire Melee Attacks +1 Cold Damage For Cold Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=1}},"  For Fire  Attacks +1 Cold Damage For Cold Melee Attacks "}
+c["+1 Fire Damage Per Active Sigil"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=1}},"  Per Active Sigil "}
+c["+1 Fire Damage per Attunement with a Mace"]={{[1]={[1]={stat="Att",type="PerStat"},flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=1}},"   with a Mace "}
 c["+1 Fire Level of Skills"]={{}," Fire Level of Skills "}
 c["+1 Fire Res Shred Stacks"]={{}," Fire Res Shred Stacks "}
 c["+1 Fire Shred Stacks On Pass Through"]={{}," Fire Shred Stacks On Pass Through "}
 c["+1 Fissure Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}}," Fissure  (Seconds) "}
 c["+1 Fissure Duration (Seconds) +1 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}}," Fissure  (Seconds) +1 Mana Cost "}
-c["+1 Fissure Spell Damage per 2% Ignite Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 2%  Chance "}
-c["+1 Fissure Spell Damage per 2% Ignite Chance 5% Fissure Increased Stun Chance per 2% Ignite Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 2%  Chance 5% Fissure Increased Stun Chance per 2%  "}
+c["+1 Fissure Spell Damage per 2% Ignite Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}}," Fissure   per 2%  Chance "}
+c["+1 Fissure Spell Damage per 2% Ignite Chance 5% Fissure Increased Stun Chance per 2% Ignite Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}}," Fissure   per 2%  Chance 5% Fissure Increased Stun Chance per 2% Ignite Chance "}
 c["+1 Flame Reave is a circle"]={{},"  is a circle "}
 c["+1 Flame Ward"]={{},"  "}
 c["+1 Flurry"]={{},"  "}
@@ -1522,7 +1522,7 @@ c["+1 Frailty Stacks on Screech"]={{},"  Stacks on Screech "}
 c["+1 Freeze Rate Per Int"]={{}," Freeze Rate Per Int "}
 c["+1 Freeze Rate Per Level"]={{}," Freeze Rate  "}
 c["+1 Freeze Rate per 1% Cold Res"]={{}," Freeze Rate per 1% Cold Res "}
-c["+1 Freezing Grasp Damage per Vitality"]={{[1]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
+c["+1 Freezing Grasp Damage per Vitality"]={{[1]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Freezing Grasp   "}
 c["+1 Freezing Grasp Freeze Rate per Vitality"]={{}," Freezing Grasp Freeze Rate  "}
 c["+1 Freezing Grasp Freeze Rate per Vitality +1 Freezing Grasp Damage per Vitality"]={{[1]={[1]={stat="Vit",type="PerStat"},[2]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Freezing Grasp Freeze Rate  +1 Freezing Grasp   "}
 c["+1 Frenzy Duration (seconds)"]={{[1]={[1]={skillId="Ailment_Frenzy",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}},"   (seconds) "}
@@ -1535,7 +1535,7 @@ c["+1 Gain Runic Energy While At 3 Runes"]={{}," Gain Runic Energy While At 3 Ru
 c["+1 Gain Searing Blades when you use a Melee Attack and hit at least one enemy"]={{}," Gain Searing Blades when you use a  Attack and hit at least one enemy "}
 c["+1 Gain a stack of Golden Aegis each second"]={{}," Gain a stack of Golden Aegis each second "}
 c["+1 Gain a stack of Void Barrier every 3 seconds while above your endurance threshold"]={{}," Gain a stack of  every 3 seconds while above your endurance threshold "}
-c["+1 Global Melee Damage per Stack"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per Stack "}
+c["+1 Global Melee Damage per Stack"]={{[1]={[1]={type="Global"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per Stack "}
 c["+1 Hail of Arrows Damage converted to Poison"]={{[1]={[1]={skillId="exvol8",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}},"   converted to Poison "}
 c["+1 Haste Duration (seconds)"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}},"   (seconds) "}
 c["+1 Heal all totems and give them 2 seconds of Damage Immunity when you use a Potion"]={{}," Heal all totems and give them 2 seconds of  when you use a Potion "}
@@ -1550,7 +1550,7 @@ c["+1 Ignite Shock and Chill Chance converted to Fire Lightning and Cold Resista
 c["+1 Ignite Stacks"]={{},"  Stacks "}
 c["+1 Ignite Stacks Applied"]={{},"  Stacks Applied "}
 c["+1 Ignite Stacks Every 0.5 Seconds"]={{},"  Stacks Every 0.5 Seconds "}
-c["+1 Increased Damage per 100% Increased Movement Speed"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 100% Increased  "}
+c["+1 Increased Damage per 100% Increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Increased  per 100% Increased Movement Speed "}
 c["+1 Increased Vines Summoned when you directly cast Summon Vines"]={{}," Increased Vines Summoned when you directly cast Summon Vines "}
 c["+1 Increased health regen if you have stunned an enemy recently"]={{[1]={[1]={type="Condition",var="StunnedEnemyRecently"},flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=1}}," Increased   "}
 c["+1 Increases to Fire Aura Area also apply to Glyph of Dominion"]={{}," Increases to Fire Aura  also apply to  "}
@@ -1558,7 +1558,7 @@ c["+1 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=
 c["+1 Intelligence Equals Strength"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=1}},"  Equals Strength "}
 c["+1 Intelligence with a Catalyst"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=1}},"  with a Catalyst "}
 c["+1 Intelligence with a Catalyst -8% Bonus Damage from Crits with a Catalyst"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=1}},"  with a Catalyst -8% Bonus Damage from Crits with a Catalyst "}
-c["+1 Javelin Damage Converted To Lightning"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Converted To Lightning "}
+c["+1 Javelin Damage Converted To Lightning"]={{[1]={[1]={skillId="javeli",type="SkillId"},flags=0,keywordFlags=0,name="DamageConvertToLightning",type="BASE",value=1}},nil}
 c["+1 Javelin splits on hit into 2 piercing spears plus 1 additional spear per 12 dexterity"]={{},"  splits  into 2 piercing spears plus 1 additional spear  "}
 c["+1 Judgement"]={{},"  "}
 c["+1 Lethal Mirage"]={{},"  "}
@@ -1567,11 +1567,11 @@ c["+1 Lightning Blast Additional Chains on Glyph"]={{},"  Additional Chains on G
 c["+1 Lightning Blast Additional Chains on Glyph 2 Mana Consumed"]={{[1]={[1]={skillId="lb23il",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=1}},"  Additional Chains on Glyph 2  Consumed "}
 c["+1 Lightning Blasts While Travelling"]={{}," s While Travelling "}
 c["+1 Lightning Bolt Targets"]={{}," Lightning Bolt Targets "}
-c["+1 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," For Lightning  Attacks "}
-c["+1 Lightning Damage For Lightning Melee Attacks +1 Fire Damage For Fire Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," For Lightning  Attacks +1  For Fire Melee Attacks "}
-c["+1 Lightning Damage For Lightning Melee Attacks +1 Fire Damage For Fire Melee Attacks +1 Cold Damage For Cold Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," For Lightning  Attacks +1  For Fire Melee Attacks +1 Cold Damage For Cold Melee Attacks "}
-c["+1 Lightning Damage Per Charge"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," Per Charge "}
-c["+1 Lightning Damage Per Charge +1 Mana Cost Per Charge"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," Per Charge +1  Per Charge "}
+c["+1 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  For Lightning  Attacks "}
+c["+1 Lightning Damage For Lightning Melee Attacks +1 Fire Damage For Fire Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  For Lightning  Attacks +1 Fire Damage For Fire Melee Attacks "}
+c["+1 Lightning Damage For Lightning Melee Attacks +1 Fire Damage For Fire Melee Attacks +1 Cold Damage For Cold Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  For Lightning  Attacks +1 Fire Damage For Fire Melee Attacks +1 Cold Damage For Cold Melee Attacks "}
+c["+1 Lightning Damage Per Charge"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  Per Charge "}
+c["+1 Lightning Damage Per Charge +1 Mana Cost Per Charge"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  Per Charge +1 Mana Cost Per Charge "}
 c["+1 Lightning Level of Skills"]={{}," Lightning Level of Skills "}
 c["+1 Locusts On Hive Hit"]={{}," Locusts On Hive Hit "}
 c["+1 Lunge Charges"]={{},"  Charges "}
@@ -1579,7 +1579,7 @@ c["+1 Lunge Charges +15% Increased Cooldown Length"]={{},"  Charges +15% Increas
 c["+1 Lunge Does Not Require a Target"]={{},"  Does Not Require a Target "}
 c["+1 Maelstrom Stacks On Dive"]={{},"  Stacks On Dive "}
 c["+1 Maelstrom Stacks On Dive 20% Mana As Rage Cost"]={{[1]={[1]={skillId="mas54",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=1}},"  Stacks On Dive 20%  As Rage Cost "}
-c["+1 Maelstrom base damage converted to Necrotic"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," converted to Necrotic "}
+c["+1 Maelstrom base damage converted to Necrotic"]={{[1]={[1]={skillId="mas54",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}},"  base  converted to Necrotic "}
 c["+1 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=1}},nil}
 c["+1 Mana Cost Per Charge"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=1}},"  Per Charge "}
 c["+1 Mana Gain"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=1}},"  Gain "}
@@ -1625,35 +1625,34 @@ c["+1 Maximum Vale Spirits Cast Entangling Roots With Spirit Thorns +30 Rage Gai
 c["+1 Maximum Wolves"]={{}," Maximum Wolves "}
 c["+1 Maximum Wolves +1 Maximum Companions"]={{}," Maximum Wolves +1 Maximum Companions "}
 c["+1 Maximum Wraiths"]={{}," Maximum Wraiths "}
-c["+1 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=1},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=1}},nil}
-c["+1 Melee Cold Damage From Physical"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=1},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=1}}," From Physical "}
+c["+1 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=1}},nil}
+c["+1 Melee Cold Damage From Physical"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=1}},"  From Physical "}
 c["+1 Melee Critical Strike Chance while in Dancing Strikes' Fighting Arena"]={{[1]={[1]={skillId="dacn33",type="SkillId"},flags=512,keywordFlags=0,name="CritChance",type="BASE",value=1}},"   while in ' Fighting Arena "}
-c["+1 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
-c["+1 Melee Damage Per 2 Attunement"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per 2  "}
-c["+1 Melee Damage Per 2 Attunement +20 Freeze Rate With Melee Strikes"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per 2  +20 Freeze Rate With  Strikes "}
-c["+1 Melee Damage Per Strength"]={{[1]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
-c["+1 Melee Damage per 4 Spell Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 4   "}
-c["+1 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=1},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=1}},nil}
+c["+1 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}},nil}
+c["+1 Melee Damage Per 2 Attunement"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Per 2 Attunement "}
+c["+1 Melee Damage Per 2 Attunement +20 Freeze Rate With Melee Strikes"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Per 2 Attunement +20 Freeze Rate With  Strikes "}
+c["+1 Melee Damage Per Strength"]={{[1]={[1]={stat="Str",type="PerStat"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}},nil}
+c["+1 Melee Damage per 4 Spell Damage"]={{[1]={flags=768,keywordFlags=0,name="Damage",type="BASE",value=1}},"  per 4  Damage "}
+c["+1 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=1}},nil}
 c["+1 Melee Level of Skills"]={{},"  Level of Skills "}
-c["+1 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=1}},nil}
-c["+1 Melee Lightning Damage From Physical"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," From Physical "}
-c["+1 Melee Lightning Damage From Physical +1 Melee Cold Damage From Physical"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," From Physical +1   From Physical "}
-c["+1 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},nil}
+c["+1 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},nil}
+c["+1 Melee Lightning Damage From Physical"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  From Physical "}
+c["+1 Melee Lightning Damage From Physical +1 Melee Cold Damage From Physical"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  From Physical +1  Cold Damage From Physical "}
+c["+1 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},nil}
 c["+1 Melee Poison Level of Skills"]={{},"   Level of Skills "}
 c["+1 Meteor"]={{},"  "}
-c["+1 Meteor Base Damage Converted to Lightning"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Converted to Lightning "}
+c["+1 Meteor Base Damage Converted to Lightning"]={{[1]={[1]={skillId="me27",type="SkillId"},flags=0,keywordFlags=0,name="DamageConvertToLightning",type="BASE",value=1}},"  Base   "}
 c["+1 Minimum Possible Aftershocks"]={{}," Minimum Possible Afters "}
-c["+1 Minion Bow Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=1}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=1}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=1}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=1}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=1}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=1}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=1}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=1}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=1}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=1}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=1}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=1}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=1}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}}}," Leeched as  "}
-c["+1 Minion Bow Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}}}},"  Bow  "}
-c["+1 Minion Bow Physical Damage 5% Increased Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}}}},"  Bow  5% Increased Minion Physical Damage "}
+c["+1 Minion Bow Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=1}}}},"   Leeched as Health "}
+c["+1 Minion Bow Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}}}},nil}
 c["+1 Minion Critical Strike Avoidance"]={{},"  Critical Strike Avoidance "}
-c["+1 Minion Damage over Time Level of Skills"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=1}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=1}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=1}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=1}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=1}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=1}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=1}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=1}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=1}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=1}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=1}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=1}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=1}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}}}," over Time Level of Skills "}
-c["+1 Minion Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=1}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=1}}}},nil}
+c["+1 Minion Damage over Time Level of Skills"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=4096,keywordFlags=0,name="Damage",type="BASE",value=1}}}},"   Level of Skills "}
+c["+1 Minion Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=1}}}},nil}
 c["+1 Minion Level of Skills"]={{},"  Level of Skills "}
 c["+1 Minion Melee Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}}}},nil}
-c["+1 Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticMin",type="BASE",value=1}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticMax",type="BASE",value=1}}}},nil}
-c["+1 Minion Spell Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}}}," Leeched as  "}
-c["+1 Minion Spell Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}}}},"  Spell  "}
+c["+1 Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=1}}}},nil}
+c["+1 Minion Spell Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}}},"  Spell  Leeched as Health "}
+c["+1 Minion Spell Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}}}},nil}
 c["+1 Minion Stun Immunity"]={{},"  Stun Immunity "}
 c["+1 Mirror Images On Arrival"]={{}," Mirror Images On Arrival "}
 c["+1 Mirror Images On Arrival -10% Mirror Image Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}}," Mirror Images On Arrival -10% Mirror Image  "}
@@ -1671,14 +1670,14 @@ c["+1 Once you have one Rune for Runic Invocation your runes cannot change until
 c["+1 Once you have three Runes for Runic Invocation your runes cannot change until they are consumed"]={{}," Once you have three Runes for  your runes cannot change until they are consumed "}
 c["+1 Once you have two Runes for Runic Invocation your runes cannot change until they are consumed"]={{}," Once you have two Runes for  your runes cannot change until they are consumed "}
 c["+1 Physical Bleed Conversion"]={{}," Physical  Conversion "}
-c["+1 Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},nil}
-c["+1 Physical Damage per Dexterity with a Sword"]={{[1]={[1]={stat="Dex",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={[1]={stat="Dex",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},"  with a Sword "}
-c["+1 Physical Damage per Dexterity with a Sword +1 Void Damage per Vitality with an Axe"]={{[1]={[1]={stat="Dex",type="PerStat"},[2]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={[1]={stat="Dex",type="PerStat"},[2]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},"  with a Sword +1 Void   with an Axe "}
-c["+1 Physical Damage per Dexterity with a Sword +1 Void Damage per Vitality with an Axe +1 Fire Damage per Attunement with a Mace"]={{[1]={[1]={stat="Dex",type="PerStat"},[2]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={[1]={stat="Dex",type="PerStat"},[2]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},"  with a Sword +1 Void   with an Axe +1 Fire Damage per Attunement with a Mace "}
+c["+1 Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},nil}
+c["+1 Physical Damage per Dexterity with a Sword"]={{[1]={[1]={stat="Dex",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},"   with a Sword "}
+c["+1 Physical Damage per Dexterity with a Sword +1 Void Damage per Vitality with an Axe"]={{[1]={[1]={stat="Dex",type="PerStat"},[2]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},"   with a Sword +1 Void Damage  with an Axe "}
+c["+1 Physical Damage per Dexterity with a Sword +1 Void Damage per Vitality with an Axe +1 Fire Damage per Attunement with a Mace"]={{[1]={[1]={stat="Dex",type="PerStat"},[2]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},"   with a Sword +1 Void Damage  with an Axe +1 Fire Damage per Attunement with a Mace "}
 c["+1 Physical Res Shred Stacks"]={{}," Physical Res Shred Stacks "}
 c["+1 Physical Skills"]={{}," Physical Skills "}
-c["+1 Physical Spell Damage per Strength from Nearby Ally"]={{[1]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},"  from Nearby Ally "}
-c["+1 Player Poison Damage Applies to Skeleton Rogues"]={{[1]={flags=0,keywordFlags=0,name="PoisonMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="PoisonMax",type="BASE",value=1}}," Applies to  Rogues "}
+c["+1 Physical Spell Damage per Strength from Nearby Ally"]={{[1]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}}," Physical    from Nearby Ally "}
+c["+1 Player Poison Damage Applies to Skeleton Rogues"]={{[1]={[1]={includeTransfigured=true,skillName="Summon Skeleton",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}}}," Player   Applies to  Rogues "}
 c["+1 Pool Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}}," Pool  (seconds) "}
 c["+1 Potion Critical Strike Avoidance"]={{}," Potion Critical Strike Avoidance "}
 c["+1 Potion Health Converted to Ward"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}}," Potion  Converted to Ward "}
@@ -1707,8 +1706,8 @@ c["+1 Sacrifice Chain Targets"]={{},"  Chain Targets "}
 c["+1 Sacrifice Chain Targets +13% Bleed Chance"]={{[1]={[1]={skillId="sf31rc",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=1}},"  Chain Targets +13%  "}
 c["+1 Seconds of Haste when you proc both of Zeurial's Hunt's effects within 2 seconds"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=1}}," Seconds of  when you proc both of Zeurial's Hunt's s within 2 seconds "}
 c["+1 Shadow Dagger Stacks"]={{}," Shadow Dagger Stacks "}
-c["+1 Shared Spell Damage Buff"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Buff "}
-c["+1 Shared Spell Damage Buff 8 Gladiator of Lagon Duration (seconds)"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Buff 8 Gladiator of Lagon  (seconds) "}
+c["+1 Shared Spell Damage Buff"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}}," Shared   Buff "}
+c["+1 Shared Spell Damage Buff 8 Gladiator of Lagon Duration (seconds)"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}}," Shared   Buff 8 Gladiator of Lagon Duration (seconds) "}
 c["+1 Shatter Strike"]={{},"  "}
 c["+1 Shields"]={{}," Shields "}
 c["+1 Shurikens Thrown"]={{},"  Thrown "}
@@ -1726,29 +1725,29 @@ c["+1 Slow Stacks on Screech"]={{},"  Stacks on Screech "}
 c["+1 Slow Stacks on Screech +1 Frailty Stacks on Screech"]={{},"  Stacks on Screech +1 Frailty Stacks on Screech "}
 c["+1 Snap Freeze"]={{},"  "}
 c["+1 Spark Charge to all targets around the destination when you Teleport"]={{},"  to all targets around the destination when you Teleport "}
-c["+1 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
-c["+1 Spell Damage Per 2 Attunement While Leaping"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per 2  While Leaping "}
-c["+1 Spell Damage Per 2 Attunement While Leaping 30% Chance For Storm Bolt To Reset Fury Leap's Cooldown"]={{[1]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per 2  While Leaping 30% Chance For Storm Bolt To Reset 's Cooldown "}
-c["+1 Spell Damage Per 20% Freeze Rate Multiplier"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per 20% Freeze Rate Multiplier "}
-c["+1 Spell Damage Per 3 Melee Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," Per 3  "}
-c["+1 Spell Damage per 10% increased Healing Effectiveness"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 10% increased  iveness "}
-c["+1 Spell Damage per 20 Max Mana"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 20 Max  "}
-c["+1 Spell Damage per 20 Max Mana -2 Extra Projectiles"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 20 Max  -2 Extra Projectiles "}
-c["+1 Spell Damage per 20 max mana"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 20 max  "}
-c["+1 Spell Damage per 20 max mana +13% Cast Speed"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 20 max  +13% Cast Speed "}
-c["+1 Spell Damage per 3 Melee Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 3  "}
-c["+1 Spell Damage per 5% Increased Healing Effectivenes"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," per 5% Increased  ivenes "}
-c["+1 Spell Damage per Strength"]={{[1]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
-c["+1 Spell Damage with Runic Invocation per 10 Armour, Dodge Rating, or Ward, whichever is lowest."]={{[1]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," with  , Dodge Rating, or , whichever is lowest. "}
-c["+1 Spell Damage with Smite per 5 Missing Mana"]={{[1]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," with  per 5 Missing  "}
+c["+1 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},nil}
+c["+1 Spell Damage Per 2 Attunement While Leaping"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   Per 2 Attunement While Leaping "}
+c["+1 Spell Damage Per 2 Attunement While Leaping 30% Chance For Storm Bolt To Reset Fury Leap's Cooldown"]={{[1]={[1]={skillId="fl13",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   Per 2 Attunement While Leaping 30% Chance For Storm Bolt To Reset 's Cooldown "}
+c["+1 Spell Damage Per 20% Freeze Rate Multiplier"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   Per 20% Freeze Rate Multiplier "}
+c["+1 Spell Damage Per 3 Melee Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   Per 3 Melee Damage "}
+c["+1 Spell Damage per 10% increased Healing Effectiveness"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per 10% increased  Effectiveness "}
+c["+1 Spell Damage per 20 Max Mana"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per 20 Max Mana "}
+c["+1 Spell Damage per 20 Max Mana -2 Extra Projectiles"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per 20 Max Mana -2 Extra Projectiles "}
+c["+1 Spell Damage per 20 max mana"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per 20 max mana "}
+c["+1 Spell Damage per 20 max mana +13% Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per 20 max mana +13% Cast Speed "}
+c["+1 Spell Damage per 3 Melee Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per 3 Melee Damage "}
+c["+1 Spell Damage per 5% Increased Healing Effectivenes"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   per 5% Increased  Effectivenes "}
+c["+1 Spell Damage per Strength"]={{[1]={[1]={stat="Str",type="PerStat"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},nil}
+c["+1 Spell Damage with Runic Invocation per 10 Armour, Dodge Rating, or Ward, whichever is lowest."]={{[1]={[1]={div=10,stat="Armour",type="PerStat"},[2]={skillId="rn7iv",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   with  , Dodge Rating, or Ward, whichever is lowest. "}
+c["+1 Spell Damage with Smite per 5 Missing Mana"]={{[1]={[1]={skillId="sm87r4",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"   with  per 5 Missing Mana "}
 c["+1 Spell Elemental Level of Skills"]={{},"  Elemental Level of Skills "}
 c["+1 Spell Fire Level of Skills"]={{},"  Fire Level of Skills "}
-c["+1 Spell Lightning Damage per 10% Shock Chance"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=1},[2]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=1}}," per 10%  Chance "}
+c["+1 Spell Lightning Damage per 10% Shock Chance"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=1}},"  per 10%  Chance "}
 c["+1 Spell Lightning Level of Skills"]={{},"  Lightning Level of Skills "}
-c["+1 Spell Necrotic Damage per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=1},[2]={[1]={stat="Int",type="PerStat"},flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=1}},nil}
+c["+1 Spell Necrotic Damage per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=1}},nil}
 c["+1 Spell Necrotic Level of Skills"]={{},"  Necrotic Level of Skills "}
-c["+1 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}},nil}
-c["+1 Spell Physical Damage per 3 Attunement"]={{[1]={flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=1}}," per 3  "}
+c["+1 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},nil}
+c["+1 Spell Physical Damage per 3 Attunement"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=1}},"  per 3 Attunement "}
 c["+1 Spell Poison Level of Skills"]={{},"   Level of Skills "}
 c["+1 Spell Void Level of Skills"]={{},"  Void Level of Skills "}
 c["+1 Spriggan Form"]={{},"  "}
@@ -1773,22 +1772,24 @@ c["+1 Swipe"]={{},"  "}
 c["+1 Temporary Minion Immunity for Infernal Shade"]={{}," Temporary  Immunity for  "}
 c["+1 The Cuckoo may permanently change into a random exalted item when a nearby enemy dies"]={{}," The Cuckoo may permanently change into a random exalted item when a nearby enemy dies "}
 c["+1 Thorn Volley Projectiles"]={{[1]={flags=0,keywordFlags=0,name="ProjectileCount",type="BASE",value=1}}," Thorn Volley  "}
-c["+1 Throwing Damage for Shield Throw per 10 Damage Reflected to Attackers"]={{[1]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={[1]={skillId="st31io",type="SkillId"},flags=1024,keywordFlags=64,name="PoisonMax",type="BASE",value=1}}," for  per 10  Reflected to Attackers "}
-c["+1 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireMin",type="BASE",value=1},[2]={flags=1024,keywordFlags=0,name="FireMax",type="BASE",value=1}},nil}
-c["+1 Throwing Fire Damage with Burning Daggers per 2% increased chance to find potions"]={{[1]={flags=1024,keywordFlags=0,name="FireMin",type="BASE",value=1},[2]={flags=1024,keywordFlags=0,name="FireMax",type="BASE",value=1}}," with Burning Daggers per 2% increased chance to find potions "}
+c["+1 Throwing Damage for Shield Throw per 10 Damage Reflected to Attackers"]={{[1]={[1]={skillId="st31io",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Throwing  for  per 10 Damage Reflected to Attackers "}
+c["+1 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireDamage",type="BASE",value=1}},nil}
+c["+1 Throwing Fire Damage with Burning Daggers per 2% increased chance to find potions"]={{[1]={flags=1024,keywordFlags=0,name="FireDamage",type="BASE",value=1}},"  with Burning Daggers per 2% increased chance to find potions "}
 c["+1 Throwing Level of Skills"]={{}," Throwing Level of Skills "}
 c["+1 Throwing an Acid Flask consumes a potion in order to throw an additional flask that deals more damage"]={{[1]={[1]={skillId="aacfl",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Throwing an  consumes a potion in order to throw an additional flask that deals more  "}
 c["+1 Time Rot Stacks"]={{},"  Stacks "}
 c["+1 Time Rot Stacks For Next Throwing"]={{},"  Stacks For Next Throwing "}
 c["+1 Totem Level of Skills"]={{},"tem Level of Skills "}
-c["+1 Totem Melee Damage on Hit"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
-c["+1 Totem Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
-c["+1 Totem Spell Damage on Hit"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=1},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=1},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=1},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=1},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=1},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=1},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=1},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=1},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=1},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=1},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=1},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=1},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=1},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=1}},nil}
+c["+1 Totem Melee Damage on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="Damage",type="BASE",value=1}},"tem   "}
+c["+1 Totem Melee Damage on Hit +1 Totem Spell Damage on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="Damage",type="BASE",value=1}},"tem   +1 Totem Spell Damage on Hit "}
+c["+1 Totem Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"tem   "}
+c["+1 Totem Spell Damage Tripled while using an Axe"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"tem   Tripled while using an Axe "}
+c["+1 Totem Spell Damage on Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=1}},"tem   on Hit "}
 c["+1 Using a potion grants you Falsewater Fury until you run out of mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=1}}," Using a potion grants you Falsewater Fury until you run out of  "}
 c["+1 Viscera gained per 2 seconds"]={{}," Viscera gained per 2 seconds "}
 c["+1 Vitality"]={{[1]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=1}},nil}
-c["+1 Void Damage Taken as Fire"]={{[1]={flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=1},[2]={flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=1}}," Taken as Fire "}
-c["+1 Void Damage per Vitality with an Axe"]={{[1]={[1]={stat="Vit",type="PerStat"},[2]={type="Condition",var="UsingAxe"},flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=1},[2]={[1]={stat="Vit",type="PerStat"},[2]={type="Condition",var="UsingAxe"},flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=1}},nil}
+c["+1 Void Damage Taken as Fire"]={{[1]={flags=0,keywordFlags=0,name="VoidDamageAsFire",type="BASE",value=1}},"  Taken  "}
+c["+1 Void Damage per Vitality with an Axe"]={{[1]={[1]={stat="Vit",type="PerStat"},[2]={type="Condition",var="UsingAxe"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=1}},nil}
 c["+1 Void Res Shred Stacks"]={{}," Void Res Shred Stacks "}
 c["+1 Volcanic Orb Base Damage Converted to Void"]={{[1]={[1]={skillId="vo54",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Base  Converted to Void "}
 c["+1 Wandering Spirits"]={{},"  "}
@@ -1918,7 +1919,7 @@ c["+1% Freeze Rate Multiplier Per 2 Attunement +1% Frostbite Cold Penetration Pe
 c["+1% Frostbite Cold Penetration Per 2 Attunement"]={{[1]={[1]={skillId="Ailment_Frostbite",type="SkillId"},flags=0,keywordFlags=0,name="ColdPenetration",type="BASE",value=1}},"   Per 2 Attunement "}
 c["+1% Glancing Blow Chance"]={{}," Glancing Blow Chance "}
 c["+1% Glancing Blow Chance 3 Health On Block Or Glancing Blow"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}}," Glancing Blow Chance 3  On Block Or Glancing Blow "}
-c["+1% Global Void Damage per Time Rot"]={{[1]={[1]={type="Global"},[2]={skillId="Ailment_TimeRot",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Void  per  "}
+c["+1% Global Void Damage per Time Rot"]={{[1]={[1]={type="Global"},[2]={skillId="Ailment_TimeRot",type="SkillId"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=1}},"   per  "}
 c["+1% Health Leech"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}},"  Leech "}
 c["+1% Health Leech +10% Physical Resistance"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}},"  Leech +10% Physical Resistance "}
 c["+1% Hit Damage Per Bleed"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Hit  Per  "}
@@ -1937,12 +1938,12 @@ c["+1% Melee Damage Per Poison"]={{[1]={[1]={skillId="Ailment_Poison",type="Skil
 c["+1% Melee Damage Per Poison +12% Max Melee Damage Bonus"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Per  +12% Max  Damage Bonus "}
 c["+1% Melee Damager per Bleed"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}}," r per  "}
 c["+1% Melee Health Leech"]={{[1]={flags=512,keywordFlags=0,name="Life",type="BASE",value=1}},"   Leech "}
-c["+1% More Damage per 25 max mana"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," More  per 25 max mana "}
+c["+1% More Damage per 25 max mana"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=1}},"  per 25 max mana "}
 c["+1% Movespeed"]={{}," Movespeed "}
 c["+1% Movespeed per 5% Ignite chance"]={{}," Movespeed per 5%  chance "}
 c["+1% Movespeed per 5% Ignite chance 200% Maximum Increased Movespeed"]={{}," Movespeed per 5%  chance 200% Maximum Increased Movespeed "}
 c["+1% Movespeed per 5% Ignite chance 200% Maximum Increased Movespeed -20% Reduced Duration per 20% Ignite chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=1}}," Movespeed per 5%  chance 200% Maximum Increased Movespeed -20% Reduced  per 20% Ignite chance "}
-c["+1% Necrotic Damage per 1% Added Crit Multi"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Necrotic  per 1% Added Crit Multi "}
+c["+1% Necrotic Damage per 1% Added Crit Multi"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=1}},"  per 1% Added Crit Multi "}
 c["+1% Necrotic Resistance Per Point Of Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=1}}," Necrotic Resistance Per Point Of  "}
 c["+1% Necrotic Resistance Per Point Of Intelligence +1% Poison Resistance Per Point Of Intelligence"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Int",type="BASE",value=1}}," Necrotic Resistance Per Point Of  +1%  Resistance Per Point Of Intelligence "}
 c["+1% Physical Ailment Damage per 100 Missing Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Physical Ailment  per 100 Missing Health "}
@@ -1972,7 +1973,7 @@ c["+1% increased Cinder Strike Area per Falcon Hit in the past 6 seconds if you 
 c["+1% increased Shock Duration per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},flags=0,keywordFlags=0,name="EnemyShockDuration",type="INC",value=1}},nil}
 c["+1% increased Stygian Beam frequency per Intelligence"]={{}," Stygian Beam frequency  "}
 c["+1.5% Base Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="BASE",value=1.5}},nil}
-c["+1.5% Damage Per Minion"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1.5}}}}," more  Per  "}
+c["+1.5% Damage Per Minion"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="MORE",value=1.5}}}},"  Per  "}
 c["+10 Additional Targets"]={{}," Targets "}
 c["+10 Additional Targets +20 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=10}}," Targets +20  "}
 c["+10 Additional Targets +20 Mana Cost +100% Slow Chance"]={{[1]={[1]={skillId="Ailment_Slow",type="SkillId"},flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=10}}," Targets +20  +100%  Chance "}
@@ -1984,13 +1985,13 @@ c["+10 Armour per Stack of Perfection"]={{[1]={flags=0,keywordFlags=0,name="Armo
 c["+10 Armour per Stack of Perfection +10 Dodge Rating per Stack of Perfection"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=10}},"  per Stack of Perfection +10 Dodge Rating per Stack of Perfection "}
 c["+10 Armour per Strength"]={{[1]={[1]={stat="Str",type="PerStat"},flags=0,keywordFlags=0,name="Armour",type="BASE",value=10}},nil}
 c["+10 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=10}},nil}
-c["+10 Base Lightning Damage In Range Of Storm Totem"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=10},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=10}}," In Range Of Storm Totem "}
+c["+10 Base Lightning Damage In Range Of Storm Totem"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=10}},"  In Range Of Storm Totem "}
 c["+10 Bees per 10 seconds while in Spriggan Form"]={{}," Bees per 10 seconds while in  "}
 c["+10 Bees released when Decoy explodes"]={{}," Bees released when  explodes "}
 c["+10 Blood Spectre Mana Consumed"]={{[1]={[1]={includeTransfigured=true,skillName="Raise Spectre",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Mana",type="BASE",value=10}}}}," Blood   Consumed "}
-c["+10 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdMin",type="BASE",value=10},[2]={flags=2048,keywordFlags=0,name="ColdMax",type="BASE",value=10}},nil}
-c["+10 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireMin",type="BASE",value=10},[2]={flags=2048,keywordFlags=0,name="FireMax",type="BASE",value=10}},nil}
-c["+10 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningMin",type="BASE",value=10},[2]={flags=2048,keywordFlags=0,name="LightningMax",type="BASE",value=10}},nil}
+c["+10 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdDamage",type="BASE",value=10}},nil}
+c["+10 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireDamage",type="BASE",value=10}},nil}
+c["+10 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningDamage",type="BASE",value=10}},nil}
 c["+10 Channel Cost"]={{}," Channel Cost "}
 c["+10 Channel Cost -30% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," Channel Cost -30%  "}
 c["+10 Companion Dodge Rating"]={{}," Companion Dodge Rating "}
@@ -2015,34 +2016,33 @@ c["+10 Health Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value
 c["+10 Health Gained"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=10}},"  Gained "}
 c["+10 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=10}},nil}
 c["+10 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=10}},nil}
-c["+10 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=10},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=10}},nil}
+c["+10 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=10}},nil}
 c["+10 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=10}},nil}
 c["+10 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=10}},nil}
 c["+10 Mana Gain"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=10}},"  Gain "}
-c["+10 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=10},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=10}},nil}
-c["+10 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=10},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=10},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=10},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=10},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=10},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=10},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=10},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=10},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=10},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=10},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=10},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=10},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=10},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=10}},nil}
-c["+10 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=10},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=10}},nil}
-c["+10 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=10},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=10}},nil}
-c["+10 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=10},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=10}},nil}
-c["+10 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=10}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=10}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=10}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=10}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=10}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=10}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=10}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=10}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=10}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=10}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=10}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=10}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=10}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=10}}}},nil}
-c["+10 Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=10}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=10}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=10}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=10}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=10}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=10}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=10}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=10}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=10}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=10}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=10}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=10}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=10}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=10}}}},nil}
+c["+10 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=10}},nil}
+c["+10 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=10}},nil}
+c["+10 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=10}},nil}
+c["+10 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=10}},nil}
+c["+10 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=10}},nil}
+c["+10 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=10}}}},nil}
 c["+10 Missing Mana Restored"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=10}}," Missing  Restored "}
 c["+10 Missing Mana Restored +10% Cooldown Duration"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=10}}," Missing  Restored +10% Cooldown Duration "}
-c["+10 Potion Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=10}}," Potion   "}
-c["+10 Ravaging Aura Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=10}}," Ravaging Aura  Void  "}
-c["+10 Ravaging Aura Spell Void Damage +20% Ravaging Aura Area"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=10}}," Ravaging Aura  Void  +20% Ravaging Aura Area "}
-c["+10 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=10},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=10}},nil}
-c["+10 Spell Cold Damage with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=10},[2]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=10}}," with Runeword:  "}
-c["+10 Spell Cold Damage with Runeword: Avalanche +2 Endurance Threshold per Ignite with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=10},[2]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=10}}," with Runeword:  +2 Endurance Threshold per Ignite with Runeword: Avalanche "}
-c["+10 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=10},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=10},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=10},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=10},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=10},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=10},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=10},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=10},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=10},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=10},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=10},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=10},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=10},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=10}},nil}
-c["+10 Spell Lightning Damage with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=10},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=10}}," with Runeword: Hurricane "}
-c["+10 Spell Lightning Damage with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=10},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=10}}," with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane "}
-c["+10 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=10},[2]={flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=10}},nil}
-c["+10 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=10},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=10}},nil}
+c["+10 Potion Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=10}}," Potion  "}
+c["+10 Ravaging Aura Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=10}}," Ravaging Aura  "}
+c["+10 Ravaging Aura Spell Void Damage +20% Ravaging Aura Area"]={{[1]={flags=67109120,keywordFlags=0,name="VoidDamage",type="BASE",value=10}}," Ravaging Aura  +20% Ravaging Aura  "}
+c["+10 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=10}},nil}
+c["+10 Spell Cold Damage with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=10}},"  with Runeword:  "}
+c["+10 Spell Cold Damage with Runeword: Avalanche +2 Endurance Threshold per Ignite with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=10}},"  with Runeword:  +2 Endurance Threshold per Ignite with Runeword: Avalanche "}
+c["+10 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=10}},nil}
+c["+10 Spell Lightning Damage with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=10}},"  with Runeword: Hurricane "}
+c["+10 Spell Lightning Damage with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=10}},"  with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane "}
+c["+10 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=10}},nil}
+c["+10 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=10}},nil}
 c["+10 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=10}},nil}
 c["+10 Stun Avoidance"]={{}," Stun Avoidance "}
 c["+10 Stun Avoidance 10% Increased Stun Chance"]={{}," Stun Avoidance 10% Increased Stun Chance "}
-c["+10 Throwing Cold Damage"]={{[1]={flags=1024,keywordFlags=0,name="ColdMin",type="BASE",value=10},[2]={flags=1024,keywordFlags=0,name="ColdMax",type="BASE",value=10}},nil}
+c["+10 Throwing Cold Damage"]={{[1]={flags=1024,keywordFlags=0,name="ColdDamage",type="BASE",value=10}},nil}
 c["+10 Vitality"]={{[1]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=10}},nil}
 c["+10 Ward Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=10}},"  Gain "}
 c["+10 Ward Gain 10% Mana Refunded"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=10}},"  Gain 10% Mana Refunded "}
@@ -2309,7 +2309,7 @@ c["+10% Melee Time Rot Chance"]={{[1]={flags=8389120,keywordFlags=0,name="Chance
 c["+10% Minion Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}}},nil}
 c["+10% Minion Freeze Rate Multiplier"]={{},"  Freeze Rate Multiplier "}
 c["+10% Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=10}}}},nil}
-c["+10% More Dodge Rating for 4 seconds when you use a Potion"]={{}," More Dodge Rating  when you use a Potion "}
+c["+10% More Dodge Rating for 4 seconds when you use a Potion"]={{}," Dodge Rating  when you use a Potion "}
 c["+10% Movespeed"]={{}," Movespeed "}
 c["+10% Movespeed On Crit"]={{}," Movespeed On Crit "}
 c["+10% Movespeed Stun Immunity"]={{}," Movespeed Stun Immunity "}
@@ -2317,7 +2317,7 @@ c["+10% Movespeed while Channeling"]={{}," Movespeed while Channeling "}
 c["+10% Movespeed with 5 stacks"]={{}," Movespeed with 5 stacks "}
 c["+10% Movespeed with Dagger"]={{}," Movespeed with Dagger "}
 c["+10% Movespeed with Dagger 7% Kill Threshold with Axe"]={{}," Movespeed with Dagger 7% Kill Threshold with Axe "}
-c["+10% Necrotic Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," Necrotic  Leeched as Health "}
+c["+10% Necrotic Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=10}},"  Leeched as Health "}
 c["+10% Orb Freeze Rate Multiplier"]={{}," Orb Freeze Rate Multiplier "}
 c["+10% Orb Freeze Rate Multiplier +20% Explosion Freeze Rate Multiplier"]={{}," Orb Freeze Rate Multiplier +20% Explosion Freeze Rate Multiplier "}
 c["+10% Other Ailment Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=10}}," Other Ailment  "}
@@ -2390,8 +2390,7 @@ c["+10% Travel Distance"]={{}," Travel Distance "}
 c["+10% Trigger Area"]={{}," Trigger  "}
 c["+10% Trigger Area +20% Detonation Area"]={{}," Trigger  +20% Detonation Area "}
 c["+10% Unseen Strike Width"]={{}," Unseen Strike Width "}
-c["+10% Void Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," Void  "}
-c["+10% Void Damage Doubles Echo Chance"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," Void  Doubles Echo Chance "}
+c["+10% Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=10}},nil}
 c["+10% Void Penetration"]={{[1]={flags=0,keywordFlags=0,name="VoidPenetration",type="BASE",value=10}},nil}
 c["+10% Void Penetration with Time Rot"]={{}," Void Peration with Time Rot "}
 c["+10% Ward Granted"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=10}},"  Granted "}
@@ -2402,7 +2401,7 @@ c["+10% Wave of Death Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type=
 c["+10% Wind Tempest Damage "]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}}," Wind Tempest   "}
 c["+10% Wolves And Bear Critical Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=10}}," Wolves And Bear  "}
 c["+10% Wolves And Bear Critical Multiplier 8 Buff Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=10}}," Wolves And Bear  8 Buff Duration (seconds) "}
-c["+100 Added Spell Damage With Supernova"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=100},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=100},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=100},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=100},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=100},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=100},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=100},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=100},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=100},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=100},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=100},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=100},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=100},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=100}}," With Supernova "}
+c["+100 Added Spell Damage With Supernova"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=100}}," Added   With Supernova "}
 c["+100 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=100}},nil}
 c["+100 Armor Granted To Allies"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=100}},"  Granted To Allies "}
 c["+100 Armor Granted To Allies Can Target Allies"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=100}},"  Granted To Allies Can Target Allies "}
@@ -2416,8 +2415,8 @@ c["+100 Endurance Threshold"]={{}," Endurance Threshold "}
 c["+100 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=100}},nil}
 c["+100 Health Gained on Potion Use"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=100}},"  Gained on Potion Use "}
 c["+100 Increased Blind Effect"]={{[1]={[1]={skillId="Ailment_Blind",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=100}}," Increased   "}
-c["+100 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=100},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=100},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=100},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=100},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=100},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=100},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=100},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=100},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=100},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=100},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=100},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=100},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=100},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=100}},nil}
-c["+100 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=100},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=100}},nil}
+c["+100 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=100}},nil}
+c["+100 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=100}},nil}
 c["+100 Ward Gain On Dodge"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=100}},"  Gain On Dodge "}
 c["+100% Area"]={{},"  "}
 c["+100% Armor Shred Chance"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=100}},"  Shred Chance "}
@@ -2491,8 +2490,8 @@ c["+100% Hit Damage Consumes Minion"]={{[1]={flags=0,keywordFlags=0,name="Minion
 c["+100% Hit Damage No Poison Chance or Poison Pools"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=100}}," Hit  No  Chance or Poison Pools "}
 c["+100% Ice Spiral Damage when Doubled"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=100}}," Ice Spiral  when Doubled "}
 c["+100% Ignite Chance"]={{}," "}
-c["+100% Ignite Chance 1% Fire Penetration with Ignite per 10% increased Void Damage"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=100}}," 1% Fire Peration with Ignite per 10% increased Void  "}
-c["+100% Ignite Chance 1% Fire Penetration with Ignite per 10% increased Void Damage 50% Base Damage -> Fire"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=100}}," 1% Fire Peration with Ignite per 10% increased Void  50% Base Damage -> Fire "}
+c["+100% Ignite Chance 1% Fire Penetration with Ignite per 10% increased Void Damage"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=100}}," 1% Fire Peration with Ignite per 10% increased  "}
+c["+100% Ignite Chance 1% Fire Penetration with Ignite per 10% increased Void Damage 50% Base Damage -> Fire"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=100}}," 1% Fire Peration with Ignite per 10% increased  50% Base Damage -> Fire "}
 c["+100% Ignite Chance Per Stack"]={{}," Per Stack "}
 c["+100% Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="BASE",value=100}},nil}
 c["+100% Increased Healing"]={{},"  "}
@@ -2526,7 +2525,7 @@ c["+100% Next Attack Ignite Chance +5% Next Attack Crit Chance 80% Reduced Effec
 c["+100% Poison Chance"]={{}," "}
 c["+100% Poison Chance -50% Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=100}}," -50%  "}
 c["+100% Poison Chance From Acid Flask"]={{}," From  "}
-c["+100% Poison Chance From Acid Flask +25% Poison Damage With Acid Flask"]={{[1]={[1]={skillId="aacfl",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=100}}," From  +25% Poison  With Acid Flask "}
+c["+100% Poison Chance From Acid Flask +25% Poison Damage With Acid Flask"]={{[1]={[1]={skillId="aacfl",type="SkillId"},flags=0,keywordFlags=0,name="PoisonDamage",type="BASE",value=100}}," From  +25%  With Acid Flask "}
 c["+100% Poison Chance Reap Cannot Crit"]={{}," Reap Cannot Crit "}
 c["+100% Radius"]={{[1]={flags=0,keywordFlags=0,name="AreaOfEffect",type="BASE",value=100}},nil}
 c["+100% Range"]={{}," Range "}
@@ -2544,28 +2543,28 @@ c["+100% Spell Critical Strike Multiplier"]={{[1]={flags=256,keywordFlags=0,name
 c["+100% Spell Frostbite Chance"]={{[1]={flags=8388864,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Frostbite",type="BASE",value=100}},nil}
 c["+100% Third Strike Chance to Slow"]={{}," Third Strike Chance to  "}
 c["+100% Tier 3 Channel Cost"]={{}," Tier 3 Channel Cost "}
-c["+100% Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=100}}," Void  "}
-c["+100% Void Damage Taken 1 Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=100}}," Void  1 Duration (Seconds) "}
+c["+100% Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=100}},"  Taken "}
+c["+100% Void Damage Taken 1 Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=100}},"  Taken 1 Duration (Seconds) "}
 c["+100% Void Shred Chance"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_VoidResistanceShred",type="BASE",value=100}},nil}
 c["+1000 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=1000}}," Block iveness "}
-c["+101 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=101},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=101},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=101},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=101},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=101},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=101},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=101},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=101},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=101},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=101},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=101},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=101},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=101},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=101}},nil}
-c["+104 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=104},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=104},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=104},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=104},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=104},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=104},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=104},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=104},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=104},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=104},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=104},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=104},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=104},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=104}},nil}
+c["+101 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=101}},nil}
+c["+104 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=104}},nil}
 c["+105 Endurance Threshold"]={{}," Endurance Threshold "}
 c["+105 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=105}},nil}
-c["+105 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=105},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=105}},nil}
-c["+105 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=105},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=105}},nil}
+c["+105 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=105}},nil}
+c["+105 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=105}},nil}
 c["+105% Increased Stun Chance"]={{}," Stun Chance "}
 c["+105% Melee Critical Strike Multiplier"]={{[1]={flags=512,keywordFlags=0,name="CritMultiplier",type="BASE",value=105}},nil}
-c["+106 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=106},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=106},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=106},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=106},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=106},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=106},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=106},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=106},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=106},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=106},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=106},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=106},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=106},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=106}},nil}
-c["+107 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=107},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=107},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=107},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=107},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=107},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=107},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=107},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=107},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=107},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=107},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=107},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=107},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=107},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=107}},nil}
-c["+108 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=108},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=108}},nil}
+c["+106 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=106}},nil}
+c["+107 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=107}},nil}
+c["+108 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=108}},nil}
 c["+108 Ward Decay Threshold"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=108}},"  Decay Threshold "}
 c["+11 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=11}},nil}
 c["+11 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=11}},nil}
 c["+11 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=11}},nil}
 c["+11 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=11}},nil}
 c["+11 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=11}},nil}
-c["+11 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=11},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=11}},nil}
+c["+11 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=11}},nil}
 c["+11 Ward gained each second per Active Wandering Spirit"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=11}},"  gained each second per Active Wandering Spirit "}
 c["+11% All Resistances"]={{[1]={flags=0,keywordFlags=0,name="ElementalResist",type="BASE",value=11},[2]={flags=0,keywordFlags=0,name="ChaosResist",type="BASE",value=11}},nil}
 c["+11% Flame Wraith Chance"]={{}," Flame Wraith Chance "}
@@ -2580,19 +2579,19 @@ c["+111 Ward gained when you use Shift"]={{[1]={[1]={skillId="shiif",type="Skill
 c["+111 Ward gained when you use Smoke Bomb"]={{[1]={[1]={skillId="smbmb",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=111}},"  gained when you use  "}
 c["+113 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=113}},nil}
 c["+113 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=113}},nil}
-c["+113 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=113},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=113},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=113},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=113},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=113},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=113},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=113},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=113},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=113},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=113},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=113},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=113},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=113},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=113}},nil}
+c["+113 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=113}},nil}
 c["+114 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=114}},nil}
 c["+114% Increased Healing Effectiveness"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=114}},"  iveness "}
-c["+115 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=115},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=115},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=115},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=115},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=115},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=115},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=115},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=115},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=115},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=115},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=115},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=115},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=115},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=115}}," Reflected to Attackers "}
-c["+115 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=115},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=115},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=115},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=115},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=115},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=115},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=115},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=115},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=115},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=115},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=115},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=115},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=115},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=115}},nil}
+c["+115 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=115}},"  Reflected to Attackers "}
+c["+115 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=115}},nil}
 c["+115% Increased Damage for skills used by Shadows"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=115}},"  for skills used by Shadows "}
 c["+12 Added Health for Bees per Attunement"]={{[1]={[1]={stat="Att",type="PerStat"},flags=0,keywordFlags=0,name="Life",type="BASE",value=12}}," Added  for Bees  "}
 c["+12 All Attributes"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=12},[2]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=12},[3]={flags=0,keywordFlags=0,name="Int",type="BASE",value=12},[4]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=12},[5]={flags=0,keywordFlags=0,name="Att",type="BASE",value=12},[6]={flags=0,keywordFlags=0,name="All",type="BASE",value=12}},nil}
-c["+12 Bow Damage"]={{[1]={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=12},[2]={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=12},[3]={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=12},[4]={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=12},[5]={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=12},[6]={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=12},[7]={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=12},[8]={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=12},[9]={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=12},[10]={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=12},[11]={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=12},[12]={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=12},[13]={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=12},[14]={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=12}},nil}
+c["+12 Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=12}},nil}
 c["+12 Companion Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=12}}," Companion  "}
 c["+12 Companion Health 20 Heal Amount On Companion Ability Use"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=12}}," Companion  20 Heal Amount On Companion Ability Use "}
 c["+12 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
-c["+12 Damage Reflect"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=12},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=12},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=12},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=12},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=12},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=12},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=12},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=12},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=12},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=12},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=12},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=12},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=12},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=12}}," Reflect "}
+c["+12 Damage Reflect"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=12}},"  Reflect "}
 c["+12 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=12}},nil}
 c["+12 Dodge Rating Per Maelstrom Stack"]={{}," Dodge Rating Per  Stack "}
 c["+12 Freeze Rate"]={{}," Freeze Rate "}
@@ -2605,15 +2604,15 @@ c["+12 Mana Consumed Per Stack"]={{[1]={flags=0,keywordFlags=0,name="Mana",type=
 c["+12 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=12}},nil}
 c["+12 Mana gained on Potion Use for each Meteor you have cast recently"]={{[1]={[1]={skillId="me27",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=12}},"  gained on Potion Use for each  you have cast recently "}
 c["+12 Maximum Wraiths"]={{}," Maximum Wraiths "}
-c["+12 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=12},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=12},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=12},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=12},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=12},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=12},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=12},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=12},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=12},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=12},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=12},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=12},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=12},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=12}},nil}
-c["+12 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=12}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=12}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=12}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=12}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=12}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=12}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=12}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=12}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=12}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=12}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=12}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=12}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=12}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=12}}}},nil}
-c["+12 Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=12},[2]={flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=12}},nil}
+c["+12 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=12}},nil}
+c["+12 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=12}}}},nil}
+c["+12 Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=12}},nil}
 c["+12 Potion Slots"]={{}," Potion Slots "}
-c["+12 Spell Lightning Damage for 4 seconds when you use Javelin"]={{[1]={[1]={skillId="javeli",type="SkillId"},flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=12},[2]={[1]={skillId="javeli",type="SkillId"},flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=12}},"  when you use  "}
-c["+12 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=12},[2]={flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=12}},nil}
-c["+12 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=12},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=12}},nil}
+c["+12 Spell Lightning Damage for 4 seconds when you use Javelin"]={{[1]={[1]={skillId="javeli",type="SkillId"},flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=12}},"   when you use  "}
+c["+12 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=12}},nil}
+c["+12 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=12}},nil}
 c["+12 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=12}},nil}
-c["+12 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireMin",type="BASE",value=12},[2]={flags=1024,keywordFlags=0,name="FireMax",type="BASE",value=12}},nil}
+c["+12 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireDamage",type="BASE",value=12}},nil}
 c["+12 Ward Gain Per Ignite On Pass Through"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=12}},"  Gain Per  On Pass Through "}
 c["+12 Ward Gain Per Ignite On Pass Through All Ignites Consumed"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=12}},"  Gain Per  On Pass Through All Ignites Consumed "}
 c["+12 Ward Gain Per Ignite On Pass Through All Ignites Consumed No Remaining Ignite Damage"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=12}},"  Gain Per  On Pass Through All Ignites Consumed No Remaining Ignite Damage "}
@@ -2685,8 +2684,7 @@ c["+12% Melee Area"]={{},"  Area "}
 c["+12% Melee Area 25% Additional Storm Stack Chance"]={{},"  Area 25% Additional Storm Stack Chance "}
 c["+12% Melee Area Of Effect"]={{[1]={flags=512,keywordFlags=0,name="AreaOfEffect",type="BASE",value=12}},nil}
 c["+12% Melee Ignite Chance"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=12}},nil}
-c["+12% More Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=12}}," More  "}
-c["+12% More Attack Speed -5% Damage"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=12}}," More  -5% Damage "}
+c["+12% More Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="MORE",value=12}},nil}
 c["+12% Movespeed"]={{}," Movespeed "}
 c["+12% Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="NecroticPenetration",type="BASE",value=12}},nil}
 c["+12% Orb Speed and Range"]={{}," Orb Speed and Range "}
@@ -2718,8 +2716,8 @@ c["+120 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=12
 c["+120 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=120}}," Block iveness "}
 c["+120 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=120}},nil}
 c["+120 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=120}},nil}
-c["+120 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=120},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=120},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=120},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=120},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=120},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=120},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=120},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=120},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=120},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=120},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=120},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=120},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=120},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=120}},nil}
-c["+120 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=120},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=120}},nil}
+c["+120 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=120}},nil}
+c["+120 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=120}},nil}
 c["+120 Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="BASE",value=120}}}},nil}
 c["+120% Area"]={{},"  "}
 c["+120% Area 4 Cooldown (seconds)"]={{},"  4 Cooldown (seconds) "}
@@ -2741,18 +2739,19 @@ c["+125% Melee Increased SparkCharge Effect"]={{[1]={flags=512,keywordFlags=0,na
 c["+127 Ward Decay Threshold"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=127}},"  Decay Threshold "}
 c["+127% Increased Blind Duration"]={{[1]={[1]={skillId="Ailment_Blind",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=127}},nil}
 c["+13 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=13}},nil}
-c["+13 Cold Damage with Spells and Attacks per Attached Infernal Shade for Minions affected by Dread Shade"]={{[1]={[1]={skillId="is40",type="SkillId"},flags=0,keywordFlags=0,name="ColdMin",type="BASE",value=13},[2]={[1]={skillId="is40",type="SkillId"},flags=0,keywordFlags=0,name="ColdMax",type="BASE",value=13}},"  and Attacks per Attached  for Minions affected by Dread Shade "}
+c["+13 Cold Damage with Spells and Attacks per Attached Infernal Shade for Minions affected by Dread Shade"]={{[1]={[1]={skillId="is40",type="SkillId"},flags=0,keywordFlags=256,name="ColdDamage",type="BASE",value=13}},"   and Attacks per Attached  for Minions affected by Dread Shade "}
 c["+13 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=13}},nil}
 c["+13 Health Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=13}},"  Gain "}
 c["+13 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=13}},nil}
 c["+13 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=13}},nil}
-c["+13 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=13},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=13}},nil}
-c["+13 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticMin",type="BASE",value=13},[2]={flags=512,keywordFlags=0,name="NecroticMax",type="BASE",value=13}},nil}
-c["+13 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=13}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=13}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=13}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=13}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=13}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=13}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=13}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=13}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=13}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=13}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=13}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=13}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=13}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=13}}}},nil}
+c["+13 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=13}},nil}
+c["+13 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=13}},nil}
+c["+13 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=13}}}},nil}
+c["+13 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=13}}}},nil}
 c["+13 Minion Melee Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=13}}}},nil}
-c["+13 Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=13}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=13}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=13}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=13}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=13}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=13}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=13}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=13}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=13}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=13}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=13}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=13}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=13}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=13}}}},nil}
-c["+13 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=13},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=13}},nil}
-c["+13 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=13},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=13}},nil}
+c["+13 Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=13}}}},"  Spell  "}
+c["+13 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=13}},nil}
+c["+13 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=13}},nil}
 c["+13 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=13}},nil}
 c["+13 Ward Gain on Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=13}},"  Gain  "}
 c["+13 Ward gained when you Dodge"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=13}},"  gained when you Dodge "}
@@ -2806,7 +2805,7 @@ c["+130% Throwing Chance to Poison on Hit"]={{[1]={flags=8389632,keywordFlags=0,
 c["+130% Throwing Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=130}}," Throwing  "}
 c["+137 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=137}},nil}
 c["+14 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=14}},nil}
-c["+14 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdMin",type="BASE",value=14},[2]={flags=2048,keywordFlags=0,name="ColdMax",type="BASE",value=14}},nil}
+c["+14 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdDamage",type="BASE",value=14}},nil}
 c["+14 Endurance Threshold"]={{}," Endurance Threshold "}
 c["+14 Endurance Threshold 4% Physical Resistance"]={{}," Endurance Threshold 4% Physical Resistance "}
 c["+14 Endurance Threshold 4% Physical Resistance 4% Minion Physical Resistance"]={{}," Endurance Threshold 4% Physical Resistance 4%  Physical Resistance "}
@@ -2814,13 +2813,13 @@ c["+14 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=14}}
 c["+14 Health Gain on Block"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=14}},"  Gain on Block "}
 c["+14 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=14}},nil}
 c["+14 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=14}},nil}
-c["+14 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=14},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=14}},nil}
-c["+14 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=14},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=14},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=14},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=14},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=14},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=14},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=14},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=14},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=14},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=14},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=14},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=14},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=14},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=14}},nil}
-c["+14 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=14},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=14}},nil}
-c["+14 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=14},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=14}},nil}
-c["+14 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=14},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=14}},nil}
-c["+14 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=14}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=14}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=14}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=14}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=14}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=14}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=14}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=14}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=14}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=14}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=14}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=14}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=14}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=14}}}},nil}
-c["+14 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=14},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=14},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=14},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=14},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=14},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=14},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=14},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=14},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=14},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=14},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=14},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=14},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=14},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=14}},nil}
+c["+14 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=14}},nil}
+c["+14 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=14}},nil}
+c["+14 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=14}},nil}
+c["+14 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=14}},nil}
+c["+14 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=14}},nil}
+c["+14 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=14}}}},nil}
+c["+14 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=14}},nil}
 c["+14 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=14}},nil}
 c["+14% Area"]={{},"  "}
 c["+14% Berserk Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=14}}," Berserk  "}
@@ -2832,7 +2831,7 @@ c["+14% Endurance"]={{}," Endurance "}
 c["+14% Lightning Penetration"]={{[1]={flags=0,keywordFlags=0,name="LightningPenetration",type="BASE",value=14}},nil}
 c["+14% Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=14}},nil}
 c["+14% Range"]={{}," Range "}
-c["+14% more hit damage to Blinded Enemies with Multishot"]={{[1]={[1]={skillId="Ailment_Blind",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=14}}," more hit  to ed Enemies with Multishot "}
+c["+14% more hit damage to Blinded Enemies with Multishot"]={{[1]={[1]={skillId="Ailment_Blind",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=14}}," hit  to ed Enemies with Multishot "}
 c["+140 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=140}}," Block iveness "}
 c["+140 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=140}},nil}
 c["+140% Increased Bleed Duration for Minions"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=140}}}},"   for s "}
@@ -2842,18 +2841,18 @@ c["+141 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=14
 c["+143% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
 c["+143% Frostbite Chance"]={{}," "}
 c["+145 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=145}},nil}
-c["+146 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=146},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=146},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=146},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=146},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=146},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=146},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=146},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=146},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=146},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=146},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=146},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=146},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=146},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=146}},nil}
+c["+146 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=146}},nil}
 c["+15 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=15}},nil}
 c["+15 Armor on Block"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=15}},"  on Block "}
 c["+15 Armor on Block 10 Max Stacks"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=15}},"  on Block 10 Max Stacks "}
 c["+15 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=15}},nil}
 c["+15 Block Effectiveness Per Active Sigil"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=15}}," Block iveness Per Active Sigil "}
-c["+15 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireMin",type="BASE",value=15},[2]={flags=2048,keywordFlags=0,name="FireMax",type="BASE",value=15}},nil}
+c["+15 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireDamage",type="BASE",value=15}},nil}
 c["+15 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=15}},nil}
 c["+15 Endurance Threshold Buff"]={{}," Endurance Threshold Buff "}
 c["+15 Endurance Threshold Per Active Sigil"]={{}," Endurance Threshold Per Active Sigil "}
-c["+15 Fire Damage With Buff"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=15},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=15}}," With Buff "}
-c["+15 Fire Damage With Buff +30% Ignite Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="FireMin",type="BASE",value=15},[2]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="FireMax",type="BASE",value=15}}," With Buff +30%  Chance "}
+c["+15 Fire Damage With Buff"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=15}},"  With Buff "}
+c["+15 Fire Damage With Buff +30% Ignite Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=15}},"  With Buff +30%  Chance "}
 c["+15 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=15}},nil}
 c["+15 Health Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=15}},"  Gain "}
 c["+15 Health Gain On Roar Per Enemy"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=15}},"  Gain On Roar Per Enemy "}
@@ -2865,24 +2864,24 @@ c["+15 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=15}},n
 c["+15 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=15}},nil}
 c["+15 Mana Cost Per Additional Totem Summoned"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=15}},"  Per Additional Totem Summoned "}
 c["+15 Marrow Orb Health Gained"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=15}}," Marrow Orb  Gained "}
-c["+15 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=15},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=15}},nil}
-c["+15 Melee Fire Damage with Forge Strike per Forged Weapon"]={{[1]={[1]={skillId="fs3e3",type="SkillId"},flags=512,keywordFlags=0,name="FireMin",type="BASE",value=15},[2]={[1]={skillId="fs3e3",type="SkillId"},flags=512,keywordFlags=0,name="FireMax",type="BASE",value=15}}," with  per Forged  "}
-c["+15 Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=15},[2]={flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=15}},nil}
-c["+15 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=15},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=15}},nil}
+c["+15 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=15}},nil}
+c["+15 Melee Fire Damage with Forge Strike per Forged Weapon"]={{[1]={[1]={skillId="fs3e3",type="SkillId"},flags=67109376,keywordFlags=0,name="FireDamage",type="BASE",value=15}},"  with  per Forged  "}
+c["+15 Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=15}},nil}
+c["+15 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=15}},nil}
 c["+15 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=15}},nil}
 c["+15 Stun Avoidance"]={{}," Stun Avoidance "}
 c["+15 Stun Avoidance +2% Block Chance"]={{[1]={flags=0,keywordFlags=0,name="BlockChance",type="BASE",value=15}}," Stun Avoidance +2%  "}
-c["+15 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireMin",type="BASE",value=15},[2]={flags=1024,keywordFlags=0,name="FireMax",type="BASE",value=15}},nil}
+c["+15 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireDamage",type="BASE",value=15}},nil}
 c["+15 Totem Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=15}},"tem  "}
-c["+15 Totem Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=15}},"tem   "}
-c["+15 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=15},[2]={flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=15}},nil}
+c["+15 Totem Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=15}},"tem  "}
+c["+15 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=15}},nil}
 c["+15 Ward Decay Threshold"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=15}},"  Decay Threshold "}
 c["+15 Ward Decay Threshold +3 Ward Gained On Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=15}},"  Decay Threshold +3 Ward Gained  "}
 c["+15 Ward Decay Threshold +3 Ward Gained On Kill +1 Ward Per Second Per 2 Intelligence While Channeling"]={{[1]={[1]={type="Condition",var="KilledRecently"},[2]={div=2,stat="Int",type="PerStat"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=15}},"  Decay Threshold +3 Ward Gained  +1 Ward Per Second  While Channeling "}
 c["+15 Ward Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=15}},"  Gain "}
 c["+15 Ward On Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=15}},nil}
 c["+15 Ward Per Second"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=15}},"  Per Second "}
-c["+15 melee physical damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=15},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=15}},nil}
+c["+15 melee physical damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=15}},nil}
 c["+15% Abyssal Decay Duration"]={{[1]={[1]={skillId="Ailment_StackingAbyssalDecay",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=15}},nil}
 c["+15% Ailment Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=15}}," Ailment  "}
 c["+15% Ailment Range"]={{}," Ailment Range "}
@@ -3051,7 +3050,7 @@ c["+15% Initial Strike Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type
 c["+15% Iron Blade Speed and Range"]={{}," Iron Blade Speed and Range "}
 c["+15% Largest Explosion Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," Largest Explosion  "}
 c["+15% Largest Explosion Damage +25% Largest Hit Chill Chance"]={{[1]={[1]={skillId="Ailment_Chill",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," Largest Explosion  +25% Largest Hit  Chance "}
-c["+15% Less Damage Taken while wielding a Two Handed Melee Weapon"]={{[1]={[1]={type="Condition",var="UsingTwoHandedWeapon"},[2]={type="Condition",var="UsingMeleeWeapon"},flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=15}}," Less   "}
+c["+15% Less Damage Taken while wielding a Two Handed Melee Weapon"]={{[1]={[1]={type="Condition",var="UsingTwoHandedWeapon"},[2]={type="Condition",var="UsingMeleeWeapon"},flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-15}},nil}
 c["+15% Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=15}},nil}
 c["+15% Lightning Penetration"]={{[1]={flags=0,keywordFlags=0,name="LightningPenetration",type="BASE",value=15}},nil}
 c["+15% Lightning Penetration with Electrify"]={{}," Lightning Peration with Electrify "}
@@ -3069,16 +3068,16 @@ c["+15% Melee Area"]={{},"  Area "}
 c["+15% Melee Area +25% Void Rift Area"]={{},"  Area +25% Void Rift Area "}
 c["+15% Melee Bleed Chance"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=15}},nil}
 c["+15% Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=15}},nil}
-c["+15% Melee Fire Damage To Ignited"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=15}},"   To d "}
-c["+15% Melee Fire Damage To Ignited +15% Fire Penetration with Ignite"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=15}},"   To d +15% Fire Penetration with Ignite "}
+c["+15% Melee Fire Damage To Ignited"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=15}},"  To d "}
+c["+15% Melee Fire Damage To Ignited +15% Fire Penetration with Ignite"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=15}},"  To d +15% Fire Penetration with Ignite "}
 c["+15% Melee Ignite Chance On Recent Spell Cast"]={{},"   Chance On Recent Spell Cast "}
 c["+15% Melee Range"]={{[1]={flags=0,keywordFlags=0,name="MeleeWeaponRange",type="BASE",value=15}},nil}
 c["+15% Minimum Abyssal Orb Frequency"]={{}," Minimum Abyssal Orb Frequency "}
 c["+15% Minimum Abyssal Orb Frequency +35% Maximum Abyssal Orb Frequency"]={{}," Minimum Abyssal Orb Frequency +35% Maximum Abyssal Orb Frequency "}
 c["+15% Mirror Image Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=15}}," Mirror Image  "}
 c["+15% Missing Health gained as Ward per second"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=15}}," Missing  gained as Ward per second "}
-c["+15% More Hit Damage Per Ignite Stack"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," More Hit  Per  Stack "}
-c["+15% More Hit Damage Vs Ignited Enemies"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," More Hit  Vs d Enemies "}
+c["+15% More Hit Damage Per Ignite Stack"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=15}}," Hit  Per  Stack "}
+c["+15% More Hit Damage Vs Ignited Enemies"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=15}}," Hit  Vs d Enemies "}
 c["+15% Movespeed"]={{}," Movespeed "}
 c["+15% Movespeed with buff"]={{}," Movespeed with buff "}
 c["+15% Movespeed with buff +15% Attack and Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="Speed",type="BASE",value=15}}," Movespeed with buff +15%  "}
@@ -3153,9 +3152,9 @@ c["+15% Void Cleave Area Per Stack +15% Void Cleave Damage Per Stack"]={{[1]={[1
 c["+15% Void Cleave Area Per Stack +15% Void Cleave Damage Per Stack Void Cleave Consumes All Stacks"]={{[1]={[1]={skillId="v01cv",type="SkillId"},flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=15}},"   Per Stack +15% Void Cleave  Per Stack Void Cleave Consumes All Stacks "}
 c["+15% Void Cleave Damage Per Stack"]={{[1]={[1]={skillId="v01cv",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}},"   Per Stack "}
 c["+15% Void Cleave Damage Per Stack Void Cleave Consumes All Stacks"]={{[1]={[1]={skillId="v01cv",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}},"   Per Stack Void Cleave Consumes All Stacks "}
-c["+15% Void Damage with 2h Mace"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," Void  with 2h Mace "}
-c["+15% Void Damage with 2h Mace +25% Cooldown Recovery Speed with 2h Sword"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," Void  with 2h Mace +25% Cooldown Recovery Speed with 2h Sword "}
-c["+15% Void Damage with 2h Mace +25% Cooldown Recovery Speed with 2h Sword +25% Increased Area with 2h Axe"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=15}}," Void  with 2h Mace +25% Cooldown Recovery Speed with 2h Sword +25% Increased  with 2h Axe "}
+c["+15% Void Damage with 2h Mace"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=15}},"  with 2h Mace "}
+c["+15% Void Damage with 2h Mace +25% Cooldown Recovery Speed with 2h Sword"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=15}},"  with 2h Mace +25% Cooldown Recovery Speed with 2h Sword "}
+c["+15% Void Damage with 2h Mace +25% Cooldown Recovery Speed with 2h Sword +25% Increased Area with 2h Axe"]={{[1]={flags=67108864,keywordFlags=0,name="VoidDamage",type="BASE",value=15}},"  with 2h Mace +25% Cooldown Recovery Speed with 2h Sword +25% Increased  with 2h Axe "}
 c["+15% Void Resistance"]={{}," Void Resistance "}
 c["+15% Void Rift HIt Damage Vs Stunned"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," Void Rift HIt  Vs Stunned "}
 c["+15% Void Rift Hit Damage Vs Time Rotted Enemies"]={{[1]={[1]={skillId="Ailment_TimeRot",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=15}}," Void Rift Hit  Vs ted Enemies "}
@@ -3199,22 +3198,23 @@ c["+153% Freeze Rate Multiplier for Minions affected by Dread Shade"]={{}," Free
 c["+154% Increased Blind Duration"]={{[1]={[1]={skillId="Ailment_Blind",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=154}},nil}
 c["+156 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=156}},nil}
 c["+16 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=16}},nil}
-c["+16 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdMin",type="BASE",value=16},[2]={flags=2048,keywordFlags=0,name="ColdMax",type="BASE",value=16}},nil}
-c["+16 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireMin",type="BASE",value=16},[2]={flags=2048,keywordFlags=0,name="FireMax",type="BASE",value=16}},nil}
+c["+16 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdDamage",type="BASE",value=16}},nil}
+c["+16 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireDamage",type="BASE",value=16}},nil}
 c["+16 Cinder Strike Melee Damage per Level of Falconry While Unarmed"]={{[1]={[1]={type="Multiplier",var="Level"},[2]={type="Condition",var="Unarmed"},[3]={skillId="cstri",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=16}},"    of Falconry  "}
 c["+16 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=16}},nil}
 c["+16 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=16}},nil}
 c["+16 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=16}},nil}
-c["+16 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=16},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=16},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=16},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=16},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=16},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=16},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=16},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=16},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=16},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=16},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=16},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=16},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=16},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=16}},nil}
-c["+16 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=16},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=16}},nil}
+c["+16 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=16}},nil}
+c["+16 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=16}},nil}
 c["+16 Minion Armor"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=16}}}},nil}
-c["+16 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdDamage",type="BASE",value=16}}}},"  Melee  "}
+c["+16 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=16}}}},nil}
+c["+16 Minion Melee Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=16}}}},nil}
 c["+16 Minion Melee Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=16}}}},nil}
-c["+16 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=16},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=16}},nil}
-c["+16 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=16},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=16},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=16},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=16},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=16},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=16},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=16},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=16},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=16},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=16},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=16},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=16},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=16},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=16}},nil}
-c["+16 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=16},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=16}},nil}
-c["+16 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=16},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=16}},nil}
-c["+16 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=16},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=16}},nil}
+c["+16 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=16}},nil}
+c["+16 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=16}},nil}
+c["+16 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=16}},nil}
+c["+16 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=16}},nil}
+c["+16 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=16}},nil}
 c["+16 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=16}},nil}
 c["+16% All Resistances"]={{[1]={flags=0,keywordFlags=0,name="ElementalResist",type="BASE",value=16},[2]={flags=0,keywordFlags=0,name="ChaosResist",type="BASE",value=16}},nil}
 c["+16% Area"]={{},"  "}
@@ -3243,7 +3243,7 @@ c["+16% Shockwave Chance"]={{}," "}
 c["+16% Snap Freeze Area per Ice Spiral"]={{},"   per Ice Spiral "}
 c["+16% Snap Freeze Area per Ice Spiral +4% Snap Freeze Freeze Duration per Ice Spiral"]={{[1]={[1]={skillId="sw31a",type="SkillId"},flags=67108864,keywordFlags=0,name="EnemyFreezeDuration",type="BASE",value=16}},"   per Ice Spiral +4% Snap Freeze  per Ice Spiral "}
 c["+160 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=160}},nil}
-c["+160 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=160},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=160},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=160},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=160},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=160},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=160},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=160},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=160},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=160},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=160},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=160},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=160},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=160},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=160}},nil}
+c["+160 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=160}},nil}
 c["+160 Primal Serpent Armour"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=160}}," Primal Serpent  "}
 c["+160% Area"]={{},"  "}
 c["+160% Chance to Ignite on Fire Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=160}},nil}
@@ -3255,12 +3255,12 @@ c["+160% Increased damage while in Spriggan Form"]={{[1]={[1]={skillId="sf5rd",t
 c["+160% Necrotic Chance to Ignite on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=160}},nil}
 c["+166% Increased Melee Stun Chance"]={{},"  Stun Chance "}
 c["+168 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=168}},nil}
-c["+17 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireMin",type="BASE",value=17},[2]={flags=2048,keywordFlags=0,name="FireMax",type="BASE",value=17}},nil}
+c["+17 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireDamage",type="BASE",value=17}},nil}
 c["+17 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=17}},nil}
-c["+17 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=17},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=17}},nil}
-c["+17 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=17},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=17},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=17},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=17},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=17},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=17},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=17},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=17},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=17},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=17},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=17},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=17},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=17},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=17}},nil}
-c["+17 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=17},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=17}},nil}
-c["+17 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireMin",type="BASE",value=17},[2]={flags=1024,keywordFlags=0,name="FireMax",type="BASE",value=17}},nil}
+c["+17 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=17}},nil}
+c["+17 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=17}},nil}
+c["+17 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=17}},nil}
+c["+17 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireDamage",type="BASE",value=17}},nil}
 c["+17 Ward Gain on Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=17}},"  Gain  "}
 c["+17 Ward Gained on Crit with Frost Claw"]={{[1]={[1]={skillId="frc87w",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=17}},"  Gained on Crit with  "}
 c["+17% All Resistances"]={{[1]={flags=0,keywordFlags=0,name="ElementalResist",type="BASE",value=17},[2]={flags=0,keywordFlags=0,name="ChaosResist",type="BASE",value=17}},nil}
@@ -3278,17 +3278,17 @@ c["+172 Channelling Dodge Rating"]={{},"  Dodge Rating "}
 c["+175 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=175}},nil}
 c["+175 Dodge Rating"]={{}," Dodge Rating "}
 c["+18 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=18}},nil}
-c["+18 Bow Damage"]={{[1]={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=18},[2]={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=18},[3]={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=18},[4]={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=18},[5]={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=18},[6]={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=18},[7]={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=18},[8]={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=18},[9]={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=18},[10]={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=18},[11]={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=18},[12]={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=18},[13]={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=18},[14]={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=18}},nil}
+c["+18 Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=18}},nil}
 c["+18 Health Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=18}},"  Gain "}
 c["+18 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=18}},nil}
 c["+18 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=18}},nil}
 c["+18 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=18}},nil}
-c["+18 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=18},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=18}},nil}
-c["+18 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=18},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=18}},nil}
-c["+18 Spell Damage per Active Rune"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=18},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=18},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=18},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=18},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=18},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=18},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=18},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=18},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=18},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=18},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=18},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=18},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=18},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=18}}," per Active Rune "}
-c["+18 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=18},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=18}},nil}
-c["+18 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=18},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=18}},nil}
-c["+18 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=18},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=18}},nil}
+c["+18 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=18}},nil}
+c["+18 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=18}},nil}
+c["+18 Spell Damage per Active Rune"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=18}},"   per Active Rune "}
+c["+18 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=18}},nil}
+c["+18 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=18}},nil}
+c["+18 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=18}},nil}
 c["+18 Totem Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=18}},"tem  "}
 c["+18 Ward Gained On 30% of Crits"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=18}},"  Gained On 30% of Crits "}
 c["+18 Ward Gained on Hit with Hydrahedron"]={{[1]={flags=8388608,keywordFlags=0,name="Ward",type="BASE",value=18}},"  Gained  with Hydrahedron "}
@@ -3328,9 +3328,9 @@ c["+182 Ward Decay Threshold"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="B
 c["+183% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
 c["+185% Chance to Shock on Lightning Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=185}},nil}
 c["+185% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
-c["+19 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=19},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=19},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=19},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=19},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=19},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=19},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=19},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=19},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=19},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=19},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=19},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=19},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=19},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=19}},nil}
-c["+19 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=19},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=19}},nil}
-c["+19 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=19},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=19}},nil}
+c["+19 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=19}},nil}
+c["+19 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=19}},nil}
+c["+19 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=19}},nil}
 c["+19 Ward per Second"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=19}},"  per Second "}
 c["+19% Block Chance"]={{}," "}
 c["+19% Chance to Bleed on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=19}},nil}
@@ -3338,7 +3338,8 @@ c["+19% Chance to Gain Ward on Hit per Ignite and Damned on You and the Target (
 c["+19% Fire  Penetration with Ignite"]={{}," Fire  Peration with Ignite "}
 c["+19% Lightning Penetration"]={{[1]={flags=0,keywordFlags=0,name="LightningPenetration",type="BASE",value=19}},nil}
 c["+196 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=196}},nil}
-c["+2 Added Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=2}},nil}
+c["+2 Added Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=2}}," Added  "}
+c["+2 Added Lightning Damage Lightning Blast Can Fork Or Chain"]={{[1]={[1]={skillId="lb23il",type="SkillId"},flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=2}}," Added   Can Fork Or Chain "}
 c["+2 Additional Chains"]={{}," Chains "}
 c["+2 Additional Charges"]={{}," Charges "}
 c["+2 Additional Charges -50% Less Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=2}}," Charges -50% Less  "}
@@ -3356,9 +3357,9 @@ c["+2 Buff Level of Skills"]={{}," Buff Level of Skills "}
 c["+2 Chance to Apply Frailty and Slow to nearby enemies every second for Infernal Shade"]={{}," Chance to Apply  and Slow to nearby enemies every second for Infernal Shade "}
 c["+2 Chance to Poison on Minion Hit"]={{}," Chance to  on  Hit "}
 c["+2 Charge On Melee Hit"]={{}," Charge  "}
-c["+2 Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="ColdMax",type="BASE",value=2}},nil}
-c["+2 Cold Damage For Cold Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="ColdMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="ColdMax",type="BASE",value=2}}," For Cold  Attacks "}
-c["+2 Cold Damage For Cold Melee Attacks +2 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="ColdMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="ColdMax",type="BASE",value=2}}," For Cold  Attacks +2  For Lightning Melee Attacks "}
+c["+2 Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="BASE",value=2}},nil}
+c["+2 Cold Damage For Cold Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=2}},"  For Cold  Attacks "}
+c["+2 Cold Damage For Cold Melee Attacks +2 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=2}},"  For Cold  Attacks +2 Lightning Damage For Lightning Melee Attacks "}
 c["+2 Cold Level of Skills"]={{}," Cold Level of Skills "}
 c["+2 Cooldown"]={{}," Cooldown "}
 c["+2 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
@@ -3380,10 +3381,10 @@ c["+2 Extra Projectiles +2 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Proje
 c["+2 Extra Projectiles +3 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ProjectileCount",type="BASE",value=2}}," Extra  +3 Mana Cost "}
 c["+2 Extra Projectiles +5 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ProjectileCount",type="BASE",value=2}}," Extra  +5 Mana Cost "}
 c["+2 Fire Aura Stacks"]={{}," Fire Aura Stacks "}
-c["+2 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=2}},nil}
-c["+2 Fire Damage For Fire Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=2}}," For Fire  Attacks "}
-c["+2 Fire Damage For Fire Melee Attacks +2 Cold Damage For Cold Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=2}}," For Fire  Attacks +2  For Cold Melee Attacks "}
-c["+2 Fire Damage For Fire Melee Attacks +2 Cold Damage For Cold Melee Attacks +2 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=2}}," For Fire  Attacks +2  For Cold Melee Attacks +2 Lightning Damage For Lightning Melee Attacks "}
+c["+2 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=2}},nil}
+c["+2 Fire Damage For Fire Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=2}},"  For Fire  Attacks "}
+c["+2 Fire Damage For Fire Melee Attacks +2 Cold Damage For Cold Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=2}},"  For Fire  Attacks +2 Cold Damage For Cold Melee Attacks "}
+c["+2 Fire Damage For Fire Melee Attacks +2 Cold Damage For Cold Melee Attacks +2 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=2}},"  For Fire  Attacks +2 Cold Damage For Cold Melee Attacks +2 Lightning Damage For Lightning Melee Attacks "}
 c["+2 Fire Level of Skills"]={{}," Fire Level of Skills "}
 c["+2 Fireball"]={{},"  "}
 c["+2 Flame Ward"]={{},"  "}
@@ -3391,7 +3392,8 @@ c["+2 Frailty -> Poison Stacks"]={{},"  -> Poison Stacks "}
 c["+2 Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
 c["+2 Freeze Rate per stack of Chill"]={{}," Freeze Rate per stack of  "}
 c["+2 Frostbite Stacks"]={{},"  Stacks "}
-c["+2 Global Spell Damage on Hit"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=2},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=2},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=2},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=2},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=2},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=2},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=2},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=2},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=2},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=2},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=2},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=2},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=2},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=2}},nil}
+c["+2 Global Spell Damage on Hit"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}},"  Spell  on Hit "}
+c["+2 Global Spell Damage on Hit 6 Buff Duration (Seconds)"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}},"  Spell  on Hit 6 Buff Duration (Seconds) "}
 c["+2 Health And Rage Gain On Boss or Rare Hit"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=2}},"  And Rage Gain On Boss or Rare Hit "}
 c["+2 Health And Rage Gain On Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Life",type="BASE",value=2}},"  And Rage Gain  "}
 c["+2 Health And Rage Gain On Kill +2 Health And Rage Gain On Boss or Rare Hit"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Life",type="BASE",value=2}},"  And Rage Gain  +2 Health And Rage Gain On Boss or Rare Hit "}
@@ -3406,9 +3408,9 @@ c["+2 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=
 c["+2 Intelligence Per Crow"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=2}},"  Per Crow "}
 c["+2 Javelin"]={{},"  "}
 c["+2 Judgement"]={{},"  "}
-c["+2 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=2}}," For Lightning  Attacks "}
-c["+2 Lightning Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=2}}," Leeched as  "}
-c["+2 Lightning Damage for Spark Charge per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},[2]={skillId="Ailment_SparkCharge",type="SkillId"},flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=2},[2]={[1]={stat="Int",type="PerStat"},[2]={skillId="Ailment_SparkCharge",type="SkillId"},flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=2}}," for   "}
+c["+2 Lightning Damage For Lightning Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=2}},"  For Lightning  Attacks "}
+c["+2 Lightning Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=2}},"  Leeched as Health "}
+c["+2 Lightning Damage for Spark Charge per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},[2]={skillId="Ailment_SparkCharge",type="SkillId"},flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=2}},"  for   "}
 c["+2 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=2}},nil}
 c["+2 Mana Cost Per Stack"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=2}},"  Per Stack "}
 c["+2 Mana Gain"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=2}},"  Gain "}
@@ -3420,31 +3422,30 @@ c["+2 Maximum Fissures"]={{}," Maximum Fissures "}
 c["+2 Maximum Fissures -50% Spirit Frequency"]={{}," Maximum Fissures -50% Spirit Frequency "}
 c["+2 Maximum Forged Weapons"]={{}," Maximum Forged s "}
 c["+2 Maximum Targets"]={{}," Maximum Targets "}
-c["+2 Melee And Spell Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=2}},"  And Spell  "}
+c["+2 Melee And Spell Fire Damage"]={{[1]={flags=768,keywordFlags=0,name="FireDamage",type="BASE",value=2}},"  And  "}
 c["+2 Melee Chance to Ignite on Hit"]={{},"  Chance to  on Hit "}
 c["+2 Melee Cold Level of Skills"]={{},"  Cold Level of Skills "}
-c["+2 Melee Fire Damage On Recent Spell Cast"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=2},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=2}}," On Recent  Cast "}
+c["+2 Melee Fire Damage On Recent Spell Cast"]={{[1]={flags=768,keywordFlags=0,name="FireDamage",type="BASE",value=2}},"  On Recent  Cast "}
 c["+2 Melee Fire Level of Skills"]={{},"  Fire Level of Skills "}
 c["+2 Melee Level of Skills"]={{},"  Level of Skills "}
-c["+2 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticMin",type="BASE",value=2},[2]={flags=512,keywordFlags=0,name="NecroticMax",type="BASE",value=2}},nil}
-c["+2 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=2},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=2}},nil}
-c["+2 Melee Physical Damage Per Stack"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=2},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=2}}," Per Stack "}
+c["+2 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=2}},nil}
+c["+2 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=2}},nil}
+c["+2 Melee Physical Damage Per Stack"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=2}},"  Per Stack "}
 c["+2 Minion Chance to Ignite on Hit"]={{},"  Chance to  on Hit "}
 c["+2 Minion Fire Level of Skills"]={{},"  Fire Level of Skills "}
 c["+2 Minion Health Regen Per Second"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=2}}}},"   Per Second "}
 c["+2 Minion Increased Shred Armor Effect"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=2}}}},"  Increased Shred  Effect "}
 c["+2 Minion Level of Skills"]={{},"  Level of Skills "}
-c["+2 Minion Melee Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}}}},"  Melee Necrotic  "}
+c["+2 Minion Melee Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=2}}}},nil}
 c["+2 Minion Melee Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=2}}}},nil}
-c["+2 Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=2}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=2}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=2}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=2}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=2}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=2}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=2}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=2}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=2}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=2}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=2}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=2}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=2}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=2}}}},nil}
+c["+2 Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}}}},"  Spell  "}
 c["+2 Minion Spell Level of Skills"]={{},"  Spell Level of Skills "}
-c["+2 Minion Spell Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=2}}}},"  Spell  "}
-c["+2 Minion Spell Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}}}},"  Spell Necrotic  "}
-c["+2 Minion Spell Necrotic Damage +2 Minion Melee Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}}}},"  Spell Necrotic  +2 Minion Melee Necrotic Damage "}
+c["+2 Minion Spell Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=2}}}},nil}
+c["+2 Minion Spell Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=2}}}},nil}
 c["+2 Mirages Created"]={{}," Mirages Created "}
 c["+2 Mirages Created +15 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=2}}," Mirages Created +15  "}
 c["+2 Multistrike"]={{},"  "}
-c["+2 Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="NecroticMax",type="BASE",value=2}},nil}
+c["+2 Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=2}},nil}
 c["+2 Number Of Arrows"]={{}," Number Of Arrows "}
 c["+2 Number Of Arrows +1 Cooldown (seconds)"]={{}," Number Of Arrows +1 Cooldown (seconds) "}
 c["+2 Number Of Arrows +1 Cooldown (seconds) +8% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}}," Number Of Arrows +1 Cooldown (seconds) +8%  "}
@@ -3482,19 +3483,19 @@ c["+2 Skill Duration Extension (seconds)"]={{[1]={flags=0,keywordFlags=0,name="D
 c["+2 Skill Duration Extension (seconds) 3 Effect Cooldown (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=2}}," Skill  Extension (seconds) 3 Effect Cooldown (seconds) "}
 c["+2 Smite"]={{},"  "}
 c["+2 Soul Feast"]={{},"  "}
-c["+2 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=2},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=2},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=2},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=2},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=2},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=2},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=2},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=2},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=2},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=2},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=2},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=2},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=2},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=2}},nil}
-c["+2 Spell Damage With A Shield"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=2},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=2},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=2},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=2},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=2},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=2},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=2},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=2},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=2},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=2},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=2},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=2},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=2},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=2}}," With A Shield "}
-c["+2 Spell Damage on Next Spell"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=2},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=2},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=2},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=2},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=2},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=2},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=2},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=2},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=2},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=2},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=2},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=2},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=2},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=2}}," on Next  "}
-c["+2 Spell Damage on Next Spell +2% Critical Chance on Next Spell"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=2},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=2},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=2},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=2},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=2},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=2},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=2},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=2},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=2},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=2},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=2},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=2},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=2},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=2}}," on Next  +2% Critical Chance on Next Spell "}
-c["+2 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=2},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=2}},nil}
-c["+2 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=2},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=2}},nil}
-c["+2 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=2},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=2}},nil}
+c["+2 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=2}},nil}
+c["+2 Spell Damage With A Shield"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=2}},"   With A Shield "}
+c["+2 Spell Damage on Next Spell"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=2}},"   on Next Spell "}
+c["+2 Spell Damage on Next Spell +2% Critical Chance on Next Spell"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=2}},"   on Next Spell +2% Critical Chance on Next Spell "}
+c["+2 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=2}},nil}
+c["+2 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=2}},nil}
+c["+2 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=2}},nil}
 c["+2 Stun Avoidance Per 10 Missing Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=2}}," Stun Avoidance Per 10 Missing  "}
-c["+2 Throwing Damage"]={{[1]={flags=1024,keywordFlags=1,name="PhysicalMin",type="BASE",value=2},[2]={flags=1024,keywordFlags=1,name="PhysicalMax",type="BASE",value=2},[3]={flags=1024,keywordFlags=2,name="LightningMin",type="BASE",value=2},[4]={flags=1024,keywordFlags=2,name="LightningMax",type="BASE",value=2},[5]={flags=1024,keywordFlags=4,name="ColdMin",type="BASE",value=2},[6]={flags=1024,keywordFlags=4,name="ColdMax",type="BASE",value=2},[7]={flags=1024,keywordFlags=8,name="FireMin",type="BASE",value=2},[8]={flags=1024,keywordFlags=8,name="FireMax",type="BASE",value=2},[9]={flags=1024,keywordFlags=16,name="VoidMin",type="BASE",value=2},[10]={flags=1024,keywordFlags=16,name="VoidMax",type="BASE",value=2},[11]={flags=1024,keywordFlags=32,name="NecroticMin",type="BASE",value=2},[12]={flags=1024,keywordFlags=32,name="NecroticMax",type="BASE",value=2},[13]={flags=1024,keywordFlags=64,name="PoisonMin",type="BASE",value=2},[14]={flags=1024,keywordFlags=64,name="PoisonMax",type="BASE",value=2}},nil}
+c["+2 Throwing Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}}," Throwing  "}
 c["+2 Throwing Level of Skills"]={{}," Throwing Level of Skills "}
-c["+2 Throwing Physical Damage"]={{[1]={flags=1024,keywordFlags=0,name="PhysicalMin",type="BASE",value=2},[2]={flags=1024,keywordFlags=0,name="PhysicalMax",type="BASE",value=2}},nil}
-c["+2 Throwing Void Damage"]={{[1]={flags=1024,keywordFlags=0,name="VoidMin",type="BASE",value=2},[2]={flags=1024,keywordFlags=0,name="VoidMax",type="BASE",value=2}},nil}
-c["+2 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=2},[2]={flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=2}},nil}
+c["+2 Throwing Physical Damage"]={{[1]={flags=1024,keywordFlags=0,name="PhysicalDamage",type="BASE",value=2}},nil}
+c["+2 Throwing Void Damage"]={{[1]={flags=1024,keywordFlags=0,name="VoidDamage",type="BASE",value=2}},nil}
+c["+2 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=2}},nil}
 c["+2 Void Level of Skills"]={{}," Void Level of Skills "}
 c["+2 Ward Gained"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=2}},"  Gained "}
 c["+2 Ward Gained On Critical Strike"]={{[1]={[1]={type="Condition",var="CriticalStrike"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=2}},"  Gained "}
@@ -3599,9 +3600,8 @@ c["+2% Melee Leech +2% Throwing Leech"]={{},"  Leech +2% Throwing Leech "}
 c["+2% Minimum percentage of health to gain when a nearby enemy or ally dies (2 second cooldown)"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=2}}," Minimum percentage of  to gain when a nearby enemy or ally dies (2 second cooldown) "}
 c["+2% Minion All Resistances"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ElementalResist",type="BASE",value=2}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ChaosResist",type="BASE",value=2}}}},nil}
 c["+2% Minion Cold Penetration"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdPenetration",type="BASE",value=2}}}},nil}
-c["+2% More Damage per Dexterity"]={{[1]={[1]={stat="Dex",type="PerStat"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}}," More   "}
-c["+2% More Damage per Dexterity +1% Increased Area per Dexterity"]={{[1]={[1]={stat="Dex",type="PerStat"},[2]={stat="Dex",type="PerStat"},flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=2}}," More   +1% Increased   "}
-c["+2% More Fire Damage Per Stack vs Spreading Flames"]={{[1]={[1]={skillId="Ailment_SpreadingFlames",type="SkillId"},flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=2}}," More  Per Stack vs  "}
+c["+2% More Damage per Dexterity"]={{[1]={[1]={stat="Dex",type="PerStat"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=2}},nil}
+c["+2% More Fire Damage Per Stack vs Spreading Flames"]={{[1]={[1]={skillId="Ailment_SpreadingFlames",type="SkillId"},flags=0,keywordFlags=0,name="FireDamage",type="MORE",value=2}},"  Per Stack vs  "}
 c["+2% Movespeed"]={{}," Movespeed "}
 c["+2% Physical Penetration"]={{[1]={flags=0,keywordFlags=0,name="PhysicalPenetration",type="BASE",value=2}},nil}
 c["+2% Physical Penetration Per Enemy"]={{}," Physical Peration Per Enemy "}
@@ -3626,12 +3626,12 @@ c["+2% Time Rot Chance"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTrigg
 c["+2% increased Area per Attunement for Judgement while Unarmed"]={{},"   for   "}
 c["+2% increased Axe Throw Frequency per 10% increased physical damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=2}}," Axe Throw Frequency per 10% increased  "}
 c["+20 Additional Healing Per Second"]={{},"  Per Second "}
-c["+20 Aftershock Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=20},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=20},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=20},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=20},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=20},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=20},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=20},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=20},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=20},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=20},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=20},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=20},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=20},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=20}},nil}
+c["+20 Aftershock Spell Damage"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=20}}," After   "}
 c["+20 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=20}},nil}
 c["+20 Armor Granted On Ricochet"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=20}},"  Granted On Ricochet "}
 c["+20 Armour With Shield"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=20}},"  With Shield "}
 c["+20 Armour With Shield 3% Increased Armor With Shield"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=20}},"  With Shield 3% Increased Armor With Shield "}
-c["+20 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireMin",type="BASE",value=20},[2]={flags=2048,keywordFlags=0,name="FireMax",type="BASE",value=20}},nil}
+c["+20 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireDamage",type="BASE",value=20}},nil}
 c["+20 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
 c["+20 Cooldown (seconds) Cooldown Refreshes on Runic Invocation"]={{}," Cooldown (seconds) Cooldown Refreshes on  "}
 c["+20 Dodge Rating"]={{}," Dodge Rating "}
@@ -3649,23 +3649,24 @@ c["+20 Health gained when you Dodge"]={{[1]={flags=0,keywordFlags=0,name="Life",
 c["+20 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=20}},nil}
 c["+20 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=20}},nil}
 c["+20 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=20}},nil}
-c["+20 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=20},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=20}},nil}
-c["+20 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=20},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=20}},nil}
-c["+20 Melee cold damage in Werebear Form"]={{[1]={[1]={skillId="wb8fo",type="SkillId"},flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=20},[2]={[1]={skillId="wb8fo",type="SkillId"},flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=20}}," in  "}
+c["+20 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=20}},nil}
+c["+20 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=20}},nil}
+c["+20 Melee cold damage in Werebear Form"]={{[1]={[1]={skillId="wb8fo",type="SkillId"},flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=20}},"  in  "}
 c["+20 Minion Armor"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=20}}}},nil}
-c["+20 Minion Melee Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=20}}}},"  Melee  "}
+c["+20 Minion Bow Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=20}}}},nil}
+c["+20 Minion Melee Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=20}}}},nil}
 c["+20 Rage gained every 3 seconds while in Spriggan Form"]={{}," Rage gained every 3 seconds while in  "}
-c["+20 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=20},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=20}},nil}
-c["+20 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=20},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=20},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=20},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=20},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=20},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=20},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=20},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=20},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=20},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=20},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=20},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=20},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=20},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=20}},nil}
-c["+20 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=20},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=20}},nil}
-c["+20 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=20},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=20}},nil}
+c["+20 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=20}},nil}
+c["+20 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=20}},nil}
+c["+20 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=20}},nil}
+c["+20 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=20}},nil}
 c["+20 Stun Avoidance"]={{}," Stun Avoidance "}
 c["+20 Totem Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=20}},"tem  "}
 c["+20 Totem Armor Totems Cannot Be Stunned"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=20}},"tem  Totems Cannot Be Stunned "}
 c["+20 Totem Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=20}},"tem  "}
 c["+20 Totem Health +20 Totem Armor"]={{[1]={[1]={skillId="Ailment_Totem Armor",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=20}},"tem  +20  "}
 c["+20 Totem Health +20 Totem Armor Totems Cannot Be Stunned"]={{[1]={[1]={skillId="Ailment_Totem Armor",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=20}},"tem  +20  Totems Cannot Be Stunned "}
-c["+20 Void Damage For Next Throwing"]={{[1]={flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=20},[2]={flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=20}}," For Next Throwing "}
+c["+20 Void Damage For Next Throwing"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=20}},"  For Next Throwing "}
 c["+20 Ward Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=20}},"  Gain "}
 c["+20% Aftershock Damage"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=20}}," After  "}
 c["+20% Aftershock Damage +20% Aftershock Stun Chance"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=20}}," After  +20% Aftershock Stun Chance "}
@@ -3825,7 +3826,7 @@ c["+20% Hit Damage vs Slowed"]={{[1]={[1]={skillId="Ailment_Slow",type="SkillId"
 c["+20% Ignite Chance"]={{}," "}
 c["+20% Ignite Chance +10% First Attack Ignite Duration"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=20}}," +10% First Attack   "}
 c["+20% Ignite Chance With Rah Rune"]={{}," With Rah Rune "}
-c["+20% Ignite Chance With Rah Rune +6 Spell Fire Damage With Rah Rune"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=20}}," With Rah Rune +6   With Rah Rune "}
+c["+20% Ignite Chance With Rah Rune +6 Spell Fire Damage With Rah Rune"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=20}}," With Rah Rune +6  With Rah Rune "}
 c["+20% Ignite Chance per Second"]={{}," per Second "}
 c["+20% Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="BASE",value=20}},nil}
 c["+20% Increased Area with Thorn Shield"]={{},"  with Thorn Shield "}
@@ -3852,7 +3853,7 @@ c["+20% Knockback Distance"]={{[1]={flags=0,keywordFlags=0,name="EnemyKnockbackD
 c["+20% Largest Explosion Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=20}}," Largest Explosion  "}
 c["+20% Largest Hit Ice Vortex Chance"]={{}," Largest Hit Ice Vortex Chance "}
 c["+20% Largest Hit Ice Vortex Chance +25% Rime Effect"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=20}}," Largest Hit Ice Vortex Chance +25% Rime  "}
-c["+20% Less Health Required For Faith"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=20}}," Less  Required For Faith "}
+c["+20% Less Health Required For Faith"]={{[1]={flags=0,keywordFlags=0,name="Life",type="MORE",value=-20}},"  Required For Faith "}
 c["+20% Lightning -> Shock Chance"]={{}," Lightning ->  Chance "}
 c["+20% Lightning -> Shock Chance +20% Fire -> Ignite Chance"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=20}}," Lightning ->  Chance +20% Fire ->  "}
 c["+20% Lightning Damage during Rampage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=20}},"  during Rampage "}
@@ -3890,16 +3891,15 @@ c["+20% Middle Hit Ice Vortex Chance +1 Rime Duration"]={{[1]={flags=0,keywordFl
 c["+20% Minion Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=20}}}},nil}
 c["+20% Minion Freeze Rate Multiplier"]={{},"  Freeze Rate Multiplier "}
 c["+20% Missing Health gained as Ward per second"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=20}}," Missing  gained as Ward per second "}
-c["+20% More Explosion Area Per Second On Ground"]={{}," More Explosion  Per Second On Ground "}
-c["+20% More Explosion Area Per Second On Ground +20% Explosion Damage Per Second On Ground"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=20}}," More Explosion  Per Second On Ground +20% Explosion  Per Second On Ground "}
-c["+20% More Hit Damage if you have only one Singularity equipped"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=20}}," More Hit  if you have only one Singularity equipped "}
+c["+20% More Explosion Area Per Second On Ground"]={{}," Explosion  Per Second On Ground "}
+c["+20% More Explosion Area Per Second On Ground +20% Explosion Damage Per Second On Ground"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="MORE",value=20}}," Explosion  Per Second On Ground +20% Explosion  Per Second On Ground "}
+c["+20% More Hit Damage if you have only one Singularity equipped"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=20}}," Hit  if you have only one Singularity equipped "}
 c["+20% Movespeed per stack"]={{}," Movespeed per stack "}
 c["+20% Movespeed per stack +10% Melee Attack Speed per stack"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=20}}," Movespeed per stack +10%   per stack "}
 c["+20% Movespeed per stack +10% Melee Attack Speed per stack 30% Ignite Chance -> Minion Ignite Chance per stack"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=3584,keywordFlags=0,name="Speed",type="BASE",value=20}}," Movespeed per stack +10%   per stack 30%  Chance -> Minion Ignite Chance per stack "}
 c["+20% Movespeed while Channeling"]={{}," Movespeed while Channeling "}
 c["+20% Movespeed while Channeling +50% Channel Cost"]={{}," Movespeed while Channeling +50% Channel Cost "}
-c["+20% Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=20}}," Necrotic  "}
-c["+20% Necrotic Damage +5% Necrotic Health Leech"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=20}}," Necrotic  +5% Necrotic Health Leech "}
+c["+20% Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=20}},nil}
 c["+20% Necrotic Penetration with Possess per stack of Damned on You (up to 7)"]={{}," Necrotic Peration with Possess per stack of Damned on You (up to 7) "}
 c["+20% Necrotic Resistance Shred Chance"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_NecroticResistanceShred",type="BASE",value=20}},nil}
 c["+20% Non-Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=20}}," Non- "}
@@ -4010,12 +4010,12 @@ c["+200% Vine Size and Threat Generation +200% Vine Melee Damage +200% Vine Mele
 c["+2000 Ward consumed when you use a melee attack"]={{[1]={flags=512,keywordFlags=0,name="Ward",type="BASE",value=2000}},"  consumed when you use a  attack "}
 c["+208% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
 c["+21 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=21}},nil}
-c["+21 Lightning damage to spells and attacks when you are hit by Lightning from Storm Totem for 4 seconds. (stacks up to 3 times)"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=21},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=21}}," to s and attacks when you are hit by Lightning from Storm Totem . (stacks up to 3 times) "}
-c["+21 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=21},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=21}},nil}
-c["+21 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=21},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=21},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=21},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=21},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=21},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=21},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=21},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=21},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=21},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=21},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=21},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=21},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=21},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=21}},nil}
-c["+21 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=21},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=21}},nil}
-c["+21 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=21},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=21}},nil}
-c["+21 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=21},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=21}},nil}
+c["+21 Lightning damage to spells and attacks when you are hit by Lightning from Storm Totem for 4 seconds. (stacks up to 3 times)"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=21}},"  to s and attacks when you are hit by Lightning from Storm Totem . (stacks up to 3 times) "}
+c["+21 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=21}},nil}
+c["+21 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=21}},nil}
+c["+21 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=21}},nil}
+c["+21 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=21}},nil}
+c["+21 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=21}},nil}
 c["+21% Chance to Blind on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Blind",type="BASE",value=21}},nil}
 c["+21% Chance to cast Chthonic Fissure when you hit a boss or rare enemy with Soul Feast and don't have an active Fissure"]={{}," to cast  when you hit a boss or rare enemy with Soul Feast and don't have an active Fissure "}
 c["+21% Chance to summon a Storm Totem on hit with Tempest Strike"]={{}," to summon a Storm Totem  with  "}
@@ -4024,13 +4024,13 @@ c["+21% Increased aura area of Storm Totem"]={{}," aura  of Storm Totem "}
 c["+21% Minion Lightning Penetration"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="LightningPenetration",type="BASE",value=21}}}},nil}
 c["+21% Minion Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticPenetration",type="BASE",value=21}}}},nil}
 c["+21% Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="NecroticPenetration",type="BASE",value=21}},nil}
-c["+22 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningMin",type="BASE",value=22},[2]={flags=2048,keywordFlags=0,name="LightningMax",type="BASE",value=22}},nil}
-c["+22 Lightning Throwing Damage with Javelin"]={{[1]={[1]={skillId="javeli",type="SkillId"},flags=1024,keywordFlags=0,name="LightningMin",type="BASE",value=22},[2]={[1]={skillId="javeli",type="SkillId"},flags=1024,keywordFlags=0,name="LightningMax",type="BASE",value=22}}," with  "}
-c["+22 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=22},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=22},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=22},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=22},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=22},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=22},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=22},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=22},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=22},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=22},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=22},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=22},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=22},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=22}},nil}
-c["+22 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=22},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=22}},nil}
-c["+22 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=22},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=22},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=22},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=22},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=22},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=22},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=22},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=22},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=22},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=22},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=22},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=22},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=22},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=22}},nil}
-c["+22 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=22},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=22}},nil}
-c["+22 Throwing Lightning Damage"]={{[1]={flags=1024,keywordFlags=0,name="LightningMin",type="BASE",value=22},[2]={flags=1024,keywordFlags=0,name="LightningMax",type="BASE",value=22}},nil}
+c["+22 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningDamage",type="BASE",value=22}},nil}
+c["+22 Lightning Throwing Damage with Javelin"]={{[1]={[1]={skillId="javeli",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=22}}," Lightning Throwing  with  "}
+c["+22 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=22}},nil}
+c["+22 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=22}},nil}
+c["+22 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=22}},nil}
+c["+22 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=22}},nil}
+c["+22 Throwing Lightning Damage"]={{[1]={flags=1024,keywordFlags=0,name="LightningDamage",type="BASE",value=22}},nil}
 c["+22% Chance to gain Haste for 1 second on Hit"]={nil,"Haste for 1 second on Hit "}
 c["+22% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=22}},nil}
 c["+22% Doom Chance"]={{}," "}
@@ -4047,7 +4047,7 @@ c["+220% Ward Retention on Transform"]={{[1]={flags=0,keywordFlags=0,name="Ward"
 c["+225 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=225}},nil}
 c["+23 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=23}},nil}
 c["+23 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=23}},nil}
-c["+23 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=23},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=23},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=23},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=23},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=23},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=23},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=23},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=23},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=23},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=23},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=23},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=23},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=23},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=23}},nil}
+c["+23 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=23}},nil}
 c["+23 Ward Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=23}},"  Gain "}
 c["+23 Ward Gain on Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=23}},"  Gain  "}
 c["+23% Block Chance"]={{}," "}
@@ -4058,21 +4058,21 @@ c["+23% Increased Minion Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0
 c["+23% Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=23}},nil}
 c["+23% Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="NecroticPenetration",type="BASE",value=23}},nil}
 c["+230 Ward Decay Threshold"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=230}},"  Decay Threshold "}
-c["+24 Bow Damage"]={{[1]={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=24},[2]={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=24},[3]={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=24},[4]={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=24},[5]={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=24},[6]={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=24},[7]={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=24},[8]={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=24},[9]={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=24},[10]={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=24},[11]={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=24},[12]={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=24},[13]={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=24},[14]={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=24}},nil}
-c["+24 Damage over Time Spell Fire Damage"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=24},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=24},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=24},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=24},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=24},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=24},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=24},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=24},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=24},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=24},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=24},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=24},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=24},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=24}}," over Time   "}
+c["+24 Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=24}},nil}
+c["+24 Damage over Time Spell Fire Damage"]={{[1]={flags=4352,keywordFlags=0,name="Damage",type="BASE",value=24}},"   Fire Damage "}
 c["+24 Ignited Enemy Ward Gain On Pass Through"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=24}}," d Enemy  Gain On Pass Through "}
 c["+24 Ignited Enemy Ward Gain On Pass Through +12 Ward Gain Per Ignite On Pass Through"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=24}}," d Enemy  Gain On Pass Through +12 Ward Gain Per Ignite On Pass Through "}
 c["+24 Ignited Enemy Ward Gain On Pass Through +12 Ward Gain Per Ignite On Pass Through All Ignites Consumed"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=24}}," d Enemy  Gain On Pass Through +12 Ward Gain Per Ignite On Pass Through All Ignites Consumed "}
 c["+24 Ignited Enemy Ward Gain On Pass Through +12 Ward Gain Per Ignite On Pass Through All Ignites Consumed No Remaining Ignite Damage"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=24}}," d Enemy  Gain On Pass Through +12 Ward Gain Per Ignite On Pass Through All Ignites Consumed No Remaining Ignite Damage "}
 c["+24 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=24}},nil}
 c["+24 Mana consumed by Grim Harvest"]={{[1]={[1]={skillId="ha84",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=24}},"  consumed by Grim  "}
-c["+24 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=24},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=24}},nil}
-c["+24 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=24},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=24},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=24},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=24},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=24},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=24},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=24},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=24},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=24},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=24},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=24},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=24},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=24},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=24}},nil}
-c["+24 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=24},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=24}},nil}
-c["+24 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=24},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=24}},nil}
-c["+24 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=24},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=24},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=24},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=24},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=24},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=24},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=24},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=24},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=24},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=24},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=24},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=24},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=24},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=24}},nil}
-c["+24 Spell Fire Damage for Infernal Shade per Active Dread Shade"]={{[1]={[1]={skillId="is40",type="SkillId"},flags=256,keywordFlags=0,name="FireMin",type="BASE",value=24},[2]={[1]={skillId="is40",type="SkillId"},flags=256,keywordFlags=0,name="FireMax",type="BASE",value=24}}," for  per Active Dread Shade "}
-c["+24 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=24},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=24}},nil}
+c["+24 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=24}},nil}
+c["+24 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=24}},nil}
+c["+24 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=24}},nil}
+c["+24 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=24}},nil}
+c["+24 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=24}},nil}
+c["+24 Spell Fire Damage for Infernal Shade per Active Dread Shade"]={{[1]={[1]={skillId="is40",type="SkillId"},flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=24}},"  for  per Active Dread Shade "}
+c["+24 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=24}},nil}
 c["+24 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=24}},nil}
 c["+24% Area"]={{},"  "}
 c["+24% Area 12% Frailty Chance"]={{},"  12%  Chance "}
@@ -4087,8 +4087,8 @@ c["+24% Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=24}
 c["+24% Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=24}},nil}
 c["+24% Melee Increased Stun Duration"]={{[1]={flags=512,keywordFlags=0,name="EnemyStunDuration",type="BASE",value=24}},"  Increased  "}
 c["+24% Physical Penetration"]={{[1]={flags=0,keywordFlags=0,name="PhysicalPenetration",type="BASE",value=24}},nil}
-c["+240 Melee fire damage with next void melee attack every 2 seconds"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=240},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=240}}," with next void  attack every 2 seconds "}
-c["+240 Melee void damage with next fire melee attack every 2 seconds"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=240},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=240}}," with next fire  attack every 2 seconds "}
+c["+240 Melee fire damage with next void melee attack every 2 seconds"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=240}},"  with next void  attack every 2 seconds "}
+c["+240 Melee void damage with next fire melee attack every 2 seconds"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=240}},"  with next fire  attack every 2 seconds "}
 c["+240% Ignite chance with next void melee attack every 2 seconds"]={{}," with next void  attack every 2 seconds "}
 c["+240% Increased Melee Stun Chance"]={{},"  Stun Chance "}
 c["+240% Time Rot chance with next fire melee attack every 2 seconds"]={{},"  chance with next fire  attack every 2 seconds "}
@@ -4097,20 +4097,21 @@ c["+245 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=24
 c["+245% Spell Void Chance to Ignite on Hit"]={{},"  Void Chance to  on Hit "}
 c["+25 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=25}},nil}
 c["+25 Dodge Rating"]={{}," Dodge Rating "}
-c["+25 Falcon Melee Damage for 4 seconds on Crit (1 second cooldown)"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=25},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=25},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=25},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=25},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=25},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=25},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=25},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=25},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=25},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=25},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=25},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=25},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=25},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=25}},"  on Crit (1 second cooldown) "}
+c["+25 Falcon Melee Damage for 4 seconds on Crit (1 second cooldown)"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=25}}," Falcon   on Crit (1 second cooldown) "}
 c["+25 Heal Amount"]={{}," Heal Amount "}
 c["+25 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=25}},nil}
 c["+25 Health Gain on Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Life",type="BASE",value=25}},"  Gain  "}
 c["+25 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=25}},nil}
 c["+25 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=25}},nil}
 c["+25 Maximum Charges"]={{[1]={flags=0,keywordFlags=0,name="FlaskCharges",type="BASE",value=25}},nil}
-c["+25 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=25},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=25}},nil}
-c["+25 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=25},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=25},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=25},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=25},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=25},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=25},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=25},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=25},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=25},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=25},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=25},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=25},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=25},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=25}},nil}
-c["+25 Melee Fire Damage with Smelter's Wrath per Forged Weapon"]={{[1]={[1]={skillId="st4th",type="SkillId"},flags=512,keywordFlags=0,name="FireMin",type="BASE",value=25},[2]={[1]={skillId="st4th",type="SkillId"},flags=512,keywordFlags=0,name="FireMax",type="BASE",value=25}}," with  per Forged  "}
-c["+25 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=25},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=25}},nil}
+c["+25 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=25}},nil}
+c["+25 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=25}},nil}
+c["+25 Melee Fire Damage with Smelter's Wrath per Forged Weapon"]={{[1]={[1]={skillId="st4th",type="SkillId"},flags=67109376,keywordFlags=0,name="FireDamage",type="BASE",value=25}},"  with  per Forged  "}
+c["+25 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=25}},nil}
 c["+25 Minion Armor Per Minion Consumed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=25}}}},"   Per Minion Consumed "}
-c["+25 Minion Bow Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=25}}}},"  Bow  "}
-c["+25 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=25},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=25}},nil}
+c["+25 Minion Bow Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=25}}}},nil}
+c["+25 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=25}}}},nil}
+c["+25 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=25}},nil}
 c["+25 Ward From Burst"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=25}},"  From Burst "}
 c["+25 Ward From Burst +5 Mana From Burst"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=25}},"  From Burst +5 Mana From Burst "}
 c["+25% Aftershock Damage"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=25}}," After  "}
@@ -4321,7 +4322,7 @@ c["+25% Projectile Speed"]={{[1]={flags=0,keywordFlags=0,name="ProjectileSpeed",
 c["+25% Pull Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=25}}," Pull  "}
 c["+25% Recalled Blades Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=25}}," Recalled Blades  "}
 c["+25% Recalled Blades Damage -10% Thrown Blades Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=25}}," Recalled Blades  -10% Thrown Blades Damage "}
-c["+25% Reduced Shift Distance"]={{}," Reduced  Distance "}
+c["+25% Reduced Shift Distance"]={{},"  Distance "}
 c["+25% Retribution Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="BASE",value=25}}," Retribution  "}
 c["+25% Rime Effect"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=25}}," Rime  "}
 c["+25% Rune Ember Frequency During Flame Rush"]={{}," Rune Ember Frequency During  "}
@@ -4379,7 +4380,7 @@ c["+25% Upgrade Speed"]={{}," Upgrade Speed "}
 c["+25% Void Beam Chance"]={{}," Void Beam Chance "}
 c["+25% Void Rift Area"]={{}," Void Rift  "}
 c["+25% Void Rift Time Rot Chance"]={{}," Void Rift  Chance "}
-c["+25% Void Rift Time Rot Chance +1% Global Void Damage per Time Rot"]={{[1]={[1]={type="Global"},[2]={skillId="Ailment_TimeRot",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=25}}," Void Rift  Chance +1%  Void  per Time Rot "}
+c["+25% Void Rift Time Rot Chance +1% Global Void Damage per Time Rot"]={{[1]={[1]={type="Global"},[2]={skillId="Ailment_TimeRot",type="SkillId"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=25}}," Void Rift  Chance +1%   per Time Rot "}
 c["+25% Ward Retention"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=25}},"  Retention "}
 c["+25% Zombie Explosion Damage"]={{[1]={[1]={includeTransfigured=true,skillName="Raise Zombie",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=25}}}},"  Explosion  "}
 c["+25% Zombie Explosion Damage +40% Zombie Explosion Area"]={{[1]={[1]={includeTransfigured=true,skillName="Raise Zombie",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=25}}}},"  Explosion  +40% Zombie Explosion Area "}
@@ -4394,8 +4395,8 @@ c["+250% Infernal Shade Damage Modifier 2 Infernal Shade Remaining Duration (Sec
 c["+250% Javelin Damage"]={{[1]={[1]={skillId="javeli",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=250}},nil}
 c["+26 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=26}},nil}
 c["+26 Health Regen while in Spriggan Form"]={{[1]={[1]={skillId="sf5rd",type="SkillId"},flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=26}},"  while in  "}
-c["+26 Lightning Damage with Shurikens"]={{[1]={[1]={skillId="srk21",type="SkillId"},flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=26},[2]={[1]={skillId="srk21",type="SkillId"},flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=26}}," with  "}
-c["+26 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=26},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=26},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=26},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=26},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=26},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=26},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=26},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=26},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=26},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=26},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=26},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=26},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=26},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=26}},nil}
+c["+26 Lightning Damage with Shurikens"]={{[1]={[1]={skillId="srk21",type="SkillId"},flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=26}},"  with  "}
+c["+26 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=26}},nil}
 c["+26% Block Chance"]={{}," "}
 c["+26% Chance to Ignite on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=26}},nil}
 c["+26% Chance to Reveal a Wandering Spirit on Kill (1 Second Cooldown)"]={{}," to Reveal a Wandering Spirit  (1 Second Cooldown) "}
@@ -4410,10 +4411,10 @@ c["+26% Poison Resistance"]={{},"  Resistance "}
 c["+26% SpreadingFlames Chance"]={{}," "}
 c["+26% chance to cast Smite at a nearby enemy on Kill"]={{}," to cast  at a nearby enemy  "}
 c["+27 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=27}},nil}
-c["+27 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=27},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=27},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=27},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=27},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=27},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=27},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=27},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=27},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=27},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=27},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=27},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=27},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=27},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=27}},nil}
-c["+27 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=27},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=27}},nil}
-c["+27 Minion Damage over Time Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=27}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=27}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=27}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=27}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=27}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=27}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=8,name="FireMin",type="BASE",value=27}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=8,name="FireMax",type="BASE",value=27}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=27}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=27}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=27}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=27}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=27}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=27}}}}," over Time   "}
-c["+27 Minion Melee Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=27}}}},"  Melee  "}
+c["+27 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=27}},nil}
+c["+27 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=27}},nil}
+c["+27 Minion Damage over Time Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=4096,keywordFlags=0,name="Damage",type="BASE",value=27}}}},"    Damage "}
+c["+27 Minion Melee Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=27}}}},nil}
 c["+27% Bow Chance to Blind on Hit"]={{[1]={flags=8390656,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Blind",type="BASE",value=27}},nil}
 c["+27% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=27}},nil}
 c["+27% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=27}},nil}
@@ -4423,9 +4424,9 @@ c["+275% Max Distance Counts as Traversal Skill"]={{}," Max Distance Counts as T
 c["+275% Max Distance Counts as Traversal Skill +1 Cooldown Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=275}}," Max Distance Counts as Traversal Skill +1  (seconds) "}
 c["+279 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=279}},nil}
 c["+28 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=28}},nil}
-c["+28 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=28},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=28},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=28},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=28},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=28},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=28},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=28},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=28},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=28},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=28},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=28},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=28},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=28},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=28}},nil}
-c["+28 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=28},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=28}},nil}
-c["+28 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=28},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=28}},nil}
+c["+28 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=28}},nil}
+c["+28 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=28}},nil}
+c["+28 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=28}},nil}
 c["+28 Ward per Second"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=28}},"  per Second "}
 c["+28% Block Chance"]={{}," "}
 c["+28% Chance each second to cast Summon Vines if you are Moving"]={{}," each second to cast Summon Vines if you are Moving "}
@@ -4447,10 +4448,10 @@ c["+28% Necrotic Resistance"]={{}," Necrotic Resistance "}
 c["+28% Spell Chance to Slow on Hit"]={{[1]={flags=8388864,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Slow",type="BASE",value=28}},nil}
 c["+28% Spell Electrify Chance"]={{[1]={flags=8388864,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Electrify",type="BASE",value=28}},nil}
 c["+28% increased Frost Wall Duration"]={{[1]={[1]={skillId="fr4wl",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=28}},nil}
-c["+29 Damage over Time Spell Poison Damage"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=29},[2]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=29},[3]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=29},[4]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=29},[5]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=29},[6]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=29},[7]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=8,name="FireMin",type="BASE",value=29},[8]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=8,name="FireMax",type="BASE",value=29},[9]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=29},[10]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=29},[11]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=29},[12]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=29},[13]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=29},[14]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=29}}," over Time    "}
+c["+29 Damage over Time Spell Poison Damage"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=4352,keywordFlags=0,name="Damage",type="BASE",value=29}},"    Damage "}
 c["+29 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=29}},nil}
 c["+29 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=29}},nil}
-c["+29 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=29},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=29},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=29},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=29},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=29},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=29},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=29},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=29},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=29},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=29},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=29},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=29},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=29},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=29}},nil}
+c["+29 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=29}},nil}
 c["+29 Ward Gained on Potion Use"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=29}},"  Gained on Potion Use "}
 c["+29% Critical Strike Avoidance"]={{}," Critical Strike Avoidance "}
 c["+29% Minion Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticPenetration",type="BASE",value=29}}}},nil}
@@ -4462,13 +4463,13 @@ c["+3 All Attributes"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",valu
 c["+3 Armour per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},flags=0,keywordFlags=0,name="Armour",type="BASE",value=3}},nil}
 c["+3 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=3}},nil}
 c["+3 Bees Per 10 Seconds"]={{}," Bees Per 10 Seconds "}
-c["+3 Bow Damage For Ballista"]={{[1]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={[1]={skillId="ba1574",type="SkillId"},flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," For  "}
+c["+3 Bow Damage For Ballista"]={{[1]={[1]={skillId="ba1574",type="SkillId"},flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=3}},"  For  "}
 c["+3 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
 c["+3 Cooldown (seconds) +150% Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=3}}," Cooldown (seconds) +150%  "}
 c["+3 Cooldown Duration"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=3}},nil}
 c["+3 Daggers Thrown"]={{}," Daggers Thrown "}
 c["+3 Daggers Thrown No Melee Attack"]={{}," Daggers Thrown No  Attack "}
-c["+3 Damage over Time Level of Skills"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," over Time Level of Skills "}
+c["+3 Damage over Time Level of Skills"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="BASE",value=3}},"  Level of Skills "}
 c["+3 Dark Shackle Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=3}}," Dark Shackle  (Seconds) "}
 c["+3 Dark Shackle Duration (Seconds) +60 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=3}}," Dark Shackle  (Seconds) +60 Mana Cost "}
 c["+3 Detonating Arrow"]={{},"  "}
@@ -4476,24 +4477,25 @@ c["+3 Enchant Weapon"]={{},"  "}
 c["+3 Falconry"]={{},"  "}
 c["+3 Fire Aura Base Damage per second"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}}," Fire Aura Base  per second "}
 c["+3 Fire Aura Base Damage per second 15% Increased Fire Aura Area"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=3}}," Fire Aura Base  per second 15% Increased Fire Aura  "}
-c["+3 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=3}},nil}
-c["+3 Fire Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=3}}," with  Arrow "}
-c["+3 Fire Damage with Elemental Arrow +3 Lightning Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=3}}," with  Arrow +3  with Elemental Arrow "}
-c["+3 Fire Damage with Elemental Arrow +3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=3}}," with  Arrow +3  with Elemental Arrow 1 Elemental Arrows Per Second "}
-c["+3 Fire Damage with Elemental Arrow +3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=3}}," with  Arrow +3  with Elemental Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows "}
+c["+3 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=3}},nil}
+c["+3 Fire Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=14,name="FireDamage",type="BASE",value=3}},"  with  Arrow "}
+c["+3 Fire Damage with Elemental Arrow +3 Lightning Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=14,name="FireDamage",type="BASE",value=3}},"  with  Arrow +3 Lightning Damage with Elemental Arrow "}
+c["+3 Fire Damage with Elemental Arrow +3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second"]={{[1]={flags=0,keywordFlags=14,name="FireDamage",type="BASE",value=3}},"  with  Arrow +3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second "}
+c["+3 Fire Damage with Elemental Arrow +3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows"]={{[1]={flags=0,keywordFlags=14,name="FireDamage",type="BASE",value=3}},"  with  Arrow +3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows "}
 c["+3 Fire Level of Skills"]={{}," Fire Level of Skills "}
 c["+3 Flame Reave"]={{},"  "}
-c["+3 Global Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=3}},nil}
-c["+3 Global Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=3}},nil}
+c["+3 Global Melee Damage"]={{[1]={[1]={type="Global"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=3}},nil}
+c["+3 Global Spell Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}},"  Spell  "}
+c["+3 Global Spell Damage 3 Duration (Seconds)"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}},"  Spell  3 Duration (Seconds) "}
 c["+3 Health Gained On Kill Or Hit"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Life",type="BASE",value=3}},"  Gained  Or Hit "}
 c["+3 Health Gained On Kill Or Hit +3 Rage Gained On Kill Or Hit"]={{[1]={[1]={type="Condition",var="KilledRecently"},[2]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Life",type="BASE",value=3}},"  Gained  Or Hit +3 Rage Gained  Or Hit "}
 c["+3 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=3}},nil}
 c["+3 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=3}},nil}
 c["+3 Level of Skills"]={{}," Level of Skills "}
-c["+3 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=3}},nil}
-c["+3 Lightning Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=3}}," with  Arrow "}
-c["+3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=3}}," with  Arrow 1 Elemental Arrows Per Second "}
-c["+3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=3}}," with  Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows "}
+c["+3 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=3}},nil}
+c["+3 Lightning Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=14,name="LightningDamage",type="BASE",value=3}},"  with  Arrow "}
+c["+3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second"]={{[1]={flags=0,keywordFlags=14,name="LightningDamage",type="BASE",value=3}},"  with  Arrow 1 Elemental Arrows Per Second "}
+c["+3 Lightning Damage with Elemental Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows"]={{[1]={flags=0,keywordFlags=14,name="LightningDamage",type="BASE",value=3}},"  with  Arrow 1 Elemental Arrows Per Second 3 Maximum Elemental Arrows "}
 c["+3 Locust Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=3}}," Locust  "}
 c["+3 Locust Melee Physical Damage +3 Swarm Melee Physical Damage Per Locust"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=3}}," Locust  +3 Swarm  Physical Damage Per Locust "}
 c["+3 Lunge"]={{},"  "}
@@ -4507,22 +4509,22 @@ c["+3 Mana Gained"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=
 c["+3 Mark For Death Duration (seconds)"]={{[1]={[1]={skillId="md26kh",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=3}},"   (seconds) "}
 c["+3 Maximum Stacks"]={{}," Maximum Stacks "}
 c["+3 Maximum Stacks No Attack Speed Benefits"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=3}}," Maximum Stacks No  Benefits "}
-c["+3 Melee Damage For Falcon"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," For Falcon "}
-c["+3 Melee Damage For Falcon +3 Throwing Damage For Falcon"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," For Falcon +3 Throwing  For Falcon "}
-c["+3 Melee Damage For Falcon +3 Throwing Damage For Falcon +3 Bow Damage For Ballista"]={{[1]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," For Falcon +3 Throwing  For Falcon +3 Bow Damage For  "}
-c["+3 Melee Damage per Attunement for Judgement while Unarmed"]={{[1]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=3}},"  for   "}
-c["+3 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=3}},nil}
-c["+3 Melee Lightning Damage Per Stack"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=3}}," Per Stack "}
-c["+3 Melee Lightning Damage Per Stack +3 Spell Lightning Damage Per Stack"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=3}}," Per Stack +3   Per Stack "}
-c["+3 Melee Lightning Damage with a Staff"]={{[1]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=3}},nil}
-c["+3 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=3},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=3}},nil}
-c["+3 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=3},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=3}},nil}
+c["+3 Melee Damage For Falcon"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=3}},"  For Falcon "}
+c["+3 Melee Damage For Falcon +3 Throwing Damage For Falcon"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=3}},"  For Falcon +3 Throwing Damage For Falcon "}
+c["+3 Melee Damage For Falcon +3 Throwing Damage For Falcon +3 Bow Damage For Ballista"]={{[1]={[1]={skillId="ba1574",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=3}},"  For Falcon +3 Throwing Damage For Falcon +3 Bow Damage For  "}
+c["+3 Melee Damage per Attunement for Judgement while Unarmed"]={{[1]={[1]={stat="Att",type="PerStat"},[2]={type="Condition",var="Unarmed"},[3]={skillId="pa67ju",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=3}},"   for   "}
+c["+3 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=3}},nil}
+c["+3 Melee Lightning Damage Per Stack"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=3}},"  Per Stack "}
+c["+3 Melee Lightning Damage Per Stack +3 Spell Lightning Damage Per Stack"]={{[1]={flags=768,keywordFlags=0,name="LightningDamage",type="BASE",value=3}},"  Per Stack +3  Lightning Damage Per Stack "}
+c["+3 Melee Lightning Damage with a Staff"]={{[1]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=3}},nil}
+c["+3 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=3}},nil}
+c["+3 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=3}},nil}
 c["+3 Minion Cold Level of Skills"]={{},"  Cold Level of Skills "}
-c["+3 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdDamage",type="BASE",value=3}}}},"  Melee  "}
-c["+3 Minion Melee Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=3}}}},"  Melee  "}
-c["+3 Minion Melee Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=3}}}},"  Melee  "}
+c["+3 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=3}}}},nil}
+c["+3 Minion Melee Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=3}}}},nil}
+c["+3 Minion Melee Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=3}}}},nil}
 c["+3 Minion Necrotic Level of Skills"]={{},"  Necrotic Level of Skills "}
-c["+3 Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticMin",type="BASE",value=3},[2]={flags=0,keywordFlags=0,name="NecroticMax",type="BASE",value=3}},nil}
+c["+3 Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=3}},nil}
 c["+3 Potion Slots"]={{}," Potion Slots "}
 c["+3 Potion Slots if you have at least 900 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=3}}," Potion Slots if you have at least 900  "}
 c["+3 Projectiles with Spirit Thorns"]={{[1]={flags=0,keywordFlags=0,name="ProjectileCount",type="BASE",value=3}},"  with Spirit Thorns "}
@@ -4532,26 +4534,27 @@ c["+3 Sacrifice"]={{},"  "}
 c["+3 Secondary Explosions"]={{}," Secondary Explosions "}
 c["+3 Secondary Explosions 100% Increased Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=3}}," Secondary Explosions 100% Increased  "}
 c["+3 Seconds Cooldown for Bone Shatter"]={{}," Seconds Cooldown for Bone Shatter "}
-c["+3 Seconds of Damage Immunity After being Hit (15 second cooldown)"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," Immunity After being Hit (15 second cooldown) "}
+c["+3 Seconds of Damage Immunity After being Hit (15 second cooldown)"]={{}," Seconds of  After being Hit (15 second cooldown) "}
 c["+3 Seconds of Haste when you directly cast Soul Feast"]={{}," Seconds of  when you directly cast Soul Feast "}
 c["+3 Shield Throw"]={{},"  "}
 c["+3 Shurikens"]={{},"  "}
-c["+3 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=3}},nil}
-c["+3 Spell Damage Buff"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," Buff "}
-c["+3 Spell Damage Buff +15 Endurance Threshold Buff"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," Buff +15 Endurance Threshold Buff "}
-c["+3 Spell Damage With A Shield"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," With A Shield "}
-c["+3 Spell Damage for Curses"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=3}},nil}
+c["+3 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=3}},nil}
+c["+3 Spell Damage Buff"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=3}},"   Buff "}
+c["+3 Spell Damage Buff +15 Endurance Threshold Buff"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=3}},"   Buff +15 Endurance Threshold Buff "}
+c["+3 Spell Damage With A Shield"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=3}},"   With A Shield "}
+c["+3 Spell Damage for Curses"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=3}},"   for Curses "}
+c["+3 Spell Damage for Curses 3% Increased Area for Curses"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=3}},"   for Curses 3% Increased Area for Curses "}
 c["+3 Spell Level of Skills"]={{},"  Level of Skills "}
-c["+3 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=3}},nil}
-c["+3 Spell Lightning Damage Per Stack"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=3},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=3}}," Per Stack "}
+c["+3 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=3}},nil}
+c["+3 Spell Lightning Damage Per Stack"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=3}},"  Per Stack "}
 c["+3 Static Charges"]={{},"  Charges "}
 c["+3 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=3}},nil}
 c["+3 Summon Wolf"]={{},"  "}
 c["+3 Summon Wraith"]={{},"  "}
 c["+3 Surge"]={{},"  "}
 c["+3 Swarm Melee Physical Damage Per Locust"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=3}}," Swarm  Per Locust "}
-c["+3 Throwing Damage For Falcon"]={{[1]={flags=1024,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={flags=1024,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={flags=1024,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={flags=1024,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={flags=1024,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={flags=1024,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={flags=1024,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={flags=1024,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={flags=1024,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={flags=1024,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={flags=1024,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={flags=1024,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={flags=1024,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={flags=1024,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," For Falcon "}
-c["+3 Throwing Damage For Falcon +3 Bow Damage For Ballista"]={{[1]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=1,name="PhysicalMin",type="BASE",value=3},[2]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=1,name="PhysicalMax",type="BASE",value=3},[3]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=2,name="LightningMin",type="BASE",value=3},[4]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=2,name="LightningMax",type="BASE",value=3},[5]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=4,name="ColdMin",type="BASE",value=3},[6]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=4,name="ColdMax",type="BASE",value=3},[7]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=8,name="FireMin",type="BASE",value=3},[8]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=8,name="FireMax",type="BASE",value=3},[9]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=16,name="VoidMin",type="BASE",value=3},[10]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=16,name="VoidMax",type="BASE",value=3},[11]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=32,name="NecroticMin",type="BASE",value=3},[12]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=32,name="NecroticMax",type="BASE",value=3},[13]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=64,name="PoisonMin",type="BASE",value=3},[14]={[1]={skillId="ba1574",type="SkillId"},flags=1024,keywordFlags=64,name="PoisonMax",type="BASE",value=3}}," For Falcon +3  For  "}
+c["+3 Throwing Damage For Falcon"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}}," Throwing  For Falcon "}
+c["+3 Throwing Damage For Falcon +3 Bow Damage For Ballista"]={{[1]={[1]={skillId="ba1574",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}}," Throwing  For Falcon +3 Bow Damage For  "}
 c["+3 Vitality"]={{[1]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=3}},nil}
 c["+3 Ward Gain Per Spirit"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=3}},"  Gain Per Spirit "}
 c["+3 Ward Gained"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=3}},"  Gained "}
@@ -4631,7 +4634,7 @@ c["+3% Melee Damage Per Bleed 30% Maximum Damage"]={{[1]={[1]={skillId="Ailment_
 c["+3% Minion Attack And Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Speed",type="BASE",value=3}}}},nil}
 c["+3% Minion Bow Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritChance",type="BASE",value=3}}}},"  Bow  "}
 c["+3% Minion Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritChance",type="BASE",value=3}}}},nil}
-c["+3% More Damage per 2 Mana"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}}," More  per 2 Mana "}
+c["+3% More Damage per 2 Mana"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=3}},"  per 2 Mana "}
 c["+3% Necrotic Penetration"]={{[1]={flags=0,keywordFlags=0,name="NecroticPenetration",type="BASE",value=3}},nil}
 c["+3% Orb Hit Damage Per 1 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}}," Orb Hit  Per 1 Mana Cost "}
 c["+3% Orb Hit Damage Per 1 Mana Cost No Pierce"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=3}}," Orb Hit  Per 1 Mana Cost No Pierce "}
@@ -4661,17 +4664,17 @@ c["+30 Block Effectiveness +3% Block Chance"]={{[1]={flags=0,keywordFlags=0,name
 c["+30 Block Effectiveness 2 Health Gained On Block"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=30}}," Block iveness 2 Health Gained On Block "}
 c["+30 Block Effectiveness Per Stack"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=30}}," Block iveness Per Stack "}
 c["+30 Cone Width (Degrees)"]={{}," Cone Width (Degrees) "}
-c["+30 Damage"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=30},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=30},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=30},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=30},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=30},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=30},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=30},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=30},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=30},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=30},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=30},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=30},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=30},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=30}},nil}
-c["+30 Damage Reflected"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=30},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=30},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=30},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=30},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=30},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=30},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=30},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=30},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=30},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=30},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=30},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=30},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=30},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=30}}," Reflected "}
+c["+30 Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}},nil}
+c["+30 Damage Reflected"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}},"  Reflected "}
 c["+30 Dodge Rating"]={{}," Dodge Rating "}
 c["+30 Dodge Rating 3% Increased Dodge Rating Per Strength"]={{}," Dodge Rating 3% Increased Dodge Rating  "}
 c["+30 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=30}},nil}
 c["+30 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=30}},nil}
-c["+30 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=30},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=30}},nil}
-c["+30 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=30},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=30},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=30},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=30},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=30},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=30},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=30},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=30},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=30},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=30},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=30},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=30},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=30},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=30}},nil}
-c["+30 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=30},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=30}},nil}
-c["+30 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=30},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=30}},nil}
-c["+30 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdDamage",type="BASE",value=30}}}},"  Melee  "}
+c["+30 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=30}},nil}
+c["+30 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=30}},nil}
+c["+30 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=30}},nil}
+c["+30 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=30}},nil}
+c["+30 Minion Melee Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=30}}}},nil}
 c["+30 Rage Gain On Entangling Roots"]={{}," Rage Gain On  "}
 c["+30 Rage Gain On Entangling Roots +30% Entangling Roots Damage"]={{[1]={[1]={skillId="er6no",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}}," Rage Gain On  +30% Entangling Roots  "}
 c["+30 Ward Gain on Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=30}},"  Gain  "}
@@ -4821,15 +4824,15 @@ c["+30% Melee Ignite Chance on Cooldown +30% Melee Electrify Chance on Cooldown"
 c["+30% Minion Freeze Rate Multiplier"]={{},"  Freeze Rate Multiplier "}
 c["+30% Minion Physical Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=30}}}},"   Leeched as Health "}
 c["+30% Missing Health regained on Potion Use"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=30}}," Missing  regained on Potion Use "}
-c["+30% More Hit Damage Vs Stunned"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}}," More Hit  Vs Stunned "}
-c["+30% More Hit Damage Vs Stunned +30% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}}," More Hit  Vs Stunned +30% Increased Stun Duration "}
-c["+30% Necrotic Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}}," Necrotic  Leeched as Health "}
+c["+30% More Hit Damage Vs Stunned"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=30}}," Hit  Vs Stunned "}
+c["+30% More Hit Damage Vs Stunned +30% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=30}}," Hit  Vs Stunned +30% Increased Stun Duration "}
+c["+30% Necrotic Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=30}},"  Leeched as Health "}
 c["+30% Out-Of-Mana Damage"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=30}}," Out-Of- Damage "}
 c["+30% Physical Damage Over Time"]={{[1]={flags=0,keywordFlags=67108864,name="PhysicalDamage",type="BASE",value=30}},nil}
 c["+30% Physical Penetration for Bleed inflicted by Minions"]={{}," Physical Peration for Bleed inflicted by s "}
 c["+30% Physical Res Shred Chance"]={{}," Physical Res Shred Chance "}
 c["+30% Poison Chance"]={{}," "}
-c["+30% Poison Damage"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}},nil}
+c["+30% Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="BASE",value=30}},nil}
 c["+30% Projectile Speed through Frost Wall"]={{[1]={[1]={skillId="fr4wl",type="SkillId"},flags=0,keywordFlags=0,name="ProjectileSpeed",type="BASE",value=30}},"  through  "}
 c["+30% Range"]={{}," Range "}
 c["+30% Range Aftershocks Favour Earthquake Direction"]={{}," Range Afters Favour Earthquake Direction "}
@@ -4863,7 +4866,7 @@ c["+30% Venom Nova Area +30% Venom Nova Damage"]={{[1]={flags=67108864,keywordFl
 c["+30% Venom Nova Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}}," Venom Nova  "}
 c["+30% Vine Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=30}}," Vine  "}
 c["+30% Vine Health +15% Poison Resistance"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=30}}," Vine  +15%  Resistance "}
-c["+30% Void Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}}," Void  Leeched as Health "}
+c["+30% Void Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=30}},"  Leeched as Health "}
 c["+30% Void Rift Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=30}}," Void Rift  "}
 c["+30% Ward Retention"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=30}},"  Retention "}
 c["+30% Ward from Greater Fragments"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=30}},"  from Greater Fragments "}
@@ -4882,18 +4885,18 @@ c["+300% Minion Freeze Rate per stack of Chill"]={{},"  Freeze Rate per stack of
 c["+300% your Bleed Chance granted to your Falcon"]={{}," your  Chance granted to your Falcon "}
 c["+305 Dodge Rating if you have been hit recently"]={{}," Dodge Rating  "}
 c["+32 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=32}},nil}
-c["+32 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningMin",type="BASE",value=32},[2]={flags=2048,keywordFlags=0,name="LightningMax",type="BASE",value=32}},nil}
+c["+32 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningDamage",type="BASE",value=32}},nil}
 c["+32 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=32}},nil}
 c["+32 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=32}},nil}
-c["+32 Throwing Lightning Damage"]={{[1]={flags=1024,keywordFlags=0,name="LightningMin",type="BASE",value=32},[2]={flags=1024,keywordFlags=0,name="LightningMax",type="BASE",value=32}},nil}
+c["+32 Throwing Lightning Damage"]={{[1]={flags=1024,keywordFlags=0,name="LightningDamage",type="BASE",value=32}},nil}
 c["+32% Chance to Chill on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=32}},nil}
 c["+32% Chance to Shock on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=32}},nil}
 c["+32% Frostbite Chance"]={{}," "}
 c["+32% Minion Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=32}}}},nil}
 c["+32% increased area for Throwing Area Skills"]={{},"  for Throwing Area Skills "}
 c["+320 Ward Gained on Potion Use"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=320}},"  Gained on Potion Use "}
-c["+33 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=33},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=33},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=33},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=33},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=33},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=33},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=33},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=33},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=33},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=33},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=33},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=33},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=33},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=33}},nil}
-c["+33 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=33},[2]={flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=33}},nil}
+c["+33 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=33}},nil}
+c["+33 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=33}},nil}
 c["+33 Ward per Second"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=33}},"  per Second "}
 c["+33% Bleed Chance"]={{}," "}
 c["+33% Chance to Chill on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=33}},nil}
@@ -4910,8 +4913,8 @@ c["+33% Melee Chance to Chill on Hit"]={{[1]={flags=8389120,keywordFlags=0,name=
 c["+33% Melee Chance to Ignite on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=33}},nil}
 c["+33% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=33}},nil}
 c["+33% Melee Chance to Slow on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Slow",type="BASE",value=33}},nil}
-c["+34 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=34},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=34}},nil}
-c["+34 Spell Lightning Damage for all existing totems when you directly cast Summon Storm Totem"]={{[1]={[1]={skillId="st38ml",type="SkillId"},flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=34},[2]={[1]={skillId="st38ml",type="SkillId"},flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=34}}," for all existing totems when you directly cast  "}
+c["+34 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=34}},nil}
+c["+34 Spell Lightning Damage for all existing totems when you directly cast Summon Storm Totem"]={{[1]={[1]={skillId="st38ml",type="SkillId"},flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=34}},"  for all existing totems when you directly cast  "}
 c["+34# Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=34}},"#  "}
 c["+34# Explosion Ignite Chance"]={{},"# Explosion  Chance "}
 c["+34# Fear Chance"]={{},"#  Chance "}
@@ -4928,11 +4931,11 @@ c["+35 Health Gain Per Second No Death Waves Cast"]={{[1]={flags=0,keywordFlags=
 c["+35 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=35}},nil}
 c["+35 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=35}},nil}
 c["+35 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=35}},nil}
-c["+35 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=35},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=35}},nil}
-c["+35 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=35},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=35}},nil}
-c["+35 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=35},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=35}},nil}
-c["+35 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=35},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=35}},nil}
-c["+35 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=35},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=35},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=35},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=35},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=35},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=35},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=35},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=35},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=35},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=35},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=35},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=35},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=35},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=35}},nil}
+c["+35 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=35}},nil}
+c["+35 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=35}},nil}
+c["+35 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=35}},nil}
+c["+35 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=35}},nil}
+c["+35 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=35}},nil}
 c["+35 Up Front Healing"]={{}," Up Front  "}
 c["+35% Aftershock Area"]={{}," After  "}
 c["+35% Area per Projectile"]={{[1]={flags=67108864,keywordFlags=0,name="ProjectileCount",type="BASE",value=35}},"  per  "}
@@ -5002,7 +5005,7 @@ c["+350% Increased Area With Supernova"]={{},"  With Supernova "}
 c["+36 Armour per Rah Rune"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=36}},"  per Rah Rune "}
 c["+36 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=36}},nil}
 c["+36 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=36}},nil}
-c["+36 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=36},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=36},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=36},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=36},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=36},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=36},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=36},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=36},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=36},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=36},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=36},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=36},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=36},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=36}},nil}
+c["+36 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=36}},nil}
 c["+36 Ward gained when you Dodge While Channelling"]={{[1]={[1]={type="Condition",var="Channelling"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=36}},"  gained when you Dodge  "}
 c["+36% Chance to Bleed on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=36}},nil}
 c["+36% Chance to Cast Infernal Shade on Kill"]={{}," to Cast   "}
@@ -5027,7 +5030,7 @@ c["+373 Ward gained when damage leaves you at low health"]={{[1]={flags=0,keywor
 c["+375 Dodge Rating"]={{}," Dodge Rating "}
 c["+38 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=38}},nil}
 c["+38 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=38}},nil}
-c["+38 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=38},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=38},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=38},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=38},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=38},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=38},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=38},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=38},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=38},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=38},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=38},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=38},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=38},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=38}},nil}
+c["+38 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=38}},nil}
 c["+38% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=38}},nil}
 c["+38% Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=38}},nil}
 c["+38% Minion Chance to Chill Attackers"]={{}," to  Attackers "}
@@ -5041,7 +5044,7 @@ c["+39% Melee Chance to Shock on Hit"]={{[1]={flags=8389120,keywordFlags=0,name=
 c["+39% Melee Critical Strike Multiplier"]={{[1]={flags=512,keywordFlags=0,name="CritMultiplier",type="BASE",value=39}},nil}
 c["+39% Physical  Penetration with Bleed"]={{}," Physical  Peration with Bleed "}
 c["+390 Dodge Rating"]={{}," Dodge Rating "}
-c["+4 Additional Spell And Melee Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=4}},"  And Melee  "}
+c["+4 Additional Spell And Melee Lightning Damage"]={{[1]={flags=768,keywordFlags=0,name="LightningDamage",type="BASE",value=4}},"  And  "}
 c["+4 Additional Spells"]={{}," s "}
 c["+4 Additional Spells +2 Cooldown (seconds)"]={{}," s +2 Cooldown (seconds) "}
 c["+4 Additional Static Charges Per Second"]={{},"  Charges Per Second "}
@@ -5053,14 +5056,14 @@ c["+4 Aerial Assault"]={{},"  "}
 c["+4 All Attributes"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=4},[2]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=4},[3]={flags=0,keywordFlags=0,name="Int",type="BASE",value=4},[4]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=4},[5]={flags=0,keywordFlags=0,name="Att",type="BASE",value=4},[6]={flags=0,keywordFlags=0,name="All",type="BASE",value=4}},nil}
 c["+4 Armor Per Minion"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=4}}}},"  Per  "}
 c["+4 Arrows with Multishot"]={{}," Arrows with  "}
-c["+4 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalMin",type="BASE",value=4},[2]={flags=2048,keywordFlags=0,name="PhysicalMax",type="BASE",value=4}},nil}
+c["+4 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}},nil}
 c["+4 Chance to Shred Armor on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="Armour",type="BASE",value=4}}," Chance to Shred   "}
 c["+4 Cinder Strike"]={{},"  "}
 c["+4 Cinder Strike Melee Damage per Falcon Hit in the past 6 seconds if you are unarmed"]={{[1]={[1]={skillId="cstri",type="SkillId"},flags=8389120,keywordFlags=0,name="Damage",type="BASE",value=4}},"   per Falc in the past 6 seconds if you are unarmed "}
-c["+4 Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdMin",type="BASE",value=4},[2]={flags=0,keywordFlags=0,name="ColdMax",type="BASE",value=4}},nil}
-c["+4 Cold Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=4},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=4}},nil}
+c["+4 Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="BASE",value=4}},nil}
+c["+4 Cold Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=4}}," Cold   "}
 c["+4 Companion Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}}," Companion  "}
-c["+4 Companion Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=4},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=4},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=4},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=4},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=4},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=4},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=4},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=4},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=4},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=4},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=4},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=4},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=4},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=4}},nil}
+c["+4 Companion Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=4}}," Companion   "}
 c["+4 Cooldown"]={{}," Cooldown "}
 c["+4 Cooldown (Seconds)"]={{}," Cooldown (Seconds) "}
 c["+4 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
@@ -5069,11 +5072,11 @@ c["+4 Dive Bomb"]={{},"  "}
 c["+4 Dodge Rating Per Attunement"]={{}," Dodge Rating  "}
 c["+4 Extra Projectiles"]={{[1]={flags=0,keywordFlags=0,name="ProjectileCount",type="BASE",value=4}}," Extra  "}
 c["+4 Falconry"]={{},"  "}
-c["+4 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=4},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=4}},nil}
+c["+4 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=4}},nil}
 c["+4 Forged Weapon Melee Physical Damage"]={{[1]={flags=67109376,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}}," Forged   "}
 c["+4 Forged Weapon Melee Physical Damage +2 Maximum Forged Weapons"]={{[1]={flags=67109376,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}}," Forged   +2 Maximum Forged Weapons "}
 c["+4 Frost Wall"]={{},"  "}
-c["+4 Global Melee Fire Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=4}},"  Melee  "}
+c["+4 Global Melee Fire Damage"]={{[1]={[1]={type="Global"},flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=4}},nil}
 c["+4 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=4}},nil}
 c["+4 Health Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=4}},"  Gain "}
 c["+4 Health Granted"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=4}},"  Granted "}
@@ -5089,15 +5092,15 @@ c["+4 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",valu
 c["+4 Mana Cost On Chain"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=4}},"  On Chain "}
 c["+4 Mana Cost Per Second"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=4}},"  Per Second "}
 c["+4 Maximum Targets"]={{}," Maximum Targets "}
-c["+4 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=4},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=4},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=4},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=4},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=4},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=4},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=4},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=4},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=4},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=4},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=4},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=4},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=4},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=4}},nil}
-c["+4 Melee Damage Per Stack"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=4},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=4},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=4},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=4},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=4},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=4},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=4},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=4},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=4},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=4},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=4},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=4},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=4},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=4}}," Per Stack "}
-c["+4 Melee Damage Per Stack +1 Berserk Stacks On Hit While Berserk"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=4},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=4},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=4},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=4},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=4},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=4},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=4},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=4},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=4},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=4},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=4},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=4},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=4},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=4}}," Per Stack +1 Berserk Stacks  While Berserk "}
-c["+4 Melee Damage Per Stack +1 Berserk Stacks On Hit While Berserk 10 Maximum Stacks"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=4},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=4},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=4},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=4},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=4},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=4},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=4},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=4},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=4},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=4},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=4},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=4},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=4},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=4}}," Per Stack +1 Berserk Stacks  While Berserk 10 Maximum Stacks "}
-c["+4 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=4},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=4}},nil}
-c["+4 Melee Necrotic Damage for Minions when you cast Maelstrom"]={{[1]={[1]={skillId="mas54",type="SkillId"},flags=512,keywordFlags=0,name="NecroticMin",type="BASE",value=4},[2]={[1]={skillId="mas54",type="SkillId"},flags=512,keywordFlags=0,name="NecroticMax",type="BASE",value=4}}," for s when you cast  "}
-c["+4 Melee Physical Damage with a Two Handed Axe"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=4},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=4}}," with a Two Handed Axe "}
-c["+4 Melee Physical Damage with a Two Handed Axe +3 Melee Lightning Damage with a Staff"]={{[1]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=4},[2]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=4}}," with a Two Handed Axe +3    "}
-c["+4 Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticMin",type="BASE",value=4},[2]={flags=0,keywordFlags=0,name="NecroticMax",type="BASE",value=4}},nil}
+c["+4 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=4}},nil}
+c["+4 Melee Damage Per Stack"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=4}},"  Per Stack "}
+c["+4 Melee Damage Per Stack +1 Berserk Stacks On Hit While Berserk"]={{[1]={flags=8389120,keywordFlags=0,name="Damage",type="BASE",value=4}},"  Per Stack +1 Berserk Stacks  While Berserk "}
+c["+4 Melee Damage Per Stack +1 Berserk Stacks On Hit While Berserk 10 Maximum Stacks"]={{[1]={flags=8389120,keywordFlags=0,name="Damage",type="BASE",value=4}},"  Per Stack +1 Berserk Stacks  While Berserk 10 Maximum Stacks "}
+c["+4 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=4}},nil}
+c["+4 Melee Necrotic Damage for Minions when you cast Maelstrom"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="mas54",type="SkillId"},flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=4}}}},"  for s when you cast  "}
+c["+4 Melee Physical Damage with a Two Handed Axe"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}},"  with a Two Handed Axe "}
+c["+4 Melee Physical Damage with a Two Handed Axe +3 Melee Lightning Damage with a Staff"]={{[1]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}},"  with a Two Handed Axe +3  Lightning Damage  "}
+c["+4 Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=4}},nil}
 c["+4 Next Melee Attack Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=4}}," Next  Attack  "}
 c["+4 Next Melee Attack Fire Damage +4 Next Throwing Attack Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=4}}," Next  Attack  +4 Next Throwing Attack Physical Damage "}
 c["+4 Next Melee Attack Fire Damage +4 Next Throwing Attack Physical Damage +4 Next Throwing Attack Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=4}}," Next  Attack  +4 Next Throwing Attack Physical Damage +4 Next Throwing Attack Fire Damage "}
@@ -5113,14 +5116,15 @@ c["+4 Poison Pool Duration +2 Cooldown"]={{[1]={[1]={skillId="Ailment_Poison",ty
 c["+4 Potion Slots"]={{}," Potion Slots "}
 c["+4 Seconds of Disabled Health Leech after you directy cast a Spell"]={{[1]={flags=256,keywordFlags=0,name="Life",type="BASE",value=4}}," Seconds of Disabled  Leech after you directy cast a  "}
 c["+4 Skeleton Vanguards Melee Physical Damage"]={{[1]={[1]={includeTransfigured=true,skillName="Summon Skeleton",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}}}},"  Vanguards  "}
-c["+4 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=4},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=4}},nil}
-c["+4 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=4},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=4},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=4},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=4},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=4},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=4},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=4},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=4},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=4},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=4},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=4},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=4},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=4},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=4}},nil}
+c["+4 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=4}},nil}
+c["+4 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=4}},nil}
 c["+4 Static Charges Per Second"]={{},"  Charges Per Second "}
 c["+4 Static Charges Per Second +4 Additional Static Charges Per Second"]={{},"  Charges Per Second +4 Additional Static Charges Per Second "}
 c["+4 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=4}},nil}
-c["+4 Throwing Damage"]={{[1]={flags=1024,keywordFlags=1,name="PhysicalMin",type="BASE",value=4},[2]={flags=1024,keywordFlags=1,name="PhysicalMax",type="BASE",value=4},[3]={flags=1024,keywordFlags=2,name="LightningMin",type="BASE",value=4},[4]={flags=1024,keywordFlags=2,name="LightningMax",type="BASE",value=4},[5]={flags=1024,keywordFlags=4,name="ColdMin",type="BASE",value=4},[6]={flags=1024,keywordFlags=4,name="ColdMax",type="BASE",value=4},[7]={flags=1024,keywordFlags=8,name="FireMin",type="BASE",value=4},[8]={flags=1024,keywordFlags=8,name="FireMax",type="BASE",value=4},[9]={flags=1024,keywordFlags=16,name="VoidMin",type="BASE",value=4},[10]={flags=1024,keywordFlags=16,name="VoidMax",type="BASE",value=4},[11]={flags=1024,keywordFlags=32,name="NecroticMin",type="BASE",value=4},[12]={flags=1024,keywordFlags=32,name="NecroticMax",type="BASE",value=4},[13]={flags=1024,keywordFlags=64,name="PoisonMin",type="BASE",value=4},[14]={flags=1024,keywordFlags=64,name="PoisonMax",type="BASE",value=4}},nil}
-c["+4 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireMin",type="BASE",value=4},[2]={flags=1024,keywordFlags=0,name="FireMax",type="BASE",value=4}},nil}
-c["+4 Throwing Physical Damage"]={{[1]={flags=1024,keywordFlags=0,name="PhysicalMin",type="BASE",value=4},[2]={flags=1024,keywordFlags=0,name="PhysicalMax",type="BASE",value=4}},nil}
+c["+4 Throwing Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=4}}," Throwing  "}
+c["+4 Throwing Damage 4 Buff Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=4}}," Throwing  4 Buff Duration (seconds) "}
+c["+4 Throwing Fire Damage"]={{[1]={flags=1024,keywordFlags=0,name="FireDamage",type="BASE",value=4}},nil}
+c["+4 Throwing Physical Damage"]={{[1]={flags=1024,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}},nil}
 c["+4 Vitality"]={{[1]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=4}},nil}
 c["+4 Warcry"]={{},"  "}
 c["+4 Ward Gain On Hit On Recall"]={{[1]={flags=8388608,keywordFlags=0,name="Ward",type="BASE",value=4}},"  Gain  On Recall "}
@@ -5212,8 +5216,7 @@ c["+4% Minion Critical Strike Damage Leeched As Health 20% Increased Minion Heal
 c["+4% Minion Critical Strike Damage Leeched As Health 20% Increased Minion Health Leech +20% Minion Freeze Rate Multiplier"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=4}}}},"  Critical Strike  Leeched As Health 20% Increased Minion Health Leech +20% Minion Freeze Rate Multiplier "}
 c["+4% Minion Movespeed"]={{},"  Movespeed "}
 c["+4% Minion Movespeed 5% Increased Companion Revive Speed"]={{},"  Movespeed 5% Increased Companion Revive Speed "}
-c["+4% More Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=4}}," More  "}
-c["+4% More Damage +20% Freeze Rate Multiplier"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=4}}," More  +20% Freeze Rate Multiplier "}
+c["+4% More Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=4}},nil}
 c["+4% Movespeed"]={{}," Movespeed "}
 c["+4% Movespeed To Other Nearby Minions"]={{}," Movespeed To Other Nearby s "}
 c["+4% Movespeed To Other Nearby Minions +8% Movespeed"]={{}," Movespeed To Other Nearby s +8% Movespeed "}
@@ -5242,8 +5245,8 @@ c["+40 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=40}
 c["+40 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=40}}," Block iveness "}
 c["+40 Block Effectiveness +15 Stun Avoidance"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=40}}," Block iveness +15 Stun Avoidance "}
 c["+40 Block Effectiveness +15 Stun Avoidance +2% Block Chance"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=40}}," Block iveness +15 Stun Avoidance +2% Block Chance "}
-c["+40 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdMin",type="BASE",value=40},[2]={flags=2048,keywordFlags=0,name="ColdMax",type="BASE",value=40}},nil}
-c["+40 Bow Physical Damage if you have at least 40 Dexterity"]={{[1]={[1]={stat="Dex",threshold=40,type="StatThreshold"},flags=2048,keywordFlags=0,name="PhysicalMin",type="BASE",value=40},[2]={[1]={stat="Dex",threshold=40,type="StatThreshold"},flags=2048,keywordFlags=0,name="PhysicalMax",type="BASE",value=40}},nil}
+c["+40 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdDamage",type="BASE",value=40}},nil}
+c["+40 Bow Physical Damage if you have at least 40 Dexterity"]={{[1]={[1]={stat="Dex",threshold=40,type="StatThreshold"},flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=40}},nil}
 c["+40 Disintegrate Grants Ward Gain Per Second"]={{[1]={[1]={skillId="dig5",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=40}},"  Grants  Gain Per Second "}
 c["+40 Dodge Rating"]={{}," Dodge Rating "}
 c["+40 Dodge Rating +40 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=40}}," Dodge Rating +40  "}
@@ -5254,15 +5257,15 @@ c["+40 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE"
 c["+40 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=40}},nil}
 c["+40 Mana Consumed"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=40}},"  Consumed "}
 c["+40 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=40}},nil}
-c["+40 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=40},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=40}},nil}
-c["+40 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=40},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=40},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=40},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=40},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=40},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=40},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=40},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=40},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=40},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=40},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=40},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=40},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=40},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=40}},nil}
-c["+40 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=40},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=40}},nil}
-c["+40 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=40},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=40}},nil}
-c["+40 Potion Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=40}}," Potion  Necrotic  "}
-c["+40 Potion Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=40}}," Potion  Necrotic  "}
-c["+40 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=40},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=40}},nil}
-c["+40 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=40},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=40},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=40},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=40},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=40},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=40},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=40},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=40},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=40},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=40},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=40},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=40},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=40},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=40}},nil}
-c["+40 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=40},[2]={flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=40}},nil}
+c["+40 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=40}},nil}
+c["+40 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=40}},nil}
+c["+40 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=40}},nil}
+c["+40 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=40}},nil}
+c["+40 Potion Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=40}}," Potion  "}
+c["+40 Potion Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=40}}," Potion  "}
+c["+40 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=40}},nil}
+c["+40 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=40}},nil}
+c["+40 Spell Physical Damage"]={{[1]={flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=40}},nil}
 c["+40 Stun Avoidance"]={{}," Stun Avoidance "}
 c["+40 Stun Avoidance -3% Received Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="BASE",value=40}}," Stun Avoidance -3% Received  "}
 c["+40 Ward Granted"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=40}},"  Granted "}
@@ -5363,12 +5366,10 @@ c["+40% Melee Stun Chance +5% Melee Crit Chance"]={{[1]={flags=512,keywordFlags=
 c["+40% Melee Stun Chance +5% Melee Crit Chance -10% Attack Speed"]={{[1]={flags=512,keywordFlags=0,name="CritChance",type="BASE",value=40}},"  Stun Chance +5% Melee  -10% Attack Speed "}
 c["+40% Minion Increased Leech Rate"]={{},"  Increased Leech Rate "}
 c["+40% Minion Melee Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=40}}}},"   Leeched as Health "}
-c["+40% More Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=40}}," More  "}
-c["+40% More Attack Speed -25% Duration (seconds)"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=40}}," More  -25% Duration (seconds) "}
-c["+40% More Damage with your next Movement Skill Every 3 Seconds"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=40}}," More  with your next Movement Skill Every 3 Seconds "}
-c["+40% More Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=40}}," More  "}
-c["+40% More Duration One Active Hail Of Arrows"]={{[1]={[1]={skillId="exvol8",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=40}}," More  One Active  "}
-c["+40% More Hit Damage to Distant Enemies with Puncture"]={{[1]={[1]={skillId="pun22",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=40}}," More Hit  to Distant Enemies with  "}
+c["+40% More Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="MORE",value=40}},nil}
+c["+40% More Damage with your next Movement Skill Every 3 Seconds"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=40}},"  with your next Movement Skill Every 3 Seconds "}
+c["+40% More Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="MORE",value=40}},nil}
+c["+40% More Hit Damage to Distant Enemies with Puncture"]={{[1]={[1]={skillId="pun22",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=40}}," Hit  to Distant Enemies with  "}
 c["+40% Necrotic Explosion Area"]={{}," Necrotic Explosion  "}
 c["+40% Necrotic Explosion Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=40}}," Necrotic Explosion  "}
 c["+40% Necrotic Explosion Damage +40% Necrotic Explosion Area"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=40}}," Necrotic Explosion  +40% Necrotic Explosion  "}
@@ -5412,11 +5413,11 @@ c["+40% Zombie Explosion Area 1 Zombie Explosion Poison Stacks"]={{},"  Explosio
 c["+40% increased Frost Wall Duration"]={{[1]={[1]={skillId="fr4wl",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=40}},nil}
 c["+400 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=400}}," Block iveness "}
 c["+400 Ward Gain on Transform"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=400}},"  Gain on Transform "}
-c["+41 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=41},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=41}},nil}
+c["+41 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=41}},nil}
 c["+410 Dodge Rating"]={{}," Dodge Rating "}
-c["+42 Bow Damage"]={{[1]={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=42},[2]={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=42},[3]={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=42},[4]={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=42},[5]={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=42},[6]={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=42},[7]={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=42},[8]={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=42},[9]={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=42},[10]={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=42},[11]={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=42},[12]={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=42},[13]={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=42},[14]={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=42}},nil}
-c["+42 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=42},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=42},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=42},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=42},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=42},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=42},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=42},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=42},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=42},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=42},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=42},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=42},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=42},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=42}},nil}
-c["+42 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=42},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=42}},nil}
+c["+42 Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=42}},nil}
+c["+42 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=42}},nil}
+c["+42 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=42}},nil}
 c["+42% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=42}},nil}
 c["+42% Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=42}},nil}
 c["+42% Ignite Chance per Forged Weapon"]={{}," per Forged  "}
@@ -5427,17 +5428,17 @@ c["+420 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=42
 c["+420 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=420}}," Block iveness "}
 c["+420% Increased Stun Chance"]={{}," Stun Chance "}
 c["+425 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=425}}," Block iveness "}
-c["+43 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=43},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=43}},nil}
-c["+43 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=43},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=43},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=43},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=43},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=43},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=43},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=43},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=43},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=43},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=43},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=43},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=43},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=43},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=43}},nil}
-c["+43 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=43},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=43}},nil}
-c["+43 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=43},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=43}},nil}
-c["+43 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=43},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=43}},nil}
-c["+43 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=43},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=43},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=43},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=43},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=43},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=43},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=43},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=43},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=43},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=43},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=43},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=43},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=43},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=43}},nil}
-c["+43 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=43},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=43}},nil}
-c["+43 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=43},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=43}},nil}
+c["+43 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=43}},nil}
+c["+43 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=43}},nil}
+c["+43 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=43}},nil}
+c["+43 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=43}},nil}
+c["+43 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=43}},nil}
+c["+43 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=43}},nil}
+c["+43 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=43}},nil}
+c["+43 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=43}},nil}
 c["+43% Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=43}},nil}
 c["+430% Chance to Shock Attackers"]={{}," to  Attackers "}
-c["+44 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=44},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=44},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=44},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=44},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=44},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=44},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=44},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=44},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=44},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=44},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=44},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=44},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=44},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=44}},nil}
+c["+44 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=44}},nil}
 c["+44% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=44}},nil}
 c["+44% Increased Volcanic Orb Speed"]={{},"  Speed "}
 c["+44% Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=44}},nil}
@@ -5446,13 +5447,13 @@ c["+44% Physical Resistance"]={{}," Physical Resistance "}
 c["+44% Throwing Chance to Ignite on Hit"]={{[1]={flags=8389632,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=44}},nil}
 c["+44% Totem Lightning Resistance"]={{[1]={flags=0,keywordFlags=0,name="LightningResist",type="BASE",value=44}},"tem  "}
 c["+45 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=45}},nil}
-c["+45 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalMin",type="BASE",value=45},[2]={flags=2048,keywordFlags=0,name="PhysicalMax",type="BASE",value=45}},nil}
+c["+45 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=45}},nil}
 c["+45 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=45}},nil}
 c["+45 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=45}},nil}
-c["+45 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=45},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=45},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=45},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=45},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=45},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=45},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=45},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=45},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=45},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=45},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=45},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=45},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=45},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=45}},nil}
-c["+45 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=45},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=45}},nil}
-c["+45 Melee Lightning Damage with Swipe (3 second cooldown)"]={{[1]={[1]={skillId="sw43",type="SkillId"},flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=45},[2]={[1]={skillId="sw43",type="SkillId"},flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=45}}," with  (3 second cooldown) "}
-c["+45 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=45},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=45}},nil}
+c["+45 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=45}},nil}
+c["+45 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=45}},nil}
+c["+45 Melee Lightning Damage with Swipe (3 second cooldown)"]={{[1]={[1]={skillId="sw43",type="SkillId"},flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=45}},"  with  (3 second cooldown) "}
+c["+45 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=45}},nil}
 c["+45% Chance to Bleed on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=45}},nil}
 c["+45% Chance to Shock Attackers"]={{}," to  Attackers "}
 c["+45% Chance to cast Maelstrom every 5 seconds"]={{}," to cast  every 5 seconds "}
@@ -5487,9 +5488,9 @@ c["+45% Void Resistance"]={{}," Void Resistance "}
 c["+45% increased Hail of Arrows Duration"]={{[1]={[1]={skillId="exvol8",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=45}},nil}
 c["+450 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=450}},nil}
 c["+450 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=450}}," Block iveness "}
-c["+46 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=46},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=46}},nil}
-c["+46 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=46},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=46}},nil}
-c["+46 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticMin",type="BASE",value=46},[2]={flags=512,keywordFlags=0,name="NecroticMax",type="BASE",value=46}},nil}
+c["+46 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=46}},nil}
+c["+46 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=46}},nil}
+c["+46 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=46}},nil}
 c["+46% Chance to apply Damned on Hit"]={{}," to apply   "}
 c["+46% Increased Chill Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyChillDuration",type="INC",value=46}},nil}
 c["+46% Increased Ignite Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyIgniteDuration",type="INC",value=46}},nil}
@@ -5497,18 +5498,18 @@ c["+46% Increased Shock Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyShoc
 c["+46% Necrotic Resistance"]={{}," Necrotic Resistance "}
 c["+46% Physical Resistance"]={{}," Physical Resistance "}
 c["+460 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=460}}," Block iveness "}
-c["+47 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=47},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=47}},nil}
-c["+47 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=47},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=47},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=47},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=47},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=47},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=47},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=47},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=47},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=47},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=47},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=47},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=47},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=47},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=47}},nil}
-c["+47 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=47},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=47}},nil}
+c["+47 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=47}},nil}
+c["+47 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=47}},nil}
+c["+47 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=47}},nil}
 c["+47% Chance to Cast Lightning Blast on Crit with Frost Claw (up to 3 casts per second)"]={{}," to Cast  on Crit with Frost Claw (up to 3 casts per second) "}
 c["+47% Melee Chance to Shock on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=47}},nil}
 c["+47% Spell Critical Strike Multiplier"]={{[1]={flags=256,keywordFlags=0,name="CritMultiplier",type="BASE",value=47}},nil}
-c["+47% chance on hit with Lightning Skills to grant your Wolves additional Melee Lightning Damage equal to your Melee Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=47}},"  with Lightning Skills to grant your Wolves additional Melee  equal to your Melee Lightning Damage "}
-c["+48 Bow Damage"]={{[1]={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=48},[2]={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=48},[3]={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=48},[4]={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=48},[5]={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=48},[6]={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=48},[7]={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=48},[8]={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=48},[9]={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=48},[10]={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=48},[11]={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=48},[12]={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=48},[13]={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=48},[14]={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=48}},nil}
-c["+48 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=48},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=48},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=48},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=48},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=48},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=48},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=48},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=48},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=48},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=48},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=48},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=48},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=48},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=48}}," Reflected to Attackers "}
+c["+47% chance on hit with Lightning Skills to grant your Wolves additional Melee Lightning Damage equal to your Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=47}},"  with Lightning Skills to grant your Wolves additional  equal to your Melee Lightning Damage "}
+c["+48 Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=48}},nil}
+c["+48 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=48}},"  Reflected to Attackers "}
 c["+48 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=48}},nil}
-c["+48 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=48},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=48},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=48},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=48},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=48},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=48},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=48},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=48},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=48},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=48},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=48},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=48},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=48},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=48}},nil}
-c["+48 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=48},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=48},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=48},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=48},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=48},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=48},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=48},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=48},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=48},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=48},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=48},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=48},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=48},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=48}},nil}
+c["+48 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=48}},nil}
+c["+48 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=48}},nil}
 c["+48% Chance to Bleed on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=48}},nil}
 c["+48% Chance to Poison on Spell Hit"]={{}," to  on  Hit "}
 c["+48% Chance to cast Lightning Blast when you use a Melee Attack and hit at least one enemy"]={{}," to cast  when you use a  Attack and hit at least one enemy "}
@@ -5525,23 +5526,24 @@ c["+48% Spell Necrotic Increased Chill Duration"]={{[1]={[1]={skillId="Ailment_C
 c["+48% Throwing Chance to Ignite on Hit"]={{[1]={flags=8389632,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=48}},nil}
 c["+48% chance for Shurikens to Ricochet 3 additional times"]={{}," for  to Ricochet 3 additional times "}
 c["+48% chance on Hit to grant one of your minions Aspect of the Spider (2 second cooldown)"]={{},"  to grant one of your minions  (2 second cooldown) "}
-c["+49 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=49},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=49},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=49},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=49},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=49},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=49},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=49},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=49},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=49},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=49},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=49},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=49},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=49},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=49}},nil}
-c["+49 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=49},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=49}},nil}
+c["+49 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=49}},nil}
+c["+49 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=49}},nil}
 c["+49% Chance to cast Sacrifice on your lowest health minion on minion death (1 second cooldown)"]={{[1]={[1]={skillId="sf31rc",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=49}}," to cast  on your lowest   on minion death (1 second cooldown) "}
 c["+49% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=49}},nil}
-c["+5 Added Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}}," Added   "}
-c["+5 Added Melee Cold Damage 20% Increased Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}}," Added   20% Increased Melee Cold Damage "}
-c["+5 Added Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=5}}," Added   "}
-c["+5 Added Melee Lightning Damage 20% Increased Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=5}}," Added   20% Increased Melee Lightning Damage "}
-c["+5 Additional Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=5},[2]={flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=5}},nil}
+c["+5 Added Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}}," Added  "}
+c["+5 Added Melee Cold Damage 20% Increased Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}}," Added  20% Increased  Cold Damage "}
+c["+5 Added Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=5}}," Added  "}
+c["+5 Added Melee Lightning Damage 20% Increased Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=5}}," Added  20% Increased  Lightning Damage "}
+c["+5 Additional Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=5}},nil}
 c["+5 Additional Shield Throw Ricochets"]={{},"  Ricochets "}
 c["+5 All Attributes"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=5},[2]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=5},[3]={flags=0,keywordFlags=0,name="Int",type="BASE",value=5},[4]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=5},[5]={flags=0,keywordFlags=0,name="Att",type="BASE",value=5},[6]={flags=0,keywordFlags=0,name="All",type="BASE",value=5}},nil}
-c["+5 Ally Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalMin",type="BASE",value=5},[2]={flags=0,keywordFlags=0,name="PhysicalMax",type="BASE",value=5}},nil}
+c["+5 Ally Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=5}}," Ally  "}
+c["+5 Ally Physical Damage 8 Buff Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=5}}," Ally  8 Buff Duration (seconds) "}
 c["+5 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=5}},nil}
 c["+5 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=5}},nil}
-c["+5 Base Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=5},[2]={flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=5}},nil}
+c["+5 Base Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=5}},nil}
 c["+5 Bees Per 10 Seconds"]={{}," Bees Per 10 Seconds "}
-c["+5 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalMin",type="BASE",value=5},[2]={flags=2048,keywordFlags=0,name="PhysicalMax",type="BASE",value=5}},nil}
+c["+5 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=5}},nil}
 c["+5 Cooldown"]={{}," Cooldown "}
 c["+5 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
 c["+5 Cooldown (seconds) 10% Chance to For Additional Zombies from Indirect Casts"]={{}," Cooldown (seconds) 10% Chance to For Additional s from Indirect Casts "}
@@ -5550,10 +5552,10 @@ c["+5 Cooldown (seconds) Holy Aura Disabled During Cooldown"]={{}," Cooldown (se
 c["+5 Cooldown Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=5}},"  (Seconds) "}
 c["+5 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=5}},nil}
 c["+5 Dodge Rating"]={{}," Dodge Rating "}
-c["+5 Final Hit Void Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=5}}," Final Hit Void  "}
+c["+5 Final Hit Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=5}}," Final Hit  "}
 c["+5 Freeze Rate"]={{}," Freeze Rate "}
 c["+5 Frostbite Stacks Per Second Per Heo Rune"]={{},"  Stacks Per Second Per Heo Rune "}
-c["+5 Global Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=5},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=5},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=5},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=5},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=5},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=5},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=5},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=5},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=5},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=5},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=5},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=5},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=5},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=5}},nil}
+c["+5 Global Melee Damage"]={{[1]={[1]={type="Global"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=5}},nil}
 c["+5 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=5}},nil}
 c["+5 Health Gain On Hit"]={{[1]={flags=8388608,keywordFlags=0,name="Life",type="BASE",value=5}},"  Gain  "}
 c["+5 Health Gain On Hit +15% Poison Chance"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=8388608,keywordFlags=0,name="Life",type="BASE",value=5}},"  Gain  +15%  Chance "}
@@ -5570,7 +5572,7 @@ c["+5 Health Regen per Forged Weapon"]={{[1]={flags=67108864,keywordFlags=0,name
 c["+5 Health Regenerated Per Second"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=5}}," erated Per Second "}
 c["+5 Ice Burst On Activation"]={{}," Ice Burst On Activation "}
 c["+5 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=5}},nil}
-c["+5 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=5},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=5}},nil}
+c["+5 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=5}},nil}
 c["+5 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=5}},nil}
 c["+5 Mana Consumed"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=5}},"  Consumed "}
 c["+5 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=5}},nil}
@@ -5578,18 +5580,18 @@ c["+5 Mana From Burst"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",va
 c["+5 Mana Gain"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=5}},"  Gain "}
 c["+5 Mana Gained While Out Of Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=5}},"  Gained While Out Of Mana "}
 c["+5 Max Prism Shards"]={{}," Max Prism Shards "}
-c["+5 Melee Cold Damage with a Two Handed Mace"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=5},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=5}}," with a Two Handed Mace "}
-c["+5 Melee Cold Damage with a Two Handed Mace +4 Melee Physical Damage with a Two Handed Axe"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=5},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=5}}," with a Two Handed Mace +4  with a Two Handed Axe "}
-c["+5 Melee Cold Damage with a Two Handed Mace +4 Melee Physical Damage with a Two Handed Axe +3 Melee Lightning Damage with a Staff"]={{[1]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=5},[2]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=5}}," with a Two Handed Mace +4  with a Two Handed Axe +3  Lightning Damage  "}
-c["+5 Melee Damage With Axe Or Mace"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=5},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=5},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=5},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=5},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=5},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=5},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=5},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=5},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=5},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=5},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=5},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=5},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=5},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=5}}," With Axe Or Mace "}
-c["+5 Melee Damage With Axe Or Mace +8 Spell Damage With 2h Weapon"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=5},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=5},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=5},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=5},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=5},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=5},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=5},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=5},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=5},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=5},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=5},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=5},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=5},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=5}}," With Axe Or Mace +8   With 2h Weapon "}
-c["+5 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=5},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=5}},nil}
-c["+5 Melee Fire Damage Per Sword"]={{[1]={[1]={type="Multiplier",var="SwordItem"},flags=512,keywordFlags=0,name="FireMin",type="BASE",value=5},[2]={[1]={type="Multiplier",var="SwordItem"},flags=512,keywordFlags=0,name="FireMax",type="BASE",value=5}},nil}
+c["+5 Melee Cold Damage with a Two Handed Mace"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}},"  with a Two Handed Mace "}
+c["+5 Melee Cold Damage with a Two Handed Mace +4 Melee Physical Damage with a Two Handed Axe"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}},"  with a Two Handed Mace +4  Physical Damage with a Two Handed Axe "}
+c["+5 Melee Cold Damage with a Two Handed Mace +4 Melee Physical Damage with a Two Handed Axe +3 Melee Lightning Damage with a Staff"]={{[1]={[1]={type="Condition",var="UsingStaff"},flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=5}},"  with a Two Handed Mace +4  Physical Damage with a Two Handed Axe +3 Melee Lightning Damage  "}
+c["+5 Melee Damage With Axe Or Mace"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=5}},"  With Axe Or Mace "}
+c["+5 Melee Damage With Axe Or Mace +8 Spell Damage With 2h Weapon"]={{[1]={flags=768,keywordFlags=0,name="Damage",type="BASE",value=5}},"  With Axe Or Mace +8  Damage With 2h Weapon "}
+c["+5 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=5}},nil}
+c["+5 Melee Fire Damage Per Sword"]={{[1]={[1]={type="Multiplier",var="SwordItem"},flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=5}},nil}
 c["+5 Melee Frostbite Chance"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Frostbite",type="BASE",value=5}},nil}
-c["+5 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=5},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=5}},nil}
-c["+5 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=5},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=5}},nil}
-c["+5 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=5},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=5}},nil}
-c["+5 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=5}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=5}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=5}}},[4]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=5}}},[5]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=5}}},[6]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=5}}},[7]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=5}}},[8]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=5}}},[9]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=5}}},[10]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=5}}},[11]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=5}}},[12]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=5}}},[13]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=5}}},[14]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=5}}}},nil}
+c["+5 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=5}},nil}
+c["+5 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=5}},nil}
+c["+5 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=5}},nil}
+c["+5 Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=5}}}},nil}
 c["+5 Overload Charge Cost"]={{}," Overload Charge Cost "}
 c["+5 Overload Charge Cost Lightning Blast Cost added to Charge Cost"]={{}," Overload Charge Cost  Cost added to Charge Cost "}
 c["+5 Overload Charge Cost Lightning Blast Cost added to Charge Cost Consumes Mana Equal to Lightning Blast Cost"]={{[1]={[1]={skillId="lb23il",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=5}}," Overload Charge Cost  Cost added to Charge Cost Consumes  Equal to Lightning Blast Cost "}
@@ -5597,15 +5599,15 @@ c["+5 Potion Slots"]={{}," Potion Slots "}
 c["+5 Rage Gain On Heal"]={{}," Rage Gain On Heal "}
 c["+5 Rage Gain On Heal Only Benefits You"]={{}," Rage Gain On Heal Only Benefits You "}
 c["+5 Runebolt"]={{},"  "}
-c["+5 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=5},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=5}},nil}
-c["+5 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=5},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=5},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=5},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=5},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=5},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=5},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=5},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=5},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=5},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=5},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=5},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=5},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=5},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=5}},nil}
-c["+5 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=5},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=5}},nil}
-c["+5 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=5},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=5}},nil}
+c["+5 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=5}},nil}
+c["+5 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=5}},nil}
+c["+5 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=5}},nil}
+c["+5 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=5}},nil}
 c["+5 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=5}},nil}
-c["+5 Throwing Damage"]={{[1]={flags=1024,keywordFlags=1,name="PhysicalMin",type="BASE",value=5},[2]={flags=1024,keywordFlags=1,name="PhysicalMax",type="BASE",value=5},[3]={flags=1024,keywordFlags=2,name="LightningMin",type="BASE",value=5},[4]={flags=1024,keywordFlags=2,name="LightningMax",type="BASE",value=5},[5]={flags=1024,keywordFlags=4,name="ColdMin",type="BASE",value=5},[6]={flags=1024,keywordFlags=4,name="ColdMax",type="BASE",value=5},[7]={flags=1024,keywordFlags=8,name="FireMin",type="BASE",value=5},[8]={flags=1024,keywordFlags=8,name="FireMax",type="BASE",value=5},[9]={flags=1024,keywordFlags=16,name="VoidMin",type="BASE",value=5},[10]={flags=1024,keywordFlags=16,name="VoidMax",type="BASE",value=5},[11]={flags=1024,keywordFlags=32,name="NecroticMin",type="BASE",value=5},[12]={flags=1024,keywordFlags=32,name="NecroticMax",type="BASE",value=5},[13]={flags=1024,keywordFlags=64,name="PoisonMin",type="BASE",value=5},[14]={flags=1024,keywordFlags=64,name="PoisonMax",type="BASE",value=5}},nil}
+c["+5 Throwing Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=5}}," Throwing  "}
 c["+5 Vengeance"]={{},"  "}
 c["+5 Vitality"]={{[1]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=5}},nil}
-c["+5 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=5},[2]={flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=5}},nil}
+c["+5 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=5}},nil}
 c["+5 Ward Gained Against Frozen"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=5}},"  Gained Against Frozen "}
 c["+5 Ward Gained On Block"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=5}},"  Gained On Block "}
 c["+5 Ward Gained Per Second"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=5}},"  Gained Per Second "}
@@ -5787,8 +5789,8 @@ c["+50 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",ty
 c["+50 Block Effectiveness +2% Block Chance"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=50}}," Block iveness +2% Block Chance "}
 c["+50 Block Effectiveness with a Shield"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=50}}," Block iveness with a Shield "}
 c["+50 Block Effectiveness with a Shield +2 Physical Throwing Attack Damage with a Shield"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=50}}," Block iveness with a Shield +2 Physical Throwing Attack Damage with a Shield "}
-c["+50 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdMin",type="BASE",value=50},[2]={flags=2048,keywordFlags=0,name="ColdMax",type="BASE",value=50}},nil}
-c["+50 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalMin",type="BASE",value=50},[2]={flags=2048,keywordFlags=0,name="PhysicalMax",type="BASE",value=50}},nil}
+c["+50 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdDamage",type="BASE",value=50}},nil}
+c["+50 Bow Physical Damage"]={{[1]={flags=2048,keywordFlags=0,name="PhysicalDamage",type="BASE",value=50}},nil}
 c["+50 Divine Flare Healing"]={{}," Divine Flare  "}
 c["+50 Dodge Rating"]={{}," Dodge Rating "}
 c["+50 Dodge Rating 2 Buff Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=50}}," Dodge Rating 2 Buff  (seconds) "}
@@ -5801,12 +5803,12 @@ c["+50 Health and Armor"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",
 c["+50 Health and Armor +15% Health and Armor"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=50}},"  and Armor +15% Health and Armor "}
 c["+50 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=50}},nil}
 c["+50 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=50}},nil}
-c["+50 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=50},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=50},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=50},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=50},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=50},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=50},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=50},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=50},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=50},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=50},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=50},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=50},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=50},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=50}},nil}
-c["+50 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticMin",type="BASE",value=50},[2]={flags=512,keywordFlags=0,name="NecroticMax",type="BASE",value=50}},nil}
-c["+50 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=50},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=50}},nil}
-c["+50 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=50},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=50}},nil}
-c["+50 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=50},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=50}},nil}
-c["+50 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=50},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=50}},nil}
+c["+50 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=50}},nil}
+c["+50 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=50}},nil}
+c["+50 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=50}},nil}
+c["+50 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=50}},nil}
+c["+50 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=50}},nil}
+c["+50 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=50}},nil}
 c["+50 Ward Granted"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=50}},"  Granted "}
 c["+50 Ward Granted -10% Duration"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=50}},"  Granted -10% Duration "}
 c["+50 Ward gained when you Dodge"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=50}},"  gained when you Dodge "}
@@ -5911,7 +5913,7 @@ c["+50% Increased Leech Rate"]={{}," Leech Rate "}
 c["+50% Increased Minion Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritChance",type="INC",value=50}}}},nil}
 c["+50% Increased Stun Chance"]={{}," Stun Chance "}
 c["+50% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=50}},nil}
-c["+50% Increased Void Damage per Fire Aura"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}}," Void  per Fire Aura "}
+c["+50% Increased Void Damage per Fire Aura"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=50}},"  per Fire Aura "}
 c["+50% Infernal Aura Damage Per Skeleton"]={{[1]={[1]={includeTransfigured=true,skillName="Summon Skeleton",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="fs11",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=50}}}},"   Per  "}
 c["+50% Infernal Aura Damage Per Skeleton +80% Infernal Aura Damage Per Skeletal Mage"]={{[1]={[1]={includeTransfigured=true,skillName="Summon Skeleton",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="fs11",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=50}}}},"   Per  +80% Infernal Aura Damage Per Skeletal Mage "}
 c["+50% Iron Blade Armor Shred Chance"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=50}}," Iron Blade  Shred Chance "}
@@ -5923,7 +5925,7 @@ c["+50% Maximum Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE"
 c["+50% Maximum Damage +20% Maximum Area"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=50}}," Maximum  +20% Maximum  "}
 c["+50% Maximum Damage +20% Maximum Area 10 Maximum Distance Benefit (meters)"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=50}}," Maximum  +20% Maximum  10 Maximum Distance Benefit (meters) "}
 c["+50% Melee Increased Poison Effect"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=512,keywordFlags=0,name="FlaskEffect",type="BASE",value=50}},"  Increased   "}
-c["+50% Melee Void Damage To Low Health"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=50}},"  Void  To Low Health "}
+c["+50% Melee Void Damage To Low Health"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=50}},"  To Low Health "}
 c["+50% Minion Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=50}}}},nil}
 c["+50% Minion Ward Granted From Harvest"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="ha84",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=50}}}},"   Granted From  "}
 c["+50% Orbit Range"]={{}," Orbit Range "}
@@ -5987,15 +5989,15 @@ c["+50% added Critical Strike Multiplier Converted to Physical Penetration with 
 c["+50% added Critical Strike Multiplier Converted to Poison Penetration with Poison"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=64,name="CritMultiplier",type="BASE",value=50}}," added  Converted to  Penetration  "}
 c["+50% chance to throw a Burning Dagger on hit (1 second cooldown)"]={{}," to throw a Burning Dagger  (1 second cooldown) "}
 c["+50% elemental resistance while you control a totem"]={{[1]={flags=0,keywordFlags=0,name="ElementalResist",type="BASE",value=50}},"  while you control a totem "}
-c["+50% less Critical strike chance if you have dealt a critical strike recently"]={{[1]={[1]={type="Condition",var="CritRecently"},flags=0,keywordFlags=0,name="CritChance",type="BASE",value=50}}," less   "}
+c["+50% less Critical strike chance if you have dealt a critical strike recently"]={{[1]={[1]={type="Condition",var="CritRecently"},flags=0,keywordFlags=0,name="CritChance",type="MORE",value=-50}},nil}
 c["+500 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=500}},nil}
 c["+500 Armor On Skeleton Death"]={{[1]={[1]={includeTransfigured=true,skillName="Summon Skeleton",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=500}}}},"  On  Death "}
 c["+500 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=500}}," Block iveness "}
 c["+500 Block Effectiveness +5 Ward Gained On Block"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=500}}," Block iveness +5 Ward Gained On Block "}
 c["+500 Bone Prison Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=500}}," Bone Prison  "}
-c["+51 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=51},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=51},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=51},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=51},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=51},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=51},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=51},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=51},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=51},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=51},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=51},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=51},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=51},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=51}},nil}
+c["+51 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=51}},nil}
 c["+51% Chance to Bleed on Melee Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=51}},nil}
-c["+52 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=52},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=52},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=52},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=52},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=52},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=52},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=52},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=52},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=52},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=52},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=52},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=52},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=52},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=52}},nil}
+c["+52 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=52}},nil}
 c["+52% Increased Chill Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyChillDuration",type="INC",value=52}},nil}
 c["+52% Increased ColdResShred Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=52}}," ColdResShred  "}
 c["+52% Increased FireResShred Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=52}}," FireResShred  "}
@@ -6005,49 +6007,49 @@ c["+52% Increased Shock Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyShoc
 c["+520 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=520}}," Block iveness "}
 c["+53 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=53}},nil}
 c["+53 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=53}},nil}
-c["+53 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=53},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=53},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=53},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=53},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=53},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=53},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=53},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=53},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=53},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=53},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=53},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=53},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=53},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=53}},nil}
-c["+53 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticMin",type="BASE",value=53},[2]={flags=512,keywordFlags=0,name="NecroticMax",type="BASE",value=53}},nil}
-c["+53 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=53},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=53},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=53},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=53},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=53},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=53},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=53},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=53},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=53},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=53},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=53},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=53},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=53},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=53}},nil}
-c["+53 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=53},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=53}},nil}
-c["+53 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=53},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=53}},nil}
+c["+53 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=53}},nil}
+c["+53 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=53}},nil}
+c["+53 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=53}},nil}
+c["+53 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=53}},nil}
+c["+53 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=53}},nil}
 c["+53% Bow Chance to Poison on Hit"]={{[1]={flags=8390656,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=53}},nil}
 c["+53% Chance to Ignite on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=53}},nil}
 c["+53% Cold Resistance"]={{[1]={flags=0,keywordFlags=0,name="ColdResist",type="BASE",value=53}},nil}
 c["+53% Increased Torment Effect"]={{[1]={[1]={skillId="Ailment_Torment",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=53}},nil}
 c["+53% Spell Chance to Shock on Hit"]={{[1]={flags=8388864,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=53}},nil}
-c["+53% more hit damage with Vengeance against bosses and rare enemies (multiplicative with other modifiers)"]={{[1]={[1]={skillId="gs15de",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=53}}," more hit  with  against bosses and rare enemies (multiplicative with other modifiers) "}
+c["+53% more hit damage with Vengeance against bosses and rare enemies (multiplicative with other modifiers)"]={{[1]={[1]={skillId="gs15de",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=53}}," hit  with  against bosses and rare enemies (multiplicative with other modifiers) "}
 c["+54 Dodge Rating"]={{}," Dodge Rating "}
 c["+54 Dodge Rating per Heo Rune"]={{}," Dodge Rating per Heo Rune "}
-c["+54 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=54},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=54},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=54},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=54},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=54},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=54},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=54},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=54},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=54},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=54},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=54},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=54},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=54},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=54}},nil}
-c["+54 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=54},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=54}},nil}
-c["+54 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=54},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=54},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=54},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=54},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=54},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=54},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=54},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=54},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=54},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=54},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=54},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=54},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=54},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=54}},nil}
+c["+54 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=54}},nil}
+c["+54 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=54}},nil}
+c["+54 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=54}},nil}
 c["+54% Increased Companion Revive Range"]={{}," Companion Revive Range "}
 c["+54% Increased Companion Revive Speed"]={{}," Companion Revive Speed "}
 c["+54% Mana Spent Gained as Ward"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=54}},"  Spent Gained as Ward "}
 c["+55 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=55}},nil}
-c["+55 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=55},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=55},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=55},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=55},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=55},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=55},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=55},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=55},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=55},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=55},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=55},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=55},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=55},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=55}},nil}
-c["+55 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=55},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=55}},nil}
-c["+55 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=55},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=55},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=55},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=55},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=55},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=55},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=55},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=55},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=55},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=55},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=55},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=55},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=55},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=55}},nil}
+c["+55 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=55}},nil}
+c["+55 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=55}},nil}
+c["+55 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=55}},nil}
 c["+55% Chance to Chill on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=55}},nil}
 c["+55% Hit Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=55}}," Hit  "}
 c["+55% Hit Damage -30% Attack Speed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=55}}," Hit  -30% Attack Speed "}
 c["+550 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=550}}," Block iveness "}
-c["+56 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=56},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=56},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=56},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=56},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=56},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=56},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=56},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=56},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=56},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=56},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=56},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=56},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=56},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=56}},nil}
-c["+56 Spell Physical Damage with Sacrifice"]={{[1]={[1]={skillId="sf31rc",type="SkillId"},flags=256,keywordFlags=0,name="PhysicalMin",type="BASE",value=56},[2]={[1]={skillId="sf31rc",type="SkillId"},flags=256,keywordFlags=0,name="PhysicalMax",type="BASE",value=56}}," with  "}
+c["+56 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=56}},nil}
+c["+56 Spell Physical Damage with Sacrifice"]={{[1]={[1]={skillId="sf31rc",type="SkillId"},flags=256,keywordFlags=0,name="PhysicalDamage",type="BASE",value=56}},"  with  "}
 c["+56% Chance to apply Frailty on hit for Bees"]={{}," to apply   for Bees "}
 c["+56% Chance to gain a stack of Abyssal Rite on Crit"]={nil,"a stack of Abyssal Rite on Crit "}
-c["+57 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=57},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=57}},nil}
-c["+57 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=57},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=57}},nil}
-c["+57 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=57},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=57}},nil}
+c["+57 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=57}},nil}
+c["+57 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=57}},nil}
+c["+57 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=57}},nil}
 c["+575 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=575}}," Block iveness "}
-c["+58 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=58},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=58}},nil}
+c["+58 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=58}},nil}
 c["+6 All Attributes"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=6},[2]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=6},[3]={flags=0,keywordFlags=0,name="Int",type="BASE",value=6},[4]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=6},[5]={flags=0,keywordFlags=0,name="Att",type="BASE",value=6},[6]={flags=0,keywordFlags=0,name="All",type="BASE",value=6}},nil}
 c["+6 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=6}},nil}
 c["+6 Cooldown"]={{}," Cooldown "}
 c["+6 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
 c["+6 Cooldown (seconds) +200% Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=6}}," Cooldown (seconds) +200%  "}
 c["+6 Cooldown (seconds) Counts as Traversal Skill"]={{}," Cooldown (seconds) Counts as Traversal Skill "}
-c["+6 Damage Reflected Per Vitality"]={{[1]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=6},[2]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=6},[3]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=6},[4]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=6},[5]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=6},[6]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=6},[7]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=8,name="FireMin",type="BASE",value=6},[8]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=8,name="FireMax",type="BASE",value=6},[9]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=6},[10]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=6},[11]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=6},[12]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=6},[13]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=6},[14]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=6}}," Reflected  "}
+c["+6 Damage Reflected Per Vitality"]={{[1]={[1]={stat="Vit",type="PerStat"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=6}},"  Reflected  "}
 c["+6 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=6}},nil}
 c["+6 Dodge Rating"]={{}," Dodge Rating "}
 c["+6 Dodge Rating 3% Glancing Blow Chance"]={{}," Dodge Rating 3% Glancing Blow Chance "}
@@ -6055,7 +6057,7 @@ c["+6 Dodge Rating 5% Chance To Throw Caltrops On Dodge"]={{}," Dodge Rating 5% 
 c["+6 Elemental Nova"]={{},"  "}
 c["+6 Endurance Threshold"]={{}," Endurance Threshold "}
 c["+6 Endurance Threshold Haste On Heal When Below Endurance Threshold"]={{}," Endurance Threshold  On Heal When Below Endurance Threshold "}
-c["+6 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireMin",type="BASE",value=6},[2]={flags=0,keywordFlags=0,name="FireMax",type="BASE",value=6}},nil}
+c["+6 Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=6}},nil}
 c["+6 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=6}},nil}
 c["+6 Health Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=6}},"  Gain "}
 c["+6 Health Gain +3 Mana Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=6}},"  Gain +3 Mana Gain "}
@@ -6066,30 +6068,30 @@ c["+6 Mana Gained when you use Harvest"]={{[1]={[1]={skillId="ha84",type="SkillI
 c["+6 Manifest Armour Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="Armour",type="BASE",value=6}}," Manifest   Physical Damage "}
 c["+6 Manifest Armour Melee Physical Damage +4 Forged Weapon Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="Armour",type="BASE",value=6}}," Manifest   Physical Damage +4 Forged Weapon Melee Physical Damage "}
 c["+6 Manifest Armour Melee Physical Damage +4 Forged Weapon Melee Physical Damage +2 Maximum Forged Weapons"]={{[1]={flags=512,keywordFlags=0,name="Armour",type="BASE",value=6}}," Manifest   Physical Damage +4 Forged Weapon Melee Physical Damage +2 Maximum Forged Weapons "}
-c["+6 Melee Fire Damage Per Sigil"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=6},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=6}}," Per Sigil "}
-c["+6 Melee Fire Damage Per Sigil +6 Spell Fire Damage Per Sigil"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=6},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=6}}," Per Sigil +6   Per Sigil "}
-c["+6 Melee Fire Damage Per Sigil +6 Spell Fire Damage Per Sigil Consumes Sigils"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=6},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=6}}," Per Sigil +6   Per Sigil Consumes Sigils "}
-c["+6 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=6},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=6}},nil}
-c["+6 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=6},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=6}},nil}
+c["+6 Melee Fire Damage Per Sigil"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=6}},"  Per Sigil "}
+c["+6 Melee Fire Damage Per Sigil +6 Spell Fire Damage Per Sigil"]={{[1]={flags=768,keywordFlags=0,name="FireDamage",type="BASE",value=6}},"  Per Sigil +6  Fire Damage Per Sigil "}
+c["+6 Melee Fire Damage Per Sigil +6 Spell Fire Damage Per Sigil Consumes Sigils"]={{[1]={flags=768,keywordFlags=0,name="FireDamage",type="BASE",value=6}},"  Per Sigil +6  Fire Damage Per Sigil Consumes Sigils "}
+c["+6 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=6}},nil}
+c["+6 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=6}},nil}
 c["+6 Minion Melee Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=6}}}},nil}
-c["+6 Necrotic Damage on Hit"]={{[1]={flags=0,keywordFlags=0,name="NecroticMin",type="BASE",value=6},[2]={flags=0,keywordFlags=0,name="NecroticMax",type="BASE",value=6}},nil}
+c["+6 Necrotic Damage on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="NecroticDamage",type="BASE",value=6}},nil}
 c["+6 Next Melee Attack Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=6}}," Next  Attack  "}
 c["+6 Seconds of Haste Duration and Full Recovery when damage leaves you below 30% health (20 second cooldown)"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=6}}," Seconds of   and Full Recovery when damage leaves you below 30% health (20 second cooldown) "}
-c["+6 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=6},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=6}},nil}
-c["+6 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=6},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=6},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=6},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=6},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=6},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=6},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=6},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=6},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=6},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=6},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=6},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=6},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=6},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=6}},nil}
-c["+6 Spell Damage for Fire and Necrotic skills per stack of Ignite on You (up to 40)"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=6},[2]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=6},[3]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=6},[4]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=6},[5]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=6},[6]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=6},[7]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=6},[8]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=6},[9]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=6},[10]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=6},[11]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=6},[12]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=6},[13]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=6},[14]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=6}}," for Fire and Necrotic skills per stack of  on You (up to 40) "}
-c["+6 Spell Fire Damage Per Sigil"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=6},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=6}}," Per Sigil "}
-c["+6 Spell Fire Damage Per Sigil Consumes Sigils"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=6},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=6}}," Per Sigil Consumes Sigils "}
-c["+6 Spell Fire Damage With Rah Rune"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=6},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=6}}," With Rah Rune "}
-c["+6 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningMin",type="BASE",value=6},[2]={flags=256,keywordFlags=0,name="LightningMax",type="BASE",value=6}},nil}
-c["+6 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=6},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=6}},nil}
-c["+6 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=6},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=6}},nil}
+c["+6 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=6}},nil}
+c["+6 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=6}},nil}
+c["+6 Spell Damage for Fire and Necrotic skills per stack of Ignite on You (up to 40)"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=6}},"   for Fire and Necrotic skills per stack of  on You (up to 40) "}
+c["+6 Spell Fire Damage Per Sigil"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=6}},"  Per Sigil "}
+c["+6 Spell Fire Damage Per Sigil Consumes Sigils"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=6}},"  Per Sigil Consumes Sigils "}
+c["+6 Spell Fire Damage With Rah Rune"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=6}},"  With Rah Rune "}
+c["+6 Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=6}},nil}
+c["+6 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=6}},nil}
+c["+6 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=6}},nil}
 c["+6 Static Charges"]={{},"  Charges "}
 c["+6 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=6}},nil}
 c["+6 Throwing Attack Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=6}}," Throwing Attack  "}
 c["+6 Throwing Attack Mana Cost 1 Physical Shred Stacks"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=6}}," Throwing Attack  1 Physical Shred Stacks "}
 c["+6 Throwing Attack Mana Cost 1 Physical Shred Stacks 1 Fire Shred Stacks"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=6}}," Throwing Attack  1 Physical Shred Stacks 1 Fire Shred Stacks "}
-c["+6 Totem Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=6}},"tem   "}
+c["+6 Totem Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=6}},"tem  "}
 c["+6 Vitality"]={{[1]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=6}},nil}
 c["+6% Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=6}},nil}
 c["+6% Axe Attack And Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="Speed",type="BASE",value=6}}," Axe  "}
@@ -6128,9 +6130,9 @@ c["+6% Global Increased Damage Over Time"]={{[1]={[1]={type="Global"},flags=4096
 c["+6% Global Increased Damage Over Time 6 Buff Duration (Seconds)"]={{[1]={[1]={type="Global"},flags=4096,keywordFlags=0,name="Damage",type="BASE",value=6}},"  Increased  6 Buff Duration (Seconds) "}
 c["+6% Ignite Chance Per Active Sigil"]={{}," Per Active Sigil "}
 c["+6% Ignite Chance with Fire Skills"]={{},"  "}
-c["+6% Ignite Chance with Fire Skills 6% Increased Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=6}},"  6% Increased Necrotic  "}
-c["+6% Ignite Chance with Fire Skills 6% Increased Necrotic Damage +6% Damned Chance with Necrotic Skills"]={{[1]={[1]={skillId="Ailment_Damned",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=6}},"  6% Increased Necrotic  +6%  Chance with Necrotic Skills "}
-c["+6% Ignite Chance with Fire Skills 6% Increased Necrotic Damage +6% Damned Chance with Necrotic Skills Applies to Minions"]={{[1]={[1]={skillId="Ailment_Damned",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=6}},"  6% Increased Necrotic  +6%  Chance with Necrotic Skills Applies to Minions "}
+c["+6% Ignite Chance with Fire Skills 6% Increased Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=6}},"  6% Increased  "}
+c["+6% Ignite Chance with Fire Skills 6% Increased Necrotic Damage +6% Damned Chance with Necrotic Skills"]={{[1]={[1]={skillId="Ailment_Damned",type="SkillId"},flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=6}},"  6% Increased  +6%  Chance with Necrotic Skills "}
+c["+6% Ignite Chance with Fire Skills 6% Increased Necrotic Damage +6% Damned Chance with Necrotic Skills Applies to Minions"]={{[1]={[1]={skillId="Ailment_Damned",type="SkillId"},flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=6}},"  6% Increased  +6%  Chance with Necrotic Skills Applies to Minions "}
 c["+6% Increased Healing Per Active Sigil"]={{},"  Per Active Sigil "}
 c["+6% Increased Minion Attack Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=3584,keywordFlags=0,name="Speed",type="INC",value=6}}}},nil}
 c["+6% Increased Minion Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Speed",type="INC",value=6}}}},nil}
@@ -6168,19 +6170,19 @@ c["+6% Summon Vine Chance On Vine Death +6% Vine Attack and Cast Speed"]={{[1]={
 c["+6% Sword Attack And Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="Speed",type="BASE",value=6}}," Sword  "}
 c["+6% Sword Attack And Cast Speed +6% Axe Attack And Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="Speed",type="BASE",value=6}}," Sword  +6% Axe Attack And Cast Speed "}
 c["+6% Vine Attack and Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="Speed",type="BASE",value=6}}," Vine  "}
-c["+60 Bow Damage"]={{[1]={flags=2048,keywordFlags=1,name="PhysicalMin",type="BASE",value=60},[2]={flags=2048,keywordFlags=1,name="PhysicalMax",type="BASE",value=60},[3]={flags=2048,keywordFlags=2,name="LightningMin",type="BASE",value=60},[4]={flags=2048,keywordFlags=2,name="LightningMax",type="BASE",value=60},[5]={flags=2048,keywordFlags=4,name="ColdMin",type="BASE",value=60},[6]={flags=2048,keywordFlags=4,name="ColdMax",type="BASE",value=60},[7]={flags=2048,keywordFlags=8,name="FireMin",type="BASE",value=60},[8]={flags=2048,keywordFlags=8,name="FireMax",type="BASE",value=60},[9]={flags=2048,keywordFlags=16,name="VoidMin",type="BASE",value=60},[10]={flags=2048,keywordFlags=16,name="VoidMax",type="BASE",value=60},[11]={flags=2048,keywordFlags=32,name="NecroticMin",type="BASE",value=60},[12]={flags=2048,keywordFlags=32,name="NecroticMax",type="BASE",value=60},[13]={flags=2048,keywordFlags=64,name="PoisonMin",type="BASE",value=60},[14]={flags=2048,keywordFlags=64,name="PoisonMax",type="BASE",value=60}},nil}
+c["+60 Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="BASE",value=60}},nil}
 c["+60 Freeze Rate"]={{}," Freeze Rate "}
 c["+60 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=60}},nil}
 c["+60 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=60}},nil}
 c["+60 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=60}},nil}
-c["+60 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=60},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=60},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=60},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=60},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=60},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=60},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=60},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=60},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=60},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=60},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=60},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=60},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=60},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=60}},nil}
-c["+60 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=60},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=60}},nil}
-c["+60 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticMin",type="BASE",value=60},[2]={flags=512,keywordFlags=0,name="NecroticMax",type="BASE",value=60}},nil}
-c["+60 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=60},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=60}},nil}
-c["+60 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=60},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=60}},nil}
-c["+60 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=60},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=60},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=60},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=60},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=60},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=60},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=60},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=60},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=60},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=60},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=60},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=60},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=60},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=60}},nil}
-c["+60 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireMin",type="BASE",value=60},[2]={flags=256,keywordFlags=0,name="FireMax",type="BASE",value=60}},nil}
-c["+60 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=60},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=60}},nil}
+c["+60 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=60}},nil}
+c["+60 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=60}},nil}
+c["+60 Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="BASE",value=60}},nil}
+c["+60 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=60}},nil}
+c["+60 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=60}},nil}
+c["+60 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=60}},nil}
+c["+60 Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireDamage",type="BASE",value=60}},nil}
+c["+60 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=60}},nil}
 c["+60 Ward Burst after Flame Rush"]={{[1]={[1]={skillId="fl71ds",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=60}},"  Burst after  "}
 c["+60 Ward gained when you gain Haste or refresh its duration"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=60}},"  gained when you gain  or refresh its duration "}
 c["+60% Chance for the nearest minion to the target location to cast Dragonflame Nova when you use a minion skill"]={{}," for the nearest  to the target location to cast Dragonflame Nova when you use a minion skill "}
@@ -6238,34 +6240,33 @@ c["+60% increased Meteor Fall Speed"]={{},"  Fall Speed "}
 c["+600 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=600}}," Block iveness "}
 c["+600 Minion Armor"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=600}}}},nil}
 c["+61 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=61}},nil}
-c["+61 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=61},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=61}},nil}
+c["+61 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=61}},nil}
 c["+61% Bow Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=61}}," Bow  "}
 c["+61% Increased Area for Infernal Shade"]={{},"  for  "}
 c["+61% Increased Melee Attack Area for Summoned Wraiths"]={{},"  Attack Area for Summoned Wraiths "}
-c["+62 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=62},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=62}},nil}
-c["+62 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=62},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=62}},nil}
-c["+62 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=62},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=62},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=62},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=62},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=62},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=62},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=62},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=62},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=62},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=62},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=62},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=62},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=62},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=62}},nil}
+c["+62 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=62}},nil}
+c["+62 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=62}},nil}
+c["+62 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=62}},nil}
 c["+620 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=620}}," Block iveness "}
 c["+63 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=63}},nil}
-c["+63 Curse Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=63},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=63},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=63},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=63},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=63},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=63},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=63},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=63},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=63},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=63},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=63},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=63},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=63},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=63}},nil}
 c["+63 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=63}},nil}
 c["+63% Chance to Bleed on Melee Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=63}},nil}
 c["+63% Minion Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=63}}}},nil}
 c["+63% increased Hydrahedron Area"]={{}," Hydrahedron  "}
 c["+64 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=64}},nil}
 c["+64 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=64}},nil}
-c["+64 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=64},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=64}},nil}
-c["+64 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=64},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=64},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=64},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=64},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=64},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=64},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=64},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=64},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=64},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=64},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=64},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=64},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=64},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=64}},nil}
+c["+64 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=64}},nil}
+c["+64 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=64}},nil}
 c["+64% Increased Cooldown Recovery Speed for Judgement"]={{[1]={[1]={skillId="pa67ju",type="SkillId"},flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=64}},"  for  "}
 c["+64% Increased Electrify Effect"]={{[1]={[1]={skillId="Ailment_Electrify",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=64}},nil}
 c["+64% Volcanic Orb speed modifiers also apply to Flame Rush speed and distance"]={{[1]={[1]={skillId="vo54",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_fl71ds",type="BASE",value=64}},"  speed modifiers also apply  speed and distance "}
 c["+65 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=65}},nil}
 c["+65 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=65}},nil}
 c["+65 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=65}},nil}
-c["+65 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=65},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=65},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=65},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=65},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=65},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=65},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=65},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=65},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=65},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=65},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=65},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=65},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=65},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=65}},nil}
-c["+65 Melee Damage for Detonating Arrow"]={{[1]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=65},[2]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=65},[3]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=65},[4]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=65},[5]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=65},[6]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=65},[7]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=8,name="FireMin",type="BASE",value=65},[8]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=8,name="FireMax",type="BASE",value=65},[9]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=65},[10]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=65},[11]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=65},[12]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=65},[13]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=65},[14]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=65}}," for  "}
-c["+65 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=65},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=65}},nil}
-c["+65 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=65},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=65},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=65},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=65},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=65},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=65},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=65},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=65},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=65},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=65},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=65},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=65},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=65},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=65}},nil}
+c["+65 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=65}},nil}
+c["+65 Melee Damage for Detonating Arrow"]={{[1]={[1]={skillId="detar",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="BASE",value=65}},"  for  "}
+c["+65 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=65}},nil}
+c["+65 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=65}},nil}
 c["+65% Critical Strike Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=65}},nil}
 c["+65% Damage on Low Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=65}},"  on Low Health "}
 c["+65% Damage on Low Health +5% Melee Leech on Low Health"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="MORE",value=65}},"  on Low Health +5%  Leech on Low Health "}
@@ -6278,29 +6279,29 @@ c["+65% Width when consuming 12 stacks"]={{}," Width when consuming 12 stacks "}
 c["+65% Width when consuming 12 stacks +130% Range when consuming 12 stacks"]={{}," Width when consuming 12 stacks +130% Range when consuming 12 stacks "}
 c["+65% Width when consuming 12 stacks +130% Range when consuming 12 stacks +130% Damage when consuming 12 stacks"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=65}}," Width when consuming 12 stacks +130% Range when consuming 12 stacks +130%  when consuming 12 stacks "}
 c["+650 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=650}}," Block iveness "}
-c["+66 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningMin",type="BASE",value=66},[2]={flags=2048,keywordFlags=0,name="LightningMax",type="BASE",value=66}},nil}
-c["+66 Curse Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=66},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=66},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=66},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=66},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=66},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=66},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=66},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=66},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=66},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=66},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=66},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=66},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=66},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=66}},nil}
-c["+66 Damage over Time Spell Necrotic Damage"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=66},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=66},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=66},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=66},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=66},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=66},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=66},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=66},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=66},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=66},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=66},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=66},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=66},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=66}}," over Time  Necrotic  "}
+c["+66 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningDamage",type="BASE",value=66}},nil}
+c["+66 Curse Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=66}}," Curse   "}
+c["+66 Damage over Time Spell Necrotic Damage"]={{[1]={flags=4352,keywordFlags=0,name="Damage",type="BASE",value=66}},"   Necrotic Damage "}
 c["+66 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=66}},nil}
-c["+66 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=66},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=66}},nil}
-c["+66 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=66},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=66}},nil}
+c["+66 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=66}},nil}
+c["+66 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=66}},nil}
 c["+66 Ward Gain on Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=66}},"  Gain  "}
 c["+66% Chance to Bleed on Melee Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=66}},nil}
 c["+66% Health Regen also applies to Ward"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=66}},"  also applies to Ward "}
-c["+66% More Infernal Shade Damage per active Wraith against Bosses and Rare Enemies"]={{[1]={[1]={skillId="is40",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=66}}," More   per active Wraith against Bosses and Rare Enemies "}
+c["+66% More Infernal Shade Damage per active Wraith against Bosses and Rare Enemies"]={{[1]={[1]={skillId="is40",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=66}},"   per active Wraith against Bosses and Rare Enemies "}
 c["+66% Ward Retention"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=66}},"  Retention "}
-c["+67 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=67},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=67},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=67},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=67},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=67},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=67},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=67},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=67},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=67},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=67},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=67},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=67},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=67},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=67}},nil}
+c["+67 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=67}},nil}
 c["+67% Increased Bleed Duration"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=67}},nil}
 c["+68 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=68}},nil}
-c["+68 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=68},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=68}},nil}
-c["+68 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=68},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=68},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=68},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=68},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=68},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=68},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=68},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=68},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=68},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=68},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=68},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=68},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=68},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=68}},nil}
+c["+68 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=68}},nil}
+c["+68 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=68}},nil}
 c["+694 Ward Gained when you cast Transplant"]={{[1]={[1]={skillId="ts50pl",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=694}},"  Gained when you cast  "}
 c["+7 All Attributes"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=7},[2]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=7},[3]={flags=0,keywordFlags=0,name="Int",type="BASE",value=7},[4]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=7},[5]={flags=0,keywordFlags=0,name="Att",type="BASE",value=7},[6]={flags=0,keywordFlags=0,name="All",type="BASE",value=7}},nil}
 c["+7 Bees Per 10 Seconds"]={{}," Bees Per 10 Seconds "}
-c["+7 Blood Spectre Necrotic Damage"]={{[1]={[1]={includeTransfigured=true,skillName="Raise Spectre",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=7}}}}," Blood  Necrotic  "}
-c["+7 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdMin",type="BASE",value=7},[2]={flags=2048,keywordFlags=0,name="ColdMax",type="BASE",value=7}},nil}
-c["+7 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireMin",type="BASE",value=7},[2]={flags=2048,keywordFlags=0,name="FireMax",type="BASE",value=7}},nil}
-c["+7 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningMin",type="BASE",value=7},[2]={flags=2048,keywordFlags=0,name="LightningMax",type="BASE",value=7}},nil}
+c["+7 Blood Spectre Necrotic Damage"]={{[1]={[1]={includeTransfigured=true,skillName="Raise Spectre",type="SkillName"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=7}}}}," Blood   "}
+c["+7 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdDamage",type="BASE",value=7}},nil}
+c["+7 Bow Fire Damage"]={{[1]={flags=2048,keywordFlags=0,name="FireDamage",type="BASE",value=7}},nil}
+c["+7 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningDamage",type="BASE",value=7}},nil}
 c["+7 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=7}},nil}
 c["+7 Dodge Rating"]={{}," Dodge Rating "}
 c["+7 Dodge Rating 3% Maximum Health Gained As Endurance Threshold"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=7}}," Dodge Rating 3% Maximum  Gained As Endurance Threshold "}
@@ -6310,14 +6311,14 @@ c["+7 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",
 c["+7 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=7}},nil}
 c["+7 Mana Cost Per Second"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=7}},"  Per Second "}
 c["+7 Marrow Orb Health Gained"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=7}}," Marrow Orb  Gained "}
-c["+7 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=7},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=7}},nil}
-c["+7 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=7},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=7}},nil}
-c["+7 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=7},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=7}},nil}
-c["+7 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=7},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=7}},nil}
+c["+7 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=7}},nil}
+c["+7 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=7}},nil}
+c["+7 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=7}},nil}
+c["+7 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=7}},nil}
 c["+7 Minion Melee Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=7}}}},nil}
 c["+7 Seconds Cooldown Duration for Summon Vines"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=7}}," Seconds  for Summon Vines "}
-c["+7 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=7},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=7},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=7},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=7},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=7},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=7},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=7},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=7},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=7},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=7},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=7},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=7},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=7},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=7}},nil}
-c["+7 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=7},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=7}},nil}
+c["+7 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=7}},nil}
+c["+7 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=7}},nil}
 c["+7 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=7}},nil}
 c["+7 Ward Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=7}},"  Gain "}
 c["+7 Ward Gained"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=7}},"  Gained "}
@@ -6381,8 +6382,8 @@ c["+70 Dodge Rating"]={{}," Dodge Rating "}
 c["+70 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=70}},nil}
 c["+70 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=70}},nil}
 c["+70 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=70}},nil}
-c["+70 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=70},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=70},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=70},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=70},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=70},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=70},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=70},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=70},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=70},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=70},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=70},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=70},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=70},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=70}},nil}
-c["+70 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=70},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=70}},nil}
+c["+70 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=70}},nil}
+c["+70 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=70}},nil}
 c["+70% Attack Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=70}}," Attack  "}
 c["+70% Bow Chance to Poison on Hit"]={{[1]={flags=8390656,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=70}},nil}
 c["+70% Chance to Chill on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=70}},nil}
@@ -6397,14 +6398,14 @@ c["+70% Melee Physical Damage Leeched as Health"]={{[1]={flags=512,keywordFlags=
 c["+70% Minion Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="BASE",value=70}}}},nil}
 c["+70% Trap Drop Chance"]={{},"  Drop Chance "}
 c["+70% Trap Drop Chance +11 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=70}},"  Drop Chance +11  "}
-c["+70% Void Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=70}}," Void  Leeched as Health "}
+c["+70% Void Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=70}},"  Leeched as Health "}
 c["+70% Ward Retention"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=70}},"  Retention "}
 c["+70% Zombie Explosion Area"]={{},"  Explosion Area "}
-c["+70% reduced Bonus Damage Taken from Critical Strikes"]={{[1]={[1]={type="Condition",var="CriticalStrike"},flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=70}}," reduced Bonus   "}
+c["+70% reduced Bonus Damage Taken from Critical Strikes"]={{[1]={[1]={type="Condition",var="CriticalStrike"},flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=-70}}," Bonus   "}
 c["+700 Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=700}}," Block iveness "}
-c["+72 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningMin",type="BASE",value=72},[2]={flags=2048,keywordFlags=0,name="LightningMax",type="BASE",value=72}},nil}
-c["+72 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=72},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=72}},nil}
-c["+72 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=72},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=72},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=72},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=72},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=72},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=72},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=72},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=72},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=72},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=72},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=72},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=72},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=72},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=72}},nil}
+c["+72 Bow Lightning Damage"]={{[1]={flags=2048,keywordFlags=0,name="LightningDamage",type="BASE",value=72}},nil}
+c["+72 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=72}},nil}
+c["+72 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=72}},nil}
 c["+73 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=73}},nil}
 c["+74 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=74}},nil}
 c["+74% Increased Physical Damage while Dual Wielding"]={{[1]={[1]={type="Condition",var="DualWielding"},flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=74}},nil}
@@ -6414,10 +6415,10 @@ c["+75 Dodge Rating 1 Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="D
 c["+75 Endurance Threshold"]={{}," Endurance Threshold "}
 c["+75 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=75}},nil}
 c["+75 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=75}},nil}
-c["+75 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=75},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=75},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=75},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=75},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=75},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=75},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=75},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=75},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=75},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=75},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=75},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=75},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=75},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=75}},nil}
-c["+75 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=75},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=75}},nil}
-c["+75 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=75},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=75}},nil}
-c["+75 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=75},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=75}},nil}
+c["+75 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=75}},nil}
+c["+75 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=75}},nil}
+c["+75 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=75}},nil}
+c["+75 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=75}},nil}
 c["+75% Area"]={{},"  "}
 c["+75% Area Double Crit Chance"]={{[1]={flags=67108864,keywordFlags=0,name="CritChance",type="BASE",value=75}},"  Double  "}
 c["+75% Chance to Bleed on Bow Hit"]={{}," to  on Bow Hit "}
@@ -6443,9 +6444,9 @@ c["+75% Lightning resistance to allies nearby Storm Totem"]={{[1]={flags=0,keywo
 c["+75% Mark Of Thunder Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=75}}," Mark Of Thunder  "}
 c["+75% Melee Chance to Poison on Hit"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=75}},nil}
 c["+75% Minion Fire Resistance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireResist",type="BASE",value=75}}}},nil}
-c["+75% More Companion Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=75}}," More Companion  "}
-c["+75% More Companion Health 30% Increased Damage With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=75}}," More Companion  30% Increased Damage With An Active Companion "}
-c["+75% More Companion Health 30% Increased Damage With An Active Companion 75 Armour With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=75}}," More Companion  30% Increased Damage With An Active Companion 75 Armour With An Active Companion "}
+c["+75% More Companion Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="MORE",value=75}}," Companion  "}
+c["+75% More Companion Health 30% Increased Damage With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Life",type="MORE",value=75}}," Companion  30% Increased Damage With An Active Companion "}
+c["+75% More Companion Health 30% Increased Damage With An Active Companion 75 Armour With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Life",type="MORE",value=75}}," Companion  30% Increased Damage With An Active Companion 75 Armour With An Active Companion "}
 c["+75% Movespeed"]={{}," Movespeed "}
 c["+75% Movespeed 35% Increased Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=75}}," Movespeed 35% Increased  "}
 c["+75% Movespeed 35% Increased Cooldown Recovery Speed Counts as Traversal Skill"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=75}}," Movespeed 35% Increased  Counts as Traversal Skill "}
@@ -6461,54 +6462,55 @@ c["+75% Void Resistance"]={{}," Void Resistance "}
 c["+75% Void Resistance 1 Maximum Sigils"]={{}," Void Resistance 1 Maximum Sigils "}
 c["+75% increased Freeze Duration with Snap Freeze"]={{[1]={[1]={skillId="sw31a",type="SkillId"},flags=0,keywordFlags=0,name="EnemyFreezeDuration",type="INC",value=75}},"  with  "}
 c["+750 Ward gained when you cast Flame Ward"]={{[1]={[1]={skillId="fw3d",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=750}},"  gained when you cast  "}
-c["+76 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=76},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=76}},nil}
+c["+76 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=76}},nil}
 c["+77 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=77}},nil}
 c["+77 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=77}},nil}
 c["+77% Chance to Shock on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=77}},nil}
 c["+77% Mana Spent Gained as Ward"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=77}},"  Spent Gained as Ward "}
 c["+77% Totem Chance to Shock on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=77}},nil}
-c["+78 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=78},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=78}},nil}
-c["+78 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=78},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=78},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=78},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=78},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=78},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=78},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=78},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=78},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=78},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=78},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=78},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=78},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=78},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=78}},nil}
-c["+78 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=78},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=78}},nil}
-c["+78 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=78},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=78}},nil}
-c["+78 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidMin",type="BASE",value=78},[2]={flags=256,keywordFlags=0,name="VoidMax",type="BASE",value=78}},nil}
+c["+78 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=78}},nil}
+c["+78 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=78}},nil}
+c["+78 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=78}},nil}
+c["+78 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=78}},nil}
+c["+78 Spell Void Damage"]={{[1]={flags=256,keywordFlags=0,name="VoidDamage",type="BASE",value=78}},nil}
 c["+78% Chance to Bleed on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=78}},nil}
-c["+78% reduced Bonus Damage Taken from Critical Strikes"]={{[1]={[1]={type="Condition",var="CriticalStrike"},flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=78}}," reduced Bonus   "}
-c["+8 Ally Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}},nil}
+c["+78% reduced Bonus Damage Taken from Critical Strikes"]={{[1]={[1]={type="Condition",var="CriticalStrike"},flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=-78}}," Bonus   "}
+c["+8 Ally Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}}," Ally   "}
+c["+8 Ally Spell Damage 8 Buff Duration (seconds)"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}}," Ally   8 Buff Duration (seconds) "}
 c["+8 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=8}},nil}
 c["+8 Attunement"]={{[1]={flags=0,keywordFlags=0,name="Att",type="BASE",value=8}},nil}
-c["+8 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdMin",type="BASE",value=8},[2]={flags=2048,keywordFlags=0,name="ColdMax",type="BASE",value=8}},nil}
+c["+8 Bow Cold Damage"]={{[1]={flags=2048,keywordFlags=0,name="ColdDamage",type="BASE",value=8}},nil}
 c["+8 Channel Cost"]={{}," Channel Cost "}
 c["+8 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
 c["+8 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=8}},nil}
 c["+8 Flame Reave Fire Damage during Frenzy"]={{[1]={[1]={skillId="fr11mv",type="SkillId"},flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=8}},"   during Frenzy "}
 c["+8 Flame Reave Fire Damage during Frenzy 3 Frenzy Duration (Seconds)"]={{[1]={[1]={skillId="fr11mv",type="SkillId"},flags=0,keywordFlags=0,name="FireDamage",type="BASE",value=8}},"   during Frenzy 3 Frenzy Duration (Seconds) "}
-c["+8 Global Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}},nil}
+c["+8 Global Spell Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=8}},"  Spell  "}
 c["+8 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=8}},nil}
 c["+8 Health Gain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=8}},"  Gain "}
 c["+8 Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=8}},nil}
 c["+8 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=8}},nil}
-c["+8 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=8},[2]={flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=8}},nil}
+c["+8 Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=8}},nil}
 c["+8 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=8}},nil}
 c["+8 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=8}},nil}
-c["+8 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=8},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=8}},nil}
-c["+8 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=8},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=8}},nil}
-c["+8 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=8},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=8}},nil}
-c["+8 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidMin",type="BASE",value=8},[2]={flags=512,keywordFlags=0,name="VoidMax",type="BASE",value=8}},nil}
+c["+8 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=8}},nil}
+c["+8 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=8}},nil}
+c["+8 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=8}},nil}
+c["+8 Melee Void Damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="BASE",value=8}},nil}
 c["+8 Slash Cooldown (seconds)"]={{}," Slash Cooldown (seconds) "}
 c["+8 Slash Cooldown (seconds) Summon Locust During Slash Cooldown"]={{}," Slash Cooldown (seconds) Summon Locust During Slash Cooldown "}
 c["+8 Slash Cooldown (seconds) Summon Locust During Slash Cooldown +12 Locust Melee Physical Damage Buff"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=8}}," Slash Cooldown (seconds) Summon Locust During Slash Cooldown +12 Locust  Buff "}
-c["+8 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdMin",type="BASE",value=8},[2]={flags=256,keywordFlags=0,name="ColdMax",type="BASE",value=8}},nil}
-c["+8 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}},nil}
-c["+8 Spell Damage With 2h Weapon"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}}," With 2h  "}
-c["+8 Spell Damage with Buff"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}}," with Buff "}
-c["+8 Spell Damage with Buff +8% Cast Speed with Buff"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}}," with Buff +8%  with Buff "}
-c["+8 Spell Damage with Buff +8% Cast Speed with Buff 1 Buff Duration (seconds) per Rune"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}}," with Buff +8%  with Buff 1 Buff Duration (seconds) per Rune "}
-c["+8 Spell Damage with Flame Rush per stack of Fire Aura"]={{[1]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=8},[2]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=8},[3]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=8},[4]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=8},[5]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=8},[6]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=8},[7]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=8,name="FireMin",type="BASE",value=8},[8]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=8,name="FireMax",type="BASE",value=8},[9]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=8},[10]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=8},[11]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=8},[12]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=8},[13]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=8},[14]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=8}}," with  per stack of Fire Aura "}
-c["+8 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticMin",type="BASE",value=8},[2]={flags=256,keywordFlags=0,name="NecroticMax",type="BASE",value=8}},nil}
-c["+8 Throwing Cold Damage"]={{[1]={flags=1024,keywordFlags=0,name="ColdMin",type="BASE",value=8},[2]={flags=1024,keywordFlags=0,name="ColdMax",type="BASE",value=8}},nil}
+c["+8 Spell Cold Damage"]={{[1]={flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=8}},nil}
+c["+8 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}},nil}
+c["+8 Spell Damage With 2h Weapon"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}},"   With 2h Weapon "}
+c["+8 Spell Damage with Buff"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}},"   with Buff "}
+c["+8 Spell Damage with Buff +8% Cast Speed with Buff"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}},"   with Buff +8% Cast Speed with Buff "}
+c["+8 Spell Damage with Buff +8% Cast Speed with Buff 1 Buff Duration (seconds) per Rune"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}},"   with Buff +8% Cast Speed with Buff 1 Buff Duration (seconds) per Rune "}
+c["+8 Spell Damage with Flame Rush per stack of Fire Aura"]={{[1]={[1]={skillId="fl71ds",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=8}},"   with  per stack of Fire Aura "}
+c["+8 Spell Necrotic Damage"]={{[1]={flags=256,keywordFlags=0,name="NecroticDamage",type="BASE",value=8}},nil}
+c["+8 Throwing Cold Damage"]={{[1]={flags=1024,keywordFlags=0,name="ColdDamage",type="BASE",value=8}},nil}
 c["+8 Vitality"]={{[1]={flags=0,keywordFlags=0,name="Vit",type="BASE",value=8}},nil}
-c["+8 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidMin",type="BASE",value=8},[2]={flags=0,keywordFlags=0,name="VoidMax",type="BASE",value=8}},nil}
+c["+8 Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=8}},nil}
 c["+8 Ward Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=8}},"  Gain "}
 c["+8 Ward Gain +8% Health Decay"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=8}},"  Gain +8% Health Decay "}
 c["+8 Ward Gain On Stun"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=8}},"  Gain On Stun "}
@@ -6567,7 +6569,7 @@ c["+8% Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",
 c["+8% Melee Poison Chance"]={{[1]={flags=8389120,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=8}},nil}
 c["+8% Minion Melee Poison Chance"]={{},"  Melee  Chance "}
 c["+8% Minion Melee Poison Chance +8% Poison Resistance"]={{},"  Melee  Chance +8% Poison Resistance "}
-c["+8% More Movespeed"]={{}," More Movespeed "}
+c["+8% More Movespeed"]={{}," Movespeed "}
 c["+8% Movespeed"]={{}," Movespeed "}
 c["+8% Physical Penetration"]={{[1]={flags=0,keywordFlags=0,name="PhysicalPenetration",type="BASE",value=8}},nil}
 c["+8% Physical Resistance"]={{}," Physical Resistance "}
@@ -6590,7 +6592,7 @@ c["+8% Ward Retention +4% Necrotic Resistance"]={{[1]={flags=0,keywordFlags=0,na
 c["+8% Ward Retention +4% Necrotic Resistance +4% Poison Resistance"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=8}},"  Retention +4% Necrotic Resistance +4%  Resistance "}
 c["+80 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=80}},nil}
 c["+80 Armor Granted To Nearby Minions"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=80}}}},"  Granted To Nearby s "}
-c["+80 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=80},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=80},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=80},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=80},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=80},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=80},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=80},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=80},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=80},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=80},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=80},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=80},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=80},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=80}}," Reflected to Attackers "}
+c["+80 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=80}},"  Reflected to Attackers "}
 c["+80 Dodge Rating"]={{}," Dodge Rating "}
 c["+80 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=80}},nil}
 c["+80 Initial Hit Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=80}}," Initial Hit   "}
@@ -6598,8 +6600,8 @@ c["+80 Initial Hit Spell Damage 50% Initial Hit Base -> Lightning"]={{[1]={flags
 c["+80 Initial Hit Spell Damage 50% Initial Hit Base -> Lightning +20 Aftershock Spell Damage"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=80}}," Initial Hit   50% Initial Hit Base -> Lightning +20 After Spell Damage "}
 c["+80 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=80}},nil}
 c["+80 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=80}},nil}
-c["+80 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=80},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=80},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=80},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=80},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=80},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=80},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=80},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=80},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=80},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=80},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=80},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=80},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=80},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=80}},nil}
-c["+80 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=80},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=80},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=80},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=80},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=80},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=80},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=80},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=80},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=80},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=80},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=80},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=80},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=80},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=80}},nil}
+c["+80 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=80}},nil}
+c["+80 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=80}},nil}
 c["+80 Ward per Second"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=80}},"  per Second "}
 c["+80% Accuracy"]={{[1]={flags=0,keywordFlags=0,name="Accuracy",type="BASE",value=80}},nil}
 c["+80% Chance to Chill on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=80}},nil}
@@ -6614,7 +6616,7 @@ c["+80% Fire Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Fire
 c["+80% Freeze Rate Multiplier"]={{}," Freeze Rate Multiplier "}
 c["+80% Freeze Rate per stack of Chill"]={{}," Freeze Rate per stack of  "}
 c["+80% Increased Leech Rate"]={{}," Leech Rate "}
-c["+80% Increased Necrotic Damage if you have been Hit Recently"]={{[1]={[1]={type="Condition",var="BeenHitRecently"},flags=0,keywordFlags=0,name="Damage",type="INC",value=80}}," Necrotic   "}
+c["+80% Increased Necrotic Damage if you have been Hit Recently"]={{[1]={[1]={type="Condition",var="BeenHitRecently"},flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=80}},nil}
 c["+80% Increased Stun Chance"]={{}," Stun Chance "}
 c["+80% Increased Stun Chance +80% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=80}}," Stun Chance +80% Increased  "}
 c["+80% Increased Stun Chance +80% Increased Stun Duration +6 Cooldown (seconds)"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=80}}," Stun Chance +80% Increased  +6 Cooldown (seconds) "}
@@ -6632,20 +6634,20 @@ c["+80% Totem Armor With Buff"]={{[1]={flags=0,keywordFlags=0,name="Armour",type
 c["+80% Totem Armor With Buff +15% Totem Damage With Buff"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=80}},"tem  With Buff +15% Totem Damage With Buff "}
 c["+80% Void Penetration with Future Attack"]={{}," Void Peration with Future Attack "}
 c["+80% chance to cast Fire Aura each second while standing on your Glyph of Dominion"]={{}," to cast Fire Aura each second while standing on your  "}
-c["+81 Lightning Damage with Lethal Mirage"]={{[1]={[1]={skillId="mira59",type="SkillId"},flags=0,keywordFlags=0,name="LightningMin",type="BASE",value=81},[2]={[1]={skillId="mira59",type="SkillId"},flags=0,keywordFlags=0,name="LightningMax",type="BASE",value=81}}," with  "}
+c["+81 Lightning Damage with Lethal Mirage"]={{[1]={[1]={skillId="mira59",type="SkillId"},flags=0,keywordFlags=0,name="LightningDamage",type="BASE",value=81}},"  with  "}
 c["+82 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=82}},nil}
-c["+82 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=82},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=82},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=82},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=82},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=82},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=82},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=82},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=82},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=82},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=82},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=82},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=82},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=82},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=82}},nil}
+c["+82 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=82}},nil}
 c["+83 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=83}},nil}
 c["+84 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=84}},nil}
 c["+84 Channelling Ward per Second"]={{[1]={[1]={type="SkillType"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=84}},"   per Second "}
 c["+84 LowLife Bow Void Damage"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=84}}," Low Bow Void Damage "}
-c["+84 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=84},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=84}},nil}
+c["+84 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=84}},nil}
 c["+84% Channelling Chance to Ignite on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="BASE",value=84}},nil}
 c["+84% Channelling Chance to apply Damned on Hit"]={{}," to apply   "}
 c["+84% Increased Electrify Effect"]={{[1]={[1]={skillId="Ailment_Electrify",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=84}},nil}
 c["+85 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=85}},nil}
-c["+85 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdMin",type="BASE",value=85},[2]={flags=512,keywordFlags=0,name="ColdMax",type="BASE",value=85}},nil}
-c["+85 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=85},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=85},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=85},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=85},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=85},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=85},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=85},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=85},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=85},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=85},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=85},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=85},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=85},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=85}},nil}
+c["+85 Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="BASE",value=85}},nil}
+c["+85 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=85}},nil}
 c["+85% Chance to Bleed on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=85}},nil}
 c["+85% Chance to apply Frostbite on Cold Hit"]={{}," to apply   "}
 c["+85% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=85}},nil}
@@ -6654,7 +6656,7 @@ c["+85% Increased Area of mirage attacks with Lethal Mirage"]={{},"  of mirage a
 c["+85% Increased Chance To Find Potions"]={{}," To Find Potions "}
 c["+85% Increased Leech Rate"]={{}," Leech Rate "}
 c["+85% Ward Granted From Rares Or Bosses"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=85}},"  Granted From Rares Or Bosses "}
-c["+85% reduced Bonus Damage Taken from Critical Strikes"]={{[1]={[1]={type="Condition",var="CriticalStrike"},flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=85}}," reduced Bonus   "}
+c["+85% reduced Bonus Damage Taken from Critical Strikes"]={{[1]={[1]={type="Condition",var="CriticalStrike"},flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=-85}}," Bonus   "}
 c["+86% Increased Stun Chance"]={{}," Stun Chance "}
 c["+88 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=88}},nil}
 c["+88% Melee Critical Strike Multiplier"]={{[1]={flags=512,keywordFlags=0,name="CritMultiplier",type="BASE",value=88}},nil}
@@ -6665,9 +6667,9 @@ c["+9 Dexterity"]={{[1]={flags=0,keywordFlags=0,name="Dex",type="BASE",value=9}}
 c["+9 Effective Endurance Threshold per 10 Missing Mana"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="BASE",value=9}}," ive Endurance Threshold per 10 Missing Mana "}
 c["+9 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=9}},nil}
 c["+9 Intelligence"]={{[1]={flags=0,keywordFlags=0,name="Int",type="BASE",value=9}},nil}
-c["+9 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=9},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=9},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=9},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=9},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=9},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=9},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=9},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=9},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=9},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=9},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=9},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=9},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=9},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=9}},nil}
+c["+9 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=9}},nil}
 c["+9 Minion Melee Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=9}}}},nil}
-c["+9 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=9},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=9},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=9},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=9},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=9},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=9},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=9},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=9},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=9},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=9},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=9},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=9},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=9},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=9}},nil}
+c["+9 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=9}},nil}
 c["+9 Strength"]={{[1]={flags=0,keywordFlags=0,name="Str",type="BASE",value=9}},nil}
 c["+9% Chance to Cast Meteor on Crit if above 0 Mana"]={{[1]={[1]={skillId="me27",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=9}}," to Cast  on Crit if above 0  "}
 c["+9% Cold Penetration"]={{[1]={flags=0,keywordFlags=0,name="ColdPenetration",type="BASE",value=9}},nil}
@@ -6688,17 +6690,17 @@ c["+9% Physical Penetration"]={{[1]={flags=0,keywordFlags=0,name="PhysicalPenetr
 c["+9% Physical Resistance"]={{}," Physical Resistance "}
 c["+9% Poison Resistance"]={{},"  Resistance "}
 c["+90 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=90}},nil}
-c["+90 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=1,name="PhysicalMin",type="BASE",value=90},[2]={flags=0,keywordFlags=1,name="PhysicalMax",type="BASE",value=90},[3]={flags=0,keywordFlags=2,name="LightningMin",type="BASE",value=90},[4]={flags=0,keywordFlags=2,name="LightningMax",type="BASE",value=90},[5]={flags=0,keywordFlags=4,name="ColdMin",type="BASE",value=90},[6]={flags=0,keywordFlags=4,name="ColdMax",type="BASE",value=90},[7]={flags=0,keywordFlags=8,name="FireMin",type="BASE",value=90},[8]={flags=0,keywordFlags=8,name="FireMax",type="BASE",value=90},[9]={flags=0,keywordFlags=16,name="VoidMin",type="BASE",value=90},[10]={flags=0,keywordFlags=16,name="VoidMax",type="BASE",value=90},[11]={flags=0,keywordFlags=32,name="NecroticMin",type="BASE",value=90},[12]={flags=0,keywordFlags=32,name="NecroticMax",type="BASE",value=90},[13]={flags=0,keywordFlags=64,name="PoisonMin",type="BASE",value=90},[14]={flags=0,keywordFlags=64,name="PoisonMax",type="BASE",value=90}}," Reflected to Attackers "}
+c["+90 Damage Reflected to Attackers"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=90}},"  Reflected to Attackers "}
 c["+90 Dodge Rating"]={{}," Dodge Rating "}
 c["+90 Dodge Rating +5% Dodge Rating Per Dexterity"]={{}," Dodge Rating +5% Dodge Rating  "}
 c["+90 Endurance Threshold"]={{}," Endurance Threshold "}
 c["+90 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=90}},nil}
 c["+90 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=90}},nil}
-c["+90 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=90},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=90},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=90},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=90},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=90},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=90},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=90},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=90},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=90},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=90},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=90},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=90},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=90},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=90}},nil}
-c["+90 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireMin",type="BASE",value=90},[2]={flags=512,keywordFlags=0,name="FireMax",type="BASE",value=90}},nil}
-c["+90 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningMin",type="BASE",value=90},[2]={flags=512,keywordFlags=0,name="LightningMax",type="BASE",value=90}},nil}
-c["+90 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalMin",type="BASE",value=90},[2]={flags=512,keywordFlags=0,name="PhysicalMax",type="BASE",value=90}},nil}
-c["+90 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=90},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=90},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=90},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=90},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=90},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=90},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=90},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=90},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=90},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=90},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=90},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=90},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=90},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=90}},nil}
+c["+90 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=90}},nil}
+c["+90 Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="BASE",value=90}},nil}
+c["+90 Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="LightningDamage",type="BASE",value=90}},nil}
+c["+90 Melee Physical Damage"]={{[1]={flags=512,keywordFlags=0,name="PhysicalDamage",type="BASE",value=90}},nil}
+c["+90 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=90}},nil}
 c["+90% Bow Frostbite Chance"]={{}," Bow  Chance "}
 c["+90% Chance to Shred Armor on Hit"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=90}}," to Shred   "}
 c["+90% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=90}},nil}
@@ -6713,17 +6715,17 @@ c["+90% Minion Chance to Shred Armor on Hit"]={{[1]={flags=0,keywordFlags=0,name
 c["+900 Minion Armor"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=900}}}},nil}
 c["+91 Ward per Second for you or your allies while standing on your Glyph of Dominion"]={{[1]={[1]={skillId="gy2dm",type="SkillId"},flags=0,keywordFlags=0,name="Ward",type="BASE",value=91}},"  per Second for you or your allies while standing on your  "}
 c["+91% Chance to Bleed on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Bleed",type="BASE",value=91}},nil}
-c["+91% Reduced Health Cost of Spells"]={{[1]={flags=256,keywordFlags=0,name="Life",type="BASE",value=91}}," Reduced  Cost of s "}
+c["+91% Reduced Health Cost of Spells"]={{[1]={flags=256,keywordFlags=0,name="Life",type="INC",value=-91}},"  Cost of s "}
 c["+92% Lightning Penetration with your next Throwing Attack within two seconds when you directly use a Lightning Bow Attack"]={{}," Lightning Peration with your next Throwing Attack within two seconds when you directly use a Lightning Bow Attack "}
 c["+93 Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=93}},nil}
 c["+94 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=94}},nil}
-c["+94 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=94},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=94},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=94},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=94},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=94},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=94},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=94},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=94},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=94},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=94},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=94},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=94},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=94},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=94}},nil}
-c["+94 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=94},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=94},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=94},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=94},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=94},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=94},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=94},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=94},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=94},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=94},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=94},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=94},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=94},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=94}},nil}
+c["+94 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=94}},nil}
+c["+94 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=94}},nil}
 c["+94% Chance to Shock on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=94}},nil}
 c["+94% Totem Chance to Shock on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Shock",type="BASE",value=94}},nil}
 c["+95 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=95}},nil}
-c["+95 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=95},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=95},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=95},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=95},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=95},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=95},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=95},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=95},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=95},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=95},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=95},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=95},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=95},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=95}},nil}
-c["+95 Spell Damage"]={{[1]={flags=256,keywordFlags=1,name="PhysicalMin",type="BASE",value=95},[2]={flags=256,keywordFlags=1,name="PhysicalMax",type="BASE",value=95},[3]={flags=256,keywordFlags=2,name="LightningMin",type="BASE",value=95},[4]={flags=256,keywordFlags=2,name="LightningMax",type="BASE",value=95},[5]={flags=256,keywordFlags=4,name="ColdMin",type="BASE",value=95},[6]={flags=256,keywordFlags=4,name="ColdMax",type="BASE",value=95},[7]={flags=256,keywordFlags=8,name="FireMin",type="BASE",value=95},[8]={flags=256,keywordFlags=8,name="FireMax",type="BASE",value=95},[9]={flags=256,keywordFlags=16,name="VoidMin",type="BASE",value=95},[10]={flags=256,keywordFlags=16,name="VoidMax",type="BASE",value=95},[11]={flags=256,keywordFlags=32,name="NecroticMin",type="BASE",value=95},[12]={flags=256,keywordFlags=32,name="NecroticMax",type="BASE",value=95},[13]={flags=256,keywordFlags=64,name="PoisonMin",type="BASE",value=95},[14]={flags=256,keywordFlags=64,name="PoisonMax",type="BASE",value=95}},nil}
+c["+95 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=95}},nil}
+c["+95 Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=95}},nil}
 c["+95% Increased Fire Aura Area"]={{}," Fire Aura  "}
 c["+95% Increased Volcanic Orb Damage"]={{[1]={[1]={skillId="vo54",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="INC",value=95}},nil}
 c["+95% Throwing Chance to Poison on Hit"]={{[1]={flags=8389632,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Poison",type="BASE",value=95}},nil}
@@ -6731,7 +6733,7 @@ c["+9500 Starting Armour Near Dead Golem"]={{[1]={[1]={type="SkillType"},flags=0
 c["+9500 Starting Armour Near Dead Golem +15% Size if no other living Golems"]={{[1]={[1]={type="SkillType"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=9500}}}}," Starting  Near Dead  +15% Size if no other living Golems "}
 c["+9500 Starting Armour Near Dead Golem +15% Size if no other living Golems +25% Damage if no other living Golems"]={{[1]={[1]={type="SkillType"},flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Armour",type="BASE",value=9500}}}}," Starting  Near Dead  +15% Size if no other living Golems +25% Damage if no other living Golems "}
 c["+96 Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=96}},nil}
-c["+96 Melee Damage"]={{[1]={flags=512,keywordFlags=1,name="PhysicalMin",type="BASE",value=96},[2]={flags=512,keywordFlags=1,name="PhysicalMax",type="BASE",value=96},[3]={flags=512,keywordFlags=2,name="LightningMin",type="BASE",value=96},[4]={flags=512,keywordFlags=2,name="LightningMax",type="BASE",value=96},[5]={flags=512,keywordFlags=4,name="ColdMin",type="BASE",value=96},[6]={flags=512,keywordFlags=4,name="ColdMax",type="BASE",value=96},[7]={flags=512,keywordFlags=8,name="FireMin",type="BASE",value=96},[8]={flags=512,keywordFlags=8,name="FireMax",type="BASE",value=96},[9]={flags=512,keywordFlags=16,name="VoidMin",type="BASE",value=96},[10]={flags=512,keywordFlags=16,name="VoidMax",type="BASE",value=96},[11]={flags=512,keywordFlags=32,name="NecroticMin",type="BASE",value=96},[12]={flags=512,keywordFlags=32,name="NecroticMax",type="BASE",value=96},[13]={flags=512,keywordFlags=64,name="PoisonMin",type="BASE",value=96},[14]={flags=512,keywordFlags=64,name="PoisonMax",type="BASE",value=96}},nil}
+c["+96 Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=96}},nil}
 c["+98 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=98}},nil}
 c["-0.2 Cooldown Reduction (seconds)"]={{}," Cooldown Reduction (seconds) "}
 c["-0.2 Cooldown Reduction (seconds) 1.2 Maximum Cooldown Reduction (seconds)"]={{}," Cooldown Reduction (seconds) 1.2 Maximum Cooldown Reduction (seconds) "}
@@ -6750,8 +6752,7 @@ c["-1 Mana Drained When Hit"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BA
 c["-1 Mana Gained"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=-1}},"  Gained "}
 c["-1 Maximum Thorn Totems"]={{}," Maximum Thorn Totems "}
 c["-1 Maximum Thorn Totems +15 Mana Cost Per Additional Totem Summoned"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=-1}}," Maximum Thorn Totems +15  Per Additional Totem Summoned "}
-c["-1 Necrotic Damage per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=-1}}," Necrotic   "}
-c["-1 Necrotic Damage per Intelligence 4% Bleed Chance per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},[2]={stat="Int",type="PerStat"},[3]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=-1}}," Necrotic   4%  Chance  "}
+c["-1 Necrotic Damage per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=-1}},nil}
 c["-1 Poison Nova Cooldown"]={{},"  Nova Cooldown "}
 c["-1 Required Rhythm of Fire Stacks"]={{}," Required Rhythm of Fire Stacks "}
 c["-1 Required Rhythm of Fire Stacks +2% Crit Chance when Consuming Stacks"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="BASE",value=-1}}," Required Rhythm of Fire Stacks +2%  when Consuming Stacks "}
@@ -6797,7 +6798,7 @@ c["-10% Hit Damage -10% Attack Speed"]={{[1]={flags=0,keywordFlags=0,name="Damag
 c["-10% Less Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=-10}}," Less  "}
 c["-10% Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=-10}},nil}
 c["-10% Mirror Image Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=-10}}," Mirror Image  "}
-c["-10% Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=-10}}," Necrotic  "}
+c["-10% Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=-10}},"  Taken "}
 c["-10% Physical Resistance"]={{}," Physical Resistance "}
 c["-10% Physical Resistance Abyssal Decay Lingers"]={{}," Physical Resistance  Lingers "}
 c["-10% Projectile Speed"]={{[1]={flags=0,keywordFlags=0,name="ProjectileSpeed",type="BASE",value=-10}},nil}
@@ -6807,7 +6808,7 @@ c["-10% Shield Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",va
 c["-10% Spirit Movespeed"]={{}," Spirit Movespeed "}
 c["-10% Stack Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=-10}}," Stack  "}
 c["-10% Thrown Blades Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=-10}}," Thrown Blades  "}
-c["-10% Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="BASE",value=-10}}," Void  "}
+c["-10% Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=-10}},"  Taken "}
 c["-100% Current Health Drain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=-100}}," Current  Drain "}
 c["-100% Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="BASE",value=-100}},nil}
 c["-100% Mana From Burst"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=-100}},"  From Burst "}
@@ -7075,9 +7076,9 @@ c["0.01% increased Melee Critical Strike Chance"]={{[1]={flags=512,keywordFlags=
 c["0.1 Frenzy Duration per stack (seconds)"]={{[1]={[1]={skillId="Ailment_Frenzy",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=0.1}},"   per stack (seconds) "}
 c["0.1 Haste Duration per stack (seconds)"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=0.1}},"   per stack (seconds) "}
 c["0.1 Haste Duration per stack (seconds) 0.1 Frenzy Duration per stack (seconds)"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="BASE",value=0.1}},"   per stack (seconds) 0.1 Frenzy Duration per stack (seconds) "}
-c["0.1% More Damage per Negative Ailment on You"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=0.1}}," More  per Negative Ailment on You "}
+c["0.1% More Damage per Negative Ailment on You"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=0.1}},"  per Negative Ailment on You "}
 c["0.2 Duration Before Effect (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=0.2}},"  Before Effect (seconds) "}
-c["0.2% Increased Damage per 1% Increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=0.2}}," per 1% Increased  "}
+c["0.2% Increased Damage per 1% Increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=0.2}},"  per 1% Increased Movement Speed "}
 c["0.2% Physical Health Leech"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=0.2}}," Physical  Leech "}
 c["0.2% Physical Health Leech 50% Bleed Chance -> Bleed Chance per second"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=0.2}}," Physical  Leech 50%  Chance -> Bleed Chance per second "}
 c["0.3% Leech Per Second Sealed"]={{}," Leech Per Second Sealed "}
@@ -7097,8 +7098,8 @@ c["0.5% Current Health Lost on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="L
 c["0.5% Current Health Lost on Hit 0.5% Ward Lost on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="Life",type="BASE",value=0.5}}," Current  Lost  0.5% Ward Lost on Hit "}
 c["0.5% Health Leech in Form"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=0.5}},"  Leech in Form "}
 c["0.5% Health Lost On Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Life",type="BASE",value=0.5}},"  Lost  "}
-c["0.5% Increased Damage Per 1 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=0.5}}," Per 1  "}
-c["0.5% Increased Damage Per 1 Mana Cost 3% Increased Mana Regen"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=0.5}}," Per 1  3% Increased Mana Regen "}
+c["0.5% Increased Damage Per 1 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=0.5}},"  Per 1 Mana Cost "}
+c["0.5% Increased Damage Per 1 Mana Cost 3% Increased Mana Regen"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=0.5}},"  Per 1 Mana Cost 3% Increased Mana Regen "}
 c["0.5% Melee Damage Leeched as Health"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=0.5}},"  Leeched as Health "}
 c["0.5% Melee Damage Leeched as Health 5% Minion Increased Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=0.5}}}},"  Leeched as Health 5%  Increased Melee Damage "}
 c["0.5% Melee Damage Leeched as Health 5% Minion Increased Melee Damage 0.5% Minion Melee Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="BASE",value=0.5}}}},"  Leeched as Health 5%  Increased Melee Damage 0.5% Minion Melee Damage Leeched as Health "}
@@ -7423,8 +7424,8 @@ c["1% Damned Chance per Intelligence"]={{},"  "}
 c["1% Endurance Threshold -> Health Regain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}}," Endurance Threshold ->  Regain "}
 c["1% Enemy Health To Ward Ratio"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}}," Enemy  To Ward Ratio "}
 c["1% Enemy Health To Ward Ratio 200 Maximum Ward Per Enemy"]={{[1]={flags=0,keywordFlags=0,name="Life",type="BASE",value=1}}," Enemy  To Ward Ratio 200 Maximum Ward Per Enemy "}
-c["1% Fire Penetration with Ignite per 10% increased Void Damage"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Fire Peration with Ignite per 10% increased Void  "}
-c["1% Fire Penetration with Ignite per 10% increased Void Damage 50% Base Damage -> Fire"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Fire Peration with Ignite per 10% increased Void  50% Base Damage -> Fire "}
+c["1% Fire Penetration with Ignite per 10% increased Void Damage"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=1}}," Fire Peration with Ignite per 10% increased  "}
+c["1% Fire Penetration with Ignite per 10% increased Void Damage 50% Base Damage -> Fire"]={{[1]={[1]={skillId="ne01t",type="SkillId"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=1}}," Fire Peration with Ignite per 10% increased  50% Base Damage -> Fire "}
 c["1% Global Poison Chance Per 3% Missing Health"]={{[1]={[1]={type="Global"},[2]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=1}},"   Chance Per 3% Missing  "}
 c["1% Greater Fragment Chance per 10 Current Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=1}}," Greater Fragment Chance per 10 Current  "}
 c["1% Harvest chance per Dexterity"]={{},"  "}
@@ -7437,20 +7438,20 @@ c["1% Increased Area per Uncapped Resistance"]={{},"  per Uncapped Resistance "}
 c["1% Increased Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=1}},nil}
 c["1% Increased Buff Effect Per 3% Missing Health"]={{[1]={flags=0,keywordFlags=0,name="BuffEffect",type="INC",value=1}},"  Per 3% Missing Health "}
 c["1% Increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=1}},nil}
-c["1% Increased Damage Per 3% Missing Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=1}}," Per 3% Missing  "}
+c["1% Increased Damage Per 3% Missing Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=1}},"  Per 3% Missing Health "}
 c["1% Increased Dodge Rating"]={{}," Dodge Rating "}
 c["1% Increased Ignite Frequency Per Ignite Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Ignite",type="INC",value=1}},"  Frequency Per  "}
 c["1% Increased Mana Regen Per Missing Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=1}},"  Regen Per Missing Mana "}
-c["1% Increased Melee Damage per Hit Taken"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=1}}," per Hit Taken "}
-c["1% Increased Melee Elemental Damage Per Fire Aura"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=1}}," Per Fire Aura "}
+c["1% Increased Melee Damage per Hit Taken"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=1}},"  per Hit Taken "}
+c["1% Increased Melee Elemental Damage Per Fire Aura"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="INC",value=1},[2]={flags=512,keywordFlags=0,name="ColdDamage",type="INC",value=1},[3]={flags=512,keywordFlags=0,name="LightningDamage",type="INC",value=1}},"   Per Fire Aura "}
 c["1% Increased Movespeed"]={{}," Movespeed "}
 c["1% Increased Movespeed 1% Damage Leeched as Health on Hit"]={{[1]={flags=8388608,keywordFlags=0,name="Damage",type="INC",value=1}}," Movespeed 1%  Leeched as Health  "}
 c["1% Increased Movespeed 1% Increased Dodge Rating"]={{}," Movespeed 1% Increased Dodge Rating "}
-c["1% Increased Spell Damage Per Second"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}}," Per Second "}
-c["1% Increased Spell Damage Per Stack"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}}," Per Stack "}
-c["1% Increased Spell Damage When Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}}," When Hit "}
-c["1% Increased Spell Damage When Hit +1% Cast Speed When Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}}," When Hit +1%  When Hit "}
-c["1% Increased Spell Damage When Hit +1% Cast Speed When Hit -1 Mana Drained When Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}}," When Hit +1%  When Hit -1 Mana Drained When Hit "}
+c["1% Increased Spell Damage Per Second"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}},"   Per Second "}
+c["1% Increased Spell Damage Per Stack"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}},"   Per Stack "}
+c["1% Increased Spell Damage When Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}},"   When Hit "}
+c["1% Increased Spell Damage When Hit +1% Cast Speed When Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}},"   When Hit +1% Cast Speed When Hit "}
+c["1% Increased Spell Damage When Hit +1% Cast Speed When Hit -1 Mana Drained When Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=1}},"   When Hit +1% Cast Speed When Hit -1 Mana Drained When Hit "}
 c["1% Less Damage Taken from Shocked Enemies"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-1}},"  from ed Enemies "}
 c["1% Less Duration Per 3 Missing Mana"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="MORE",value=-1}},"  Per 3 Missing Mana "}
 c["1% Melee Damage Leeched as Health"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=1}},"  Leeched as Health "}
@@ -7476,7 +7477,7 @@ c["1% Physical Penetration Per 15 Maximum Mana"]={{[1]={[1]={div=15,stat="Mana",
 c["1% Poison Penetration per 5% Uncapped Poison Resistance"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Penetration",type="BASE",value=1}},"   per 5% Uncapped Poison Resistance "}
 c["1% Remaining Cooldown Recovered"]={{}," Remaining Cooldown Recovered "}
 c["1% Rip Blood chance per Intelligence"]={{[1]={[1]={stat="Int",type="PerStat"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_rb31pl",type="BASE",value=1}},nil}
-c["1% Void Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=1}}," Void  Leeched as Health "}
+c["1% Void Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=1}},"  Leeched as Health "}
 c["1% increased healing effectiveness per point of attunement"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=1}},"  iveness per point of attunement "}
 c["1% less Critical Strike Avoidance"]={{}," Critical Strike Avoidance "}
 c["1% less Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="MORE",value=-1}},nil}
@@ -7600,7 +7601,7 @@ c["10% Global Increased Damage Per Zeal Stack"]={{[1]={[1]={type="Global"},flags
 c["10% Global Increased Damage Per Zeal Stack 10% Global Increased Crit Chance Per Zeal Stack"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}},"  Increased  Per Zeal Stack 10% Global Increased Crit Chance Per Zeal Stack "}
 c["10% Global Increased Damage Per Zeal Stack 10% Global Increased Crit Chance Per Zeal Stack 3 Maximum Zeal Stacks"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}},"  Increased  Per Zeal Stack 10% Global Increased Crit Chance Per Zeal Stack 3 Maximum Zeal Stacks "}
 c["10% Global Reduced Mana Cost"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="ManaCost",type="BASE",value=10}},"  Reduced  "}
-c["10% Global Void Damage vs Stunned"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=10}},"  Void  vs Stunned "}
+c["10% Global Void Damage vs Stunned"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=10}},"   vs Stunned "}
 c["10% Haste Chance On Hit"]={{},"  "}
 c["10% Howl On Kill Chance"]={{}," Howl  Chance "}
 c["10% Increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=10}},nil}
@@ -7617,21 +7618,21 @@ c["10% Increased Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="C
 c["10% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=10}},nil}
 c["10% Increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=10}},nil}
 c["10% Increased Damage On Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
-c["10% Increased Damage On Recent Kill"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}}," On Recent Kill "}
-c["10% Increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}}," Over Time "}
-c["10% Increased Damage if Blocked"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}}," if Blocked "}
-c["10% Increased Damage per Stack of Perfection"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}}," per Stack of Perfection "}
-c["10% Increased Damage per Stack of Perfection 8 Perfection Duration"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}}," per Stack of Perfection 8 Perfection  "}
+c["10% Increased Damage On Recent Kill"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},"  On Recent Kill "}
+c["10% Increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
+c["10% Increased Damage if Blocked"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},"  if Blocked "}
+c["10% Increased Damage per Stack of Perfection"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},"  per Stack of Perfection "}
+c["10% Increased Damage per Stack of Perfection 8 Perfection Duration"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},"  per Stack of Perfection 8 Perfection Duration "}
 c["10% Increased Dodge Rating"]={{}," Dodge Rating "}
 c["10% Increased Dodge Rating 10% Increased Minion Dodge Rating"]={{}," Dodge Rating 10% Increased  Dodge Rating "}
 c["10% Increased Dodge Rating 10% Increased Minion Dodge Rating 10% Haste Chance On Hit"]={{}," Dodge Rating 10% Increased  Dodge Rating 10%  Chance On Hit "}
-c["10% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
-c["10% Increased Elemental Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
+c["10% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=10},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=10},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=10}},nil}
+c["10% Increased Elemental Melee Damage"]={{[1]={flags=512,keywordFlags=14,name="Damage",type="INC",value=10}},nil}
 c["10% Increased Fire Rate Against Rare Enemies"]={{}," Fire Rate Against Rare Enemies "}
 c["10% Increased Fire Rate Against Rare Enemies 20% Increased Fire Rate Against Bosses"]={{}," Fire Rate Against Rare Enemies 20% Increased Fire Rate Against Bosses "}
 c["10% Increased Fire Rate Against Rare Enemies 20% Increased Fire Rate Against Bosses 100% Maximum Increase"]={{}," Fire Rate Against Rare Enemies 20% Increased Fire Rate Against Bosses 100% Maximum Increase "}
-c["10% Increased Global Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
-c["10% Increased Global Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=10}},nil}
+c["10% Increased Global Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
+c["10% Increased Global Fire Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="FireDamage",type="INC",value=10}},nil}
 c["10% Increased Haste Effect"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=10}},nil}
 c["10% Increased Healing"]={{},"  "}
 c["10% Increased Healing 10% Increased Minion Healing"]={{},"  10% Increased  Healing "}
@@ -7639,12 +7640,12 @@ c["10% Increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",t
 c["10% Increased Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="INC",value=10}},nil}
 c["10% Increased Mana Regen"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=10}},"  Regen "}
 c["10% Increased Mana Regen 5% Current Health Drain Per Second"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=10}},"  Regen 5% Current Health Drain Per Second "}
-c["10% Increased Melee Damage when Generating or Consuming Flow"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=10}}," when Generating or Consuming Flow "}
-c["10% Increased Melee Damage when Generating or Consuming Flow +5% Melee Crit Multiplier when Generating or Consuming Flow"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=10}}," when Generating or Consuming Flow +5%  Crit Multiplier when Generating or Consuming Flow "}
-c["10% Increased Melee Damage with a 2h Weapon"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=10}}," with a 2h  "}
-c["10% Increased Melee Elemental Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=10}},nil}
+c["10% Increased Melee Damage when Generating or Consuming Flow"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=10}},"  when Generating or Consuming Flow "}
+c["10% Increased Melee Damage when Generating or Consuming Flow +5% Melee Crit Multiplier when Generating or Consuming Flow"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=10}},"  when Generating or Consuming Flow +5%  Crit Multiplier when Generating or Consuming Flow "}
+c["10% Increased Melee Damage with a 2h Weapon"]={{[1]={flags=67109376,keywordFlags=0,name="Damage",type="INC",value=10}},"  with a 2h  "}
+c["10% Increased Melee Elemental Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="INC",value=10},[2]={flags=512,keywordFlags=0,name="ColdDamage",type="INC",value=10},[3]={flags=512,keywordFlags=0,name="LightningDamage",type="INC",value=10}},nil}
 c["10% Increased Melee Stun Chance"]={{},"  Stun Chance "}
-c["10% Increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="Damage",type="INC",value=10}}}},nil}
+c["10% Increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=10}}}},nil}
 c["10% Increased Minion Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=10}}}},nil}
 c["10% Increased Minion Dodge Rating"]={{},"  Dodge Rating "}
 c["10% Increased Minion Dodge Rating 10% Haste Chance On Hit"]={{},"  Dodge Rating 10%  Chance On Hit "}
@@ -7714,7 +7715,7 @@ c["10% Wind Tempest Chance"]={{}," Wind Tempest Chance "}
 c["10% increased Bow Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=10}}," Bow  "}
 c["10% increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=10}},nil}
 c["10% increased Cast Speed with Elemental Spells"]={{[1]={flags=256,keywordFlags=14,name="Speed",type="INC",value=10}},nil}
-c["10% increased Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=10}}," Taken "}
+c["10% increased Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=10}},nil}
 c["10% increased Fire Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=10}}," Fire  "}
 c["10% increased Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=10}},nil}
 c["10% increased Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=10}},nil}
@@ -7772,8 +7773,8 @@ c["100% Freezing Cascade Chance 5 Freezing Cascade Cooldown (seconds)"]={{}," Fr
 c["100% Increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=100}},nil}
 c["100% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=100}},nil}
 c["100% Increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=100}},nil}
-c["100% Increased Damage, Duration, Health, Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=100}},", , Health, Critical Strike Chance "}
-c["100% Increased Damage, Duration, Health, Critical Strike Chance +15 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=100}},", , Health, Critical Strike Chance +15 Mana Cost "}
+c["100% Increased Damage, Duration, Health, Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=100}}," , Duration, Health, Critical Strike Chance "}
+c["100% Increased Damage, Duration, Health, Critical Strike Chance +15 Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=100}}," , Duration, Health, Critical Strike Chance +15 Mana Cost "}
 c["100% Increased Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="INC",value=100}},nil}
 c["100% Increased Shade Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=100}}," Shade  "}
 c["100% Increased Shade Duration 1 Maximum Dread Shades"]={{[1]={[1]={skillId="ds4d3",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=100}}," Shade  1 Maximum s "}
@@ -7816,18 +7817,17 @@ c["100% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",t
 c["100% increased Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="INC",value=100}},nil}
 c["100% increased Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="INC",value=100}}}},nil}
 c["100% increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=100}},nil}
-c["100% increased Throwing Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=100}},nil}
+c["100% increased Throwing Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=100}}," Throwing  "}
 c["100% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=100}},nil}
 c["1000 Armour Gain Cap"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=1000}},"  Gain Cap "}
 c["1000 Maximum Ward Consumption"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=1000}}," Maximum  Consumption "}
-c["105% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=105}},nil}
+c["105% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=105},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=105},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=105}},nil}
 c["105% increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=105}},nil}
 c["105% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=105}},nil}
-c["107.5% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=107.5}},nil}
-c["108% increased Cold Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=108}}," Over Time "}
+c["108% increased Cold Damage Over Time"]={{[1]={flags=0,keywordFlags=67108864,name="ColdDamage",type="INC",value=108}},nil}
 c["11% Increased Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=11}},nil}
-c["11% Increased Minion Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=11}}}}," Granted "}
-c["11% Increased Minion Damage Granted Hunter's Restoration Also Heals Minions"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=11}}}}," Granted Hunter's Restoration Also Heals s "}
+c["11% Increased Minion Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=11}}}},"   Granted "}
+c["11% Increased Minion Damage Granted Hunter's Restoration Also Heals Minions"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=11}}}},"   Granted Hunter's Restoration Also Heals Minions "}
 c["11% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=11}},nil}
 c["110% Glyph of Dominion Mana Consumption"]={{[1]={[1]={skillId="gy2dm",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=110}},"   Consumption "}
 c["110% Healing Hands Mana Consumption"]={{[1]={[1]={skillId="hh7pa3",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=110}},"   Consumption "}
@@ -7837,10 +7837,10 @@ c["110% Volcanic Orb Mana Consumption"]={{[1]={[1]={skillId="vo54",type="SkillId
 c["110% increased Minion Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=110}}}},nil}
 c["110% increased Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=110}}}},nil}
 c["110% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=110}},nil}
-c["113% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=113}},nil}
 c["114% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=114}},nil}
 c["115% Puncture Mana Consumption"]={{[1]={[1]={skillId="pun22",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=115}},"   Consumption "}
-c["117% increased Bow Damage"]={{[1]={flags=2048,keywordFlags=0,name="Damage",type="INC",value=117}},nil}
+c["115% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=115}},nil}
+c["117% increased Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=117}},nil}
 c["12 Cooldown (seconds)"]={{}," Cooldown (seconds) "}
 c["12 Cooldown Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=12}},"  (Seconds) "}
 c["12 Cooldown Duration (Seconds) Cooldown Shared with Flameward"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="BASE",value=12}},"  (Seconds) Cooldown Shared with Flameward "}
@@ -7871,7 +7871,7 @@ c["12% Increased Critical Chance"]={{}," Critical Chance "}
 c["12% Increased Critical Strike Chance with a Bow"]={{[1]={[1]={type="Condition",var="UsingBow"},flags=0,keywordFlags=0,name="CritChance",type="INC",value=12}},nil}
 c["12% Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=12}},nil}
 c["12% Increased Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=12}},nil}
-c["12% Increased Fire Damage over Time with a Shield"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=12}}," over Time with a Shield "}
+c["12% Increased Fire Damage over Time with a Shield"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=12}},"  over Time with a Shield "}
 c["12% Increased Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=12}}}},nil}
 c["12% Increased Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=12}},nil}
 c["12% Increased Wave of Death Frequency"]={{}," Wave of Death Frequency "}
@@ -7915,15 +7915,15 @@ c["12.5% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="S
 c["120 Dodge Rating (While On Cooldown)"]={{}," Dodge Rating (While On Cooldown) "}
 c["120% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=120}},nil}
 c["120% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=120}},nil}
-c["120% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="Damage",type="INC",value=120}}}},nil}
+c["120% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=120}}}},nil}
 c["120% increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=120}}}},nil}
 c["120% increased Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="INC",value=120}}}},nil}
-c["120% increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Damage",type="INC",value=120}}}},nil}
+c["120% increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=120}}}},"  Spell  "}
 c["120% increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=120}},nil}
 c["125% Detonating Arrow Mana Consumption"]={{[1]={[1]={skillId="detar",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=125}},"   Consumption "}
 c["125% Runic Invocation Mana Consumption"]={{[1]={[1]={skillId="rn7iv",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=125}},"   Consumption "}
 c["126% increased Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="INC",value=126}}}},nil}
-c["128% increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=128}}," Over Time "}
+c["128% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=128}},nil}
 c["128% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=128}},nil}
 c["13 Health Gain On Hit"]={{[1]={flags=8388608,keywordFlags=0,name="Life",type="BASE",value=13}},"  Gain  "}
 c["13 Health Gain On Hit +1 Additional Health Per 2 Vitality"]={{[1]={flags=8388608,keywordFlags=0,name="Life",type="BASE",value=13}},"  Gain  +1 Additional Health Per 2 Vitality "}
@@ -7944,17 +7944,17 @@ c["13% Spirit Plague Spread Chance"]={{},"  Spread Chance "}
 c["13% increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=13}},nil}
 c["13% increased Cold Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=13}}," Cold  "}
 c["13% increased Fire Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=13}}," Fire  "}
-c["13% increased Fire Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=13}}," Taken "}
+c["13% increased Fire Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="FireDamageTaken",type="INC",value=13}},nil}
 c["13% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=13}},nil}
-c["13% increased Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=13}}," Taken "}
+c["13% increased Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=13}},"  Taken "}
 c["13% increased Physical Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=13}}," Physical  "}
-c["13% increased Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=13}}," Taken "}
+c["13% increased Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=13}},"  Taken "}
 c["13% less Damage Over Time Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTakenOverTime",type="MORE",value=-13}},nil}
 c["13% less Damage Taken While Moving"]={{[1]={[1]={type="Condition",var="Moving"},flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-13}},nil}
 c["13% less Damage over Time Physical Damage Taken"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="MORE",value=-13}},"  Physical Damage Taken "}
 c["13% less Physical Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamageTaken",type="MORE",value=-13}},nil}
-c["130% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=130}},nil}
-c["130% increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=130}}," Over Time "}
+c["130% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=130}}," Curse  "}
+c["130% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=130}},nil}
 c["130% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=130}},nil}
 c["130% increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=130}},nil}
 c["130% increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=130}},nil}
@@ -8042,29 +8042,29 @@ c["15% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",t
 c["15% Increased Crit Chance With Buff"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=15}},"  With Buff "}
 c["15% Increased Crit Chance With Buff +10% Critical Multiplier With Buff"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=15}},"  With Buff +10% Critical Multiplier With Buff "}
 c["15% Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}},nil}
-c["15% Increased Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," Granted "}
-c["15% Increased Damage Granted 40% Increased Crit Chance Granted"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," Granted 40% Increased  Granted "}
-c["15% Increased Damage while at full health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," while at full  "}
-c["15% Increased Damage with Concentration"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," with Concentration "}
-c["15% Increased Damage with Concentration 4 Concentration cooldown"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," with Concentration 4 Concentration cooldown "}
+c["15% Increased Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}},"  Granted "}
+c["15% Increased Damage Granted 40% Increased Crit Chance Granted"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}},"  Granted 40% Increased Crit Chance Granted "}
+c["15% Increased Damage while at full health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}},"  while at full health "}
+c["15% Increased Damage with Concentration"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}},"  with Concentration "}
+c["15% Increased Damage with Concentration 4 Concentration cooldown"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}},"  with Concentration 4 Concentration cooldown "}
 c["15% Increased Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=15}},nil}
-c["15% Increased Elemental Damage with High Cost Melee Attacks"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," with High Cost  Attacks "}
+c["15% Increased Elemental Damage with High Cost Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="INC",value=15},[2]={flags=512,keywordFlags=0,name="ColdDamage",type="INC",value=15},[3]={flags=512,keywordFlags=0,name="LightningDamage",type="INC",value=15}},"  with High Cost  Attacks "}
 c["15% Increased Fire Aura Area"]={{}," Fire Aura  "}
 c["15% Increased Health Regen per Stack"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=15}},"  per Stack "}
 c["15% Increased Health Regen per Stack Aspect of the Panther affects Sabertooth"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=15}},"  per Stack Aspect of the Panther affects Sabertooth "}
 c["15% Increased Health Regeneration Granted"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=15}},"  Granted "}
 c["15% Increased Melee Critical Strike Chance"]={{[1]={flags=512,keywordFlags=0,name="CritChance",type="INC",value=15}},nil}
-c["15% Increased Melee Damage with a 2h Mace"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=15}}," with a 2h Mace "}
-c["15% Increased Melee Damage with a 2h Mace 25% Melee Bleed Chance with a 2h Axe"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="INC",value=15}}," with a 2h Mace 25%   Chance with a 2h Axe "}
-c["15% Increased Melee Damage with a 2h Mace 25% Melee Bleed Chance with a 2h Axe 5% Increased Melee Attack Speed with a 2h Sword"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="INC",value=15}}," with a 2h Mace 25%   Chance with a 2h Axe 5% Increased Melee  with a 2h Sword "}
-c["15% Increased Minion Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}}},nil}
+c["15% Increased Melee Damage with a 2h Mace"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=15}},"  with a 2h Mace "}
+c["15% Increased Melee Damage with a 2h Mace 25% Melee Bleed Chance with a 2h Axe"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="INC",value=15}},"  with a 2h Mace 25%   Chance with a 2h Axe "}
+c["15% Increased Melee Damage with a 2h Mace 25% Melee Bleed Chance with a 2h Axe 5% Increased Melee Attack Speed with a 2h Sword"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=512,keywordFlags=0,name="Damage",type="INC",value=15}},"  with a 2h Mace 25%   Chance with a 2h Axe 5% Increased Melee Attack Speed with a 2h Sword "}
+c["15% Increased Minion Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=15}}},[2]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=15}}},[3]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=15}}}},nil}
 c["15% Increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=15}}}},nil}
 c["15% Increased Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=15}}}},nil}
 c["15% Increased Nova Frequency"]={{}," Nova Frequency "}
 c["15% Increased Nova Frequency +40% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," Nova Frequency +40%  "}
-c["15% Increased Physical Damage With Shield"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=15}}," With Shield "}
-c["15% Increased Physical Damage With Shield +15% Bleed Chance With Shield"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=15}}," With Shield +15%  Chance With Shield "}
-c["15% Increased Shadow Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}},nil}
+c["15% Increased Physical Damage With Shield"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=15}},"  With Shield "}
+c["15% Increased Physical Damage With Shield +15% Bleed Chance With Shield"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=15}},"  With Shield +15%  Chance With Shield "}
+c["15% Increased Shadow Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=15}}," Shadow  "}
 c["15% Increased Shield Healing"]={{}," Shield  "}
 c["15% Increased Stun Chance"]={{}," Stun Chance "}
 c["15% Increased Stun Chance Per Storm Stack"]={{}," Stun Chance Per Storm Stack "}
@@ -8072,8 +8072,8 @@ c["15% Increased Stun Chance Per Storm Stack +15% Freeze Rate Multiplier Per Sto
 c["15% Increased Stun Chance Per Storm Stack +15% Freeze Rate Multiplier Per Storm Stack 10 Maximum Storm Stacks"]={{}," Stun Chance Per Storm Stack +15% Freeze Rate Multiplier Per Storm Stack 10 Maximum Storm Stacks "}
 c["15% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=15}},nil}
 c["15% Increased Throwing Attack Critical Strike Chance"]={{[1]={flags=3584,keywordFlags=0,name="CritChance",type="INC",value=15}}," Throwing  "}
-c["15% Increased Void Damage Per Active Sigil"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=15}}," Per Active Sigil "}
-c["15% Increased Void Damage Per Active Sigil Sigils Do Not Increase Health Regen"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=15}}," Per Active Sigil Sigils Do Not Increase  "}
+c["15% Increased Void Damage Per Active Sigil"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=15}},"  Per Active Sigil "}
+c["15% Increased Void Damage Per Active Sigil Sigils Do Not Increase Health Regen"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=15}},"  Per Active Sigil Sigils Do Not Increase Health Regen "}
 c["15% Increased Ward Gained"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="INC",value=15}},"  Gained "}
 c["15% Increased Ward Gained -2 Ward Gain Cooldown Duration"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="INC",value=15}},"  Gained -2 Ward Gain Cooldown Duration "}
 c["15% Iron Blade Chance On Riposte"]={{}," Iron Blade Chance On Riposte "}
@@ -8111,7 +8111,7 @@ c["15% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSp
 c["15% increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=15}},nil}
 c["15% increased Throwing Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=15}}," Throwing  "}
 c["15% less Fire Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="FireDamageTaken",type="MORE",value=-15}},nil}
-c["15% less Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-15}}," Void  "}
+c["15% less Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="MORE",value=-15}},"  Taken "}
 c["15% more Lightning Global Conditional Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=15}}," Lightning  Conditional  "}
 c["15% more dodge rating (multiplicative with other modifiers)"]={{}," dodge rating (multiplicative with other modifiers) "}
 c["150% Detonating Ground Ignite Chance"]={{}," Detonating Ground  Chance "}
@@ -8119,7 +8119,7 @@ c["150% More Blaze Shade Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",ty
 c["150% More Blaze Shade Damage -60% Blaze Shade Duration"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=150}}," Blaze Shade  -60% Blaze Shade Duration "}
 c["150% Tier 2 Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=150}}," Tier 2 Increased  "}
 c["150% Tier 2 Increased Damage +50% Tier 2 Channel Cost"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=150}}," Tier 2 Increased  +50% Tier 2 Channel Cost "}
-c["150% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=150}},nil}
+c["150% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=150},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=150},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=150}},nil}
 c["150% increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=150}}}},nil}
 c["16 Mana Consumed Per Initial Hit"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=16}},"  Consumed Per Initial Hit "}
 c["16% Attack Speed Maximum"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=16}},"  Maximum "}
@@ -8134,13 +8134,13 @@ c["16% increased Spell Fire Damage"]={{[1]={flags=256,keywordFlags=0,name="FireD
 c["16% more Global Conditional Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=16}},"  Conditional  "}
 c["16.5% increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=16.5}},nil}
 c["16.5% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=16.5}},nil}
-c["160% increased Damage While Transformed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=160}}," While Transformed "}
+c["160% increased Damage While Transformed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=160}},"  While Transformed "}
 c["160% increased Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="INC",value=160}},nil}
 c["160% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=160}},nil}
 c["160% increased Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="INC",value=160}},nil}
 c["160% increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=160}},nil}
 c["161% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=161}},nil}
-c["166% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=166}},nil}
+c["166% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=166}}," Curse  "}
 c["166% increased Melee Necrotic Damage"]={{[1]={flags=512,keywordFlags=0,name="NecroticDamage",type="INC",value=166}},nil}
 c["166% increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=166}}}},nil}
 c["166% increased Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=166}}}},nil}
@@ -8157,7 +8157,7 @@ c["17.5% increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen"
 c["17.5% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=17.5}},nil}
 c["170% increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=170}},nil}
 c["170% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=170}},nil}
-c["170% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=170}}," Over Time "}
+c["170% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=170}},"  Over Time "}
 c["172% increased Channelling Dodge Rating"]={{},"  Dodge Rating "}
 c["175% increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=175}},nil}
 c["175% more Armour against Shocked Enemies"]={{[1]={[1]={actor="enemy",type="ActorCondition",var="Shocked"},flags=0,keywordFlags=0,name="Armour",type="MORE",value=175}},nil}
@@ -8310,9 +8310,9 @@ c["2% Elemental Resistance"]={{[1]={flags=0,keywordFlags=0,name="ElementalResist
 c["2% Endurance"]={{}," Endurance "}
 c["2% Endurance +4 Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=2}}," Endurance +4  "}
 c["2% Glancing Blow Chance"]={{}," Glancing Blow Chance "}
-c["2% Global More Void Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}},"  More Void  "}
-c["2% Global More Void Damage 2% Increased Mana Regen"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}},"  More Void  2% Increased Mana Regen "}
-c["2% Global More Void Damage 2% Increased Mana Regen Doubled with 90+ Vitality"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=2}},"  More Void  2% Increased Mana Regen Doubled with 90+ Vitality "}
+c["2% Global More Void Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=2}},"  More  "}
+c["2% Global More Void Damage 2% Increased Mana Regen"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=2}},"  More  2% Increased Mana Regen "}
+c["2% Global More Void Damage 2% Increased Mana Regen Doubled with 90+ Vitality"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=2}},"  More  2% Increased Mana Regen Doubled with 90+ Vitality "}
 c["2% Howl On Boss Hit Chance"]={{}," Howl On Boss Hit Chance "}
 c["2% Howl On Your Kill Chance"]={{}," Howl On Your Kill Chance "}
 c["2% Howl On Your Kill Chance +5% Howl Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="BASE",value=2}}," Howl On Your Kill Chance +5% Howl  "}
@@ -8337,12 +8337,12 @@ c["2% Increased Mana Regen per Rah Rune +4 Ward Gain Per Second per Gon Rune +8%
 c["2% Increased Minion Attack Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=3584,keywordFlags=0,name="Speed",type="INC",value=2}}}},nil}
 c["2% Increased Minion Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Speed",type="INC",value=2}}}},nil}
 c["2% Increased Shock Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyShockDuration",type="INC",value=2}},nil}
-c["2% Increased Spell Damage per Stack"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=2}}," per Stack "}
-c["2% Increased Spell Damage per Stack +10% Arcane Momentum Duration"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=2}}," per Stack +10% Arcane Momentum  "}
+c["2% Increased Spell Damage per Stack"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=2}},"   per Stack "}
+c["2% Increased Spell Damage per Stack +10% Arcane Momentum Duration"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=2}},"   per Stack +10% Arcane Momentum Duration "}
 c["2% Increased Stun Chance Per Charge"]={{}," Stun Chance Per Charge "}
 c["2% Increased Throwing Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=2}}," Throwing  "}
 c["2% Increased Throwing Attack Speed 5% Falcon Increased Throwing Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=2}}," Throwing  5% Falcon Increased Throwing Attack Speed "}
-c["2% Increased damage taken from nearby enemies"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=2}}," taken from nearby enemies "}
+c["2% Increased damage taken from nearby enemies"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=2}},"  from nearby enemies "}
 c["2% Increased movement speed with Concentration"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=2}},"  with Concentration "}
 c["2% Kill Threshold"]={{}," Kill Threshold "}
 c["2% Melee Kill Threshold"]={{},"  Kill Threshold "}
@@ -8373,8 +8373,7 @@ c["20 Mana Per Second Damaging Enemies"]={{[1]={flags=0,keywordFlags=0,name="Man
 c["20 Mana Per Second Damaging Enemies -60% Damage"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=20}},"  Per Second Damaging Enemies -60% Damage "}
 c["20 Mana Per Second Damaging Enemies -60% Damage -60% Ailment Frequency"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="BASE",value=20}},"  Per Second Damaging Enemies -60% Damage -60% Ailment Frequency "}
 c["20 Minions for Maximum Bonus"]={{}," s for Maximum Bonus "}
-c["20 Spell Void Damage On Hit"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="BASE",value=20}},"  Void  On Hit "}
-c["20 Spell Void Damage On Hit No Abyssal Decay"]={{[1]={[1]={skillId="Ailment_StackingAbyssalDecay",type="SkillId"},flags=256,keywordFlags=0,name="Damage",type="BASE",value=20}},"  Void  On Hit No  "}
+c["20 Spell Void Damage On Hit"]={{[1]={flags=8388864,keywordFlags=0,name="VoidDamage",type="BASE",value=20}},nil}
 c["20 Trigger Cooldown (seconds)"]={{}," Trigger Cooldown (seconds) "}
 c["20 Ward Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=20}},"  Gain "}
 c["20 Ward Gain 3 Mana Gain"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=20}},"  Gain 3 Mana Gain "}
@@ -8428,9 +8427,9 @@ c["20% Increased Crit Chance with a Sword and Dagger +20% Poison Chance with 2 D
 c["20% Increased Crit Chance with a Sword and Dagger +20% Poison Chance with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20% Bleed Chance with an Axe and a Sword 2% Physical Damage Leeched as Health with an Axe and Dagger 20% Increased Stun Duration with a Mace and Sword +20% Frailty Chance with a Mace and Dagger"]={{[1]={[1]={type="Condition",var="UsingAxe"},[2]={type="Condition",var="UsingAxe"},[3]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="CritChance",type="INC",value=20}},"  with a Sword and Dagger +20%  Chance with 2 Daggers +5% Glancing Blow Chance with 2 Swords +20% Bleed Chance  and a Sword 2% Physical Damage Leeched as Health  and Dagger 20% Increased Stun Duration with a Mace and Sword +20% Frailty Chance with a Mace and Dagger "}
 c["20% Increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=20}},nil}
 c["20% Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}},nil}
-c["20% Increased Damage Over Time On Recent Kill"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}}," Over Time On Recent Kill "}
+c["20% Increased Damage Over Time On Recent Kill"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=20}},"  On Recent Kill "}
 c["20% Increased Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=20}},nil}
-c["20% Increased Elemental Burst Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}},nil}
+c["20% Increased Elemental Burst Damage"]={{[1]={flags=0,keywordFlags=14,name="Damage",type="INC",value=20}},"  Burst  "}
 c["20% Increased Explosion Area"]={{}," Explosion  "}
 c["20% Increased Fire Rate Against Bosses"]={{}," Fire Rate Against Bosses "}
 c["20% Increased Fire Rate Against Bosses 100% Maximum Increase"]={{}," Fire Rate Against Bosses 100% Maximum Increase "}
@@ -8440,7 +8439,8 @@ c["20% Increased Melee Lightning Damage"]={{[1]={flags=512,keywordFlags=0,name="
 c["20% Increased Minion Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritChance",type="INC",value=20}}}},nil}
 c["20% Increased Minion Health Leech"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=20}}}},"   Leech "}
 c["20% Increased Minion Health Leech +20% Minion Freeze Rate Multiplier"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=20}}}},"   Leech +20% Minion Freeze Rate Multiplier "}
-c["20% Increased Shadow Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}},nil}
+c["20% Increased Shadow Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}}," Shadow  "}
+c["20% Increased Shadow Damage +1 Maximum Shadows"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}}," Shadow  +1 Maximum Shadows "}
 c["20% Increased Spell Crit Chance"]={{[1]={flags=256,keywordFlags=0,name="CritChance",type="INC",value=20}},nil}
 c["20% Increased Stun Chance"]={{}," Stun Chance "}
 c["20% Increased Stun Chance with Rampage"]={{[1]={flags=0,keywordFlags=0,name="Condition:Rampage",type="INC",value=20}}," Stun Chance with  "}
@@ -8484,11 +8484,11 @@ c["20% Poison Nova Chance"]={{},"  Nova Chance "}
 c["20% Poison Nova Chance 5 Poison Nova Cooldown"]={{},"  Nova Chance 5 Poison Nova Cooldown "}
 c["20% Remaining Cooldown Recovered On Hit"]={{}," Remaining Cooldown Recovered  "}
 c["20% Runeword: Avalanche chance on Cold Skill use"]={{}," Runeword:  chance on Cold Skill use "}
-c["20% Runeword: Avalanche chance on Cold Skill use +10 Spell Cold Damage with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=20}}," Runeword:  chance on Cold Skill use +10   with Runeword: Avalanche "}
-c["20% Runeword: Avalanche chance on Cold Skill use +10 Spell Cold Damage with Runeword: Avalanche +2 Endurance Threshold per Ignite with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=20}}," Runeword:  chance on Cold Skill use +10   with Runeword: Avalanche +2 Endurance Threshold per Ignite with Runeword: Avalanche "}
+c["20% Runeword: Avalanche chance on Cold Skill use +10 Spell Cold Damage with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=20}}," Runeword:  chance on Cold Skill use +10  with Runeword: Avalanche "}
+c["20% Runeword: Avalanche chance on Cold Skill use +10 Spell Cold Damage with Runeword: Avalanche +2 Endurance Threshold per Ignite with Runeword: Avalanche"]={{[1]={[1]={skillId="av75ch",type="SkillId"},flags=256,keywordFlags=0,name="ColdDamage",type="BASE",value=20}}," Runeword:  chance on Cold Skill use +10  with Runeword: Avalanche +2 Endurance Threshold per Ignite with Runeword: Avalanche "}
 c["20% Runeword: Hurricane chance on Lightning Skill use"]={{}," Runeword: Hurricane chance on Lightning Skill use "}
-c["20% Runeword: Hurricane chance on Lightning Skill use +10 Spell Lightning Damage with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=20}}," Runeword: Hurricane chance on Lightning Skill use +10   with Runeword: Hurricane "}
-c["20% Runeword: Hurricane chance on Lightning Skill use +10 Spell Lightning Damage with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=20}}," Runeword: Hurricane chance on Lightning Skill use +10   with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane "}
+c["20% Runeword: Hurricane chance on Lightning Skill use +10 Spell Lightning Damage with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=20}}," Runeword: Hurricane chance on Lightning Skill use +10  with Runeword: Hurricane "}
+c["20% Runeword: Hurricane chance on Lightning Skill use +10 Spell Lightning Damage with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="BASE",value=20}}," Runeword: Hurricane chance on Lightning Skill use +10  with Runeword: Hurricane +90% Freeze Rate Multiplier with Runeword: Hurricane "}
 c["20% Runeword: Inferno chance on Fire Skill use"]={{}," Runeword: Inferno chance on Fire Skill use "}
 c["20% Shadow Dagger Chance from Shadow Casts"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_ShadowDaggers",type="BASE",value=20}},"  from Shadow Casts "}
 c["20% Shadow Dagger Chance from Shadow Casts 100% Shadow Dagger Chance from Other Casts"]={{[1]={flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_ShadowDaggers",type="BASE",value=20}},"  from Shadow Casts 100% Shadow Dagger Chance from Other Casts "}
@@ -8503,7 +8503,7 @@ c["20% Storm Bolt Repeat Chance"]={{}," Storm Bolt Repeat Chance "}
 c["20% increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=20}},nil}
 c["20% increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=20}},nil}
 c["20% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=20}},nil}
-c["20% increased Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}}," Leeched as  "}
+c["20% increased Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}},"  Leeched as Health "}
 c["20% increased Dodge Rating"]={{}," Dodge Rating "}
 c["20% increased Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=20}},nil}
 c["20% increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=20}},nil}
@@ -8511,6 +8511,7 @@ c["20% increased Mana Regen"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="IN
 c["20% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=20}},nil}
 c["20% increased Minion Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="CritChance",type="INC",value=20}}}},nil}
 c["20% increased Minion Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=20}}}},nil}
+c["20% increased Minion Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=20}}}},nil}
 c["20% increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=20}}}},nil}
 c["20% increased Minion Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=20}}}},nil}
 c["20% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=20}},nil}
@@ -8553,11 +8554,11 @@ c["22% increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type=
 c["22% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=22}},nil}
 c["22% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=22}},nil}
 c["22% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=22}},nil}
-c["22.5% increased Bow Damage"]={{[1]={flags=2048,keywordFlags=0,name="Damage",type="INC",value=22.5}},nil}
+c["22.5% increased Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=22.5}},nil}
 c["22.5% increased Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=22.5}},nil}
 c["22.5% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=22.5}},nil}
 c["220% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=220}},nil}
-c["220% increased Spell Damage While Transformed"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=220}}," While Transformed "}
+c["220% increased Spell Damage While Transformed"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=220}},"   While Transformed "}
 c["220% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=220}},nil}
 c["23% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=23}},nil}
 c["23% less Damage over Time Fire Damage Taken"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="MORE",value=-23}},"  Fire Damage Taken "}
@@ -8641,14 +8642,14 @@ c["25% Health Threshold Sigil Is Consumed"]={{[1]={flags=0,keywordFlags=0,name="
 c["25% Increased Ailment Duration"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=25}}," Ailment  "}
 c["25% Increased Area"]={{},"  "}
 c["25% Increased Armor Shred Effect"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=25}},"  Shred Effect "}
-c["25% Increased Bow Damage per Stack"]={{[1]={flags=2048,keywordFlags=0,name="Damage",type="INC",value=25}}," per Stack "}
+c["25% Increased Bow Damage per Stack"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=25}},"  per Stack "}
 c["25% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=25}},nil}
 c["25% Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}},nil}
-c["25% Increased Damage in Arena"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}}," in Arena "}
-c["25% Increased Damage in Arena -5% Damage Taken in Arena"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}}," in Arena -5%  in Arena "}
-c["25% Increased Elemental Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}}," with  Arrow "}
-c["25% Increased Elemental Damage with Elemental Arrow Non-Elemental Bow Attacks Generate Elemental Arrows"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}}," with  Arrow Non-Elemental Bow Attacks Generate Elemental Arrows "}
-c["25% Increased Elemental Damage with Elemental Arrow Non-Elemental Bow Attacks Generate Elemental Arrows Only Elemental Bow Attacks Consume Elemental Arrows"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}}," with  Arrow Non-Elemental Bow Attacks Generate Elemental Arrows Only Elemental Bow Attacks Consume Elemental Arrows "}
+c["25% Increased Damage in Arena"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}},"  in Arena "}
+c["25% Increased Damage in Arena -5% Damage Taken in Arena"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=25}},"  in Arena -5% Damage Taken in Arena "}
+c["25% Increased Elemental Damage with Elemental Arrow"]={{[1]={flags=0,keywordFlags=14,name="FireDamage",type="INC",value=25},[2]={flags=0,keywordFlags=14,name="ColdDamage",type="INC",value=25},[3]={flags=0,keywordFlags=14,name="LightningDamage",type="INC",value=25}},"  with  Arrow "}
+c["25% Increased Elemental Damage with Elemental Arrow Non-Elemental Bow Attacks Generate Elemental Arrows"]={{[1]={flags=0,keywordFlags=14,name="FireDamage",type="INC",value=25},[2]={flags=0,keywordFlags=14,name="ColdDamage",type="INC",value=25},[3]={flags=0,keywordFlags=14,name="LightningDamage",type="INC",value=25}},"  with  Arrow Non-Elemental Bow Attacks Generate Elemental Arrows "}
+c["25% Increased Elemental Damage with Elemental Arrow Non-Elemental Bow Attacks Generate Elemental Arrows Only Elemental Bow Attacks Consume Elemental Arrows"]={{[1]={flags=0,keywordFlags=14,name="FireDamage",type="INC",value=25},[2]={flags=0,keywordFlags=14,name="ColdDamage",type="INC",value=25},[3]={flags=0,keywordFlags=14,name="LightningDamage",type="INC",value=25}},"  with  Arrow Non-Elemental Bow Attacks Generate Elemental Arrows Only Elemental Bow Attacks Consume Elemental Arrows "}
 c["25% Increased Explosion Area"]={{}," Explosion  "}
 c["25% Increased Explosion Area Summon Skeleton Warrior On Death"]={{}," Explosion   Warrior On Death "}
 c["25% Increased Explosion Area Summon Skeleton Warrior On Death +10 Mana Cost"]={{[1]={[1]={skillId="ss37kl",type="SkillId"},flags=67108864,keywordFlags=0,name="ManaCost",type="INC",value=25}}," Explosion   Warrior On Death +10  "}
@@ -8661,7 +8662,7 @@ c["25% Increased Melee Stun Chance"]={{},"  Stun Chance "}
 c["25% Increased Next Melee Attack Damage"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=25}}," Next   "}
 c["25% Increased Next Melee Attack Damage Aspect Of The Shark Granted On Melee Attack"]={{[1]={[1]={skillId="Ailment_AspectOfTheSharkVisuals",type="SkillId"},flags=3584,keywordFlags=0,name="Damage",type="INC",value=25}}," Next    Granted On Melee Attack "}
 c["25% Increased Rampage Effect"]={{[1]={flags=0,keywordFlags=0,name="Condition:Rampage",type="INC",value=25}},"  Effect "}
-c["25% Increased Spell Damage On Next Cast"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=25}}," On Next Cast "}
+c["25% Increased Spell Damage On Next Cast"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=25}},"   On Next Cast "}
 c["25% Increased Stun Chance"]={{}," Stun Chance "}
 c["25% Increased Stun Chance 25% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=25}}," Stun Chance 25% Increased  "}
 c["25% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=25}},nil}
@@ -8832,9 +8833,10 @@ c["3% Increased Mana Regen"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC
 c["3% Increased Mana Regen With Active Totem"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=3}},"  Regen With Active Totem "}
 c["3% Increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=3}},nil}
 c["3% Increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=3}},nil}
-c["3% Increased Poison Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=3}}," Taken "}
+c["3% Increased Poison Damage Taken"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=3}},nil}
 c["3% Increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=3}},nil}
-c["3% Increased Throwing Attack Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=3}},nil}
+c["3% Increased Throwing Attack Damage"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=3}}," Throwing  "}
+c["3% Increased Throwing Attack Damage 3% Increased Melee Damage"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=3}}," Throwing  3% Increased  Damage "}
 c["3% Less Damage Over Tme Taken In Human Form"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=-3}},"  Over Tme Taken In Human Form "}
 c["3% Less Damage Taken while Channeling"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-3}},"  while Channeling "}
 c["3% Less Damage Taken while Channeling 3% More Damage to Damned while Channeling"]={{[1]={[1]={skillId="Ailment_Damned",type="SkillId"},flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-3}},"  while Channeling 3% More Damage to  while Channeling "}
@@ -8891,9 +8893,9 @@ c["30% Increased Area (Every 3 Seconds)"]={{},"  (Every 3 Seconds) "}
 c["30% Increased Area (Every 3 Seconds) 100% Base Damage -> Lightning (Every 3 Seconds)"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="INC",value=30}},"  (Every 3 Seconds) 100% Base  -> Lightning (Every 3 Seconds) "}
 c["30% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=30}},nil}
 c["30% Increased Critical Chance"]={{}," Critical Chance "}
-c["30% Increased Damage With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=30}}," With An Active Companion "}
-c["30% Increased Damage With An Active Companion 75 Armour With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=30}}," With An Active Companion 75  With An Active Companion "}
-c["30% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=30}},nil}
+c["30% Increased Damage With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=30}},"  With An Active Companion "}
+c["30% Increased Damage With An Active Companion 75 Armour With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=30}},"  With An Active Companion 75 Armour With An Active Companion "}
+c["30% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=30},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=30},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=30}},nil}
 c["30% Increased Melee Fire Damage"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="INC",value=30}},nil}
 c["30% Increased Stun Chance"]={{}," Stun Chance "}
 c["30% Increased Stun Chance 10% Increased Stun Duration"]={{[1]={flags=0,keywordFlags=0,name="EnemyStunDuration",type="INC",value=30}}," Stun Chance 10% Increased  "}
@@ -8920,18 +8922,18 @@ c["30% Tornado Chance On Wind Tempest"]={{}," On Wind Tempest "}
 c["30% Tornado Chance On Wind Tempest 110% Tornado Mana Consumption"]={{[1]={[1]={skillId="to50",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=30}}," On Wind Tempest 110%   Consumption "}
 c["30% Totem Increased Healing"]={{}," Totem Increased  "}
 c["30% increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=30}},nil}
-c["30% increased Bow Damage"]={{[1]={flags=2048,keywordFlags=0,name="Damage",type="INC",value=30}},nil}
+c["30% increased Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=30}},nil}
 c["30% increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=30}},nil}
 c["30% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=30}},nil}
 c["30% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=30}},nil}
-c["30% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=30}},nil}
+c["30% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=30},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=30},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=30}},nil}
 c["30% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=30}},nil}
 c["30% increased Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=30}},nil}
 c["30% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=30}},nil}
 c["30% increased Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=30}},nil}
 c["30% increased Mana Regen"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=30}},"  Regen "}
 c["30% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=30}},nil}
-c["30% increased Minion Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=30}}}}," Taken "}
+c["30% increased Minion Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=30}}}},nil}
 c["30% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=30}},nil}
 c["30% increased Potion Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=30}}," Potion  "}
 c["30% increased Potion Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=30}}," Potion  "}
@@ -8947,6 +8949,7 @@ c["31% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",t
 c["32% increased Dodge Rating"]={{}," Dodge Rating "}
 c["32% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=32}},nil}
 c["32% increased Transform Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=32}}," Transform  "}
+c["32.5% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=32.5}},nil}
 c["32.5% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=32.5}},nil}
 c["321% increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=321}}}},nil}
 c["321% increased Minion Health Regen"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=321}}}},nil}
@@ -9006,6 +9009,7 @@ c["37% increased Minion Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="Min
 c["37.5% increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=37.5}},nil}
 c["37.5% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=37.5}},nil}
 c["37.5% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=37.5}},nil}
+c["37.5% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=37.5}},nil}
 c["37.5% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=37.5}},nil}
 c["37.5% increased Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=37.5}}}},nil}
 c["37.5% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=37.5}},nil}
@@ -9113,12 +9117,11 @@ c["4% Increased Cast Speed Per Second"]={{[1]={flags=256,keywordFlags=0,name="Sp
 c["4% Increased Cast Speed Per Second 72% Max Speed Increase"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=4}},"  Per Second 72% Max Speed Increase "}
 c["4% Increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=4}},nil}
 c["4% Increased Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=4}},nil}
-c["4% Increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=4}}," Over Time "}
-c["4% Increased Damage Over Time +4 Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=4}}," Over Time +4  "}
+c["4% Increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=4}},nil}
 c["4% Increased Damage while Dual Wielding"]={{[1]={[1]={type="Condition",var="DualWielding"},flags=0,keywordFlags=0,name="Damage",type="INC",value=4}},nil}
 c["4% Increased Dodge Rating while Dual Wielding"]={{}," Dodge Rating  "}
 c["4% Increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=4}},nil}
-c["4% Increased Fire Damage On Recent Melee Hit"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=4}}," On Recent  Hit "}
+c["4% Increased Fire Damage On Recent Melee Hit"]={{[1]={flags=512,keywordFlags=0,name="FireDamage",type="INC",value=4}},"  On Recent  Hit "}
 c["4% Increased Haste Effect"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=4}},nil}
 c["4% Increased Healing Per Attunement"]={{},"   "}
 c["4% Increased Healing Per Point Of Attunement"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=0,keywordFlags=0,name="Att",type="INC",value=4}},"  Per Point Of  "}
@@ -9130,7 +9133,7 @@ c["4% Increased Mana Regen 3 Effect Cooldown (seconds)"]={{[1]={flags=0,keywordF
 c["4% Increased Mana Regen per stack"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=4}},"  Regen per stack "}
 c["4% Increased Mana Regen per stack 40% Mana Spent Gained As Ward per stack"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=4}},"  Regen per stack 40% Mana Spent Gained As Ward per stack "}
 c["4% Increased Mana Regen per stack 40% Mana Spent Gained As Ward per stack 3 Runeweave Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=4}},"  Regen per stack 40% Mana Spent Gained As Ward per stack 3 Runeweave Duration (seconds) "}
-c["4% Increased Melee Damage Per Active Totem"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=4}}," Per Active Totem "}
+c["4% Increased Melee Damage Per Active Totem"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=4}},"  Per Active Totem "}
 c["4% Increased Minion Attack Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=3584,keywordFlags=0,name="Speed",type="INC",value=4}}}},nil}
 c["4% Increased Minion Cast Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Speed",type="INC",value=4}}}},nil}
 c["4% Increased Minion Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=4}}}},nil}
@@ -9140,7 +9143,7 @@ c["4% Increased Movespeed Per Second 4% Increased Attack Speed Per Second"]={{[1
 c["4% Increased Movespeed Per Second 4% Increased Attack Speed Per Second 4% Increased Cast Speed Per Second"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=4}}," Movespeed Per Second 4% Increased  Per Second 4% Increased Cast Speed Per Second "}
 c["4% Increased Movespeed Per Second 4% Increased Attack Speed Per Second 4% Increased Cast Speed Per Second 72% Max Speed Increase"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=4}}," Movespeed Per Second 4% Increased  Per Second 4% Increased Cast Speed Per Second 72% Max Speed Increase "}
 c["4% Increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=4}},nil}
-c["4% Increased Spell Damage Per Active Totem"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=4}}," Per Active Totem "}
+c["4% Increased Spell Damage Per Active Totem"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=4}},"   Per Active Totem "}
 c["4% Increased Stun Chance per stack of Sharpshooter"]={{}," Stun Chance per stack of  "}
 c["4% Increased Stun Chance per stack of Sharpshooter 4% Armour Shred Chance per stack of Sharpshooter"]={{[1]={[1]={skillId="Ailment_Sharpshooter",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_ArmourShred",type="INC",value=4}}," Stun Chance per stack of  4%  per stack of Sharpshooter "}
 c["4% Incresed Physical Damage Per Strength"]={{[1]={[1]={stat="Str",type="PerStat"},flags=0,keywordFlags=0,name="PhysicalDamage",type="BASE",value=4}}," Incresed   "}
@@ -9205,8 +9208,8 @@ c["40% Increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type=
 c["40% Increased Cooldown Recovery Speed"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=40}},nil}
 c["40% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=40}},nil}
 c["40% Increased Crit Chance Granted"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=40}},"  Granted "}
-c["40% Increased Damage when Consuming Flow"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}}," when Consuming Flow "}
-c["40% Increased Damage when Consuming Flow 4 Unique Skills Required"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}}," when Consuming Flow 4 Unique Skills Required "}
+c["40% Increased Damage when Consuming Flow"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}},"  when Consuming Flow "}
+c["40% Increased Damage when Consuming Flow 4 Unique Skills Required"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}},"  when Consuming Flow 4 Unique Skills Required "}
 c["40% Increased Minion Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}}}},nil}
 c["40% Increased Stun Chance"]={{}," Stun Chance "}
 c["40% Increased Stun Chance Cannot Leap"]={{}," Stun Chance Cannot Leap "}
@@ -9219,11 +9222,11 @@ c["40% Maximum % Of Current Health Consumed Instant Ignite Damage +1% Fire Damag
 c["40% More Crit Chance Against Ignited"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="CritChance",type="MORE",value=40}},"  Against d "}
 c["40% Smallest Hit Ice Vortex Chance"]={{}," Smallest Hit Ice Vortex Chance "}
 c["40% Void Rift Increased Stun Chance"]={{}," Void Rift Increased Stun Chance "}
-c["40% Void Rift Increased Stun Chance 10% Global Void Damage vs Stunned"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=40}}," Void Rift Increased Stun Chance 10%  Void  vs Stunned "}
+c["40% Void Rift Increased Stun Chance 10% Global Void Damage vs Stunned"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=40}}," Void Rift Increased Stun Chance 10%   vs Stunned "}
 c["40% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=40}},nil}
 c["40% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=40}},nil}
-c["40% increased Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}}," Leeched as  "}
-c["40% increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}}," Over Time "}
+c["40% increased Damage Leeched as Health"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=40}},"  Leeched as Health "}
+c["40% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=40}},nil}
 c["40% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=40}},nil}
 c["40% increased Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=40}},nil}
 c["40% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=40}},nil}
@@ -9231,9 +9234,9 @@ c["40% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Spe
 c["40% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=40}},nil}
 c["40% increased Minion Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=40}}}},nil}
 c["40% increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=40}},nil}
-c["40% less Potion Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-40}}," Potion Necrotic  "}
+c["40% less Potion Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="MORE",value=-40}}," Potion  Taken "}
 c["40% less Potion Poison Damage Taken"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-40}}," Potion   "}
-c["40% less Potion Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-40}}," Potion Void  "}
+c["40% less Potion Void Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="MORE",value=-40}}," Potion  Taken "}
 c["40% more Frailty Physical Global Conditional Damage"]={{[1]={[1]={type="Global"},[2]={skillId="Ailment_Frailty",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=40}},"  Physical  Conditional  "}
 c["400 Ward Granted On Activation"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=400}},"  Granted On Activation "}
 c["400 Ward Granted On Activation +5 Cooldown"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=400}},"  Granted On Activation +5 Cooldown "}
@@ -9364,7 +9367,7 @@ c["5% Increased Armor On Melee Kill"]={{[1]={[1]={type="Condition",var="KilledRe
 c["5% Increased Armour Shred Effect"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=5}},"  Shred Effect "}
 c["5% Increased Attack Speed With Active Totem"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=5}},"  With Active Totem "}
 c["5% Increased Attack Speed With Active Totem 5% Increased Cast Speed With Active Totem"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=5}},"  With Active Totem 5% Increased Cast Speed With Active Totem "}
-c["5% Increased Bow Damage"]={{[1]={flags=2048,keywordFlags=0,name="Damage",type="INC",value=5}},nil}
+c["5% Increased Bow Damage"]={{[1]={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=5}},nil}
 c["5% Increased Cast Speed With Active Totem"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=5}},"  With Active Totem "}
 c["5% Increased Cast Speed for Curses"]={{[1]={flags=256,keywordFlags=16777216,name="Speed",type="INC",value=5}},nil}
 c["5% Increased Cast Speed per Stack"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=5}},"  per Stack "}
@@ -9383,9 +9386,8 @@ c["5% Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",
 c["5% Increased Damage while Dual Wielding"]={{[1]={[1]={type="Condition",var="DualWielding"},flags=0,keywordFlags=0,name="Damage",type="INC",value=5}},nil}
 c["5% Increased Damned Duration"]={{[1]={[1]={skillId="Ailment_Damned",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=5}},nil}
 c["5% Increased Dodge Rating"]={{}," Dodge Rating "}
-c["5% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=5}},nil}
-c["5% Increased Global Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=5}}," Over Time "}
-c["5% Increased Global Damage Over Time 13 Maximum Stacks"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=5}}," Over Time 13 Maximum Stacks "}
+c["5% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=5},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=5},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=5}},nil}
+c["5% Increased Global Damage Over Time"]={{[1]={[1]={type="Global"},flags=4096,keywordFlags=0,name="Damage",type="INC",value=5}},nil}
 c["5% Increased Healing Effectiveness"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=5}},"  iveness "}
 c["5% Increased Health Leech"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=5}},"  Leech "}
 c["5% Increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=5}},nil}
@@ -9404,9 +9406,10 @@ c["5% Increased Minion Health Regen"]={{[1]={flags=0,keywordFlags=0,name="Minion
 c["5% Increased Minion Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=5}}}},nil}
 c["5% Increased Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=5}}}},nil}
 c["5% Increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=5}},nil}
-c["5% Increased Physical Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=5}}," Granted "}
-c["5% Increased Physical Damage Granted +5% Bleed Chance Granted"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=5}}," Granted +5%  Chance Granted "}
-c["5% Increased Throwing Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=5}},nil}
+c["5% Increased Physical Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=5}},"  Granted "}
+c["5% Increased Physical Damage Granted +5% Bleed Chance Granted"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=5}},"  Granted +5%  Chance Granted "}
+c["5% Increased Throwing Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=5}}," Throwing  "}
+c["5% Increased Throwing Damage 5% Armour Shred Chance"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=5}}," Throwing  5% Armour Shred Chance "}
 c["5% Increased Void Damage On Melee Kill"]={{[1]={[1]={type="Condition",var="KilledRecently"},flags=67108864,keywordFlags=0,name="VoidDamage",type="INC",value=5}},nil}
 c["5% Increased dodge rating with Concentration"]={{}," dodge rating with Concentration "}
 c["5% Increased dodge rating with Concentration 2% Increased movement speed with Concentration"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=5}}," dodge rating with Concentration 2% Increased  with Concentration "}
@@ -9417,8 +9420,8 @@ c["5% Less Damage Dealt by Non-critical Hits"]={{[1]={flags=0,keywordFlags=0,nam
 c["5% Less Damage Dealt by Non-critical Hits 5% Less Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=-5}},"  Dealt by Non-critical Hits 5% Less Damage Over Time "}
 c["5% Less Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="MORE",value=-5}},nil}
 c["5% Less Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-5}},nil}
-c["5% Less Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-5}}," Necrotic  "}
-c["5% Less Necrotic Damage Taken 1% Current Health Drained Per Second On Potion Use"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-5}}," Necrotic  1% Current Health Drained Per Second On Potion Use "}
+c["5% Less Necrotic Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="MORE",value=-5}},"  Taken "}
+c["5% Less Necrotic Damage Taken 1% Current Health Drained Per Second On Potion Use"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="MORE",value=-5}},"  Taken 1% Current Health Drained Per Second On Potion Use "}
 c["5% Less Physical Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamageTaken",type="MORE",value=-5}},nil}
 c["5% Lightning Aegis Chance On Cast"]={{}," Lightning Aegis Chance On Cast "}
 c["5% Maelstrom Chance"]={{}," "}
@@ -9436,7 +9439,7 @@ c["5% More/Less Damage Dealt"]={{[1]={flags=0,keywordFlags=0,name="Damage",type=
 c["5% More/Less Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=5}},"/Less  "}
 c["5% More/Less Damage Taken 5% More/Less Damage Dealt"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=5}},"/Less  5% More/Less Damage Dealt "}
 c["5% Poison Chance Per Equipped Dagger"]={{},"  "}
-c["5% Poison Chance per 1 Added Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=5}}," per 1 Added Necrotic  "}
+c["5% Poison Chance per 1 Added Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=5}}," per 1 Added  "}
 c["5% Poison Resistance"]={{},"  Resistance "}
 c["5% Poison Wisp Chance"]={{},"  Wisp Chance "}
 c["5% Reduced Health Drain"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=-5}},"  Drain "}
@@ -9488,7 +9491,7 @@ c["50% Bow Mana Cost -> Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="M
 c["50% Chance To Cast Boulder On Aftershock Hit"]={{}," To Cast Boulder On After Hit "}
 c["50% Chance To Ignite Enemy When Hit"]={{}," To  Enemy When Hit "}
 c["50% Global Increased Crit Chance"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="CritChance",type="BASE",value=50}},"  Increased  "}
-c["50% Global Increased Void Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="Damage",type="BASE",value=50}},"  Increased Void  "}
+c["50% Global Increased Void Damage"]={{[1]={[1]={type="Global"},flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=50}},"  Increased  "}
 c["50% Heal to Full Threshold"]={{}," Heal to Full Threshold "}
 c["50% Heal to Full Threshold 80% Health Gained as Ward when Healing to Full"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=0,keywordFlags=0,name="Life",type="BASE",value=50}}," Heal to Full Threshold 80%  Gained as Ward when  to Full "}
 c["50% Increased Armor With Buff"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=50}},"  With Buff "}
@@ -9496,8 +9499,8 @@ c["50% Increased Armor With Buff 50% Increased Damage With Buff"]={{[1]={flags=0
 c["50% Increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=50}},nil}
 c["50% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=50}},nil}
 c["50% Increased Critical Strike Chance Granted By Wolf Howl"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=50}},"  Granted By Wolf Howl "}
-c["50% Increased Damage While Rampaging"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}}," While Rampaging "}
-c["50% Increased Damage With Buff"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}}," With Buff "}
+c["50% Increased Damage While Rampaging"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}},"  While Rampaging "}
+c["50% Increased Damage With Buff"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}},"  With Buff "}
 c["50% Increased Effect From Health Regeneration"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=50}},"  From Health Regeneration "}
 c["50% Increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=50}},nil}
 c["50% Increased Fire Rate"]={{}," Fire Rate "}
@@ -9533,7 +9536,7 @@ c["50% Shuriken Chance"]={{}," "}
 c["50% Slow Chance When Active"]={{}," When Active "}
 c["50% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=50}},nil}
 c["50% increased Curse Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=50}}," Curse  "}
-c["50% increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}}," Over Time "}
+c["50% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=50}},nil}
 c["50% increased Dodge Rating"]={{}," Dodge Rating "}
 c["50% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=50}},nil}
 c["50% increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=50}},nil}
@@ -9546,9 +9549,9 @@ c["50% increased Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="Mi
 c["50% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=50}},nil}
 c["50% increased Potion Dodge Rating"]={{}," Potion Dodge Rating "}
 c["50% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=50}},nil}
-c["50% increased damage while using a bow"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}}," while using a bow "}
+c["50% increased damage while using a bow"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=50}},"  while using a bow "}
 c["50% less Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="MORE",value=-50}}," Block iveness "}
-c["50% less Void Damage Taken on Block"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="MORE",value=-50}}," Void  on Block "}
+c["50% less Void Damage Taken on Block"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="MORE",value=-50}},"  Taken on Block "}
 c["51% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=51}},nil}
 c["52% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=52}},nil}
 c["52% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=52}},nil}
@@ -9564,7 +9567,6 @@ c["55% increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",t
 c["56% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=56}},nil}
 c["57% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=57}},nil}
 c["58% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=58}},nil}
-c["58.5% increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Damage",type="INC",value=58.5}}}},nil}
 c["6 Acid Flask Cooldown (seconds)"]={{},"  Cooldown (seconds) "}
 c["6 Acid Flask Cooldown (seconds) 75% Acid Flask Mana Consumption"]={{[1]={[1]={skillId="aacfl",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=6}},"  Cooldown (seconds) 75% Acid Flask  Consumption "}
 c["6 Buff Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=6}}," Buff  (Seconds) "}
@@ -9617,7 +9619,7 @@ c["6% Chance for Double Hit Damage against Chilled"]={{[1]={[1]={skillId="Ailmen
 c["6% Cleanse Chance"]={{}," "}
 c["6% Cooldown Reduction When Rune Combination Changes"]={{}," Cooldown Reduction When Rune Combination Changes "}
 c["6% Damned Chance"]={{}," "}
-c["6% Damned Chance 12% Increased Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=6}}," 12% Increased  Necrotic  "}
+c["6% Damned Chance 12% Increased Minion Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="BASE",value=6}}," 12% Increased   "}
 c["6% Divine Essence Chance On Heal"]={{},"  Chance On Heal "}
 c["6% Doublecast Chance"]={{}," "}
 c["6% Doublecast Chance +10% Critical Multiplier"]={{[1]={flags=0,keywordFlags=0,name="CritMultiplier",type="BASE",value=6}}," +10%  "}
@@ -9634,12 +9636,12 @@ c["6% Increased Cooldown Recovery Speed for Movement Skills"]={{[1]={flags=0,key
 c["6% Increased Cooldown Recovery Speed for Movement Skills +6 Health"]={{[1]={flags=0,keywordFlags=0,name="CooldownRecovery",type="INC",value=6}},"  for Movement Skills +6 Health "}
 c["6% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=6}},nil}
 c["6% Increased Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}},nil}
-c["6% Increased Damage While Transformed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}}," While Transformed "}
-c["6% Increased Damage While Transformed 6% Reduced Rage Decay"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}}," While Transformed 6% Reduced Rage Decay "}
-c["6% Increased Damage With 1h Weapon "]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}}," With 1h   "}
-c["6% Increased Damage With Bow"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}}," With Bow "}
-c["6% Increased Damage With Spear"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}}," With Spear "}
-c["6% Increased Damage With Spear +10% Bleed Chance With Spear"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="INC",value=6}}," With Spear +10%  Chance With Spear "}
+c["6% Increased Damage While Transformed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}},"  While Transformed "}
+c["6% Increased Damage While Transformed 6% Reduced Rage Decay"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}},"  While Transformed 6% Reduced Rage Decay "}
+c["6% Increased Damage With 1h Weapon "]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="INC",value=6}},"  With 1h   "}
+c["6% Increased Damage With Bow"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}},"  With Bow "}
+c["6% Increased Damage With Spear"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=6}},"  With Spear "}
+c["6% Increased Damage With Spear +10% Bleed Chance With Spear"]={{[1]={[1]={skillId="Ailment_Bleed",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="INC",value=6}},"  With Spear +10%  Chance With Spear "}
 c["6% Increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=6}},nil}
 c["6% Increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=6}},nil}
 c["6% Increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=6}},nil}
@@ -9652,7 +9654,8 @@ c["6% Increased Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDa
 c["6% Increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=6}},nil}
 c["6% Increased Shock Duration with Melee Attacks"]={{[1]={flags=512,keywordFlags=0,name="EnemyShockDuration",type="INC",value=6}},nil}
 c["6% Increased Stun Chance"]={{}," Stun Chance "}
-c["6% Increased Throwing Attack Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=6}},nil}
+c["6% Increased Throwing Attack Damage"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=6}}," Throwing  "}
+c["6% Increased Throwing Attack Damage 6% Increased Throwing Attack Stun Chance"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=6}}," Throwing  6% Increased Throwing Attack Stun Chance "}
 c["6% Increased Throwing Attack Stun Chance"]={{}," Throwing Attack Stun Chance "}
 c["6% Invocations Chance On Other Skill Use"]={{}," On Other Skill Use "}
 c["6% Kill Threshold"]={{}," Kill Threshold "}
@@ -9698,7 +9701,7 @@ c["60% Reduced Stun Chance Hammers Do Not Return"]={{}," Stun Chance Hammers Do 
 c["60% increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=60}},nil}
 c["60% increased Dodge Rating"]={{}," Dodge Rating "}
 c["60% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=60}},nil}
-c["60% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=60}}," Over Time "}
+c["60% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=60}},"  Over Time "}
 c["60% increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=60}},nil}
 c["60% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=60}},nil}
 c["60% increased Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="INC",value=60}},nil}
@@ -9708,7 +9711,6 @@ c["60% increased Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticD
 c["60% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=60}},nil}
 c["60% reduced Block Chance"]={{[1]={flags=0,keywordFlags=0,name="BlockChance",type="INC",value=-60}},nil}
 c["600 Armour Required For Maximum Damage"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=600}},"  Required For Maximum Damage "}
-c["61% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=61}},nil}
 c["61% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=61}},nil}
 c["62% increased Mana Regen"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=62}},"  Regen "}
 c["62.5% increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=62.5}}}},nil}
@@ -9722,7 +9724,8 @@ c["65% Serpent Damage Buff on Heal"]={{[1]={flags=0,keywordFlags=0,name="Damage"
 c["65% Serpent Damage Buff on Heal 10 Damage Buff Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=65}}," Serpent  Buff on Heal 10 Damage Buff Duration (Seconds) "}
 c["65% increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=65}},nil}
 c["66% increased Block Effectiveness"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=66}}," Block iveness "}
-c["66% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=66}},nil}
+c["66% increased Curse Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=66}}," Curse  "}
+c["66% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=66}},nil}
 c["66% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=66}},nil}
 c["7 Cooldown for Ward Gain (secons)"]={{[1]={flags=0,keywordFlags=0,name="Ward",type="BASE",value=7}}," Cooldown for  Gain (secons) "}
 c["7 Fireballs Per Second"]={{}," s Per Second "}
@@ -9754,13 +9757,12 @@ c["7% Haste Chance"]={{}," "}
 c["7% Increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=7}},nil}
 c["7% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=7}},nil}
 c["7% Increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=7}},nil}
-c["7% Increased Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}," Granted "}
-c["7% Increased Damage Granted 7% Increased Healing Granted"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}," Granted 7% Increased  Granted "}
-c["7% Increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}," Over Time "}
-c["7% Increased Damage Over Time 7% Increased Minion Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}," Over Time 7% Increased   "}
-c["7% Increased Damage Over Time While Transformed"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}," Over Time While Transformed "}
-c["7% Increased Damage Over Time While Transformed 3% Less Damage Over Tme Taken In Human Form"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}," Over Time While Transformed 3% Less  Over Tme Taken In Human Form "}
-c["7% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
+c["7% Increased Damage Granted"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}},"  Granted "}
+c["7% Increased Damage Granted 7% Increased Healing Granted"]={{[1]={[1]={skillId="Ailment_DummyHealingWhileNotTakingDamage",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="INC",value=7}},"  Granted 7% Increased  Granted "}
+c["7% Increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
+c["7% Increased Damage Over Time While Transformed"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=7}},"  While Transformed "}
+c["7% Increased Damage Over Time While Transformed 3% Less Damage Over Tme Taken In Human Form"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=7}},"  While Transformed 3% Less Damage Over Tme Taken In Human Form "}
+c["7% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=7},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=7},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=7}},nil}
 c["7% Increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=7}},nil}
 c["7% Increased Healing"]={{},"  "}
 c["7% Increased Healing 7% Increased Minion Healing"]={{},"  7% Increased  Healing "}
@@ -9770,21 +9772,23 @@ c["7% Increased Healing Effectiveness +7% Necrotic Resistance 7 Health"]={{[1]={
 c["7% Increased Healing Granted"]={{},"  Granted "}
 c["7% Increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=7}},nil}
 c["7% Increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
-c["7% Increased Melee Damage With 2h Weapon"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=7}}," With 2h  "}
+c["7% Increased Melee Damage With 2h Weapon"]={{[1]={flags=67109376,keywordFlags=0,name="Damage",type="INC",value=7}},"  With 2h  "}
 c["7% Increased Minion Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=7}}}},nil}
 c["7% Increased Minion Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}}},nil}
-c["7% Increased Minion Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}}}," Over Time "}
+c["7% Increased Minion Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=4096,keywordFlags=0,name="Damage",type="INC",value=7}}}},nil}
 c["7% Increased Minion Healing"]={{},"   "}
 c["7% Increased Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="INC",value=7}}}},nil}
 c["7% Increased Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=7}}}},nil}
 c["7% Increased Minion Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=7}}}},nil}
-c["7% Increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Damage",type="INC",value=7}}}},nil}
+c["7% Increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}}},"  Spell  "}
 c["7% Increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=7}},nil}
 c["7% Increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=7}},nil}
 c["7% Increased Poison Duration"]={{[1]={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Duration",type="INC",value=7}},nil}
 c["7% Increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
-c["7% Increased Throwing Attack Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
-c["7% Increased Throwing Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=7}},nil}
+c["7% Increased Throwing Attack Damage"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=7}}," Throwing  "}
+c["7% Increased Throwing Attack Damage 2% Increased Throwing Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=7}}," Throwing  2% Increased Throwing Attack Speed "}
+c["7% Increased Throwing Attack Damage 2% Increased Throwing Attack Speed 5% Falcon Increased Throwing Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Damage",type="INC",value=7}}," Throwing  2% Increased Throwing Attack Speed 5% Falcon Increased Throwing Attack Speed "}
+c["7% Increased Throwing Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=7}}," Throwing  "}
 c["7% Increased Totem Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=7}}," Totem  "}
 c["7% Increased Totem Cast Speed 7% Haste Chance"]={{[1]={[1]={skillId="Ailment_Haste",type="SkillId"},flags=256,keywordFlags=0,name="Speed",type="INC",value=7}}," Totem  7%  Chance "}
 c["7% Increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=7}},nil}
@@ -9800,6 +9804,7 @@ c["7% increased Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",va
 c["7% increased Mana"]={{[1]={flags=0,keywordFlags=0,name="Mana",type="INC",value=7}},nil}
 c["7% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=7}},nil}
 c["7% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=7}},nil}
+c["7.5% increased Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="DamageTaken",type="INC",value=7.5}},nil}
 c["7.5% increased Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=7.5}},nil}
 c["7.5% increased Melee Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=7.5}},nil}
 c["7.5% increased Minion Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=7.5}}}},nil}
@@ -9819,7 +9824,7 @@ c["70% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",t
 c["71% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=71}},nil}
 c["72% Max Speed Increase"]={{}," Max Speed Increase "}
 c["72% increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=72}},nil}
-c["72% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=72}}," Over Time "}
+c["72% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=72}},"  Over Time "}
 c["72% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=72}},nil}
 c["72% increased Spell Damage"]={{[1]={flags=256,keywordFlags=0,name="Damage",type="INC",value=72}},nil}
 c["75 Armour With An Active Companion"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="BASE",value=75}},"  With An Active Companion "}
@@ -9848,7 +9853,7 @@ c["75% Tempest Strike Mana Consumption"]={{[1]={[1]={skillId="ts85i",type="Skill
 c["75% Throwing Attack Speed -> Increased Cooldown Recovery Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="BASE",value=75}}," Throwing  -> Increased Cooldown Recovery Speed "}
 c["75% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=75}},nil}
 c["75% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=75}},nil}
-c["75% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=75}}," Over Time "}
+c["75% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=75}},"  Over Time "}
 c["75% increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=75}},nil}
 c["75% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=75}},nil}
 c["75% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=75}},nil}
@@ -9857,11 +9862,11 @@ c["75% increased Minion Dodge Rating"]={{},"  Dodge Rating "}
 c["75% increased Minion Health"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Life",type="INC",value=75}}}},nil}
 c["75% increased Physical Resistance"]={{}," Physical Resistance "}
 c["75% increased Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="PoisonDamage",type="INC",value=75}},nil}
-c["75% increased Throwing Damage"]={{[1]={flags=1024,keywordFlags=0,name="Damage",type="INC",value=75}},nil}
 c["75% increased melee void damage"]={{[1]={flags=512,keywordFlags=0,name="VoidDamage",type="INC",value=75}},nil}
 c["76% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=76}},nil}
 c["76% increased Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=76}},nil}
 c["77.5% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=77.5}},nil}
+c["78% increased Cold Damage Over Time"]={{[1]={flags=0,keywordFlags=67108864,name="ColdDamage",type="INC",value=78}},nil}
 c["8 Bone Prison Duration (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=8}}," Bone Prison  (seconds) "}
 c["8 Bone Prison Duration (seconds) +20 Cooldown (seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=8}}," Bone Prison  (seconds) +20 Cooldown (seconds) "}
 c["8 Buff Duration (Seconds)"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="BASE",value=8}}," Buff  (Seconds) "}
@@ -9905,9 +9910,9 @@ c["8% Increased Crit Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",ty
 c["8% Increased Critical Strike Chance"]={{[1]={flags=0,keywordFlags=0,name="CritChance",type="INC",value=8}},nil}
 c["8% Increased Critical Strike Chance per Dagger"]={{[1]={[1]={type="Multiplier",var="DaggerItem"},flags=0,keywordFlags=0,name="CritChance",type="INC",value=8}},nil}
 c["8% Increased Critical Strike Chance per Sword"]={{[1]={[1]={type="Multiplier",var="SwordItem"},flags=0,keywordFlags=0,name="CritChance",type="INC",value=8}},nil}
-c["8% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=8}},nil}
-c["8% Increased Elemental Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=8}}," Over Time "}
-c["8% Increased Elemental Damage Over Time 2% Increased Ignite Duration"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="INC",value=8}}," Over Time 2% Increased   "}
+c["8% Increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=8},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=8},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=8}},nil}
+c["8% Increased Elemental Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=8},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=8},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=8}},"  Over Time "}
+c["8% Increased Elemental Damage Over Time 2% Increased Ignite Duration"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="FireDamage",type="INC",value=8},[2]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=8},[3]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=8}},"  Over Time 2% Increased  Duration "}
 c["8% Increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=8}},nil}
 c["8% Increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=8}},nil}
 c["8% Increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=8}},nil}
@@ -9942,7 +9947,7 @@ c["80 Explosion Freeze Rate"]={{}," Explosion Freeze Rate "}
 c["80 Explosion Freeze Rate Shock -> Frostbite Chance"]={{[1]={[1]={skillId="Ailment_Shock",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Frostbite",type="BASE",value=80}}," Explosion Freeze Rate  ->  "}
 c["80 Freeze Rate"]={{}," Freeze Rate "}
 c["80 Freeze Rate Ignite -> Chill Chance"]={{[1]={[1]={skillId="Ailment_Ignite",type="SkillId"},flags=8388608,keywordFlags=0,name="ChanceToTriggerOnHit_Ailment_Chill",type="BASE",value=80}}," Freeze Rate  ->  "}
-c["80 Void Damage on Impact"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="BASE",value=80}}," Void  on Impact "}
+c["80 Void Damage on Impact"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="BASE",value=80}},"  on Impact "}
 c["80% Area Skills -> Falcon Strikes Area"]={{},"  Skills -> Falcon Strikes Area "}
 c["80% Area Skills -> Falcon Strikes Area +20% Falcon Strikes Damage after Area skill use"]={{[1]={flags=67108864,keywordFlags=0,name="Damage",type="BASE",value=80}},"  Skills -> Falcon Strikes Area +20% Falcon Strikes  after Area skill use "}
 c["80% Chaos Bolts Mana Consumption"]={{[1]={[1]={skillId="ch4bo",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=80}},"   Consumption "}
@@ -9960,23 +9965,23 @@ c["80% More Area +120% Mana Cost 10% Chance to Summon from Indirect Casts"]={{[1
 c["80% Reduced Effect Without Cooldown"]={{[1]={flags=0,keywordFlags=0,name="FlaskEffect",type="INC",value=-80}},"  Without Cooldown "}
 c["80% Static Orb Mana Consumption"]={{[1]={[1]={skillId="so35a",type="SkillId"},flags=0,keywordFlags=0,name="Mana",type="BASE",value=80}},"   Consumption "}
 c["80% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=80}},nil}
-c["80% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=80}}," Over Time "}
+c["80% increased Fire Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=80}},"  Over Time "}
 c["80% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=80}},nil}
-c["80% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="Damage",type="INC",value=80}}}},nil}
+c["80% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=80}}}},nil}
 c["80% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=80}},nil}
 c["800% Increased Stun Chance"]={{}," Stun Chance "}
 c["800% Increased Stun Chance -80% Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=800}}," Stun Chance -80%  "}
-c["81% increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Damage",type="INC",value=81}}}},nil}
+c["81% increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="Damage",type="INC",value=81}}}},"  Spell  "}
 c["82.5% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=82.5}},nil}
 c["84% increased Necrotic Damage"]={{[1]={flags=0,keywordFlags=0,name="NecroticDamage",type="INC",value=84}},nil}
 c["85% Increased Mana Cost"]={{[1]={flags=0,keywordFlags=0,name="ManaCost",type="INC",value=85}},nil}
 c["85% More Companion Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=85}}," Companion  "}
 c["85% More Companion Damage Limited To One Companion"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="MORE",value=85}}," Companion  Limited To One Companion "}
-c["85% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=85}},nil}
+c["85% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=85},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=85},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=85}},nil}
 c["85% increased Health Regen"]={{[1]={flags=0,keywordFlags=0,name="LifeRegen",type="INC",value=85}},nil}
 c["85% increased Melee Cold Damage"]={{[1]={flags=512,keywordFlags=0,name="ColdDamage",type="INC",value=85}},nil}
 c["85% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=85}},nil}
-c["86% increased Damage for Totems"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=86}}," for Totems "}
+c["86% increased Damage for Totems"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=86}},"  for Totems "}
 c["87.5% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=87.5}},nil}
 c["89% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=89}},nil}
 c["89% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=89}},nil}
@@ -9988,6 +9993,7 @@ c["9% Current Health Consumption 3% Ward Consumption"]={{[1]={flags=0,keywordFla
 c["9% Maximum Added Speed"]={{}," Maximum Added Speed "}
 c["9% increased Attack Speed"]={{[1]={flags=3584,keywordFlags=0,name="Speed",type="INC",value=9}},nil}
 c["9% increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=9}},nil}
+c["9% increased Fire Damage Taken"]={{[1]={flags=0,keywordFlags=0,name="FireDamageTaken",type="INC",value=9}},nil}
 c["9% increased Health"]={{[1]={flags=0,keywordFlags=0,name="Life",type="INC",value=9}},nil}
 c["9% increased Movement Speed"]={{[1]={flags=0,keywordFlags=0,name="MovementSpeed",type="INC",value=9}},nil}
 c["9.5% increased Cast Speed"]={{[1]={flags=256,keywordFlags=0,name="Speed",type="INC",value=9.5}},nil}
@@ -9998,22 +10004,22 @@ c["90% Chance To Not Explode 20% Small Orb Chance with Scatter Blast -35% Orbit 
 c["90% increased Armor"]={{[1]={flags=0,keywordFlags=0,name="Armour",type="INC",value=90}},nil}
 c["90% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=90}},nil}
 c["90% increased Duration of Stuns Received"]={{[1]={flags=0,keywordFlags=0,name="Duration",type="INC",value=90}},"  of Stuns Received "}
-c["90% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=90}},nil}
+c["90% increased Elemental Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=90},[2]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=90},[3]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=90}},nil}
 c["90% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=90}},nil}
 c["90% increased Melee Damage"]={{[1]={flags=512,keywordFlags=0,name="Damage",type="INC",value=90}},nil}
-c["90% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="Damage",type="INC",value=90}}}},nil}
+c["90% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=90}}}},nil}
 c["90% increased Spell Lightning Critical Strike Chance"]={{[1]={flags=256,keywordFlags=0,name="CritChance",type="INC",value=90}},"  Lightning  "}
 c["90% increased Spell Lightning Damage"]={{[1]={flags=256,keywordFlags=0,name="LightningDamage",type="INC",value=90}},nil}
 c["90% increased Void Damage"]={{[1]={flags=0,keywordFlags=0,name="VoidDamage",type="INC",value=90}},nil}
-c["90% less Minion Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={[1]={skillId="Ailment_Poison",type="SkillId"},flags=0,keywordFlags=0,name="Damage",type="MORE",value=-90}}}},nil}
+c["90% less Minion Poison Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PoisonDamage",type="MORE",value=-90}}}},nil}
 c["92.5% increased Minion Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=92.5}}}},nil}
 c["92.5% increased Physical Damage"]={{[1]={flags=0,keywordFlags=0,name="PhysicalDamage",type="INC",value=92.5}},nil}
-c["93% increased Damage Over Time"]={{[1]={flags=0,keywordFlags=0,name="Damage",type="INC",value=93}}," Over Time "}
+c["93% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=93}},nil}
 c["94.5% increased Minion Melee Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=512,keywordFlags=0,name="Damage",type="INC",value=94.5}}}},nil}
 c["95% increased Cold Damage"]={{[1]={flags=0,keywordFlags=0,name="ColdDamage",type="INC",value=95}},nil}
 c["95% increased Fire Damage"]={{[1]={flags=0,keywordFlags=0,name="FireDamage",type="INC",value=95}},nil}
-c["95% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=2048,keywordFlags=0,name="Damage",type="INC",value=95}}}},nil}
-c["95% increased Minion Spell Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=256,keywordFlags=0,name="Damage",type="INC",value=95}}}},nil}
+c["95% increased Minion Bow Damage"]={{[1]={flags=0,keywordFlags=0,name="MinionModifier",type="LIST",value={mod={flags=8390656,keywordFlags=0,name="Damage",type="INC",value=95}}}},nil}
+c["96% increased Damage Over Time"]={{[1]={flags=4096,keywordFlags=0,name="Damage",type="INC",value=96}},nil}
 c["97.5% increased Lightning Damage"]={{[1]={flags=0,keywordFlags=0,name="LightningDamage",type="INC",value=97.5}},nil}
 c["Abyssal Decay Lingers"]={nil,"Abyssal Decay Lingers "}
 c["Abyssal Decay Spreads"]={nil,"Abyssal Decay Spreads "}

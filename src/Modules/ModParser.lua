@@ -17,11 +17,11 @@ end
 -- List of modifier forms
 local formList = {
 	["^+?([%d%.]+)%% increased"] = "INC",
+	["^+?([%d%.]+)%% reduced"] = "RED",
+	["^+?([%d%.]+)%% more"] = "MORE",
+	["^+?([%d%.]+)%% less"] = "LESS",
 	["^(%d+)%% faster"] = "INC",
-	["^(%d+)%% reduced"] = "RED",
 	["^(%d+)%% slower"] = "RED",
-	["^(%d+)%% more"] = "MORE",
-	["^(%d+)%% less"] = "LESS",
 	["^([%+%-]?[%d%.]+)%%?"] = "BASE",
 	["^([%+%-][%d%.]+)%%? to"] = "BASE",
 	["^([%+%-]?[%d%.]+)%%? of"] = "BASE",
@@ -63,12 +63,6 @@ local formList = {
 	["^you lose ([%d%.]+)%% of (.-) per second"] = "DEGENPERCENT",
 	["^([%d%.]+) (%a+) damage taken per second"] = "DEGEN",
 	["^([%d%.]+) (%a+) damage per second"] = "DEGEN",
-	["^%+([%d%.]+) damage"] = "DMG",
-	["^%+([%d%.]+) (%a+) damage"] = "DMG",
-	["^%+([%d%.]+) (%a+) (%a+) damage"] = "DMG",
-	["^([%d%.]+)%% increased damage"] = "INCDMG",
-	["^([%d%.]+)%% increased (%a+) damage"] = "INCDMG",
-	["^([%d%.]+)%% increased (%a+) (%a+) damage"] = "INCDMG",
 	["^you have "] = "FLAG",
 	["^have "] = "FLAG",
 	["^you are "] = "FLAG",
@@ -710,6 +704,10 @@ end
 
 for _, damageType in ipairs(DamageTypes) do
 	modNameList[damageType:lower() .. " penetration"] = damageType .. "Penetration"
+	modNameList[damageType:lower() .. " damage"] = damageType .. "Damage"
+	for _, damageSourceType in ipairs(DamageSourceTypes) do
+		modNameList[damageSourceType:lower() .. " " .. damageType:lower() .. " damage"] = { damageType .. "Damage", flags = ModFlag[damageSourceType] }
+	end
 end
 
 modNameList["penetration"] = "Penetration"
@@ -2066,49 +2064,6 @@ local function parseMod(line, order)
 		end
 		modName = damageType .. "Degen"
 		modSuffix = ""
-	elseif modForm == "DMG" or modForm == "INCDMG" then
-		local damageTypes = DamageTypes
-		modFlag = {flags = 0, keywordFlags = 0}
-		for i=2,#formCap do
-			for _,v in ipairs(DamageSourceTypes) do
-				if formCap[i] == v:lower() then
-					modFlag.flags = ModFlag[v]
-				end
-			end
-			for _,v in ipairs(DamageTypes) do
-				if formCap[i] == v:lower() then
-					damageTypes = {v}
-				end
-			end
-			if formCap[i] == "minion" then
-				modFlag.addToMinion = true
-			end
-		end
-		if modForm == "INCDMG" then
-			modType = "INC"
-		end
-		modName = {}
-		keywordFlags = {}
-		if modForm == "DMG" then
-			for _,damageType in ipairs(damageTypes) do
-				-- If the damage type is specific, then it is applied regardless of the type of the skill
-					if #damageTypes > 1 then
-						table.insert(keywordFlags, KeywordFlag[damageType])
-					end
-					table.insert(modName,damageType.."Min")
-					if #damageTypes > 1 then
-						table.insert(keywordFlags, KeywordFlag[damageType])
-					end
-					table.insert(modName,damageType.."Max")
-			end
-		else
-			if #damageTypes == 1 then
-				table.insert(modName,damageTypes[1].."Damage")
-			else
-				-- Increase damage for all damage types
-				table.insert(modName,"Damage")
-			end
-		end
 	elseif modForm == "FLAG" then
 		modName = type(modValue) == "table" and modValue.name or modValue
 		modType = type(modValue) == "table" and modValue.type or "FLAG"

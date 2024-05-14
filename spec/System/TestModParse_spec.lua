@@ -50,9 +50,12 @@ describe("TestModParse", function()
         build.configTab:BuildModList()
         runCallback("OnFrame")
 
-        assert.are.equals(10, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Physical }, "PhysicalMin"))
-        assert.are.equals(30, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Physical, flags = ModFlag.Melee }, "PhysicalMin"))
-        assert.are.equals(35, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Fire, flags = KeywordFlag.Spell }, "FireMin"))
+        assert.are.equals(10, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Physical }, "Damage"))
+        assert.are.equals(10, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Physical }, "Damage"))
+        assert.are.equals(20, build.configTab.modList:Sum("BASE", { flags = ModFlag.Melee }, "PhysicalDamage"))
+        assert.are.equals(0, build.configTab.modList:Sum("BASE", nil, "PhysicalDamage"))
+        assert.are.equals(0, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Fire }, "FireDamage"))
+        assert.are.equals(25, build.configTab.modList:Sum("BASE", { keywordFlags = KeywordFlag.Fire, flags = KeywordFlag.Spell }, "FireDamage"))
     end)
 
     it("increased damage", function()
@@ -64,11 +67,11 @@ describe("TestModParse", function()
     end)
 
     it("passive node more damage", function()
-        build.configTab.input.customMods = "+10% Damage"
+        build.configTab.input.customMods = "+10.5% Damage"
         build.configTab:BuildModList()
         runCallback("OnFrame")
 
-        assert.are.equals(10, build.configTab.modList:Sum("MORE", nil, "Damage"))
+        assert.are.equals(10.5, build.configTab.modList:Sum("MORE", nil, "Damage"))
     end)
 
     it("effect doubled", function()

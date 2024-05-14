@@ -49,16 +49,12 @@ return {
 			{ format = "Physical:" },
 			"Physical", DamageTypesColored),
 	replaceStringInTableByValues(
-			{ label = "Added Min", { }},
+			{ label = "Added",
+			  { format = "{0:mod:1}", { modName = "Damage", modType = "BASE", cfg = "skill" }, },
+			},
 			{ format = "{0:mod:1,2}",
-			  { label = "Player modifiers", modName = "PhysicalMin", modType = "BASE", cfg = "skill" },
-			  { label = "Enemy modifiers", modName = "SelfPhysicalMin", modType = "BASE", enemy = true, cfg = "skill" }, } ,
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
-			{ label = "Added Max",{ }},
-			{ format = "{0:mod:1,2}",
-			  { label = "Player modifiers", modName = "PhysicalMax", modType = "BASE", cfg = "skill" },
-			  { label = "Enemy modifiers", modName = "SelfPhysicalMax", modType = "BASE", enemy = true, cfg = "skill" }, },
+			  { label = "Player modifiers", modName = "PhysicalDamage", modType = "BASE", cfg = "skill" },
+			  { label = "Enemy modifiers", modName = "SelfPhysicalDamage", modType = "BASE", enemy = true, cfg = "skill" }, } ,
 			"Physical", DamageTypes),
 	-- Skill Hit Damage
 	replaceStringInTableByValues(
@@ -87,7 +83,7 @@ return {
 			{ label = "Skill Hit Damage", textSize = 12,
 			  { format = "{0:output:TotalMin} to {0:output:TotalMax}", },
 			},
-			{ format = "{0:output:LightningMin} to {0:output:LightningMax}",
+			{ format = "{0:output:LightningDamage}",
 			  { breakdown = "Lightning" },
 			  { label = "Conversions", modType = "BASE", cfg = "skill", modName = lightningConvert },
 			},
