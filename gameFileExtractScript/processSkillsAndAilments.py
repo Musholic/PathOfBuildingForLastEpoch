@@ -1,12 +1,20 @@
 import json
 from common import *
 
+abilityKeyedArray = load_yaml_file_with_tag_error(resourcesPath + "Ability Manager.asset")["MonoBehaviour"][
+    "keyedArray"]
+
+keyToGuid = {}
+
+for key in abilityKeyedArray:
+    keyToGuid[key["key"]] = key["ability"]
+    pass
+
 construct_mod_data_list()
 
-def load_file_from_guid(ability_guid, suffix=None):
+
+def load_file_from_guid(ability_guid):
     filepath = guidToFilenames[ability_guid['guid']]
-    if suffix:
-        filepath = filepath.replace(".prefab", suffix + ".prefab")
     return load_yaml_file_with_tag_error(filepath)
 
 
@@ -19,17 +27,37 @@ with open("generatedAssets/guidToFilenames.yaml", "r", encoding='utf-8') as yaml
 skills = {
 }
 
-for skillTreeData in skillTreesData:
-    skillData = load_file_from_guid(skillTreeData['ability'])["MonoBehaviour"]
-    if skillData.get('playerAbilityID'):
-        skill = {
-            "name": skillData['abilityName'],
-            "skillTypeTags": skillData['tags'],
-            "castTime": skillData['useDuration'] / (skillData['speedMultiplier'] * 1.1),
-            "baseFlags": {},
-            "stats": {}
-        }
-        match int(skillData['tags']):
+
+def process_skill_data(skill_data, skill=None):
+    if skill_data.get('playerAbilityID') or skill is not None:
+        if skill is None:
+            skill = {
+                "name": skill_data['abilityName'],
+                "skillTypeTags": skill_data['tags'],
+                "castTime": skill_data['useDuration'] / (skill_data['speedMultiplier'] * 1.1),
+                "baseFlags": {},
+                "stats": {}
+            }
+            skills[skill_data['playerAbilityID']] = skill
+            for attributeScalingData in skill_data['attributeScaling']:
+                if len(attributeScalingData['stats']):
+                    match int(attributeScalingData['attribute']):
+                        case 0:
+                            attribute = "str"
+                        case 1:
+                            attribute = "vit"
+                        case 2:
+                            attribute = "int"
+                        case 3:
+                            attribute = "dex"
+                        case 4:
+                            attribute = "att"
+                        case other:
+                            attribute = str(other)
+                    stats = attributeScalingData['stats'][0]
+                    if stats['increasedValue']:
+                        skill['stats']["damage_+%_per_" + attribute] = stats['increasedValue'] * 100
+        match int(skill_data['tags']):
             case val if val & 256:
                 skill["baseFlags"]["spell"] = True
             case val if val & 512:
@@ -41,46 +69,39 @@ for skillTreeData in skillTreesData:
             case val if val & 2048:
                 skill["baseFlags"]["projectile"] = True
                 skill["baseFlags"]["attack"] = True
-        for attributeScalingData in skillData['attributeScaling']:
-            if len(attributeScalingData['stats']):
-                match int(attributeScalingData['attribute']):
-                    case 0:
-                        attribute = "str"
-                    case 1:
-                        attribute = "vit"
-                    case 2:
-                        attribute = "int"
-                    case 3:
-                        attribute = "dex"
-                    case 4:
-                        attribute = "att"
-                    case other:
-                        attribute = str(other)
-                stats = attributeScalingData['stats'][0]
-                if stats['increasedValue']:
-                    skill['stats']["damage_+%_per_" + attribute] = stats['increasedValue'] * 100
                 # if stats['addedValue']:
                 #     skill['stats'].append("added_damage_per_" + attribute)
                 #     skill['level'][len(skill['stats'])] = stats['addedValue']
-        for prefabSuffix in {"", "End", "Aoe", "Hit", " Damage"}:
-            skillPrefabData = load_file_from_guid(skillData['abilityPrefab'], prefabSuffix)
-            for data in skillPrefabData:
-                if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
-                    skillDamageData = data['MonoBehaviour']['baseDamageStats']
-                    set_stats_from_damage_data(skill, skillDamageData, data['MonoBehaviour']['damageTags'])
-                if data.get('MonoBehaviour') and data['MonoBehaviour'].get('ailments'):
-                    for ailmentData in data['MonoBehaviour'].get('ailments'):
-                        ailmentName = load_file_from_guid(ailmentData['ailment'])['MonoBehaviour']['m_Name']
-                        skill['stats']["chance_to_cast_Ailment_" + ailmentName + "_on_hit_%"] = float(
-                            ailmentData['chance']) * 100
-
-        skills[skillData['playerAbilityID']] = skill
-        maxCharges = skillData['maxCharges']
-        if maxCharges:
-            if skillData['channelled'] == 1:
-                skill["castTime"] /= skillData['chargesGainedPerSecond']
+        skill_prefab_data = load_file_from_guid(skill_data['abilityPrefab'])
+        for data in skill_prefab_data:
+            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
+                skill_damage_data = data['MonoBehaviour']['baseDamageStats']
+                set_stats_from_damage_data(skill, skill_damage_data, data['MonoBehaviour']['damageTags'])
+            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('ailments'):
+                for ailment_data in data['MonoBehaviour'].get('ailments'):
+                    ailment_name = load_file_from_guid(ailment_data['ailment'])['MonoBehaviour']['m_Name']
+                    skill['stats']["chance_to_cast_Ailment_" + ailment_name + "_on_hit_%"] = float(
+                        ailment_data['chance']) * 100
+            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('abilityToInstantiateRef'):
+                ref_skill_data = load_file_from_guid(keyToGuid[int(data['MonoBehaviour']['abilityToInstantiateRef']['key'])])["MonoBehaviour"]
+                process_skill_data(ref_skill_data, skill)
+            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('abilityRef'):
+                key = int(data['MonoBehaviour']['abilityRef']['key'])
+                if key != 0:
+                    ref_skill_data = load_file_from_guid(keyToGuid[key])["MonoBehaviour"]
+                    if ref_skill_data != skill_data:
+                        process_skill_data(ref_skill_data, skill)
+        max_charges = skill_data['maxCharges']
+        if max_charges:
+            if skill_data['channelled'] == 1:
+                skill["castTime"] /= skill_data['chargesGainedPerSecond']
             else:
-                skill["stats"]['cooldown'] = 1 / skillData['chargesGainedPerSecond']
+                skill["stats"]['cooldown'] = 1 / skill_data['chargesGainedPerSecond']
+
+
+for skillTreeData in skillTreesData:
+    skillData = load_file_from_guid(skillTreeData['ability'])["MonoBehaviour"]
+    process_skill_data(skillData)
 
 ailmentListData = load_yaml_file_with_tag_error(resourcesPath + "AilmentList.asset")['MonoBehaviour']['list']
 

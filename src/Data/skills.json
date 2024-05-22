@@ -2131,9 +2131,17 @@
         "name": "Aerial Assault",
         "skillTypeTags": 8193,
         "castTime": 0.7954545454545453,
-        "baseFlags": {},
+        "baseFlags": {
+            "hit": true,
+            "projectile": true,
+            "attack": true
+        },
         "stats": {
             "damage_+%_per_dex": 4.0,
+            "damageEffectiveness": 4.0,
+            "throwing_base_physical_damage": 80.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 4.0
         }
     },
@@ -2143,10 +2151,17 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "projectile": true,
-            "attack": true
+            "attack": true,
+            "hit": true
         },
         "stats": {
-            "damage_+%_per_dex": 4.0
+            "damage_+%_per_dex": 4.0,
+            "damageEffectiveness": 1.0,
+            "throwing_base_physical_damage": 12.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "chance_to_cast_Ailment_Poison_on_hit_%": 100.0,
+            "chance_to_cast_Ailment_ArmourShred_on_hit_%": 100.0
         }
     },
     "ab0lh": {
@@ -2214,10 +2229,16 @@
         "skillTypeTags": 261,
         "castTime": 0.6818181818181818,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
-            "damage_+%_per_att": 4.0
+            "damage_+%_per_att": 4.0,
+            "damageEffectiveness": 3.0,
+            "spell_base_physical_damage": 30.0,
+            "spell_base_cold_damage": 30.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
         }
     },
     "ba1574": {
@@ -2296,12 +2317,17 @@
         "skillTypeTags": 16781608,
         "castTime": 0.6818181818181818,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_int": 4.0,
             "damageEffectiveness": 0.25,
-            "spell_base_fire_damage": 5.0
+            "spell_base_fire_damage": 5.0,
+            "spell_base_necrotic_damage": 5.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "chance_to_cast_Ailment_Torment_on_hit_%": 100.0
         }
     },
     "ch4bo": {
@@ -2309,10 +2335,16 @@
         "skillTypeTags": 296,
         "castTime": 0.6818181818181818,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
-            "damage_+%_per_int": 4.0
+            "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 1.0,
+            "spell_base_fire_damage": 10.0,
+            "spell_base_necrotic_damage": 10.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
         }
     },
     "cstri": {
@@ -2333,10 +2365,15 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "melee": true,
-            "attack": true
+            "attack": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_dex": 4.0,
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 2.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 0.700000210000063
         }
     },
@@ -2363,10 +2400,15 @@
         "castTime": 0.7954545454545453,
         "baseFlags": {
             "melee": true,
-            "attack": true
+            "attack": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_dex": 4.0,
+            "damageEffectiveness": 8.5,
+            "melee_base_physical_damage": 170.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 5.0
         }
     },
@@ -2394,8 +2436,8 @@
         },
         "stats": {
             "damage_+%_per_dex": 4.0,
-            "damageEffectiveness": 1.25,
-            "bow_base_lightning_damage": 2.0,
+            "damageEffectiveness": 0.75,
+            "bow_base_lightning_damage": 15.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0
         }
@@ -2451,7 +2493,10 @@
         "name": "Dark Quiver",
         "skillTypeTags": 131072,
         "castTime": 0.6818181818181818,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true
+        },
         "stats": {
             "cooldown": 5.9998800023999515
         }
@@ -2470,10 +2515,15 @@
         "skillTypeTags": 131360,
         "castTime": 0.6818181818181818,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 3.0,
+            "spell_base_necrotic_damage": 60.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 5.0
         }
     },
@@ -2516,10 +2566,11 @@
         "stats": {
             "damage_+%_per_str": 4.0,
             "damage_+%_per_att": 4.0,
-            "damageEffectiveness": 3.5,
+            "damageEffectiveness": 1.0,
             "melee_base_physical_damage": 2.0,
             "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0
+            "critChance": 5.0,
+            "cooldown": 5.0
         }
     },
     "er6no": {
@@ -2562,7 +2613,8 @@
         "castTime": 0.6818181818181818,
         "baseFlags": {
             "projectile": true,
-            "attack": true
+            "attack": true,
+            "spell": true
         },
         "stats": {
             "damage_+%_per_dex": 4.0
@@ -2691,9 +2743,10 @@
         "stats": {
             "damage_+%_per_int": 4.0,
             "damageEffectiveness": 1.0,
-            "0_base_fire_damage": 20.0,
+            "spell_base_fire_damage": 40.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
+            "0_base_fire_damage": 20.0,
             "cooldown": 3.499999825000009
         }
     },
@@ -2703,10 +2756,15 @@
         "castTime": 0.7839866555462883,
         "baseFlags": {
             "melee": true,
-            "attack": true
+            "attack": true,
+            "hit": true
         },
         "stats": {
-            "damage_+%_per_dex": 4.0
+            "damage_+%_per_dex": 4.0,
+            "damageEffectiveness": 0.6,
+            "melee_base_physical_damage": 2.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
         }
     },
     "fr4wl": {
@@ -2746,10 +2804,15 @@
         "skillTypeTags": 260,
         "castTime": 0.6818181818181818,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
-            "damage_+%_per_int": 4.0
+            "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 1.0,
+            "spell_base_cold_damage": 20.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
         }
     },
     "fs3e3": {
@@ -2777,10 +2840,14 @@
         "castTime": 1.0909090909090908,
         "baseFlags": {
             "spell": true,
+            "hit": true,
             "dot": true
         },
         "stats": {
             "damageEffectiveness": 0.25,
+            "spell_base_fire_damage": 60.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "dot_base_fire_damage": 5.0,
             "cooldown": 1.0
         }
@@ -2790,10 +2857,15 @@
         "skillTypeTags": 131336,
         "castTime": 0.3409090909090909,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 2.0,
+            "spell_base_fire_damage": 40.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 14.999250037498127
         }
     },
@@ -2836,10 +2908,15 @@
         "skillTypeTags": 260,
         "castTime": 0.7692307692307692,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
-            "damage_+%_per_int": 4.0
+            "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 3.5,
+            "spell_base_cold_damage": 70.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
         }
     },
     "gs15de": {
@@ -2865,11 +2942,15 @@
         "castTime": 0.5594405594405594,
         "baseFlags": {
             "spell": true,
+            "hit": true,
             "dot": true
         },
         "stats": {
             "damage_+%_per_int": 4.0,
             "damageEffectiveness": 0.375,
+            "spell_base_lightning_damage": 40.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "dot_base_lightning_damage": 7.5,
             "chance_to_cast_Ailment_Slow_on_hit_%": 100.0
         }
@@ -2942,10 +3023,15 @@
         "skillTypeTags": 260,
         "castTime": 0.7655502392344499,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 1.0,
+            "spell_base_cold_damage": 20.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 3.0003000300030003
         }
     },
@@ -2973,6 +3059,7 @@
             "spell": true
         },
         "stats": {
+            "chance_to_cast_Ailment_Chill_on_hit_%": 100.0,
             "cooldown": 1.0
         }
     },
@@ -3157,10 +3244,16 @@
         "castTime": 0.5844155844155844,
         "baseFlags": {
             "projectile": true,
-            "attack": true
+            "attack": true,
+            "spell": true,
+            "hit": true
         },
         "stats": {
-            "damage_+%_per_dex": 4.0
+            "damage_+%_per_dex": 4.0,
+            "damageEffectiveness": 1.0,
+            "throwing_base_physical_damage": 2.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
         }
     },
     "pa67ju": {
@@ -3170,15 +3263,18 @@
         "baseFlags": {
             "melee": true,
             "attack": true,
-            "hit": true
+            "hit": true,
+            "spell": true,
+            "dot": true
         },
         "stats": {
             "damage_+%_per_str": 4.0,
             "damage_+%_per_att": 4.0,
-            "damageEffectiveness": 3.5,
+            "damageEffectiveness": 0.72,
             "melee_base_fire_damage": 2.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
+            "dot_base_fire_damage": 14.4,
             "cooldown": 4.0
         }
     },
@@ -3250,8 +3346,15 @@
         "name": "Reaper Form",
         "skillTypeTags": 0,
         "castTime": 0.5,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_necrotic_damage": 2.0,
+            "critChance": 5.0,
             "cooldown": 20.0
         }
     },
@@ -3263,7 +3366,8 @@
             "spell": true
         },
         "stats": {
-            "damage_+%_per_int": 4.0
+            "damage_+%_per_int": 4.0,
+            "cooldown": 14.999250037498127
         }
     },
     "rs31hi": {
@@ -3315,8 +3419,19 @@
         "name": "Swarmblade Form",
         "skillTypeTags": 0,
         "castTime": 0.7272727272727273,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true,
+            "dot": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 2.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "dot_base_physical_damage": 10.0,
+            "dot_base_poison_damage": 10.0,
             "cooldown": 5.9999998800000025
         }
     },
@@ -3333,8 +3448,15 @@
         "name": "Spriggan Form",
         "skillTypeTags": 0,
         "castTime": 0.6363636363636362,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "spell_base_physical_damage": 20.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 5.9999998800000025
         }
     },
@@ -3445,8 +3567,8 @@
         },
         "stats": {
             "damage_+%_per_int": 4.0,
-            "damageEffectiveness": 1.0,
-            "spell_base_lightning_damage": 20.0,
+            "damageEffectiveness": 2.0,
+            "spell_base_lightning_damage": 40.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0
         }
@@ -3522,11 +3644,16 @@
         "castTime": 0.5909090909090908,
         "baseFlags": {
             "melee": true,
-            "attack": true
+            "attack": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_dex": 4.0,
-            "damage_+%_per_int": 4.0
+            "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 1.0,
+            "melee_base_cold_damage": 2.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
         }
     },
     "ss37kl": {
@@ -3728,14 +3855,9 @@
         "skillTypeTags": 256,
         "castTime": 0.3409090909090909,
         "baseFlags": {
-            "spell": true,
-            "hit": true
+            "spell": true
         },
         "stats": {
-            "damageEffectiveness": 1.0,
-            "spell_base_lightning_damage": 2.0,
-            "base_critical_strike_multiplier_+": 100.0,
-            "critChance": 5.0,
             "cooldown": 5.0
         }
     },
@@ -3766,10 +3888,15 @@
         "skillTypeTags": 257,
         "castTime": 0.40909090909090906,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "hit": true
         },
         "stats": {
             "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 2.5,
+            "spell_base_physical_damage": 50.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 5.0
         }
     },
@@ -3881,8 +4008,8 @@
         },
         "stats": {
             "damage_+%_per_int": 4.0,
-            "damageEffectiveness": 1.0,
-            "spell_base_fire_damage": 20.0,
+            "damageEffectiveness": 0.8,
+            "spell_base_fire_damage": 16.0,
             "base_critical_strike_multiplier_+": 100.0,
             "critChance": 5.0,
             "cooldown": 3.0303030303030303
@@ -3931,10 +4058,14 @@
         "skillTypeTags": 4384,
         "castTime": 0.6818181818181818,
         "baseFlags": {
-            "spell": true
+            "spell": true,
+            "dot": true
         },
         "stats": {
             "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 0.9,
+            "dot_base_necrotic_damage": 18.0,
+            "no_critical_strike_multiplier": 1,
             "cooldown": 13.000013000012999
         }
     }
