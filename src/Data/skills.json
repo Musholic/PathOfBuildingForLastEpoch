@@ -2122,9 +2122,24 @@
         "name": "Assemble Abomination",
         "skillTypeTags": 1,
         "castTime": 2.0454545045454555,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true,
+            "spell": true
+        },
         "stats": {
-            "damage_+%_per_int": 4.0
+            "damage_+%_per_int": 4.0,
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 20.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "cooldown": 5.9998800023999515,
+            "chance_to_cast_Ailment_Bleed_on_hit_%": 100.0,
+            "melee_base_necrotic_damage": 40.0,
+            "melee_base_fire_damage": 40.0,
+            "chance_to_cast_Ailment_Ignite_on_hit_%": 200.0,
+            "spell_base_physical_damage": 20.0
         }
     },
     "aa989": {
@@ -2245,9 +2260,21 @@
         "name": "Ballista",
         "skillTypeTags": 0,
         "castTime": 0.5454545454545454,
-        "baseFlags": {},
+        "baseFlags": {
+            "projectile": true,
+            "attack": true,
+            "hit": true,
+            "spell": true
+        },
         "stats": {
-            "damage_+%_per_dex": 4.0
+            "damage_+%_per_dex": 4.0,
+            "damageEffectiveness": 1.25,
+            "bow_base_physical_damage": 40.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "chance_to_cast_Ailment_Frenzy_on_hit_%": 100.0,
+            "spell_base_fire_damage": 25.0,
+            "chance_to_cast_Ailment_Ignite_on_hit_%": 40.0
         }
     },
     "bc53": {
@@ -2266,8 +2293,19 @@
         "name": "Summon Bear",
         "skillTypeTags": 0,
         "castTime": 1.3636363636363635,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true,
+            "spell": true
+        },
         "stats": {
+            "damageEffectiveness": 1.25,
+            "melee_base_physical_damage": 50.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "spell_base_fire_damage": 25.0,
+            "chance_to_cast_Ailment_Ignite_on_hit_%": 40.0,
             "cooldown": 4.0
         }
     },
@@ -2275,9 +2313,19 @@
         "name": "Summon Bone Golem",
         "skillTypeTags": 0,
         "castTime": 0.6818181818181818,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true,
+            "spell": true
+        },
         "stats": {
-            "cooldown": 10.0
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 35.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "cooldown": 10.0,
+            "spell_base_physical_damage": 20.0
         }
     },
     "bh2": {
@@ -3120,8 +3168,18 @@
         "name": "Manifest Armor",
         "skillTypeTags": 0,
         "castTime": 0.6818181818181818,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true,
+            "spell": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 2.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "spell_base_fire_damage": 20.0,
             "cooldown": 10.0
         }
     },
@@ -3374,8 +3432,11 @@
         "name": "Ring Of Shields",
         "skillTypeTags": 0,
         "castTime": 0.6818181818181818,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": {
+            "chance_to_cast_Ailment_Frenzy_on_hit_%": 100.0,
             "cooldown": 14.992503748125937
         }
     },
@@ -3383,8 +3444,16 @@
         "name": "Summon Sabertooth",
         "skillTypeTags": 0,
         "castTime": 1.3636363636363635,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 18.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 4.0
         }
     },
@@ -3439,8 +3508,17 @@
         "name": "Summon Scorpion",
         "skillTypeTags": 0,
         "castTime": 1.3636363636363635,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 2.0,
+            "melee_base_physical_damage": 40.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "chance_to_cast_Ailment_Poison_on_hit_%": 200.0,
             "cooldown": 4.0
         }
     },
@@ -3480,8 +3558,11 @@
         "name": "Summon Frenzy Totem",
         "skillTypeTags": 0,
         "castTime": 0.5454545454545454,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": {
+            "chance_to_cast_Ailment_Frenzy_on_hit_%": 100.0,
             "cooldown": 5.999988000024
         }
     },
@@ -3507,8 +3588,18 @@
         "name": "Summon Skeletal Mage",
         "skillTypeTags": 0,
         "castTime": 0.6818181818181818,
-        "baseFlags": {},
-        "stats": {}
+        "baseFlags": {
+            "spell": true,
+            "hit": true
+        },
+        "stats": {
+            "damageEffectiveness": 1.5,
+            "spell_base_necrotic_damage": 30.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "chance_to_cast_Ailment_Damned_on_hit_%": 50.0,
+            "cooldown": 10.0
+        }
     },
     "sm87r4": {
         "name": "Smite",
@@ -3589,8 +3680,15 @@
         "name": "Summon Spriggan",
         "skillTypeTags": 0,
         "castTime": 1.3636363636363635,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "spell_base_physical_damage": 20.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 4.0
         }
     },
@@ -3633,8 +3731,16 @@
         "name": "Summon Raptor",
         "skillTypeTags": 0,
         "castTime": 1.3636363636363635,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 18.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 4.0
         }
     },
@@ -3660,15 +3766,38 @@
         "name": "Summon Skeleton",
         "skillTypeTags": 0,
         "castTime": 0.6818181818181818,
-        "baseFlags": {},
-        "stats": {}
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true,
+            "spell": true,
+            "projectile": true
+        },
+        "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 11.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "melee_base_necrotic_damage": 11.0,
+            "spell_base_fire_damage": 25.0,
+            "chance_to_cast_Ailment_Ignite_on_hit_%": 40.0,
+            "cooldown": 10.0,
+            "bow_base_physical_damage": 25.0
+        }
     },
     "ssc50": {
         "name": "Summon Storm Crows",
         "skillTypeTags": 0,
         "castTime": 0.6818181818181818,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "spell_base_lightning_damage": 20.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 4.0
         }
     },
@@ -3732,8 +3861,15 @@
         "name": "Summon Storm Totem",
         "skillTypeTags": 0,
         "castTime": 0.5454545454545454,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 0.55,
+            "spell_base_lightning_damage": 11.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 3.0003000300030003
         }
     },
@@ -3777,7 +3913,9 @@
         "name": "Summon Volatile Zombie",
         "skillTypeTags": 0,
         "castTime": 0.7272727272727273,
-        "baseFlags": {},
+        "baseFlags": {
+            "spell": true
+        },
         "stats": {}
     },
     "sw31a": {
@@ -3795,8 +3933,20 @@
         "name": "Summon Wraith",
         "skillTypeTags": 0,
         "castTime": 0.6198347107438016,
-        "baseFlags": {},
-        "stats": {}
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true,
+            "spell": true
+        },
+        "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 18.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
+            "spell_base_fire_damage": 25.0,
+            "chance_to_cast_Ailment_Ignite_on_hit_%": 40.0
+        }
     },
     "sw43": {
         "name": "Swipe",
@@ -3865,8 +4015,16 @@
         "name": "Summon Thorn Totem",
         "skillTypeTags": 0,
         "castTime": 0.5454545454545454,
-        "baseFlags": {},
-        "stats": {}
+        "baseFlags": {
+            "spell": true,
+            "hit": true
+        },
+        "stats": {
+            "damageEffectiveness": 0.75,
+            "spell_base_physical_damage": 15.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0
+        }
     },
     "to50": {
         "name": "Tornado",
@@ -4048,8 +4206,16 @@
         "name": "Summon Wolf",
         "skillTypeTags": 0,
         "castTime": 1.3636363636363635,
-        "baseFlags": {},
+        "baseFlags": {
+            "melee": true,
+            "attack": true,
+            "hit": true
+        },
         "stats": {
+            "damageEffectiveness": 1.0,
+            "melee_base_physical_damage": 18.0,
+            "base_critical_strike_multiplier_+": 100.0,
+            "critChance": 5.0,
             "cooldown": 4.0
         }
     },

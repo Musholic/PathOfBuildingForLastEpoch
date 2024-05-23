@@ -73,30 +73,48 @@ def process_skill_data(skill_data, skill=None):
                 #     skill['stats'].append("added_damage_per_" + attribute)
                 #     skill['level'][len(skill['stats'])] = stats['addedValue']
         skill_prefab_data = load_file_from_guid(skill_data['abilityPrefab'])
-        for data in skill_prefab_data:
-            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
-                skill_damage_data = data['MonoBehaviour']['baseDamageStats']
-                set_stats_from_damage_data(skill, skill_damage_data, data['MonoBehaviour']['damageTags'])
-            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('ailments'):
-                for ailment_data in data['MonoBehaviour'].get('ailments'):
-                    ailment_name = load_file_from_guid(ailment_data['ailment'])['MonoBehaviour']['m_Name']
-                    skill['stats']["chance_to_cast_Ailment_" + ailment_name + "_on_hit_%"] = float(
-                        ailment_data['chance']) * 100
-            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('abilityToInstantiateRef'):
-                ref_skill_data = load_file_from_guid(keyToGuid[int(data['MonoBehaviour']['abilityToInstantiateRef']['key'])])["MonoBehaviour"]
-                process_skill_data(ref_skill_data, skill)
-            if data.get('MonoBehaviour') and data['MonoBehaviour'].get('abilityRef'):
-                key = int(data['MonoBehaviour']['abilityRef']['key'])
-                if key != 0:
-                    ref_skill_data = load_file_from_guid(keyToGuid[key])["MonoBehaviour"]
-                    if ref_skill_data != skill_data:
-                        process_skill_data(ref_skill_data, skill)
+        process_skill_prefab_data(skill_data, skill_prefab_data, skill)
         max_charges = skill_data['maxCharges']
         if max_charges:
             if skill_data['channelled'] == 1:
                 skill["castTime"] /= skill_data['chargesGainedPerSecond']
             else:
                 skill["stats"]['cooldown'] = 1 / skill_data['chargesGainedPerSecond']
+
+
+def process_skill_prefab_data(skill_data, skill_prefab_data, skill):
+    for data in skill_prefab_data:
+        if data.get('MonoBehaviour') and data['MonoBehaviour'].get('baseDamageStats'):
+            skill_damage_data = data['MonoBehaviour']['baseDamageStats']
+            set_stats_from_damage_data(skill, skill_damage_data, data['MonoBehaviour']['damageTags'])
+        if data.get('MonoBehaviour') and data['MonoBehaviour'].get('ailments'):
+            for ailment_data in data['MonoBehaviour'].get('ailments'):
+                ailment_name = load_file_from_guid(ailment_data['ailment'])['MonoBehaviour']['m_Name']
+                skill['stats']["chance_to_cast_Ailment_" + ailment_name + "_on_hit_%"] = float(
+                    ailment_data['chance']) * 100
+        if data.get('MonoBehaviour') and data['MonoBehaviour'].get('abilityToInstantiateRef'):
+            ref_skill_data = load_file_from_guid(keyToGuid[int(data['MonoBehaviour']['abilityToInstantiateRef']['key'])])["MonoBehaviour"]
+            process_skill_data(ref_skill_data, skill)
+        if data.get('MonoBehaviour') and data['MonoBehaviour'].get('abilityRef'):
+            key = int(data['MonoBehaviour']['abilityRef']['key'])
+            if key != 0:
+                ref_skill_data = load_file_from_guid(keyToGuid[key])["MonoBehaviour"]
+                if ref_skill_data != skill_data:
+                    process_skill_data(ref_skill_data, skill)
+        if data.get('MonoBehaviour') and data['MonoBehaviour'].get('abilityRefs'):
+            for ref in data['MonoBehaviour']['abilityRefs']:
+                key = int(ref['key'])
+                if key != 0:
+                    ref_skill_data = load_file_from_guid(keyToGuid[key])["MonoBehaviour"]
+                    if ref_skill_data != skill_data:
+                        process_skill_data(ref_skill_data, skill)
+        if data.get('MonoBehaviour') and data['MonoBehaviour'].get('entity'):
+            ref_skill_prefab_data = load_file_from_guid(data['MonoBehaviour']['entity'])
+            process_skill_prefab_data(skill_data, ref_skill_prefab_data, skill)
+        if data.get('MonoBehaviour') and data['MonoBehaviour'].get('possibleAbilities'):
+            for ability in data['MonoBehaviour'].get('possibleAbilities'):
+                ref_skill_data = load_file_from_guid(ability)["MonoBehaviour"]
+                process_skill_data(ref_skill_data, skill)
 
 
 for skillTreeData in skillTreesData:
