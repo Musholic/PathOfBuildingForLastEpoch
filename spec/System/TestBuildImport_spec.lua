@@ -22,7 +22,7 @@ expose("BuildImport #buildImport", function()
         assert.are.equals(9739, round(build.calcsTab.mainOutput.FullDPS))
     end)
 
-    it("build import from LETools, minionDps calculation #inTest", function()
+    it("build import from LETools, minionDps calculation", function()
         newBuild()
         local jsonFile = io.open("../spec/System/letools_import_minions.json", "r")
         local importCode = jsonFile:read("*a")

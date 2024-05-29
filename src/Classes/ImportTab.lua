@@ -798,9 +798,10 @@ function ImportTabClass:GuessMainSocketGroup()
     local bestSocketGroup = nil
     for i, socketGroup in pairs(self.build.skillsTab.socketGroupList) do
         self.build.mainSocketGroup = i
+        socketGroup.includeInFullDPS = true
         local mainOutput = self.build.calcsTab.calcs.buildOutput(self.build, "MAIN").player.output
-        local minionOutput = self.build.calcsTab.calcs.buildOutput(self.build, "MAIN").minion.output
-        local dps = mainOutput.TotalDPS + minionOutput.TotalDPS
+        socketGroup.includeInFullDPS = false
+        local dps = mainOutput.FullDPS
         if dps > bestDps then
             bestDps = dps
             bestSocketGroup = i
