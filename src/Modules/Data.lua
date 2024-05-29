@@ -621,8 +621,7 @@ for skillId, grantedEffect in pairs(data.skills) do
 end
 
 -- Load minions
-data.minions = { }
-LoadModule("Data/Minions", data.minions, makeSkillMod, makeFlagMod)
+data.minions = readJsonFile("Data/minions.json")
 
 -- Item bases
 data.itemBases = readJsonFile("Data/Bases/bases.json")

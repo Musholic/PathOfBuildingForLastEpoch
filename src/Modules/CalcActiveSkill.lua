@@ -632,72 +632,12 @@ function calcs.buildActiveSkillModList(env, activeSkill)
 			minion.enemy = env.enemy
 			minion.type = minionType
 			minion.minionData = env.data.minions[minionType]
-			minion.level = activeSkill.skillData.minionLevelIsEnemyLevel and env.enemyLevel or 
-								activeSkill.skillData.minionLevelIsPlayerLevel and (m_min(env.build and env.build.characterLevel or activeSkill.skillData.minionLevel or activeEffect.grantedEffectLevel.levelRequirement, activeSkill.skillData.minionLevelIsPlayerLevel)) or 
-								activeSkill.skillData.minionLevel or activeEffect.grantedEffectLevel.levelRequirement
-			-- fix minion level between 1 and 100
-			minion.level = m_min(m_max(minion.level,1),100) 
+			minion.level = env.build and env.build.characterLevel
 			minion.itemList = { }
 			minion.uses = activeGrantedEffect.minionUses
 			minion.lifeTable = (minion.minionData.lifeScaling == "AltLife1" and env.data.monsterLifeTable2) or (minion.minionData.lifeScaling == "AltLife2" and env.data.monsterLifeTable3) or (isSpectre and env.data.monsterLifeTable) or env.data.monsterAllyLifeTable
-			local attackTime = minion.minionData.attackTime
-			local damage = (isSpectre and env.data.monsterDamageTable[minion.level] or env.data.monsterAllyDamageTable[minion.level]) * minion.minionData.damage
-			if not minion.minionData.baseDamageIgnoresAttackSpeed then -- minions with this flag do not factor attack time into their base damage
-				 damage = damage * attackTime
-			end
-			if activeGrantedEffect.minionHasItemSet then
-				if env.mode == "CALCS" and activeSkill == env.player.mainSkill then
-					if not env.build.itemsTab.itemSets[activeEffect.srcInstance.skillMinionItemSetCalcs] then
-						activeEffect.srcInstance.skillMinionItemSetCalcs = env.build.itemsTab.itemSetOrderList[1]
-					end
-					minion.itemSet = env.build.itemsTab.itemSets[activeEffect.srcInstance.skillMinionItemSetCalcs]
-				else
-					if not env.build.itemsTab.itemSets[activeEffect.srcInstance.skillMinionItemSet] then
-						activeEffect.srcInstance.skillMinionItemSet = env.build.itemsTab.itemSetOrderList[1]
-					end
-					minion.itemSet = env.build.itemsTab.itemSets[activeEffect.srcInstance.skillMinionItemSet]
-				end
-			elseif activeEffect.srcInstance and not (activeEffect.gemData and activeEffect.gemData.secondaryGrantedEffect) then
-				activeEffect.srcInstance.skillMinionItemSetCalcs = nil
-				activeEffect.srcInstance.skillMinionItemSet = nil
-			end
-			if activeSkill.skillData.minionUseBowAndQuiver and env.player.weaponData1.type == "Bow" then
-				minion.weaponData1 = env.player.weaponData1
-			elseif env.theIronMass and minionType == "RaisedSkeleton" then
-				minion.weaponData1 = env.player.weaponData1
-			else
-				minion.weaponData1 = {
-					type = minion.minionData.weaponType1 or "None",
-					AttackRate = 1 / attackTime,
-					CritChance = 5,
-					PhysicalMin = round(damage * (1 - minion.minionData.damageSpread)),
-					PhysicalMax = round(damage * (1 + minion.minionData.damageSpread)),
-					range = minion.minionData.attackRange,
-				}
-			end
+			minion.weaponData1 = env.player.weaponData1
 			minion.weaponData2 = { }
-			if minion.uses then
-				if minion.uses["Weapon 1"] then
-					if minion.itemSet then
-						local item = env.build.itemsTab.items[minion.itemSet[minion.itemSet.useSecondWeaponSet and "Weapon 1 Swap" or "Weapon 1"].selItemId]
-						if item and item.weaponData then
-							minion.weaponData1 = item.weaponData[1]
-						end
-					else
-						minion.weaponData1 = env.player.weaponData1
-					end
-				end
-				if minion.uses["Weapon 2"] then	
-					if minion.itemSet then
-						local item = env.build.itemsTab.items[minion.itemSet[minion.itemSet.useSecondWeaponSet and "Weapon 2 Swap" or "Weapon 2"].selItemId]
-						if item and item.weaponData then
-							minion.weaponData2 = item.weaponData[2]
-						end
-					else
-						minion.weaponData2 = env.player.weaponData2
-					end
-				end
-			end
 		end
 	elseif activeEffect.srcInstance and not (activeEffect.gemData and activeEffect.gemData.secondaryGrantedEffect) then
 		activeEffect.srcInstance.skillMinionCalcs = nil
@@ -809,15 +749,6 @@ function calcs.createMinionSkills(env, activeSkill)
 			level = 1,
 			quality = 0,
 		}
-		if #activeEffect.grantedEffect.levels > 1 then
-			for level, levelData in ipairs(activeEffect.grantedEffect.levels) do
-				if levelData.levelRequirement > minion.level then
-					break
-				else
-					activeEffect.level = level
-				end
-			end
-		end
 		local minionSkill = calcs.createActiveSkill(activeEffect, activeSkill.supportList, minion, nil, activeSkill)
 		calcs.buildActiveSkillModList(env, minionSkill)
 		minionSkill.skillFlags.minion = true

@@ -73,7 +73,7 @@ local function findTriggerSkill(env, skill, source, triggerRate, comparer)
 	end
 
 	local uuid = cacheSkillUUID(skill, env)
-	if not GlobalCache.cachedData["CACHE"][uuid] or GlobalCache.noCache then
+	if not GlobalCache.cachedData["CACHE"][uuid] then
 		calcs.buildActiveSkill(env, "CACHE", skill)
 	end
 
