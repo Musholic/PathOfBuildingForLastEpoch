@@ -1232,8 +1232,7 @@
             "y": 9106.4002,
             "maxPoints": 8,
             "stats": [
-                "4% Increased Mana Regen",
-                "3 Effect Cooldown (seconds)"
+                "4% Increased Mana Regen"
             ],
             "notScalingStats": [
                 "13% Chance Per Curse to gain Mana on hit",
@@ -2071,7 +2070,7 @@
             "stats": [
                 "+15 Ward Decay Threshold",
                 "+3 Ward Gained On Kill",
-                "+1 Ward Per Second Per 2 Intelligence While Channeling"
+                "+1 Ward Per Second Per 3 Intelligence While Channeling"
             ],
             "notScalingStats": [],
             "noScalingPointThreshold": 0,
@@ -2109,7 +2108,10 @@
             "reqPoints": [
                 "5"
             ],
-            "out": []
+            "out": [],
+            "description": [
+                "Your {Rip Blood's} hits have a chance to bleed enemies."
+            ]
         },
         "Acolyte-91": {
             "skill": "Acolyte-91",
@@ -2139,8 +2141,8 @@
             "y": 8798.800216,
             "maxPoints": 8,
             "stats": [
-                "3% Less Damage Taken while Channeling",
-                "3% More Damage to Damned while Channeling"
+                "2% Less Damage Taken while Channeling",
+                "2% More Damage to Damned while Channeling"
             ],
             "notScalingStats": [],
             "noScalingPointThreshold": 0,
@@ -2540,8 +2542,8 @@
             "y": 8491.200181035156,
             "maxPoints": 5,
             "stats": [
-                "1% More Witchfire Damage",
-                "3% More Witchfire Damage",
+                "1% More Witchfire Damage per Ignite chance",
+                "3% More Witchfire Damage per Damned chance",
                 "1 Number of Witchfire Spreads within 10m"
             ],
             "notScalingStats": [
@@ -2556,7 +2558,7 @@
             ],
             "out": [],
             "description": [
-                "{Witchfire} that you inflict deals more damage (multiplicative with other modifiers) per global chance to ignite with fire skills and per global chance to inflict damned with necrotic skills.\n\nAdditionally while you have {Ignite} or {Damned Overload} your hits spread {Witchfire} to a number of enemies within 10 meters."
+                "{Witchfire} that you inflict deals more damage (multiplicative with other modifiers) per 1% global chance to ignite with fire skills and per 1% global chance to inflict damned with necrotic skills.\n\nAdditionally while you have {Ignite} or {Damned Overload} your hits spread {Witchfire} to a number of enemies within 10 meters."
             ]
         },
         "Acolyte-111": {
@@ -2567,7 +2569,7 @@
             "maxPoints": 5,
             "stats": [
                 "3% Increased Health",
-                "0.1% More Damage per Negative Ailment on You"
+                "0.04% More Damage per Negative Ailment on You"
             ],
             "notScalingStats": [
                 "Damn Yourself on Kill or Minion Kill",
@@ -3350,7 +3352,7 @@
         "ad0ry-0": {
             "skill": "ad0ry-0",
             "name": "Aura of Decay",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -3371,7 +3373,7 @@
         "ad0ry-2": {
             "skill": "ad0ry-2",
             "name": "Rot Weaver",
-            "x": 7083.3998,
+            "x": 7131.7998,
             "y": 332.0,
             "maxPoints": 3,
             "stats": [
@@ -3394,7 +3396,7 @@
         "ad0ry-3": {
             "skill": "ad0ry-3",
             "name": "Icarian Poison",
-            "x": 7995.3998,
+            "x": 8043.7998,
             "y": 760.0,
             "maxPoints": 1,
             "stats": [
@@ -3421,7 +3423,7 @@
         "ad0ry-4": {
             "skill": "ad0ry-4",
             "name": "Unending Sickness",
-            "x": 8715.3998,
+            "x": 8763.7998,
             "y": 1056.0,
             "maxPoints": 3,
             "stats": [
@@ -3441,7 +3443,7 @@
         "ad0ry-5": {
             "skill": "ad0ry-5",
             "name": "Mana Blight",
-            "x": 8530.5998,
+            "x": 8578.9998,
             "y": 332.0,
             "maxPoints": 3,
             "stats": [
@@ -3466,7 +3468,7 @@
         "ad0ry-6": {
             "skill": "ad0ry-6",
             "name": "Poisoned Soul",
-            "x": 9026.1996,
+            "x": 9074.5996,
             "y": 332.0,
             "maxPoints": 1,
             "stats": [
@@ -3487,7 +3489,7 @@
         "ad0ry-7": {
             "skill": "ad0ry-7",
             "name": "Seeping Wounds",
-            "x": 7995.3998,
+            "x": 8043.7998,
             "y": -50.4,
             "maxPoints": 5,
             "stats": [
@@ -3509,8 +3511,8 @@
         },
         "ad0ry-8": {
             "skill": "ad0ry-8",
-            "name": "Decrepify",
-            "x": 8387.3998,
+            "name": "Armorbane",
+            "x": 8435.7998,
             "y": -616.0,
             "maxPoints": 1,
             "stats": [
@@ -3533,7 +3535,7 @@
         "ad0ry-9": {
             "skill": "ad0ry-9",
             "name": "Corrosive Aura",
-            "x": 7652.5998,
+            "x": 7700.9998,
             "y": -616.0,
             "maxPoints": 3,
             "stats": [
@@ -3555,7 +3557,7 @@
         "ad0ry-10": {
             "skill": "ad0ry-10",
             "name": "Undertow",
-            "x": 7083.3998,
+            "x": 7131.7998,
             "y": -332.0,
             "maxPoints": 4,
             "stats": [
@@ -3578,7 +3580,7 @@
         "ad0ry-11": {
             "skill": "ad0ry-11",
             "name": "Putrid Bombs",
-            "x": 6667.3998,
+            "x": 6715.7998,
             "y": -692.0,
             "maxPoints": 1,
             "stats": [
@@ -3602,7 +3604,7 @@
         "ad0ry-12": {
             "skill": "ad0ry-12",
             "name": "Chill to the Bone",
-            "x": 6107.3998,
+            "x": 6155.7998,
             "y": -692.0,
             "maxPoints": 3,
             "stats": [
@@ -3626,7 +3628,7 @@
         "ad0ry-13": {
             "skill": "ad0ry-13",
             "name": "Absence of Life",
-            "x": 5691.3998,
+            "x": 5739.7998,
             "y": -332.0,
             "maxPoints": 4,
             "stats": [
@@ -3654,7 +3656,7 @@
         "ad0ry-14": {
             "skill": "ad0ry-14",
             "name": "Plague Bearers",
-            "x": 5315.3998,
+            "x": 5363.7998,
             "y": -744.0,
             "maxPoints": 1,
             "stats": [
@@ -3677,7 +3679,7 @@
         "ad0ry-15": {
             "skill": "ad0ry-15",
             "name": "Infectious Bones",
-            "x": 4807.3998,
+            "x": 4855.7998,
             "y": -856.0,
             "maxPoints": 3,
             "stats": [
@@ -3697,7 +3699,7 @@
         "ad0ry-16": {
             "skill": "ad0ry-16",
             "name": "Loathing",
-            "x": 5243.3998,
+            "x": 5291.7998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -3722,7 +3724,7 @@
         "ad0ry-17": {
             "skill": "ad0ry-17",
             "name": "Feast of Souls",
-            "x": 4433.79972,
+            "x": 4482.19972,
             "y": -492.399904,
             "maxPoints": 3,
             "stats": [
@@ -3747,7 +3749,7 @@
         "ad0ry-18": {
             "skill": "ad0ry-18",
             "name": "Growing Hunger",
-            "x": 3899.3998,
+            "x": 3947.7998,
             "y": -540.0,
             "maxPoints": 1,
             "stats": [
@@ -3767,7 +3769,7 @@
         "ad0ry-19": {
             "skill": "ad0ry-19",
             "name": "Poison Skin",
-            "x": 4543.3998,
+            "x": 4591.7998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -3788,7 +3790,7 @@
         "ad0ry-20": {
             "skill": "ad0ry-20",
             "name": "Inoculation",
-            "x": 5691.3998,
+            "x": 5739.7998,
             "y": 332.0,
             "maxPoints": 4,
             "stats": [
@@ -3812,7 +3814,7 @@
         "ad0ry-21": {
             "skill": "ad0ry-21",
             "name": "Vulnerability",
-            "x": 4797.3998,
+            "x": 4845.7998,
             "y": 456.0,
             "maxPoints": 3,
             "stats": [
@@ -3838,7 +3840,7 @@
         "ad0ry-22": {
             "skill": "ad0ry-22",
             "name": "Fume Weaver",
-            "x": 3963.3998,
+            "x": 4011.7998,
             "y": 276.0,
             "maxPoints": 1,
             "stats": [
@@ -3859,7 +3861,7 @@
         "ad0ry-23": {
             "skill": "ad0ry-23",
             "name": "Poison Bolt",
-            "x": 4283.3998,
+            "x": 4331.7998,
             "y": 716.0,
             "maxPoints": 1,
             "stats": [
@@ -3881,7 +3883,7 @@
         "ad0ry-24": {
             "skill": "ad0ry-24",
             "name": "Poison Barrage",
-            "x": 3811.3998,
+            "x": 3859.7998,
             "y": 948.0,
             "maxPoints": 4,
             "stats": [
@@ -3901,7 +3903,7 @@
         "ad0ry-25": {
             "skill": "ad0ry-25",
             "name": "Corruption",
-            "x": 5175.3998,
+            "x": 5223.7998,
             "y": 844.0,
             "maxPoints": 3,
             "stats": [
@@ -3927,7 +3929,7 @@
         "ad0ry-26": {
             "skill": "ad0ry-26",
             "name": "Death Bloom",
-            "x": 4711.3998,
+            "x": 4759.7998,
             "y": 1156.0,
             "maxPoints": 2,
             "stats": [
@@ -3950,7 +3952,7 @@
         "ad0ry-27": {
             "skill": "ad0ry-27",
             "name": "Bubonic Aura",
-            "x": 5783.3998,
+            "x": 5831.7998,
             "y": 938.4,
             "maxPoints": 3,
             "stats": [
@@ -3974,7 +3976,7 @@
         "ad0ry-28": {
             "skill": "ad0ry-28",
             "name": "Plague Rat",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": 740.0,
             "maxPoints": 4,
             "stats": [
@@ -3997,7 +3999,7 @@
         "ad0ry-29": {
             "skill": "ad0ry-29",
             "name": "Aura of Terror",
-            "x": 7543.3998,
+            "x": 7591.7998,
             "y": 1148.0,
             "maxPoints": 3,
             "stats": [
@@ -4022,7 +4024,7 @@
         "ad0ry-30": {
             "skill": "ad0ry-30",
             "name": "Respite",
-            "x": 6991.3998,
+            "x": 7039.7998,
             "y": 938.4,
             "maxPoints": 4,
             "stats": [
@@ -4048,7 +4050,7 @@
         "ad0ry-31": {
             "skill": "ad0ry-31",
             "name": "Incipient Decay",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": 1148.0,
             "maxPoints": 1,
             "stats": [
@@ -4306,8 +4308,7 @@
             "y": 1000.0,
             "maxPoints": 3,
             "stats": [
-                "10% Bone Armor Chance On Kill",
-                "4 Bone Armor Duration (seconds)"
+                "10% Bone Armor Chance On Kill"
             ],
             "in": [
                 "bc53-9"
@@ -4319,7 +4320,7 @@
                 "bc53-11"
             ],
             "description": [
-                "If you kill an enemy affected by Bone Curse you have a chance to gain {Bone Armor} for a short duration, which grants armor and less damage taken (multiplicative with other modifiers).\r"
+                "If you kill an enemy affected by Bone Curse you have a chance to gain {Bone Armor} for 4 seconds, which grants less damage taken (multiplicative with other modifiers).\r"
             ]
         },
         "bc53-11": {
@@ -4456,9 +4457,6 @@
             ],
             "description": [
                 "When you directly cast Bone Curse you summon a {Bone Prison} around the target area, trapping enemies inside. Bone Prison lasts a long time, but can be attacked and destroyed.\n\nBone Curse has a significantly longer cooldown."
-            ],
-            "reminderText": [
-                "The {Bone Prison} is considered a minion and is made up of several small sections, each with 500 base health. "
             ]
         },
         "bc53-17": {
@@ -4487,9 +4485,9 @@
             "name": "Ossify",
             "x": 6915.7998,
             "y": 1220.0,
-            "maxPoints": 5,
+            "maxPoints": 4,
             "stats": [
-                "+500 Bone Prison Health"
+                "-15% Damage Taken"
             ],
             "in": [
                 "bc53-16"
@@ -4499,7 +4497,7 @@
             ],
             "out": [],
             "description": [
-                "{Bone Prison} has significantly more health."
+                "Your {Bone Prison} takes less damage (multiplicative with other modifiers)."
             ]
         },
         "bc53-19": {
@@ -5446,7 +5444,7 @@
         "bp2nk-0": {
             "skill": "bp2nk-0",
             "name": "Marrow Shards",
-            "x": 6387.3998,
+            "x": 6263.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -5466,7 +5464,7 @@
         "bp2nk-2": {
             "skill": "bp2nk-2",
             "name": "Bone Knives",
-            "x": 6895.3998,
+            "x": 6771.7998,
             "y": -548.0,
             "maxPoints": 1,
             "stats": [
@@ -5492,7 +5490,7 @@
         "bp2nk-3": {
             "skill": "bp2nk-3",
             "name": "Marrow Hunger",
-            "x": 6387.3998,
+            "x": 6263.7998,
             "y": -768.0,
             "maxPoints": 3,
             "stats": [
@@ -5512,7 +5510,7 @@
         "bp2nk-4": {
             "skill": "bp2nk-4",
             "name": "Splintering Impact",
-            "x": 7467.3998,
+            "x": 7343.7998,
             "y": -600.0,
             "maxPoints": 1,
             "stats": [
@@ -5542,7 +5540,7 @@
         "bp2nk-5": {
             "skill": "bp2nk-5",
             "name": "Carving",
-            "x": 7987.3998,
+            "x": 7863.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -5570,7 +5568,7 @@
         "bp2nk-6": {
             "skill": "bp2nk-6",
             "name": "Ghost Splinters",
-            "x": 7187.3998,
+            "x": 7063.7998,
             "y": -0.0,
             "maxPoints": 6,
             "stats": [
@@ -5593,7 +5591,7 @@
         "bp2nk-7": {
             "skill": "bp2nk-7",
             "name": "Gouging Splinters",
-            "x": 8980.1998,
+            "x": 8856.5998,
             "y": -240.0,
             "maxPoints": 4,
             "stats": [
@@ -5615,7 +5613,7 @@
         "bp2nk-8": {
             "skill": "bp2nk-8",
             "name": "Crimson Ivory",
-            "x": 8628.99964,
+            "x": 8505.39964,
             "y": -720.0,
             "maxPoints": 4,
             "stats": [
@@ -5635,7 +5633,7 @@
         "bp2nk-9": {
             "skill": "bp2nk-9",
             "name": "Dark Precision",
-            "x": 8980.1998,
+            "x": 8856.5998,
             "y": 240.0,
             "maxPoints": 3,
             "stats": [
@@ -5657,7 +5655,7 @@
         "bp2nk-10": {
             "skill": "bp2nk-10",
             "name": "Ivory Obliteration",
-            "x": 8628.9998,
+            "x": 8505.3998,
             "y": 720.0,
             "maxPoints": 1,
             "stats": [
@@ -5677,7 +5675,7 @@
         "bp2nk-11": {
             "skill": "bp2nk-11",
             "name": "Dead Weight",
-            "x": 6895.3998,
+            "x": 6771.7998,
             "y": 548.0,
             "maxPoints": 5,
             "stats": [
@@ -5701,7 +5699,7 @@
         "bp2nk-12": {
             "skill": "bp2nk-12",
             "name": "Blood Assassin",
-            "x": 6387.3998,
+            "x": 6263.7998,
             "y": 744.0,
             "maxPoints": 3,
             "stats": [
@@ -5725,7 +5723,7 @@
         "bp2nk-13": {
             "skill": "bp2nk-13",
             "name": "Marrow Death",
-            "x": 6907.3998,
+            "x": 6783.7998,
             "y": 1168.0,
             "maxPoints": 2,
             "stats": [
@@ -5747,7 +5745,7 @@
         "bp2nk-14": {
             "skill": "bp2nk-14",
             "name": "Femoral Offering",
-            "x": 7527.3998,
+            "x": 7403.7998,
             "y": 1244.0,
             "maxPoints": 1,
             "stats": [
@@ -5768,7 +5766,7 @@
         "bp2nk-15": {
             "skill": "bp2nk-15",
             "name": "Twin Malevolence",
-            "x": 5811.3998,
+            "x": 5687.7998,
             "y": 1216.0,
             "maxPoints": 1,
             "stats": [
@@ -5788,7 +5786,7 @@
         "bp2nk-16": {
             "skill": "bp2nk-16",
             "name": "Bone Splinters",
-            "x": 7467.3998,
+            "x": 7343.7998,
             "y": 600.0,
             "maxPoints": 1,
             "stats": [
@@ -5818,7 +5816,7 @@
         "bp2nk-17": {
             "skill": "bp2nk-17",
             "name": "Marrow Caster",
-            "x": 8099.3998,
+            "x": 7975.7998,
             "y": 888.0,
             "maxPoints": 1,
             "stats": [
@@ -5839,7 +5837,7 @@
         "bp2nk-18": {
             "skill": "bp2nk-18",
             "name": "Ossumancy",
-            "x": 5879.3998,
+            "x": 5755.7998,
             "y": -548.0,
             "maxPoints": 7,
             "stats": [
@@ -5862,7 +5860,7 @@
         "bp2nk-19": {
             "skill": "bp2nk-19",
             "name": "Shredding Bones",
-            "x": 5247.3998,
+            "x": 5123.7998,
             "y": -779.99988,
             "maxPoints": 5,
             "stats": [
@@ -5882,7 +5880,7 @@
         "bp2nk-20": {
             "skill": "bp2nk-20",
             "name": "Apathy",
-            "x": 4911.3998,
+            "x": 4787.7998,
             "y": -280.0,
             "maxPoints": 1,
             "stats": [
@@ -5905,7 +5903,7 @@
         "bp2nk-21": {
             "skill": "bp2nk-21",
             "name": "Treachery",
-            "x": 4339.3998,
+            "x": 4215.7998,
             "y": -279.99994,
             "maxPoints": 7,
             "stats": [
@@ -5928,7 +5926,7 @@
         "bp2nk-22": {
             "skill": "bp2nk-22",
             "name": "Dark Reverie",
-            "x": 4059.3998,
+            "x": 3935.7998,
             "y": -779.99992,
             "maxPoints": 2,
             "stats": [
@@ -5951,7 +5949,7 @@
         "bp2nk-23": {
             "skill": "bp2nk-23",
             "name": "Blood Reverie",
-            "x": 4059.3998,
+            "x": 3935.7998,
             "y": 200.0,
             "maxPoints": 2,
             "stats": [
@@ -5971,7 +5969,7 @@
         "bp2nk-24": {
             "skill": "bp2nk-24",
             "name": "Soul Blood",
-            "x": 5879.3998,
+            "x": 5755.7998,
             "y": 548.0,
             "maxPoints": 4,
             "stats": [
@@ -5996,7 +5994,7 @@
         "bp2nk-25": {
             "skill": "bp2nk-25",
             "name": "Bones Of The Follower",
-            "x": 5151.3998,
+            "x": 5027.7998,
             "y": 308.0,
             "maxPoints": 1,
             "stats": [
@@ -6020,7 +6018,7 @@
         "bp2nk-26": {
             "skill": "bp2nk-26",
             "name": "Rip Marrow",
-            "x": 5151.3998,
+            "x": 5027.7998,
             "y": 956.0,
             "maxPoints": 1,
             "stats": [
@@ -6047,7 +6045,7 @@
         "bp2nk-27": {
             "skill": "bp2nk-27",
             "name": "Marrow Eater",
-            "x": 4563.3998,
+            "x": 4439.7998,
             "y": 1192.0,
             "maxPoints": 3,
             "stats": [
@@ -6070,7 +6068,7 @@
         "bp2nk-28": {
             "skill": "bp2nk-28",
             "name": "Life Blood",
-            "x": 4563.3998,
+            "x": 4439.7998,
             "y": 684.0,
             "maxPoints": 2,
             "stats": [
@@ -6095,7 +6093,7 @@
         "bp2nk-29": {
             "skill": "bp2nk-29",
             "name": "Spirit Feast",
-            "x": 3983.3998,
+            "x": 3859.7998,
             "y": 956.0,
             "maxPoints": 1,
             "stats": [
@@ -6119,7 +6117,7 @@
         "bp2nk-30": {
             "skill": "bp2nk-30",
             "name": "Demise",
-            "x": 5587.3998,
+            "x": 5463.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -6139,7 +6137,7 @@
         "ch0fs-0": {
             "skill": "ch0fs-0",
             "name": "Profane Form",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -6157,7 +6155,7 @@
         "ch0fs-2": {
             "skill": "ch0fs-2",
             "name": "Fragile Crust",
-            "x": 5581.7998,
+            "x": 5630.199799999999,
             "y": 100.0,
             "maxPoints": 3,
             "stats": [
@@ -6182,7 +6180,7 @@
         "ch0fs-3": {
             "skill": "ch0fs-3",
             "name": "Fell Fire",
-            "x": 5475.7998,
+            "x": 5524.199799999999,
             "y": -460.0,
             "maxPoints": 4,
             "stats": [
@@ -6214,7 +6212,7 @@
         "ch0fs-4": {
             "skill": "ch0fs-4",
             "name": "Stygian Current",
-            "x": 4597.799800000001,
+            "x": 4646.1998,
             "y": -500.0,
             "maxPoints": 5,
             "stats": [
@@ -6240,7 +6238,7 @@
         "ch0fs-5": {
             "skill": "ch0fs-5",
             "name": "Of Gloom and Flames",
-            "x": 3884.5998,
+            "x": 3932.9997999999996,
             "y": -763.2,
             "maxPoints": 1,
             "stats": [
@@ -6256,16 +6254,19 @@
             "out": [],
             "description": [
                 "Chthonic Fissure now creates a secondary Fissure in the opposite direction that casts its own {Spirits}. Enemies can take damage from both Fissures if they stand on both, but Chthonic Fissure costs significantly more mana."
+            ],
+            "reminderText": [
+                "This effect will not create more than 2 Fissures if you also have {The Sunderer's Domain} node."
             ]
         },
         "ch0fs-6": {
             "skill": "ch0fs-6",
             "name": "Chaotic Rupture",
-            "x": 3884.5998,
+            "x": 3932.9997999999996,
             "y": -231.6,
             "maxPoints": 3,
             "stats": [
-                "20% Chance to replace Spirits with Chaos Bolts",
+                "13% Chance to replace Spirits with Chaos Bolts",
                 "60% Chaos Bolts Mana Consumption",
                 "60% Chance for no Extra Projectiles"
             ],
@@ -6283,7 +6284,7 @@
         "ch0fs-7": {
             "skill": "ch0fs-7",
             "name": "Spirit Gale",
-            "x": 4981.79972,
+            "x": 5030.19972,
             "y": 240.0,
             "maxPoints": 2,
             "stats": [
@@ -6308,7 +6309,7 @@
         "ch0fs-8": {
             "skill": "ch0fs-8",
             "name": "Severed Wards",
-            "x": 4328.9998,
+            "x": 4377.399799999999,
             "y": 240.00004,
             "maxPoints": 3,
             "stats": [
@@ -6334,7 +6335,7 @@
         "ch0fs-9": {
             "skill": "ch0fs-9",
             "name": "Singed by Terror",
-            "x": 3948.9998,
+            "x": 3997.3997999999997,
             "y": 580.8,
             "maxPoints": 3,
             "stats": [
@@ -6356,7 +6357,7 @@
         "ch0fs-10": {
             "skill": "ch0fs-10",
             "name": "Return Below",
-            "x": 3830.1998000000003,
+            "x": 3878.5998,
             "y": 1133.2,
             "maxPoints": 1,
             "stats": [
@@ -6378,7 +6379,7 @@
         "ch0fs-11": {
             "skill": "ch0fs-11",
             "name": "Damned Waters",
-            "x": 4921.3998,
+            "x": 4969.7998,
             "y": 780.8,
             "maxPoints": 3,
             "stats": [
@@ -6401,7 +6402,7 @@
         "ch0fs-12": {
             "skill": "ch0fs-12",
             "name": "Grim Tide",
-            "x": 4661.3998,
+            "x": 4709.7998,
             "y": 1223.2,
             "maxPoints": 1,
             "stats": [
@@ -6424,11 +6425,11 @@
         "ch0fs-13": {
             "skill": "ch0fs-13",
             "name": "Twisted Waves",
-            "x": 5181.79972,
+            "x": 5230.19972,
             "y": 1223.2,
             "maxPoints": 3,
             "stats": [
-                "+1% Damage per 2% Necrotic Res"
+                "+1% Damage per 3% Necrotic Res"
             ],
             "in": [
                 "ch0fs-11"
@@ -6438,13 +6439,13 @@
             ],
             "out": [],
             "description": [
-                "{Torment} deals more damage (multiplicative with other modifiers) per 2% uncapped necrotic resistance."
+                "{Torment} deals more damage (multiplicative with other modifiers) based on your uncapped necrotic resistance."
             ]
         },
         "ch0fs-14": {
             "skill": "ch0fs-14",
             "name": "Eradication",
-            "x": 5986.5998,
+            "x": 6034.9998,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -6470,7 +6471,7 @@
         "ch0fs-15": {
             "skill": "ch0fs-15",
             "name": "Beacon of Torment",
-            "x": 5781.79972,
+            "x": 5830.19972,
             "y": 1208.0,
             "maxPoints": 1,
             "stats": [
@@ -6491,7 +6492,7 @@
         "ch0fs-16": {
             "skill": "ch0fs-16",
             "name": "Grasp of the Undying",
-            "x": 6795.3998,
+            "x": 6843.7998,
             "y": 700.0,
             "maxPoints": 4,
             "stats": [
@@ -6520,7 +6521,7 @@
         "ch0fs-17": {
             "skill": "ch0fs-17",
             "name": "The Sunderer's Domain",
-            "x": 7087.3998,
+            "x": 7135.7998,
             "y": 1208.0,
             "maxPoints": 1,
             "stats": [
@@ -6539,12 +6540,15 @@
             ],
             "description": [
                 "You can now have additional Fissures active at a time, but {Spirits} are released less frequently.\n\nIf a Fissure is placed over an existing one, the new Fissure closes after 1 second."
+            ],
+            "reminderText": [
+                "You cannot create more than 2 Fissures if you also have the {Of Gloom and Flames} node."
             ]
         },
         "ch0fs-18": {
             "skill": "ch0fs-18",
             "name": "Deepest Ravine",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": 1208.0,
             "maxPoints": 1,
             "stats": [
@@ -6565,7 +6569,7 @@
         "ch0fs-19": {
             "skill": "ch0fs-19",
             "name": "Rekindled Graves",
-            "x": 7763.3998,
+            "x": 7811.7998,
             "y": 1114.8,
             "maxPoints": 1,
             "stats": [
@@ -6586,7 +6590,7 @@
         "ch0fs-20": {
             "skill": "ch0fs-20",
             "name": "Death from Below",
-            "x": 7186.5998,
+            "x": 7234.9998,
             "y": 100.0,
             "maxPoints": 2,
             "stats": [
@@ -6611,7 +6615,7 @@
         "ch0fs-21": {
             "skill": "ch0fs-21",
             "name": "Pyrochasm",
-            "x": 8117.3998,
+            "x": 8165.7998,
             "y": -145.6,
             "maxPoints": 1,
             "stats": [
@@ -6638,7 +6642,7 @@
         "ch0fs-22": {
             "skill": "ch0fs-22",
             "name": "Fissure of Wrath",
-            "x": 7887.3998,
+            "x": 7935.7998,
             "y": 496.0,
             "maxPoints": 1,
             "stats": [
@@ -6664,7 +6668,7 @@
         "ch0fs-23": {
             "skill": "ch0fs-23",
             "name": "Forbidden Chasm",
-            "x": 8399.3998,
+            "x": 8447.7998,
             "y": 780.8,
             "maxPoints": 1,
             "stats": [
@@ -6687,7 +6691,7 @@
         "ch0fs-24": {
             "skill": "ch0fs-24",
             "name": "Acidbane",
-            "x": 8784.1998,
+            "x": 8832.5998,
             "y": 1154.4,
             "maxPoints": 1,
             "stats": [
@@ -6707,7 +6711,7 @@
         "ch0fs-25": {
             "skill": "ch0fs-25",
             "name": "Ash Cloud",
-            "x": 8690.5998,
+            "x": 8738.9998,
             "y": 196.0,
             "maxPoints": 3,
             "stats": [
@@ -6728,7 +6732,7 @@
         "ch0fs-26": {
             "skill": "ch0fs-26",
             "name": "Chthonic Passage",
-            "x": 8743.3998,
+            "x": 8791.7998,
             "y": -800.0,
             "maxPoints": 1,
             "stats": [
@@ -6750,7 +6754,7 @@
         "ch0fs-27": {
             "skill": "ch0fs-27",
             "name": "Mantle of Flames",
-            "x": 7297.3998,
+            "x": 7345.7998,
             "y": -460.0,
             "maxPoints": 4,
             "stats": [
@@ -6782,7 +6786,7 @@
         "ch0fs-28": {
             "skill": "ch0fs-28",
             "name": "Blood Gulch",
-            "x": 7896.9998,
+            "x": 7945.399799999999,
             "y": -780.4,
             "maxPoints": 1,
             "stats": [
@@ -6803,7 +6807,7 @@
         "ch0fs-29": {
             "skill": "ch0fs-29",
             "name": "Chronicles of Ruin",
-            "x": 6887.39968,
+            "x": 6935.79968,
             "y": -872.0,
             "maxPoints": 4,
             "stats": [
@@ -6829,7 +6833,7 @@
         "ch0fs-30": {
             "skill": "ch0fs-30",
             "name": "Tombgorger",
-            "x": 5886.9998000000005,
+            "x": 5935.3998,
             "y": -872.0,
             "maxPoints": 3,
             "stats": [
@@ -6854,7 +6858,7 @@
         "ch0fs-31": {
             "skill": "ch0fs-31",
             "name": "Valley of Defilement",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": -536.0,
             "maxPoints": 1,
             "stats": [
@@ -6883,7 +6887,7 @@
         "ch4bo-0": {
             "skill": "ch4bo-0",
             "name": "Chaos Bolts",
-            "x": 6435.7998,
+            "x": 6263.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -6902,7 +6906,7 @@
         "ch4bo-1": {
             "skill": "ch4bo-1",
             "name": "Abrupt Chaos",
-            "x": 7219.7998,
+            "x": 7047.7998,
             "y": -616.0,
             "maxPoints": 3,
             "stats": [
@@ -6927,7 +6931,7 @@
         "ch4bo-2": {
             "skill": "ch4bo-2",
             "name": "Sanguine Reverie",
-            "x": 5471.79968,
+            "x": 5299.79968,
             "y": 1238.0,
             "maxPoints": 1,
             "stats": [
@@ -6956,7 +6960,7 @@
         "ch4bo-4": {
             "skill": "ch4bo-4",
             "name": "Scatter",
-            "x": 8779.7998,
+            "x": 8607.7998,
             "y": -944.0,
             "maxPoints": 4,
             "stats": [
@@ -6977,7 +6981,7 @@
         "ch4bo-6": {
             "skill": "ch4bo-6",
             "name": "Condemned to Chaos",
-            "x": 5671.7998,
+            "x": 5499.7998,
             "y": 564.80004,
             "maxPoints": 5,
             "stats": [
@@ -7001,7 +7005,7 @@
         "ch4bo-7": {
             "skill": "ch4bo-7",
             "name": "Blood Tithe",
-            "x": 4466.1998,
+            "x": 4294.1998,
             "y": 1142.0,
             "maxPoints": 3,
             "stats": [
@@ -7023,7 +7027,7 @@
         "ch4bo-8": {
             "skill": "ch4bo-8",
             "name": "A Grave for Two",
-            "x": 4835.7998,
+            "x": 4663.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -7048,7 +7052,7 @@
         "ch4bo-9": {
             "skill": "ch4bo-9",
             "name": "The Gate",
-            "x": 4019.7998,
+            "x": 3847.7998,
             "y": 564.8,
             "maxPoints": 1,
             "stats": [
@@ -7068,7 +7072,7 @@
         "ch4bo-10": {
             "skill": "ch4bo-10",
             "name": "The Burn",
-            "x": 4946.1998,
+            "x": 4774.1998,
             "y": 739.2,
             "maxPoints": 1,
             "stats": [
@@ -7089,7 +7093,7 @@
         "ch4bo-11": {
             "skill": "ch4bo-11",
             "name": "Exult in Misery",
-            "x": 5535.7998,
+            "x": 5363.7998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -7117,7 +7121,7 @@
         "ch4bo-12": {
             "skill": "ch4bo-12",
             "name": "Mania in Flames",
-            "x": 5671.7998,
+            "x": 5499.7998,
             "y": -616.0,
             "maxPoints": 5,
             "stats": [
@@ -7141,12 +7145,13 @@
         "ch4bo-13": {
             "skill": "ch4bo-13",
             "name": "Call of Morditas",
-            "x": 4691.7998,
+            "x": 4519.7998,
             "y": -616.0,
             "maxPoints": 1,
             "stats": [
                 "Fire -> Cold Conversion",
-                "Ignite -> Frostbite Chance"
+                "Ignite -> Frostbite Chance",
+                "20 Freeze Rate"
             ],
             "in": [
                 "ch4bo-12"
@@ -7159,13 +7164,13 @@
                 "ch4bo-15"
             ],
             "description": [
-                "Chaos Bolts' base fire damage is converted to cold. Consequently this damage scales with increases to cold damage, but not increases to fire damage.\n\nIgnite chance from all sources are converted to frostbite chance for Chaos Bolts.\n\nSwaps Chaos Bolts' {Fire} tag for a {Cold} tag."
+                "Chaos Bolts' base fire damage is converted to cold. Consequently this damage scales with increases to cold damage, but not increases to fire damage. It now has a chance to freeze enemies.\n\nIgnite chance from all sources are converted to frostbite chance for Chaos Bolts.\n\nSwaps Chaos Bolts' {Fire} tag for a {Cold} tag."
             ]
         },
         "ch4bo-14": {
             "skill": "ch4bo-14",
             "name": "Chance of Snow",
-            "x": 3999.7998,
+            "x": 3827.7998,
             "y": -717.6,
             "maxPoints": 5,
             "stats": [
@@ -7180,13 +7185,13 @@
             ],
             "out": [],
             "description": [
-                "Chaos Bolts' hits have a chance to chill enemies. Additionally, Chaos Bolts' hits have a chance to deal double more (multiplicative with other modifiers) to chilled enemies."
+                "Chaos Bolts' hits have a chance to chill enemies. \n\nAdditionally, Chaos Bolts' hits have a chance to deal double hit damage to chilled enemies."
             ]
         },
         "ch4bo-15": {
             "skill": "ch4bo-15",
             "name": "Torment of the Red Tundra",
-            "x": 4163.399799999999,
+            "x": 3991.3997999999997,
             "y": -126.4,
             "maxPoints": 1,
             "stats": [
@@ -7207,7 +7212,7 @@
         "ch4bo-16": {
             "skill": "ch4bo-16",
             "name": "Pandemonium",
-            "x": 8019.7998,
+            "x": 7847.7998,
             "y": -840.0,
             "maxPoints": 3,
             "stats": [
@@ -7231,7 +7236,7 @@
         "ch4bo-17": {
             "skill": "ch4bo-17",
             "name": "Cthonic Aurora",
-            "x": 7819.7998,
+            "x": 7647.7998,
             "y": -300.0,
             "maxPoints": 4,
             "stats": [
@@ -7255,7 +7260,7 @@
         "ch4bo-18": {
             "skill": "ch4bo-18",
             "name": "Mana Anarchy",
-            "x": 8415.7998,
+            "x": 8243.7998,
             "y": -160.0,
             "maxPoints": 3,
             "stats": [
@@ -7280,7 +7285,7 @@
         "ch4bo-19": {
             "skill": "ch4bo-19",
             "name": "Revolution",
-            "x": 8910.1998,
+            "x": 8738.1998,
             "y": -424.4,
             "maxPoints": 1,
             "stats": [
@@ -7301,7 +7306,7 @@
         "ch4bo-20": {
             "skill": "ch4bo-20",
             "name": "Chains of the Betrayer",
-            "x": 8910.1998,
+            "x": 8738.1998,
             "y": 134.0,
             "maxPoints": 1,
             "stats": [
@@ -7323,7 +7328,7 @@
         "ch4bo-21": {
             "skill": "ch4bo-21",
             "name": "Volatile Kindling",
-            "x": 7934.1998,
+            "x": 7762.1998,
             "y": 240.0,
             "maxPoints": 1,
             "stats": [
@@ -7346,7 +7351,7 @@
         "ch4bo-22": {
             "skill": "ch4bo-22",
             "name": "Sudden Putrescence ",
-            "x": 8485.3998,
+            "x": 8313.3998,
             "y": 539.2,
             "maxPoints": 3,
             "stats": [
@@ -7368,7 +7373,7 @@
         "ch4bo-23": {
             "skill": "ch4bo-23",
             "name": "Destructive Intensity",
-            "x": 6435.7998,
+            "x": 6263.7998,
             "y": -744.0,
             "maxPoints": 4,
             "stats": [
@@ -7390,7 +7395,7 @@
         "ch4bo-24": {
             "skill": "ch4bo-24",
             "name": "Doom's Vindication",
-            "x": 7219.7998,
+            "x": 7047.7998,
             "y": 215.6,
             "maxPoints": 4,
             "stats": [
@@ -7404,8 +7409,8 @@
             ],
             "reqPoints": [
                 "1",
-                "1",
-                "1"
+                "2",
+                "2"
             ],
             "out": [
                 "ch4bo-25",
@@ -7419,7 +7424,7 @@
         "ch4bo-25": {
             "skill": "ch4bo-25",
             "name": "Reaper of Mayhem",
-            "x": 7100.9998,
+            "x": 6928.9998,
             "y": 800.0,
             "maxPoints": 1,
             "stats": [
@@ -7439,11 +7444,11 @@
         "ch4bo-26": {
             "skill": "ch4bo-26",
             "name": "Devour the Damned",
-            "x": 7872.1998,
+            "x": 7700.1998,
             "y": 856.4,
             "maxPoints": 2,
             "stats": [
-                "6 Health Gain against Cursed",
+                "5 Health Gain against Cursed",
                 "1 Mana Gain against Cursed"
             ],
             "in": [
@@ -7451,7 +7456,7 @@
                 "ch4bo-29"
             ],
             "reqPoints": [
-                "1",
+                "2",
                 "1"
             ],
             "out": [
@@ -7466,7 +7471,7 @@
         "ch4bo-27": {
             "skill": "ch4bo-27",
             "name": "Seed of Chaos ",
-            "x": 8446.5998,
+            "x": 8274.5998,
             "y": 1142.0,
             "maxPoints": 1,
             "stats": [
@@ -7487,11 +7492,11 @@
         "ch4bo-28": {
             "skill": "ch4bo-28",
             "name": "Exacted Libation",
-            "x": 6435.7998,
+            "x": 6263.7998,
             "y": 700.0,
-            "maxPoints": 1,
+            "maxPoints": 2,
             "stats": [
-                "1% Rip Blood chance per Intelligence",
+                "1% Rip Blood chance per 2 Intelligence",
                 "2 Maximum Rip Bloods per second"
             ],
             "in": [
@@ -7499,7 +7504,7 @@
                 "ch4bo-2"
             ],
             "reqPoints": [
-                "1",
+                "2",
                 "1"
             ],
             "out": [
@@ -7513,7 +7518,7 @@
         "ch4bo-29": {
             "skill": "ch4bo-29",
             "name": "Cursed Blood",
-            "x": 7395.7998,
+            "x": 7223.7998,
             "y": 1238.0,
             "maxPoints": 1,
             "stats": [
@@ -7539,7 +7544,7 @@
         "ch4bo-30": {
             "skill": "ch4bo-30",
             "name": "Another Affliction",
-            "x": 6435.799922071999,
+            "x": 6263.799922071999,
             "y": 1238.0,
             "maxPoints": 1,
             "stats": [
@@ -7772,7 +7777,7 @@
             "maxPoints": 1,
             "stats": [
                 "0 Mana Cost",
-                "10% Current Health Cost Per Second"
+                "10% Current Health Drain Per Second"
             ],
             "in": [
                 "dl73-8"
@@ -7784,7 +7789,7 @@
                 "dl73-12"
             ],
             "description": [
-                "Drain Life no longer costs mana. Instead, you lose 10% of your current health per second while channelling. Nodes that modify mana drain now modify this health drain instead."
+                "Drain Life no longer costs mana. Instead, it drains a portion of your current health per second while channelling. Nodes that modify mana drain now modify this health drain instead."
             ],
             "reminderText": [
                 "Does not affect the up-front mana cost added by the {Dark Shackles} node.\n\nDoes not cause your mana to regenerate while channelling."
@@ -8566,7 +8571,7 @@
             "stats": [
                 "40% Increased Attack Speed",
                 "40% Increased Cast Speed",
-                "Blinds Your Minion"
+                "-50% Critical Strike Chance"
             ],
             "in": [
                 "ds4d3-8",
@@ -8580,10 +8585,7 @@
                 "ds4d3-16"
             ],
             "description": [
-                "Dread Shade now increases the attack and cast speed of the targeted minion, but blinds it as well."
-            ],
-            "reminderText": [
-                "Blinded halves critical strike chance and causes the minion to aim erratically, especially at range. Does not stack."
+                "Dread Shade now increases the attack and cast speed of the targeted minion, but they have less critical strike chance (multiplicative with other modifiers)."
             ]
         },
         "ds4d3-16": {
@@ -8865,7 +8867,8 @@
             "y": -791.2,
             "maxPoints": 1,
             "stats": [
-                "Refresh Infernal Shade Duration On Cast"
+                "Refresh Infernal Shade Duration On Cast",
+                "2 Maximum Refreshes"
             ],
             "in": [
                 "ds4d3-4"
@@ -8875,7 +8878,7 @@
             ],
             "out": [],
             "description": [
-                "Casting Dread Shade refreshes the duration of your {Infernal Shades.}"
+                "Casting Dread Shade refreshes the duration of your {Infernal Shades.} Each Infernal Shade can only be refreshed a maximum number of times. "
             ]
         },
         "ds4d3-29": {
@@ -9401,7 +9404,7 @@
             ],
             "out": [],
             "description": [
-                "When you release Death Seal, you are granted {Bone Armor} for the duration that Death Seal was active."
+                "When you release Death Seal, you are granted {Bone Armor}, which grants less damage taken for the duration that Death Seal was active."
             ]
         },
         "ds34l-20": {
@@ -9925,7 +9928,7 @@
                 "Consumes Poison Stacks",
                 "+1% Armor Per Stack",
                 "+6% Poison Resistance Per Stack",
-                "60 Poison Stack Consumption Limit"
+                "60 Buff Limit"
             ],
             "in": [
                 "fe8at-9"
@@ -9935,7 +9938,7 @@
             ],
             "out": [],
             "description": [
-                "Soul Feast consumes poison stacks you applied on the target, granting you more armor (multiplicative with other modifiers) and additional poison resistance per stack.\n\nThis buff lasts 6 seconds and can stack an unlimited number of times.\n\nPoison stacks applied by minions or other party members are not cleansed and are not counted for the buff."
+                "Soul Feast consumes poison stacks you applied on the target, granting you more armor (multiplicative with other modifiers) and additional poison resistance per stack.\n\nThis buff lasts 6 seconds and can stack a maximum number of times.\n\nPoison stacks applied by minions or other party members are not cleansed and are not counted for the buff."
             ],
             "reminderText": [
                 "The armour modifiers from individual stacks are not multiplicative with each other, just with all armour modifiers from other sources."
@@ -10642,17 +10645,18 @@
             "y": -646.40016,
             "maxPoints": 4,
             "stats": [
-                "-10% Damage Taken while channeling"
+                "-6% Damage Taken while channeling",
+                "+2 Mana Cost"
             ],
             "in": [
                 "gh0fl-1"
             ],
             "reqPoints": [
-                "2"
+                "3"
             ],
             "out": [],
             "description": [
-                "You take less damage from ignited, damned or bleeding enemies while channeling Ghostflame."
+                "You take less damage from ignited, damned or bleeding enemies while channeling Ghostflame, but it costs more mana to channel."
             ]
         },
         "gh0fl-13": {
@@ -10688,7 +10692,7 @@
             "maxPoints": 2,
             "stats": [
                 "+0.5% Health Leech against Cursed",
-                "-10% Damage Taken from Cursed"
+                "+50% Frailty Chance per second"
             ],
             "in": [
                 "gh0fl-13"
@@ -10700,7 +10704,7 @@
                 "gh0fl-15"
             ],
             "description": [
-                "You leech a portion of the damage you deal as health against {Cursed} enemies while channeling Ghostflame.\n\nAdditionally, you take less damage from {Cursed} enemies while channeling Ghostflame."
+                "You leech a portion of the damage you deal as health against {Cursed} enemies while channeling Ghostflame.\n\nAdditionally, Ghostflame has a chance to inflict Frailty each second."
             ]
         },
         "gh0fl-15": {
@@ -10896,8 +10900,8 @@
             "y": -471.99988,
             "maxPoints": 1,
             "stats": [
-                "+20% Movespeed while Channeling",
-                "+50% Channel Cost"
+                "+10% Movespeed while Channeling",
+                "+80% Channel Cost"
             ],
             "in": [
                 "gh0fl-22",
@@ -10945,7 +10949,7 @@
             "y": -758.8,
             "maxPoints": 3,
             "stats": [
-                "+10% Movespeed while Channeling"
+                "+5% Movespeed while Channeling"
             ],
             "in": [
                 "gh0fl-23"
@@ -10994,7 +10998,7 @@
             "y": -260.0,
             "maxPoints": 5,
             "stats": [
-                "-14% Channel Cost",
+                "-10% Channel Cost",
                 "14% Current Mana -> Ward Gain while Channeling"
             ],
             "in": [
@@ -11020,7 +11024,7 @@
             "y": -536.0,
             "maxPoints": 4,
             "stats": [
-                "+10 Dodge Rating per Intelligence while Channeling",
+                "+1 Dodge Rating per Intelligence while Channeling",
                 "25% More Dodge Rating while Channeling"
             ],
             "in": [
@@ -11204,7 +11208,8 @@
             "y": 984.0,
             "maxPoints": 5,
             "stats": [
-                "10% Global Increased Crit Chance"
+                "20% Global Increased Crit Chance",
+                "+5% Critical Multiplier"
             ],
             "in": [
                 "ha84-6"
@@ -12366,7 +12371,7 @@
         "is40-0": {
             "skill": "is40-0",
             "name": "Infernal Shade",
-            "x": 6387.3998,
+            "x": 6238.5998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -12391,7 +12396,7 @@
         "is40-1": {
             "skill": "is40-1",
             "name": "Ignition",
-            "x": 5711.3998,
+            "x": 5562.5998,
             "y": 296.0,
             "maxPoints": 5,
             "stats": [
@@ -12415,7 +12420,7 @@
         "is40-2": {
             "skill": "is40-2",
             "name": "Blaze Shade",
-            "x": 5175.3998,
+            "x": 5026.5998,
             "y": -40.0,
             "maxPoints": 1,
             "stats": [
@@ -12445,7 +12450,7 @@
         "is40-3": {
             "skill": "is40-3",
             "name": "Fleeting Shade",
-            "x": 4540.1998,
+            "x": 4391.3998,
             "y": -183.599852,
             "maxPoints": 1,
             "stats": [
@@ -12466,7 +12471,7 @@
         "is40-4": {
             "skill": "is40-4",
             "name": "Fanning the Flames",
-            "x": 5511.39992,
+            "x": 5362.59992,
             "y": -456.0,
             "maxPoints": 5,
             "stats": [
@@ -12492,7 +12497,7 @@
         "is40-5": {
             "skill": "is40-5",
             "name": "Lingering Flames",
-            "x": 4659.3998,
+            "x": 4510.5998,
             "y": -728.0,
             "maxPoints": 1,
             "stats": [
@@ -12517,7 +12522,7 @@
         "is40-6": {
             "skill": "is40-6",
             "name": "Purgatory",
-            "x": 3939.3998,
+            "x": 3790.5998,
             "y": -456.0,
             "maxPoints": 1,
             "stats": [
@@ -12540,7 +12545,7 @@
         "is40-7": {
             "skill": "is40-7",
             "name": "Legion",
-            "x": 4999.3998,
+            "x": 4850.5998,
             "y": 500.0,
             "maxPoints": 2,
             "stats": [
@@ -12566,7 +12571,7 @@
         "is40-8": {
             "skill": "is40-8",
             "name": "Wildfires",
-            "x": 5511.3998,
+            "x": 5362.5998,
             "y": 884.0,
             "maxPoints": 5,
             "stats": [
@@ -12595,7 +12600,7 @@
         "is40-9": {
             "skill": "is40-9",
             "name": "Combustion",
-            "x": 4578.9998,
+            "x": 4430.1998,
             "y": 1020.12,
             "maxPoints": 1,
             "stats": [
@@ -12617,7 +12622,7 @@
         "is40-10": {
             "skill": "is40-10",
             "name": "Fiery Conclusion",
-            "x": 3884.5998,
+            "x": 3735.7998,
             "y": 1234.92,
             "maxPoints": 5,
             "stats": [
@@ -12640,7 +12645,7 @@
         "is40-11": {
             "skill": "is40-11",
             "name": "Flame Burst",
-            "x": 4109.3998,
+            "x": 3960.5998,
             "y": 562.52,
             "maxPoints": 1,
             "stats": [
@@ -12664,7 +12669,7 @@
         "is40-12": {
             "skill": "is40-12",
             "name": "Heart of Fire",
-            "x": 6215.3998,
+            "x": 6066.5998,
             "y": 772.0,
             "maxPoints": 4,
             "stats": [
@@ -12689,7 +12694,7 @@
         "is40-13": {
             "skill": "is40-13",
             "name": "Cackling Flames",
-            "x": 6911.3998,
+            "x": 6762.5998,
             "y": 544.0,
             "maxPoints": 5,
             "stats": [
@@ -12714,7 +12719,7 @@
         "is40-14": {
             "skill": "is40-14",
             "name": "Brimstone",
-            "x": 7615.3998,
+            "x": 7466.5998,
             "y": 772.0,
             "maxPoints": 4,
             "stats": [
@@ -12736,7 +12741,7 @@
         "is40-15": {
             "skill": "is40-15",
             "name": "Hellfire",
-            "x": 8215.27968,
+            "x": 8066.47968,
             "y": 972.0,
             "maxPoints": 1,
             "stats": [
@@ -12760,7 +12765,7 @@
         "is40-16": {
             "skill": "is40-16",
             "name": "Fiend Hunter",
-            "x": 8719.3998,
+            "x": 8570.5998,
             "y": 700.0,
             "maxPoints": 2,
             "stats": [
@@ -12780,7 +12785,7 @@
         "is40-17": {
             "skill": "is40-17",
             "name": "Flight of Fire",
-            "x": 7339.3998,
+            "x": 7190.5998,
             "y": 1156.0,
             "maxPoints": 1,
             "stats": [
@@ -12800,7 +12805,7 @@
         "is40-18": {
             "skill": "is40-18",
             "name": "Shifting Doom",
-            "x": 6595.3998,
+            "x": 6446.5998,
             "y": 1172.0,
             "maxPoints": 4,
             "stats": [
@@ -12820,7 +12825,7 @@
         "is40-19": {
             "skill": "is40-19",
             "name": "Influence",
-            "x": 6387.3998,
+            "x": 6238.5998,
             "y": -504.0,
             "maxPoints": 3,
             "stats": [
@@ -12844,7 +12849,7 @@
         "is40-20": {
             "skill": "is40-20",
             "name": "Devour in Flames",
-            "x": 7047.3998,
+            "x": 6898.5998,
             "y": -100.0,
             "maxPoints": 1,
             "stats": [
@@ -12867,7 +12872,7 @@
         "is40-21": {
             "skill": "is40-21",
             "name": "Burn Trail",
-            "x": 7675.2798,
+            "x": 7526.4798,
             "y": 240.0,
             "maxPoints": 1,
             "stats": [
@@ -12887,7 +12892,7 @@
         "is40-22": {
             "skill": "is40-22",
             "name": "Subjugation",
-            "x": 7854.1998,
+            "x": 7705.3998,
             "y": -132.4,
             "maxPoints": 1,
             "stats": [
@@ -12911,7 +12916,7 @@
         "is40-23": {
             "skill": "is40-23",
             "name": "Soulfire",
-            "x": 8415.2798,
+            "x": 8266.479800000001,
             "y": 262.0,
             "maxPoints": 1,
             "stats": [
@@ -12931,7 +12936,7 @@
         "is40-24": {
             "skill": "is40-24",
             "name": "Manic Pyre",
-            "x": 8482.9998,
+            "x": 8334.1998,
             "y": -468.0,
             "maxPoints": 3,
             "stats": [
@@ -12954,7 +12959,7 @@
         "is40-25": {
             "skill": "is40-25",
             "name": "Torment Beacon",
-            "x": 5927.3998,
+            "x": 5778.5998,
             "y": -816.0,
             "maxPoints": 5,
             "stats": [
@@ -12976,7 +12981,7 @@
         "is40-26": {
             "skill": "is40-26",
             "name": "Baneful",
-            "x": 6847.3998,
+            "x": 6698.5998,
             "y": -816.0,
             "maxPoints": 2,
             "stats": [
@@ -12998,7 +13003,7 @@
         "is40-27": {
             "skill": "is40-27",
             "name": "Blood Shade",
-            "x": 7475.27968,
+            "x": 7326.47968,
             "y": -633.11988,
             "maxPoints": 1,
             "stats": [
@@ -13021,7 +13026,7 @@
         "is40-28": {
             "skill": "is40-28",
             "name": "Corrosion",
-            "x": 8147.3998,
+            "x": 7998.5998,
             "y": -816.0,
             "maxPoints": 4,
             "stats": [
@@ -13041,7 +13046,7 @@
         "pr5fm-0": {
             "skill": "pr5fm-0",
             "name": "Profane Veil",
-            "x": 6387.3998,
+            "x": 6312.9998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -13061,7 +13066,7 @@
         "pr5fm-2": {
             "skill": "pr5fm-2",
             "name": "Discourage",
-            "x": 5368.5998,
+            "x": 5294.199799999999,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -13086,7 +13091,7 @@
         "pr5fm-3": {
             "skill": "pr5fm-3",
             "name": "Heretic's Flame",
-            "x": 5687.3998,
+            "x": 5612.9998,
             "y": -597.6,
             "maxPoints": 1,
             "stats": [
@@ -13112,7 +13117,7 @@
         "pr5fm-4": {
             "skill": "pr5fm-4",
             "name": "Hell Fire",
-            "x": 4802.9998,
+            "x": 4728.5998,
             "y": -538.4,
             "maxPoints": 3,
             "stats": [
@@ -13135,7 +13140,7 @@
         "pr5fm-5": {
             "skill": "pr5fm-5",
             "name": "Propane Form",
-            "x": 4101.3998,
+            "x": 4026.9997999999996,
             "y": -818.0,
             "maxPoints": 1,
             "stats": [
@@ -13157,7 +13162,7 @@
         "pr5fm-6": {
             "skill": "pr5fm-6",
             "name": "Infernal Deliverance",
-            "x": 4101.3998,
+            "x": 4026.9997999999996,
             "y": -251.6,
             "maxPoints": 4,
             "stats": [
@@ -13178,7 +13183,7 @@
         "pr5fm-7": {
             "skill": "pr5fm-7",
             "name": "Mire of Words",
-            "x": 4844.9998,
+            "x": 4770.5998,
             "y": 707.2,
             "maxPoints": 3,
             "stats": [
@@ -13199,11 +13204,11 @@
         "pr5fm-8": {
             "skill": "pr5fm-8",
             "name": "Scorn",
-            "x": 4666.9998,
+            "x": 4592.5998,
             "y": 169.6,
             "maxPoints": 5,
             "stats": [
-                "+10% Damage to Cursed while Concealed"
+                "+5% Damage to Cursed while Concealed"
             ],
             "in": [
                 "pr5fm-2",
@@ -13224,7 +13229,7 @@
         "pr5fm-9": {
             "skill": "pr5fm-9",
             "name": "Stream of Profanity",
-            "x": 4090.1998000000003,
+            "x": 4015.7998,
             "y": 418.0,
             "maxPoints": 5,
             "stats": [
@@ -13245,7 +13250,7 @@
         "pr5fm-10": {
             "skill": "pr5fm-10",
             "name": "Sable Inquisition",
-            "x": 4314.1998,
+            "x": 4239.7998,
             "y": 888.0,
             "maxPoints": 3,
             "stats": [
@@ -13271,7 +13276,7 @@
         "pr5fm-11": {
             "skill": "pr5fm-11",
             "name": "Profane Instruments",
-            "x": 3810.1998000000003,
+            "x": 3735.7998,
             "y": 1193.2,
             "maxPoints": 3,
             "stats": [
@@ -13279,7 +13284,7 @@
                 "+10% Damage with Wand",
                 "+10% Duration with Scepter",
                 "+10% Movespeed with Dagger",
-                "7% Kill Threshold with Axe"
+                "6% Kill Threshold with Axe"
             ],
             "in": [
                 "pr5fm-10"
@@ -13295,7 +13300,7 @@
         "pr5fm-12": {
             "skill": "pr5fm-12",
             "name": "Visage of Terror",
-            "x": 5168.5998,
+            "x": 5094.199799999999,
             "y": 1240.0,
             "maxPoints": 4,
             "stats": [
@@ -13320,7 +13325,7 @@
         "pr5fm-13": {
             "skill": "pr5fm-13",
             "name": "Spirit Plate",
-            "x": 5702.5998,
+            "x": 5628.199799999999,
             "y": 559.2,
             "maxPoints": 1,
             "stats": [
@@ -13344,13 +13349,13 @@
         "pr5fm-14": {
             "skill": "pr5fm-14",
             "name": "Seance",
-            "x": 5902.5998,
+            "x": 5828.199799999999,
             "y": 1240.0,
             "maxPoints": 3,
             "stats": [
                 "+25% Damage to Wandering Spirits",
                 "+25% Area to Wandering Spirits",
-                "1 Ward Gain per 5% Uncapped Necrotic Res"
+                "1 Ward Gain per 15% Uncapped Necrotic Res"
             ],
             "in": [
                 "pr5fm-13"
@@ -13360,13 +13365,13 @@
             ],
             "out": [],
             "description": [
-                "When a {Wandering Spirit} is revealed inside Profane Veil's area the {Spirit} deals more damage (multiplicative with other modifiers) in a larger area for the rest of the {Spirit's} duration. \n\nAdditionally, for each {Spirit} revealed inside Profane Veil's area you gain ward per uncapped necrotic resistance."
+                "When a {Wandering Spirit} is revealed inside Profane Veil's area the {Spirit} deals more damage (multiplicative with other modifiers) in a larger area for the rest of the {Spirit's} duration. \n\nAdditionally, for each {Spirit} revealed inside Profane Veil's area you gain ward scaling with your necrotic resistance."
             ]
         },
         "pr5fm-15": {
             "skill": "pr5fm-15",
             "name": "Derision",
-            "x": 6387.3998,
+            "x": 6312.9998,
             "y": 832.0,
             "maxPoints": 1,
             "stats": [
@@ -13386,7 +13391,7 @@
         "pr5fm-16": {
             "skill": "pr5fm-16",
             "name": "Eternal Blasphemy",
-            "x": 7062.1998,
+            "x": 6987.7998,
             "y": 559.2,
             "maxPoints": 3,
             "stats": [
@@ -13412,7 +13417,7 @@
         "pr5fm-17": {
             "skill": "pr5fm-17",
             "name": "Singleminded",
-            "x": 6870.1998,
+            "x": 6795.7998,
             "y": 1240.0,
             "maxPoints": 1,
             "stats": [
@@ -13435,13 +13440,13 @@
         "pr5fm-18": {
             "skill": "pr5fm-18",
             "name": "Vampiric Pool",
-            "x": 7634.1998,
+            "x": 7559.7998,
             "y": 1240.0,
             "maxPoints": 5,
             "stats": [
                 "2 Minions Consumed",
-                "4% Portion of Minion health to Ward Gain",
-                "+0.5 Duration Extension (seconds)"
+                "3% Portion of Minion health to Ward Gain",
+                "+0.2 Duration Extension (seconds)"
             ],
             "in": [
                 "pr5fm-16"
@@ -13459,7 +13464,7 @@
         "pr5fm-19": {
             "skill": "pr5fm-19",
             "name": "Apocalypse",
-            "x": 8237.3998,
+            "x": 8162.9998,
             "y": 1147.2,
             "maxPoints": 5,
             "stats": [
@@ -13483,7 +13488,7 @@
         "pr5fm-20": {
             "skill": "pr5fm-20",
             "name": "Omnivore",
-            "x": 8817.3998,
+            "x": 8742.9998,
             "y": 1240.0,
             "maxPoints": 1,
             "stats": [
@@ -13503,7 +13508,7 @@
         "pr5fm-21": {
             "skill": "pr5fm-21",
             "name": "Lake of Blood",
-            "x": 7939.3998,
+            "x": 7864.9998,
             "y": 664.0,
             "maxPoints": 1,
             "stats": [
@@ -13528,7 +13533,7 @@
         "pr5fm-22": {
             "skill": "pr5fm-22",
             "name": "Desecrated Graves",
-            "x": 8652.9998,
+            "x": 8578.5998,
             "y": 586.39996,
             "maxPoints": 1,
             "stats": [
@@ -13557,7 +13562,7 @@
         "pr5fm-23": {
             "skill": "pr5fm-23",
             "name": "Forked Tongue",
-            "x": 8652.9998,
+            "x": 8578.5998,
             "y": -44.8,
             "maxPoints": 1,
             "stats": [
@@ -13588,7 +13593,7 @@
         "pr5fm-24": {
             "skill": "pr5fm-24",
             "name": "Second Rites",
-            "x": 7979.3998,
+            "x": 7904.9998,
             "y": -6.1036e-05,
             "maxPoints": 1,
             "stats": [
@@ -13609,7 +13614,7 @@
         "pr5fm-25": {
             "skill": "pr5fm-25",
             "name": "Harsh Words",
-            "x": 7979.3998,
+            "x": 7904.9998,
             "y": -538.40016,
             "maxPoints": 3,
             "stats": [
@@ -13636,7 +13641,7 @@
         "pr5fm-26": {
             "skill": "pr5fm-26",
             "name": "Grave Circle",
-            "x": 8632.5998,
+            "x": 8558.199799999999,
             "y": -616.8,
             "maxPoints": 1,
             "stats": [
@@ -13659,7 +13664,7 @@
         "pr5fm-27": {
             "skill": "pr5fm-27",
             "name": "Mark of the Rat",
-            "x": 9014.6,
+            "x": 8940.2,
             "y": -908.00008,
             "maxPoints": 5,
             "stats": [
@@ -13681,7 +13686,7 @@
         "pr5fm-28": {
             "skill": "pr5fm-28",
             "name": "Profane Orbs",
-            "x": 7689.3998,
+            "x": 7614.9998,
             "y": -968.0,
             "maxPoints": 1,
             "stats": [
@@ -13707,7 +13712,7 @@
         "pr5fm-29": {
             "skill": "pr5fm-29",
             "name": "Hex Flurry",
-            "x": 8269.3998,
+            "x": 8194.9998,
             "y": -968.0,
             "maxPoints": 4,
             "stats": [
@@ -13731,7 +13736,7 @@
         "pr5fm-30": {
             "skill": "pr5fm-30",
             "name": "Loose Tongue",
-            "x": 7087.39988,
+            "x": 7012.999879999999,
             "y": -597.60008,
             "maxPoints": 3,
             "stats": [
@@ -13755,12 +13760,12 @@
         "pr5fm-31": {
             "skill": "pr5fm-31",
             "name": "Penitent Tangent",
-            "x": 6387.3998,
+            "x": 6312.9998,
             "y": -783.2,
             "maxPoints": 1,
             "stats": [
                 "Area Inflicts Penance",
-                "+5% Penance Damage per 1% of Damage Refelcted"
+                "+5% Penance Damage per 1% of Damage Reflected"
             ],
             "in": [
                 "pr5fm-30",
@@ -13780,7 +13785,7 @@
         "pr5fm-32": {
             "skill": "pr5fm-32",
             "name": "Unholy Renewal",
-            "x": 7413.3998,
+            "x": 7338.9998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -13802,7 +13807,7 @@
         "rb31pl-0": {
             "skill": "rb31pl-0",
             "name": "Rip Blood",
-            "x": 6435.7998,
+            "x": 6312.9998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -13825,7 +13830,7 @@
         "rb31pl-2": {
             "skill": "rb31pl-2",
             "name": "Splatter",
-            "x": 6035.7998,
+            "x": 5912.9998,
             "y": 400.0,
             "maxPoints": 5,
             "stats": [
@@ -13852,7 +13857,7 @@
         "rb31pl-3": {
             "skill": "rb31pl-3",
             "name": "Eviscerate",
-            "x": 6835.7998,
+            "x": 6712.9998,
             "y": 400.0,
             "maxPoints": 1,
             "stats": [
@@ -13880,7 +13885,7 @@
         "rb31pl-4": {
             "skill": "rb31pl-4",
             "name": "Crimson Flood",
-            "x": 6435.7998,
+            "x": 6312.9998,
             "y": 800.0,
             "maxPoints": 5,
             "stats": [
@@ -13907,7 +13912,7 @@
         "rb31pl-5": {
             "skill": "rb31pl-5",
             "name": "Revile",
-            "x": 7647.7995599999995,
+            "x": 7524.999559999999,
             "y": 700.0,
             "maxPoints": 5,
             "stats": [
@@ -13930,7 +13935,7 @@
         "rb31pl-6": {
             "skill": "rb31pl-6",
             "name": "Coagulation",
-            "x": 3919.7998,
+            "x": 3796.9997999999996,
             "y": 600.0,
             "maxPoints": 1,
             "stats": [
@@ -13956,7 +13961,7 @@
         "rb31pl-8": {
             "skill": "rb31pl-8",
             "name": "Varicose Veins",
-            "x": 4495.7998,
+            "x": 4372.9998,
             "y": 496.0,
             "maxPoints": 3,
             "stats": [
@@ -13977,7 +13982,7 @@
         "rb31pl-12": {
             "skill": "rb31pl-12",
             "name": "Blood Infusion",
-            "x": 5755.7998,
+            "x": 5632.9998,
             "y": 1080.0,
             "maxPoints": 1,
             "stats": [
@@ -13999,7 +14004,7 @@
         "rb31pl-13": {
             "skill": "rb31pl-13",
             "name": "Necrotic Unity",
-            "x": 4967.7998,
+            "x": 4844.9998,
             "y": 560.0,
             "maxPoints": 1,
             "stats": [
@@ -14019,7 +14024,7 @@
         "rb31pl-14": {
             "skill": "rb31pl-14",
             "name": "Infused Frenzy",
-            "x": 4967.7998,
+            "x": 4844.9998,
             "y": 1260.0,
             "maxPoints": 3,
             "stats": [
@@ -14046,7 +14051,7 @@
         "rb31pl-15": {
             "skill": "rb31pl-15",
             "name": "Hemophagy",
-            "x": 4195.7998,
+            "x": 4072.9997999999996,
             "y": 1076.0,
             "maxPoints": 3,
             "stats": [
@@ -14069,7 +14074,7 @@
         "rb31pl-16": {
             "skill": "rb31pl-16",
             "name": "Hemomancer",
-            "x": 6035.7998,
+            "x": 5912.9998,
             "y": -400.0,
             "maxPoints": 5,
             "stats": [
@@ -14094,7 +14099,7 @@
         "rb31pl-17": {
             "skill": "rb31pl-17",
             "name": "Thirst",
-            "x": 5674.199799999999,
+            "x": 5551.399799999999,
             "y": -746.4,
             "maxPoints": 3,
             "stats": [
@@ -14117,7 +14122,7 @@
         "rb31pl-18": {
             "skill": "rb31pl-18",
             "name": "Carrion Hunger",
-            "x": 5096.5998,
+            "x": 4973.7998,
             "y": -783.6,
             "maxPoints": 1,
             "stats": [
@@ -14137,7 +14142,7 @@
         "rb31pl-19": {
             "skill": "rb31pl-19",
             "name": "Quenching",
-            "x": 4890.9998,
+            "x": 4768.199799999999,
             "y": -304.0,
             "maxPoints": 5,
             "stats": [
@@ -14162,7 +14167,7 @@
         "rb31pl-20": {
             "skill": "rb31pl-20",
             "name": "Hematology",
-            "x": 4339.7998,
+            "x": 4216.9998,
             "y": -700.0,
             "maxPoints": 1,
             "stats": [
@@ -14176,13 +14181,13 @@
             ],
             "out": [],
             "description": [
-                "{Blood Orbs} restore more health based on your Intelligence stat\r."
+                "{Blood Orbs} restore more health based on your Intelligence stat."
             ]
         },
         "rb31pl-21": {
             "skill": "rb31pl-21",
             "name": "Mana Feast",
-            "x": 4375.7998,
+            "x": 4252.9998,
             "y": 164.0,
             "maxPoints": 3,
             "stats": [
@@ -14204,7 +14209,7 @@
         "rb31pl-22": {
             "skill": "rb31pl-22",
             "name": "Marrow Drinker",
-            "x": 3919.7998,
+            "x": 3796.9997999999996,
             "y": -256.0,
             "maxPoints": 1,
             "stats": [
@@ -14225,7 +14230,7 @@
         "rb31pl-23": {
             "skill": "rb31pl-23",
             "name": "Gushing Wound",
-            "x": 5635.7998,
+            "x": 5512.9998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -14247,7 +14252,7 @@
         "rb31pl-24": {
             "skill": "rb31pl-24",
             "name": "Septic Wound",
-            "x": 5039.7998,
+            "x": 4916.9998,
             "y": 116.0,
             "maxPoints": 1,
             "stats": [
@@ -14267,7 +14272,7 @@
         "rb31pl-25": {
             "skill": "rb31pl-25",
             "name": "Septic Blood",
-            "x": 8675.7998,
+            "x": 8552.9998,
             "y": 940.0,
             "maxPoints": 5,
             "stats": [
@@ -14287,7 +14292,7 @@
         "rb31pl-26": {
             "skill": "rb31pl-26",
             "name": "Arcane Absorption",
-            "x": 6835.7998,
+            "x": 6712.9998,
             "y": -400.0,
             "maxPoints": 4,
             "stats": [
@@ -14311,7 +14316,7 @@
         "rb31pl-27": {
             "skill": "rb31pl-27",
             "name": "Run Dry",
-            "x": 7235.7998,
+            "x": 7112.9998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -14334,7 +14339,7 @@
         "rb31pl-28": {
             "skill": "rb31pl-28",
             "name": "Necrotic Inspiration",
-            "x": 8347.7998,
+            "x": 8224.9998,
             "y": 364.0,
             "maxPoints": 2,
             "stats": [
@@ -14354,7 +14359,7 @@
         "rb31pl-29": {
             "skill": "rb31pl-29",
             "name": "Blood Catalyst",
-            "x": 8835.7998,
+            "x": 8712.9998,
             "y": -168.0,
             "maxPoints": 1,
             "stats": [
@@ -14375,7 +14380,7 @@
         "rb31pl-30": {
             "skill": "rb31pl-30",
             "name": "Rip Spirit",
-            "x": 7799.7998,
+            "x": 7676.9998,
             "y": -460.00012,
             "maxPoints": 1,
             "stats": [
@@ -14397,7 +14402,7 @@
         "rb31pl-31": {
             "skill": "rb31pl-31",
             "name": "Arcane Fortress",
-            "x": 8635.7998,
+            "x": 8512.9998,
             "y": -660.00008,
             "maxPoints": 1,
             "stats": [
@@ -14420,7 +14425,7 @@
         "rb31pl-32": {
             "skill": "rb31pl-32",
             "name": "Stench of Blood",
-            "x": 6435.7998,
+            "x": 6312.9998,
             "y": -800.00012,
             "maxPoints": 1,
             "stats": [
@@ -14461,8 +14466,8 @@
         "rf1azz-2": {
             "skill": "rf1azz-2",
             "name": "Soul for a Soul",
-            "x": 6127.3998,
-            "y": -504.0,
+            "x": 5903.7998,
+            "y": -456.0,
             "maxPoints": 4,
             "stats": [
                 "+20% Increased Damage",
@@ -14578,7 +14583,7 @@
             ],
             "out": [
                 "rf1azz-7",
-                "rf1azz-12",
+                "rf1azz-18",
                 "rf1azz-28"
             ],
             "description": [
@@ -14712,24 +14717,27 @@
         },
         "rf1azz-12": {
             "skill": "rf1azz-12",
-            "name": "Death Comes Quickly",
-            "x": 5735.79972,
-            "y": -828.00008,
-            "maxPoints": 4,
+            "name": "Bloodmoon Reaver",
+            "x": 6435.7998,
+            "y": -768.0,
+            "maxPoints": 1,
             "stats": [
-                "25% Swiftness Chance On Kill"
+                "Necrotic -> Physical Conversion",
+                "Poison -> Bleed",
+                "+10% Physical Penetration In Form"
             ],
             "in": [
-                "rf1azz-6"
-            ],
-            "reqPoints": [
-                "2"
-            ],
-            "out": [
                 "rf1azz-18"
             ],
+            "reqPoints": [
+                "1"
+            ],
+            "out": [],
             "description": [
-                "While in Reaper Form, you have a chance to gain Swiftness when you kill an enemy. Swiftness lasts 30 seconds, grants 1% increased movement speed, and can stack up to 10 times."
+                "All of {Reap}'s base damage and its added melee damage from intelligence are converted to physical. Consequently this damage scales with increases to physical damage, but not increases to necrotic damage. You have additional physical penetration while in Reaper Form.\n\nAll poison related effects from this tree now affect bleed for Reap.\n\nReap loses its {Necrotic} tag and gains a {Physical} tag instead."
+            ],
+            "reminderText": [
+                "This node has no effect if you have taken the {Gravechill} node."
             ]
         },
         "rf1azz-13": {
@@ -14775,6 +14783,9 @@
             ],
             "description": [
                 "Reap poisons enemies, but cannot critically strike. It also gains the {Poison} tag."
+            ],
+            "reminderText": [
+                "This node has no effect if you have taken the {Gravechill} or {Bloodmoon Reaver} nodes."
             ]
         },
         "rf1azz-15": {
@@ -14850,22 +14861,25 @@
         "rf1azz-18": {
             "skill": "rf1azz-18",
             "name": "Rapid Destruction",
-            "x": 6584.5998,
-            "y": -828.0,
+            "x": 5703.7998,
+            "y": -824.0,
             "maxPoints": 3,
             "stats": [
-                "+10% Attack Speed",
-                "+10% Cast Speed"
+                "+8% Attack Speed",
+                "+8% Cast Speed",
+                "+2% Movespeed"
             ],
             "in": [
-                "rf1azz-12"
+                "rf1azz-6"
             ],
             "reqPoints": [
                 "2"
             ],
-            "out": [],
+            "out": [
+                "rf1azz-12"
+            ],
             "description": [
-                "You have increased attack and cast speed while in Reaper Form."
+                "You have increased attack, cast speed and movement speed while in Reaper Form."
             ]
         },
         "rf1azz-19": {
@@ -15820,7 +15834,7 @@
         "sm4g-0": {
             "skill": "sm4g-0",
             "name": "Summon Skeletal Mage",
-            "x": 6435.7998,
+            "x": 6263.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -15841,7 +15855,7 @@
         "sm4g-1": {
             "skill": "sm4g-1",
             "name": "Gravetide",
-            "x": 7050.5998,
+            "x": 6878.5998,
             "y": -442.8,
             "maxPoints": 5,
             "stats": [
@@ -15865,7 +15879,7 @@
         "sm4g-2": {
             "skill": "sm4g-2",
             "name": "Macabre Waltz",
-            "x": 6243.799892,
+            "x": 6071.799892,
             "y": -752.0,
             "maxPoints": 1,
             "stats": [
@@ -15889,7 +15903,7 @@
         "sm4g-3": {
             "skill": "sm4g-3",
             "name": "Underlings",
-            "x": 7105.7998,
+            "x": 6933.7998,
             "y": -928.0,
             "maxPoints": 1,
             "stats": [
@@ -15911,7 +15925,7 @@
         "sm4g-4": {
             "skill": "sm4g-4",
             "name": "Cryomancers",
-            "x": 7691.7998,
+            "x": 7519.7998,
             "y": -688.0,
             "maxPoints": 1,
             "stats": [
@@ -15938,7 +15952,7 @@
         "sm4g-5": {
             "skill": "sm4g-5",
             "name": "Frost Lich",
-            "x": 8395.7998,
+            "x": 8223.7998,
             "y": -892.0,
             "maxPoints": 1,
             "stats": [
@@ -15960,7 +15974,7 @@
         "sm4g-6": {
             "skill": "sm4g-6",
             "name": "Frozen Tomb",
-            "x": 8391.7998,
+            "x": 8219.7998,
             "y": -400.0,
             "maxPoints": 4,
             "stats": [
@@ -15981,7 +15995,7 @@
         "sm4g-7": {
             "skill": "sm4g-7",
             "name": "Putrid Essence",
-            "x": 5703.7998,
+            "x": 5531.7998,
             "y": 274.4,
             "maxPoints": 4,
             "stats": [
@@ -16004,7 +16018,7 @@
         "sm4g-8": {
             "skill": "sm4g-8",
             "name": "Ossein Frenzy",
-            "x": 4715.7998,
+            "x": 4543.7998,
             "y": -236.0,
             "maxPoints": 3,
             "stats": [
@@ -16028,7 +16042,7 @@
         "sm4g-9": {
             "skill": "sm4g-9",
             "name": "Pyromancers",
-            "x": 5231.7998,
+            "x": 5059.7998,
             "y": 876.0,
             "maxPoints": 1,
             "stats": [
@@ -16058,7 +16072,7 @@
         "sm4g-10": {
             "skill": "sm4g-10",
             "name": "Inferno",
-            "x": 4607.7998,
+            "x": 4435.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -16079,7 +16093,7 @@
         "sm4g-11": {
             "skill": "sm4g-11",
             "name": "Flame Rot",
-            "x": 4567.7998,
+            "x": 4395.7998,
             "y": 628.0,
             "maxPoints": 4,
             "stats": [
@@ -16102,7 +16116,7 @@
         "sm4g-12": {
             "skill": "sm4g-12",
             "name": "Celer Mortis",
-            "x": 6435.7998,
+            "x": 6263.7998,
             "y": 724.0,
             "maxPoints": 5,
             "stats": [
@@ -16127,7 +16141,7 @@
         "sm4g-13": {
             "skill": "sm4g-13",
             "name": "Grey Merchant",
-            "x": 5875.7998,
+            "x": 5703.7998,
             "y": 972.0,
             "maxPoints": 3,
             "stats": [
@@ -16153,7 +16167,7 @@
         "sm4g-14": {
             "skill": "sm4g-14",
             "name": "Order of Death",
-            "x": 6435.7998,
+            "x": 6263.7998,
             "y": 1240.0,
             "maxPoints": 1,
             "stats": [
@@ -16177,7 +16191,7 @@
         "sm4g-15": {
             "skill": "sm4g-15",
             "name": "Leech Life",
-            "x": 7167.7998,
+            "x": 6995.7998,
             "y": 274.4,
             "maxPoints": 5,
             "stats": [
@@ -16201,7 +16215,7 @@
         "sm4g-16": {
             "skill": "sm4g-16",
             "name": "Death Knights",
-            "x": 7639.7998,
+            "x": 7467.7998,
             "y": 876.0,
             "maxPoints": 1,
             "stats": [
@@ -16231,7 +16245,7 @@
         "sm4g-17": {
             "skill": "sm4g-17",
             "name": "Flaming Attacks",
-            "x": 8267.7998,
+            "x": 8095.7998,
             "y": 596.0,
             "maxPoints": 5,
             "stats": [
@@ -16251,7 +16265,7 @@
         "sm4g-18": {
             "skill": "sm4g-18",
             "name": "Death Blossom",
-            "x": 8279.7998,
+            "x": 8107.7998,
             "y": 1216.0,
             "maxPoints": 1,
             "stats": [
@@ -16272,7 +16286,7 @@
         "sm4g-19": {
             "skill": "sm4g-19",
             "name": "Undead Mortars",
-            "x": 7983.7998,
+            "x": 7811.7998,
             "y": 64.800048,
             "maxPoints": 1,
             "stats": [
@@ -16297,7 +16311,7 @@
         "sm4g-20": {
             "skill": "sm4g-20",
             "name": "Battle Hardened",
-            "x": 8679.7998,
+            "x": 8507.7998,
             "y": 176.0,
             "maxPoints": 3,
             "stats": [
@@ -16317,7 +16331,7 @@
         "sm4g-21": {
             "skill": "sm4g-21",
             "name": "Splintered Dominion",
-            "x": 5820.9998,
+            "x": 5648.9998,
             "y": -442.8,
             "maxPoints": 4,
             "stats": [
@@ -16341,7 +16355,7 @@
         "sm4g-22": {
             "skill": "sm4g-22",
             "name": "Archmage",
-            "x": 5095.7998,
+            "x": 4923.7998,
             "y": -728.0,
             "maxPoints": 1,
             "stats": [
@@ -16372,7 +16386,7 @@
         "sm4g-23": {
             "skill": "sm4g-23",
             "name": "Argonautic Speed",
-            "x": 5311.7998,
+            "x": 5139.7998,
             "y": -112.0,
             "maxPoints": 4,
             "stats": [
@@ -16397,7 +16411,7 @@
         "sm4g-24": {
             "skill": "sm4g-24",
             "name": "Shadow Wardens",
-            "x": 6995.7998,
+            "x": 6823.7998,
             "y": 972.0,
             "maxPoints": 4,
             "stats": [
@@ -16423,7 +16437,7 @@
         "sm4g-26": {
             "skill": "sm4g-26",
             "name": "Forbidden Arcana",
-            "x": 4295.7998,
+            "x": 4123.7998,
             "y": -672.0,
             "maxPoints": 5,
             "stats": [
@@ -16449,7 +16463,7 @@
         "sm4g-27": {
             "skill": "sm4g-27",
             "name": "Grave Passage",
-            "x": 3907.7998,
+            "x": 3735.7998,
             "y": -232.0,
             "maxPoints": 1,
             "stats": [
@@ -16476,7 +16490,7 @@
         "sm4g-28": {
             "skill": "sm4g-28",
             "name": "Death's Cavalry",
-            "x": 3907.7998,
+            "x": 3735.7998,
             "y": 400.0,
             "maxPoints": 3,
             "stats": [
@@ -16830,7 +16844,7 @@
         },
         "sp5g2-16": {
             "skill": "sp5g2-16",
-            "name": "Anguish",
+            "name": "Spooked",
             "x": 7612.5996,
             "y": 786.8,
             "maxPoints": 2,
@@ -17048,9 +17062,6 @@
             ],
             "description": [
                 "Enemies you inflict with Spirit Plague are also inflicted with bleeding for the same duration."
-            ],
-            "reminderText": [
-                "Bleed applied this way cannot be converted to a different ailment"
             ]
         },
         "sp5g2-26": {
@@ -17119,7 +17130,7 @@
         "ss37kl-0": {
             "skill": "ss37kl-0",
             "name": "Summon Skeleton",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -17142,7 +17153,7 @@
         "ss37kl-2": {
             "skill": "ss37kl-2",
             "name": "Necrotic Conviction",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": 716.4,
             "maxPoints": 5,
             "stats": [
@@ -17169,7 +17180,7 @@
         "ss37kl-3": {
             "skill": "ss37kl-3",
             "name": "Aegis of Death",
-            "x": 6881.3998,
+            "x": 6929.7998,
             "y": 1184.0,
             "maxPoints": 1,
             "stats": [
@@ -17192,7 +17203,7 @@
         "ss37kl-4": {
             "skill": "ss37kl-4",
             "name": "Unbound Necromancy",
-            "x": 7155.3998,
+            "x": 7203.7998,
             "y": -200.00012,
             "maxPoints": 4,
             "stats": [
@@ -17221,7 +17232,7 @@
         "ss37kl-5": {
             "skill": "ss37kl-5",
             "name": "Soul Catcher",
-            "x": 7963.3998,
+            "x": 8011.7998,
             "y": -156.0,
             "maxPoints": 4,
             "stats": [
@@ -17247,7 +17258,7 @@
         "ss37kl-6": {
             "skill": "ss37kl-6",
             "name": "Mind Catcher",
-            "x": 8607.3998,
+            "x": 8655.7998,
             "y": 44.0,
             "maxPoints": 3,
             "stats": [
@@ -17270,7 +17281,7 @@
         "ss37kl-7": {
             "skill": "ss37kl-7",
             "name": "Memory Catcher",
-            "x": 8530.5998,
+            "x": 8578.9998,
             "y": -644.0,
             "maxPoints": 4,
             "stats": [
@@ -17293,7 +17304,7 @@
         "ss37kl-8": {
             "skill": "ss37kl-8",
             "name": "Unholy Rage",
-            "x": 5636.9998000000005,
+            "x": 5685.3998,
             "y": 160.0,
             "maxPoints": 5,
             "stats": [
@@ -17322,7 +17333,7 @@
         "ss37kl-9": {
             "skill": "ss37kl-9",
             "name": "Lone Guardian",
-            "x": 4854.1998,
+            "x": 4902.5998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -17348,7 +17359,7 @@
         "ss37kl-10": {
             "skill": "ss37kl-10",
             "name": "Mightier than the Sword",
-            "x": 4103.3998,
+            "x": 4151.7998,
             "y": -130.800048,
             "maxPoints": 1,
             "stats": [
@@ -17368,7 +17379,7 @@
         "ss37kl-11": {
             "skill": "ss37kl-11",
             "name": "Marrow Walkers",
-            "x": 5376.99988,
+            "x": 5425.39988,
             "y": 700.0,
             "maxPoints": 1,
             "stats": [
@@ -17391,7 +17402,7 @@
         "ss37kl-12": {
             "skill": "ss37kl-12",
             "name": "Hollow Walkers",
-            "x": 5770.99988,
+            "x": 5819.39988,
             "y": 900.0,
             "maxPoints": 1,
             "stats": [
@@ -17417,7 +17428,7 @@
         "ss37kl-13": {
             "skill": "ss37kl-13",
             "name": "Grave Walkers",
-            "x": 7758.99988,
+            "x": 7807.39988,
             "y": -755.99988,
             "maxPoints": 1,
             "stats": [
@@ -17440,7 +17451,7 @@
         "ss37kl-14": {
             "skill": "ss37kl-14",
             "name": "Shambling Steel",
-            "x": 6249.799704,
+            "x": 6298.199704,
             "y": 1248.0,
             "maxPoints": 1,
             "stats": [
@@ -17460,7 +17471,7 @@
         "ss37kl-15": {
             "skill": "ss37kl-15",
             "name": "Fire Arrow",
-            "x": 4827.39968,
+            "x": 4875.79968,
             "y": 516.39992,
             "maxPoints": 1,
             "stats": [
@@ -17483,7 +17494,7 @@
         "ss37kl-16": {
             "skill": "ss37kl-16",
             "name": "Multishot",
-            "x": 4079.3998,
+            "x": 4127.7998,
             "y": 468.0,
             "maxPoints": 3,
             "stats": [
@@ -17508,7 +17519,7 @@
         "ss37kl-17": {
             "skill": "ss37kl-17",
             "name": "Ice Arrow",
-            "x": 4367.3998,
+            "x": 4415.7998,
             "y": 1076.0,
             "maxPoints": 1,
             "stats": [
@@ -17532,7 +17543,7 @@
         "ss37kl-18": {
             "skill": "ss37kl-18",
             "name": "Dread Phalanx",
-            "x": 5159.39968,
+            "x": 5207.79968,
             "y": 1184.0,
             "maxPoints": 1,
             "stats": [
@@ -17558,8 +17569,8 @@
         "ss37kl-19": {
             "skill": "ss37kl-19",
             "name": "Bone Armor",
-            "x": 7567.3998,
-            "y": 1128.0,
+            "x": 7631.7998,
+            "y": 1076.0,
             "maxPoints": 1,
             "stats": [
                 "Skeleton Warriors Cast Bone Armor"
@@ -17571,21 +17582,20 @@
                 "3"
             ],
             "out": [
-                "ss37kl-20"
+                "ss37kl-21"
             ],
             "description": [
-                "Skeleton Warriors can now cast {Bone Armor}, which reduces damage taken by 40% for 4 seconds and has a 10 second cooldown."
+                "Skeleton Warriors can now cast {Bone Armor} for 4 seconds, which grants less damage taken (multiplicative with other modifiers).\n\nThis effect has a 4 second cooldown."
             ]
         },
-        "ss37kl-20": {
-            "skill": "ss37kl-20",
-            "name": "Impatience",
-            "x": 8171.3998,
-            "y": 960.0,
-            "maxPoints": 4,
+        "ss37kl-21": {
+            "skill": "ss37kl-21",
+            "name": "Bone Share",
+            "x": 8655.7998,
+            "y": 1076.0,
+            "maxPoints": 1,
             "stats": [
-                "+30% Cooldown Recovery Speed",
-                "+1 Bone Armor Duration"
+                "Bone Armor Can Target Allies"
             ],
             "in": [
                 "ss37kl-19"
@@ -17593,44 +17603,18 @@
             "reqPoints": [
                 "1"
             ],
-            "out": [
-                "ss37kl-21"
-            ],
-            "description": [
-                "Skeletons are able to use their abilities more frequently, and {Bone Armor} cast by Skeletons lasts longer. "
-            ],
-            "reminderText": [
-                "Skeletons refers to Skeleton Archers, Skeleton Rogues, and Skeleton Warriors.\n\n{Bone Armor} grants armor and reduces damage taken. 10 second cooldown."
-            ]
-        },
-        "ss37kl-21": {
-            "skill": "ss37kl-21",
-            "name": "Bone Share",
-            "x": 8775.3998,
-            "y": 1128.0,
-            "maxPoints": 1,
-            "stats": [
-                "Bone Armor Can Target Allies",
-                "-75% Bone Armor Effect On Non-Minions"
-            ],
-            "in": [
-                "ss37kl-20"
-            ],
-            "reqPoints": [
-                "3"
-            ],
             "out": [],
             "description": [
-                "Skeleton Warriors can target allies with {Bone Armor}.  Bone Armor has 75% reduced effect on non-minions."
+                "Skeleton Warriors can target allies with {Bone Armor}. "
             ],
             "reminderText": [
-                "Allies refers to you, your minions, and your party members and their minions.\n\n{Bone Armor} grants armor and reduces damage taken. 10 second cooldown."
+                "Allies refers to you, your minions, and your party members and their minions."
             ]
         },
         "ss37kl-22": {
             "skill": "ss37kl-22",
             "name": "Marrow Tap",
-            "x": 7039.3998,
+            "x": 7087.7998,
             "y": 388.0,
             "maxPoints": 5,
             "stats": [
@@ -17658,7 +17642,7 @@
         "ss37kl-23": {
             "skill": "ss37kl-23",
             "name": "Empty the Graves",
-            "x": 7827.3998,
+            "x": 7875.7998,
             "y": 500.0,
             "maxPoints": 2,
             "stats": [
@@ -17682,7 +17666,7 @@
         "ss37kl-24": {
             "skill": "ss37kl-24",
             "name": "Sweeping Strikes",
-            "x": 6387.399891552001,
+            "x": 6435.799891552,
             "y": -756.0,
             "maxPoints": 5,
             "stats": [
@@ -17709,7 +17693,7 @@
         "ss37kl-25": {
             "skill": "ss37kl-25",
             "name": "Skeleton Rogue",
-            "x": 5796.59976,
+            "x": 5844.99976,
             "y": -555.99988,
             "maxPoints": 1,
             "stats": [
@@ -17726,16 +17710,16 @@
                 "ss37kl-28"
             ],
             "description": [
-                "Adds Skeleton Rogues to the pool of Skeletons that can be summoned. Rogues teleport to distant enemies, throw shurikens, and use melee attacks."
+                "Adds Skeleton Rogues to the pool of Skeletons that can be summoned. Rogues dash to distant enemies, throw shurikens, use melee attacks, and they poison enemies on hit."
             ],
             "reminderText": [
-                "Teleport has an 8 second cooldown by default.\n\nShurikens has a 4 second cooldown by default, and can store 2 charges."
+                "Their dash ability has an 8 second cooldown by default.\n\nShurikens has a 4 second cooldown by default, and can store 2 charges."
             ]
         },
         "ss37kl-26": {
             "skill": "ss37kl-26",
             "name": "Immortal",
-            "x": 6879.3998,
+            "x": 6927.7998,
             "y": -628.0,
             "maxPoints": 4,
             "stats": [
@@ -17759,12 +17743,12 @@
         },
         "ss37kl-27": {
             "skill": "ss37kl-27",
-            "name": "Acid Flask",
-            "x": 5230.1998,
+            "name": "Vile Flask",
+            "x": 5278.5998,
             "y": -400.0,
             "maxPoints": 1,
             "stats": [
-                "Rogues Use Acid Flask"
+                "Rogues Use Vile Flask"
             ],
             "in": [
                 "ss37kl-25"
@@ -17774,16 +17758,16 @@
             ],
             "out": [],
             "description": [
-                "Skeleton Rogues throw {Acid Flasks}, which inflict poison and armor shred on hit. Acid Flask has a 5 second cooldown."
+                "Skeleton Rogues can now throw an {Vile Flask}, which inflicts poison and armor shred on hit. Vile Flask has a 5 second cooldown."
             ],
             "reminderText": [
-                "Acid Flask has a 5 second cooldown by default.\n\nThe area of effect of Skeleton Rogues' Acid Flask is affected by Increased Area for Minion Area Skills stats."
+                "The area of effect of Skeleton Rogues' Vile Flask is affected by Increased Area for Minion Area Skills stats."
             ]
         },
         "ss37kl-28": {
             "skill": "ss37kl-28",
             "name": "Individual Operator",
-            "x": 4999.3998,
+            "x": 5047.7998,
             "y": -836.0,
             "maxPoints": 4,
             "stats": [
@@ -18911,7 +18895,7 @@
                 "sw42ih-25"
             ],
             "description": [
-                "{Wraiths} have more additional strike chance, and when you cast Summon Wraith you gain increased critical strike chance equal to its mana cost for 4 seconds."
+                "{Wraiths} have improved base critical strike chance, and when you cast Summon Wraith you gain increased critical strike chance equal to its mana cost for 4 seconds."
             ]
         },
         "sw42ih-19": {
@@ -19164,7 +19148,7 @@
         "ts50pl-0": {
             "skill": "ts50pl-0",
             "name": "Transplant",
-            "x": 6387.3998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -19183,13 +19167,11 @@
         "ts50pl-2": {
             "skill": "ts50pl-2",
             "name": "Bone Armor",
-            "x": 5235.3998,
+            "x": 5283.7998,
             "y": -464.0,
             "maxPoints": 3,
             "stats": [
-                "Bone Armor On Teleport",
-                "100 Armour",
-                "4% Less Damage Taken"
+                "Bone Armor On Teleport"
             ],
             "in": [
                 "ts50pl-22",
@@ -19200,45 +19182,18 @@
                 "1"
             ],
             "out": [
-                "ts50pl-3",
                 "ts50pl-5",
                 "ts50pl-8",
                 "ts50pl-22"
             ],
             "description": [
-                "When you use Transplant you are granted {Bone Armor} for 4 seconds, which grants armor and less damage taken (multiplicative with other modifiers).\r\n\r\nThis effect has a 10 second cooldown.\r"
-            ],
-            "reminderText": [
-                "{Bone Armor} grants armor and reduces damage taken."
-            ]
-        },
-        "ts50pl-3": {
-            "skill": "ts50pl-3",
-            "name": "Plated Bone",
-            "x": 4755.3998,
-            "y": -840.0,
-            "maxPoints": 2,
-            "stats": [
-                "+10% Bone Armour Effect"
-            ],
-            "in": [
-                "ts50pl-2"
-            ],
-            "reqPoints": [
-                "2"
-            ],
-            "out": [],
-            "description": [
-                "{Bone Armor} is more effective."
-            ],
-            "reminderText": [
-                "{Bone Armor} grants armor and reduces damage taken. Lasts 4 seconds. 10 second cooldown.\n\nThis node increases the stats that bone armour grants."
+                "When you use Transplant you are granted {Bone Armor} for 4 seconds, which causes you to take less damage.\r\n\r\nThis effect has a 10 second cooldown.\r"
             ]
         },
         "ts50pl-4": {
             "skill": "ts50pl-4",
             "name": "Fleeting Form",
-            "x": 5863.3998,
+            "x": 5911.7998,
             "y": -136.0,
             "maxPoints": 3,
             "stats": [
@@ -19256,14 +19211,14 @@
                 "ts50pl-22"
             ],
             "description": [
-                "Transplant as increased cast speed and cooldown recovery speed."
+                "Transplant has increased cast speed and cooldown recovery speed."
             ]
         },
         "ts50pl-5": {
             "skill": "ts50pl-5",
             "name": "Apostasy",
-            "x": 4619.3998,
-            "y": -240.0,
+            "x": 4603.7998,
+            "y": -336.0,
             "maxPoints": 3,
             "stats": [
                 "+1 Bone Armor Duration (seconds)"
@@ -19279,15 +19234,12 @@
             ],
             "description": [
                 "{Bone Armor} lasts longer."
-            ],
-            "reminderText": [
-                "{Bone Armor} grants armor and reduces damage taken. Lasts 4 seconds. 10 second cooldown."
             ]
         },
         "ts50pl-6": {
             "skill": "ts50pl-6",
             "name": "Drink Deep",
-            "x": 4010.9998,
+            "x": 4059.3997999999997,
             "y": -437.19984,
             "maxPoints": 1,
             "stats": [
@@ -19308,7 +19260,7 @@
         "ts50pl-7": {
             "skill": "ts50pl-7",
             "name": "Marrow Blades",
-            "x": 5363.3998,
+            "x": 5411.7998,
             "y": 192.0,
             "maxPoints": 3,
             "stats": [
@@ -19333,7 +19285,7 @@
         "ts50pl-8": {
             "skill": "ts50pl-8",
             "name": "Simulacrum",
-            "x": 4707.3998,
+            "x": 4755.7998,
             "y": 320.0,
             "maxPoints": 1,
             "stats": [
@@ -19363,7 +19315,7 @@
         "ts50pl-9": {
             "skill": "ts50pl-9",
             "name": "Transfusion",
-            "x": 4064.9998,
+            "x": 4113.399799999999,
             "y": 556.0,
             "maxPoints": 1,
             "stats": [
@@ -19385,7 +19337,7 @@
         "ts50pl-10": {
             "skill": "ts50pl-10",
             "name": "Purgatory",
-            "x": 5107.3998,
+            "x": 5155.7998,
             "y": 952.8,
             "maxPoints": 1,
             "stats": [
@@ -19411,7 +19363,7 @@
         "ts50pl-11": {
             "skill": "ts50pl-11",
             "name": "Ivory Court",
-            "x": 4188.9998,
+            "x": 4237.399799999999,
             "y": 1197.2,
             "maxPoints": 3,
             "stats": [
@@ -19434,7 +19386,7 @@
         "ts50pl-12": {
             "skill": "ts50pl-12",
             "name": "Scarlet Rain",
-            "x": 6899.3998,
+            "x": 6947.7998,
             "y": 576.0,
             "maxPoints": 4,
             "stats": [
@@ -19458,7 +19410,7 @@
         "ts50pl-13": {
             "skill": "ts50pl-13",
             "name": "Cursed Exile",
-            "x": 7499.3998,
+            "x": 7547.7998,
             "y": 1220.0,
             "maxPoints": 5,
             "stats": [
@@ -19484,7 +19436,7 @@
         "ts50pl-14": {
             "skill": "ts50pl-14",
             "name": "Ethereal Body",
-            "x": 6755.3998,
+            "x": 6803.7998,
             "y": 1256.0,
             "maxPoints": 1,
             "stats": [
@@ -19506,7 +19458,7 @@
         "ts50pl-15": {
             "skill": "ts50pl-15",
             "name": "Squeamish",
-            "x": 6287.3998,
+            "x": 6335.7998,
             "y": 1076.0,
             "maxPoints": 1,
             "stats": [
@@ -19528,7 +19480,7 @@
         "ts50pl-16": {
             "skill": "ts50pl-16",
             "name": "Thanatophobia",
-            "x": 5799.3998,
+            "x": 5847.7998,
             "y": 1256.0,
             "maxPoints": 1,
             "stats": [
@@ -19548,7 +19500,7 @@
         "ts50pl-17": {
             "skill": "ts50pl-17",
             "name": "Reign of Blood",
-            "x": 7764.1996,
+            "x": 7812.5996,
             "y": 424.0,
             "maxPoints": 1,
             "stats": [
@@ -19576,7 +19528,7 @@
         "ts50pl-18": {
             "skill": "ts50pl-18",
             "name": "Acolyte's Fervor",
-            "x": 7099.3998,
+            "x": 7147.7998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -19602,7 +19554,7 @@
         "ts50pl-19": {
             "skill": "ts50pl-19",
             "name": "Doom Bringer",
-            "x": 7947.3998,
+            "x": 7995.7998,
             "y": 1080.0,
             "maxPoints": 1,
             "stats": [
@@ -19627,7 +19579,7 @@
         "ts50pl-20": {
             "skill": "ts50pl-20",
             "name": "Hemophilia",
-            "x": 8791.3998,
+            "x": 8839.7998,
             "y": 1008.0,
             "maxPoints": 4,
             "stats": [
@@ -19648,7 +19600,7 @@
         "ts50pl-21": {
             "skill": "ts50pl-21",
             "name": "Sticky Blood",
-            "x": 6899.3998,
+            "x": 6947.7998,
             "y": -560.0,
             "maxPoints": 1,
             "stats": [
@@ -19676,7 +19628,7 @@
         "ts50pl-22": {
             "skill": "ts50pl-22",
             "name": "Anemia",
-            "x": 6103.3998,
+            "x": 6151.7998,
             "y": -708.0,
             "maxPoints": 4,
             "stats": [
@@ -19703,7 +19655,7 @@
         "ts50pl-23": {
             "skill": "ts50pl-23",
             "name": "Siphon",
-            "x": 7659.3998,
+            "x": 7707.7998,
             "y": -931.2,
             "maxPoints": 3,
             "stats": [
@@ -19726,7 +19678,7 @@
         "ts50pl-24": {
             "skill": "ts50pl-24",
             "name": "Dance of Blood",
-            "x": 8087.79972,
+            "x": 8136.19972,
             "y": 55.200012,
             "maxPoints": 3,
             "stats": [
@@ -19750,7 +19702,7 @@
         "ts50pl-25": {
             "skill": "ts50pl-25",
             "name": "Azure Veins",
-            "x": 8141.39992,
+            "x": 8189.7999199999995,
             "y": -525.20012,
             "maxPoints": 2,
             "stats": [
@@ -19775,7 +19727,7 @@
         "ts50pl-26": {
             "skill": "ts50pl-26",
             "name": "Pale Blood",
-            "x": 8791.3998,
+            "x": 8839.7998,
             "y": -865.2,
             "maxPoints": 3,
             "stats": [
@@ -19796,7 +19748,7 @@
         "ts50pl-27": {
             "skill": "ts50pl-27",
             "name": "Flesh Marquis",
-            "x": 8791.3998,
+            "x": 8839.7998,
             "y": -185.2,
             "maxPoints": 3,
             "stats": [
@@ -19820,7 +19772,7 @@
         "ts50pl-28": {
             "skill": "ts50pl-28",
             "name": "Forced Fruition",
-            "x": 8951.3998,
+            "x": 8999.7998,
             "y": 424.0,
             "maxPoints": 3,
             "stats": [
@@ -19840,7 +19792,7 @@
         "ts50pl-30": {
             "skill": "ts50pl-30",
             "name": "Violent Emergence",
-            "x": 8406.5998,
+            "x": 8454.9998,
             "y": 424.0,
             "maxPoints": 3,
             "stats": [
@@ -20249,7 +20201,7 @@
             "maxPoints": 2,
             "stats": [
                 "15% Mana Gain Chance",
-                "6 Mana Gained"
+                "4 Mana Gained"
             ],
             "in": [
                 "ws54hm-17"
@@ -20520,12 +20472,16 @@
             "base_vit": 1,
             "skills": [
                 {
-                    "label": "Dread Shade",
-                    "treeId": "ds4d3"
+                    "label": "Infernal Shade",
+                    "treeId": "is40"
                 },
                 {
-                    "label": "Aura of Decay",
-                    "treeId": "ad0ry"
+                    "label": "Summon Skeletal Mage",
+                    "treeId": "sm4g"
+                },
+                {
+                    "label": "Chaos Bolts",
+                    "treeId": "ch4bo"
                 },
                 {
                     "label": "Marrow Shards",
@@ -20536,92 +20492,88 @@
                     "treeId": "pr5fm"
                 },
                 {
-                    "label": "Infernal Shade",
-                    "treeId": "is40"
+                    "label": "Rip Blood",
+                    "treeId": "rb31pl"
                 },
                 {
-                    "label": "Transplant",
-                    "treeId": "ts50pl"
-                },
-                {
-                    "label": "Profane Form",
-                    "treeId": "ch0fs"
-                },
-                {
-                    "label": "Summon Skeleton",
-                    "treeId": "ss37kl"
+                    "label": "Dread Shade",
+                    "treeId": "ds4d3"
                 },
                 {
                     "label": "Soul Feast",
                     "treeId": "fe8at"
                 },
                 {
-                    "label": "Drain Life",
-                    "treeId": "dl73"
-                },
-                {
-                    "label": "Reaper Form",
-                    "treeId": "rf1azz"
-                },
-                {
                     "label": "Wandering Spirits",
                     "treeId": "ws54hm"
                 },
                 {
-                    "label": "Summon Wraith",
-                    "treeId": "sw42ih"
-                },
-                {
-                    "label": "Sacrifice",
-                    "treeId": "sf31rc"
-                },
-                {
-                    "label": "Ghost Flame",
-                    "treeId": "gh0fl"
-                },
-                {
-                    "label": "Spirit Plague",
-                    "treeId": "sp5g2"
-                },
-                {
-                    "label": "Chaos Bolts",
-                    "treeId": "ch4bo"
-                },
-                {
-                    "label": "Summon Skeletal Mage",
-                    "treeId": "sm4g"
+                    "label": "Summon Skeleton",
+                    "treeId": "ss37kl"
                 },
                 {
                     "label": "Bone Curse",
                     "treeId": "bc53"
                 },
                 {
-                    "label": "Summon Bone Golem",
-                    "treeId": "bg36nl"
+                    "label": "Volatile Zombie",
+                    "treeId": "svz81"
                 },
                 {
-                    "label": "Hungering Souls",
-                    "treeId": "hs18gu"
+                    "label": "Spirit Plague",
+                    "treeId": "sp5g2"
                 },
                 {
-                    "label": "Assemble Abomination",
-                    "treeId": "aa710"
+                    "label": "Summon Wraith",
+                    "treeId": "sw42ih"
+                },
+                {
+                    "label": "Aura of Decay",
+                    "treeId": "ad0ry"
                 },
                 {
                     "label": "Death Seal",
                     "treeId": "ds34l"
                 },
                 {
-                    "label": "Rip Blood",
-                    "treeId": "rb31pl"
-                },
-                {
-                    "label": "Volatile Zombie",
-                    "treeId": "svz81"
+                    "label": "Hungering Souls",
+                    "treeId": "hs18gu"
                 },
                 {
                     "label": "Harvest",
                     "treeId": "ha84"
+                },
+                {
+                    "label": "Ghost Flame",
+                    "treeId": "gh0fl"
+                },
+                {
+                    "label": "Reaper Form",
+                    "treeId": "rf1azz"
+                },
+                {
+                    "label": "Summon Bone Golem",
+                    "treeId": "bg36nl"
+                },
+                {
+                    "label": "Transplant",
+                    "treeId": "ts50pl"
+                },
+                {
+                    "label": "Drain Life",
+                    "treeId": "dl73"
+                },
+                {
+                    "label": "Profane Form",
+                    "treeId": "ch0fs"
+                },
+                {
+                    "label": "Assemble Abomination",
+                    "treeId": "aa710"
+                },
+                {
+                    "label": "Sacrifice",
+                    "treeId": "sf31rc"
                 }
             ]
         }

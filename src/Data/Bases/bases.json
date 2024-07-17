@@ -184,8 +184,8 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+129 Armor",
-            "+(9-23)% Spell Damage",
-            "+(9-23)% Minion Spell Damage"
+            "+(9-23)% increased Area for Area Skills",
+            "+(9-23)% Minion increased Area for Area Skills"
         ]
     },
     "Revenant Mask": {
@@ -1171,7 +1171,7 @@
         "affixEffectModifier": 0.5,
         "implicits": [
             "+41 Armor",
-            "(11-24)% increased Void Resistance"
+            "+(11-24)% Void Resistance"
         ]
     },
     "Temple Garb": {
@@ -2053,7 +2053,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+15 Armor",
-            "(7-9)% increased Movement Speed"
+            "(8-10)% increased Movement Speed"
         ]
     },
     "Iron Greaves": {
@@ -2066,7 +2066,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+35 Armor",
-            "(7-9)% increased Movement Speed"
+            "(8-10)% increased Movement Speed"
         ]
     },
     "Outcast Boots": {
@@ -2079,8 +2079,8 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+20 Armor",
-            "(10-12)% increased Movement Speed",
-            "(10-20)% increased Dodge Rating"
+            "(8-10)% increased Movement Speed",
+            "+1 Evade Charge"
         ]
     },
     "Brigandine Boots": {
@@ -2092,8 +2092,8 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+53 Armor",
-            "(13-15)% increased Movement Speed"
+            "+56 Armor",
+            "(11-14)% increased Movement Speed"
         ]
     },
     "Heoborean Boots": {
@@ -2141,13 +2141,13 @@
         "baseTypeID": 3,
         "subTypeID": 8,
         "req": {
-            "level": 58
+            "level": 55
         },
         "affixEffectModifier": 0,
         "implicits": [
             "+8 Armor",
-            "(15-18)% increased Movement Speed",
-            "(10-20)% reduced Duration of Stuns Received"
+            "(11-14)% increased Movement Speed",
+            "+(16-32)% increased Cooldown Recovery Speed for Evade"
         ]
     },
     "Arcane Boots": {
@@ -2175,7 +2175,7 @@
         "implicits": [
             "+72 Armor",
             "(15-18)% increased Movement Speed",
-            "+(24-50)% Effect of Haste on You"
+            "(24-50)% increased Effect of Haste on You"
         ]
     },
     "Citadel Boots": {
@@ -2217,7 +2217,7 @@
         "implicits": [
             "+25 Armor",
             "(15-18)% increased Movement Speed",
-            "+(20-30)% Effect of Haste on You"
+            "(20-30)% increased Effect of Haste on You"
         ]
     },
     "Veteran's Boots": {
@@ -2671,6 +2671,60 @@
             "Range": 1
         }
     },
+    "Marble Dedication": {
+        "type": "One-Handed Axe",
+        "baseTypeID": 5,
+        "subTypeID": 14,
+        "req": {
+            "level": 52
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+25 Melee Damage",
+            "+10% Block Chance",
+            "+(250-425) Block Effectiveness"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.92,
+            "Range": 1
+        }
+    },
+    "Kolheim Axe": {
+        "type": "One-Handed Axe",
+        "baseTypeID": 5,
+        "subTypeID": 15,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+53 Melee Damage",
+            "+(8-13)% Cold Penetration",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.05,
+            "Range": 1
+        }
+    },
+    "Avenged Kolheim Axe": {
+        "type": "One-Handed Axe",
+        "baseTypeID": 5,
+        "subTypeID": 16,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+53 Melee Damage",
+            "+(8-13)% Cold Penetration",
+            "(13-18)% more Global Conditional Damage"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.05,
+            "Range": 1
+        }
+    },
     "Poignard": {
         "type": "Dagger",
         "baseTypeID": 6,
@@ -2900,6 +2954,42 @@
             "Range": 1
         }
     },
+    "Shark Tooth": {
+        "type": "Dagger",
+        "baseTypeID": 6,
+        "subTypeID": 13,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+47 Melee Damage",
+            "+(20-30)% Damage Leeched as Health",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.14,
+            "Range": 1
+        }
+    },
+    "Avenged Shark Tooth": {
+        "type": "Dagger",
+        "baseTypeID": 6,
+        "subTypeID": 14,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+47 Melee Damage",
+            "+(20-30)% Damage Leeched as Health",
+            "+(47-72) Health Gain on Kill"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.14,
+            "Range": 1
+        }
+    },
     "Club": {
         "type": "One-Handed Mace",
         "baseTypeID": 7,
@@ -3122,6 +3212,42 @@
             "Range": 1
         }
     },
+    "Chitin Club": {
+        "type": "One-Handed Mace",
+        "baseTypeID": 7,
+        "subTypeID": 13,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+68 Melee Damage",
+            "+(58-90) Endurance Threshold",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.98,
+            "Range": 1
+        }
+    },
+    "Avenged Chitin Club": {
+        "type": "One-Handed Mace",
+        "baseTypeID": 7,
+        "subTypeID": 14,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+68 Melee Damage",
+            "+(57-90) Endurance Threshold",
+            "+(5-7)% Maximum Health gained as Endurance Threshold"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.98,
+            "Range": 1
+        }
+    },
     "Brass Sceptre": {
         "type": "Sceptre",
         "baseTypeID": 8,
@@ -3333,6 +3459,42 @@
             "Range": 1
         }
     },
+    "Scorn Sceptre": {
+        "type": "Sceptre",
+        "baseTypeID": 8,
+        "subTypeID": 12,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+61 Melee Damage",
+            "+(8-9)% Spell Critical Strike Chance",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.94,
+            "Range": 1
+        }
+    },
+    "Avenged Scorn Sceptre": {
+        "type": "Sceptre",
+        "baseTypeID": 8,
+        "subTypeID": 13,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+61 Melee Damage",
+            "+(8-9)% Spell Critical Strike Chance",
+            "+(16-21) Spell Damage"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.94,
+            "Range": 1
+        }
+    },
     "Broken Sword": {
         "type": "One-Handed Sword",
         "baseTypeID": 9,
@@ -3526,7 +3688,7 @@
         "implicits": [
             "+39 Melee Damage",
             "(52-72)% increased Melee Elemental Damage",
-            "50% increased Melee Elemental Attack Speed"
+            "(5-12)% increased Melee Elemental Attack Speed"
         ],
         "weapon": {
             "AttackRateBase": 1.16,
@@ -3548,6 +3710,60 @@
         "weapon": {
             "AttackRateBase": 1.2,
             "Range": 1.1
+        }
+    },
+    "Serrated Tooth": {
+        "type": "One-Handed Sword",
+        "baseTypeID": 9,
+        "subTypeID": 13,
+        "req": {
+            "level": 64
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+50 Melee Damage",
+            "+(25-35)% Critical Strike Multiplier",
+            "+(3-5) Strength"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.16,
+            "Range": 1
+        }
+    },
+    "Cavalry Sword": {
+        "type": "One-Handed Sword",
+        "baseTypeID": 9,
+        "subTypeID": 14,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+47 Melee Damage",
+            "+(17-27)% increased Cooldown Recovery Speed for Evade",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.16,
+            "Range": 1
+        }
+    },
+    "Avenged Cavalry Sword": {
+        "type": "One-Handed Sword",
+        "baseTypeID": 9,
+        "subTypeID": 15,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+47 Melee Damage",
+            "+(17-27)% increased Cooldown Recovery Speed for Evade",
+            "+(147-231) Dodge Rating while using Evade"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.16,
+            "Range": 1
         }
     },
     "Coral Wand": {
@@ -3613,7 +3829,7 @@
         "implicits": [
             "+(44-51) Spell Damage",
             "+(22-61)% Chance to Poison on Spell Hit",
-            "-3 Spell Mana Cost"
+            "-4 Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3703,7 +3919,7 @@
         "implicits": [
             "+(56-66) Spell Necrotic Damage",
             "(56-66)% increased Curse Damage",
-            "-3 Spell Mana Cost"
+            "(-3--5) Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3721,7 +3937,7 @@
         "implicits": [
             "+(50-60) Spell Damage",
             "+(50-60) Mana",
-            "-3 Spell Mana Cost"
+            "(-3--5) Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3739,7 +3955,7 @@
         "implicits": [
             "+(54-60) Spell Damage",
             "(6-12)% increased Cast Speed",
-            "-3 Spell Mana Cost"
+            "(-3--5) Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3757,7 +3973,7 @@
         "implicits": [
             "+(52-56) Spell Damage",
             "(5-10)% increased Cast Speed",
-            "-3 Spell Mana Cost"
+            "(-3--4) Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -3775,7 +3991,43 @@
         "implicits": [
             "+(52-58) Spell Damage",
             "+(40-52) Mana",
-            "-3 Spell Mana Cost"
+            "(-3--4) Spell Mana Cost"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.02,
+            "Range": 0.8
+        }
+    },
+    "Lodestone Wand": {
+        "type": "Wand",
+        "baseTypeID": 10,
+        "subTypeID": 13,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+(60-63) Spell Damage",
+            "(-3--5) Spell Mana Cost",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.02,
+            "Range": 0.8
+        }
+    },
+    "Avenged Lodestone Wand": {
+        "type": "Wand",
+        "baseTypeID": 10,
+        "subTypeID": 14,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+(60-63) Spell Damage",
+            "(-3--5) Spell Mana Cost",
+            "+(36-60)% Mana Spent Gained as Ward"
         ],
         "weapon": {
             "AttackRateBase": 1.02,
@@ -4059,6 +4311,42 @@
             "Range": 1.5
         }
     },
+    "Sun Beak": {
+        "type": "Two-Handed Axe",
+        "baseTypeID": 12,
+        "subTypeID": 16,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+105 Melee Damage",
+            "+(105-135)% Melee Critical Strike Multiplier",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.92,
+            "Range": 1.5
+        }
+    },
+    "Avenged Sun Beak": {
+        "type": "Two-Handed Axe",
+        "baseTypeID": 12,
+        "subTypeID": 17,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+105 Melee Damage",
+            "+(105-135)% Melee Critical Strike Multiplier",
+            "+(10-15) Health Gain"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.92,
+            "Range": 1.5
+        }
+    },
     "Great Mace": {
         "type": "Two-Handed Mace",
         "baseTypeID": 13,
@@ -4263,6 +4551,42 @@
         "weapon": {
             "AttackRateBase": 0.86,
             "Range": 1.5
+        }
+    },
+    "Obsidian Hammer": {
+        "type": "Two-Handed Mace",
+        "baseTypeID": 13,
+        "subTypeID": 12,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+132 Melee Damage",
+            "(15-23)% more Melee Global Conditional Damage",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.86,
+            "Range": 1.6
+        }
+    },
+    "Avenged Obsidian Hammer": {
+        "type": "Two-Handed Mace",
+        "baseTypeID": 13,
+        "subTypeID": 13,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+132 Melee Damage",
+            "(15-23)% more Melee Global Conditional Damage",
+            "+(85-132)% Increased Melee Stun Chance"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.86,
+            "Range": 1.6
         }
     },
     "Pike": {
@@ -4481,7 +4805,7 @@
         "affixEffectModifier": 2.2,
         "implicits": [
             "+94 Melee Damage",
-            "+(94-194)% Chance to Shred Armor on Melee Hit"
+            "+(94-194)% Chance to Shred Armour on Melee Hit"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4549,7 +4873,43 @@
         "affixEffectModifier": 2.2,
         "implicits": [
             "+90 Melee Damage",
-            "+(90-156)% Chance to Shred Armor on Melee Hit"
+            "+(90-156)% Chance to Shred Armour on Melee Hit"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.94,
+            "Range": 2.1
+        }
+    },
+    "Raptor Spear": {
+        "type": "Two-Handed Spear",
+        "baseTypeID": 14,
+        "subTypeID": 17,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+120 Melee Damage",
+            "+(12-18)% Seconds of Haste after you use Evade",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.94,
+            "Range": 2.1
+        }
+    },
+    "Avenged Raptor Spear": {
+        "type": "Two-Handed Spear",
+        "baseTypeID": 14,
+        "subTypeID": 18,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+120 Melee Damage",
+            "+(12-18)% Seconds of Haste after you use Evade",
+            "(30-50)% increased Effect of Haste on You"
         ],
         "weapon": {
             "AttackRateBase": 0.94,
@@ -4693,7 +5053,7 @@
         "implicits": [
             "+78 Melee Damage",
             "+(60-68) Spell Damage",
-            "-3 Spell Mana Cost"
+            "(-3--4) Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.98,
@@ -4747,7 +5107,7 @@
         "implicits": [
             "+(90-100) Spell Damage",
             "(20-30)% increased Mana Regen",
-            "-3 Spell Mana Cost"
+            "(-3--5) Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4819,7 +5179,7 @@
         "implicits": [
             "+70 Melee Damage",
             "+(63-80) Spell Damage",
-            "-3 Spell Mana Cost"
+            "(-3--5) Spell Mana Cost"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4856,6 +5216,42 @@
             "+67 Melee Damage",
             "+(67-76) Spell Damage",
             "+(60-67) Mana"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.92,
+            "Range": 1.7
+        }
+    },
+    "Ram Staff": {
+        "type": "Two-Handed Staff",
+        "baseTypeID": 15,
+        "subTypeID": 17,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+92 Melee Damage",
+            "+(92-102) Spell Damage",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 0.92,
+            "Range": 1.7
+        }
+    },
+    "Avenged Ram Staff": {
+        "type": "Two-Handed Staff",
+        "baseTypeID": 15,
+        "subTypeID": 18,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+92 Melee Damage",
+            "+(92-102) Spell Damage",
+            "+(55-72) Health"
         ],
         "weapon": {
             "AttackRateBase": 0.92,
@@ -4904,7 +5300,7 @@
         "affixEffectModifier": 2.2,
         "implicits": [
             "+40 Melee Damage",
-            "+(10-25)% Chance to Shred Armor on Melee Hit"
+            "+(10-25)% Chance to Shred Armour on Melee Hit"
         ],
         "weapon": {
             "AttackRateBase": 1.06,
@@ -5076,6 +5472,42 @@
         ],
         "weapon": {
             "AttackRateBase": 1.02,
+            "Range": 1.5
+        }
+    },
+    "Great Macuahuitl": {
+        "type": "Two-Handed Sword",
+        "baseTypeID": 16,
+        "subTypeID": 13,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+99 Melee Damage",
+            "+(105-145)% Chance to Bleed on Melee Hit",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.06,
+            "Range": 1.5
+        }
+    },
+    "Avenged Great Macuahuitl": {
+        "type": "Two-Handed Sword",
+        "baseTypeID": 16,
+        "subTypeID": 14,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 2.2,
+        "implicits": [
+            "+99 Melee Damage",
+            "+(105-145)% Chance to Bleed on Melee Hit",
+            "+(35-45)% Increased Bleed Duration "
+        ],
+        "weapon": {
+            "AttackRateBase": 1.06,
             "Range": 1.5
         }
     },
@@ -5450,6 +5882,34 @@
             "+(750-1000) Block Effectiveness"
         ]
     },
+    "Culnivan Shield": {
+        "type": "Shield",
+        "baseTypeID": 18,
+        "subTypeID": 20,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.17,
+        "implicits": [
+            "+25% Block Chance",
+            "+(40-48) Ward Gain",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ]
+    },
+    "Avenged Culnivan Shield": {
+        "type": "Shield",
+        "baseTypeID": 18,
+        "subTypeID": 21,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.17,
+        "implicits": [
+            "+25% Block Chance",
+            "+(40-48) Ward Gain",
+            "+(125-255) Ward Decay Threshold"
+        ]
+    },
     "Glass Catalyst": {
         "type": "Off-Hand Catalyst",
         "baseTypeID": 19,
@@ -5691,6 +6151,34 @@
             "(12-15)% increased Mana Regen"
         ]
     },
+    "Crystal Core": {
+        "type": "Off-Hand Catalyst",
+        "baseTypeID": 19,
+        "subTypeID": 18,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.17,
+        "implicits": [
+            "+(12-15) Intelligence",
+            "+(24-30) Mana Gained on Potion Use",
+            "+(100-355)% Chance to Upgrade when you slay a Harbinger"
+        ]
+    },
+    "Avenged Crystal Core": {
+        "type": "Off-Hand Catalyst",
+        "baseTypeID": 19,
+        "subTypeID": 19,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.17,
+        "implicits": [
+            "+(12-15) Intelligence",
+            "+(24-30) Mana Gained on Potion Use",
+            "+(30-48) Mana"
+        ]
+    },
     "Copper Amulet": {
         "type": "Amulet",
         "baseTypeID": 20,
@@ -5839,6 +6327,20 @@
         "affixEffectModifier": 0.17,
         "implicits": [
             "+(32-42)% Lightning Resistance"
+        ]
+    },
+    "Unbound Locket": {
+        "type": "Amulet",
+        "baseTypeID": 20,
+        "subTypeID": 12,
+        "req": {
+            "level": 80
+        },
+        "affixEffectModifier": 0.17,
+        "implicits": [
+            "(1-12)% increased Health",
+            "(1-12)% increased Mana",
+            "(4--8)% reduced Movement Speed"
         ]
     },
     "Copper Ring": {
@@ -6459,7 +6961,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+(4-8) Spell Cold Damage",
-            "+(10-24)% Chance to cast Maelstrom every 5 seconds"
+            "+(10-24)% Chance to cast Maelstrom every 3 seconds"
         ]
     },
     "Spirit Catcher": {
@@ -6637,7 +7139,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+(16-40)% Chance to Shred Armor on Hit"
+            "+(16-40)% Chance to Shred Armour on Hit"
         ]
     },
     "Stolen Tithe": {
@@ -6776,6 +7278,16 @@
         "implicits": [
             "+(9-18)% Ward Retention"
         ]
+    },
+    "Stone Egg": {
+        "type": "Relic",
+        "baseTypeID": 22,
+        "subTypeID": 61,
+        "req": {
+            "level": 0
+        },
+        "affixEffectModifier": 0,
+        "implicits": []
     },
     "Shortbow": {
         "type": "Bow",
@@ -7018,10 +7530,56 @@
             "Range": 1
         }
     },
+    "Silverwing Bow": {
+        "type": "Bow",
+        "baseTypeID": 23,
+        "subTypeID": 14,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+50 Bow Damage",
+            "+(15-25)% Chance to gain Haste for 1 second on Hit",
+            "(100-355)% increased Chance to Upgrade when you slay a Harbinger"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.05,
+            "Range": 1
+        }
+    },
+    "Avenged Silverwing Bow": {
+        "type": "Bow",
+        "baseTypeID": 23,
+        "subTypeID": 15,
+        "req": {
+            "level": 81
+        },
+        "affixEffectModifier": 0.75,
+        "implicits": [
+            "+50 Bow Damage",
+            "+(15-25)% Chance to gain Haste for 1 second on Hit",
+            "(25-50)% increased Effect of Haste on You"
+        ],
+        "weapon": {
+            "AttackRateBase": 1.05,
+            "Range": 1
+        }
+    },
     "Small Eterran Idol": {
         "type": "Small Idol",
         "baseTypeID": 25,
         "subTypeID": 0,
+        "req": {
+            "level": 0
+        },
+        "affixEffectModifier": -0.83,
+        "implicits": []
+    },
+    "Small Orobyss Idol": {
+        "type": "Small Idol",
+        "baseTypeID": 25,
+        "subTypeID": 1,
         "req": {
             "level": 0
         },
@@ -9215,7 +9773,7 @@
         },
         "affixEffectModifier": 0,
         "implicits": [
-            "+65% Chance to Poison on Hit"
+            "+(65-100)% Chance to Poison on Hit"
         ]
     },
     "Grand Hunger of Dragons": {

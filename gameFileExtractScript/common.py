@@ -426,7 +426,8 @@ propertiesEnum = ["Damage",
                   "CircleOfFortuneLensEffect"]
 
 for i, property in enumerate(propertiesEnum):
-    propertiesEnum[i] = re.sub('(.)([A-Z]+)', r'\1 \2',property)
+    propertiesEnum[i] = re.sub('(.)([A-Z]+)', r'\1 \2', property)
+
 
 def add_tags_modifier(stat_name, tags):
     for k, v in skillTypes.items():
@@ -454,11 +455,11 @@ def construct_mod_data_list():
     global modDataList
     mod_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/MasterAffixesList.asset")["MonoBehaviour"]
 
-    affix_keys_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes Shared Data.asset")["MonoBehaviour"][
-        "m_Entries"]
+    affix_keys_data = load_yaml_file_with_tag_error(
+        extractPath + "Localization/Tables/Item_Affixes/Item_Affixes Shared Data.asset")["MonoBehaviour"]["m_Entries"]
 
-    affix_strings_data = load_yaml_file_with_tag_error("originalAssets/Item_Affixes_en.asset")["MonoBehaviour"][
-        "m_TableData"]
+    affix_strings_data = load_yaml_file_with_tag_error(
+        extractPath + "Localization/Tables/Item_Affixes/Item_Affixes_en.asset")["MonoBehaviour"]["m_TableData"]
 
     affix_strings_by_id = {}
     for affixStringData in affix_strings_data:

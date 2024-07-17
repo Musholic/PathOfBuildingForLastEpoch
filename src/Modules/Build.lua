@@ -1220,11 +1220,11 @@ function buildMode:OpenConversionPopup()
 	local controls = { }
 	local currentVersion = treeVersions[latestTreeVersion].display
 	controls.note = new("LabelControl", nil, 0, 20, 0, 16, colorCodes.TIP..[[
-Info:^7 You are trying to load a build created for a version of Path of Exile that is
+Info:^7 You are trying to load a build created for a version of Last Epoch that is
 not supported by us. You will have to convert it to the current game version to load it.
 To use a build newer than the current supported game version, you may have to update.
 To use a build older than the current supported game version, we recommend loading it
-in an older version of Path of Building Community instead.
+in an older version of Path of Building For Last Epoch instead.
 ]])
 	controls.label = new("LabelControl", nil, 0, 110, 0, 16, colorCodes.WARNING..[[
 Warning:^7 Converting a build to a different game version may have side effects.

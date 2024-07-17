@@ -22,22 +22,26 @@
         "mods": [
             "+(20-50)% Damage Dealt to Mana Before Health",
             "+(70-130)% Spell Critical Strike Multiplier",
-            "(15-30)% increased Mana"
+            "(15-30)% increased Mana",
+            "+1 No Ward"
         ]
     },
     "2": {
         "name": "Snowblind",
         "baseTypeID": 0,
-        "subTypeID": 308,
+        "subTypeID": 6,
         "req": {
-            "level": 0
+            "level": 10
         },
         "mods": [
             "+(20-40)% Cold Resistance",
             "+(40-200)% Freeze Rate Multiplier",
-            "+40 Armor",
             "+40% Cold Chance to Chill on Hit",
-            "+40% Cold Chance to Blind on Hit"
+            "+40% Cold Chance to Blind on Hit",
+            "+1 Blind Immunity",
+            "+1 Chill Immunity",
+            "(16-24)% more Armor against Chilled Enemies",
+            "(16-24)% more Armor against Blinded Enemies"
         ]
     },
     "3": {
@@ -58,9 +62,9 @@
     "4": {
         "name": "Decayed Skull",
         "baseTypeID": 0,
-        "subTypeID": 610,
+        "subTypeID": 6,
         "req": {
-            "level": 0
+            "level": 24
         },
         "mods": [
             "80% increased Void Damage",
@@ -68,7 +72,8 @@
             "+20% Void Damage Taken as Physical",
             "+20% Necrotic Damage Taken as Physical",
             "+(30-100) Armor",
-            "(3-10)% more Armor"
+            "(3-10)% more Armor",
+            "+(15-30)% Armor Mitigation also applies to Damage over Time"
         ]
     },
     "5": {
@@ -111,8 +116,8 @@
             "+(30-70) Dodge Rating",
             "+1 Level of Skills",
             "+(30-45)% Chance to gain Haste for 1 second on Hit",
-            "+(15-30)% Effect of Haste on You",
-            "+(5-7)% Movement Speed"
+            "(15-30)% increased Effect of Haste on You",
+            "(5-7)% increased Movement Speed"
         ]
     },
     "8": {
@@ -168,7 +173,8 @@
             "(15-30)% increased Potion Cast Speed",
             "(15-30)% increased Potion Movement Speed",
             "+20% Current Health Lost per second",
-            "+20% Missing Health gained as Ward per second"
+            "+20% Missing Health gained as Ward per second",
+            "+1 Bleed Immunity while on Low Health"
         ]
     },
     "12": {
@@ -499,7 +505,7 @@
         "mods": [
             "+(25-45) Melee Fire Damage",
             "+(1-2) Melee Chance to Ignite on Hit",
-            "+(75-100)% Chance to gain a stack of Reen's Ire for 5 seconds on melee crit"
+            "+(75-100)% Chance to gain a stack of Reen's Ire for 5 seconds when you crit with a direct melee attack"
         ]
     },
     "36": {
@@ -674,7 +680,7 @@
         },
         "mods": [
             "+(50-66) Melee Physical Damage",
-            "+(15-25)% Melee Cull on Hit",
+            "+(15-20)% Melee Cull on Hit",
             "+5 Strength",
             "+50% Overkill Damage Leeched as Health",
             "(15-25)% increased Melee Attack Speed",
@@ -1153,10 +1159,10 @@
         "mods": [
             "+(25-55) Melee Physical Damage",
             "+1 Chance to summon Arek's Flesh when a hit leaves you below half health",
-            "+(60-90)% Chance to Shred Armor on Hit",
-            "+(60-90)% Minion Chance to Shred Armor on Hit",
-            "+(1-2) Increased Shred Armor Effect",
-            "+(1-2) Minion Increased Shred Armor Effect"
+            "+(60-90)% Chance to Shred Armour on Hit",
+            "+(60-90)% Minion Chance to Shred Armour on Hit",
+            "+(1-2) Increased Shred Armour Effect",
+            "+(1-2) Minion Increased Shred Armour Effect"
         ]
     },
     "83": {
@@ -1408,7 +1414,7 @@
         "mods": [
             "+(30-60)% Increased cold spell damage if you have directly cast a physical spell recently",
             "+(30-60)% Spell Increased Stun Chance",
-            "+(50-100)% Spell Chance to Shred Armor on Hit",
+            "+(50-100)% Spell Chance to Shred Armour on Hit",
             "+(50-100)% Spell Frostbite Chance"
         ]
     },
@@ -1713,7 +1719,7 @@
         "mods": [
             "+(40-60) Melee Void Damage",
             "(50-90)% increased Void Damage",
-            "+1 Chance to cast Abyssal Echoes on Melee Kill (4 second cooldown)",
+            "+1 Chance to cast Abyssal Echoes on Melee Kill or Melee Hit Boss or Rare Enemy (4 second cooldown)",
             "+75% Void Resistance",
             "+(50-70)% Void Damage Leeched as Health"
         ]
@@ -1788,7 +1794,7 @@
         "mods": [
             "+(24-40)% Chance to Chill on Hit",
             "+(10-20)% Increased Chill Duration",
-            "+(1-2) Freeze Rate per stack of Chill",
+            "4% less Damage Taken from Chilled Enemies",
             "+(24-40)% Chance to Shock on Hit",
             "+(10-20)% Increased Shock Duration ",
             "1% more More Damage Per Stack"
@@ -1861,9 +1867,8 @@
             "level": 0
         },
         "mods": [
-            "-1 Critical strike chance if you have dealt a critical strike recently",
-            "+1 Critical Strike Chance",
-            "+50% less Critical strike chance if you have dealt a critical strike recently",
+            "+1 Critical Strike Chance with non-channeled skills if you have not dealt a Critical Strike Recently",
+            "+50% less Critical Strike Chance if you have dealt a Critical Strike Recently",
             "+(10-15) Health Gain"
         ]
     },
@@ -2062,8 +2067,8 @@
             "(80-130)% increased Poison Damage",
             "+1 Hail of Arrows Damage converted to Poison",
             "+(30-60)% increased Hail of Arrows Duration",
-            "+(80-130)% Chance to Shred Armor on Bow Hit",
-            "+(80-130)% Increased Shred Armor Effect"
+            "+(80-130)% Chance to Shred Armour on Bow Hit",
+            "+(80-130)% Increased Shred Armour Effect"
         ]
     },
     "145": {
@@ -2108,7 +2113,8 @@
             "+(13-20) Health gained when you Dodge",
             "(70-95)% increased Cold Damage",
             "+2 All Attributes",
-            "10% increased Movement Speed"
+            "(10-13)% increased Movement Speed",
+            "20% reduced Duration of Stuns Received"
         ]
     },
     "148": {
@@ -2166,7 +2172,7 @@
             "+(10-16) Minion Melee Cold Damage",
             "+1 Chance to Bleed on Melee Hit",
             "+(30-40)% Increased Bleed Duration ",
-            "+(30-40)% Chance to Cast Rip Blood at 5 nearby targets on Melee Hit (3 second cooldown)",
+            "+(30-40)% Chance to Cast Rip Blood at 5 nearby targets on Melee Hit (2 second cooldown)",
             "+(13-20) Health Gained from Rip Blood"
         ]
     },
@@ -2211,7 +2217,7 @@
         "mods": [
             "+(33-45)% Cold Resistance",
             "+(33-45)% Lightning Resistance",
-            "+(33-45)% Chance to cast Maelstrom every 5 seconds",
+            "+(33-45)% Chance to cast Maelstrom every 3 seconds",
             "+(6-8)% Increased Lightning Damage per Active Maelstrom",
             "+(10-18) Melee Lightning Damage"
         ]
@@ -2332,7 +2338,7 @@
             "+(65-90) Melee Fire Damage",
             "+1 Chance to use Earthquake after using a Non-Channelled Movement Ability every 5 seconds",
             "+1 Earthquake Converted To Fire",
-            "+(2-4) Chance to Shred Armor on Hit"
+            "+(2-4) Chance to Shred Armour on Hit"
         ]
     },
     "163": {
@@ -2447,11 +2453,11 @@
             "level": 60
         },
         "mods": [
-            "+25% Minion All Resistances",
-            "(60-166)% increased Curse Damage",
-            "+(60-66) Curse Spell Damage",
-            "+25% All Resistances",
-            "(60-66)% increased Block Effectiveness"
+            "+(30-33)% Minion All Resistances",
+            "(91-166)% increased Curse Damage",
+            "+(66-91) Curse Spell Damage",
+            "+(30-33)% All Resistances",
+            "(16-19)% increased Block Effectiveness"
         ]
     },
     "171": {
@@ -2670,8 +2676,10 @@
             "(150-210)% increased Melee Damage",
             "(150-210)% increased Minion Damage",
             "+25% Chance to cast Jade Dust on Hit with Harvest\r",
-            "+1 Player Poison Damage Applies to Skeleton Rogues",
-            "+80% Minion Poison Damage Leeched as Health"
+            "+(150-210)% Player Poison Damage Applies to Skeleton Rogues",
+            "+80% Minion Poison Damage Leeched as Health",
+            "+(150-210)% Player Poison Damage Applies to your Falcon",
+            "+(1-3) Minion Throwing Level of Skills"
         ]
     },
     "185": {
@@ -3151,12 +3159,11 @@
             "level": 0
         },
         "mods": [
-            "+(14-40)% Bow Chance to Blind on Hit",
-            "+100 Increased Blind Effect",
+            "+(30-60)% Bow Chance to Blind on Hit",
             "+(100-154)% Increased Blind Duration",
             "+(54-84) LowLife Bow Void Damage",
             "(10-14)% increased LowLife Bow Attack Speed",
-            "+(10-14)% more hit damage to Blinded Enemies with Multishot"
+            "+(10-18)% more hit damage to Blinded Enemies with Multishot"
         ]
     },
     "216": {
@@ -3429,9 +3436,9 @@
             "level": 0
         },
         "mods": [
-            "+2% Cold Penetration with Frostbite per 10% Freeze Rate Multiplier",
+            "+1% Cold Penetration with Frostbite per 10% Freeze Rate Multiplier",
             "+1% Increased Movement Speed per 2 Dexterity (up to 20%)",
-            "(16-32)% increased Dodge Rating",
+            "+(160-320) Dodge Rating while using Evade",
             "+(5-10) Melee Cold Damage",
             "+(5-10) Spell Cold Damage",
             "+(5-10) Throwing Cold Damage",
@@ -3463,7 +3470,7 @@
         },
         "mods": [
             "+1 When you directly cast Summon Vines you teleport to the target location",
-            "+7 Seconds Cooldown Duration for Summon Vines",
+            "+6 Seconds Cooldown Duration for Summon Vines",
             "+(20-30)% Increased Attack and Cast Speed for Summoned Vines",
             "+1 Summoned Vines are Immune to Poison",
             "+1 Increased Vines Summoned when you directly cast Summon Vines"
@@ -3804,7 +3811,7 @@
         },
         "mods": [
             "+(46-100)% Chance to Ignite yourself when you use a Fire or Necrotic Skill",
-            "+(4-6) Spell Damage for Fire and Necrotic skills per stack of Ignite on You (up to 40)",
+            "+2 Spell Damage for Fire and Necrotic skills per stack of Ignite on You (up to 20 stacks)",
             "+1 chance to Cleanse All Ailments on Potion Use",
             "+(4-6)% Chance to gain Frenzy for 2 seconds when you directly use a Fire or Necrotic skill per stack of Ignite on You",
             "+(10-16)% Increased Ignite Duration "
@@ -3913,9 +3920,8 @@
             "level": 41
         },
         "mods": [
-            "-1 Critical strike chance if you have dealt a critical strike recently",
-            "+1 Critical Strike Chance",
-            "+50% less Critical strike chance if you have dealt a critical strike recently",
+            "+1 Critical Strike Chance with non-channeled skills if you have not dealt a Critical Strike Recently",
+            "+50% less Critical Strike Chance if you have dealt a Critical Strike Recently",
             "+(10-15) Ward Gain",
             "+(10-15)% Critical Strike Multiplier",
             "+1 Necrotic Level of Skills"
@@ -3969,7 +3975,7 @@
             "+(4-6)% Physical Penetration with Bleed inflicted by Bees per Strength",
             "+1 When you directly cast Thorn Shield, the nearest Bee also gains Thorn Shield",
             "+(32-56)% Chance to apply Frailty on hit for Bees",
-            "+30% Minion Physical Damage Leeched as Health",
+            "+40% Minion Physical Damage Leeched as Health",
             "1% less Minion Critical Strike Chance"
         ]
     },
@@ -4144,7 +4150,7 @@
             "+(50-105) Spell Void Damage",
             "+(1-2) Void Level of Skills",
             "+(50-105) Endurance Threshold",
-            "+(10-15)% Void Spell Damage",
+            "+(10-15)% Spell Void increased Area for Area Skills",
             "+1 Chance to transport Devouring Orbs around the target location when you use Erasing Strike",
             "-10 Erasing Strike Mana Cost"
         ]
@@ -4209,7 +4215,7 @@
             "+1 Damage over Time Spell Level of Skills",
             "17% less Damage Over Time Taken",
             "+10% Poison Damage Leeched as Health",
-            "+(10-17)% Damage over Time Spell Damage"
+            "+(10-17)% Damage over Time Spell increased Area for Area Skills"
         ]
     },
     "284": {
@@ -4239,7 +4245,7 @@
             "level": 36
         },
         "mods": [
-            "+(48-65) Melee Damage for Detonating Arrow",
+            "+(48-65) Melee Damage for directly used Detonating Arrow",
             "+3 Detonating Arrow",
             "-6 Mana Cost for Detonating Arrow",
             "+1 Detonating Arrow Converted to a Melee Attack"
@@ -4396,9 +4402,9 @@
         },
         "mods": [
             "+1 Gain a stack of Golden Aegis each second",
-            "+(10-13)% Block Chance per stack of Golden Aegis",
-            "+2 Block Effectiveness per 1% Total Uncapped Resistance",
-            "+(13-20) Ward Gain"
+            "+(8-11)% Block Chance per stack of Golden Aegis",
+            "+1 Block Effectiveness per 1% Total Uncapped Resistance",
+            "+(22-32) Ward Gain"
         ]
     },
     "296": {
@@ -4522,7 +4528,7 @@
         },
         "mods": [
             "+(21-45)% Chance to Shock Attackers",
-            "(105-175)% more Armour against Shocked Enemies",
+            "(105-175)% more Armor against Shocked Enemies",
             "(7-15)% more Lightning Global Conditional Damage",
             "+(21-45)% Chance to gain 15 Static Charges when Hit",
             "+(7-15)% Chance to cast Static when Hit"
@@ -4618,8 +4624,8 @@
             "+(10-35)% Chance to gain Haste for 1 second on Hit",
             "+3% increased Spell Damage per 1% increased Movement Speed",
             "+1 Wrongwarp with Teleport or Transplant",
-            "+(10-18)% Increased Cooldown Recovery Speed for Teleport",
-            "+(10-18)% Increased Cooldown Recovery Speed for Transplant"
+            "+(5-10)% Increased Cooldown Recovery Speed for Teleport",
+            "+(5-10)% Increased Cooldown Recovery Speed for Transplant"
         ]
     },
     "311": {
@@ -4682,7 +4688,6 @@
         "mods": [
             "+1 Intelligence Equals Strength",
             "+(36-54) Melee Physical Damage",
-            "(6-16)% more Global Conditional Damage",
             "+(3-9) Strength",
             "+1 Level of Skills"
         ]
@@ -4789,7 +4794,7 @@
         "mods": [
             "+(8-48)% Spell Chance to Slow on Hit",
             "+(8-48)% Spell Chance to apply Frailty on Hit",
-            "+(8-48)% Spell Chance to Shred Armor on Hit",
+            "+(8-48)% Spell Chance to Shred Armour on Hit",
             "+(8-48)% Spell Electrify Chance",
             "+(8-48)% Chance to Poison on Spell Hit",
             "6% more Spell Global Conditional Damage",
@@ -4939,7 +4944,7 @@
         "mods": [
             "+1 Acid Flask Base Damage converted to Cold",
             "+(45-85)% Chance to apply Frostbite on Cold Hit",
-            "+(17-45)% Cold Spell Damage",
+            "+(17-45)% Cold increased Area for Area Skills",
             "+(45-85)% Freeze Rate Multiplier",
             "(17-45)% increased Cold Damage"
         ]
@@ -4954,7 +4959,7 @@
         "mods": [
             "(30-50)% increased Minion Movement Speed",
             "+(10-30)% Physical Penetration for Bleed inflicted by Minions ",
-            "+(130-300)% your Bleed Chance granted to your Falcon",
+            "+(1-2) your Bleed Chance granted to your Falcon",
             "+(3-15) Dexterity",
             "+1 Health gained per Dexterity when your Falcon hits an enemy",
             "+(1-3) Falconry"
@@ -5009,6 +5014,516 @@
             "+(6-13) Minion Spell Damage",
             "+1 Summon Wraith",
             "+1 chance for Summoned Wraith to Summon a Wraithlord instead"
+        ]
+    },
+    "336": {
+        "name": "Naal's Tooth",
+        "baseTypeID": 9,
+        "subTypeID": 13,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(10-17) Melee Damage",
+            "+(10-17) Minion Melee Damage",
+            "+(1-2) Melee Level of Skills",
+            "+(1-2) Minion Melee Level of Skills",
+            "(5-10)% increased Movement Speed",
+            "(5-10)% increased Minion Movement Speed",
+            "+1 You can Summon Raptors up to your Companion Limit",
+            "+(10-17)% reduced Raptor Size",
+            "47% less Raptor Damage"
+        ]
+    },
+    "337": {
+        "name": "Razorfall",
+        "baseTypeID": 3,
+        "subTypeID": 10,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "(13-20)% increased Movement Speed",
+            "+(1-2) Throwing Level of Skills",
+            "+2 Umbral Blades per 30 Dexterity thrown with Aerial Assault's Burst of Feathers",
+            "+(12-30)% increased Throwing Attack Speed for 2 seconds after using Aerial Assault",
+            "+(13-20)% chance to recover 12% of Aerial Assault's remaining cooldown on Throwing Hit (up to 3 times)",
+            "+2 seconds of Haste after using Aerial Assault",
+            "+(3-12) Dexterity"
+        ]
+    },
+    "338": {
+        "name": "Sword Catcher",
+        "baseTypeID": 12,
+        "subTypeID": 10,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(10-13)% Parry Chance",
+            "+(28-39) Melee Damage",
+            "+(28-39) Minion Melee Damage",
+            "+(1-6) Melee Level of Skills",
+            "+1 chance on Parry to restore you and a random minion to full health and grant Frenzy for 5 seconds",
+            "+(39-60) Melee Damage while you have Frenzy",
+            "(39-60)% increased Effect of Frenzy on You"
+        ]
+    },
+    "339": {
+        "name": "Black Blade of Chaos",
+        "baseTypeID": 16,
+        "subTypeID": 5,
+        "req": {
+            "level": 72
+        },
+        "mods": [
+            "+1 Lethal Mirage is a quick attack with no invulnerability",
+            "+(24-56) Melee Lightning Damage",
+            "+(2-12) Dexterity",
+            "+(2-4)% Lightning Penetration per 5 Dexterity",
+            "+(2-4)% Void Penetration per 5 Dexterity",
+            "+(6-24)% Lethal Mirage's remaining cooldown recovered on Melee Hit (up to 12 times)",
+            "+(12-120)% Chance to Shock on Hit",
+            "+(12-120)% Chance to inflict Time Rot on Hit",
+            "+(24-56) Melee Void Damage"
+        ]
+    },
+    "340": {
+        "name": "Orian's Sun Seal",
+        "baseTypeID": 21,
+        "subTypeID": 4,
+        "req": {
+            "level": 27
+        },
+        "mods": [
+            "+(1-2) Sigils Of Hope",
+            "+(6-12) Seconds to Sigils of Hope Duration",
+            "+(70-80)% Sigils of Hope Mana Cost consumed to cast it every 6 seconds while above half mana",
+            "+(15-25)% Increased Healing Effectiveness",
+            "(10-15)% increased Armor"
+        ]
+    },
+    "341": {
+        "name": "Cruelty",
+        "baseTypeID": 22,
+        "subTypeID": 11,
+        "req": {
+            "level": 31
+        },
+        "mods": [
+            "+(53-89)% Sacrifice Mana Cost consumed to automatically Sacrifice Minions after 2 seconds",
+            "+(1-2) Sacrifice",
+            "(3-11)% increased Movement Speed",
+            "(11-23)% increased Minion Movement Speed",
+            "+1 Minion Stun Immunity",
+            "+(31-83) Mana"
+        ]
+    },
+    "342": {
+        "name": "Traitor's Tongue",
+        "baseTypeID": 6,
+        "subTypeID": 3,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(10-13)% Parry Chance with Traitor's Tongue equipped in the mainhand",
+            "+(10-13)% Critical Strike Chance with Traitor's Tongue equipped in the offhand",
+            "+(1-2) Level of Skills",
+            "+(1-2) Level of Skills",
+            "(10-18)% increased Melee Attack Speed"
+        ]
+    },
+    "343": {
+        "name": "Egg of the Forgotten",
+        "baseTypeID": 22,
+        "subTypeID": 61,
+        "req": {
+            "level": 0
+        },
+        "mods": []
+    },
+    "344": {
+        "name": "Harbinger's Needle",
+        "baseTypeID": 25,
+        "subTypeID": 1,
+        "req": {
+            "level": 0
+        },
+        "mods": []
+    },
+    "345": {
+        "name": "Bane of Winter",
+        "baseTypeID": 14,
+        "subTypeID": 8,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(25-42)% chance to cast Voidwinter Bolts when you hit an enemy with Javelin or a Melee Attack (up to 3 times per 2 seconds)",
+            "+(25-42)% Added Melee Damage applied as Added Spell Damage to Cold and Void Spells",
+            "+(25-42) Melee Void Damage",
+            "+(25-42) Melee Cold Damage",
+            "+1% Voidwinter Bolt Critcal Strike Multiplier per 10% uncapped Chill Chance with Melee Attacks",
+            "1% more Voidwinter Bolt Damage per 10% uncapped Time Rot Chance with Melee Attacks",
+            "+1 Cold Damage Taken as Physical"
+        ]
+    },
+    "346": {
+        "name": "Palarus's Sacred Light",
+        "baseTypeID": 9,
+        "subTypeID": 1,
+        "req": {
+            "level": 6
+        },
+        "mods": [
+            "+1 Melee Damage per 2 Attunement",
+            "+1 Spell Damage per 2 Strength",
+            "+(32-46)% chance to cast Smite on Melee hit (up to 3 times per second)",
+            "+(32-46)% chance to cast Smite at two additional targets when you cast it directly",
+            "+2 All Attributes"
+        ]
+    },
+    "347": {
+        "name": "The Inevitable",
+        "baseTypeID": 3,
+        "subTypeID": 7,
+        "req": {
+            "level": 83
+        },
+        "mods": [
+            "(25-36)% increased Movement Speed",
+            "+1 Slow and Chill Immunity",
+            "+(4-9) Vitality",
+            "+1 Stun Immunity during Erasing Strike",
+            "25% less Damage Taken while using Erasing Strike",
+            "+(36-49) Health Gain on Kill"
+        ]
+    },
+    "348": {
+        "name": "Phantom Grip",
+        "baseTypeID": 21,
+        "subTypeID": 0,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(1-2) Minion Level of Skills",
+            "+(1-2)% Critical Strike Chance",
+            "+(2-4)% Minion Critical Strike Chance",
+            "(4-8)% increased Mana",
+            "+(4-8) Melee Necrotic Damage for Forged Weapons",
+            "+(64-100)% Glove Stats apply to Forged Weapons",
+            "+(8-25)% increased Forged Weapon Duration"
+        ]
+    },
+    "349": {
+        "name": "Yrun's Penance",
+        "baseTypeID": 9,
+        "subTypeID": 1,
+        "req": {
+            "level": 4
+        },
+        "mods": [
+            "+(20-40)% Cold Damage Leeched as Health",
+            "+1 Mana Strike Base Damage Converted to Cold",
+            "+1 Fury Leap Base Damage Converted to Cold",
+            "+(22-46)% Melee Chance to Chill on Hit",
+            "+(22-46)% Freeze Rate per stack of Chill",
+            "+(10-34)% Cold Penetration"
+        ]
+    },
+    "350": {
+        "name": "Flight of Quetzeri",
+        "baseTypeID": 3,
+        "subTypeID": 0,
+        "req": {
+            "level": 13
+        },
+        "mods": [
+            "+1 Evade Charge",
+            "+(10-13)% increased Cooldown Recovery Speed for Evade",
+            "+(30-45)% Increased Cooldown Recovery Speed for Fury Leap",
+            "+(140-190)% Seconds of Haste after you use a Traversal Skill",
+            "+(140-190)% Seconds of Haste after you use Evade",
+            "+(14-19)% Increased Haste Effect"
+        ]
+    },
+    "351": {
+        "name": "Triboelectra",
+        "baseTypeID": 10,
+        "subTypeID": 11,
+        "req": {
+            "level": 45
+        },
+        "mods": [
+            "+(2-5) Tendrils with Static Orb",
+            "+(2-3) Spell Lightning Level of Skills",
+            "+1 chance to transfer all stacks of Shock on you to nearby enemies when you use Evade",
+            "+1 chance to cast Static Orb when you Evade for 90% of its mana cost",
+            "+(50-115)% Increased Shock Duration ",
+            "+(20-35)% increased Cooldown Recovery Speed for Evade"
+        ]
+    },
+    "352": {
+        "name": "Plague Dragon's Tongue",
+        "baseTypeID": 14,
+        "subTypeID": 7,
+        "req": {
+            "level": 57
+        },
+        "mods": [
+            "+(27-45)% Chance to Summon a Locust on hit with Serpent Strike (max 3 per 2 seconds)",
+            "+(9-27)% Increased attack, cast, and movement speed for Locusts",
+            "+(3-7) Maximum Locusts",
+            "+(75-105) Melee Physical Damage",
+            "+(15-27) Melee Physical Damage for Locusts",
+            "+(1-5) Poison Level of Skills",
+            "(25-47)% increased Melee Attack Speed"
+        ]
+    },
+    "353": {
+        "name": "Nihilis",
+        "baseTypeID": 20,
+        "subTypeID": 12,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(1-2) Level of Skills",
+            "(20--50)% reduced Mana Regen",
+            "(10--20)% less Armor",
+            "(-5-15)% All Resistances",
+            "+(10-20)% Current Health and Ward lost when you use Evade",
+            "+(120-400)% Seconds of Frenzy after you use Evade"
+        ]
+    },
+    "354": {
+        "name": "Wall of Nothing",
+        "baseTypeID": 1,
+        "subTypeID": 6,
+        "req": {
+            "level": 85
+        },
+        "mods": [
+            "+(10-16)% chance to take 0 Damage when Hit",
+            "+(60-185) Ward Decay Threshold",
+            "+(60-185) Endurance Threshold",
+            "+(60-85)% Endurance Threshold added as Ward Decay Threshold",
+            "+(60-70) Ward per Second"
+        ]
+    },
+    "355": {
+        "name": "Aberroth's Command",
+        "baseTypeID": 8,
+        "subTypeID": 8,
+        "req": {
+            "level": 65
+        },
+        "mods": [
+            "(200-285)% increased Damage Over Time",
+            "+(20-25)% increased Area for Area Skills",
+            "+1 Void Cleave is Instant",
+            "+(8-20)% Void Penetration",
+            "+1 Void Cleave no Weapon Requirement",
+            "+(6-12) Ravaging Aura Duration (seconds)",
+            "+40% Void Penetration with Ravaging Aura"
+        ]
+    },
+    "356": {
+        "name": "Stealth",
+        "baseTypeID": 3,
+        "subTypeID": 4,
+        "req": {
+            "level": 79
+        },
+        "mods": [
+            "+1 Evade Charge",
+            "+(512-1024) Dodge Rating while using Evade",
+            "+(128-256) Dodge Rating",
+            "+(2-4) Smoke Bomb",
+            "-30% Threat Generated",
+            "(16-32)% increased Dodge Rating"
+        ]
+    },
+    "357": {
+        "name": "Seed of Ekkidrasil",
+        "baseTypeID": 0,
+        "subTypeID": 6,
+        "req": {
+            "level": 84
+        },
+        "mods": [
+            "+(40-64) Mana",
+            "(8-20)% increased Mana Regen",
+            "+(40-56)% Endurance applies to all damage dealt to mana",
+            "+(20-28)% Damage Dealt to Mana Before Health",
+            "+(4-8)% Maximum Health gained as Endurance Threshold",
+            "+(40-64) Health",
+            "+(4-8)% chance to take 0 Damage when Hit"
+        ]
+    },
+    "358": {
+        "name": "Null Portent",
+        "baseTypeID": 1,
+        "subTypeID": 6,
+        "req": {
+            "level": 81
+        },
+        "mods": [
+            "+(30-60)% Melee Damage Leeched as Health",
+            "+(16-30)% Increased Leech Rate",
+            "+(60-160)% Overkill Damage Leeched as Health",
+            "1% less Damage Taken per 2% Resistance above the normal cap",
+            "+20% Maximum Less Damage Taken per 2% Resistance above the normal cap",
+            "+(30-36)% Physical Resistance",
+            "(16-20)% increased Health"
+        ]
+    },
+    "359": {
+        "name": "Fingers of the Phantom Mire",
+        "baseTypeID": 4,
+        "subTypeID": 4,
+        "req": {
+            "level": 6
+        },
+        "mods": [
+            "(5-8)% increased Attack Speed",
+            "(5-8)% increased Cast Speed",
+            "+(50-80)% Chance to Slow Attackers",
+            "+1 Slow Immunity",
+            "(10-15)% more Global Conditional Damage",
+            "+1 Evade is replaced by Terrify",
+            "+1 Swiftness"
+        ]
+    },
+    "360": {
+        "name": "Carcinization of Momentum",
+        "baseTypeID": 21,
+        "subTypeID": 9,
+        "req": {
+            "level": 23
+        },
+        "mods": [
+            "+1 Evade is turned into a Crab",
+            "(20-30)% increased Armor",
+            "+1 Swiftness",
+            "(20-30)% increased Minion Armor",
+            "+(3-6) All Attributes"
+        ]
+    },
+    "361": {
+        "name": "Phase Point",
+        "baseTypeID": 17,
+        "subTypeID": 1,
+        "req": {
+            "level": 87
+        },
+        "mods": [
+            "+(80-143) Dodge Rating",
+            "+(33-48)% Chance to gain a Black Arrow on Dodge",
+            "+(1-3) Dark Quiver",
+            "+(18-43)% chance to gain Dusk Shroud on Dodge",
+            "(8-13)% increased Dodge Rating",
+            "+1 Bow Void Damage per Dusk Shroud when using a Black Arrow"
+        ]
+    },
+    "362": {
+        "name": "Grim Constitution",
+        "baseTypeID": 18,
+        "subTypeID": 9,
+        "req": {
+            "level": 35
+        },
+        "mods": [
+            "+1 No Ward Gain in Combat",
+            "+(105-155)% Max Health gained as Ward Decay Threshold",
+            "+(35-55)% Max Health gained as Ward per Second",
+            "+(55-85) Health",
+            "+(155-385) Block Effectiveness"
+        ]
+    },
+    "363": {
+        "name": "Monument of Protection",
+        "baseTypeID": 5,
+        "subTypeID": 14,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(52-85) Health Gain on Block",
+            "+(52-85) Melee Damage for Shield Bash",
+            "+(52-85) Melee Damage for Shield Rush",
+            "5% reduced Movement Speed",
+            "+(10-15)% Endurance",
+            "(30-40)% increased Block Effectiveness"
+        ]
+    },
+    "364": {
+        "name": "Event Horizon",
+        "baseTypeID": 13,
+        "subTypeID": 11,
+        "req": {
+            "level": 100
+        },
+        "mods": [
+            "+(50-72)% Melee Penetration",
+            "+(50-72)% Void Penetration",
+            "+1 chance to gain Dilation when you use a Melee Attack and hit at least one enemy",
+            "(10-15)% increased Movement Speed",
+            "(10-15)% more Global Conditional Damage"
+        ]
+    },
+    "365": {
+        "name": "World Splitter",
+        "baseTypeID": 12,
+        "subTypeID": 10,
+        "req": {
+            "level": 85
+        },
+        "mods": [
+            "+2% increased Area for Melee Area Skills per 1 Mana Cost",
+            "+(0.3-0.5)% Critical Strike Chance for Melee Attacks per 1 Mana Cost",
+            "(30-52)% increased Mana Regen",
+            "(30-52)% increased Mana",
+            "+(30-52) Melee Void Damage",
+            "+1% Melee Critical Strike multiplier per 10 Max Mana"
+        ]
+    },
+    "366": {
+        "name": "Flames of Midnight",
+        "baseTypeID": 21,
+        "subTypeID": 11,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+1 Evade is replaced by Spirit Step",
+            "+1 Swiftness",
+            "+1 Wandering Spirits Base Damage Converted to Fire",
+            "+1 Create a Wandering Spirit on direct Fire, Necrotic, or Void Skill Use",
+            "+(10-17)% Fire Penetration",
+            "+(10-17)% Necrotic Penetration",
+            "+(10-17)% Void Penetration",
+            "+(4-7) Ward gained each second per Active Wandering Spirit"
+        ]
+    },
+    "367": {
+        "name": "Celestial Doom",
+        "baseTypeID": 15,
+        "subTypeID": 14,
+        "req": {
+            "level": 0
+        },
+        "mods": [
+            "+(11-23) Spell Void Damage",
+            "+1 Cast Doom Pulse when you directly cast a Fire, Cold, Lightning, Necrotic, or Void Spell.",
+            "(11-23)% increased Cast Speed",
+            "+(113-227) Ward Decay Threshold",
+            "+(11-23) Ward per Second",
+            "+(46-57)% Mana spent gained as Maximum Mana for 5 seconds (up to 500)",
+            "+1 Spell Damage per 10 Max Mana for Doom Pulse",
+            "+1% Critical Strike Multiplier per 1% increased Mana Regen for Doom Pulse"
         ]
     }
 }

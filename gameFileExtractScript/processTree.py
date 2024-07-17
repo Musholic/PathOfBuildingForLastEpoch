@@ -145,26 +145,24 @@ for classInfo in data["trees"].values():
         "ascendancies": ascendancies
     }
 
-    with open(extractPath + "MonoBehaviour/" + className + ".asset", "r") as yamlFile:
-        classData = yaml.safe_load(yamlFile)
-        classData = classData["MonoBehaviour"]
-        classes[className]["base_str"] = classData["baseStrength"]
-        classes[className]["base_dex"] = classData["baseDexterity"]
-        classes[className]["base_int"] = classData["baseIntelligence"]
-        classes[className]["base_att"] = classData["baseAttunement"]
-        classes[className]["base_vit"] = classData["baseVitality"]
-        classes[className]["skills"] = []
-        classes[className]["skillIds"] = []
-        for abilityData in classData["unlockableAbilities"]:
-            classes[className]["skillIds"].append(abilityData['ability']['guid'])
-        for abilityData in classData["knownAbilities"]:
-            classes[className]["skillIds"].append(abilityData['guid'])
-        for masteryData in classData["masteries"]:
+    classData = load_yaml_file_with_tag_error(extractPath + "MonoBehaviour/" + className + ".asset")["MonoBehaviour"]
+    classes[className]["base_str"] = classData["baseStrength"]
+    classes[className]["base_dex"] = classData["baseDexterity"]
+    classes[className]["base_int"] = classData["baseIntelligence"]
+    classes[className]["base_att"] = classData["baseAttunement"]
+    classes[className]["base_vit"] = classData["baseVitality"]
+    classes[className]["skills"] = []
+    classes[className]["skillIds"] = []
+    for abilityData in classData["unlockableAbilities"]:
+        classes[className]["skillIds"].append(abilityData['ability']['guid'])
+    for abilityData in classData["knownAbilities"]:
+        classes[className]["skillIds"].append(abilityData['guid'])
+    for masteryData in classData["masteries"]:
+        if masteryData.get('masteryAbility'):
             guid = masteryData['masteryAbility'].get('guid')
-            if guid:
-                classes[className]["skillIds"].append(guid)
-            for abilityData in masteryData["abilities"]:
-                classes[className]["skillIds"].append(abilityData['ability']['guid'])
+            classes[className]["skillIds"].append(guid)
+        for abilityData in masteryData["abilities"]:
+            classes[className]["skillIds"].append(abilityData['ability']['guid'])
 
     tree["nodes"]["root"]["out"].append(className)
 

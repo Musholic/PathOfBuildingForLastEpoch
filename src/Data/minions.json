@@ -63,7 +63,7 @@
         ],
         "modList": [],
         "name": "PrimalWolf",
-        "life": "160"
+        "life": "220"
     },
     "RogueBallista": {
         "skillList": [
@@ -96,7 +96,7 @@
         ],
         "modList": [],
         "name": "StormCrow",
-        "life": "160"
+        "life": "200"
     },
     "StormTotem": {
         "skillList": [

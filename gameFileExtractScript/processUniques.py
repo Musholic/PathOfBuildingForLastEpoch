@@ -14,7 +14,7 @@ for itemData in data:
     itemBase = {
         "name": subItemName,
         "baseTypeID": itemData["baseType"],
-        "subTypeID": int(str(itemData["subTypes"]), 16),
+        "subTypeID": int(str(itemData["subTypes"][0])),
         "req": {
             "level": itemData["levelRequirement"]
         },

@@ -133,7 +133,7 @@
     },
     "1_5": {
         "affix": "of Defense",
-        "1": "(40-48)% increased Armor",
+        "1": "(40-50)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -144,7 +144,7 @@
     },
     "1_6": {
         "affix": "of Defense",
-        "1": "(49-60)% increased Armor",
+        "1": "(51-70)% increased Armor",
         "level": 14,
         "statOrderKey": 1,
         "statOrder": [
@@ -287,7 +287,7 @@
     },
     "3_5": {
         "affix": "Guardian's",
-        "1": "+(15-18)% Block Chance",
+        "1": "+(15-20)% Block Chance",
         "level": 0,
         "statOrderKey": 3,
         "statOrder": [
@@ -298,7 +298,7 @@
     },
     "3_6": {
         "affix": "Guardian's",
-        "1": "+(19-24)% Block Chance",
+        "1": "+(21-26)% Block Chance",
         "level": 0,
         "statOrderKey": 3,
         "statOrder": [
@@ -617,7 +617,7 @@
     },
     "8_0": {
         "affix": "of Evasion",
-        "1": "+(15-25) Dodge Rating",
+        "1": "+(20-29) Dodge Rating",
         "level": 0,
         "statOrderKey": 8,
         "statOrder": [
@@ -628,7 +628,7 @@
     },
     "8_1": {
         "affix": "of Evasion",
-        "1": "+(26-36) Dodge Rating",
+        "1": "+(30-39) Dodge Rating",
         "level": 0,
         "statOrderKey": 8,
         "statOrder": [
@@ -639,7 +639,7 @@
     },
     "8_2": {
         "affix": "of Evasion",
-        "1": "+(37-48) Dodge Rating",
+        "1": "+(40-49) Dodge Rating",
         "level": 0,
         "statOrderKey": 8,
         "statOrder": [
@@ -650,7 +650,7 @@
     },
     "8_3": {
         "affix": "of Evasion",
-        "1": "+(49-60) Dodge Rating",
+        "1": "+(50-65) Dodge Rating",
         "level": 0,
         "statOrderKey": 8,
         "statOrder": [
@@ -661,7 +661,7 @@
     },
     "8_4": {
         "affix": "of Evasion",
-        "1": "+(61-80) Dodge Rating",
+        "1": "+(66-85) Dodge Rating",
         "level": 0,
         "statOrderKey": 8,
         "statOrder": [
@@ -672,7 +672,7 @@
     },
     "8_5": {
         "affix": "of Evasion",
-        "1": "+(100-125) Dodge Rating",
+        "1": "+(110-150) Dodge Rating",
         "level": 0,
         "statOrderKey": 8,
         "statOrder": [
@@ -683,7 +683,7 @@
     },
     "8_6": {
         "affix": "of Evasion",
-        "1": "+(126-160) Dodge Rating",
+        "1": "+(151-200) Dodge Rating",
         "level": 0,
         "statOrderKey": 8,
         "statOrder": [
@@ -1981,7 +1981,7 @@
     },
     "25_5": {
         "affix": "of Life",
-        "1": "+(95-115) Health",
+        "1": "+(95-120) Health",
         "level": 0,
         "statOrderKey": 25,
         "statOrder": [
@@ -1992,7 +1992,7 @@
     },
     "25_6": {
         "affix": "of Life",
-        "1": "+(116-150) Health",
+        "1": "+(121-160) Health",
         "level": 0,
         "statOrderKey": 25,
         "statOrder": [
@@ -2289,7 +2289,7 @@
     },
     "29_5": {
         "affix": "of the Monolith",
-        "1": "+(70-90) Health\n+(450-550) Stun Avoidance",
+        "1": "+(75-99) Health\n+(450-550) Stun Avoidance",
         "level": 46,
         "statOrderKey": 29,
         "statOrder": [
@@ -2300,7 +2300,7 @@
     },
     "29_6": {
         "affix": "of the Monolith",
-        "1": "+(91-120) Health\n+(551-750) Stun Avoidance",
+        "1": "+(100-130) Health\n+(551-750) Stun Avoidance",
         "level": 46,
         "statOrderKey": 29,
         "statOrder": [
@@ -2443,7 +2443,7 @@
     },
     "31_5": {
         "affix": "of the Turtle",
-        "1": "+(140-180) Armor",
+        "1": "+(150-190) Armor",
         "level": 0,
         "statOrderKey": 31,
         "statOrder": [
@@ -2454,7 +2454,7 @@
     },
     "31_6": {
         "affix": "of the Turtle",
-        "1": "+(181-240) Armor",
+        "1": "+(191-260) Armor",
         "level": 0,
         "statOrderKey": 31,
         "statOrder": [
@@ -2674,7 +2674,7 @@
     },
     "34_5": {
         "affix": "Manafused",
-        "1": "+(65-80) Mana",
+        "1": "+(70-90) Mana",
         "level": 0,
         "statOrderKey": 34,
         "statOrder": [
@@ -2685,7 +2685,7 @@
     },
     "34_6": {
         "affix": "Manafused",
-        "1": "+(81-100) Mana",
+        "1": "+(91-120) Mana",
         "level": 0,
         "statOrderKey": 34,
         "statOrder": [
@@ -3158,7 +3158,7 @@
     },
     "41_0": {
         "affix": "Unbreakable",
-        "1": "+3 Health Gain on Block",
+        "1": "+(3-5) Health Gain on Block",
         "level": 15,
         "statOrderKey": 41,
         "statOrder": [
@@ -3169,7 +3169,7 @@
     },
     "41_1": {
         "affix": "Unbreakable",
-        "1": "+4 Health Gain on Block",
+        "1": "+(6-9) Health Gain on Block",
         "level": 15,
         "statOrderKey": 41,
         "statOrder": [
@@ -3180,7 +3180,7 @@
     },
     "41_2": {
         "affix": "Unbreakable",
-        "1": "+(5-6) Health Gain on Block",
+        "1": "+(10-14) Health Gain on Block",
         "level": 15,
         "statOrderKey": 41,
         "statOrder": [
@@ -3191,7 +3191,7 @@
     },
     "41_3": {
         "affix": "Unbreakable",
-        "1": "+(7-8) Health Gain on Block",
+        "1": "+(15-19) Health Gain on Block",
         "level": 15,
         "statOrderKey": 41,
         "statOrder": [
@@ -3202,7 +3202,7 @@
     },
     "41_4": {
         "affix": "Unbreakable",
-        "1": "+(9-12) Health Gain on Block",
+        "1": "+(20-30) Health Gain on Block",
         "level": 15,
         "statOrderKey": 41,
         "statOrder": [
@@ -3213,7 +3213,7 @@
     },
     "41_5": {
         "affix": "Unbreakable",
-        "1": "+(15-19) Health Gain on Block",
+        "1": "+(35-49) Health Gain on Block",
         "level": 15,
         "statOrderKey": 41,
         "statOrder": [
@@ -3224,7 +3224,7 @@
     },
     "41_6": {
         "affix": "Unbreakable",
-        "1": "+(20-25) Health Gain on Block",
+        "1": "+(50-75) Health Gain on Block",
         "level": 15,
         "statOrderKey": 41,
         "statOrder": [
@@ -3829,7 +3829,7 @@
     },
     "49_5": {
         "affix": "Spellblade's",
-        "1": "+(30-38) Spell Damage",
+        "1": "+(32-40) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3840,7 +3840,7 @@
     },
     "49_6": {
         "affix": "Spellblade's",
-        "1": "+(39-48) Spell Damage",
+        "1": "+(41-50) Spell Damage",
         "level": 15,
         "statOrderKey": 49,
         "statOrder": [
@@ -3983,7 +3983,7 @@
     },
     "51_5": {
         "affix": "of Tenacity",
-        "1": "+(500-650) Stun Avoidance",
+        "1": "+(550-700) Stun Avoidance",
         "level": 13,
         "statOrderKey": 51,
         "statOrder": [
@@ -3994,7 +3994,7 @@
     },
     "51_6": {
         "affix": "of Tenacity",
-        "1": "+(651-850) Stun Avoidance",
+        "1": "+(701-900) Stun Avoidance",
         "level": 13,
         "statOrderKey": 51,
         "statOrder": [
@@ -4060,7 +4060,7 @@
     },
     "52_5": {
         "affix": "of the Ox",
-        "1": "(15-19)% increased Health",
+        "1": "(15-20)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4071,7 +4071,7 @@
     },
     "52_6": {
         "affix": "of the Ox",
-        "1": "(20-24)% increased Health",
+        "1": "(21-26)% increased Health",
         "level": 25,
         "statOrderKey": 52,
         "statOrder": [
@@ -4214,7 +4214,7 @@
     },
     "54_5": {
         "affix": "of Venom",
-        "1": "+(38-46)% Chance to Poison on Hit",
+        "1": "+(40-49)% Chance to Poison on Hit",
         "level": 13,
         "statOrderKey": 54,
         "statOrder": [
@@ -4225,7 +4225,7 @@
     },
     "54_6": {
         "affix": "of Venom",
-        "1": "+(47-60)% Chance to Poison on Hit",
+        "1": "+(50-65)% Chance to Poison on Hit",
         "level": 13,
         "statOrderKey": 54,
         "statOrder": [
@@ -4291,7 +4291,7 @@
     },
     "55_5": {
         "affix": "of Conflagration",
-        "1": "+(38-46)% Chance to Ignite on Hit",
+        "1": "+(40-49)% Chance to Ignite on Hit",
         "level": 0,
         "statOrderKey": 55,
         "statOrder": [
@@ -4302,7 +4302,7 @@
     },
     "55_6": {
         "affix": "of Conflagration",
-        "1": "+(47-60)% Chance to Ignite on Hit",
+        "1": "+(50-65)% Chance to Ignite on Hit",
         "level": 0,
         "statOrderKey": 55,
         "statOrder": [
@@ -4368,7 +4368,7 @@
     },
     "56_5": {
         "affix": "of Sleet",
-        "1": "+(38-46)% Chance to Chill on Hit",
+        "1": "+(40-49)% Chance to Chill on Hit",
         "level": 0,
         "statOrderKey": 56,
         "statOrder": [
@@ -4379,7 +4379,7 @@
     },
     "56_6": {
         "affix": "of Sleet",
-        "1": "+(47-60)% Chance to Chill on Hit",
+        "1": "+(50-65)% Chance to Chill on Hit",
         "level": 0,
         "statOrderKey": 56,
         "statOrder": [
@@ -4445,7 +4445,7 @@
     },
     "57_5": {
         "affix": "of Lethargy",
-        "1": "+(38-46)% Chance to Slow on Hit",
+        "1": "+(40-49)% Chance to Slow on Hit",
         "level": 0,
         "statOrderKey": 57,
         "statOrder": [
@@ -4456,7 +4456,7 @@
     },
     "57_6": {
         "affix": "of Lethargy",
-        "1": "+(47-60)% Chance to Slow on Hit",
+        "1": "+(50-65)% Chance to Slow on Hit",
         "level": 0,
         "statOrderKey": 57,
         "statOrder": [
@@ -4599,7 +4599,7 @@
     },
     "59_5": {
         "affix": "of the Fox",
-        "1": "(48-60)% increased Dodge Rating",
+        "1": "(55-65)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4610,7 +4610,7 @@
     },
     "59_6": {
         "affix": "of the Fox",
-        "1": "(61-75)% increased Dodge Rating",
+        "1": "(66-80)% increased Dodge Rating",
         "level": 16,
         "statOrderKey": 59,
         "statOrder": [
@@ -4676,7 +4676,7 @@
     },
     "60_5": {
         "affix": "of Blinding",
-        "1": "+(38-46)% Chance to Blind on Hit",
+        "1": "+(40-49)% Chance to Blind on Hit",
         "level": 5,
         "statOrderKey": 60,
         "statOrder": [
@@ -4687,7 +4687,7 @@
     },
     "60_6": {
         "affix": "of Blinding",
-        "1": "+(47-60)% Chance to Blind on Hit",
+        "1": "+(50-65)% Chance to Blind on Hit",
         "level": 5,
         "statOrderKey": 60,
         "statOrder": [
@@ -4907,7 +4907,7 @@
     },
     "63_5": {
         "affix": "Marauder's",
-        "1": "+(36-44) Melee Physical Damage",
+        "1": "+(40-50) Melee Physical Damage",
         "level": 0,
         "statOrderKey": 63,
         "statOrder": [
@@ -4918,7 +4918,7 @@
     },
     "63_6": {
         "affix": "Marauder's",
-        "1": "+(45-55) Melee Physical Damage",
+        "1": "+(51-65) Melee Physical Damage",
         "level": 0,
         "statOrderKey": 63,
         "statOrder": [
@@ -5292,7 +5292,7 @@
     },
     "68_5": {
         "affix": "of Wounds",
-        "1": "+(38-46)% Chance to Bleed on Hit",
+        "1": "+(40-49)% Chance to Bleed on Hit",
         "level": 0,
         "statOrderKey": 68,
         "statOrder": [
@@ -5303,7 +5303,7 @@
     },
     "68_6": {
         "affix": "of Wounds",
-        "1": "+(47-60)% Chance to Bleed on Hit",
+        "1": "+(50-65)% Chance to Bleed on Hit",
         "level": 0,
         "statOrderKey": 68,
         "statOrder": [
@@ -5908,7 +5908,7 @@
     },
     "76_5": {
         "affix": "Dark",
-        "1": "+(36-44) Melee Void Damage",
+        "1": "+(40-50) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5919,7 +5919,7 @@
     },
     "76_6": {
         "affix": "Dark",
-        "1": "+(45-55) Melee Void Damage",
+        "1": "+(51-65) Melee Void Damage",
         "level": 0,
         "statOrderKey": 76,
         "statOrder": [
@@ -5985,7 +5985,7 @@
     },
     "77_5": {
         "affix": "Flaming",
-        "1": "+(36-44) Melee Fire Damage",
+        "1": "+(40-50) Melee Fire Damage",
         "level": 0,
         "statOrderKey": 77,
         "statOrder": [
@@ -5996,7 +5996,7 @@
     },
     "77_6": {
         "affix": "Flaming",
-        "1": "+(45-55) Melee Fire Damage",
+        "1": "+(51-65) Melee Fire Damage",
         "level": 0,
         "statOrderKey": 77,
         "statOrder": [
@@ -6062,7 +6062,7 @@
     },
     "78_5": {
         "affix": "Shattering",
-        "1": "+(36-44) Melee Cold Damage",
+        "1": "+(40-50) Melee Cold Damage",
         "level": 0,
         "statOrderKey": 78,
         "statOrder": [
@@ -6073,7 +6073,7 @@
     },
     "78_6": {
         "affix": "Shattering",
-        "1": "+(45-55) Melee Cold Damage",
+        "1": "+(51-65) Melee Cold Damage",
         "level": 0,
         "statOrderKey": 78,
         "statOrder": [
@@ -6139,7 +6139,7 @@
     },
     "79_5": {
         "affix": "Hurricane",
-        "1": "+(36-44) Melee Lightning Damage",
+        "1": "+(40-50) Melee Lightning Damage",
         "level": 0,
         "statOrderKey": 79,
         "statOrder": [
@@ -6150,7 +6150,7 @@
     },
     "79_6": {
         "affix": "Hurricane",
-        "1": "+(45-55) Melee Lightning Damage",
+        "1": "+(51-65) Melee Lightning Damage",
         "level": 0,
         "statOrderKey": 79,
         "statOrder": [
@@ -6293,7 +6293,7 @@
     },
     "81_5": {
         "affix": "Protective",
-        "1": "+(700-950) Block Effectiveness",
+        "1": "+(700-1000) Block Effectiveness",
         "level": 0,
         "statOrderKey": 81,
         "statOrder": [
@@ -6304,7 +6304,7 @@
     },
     "81_6": {
         "affix": "Protective",
-        "1": "+(951-1300) Block Effectiveness",
+        "1": "+(1001-1400) Block Effectiveness",
         "level": 0,
         "statOrderKey": 81,
         "statOrder": [
@@ -6601,7 +6601,7 @@
     },
     "85_5": {
         "affix": "of Static",
-        "1": "+(38-46)% Chance to Shock on Hit",
+        "1": "+(40-49)% Chance to Shock on Hit",
         "level": 20,
         "statOrderKey": 85,
         "statOrder": [
@@ -6612,7 +6612,7 @@
     },
     "85_6": {
         "affix": "of Static",
-        "1": "+(47-60)% Chance to Shock on Hit",
+        "1": "+(50-65)% Chance to Shock on Hit",
         "level": 20,
         "statOrderKey": 85,
         "statOrder": [
@@ -6623,7 +6623,7 @@
     },
     "86_0": {
         "affix": "of Acid",
-        "1": "+(20-30)% Chance to Shred Armor on Hit",
+        "1": "+(20-30)% Chance to Shred Armour on Hit",
         "level": 27,
         "statOrderKey": 86,
         "statOrder": [
@@ -6634,7 +6634,7 @@
     },
     "86_1": {
         "affix": "of Acid",
-        "1": "+(31-40)% Chance to Shred Armor on Hit",
+        "1": "+(31-40)% Chance to Shred Armour on Hit",
         "level": 27,
         "statOrderKey": 86,
         "statOrder": [
@@ -6645,7 +6645,7 @@
     },
     "86_2": {
         "affix": "of Acid",
-        "1": "+(41-55)% Chance to Shred Armor on Hit",
+        "1": "+(41-55)% Chance to Shred Armour on Hit",
         "level": 27,
         "statOrderKey": 86,
         "statOrder": [
@@ -6656,7 +6656,7 @@
     },
     "86_3": {
         "affix": "of Acid",
-        "1": "+(56-70)% Chance to Shred Armor on Hit",
+        "1": "+(56-70)% Chance to Shred Armour on Hit",
         "level": 27,
         "statOrderKey": 86,
         "statOrder": [
@@ -6667,7 +6667,7 @@
     },
     "86_4": {
         "affix": "of Acid",
-        "1": "+(71-100)% Chance to Shred Armor on Hit",
+        "1": "+(71-100)% Chance to Shred Armour on Hit",
         "level": 27,
         "statOrderKey": 86,
         "statOrder": [
@@ -6678,7 +6678,7 @@
     },
     "86_5": {
         "affix": "of Acid",
-        "1": "+(125-150)% Chance to Shred Armor on Hit",
+        "1": "+(125-150)% Chance to Shred Armour on Hit",
         "level": 27,
         "statOrderKey": 86,
         "statOrder": [
@@ -6689,7 +6689,7 @@
     },
     "86_6": {
         "affix": "of Acid",
-        "1": "+(151-200)% Chance to Shred Armor on Hit",
+        "1": "+(151-200)% Chance to Shred Armour on Hit",
         "level": 27,
         "statOrderKey": 86,
         "statOrder": [
@@ -6854,7 +6854,7 @@
     },
     "89_0": {
         "affix": "Rending",
-        "1": "(6-12)% increased Melee Damage",
+        "1": "(10-19)% increased Melee Damage",
         "level": 0,
         "statOrderKey": 89,
         "statOrder": [
@@ -6865,7 +6865,7 @@
     },
     "89_1": {
         "affix": "Rending",
-        "1": "(13-21)% increased Melee Damage",
+        "1": "(20-30)% increased Melee Damage",
         "level": 0,
         "statOrderKey": 89,
         "statOrder": [
@@ -6876,7 +6876,7 @@
     },
     "89_2": {
         "affix": "Rending",
-        "1": "(22-30)% increased Melee Damage",
+        "1": "(31-43)% increased Melee Damage",
         "level": 0,
         "statOrderKey": 89,
         "statOrder": [
@@ -6887,7 +6887,7 @@
     },
     "89_3": {
         "affix": "Rending",
-        "1": "(31-39)% increased Melee Damage",
+        "1": "(45-58)% increased Melee Damage",
         "level": 0,
         "statOrderKey": 89,
         "statOrder": [
@@ -6898,7 +6898,7 @@
     },
     "89_4": {
         "affix": "Rending",
-        "1": "(40-60)% increased Melee Damage",
+        "1": "(60-85)% increased Melee Damage",
         "level": 0,
         "statOrderKey": 89,
         "statOrder": [
@@ -6909,7 +6909,7 @@
     },
     "89_5": {
         "affix": "Rending",
-        "1": "(75-95)% increased Melee Damage",
+        "1": "(100-139)% increased Melee Damage",
         "level": 0,
         "statOrderKey": 89,
         "statOrder": [
@@ -6920,7 +6920,7 @@
     },
     "89_6": {
         "affix": "Rending",
-        "1": "(96-120)% increased Melee Damage",
+        "1": "(140-180)% increased Melee Damage",
         "level": 0,
         "statOrderKey": 89,
         "statOrder": [
@@ -6986,7 +6986,7 @@
     },
     "90_5": {
         "affix": "of Renewal",
-        "1": "+(18-23) Health Regen",
+        "1": "+(20-25) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -6997,7 +6997,7 @@
     },
     "90_6": {
         "affix": "of Renewal",
-        "1": "+(24-30) Health Regen",
+        "1": "+(26-35) Health Regen",
         "level": 0,
         "statOrderKey": 90,
         "statOrder": [
@@ -7140,7 +7140,7 @@
     },
     "92_5": {
         "affix": "of Endurance",
-        "1": "+(20-24)% Endurance",
+        "1": "+(20-26)% Endurance",
         "level": 19,
         "statOrderKey": 92,
         "statOrder": [
@@ -7151,7 +7151,7 @@
     },
     "92_6": {
         "affix": "of Endurance",
-        "1": "+(25-30)% Endurance",
+        "1": "+(27-35)% Endurance",
         "level": 19,
         "statOrderKey": 92,
         "statOrder": [
@@ -7316,7 +7316,7 @@
     },
     "95_0": {
         "affix": "Thorny",
-        "1": "+(3-6) Damage Reflected to Attackers",
+        "1": "+(10-15) Damage Reflected to Attackers",
         "level": 4,
         "statOrderKey": 95,
         "statOrder": [
@@ -7327,7 +7327,7 @@
     },
     "95_1": {
         "affix": "Thorny",
-        "1": "+(7-14) Damage Reflected to Attackers",
+        "1": "+(20-30) Damage Reflected to Attackers",
         "level": 4,
         "statOrderKey": 95,
         "statOrder": [
@@ -7338,7 +7338,7 @@
     },
     "95_2": {
         "affix": "Thorny",
-        "1": "+(15-25) Damage Reflected to Attackers",
+        "1": "+(40-55) Damage Reflected to Attackers",
         "level": 4,
         "statOrderKey": 95,
         "statOrder": [
@@ -7349,7 +7349,7 @@
     },
     "95_3": {
         "affix": "Thorny",
-        "1": "+(26-45) Damage Reflected to Attackers",
+        "1": "+(60-80) Damage Reflected to Attackers",
         "level": 4,
         "statOrderKey": 95,
         "statOrder": [
@@ -7360,7 +7360,7 @@
     },
     "95_4": {
         "affix": "Thorny",
-        "1": "+(46-75) Damage Reflected to Attackers",
+        "1": "+(90-150) Damage Reflected to Attackers",
         "level": 4,
         "statOrderKey": 95,
         "statOrder": [
@@ -7371,7 +7371,7 @@
     },
     "95_5": {
         "affix": "Thorny",
-        "1": "+(100-130) Damage Reflected to Attackers",
+        "1": "+(250-300) Damage Reflected to Attackers",
         "level": 4,
         "statOrderKey": 95,
         "statOrder": [
@@ -7382,7 +7382,7 @@
     },
     "95_6": {
         "affix": "Thorny",
-        "1": "+(131-200) Damage Reflected to Attackers",
+        "1": "+(301-400) Damage Reflected to Attackers",
         "level": 4,
         "statOrderKey": 95,
         "statOrder": [
@@ -7393,7 +7393,7 @@
     },
     "96_0": {
         "affix": "Reflective",
-        "1": "+(5-7)% Damage Reflected",
+        "1": "+(5-10)% Damage Reflected",
         "level": 23,
         "statOrderKey": 96,
         "statOrder": [
@@ -7404,7 +7404,7 @@
     },
     "96_1": {
         "affix": "Reflective",
-        "1": "+(8-10)% Damage Reflected",
+        "1": "+(11-19)% Damage Reflected",
         "level": 23,
         "statOrderKey": 96,
         "statOrder": [
@@ -7415,7 +7415,7 @@
     },
     "96_2": {
         "affix": "Reflective",
-        "1": "+(11-13)% Damage Reflected",
+        "1": "+(20-28)% Damage Reflected",
         "level": 23,
         "statOrderKey": 96,
         "statOrder": [
@@ -7426,7 +7426,7 @@
     },
     "96_3": {
         "affix": "Reflective",
-        "1": "+(14-17)% Damage Reflected",
+        "1": "+(29-38)% Damage Reflected",
         "level": 23,
         "statOrderKey": 96,
         "statOrder": [
@@ -7437,7 +7437,7 @@
     },
     "96_4": {
         "affix": "Reflective",
-        "1": "+(18-25)% Damage Reflected",
+        "1": "+(39-50)% Damage Reflected",
         "level": 23,
         "statOrderKey": 96,
         "statOrder": [
@@ -7448,7 +7448,7 @@
     },
     "96_5": {
         "affix": "Reflective",
-        "1": "+(30-36)% Damage Reflected",
+        "1": "+(70-80)% Damage Reflected",
         "level": 23,
         "statOrderKey": 96,
         "statOrder": [
@@ -7459,7 +7459,7 @@
     },
     "96_6": {
         "affix": "Reflective",
-        "1": "+(37-50)% Damage Reflected",
+        "1": "+(81-100)% Damage Reflected",
         "level": 23,
         "statOrderKey": 96,
         "statOrder": [
@@ -7778,7 +7778,7 @@
     },
     "101_0": {
         "affix": "Conqueror's",
-        "1": "+(6-7)% Spell Damage",
+        "1": "+(6-7)% increased Area for Area Skills",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -7789,7 +7789,7 @@
     },
     "101_1": {
         "affix": "Conqueror's",
-        "1": "+(8-9)% Spell Damage",
+        "1": "+(8-9)% increased Area for Area Skills",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -7800,7 +7800,7 @@
     },
     "101_2": {
         "affix": "Conqueror's",
-        "1": "+(10-12)% Spell Damage",
+        "1": "+(10-12)% increased Area for Area Skills",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -7811,7 +7811,7 @@
     },
     "101_3": {
         "affix": "Conqueror's",
-        "1": "+(13-15)% Spell Damage",
+        "1": "+(13-15)% increased Area for Area Skills",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -7822,7 +7822,7 @@
     },
     "101_4": {
         "affix": "Conqueror's",
-        "1": "+(16-20)% Spell Damage",
+        "1": "+(16-20)% increased Area for Area Skills",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -7833,7 +7833,7 @@
     },
     "101_5": {
         "affix": "Conqueror's",
-        "1": "+(25-29)% Spell Damage",
+        "1": "+(25-29)% increased Area for Area Skills",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -7844,7 +7844,7 @@
     },
     "101_6": {
         "affix": "Conqueror's",
-        "1": "+(30-34)% Spell Damage",
+        "1": "+(30-34)% increased Area for Area Skills",
         "level": 32,
         "statOrderKey": 101,
         "statOrder": [
@@ -9175,7 +9175,7 @@
     },
     "198_0": {
         "affix": "of Dismantling",
-        "1": "+(22-60)% Chance to Shred Armor on Hit",
+        "1": "+(22-60)% Chance to Shred Armour on Hit",
         "level": 0,
         "statOrderKey": 198,
         "statOrder": [
@@ -9263,7 +9263,7 @@
     },
     "206_0": {
         "affix": "of Melting",
-        "1": "+(30-80)% Chance to Shred Armor on Fire Hit",
+        "1": "+(30-80)% Chance to Shred Armour on Fire Hit",
         "level": 0,
         "statOrderKey": 206,
         "statOrder": [
@@ -9318,7 +9318,7 @@
     },
     "211_0": {
         "affix": "of Dismantling",
-        "1": "+(30-80)% Chance to Shred Armor on Melee Hit",
+        "1": "+(30-80)% Chance to Shred Armour on Melee Hit",
         "level": 0,
         "statOrderKey": 211,
         "statOrder": [
@@ -9329,7 +9329,7 @@
     },
     "212_0": {
         "affix": "of the Siege",
-        "1": "+(30-80)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(30-80)% Chance to Shred Armour on Throwing Hit",
         "level": 0,
         "statOrderKey": 212,
         "statOrder": [
@@ -9428,7 +9428,7 @@
     },
     "221_0": {
         "affix": "Tempestuous",
-        "1": "+(9-30)% Chance to cast Maelstrom every 5 seconds",
+        "1": "+(9-30)% Chance to cast Maelstrom every 3 seconds",
         "level": 0,
         "statOrderKey": 221,
         "statOrder": [
@@ -10033,7 +10033,7 @@
     },
     "276_0": {
         "affix": "Keen",
-        "1": "+(4-9)% Chance to cast Smite on hit with throwing attacks",
+        "1": "+(10-25)% Chance to cast Smite on hit with throwing attacks (up to 10 times per 2 seconds)",
         "level": 0,
         "statOrderKey": 276,
         "statOrder": [
@@ -10671,7 +10671,7 @@
     },
     "330_4": {
         "affix": "Rejuvenating",
-        "1": "(30-35)% increased Mana Regen",
+        "1": "(30-38)% increased Mana Regen",
         "level": 0,
         "statOrderKey": 330,
         "statOrder": [
@@ -10682,7 +10682,7 @@
     },
     "330_5": {
         "affix": "Rejuvenating",
-        "1": "(40-45)% increased Mana Regen",
+        "1": "(40-49)% increased Mana Regen",
         "level": 0,
         "statOrderKey": 330,
         "statOrder": [
@@ -10693,7 +10693,7 @@
     },
     "330_6": {
         "affix": "Rejuvenating",
-        "1": "(46-55)% increased Mana Regen",
+        "1": "(50-60)% increased Mana Regen",
         "level": 0,
         "statOrderKey": 330,
         "statOrder": [
@@ -11474,7 +11474,7 @@
     },
     "341_0": {
         "affix": "Boreal",
-        "1": "+(30-33)% Freeze Rate per stack of Chill",
+        "1": "+(14-16)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -11485,7 +11485,7 @@
     },
     "341_1": {
         "affix": "Boreal",
-        "1": "+(34-37)% Freeze Rate per stack of Chill",
+        "1": "+(17-20)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -11496,7 +11496,7 @@
     },
     "341_2": {
         "affix": "Boreal",
-        "1": "+(38-42)% Freeze Rate per stack of Chill",
+        "1": "+(21-25)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -11507,7 +11507,7 @@
     },
     "341_3": {
         "affix": "Boreal",
-        "1": "+(43-47)% Freeze Rate per stack of Chill",
+        "1": "+(26-31)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -11518,7 +11518,7 @@
     },
     "341_4": {
         "affix": "Boreal",
-        "1": "+(48-57)% Freeze Rate per stack of Chill",
+        "1": "+(32-37)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -11529,7 +11529,7 @@
     },
     "341_5": {
         "affix": "Boreal",
-        "1": "+(70-85)% Freeze Rate per stack of Chill",
+        "1": "+(40-50)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -11540,7 +11540,7 @@
     },
     "341_6": {
         "affix": "Boreal",
-        "1": "+(86-105)% Freeze Rate per stack of Chill",
+        "1": "+(51-65)% Freeze Rate per stack of Chill",
         "level": 42,
         "statOrderKey": 341,
         "statOrder": [
@@ -13707,7 +13707,7 @@
     },
     "370_0": {
         "affix": null,
-        "1": "+(45-51)% Increased Shred Armor Effect",
+        "1": "+(45-51)% Increased Shred Armour Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -13718,7 +13718,7 @@
     },
     "370_1": {
         "affix": null,
-        "1": "+(52-58)% Increased Shred Armor Effect",
+        "1": "+(52-58)% Increased Shred Armour Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -13729,7 +13729,7 @@
     },
     "370_2": {
         "affix": null,
-        "1": "+(59-65)% Increased Shred Armor Effect",
+        "1": "+(59-65)% Increased Shred Armour Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -13740,7 +13740,7 @@
     },
     "370_3": {
         "affix": null,
-        "1": "+(66-72)% Increased Shred Armor Effect",
+        "1": "+(66-72)% Increased Shred Armour Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -13751,7 +13751,7 @@
     },
     "370_4": {
         "affix": null,
-        "1": "+(73-95)% Increased Shred Armor Effect",
+        "1": "+(73-95)% Increased Shred Armour Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -13762,7 +13762,7 @@
     },
     "370_5": {
         "affix": null,
-        "1": "+(120-150)% Increased Shred Armor Effect",
+        "1": "+(120-150)% Increased Shred Armour Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -13773,7 +13773,7 @@
     },
     "370_6": {
         "affix": null,
-        "1": "+(151-190)% Increased Shred Armor Effect",
+        "1": "+(151-190)% Increased Shred Armour Effect",
         "level": 55,
         "statOrderKey": 370,
         "statOrder": [
@@ -17909,7 +17909,7 @@
     },
     "425_3": {
         "affix": "of Stamina",
-        "1": "+(46-55) Endurance Threshold",
+        "1": "+(46-59) Endurance Threshold",
         "level": 24,
         "statOrderKey": 425,
         "statOrder": [
@@ -17920,7 +17920,7 @@
     },
     "425_4": {
         "affix": "of Stamina",
-        "1": "+(56-75) Endurance Threshold",
+        "1": "+(60-80) Endurance Threshold",
         "level": 24,
         "statOrderKey": 425,
         "statOrder": [
@@ -17931,7 +17931,7 @@
     },
     "425_5": {
         "affix": "of Stamina",
-        "1": "+(100-140) Endurance Threshold",
+        "1": "+(110-150) Endurance Threshold",
         "level": 24,
         "statOrderKey": 425,
         "statOrder": [
@@ -17942,7 +17942,7 @@
     },
     "425_6": {
         "affix": "of Stamina",
-        "1": "+(141-185) Endurance Threshold",
+        "1": "+(151-200) Endurance Threshold",
         "level": 24,
         "statOrderKey": 425,
         "statOrder": [
@@ -18470,7 +18470,7 @@
     },
     "433_4": {
         "affix": "Honed",
-        "1": "+(10-12) Bow Physical Damage",
+        "1": "+(10-14) Bow Physical Damage",
         "level": 0,
         "statOrderKey": 433,
         "statOrder": [
@@ -18481,7 +18481,7 @@
     },
     "433_5": {
         "affix": "Honed",
-        "1": "+(15-19) Bow Physical Damage",
+        "1": "+(16-22) Bow Physical Damage",
         "level": 0,
         "statOrderKey": 433,
         "statOrder": [
@@ -18492,7 +18492,7 @@
     },
     "433_6": {
         "affix": "Honed",
-        "1": "+(20-24) Bow Physical Damage",
+        "1": "+(23-28) Bow Physical Damage",
         "level": 0,
         "statOrderKey": 433,
         "statOrder": [
@@ -18547,7 +18547,7 @@
     },
     "434_4": {
         "affix": "Pillager's",
-        "1": "+(10-12) Bow Fire Damage",
+        "1": "+(10-14) Bow Fire Damage",
         "level": 0,
         "statOrderKey": 434,
         "statOrder": [
@@ -18558,7 +18558,7 @@
     },
     "434_5": {
         "affix": "Pillager's",
-        "1": "+(15-19) Bow Fire Damage",
+        "1": "+(16-22) Bow Fire Damage",
         "level": 0,
         "statOrderKey": 434,
         "statOrder": [
@@ -18569,7 +18569,7 @@
     },
     "434_6": {
         "affix": "Pillager's",
-        "1": "+(20-24) Bow Fire Damage",
+        "1": "+(23-28) Bow Fire Damage",
         "level": 0,
         "statOrderKey": 434,
         "statOrder": [
@@ -20241,7 +20241,7 @@
     },
     "472_0": {
         "affix": "Skirmisher's",
-        "1": "+(30-80)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(30-80)% Chance to Shred Armour on Throwing Hit",
         "level": 0,
         "statOrderKey": 472,
         "statOrder": [
@@ -20252,7 +20252,7 @@
     },
     "473_0": {
         "affix": null,
-        "1": "+(31-40)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(31-40)% Chance to Shred Armour on Throwing Hit",
         "level": 50,
         "statOrderKey": 473,
         "statOrder": [
@@ -20263,7 +20263,7 @@
     },
     "473_1": {
         "affix": null,
-        "1": "+(41-50)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(41-50)% Chance to Shred Armour on Throwing Hit",
         "level": 50,
         "statOrderKey": 473,
         "statOrder": [
@@ -20274,7 +20274,7 @@
     },
     "473_2": {
         "affix": null,
-        "1": "+(51-60)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(51-60)% Chance to Shred Armour on Throwing Hit",
         "level": 50,
         "statOrderKey": 473,
         "statOrder": [
@@ -20285,7 +20285,7 @@
     },
     "473_3": {
         "affix": null,
-        "1": "+(61-75)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(61-75)% Chance to Shred Armour on Throwing Hit",
         "level": 50,
         "statOrderKey": 473,
         "statOrder": [
@@ -20296,7 +20296,7 @@
     },
     "473_4": {
         "affix": null,
-        "1": "+(76-100)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(76-100)% Chance to Shred Armour on Throwing Hit",
         "level": 50,
         "statOrderKey": 473,
         "statOrder": [
@@ -20307,7 +20307,7 @@
     },
     "473_5": {
         "affix": null,
-        "1": "+(135-180)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(135-180)% Chance to Shred Armour on Throwing Hit",
         "level": 50,
         "statOrderKey": 473,
         "statOrder": [
@@ -20318,7 +20318,7 @@
     },
     "473_6": {
         "affix": null,
-        "1": "+(181-240)% Chance to Shred Armor on Throwing Hit",
+        "1": "+(181-240)% Chance to Shred Armour on Throwing Hit",
         "level": 50,
         "statOrderKey": 473,
         "statOrder": [
@@ -20329,7 +20329,7 @@
     },
     "474_0": {
         "affix": "Dismantling",
-        "1": "+(30-80)% Chance to Shred Armor on Melee Hit",
+        "1": "+(30-80)% Chance to Shred Armour on Melee Hit",
         "level": 0,
         "statOrderKey": 474,
         "statOrder": [
@@ -20340,7 +20340,7 @@
     },
     "475_0": {
         "affix": null,
-        "1": "+(31-40)% Chance to Shred Armor on Melee Hit",
+        "1": "+(31-40)% Chance to Shred Armour on Melee Hit",
         "level": 50,
         "statOrderKey": 475,
         "statOrder": [
@@ -20351,7 +20351,7 @@
     },
     "475_1": {
         "affix": null,
-        "1": "+(41-50)% Chance to Shred Armor on Melee Hit",
+        "1": "+(41-50)% Chance to Shred Armour on Melee Hit",
         "level": 50,
         "statOrderKey": 475,
         "statOrder": [
@@ -20362,7 +20362,7 @@
     },
     "475_2": {
         "affix": null,
-        "1": "+(51-60)% Chance to Shred Armor on Melee Hit",
+        "1": "+(51-60)% Chance to Shred Armour on Melee Hit",
         "level": 50,
         "statOrderKey": 475,
         "statOrder": [
@@ -20373,7 +20373,7 @@
     },
     "475_3": {
         "affix": null,
-        "1": "+(61-75)% Chance to Shred Armor on Melee Hit",
+        "1": "+(61-75)% Chance to Shred Armour on Melee Hit",
         "level": 50,
         "statOrderKey": 475,
         "statOrder": [
@@ -20384,7 +20384,7 @@
     },
     "475_4": {
         "affix": null,
-        "1": "+(76-100)% Chance to Shred Armor on Melee Hit",
+        "1": "+(76-100)% Chance to Shred Armour on Melee Hit",
         "level": 50,
         "statOrderKey": 475,
         "statOrder": [
@@ -20395,7 +20395,7 @@
     },
     "475_5": {
         "affix": null,
-        "1": "+(135-180)% Chance to Shred Armor on Melee Hit",
+        "1": "+(135-180)% Chance to Shred Armour on Melee Hit",
         "level": 50,
         "statOrderKey": 475,
         "statOrder": [
@@ -20406,7 +20406,7 @@
     },
     "475_6": {
         "affix": null,
-        "1": "+(181-240)% Chance to Shred Armor on Melee Hit",
+        "1": "+(181-240)% Chance to Shred Armour on Melee Hit",
         "level": 50,
         "statOrderKey": 475,
         "statOrder": [
@@ -20417,7 +20417,7 @@
     },
     "476_0": {
         "affix": "Hawk's",
-        "1": "+(30-80)% Chance to Shred Armor on Bow Hit",
+        "1": "+(30-80)% Chance to Shred Armour on Bow Hit",
         "level": 0,
         "statOrderKey": 476,
         "statOrder": [
@@ -20428,7 +20428,7 @@
     },
     "477_0": {
         "affix": null,
-        "1": "+(31-40)% Chance to Shred Armor on Bow Hit",
+        "1": "+(31-40)% Chance to Shred Armour on Bow Hit",
         "level": 27,
         "statOrderKey": 477,
         "statOrder": [
@@ -20439,7 +20439,7 @@
     },
     "477_1": {
         "affix": null,
-        "1": "+(41-50)% Chance to Shred Armor on Bow Hit",
+        "1": "+(41-50)% Chance to Shred Armour on Bow Hit",
         "level": 27,
         "statOrderKey": 477,
         "statOrder": [
@@ -20450,7 +20450,7 @@
     },
     "477_2": {
         "affix": null,
-        "1": "+(51-60)% Chance to Shred Armor on Bow Hit",
+        "1": "+(51-60)% Chance to Shred Armour on Bow Hit",
         "level": 27,
         "statOrderKey": 477,
         "statOrder": [
@@ -20461,7 +20461,7 @@
     },
     "477_3": {
         "affix": null,
-        "1": "+(61-75)% Chance to Shred Armor on Bow Hit",
+        "1": "+(61-75)% Chance to Shred Armour on Bow Hit",
         "level": 27,
         "statOrderKey": 477,
         "statOrder": [
@@ -20472,7 +20472,7 @@
     },
     "477_4": {
         "affix": null,
-        "1": "+(76-100)% Chance to Shred Armor on Bow Hit",
+        "1": "+(76-100)% Chance to Shred Armour on Bow Hit",
         "level": 27,
         "statOrderKey": 477,
         "statOrder": [
@@ -20483,7 +20483,7 @@
     },
     "477_5": {
         "affix": null,
-        "1": "+(135-180)% Chance to Shred Armor on Bow Hit",
+        "1": "+(135-180)% Chance to Shred Armour on Bow Hit",
         "level": 27,
         "statOrderKey": 477,
         "statOrder": [
@@ -20494,7 +20494,7 @@
     },
     "477_6": {
         "affix": null,
-        "1": "+(181-240)% Chance to Shred Armor on Bow Hit",
+        "1": "+(181-240)% Chance to Shred Armour on Bow Hit",
         "level": 27,
         "statOrderKey": 477,
         "statOrder": [
@@ -20505,7 +20505,7 @@
     },
     "478_0": {
         "affix": "of Corrosion",
-        "1": "+(30-90)% Increased Shred Armor Effect",
+        "1": "+(30-90)% Increased Shred Armour Effect",
         "level": 0,
         "statOrderKey": 478,
         "statOrder": [
@@ -20516,7 +20516,7 @@
     },
     "479_0": {
         "affix": null,
-        "1": "+(45-51)% Increased Shred Armor Effect",
+        "1": "+(45-51)% Increased Shred Armour Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20527,7 +20527,7 @@
     },
     "479_1": {
         "affix": null,
-        "1": "+(52-58)% Increased Shred Armor Effect",
+        "1": "+(52-58)% Increased Shred Armour Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20538,7 +20538,7 @@
     },
     "479_2": {
         "affix": null,
-        "1": "+(59-65)% Increased Shred Armor Effect",
+        "1": "+(59-65)% Increased Shred Armour Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20549,7 +20549,7 @@
     },
     "479_3": {
         "affix": null,
-        "1": "+(66-72)% Increased Shred Armor Effect",
+        "1": "+(66-72)% Increased Shred Armour Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20560,7 +20560,7 @@
     },
     "479_4": {
         "affix": null,
-        "1": "+(73-95)% Increased Shred Armor Effect",
+        "1": "+(73-95)% Increased Shred Armour Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20571,7 +20571,7 @@
     },
     "479_5": {
         "affix": null,
-        "1": "+(120-150)% Increased Shred Armor Effect",
+        "1": "+(120-150)% Increased Shred Armour Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20582,7 +20582,7 @@
     },
     "479_6": {
         "affix": null,
-        "1": "+(151-190)% Increased Shred Armor Effect",
+        "1": "+(151-190)% Increased Shred Armour Effect",
         "level": 27,
         "statOrderKey": 479,
         "statOrder": [
@@ -20593,7 +20593,7 @@
     },
     "480_0": {
         "affix": "of Crumbling",
-        "1": "+(40-100)% Increased Shred Armor Effect",
+        "1": "+(40-100)% Increased Shred Armour Duration",
         "level": 0,
         "statOrderKey": 480,
         "statOrder": [
@@ -20604,7 +20604,7 @@
     },
     "481_0": {
         "affix": null,
-        "1": "+(50-60)% Increased Shred Armor Duration",
+        "1": "+(50-60)% Increased Shred Armour Duration",
         "level": 27,
         "statOrderKey": 481,
         "statOrder": [
@@ -20615,7 +20615,7 @@
     },
     "481_1": {
         "affix": null,
-        "1": "+(61-72)% Increased Shred Armor Duration",
+        "1": "+(61-72)% Increased Shred Armour Duration",
         "level": 27,
         "statOrderKey": 481,
         "statOrder": [
@@ -20626,7 +20626,7 @@
     },
     "481_2": {
         "affix": null,
-        "1": "+(73-85)% Increased Shred Armor Duration",
+        "1": "+(73-85)% Increased Shred Armour Duration",
         "level": 27,
         "statOrderKey": 481,
         "statOrder": [
@@ -20637,7 +20637,7 @@
     },
     "481_3": {
         "affix": null,
-        "1": "+(86-100)% Increased Shred Armor Duration",
+        "1": "+(86-100)% Increased Shred Armour Duration",
         "level": 27,
         "statOrderKey": 481,
         "statOrder": [
@@ -20648,7 +20648,7 @@
     },
     "481_4": {
         "affix": null,
-        "1": "+(101-120)% Increased Shred Armor Duration",
+        "1": "+(101-120)% Increased Shred Armour Duration",
         "level": 27,
         "statOrderKey": 481,
         "statOrder": [
@@ -20659,7 +20659,7 @@
     },
     "481_5": {
         "affix": null,
-        "1": "+(150-190)% Increased Shred Armor Duration",
+        "1": "+(150-190)% Increased Shred Armour Duration",
         "level": 27,
         "statOrderKey": 481,
         "statOrder": [
@@ -20670,7 +20670,7 @@
     },
     "481_6": {
         "affix": null,
-        "1": "+(191-240)% Increased Shred Armor Duration",
+        "1": "+(191-240)% Increased Shred Armour Duration",
         "level": 27,
         "statOrderKey": 481,
         "statOrder": [
@@ -21473,7 +21473,7 @@
     },
     "501_5": {
         "affix": "Mighty",
-        "1": "+(10-12) Strength",
+        "1": "+(11-13) Strength",
         "level": 0,
         "statOrderKey": 501,
         "statOrder": [
@@ -21484,7 +21484,7 @@
     },
     "501_6": {
         "affix": "Mighty",
-        "1": "+(13-16) Strength",
+        "1": "+(14-16) Strength",
         "level": 0,
         "statOrderKey": 501,
         "statOrder": [
@@ -21550,7 +21550,7 @@
     },
     "502_5": {
         "affix": "Scholar's",
-        "1": "+(10-12) Intelligence",
+        "1": "+(11-13) Intelligence",
         "level": 0,
         "statOrderKey": 502,
         "statOrder": [
@@ -21561,7 +21561,7 @@
     },
     "502_6": {
         "affix": "Scholar's",
-        "1": "+(13-16) Intelligence",
+        "1": "+(14-16) Intelligence",
         "level": 0,
         "statOrderKey": 502,
         "statOrder": [
@@ -21627,7 +21627,7 @@
     },
     "503_5": {
         "affix": "Dexterous",
-        "1": "+(10-12) Dexterity",
+        "1": "+(11-13) Dexterity",
         "level": 0,
         "statOrderKey": 503,
         "statOrder": [
@@ -21638,7 +21638,7 @@
     },
     "503_6": {
         "affix": "Dexterous",
-        "1": "+(13-16) Dexterity",
+        "1": "+(14-16) Dexterity",
         "level": 0,
         "statOrderKey": 503,
         "statOrder": [
@@ -21704,7 +21704,7 @@
     },
     "504_5": {
         "affix": "Attuned",
-        "1": "+(10-12) Attunement",
+        "1": "+(11-13) Attunement",
         "level": 5,
         "statOrderKey": 504,
         "statOrder": [
@@ -21715,7 +21715,7 @@
     },
     "504_6": {
         "affix": "Attuned",
-        "1": "+(13-16) Attunement",
+        "1": "+(14-16) Attunement",
         "level": 5,
         "statOrderKey": 504,
         "statOrder": [
@@ -21781,7 +21781,7 @@
     },
     "505_5": {
         "affix": "Vital",
-        "1": "+(10-12) Vitality",
+        "1": "+(11-13) Vitality",
         "level": 0,
         "statOrderKey": 505,
         "statOrder": [
@@ -21792,7 +21792,7 @@
     },
     "505_6": {
         "affix": "Vital",
-        "1": "+(13-16) Vitality",
+        "1": "+(14-16) Vitality",
         "level": 0,
         "statOrderKey": 505,
         "statOrder": [
@@ -29679,7 +29679,7 @@
     },
     "622_0": {
         "affix": null,
-        "1": "+1 Gathering Storm\n+(6-7)% Spell Damage",
+        "1": "+1 Gathering Storm\n+(6-7)% increased Area for Area Skills",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -29690,7 +29690,7 @@
     },
     "622_1": {
         "affix": null,
-        "1": "+1 Gathering Storm\n+(8-9)% Spell Damage",
+        "1": "+1 Gathering Storm\n+(8-9)% increased Area for Area Skills",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -29701,7 +29701,7 @@
     },
     "622_2": {
         "affix": null,
-        "1": "+1 Gathering Storm\n+(10-12)% Spell Damage",
+        "1": "+1 Gathering Storm\n+(10-12)% increased Area for Area Skills",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -29712,7 +29712,7 @@
     },
     "622_3": {
         "affix": null,
-        "1": "+1 Gathering Storm\n+(13-15)% Spell Damage",
+        "1": "+1 Gathering Storm\n+(13-15)% increased Area for Area Skills",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -29723,7 +29723,7 @@
     },
     "622_4": {
         "affix": null,
-        "1": "+2 Gathering Storm\n+(16-20)% Spell Damage",
+        "1": "+2 Gathering Storm\n+(16-20)% increased Area for Area Skills",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -29734,7 +29734,7 @@
     },
     "622_5": {
         "affix": null,
-        "1": "+3 Gathering Storm\n+(25-29)% Spell Damage",
+        "1": "+3 Gathering Storm\n+(25-29)% increased Area for Area Skills",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -29745,7 +29745,7 @@
     },
     "622_6": {
         "affix": null,
-        "1": "+4 Gathering Storm\n+(30-34)% Spell Damage",
+        "1": "+4 Gathering Storm\n+(30-34)% increased Area for Area Skills",
         "level": 4,
         "statOrderKey": 622,
         "statOrder": [
@@ -32880,7 +32880,7 @@
     },
     "669_4": {
         "affix": "Saboteur's",
-        "1": "+(10-12) Bow Lightning Damage",
+        "1": "+(10-14) Bow Lightning Damage",
         "level": 8,
         "statOrderKey": 669,
         "statOrder": [
@@ -32891,7 +32891,7 @@
     },
     "669_5": {
         "affix": "Saboteur's",
-        "1": "+(15-19) Bow Lightning Damage",
+        "1": "+(16-22) Bow Lightning Damage",
         "level": 8,
         "statOrderKey": 669,
         "statOrder": [
@@ -32902,7 +32902,7 @@
     },
     "669_6": {
         "affix": "Saboteur's",
-        "1": "+(20-24) Bow Lightning Damage",
+        "1": "+(23-28) Bow Lightning Damage",
         "level": 8,
         "statOrderKey": 669,
         "statOrder": [
@@ -32957,7 +32957,7 @@
     },
     "670_4": {
         "affix": "Hunter's",
-        "1": "+(10-12) Bow Cold Damage",
+        "1": "+(10-14) Bow Cold Damage",
         "level": 0,
         "statOrderKey": 670,
         "statOrder": [
@@ -32968,7 +32968,7 @@
     },
     "670_5": {
         "affix": "Hunter's",
-        "1": "+(15-19) Bow Cold Damage",
+        "1": "+(16-22) Bow Cold Damage",
         "level": 0,
         "statOrderKey": 670,
         "statOrder": [
@@ -32979,7 +32979,7 @@
     },
     "670_6": {
         "affix": "Hunter's",
-        "1": "+(20-24) Bow Cold Damage",
+        "1": "+(23-28) Bow Cold Damage",
         "level": 0,
         "statOrderKey": 670,
         "statOrder": [
@@ -33111,7 +33111,7 @@
     },
     "672_4": {
         "affix": "Deadeye's",
-        "1": "+5% Critical Strike Chance\n(12-16)% increased Bow Attack Speed",
+        "1": "+5% Critical Strike Chance\n(12-15)% increased Bow Attack Speed",
         "level": 44,
         "statOrderKey": 672,
         "statOrder": [
@@ -33122,7 +33122,7 @@
     },
     "672_5": {
         "affix": "Deadeye's",
-        "1": "+(7-8)% Critical Strike Chance\n(19-23)% increased Bow Attack Speed",
+        "1": "+(7-8)% Critical Strike Chance\n(19-21)% increased Bow Attack Speed",
         "level": 44,
         "statOrderKey": 672,
         "statOrder": [
@@ -33133,7 +33133,7 @@
     },
     "672_6": {
         "affix": "Deadeye's",
-        "1": "+(9-10)% Critical Strike Chance\n(24-28)% increased Bow Attack Speed",
+        "1": "+(9-10)% Critical Strike Chance\n(22-25)% increased Bow Attack Speed",
         "level": 44,
         "statOrderKey": 672,
         "statOrder": [
@@ -33265,7 +33265,7 @@
     },
     "674_4": {
         "affix": null,
-        "1": "+(57-75) Dodge Rating\n+(141-200) Endurance Threshold if you have not been Hit Recently",
+        "1": "+(57-80) Dodge Rating\n+(141-200) Endurance Threshold if you have not been Hit Recently",
         "level": 0,
         "statOrderKey": 674,
         "statOrder": [
@@ -33276,7 +33276,7 @@
     },
     "674_5": {
         "affix": null,
-        "1": "+(90-120) Dodge Rating\n+(230-300) Endurance Threshold if you have not been Hit Recently",
+        "1": "+(95-130) Dodge Rating\n+(230-300) Endurance Threshold if you have not been Hit Recently",
         "level": 0,
         "statOrderKey": 674,
         "statOrder": [
@@ -33287,7 +33287,7 @@
     },
     "674_6": {
         "affix": null,
-        "1": "+(121-160) Dodge Rating\n+(301-400) Endurance Threshold if you have not been Hit Recently",
+        "1": "+(131-170) Dodge Rating\n+(301-400) Endurance Threshold if you have not been Hit Recently",
         "level": 0,
         "statOrderKey": 674,
         "statOrder": [
@@ -35817,7 +35817,7 @@
     },
     "712_0": {
         "affix": null,
-        "1": "+(11-12) Mana Gained on Potion Use\n(10-13)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(8-9) Mana Gained on Potion Use\n(10-15)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35828,7 +35828,7 @@
     },
     "712_1": {
         "affix": null,
-        "1": "+(13-14) Mana Gained on Potion Use\n(14-17)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(10-11) Mana Gained on Potion Use\n(16-22)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35839,7 +35839,7 @@
     },
     "712_2": {
         "affix": null,
-        "1": "+(15-17) Mana Gained on Potion Use\n(19-23)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(12-13) Mana Gained on Potion Use\n(23-30)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35850,7 +35850,7 @@
     },
     "712_3": {
         "affix": null,
-        "1": "+(18-20) Mana Gained on Potion Use\n(24-29)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(14-16) Mana Gained on Potion Use\n(31-39)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35861,7 +35861,7 @@
     },
     "712_4": {
         "affix": null,
-        "1": "+(21-25) Mana Gained on Potion Use\n(30-40)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(17-20) Mana Gained on Potion Use\n(40-50)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35872,7 +35872,7 @@
     },
     "712_5": {
         "affix": null,
-        "1": "+(28-33) Mana Gained on Potion Use\n(50-62)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(25-29) Mana Gained on Potion Use\n(65-80)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35883,7 +35883,7 @@
     },
     "712_6": {
         "affix": null,
-        "1": "+(34-40) Mana Gained on Potion Use\n(63-80)% increased Mana Regen for 4 seconds when you use a Potion",
+        "1": "+(30-35) Mana Gained on Potion Use\n(81-100)% increased Mana Regen for 4 seconds when you use a Potion",
         "level": 0,
         "statOrderKey": 712,
         "statOrder": [
@@ -35894,7 +35894,7 @@
     },
     "713_0": {
         "affix": null,
-        "1": "+50% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(10-13)% Increased Chance To Find Potions",
+        "1": "+50% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(16-20)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -35905,7 +35905,7 @@
     },
     "713_1": {
         "affix": null,
-        "1": "+(60-70)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(14-17)% Increased Chance To Find Potions",
+        "1": "+60% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(21-25)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -35916,7 +35916,7 @@
     },
     "713_2": {
         "affix": null,
-        "1": "+(80-90)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(19-23)% Increased Chance To Find Potions",
+        "1": "+70% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(26-32)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -35927,7 +35927,7 @@
     },
     "713_3": {
         "affix": null,
-        "1": "+(110-120)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(24-29)% Increased Chance To Find Potions",
+        "1": "+(80-90)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(33-40)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -35938,7 +35938,7 @@
     },
     "713_4": {
         "affix": null,
-        "1": "+(130-150)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(30-40)% Increased Chance To Find Potions",
+        "1": "+(110-120)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(41-50)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -35949,7 +35949,7 @@
     },
     "713_5": {
         "affix": null,
-        "1": "+(170-190)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(50-62)% Increased Chance To Find Potions",
+        "1": "+(140-150)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(70-79)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -35960,7 +35960,7 @@
     },
     "713_6": {
         "affix": null,
-        "1": "+(200-250)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(63-80)% Increased Chance To Find Potions",
+        "1": "+(160-180)% Seconds of Traversal Skill Cooldowns Recovered on Potion Use\n+(80-100)% Increased Chance To Find Potions",
         "level": 0,
         "statOrderKey": 713,
         "statOrder": [
@@ -35993,7 +35993,7 @@
     },
     "714_2": {
         "affix": null,
-        "1": "+3 Volatile Zombies Summoned on Potion Use\n(21-24)% increased Minion Damage",
+        "1": "+2 Volatile Zombies Summoned on Potion Use\n(21-24)% increased Minion Damage",
         "level": 0,
         "statOrderKey": 714,
         "statOrder": [
@@ -36004,7 +36004,7 @@
     },
     "714_3": {
         "affix": null,
-        "1": "+3 Volatile Zombies Summoned on Potion Use\n(25-35)% increased Minion Damage",
+        "1": "+2 Volatile Zombies Summoned on Potion Use\n(25-35)% increased Minion Damage",
         "level": 0,
         "statOrderKey": 714,
         "statOrder": [
@@ -36015,7 +36015,7 @@
     },
     "714_4": {
         "affix": null,
-        "1": "+4 Volatile Zombies Summoned on Potion Use\n(36-45)% increased Minion Damage",
+        "1": "+2 Volatile Zombies Summoned on Potion Use\n(36-45)% increased Minion Damage",
         "level": 0,
         "statOrderKey": 714,
         "statOrder": [
@@ -36026,7 +36026,7 @@
     },
     "714_5": {
         "affix": null,
-        "1": "+5 Volatile Zombies Summoned on Potion Use\n(55-65)% increased Minion Damage",
+        "1": "+3 Volatile Zombies Summoned on Potion Use\n(55-65)% increased Minion Damage",
         "level": 0,
         "statOrderKey": 714,
         "statOrder": [
@@ -36037,7 +36037,7 @@
     },
     "714_6": {
         "affix": null,
-        "1": "+6 Volatile Zombies Summoned on Potion Use\n(66-80)% increased Minion Damage",
+        "1": "+4 Volatile Zombies Summoned on Potion Use\n(66-80)% increased Minion Damage",
         "level": 0,
         "statOrderKey": 714,
         "statOrder": [
@@ -36213,7 +36213,7 @@
     },
     "718_0": {
         "affix": "Manaforged",
-        "1": "+(10-17) Mana\n(10-14)% increased Mana Regen",
+        "1": "+(10-17) Mana\n(6-8)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -36224,7 +36224,7 @@
     },
     "718_1": {
         "affix": "Manaforged",
-        "1": "+(18-25) Mana\n(15-19)% increased Mana Regen",
+        "1": "+(18-25) Mana\n(9-12)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -36235,7 +36235,7 @@
     },
     "718_2": {
         "affix": "Manaforged",
-        "1": "+(26-34) Mana\n(20-24)% increased Mana Regen",
+        "1": "+(26-34) Mana\n(13-16)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -36246,7 +36246,7 @@
     },
     "718_3": {
         "affix": "Manaforged",
-        "1": "+(35-45) Mana\n(25-29)% increased Mana Regen",
+        "1": "+(35-45) Mana\n(17-20)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -36257,7 +36257,7 @@
     },
     "718_4": {
         "affix": "Manaforged",
-        "1": "+(46-60) Mana\n(30-35)% increased Mana Regen",
+        "1": "+(46-60) Mana\n(21-25)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -36268,7 +36268,7 @@
     },
     "718_5": {
         "affix": "Manaforged",
-        "1": "+(75-90) Mana\n(40-45)% increased Mana Regen",
+        "1": "+(75-90) Mana\n(30-35)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -36279,7 +36279,7 @@
     },
     "718_6": {
         "affix": "Manaforged",
-        "1": "+(91-120) Mana\n(46-55)% increased Mana Regen",
+        "1": "+(91-120) Mana\n(36-42)% increased Mana Regen",
         "level": 36,
         "statOrderKey": 718,
         "statOrder": [
@@ -38245,5 +38245,159 @@
         ],
         "tier": 6,
         "type": "Suffix"
+    },
+    "759_0": {
+        "affix": "Transfusing",
+        "1": "+(10-17) Mana\n+(10-14)% Mana Spent Gained as Ward",
+        "level": 43,
+        "statOrderKey": 759,
+        "statOrder": [
+            759
+        ],
+        "tier": 0,
+        "type": "Suffix"
+    },
+    "759_1": {
+        "affix": "Transfusing",
+        "1": "+(18-25) Mana\n+(15-20)% Mana Spent Gained as Ward",
+        "level": 43,
+        "statOrderKey": 759,
+        "statOrder": [
+            759
+        ],
+        "tier": 1,
+        "type": "Suffix"
+    },
+    "759_2": {
+        "affix": "Transfusing",
+        "1": "+(26-34) Mana\n+(21-27)% Mana Spent Gained as Ward",
+        "level": 43,
+        "statOrderKey": 759,
+        "statOrder": [
+            759
+        ],
+        "tier": 2,
+        "type": "Suffix"
+    },
+    "759_3": {
+        "affix": "Transfusing",
+        "1": "+(35-45) Mana\n+(28-35)% Mana Spent Gained as Ward",
+        "level": 43,
+        "statOrderKey": 759,
+        "statOrder": [
+            759
+        ],
+        "tier": 3,
+        "type": "Suffix"
+    },
+    "759_4": {
+        "affix": "Transfusing",
+        "1": "+(46-60) Mana\n+(36-50)% Mana Spent Gained as Ward",
+        "level": 43,
+        "statOrderKey": 759,
+        "statOrder": [
+            759
+        ],
+        "tier": 4,
+        "type": "Suffix"
+    },
+    "759_5": {
+        "affix": "Transfusing",
+        "1": "+(75-90) Mana\n+(65-80)% Mana Spent Gained as Ward",
+        "level": 43,
+        "statOrderKey": 759,
+        "statOrder": [
+            759
+        ],
+        "tier": 5,
+        "type": "Suffix"
+    },
+    "759_6": {
+        "affix": "Transfusing",
+        "1": "+(91-120) Mana\n+(81-100)% Mana Spent Gained as Ward",
+        "level": 43,
+        "statOrderKey": 759,
+        "statOrder": [
+            759
+        ],
+        "tier": 6,
+        "type": "Suffix"
+    },
+    "760_0": {
+        "affix": "of the Sable",
+        "1": "+(81-120) Dodge Rating while using Evade\n(9-12)% increased Dodge Rating",
+        "level": 35,
+        "statOrderKey": 760,
+        "statOrder": [
+            760
+        ],
+        "tier": 0,
+        "type": "Prefix"
+    },
+    "760_1": {
+        "affix": "of the Sable",
+        "1": "+(121-175) Dodge Rating while using Evade\n(13-17)% increased Dodge Rating",
+        "level": 35,
+        "statOrderKey": 760,
+        "statOrder": [
+            760
+        ],
+        "tier": 1,
+        "type": "Prefix"
+    },
+    "760_2": {
+        "affix": "of the Sable",
+        "1": "+(176-250) Dodge Rating while using Evade\n(18-22)% increased Dodge Rating",
+        "level": 35,
+        "statOrderKey": 760,
+        "statOrder": [
+            760
+        ],
+        "tier": 2,
+        "type": "Prefix"
+    },
+    "760_3": {
+        "affix": "of the Sable",
+        "1": "+(251-325) Dodge Rating while using Evade\n(23-28)% increased Dodge Rating",
+        "level": 35,
+        "statOrderKey": 760,
+        "statOrder": [
+            760
+        ],
+        "tier": 3,
+        "type": "Prefix"
+    },
+    "760_4": {
+        "affix": "of the Sable",
+        "1": "+(326-425) Dodge Rating while using Evade\n(29-35)% increased Dodge Rating",
+        "level": 35,
+        "statOrderKey": 760,
+        "statOrder": [
+            760
+        ],
+        "tier": 4,
+        "type": "Prefix"
+    },
+    "760_5": {
+        "affix": "of the Sable",
+        "1": "+(550-700) Dodge Rating while using Evade\n(45-57)% increased Dodge Rating",
+        "level": 35,
+        "statOrderKey": 760,
+        "statOrder": [
+            760
+        ],
+        "tier": 5,
+        "type": "Prefix"
+    },
+    "760_6": {
+        "affix": "of the Sable",
+        "1": "+(701-900) Dodge Rating while using Evade\n(58-72)% increased Dodge Rating",
+        "level": 35,
+        "statOrderKey": 760,
+        "statOrder": [
+            760
+        ],
+        "tier": 6,
+        "type": "Prefix"
     }
 }
