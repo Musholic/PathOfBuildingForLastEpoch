@@ -19,19 +19,75 @@ local ImportTabClass = newClass("ImportTab", "ControlHost", "Control", function(
 
     self.charImportMode = "GETACCOUNTNAME"
     self.charImportStatus = "Idle"
-    self.controls.sectionCharImport = new("SectionControl", { "TOPLEFT", self, "TOPLEFT" }, 10, 18, 650, 250, "Character Import")
+    self.controls.sectionCharImport = new("SectionControl", { "TOPLEFT", self, "TOPLEFT" }, 10, 18, 650, 230, "Character Import")
     self.controls.charImportStatusLabel = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 14, 200, 16, function()
         return "^7Character import status: " .. self.charImportStatus
     end)
 
     -- Stage: input account name
-    self.controls.accountNameHeader = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 40, 200, 16, "^7To start importing an **offline** character, click Start:")
+    self.controls.accountNameHeaderOffline = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 40, 200, 16, "^7To start importing an **offline** character, click Start Offline:")
+    self.controls.accountNameHeaderOffline.shown = function()
+        return self.charImportMode == "GETACCOUNTNAME"
+    end
+    self.controls.accountNameGoOffline = new("ButtonControl", { "TOPLEFT", self.controls.accountNameHeaderOffline, "BOTTOMLEFT" }, 0, 4, 100, 20, "Start Offline", function()
+        self.controls.sessionInput.buf = ""
+        self:DownloadCharacterList()
+    end)
+    -- Stage: input account name (Online)
+    self.controls.accountNameHeader = new("LabelControl", { "TOPLEFT", self.controls.accountNameGoOffline, "BOTTOMLEFT" }, 0, 4, 200, 16, "^7To start importing an Online character, click Start Online:")
     self.controls.accountNameHeader.shown = function()
         return self.charImportMode == "GETACCOUNTNAME"
     end
-    self.controls.accountNameGo = new("ButtonControl", { "TOPLEFT", self.controls.accountNameHeader, "BOTTOMLEFT" }, 0, 4, 60, 20, "Start", function()
+    self.controls.accountName = new("EditControl", {"TOPLEFT",self.controls.accountNameHeader,"BOTTOMLEFT"}, 0, 4, 200, 20, main.lastAccountName or "", nil, "%c", nil, nil, nil, nil, true)
+    self.controls.accountName.pasteFilter = function(text)
+        return text:gsub("[\128-\255]",function(c)
+            return codePointToUTF8(c:byte(1)):gsub(".",function(c)
+                return string.format("%%%X", c:byte(1))
+            end)
+        end)
+    end
+    -- accountHistory Control
+    if not historyList then
+        historyList = { }
+        for accountName, account in pairs(main.gameAccounts) do
+            t_insert(historyList, accountName)
+            historyList[accountName] = true
+        end
+        table.sort(historyList, function(a,b)
+            return a:lower() < b:lower()
+        end)
+    end -- don't load the list many times
+    self.controls.accountNameGo = new("ButtonControl", {"LEFT",self.controls.accountName,"RIGHT"}, 8, 0, 100, 20, "Start Online", function()
         self.controls.sessionInput.buf = ""
-        self:DownloadCharacterList()
+        self:DownloadCharacterListOnline()
+    end)
+    self.controls.accountNameGo.enabled = function()
+        return self.controls.accountName.buf:match("%S")
+    end
+
+    self.controls.accountHistory = new("DropDownControl", {"LEFT",self.controls.accountNameGo,"RIGHT"}, 8, 0, 200, 20, historyList, function()
+        self.controls.accountName.buf = self.controls.accountHistory.list[self.controls.accountHistory.selIndex]
+    end)
+    self.controls.accountHistory:SelByValue(main.lastAccountName)
+    self.controls.accountHistory:CheckDroppedWidth(true)
+
+    self.controls.removeAccount = new("ButtonControl", {"LEFT",self.controls.accountHistory,"RIGHT"}, 8, 0, 20, 20, "X", function()
+        local accountName = self.controls.accountHistory.list[self.controls.accountHistory.selIndex]
+        if (accountName ~= nil) then
+            t_remove(self.controls.accountHistory.list, self.controls.accountHistory.selIndex)
+            self.controls.accountHistory.list[accountName] = nil
+            main.gameAccounts[accountName] = nil
+        end
+    end)
+
+    self.controls.removeAccount.tooltipFunc = function(tooltip)
+        tooltip:Clear()
+        tooltip:AddLine(16, "^7Removes account from the dropdown list")
+    end
+
+    self.controls.accountNameUnicode = new("LabelControl", {"TOPLEFT",self.controls.accountRealm,"BOTTOMLEFT"}, 0, 16, 0, 14, "^7Note: if the account name contains non-ASCII characters then it must be URL encoded first.")
+    self.controls.accountNameURLEncoder = new("ButtonControl", {"TOPLEFT",self.controls.accountNameUnicode,"BOTTOMLEFT"}, 0, 4, 170, 18, "^x4040FFhttps://www.urlencoder.org/", function()
+        OpenURL("https://www.urlencoder.org/")
     end)
 
     -- Stage: input POESESSID
@@ -70,7 +126,17 @@ You can get this from your web browser's cookies while logged into the Path of E
     end
 
     -- Stage: select character and import data
-    self.controls.charSelectHeader = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 40, 200, 16, "^7Choose character to import data from:")
+    self.controls.source = new("ButtonControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 36, 438, 18, "^7Source: ^x4040FFhttps://lastepochtools.com")
+    self.controls.source.shown = function()
+        if self.charImportMode == "SELECTCHAR" then
+            local charSelect = self.controls.charSelect
+            local charData = charSelect.list[charSelect.selIndex].char
+            -- Only show source for online import
+            return charData.isOnline
+        end
+        return false
+    end
+    self.controls.charSelectHeader = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 60, 200, 16, "^7Choose character to import data from:")
     self.controls.charSelectHeader.shown = function()
         return self.charImportMode == "SELECTCHAR" or self.charImportMode == "IMPORTING"
     end
@@ -103,9 +169,8 @@ You can get this from your web browser's cookies while logged into the Path of E
     end
     self.controls.charImportItemsClearItems = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 120, 0, 18, "Delete equipment:", nil, "Delete all equipped items when importing.", true)
     self.controls.charImportItemsIgnoreWeaponSwap = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 280, 0, 18, "Ignore weapon swap:", nil, "Ignore items and skills in weapon swap.", false)
-    self.controls.charBanditNote = new("LabelControl", { "TOPLEFT", self.controls.charImportHeader, "BOTTOMLEFT" }, 0, 50, 200, 14, "^7Tip: After you finish importing a character, make sure you update the bandit choice,\nas it cannot be imported.")
 
-    self.controls.charClose = new("ButtonControl", { "TOPLEFT", self.controls.charImportHeader, "BOTTOMLEFT" }, 0, 90, 60, 20, "Close", function()
+    self.controls.charClose = new("ButtonControl", { "TOPLEFT", self.controls.charImportHeader, "BOTTOMLEFT" }, 0, 50, 60, 20, "Close", function()
         self.charImportMode = "GETACCOUNTNAME"
         self.charImportStatus = "Idle"
     end)
@@ -334,6 +399,90 @@ function ImportTabClass:Draw(viewPort, inputEvents)
     self:DrawControls(viewPort)
 end
 
+function ImportTabClass:DownloadCharacterListOnline()
+    self.charImportMode = "DOWNLOADCHARLIST"
+    self.charImportStatus = "Retrieving character list..."
+    -- Trim Trailing/Leading spaces
+    local accountName = self.controls.accountName.buf:gsub('%s+', '')
+    launch:DownloadPage("https://www.lastepochtools.com/profile/"..accountName, function(response, errMsg)
+        if errMsg == "Response code: 401" then
+            self.charImportStatus = colorCodes.NEGATIVE.."Sign-in is required."
+            self.charImportMode = "GETSESSIONID"
+            return
+        elseif errMsg == "Response code: 403" then
+            self.charImportStatus = colorCodes.NEGATIVE.."Account profile is private."
+            self.charImportMode = "GETSESSIONID"
+            return
+        elseif errMsg == "Response code: 404" then
+            self.charImportStatus = colorCodes.NEGATIVE.."Account name is incorrect."
+            self.charImportMode = "GETACCOUNTNAME"
+            return
+        elseif errMsg then
+            self.charImportStatus = colorCodes.NEGATIVE.."Error retrieving character list, try again ("..errMsg:gsub("\n"," ")..")"
+            self.charImportMode = "GETACCOUNTNAME"
+            return
+        end
+        local jsonChars = response.body:match("let accountCharacters = (%b[])")
+        if not jsonChars then
+            self.charImportStatus = colorCodes.NEGATIVE.."Error processing character list, try again later"
+            self.charImportMode = "GETACCOUNTNAME"
+            return
+        end
+        local charList, errMsg = processJson(jsonChars)
+        if errMsg then
+            self.charImportStatus = colorCodes.NEGATIVE.."Error processing character list, try again later"
+            self.charImportMode = "GETACCOUNTNAME"
+            return
+        end
+        --ConPrintTable(charList)
+        if #charList == 0 then
+            self.charImportStatus = colorCodes.NEGATIVE.."The account has no characters to import."
+            self.charImportMode = "GETACCOUNTNAME"
+            return
+        end
+        self.charImportStatus = "Character list successfully retrieved."
+        self.charImportMode = "SELECTCHAR"
+        self.controls.source.label = "^7Source: ^x4040FFhttps://www.lastepochtools.com/profile/"..accountName
+        self.controls.source.onClick = function()
+            OpenURL("https://www.lastepochtools.com/profile/"..accountName)
+        end
+        self.lastAccountHash = common.sha1(accountName)
+        main.lastAccountName = accountName
+        main.gameAccounts[accountName] = main.gameAccounts[accountName] or { }
+        local leagueList = { }
+        for i, char in ipairs(charList) do
+            char.league = char.cycle == 3 and "Cycle" or "Legacy"
+            char.ascendancy = char.mastery
+            char.ascendancyName = self.build.latestTree.classes[char.class].ascendancies[char.ascendancy].name
+            char.name = char.characterName
+            char.class = self.build.latestTree.classes[char.class].name
+            char.isOnline = true
+            if not isValueInArray(leagueList, char.league) then
+                t_insert(leagueList, char.league)
+            end
+        end
+        table.sort(leagueList)
+        wipeTable(self.controls.charSelectLeague.list)
+        for _, league in ipairs(leagueList) do
+            t_insert(self.controls.charSelectLeague.list, {
+                label = league,
+                league = league,
+            })
+        end
+        t_insert(self.controls.charSelectLeague.list, {
+            label = "All",
+        })
+        if self.controls.charSelectLeague.selIndex > #self.controls.charSelectLeague.list then
+            self.controls.charSelectLeague.selIndex = 1
+        end
+        self.lastCharList = charList
+        self:BuildCharacterList(self.controls.charSelectLeague:GetSelValue("league"))
+
+        -- We only get here if the accountname was correct, found, and not private, so add it to the account history.
+        self:SaveAccountHistory()
+    end)
+end
+
 function ImportTabClass:DownloadCharacterList()
     self.charImportMode = "DOWNLOADCHARLIST"
     self.charImportStatus = "Retrieving character list..."
@@ -429,7 +578,34 @@ function ImportTabClass:DownloadPassiveTree()
     self.charImportStatus = "Retrieving character passive tree..."
     local charSelect = self.controls.charSelect
     local charData = charSelect.list[charSelect.selIndex].char
-    self:ImportPassiveTreeAndJewels(charData)
+    local accountName = self.controls.accountName.buf
+    if charData.isOnline then
+        -- charData is incomplete, we need to retrieve online data
+        launch:DownloadPage("https://www.lastepochtools.com/profile/" .. accountName .. "/character/" .. charData.name, function(response, errMsg)
+            self.charImportMode = "SELECTCHAR"
+            if errMsg then
+                self.charImportStatus = colorCodes.NEGATIVE.."Error importing character data, try again ("..errMsg:gsub("\n"," ")..")"
+                return
+            elseif response.body == "false" then
+                self.charImportStatus = colorCodes.NEGATIVE.."Failed to retrieve character data, try again."
+                return
+            end
+            local jsonBuild = response.body:match("let buildInfo = (%b{})")
+            if not jsonBuild then
+                self.charImportStatus = colorCodes.NEGATIVE.."Failed to retrieve character data, try again."
+                return
+            end
+            local buildInfo, errMsg = processJson(jsonBuild)
+            if errMsg then
+                self.charImportStatus = colorCodes.NEGATIVE.."Failed to retrieve character data, try again."
+                return
+            end
+            charData = self.build:ReadLeToolsSave(buildInfo.data)
+            self:ImportPassiveTreeAndJewels(charData)
+        end, sessionID and { header = "Cookie: POESESSID=" .. sessionID })
+    else
+        self:ImportPassiveTreeAndJewels(charData)
+    end
 end
 
 function ImportTabClass:ReadJsonSaveData(saveFileContent)
@@ -531,7 +707,34 @@ function ImportTabClass:DownloadItems()
     self.charImportStatus = "Retrieving character items..."
     local charSelect = self.controls.charSelect
     local charData = charSelect.list[charSelect.selIndex].char
-    self:ImportItemsAndSkills(charData)
+    local accountName = self.controls.accountName.buf
+    if not charData.items then
+        -- charData is incomplete, we need to retrieve online data
+        launch:DownloadPage("https://www.lastepochtools.com/profile/" .. accountName .. "/character/" .. charData.name, function(response, errMsg)
+            self.charImportMode = "SELECTCHAR"
+            if errMsg then
+                self.charImportStatus = colorCodes.NEGATIVE.."Error importing character data, try again ("..errMsg:gsub("\n"," ")..")"
+                return
+            elseif response.body == "false" then
+                self.charImportStatus = colorCodes.NEGATIVE.."Failed to retrieve character data, try again."
+                return
+            end
+            local jsonBuild = response.body:match("let buildInfo = (%b{})")
+            if not jsonBuild then
+                self.charImportStatus = colorCodes.NEGATIVE.."Failed to retrieve character data, try again."
+                return
+            end
+            local buildInfo, errMsg = processJson(jsonBuild)
+            if errMsg then
+                self.charImportStatus = colorCodes.NEGATIVE.."Failed to retrieve character data, try again."
+                return
+            end
+            charData = self.build:ReadLeToolsSave(buildInfo.data)
+            self:ImportItemsAndSkills(charData)
+        end, sessionID and { header = "Cookie: POESESSID=" .. sessionID })
+    else
+        self:ImportItemsAndSkills(charData)
+    end
 end
 
 function ImportTabClass:ImportPassiveTreeAndJewels(charData)

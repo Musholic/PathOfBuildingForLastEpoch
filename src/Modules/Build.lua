@@ -731,131 +731,136 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 	if buildXML and buildXML:match("^%{%s*\"data\": ?{") then
 		-- We are importing from LastEpochTools so we do the load here after the init finished
 		local saveContent = processJson(buildXML).data
-		local classId = saveContent.bio.characterClass
-		local className = self.latestTree.classes[classId].name
-		local char = {
-			["league"] = "Cycle",
-			["name"] = "LETools import",
-			["level"] = saveContent.bio.level,
-			["class"] = className,
-			["ascendancy"] = saveContent.bio.chosenMastery,
-			["classId"] = classId,
-			["abilities"] = {},
-			["items"] = {},
-			["hashes"] = { }
-		}
-		for passive, nbPoints in pairs(saveContent["charTree"]["selected"]) do
-			table.insert(char["hashes"], className .. "-" .. passive .. "#" .. nbPoints)
-		end
-		for _, skillTree in pairs(saveContent["skillTrees"]) do
-			table.insert(char["hashes"], skillTree['treeID'] .. "-" .. 0 .. "#1")
-			table.insert(char["abilities"], skillTree['treeID'])
-			for skill, nbPoints in pairs(skillTree["selected"]) do
-				if nbPoints > 0 then
-					table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "#" .. nbPoints)
-				end
-			end
-		end
-		local slotMap = {
-			["weapon1"] = 4,
-			["weapon2"] = 5,
-			["head"] = 2,
-			["chest"] = 3,
-			["hands"] = 6,
-			["feet"] = 8,
-			["amulet"] = 11,
-			["ring1"] = 9,
-			["ring2"] = 10,
-			["waist"] = 7,
-			["relic"] = 12
-		}
-		function processItemData(slotName, itemData)
-			local item = {
-				["inventoryId"] = slotMap[slotName]
-			}
-			if slotName == "idol" then
-				local posX = itemData["x"] - 1
-				local posY = itemData["y"] - 1
-				local idolPosition = posX + posY * 5
-				if posY > 0 then
-					idolPosition = idolPosition - 1
-				end
-				if posY == 4 then
-					idolPosition = idolPosition - 1
-				end
-				item["inventoryId"] = "Idol " .. idolPosition
-			end
-			local itemName = data.LETools_itemBases[itemData.id]
-			item["name"] = itemName
-			item["rarity"] = "RARE"
-			item["explicitMods"] = {}
-
-			for _, affixData in ipairs(itemData["affixes"]) do
-				local affixId = data.LETools_affixes[affixData.id]
-				if affixId then
-					local affixTier = affixData.tier - 1
-					local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
-					if modData then
-						local mod = modData[1]
-						local range = (affixData.r or 128) / 256.0
-						table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
-					end
-				end
-			end
-
-			local foundItemBase = data.itemBases[itemName]
-			if not foundItemBase then
-				for _, uniqueBase in pairs(data.uniques) do
-					if uniqueBase.name == itemName then
-						item["rarity"] = "UNIQUE"
-						local baseTypeID = uniqueBase["baseTypeID"]
-						local subTypeID = uniqueBase["subTypeID"]
-						for itemBaseName, itemBase in pairs(data.itemBases) do
-							if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
-								item.baseName = itemBaseName
-								foundItemBase = itemBase
-							end
-						end
-						for i, modLine in ipairs(uniqueBase.mods) do
-							local range = 0.5
-							if itemData['ur'] then
-								range = itemData["ur"][i] / 256.0
-							end
-							table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
-						end
-					end
-				end
-			else
-				item.baseName = itemName
-			end
-			if foundItemBase then
-				item.base = foundItemBase
-				item.implicitMods= {}
-				for i,implicit in ipairs(foundItemBase.implicits) do
-					local range = 0.5
-					if itemData['ir'] then
-						range = itemData["ir"][i] / 256.0
-					end
-					table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
-				end
-				return item
-			end
-		end
-		for slotName,itemData in pairs(saveContent["equipment"]) do
-			local item = processItemData(slotName, itemData)
-			if item then
-				table.insert(char["items"], item)
-			end
-		end
-		for _,itemData in pairs(saveContent["idols"]) do
-			local item = processItemData("idol", itemData)
-			if item then
-				table.insert(char["items"], item)
-			end
-		end
+		local char = self:ReadLeToolsSave(saveContent)
 		self.importTab:ImportPassiveTreeAndJewels(char)
 		self.importTab:ImportItemsAndSkills(char)
 	end
+end
+
+function buildMode:ReadLeToolsSave(saveContent)
+	local classId = saveContent.bio.characterClass
+	local className = self.latestTree.classes[classId].name
+	local char = {
+		["league"] = "Cycle",
+		["name"] = "LETools import",
+		["level"] = saveContent.bio.level,
+		["class"] = className,
+		["ascendancy"] = saveContent.bio.chosenMastery,
+		["classId"] = classId,
+		["abilities"] = {},
+		["items"] = {},
+		["hashes"] = { }
+	}
+	for passive, nbPoints in pairs(saveContent["charTree"]["selected"]) do
+		table.insert(char["hashes"], className .. "-" .. passive .. "#" .. nbPoints)
+	end
+	for _, skillTree in pairs(saveContent["skillTrees"]) do
+		table.insert(char["hashes"], skillTree['treeID'] .. "-" .. 0 .. "#1")
+		table.insert(char["abilities"], skillTree['treeID'])
+		for skill, nbPoints in pairs(skillTree["selected"]) do
+			if nbPoints > 0 then
+				table.insert(char["hashes"], skillTree['treeID'] .. "-" .. skill .. "#" .. nbPoints)
+			end
+		end
+	end
+	local slotMap = {
+		["weapon1"] = 4,
+		["weapon2"] = 5,
+		["head"] = 2,
+		["chest"] = 3,
+		["hands"] = 6,
+		["feet"] = 8,
+		["amulet"] = 11,
+		["ring1"] = 9,
+		["ring2"] = 10,
+		["waist"] = 7,
+		["relic"] = 12
+	}
+	function processItemData(slotName, itemData)
+		local item = {
+			["inventoryId"] = slotMap[slotName]
+		}
+		if slotName == "idol" then
+			local posX = itemData["x"] - 1
+			local posY = itemData["y"] - 1
+			local idolPosition = posX + posY * 5
+			if posY > 0 then
+				idolPosition = idolPosition - 1
+			end
+			if posY == 4 then
+				idolPosition = idolPosition - 1
+			end
+			item["inventoryId"] = "Idol " .. idolPosition
+		end
+		local itemName = data.LETools_itemBases[itemData.id]
+		item["name"] = itemName
+		item["rarity"] = "RARE"
+		item["explicitMods"] = {}
+
+		for _, affixData in ipairs(itemData["affixes"]) do
+			local affixId = data.LETools_affixes[affixData.id]
+			if affixId then
+				local affixTier = affixData.tier - 1
+				local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+				if modData then
+					local mod = modData[1]
+					local range = (affixData.r or 128) / 256.0
+					table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
+				end
+			end
+		end
+
+		local foundItemBase = data.itemBases[itemName]
+		if not foundItemBase then
+			for _, uniqueBase in pairs(data.uniques) do
+				if uniqueBase.name == itemName then
+					item["rarity"] = "UNIQUE"
+					local baseTypeID = uniqueBase["baseTypeID"]
+					local subTypeID = uniqueBase["subTypeID"]
+					for itemBaseName, itemBase in pairs(data.itemBases) do
+						if itemBase.baseTypeID == baseTypeID and itemBase.subTypeID == subTypeID then
+							item.baseName = itemBaseName
+							foundItemBase = itemBase
+						end
+					end
+					for i, modLine in ipairs(uniqueBase.mods) do
+						local range = 0.5
+						if itemData['ur'] then
+							range = itemData["ur"][i] / 256.0
+						end
+						table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
+					end
+				end
+			end
+		else
+			item.baseName = itemName
+		end
+		if foundItemBase then
+			item.base = foundItemBase
+			item.implicitMods= {}
+			for i,implicit in ipairs(foundItemBase.implicits) do
+				local range = 0.5
+				if itemData['ir'] then
+					range = itemData["ir"][i] / 256.0
+				end
+				table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
+			end
+			return item
+		end
+	end
+	for slotName,itemData in pairs(saveContent["equipment"]) do
+		local item = processItemData(slotName, itemData)
+		if item then
+			table.insert(char["items"], item)
+		end
+	end
+	for _,itemData in pairs(saveContent["idols"]) do
+		local item = processItemData("idol", itemData)
+		if item then
+			table.insert(char["items"], item)
+		end
+	end
+	return char
 end
 
 local acts = {
