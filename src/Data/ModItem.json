@@ -18030,7 +18030,7 @@
     },
     "427_0": {
         "affix": "of Impunity",
-        "1": "+(35-43)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(35-43)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 36,
         "statOrderKey": 427,
         "statOrder": [
@@ -18041,7 +18041,7 @@
     },
     "427_1": {
         "affix": "of Impunity",
-        "1": "+(44-53)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(44-53)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 36,
         "statOrderKey": 427,
         "statOrder": [
@@ -18052,7 +18052,7 @@
     },
     "427_2": {
         "affix": "of Impunity",
-        "1": "+(54-66)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(54-66)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 36,
         "statOrderKey": 427,
         "statOrder": [
@@ -18063,7 +18063,7 @@
     },
     "427_3": {
         "affix": "of Impunity",
-        "1": "+(67-80)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(67-80)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 36,
         "statOrderKey": 427,
         "statOrder": [
@@ -18074,7 +18074,7 @@
     },
     "427_4": {
         "affix": "of Impunity",
-        "1": "+(81-100)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(81-100)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 36,
         "statOrderKey": 427,
         "statOrder": [
@@ -18085,7 +18085,7 @@
     },
     "427_5": {
         "affix": "of Impunity",
-        "1": "+1 reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+1 Reduced Bonus Damage Taken from Critical Strikes",
         "level": 36,
         "statOrderKey": 427,
         "statOrder": [
@@ -18096,7 +18096,7 @@
     },
     "427_6": {
         "affix": "of Impunity",
-        "1": "+1 reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+1 Reduced Bonus Damage Taken from Critical Strikes",
         "level": 36,
         "statOrderKey": 427,
         "statOrder": [
@@ -36048,7 +36048,7 @@
     },
     "715_0": {
         "affix": "of Fortification",
-        "1": "+(24-32) Armor\n+(8-10)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(24-32) Armor\n+(8-10)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 40,
         "statOrderKey": 715,
         "statOrder": [
@@ -36059,7 +36059,7 @@
     },
     "715_1": {
         "affix": "of Fortification",
-        "1": "+(33-42) Armor\n+(11-14)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(33-42) Armor\n+(11-14)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 40,
         "statOrderKey": 715,
         "statOrder": [
@@ -36070,7 +36070,7 @@
     },
     "715_2": {
         "affix": "of Fortification",
-        "1": "+(43-55) Armor\n+(15-19)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(43-55) Armor\n+(15-19)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 40,
         "statOrderKey": 715,
         "statOrder": [
@@ -36081,7 +36081,7 @@
     },
     "715_3": {
         "affix": "of Fortification",
-        "1": "+(56-70) Armor\n+(20-24)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(56-70) Armor\n+(20-24)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 40,
         "statOrderKey": 715,
         "statOrder": [
@@ -36092,7 +36092,7 @@
     },
     "715_4": {
         "affix": "of Fortification",
-        "1": "+(71-95) Armor\n+(25-30)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(71-95) Armor\n+(25-30)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 40,
         "statOrderKey": 715,
         "statOrder": [
@@ -36103,7 +36103,7 @@
     },
     "715_5": {
         "affix": "of Fortification",
-        "1": "+(130-170) Armor\n+(38-45)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(130-170) Armor\n+(38-45)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 40,
         "statOrderKey": 715,
         "statOrder": [
@@ -36114,7 +36114,7 @@
     },
     "715_6": {
         "affix": "of Fortification",
-        "1": "+(171-220) Armor\n+(46-60)% reduced Bonus Damage Taken from Critical Strikes",
+        "1": "+(171-220) Armor\n+(46-60)% Reduced Bonus Damage Taken from Critical Strikes",
         "level": 40,
         "statOrderKey": 715,
         "statOrder": [

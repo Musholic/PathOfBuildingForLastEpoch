@@ -2542,8 +2542,8 @@
             "y": 8491.200181035156,
             "maxPoints": 5,
             "stats": [
-                "1% More Witchfire Damage per Ignite chance",
-                "3% More Witchfire Damage per Damned chance",
+                "2% More Witchfire Damage per Ignite chance",
+                "4% More Witchfire Damage per Damned chance",
                 "1 Number of Witchfire Spreads within 10m"
             ],
             "notScalingStats": [
@@ -2559,6 +2559,9 @@
             "out": [],
             "description": [
                 "{Witchfire} that you inflict deals more damage (multiplicative with other modifiers) per 1% global chance to ignite with fire skills and per 1% global chance to inflict damned with necrotic skills.\n\nAdditionally while you have {Ignite} or {Damned Overload} your hits spread {Witchfire} to a number of enemies within 10 meters."
+            ],
+            "reminderText": [
+                "These damage modifiers to Witchfire are additive with each other, but multiplicative with all other modifiers."
             ]
         },
         "Acolyte-111": {
@@ -2654,7 +2657,7 @@
         "aa710-0": {
             "skill": "aa710-0",
             "name": "Assemble Abomination",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -2676,7 +2679,7 @@
         "aa710-2": {
             "skill": "aa710-2",
             "name": "Hulking Mass",
-            "x": 5795.7998,
+            "x": 5747.3998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -2701,7 +2704,7 @@
         "aa710-3": {
             "skill": "aa710-3",
             "name": "Unholy Command",
-            "x": 4795.7998,
+            "x": 4747.3998,
             "y": 680.0,
             "maxPoints": 3,
             "stats": [
@@ -2725,7 +2728,7 @@
         "aa710-4": {
             "skill": "aa710-4",
             "name": "Devour",
-            "x": 4107.7998,
+            "x": 4059.3998,
             "y": 1196.0,
             "maxPoints": 1,
             "stats": [
@@ -2747,7 +2750,7 @@
         "aa710-5": {
             "skill": "aa710-5",
             "name": "Shattered Limbs",
-            "x": 3835.7998,
+            "x": 3787.3998,
             "y": 680.0,
             "maxPoints": 1,
             "stats": [
@@ -2772,7 +2775,7 @@
         "aa710-6": {
             "skill": "aa710-6",
             "name": "Spoils of War",
-            "x": 4795.7998,
+            "x": 4747.3998,
             "y": -132.8,
             "maxPoints": 1,
             "stats": [
@@ -2797,7 +2800,7 @@
         "aa710-7": {
             "skill": "aa710-7",
             "name": "Flesh and Blood",
-            "x": 4107.7998,
+            "x": 4059.3998,
             "y": 96.0,
             "maxPoints": 2,
             "stats": [
@@ -2822,7 +2825,7 @@
         "aa710-9": {
             "skill": "aa710-9",
             "name": "Age of Undeath",
-            "x": 6083.7998,
+            "x": 6035.3998,
             "y": 600.0,
             "maxPoints": 1,
             "stats": [
@@ -2846,7 +2849,7 @@
         "aa710-11": {
             "skill": "aa710-11",
             "name": "Fractured End",
-            "x": 7075.7998,
+            "x": 7027.3998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -2872,7 +2875,7 @@
         "aa710-12": {
             "skill": "aa710-12",
             "name": "Repugnant Presence",
-            "x": 6904.9998,
+            "x": 6856.5998,
             "y": -480.0,
             "maxPoints": 5,
             "stats": [
@@ -2893,7 +2896,7 @@
         "aa710-13": {
             "skill": "aa710-13",
             "name": "Domination",
-            "x": 6772.199799999999,
+            "x": 6723.7998,
             "y": 600.0,
             "maxPoints": 4,
             "stats": [
@@ -2917,7 +2920,7 @@
         "aa710-14": {
             "skill": "aa710-14",
             "name": "The Quick and the Dead",
-            "x": 7812.5996,
+            "x": 7764.1996,
             "y": -240.0,
             "maxPoints": 5,
             "stats": [
@@ -2944,7 +2947,7 @@
         "aa710-15": {
             "skill": "aa710-15",
             "name": "Imprisoned Horror",
-            "x": 9086.5996,
+            "x": 9038.1996,
             "y": 97.199952,
             "maxPoints": 1,
             "stats": [
@@ -2966,7 +2969,7 @@
         "aa710-16": {
             "skill": "aa710-16",
             "name": "Consume",
-            "x": 7135.7998,
+            "x": 7087.3998,
             "y": -900.0,
             "maxPoints": 5,
             "stats": [
@@ -2992,7 +2995,7 @@
         "aa710-17": {
             "skill": "aa710-17",
             "name": "Unholy Reach",
-            "x": 7758.5996,
+            "x": 7710.1996,
             "y": 710.4,
             "maxPoints": 5,
             "stats": [
@@ -3016,7 +3019,7 @@
         "aa710-18": {
             "skill": "aa710-18",
             "name": "Reap The Damned",
-            "x": 8151.7998,
+            "x": 8103.3998,
             "y": 1248.0,
             "maxPoints": 1,
             "stats": [
@@ -3036,7 +3039,7 @@
         "aa710-19": {
             "skill": "aa710-19",
             "name": "Shattered Similacrum",
-            "x": 8539.7998,
+            "x": 8491.3998,
             "y": 712.0,
             "maxPoints": 1,
             "stats": [
@@ -3060,7 +3063,7 @@
         "aa710-20": {
             "skill": "aa710-20",
             "name": "Meat Grinder",
-            "x": 7391.7998,
+            "x": 7343.3998,
             "y": 1256.0,
             "maxPoints": 1,
             "stats": [
@@ -3081,7 +3084,7 @@
         "aa710-21": {
             "skill": "aa710-21",
             "name": "Stitched Flesh",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -680.0,
             "maxPoints": 5,
             "stats": [
@@ -3106,7 +3109,7 @@
         "aa710-22": {
             "skill": "aa710-22",
             "name": "Cadaverous Carapace",
-            "x": 5735.7998,
+            "x": 5687.3998,
             "y": -900.0,
             "maxPoints": 1,
             "stats": [
@@ -3127,7 +3130,7 @@
         "aa710-23": {
             "skill": "aa710-23",
             "name": "Dead Eye",
-            "x": 5072.5998,
+            "x": 5024.1998,
             "y": -697.2,
             "maxPoints": 1,
             "stats": [
@@ -3149,7 +3152,7 @@
         "aa710-24": {
             "skill": "aa710-24",
             "name": "Horrific Volley",
-            "x": 4200.9998,
+            "x": 4152.5998,
             "y": -697.19996,
             "maxPoints": 4,
             "stats": [
@@ -3170,7 +3173,7 @@
         "aa710-26": {
             "skill": "aa710-26",
             "name": "Engorgement",
-            "x": 6083.7998,
+            "x": 6035.3998,
             "y": 1225.6,
             "maxPoints": 3,
             "stats": [
@@ -3193,7 +3196,7 @@
         "aa710-27": {
             "skill": "aa710-27",
             "name": "Epicurean",
-            "x": 5472.9998,
+            "x": 5424.5998,
             "y": 896.0,
             "maxPoints": 5,
             "stats": [
@@ -3218,7 +3221,7 @@
         "aa710-28": {
             "skill": "aa710-28",
             "name": "Death in the Family",
-            "x": 4871.7998,
+            "x": 4823.3998,
             "y": 1225.6,
             "maxPoints": 5,
             "stats": [
@@ -3241,7 +3244,7 @@
         "aa710-29": {
             "skill": "aa710-29",
             "name": "Corrupt Palate",
-            "x": 8492.1998,
+            "x": 8443.7998,
             "y": -580.0,
             "maxPoints": 1,
             "stats": [
@@ -3266,7 +3269,7 @@
         "aa710-30": {
             "skill": "aa710-30",
             "name": "Frightful Feast",
-            "x": 9086.5996,
+            "x": 9038.1996,
             "y": -580.0,
             "maxPoints": 1,
             "stats": [
@@ -3286,7 +3289,7 @@
         "aa710-31": {
             "skill": "aa710-31",
             "name": "A Violent End",
-            "x": 8492.1998,
+            "x": 8443.7998,
             "y": 97.2,
             "maxPoints": 5,
             "stats": [
@@ -3309,7 +3312,7 @@
         "aa710-32": {
             "skill": "aa710-32",
             "name": "Bloated Corpse",
-            "x": 7871.7998,
+            "x": 7823.3998,
             "y": -897.19988,
             "maxPoints": 1,
             "stats": [
@@ -3329,7 +3332,7 @@
         "aa710-33": {
             "skill": "aa710-33",
             "name": "Rapacious Protection",
-            "x": 8919.7998,
+            "x": 8871.3998,
             "y": 1248.0,
             "maxPoints": 1,
             "stats": [
@@ -3352,7 +3355,7 @@
         "ad0ry-0": {
             "skill": "ad0ry-0",
             "name": "Aura of Decay",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -3373,7 +3376,7 @@
         "ad0ry-2": {
             "skill": "ad0ry-2",
             "name": "Rot Weaver",
-            "x": 7131.7998,
+            "x": 7074.5998,
             "y": 332.0,
             "maxPoints": 3,
             "stats": [
@@ -3396,7 +3399,7 @@
         "ad0ry-3": {
             "skill": "ad0ry-3",
             "name": "Icarian Poison",
-            "x": 8043.7998,
+            "x": 7986.5998,
             "y": 760.0,
             "maxPoints": 1,
             "stats": [
@@ -3423,7 +3426,7 @@
         "ad0ry-4": {
             "skill": "ad0ry-4",
             "name": "Unending Sickness",
-            "x": 8763.7998,
+            "x": 8706.5998,
             "y": 1056.0,
             "maxPoints": 3,
             "stats": [
@@ -3443,7 +3446,7 @@
         "ad0ry-5": {
             "skill": "ad0ry-5",
             "name": "Mana Blight",
-            "x": 8578.9998,
+            "x": 8521.7998,
             "y": 332.0,
             "maxPoints": 3,
             "stats": [
@@ -3468,7 +3471,7 @@
         "ad0ry-6": {
             "skill": "ad0ry-6",
             "name": "Poisoned Soul",
-            "x": 9074.5996,
+            "x": 9017.3996,
             "y": 332.0,
             "maxPoints": 1,
             "stats": [
@@ -3489,7 +3492,7 @@
         "ad0ry-7": {
             "skill": "ad0ry-7",
             "name": "Seeping Wounds",
-            "x": 8043.7998,
+            "x": 7986.5998,
             "y": -50.4,
             "maxPoints": 5,
             "stats": [
@@ -3512,7 +3515,7 @@
         "ad0ry-8": {
             "skill": "ad0ry-8",
             "name": "Armorbane",
-            "x": 8435.7998,
+            "x": 8378.5998,
             "y": -616.0,
             "maxPoints": 1,
             "stats": [
@@ -3535,7 +3538,7 @@
         "ad0ry-9": {
             "skill": "ad0ry-9",
             "name": "Corrosive Aura",
-            "x": 7700.9998,
+            "x": 7643.7998,
             "y": -616.0,
             "maxPoints": 3,
             "stats": [
@@ -3557,7 +3560,7 @@
         "ad0ry-10": {
             "skill": "ad0ry-10",
             "name": "Undertow",
-            "x": 7131.7998,
+            "x": 7074.5998,
             "y": -332.0,
             "maxPoints": 4,
             "stats": [
@@ -3580,7 +3583,7 @@
         "ad0ry-11": {
             "skill": "ad0ry-11",
             "name": "Putrid Bombs",
-            "x": 6715.7998,
+            "x": 6658.5998,
             "y": -692.0,
             "maxPoints": 1,
             "stats": [
@@ -3604,7 +3607,7 @@
         "ad0ry-12": {
             "skill": "ad0ry-12",
             "name": "Chill to the Bone",
-            "x": 6155.7998,
+            "x": 6098.5998,
             "y": -692.0,
             "maxPoints": 3,
             "stats": [
@@ -3628,7 +3631,7 @@
         "ad0ry-13": {
             "skill": "ad0ry-13",
             "name": "Absence of Life",
-            "x": 5739.7998,
+            "x": 5682.5998,
             "y": -332.0,
             "maxPoints": 4,
             "stats": [
@@ -3656,7 +3659,7 @@
         "ad0ry-14": {
             "skill": "ad0ry-14",
             "name": "Plague Bearers",
-            "x": 5363.7998,
+            "x": 5306.5998,
             "y": -744.0,
             "maxPoints": 1,
             "stats": [
@@ -3679,7 +3682,7 @@
         "ad0ry-15": {
             "skill": "ad0ry-15",
             "name": "Infectious Bones",
-            "x": 4855.7998,
+            "x": 4798.5998,
             "y": -856.0,
             "maxPoints": 3,
             "stats": [
@@ -3699,7 +3702,7 @@
         "ad0ry-16": {
             "skill": "ad0ry-16",
             "name": "Loathing",
-            "x": 5291.7998,
+            "x": 5234.5998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -3724,7 +3727,7 @@
         "ad0ry-17": {
             "skill": "ad0ry-17",
             "name": "Feast of Souls",
-            "x": 4482.19972,
+            "x": 4424.99972,
             "y": -492.399904,
             "maxPoints": 3,
             "stats": [
@@ -3749,7 +3752,7 @@
         "ad0ry-18": {
             "skill": "ad0ry-18",
             "name": "Growing Hunger",
-            "x": 3947.7998,
+            "x": 3890.5998,
             "y": -540.0,
             "maxPoints": 1,
             "stats": [
@@ -3769,7 +3772,7 @@
         "ad0ry-19": {
             "skill": "ad0ry-19",
             "name": "Poison Skin",
-            "x": 4591.7998,
+            "x": 4534.5998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -3790,7 +3793,7 @@
         "ad0ry-20": {
             "skill": "ad0ry-20",
             "name": "Inoculation",
-            "x": 5739.7998,
+            "x": 5682.5998,
             "y": 332.0,
             "maxPoints": 4,
             "stats": [
@@ -3814,7 +3817,7 @@
         "ad0ry-21": {
             "skill": "ad0ry-21",
             "name": "Vulnerability",
-            "x": 4845.7998,
+            "x": 4788.5998,
             "y": 456.0,
             "maxPoints": 3,
             "stats": [
@@ -3840,7 +3843,7 @@
         "ad0ry-22": {
             "skill": "ad0ry-22",
             "name": "Fume Weaver",
-            "x": 4011.7998,
+            "x": 3954.5998,
             "y": 276.0,
             "maxPoints": 1,
             "stats": [
@@ -3861,7 +3864,7 @@
         "ad0ry-23": {
             "skill": "ad0ry-23",
             "name": "Poison Bolt",
-            "x": 4331.7998,
+            "x": 4274.5998,
             "y": 716.0,
             "maxPoints": 1,
             "stats": [
@@ -3883,7 +3886,7 @@
         "ad0ry-24": {
             "skill": "ad0ry-24",
             "name": "Poison Barrage",
-            "x": 3859.7998,
+            "x": 3802.5998,
             "y": 948.0,
             "maxPoints": 4,
             "stats": [
@@ -3903,7 +3906,7 @@
         "ad0ry-25": {
             "skill": "ad0ry-25",
             "name": "Corruption",
-            "x": 5223.7998,
+            "x": 5166.5998,
             "y": 844.0,
             "maxPoints": 3,
             "stats": [
@@ -3929,7 +3932,7 @@
         "ad0ry-26": {
             "skill": "ad0ry-26",
             "name": "Death Bloom",
-            "x": 4759.7998,
+            "x": 4702.5998,
             "y": 1156.0,
             "maxPoints": 2,
             "stats": [
@@ -3952,7 +3955,7 @@
         "ad0ry-27": {
             "skill": "ad0ry-27",
             "name": "Bubonic Aura",
-            "x": 5831.7998,
+            "x": 5774.5998,
             "y": 938.4,
             "maxPoints": 3,
             "stats": [
@@ -3976,7 +3979,7 @@
         "ad0ry-28": {
             "skill": "ad0ry-28",
             "name": "Plague Rat",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": 740.0,
             "maxPoints": 4,
             "stats": [
@@ -3999,7 +4002,7 @@
         "ad0ry-29": {
             "skill": "ad0ry-29",
             "name": "Aura of Terror",
-            "x": 7591.7998,
+            "x": 7534.5998,
             "y": 1148.0,
             "maxPoints": 3,
             "stats": [
@@ -4024,7 +4027,7 @@
         "ad0ry-30": {
             "skill": "ad0ry-30",
             "name": "Respite",
-            "x": 7039.7998,
+            "x": 6982.5998,
             "y": 938.4,
             "maxPoints": 4,
             "stats": [
@@ -4050,7 +4053,7 @@
         "ad0ry-31": {
             "skill": "ad0ry-31",
             "name": "Incipient Decay",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": 1148.0,
             "maxPoints": 1,
             "stats": [
@@ -4070,7 +4073,7 @@
         "bc53-0": {
             "skill": "bc53-0",
             "name": "Bone Curse",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -4092,7 +4095,7 @@
         "bc53-1": {
             "skill": "bc53-1",
             "name": "Iron Maiden",
-            "x": 5563.7998,
+            "x": 5506.5998,
             "y": -84.0,
             "maxPoints": 5,
             "stats": [
@@ -4117,7 +4120,7 @@
         "bc53-2": {
             "skill": "bc53-2",
             "name": "Brittle Bones",
-            "x": 5235.7998,
+            "x": 5178.5998,
             "y": -920.0,
             "maxPoints": 3,
             "stats": [
@@ -4144,7 +4147,7 @@
         "bc53-3": {
             "skill": "bc53-3",
             "name": "Ruptured Corpse",
-            "x": 5847.7998,
+            "x": 5790.5998,
             "y": -425.6,
             "maxPoints": 1,
             "stats": [
@@ -4165,7 +4168,7 @@
         "bc53-4": {
             "skill": "bc53-4",
             "name": "Entreat the Damned",
-            "x": 4419.7998,
+            "x": 4362.5998,
             "y": -792.0,
             "maxPoints": 1,
             "stats": [
@@ -4186,7 +4189,7 @@
         "bc53-5": {
             "skill": "bc53-5",
             "name": "Bone Eruption",
-            "x": 4875.7998,
+            "x": 4818.5998,
             "y": 85.599976,
             "maxPoints": 1,
             "stats": [
@@ -4207,7 +4210,7 @@
         "bc53-6": {
             "skill": "bc53-6",
             "name": "Acute Infliction",
-            "x": 4783.7998,
+            "x": 4726.5998,
             "y": -464.0,
             "maxPoints": 1,
             "stats": [
@@ -4230,7 +4233,7 @@
         "bc53-7": {
             "skill": "bc53-7",
             "name": "Signet of Agony",
-            "x": 8071.7998,
+            "x": 8014.5998,
             "y": 240.0,
             "maxPoints": 1,
             "stats": [
@@ -4255,7 +4258,7 @@
         "bc53-8": {
             "skill": "bc53-8",
             "name": "Illusion of Pain",
-            "x": 4047.7998,
+            "x": 3990.5998,
             "y": -232.0,
             "maxPoints": 1,
             "stats": [
@@ -4279,7 +4282,7 @@
         "bc53-9": {
             "skill": "bc53-9",
             "name": "Defile Defenses",
-            "x": 5819.7998,
+            "x": 5762.5998,
             "y": 752.0,
             "maxPoints": 5,
             "stats": [
@@ -4304,7 +4307,7 @@
         "bc53-10": {
             "skill": "bc53-10",
             "name": "Marrow Thief",
-            "x": 5391.7998,
+            "x": 5334.5998,
             "y": 1000.0,
             "maxPoints": 3,
             "stats": [
@@ -4326,7 +4329,7 @@
         "bc53-11": {
             "skill": "bc53-11",
             "name": "Bone Feast",
-            "x": 4855.7998,
+            "x": 4798.5998,
             "y": 1168.0,
             "maxPoints": 2,
             "stats": [
@@ -4346,7 +4349,7 @@
         "bc53-12": {
             "skill": "bc53-12",
             "name": "Cloven Flesh",
-            "x": 4819.7998,
+            "x": 4762.5998,
             "y": 596.0,
             "maxPoints": 5,
             "stats": [
@@ -4369,7 +4372,7 @@
         "bc53-13": {
             "skill": "bc53-13",
             "name": "Crimson Enlightenment",
-            "x": 4091.7998,
+            "x": 4034.5998,
             "y": 352.0,
             "maxPoints": 1,
             "stats": [
@@ -4392,7 +4395,7 @@
         "bc53-14": {
             "skill": "bc53-14",
             "name": "Cursed Ground",
-            "x": 4311.7998,
+            "x": 4254.5998,
             "y": 984.0,
             "maxPoints": 5,
             "stats": [
@@ -4413,7 +4416,7 @@
         "bc53-15": {
             "skill": "bc53-15",
             "name": "Conflation",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": 480.0,
             "maxPoints": 5,
             "stats": [
@@ -4437,7 +4440,7 @@
         "bc53-16": {
             "skill": "bc53-16",
             "name": "Bone Prison",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": 1020.0,
             "maxPoints": 1,
             "stats": [
@@ -4462,7 +4465,7 @@
         "bc53-17": {
             "skill": "bc53-17",
             "name": "Shattered Prison",
-            "x": 5955.7998,
+            "x": 5898.5998,
             "y": 1220.0,
             "maxPoints": 1,
             "stats": [
@@ -4483,7 +4486,7 @@
         "bc53-18": {
             "skill": "bc53-18",
             "name": "Ossify",
-            "x": 6915.7998,
+            "x": 6858.5998,
             "y": 1220.0,
             "maxPoints": 4,
             "stats": [
@@ -4503,7 +4506,7 @@
         "bc53-19": {
             "skill": "bc53-19",
             "name": "Sigil of Mortality",
-            "x": 7083.7998,
+            "x": 7026.5998,
             "y": 752.0,
             "maxPoints": 1,
             "stats": [
@@ -4528,7 +4531,7 @@
         "bc53-20": {
             "skill": "bc53-20",
             "name": "Reaper's Mark",
-            "x": 7507.7998,
+            "x": 7450.5998,
             "y": 1148.0,
             "maxPoints": 4,
             "stats": [
@@ -4550,7 +4553,7 @@
         "bc53-21": {
             "skill": "bc53-21",
             "name": "Misery",
-            "x": 8231.7998,
+            "x": 8174.5998,
             "y": 1224.0,
             "maxPoints": 1,
             "stats": [
@@ -4570,7 +4573,7 @@
         "bc53-22": {
             "skill": "bc53-22",
             "name": "Oppressive Gaze",
-            "x": 7507.7998,
+            "x": 7450.5998,
             "y": 356.0,
             "maxPoints": 1,
             "stats": [
@@ -4592,7 +4595,7 @@
         "bc53-23": {
             "skill": "bc53-23",
             "name": "Crippling Anguish",
-            "x": 7307.7998,
+            "x": 7250.5998,
             "y": -84.0,
             "maxPoints": 4,
             "stats": [
@@ -4615,7 +4618,7 @@
         "bc53-24": {
             "skill": "bc53-24",
             "name": "Swift Release",
-            "x": 8479.7998,
+            "x": 8422.5998,
             "y": 660.0,
             "maxPoints": 3,
             "stats": [
@@ -4639,7 +4642,7 @@
         "bc53-25": {
             "skill": "bc53-25",
             "name": "Cultist's Fervor",
-            "x": 7635.7998,
+            "x": 7578.5998,
             "y": -920.0,
             "maxPoints": 4,
             "stats": [
@@ -4666,7 +4669,7 @@
         "bc53-26": {
             "skill": "bc53-26",
             "name": "Chilblains",
-            "x": 8451.7998,
+            "x": 8394.5998,
             "y": -792.0,
             "maxPoints": 3,
             "stats": [
@@ -4688,7 +4691,7 @@
         "bc53-27": {
             "skill": "bc53-27",
             "name": "Bitter Winter",
-            "x": 8959.7998,
+            "x": 8902.5998,
             "y": -496.0,
             "maxPoints": 5,
             "stats": [
@@ -4708,7 +4711,7 @@
         "bc53-28": {
             "skill": "bc53-28",
             "name": "Merciless",
-            "x": 7955.7998,
+            "x": 7898.5998,
             "y": -464.0,
             "maxPoints": 5,
             "stats": [
@@ -4732,7 +4735,7 @@
         "bc53-29": {
             "skill": "bc53-29",
             "name": "Spiked Bones",
-            "x": 8415.7998,
+            "x": 8358.5998,
             "y": -128.0,
             "maxPoints": 4,
             "stats": [
@@ -4755,7 +4758,7 @@
         "bc53-30": {
             "skill": "bc53-30",
             "name": "Barbed Construct",
-            "x": 9039.7998,
+            "x": 8982.5998,
             "y": 36.0,
             "maxPoints": 1,
             "stats": [
@@ -4775,7 +4778,7 @@
         "bc53-31": {
             "skill": "bc53-31",
             "name": "Cursed Limbs",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": -640.0,
             "maxPoints": 5,
             "stats": [
@@ -4805,7 +4808,7 @@
         "bg36nl-0": {
             "skill": "bg36nl-0",
             "name": "Summon Bone Golem",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -4825,7 +4828,7 @@
         "bg36nl-2": {
             "skill": "bg36nl-2",
             "name": "Amalgam of Rogues",
-            "x": 7335.7999199999995,
+            "x": 7287.39992,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -4851,7 +4854,7 @@
         "bg36nl-3": {
             "skill": "bg36nl-3",
             "name": "Twinned Golems",
-            "x": 6796.199799999999,
+            "x": 6747.7998,
             "y": -620.0,
             "maxPoints": 1,
             "stats": [
@@ -4882,7 +4885,7 @@
         "bg36nl-4": {
             "skill": "bg36nl-4",
             "name": "Ivory Twin",
-            "x": 7435.3998,
+            "x": 7386.9998000000005,
             "y": -797.2,
             "maxPoints": 1,
             "stats": [
@@ -4903,7 +4906,7 @@
         "bg36nl-5": {
             "skill": "bg36nl-5",
             "name": "Burning Bones",
-            "x": 8110.9998,
+            "x": 8062.5998,
             "y": -859.2,
             "maxPoints": 5,
             "stats": [
@@ -4927,7 +4930,7 @@
         "bg36nl-6": {
             "skill": "bg36nl-6",
             "name": "Charred Bones",
-            "x": 8110.9998,
+            "x": 8062.5998,
             "y": -121.6,
             "maxPoints": 5,
             "stats": [
@@ -4950,7 +4953,7 @@
         "bg36nl-7": {
             "skill": "bg36nl-7",
             "name": "Pyre Golem",
-            "x": 8531.3998,
+            "x": 8482.9998,
             "y": -489.2,
             "maxPoints": 1,
             "stats": [
@@ -4980,7 +4983,7 @@
         "bg36nl-8": {
             "skill": "bg36nl-8",
             "name": "World Pyre",
-            "x": 8966.1998,
+            "x": 8917.7998,
             "y": -121.6,
             "maxPoints": 5,
             "stats": [
@@ -5001,7 +5004,7 @@
         "bg36nl-9": {
             "skill": "bg36nl-9",
             "name": "Unnatural Speed",
-            "x": 7503.7995599999995,
+            "x": 7455.39956,
             "y": 662.8,
             "maxPoints": 4,
             "stats": [
@@ -5027,7 +5030,7 @@
         "bg36nl-10": {
             "skill": "bg36nl-10",
             "name": "Infected Remains",
-            "x": 8287.7998,
+            "x": 8239.3998,
             "y": 532.0,
             "maxPoints": 5,
             "stats": [
@@ -5048,7 +5051,7 @@
         "bg36nl-11": {
             "skill": "bg36nl-11",
             "name": "Cold Vengeance",
-            "x": 5140.9998,
+            "x": 5092.5998,
             "y": 1210.0,
             "maxPoints": 5,
             "stats": [
@@ -5075,7 +5078,7 @@
         "bg36nl-12": {
             "skill": "bg36nl-12",
             "name": "Deathchill Golem",
-            "x": 4611.7998,
+            "x": 4563.3998,
             "y": 920.0,
             "maxPoints": 1,
             "stats": [
@@ -5102,7 +5105,7 @@
         "bg36nl-13": {
             "skill": "bg36nl-13",
             "name": "Amalgam of Sentinels",
-            "x": 6796.199704,
+            "x": 6747.799704,
             "y": 662.8,
             "maxPoints": 5,
             "stats": [
@@ -5127,7 +5130,7 @@
         "bg36nl-14": {
             "skill": "bg36nl-14",
             "name": "Bladed Fists",
-            "x": 7161.7998,
+            "x": 7113.3998,
             "y": 1210.0,
             "maxPoints": 5,
             "stats": [
@@ -5148,7 +5151,7 @@
         "bg36nl-15": {
             "skill": "bg36nl-15",
             "name": "Tower of Bones",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": 1210.0,
             "maxPoints": 4,
             "stats": [
@@ -5174,7 +5177,7 @@
         "bg36nl-16": {
             "skill": "bg36nl-16",
             "name": "Fragments of the Fallen",
-            "x": 6077.7998,
+            "x": 6029.3998,
             "y": 662.8,
             "maxPoints": 1,
             "stats": [
@@ -5196,7 +5199,7 @@
         "bg36nl-17": {
             "skill": "bg36nl-17",
             "name": "Amalgam of Primalists",
-            "x": 5401.399799999999,
+            "x": 5352.9998,
             "y": 662.8,
             "maxPoints": 5,
             "stats": [
@@ -5218,7 +5221,7 @@
         "bg36nl-18": {
             "skill": "bg36nl-18",
             "name": "Hunger",
-            "x": 8069.7998,
+            "x": 8021.3998,
             "y": 1210.0,
             "maxPoints": 5,
             "stats": [
@@ -5241,7 +5244,7 @@
         "bg36nl-19": {
             "skill": "bg36nl-19",
             "name": "Blood Golem",
-            "x": 8766.1998,
+            "x": 8717.7998,
             "y": 1210.0,
             "maxPoints": 1,
             "stats": [
@@ -5265,7 +5268,7 @@
         "bg36nl-20": {
             "skill": "bg36nl-20",
             "name": "Amalgam of Mages",
-            "x": 5535.7998,
+            "x": 5487.3998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -5289,7 +5292,7 @@
         "bg36nl-21": {
             "skill": "bg36nl-21",
             "name": "Bone Hail",
-            "x": 4782.9998,
+            "x": 4734.5998,
             "y": -178.8,
             "maxPoints": 5,
             "stats": [
@@ -5313,7 +5316,7 @@
         "bg36nl-22": {
             "skill": "bg36nl-22",
             "name": "Flight of the Femurs",
-            "x": 4102.1998,
+            "x": 4053.7998000000002,
             "y": -540.8,
             "maxPoints": 1,
             "stats": [
@@ -5334,7 +5337,7 @@
         "bg36nl-23": {
             "skill": "bg36nl-23",
             "name": "Bone Growth",
-            "x": 6077.7998,
+            "x": 6029.3998,
             "y": -620.00012,
             "maxPoints": 5,
             "stats": [
@@ -5359,7 +5362,7 @@
         "bg36nl-24": {
             "skill": "bg36nl-24",
             "name": "Marrow Eater",
-            "x": 5436.5998,
+            "x": 5388.1998,
             "y": -797.2,
             "maxPoints": 5,
             "stats": [
@@ -5379,7 +5382,7 @@
         "bg36nl-25": {
             "skill": "bg36nl-25",
             "name": "Betrayal",
-            "x": 4102.1998,
+            "x": 4053.7998000000002,
             "y": 147.6,
             "maxPoints": 1,
             "stats": [
@@ -5402,7 +5405,7 @@
         "bg36nl-26": {
             "skill": "bg36nl-26",
             "name": "Breath of Formosus",
-            "x": 4080.1998,
+            "x": 4031.7998000000002,
             "y": 1210.0,
             "maxPoints": 1,
             "stats": [
@@ -5423,7 +5426,7 @@
         "bg36nl-28": {
             "skill": "bg36nl-28",
             "name": "Bone Kindling",
-            "x": 8966.1998,
+            "x": 8917.7998,
             "y": -859.2,
             "maxPoints": 1,
             "stats": [
@@ -5444,7 +5447,7 @@
         "bp2nk-0": {
             "skill": "bp2nk-0",
             "name": "Marrow Shards",
-            "x": 6263.7998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -5464,7 +5467,7 @@
         "bp2nk-2": {
             "skill": "bp2nk-2",
             "name": "Bone Knives",
-            "x": 6771.7998,
+            "x": 6943.7998,
             "y": -548.0,
             "maxPoints": 1,
             "stats": [
@@ -5490,7 +5493,7 @@
         "bp2nk-3": {
             "skill": "bp2nk-3",
             "name": "Marrow Hunger",
-            "x": 6263.7998,
+            "x": 6435.7998,
             "y": -768.0,
             "maxPoints": 3,
             "stats": [
@@ -5510,7 +5513,7 @@
         "bp2nk-4": {
             "skill": "bp2nk-4",
             "name": "Splintering Impact",
-            "x": 7343.7998,
+            "x": 7515.7998,
             "y": -600.0,
             "maxPoints": 1,
             "stats": [
@@ -5540,7 +5543,7 @@
         "bp2nk-5": {
             "skill": "bp2nk-5",
             "name": "Carving",
-            "x": 7863.7998,
+            "x": 8035.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -5568,7 +5571,7 @@
         "bp2nk-6": {
             "skill": "bp2nk-6",
             "name": "Ghost Splinters",
-            "x": 7063.7998,
+            "x": 7235.7998,
             "y": -0.0,
             "maxPoints": 6,
             "stats": [
@@ -5591,7 +5594,7 @@
         "bp2nk-7": {
             "skill": "bp2nk-7",
             "name": "Gouging Splinters",
-            "x": 8856.5998,
+            "x": 9028.5998,
             "y": -240.0,
             "maxPoints": 4,
             "stats": [
@@ -5613,7 +5616,7 @@
         "bp2nk-8": {
             "skill": "bp2nk-8",
             "name": "Crimson Ivory",
-            "x": 8505.39964,
+            "x": 8677.39964,
             "y": -720.0,
             "maxPoints": 4,
             "stats": [
@@ -5633,7 +5636,7 @@
         "bp2nk-9": {
             "skill": "bp2nk-9",
             "name": "Dark Precision",
-            "x": 8856.5998,
+            "x": 9028.5998,
             "y": 240.0,
             "maxPoints": 3,
             "stats": [
@@ -5655,7 +5658,7 @@
         "bp2nk-10": {
             "skill": "bp2nk-10",
             "name": "Ivory Obliteration",
-            "x": 8505.3998,
+            "x": 8677.3998,
             "y": 720.0,
             "maxPoints": 1,
             "stats": [
@@ -5675,7 +5678,7 @@
         "bp2nk-11": {
             "skill": "bp2nk-11",
             "name": "Dead Weight",
-            "x": 6771.7998,
+            "x": 6943.7998,
             "y": 548.0,
             "maxPoints": 5,
             "stats": [
@@ -5699,7 +5702,7 @@
         "bp2nk-12": {
             "skill": "bp2nk-12",
             "name": "Blood Assassin",
-            "x": 6263.7998,
+            "x": 6435.7998,
             "y": 744.0,
             "maxPoints": 3,
             "stats": [
@@ -5723,7 +5726,7 @@
         "bp2nk-13": {
             "skill": "bp2nk-13",
             "name": "Marrow Death",
-            "x": 6783.7998,
+            "x": 6955.7998,
             "y": 1168.0,
             "maxPoints": 2,
             "stats": [
@@ -5745,7 +5748,7 @@
         "bp2nk-14": {
             "skill": "bp2nk-14",
             "name": "Femoral Offering",
-            "x": 7403.7998,
+            "x": 7575.7998,
             "y": 1244.0,
             "maxPoints": 1,
             "stats": [
@@ -5766,7 +5769,7 @@
         "bp2nk-15": {
             "skill": "bp2nk-15",
             "name": "Twin Malevolence",
-            "x": 5687.7998,
+            "x": 5859.7998,
             "y": 1216.0,
             "maxPoints": 1,
             "stats": [
@@ -5786,7 +5789,7 @@
         "bp2nk-16": {
             "skill": "bp2nk-16",
             "name": "Bone Splinters",
-            "x": 7343.7998,
+            "x": 7515.7998,
             "y": 600.0,
             "maxPoints": 1,
             "stats": [
@@ -5816,7 +5819,7 @@
         "bp2nk-17": {
             "skill": "bp2nk-17",
             "name": "Marrow Caster",
-            "x": 7975.7998,
+            "x": 8147.7998,
             "y": 888.0,
             "maxPoints": 1,
             "stats": [
@@ -5837,7 +5840,7 @@
         "bp2nk-18": {
             "skill": "bp2nk-18",
             "name": "Ossumancy",
-            "x": 5755.7998,
+            "x": 5927.7998,
             "y": -548.0,
             "maxPoints": 7,
             "stats": [
@@ -5860,7 +5863,7 @@
         "bp2nk-19": {
             "skill": "bp2nk-19",
             "name": "Shredding Bones",
-            "x": 5123.7998,
+            "x": 5295.7998,
             "y": -779.99988,
             "maxPoints": 5,
             "stats": [
@@ -5880,7 +5883,7 @@
         "bp2nk-20": {
             "skill": "bp2nk-20",
             "name": "Apathy",
-            "x": 4787.7998,
+            "x": 4959.7998,
             "y": -280.0,
             "maxPoints": 1,
             "stats": [
@@ -5903,7 +5906,7 @@
         "bp2nk-21": {
             "skill": "bp2nk-21",
             "name": "Treachery",
-            "x": 4215.7998,
+            "x": 4387.7998,
             "y": -279.99994,
             "maxPoints": 7,
             "stats": [
@@ -5926,7 +5929,7 @@
         "bp2nk-22": {
             "skill": "bp2nk-22",
             "name": "Dark Reverie",
-            "x": 3935.7998,
+            "x": 4107.7998,
             "y": -779.99992,
             "maxPoints": 2,
             "stats": [
@@ -5949,7 +5952,7 @@
         "bp2nk-23": {
             "skill": "bp2nk-23",
             "name": "Blood Reverie",
-            "x": 3935.7998,
+            "x": 4107.7998,
             "y": 200.0,
             "maxPoints": 2,
             "stats": [
@@ -5969,7 +5972,7 @@
         "bp2nk-24": {
             "skill": "bp2nk-24",
             "name": "Soul Blood",
-            "x": 5755.7998,
+            "x": 5927.7998,
             "y": 548.0,
             "maxPoints": 4,
             "stats": [
@@ -5994,7 +5997,7 @@
         "bp2nk-25": {
             "skill": "bp2nk-25",
             "name": "Bones Of The Follower",
-            "x": 5027.7998,
+            "x": 5199.7998,
             "y": 308.0,
             "maxPoints": 1,
             "stats": [
@@ -6018,7 +6021,7 @@
         "bp2nk-26": {
             "skill": "bp2nk-26",
             "name": "Rip Marrow",
-            "x": 5027.7998,
+            "x": 5199.7998,
             "y": 956.0,
             "maxPoints": 1,
             "stats": [
@@ -6045,7 +6048,7 @@
         "bp2nk-27": {
             "skill": "bp2nk-27",
             "name": "Marrow Eater",
-            "x": 4439.7998,
+            "x": 4611.7998,
             "y": 1192.0,
             "maxPoints": 3,
             "stats": [
@@ -6068,7 +6071,7 @@
         "bp2nk-28": {
             "skill": "bp2nk-28",
             "name": "Life Blood",
-            "x": 4439.7998,
+            "x": 4611.7998,
             "y": 684.0,
             "maxPoints": 2,
             "stats": [
@@ -6093,7 +6096,7 @@
         "bp2nk-29": {
             "skill": "bp2nk-29",
             "name": "Spirit Feast",
-            "x": 3859.7998,
+            "x": 4031.7998,
             "y": 956.0,
             "maxPoints": 1,
             "stats": [
@@ -6117,7 +6120,7 @@
         "bp2nk-30": {
             "skill": "bp2nk-30",
             "name": "Demise",
-            "x": 5463.7998,
+            "x": 5635.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -6137,7 +6140,7 @@
         "ch0fs-0": {
             "skill": "ch0fs-0",
             "name": "Profane Form",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -6155,7 +6158,7 @@
         "ch0fs-2": {
             "skill": "ch0fs-2",
             "name": "Fragile Crust",
-            "x": 5630.199799999999,
+            "x": 5581.7998,
             "y": 100.0,
             "maxPoints": 3,
             "stats": [
@@ -6180,7 +6183,7 @@
         "ch0fs-3": {
             "skill": "ch0fs-3",
             "name": "Fell Fire",
-            "x": 5524.199799999999,
+            "x": 5475.7998,
             "y": -460.0,
             "maxPoints": 4,
             "stats": [
@@ -6212,7 +6215,7 @@
         "ch0fs-4": {
             "skill": "ch0fs-4",
             "name": "Stygian Current",
-            "x": 4646.1998,
+            "x": 4597.799800000001,
             "y": -500.0,
             "maxPoints": 5,
             "stats": [
@@ -6238,7 +6241,7 @@
         "ch0fs-5": {
             "skill": "ch0fs-5",
             "name": "Of Gloom and Flames",
-            "x": 3932.9997999999996,
+            "x": 3884.5998,
             "y": -763.2,
             "maxPoints": 1,
             "stats": [
@@ -6262,7 +6265,7 @@
         "ch0fs-6": {
             "skill": "ch0fs-6",
             "name": "Chaotic Rupture",
-            "x": 3932.9997999999996,
+            "x": 3884.5998,
             "y": -231.6,
             "maxPoints": 3,
             "stats": [
@@ -6284,7 +6287,7 @@
         "ch0fs-7": {
             "skill": "ch0fs-7",
             "name": "Spirit Gale",
-            "x": 5030.19972,
+            "x": 4981.79972,
             "y": 240.0,
             "maxPoints": 2,
             "stats": [
@@ -6309,7 +6312,7 @@
         "ch0fs-8": {
             "skill": "ch0fs-8",
             "name": "Severed Wards",
-            "x": 4377.399799999999,
+            "x": 4328.9998,
             "y": 240.00004,
             "maxPoints": 3,
             "stats": [
@@ -6335,7 +6338,7 @@
         "ch0fs-9": {
             "skill": "ch0fs-9",
             "name": "Singed by Terror",
-            "x": 3997.3997999999997,
+            "x": 3948.9998,
             "y": 580.8,
             "maxPoints": 3,
             "stats": [
@@ -6357,7 +6360,7 @@
         "ch0fs-10": {
             "skill": "ch0fs-10",
             "name": "Return Below",
-            "x": 3878.5998,
+            "x": 3830.1998000000003,
             "y": 1133.2,
             "maxPoints": 1,
             "stats": [
@@ -6379,7 +6382,7 @@
         "ch0fs-11": {
             "skill": "ch0fs-11",
             "name": "Damned Waters",
-            "x": 4969.7998,
+            "x": 4921.3998,
             "y": 780.8,
             "maxPoints": 3,
             "stats": [
@@ -6402,7 +6405,7 @@
         "ch0fs-12": {
             "skill": "ch0fs-12",
             "name": "Grim Tide",
-            "x": 4709.7998,
+            "x": 4661.3998,
             "y": 1223.2,
             "maxPoints": 1,
             "stats": [
@@ -6425,7 +6428,7 @@
         "ch0fs-13": {
             "skill": "ch0fs-13",
             "name": "Twisted Waves",
-            "x": 5230.19972,
+            "x": 5181.79972,
             "y": 1223.2,
             "maxPoints": 3,
             "stats": [
@@ -6445,7 +6448,7 @@
         "ch0fs-14": {
             "skill": "ch0fs-14",
             "name": "Eradication",
-            "x": 6034.9998,
+            "x": 5986.5998,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -6471,7 +6474,7 @@
         "ch0fs-15": {
             "skill": "ch0fs-15",
             "name": "Beacon of Torment",
-            "x": 5830.19972,
+            "x": 5781.79972,
             "y": 1208.0,
             "maxPoints": 1,
             "stats": [
@@ -6492,7 +6495,7 @@
         "ch0fs-16": {
             "skill": "ch0fs-16",
             "name": "Grasp of the Undying",
-            "x": 6843.7998,
+            "x": 6795.3998,
             "y": 700.0,
             "maxPoints": 4,
             "stats": [
@@ -6521,7 +6524,7 @@
         "ch0fs-17": {
             "skill": "ch0fs-17",
             "name": "The Sunderer's Domain",
-            "x": 7135.7998,
+            "x": 7087.3998,
             "y": 1208.0,
             "maxPoints": 1,
             "stats": [
@@ -6548,7 +6551,7 @@
         "ch0fs-18": {
             "skill": "ch0fs-18",
             "name": "Deepest Ravine",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": 1208.0,
             "maxPoints": 1,
             "stats": [
@@ -6569,7 +6572,7 @@
         "ch0fs-19": {
             "skill": "ch0fs-19",
             "name": "Rekindled Graves",
-            "x": 7811.7998,
+            "x": 7763.3998,
             "y": 1114.8,
             "maxPoints": 1,
             "stats": [
@@ -6590,7 +6593,7 @@
         "ch0fs-20": {
             "skill": "ch0fs-20",
             "name": "Death from Below",
-            "x": 7234.9998,
+            "x": 7186.5998,
             "y": 100.0,
             "maxPoints": 2,
             "stats": [
@@ -6615,7 +6618,7 @@
         "ch0fs-21": {
             "skill": "ch0fs-21",
             "name": "Pyrochasm",
-            "x": 8165.7998,
+            "x": 8117.3998,
             "y": -145.6,
             "maxPoints": 1,
             "stats": [
@@ -6642,7 +6645,7 @@
         "ch0fs-22": {
             "skill": "ch0fs-22",
             "name": "Fissure of Wrath",
-            "x": 7935.7998,
+            "x": 7887.3998,
             "y": 496.0,
             "maxPoints": 1,
             "stats": [
@@ -6668,7 +6671,7 @@
         "ch0fs-23": {
             "skill": "ch0fs-23",
             "name": "Forbidden Chasm",
-            "x": 8447.7998,
+            "x": 8399.3998,
             "y": 780.8,
             "maxPoints": 1,
             "stats": [
@@ -6691,7 +6694,7 @@
         "ch0fs-24": {
             "skill": "ch0fs-24",
             "name": "Acidbane",
-            "x": 8832.5998,
+            "x": 8784.1998,
             "y": 1154.4,
             "maxPoints": 1,
             "stats": [
@@ -6711,7 +6714,7 @@
         "ch0fs-25": {
             "skill": "ch0fs-25",
             "name": "Ash Cloud",
-            "x": 8738.9998,
+            "x": 8690.5998,
             "y": 196.0,
             "maxPoints": 3,
             "stats": [
@@ -6732,7 +6735,7 @@
         "ch0fs-26": {
             "skill": "ch0fs-26",
             "name": "Chthonic Passage",
-            "x": 8791.7998,
+            "x": 8743.3998,
             "y": -800.0,
             "maxPoints": 1,
             "stats": [
@@ -6754,7 +6757,7 @@
         "ch0fs-27": {
             "skill": "ch0fs-27",
             "name": "Mantle of Flames",
-            "x": 7345.7998,
+            "x": 7297.3998,
             "y": -460.0,
             "maxPoints": 4,
             "stats": [
@@ -6786,7 +6789,7 @@
         "ch0fs-28": {
             "skill": "ch0fs-28",
             "name": "Blood Gulch",
-            "x": 7945.399799999999,
+            "x": 7896.9998,
             "y": -780.4,
             "maxPoints": 1,
             "stats": [
@@ -6807,7 +6810,7 @@
         "ch0fs-29": {
             "skill": "ch0fs-29",
             "name": "Chronicles of Ruin",
-            "x": 6935.79968,
+            "x": 6887.39968,
             "y": -872.0,
             "maxPoints": 4,
             "stats": [
@@ -6833,7 +6836,7 @@
         "ch0fs-30": {
             "skill": "ch0fs-30",
             "name": "Tombgorger",
-            "x": 5935.3998,
+            "x": 5886.9998000000005,
             "y": -872.0,
             "maxPoints": 3,
             "stats": [
@@ -6858,7 +6861,7 @@
         "ch0fs-31": {
             "skill": "ch0fs-31",
             "name": "Valley of Defilement",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -536.0,
             "maxPoints": 1,
             "stats": [
@@ -6887,7 +6890,7 @@
         "ch4bo-0": {
             "skill": "ch4bo-0",
             "name": "Chaos Bolts",
-            "x": 6263.7998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -6906,7 +6909,7 @@
         "ch4bo-1": {
             "skill": "ch4bo-1",
             "name": "Abrupt Chaos",
-            "x": 7047.7998,
+            "x": 7171.3998,
             "y": -616.0,
             "maxPoints": 3,
             "stats": [
@@ -6931,7 +6934,7 @@
         "ch4bo-2": {
             "skill": "ch4bo-2",
             "name": "Sanguine Reverie",
-            "x": 5299.79968,
+            "x": 5423.39968,
             "y": 1238.0,
             "maxPoints": 1,
             "stats": [
@@ -6960,7 +6963,7 @@
         "ch4bo-4": {
             "skill": "ch4bo-4",
             "name": "Scatter",
-            "x": 8607.7998,
+            "x": 8731.3998,
             "y": -944.0,
             "maxPoints": 4,
             "stats": [
@@ -6981,7 +6984,7 @@
         "ch4bo-6": {
             "skill": "ch4bo-6",
             "name": "Condemned to Chaos",
-            "x": 5499.7998,
+            "x": 5623.3998,
             "y": 564.80004,
             "maxPoints": 5,
             "stats": [
@@ -7005,7 +7008,7 @@
         "ch4bo-7": {
             "skill": "ch4bo-7",
             "name": "Blood Tithe",
-            "x": 4294.1998,
+            "x": 4417.799800000001,
             "y": 1142.0,
             "maxPoints": 3,
             "stats": [
@@ -7027,7 +7030,7 @@
         "ch4bo-8": {
             "skill": "ch4bo-8",
             "name": "A Grave for Two",
-            "x": 4663.7998,
+            "x": 4787.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -7052,7 +7055,7 @@
         "ch4bo-9": {
             "skill": "ch4bo-9",
             "name": "The Gate",
-            "x": 3847.7998,
+            "x": 3971.3998,
             "y": 564.8,
             "maxPoints": 1,
             "stats": [
@@ -7072,7 +7075,7 @@
         "ch4bo-10": {
             "skill": "ch4bo-10",
             "name": "The Burn",
-            "x": 4774.1998,
+            "x": 4897.799800000001,
             "y": 739.2,
             "maxPoints": 1,
             "stats": [
@@ -7093,7 +7096,7 @@
         "ch4bo-11": {
             "skill": "ch4bo-11",
             "name": "Exult in Misery",
-            "x": 5363.7998,
+            "x": 5487.3998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -7121,7 +7124,7 @@
         "ch4bo-12": {
             "skill": "ch4bo-12",
             "name": "Mania in Flames",
-            "x": 5499.7998,
+            "x": 5623.3998,
             "y": -616.0,
             "maxPoints": 5,
             "stats": [
@@ -7145,7 +7148,7 @@
         "ch4bo-13": {
             "skill": "ch4bo-13",
             "name": "Call of Morditas",
-            "x": 4519.7998,
+            "x": 4643.3998,
             "y": -616.0,
             "maxPoints": 1,
             "stats": [
@@ -7170,7 +7173,7 @@
         "ch4bo-14": {
             "skill": "ch4bo-14",
             "name": "Chance of Snow",
-            "x": 3827.7998,
+            "x": 3951.3998,
             "y": -717.6,
             "maxPoints": 5,
             "stats": [
@@ -7191,7 +7194,7 @@
         "ch4bo-15": {
             "skill": "ch4bo-15",
             "name": "Torment of the Red Tundra",
-            "x": 3991.3997999999997,
+            "x": 4114.9998,
             "y": -126.4,
             "maxPoints": 1,
             "stats": [
@@ -7212,7 +7215,7 @@
         "ch4bo-16": {
             "skill": "ch4bo-16",
             "name": "Pandemonium",
-            "x": 7847.7998,
+            "x": 7971.3998,
             "y": -840.0,
             "maxPoints": 3,
             "stats": [
@@ -7236,7 +7239,7 @@
         "ch4bo-17": {
             "skill": "ch4bo-17",
             "name": "Cthonic Aurora",
-            "x": 7647.7998,
+            "x": 7771.3998,
             "y": -300.0,
             "maxPoints": 4,
             "stats": [
@@ -7260,7 +7263,7 @@
         "ch4bo-18": {
             "skill": "ch4bo-18",
             "name": "Mana Anarchy",
-            "x": 8243.7998,
+            "x": 8367.3998,
             "y": -160.0,
             "maxPoints": 3,
             "stats": [
@@ -7285,7 +7288,7 @@
         "ch4bo-19": {
             "skill": "ch4bo-19",
             "name": "Revolution",
-            "x": 8738.1998,
+            "x": 8861.7998,
             "y": -424.4,
             "maxPoints": 1,
             "stats": [
@@ -7306,7 +7309,7 @@
         "ch4bo-20": {
             "skill": "ch4bo-20",
             "name": "Chains of the Betrayer",
-            "x": 8738.1998,
+            "x": 8861.7998,
             "y": 134.0,
             "maxPoints": 1,
             "stats": [
@@ -7328,7 +7331,7 @@
         "ch4bo-21": {
             "skill": "ch4bo-21",
             "name": "Volatile Kindling",
-            "x": 7762.1998,
+            "x": 7885.799800000001,
             "y": 240.0,
             "maxPoints": 1,
             "stats": [
@@ -7351,7 +7354,7 @@
         "ch4bo-22": {
             "skill": "ch4bo-22",
             "name": "Sudden Putrescence ",
-            "x": 8313.3998,
+            "x": 8436.9998,
             "y": 539.2,
             "maxPoints": 3,
             "stats": [
@@ -7373,7 +7376,7 @@
         "ch4bo-23": {
             "skill": "ch4bo-23",
             "name": "Destructive Intensity",
-            "x": 6263.7998,
+            "x": 6387.3998,
             "y": -744.0,
             "maxPoints": 4,
             "stats": [
@@ -7395,7 +7398,7 @@
         "ch4bo-24": {
             "skill": "ch4bo-24",
             "name": "Doom's Vindication",
-            "x": 7047.7998,
+            "x": 7171.3998,
             "y": 215.6,
             "maxPoints": 4,
             "stats": [
@@ -7424,7 +7427,7 @@
         "ch4bo-25": {
             "skill": "ch4bo-25",
             "name": "Reaper of Mayhem",
-            "x": 6928.9998,
+            "x": 7052.5998,
             "y": 800.0,
             "maxPoints": 1,
             "stats": [
@@ -7444,7 +7447,7 @@
         "ch4bo-26": {
             "skill": "ch4bo-26",
             "name": "Devour the Damned",
-            "x": 7700.1998,
+            "x": 7823.799800000001,
             "y": 856.4,
             "maxPoints": 2,
             "stats": [
@@ -7471,7 +7474,7 @@
         "ch4bo-27": {
             "skill": "ch4bo-27",
             "name": "Seed of Chaos ",
-            "x": 8274.5998,
+            "x": 8398.1998,
             "y": 1142.0,
             "maxPoints": 1,
             "stats": [
@@ -7492,7 +7495,7 @@
         "ch4bo-28": {
             "skill": "ch4bo-28",
             "name": "Exacted Libation",
-            "x": 6263.7998,
+            "x": 6387.3998,
             "y": 700.0,
             "maxPoints": 2,
             "stats": [
@@ -7518,7 +7521,7 @@
         "ch4bo-29": {
             "skill": "ch4bo-29",
             "name": "Cursed Blood",
-            "x": 7223.7998,
+            "x": 7347.3998,
             "y": 1238.0,
             "maxPoints": 1,
             "stats": [
@@ -7544,7 +7547,7 @@
         "ch4bo-30": {
             "skill": "ch4bo-30",
             "name": "Another Affliction",
-            "x": 6263.799922071999,
+            "x": 6387.399922072,
             "y": 1238.0,
             "maxPoints": 1,
             "stats": [
@@ -7569,7 +7572,7 @@
         "dl73-0": {
             "skill": "dl73-0",
             "name": "Drain Life",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -7588,7 +7591,7 @@
         "dl73-2": {
             "skill": "dl73-2",
             "name": "Empowered Drain",
-            "x": 5695.7998,
+            "x": 5647.3998,
             "y": -183.6,
             "maxPoints": 5,
             "stats": [
@@ -7612,7 +7615,7 @@
         "dl73-3": {
             "skill": "dl73-3",
             "name": "Soul Blast",
-            "x": 5079.7998,
+            "x": 5031.3998,
             "y": -88.400148,
             "maxPoints": 1,
             "stats": [
@@ -7636,7 +7639,7 @@
         "dl73-4": {
             "skill": "dl73-4",
             "name": "Malignant Discharge",
-            "x": 4731.7998,
+            "x": 4683.3998,
             "y": -704.40016,
             "maxPoints": 5,
             "stats": [
@@ -7657,7 +7660,7 @@
         "dl73-6": {
             "skill": "dl73-6",
             "name": "Hecatomb",
-            "x": 4331.7998,
+            "x": 4283.3998,
             "y": -88.400024,
             "maxPoints": 1,
             "stats": [
@@ -7680,7 +7683,7 @@
         "dl73-7": {
             "skill": "dl73-7",
             "name": "Necrotic Feast",
-            "x": 3820.1998,
+            "x": 3771.7998000000002,
             "y": 343.8,
             "maxPoints": 1,
             "stats": [
@@ -7701,7 +7704,7 @@
         "dl73-8": {
             "skill": "dl73-8",
             "name": "Lay Waste",
-            "x": 5219.7998,
+            "x": 5171.3998,
             "y": 608.0,
             "maxPoints": 1,
             "stats": [
@@ -7729,7 +7732,7 @@
         "dl73-9": {
             "skill": "dl73-9",
             "name": "Soul Bond",
-            "x": 4463.7998,
+            "x": 4415.3998,
             "y": 528.0,
             "maxPoints": 2,
             "stats": [
@@ -7749,7 +7752,7 @@
         "dl73-10": {
             "skill": "dl73-10",
             "name": "Virulence",
-            "x": 5327.7998,
+            "x": 5279.3998,
             "y": 1224.0,
             "maxPoints": 1,
             "stats": [
@@ -7772,7 +7775,7 @@
         "dl73-11": {
             "skill": "dl73-11",
             "name": "Blood Pact",
-            "x": 4675.7998,
+            "x": 4627.3998,
             "y": 1044.0,
             "maxPoints": 1,
             "stats": [
@@ -7798,7 +7801,7 @@
         "dl73-12": {
             "skill": "dl73-12",
             "name": "Death's Barrier",
-            "x": 4031.7998,
+            "x": 3983.3998,
             "y": 1112.0,
             "maxPoints": 1,
             "stats": [
@@ -7818,7 +7821,7 @@
         "dl73-13": {
             "skill": "dl73-13",
             "name": "Horrify",
-            "x": 6711.7998,
+            "x": 6663.3998,
             "y": 668.0,
             "maxPoints": 4,
             "stats": [
@@ -7843,7 +7846,7 @@
         "dl73-14": {
             "skill": "dl73-14",
             "name": "Shadowy Tendril",
-            "x": 6007.7998,
+            "x": 5959.3998,
             "y": 420.0,
             "maxPoints": 1,
             "stats": [
@@ -7863,7 +7866,7 @@
         "dl73-15": {
             "skill": "dl73-15",
             "name": "Contempt",
-            "x": 7427.7998,
+            "x": 7379.3998,
             "y": 1112.0,
             "maxPoints": 1,
             "stats": [
@@ -7894,7 +7897,7 @@
         "dl73-16": {
             "skill": "dl73-16",
             "name": "Enduring Contempt",
-            "x": 7977.4798,
+            "x": 7929.0798,
             "y": 1260.0,
             "maxPoints": 4,
             "stats": [
@@ -7914,7 +7917,7 @@
         "dl73-17": {
             "skill": "dl73-17",
             "name": "Stagger",
-            "x": 7977.47996,
+            "x": 7929.07996,
             "y": 760.0,
             "maxPoints": 1,
             "stats": [
@@ -7938,7 +7941,7 @@
         "dl73-18": {
             "skill": "dl73-18",
             "name": "Stupefy",
-            "x": 8471.7998,
+            "x": 8423.3998,
             "y": 1112.0,
             "maxPoints": 2,
             "stats": [
@@ -7959,7 +7962,7 @@
         "dl73-19": {
             "skill": "dl73-19",
             "name": "Thoughtsteal",
-            "x": 7135.7998,
+            "x": 7087.3998,
             "y": -216.800048,
             "maxPoints": 3,
             "stats": [
@@ -7982,7 +7985,7 @@
         "dl73-20": {
             "skill": "dl73-20",
             "name": "Condemnation",
-            "x": 7534.9998,
+            "x": 7486.5998,
             "y": 240.0,
             "maxPoints": 4,
             "stats": [
@@ -8008,7 +8011,7 @@
         "dl73-21": {
             "skill": "dl73-21",
             "name": "Word Of Conviction",
-            "x": 8451.80004,
+            "x": 8403.40004,
             "y": 240.0,
             "maxPoints": 3,
             "stats": [
@@ -8030,7 +8033,7 @@
         "dl73-22": {
             "skill": "dl73-22",
             "name": "Eternal Servitude",
-            "x": 9035.3998,
+            "x": 8986.9998,
             "y": 560.0,
             "maxPoints": 1,
             "stats": [
@@ -8053,7 +8056,7 @@
         "dl73-23": {
             "skill": "dl73-23",
             "name": "Ravenous",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -760.00024,
             "maxPoints": 4,
             "stats": [
@@ -8081,7 +8084,7 @@
         "dl73-24": {
             "skill": "dl73-24",
             "name": "Insatiable",
-            "x": 7135.7998,
+            "x": 7087.3998,
             "y": -828.0,
             "maxPoints": 3,
             "stats": [
@@ -8104,7 +8107,7 @@
         "dl73-25": {
             "skill": "dl73-25",
             "name": "Dark Shackles",
-            "x": 7871.7998,
+            "x": 7823.3998,
             "y": -828.0,
             "maxPoints": 1,
             "stats": [
@@ -8128,7 +8131,7 @@
         "dl73-26": {
             "skill": "dl73-26",
             "name": "Enduring Night",
-            "x": 8599.7998,
+            "x": 8551.3998,
             "y": -828.0,
             "maxPoints": 2,
             "stats": [
@@ -8151,7 +8154,7 @@
         "dl73-27": {
             "skill": "dl73-27",
             "name": "Grasp Of The Damned",
-            "x": 8943.7998,
+            "x": 8895.3998,
             "y": -308.0,
             "maxPoints": 1,
             "stats": [
@@ -8173,7 +8176,7 @@
         "dl73-28": {
             "skill": "dl73-28",
             "name": "Chilling Demise",
-            "x": 5431.7998,
+            "x": 5383.3998,
             "y": -700.0,
             "maxPoints": 5,
             "stats": [
@@ -8193,7 +8196,7 @@
         "dl73-30": {
             "skill": "dl73-30",
             "name": "Unholy Mass",
-            "x": 8043.7998,
+            "x": 7995.3998,
             "y": -240.0,
             "maxPoints": 3,
             "stats": [
@@ -8214,7 +8217,7 @@
         "dl73-32": {
             "skill": "dl73-32",
             "name": "Circle of Sacrifice",
-            "x": 5875.7998,
+            "x": 5827.3998,
             "y": 912.0,
             "maxPoints": 3,
             "stats": [
@@ -8240,7 +8243,7 @@
         "dl73-33": {
             "skill": "dl73-33",
             "name": "Cloak of Solitude",
-            "x": 6471.7998,
+            "x": 6423.3998,
             "y": 1208.0,
             "maxPoints": 1,
             "stats": [
@@ -8977,7 +8980,7 @@
         "ds34l-0": {
             "skill": "ds34l-0",
             "name": "Death Seal",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -9000,7 +9003,7 @@
         "ds34l-2": {
             "skill": "ds34l-2",
             "name": "Necrosis",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -572.00008,
             "maxPoints": 3,
             "stats": [
@@ -9023,7 +9026,7 @@
         "ds34l-3": {
             "skill": "ds34l-3",
             "name": "Leper's Skin",
-            "x": 6988.59984,
+            "x": 6940.19984,
             "y": -772.0,
             "maxPoints": 5,
             "stats": [
@@ -9045,7 +9048,7 @@
         "ds34l-4": {
             "skill": "ds34l-4",
             "name": "Entreat The Damned",
-            "x": 5870.19972,
+            "x": 5821.79972,
             "y": -772.0,
             "maxPoints": 3,
             "stats": [
@@ -9068,7 +9071,7 @@
         "ds34l-5": {
             "skill": "ds34l-5",
             "name": "Corrupted Consciousness",
-            "x": 5875.7998,
+            "x": 5827.3998,
             "y": -148.0,
             "maxPoints": 5,
             "stats": [
@@ -9091,7 +9094,7 @@
         "ds34l-6": {
             "skill": "ds34l-6",
             "name": "Mortal Pulse",
-            "x": 5316.9998,
+            "x": 5268.5998,
             "y": -414.399904,
             "maxPoints": 1,
             "stats": [
@@ -9114,7 +9117,7 @@
         "ds34l-7": {
             "skill": "ds34l-7",
             "name": "Tachycardia",
-            "x": 4819.7998,
+            "x": 4771.3998,
             "y": -790.4,
             "maxPoints": 5,
             "stats": [
@@ -9135,7 +9138,7 @@
         "ds34l-8": {
             "skill": "ds34l-8",
             "name": "Desperate Shroud",
-            "x": 5045.399799999999,
+            "x": 4996.9998,
             "y": 96.00006,
             "maxPoints": 3,
             "stats": [
@@ -9160,7 +9163,7 @@
         "ds34l-9": {
             "skill": "ds34l-9",
             "name": "Life Tap",
-            "x": 4487.7998,
+            "x": 4439.3998,
             "y": -147.2,
             "maxPoints": 1,
             "stats": [
@@ -9185,7 +9188,7 @@
         "ds34l-10": {
             "skill": "ds34l-10",
             "name": "Grim Scale",
-            "x": 4083.7998,
+            "x": 4035.3998,
             "y": -633.12,
             "maxPoints": 1,
             "stats": [
@@ -9206,7 +9209,7 @@
         "ds34l-11": {
             "skill": "ds34l-11",
             "name": "Deadlock",
-            "x": 4099.7998,
+            "x": 4051.3998,
             "y": 364.0,
             "maxPoints": 1,
             "stats": [
@@ -9226,7 +9229,7 @@
         "ds34l-12": {
             "skill": "ds34l-12",
             "name": "Pustulent Presence",
-            "x": 4819.7998,
+            "x": 4771.3998,
             "y": 651.6,
             "maxPoints": 4,
             "stats": [
@@ -9250,7 +9253,7 @@
         "ds34l-13": {
             "skill": "ds34l-13",
             "name": "Cycle of Decay",
-            "x": 4819.7998,
+            "x": 4771.3998,
             "y": 1132.8004,
             "maxPoints": 3,
             "stats": [
@@ -9275,7 +9278,7 @@
         "ds34l-14": {
             "skill": "ds34l-14",
             "name": "Curdled Flesh",
-            "x": 3987.7998,
+            "x": 3939.3998,
             "y": 1132.8,
             "maxPoints": 1,
             "stats": [
@@ -9299,7 +9302,7 @@
         "ds34l-15": {
             "skill": "ds34l-15",
             "name": "Carrion Breath",
-            "x": 6435.799891552,
+            "x": 6387.399891552001,
             "y": 587.2,
             "maxPoints": 4,
             "stats": [
@@ -9323,7 +9326,7 @@
         "ds34l-16": {
             "skill": "ds34l-16",
             "name": "Lethal Release",
-            "x": 5900.9998,
+            "x": 5852.5998,
             "y": 1132.8,
             "maxPoints": 5,
             "stats": [
@@ -9347,7 +9350,7 @@
         "ds34l-17": {
             "skill": "ds34l-17",
             "name": "Sanguine Wave",
-            "x": 5442.9998,
+            "x": 5394.5998,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -9367,7 +9370,7 @@
         "ds34l-18": {
             "skill": "ds34l-18",
             "name": "Corporeal Cascade",
-            "x": 6948.59984,
+            "x": 6900.19984,
             "y": 1132.8,
             "maxPoints": 1,
             "stats": [
@@ -9390,7 +9393,7 @@
         "ds34l-19": {
             "skill": "ds34l-19",
             "name": "Skeletal Sheath",
-            "x": 8390.5998,
+            "x": 8342.1998,
             "y": 1132.8,
             "maxPoints": 1,
             "stats": [
@@ -9410,7 +9413,7 @@
         "ds34l-20": {
             "skill": "ds34l-20",
             "name": "Condemnation",
-            "x": 7787.7998,
+            "x": 7739.3998,
             "y": 851.6,
             "maxPoints": 2,
             "stats": [
@@ -9430,7 +9433,7 @@
         "ds34l-21": {
             "skill": "ds34l-21",
             "name": "Blood Bond",
-            "x": 5875.79988,
+            "x": 5827.39988,
             "y": 387.20004,
             "maxPoints": 5,
             "stats": [
@@ -9450,7 +9453,7 @@
         "ds34l-22": {
             "skill": "ds34l-22",
             "name": "Soul Stability",
-            "x": 7399.7998,
+            "x": 7351.3998,
             "y": 100.0,
             "maxPoints": 1,
             "stats": [
@@ -9477,7 +9480,7 @@
         "ds34l-23": {
             "skill": "ds34l-23",
             "name": "The Quick And The Dead",
-            "x": 7322.19972,
+            "x": 7273.79972,
             "y": 587.2,
             "maxPoints": 1,
             "stats": [
@@ -9503,7 +9506,7 @@
         "ds34l-24": {
             "skill": "ds34l-24",
             "name": "Flesh Pact",
-            "x": 8511.3998,
+            "x": 8462.9998,
             "y": 587.2,
             "maxPoints": 1,
             "stats": [
@@ -9524,7 +9527,7 @@
         "ds34l-25": {
             "skill": "ds34l-25",
             "name": "Doomcall",
-            "x": 7987.7999199999995,
+            "x": 7939.39992,
             "y": 239.99996,
             "maxPoints": 5,
             "stats": [
@@ -9549,7 +9552,7 @@
         "ds34l-26": {
             "skill": "ds34l-26",
             "name": "Moratorium",
-            "x": 6995.7998,
+            "x": 6947.3998,
             "y": -148.0,
             "maxPoints": 3,
             "stats": [
@@ -9573,7 +9576,7 @@
         "ds34l-27": {
             "skill": "ds34l-27",
             "name": "Seal of Servitude",
-            "x": 7787.7998,
+            "x": 7739.3998,
             "y": -433.11988,
             "maxPoints": 1,
             "stats": [
@@ -9595,7 +9598,7 @@
         "ds34l-28": {
             "skill": "ds34l-28",
             "name": "Frenzied Accord",
-            "x": 8288.9998,
+            "x": 8240.5998,
             "y": -72.0,
             "maxPoints": 5,
             "stats": [
@@ -9618,7 +9621,7 @@
         "ds34l-29": {
             "skill": "ds34l-29",
             "name": "Death Stranded",
-            "x": 8811.3994,
+            "x": 8762.9994,
             "y": -433.11988,
             "maxPoints": 1,
             "stats": [
@@ -9639,7 +9642,7 @@
         "ds34l-30": {
             "skill": "ds34l-30",
             "name": "Devouring Release",
-            "x": 7483.7998,
+            "x": 7435.3998,
             "y": -772.0,
             "maxPoints": 1,
             "stats": [
@@ -9662,7 +9665,7 @@
         "ds34l-31": {
             "skill": "ds34l-31",
             "name": "Insatiable Soul",
-            "x": 8311.399879999999,
+            "x": 8262.99988,
             "y": -866.4,
             "maxPoints": 4,
             "stats": [
@@ -10371,7 +10374,7 @@
         "gh0fl-0": {
             "skill": "gh0fl-0",
             "name": "Ghost Flame",
-            "x": 6435.7998,
+            "x": 6378.5998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -10390,7 +10393,7 @@
         "gh0fl-1": {
             "skill": "gh0fl-1",
             "name": "Dread Furnace",
-            "x": 5744.9998,
+            "x": 5687.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -10415,7 +10418,7 @@
         "gh0fl-2": {
             "skill": "gh0fl-2",
             "name": "Arteries of Malice",
-            "x": 5097.7998,
+            "x": 5040.5998,
             "y": -724.0,
             "maxPoints": 1,
             "stats": [
@@ -10440,7 +10443,7 @@
         "gh0fl-3": {
             "skill": "gh0fl-3",
             "name": "Phantom Transfusion",
-            "x": 4796.1998,
+            "x": 4738.9998,
             "y": -336.0,
             "maxPoints": 5,
             "stats": [
@@ -10461,7 +10464,7 @@
         "gh0fl-4": {
             "skill": "gh0fl-4",
             "name": "Feast of Bones",
-            "x": 4347.399799999999,
+            "x": 4290.1998,
             "y": -664.4,
             "maxPoints": 1,
             "stats": [
@@ -10484,7 +10487,7 @@
         "gh0fl-5": {
             "skill": "gh0fl-5",
             "name": "Fuel of Anguish",
-            "x": 3947.7998,
+            "x": 3890.5998,
             "y": -336.0,
             "maxPoints": 3,
             "stats": [
@@ -10505,7 +10508,7 @@
         "gh0fl-6": {
             "skill": "gh0fl-6",
             "name": "Occult Embers",
-            "x": 5063.399799999999,
+            "x": 5006.1998,
             "y": 359.6,
             "maxPoints": 1,
             "stats": [
@@ -10530,7 +10533,7 @@
         "gh0fl-7": {
             "skill": "gh0fl-7",
             "name": "Flames of Misery",
-            "x": 4423.399799999999,
+            "x": 4366.1998,
             "y": 140.0,
             "maxPoints": 5,
             "stats": [
@@ -10551,7 +10554,7 @@
         "gh0fl-8": {
             "skill": "gh0fl-8",
             "name": "Decrepit Mortals",
-            "x": 4483.399799999999,
+            "x": 4426.1998,
             "y": 680.0,
             "maxPoints": 1,
             "stats": [
@@ -10573,7 +10576,7 @@
         "gh0fl-9": {
             "skill": "gh0fl-9",
             "name": "Horrifying Shriek",
-            "x": 3947.7998,
+            "x": 3890.5998,
             "y": 559.6,
             "maxPoints": 2,
             "stats": [
@@ -10596,7 +10599,7 @@
         "gh0fl-10": {
             "skill": "gh0fl-10",
             "name": "Banshee",
-            "x": 3792.9997999999996,
+            "x": 3735.7998,
             "y": 1080.0,
             "maxPoints": 3,
             "stats": [
@@ -10620,7 +10623,7 @@
         "gh0fl-11": {
             "skill": "gh0fl-11",
             "name": "Atrocity",
-            "x": 4942.5998,
+            "x": 4885.3998,
             "y": 1080.0,
             "maxPoints": 4,
             "stats": [
@@ -10641,7 +10644,7 @@
         "gh0fl-12": {
             "skill": "gh0fl-12",
             "name": "Disdain",
-            "x": 5853.0,
+            "x": 5795.8,
             "y": -646.40016,
             "maxPoints": 4,
             "stats": [
@@ -10662,7 +10665,7 @@
         "gh0fl-13": {
             "skill": "gh0fl-13",
             "name": "Domain of Torment",
-            "x": 7318.9998,
+            "x": 7261.7998,
             "y": 240.0,
             "maxPoints": 5,
             "stats": [
@@ -10687,7 +10690,7 @@
         "gh0fl-14": {
             "skill": "gh0fl-14",
             "name": "Enfeebled Prey",
-            "x": 6843.7998,
+            "x": 6786.5998,
             "y": 612.0,
             "maxPoints": 2,
             "stats": [
@@ -10710,7 +10713,7 @@
         "gh0fl-15": {
             "skill": "gh0fl-15",
             "name": "Lingering Warmth",
-            "x": 6937.3998,
+            "x": 6880.1998,
             "y": 1212.8,
             "maxPoints": 3,
             "stats": [
@@ -10736,7 +10739,7 @@
         "gh0fl-16": {
             "skill": "gh0fl-16",
             "name": "Memorial of Flames",
-            "x": 6358.9998,
+            "x": 6301.7998,
             "y": 959.6,
             "maxPoints": 5,
             "stats": [
@@ -10759,7 +10762,7 @@
         "gh0fl-17": {
             "skill": "gh0fl-17",
             "name": "Unending Ruin",
-            "x": 5680.9998,
+            "x": 5623.7998,
             "y": 639.2,
             "maxPoints": 3,
             "stats": [
@@ -10780,7 +10783,7 @@
         "gh0fl-18": {
             "skill": "gh0fl-18",
             "name": "The Burning Skull",
-            "x": 5680.9998,
+            "x": 5623.7998,
             "y": 1212.8,
             "maxPoints": 1,
             "stats": [
@@ -10800,7 +10803,7 @@
         "gh0fl-19": {
             "skill": "gh0fl-19",
             "name": "Silver Oblation",
-            "x": 7795.399799999999,
+            "x": 7738.1998,
             "y": 980.8,
             "maxPoints": 1,
             "stats": [
@@ -10828,7 +10831,7 @@
         "gh0fl-20": {
             "skill": "gh0fl-20",
             "name": "Stygian Beams",
-            "x": 8688.5998,
+            "x": 8631.3998,
             "y": 1212.8,
             "maxPoints": 1,
             "stats": [
@@ -10848,7 +10851,7 @@
         "gh0fl-21": {
             "skill": "gh0fl-21",
             "name": "Spirit Kindling",
-            "x": 8770.5998,
+            "x": 8713.3998,
             "y": 680.0,
             "maxPoints": 1,
             "stats": [
@@ -10871,7 +10874,7 @@
         "gh0fl-22": {
             "skill": "gh0fl-22",
             "name": "Fiery Desecration",
-            "x": 8081.7998,
+            "x": 8024.5998,
             "y": 165.599976,
             "maxPoints": 1,
             "stats": [
@@ -10896,7 +10899,7 @@
         "gh0fl-23": {
             "skill": "gh0fl-23",
             "name": "Spirit of Dread",
-            "x": 8637.7998,
+            "x": 8580.5998,
             "y": -471.99988,
             "maxPoints": 1,
             "stats": [
@@ -10924,7 +10927,7 @@
         "gh0fl-24": {
             "skill": "gh0fl-24",
             "name": "Harrowing Path",
-            "x": 9124.1998,
+            "x": 9066.9998,
             "y": -194.399904,
             "maxPoints": 2,
             "stats": [
@@ -10945,7 +10948,7 @@
         "gh0fl-25": {
             "skill": "gh0fl-25",
             "name": "Doom Surge",
-            "x": 9124.1998,
+            "x": 9066.9998,
             "y": -758.8,
             "maxPoints": 3,
             "stats": [
@@ -10965,7 +10968,7 @@
         "gh0fl-26": {
             "skill": "gh0fl-26",
             "name": "Domain of Agony",
-            "x": 8149.399799999999,
+            "x": 8092.1998,
             "y": -864.4,
             "maxPoints": 5,
             "stats": [
@@ -10994,7 +10997,7 @@
         "gh0fl-27": {
             "skill": "gh0fl-27",
             "name": "Spectral Menace",
-            "x": 7662.5998,
+            "x": 7605.3998,
             "y": -260.0,
             "maxPoints": 5,
             "stats": [
@@ -11020,7 +11023,7 @@
         "gh0fl-28": {
             "skill": "gh0fl-28",
             "name": "Wraith Form",
-            "x": 6970.199799999999,
+            "x": 6912.9998,
             "y": -536.0,
             "maxPoints": 4,
             "stats": [
@@ -11046,7 +11049,7 @@
         "gh0fl-29": {
             "skill": "gh0fl-29",
             "name": "Ethereal Blockade",
-            "x": 7478.5998,
+            "x": 7421.3998,
             "y": -766.8,
             "maxPoints": 1,
             "stats": [
@@ -11728,7 +11731,7 @@
         "hs18gu-0": {
             "skill": "hs18gu-0",
             "name": "Hungering Souls",
-            "x": 6435.7998,
+            "x": 6059.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -11748,7 +11751,7 @@
         "hs18gu-2": {
             "skill": "hs18gu-2",
             "name": "Forbidden Pact",
-            "x": 7059.7998,
+            "x": 6683.7998,
             "y": 432.0,
             "maxPoints": 1,
             "stats": [
@@ -11773,7 +11776,7 @@
         "hs18gu-3": {
             "skill": "hs18gu-3",
             "name": "Isolation",
-            "x": 7771.7998,
+            "x": 7395.7998,
             "y": 464.0,
             "maxPoints": 1,
             "stats": [
@@ -11799,7 +11802,7 @@
         "hs18gu-4": {
             "skill": "hs18gu-4",
             "name": "Piercing Gaze",
-            "x": 8043.7998,
+            "x": 7667.7998,
             "y": 1176.0,
             "maxPoints": 5,
             "stats": [
@@ -11821,7 +11824,7 @@
         "hs18gu-5": {
             "skill": "hs18gu-5",
             "name": "Hungering Eyes",
-            "x": 8768.5998,
+            "x": 8392.5998,
             "y": 1176.0,
             "maxPoints": 2,
             "stats": [
@@ -11841,7 +11844,7 @@
         "hs18gu-6": {
             "skill": "hs18gu-6",
             "name": "Great Soul",
-            "x": 8175.7998,
+            "x": 7799.7998,
             "y": -16.0,
             "maxPoints": 4,
             "stats": [
@@ -11865,7 +11868,7 @@
         "hs18gu-7": {
             "skill": "hs18gu-7",
             "name": "Soul Drain",
-            "x": 8407.7998,
+            "x": 8031.7998,
             "y": 616.0,
             "maxPoints": 1,
             "stats": [
@@ -11888,7 +11891,7 @@
         "hs18gu-8": {
             "skill": "hs18gu-8",
             "name": "Mind Harvest",
-            "x": 9055.7998,
+            "x": 8679.7998,
             "y": 440.0,
             "maxPoints": 5,
             "stats": [
@@ -11908,7 +11911,7 @@
         "hs18gu-9": {
             "skill": "hs18gu-9",
             "name": "Focused Wrath",
-            "x": 7172.5998,
+            "x": 6796.5998,
             "y": -114.0,
             "maxPoints": 2,
             "stats": [
@@ -11932,7 +11935,7 @@
         "hs18gu-10": {
             "skill": "hs18gu-10",
             "name": "Caustic Wretches",
-            "x": 6892.9998,
+            "x": 6516.9998,
             "y": -601.6,
             "maxPoints": 5,
             "stats": [
@@ -11957,7 +11960,7 @@
         "hs18gu-11": {
             "skill": "hs18gu-11",
             "name": "Decayed Mind",
-            "x": 7611.7998,
+            "x": 7235.7998,
             "y": -812.0,
             "maxPoints": 5,
             "stats": [
@@ -11978,7 +11981,7 @@
         "hs18gu-12": {
             "skill": "hs18gu-12",
             "name": "Inspired Hunger",
-            "x": 6241.7998,
+            "x": 5865.7998,
             "y": -730.4,
             "maxPoints": 5,
             "stats": [
@@ -12005,7 +12008,7 @@
         "hs18gu-13": {
             "skill": "hs18gu-13",
             "name": "Risen Cemetery",
-            "x": 5572.5998,
+            "x": 5196.5998,
             "y": -652.0,
             "maxPoints": 2,
             "stats": [
@@ -12031,7 +12034,7 @@
         "hs18gu-14": {
             "skill": "hs18gu-14",
             "name": "Soul Swarm",
-            "x": 5690.59984,
+            "x": 5314.59984,
             "y": -161.199952,
             "maxPoints": 2,
             "stats": [
@@ -12054,7 +12057,7 @@
         "hs18gu-15": {
             "skill": "hs18gu-15",
             "name": "Dominion Of Undeath",
-            "x": 4871.7998,
+            "x": 4495.7998,
             "y": -340.0,
             "maxPoints": 4,
             "stats": [
@@ -12083,7 +12086,7 @@
         "hs18gu-16": {
             "skill": "hs18gu-16",
             "name": "Life Hunt",
-            "x": 4111.7998,
+            "x": 3735.7998,
             "y": -292.0,
             "maxPoints": 4,
             "stats": [
@@ -12104,7 +12107,7 @@
         "hs18gu-17": {
             "skill": "hs18gu-17",
             "name": "Reaper's Gaze",
-            "x": 5279.7998,
+            "x": 4903.7998,
             "y": 128.0,
             "maxPoints": 3,
             "stats": [
@@ -12129,7 +12132,7 @@
         "hs18gu-18": {
             "skill": "hs18gu-18",
             "name": "Ravenous",
-            "x": 5835.7998,
+            "x": 5459.7998,
             "y": 440.0,
             "maxPoints": 5,
             "stats": [
@@ -12153,7 +12156,7 @@
         "hs18gu-19": {
             "skill": "hs18gu-19",
             "name": "Vengeful Souls",
-            "x": 4979.7998,
+            "x": 4603.7998,
             "y": 802.4,
             "maxPoints": 1,
             "stats": [
@@ -12177,7 +12180,7 @@
         "hs18gu-20": {
             "skill": "hs18gu-20",
             "name": "Soul Catcher",
-            "x": 4319.7998,
+            "x": 3943.7998,
             "y": 360.0,
             "maxPoints": 3,
             "stats": [
@@ -12199,7 +12202,7 @@
         "hs18gu-21": {
             "skill": "hs18gu-21",
             "name": "Lament",
-            "x": 4355.7998,
+            "x": 3979.7998,
             "y": 1216.0,
             "maxPoints": 3,
             "stats": [
@@ -12220,7 +12223,7 @@
         "hs18gu-22": {
             "skill": "hs18gu-22",
             "name": "Risen Hatred",
-            "x": 5603.79988,
+            "x": 5227.79988,
             "y": 1185.6,
             "maxPoints": 3,
             "stats": [
@@ -12241,7 +12244,7 @@
         "hs18gu-23": {
             "skill": "hs18gu-23",
             "name": "Grave Bond",
-            "x": 6435.7998,
+            "x": 6059.7998,
             "y": 739.2,
             "maxPoints": 4,
             "stats": [
@@ -12266,7 +12269,7 @@
         "hs18gu-24": {
             "skill": "hs18gu-24",
             "name": "Necromantic Emanation",
-            "x": 6731.3998,
+            "x": 6355.3998,
             "y": 1228.8,
             "maxPoints": 3,
             "stats": [
@@ -12286,7 +12289,7 @@
         "hs18gu-25": {
             "skill": "hs18gu-25",
             "name": "Unholy Trinity",
-            "x": 7383.7998,
+            "x": 7007.7998,
             "y": 1080.0,
             "maxPoints": 3,
             "stats": [
@@ -12306,7 +12309,7 @@
         "hs18gu-27": {
             "skill": "hs18gu-27",
             "name": "Fire Skull",
-            "x": 8727.7998,
+            "x": 8351.7998,
             "y": -292.0,
             "maxPoints": 1,
             "stats": [
@@ -12330,7 +12333,7 @@
         "hs18gu-28": {
             "skill": "hs18gu-28",
             "name": "Eternal Pyre",
-            "x": 9051.7998,
+            "x": 8675.7998,
             "y": -784.0,
             "maxPoints": 5,
             "stats": [
@@ -12351,7 +12354,7 @@
         "hs18gu-29": {
             "skill": "hs18gu-29",
             "name": "Descent Into Madness",
-            "x": 4671.7998,
+            "x": 4295.7998,
             "y": -812.0,
             "maxPoints": 5,
             "stats": [
@@ -12371,7 +12374,7 @@
         "is40-0": {
             "skill": "is40-0",
             "name": "Infernal Shade",
-            "x": 6238.5998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -12396,7 +12399,7 @@
         "is40-1": {
             "skill": "is40-1",
             "name": "Ignition",
-            "x": 5562.5998,
+            "x": 5711.3998,
             "y": 296.0,
             "maxPoints": 5,
             "stats": [
@@ -12420,7 +12423,7 @@
         "is40-2": {
             "skill": "is40-2",
             "name": "Blaze Shade",
-            "x": 5026.5998,
+            "x": 5175.3998,
             "y": -40.0,
             "maxPoints": 1,
             "stats": [
@@ -12450,7 +12453,7 @@
         "is40-3": {
             "skill": "is40-3",
             "name": "Fleeting Shade",
-            "x": 4391.3998,
+            "x": 4540.1998,
             "y": -183.599852,
             "maxPoints": 1,
             "stats": [
@@ -12471,7 +12474,7 @@
         "is40-4": {
             "skill": "is40-4",
             "name": "Fanning the Flames",
-            "x": 5362.59992,
+            "x": 5511.39992,
             "y": -456.0,
             "maxPoints": 5,
             "stats": [
@@ -12497,7 +12500,7 @@
         "is40-5": {
             "skill": "is40-5",
             "name": "Lingering Flames",
-            "x": 4510.5998,
+            "x": 4659.3998,
             "y": -728.0,
             "maxPoints": 1,
             "stats": [
@@ -12522,7 +12525,7 @@
         "is40-6": {
             "skill": "is40-6",
             "name": "Purgatory",
-            "x": 3790.5998,
+            "x": 3939.3998,
             "y": -456.0,
             "maxPoints": 1,
             "stats": [
@@ -12545,7 +12548,7 @@
         "is40-7": {
             "skill": "is40-7",
             "name": "Legion",
-            "x": 4850.5998,
+            "x": 4999.3998,
             "y": 500.0,
             "maxPoints": 2,
             "stats": [
@@ -12571,7 +12574,7 @@
         "is40-8": {
             "skill": "is40-8",
             "name": "Wildfires",
-            "x": 5362.5998,
+            "x": 5511.3998,
             "y": 884.0,
             "maxPoints": 5,
             "stats": [
@@ -12600,7 +12603,7 @@
         "is40-9": {
             "skill": "is40-9",
             "name": "Combustion",
-            "x": 4430.1998,
+            "x": 4578.9998,
             "y": 1020.12,
             "maxPoints": 1,
             "stats": [
@@ -12622,7 +12625,7 @@
         "is40-10": {
             "skill": "is40-10",
             "name": "Fiery Conclusion",
-            "x": 3735.7998,
+            "x": 3884.5998,
             "y": 1234.92,
             "maxPoints": 5,
             "stats": [
@@ -12645,7 +12648,7 @@
         "is40-11": {
             "skill": "is40-11",
             "name": "Flame Burst",
-            "x": 3960.5998,
+            "x": 4109.3998,
             "y": 562.52,
             "maxPoints": 1,
             "stats": [
@@ -12669,7 +12672,7 @@
         "is40-12": {
             "skill": "is40-12",
             "name": "Heart of Fire",
-            "x": 6066.5998,
+            "x": 6215.3998,
             "y": 772.0,
             "maxPoints": 4,
             "stats": [
@@ -12694,7 +12697,7 @@
         "is40-13": {
             "skill": "is40-13",
             "name": "Cackling Flames",
-            "x": 6762.5998,
+            "x": 6911.3998,
             "y": 544.0,
             "maxPoints": 5,
             "stats": [
@@ -12719,7 +12722,7 @@
         "is40-14": {
             "skill": "is40-14",
             "name": "Brimstone",
-            "x": 7466.5998,
+            "x": 7615.3998,
             "y": 772.0,
             "maxPoints": 4,
             "stats": [
@@ -12741,7 +12744,7 @@
         "is40-15": {
             "skill": "is40-15",
             "name": "Hellfire",
-            "x": 8066.47968,
+            "x": 8215.27968,
             "y": 972.0,
             "maxPoints": 1,
             "stats": [
@@ -12765,7 +12768,7 @@
         "is40-16": {
             "skill": "is40-16",
             "name": "Fiend Hunter",
-            "x": 8570.5998,
+            "x": 8719.3998,
             "y": 700.0,
             "maxPoints": 2,
             "stats": [
@@ -12785,7 +12788,7 @@
         "is40-17": {
             "skill": "is40-17",
             "name": "Flight of Fire",
-            "x": 7190.5998,
+            "x": 7339.3998,
             "y": 1156.0,
             "maxPoints": 1,
             "stats": [
@@ -12805,7 +12808,7 @@
         "is40-18": {
             "skill": "is40-18",
             "name": "Shifting Doom",
-            "x": 6446.5998,
+            "x": 6595.3998,
             "y": 1172.0,
             "maxPoints": 4,
             "stats": [
@@ -12825,7 +12828,7 @@
         "is40-19": {
             "skill": "is40-19",
             "name": "Influence",
-            "x": 6238.5998,
+            "x": 6387.3998,
             "y": -504.0,
             "maxPoints": 3,
             "stats": [
@@ -12849,7 +12852,7 @@
         "is40-20": {
             "skill": "is40-20",
             "name": "Devour in Flames",
-            "x": 6898.5998,
+            "x": 7047.3998,
             "y": -100.0,
             "maxPoints": 1,
             "stats": [
@@ -12872,7 +12875,7 @@
         "is40-21": {
             "skill": "is40-21",
             "name": "Burn Trail",
-            "x": 7526.4798,
+            "x": 7675.2798,
             "y": 240.0,
             "maxPoints": 1,
             "stats": [
@@ -12892,7 +12895,7 @@
         "is40-22": {
             "skill": "is40-22",
             "name": "Subjugation",
-            "x": 7705.3998,
+            "x": 7854.1998,
             "y": -132.4,
             "maxPoints": 1,
             "stats": [
@@ -12916,7 +12919,7 @@
         "is40-23": {
             "skill": "is40-23",
             "name": "Soulfire",
-            "x": 8266.479800000001,
+            "x": 8415.2798,
             "y": 262.0,
             "maxPoints": 1,
             "stats": [
@@ -12936,7 +12939,7 @@
         "is40-24": {
             "skill": "is40-24",
             "name": "Manic Pyre",
-            "x": 8334.1998,
+            "x": 8482.9998,
             "y": -468.0,
             "maxPoints": 3,
             "stats": [
@@ -12959,7 +12962,7 @@
         "is40-25": {
             "skill": "is40-25",
             "name": "Torment Beacon",
-            "x": 5778.5998,
+            "x": 5927.3998,
             "y": -816.0,
             "maxPoints": 5,
             "stats": [
@@ -12981,7 +12984,7 @@
         "is40-26": {
             "skill": "is40-26",
             "name": "Baneful",
-            "x": 6698.5998,
+            "x": 6847.3998,
             "y": -816.0,
             "maxPoints": 2,
             "stats": [
@@ -13003,7 +13006,7 @@
         "is40-27": {
             "skill": "is40-27",
             "name": "Blood Shade",
-            "x": 7326.47968,
+            "x": 7475.27968,
             "y": -633.11988,
             "maxPoints": 1,
             "stats": [
@@ -13026,7 +13029,7 @@
         "is40-28": {
             "skill": "is40-28",
             "name": "Corrosion",
-            "x": 7998.5998,
+            "x": 8147.3998,
             "y": -816.0,
             "maxPoints": 4,
             "stats": [
@@ -13046,7 +13049,7 @@
         "pr5fm-0": {
             "skill": "pr5fm-0",
             "name": "Profane Veil",
-            "x": 6312.9998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -13066,7 +13069,7 @@
         "pr5fm-2": {
             "skill": "pr5fm-2",
             "name": "Discourage",
-            "x": 5294.199799999999,
+            "x": 5368.5998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -13091,7 +13094,7 @@
         "pr5fm-3": {
             "skill": "pr5fm-3",
             "name": "Heretic's Flame",
-            "x": 5612.9998,
+            "x": 5687.3998,
             "y": -597.6,
             "maxPoints": 1,
             "stats": [
@@ -13117,7 +13120,7 @@
         "pr5fm-4": {
             "skill": "pr5fm-4",
             "name": "Hell Fire",
-            "x": 4728.5998,
+            "x": 4802.9998,
             "y": -538.4,
             "maxPoints": 3,
             "stats": [
@@ -13140,7 +13143,7 @@
         "pr5fm-5": {
             "skill": "pr5fm-5",
             "name": "Propane Form",
-            "x": 4026.9997999999996,
+            "x": 4101.3998,
             "y": -818.0,
             "maxPoints": 1,
             "stats": [
@@ -13162,7 +13165,7 @@
         "pr5fm-6": {
             "skill": "pr5fm-6",
             "name": "Infernal Deliverance",
-            "x": 4026.9997999999996,
+            "x": 4101.3998,
             "y": -251.6,
             "maxPoints": 4,
             "stats": [
@@ -13183,7 +13186,7 @@
         "pr5fm-7": {
             "skill": "pr5fm-7",
             "name": "Mire of Words",
-            "x": 4770.5998,
+            "x": 4844.9998,
             "y": 707.2,
             "maxPoints": 3,
             "stats": [
@@ -13204,7 +13207,7 @@
         "pr5fm-8": {
             "skill": "pr5fm-8",
             "name": "Scorn",
-            "x": 4592.5998,
+            "x": 4666.9998,
             "y": 169.6,
             "maxPoints": 5,
             "stats": [
@@ -13229,7 +13232,7 @@
         "pr5fm-9": {
             "skill": "pr5fm-9",
             "name": "Stream of Profanity",
-            "x": 4015.7998,
+            "x": 4090.1998000000003,
             "y": 418.0,
             "maxPoints": 5,
             "stats": [
@@ -13250,7 +13253,7 @@
         "pr5fm-10": {
             "skill": "pr5fm-10",
             "name": "Sable Inquisition",
-            "x": 4239.7998,
+            "x": 4314.1998,
             "y": 888.0,
             "maxPoints": 3,
             "stats": [
@@ -13276,7 +13279,7 @@
         "pr5fm-11": {
             "skill": "pr5fm-11",
             "name": "Profane Instruments",
-            "x": 3735.7998,
+            "x": 3810.1998000000003,
             "y": 1193.2,
             "maxPoints": 3,
             "stats": [
@@ -13300,7 +13303,7 @@
         "pr5fm-12": {
             "skill": "pr5fm-12",
             "name": "Visage of Terror",
-            "x": 5094.199799999999,
+            "x": 5168.5998,
             "y": 1240.0,
             "maxPoints": 4,
             "stats": [
@@ -13325,7 +13328,7 @@
         "pr5fm-13": {
             "skill": "pr5fm-13",
             "name": "Spirit Plate",
-            "x": 5628.199799999999,
+            "x": 5702.5998,
             "y": 559.2,
             "maxPoints": 1,
             "stats": [
@@ -13349,7 +13352,7 @@
         "pr5fm-14": {
             "skill": "pr5fm-14",
             "name": "Seance",
-            "x": 5828.199799999999,
+            "x": 5902.5998,
             "y": 1240.0,
             "maxPoints": 3,
             "stats": [
@@ -13371,7 +13374,7 @@
         "pr5fm-15": {
             "skill": "pr5fm-15",
             "name": "Derision",
-            "x": 6312.9998,
+            "x": 6387.3998,
             "y": 832.0,
             "maxPoints": 1,
             "stats": [
@@ -13391,7 +13394,7 @@
         "pr5fm-16": {
             "skill": "pr5fm-16",
             "name": "Eternal Blasphemy",
-            "x": 6987.7998,
+            "x": 7062.1998,
             "y": 559.2,
             "maxPoints": 3,
             "stats": [
@@ -13417,7 +13420,7 @@
         "pr5fm-17": {
             "skill": "pr5fm-17",
             "name": "Singleminded",
-            "x": 6795.7998,
+            "x": 6870.1998,
             "y": 1240.0,
             "maxPoints": 1,
             "stats": [
@@ -13440,7 +13443,7 @@
         "pr5fm-18": {
             "skill": "pr5fm-18",
             "name": "Vampiric Pool",
-            "x": 7559.7998,
+            "x": 7634.1998,
             "y": 1240.0,
             "maxPoints": 5,
             "stats": [
@@ -13464,7 +13467,7 @@
         "pr5fm-19": {
             "skill": "pr5fm-19",
             "name": "Apocalypse",
-            "x": 8162.9998,
+            "x": 8237.3998,
             "y": 1147.2,
             "maxPoints": 5,
             "stats": [
@@ -13488,7 +13491,7 @@
         "pr5fm-20": {
             "skill": "pr5fm-20",
             "name": "Omnivore",
-            "x": 8742.9998,
+            "x": 8817.3998,
             "y": 1240.0,
             "maxPoints": 1,
             "stats": [
@@ -13508,7 +13511,7 @@
         "pr5fm-21": {
             "skill": "pr5fm-21",
             "name": "Lake of Blood",
-            "x": 7864.9998,
+            "x": 7939.3998,
             "y": 664.0,
             "maxPoints": 1,
             "stats": [
@@ -13533,7 +13536,7 @@
         "pr5fm-22": {
             "skill": "pr5fm-22",
             "name": "Desecrated Graves",
-            "x": 8578.5998,
+            "x": 8652.9998,
             "y": 586.39996,
             "maxPoints": 1,
             "stats": [
@@ -13562,7 +13565,7 @@
         "pr5fm-23": {
             "skill": "pr5fm-23",
             "name": "Forked Tongue",
-            "x": 8578.5998,
+            "x": 8652.9998,
             "y": -44.8,
             "maxPoints": 1,
             "stats": [
@@ -13593,7 +13596,7 @@
         "pr5fm-24": {
             "skill": "pr5fm-24",
             "name": "Second Rites",
-            "x": 7904.9998,
+            "x": 7979.3998,
             "y": -6.1036e-05,
             "maxPoints": 1,
             "stats": [
@@ -13614,7 +13617,7 @@
         "pr5fm-25": {
             "skill": "pr5fm-25",
             "name": "Harsh Words",
-            "x": 7904.9998,
+            "x": 7979.3998,
             "y": -538.40016,
             "maxPoints": 3,
             "stats": [
@@ -13641,7 +13644,7 @@
         "pr5fm-26": {
             "skill": "pr5fm-26",
             "name": "Grave Circle",
-            "x": 8558.199799999999,
+            "x": 8632.5998,
             "y": -616.8,
             "maxPoints": 1,
             "stats": [
@@ -13664,7 +13667,7 @@
         "pr5fm-27": {
             "skill": "pr5fm-27",
             "name": "Mark of the Rat",
-            "x": 8940.2,
+            "x": 9014.6,
             "y": -908.00008,
             "maxPoints": 5,
             "stats": [
@@ -13686,7 +13689,7 @@
         "pr5fm-28": {
             "skill": "pr5fm-28",
             "name": "Profane Orbs",
-            "x": 7614.9998,
+            "x": 7689.3998,
             "y": -968.0,
             "maxPoints": 1,
             "stats": [
@@ -13712,7 +13715,7 @@
         "pr5fm-29": {
             "skill": "pr5fm-29",
             "name": "Hex Flurry",
-            "x": 8194.9998,
+            "x": 8269.3998,
             "y": -968.0,
             "maxPoints": 4,
             "stats": [
@@ -13736,7 +13739,7 @@
         "pr5fm-30": {
             "skill": "pr5fm-30",
             "name": "Loose Tongue",
-            "x": 7012.999879999999,
+            "x": 7087.39988,
             "y": -597.60008,
             "maxPoints": 3,
             "stats": [
@@ -13760,7 +13763,7 @@
         "pr5fm-31": {
             "skill": "pr5fm-31",
             "name": "Penitent Tangent",
-            "x": 6312.9998,
+            "x": 6387.3998,
             "y": -783.2,
             "maxPoints": 1,
             "stats": [
@@ -13785,7 +13788,7 @@
         "pr5fm-32": {
             "skill": "pr5fm-32",
             "name": "Unholy Renewal",
-            "x": 7338.9998,
+            "x": 7413.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -13807,7 +13810,7 @@
         "rb31pl-0": {
             "skill": "rb31pl-0",
             "name": "Rip Blood",
-            "x": 6312.9998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -13830,7 +13833,7 @@
         "rb31pl-2": {
             "skill": "rb31pl-2",
             "name": "Splatter",
-            "x": 5912.9998,
+            "x": 6035.7998,
             "y": 400.0,
             "maxPoints": 5,
             "stats": [
@@ -13857,7 +13860,7 @@
         "rb31pl-3": {
             "skill": "rb31pl-3",
             "name": "Eviscerate",
-            "x": 6712.9998,
+            "x": 6835.7998,
             "y": 400.0,
             "maxPoints": 1,
             "stats": [
@@ -13885,7 +13888,7 @@
         "rb31pl-4": {
             "skill": "rb31pl-4",
             "name": "Crimson Flood",
-            "x": 6312.9998,
+            "x": 6435.7998,
             "y": 800.0,
             "maxPoints": 5,
             "stats": [
@@ -13912,7 +13915,7 @@
         "rb31pl-5": {
             "skill": "rb31pl-5",
             "name": "Revile",
-            "x": 7524.999559999999,
+            "x": 7647.7995599999995,
             "y": 700.0,
             "maxPoints": 5,
             "stats": [
@@ -13935,7 +13938,7 @@
         "rb31pl-6": {
             "skill": "rb31pl-6",
             "name": "Coagulation",
-            "x": 3796.9997999999996,
+            "x": 3919.7998,
             "y": 600.0,
             "maxPoints": 1,
             "stats": [
@@ -13961,7 +13964,7 @@
         "rb31pl-8": {
             "skill": "rb31pl-8",
             "name": "Varicose Veins",
-            "x": 4372.9998,
+            "x": 4495.7998,
             "y": 496.0,
             "maxPoints": 3,
             "stats": [
@@ -13982,7 +13985,7 @@
         "rb31pl-12": {
             "skill": "rb31pl-12",
             "name": "Blood Infusion",
-            "x": 5632.9998,
+            "x": 5755.7998,
             "y": 1080.0,
             "maxPoints": 1,
             "stats": [
@@ -14004,7 +14007,7 @@
         "rb31pl-13": {
             "skill": "rb31pl-13",
             "name": "Necrotic Unity",
-            "x": 4844.9998,
+            "x": 4967.7998,
             "y": 560.0,
             "maxPoints": 1,
             "stats": [
@@ -14024,7 +14027,7 @@
         "rb31pl-14": {
             "skill": "rb31pl-14",
             "name": "Infused Frenzy",
-            "x": 4844.9998,
+            "x": 4967.7998,
             "y": 1260.0,
             "maxPoints": 3,
             "stats": [
@@ -14051,7 +14054,7 @@
         "rb31pl-15": {
             "skill": "rb31pl-15",
             "name": "Hemophagy",
-            "x": 4072.9997999999996,
+            "x": 4195.7998,
             "y": 1076.0,
             "maxPoints": 3,
             "stats": [
@@ -14074,7 +14077,7 @@
         "rb31pl-16": {
             "skill": "rb31pl-16",
             "name": "Hemomancer",
-            "x": 5912.9998,
+            "x": 6035.7998,
             "y": -400.0,
             "maxPoints": 5,
             "stats": [
@@ -14099,7 +14102,7 @@
         "rb31pl-17": {
             "skill": "rb31pl-17",
             "name": "Thirst",
-            "x": 5551.399799999999,
+            "x": 5674.199799999999,
             "y": -746.4,
             "maxPoints": 3,
             "stats": [
@@ -14122,7 +14125,7 @@
         "rb31pl-18": {
             "skill": "rb31pl-18",
             "name": "Carrion Hunger",
-            "x": 4973.7998,
+            "x": 5096.5998,
             "y": -783.6,
             "maxPoints": 1,
             "stats": [
@@ -14142,7 +14145,7 @@
         "rb31pl-19": {
             "skill": "rb31pl-19",
             "name": "Quenching",
-            "x": 4768.199799999999,
+            "x": 4890.9998,
             "y": -304.0,
             "maxPoints": 5,
             "stats": [
@@ -14167,7 +14170,7 @@
         "rb31pl-20": {
             "skill": "rb31pl-20",
             "name": "Hematology",
-            "x": 4216.9998,
+            "x": 4339.7998,
             "y": -700.0,
             "maxPoints": 1,
             "stats": [
@@ -14187,7 +14190,7 @@
         "rb31pl-21": {
             "skill": "rb31pl-21",
             "name": "Mana Feast",
-            "x": 4252.9998,
+            "x": 4375.7998,
             "y": 164.0,
             "maxPoints": 3,
             "stats": [
@@ -14209,7 +14212,7 @@
         "rb31pl-22": {
             "skill": "rb31pl-22",
             "name": "Marrow Drinker",
-            "x": 3796.9997999999996,
+            "x": 3919.7998,
             "y": -256.0,
             "maxPoints": 1,
             "stats": [
@@ -14230,7 +14233,7 @@
         "rb31pl-23": {
             "skill": "rb31pl-23",
             "name": "Gushing Wound",
-            "x": 5512.9998,
+            "x": 5635.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -14252,7 +14255,7 @@
         "rb31pl-24": {
             "skill": "rb31pl-24",
             "name": "Septic Wound",
-            "x": 4916.9998,
+            "x": 5039.7998,
             "y": 116.0,
             "maxPoints": 1,
             "stats": [
@@ -14272,7 +14275,7 @@
         "rb31pl-25": {
             "skill": "rb31pl-25",
             "name": "Septic Blood",
-            "x": 8552.9998,
+            "x": 8675.7998,
             "y": 940.0,
             "maxPoints": 5,
             "stats": [
@@ -14292,7 +14295,7 @@
         "rb31pl-26": {
             "skill": "rb31pl-26",
             "name": "Arcane Absorption",
-            "x": 6712.9998,
+            "x": 6835.7998,
             "y": -400.0,
             "maxPoints": 4,
             "stats": [
@@ -14316,7 +14319,7 @@
         "rb31pl-27": {
             "skill": "rb31pl-27",
             "name": "Run Dry",
-            "x": 7112.9998,
+            "x": 7235.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -14339,7 +14342,7 @@
         "rb31pl-28": {
             "skill": "rb31pl-28",
             "name": "Necrotic Inspiration",
-            "x": 8224.9998,
+            "x": 8347.7998,
             "y": 364.0,
             "maxPoints": 2,
             "stats": [
@@ -14359,7 +14362,7 @@
         "rb31pl-29": {
             "skill": "rb31pl-29",
             "name": "Blood Catalyst",
-            "x": 8712.9998,
+            "x": 8835.7998,
             "y": -168.0,
             "maxPoints": 1,
             "stats": [
@@ -14380,7 +14383,7 @@
         "rb31pl-30": {
             "skill": "rb31pl-30",
             "name": "Rip Spirit",
-            "x": 7676.9998,
+            "x": 7799.7998,
             "y": -460.00012,
             "maxPoints": 1,
             "stats": [
@@ -14402,7 +14405,7 @@
         "rb31pl-31": {
             "skill": "rb31pl-31",
             "name": "Arcane Fortress",
-            "x": 8512.9998,
+            "x": 8635.7998,
             "y": -660.00008,
             "maxPoints": 1,
             "stats": [
@@ -14425,7 +14428,7 @@
         "rb31pl-32": {
             "skill": "rb31pl-32",
             "name": "Stench of Blood",
-            "x": 6312.9998,
+            "x": 6435.7998,
             "y": -800.00012,
             "maxPoints": 1,
             "stats": [
@@ -15834,7 +15837,7 @@
         "sm4g-0": {
             "skill": "sm4g-0",
             "name": "Summon Skeletal Mage",
-            "x": 6263.7998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -15855,7 +15858,7 @@
         "sm4g-1": {
             "skill": "sm4g-1",
             "name": "Gravetide",
-            "x": 6878.5998,
+            "x": 7050.5998,
             "y": -442.8,
             "maxPoints": 5,
             "stats": [
@@ -15879,7 +15882,7 @@
         "sm4g-2": {
             "skill": "sm4g-2",
             "name": "Macabre Waltz",
-            "x": 6071.799892,
+            "x": 6243.799892,
             "y": -752.0,
             "maxPoints": 1,
             "stats": [
@@ -15903,7 +15906,7 @@
         "sm4g-3": {
             "skill": "sm4g-3",
             "name": "Underlings",
-            "x": 6933.7998,
+            "x": 7105.7998,
             "y": -928.0,
             "maxPoints": 1,
             "stats": [
@@ -15925,7 +15928,7 @@
         "sm4g-4": {
             "skill": "sm4g-4",
             "name": "Cryomancers",
-            "x": 7519.7998,
+            "x": 7691.7998,
             "y": -688.0,
             "maxPoints": 1,
             "stats": [
@@ -15952,7 +15955,7 @@
         "sm4g-5": {
             "skill": "sm4g-5",
             "name": "Frost Lich",
-            "x": 8223.7998,
+            "x": 8395.7998,
             "y": -892.0,
             "maxPoints": 1,
             "stats": [
@@ -15974,7 +15977,7 @@
         "sm4g-6": {
             "skill": "sm4g-6",
             "name": "Frozen Tomb",
-            "x": 8219.7998,
+            "x": 8391.7998,
             "y": -400.0,
             "maxPoints": 4,
             "stats": [
@@ -15995,7 +15998,7 @@
         "sm4g-7": {
             "skill": "sm4g-7",
             "name": "Putrid Essence",
-            "x": 5531.7998,
+            "x": 5703.7998,
             "y": 274.4,
             "maxPoints": 4,
             "stats": [
@@ -16018,7 +16021,7 @@
         "sm4g-8": {
             "skill": "sm4g-8",
             "name": "Ossein Frenzy",
-            "x": 4543.7998,
+            "x": 4715.7998,
             "y": -236.0,
             "maxPoints": 3,
             "stats": [
@@ -16042,7 +16045,7 @@
         "sm4g-9": {
             "skill": "sm4g-9",
             "name": "Pyromancers",
-            "x": 5059.7998,
+            "x": 5231.7998,
             "y": 876.0,
             "maxPoints": 1,
             "stats": [
@@ -16072,7 +16075,7 @@
         "sm4g-10": {
             "skill": "sm4g-10",
             "name": "Inferno",
-            "x": 4435.7998,
+            "x": 4607.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -16093,7 +16096,7 @@
         "sm4g-11": {
             "skill": "sm4g-11",
             "name": "Flame Rot",
-            "x": 4395.7998,
+            "x": 4567.7998,
             "y": 628.0,
             "maxPoints": 4,
             "stats": [
@@ -16116,7 +16119,7 @@
         "sm4g-12": {
             "skill": "sm4g-12",
             "name": "Celer Mortis",
-            "x": 6263.7998,
+            "x": 6435.7998,
             "y": 724.0,
             "maxPoints": 5,
             "stats": [
@@ -16141,7 +16144,7 @@
         "sm4g-13": {
             "skill": "sm4g-13",
             "name": "Grey Merchant",
-            "x": 5703.7998,
+            "x": 5875.7998,
             "y": 972.0,
             "maxPoints": 3,
             "stats": [
@@ -16167,7 +16170,7 @@
         "sm4g-14": {
             "skill": "sm4g-14",
             "name": "Order of Death",
-            "x": 6263.7998,
+            "x": 6435.7998,
             "y": 1240.0,
             "maxPoints": 1,
             "stats": [
@@ -16191,7 +16194,7 @@
         "sm4g-15": {
             "skill": "sm4g-15",
             "name": "Leech Life",
-            "x": 6995.7998,
+            "x": 7167.7998,
             "y": 274.4,
             "maxPoints": 5,
             "stats": [
@@ -16215,7 +16218,7 @@
         "sm4g-16": {
             "skill": "sm4g-16",
             "name": "Death Knights",
-            "x": 7467.7998,
+            "x": 7639.7998,
             "y": 876.0,
             "maxPoints": 1,
             "stats": [
@@ -16245,7 +16248,7 @@
         "sm4g-17": {
             "skill": "sm4g-17",
             "name": "Flaming Attacks",
-            "x": 8095.7998,
+            "x": 8267.7998,
             "y": 596.0,
             "maxPoints": 5,
             "stats": [
@@ -16265,7 +16268,7 @@
         "sm4g-18": {
             "skill": "sm4g-18",
             "name": "Death Blossom",
-            "x": 8107.7998,
+            "x": 8279.7998,
             "y": 1216.0,
             "maxPoints": 1,
             "stats": [
@@ -16286,7 +16289,7 @@
         "sm4g-19": {
             "skill": "sm4g-19",
             "name": "Undead Mortars",
-            "x": 7811.7998,
+            "x": 7983.7998,
             "y": 64.800048,
             "maxPoints": 1,
             "stats": [
@@ -16311,7 +16314,7 @@
         "sm4g-20": {
             "skill": "sm4g-20",
             "name": "Battle Hardened",
-            "x": 8507.7998,
+            "x": 8679.7998,
             "y": 176.0,
             "maxPoints": 3,
             "stats": [
@@ -16331,7 +16334,7 @@
         "sm4g-21": {
             "skill": "sm4g-21",
             "name": "Splintered Dominion",
-            "x": 5648.9998,
+            "x": 5820.9998,
             "y": -442.8,
             "maxPoints": 4,
             "stats": [
@@ -16355,7 +16358,7 @@
         "sm4g-22": {
             "skill": "sm4g-22",
             "name": "Archmage",
-            "x": 4923.7998,
+            "x": 5095.7998,
             "y": -728.0,
             "maxPoints": 1,
             "stats": [
@@ -16386,7 +16389,7 @@
         "sm4g-23": {
             "skill": "sm4g-23",
             "name": "Argonautic Speed",
-            "x": 5139.7998,
+            "x": 5311.7998,
             "y": -112.0,
             "maxPoints": 4,
             "stats": [
@@ -16411,7 +16414,7 @@
         "sm4g-24": {
             "skill": "sm4g-24",
             "name": "Shadow Wardens",
-            "x": 6823.7998,
+            "x": 6995.7998,
             "y": 972.0,
             "maxPoints": 4,
             "stats": [
@@ -16437,7 +16440,7 @@
         "sm4g-26": {
             "skill": "sm4g-26",
             "name": "Forbidden Arcana",
-            "x": 4123.7998,
+            "x": 4295.7998,
             "y": -672.0,
             "maxPoints": 5,
             "stats": [
@@ -16463,7 +16466,7 @@
         "sm4g-27": {
             "skill": "sm4g-27",
             "name": "Grave Passage",
-            "x": 3735.7998,
+            "x": 3907.7998,
             "y": -232.0,
             "maxPoints": 1,
             "stats": [
@@ -16490,7 +16493,7 @@
         "sm4g-28": {
             "skill": "sm4g-28",
             "name": "Death's Cavalry",
-            "x": 3735.7998,
+            "x": 3907.7998,
             "y": 400.0,
             "maxPoints": 3,
             "stats": [
@@ -17792,7 +17795,7 @@
         "svz81-0": {
             "skill": "svz81-0",
             "name": "Volatile Zombie",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -17814,7 +17817,7 @@
         "svz81-1": {
             "skill": "svz81-1",
             "name": "Leap Attack",
-            "x": 7491.7995599999995,
+            "x": 7443.39956,
             "y": 70.0,
             "maxPoints": 4,
             "stats": [
@@ -17836,7 +17839,7 @@
         "svz81-2": {
             "skill": "svz81-2",
             "name": "Fervor",
-            "x": 6955.7998,
+            "x": 6907.3998,
             "y": -440.0,
             "maxPoints": 5,
             "stats": [
@@ -17860,7 +17863,7 @@
         "svz81-3": {
             "skill": "svz81-3",
             "name": "Grave Attunement",
-            "x": 4807.7998,
+            "x": 4759.3998,
             "y": -71.999956,
             "maxPoints": 3,
             "stats": [
@@ -17884,7 +17887,7 @@
         "svz81-4": {
             "skill": "svz81-4",
             "name": "Giant Zombie",
-            "x": 3952.5998,
+            "x": 3904.1998000000003,
             "y": -71.999956,
             "maxPoints": 1,
             "stats": [
@@ -17911,7 +17914,7 @@
         "svz81-6": {
             "skill": "svz81-6",
             "name": "Corrosive Guts",
-            "x": 4378.9994,
+            "x": 4330.5994,
             "y": 327.99994,
             "maxPoints": 4,
             "stats": [
@@ -17931,7 +17934,7 @@
         "svz81-7": {
             "skill": "svz81-7",
             "name": "Bone Pact",
-            "x": 5355.7998,
+            "x": 5307.3998,
             "y": 196.0,
             "maxPoints": 3,
             "stats": [
@@ -17952,7 +17955,7 @@
         "svz81-8": {
             "skill": "svz81-8",
             "name": "Repulsive Vomit",
-            "x": 4834.5998,
+            "x": 4786.1998,
             "y": 778.4,
             "maxPoints": 1,
             "stats": [
@@ -17979,7 +17982,7 @@
         "svz81-9": {
             "skill": "svz81-9",
             "name": "Corpse Bane",
-            "x": 8540.1998,
+            "x": 8491.7998,
             "y": -452.0,
             "maxPoints": 1,
             "stats": [
@@ -18000,7 +18003,7 @@
         "svz81-10": {
             "skill": "svz81-10",
             "name": "Dreadful Horde",
-            "x": 4807.7998,
+            "x": 4759.3998,
             "y": -880.0,
             "maxPoints": 2,
             "stats": [
@@ -18025,7 +18028,7 @@
         "svz81-11": {
             "skill": "svz81-11",
             "name": "Wretched Innards",
-            "x": 4378.9994,
+            "x": 4330.5994,
             "y": 1212.0,
             "maxPoints": 4,
             "stats": [
@@ -18047,7 +18050,7 @@
         "svz81-12": {
             "skill": "svz81-12",
             "name": "Army of Rot",
-            "x": 5915.7998,
+            "x": 5867.3998,
             "y": 440.0,
             "maxPoints": 5,
             "stats": [
@@ -18072,7 +18075,7 @@
         "svz81-14": {
             "skill": "svz81-14",
             "name": "Path of Destruction",
-            "x": 6955.7998,
+            "x": 6907.3998,
             "y": 440.0,
             "maxPoints": 5,
             "stats": [
@@ -18096,7 +18099,7 @@
         "svz81-15": {
             "skill": "svz81-15",
             "name": "Shepherd of Thralls",
-            "x": 8815.7998,
+            "x": 8767.3998,
             "y": 70.0,
             "maxPoints": 1,
             "stats": [
@@ -18118,7 +18121,7 @@
         "svz81-16": {
             "skill": "svz81-16",
             "name": "Putridity",
-            "x": 3928.5998,
+            "x": 3880.1998000000003,
             "y": 778.4,
             "maxPoints": 4,
             "stats": [
@@ -18138,7 +18141,7 @@
         "svz81-17": {
             "skill": "svz81-17",
             "name": "Vile Force",
-            "x": 3952.5998,
+            "x": 3904.1998000000003,
             "y": -880.0,
             "maxPoints": 2,
             "stats": [
@@ -18159,7 +18162,7 @@
         "svz81-18": {
             "skill": "svz81-18",
             "name": "Rite of the Grave",
-            "x": 6435.7998,
+            "x": 6387.3998,
             "y": 1212.0,
             "maxPoints": 1,
             "stats": [
@@ -18181,7 +18184,7 @@
         "svz81-19": {
             "skill": "svz81-19",
             "name": "Grand Sacrifice",
-            "x": 8371.3998,
+            "x": 8322.9998,
             "y": 423.6,
             "maxPoints": 4,
             "stats": [
@@ -18202,7 +18205,7 @@
         "svz81-20": {
             "skill": "svz81-20",
             "name": "Forceful Commander",
-            "x": 5915.7998,
+            "x": 5867.3998,
             "y": -440.0,
             "maxPoints": 5,
             "stats": [
@@ -18228,7 +18231,7 @@
         "svz81-21": {
             "skill": "svz81-21",
             "name": "Necromantic Fervor",
-            "x": 7747.7998,
+            "x": 7699.3998,
             "y": 718.0,
             "maxPoints": 2,
             "stats": [
@@ -18255,7 +18258,7 @@
         "svz81-22": {
             "skill": "svz81-22",
             "name": "Flammable Vitae",
-            "x": 5596.199799999999,
+            "x": 5547.7998,
             "y": 1212.0,
             "maxPoints": 1,
             "stats": [
@@ -18279,7 +18282,7 @@
         "svz81-23": {
             "skill": "svz81-23",
             "name": "Horrific Vessels",
-            "x": 8234.9998,
+            "x": 8186.5998,
             "y": -980.0,
             "maxPoints": 1,
             "stats": [
@@ -18302,7 +18305,7 @@
         "svz81-24": {
             "skill": "svz81-24",
             "name": "Pull of the Grave",
-            "x": 7291.7998,
+            "x": 7243.3998,
             "y": -880.0,
             "maxPoints": 2,
             "stats": [
@@ -18324,7 +18327,7 @@
         "svz81-25": {
             "skill": "svz81-25",
             "name": "Army of Nightmares",
-            "x": 8988.1998,
+            "x": 8939.7998,
             "y": -859.2,
             "maxPoints": 3,
             "stats": [
@@ -18347,7 +18350,7 @@
         "svz81-26": {
             "skill": "svz81-26",
             "name": "Effigy of Combustion",
-            "x": 8094.9998,
+            "x": 8046.5998,
             "y": 1212.0,
             "maxPoints": 4,
             "stats": [
@@ -18371,7 +18374,7 @@
         "svz81-27": {
             "skill": "svz81-27",
             "name": "Ferocious Horde",
-            "x": 7894.9998,
+            "x": 7846.5998,
             "y": -357.6,
             "maxPoints": 1,
             "stats": [
@@ -18394,7 +18397,7 @@
         "svz81-28": {
             "skill": "svz81-28",
             "name": "Ravenous ",
-            "x": 6443.7998,
+            "x": 6395.3998,
             "y": -780.0,
             "maxPoints": 2,
             "stats": [
@@ -18416,7 +18419,7 @@
         "svz81-29": {
             "skill": "svz81-29",
             "name": "Daunting Blast",
-            "x": 5579.7998,
+            "x": 5531.3998,
             "y": -880.0,
             "maxPoints": 4,
             "stats": [
@@ -18439,7 +18442,7 @@
         "svz81-31": {
             "skill": "svz81-31",
             "name": "Awakening Presence",
-            "x": 7230.99976,
+            "x": 7182.59976,
             "y": 1212.0,
             "maxPoints": 3,
             "stats": [
@@ -18462,7 +18465,7 @@
         "svz81-32": {
             "skill": "svz81-32",
             "name": "Vital Ward",
-            "x": 8740.1998,
+            "x": 8691.7998,
             "y": 1056.4,
             "maxPoints": 1,
             "stats": [
@@ -18482,7 +18485,7 @@
         "sw42ih-0": {
             "skill": "sw42ih-0",
             "name": "Summon Wraith",
-            "x": 6435.7998,
+            "x": 6351.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -18501,7 +18504,7 @@
         "sw42ih-2": {
             "skill": "sw42ih-2",
             "name": "Locus Of Resurrection",
-            "x": 7035.7998,
+            "x": 6951.7998,
             "y": -400.0,
             "maxPoints": 1,
             "stats": [
@@ -18526,7 +18529,7 @@
         "sw42ih-3": {
             "skill": "sw42ih-3",
             "name": "Locus Of Death",
-            "x": 6435.7998,
+            "x": 6351.7998,
             "y": -744.0,
             "maxPoints": 1,
             "stats": [
@@ -18548,7 +18551,7 @@
         "sw42ih-4": {
             "skill": "sw42ih-4",
             "name": "Dark Scythe",
-            "x": 7696.1998,
+            "x": 7612.1998,
             "y": -744.0,
             "maxPoints": 3,
             "stats": [
@@ -18570,7 +18573,7 @@
         "sw42ih-5": {
             "skill": "sw42ih-5",
             "name": "Echoes Inside",
-            "x": 8460.19996,
+            "x": 8376.19996,
             "y": -615.99992,
             "maxPoints": 1,
             "stats": [
@@ -18590,13 +18593,13 @@
                 "sw42ih-29"
             ],
             "description": [
-                "Summon Wraith summons three additional {Wraiths} with each cast, but Summon Wraith also costs more mana and now has a cooldown."
+                "Summon Wraith summons additional {Wraiths} with each cast, but Summon Wraith also costs more mana and now has a cooldown."
             ]
         },
         "sw42ih-6": {
             "skill": "sw42ih-6",
             "name": "Stygian River",
-            "x": 9046.19996,
+            "x": 8962.19996,
             "y": -68.8,
             "maxPoints": 5,
             "stats": [
@@ -18617,7 +18620,7 @@
         "sw42ih-7": {
             "skill": "sw42ih-7",
             "name": "Army of Wraiths",
-            "x": 7877.0,
+            "x": 7793.0,
             "y": -68.8,
             "maxPoints": 3,
             "stats": [
@@ -18640,7 +18643,7 @@
         "sw42ih-8": {
             "skill": "sw42ih-8",
             "name": "Spectral Ambush",
-            "x": 8460.2002,
+            "x": 8376.2002,
             "y": 496.0,
             "maxPoints": 1,
             "stats": [
@@ -18661,7 +18664,7 @@
         "sw42ih-9": {
             "skill": "sw42ih-9",
             "name": "Haunting",
-            "x": 7035.79972,
+            "x": 6951.79972,
             "y": 400.0,
             "maxPoints": 5,
             "stats": [
@@ -18684,7 +18687,7 @@
         "sw42ih-10": {
             "skill": "sw42ih-10",
             "name": "Twin Spirits",
-            "x": 7644.5998,
+            "x": 7560.5998,
             "y": 920.0,
             "maxPoints": 1,
             "stats": [
@@ -18710,7 +18713,7 @@
         "sw42ih-11": {
             "skill": "sw42ih-11",
             "name": "Sanguine Spirits",
-            "x": 7035.7998,
+            "x": 6951.7998,
             "y": 1265.6,
             "maxPoints": 1,
             "stats": [
@@ -18734,7 +18737,7 @@
         "sw42ih-12": {
             "skill": "sw42ih-12",
             "name": "Sequel of Avarice",
-            "x": 8126.1998,
+            "x": 8042.1998,
             "y": 1172.0,
             "maxPoints": 3,
             "stats": [
@@ -18757,7 +18760,7 @@
         "sw42ih-13": {
             "skill": "sw42ih-13",
             "name": "Covenant of Souls",
-            "x": 3851.7998,
+            "x": 3767.7998,
             "y": -658.0,
             "maxPoints": 2,
             "stats": [
@@ -18780,7 +18783,7 @@
         "sw42ih-14": {
             "skill": "sw42ih-14",
             "name": "Reapers",
-            "x": 5835.7998,
+            "x": 5751.7998,
             "y": -400.0,
             "maxPoints": 5,
             "stats": [
@@ -18803,7 +18806,7 @@
         "sw42ih-15": {
             "skill": "sw42ih-15",
             "name": "Wraith Bringer",
-            "x": 4907.7998,
+            "x": 4823.7998,
             "y": -399.99988,
             "maxPoints": 4,
             "stats": [
@@ -18831,7 +18834,7 @@
         "sw42ih-16": {
             "skill": "sw42ih-16",
             "name": "Fallen Reclamation",
-            "x": 4447.7998,
+            "x": 4363.7998,
             "y": -792.0,
             "maxPoints": 2,
             "stats": [
@@ -18853,7 +18856,7 @@
         "sw42ih-17": {
             "skill": "sw42ih-17",
             "name": "Flame Wraith",
-            "x": 3943.7998,
+            "x": 3859.7998,
             "y": -40.0,
             "maxPoints": 2,
             "stats": [
@@ -18874,7 +18877,7 @@
         "sw42ih-18": {
             "skill": "sw42ih-18",
             "name": "Spirit Link",
-            "x": 4472.5998,
+            "x": 4388.5998,
             "y": 456.4,
             "maxPoints": 1,
             "stats": [
@@ -18901,7 +18904,7 @@
         "sw42ih-19": {
             "skill": "sw42ih-19",
             "name": "Dawn of the Fall",
-            "x": 3819.7998,
+            "x": 3735.7998,
             "y": 764.4,
             "maxPoints": 3,
             "stats": [
@@ -18924,7 +18927,7 @@
         "sw42ih-20": {
             "skill": "sw42ih-20",
             "name": "Dusk of the Living",
-            "x": 4398.5998,
+            "x": 4314.5998,
             "y": 1204.0,
             "maxPoints": 3,
             "stats": [
@@ -18944,7 +18947,7 @@
         "sw42ih-21": {
             "skill": "sw42ih-21",
             "name": "Necrotic Hunger",
-            "x": 5451.7998,
+            "x": 5367.7998,
             "y": -858.0,
             "maxPoints": 3,
             "stats": [
@@ -18965,7 +18968,7 @@
         "sw42ih-22": {
             "skill": "sw42ih-22",
             "name": "Grave Reality",
-            "x": 5835.7998,
+            "x": 5751.7998,
             "y": 400.0,
             "maxPoints": 2,
             "stats": [
@@ -18993,7 +18996,7 @@
         "sw42ih-23": {
             "skill": "sw42ih-23",
             "name": "Noxious Blades",
-            "x": 6215.7998,
+            "x": 6131.7998,
             "y": 860.8,
             "maxPoints": 5,
             "stats": [
@@ -19016,7 +19019,7 @@
         "sw42ih-24": {
             "skill": "sw42ih-24",
             "name": "Putrid Wraith",
-            "x": 5853.7998,
+            "x": 5769.7998,
             "y": 1265.6,
             "maxPoints": 2,
             "stats": [
@@ -19037,7 +19040,7 @@
         "sw42ih-25": {
             "skill": "sw42ih-25",
             "name": "Delay the End",
-            "x": 5165.399799999999,
+            "x": 5081.399799999999,
             "y": 628.0,
             "maxPoints": 4,
             "stats": [
@@ -19062,7 +19065,7 @@
         "sw42ih-26": {
             "skill": "sw42ih-26",
             "name": "Wraith Feast",
-            "x": 5072.1998,
+            "x": 4988.1998,
             "y": 1204.0,
             "maxPoints": 3,
             "stats": [
@@ -19082,7 +19085,7 @@
         "sw42ih-28": {
             "skill": "sw42ih-28",
             "name": "Serrated Scythes",
-            "x": 6655.7998,
+            "x": 6571.7998,
             "y": 860.8,
             "maxPoints": 5,
             "stats": [
@@ -19104,7 +19107,7 @@
         "sw42ih-29": {
             "skill": "sw42ih-29",
             "name": "Spectre of Death",
-            "x": 9046.1998,
+            "x": 8962.1998,
             "y": -924.0,
             "maxPoints": 3,
             "stats": [
@@ -19127,7 +19130,7 @@
         "sw42ih-30": {
             "skill": "sw42ih-30",
             "name": "One Foot in the Grave",
-            "x": 5251.7998,
+            "x": 5167.7998,
             "y": 56.0,
             "maxPoints": 3,
             "stats": [
@@ -20472,108 +20475,108 @@
             "base_vit": 1,
             "skills": [
                 {
-                    "label": "Infernal Shade",
-                    "treeId": "is40"
-                },
-                {
-                    "label": "Summon Skeletal Mage",
-                    "treeId": "sm4g"
-                },
-                {
-                    "label": "Chaos Bolts",
-                    "treeId": "ch4bo"
-                },
-                {
-                    "label": "Marrow Shards",
-                    "treeId": "bp2nk"
-                },
-                {
-                    "label": "Profane Veil",
-                    "treeId": "pr5fm"
-                },
-                {
-                    "label": "Rip Blood",
-                    "treeId": "rb31pl"
-                },
-                {
-                    "label": "Dread Shade",
-                    "treeId": "ds4d3"
-                },
-                {
-                    "label": "Soul Feast",
-                    "treeId": "fe8at"
-                },
-                {
-                    "label": "Wandering Spirits",
-                    "treeId": "ws54hm"
-                },
-                {
-                    "label": "Summon Skeleton",
-                    "treeId": "ss37kl"
-                },
-                {
-                    "label": "Bone Curse",
-                    "treeId": "bc53"
-                },
-                {
-                    "label": "Volatile Zombie",
-                    "treeId": "svz81"
-                },
-                {
-                    "label": "Spirit Plague",
-                    "treeId": "sp5g2"
+                    "label": "Hungering Souls",
+                    "treeId": "hs18gu"
                 },
                 {
                     "label": "Summon Wraith",
                     "treeId": "sw42ih"
                 },
                 {
-                    "label": "Aura of Decay",
-                    "treeId": "ad0ry"
-                },
-                {
-                    "label": "Death Seal",
-                    "treeId": "ds34l"
-                },
-                {
-                    "label": "Hungering Souls",
-                    "treeId": "hs18gu"
-                },
-                {
-                    "label": "Harvest",
-                    "treeId": "ha84"
-                },
-                {
                     "label": "Ghost Flame",
                     "treeId": "gh0fl"
                 },
                 {
-                    "label": "Reaper Form",
-                    "treeId": "rf1azz"
+                    "label": "Bone Curse",
+                    "treeId": "bc53"
+                },
+                {
+                    "label": "Aura of Decay",
+                    "treeId": "ad0ry"
+                },
+                {
+                    "label": "Dread Shade",
+                    "treeId": "ds4d3"
+                },
+                {
+                    "label": "Volatile Zombie",
+                    "treeId": "svz81"
+                },
+                {
+                    "label": "Chaos Bolts",
+                    "treeId": "ch4bo"
                 },
                 {
                     "label": "Summon Bone Golem",
                     "treeId": "bg36nl"
                 },
                 {
-                    "label": "Transplant",
-                    "treeId": "ts50pl"
+                    "label": "Profane Form",
+                    "treeId": "ch0fs"
+                },
+                {
+                    "label": "Profane Veil",
+                    "treeId": "pr5fm"
+                },
+                {
+                    "label": "Infernal Shade",
+                    "treeId": "is40"
+                },
+                {
+                    "label": "Death Seal",
+                    "treeId": "ds34l"
                 },
                 {
                     "label": "Drain Life",
                     "treeId": "dl73"
                 },
                 {
-                    "label": "Profane Form",
-                    "treeId": "ch0fs"
-                },
-                {
                     "label": "Assemble Abomination",
                     "treeId": "aa710"
                 },
                 {
+                    "label": "Soul Feast",
+                    "treeId": "fe8at"
+                },
+                {
+                    "label": "Spirit Plague",
+                    "treeId": "sp5g2"
+                },
+                {
+                    "label": "Reaper Form",
+                    "treeId": "rf1azz"
+                },
+                {
+                    "label": "Transplant",
+                    "treeId": "ts50pl"
+                },
+                {
+                    "label": "Harvest",
+                    "treeId": "ha84"
+                },
+                {
+                    "label": "Marrow Shards",
+                    "treeId": "bp2nk"
+                },
+                {
+                    "label": "Summon Skeleton",
+                    "treeId": "ss37kl"
+                },
+                {
                     "label": "Sacrifice",
                     "treeId": "sf31rc"
+                },
+                {
+                    "label": "Summon Skeletal Mage",
+                    "treeId": "sm4g"
+                },
+                {
+                    "label": "Wandering Spirits",
+                    "treeId": "ws54hm"
+                },
+                {
+                    "label": "Rip Blood",
+                    "treeId": "rb31pl"
                 }
             ]
         }

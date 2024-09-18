@@ -3374,7 +3374,7 @@
         "aacfl-0": {
             "skill": "aacfl-0",
             "name": "Acid Flask",
-            "x": 6389.3998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -3393,7 +3393,7 @@
         "aacfl-2": {
             "skill": "aacfl-2",
             "name": "Corrosive",
-            "x": 5720.9998000000005,
+            "x": 5767.3998,
             "y": -332.0,
             "maxPoints": 4,
             "stats": [
@@ -3417,7 +3417,7 @@
         "aacfl-3": {
             "skill": "aacfl-3",
             "name": "Elixir of Speed",
-            "x": 5412.9998000000005,
+            "x": 5459.3998,
             "y": -792.8,
             "maxPoints": 4,
             "stats": [
@@ -3440,7 +3440,7 @@
         "aacfl-4": {
             "skill": "aacfl-4",
             "name": "Toxic Salvo",
-            "x": 4533.3998,
+            "x": 4579.7998,
             "y": -704.0,
             "maxPoints": 1,
             "stats": [
@@ -3463,7 +3463,7 @@
         "aacfl-5": {
             "skill": "aacfl-5",
             "name": "Barrage",
-            "x": 3966.9998,
+            "x": 4013.3997999999997,
             "y": -141.600096,
             "maxPoints": 1,
             "stats": [
@@ -3484,7 +3484,7 @@
         "aacfl-6": {
             "skill": "aacfl-6",
             "name": "Tempered Glass",
-            "x": 4981.3998,
+            "x": 5027.7998,
             "y": -132.0,
             "maxPoints": 4,
             "stats": [
@@ -3508,7 +3508,7 @@
         "aacfl-7": {
             "skill": "aacfl-7",
             "name": "Poison Pools",
-            "x": 4499.3998,
+            "x": 4545.7998,
             "y": 458.0,
             "maxPoints": 1,
             "stats": [
@@ -3539,7 +3539,7 @@
         "aacfl-8": {
             "skill": "aacfl-8",
             "name": "Hydrochloric Acid",
-            "x": 5412.9998000000005,
+            "x": 5459.3998,
             "y": 217.199952,
             "maxPoints": 5,
             "stats": [
@@ -3559,7 +3559,7 @@
         "aacfl-9": {
             "skill": "aacfl-9",
             "name": "Lingering Toxicity",
-            "x": 3788.1996,
+            "x": 3834.5995999999996,
             "y": 621.2,
             "maxPoints": 3,
             "stats": [
@@ -3584,7 +3584,7 @@
         "aacfl-10": {
             "skill": "aacfl-10",
             "name": "Explosive Flask",
-            "x": 8244.6,
+            "x": 8291.0,
             "y": 82.800048,
             "maxPoints": 1,
             "stats": [
@@ -3610,7 +3610,7 @@
         "aacfl-11": {
             "skill": "aacfl-11",
             "name": "Smoulder",
-            "x": 8890.9998,
+            "x": 8937.3998,
             "y": 240.400024,
             "maxPoints": 1,
             "stats": [
@@ -3632,7 +3632,7 @@
         "aacfl-12": {
             "skill": "aacfl-12",
             "name": "Cluster Bomb",
-            "x": 8725.3998,
+            "x": 8771.7998,
             "y": -424.0,
             "maxPoints": 1,
             "stats": [
@@ -3653,7 +3653,7 @@
         "aacfl-13": {
             "skill": "aacfl-13",
             "name": "Blinding Mixture",
-            "x": 5765.3998,
+            "x": 5811.7998,
             "y": 1220.4,
             "maxPoints": 2,
             "stats": [
@@ -3673,7 +3673,7 @@
         "aacfl-14": {
             "skill": "aacfl-14",
             "name": "Contamination",
-            "x": 5263.3998,
+            "x": 5309.7998,
             "y": 700.0,
             "maxPoints": 4,
             "stats": [
@@ -3698,7 +3698,7 @@
         "aacfl-15": {
             "skill": "aacfl-15",
             "name": "Caustic Concoction",
-            "x": 5965.39972,
+            "x": 6011.79972,
             "y": 574.8,
             "maxPoints": 4,
             "stats": [
@@ -3722,7 +3722,7 @@
         "aacfl-16": {
             "skill": "aacfl-16",
             "name": "Debilitate",
-            "x": 8244.59988,
+            "x": 8290.99988,
             "y": -872.0,
             "maxPoints": 2,
             "stats": [
@@ -3742,7 +3742,7 @@
         "aacfl-17": {
             "skill": "aacfl-17",
             "name": "Lasting Sickness",
-            "x": 6273.3998,
+            "x": 6319.7998,
             "y": 988.0,
             "maxPoints": 4,
             "stats": [
@@ -3765,7 +3765,7 @@
         "aacfl-18": {
             "skill": "aacfl-18",
             "name": "Quick Draw",
-            "x": 6821.3998,
+            "x": 6867.7998,
             "y": 574.8,
             "maxPoints": 4,
             "stats": [
@@ -3790,7 +3790,7 @@
         "aacfl-19": {
             "skill": "aacfl-19",
             "name": "Castigate",
-            "x": 7457.3998,
+            "x": 7503.7998,
             "y": 1020.4,
             "maxPoints": 3,
             "stats": [
@@ -3811,7 +3811,7 @@
         "aacfl-20": {
             "skill": "aacfl-20",
             "name": "Alchemical Proficiency",
-            "x": 7457.3998,
+            "x": 7503.7998,
             "y": 217.2,
             "maxPoints": 5,
             "stats": [
@@ -3837,7 +3837,7 @@
         "aacfl-21": {
             "skill": "aacfl-21",
             "name": "Hindering Mixture",
-            "x": 7041.7998,
+            "x": 7088.199799999999,
             "y": -332.0,
             "maxPoints": 4,
             "stats": [
@@ -3862,7 +3862,7 @@
         "aacfl-22": {
             "skill": "aacfl-22",
             "name": "Firebomb Cocktail",
-            "x": 7881.0,
+            "x": 7927.4,
             "y": 616.0,
             "maxPoints": 4,
             "stats": [
@@ -3884,7 +3884,7 @@
         "aacfl-23": {
             "skill": "aacfl-23",
             "name": "Flammable Concoction",
-            "x": 8947.79996,
+            "x": 8994.19996,
             "y": 917.2,
             "maxPoints": 4,
             "stats": [
@@ -3904,7 +3904,7 @@
         "aacfl-24": {
             "skill": "aacfl-24",
             "name": "Piercing Debris",
-            "x": 8281.0,
+            "x": 8327.4,
             "y": 1148.8,
             "maxPoints": 4,
             "stats": [
@@ -3925,7 +3925,7 @@
         "aacfl-25": {
             "skill": "aacfl-25",
             "name": "Splash Zone",
-            "x": 6389.3998,
+            "x": 6435.7998,
             "y": -754.0,
             "maxPoints": 4,
             "stats": [
@@ -3950,7 +3950,7 @@
         "aacfl-26": {
             "skill": "aacfl-26",
             "name": "Lightweight",
-            "x": 7541.3998,
+            "x": 7587.7998,
             "y": -792.8,
             "maxPoints": 2,
             "stats": [
@@ -3972,7 +3972,7 @@
         "aacfl-28": {
             "skill": "aacfl-28",
             "name": "Knowledge of Immunity",
-            "x": 6765.3998,
+            "x": 6811.7998,
             "y": 1220.4,
             "maxPoints": 3,
             "stats": [
@@ -3995,7 +3995,7 @@
         "aacfl-29": {
             "skill": "aacfl-29",
             "name": "Amatoxic Pools",
-            "x": 4264.6,
+            "x": 4311.0,
             "y": 1076.0,
             "maxPoints": 4,
             "stats": [
@@ -4015,7 +4015,7 @@
         "aacfl-30": {
             "skill": "aacfl-30",
             "name": "Alchemist's Gift",
-            "x": 5063.3998,
+            "x": 5109.7998,
             "y": 1220.4,
             "maxPoints": 1,
             "stats": [
@@ -5363,7 +5363,7 @@
         "dacn33-0": {
             "skill": "dacn33-0",
             "name": "Dancing Strikes",
-            "x": 6389.3998,
+            "x": 6435.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -5385,7 +5385,7 @@
         "dacn33-2": {
             "skill": "dacn33-2",
             "name": "Slicing",
-            "x": 5812.1998,
+            "x": 5858.5998,
             "y": -304.0,
             "maxPoints": 5,
             "stats": [
@@ -5409,7 +5409,7 @@
         "dacn33-3": {
             "skill": "dacn33-3",
             "name": "Dark Blades",
-            "x": 5377.3998,
+            "x": 5423.7998,
             "y": 126.4,
             "maxPoints": 1,
             "stats": [
@@ -5429,7 +5429,7 @@
         "dacn33-4": {
             "skill": "dacn33-4",
             "name": "Grievous Wounds",
-            "x": 4967.799800000001,
+            "x": 5014.1998,
             "y": -373.600096,
             "maxPoints": 4,
             "stats": [
@@ -5452,7 +5452,7 @@
         "dacn33-5": {
             "skill": "dacn33-5",
             "name": "Trickling Cuts",
-            "x": 4685.3998,
+            "x": 4731.7998,
             "y": -848.0,
             "maxPoints": 3,
             "stats": [
@@ -5477,7 +5477,7 @@
         "dacn33-6": {
             "skill": "dacn33-6",
             "name": "Contaminate",
-            "x": 4374.9998,
+            "x": 4421.399799999999,
             "y": -373.600096,
             "maxPoints": 1,
             "stats": [
@@ -5501,7 +5501,7 @@
         "dacn33-7": {
             "skill": "dacn33-7",
             "name": "Majasa's Dagger",
-            "x": 3772.1998000000003,
+            "x": 3818.5998,
             "y": -373.600096,
             "maxPoints": 2,
             "stats": [
@@ -5522,7 +5522,7 @@
         "dacn33-8": {
             "skill": "dacn33-8",
             "name": "Silent Death",
-            "x": 4040.5998,
+            "x": 4086.9997999999996,
             "y": -848.00012,
             "maxPoints": 1,
             "stats": [
@@ -5544,7 +5544,7 @@
         "dacn33-9": {
             "skill": "dacn33-9",
             "name": "Snake Bites",
-            "x": 4685.3998,
+            "x": 4731.7998,
             "y": 126.399904,
             "maxPoints": 3,
             "stats": [
@@ -5565,7 +5565,7 @@
         "dacn33-10": {
             "skill": "dacn33-10",
             "name": "Eluding Steps",
-            "x": 6389.3998,
+            "x": 6435.7998,
             "y": 600.0,
             "maxPoints": 2,
             "stats": [
@@ -5590,7 +5590,7 @@
         "dacn33-11": {
             "skill": "dacn33-11",
             "name": "Nimble",
-            "x": 5689.3998,
+            "x": 5735.7998,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -5613,7 +5613,7 @@
         "dacn33-12": {
             "skill": "dacn33-12",
             "name": "Underdog",
-            "x": 5077.3998,
+            "x": 5123.7998,
             "y": 548.0,
             "maxPoints": 5,
             "stats": [
@@ -5636,7 +5636,7 @@
         "dacn33-13": {
             "skill": "dacn33-13",
             "name": "Graceful Arena",
-            "x": 4220.9998,
+            "x": 4267.399799999999,
             "y": 992.80004,
             "maxPoints": 5,
             "stats": [
@@ -5661,7 +5661,7 @@
         "dacn33-14": {
             "skill": "dacn33-14",
             "name": "Lacerating Aura",
-            "x": 4040.5998,
+            "x": 4086.9997999999996,
             "y": 126.399904,
             "maxPoints": 4,
             "stats": [
@@ -5681,7 +5681,7 @@
         "dacn33-15": {
             "skill": "dacn33-15",
             "name": "Close Combat",
-            "x": 5215.799800000001,
+            "x": 5262.1998,
             "y": 1240.8,
             "maxPoints": 3,
             "stats": [
@@ -5702,7 +5702,7 @@
         "dacn33-16": {
             "skill": "dacn33-16",
             "name": "Tenacious Vitae",
-            "x": 6636.999652,
+            "x": 6683.399652,
             "y": 1240.8,
             "maxPoints": 3,
             "stats": [
@@ -5726,7 +5726,7 @@
         "dacn33-17": {
             "skill": "dacn33-17",
             "name": "Resolute Technique",
-            "x": 6089.7998,
+            "x": 6136.199799999999,
             "y": 1176.4,
             "maxPoints": 4,
             "stats": [
@@ -5749,7 +5749,7 @@
         "dacn33-18": {
             "skill": "dacn33-18",
             "name": "Invigorating Moves",
-            "x": 7194.99964,
+            "x": 7241.39964,
             "y": 1176.4,
             "maxPoints": 4,
             "stats": [
@@ -5772,7 +5772,7 @@
         "dacn33-19": {
             "skill": "dacn33-19",
             "name": "Quick Step",
-            "x": 7258.9998000000005,
+            "x": 7305.3998,
             "y": 600.0,
             "maxPoints": 4,
             "stats": [
@@ -5796,7 +5796,7 @@
         "dacn33-20": {
             "skill": "dacn33-20",
             "name": "Windmill Ballet",
-            "x": 6947.3998,
+            "x": 6993.7998,
             "y": 214.8,
             "maxPoints": 2,
             "stats": [
@@ -5821,7 +5821,7 @@
         "dacn33-21": {
             "skill": "dacn33-21",
             "name": "Broad Dancing",
-            "x": 6969.3998,
+            "x": 7015.7998,
             "y": -304.0,
             "maxPoints": 3,
             "stats": [
@@ -5843,7 +5843,7 @@
         "dacn33-22": {
             "skill": "dacn33-22",
             "name": "Cutting Corners",
-            "x": 7542.9998,
+            "x": 7589.399799999999,
             "y": -104.0,
             "maxPoints": 3,
             "stats": [
@@ -5869,7 +5869,7 @@
         "dacn33-23": {
             "skill": "dacn33-23",
             "name": "Rhythm",
-            "x": 8372.1998,
+            "x": 8418.5998,
             "y": -35.6,
             "maxPoints": 5,
             "stats": [
@@ -5894,7 +5894,7 @@
         "dacn33-24": {
             "skill": "dacn33-24",
             "name": "Elegance",
-            "x": 7803.3998,
+            "x": 7849.7998,
             "y": 548.0,
             "maxPoints": 3,
             "stats": [
@@ -5917,7 +5917,7 @@
         "dacn33-25": {
             "skill": "dacn33-25",
             "name": "Refined Cuts",
-            "x": 8372.19948,
+            "x": 8418.59948,
             "y": 548.0,
             "maxPoints": 3,
             "stats": [
@@ -5937,7 +5937,7 @@
         "dacn33-26": {
             "skill": "dacn33-26",
             "name": "Art of Blades",
-            "x": 8372.1996,
+            "x": 8418.5996,
             "y": 1103.2,
             "maxPoints": 2,
             "stats": [
@@ -5957,7 +5957,7 @@
         "dacn33-27": {
             "skill": "dacn33-27",
             "name": "Perfect Choreography",
-            "x": 8927.3998,
+            "x": 8973.7998,
             "y": 548.0,
             "maxPoints": 1,
             "stats": [
@@ -5981,7 +5981,7 @@
         "dacn33-28": {
             "skill": "dacn33-28",
             "name": "Sophisticated Stabs",
-            "x": 7845.0002,
+            "x": 7891.4002,
             "y": -668.79992,
             "maxPoints": 3,
             "stats": [
@@ -6003,7 +6003,7 @@
         "dacn33-29": {
             "skill": "dacn33-29",
             "name": "Shadow Steps",
-            "x": 8562.6,
+            "x": 8609.0,
             "y": -753.99992,
             "maxPoints": 1,
             "stats": [
@@ -6027,7 +6027,7 @@
         "dacn33-30": {
             "skill": "dacn33-30",
             "name": "Deadly Waltz",
-            "x": 6389.3998,
+            "x": 6435.7998,
             "y": -632.0,
             "maxPoints": 4,
             "stats": [
@@ -6050,7 +6050,7 @@
         "dacn33-31": {
             "skill": "dacn33-31",
             "name": "Rupture",
-            "x": 5689.39972,
+            "x": 5735.79972,
             "y": -832.0,
             "maxPoints": 5,
             "stats": [
@@ -6070,7 +6070,7 @@
         "dacn33-32": {
             "skill": "dacn33-32",
             "name": "Hidden Blade",
-            "x": 7089.39992,
+            "x": 7135.7999199999995,
             "y": -832.0,
             "maxPoints": 2,
             "stats": [
@@ -7390,7 +7390,7 @@
         "deeco-0": {
             "skill": "deeco-0",
             "name": "Decoy",
-            "x": 6285.39964,
+            "x": 6389.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -7412,7 +7412,7 @@
         "deeco-1": {
             "skill": "deeco-1",
             "name": "Boom",
-            "x": 5849.3996799999995,
+            "x": 5953.39984,
             "y": -465.19996,
             "maxPoints": 5,
             "stats": [
@@ -7437,7 +7437,7 @@
         "deeco-2": {
             "skill": "deeco-2",
             "name": "Excessive Explosives",
-            "x": 4529.39964,
+            "x": 4633.3998,
             "y": -680.0,
             "maxPoints": 5,
             "stats": [
@@ -7462,7 +7462,7 @@
         "deeco-3": {
             "skill": "deeco-3",
             "name": "Explosive Charges",
-            "x": 4529.39964,
+            "x": 4633.3998,
             "y": 680.0,
             "maxPoints": 3,
             "stats": [
@@ -7491,7 +7491,7 @@
         "deeco-4": {
             "skill": "deeco-4",
             "name": "Frostfire Powder",
-            "x": 4997.39964,
+            "x": 5101.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -7518,7 +7518,7 @@
         "deeco-5": {
             "skill": "deeco-5",
             "name": "Remote Detonator",
-            "x": 3884.19964,
+            "x": 3988.1998000000003,
             "y": -755.19996,
             "maxPoints": 1,
             "stats": [
@@ -7541,7 +7541,7 @@
         "deeco-6": {
             "skill": "deeco-6",
             "name": "Rewired Detonator",
-            "x": 3945.3996399999996,
+            "x": 4049.3998,
             "y": -99.999976,
             "maxPoints": 4,
             "stats": [
@@ -7561,7 +7561,7 @@
         "deeco-7": {
             "skill": "deeco-7",
             "name": "Freezing Blast",
-            "x": 5585.399719999999,
+            "x": 5689.39988,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -7581,7 +7581,7 @@
         "deeco-8": {
             "skill": "deeco-8",
             "name": "Stuffed",
-            "x": 3847.7996399999997,
+            "x": 3951.7998000000002,
             "y": 1100.0,
             "maxPoints": 3,
             "stats": [
@@ -7601,7 +7601,7 @@
         "deeco-9": {
             "skill": "deeco-9",
             "name": "Lasting Presence",
-            "x": 5849.39964,
+            "x": 5953.3998,
             "y": 514.4,
             "maxPoints": 5,
             "stats": [
@@ -7628,7 +7628,7 @@
         "deeco-10": {
             "skill": "deeco-10",
             "name": "Embedded Spikes",
-            "x": 6713.799639999999,
+            "x": 6817.7998,
             "y": 514.4,
             "maxPoints": 5,
             "stats": [
@@ -7651,7 +7651,7 @@
         "deeco-11": {
             "skill": "deeco-11",
             "name": "Into the Shadows",
-            "x": 5849.399579999999,
+            "x": 5953.39974,
             "y": 1238.0,
             "maxPoints": 4,
             "stats": [
@@ -7674,7 +7674,7 @@
         "deeco-12": {
             "skill": "deeco-12",
             "name": "Ambush",
-            "x": 5074.599639999999,
+            "x": 5178.5998,
             "y": 1075.2,
             "maxPoints": 1,
             "stats": [
@@ -7694,7 +7694,7 @@
         "deeco-13": {
             "skill": "deeco-13",
             "name": "On Fire",
-            "x": 6713.7995439999995,
+            "x": 6817.799704,
             "y": 1132.8,
             "maxPoints": 1,
             "stats": [
@@ -7720,7 +7720,7 @@
         "deeco-14": {
             "skill": "deeco-14",
             "name": "Kelthan Oil",
-            "x": 7496.99964,
+            "x": 7600.9998,
             "y": 1238.0,
             "maxPoints": 4,
             "stats": [
@@ -7742,7 +7742,7 @@
         "deeco-15": {
             "skill": "deeco-15",
             "name": "Acid Fumes",
-            "x": 8258.99972,
+            "x": 8362.99988,
             "y": 1132.8,
             "maxPoints": 1,
             "stats": [
@@ -7766,7 +7766,7 @@
         "deeco-16": {
             "skill": "deeco-16",
             "name": "Backup Buddy",
-            "x": 6985.39964,
+            "x": 7089.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -7786,7 +7786,7 @@
         "deeco-18": {
             "skill": "deeco-18",
             "name": "Efficient Construction",
-            "x": 6713.7995439999995,
+            "x": 6817.799704,
             "y": -465.2,
             "maxPoints": 3,
             "stats": [
@@ -7808,7 +7808,7 @@
         "deeco-19": {
             "skill": "deeco-19",
             "name": "Sonic Detonation",
-            "x": 7684.99972,
+            "x": 7788.99988,
             "y": -381.19996,
             "maxPoints": 3,
             "stats": [
@@ -7832,7 +7832,7 @@
         "deeco-20": {
             "skill": "deeco-20",
             "name": "Warning Sound",
-            "x": 8446.20004,
+            "x": 8550.2002,
             "y": -290.39992,
             "maxPoints": 5,
             "stats": [
@@ -7852,7 +7852,7 @@
         "deeco-21": {
             "skill": "deeco-21",
             "name": "Ear Shatter",
-            "x": 7603.00004,
+            "x": 7707.0002,
             "y": 456.40008,
             "maxPoints": 5,
             "stats": [
@@ -7876,7 +7876,7 @@
         "deeco-22": {
             "skill": "deeco-22",
             "name": "Harrowing Noise",
-            "x": 8046.199919999999,
+            "x": 8150.2000800000005,
             "y": 88.00012,
             "maxPoints": 2,
             "stats": [
@@ -7899,7 +7899,7 @@
         "deeco-23": {
             "skill": "deeco-23",
             "name": "Sound of Flames",
-            "x": 8392.599839999999,
+            "x": 8496.6,
             "y": 536.00008,
             "maxPoints": 1,
             "stats": [
@@ -7919,7 +7919,7 @@
         "deeco-24": {
             "skill": "deeco-24",
             "name": "Short Fuse",
-            "x": 6285.39964,
+            "x": 6389.3998,
             "y": -811.99992,
             "maxPoints": 5,
             "stats": [
@@ -7943,7 +7943,7 @@
         "deeco-25": {
             "skill": "deeco-25",
             "name": "Shrouded Core",
-            "x": 5385.39964,
+            "x": 5489.3998,
             "y": -900.0,
             "maxPoints": 1,
             "stats": [
@@ -7963,7 +7963,7 @@
         "deeco-26": {
             "skill": "deeco-26",
             "name": "Burning Oil",
-            "x": 7185.39964,
+            "x": 7289.3998,
             "y": -900.0,
             "maxPoints": 5,
             "stats": [
@@ -7985,7 +7985,7 @@
         "deeco-27": {
             "skill": "deeco-27",
             "name": "Meticulous Construction",
-            "x": 8006.19964,
+            "x": 8110.1998,
             "y": -900.0,
             "maxPoints": 5,
             "stats": [
@@ -8008,7 +8008,7 @@
         "deeco-28": {
             "skill": "deeco-28",
             "name": "Grand Diversion",
-            "x": 8737.79964,
+            "x": 8841.7998,
             "y": -812.0,
             "maxPoints": 2,
             "stats": [
@@ -8028,7 +8028,7 @@
         "detar-0": {
             "skill": "detar-0",
             "name": "Detonating Arrow",
-            "x": 6366.9998,
+            "x": 6355.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -8051,7 +8051,7 @@
         "detar-2": {
             "skill": "detar-2",
             "name": "Quick Detonation",
-            "x": 6366.9998,
+            "x": 6355.7998,
             "y": -680.0,
             "maxPoints": 5,
             "stats": [
@@ -8076,7 +8076,7 @@
         "detar-3": {
             "skill": "detar-3",
             "name": "Weak Spot",
-            "x": 5631.399799999999,
+            "x": 5620.199799999999,
             "y": -480.0,
             "maxPoints": 5,
             "stats": [
@@ -8097,7 +8097,7 @@
         "detar-4": {
             "skill": "detar-4",
             "name": "Barrage",
-            "x": 5312.9998,
+            "x": 5301.7998,
             "y": -931.19996,
             "maxPoints": 1,
             "stats": [
@@ -8120,7 +8120,7 @@
         "detar-5": {
             "skill": "detar-5",
             "name": "Dragon Arrow",
-            "x": 4780.9998,
+            "x": 4769.7998,
             "y": -632.0,
             "maxPoints": 1,
             "stats": [
@@ -8141,7 +8141,7 @@
         "detar-6": {
             "skill": "detar-6",
             "name": "Outburst",
-            "x": 5686.9998,
+            "x": 5675.7998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -8165,7 +8165,7 @@
         "detar-7": {
             "skill": "detar-7",
             "name": "Jolting Charge",
-            "x": 5090.9998,
+            "x": 5079.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -8188,7 +8188,7 @@
         "detar-8": {
             "skill": "detar-8",
             "name": "Infused Discharge",
-            "x": 4814.9998,
+            "x": 4803.7998,
             "y": 564.0,
             "maxPoints": 5,
             "stats": [
@@ -8214,7 +8214,7 @@
         "detar-9": {
             "skill": "detar-9",
             "name": "Well Crafted",
-            "x": 4036.1997999999994,
+            "x": 4024.9997999999996,
             "y": 564.0,
             "maxPoints": 5,
             "stats": [
@@ -8238,7 +8238,7 @@
         "detar-10": {
             "skill": "detar-10",
             "name": "Thundersteel Arrow",
-            "x": 3746.9997999999996,
+            "x": 3735.7998,
             "y": 40.0,
             "maxPoints": 1,
             "stats": [
@@ -8263,7 +8263,7 @@
         "detar-11": {
             "skill": "detar-11",
             "name": "Loaded Quiver",
-            "x": 4041.3997999999997,
+            "x": 4030.1998,
             "y": -536.0,
             "maxPoints": 3,
             "stats": [
@@ -8283,7 +8283,7 @@
         "detar-12": {
             "skill": "detar-12",
             "name": "Rapid Detonation",
-            "x": 3746.9997999999996,
+            "x": 3735.7998,
             "y": 1100.0,
             "maxPoints": 1,
             "stats": [
@@ -8303,7 +8303,7 @@
         "detar-13": {
             "skill": "detar-13",
             "name": "Frostfang Arrow",
-            "x": 5265.399719999999,
+            "x": 5254.19972,
             "y": 888.0,
             "maxPoints": 1,
             "stats": [
@@ -8330,7 +8330,7 @@
         "detar-14": {
             "skill": "detar-14",
             "name": "Frozen Resonance",
-            "x": 4769.399719999999,
+            "x": 4758.19972,
             "y": 1154.0,
             "maxPoints": 5,
             "stats": [
@@ -8350,7 +8350,7 @@
         "detar-15": {
             "skill": "detar-15",
             "name": "Arrow of Delay",
-            "x": 5826.9998,
+            "x": 5815.7998,
             "y": 1132.0,
             "maxPoints": 2,
             "stats": [
@@ -8377,7 +8377,7 @@
         "detar-16": {
             "skill": "detar-16",
             "name": "Delayed Detonation",
-            "x": 6366.9998,
+            "x": 6355.7998,
             "y": 1284.0,
             "maxPoints": 2,
             "stats": [
@@ -8402,7 +8402,7 @@
         "detar-17": {
             "skill": "detar-17",
             "name": "Beastslayer Arrow",
-            "x": 6366.9998,
+            "x": 6355.7998,
             "y": 680.0,
             "maxPoints": 4,
             "stats": [
@@ -8428,7 +8428,7 @@
         "detar-18": {
             "skill": "detar-18",
             "name": "Copper Dust Arrow",
-            "x": 6902.5998,
+            "x": 6891.3998,
             "y": 1132.0,
             "maxPoints": 2,
             "stats": [
@@ -8452,7 +8452,7 @@
         "detar-19": {
             "skill": "detar-19",
             "name": "Lethal Blast",
-            "x": 7419.799719999999,
+            "x": 7408.59972,
             "y": 491.2,
             "maxPoints": 3,
             "stats": [
@@ -8475,7 +8475,7 @@
         "detar-20": {
             "skill": "detar-20",
             "name": "Concentration",
-            "x": 8252.999679999999,
+            "x": 8241.79968,
             "y": 1218.4,
             "maxPoints": 3,
             "stats": [
@@ -8496,7 +8496,7 @@
         "detar-21": {
             "skill": "detar-21",
             "name": "Aimed Shot",
-            "x": 8294.9998,
+            "x": 8283.7998,
             "y": 491.20008,
             "maxPoints": 1,
             "stats": [
@@ -8519,7 +8519,7 @@
         "detar-22": {
             "skill": "detar-22",
             "name": "Pinpoint",
-            "x": 8877.799599999998,
+            "x": 8866.5996,
             "y": 870.80004,
             "maxPoints": 2,
             "stats": [
@@ -8539,7 +8539,7 @@
         "detar-23": {
             "skill": "detar-23",
             "name": "Shock Arrow",
-            "x": 7046.9998,
+            "x": 7035.7998,
             "y": -3.05176e-05,
             "maxPoints": 5,
             "stats": [
@@ -8563,7 +8563,7 @@
         "detar-24": {
             "skill": "detar-24",
             "name": "Navigator's Shot",
-            "x": 7684.59988,
+            "x": 7673.39988,
             "y": -386.80004,
             "maxPoints": 1,
             "stats": [
@@ -8585,7 +8585,7 @@
         "detar-26": {
             "skill": "detar-26",
             "name": "Suckerpunch Arrow",
-            "x": 7226.9998,
+            "x": 7215.7998,
             "y": -488.0,
             "maxPoints": 1,
             "stats": [
@@ -8613,7 +8613,7 @@
         "detar-27": {
             "skill": "detar-27",
             "name": "Fastshot",
-            "x": 7420.9998,
+            "x": 7409.7998,
             "y": -931.2,
             "maxPoints": 4,
             "stats": [
@@ -8639,7 +8639,7 @@
         "detar-28": {
             "skill": "detar-28",
             "name": "Arcing Blast",
-            "x": 8668.1994,
+            "x": 8656.9994,
             "y": -932.39992,
             "maxPoints": 4,
             "stats": [
@@ -8664,7 +8664,7 @@
         "detar-29": {
             "skill": "detar-29",
             "name": "Piercing Thunder",
-            "x": 8963.799599999998,
+            "x": 8952.5996,
             "y": -493.19996,
             "maxPoints": 4,
             "stats": [
@@ -8685,7 +8685,7 @@
         "detar-30": {
             "skill": "detar-30",
             "name": "Scorpion Arrow",
-            "x": 8076.59988,
+            "x": 8065.39988,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -8708,7 +8708,7 @@
         "detar-32": {
             "skill": "detar-32",
             "name": "Mana Arrow",
-            "x": 8184.5998,
+            "x": 8173.399799999999,
             "y": -526.8,
             "maxPoints": 1,
             "stats": [
@@ -8733,7 +8733,7 @@
         "detar-34": {
             "skill": "detar-34",
             "name": "Deadly Ailments ",
-            "x": 4546.9998,
+            "x": 4535.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -8753,7 +8753,7 @@
         "dqv5-0": {
             "skill": "dqv5-0",
             "name": "Dark Quiver",
-            "x": 6389.3998,
+            "x": 6280.9998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -8779,7 +8779,7 @@
         "dqv5-2": {
             "skill": "dqv5-2",
             "name": "Scourge Quiver",
-            "x": 5869.3998,
+            "x": 5760.9998,
             "y": 520.0,
             "maxPoints": 4,
             "stats": [
@@ -8803,7 +8803,7 @@
         "dqv5-3": {
             "skill": "dqv5-3",
             "name": "Crimson Quiver",
-            "x": 5388.59976,
+            "x": 5280.1997599999995,
             "y": 900.0,
             "maxPoints": 5,
             "stats": [
@@ -8828,7 +8828,7 @@
         "dqv5-4": {
             "skill": "dqv5-4",
             "name": "Rending Shots",
-            "x": 5388.5998,
+            "x": 5280.199799999999,
             "y": -963.2,
             "maxPoints": 5,
             "stats": [
@@ -8853,7 +8853,7 @@
         "dqv5-5": {
             "skill": "dqv5-5",
             "name": "Mending",
-            "x": 6909.3998,
+            "x": 6800.9998,
             "y": -520.0,
             "maxPoints": 3,
             "stats": [
@@ -8877,7 +8877,7 @@
         "dqv5-6": {
             "skill": "dqv5-6",
             "name": "Nightfall",
-            "x": 7372.9998000000005,
+            "x": 7264.5998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -8902,7 +8902,7 @@
         "dqv5-7": {
             "skill": "dqv5-7",
             "name": "Arrow of the Trickster",
-            "x": 6389.3998,
+            "x": 6280.9998,
             "y": -720.0,
             "maxPoints": 1,
             "stats": [
@@ -8930,7 +8930,7 @@
         "dqv5-8": {
             "skill": "dqv5-8",
             "name": "Quick Draw",
-            "x": 7444.5998,
+            "x": 7336.199799999999,
             "y": -963.2,
             "maxPoints": 3,
             "stats": [
@@ -8954,7 +8954,7 @@
         "dqv5-9": {
             "skill": "dqv5-9",
             "name": "Heavy Arrows",
-            "x": 5869.3998,
+            "x": 5760.9998,
             "y": -520.0,
             "maxPoints": 4,
             "stats": [
@@ -8978,7 +8978,7 @@
         "dqv5-10": {
             "skill": "dqv5-10",
             "name": "Heartseeker",
-            "x": 4857.3998,
+            "x": 4748.9998,
             "y": -420.0,
             "maxPoints": 4,
             "stats": [
@@ -9000,7 +9000,7 @@
         "dqv5-11": {
             "skill": "dqv5-11",
             "name": "Trueshot",
-            "x": 4357.3998,
+            "x": 4248.9998,
             "y": -856.0,
             "maxPoints": 1,
             "stats": [
@@ -9020,7 +9020,7 @@
         "dqv5-12": {
             "skill": "dqv5-12",
             "name": "Fatal Barrage",
-            "x": 3977.3998,
+            "x": 3868.9997999999996,
             "y": -499.19996,
             "maxPoints": 1,
             "stats": [
@@ -9040,7 +9040,7 @@
         "dqv5-13": {
             "skill": "dqv5-13",
             "name": "Archer's Focus",
-            "x": 5388.59976,
+            "x": 5280.1997599999995,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -9066,7 +9066,7 @@
         "dqv5-14": {
             "skill": "dqv5-14",
             "name": "Fiery Vengeance",
-            "x": 4506.9998,
+            "x": 4398.5998,
             "y": 77.599976,
             "maxPoints": 1,
             "stats": [
@@ -9088,7 +9088,7 @@
         "dqv5-15": {
             "skill": "dqv5-15",
             "name": "Dragon Slayer",
-            "x": 3844.1998000000003,
+            "x": 3735.7998,
             "y": 77.6,
             "maxPoints": 1,
             "stats": [
@@ -9111,7 +9111,7 @@
         "dqv5-16": {
             "skill": "dqv5-16",
             "name": "Resolve",
-            "x": 4857.3998,
+            "x": 4748.9998,
             "y": 558.0,
             "maxPoints": 4,
             "stats": [
@@ -9133,7 +9133,7 @@
         "dqv5-17": {
             "skill": "dqv5-17",
             "name": "Umbral Resolution",
-            "x": 3916.5998,
+            "x": 3808.1997999999994,
             "y": 736.0,
             "maxPoints": 5,
             "stats": [
@@ -9155,7 +9155,7 @@
         "dqv5-18": {
             "skill": "dqv5-18",
             "name": "Lacerating Arrows",
-            "x": 4684.5998,
+            "x": 4576.199799999999,
             "y": 1111.2,
             "maxPoints": 1,
             "stats": [
@@ -9176,7 +9176,7 @@
         "dqv5-19": {
             "skill": "dqv5-19",
             "name": "Toxic Quiver",
-            "x": 5869.39992,
+            "x": 5760.999919999999,
             "y": 1243.2,
             "maxPoints": 5,
             "stats": [
@@ -9197,7 +9197,7 @@
         "dqv5-20": {
             "skill": "dqv5-20",
             "name": "Large Quiver",
-            "x": 6909.3998,
+            "x": 6800.9998,
             "y": 520.0,
             "maxPoints": 3,
             "stats": [
@@ -9220,7 +9220,7 @@
         "dqv5-21": {
             "skill": "dqv5-21",
             "name": "Nature's Focus",
-            "x": 6389.3998,
+            "x": 6280.9998,
             "y": 1243.2,
             "maxPoints": 3,
             "stats": [
@@ -9242,7 +9242,7 @@
         "dqv5-22": {
             "skill": "dqv5-22",
             "name": "Elemental Adept",
-            "x": 7059.7998,
+            "x": 6951.399799999999,
             "y": 1243.2,
             "maxPoints": 5,
             "stats": [
@@ -9266,7 +9266,7 @@
         "dqv5-23": {
             "skill": "dqv5-23",
             "name": "Grand Detonation",
-            "x": 7700.1996,
+            "x": 7591.799599999999,
             "y": 1243.2,
             "maxPoints": 1,
             "stats": [
@@ -9286,7 +9286,7 @@
         "dqv5-24": {
             "skill": "dqv5-24",
             "name": "Crippling Arrows",
-            "x": 7516.9998,
+            "x": 7408.5998,
             "y": 720.0,
             "maxPoints": 5,
             "stats": [
@@ -9311,7 +9311,7 @@
         "dqv5-25": {
             "skill": "dqv5-25",
             "name": "Fend Off",
-            "x": 8441.3998,
+            "x": 8332.9998,
             "y": 1132.8004,
             "maxPoints": 1,
             "stats": [
@@ -9331,7 +9331,7 @@
         "dqv5-26": {
             "skill": "dqv5-26",
             "name": "Accessible",
-            "x": 8208.5998,
+            "x": 8100.199799999999,
             "y": 300.0,
             "maxPoints": 5,
             "stats": [
@@ -9358,7 +9358,7 @@
         "dqv5-27": {
             "skill": "dqv5-27",
             "name": "Quickened Arrows",
-            "x": 8922.9998,
+            "x": 8814.5998,
             "y": 700.0,
             "maxPoints": 5,
             "stats": [
@@ -9381,7 +9381,7 @@
         "dqv5-28": {
             "skill": "dqv5-28",
             "name": "Until Dawn",
-            "x": 8241.3998,
+            "x": 8132.9998,
             "y": -320.0,
             "maxPoints": 5,
             "stats": [
@@ -9403,7 +9403,7 @@
         "dqv5-29": {
             "skill": "dqv5-29",
             "name": "Tide of Darkness",
-            "x": 8922.9998,
+            "x": 8814.5998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -9423,7 +9423,7 @@
         "dqv5-30": {
             "skill": "dqv5-30",
             "name": "Perfect Bolts",
-            "x": 7872.99988,
+            "x": 7764.59988,
             "y": -700.0,
             "maxPoints": 5,
             "stats": [
@@ -9446,7 +9446,7 @@
         "dqv5-31": {
             "skill": "dqv5-31",
             "name": "Keen Shots",
-            "x": 8441.3998,
+            "x": 8332.9998,
             "y": -1009.2,
             "maxPoints": 5,
             "stats": [
@@ -9469,7 +9469,7 @@
         "dqv5-32": {
             "skill": "dqv5-32",
             "name": "Heavy Artillery",
-            "x": 8981.7998,
+            "x": 8873.3998,
             "y": -700.0,
             "maxPoints": 1,
             "stats": [
@@ -9489,7 +9489,7 @@
         "ex4tp-0": {
             "skill": "ex4tp-0",
             "name": "Net",
-            "x": 6285.39964,
+            "x": 6389.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -9508,7 +9508,7 @@
         "ex4tp-2": {
             "skill": "ex4tp-2",
             "name": "Ash Compartment",
-            "x": 5376.19964,
+            "x": 5480.1998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -9533,7 +9533,7 @@
         "ex4tp-3": {
             "skill": "ex4tp-3",
             "name": "Hold This",
-            "x": 5276.599639999999,
+            "x": 5380.5998,
             "y": -587.2,
             "maxPoints": 1,
             "stats": [
@@ -9558,7 +9558,7 @@
         "ex4tp-4": {
             "skill": "ex4tp-4",
             "name": "Aspect of the Rabbit",
-            "x": 4775.799639999999,
+            "x": 4879.799800000001,
             "y": -832.0,
             "maxPoints": 1,
             "stats": [
@@ -9580,7 +9580,7 @@
         "ex4tp-5": {
             "skill": "ex4tp-5",
             "name": "Arrow Traps",
-            "x": 4420.19964,
+            "x": 4524.1998,
             "y": -448.4,
             "maxPoints": 1,
             "stats": [
@@ -9606,7 +9606,7 @@
         "ex4tp-6": {
             "skill": "ex4tp-6",
             "name": "Blasting Device",
-            "x": 3735.7998,
+            "x": 3839.7999600000003,
             "y": -448.39988,
             "maxPoints": 2,
             "stats": [
@@ -9626,7 +9626,7 @@
         "ex4tp-7": {
             "skill": "ex4tp-7",
             "name": "Static Mines",
-            "x": 4420.19964,
+            "x": 4524.1998,
             "y": 248.00012,
             "maxPoints": 1,
             "stats": [
@@ -9652,7 +9652,7 @@
         "ex4tp-8": {
             "skill": "ex4tp-8",
             "name": "Lightning Bomb",
-            "x": 3735.7998,
+            "x": 3839.7999600000003,
             "y": 248.00012,
             "maxPoints": 4,
             "stats": [
@@ -9673,7 +9673,7 @@
         "ex4tp-9": {
             "skill": "ex4tp-9",
             "name": "Trapas",
-            "x": 5048.99964,
+            "x": 5152.9998,
             "y": 640.0,
             "maxPoints": 1,
             "stats": [
@@ -9701,7 +9701,7 @@
         "ex4tp-10": {
             "skill": "ex4tp-10",
             "name": "Coldsnap Mines",
-            "x": 5302.99964,
+            "x": 5406.9998000000005,
             "y": 1232.0,
             "maxPoints": 1,
             "stats": [
@@ -9730,7 +9730,7 @@
         "ex4tp-11": {
             "skill": "ex4tp-11",
             "name": "Flash Frozen",
-            "x": 4605.799639999999,
+            "x": 4709.799800000001,
             "y": 1232.0,
             "maxPoints": 3,
             "stats": [
@@ -9753,7 +9753,7 @@
         "ex4tp-12": {
             "skill": "ex4tp-12",
             "name": "Freezing Trap",
-            "x": 4120.99964,
+            "x": 4224.9998,
             "y": 809.6,
             "maxPoints": 1,
             "stats": [
@@ -9778,7 +9778,7 @@
         "ex4tp-13": {
             "skill": "ex4tp-13",
             "name": "Tinkerer's Design",
-            "x": 6070.19964,
+            "x": 6174.1998,
             "y": 748.0,
             "maxPoints": 4,
             "stats": [
@@ -9803,7 +9803,7 @@
         "ex4tp-14": {
             "skill": "ex4tp-14",
             "name": "Adaptive Fuse",
-            "x": 5585.39964,
+            "x": 5689.3998,
             "y": 440.00006,
             "maxPoints": 1,
             "stats": [
@@ -9827,7 +9827,7 @@
         "ex4tp-15": {
             "skill": "ex4tp-15",
             "name": "Prepared Demolition",
-            "x": 6285.39964,
+            "x": 6389.3998,
             "y": 1232.0,
             "maxPoints": 4,
             "stats": [
@@ -9853,7 +9853,7 @@
         "ex4tp-16": {
             "skill": "ex4tp-16",
             "name": "Gadgeteer",
-            "x": 6821.799639999999,
+            "x": 6925.7998,
             "y": 748.0,
             "maxPoints": 2,
             "stats": [
@@ -9879,7 +9879,7 @@
         "ex4tp-17": {
             "skill": "ex4tp-17",
             "name": "Smoke Traps",
-            "x": 7589.799639999999,
+            "x": 7693.799800000001,
             "y": 900.0,
             "maxPoints": 1,
             "stats": [
@@ -9908,7 +9908,7 @@
         "ex4tp-18": {
             "skill": "ex4tp-18",
             "name": "Umbral Saboteur",
-            "x": 7162.99972,
+            "x": 7266.99988,
             "y": 1232.0,
             "maxPoints": 1,
             "stats": [
@@ -9928,7 +9928,7 @@
         "ex4tp-19": {
             "skill": "ex4tp-19",
             "name": "Jelkhor's Blueprint",
-            "x": 8129.39964,
+            "x": 8233.3998,
             "y": 473.2,
             "maxPoints": 4,
             "stats": [
@@ -9955,7 +9955,7 @@
         "ex4tp-20": {
             "skill": "ex4tp-20",
             "name": "Sky Signal",
-            "x": 8480.599839999999,
+            "x": 8584.6,
             "y": 1134.4,
             "maxPoints": 1,
             "stats": [
@@ -9979,7 +9979,7 @@
         "ex4tp-21": {
             "skill": "ex4tp-21",
             "name": "Free Lofting Bird",
-            "x": 8880.599839999999,
+            "x": 8984.6,
             "y": 772.0,
             "maxPoints": 1,
             "stats": [
@@ -9999,7 +9999,7 @@
         "ex4tp-22": {
             "skill": "ex4tp-22",
             "name": "No Man's Land",
-            "x": 7909.39964,
+            "x": 8013.3998,
             "y": -832.0,
             "maxPoints": 1,
             "stats": [
@@ -10025,7 +10025,7 @@
         "ex4tp-23": {
             "skill": "ex4tp-23",
             "name": "Minefield",
-            "x": 7185.39964,
+            "x": 7289.3998,
             "y": 131.6,
             "maxPoints": 4,
             "stats": [
@@ -10049,7 +10049,7 @@
         "ex4tp-24": {
             "skill": "ex4tp-24",
             "name": "Clustered Explosives",
-            "x": 8041.39964,
+            "x": 8145.3998,
             "y": -100.0,
             "maxPoints": 2,
             "stats": [
@@ -10076,7 +10076,7 @@
         "ex4tp-25": {
             "skill": "ex4tp-25",
             "name": "Subtle Sabotage",
-            "x": 8680.599839999999,
+            "x": 8784.6,
             "y": 131.599976,
             "maxPoints": 2,
             "stats": [
@@ -10102,7 +10102,7 @@
         "ex4tp-26": {
             "skill": "ex4tp-26",
             "name": "Blast Rain",
-            "x": 8829.39964,
+            "x": 8933.3998,
             "y": -512.0,
             "maxPoints": 1,
             "stats": [
@@ -10127,7 +10127,7 @@
         "ex4tp-27": {
             "skill": "ex4tp-27",
             "name": "Impact Trigger",
-            "x": 8462.99924,
+            "x": 8566.9994,
             "y": -912.00024,
             "maxPoints": 1,
             "stats": [
@@ -10149,7 +10149,7 @@
         "ex4tp-28": {
             "skill": "ex4tp-28",
             "name": "Trap Sprinkler",
-            "x": 6939.39964,
+            "x": 7043.3998,
             "y": -387.2,
             "maxPoints": 3,
             "stats": [
@@ -10174,7 +10174,7 @@
         "ex4tp-29": {
             "skill": "ex4tp-29",
             "name": "Automated Bombardment",
-            "x": 7481.39964,
+            "x": 7585.3998,
             "y": -482.8,
             "maxPoints": 1,
             "stats": [
@@ -10195,7 +10195,7 @@
         "ex4tp-30": {
             "skill": "ex4tp-30",
             "name": "Siege Engineering",
-            "x": 7216.599639999999,
+            "x": 7320.5998,
             "y": -880.4,
             "maxPoints": 2,
             "stats": [
@@ -10216,7 +10216,7 @@
         "ex4tp-31": {
             "skill": "ex4tp-31",
             "name": "Trapuchet",
-            "x": 6607.799639999999,
+            "x": 6711.7998,
             "y": -751.6,
             "maxPoints": 1,
             "stats": [
@@ -10240,7 +10240,7 @@
         "ex4tp-32": {
             "skill": "ex4tp-32",
             "name": "Instrument of the Alchemist",
-            "x": 5985.3997,
+            "x": 6089.39986,
             "y": -751.6,
             "maxPoints": 1,
             "stats": [
@@ -10261,7 +10261,7 @@
         "exvol8-0": {
             "skill": "exvol8-0",
             "name": "Hail Of Arrows",
-            "x": 6366.9998,
+            "x": 6389.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -10281,7 +10281,7 @@
         "exvol8-2": {
             "skill": "exvol8-2",
             "name": "Volley",
-            "x": 5686.9998,
+            "x": 5709.3998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -10305,7 +10305,7 @@
         "exvol8-3": {
             "skill": "exvol8-3",
             "name": "Blot Out the Sun",
-            "x": 5846.99972,
+            "x": 5869.39972,
             "y": -500.0,
             "maxPoints": 5,
             "stats": [
@@ -10331,7 +10331,7 @@
         "exvol8-4": {
             "skill": "exvol8-4",
             "name": "Fight in the Shade",
-            "x": 5372.199799999999,
+            "x": 5394.5998,
             "y": -820.8,
             "maxPoints": 1,
             "stats": [
@@ -10351,7 +10351,7 @@
         "exvol8-5": {
             "skill": "exvol8-5",
             "name": "Skystrike",
-            "x": 4634.9998,
+            "x": 4657.3998,
             "y": -240.0,
             "maxPoints": 1,
             "stats": [
@@ -10375,7 +10375,7 @@
         "exvol8-6": {
             "skill": "exvol8-6",
             "name": "Silver Arrows",
-            "x": 4706.9998,
+            "x": 4729.3998,
             "y": -784.0,
             "maxPoints": 4,
             "stats": [
@@ -10395,7 +10395,7 @@
         "exvol8-7": {
             "skill": "exvol8-7",
             "name": "Condemn",
-            "x": 3967.3997999999997,
+            "x": 3989.7998000000002,
             "y": -340.80008,
             "maxPoints": 3,
             "stats": [
@@ -10416,7 +10416,7 @@
         "exvol8-8": {
             "skill": "exvol8-8",
             "name": "Blighted Arrows",
-            "x": 5071.399799999999,
+            "x": 5093.799800000001,
             "y": 200.0,
             "maxPoints": 5,
             "stats": [
@@ -10438,7 +10438,7 @@
         "exvol8-9": {
             "skill": "exvol8-9",
             "name": "Sundering Rain",
-            "x": 4410.199799999999,
+            "x": 4432.5998,
             "y": 199.99994,
             "maxPoints": 5,
             "stats": [
@@ -10462,7 +10462,7 @@
         "exvol8-10": {
             "skill": "exvol8-10",
             "name": "Lethality",
-            "x": 4104.9998,
+            "x": 4127.3998,
             "y": 732.8,
             "maxPoints": 5,
             "stats": [
@@ -10487,7 +10487,7 @@
         "exvol8-11": {
             "skill": "exvol8-11",
             "name": "Arsonist",
-            "x": 4410.199799999999,
+            "x": 4432.5998,
             "y": 1227.2,
             "maxPoints": 4,
             "stats": [
@@ -10512,7 +10512,7 @@
         "exvol8-12": {
             "skill": "exvol8-12",
             "name": "Scorched Earth",
-            "x": 5071.399799999999,
+            "x": 5093.799800000001,
             "y": 1227.2,
             "maxPoints": 1,
             "stats": [
@@ -10538,7 +10538,7 @@
         "exvol8-13": {
             "skill": "exvol8-13",
             "name": "Pristine Fletcher",
-            "x": 5846.9998,
+            "x": 5869.3998,
             "y": 500.0,
             "maxPoints": 5,
             "stats": [
@@ -10564,7 +10564,7 @@
         "exvol8-14": {
             "skill": "exvol8-14",
             "name": "Soul Stealer Arrows",
-            "x": 4742.9998,
+            "x": 4765.3998,
             "y": 732.8,
             "maxPoints": 3,
             "stats": [
@@ -10584,7 +10584,7 @@
         "exvol8-16": {
             "skill": "exvol8-16",
             "name": "Focus",
-            "x": 6366.9998,
+            "x": 6389.3998,
             "y": 680.0,
             "maxPoints": 5,
             "stats": [
@@ -10608,7 +10608,7 @@
         "exvol8-17": {
             "skill": "exvol8-17",
             "name": "Quick Draw",
-            "x": 6886.9998,
+            "x": 6909.3998,
             "y": 500.0,
             "maxPoints": 3,
             "stats": [
@@ -10635,7 +10635,7 @@
         "exvol8-18": {
             "skill": "exvol8-18",
             "name": "Backup Volley",
-            "x": 6366.9998,
+            "x": 6389.3998,
             "y": 1250.4,
             "maxPoints": 1,
             "stats": [
@@ -10658,7 +10658,7 @@
         "exvol8-19": {
             "skill": "exvol8-19",
             "name": "Deadly Draw",
-            "x": 7146.9998,
+            "x": 7169.3998,
             "y": 1250.4,
             "maxPoints": 3,
             "stats": [
@@ -10680,7 +10680,7 @@
         "exvol8-20": {
             "skill": "exvol8-20",
             "name": "Tear Flesh",
-            "x": 8165.7994,
+            "x": 8188.1994,
             "y": 732.8,
             "maxPoints": 5,
             "stats": [
@@ -10702,7 +10702,7 @@
         "exvol8-21": {
             "skill": "exvol8-21",
             "name": "Aim for the Heart",
-            "x": 8596.9998,
+            "x": 8619.3998,
             "y": 1072.0,
             "maxPoints": 3,
             "stats": [
@@ -10723,7 +10723,7 @@
         "exvol8-22": {
             "skill": "exvol8-22",
             "name": "Arrow Spray",
-            "x": 7676.2,
+            "x": 7698.6,
             "y": 1027.2,
             "maxPoints": 1,
             "stats": [
@@ -10743,7 +10743,7 @@
         "exvol8-23": {
             "skill": "exvol8-23",
             "name": "Pin Down",
-            "x": 7046.9998,
+            "x": 7069.3998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -10766,7 +10766,7 @@
         "exvol8-24": {
             "skill": "exvol8-24",
             "name": "Crystal Arrows",
-            "x": 7911.399719999999,
+            "x": 7933.79972,
             "y": 130.0,
             "maxPoints": 1,
             "stats": [
@@ -10790,7 +10790,7 @@
         "exvol8-25": {
             "skill": "exvol8-25",
             "name": "Frost Shots",
-            "x": 8734.9998,
+            "x": 8757.3998,
             "y": 255.6,
             "maxPoints": 5,
             "stats": [
@@ -10811,7 +10811,7 @@
         "exvol8-26": {
             "skill": "exvol8-26",
             "name": "Steady",
-            "x": 6366.9998,
+            "x": 6389.3998,
             "y": -680.0,
             "maxPoints": 3,
             "stats": [
@@ -10834,7 +10834,7 @@
         "exvol8-27": {
             "skill": "exvol8-27",
             "name": "Nowhere to Hide",
-            "x": 6886.9998,
+            "x": 6909.3998,
             "y": -500.0,
             "maxPoints": 5,
             "stats": [
@@ -10858,7 +10858,7 @@
         "exvol8-28": {
             "skill": "exvol8-28",
             "name": "The Hunt",
-            "x": 7847.7998,
+            "x": 7870.1998,
             "y": -400.0,
             "maxPoints": 1,
             "stats": [
@@ -10881,7 +10881,7 @@
         "exvol8-29": {
             "skill": "exvol8-29",
             "name": "Endless Barrage",
-            "x": 8844.9998,
+            "x": 8867.3998,
             "y": -300.0,
             "maxPoints": 1,
             "stats": [
@@ -10904,7 +10904,7 @@
         "exvol8-30": {
             "skill": "exvol8-30",
             "name": "Acid Rain",
-            "x": 7517.799599999999,
+            "x": 7540.1996,
             "y": -880.0,
             "maxPoints": 1,
             "stats": [
@@ -10930,7 +10930,7 @@
         "exvol8-31": {
             "skill": "exvol8-31",
             "name": "Venom Arrows",
-            "x": 8397.000039999999,
+            "x": 8419.40004,
             "y": -880.0,
             "maxPoints": 5,
             "stats": [
@@ -10950,7 +10950,7 @@
         "exvol8-32": {
             "skill": "exvol8-32",
             "name": "Headshot",
-            "x": 5796.9998,
+            "x": 5819.3998,
             "y": 1107.6,
             "maxPoints": 3,
             "stats": [
@@ -11294,7 +11294,7 @@
                 "falc0-15"
             ],
             "description": [
-                "A portion of your your chance to bleed, poison, shred armor, shred resistances, and slow on hit now also apply to your Falcon's hits."
+                "A portion of your chance to bleed, poison, shred armor, shred resistances, and slow on hit now also apply to your Falcon's hits."
             ]
         },
         "falc0-15": {
@@ -11439,7 +11439,7 @@
                 "falc0-23"
             ],
             "description": [
-                "When you directly use a melee, throwing, or bow attack and hit at least one enemy, you reduce a portion of {Falconer Strike's} remaining cooldown."
+                "When you directly use a melee, throwing, or bow attack and hit at least one enemy, you reduce a portion of {Falcon Strike's} remaining cooldown."
             ]
         },
         "falc0-21": {
@@ -11670,7 +11670,7 @@
         "flur3-0": {
             "skill": "flur3-0",
             "name": "Flurry",
-            "x": 6366.9998,
+            "x": 6389.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -11691,7 +11691,7 @@
         "flur3-2": {
             "skill": "flur3-2",
             "name": "Alacrity",
-            "x": 5662.9998,
+            "x": 5685.3998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -11715,7 +11715,7 @@
         "flur3-3": {
             "skill": "flur3-3",
             "name": "Relentless",
-            "x": 6006.9998,
+            "x": 6029.3998,
             "y": 540.0,
             "maxPoints": 2,
             "stats": [
@@ -11744,7 +11744,7 @@
         "flur3-4": {
             "skill": "flur3-4",
             "name": "Kineticism",
-            "x": 6726.9998,
+            "x": 6749.3998,
             "y": -480.80004,
             "maxPoints": 4,
             "stats": [
@@ -11768,7 +11768,7 @@
         "flur3-5": {
             "skill": "flur3-5",
             "name": "Deep Strikes",
-            "x": 7038.9998,
+            "x": 7061.3998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -11792,7 +11792,7 @@
         "flur3-6": {
             "skill": "flur3-6",
             "name": "Blood Revelry",
-            "x": 6006.9998,
+            "x": 6029.3998,
             "y": -480.8,
             "maxPoints": 2,
             "stats": [
@@ -11819,7 +11819,7 @@
         "flur3-7": {
             "skill": "flur3-7",
             "name": "Adrenaline Rush",
-            "x": 5382.9998,
+            "x": 5405.3998,
             "y": 758.0,
             "maxPoints": 5,
             "stats": [
@@ -11845,7 +11845,7 @@
         "flur3-8": {
             "skill": "flur3-8",
             "name": "Bloodplay",
-            "x": 5110.9998,
+            "x": 5133.3998,
             "y": 1234.0,
             "maxPoints": 3,
             "stats": [
@@ -11865,7 +11865,7 @@
         "flur3-9": {
             "skill": "flur3-9",
             "name": "Giant Slayer",
-            "x": 5098.9998,
+            "x": 5121.3998,
             "y": 238.0,
             "maxPoints": 3,
             "stats": [
@@ -11885,7 +11885,7 @@
         "flur3-10": {
             "skill": "flur3-10",
             "name": "Inexhaustible",
-            "x": 4808.5998,
+            "x": 4830.9998,
             "y": 758.0,
             "maxPoints": 4,
             "stats": [
@@ -11907,7 +11907,7 @@
         "flur3-11": {
             "skill": "flur3-11",
             "name": "Strained Reflexes",
-            "x": 4290.9998,
+            "x": 4313.3998,
             "y": 514.0,
             "maxPoints": 2,
             "stats": [
@@ -11927,7 +11927,7 @@
         "flur3-12": {
             "skill": "flur3-12",
             "name": "Lethal Vector",
-            "x": 7350.9998,
+            "x": 7373.3998,
             "y": 754.0,
             "maxPoints": 3,
             "stats": [
@@ -11950,7 +11950,7 @@
         "flur3-13": {
             "skill": "flur3-13",
             "name": "Boundless Blows",
-            "x": 4954.199799999999,
+            "x": 4976.5998,
             "y": -200.0,
             "maxPoints": 1,
             "stats": [
@@ -11974,7 +11974,7 @@
         "flur3-14": {
             "skill": "flur3-14",
             "name": "Accelerating Impact",
-            "x": 4776.9998,
+            "x": 4799.3998,
             "y": -820.4,
             "maxPoints": 1,
             "stats": [
@@ -11995,7 +11995,7 @@
         "flur3-15": {
             "skill": "flur3-15",
             "name": "Pavise",
-            "x": 4420.199799999999,
+            "x": 4442.5998,
             "y": -389.599976,
             "maxPoints": 5,
             "stats": [
@@ -12019,7 +12019,7 @@
         "flur3-16": {
             "skill": "flur3-16",
             "name": "Arrow Storm",
-            "x": 3874.1997999999994,
+            "x": 3896.5998,
             "y": -574.4,
             "maxPoints": 1,
             "stats": [
@@ -12040,7 +12040,7 @@
         "flur3-17": {
             "skill": "flur3-17",
             "name": "Vile Tactics",
-            "x": 6726.9998,
+            "x": 6749.3998,
             "y": 540.0,
             "maxPoints": 4,
             "stats": [
@@ -12071,7 +12071,7 @@
         "flur3-18": {
             "skill": "flur3-18",
             "name": "Reopened Wounds",
-            "x": 7622.9998,
+            "x": 7645.3998,
             "y": 1234.0,
             "maxPoints": 3,
             "stats": [
@@ -12091,7 +12091,7 @@
         "flur3-19": {
             "skill": "flur3-19",
             "name": "Compounding Toxin",
-            "x": 7634.9998,
+            "x": 7657.3998,
             "y": 238.0,
             "maxPoints": 3,
             "stats": [
@@ -12111,7 +12111,7 @@
         "flur3-20": {
             "skill": "flur3-20",
             "name": "Shockwave",
-            "x": 8309.39972,
+            "x": 8331.79972,
             "y": 999.6,
             "maxPoints": 1,
             "stats": [
@@ -12133,7 +12133,7 @@
         "flur3-21": {
             "skill": "flur3-21",
             "name": "Billowing Waves",
-            "x": 8817.3998,
+            "x": 8839.7998,
             "y": 1163.6,
             "maxPoints": 2,
             "stats": [
@@ -12153,7 +12153,7 @@
         "flur3-22": {
             "skill": "flur3-22",
             "name": "Precision",
-            "x": 7771.7998,
+            "x": 7794.1998,
             "y": -240.0,
             "maxPoints": 3,
             "stats": [
@@ -12176,7 +12176,7 @@
         "flur3-23": {
             "skill": "flur3-23",
             "name": "Incision",
-            "x": 8292.5998,
+            "x": 8314.9998,
             "y": -440.0,
             "maxPoints": 4,
             "stats": [
@@ -12198,7 +12198,7 @@
         "flur3-24": {
             "skill": "flur3-24",
             "name": "Stolen Endurance",
-            "x": 8850.9998,
+            "x": 8873.3998,
             "y": -661.2,
             "maxPoints": 2,
             "stats": [
@@ -12219,7 +12219,7 @@
         "flur3-25": {
             "skill": "flur3-25",
             "name": "Second Wind",
-            "x": 5666.9998,
+            "x": 5689.3998,
             "y": -871.99992,
             "maxPoints": 3,
             "stats": [
@@ -12241,7 +12241,7 @@
         "flur3-26": {
             "skill": "flur3-26",
             "name": "Sap Willpower",
-            "x": 7038.9998,
+            "x": 7061.3998,
             "y": -872.0,
             "maxPoints": 2,
             "stats": [
@@ -12261,7 +12261,7 @@
         "flur3-27": {
             "skill": "flur3-27",
             "name": "Hamstring",
-            "x": 8777.3998,
+            "x": 8799.7998,
             "y": 567.6,
             "maxPoints": 3,
             "stats": [
@@ -12281,7 +12281,7 @@
         "flur3-28": {
             "skill": "flur3-28",
             "name": "Crescendo",
-            "x": 8193.39972,
+            "x": 8215.79972,
             "y": 407.599976,
             "maxPoints": 3,
             "stats": [
@@ -12306,7 +12306,7 @@
         "flur3-29": {
             "skill": "flur3-29",
             "name": "Fusillade",
-            "x": 4036.9997999999996,
+            "x": 4059.3998,
             "y": 70.0,
             "maxPoints": 1,
             "stats": [
@@ -12456,7 +12456,7 @@
             "maxPoints": 2,
             "stats": [
                 "+2% Hit Damage Per Bleed Stack",
-                "+30% Maxiumum Hit Damage"
+                "+30% Maximum Hit Damage"
             ],
             "in": [
                 "mira59-6"
@@ -13622,7 +13622,7 @@
         "ne01t-0": {
             "skill": "ne01t-0",
             "name": "Net",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -13641,7 +13641,7 @@
         "ne01t-2": {
             "skill": "ne01t-2",
             "name": "Rending Wires",
-            "x": 5689.3998,
+            "x": 5678.19996,
             "y": 460.80012,
             "maxPoints": 4,
             "stats": [
@@ -13665,7 +13665,7 @@
         "ne01t-3": {
             "skill": "ne01t-3",
             "name": "Advanced Engineering",
-            "x": 5311.3998,
+            "x": 5300.19996,
             "y": -6.0,
             "maxPoints": 3,
             "stats": [
@@ -13689,7 +13689,7 @@
         "ne01t-4": {
             "skill": "ne01t-4",
             "name": "Surprise Snare",
-            "x": 5937.3998,
+            "x": 5926.19996,
             "y": -536.0,
             "maxPoints": 1,
             "stats": [
@@ -13718,7 +13718,7 @@
         "ne01t-5": {
             "skill": "ne01t-5",
             "name": "Tanglewire",
-            "x": 4887.3998,
+            "x": 4876.19996,
             "y": -620.0,
             "maxPoints": 3,
             "stats": [
@@ -13741,7 +13741,7 @@
         "ne01t-6": {
             "skill": "ne01t-6",
             "name": "Tangled and Prone",
-            "x": 4256.9998,
+            "x": 4245.79996,
             "y": -829.6,
             "maxPoints": 1,
             "stats": [
@@ -13765,7 +13765,7 @@
         "ne01t-7": {
             "skill": "ne01t-7",
             "name": "Leading the Hunt",
-            "x": 4704.9998,
+            "x": 4693.79996,
             "y": -20.4,
             "maxPoints": 3,
             "stats": [
@@ -13788,7 +13788,7 @@
         "ne01t-8": {
             "skill": "ne01t-8",
             "name": "Quick Throws",
-            "x": 4045.3998,
+            "x": 4034.19996,
             "y": -240.0,
             "maxPoints": 2,
             "stats": [
@@ -13808,7 +13808,7 @@
         "ne01t-9": {
             "skill": "ne01t-9",
             "name": "Barbed Net",
-            "x": 4755.79972,
+            "x": 4744.59988,
             "y": 748.0,
             "maxPoints": 1,
             "stats": [
@@ -13832,7 +13832,7 @@
         "ne01t-10": {
             "skill": "ne01t-10",
             "name": "Voltaic Device",
-            "x": 4249.3998,
+            "x": 4238.19996,
             "y": 247.20008,
             "maxPoints": 1,
             "stats": [
@@ -13856,7 +13856,7 @@
         "ne01t-11": {
             "skill": "ne01t-11",
             "name": "Trapper's Crescendo",
-            "x": 3746.99964,
+            "x": 3735.7998,
             "y": 748.0,
             "maxPoints": 1,
             "stats": [
@@ -13878,7 +13878,7 @@
         "ne01t-12": {
             "skill": "ne01t-12",
             "name": "Curved Hooks",
-            "x": 4249.3998,
+            "x": 4238.19996,
             "y": 1247.20008,
             "maxPoints": 5,
             "stats": [
@@ -13902,7 +13902,7 @@
         "ne01t-13": {
             "skill": "ne01t-13",
             "name": "Acid Snare",
-            "x": 4249.3998,
+            "x": 4238.19996,
             "y": 748.0,
             "maxPoints": 1,
             "stats": [
@@ -13923,7 +13923,7 @@
         "ne01t-14": {
             "skill": "ne01t-14",
             "name": "Bold Throw",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": 700.0,
             "maxPoints": 1,
             "stats": [
@@ -13945,7 +13945,7 @@
         "ne01t-15": {
             "skill": "ne01t-15",
             "name": "Net Trap",
-            "x": 5825.3998,
+            "x": 5814.19996,
             "y": 1144.0,
             "maxPoints": 1,
             "stats": [
@@ -13972,7 +13972,7 @@
         "ne01t-16": {
             "skill": "ne01t-16",
             "name": "Spear Trap",
-            "x": 5196.5998,
+            "x": 5185.39996,
             "y": 1224.80128,
             "maxPoints": 1,
             "stats": [
@@ -13996,7 +13996,7 @@
         "ne01t-17": {
             "skill": "ne01t-17",
             "name": "Server of Tricks",
-            "x": 6497.3998,
+            "x": 6486.19996,
             "y": 1224.80128,
             "maxPoints": 2,
             "stats": [
@@ -14017,7 +14017,7 @@
         "ne01t-18": {
             "skill": "ne01t-18",
             "name": "Trickster Artist",
-            "x": 7089.3998,
+            "x": 7078.19996,
             "y": 460.80004,
             "maxPoints": 1,
             "stats": [
@@ -14040,7 +14040,7 @@
         "ne01t-19": {
             "skill": "ne01t-19",
             "name": "Zone of Control",
-            "x": 7440.5998,
+            "x": 7429.39996,
             "y": 860.80004,
             "maxPoints": 3,
             "stats": [
@@ -14063,7 +14063,7 @@
         "ne01t-20": {
             "skill": "ne01t-20",
             "name": "Silvered Spikes",
-            "x": 7089.3998,
+            "x": 7078.19996,
             "y": 1201.6,
             "maxPoints": 1,
             "stats": [
@@ -14083,12 +14083,12 @@
         "ne01t-21": {
             "skill": "ne01t-21",
             "name": "Tinkerer's Combo",
-            "x": 7780.9998,
+            "x": 7769.79996,
             "y": 1201.6,
             "maxPoints": 1,
             "stats": [
                 "Caltrops At Target Location",
-                "2 Caltrops per 2 Seconds"
+                "1 Caltrops per 2 Seconds"
             ],
             "in": [
                 "ne01t-19"
@@ -14104,7 +14104,7 @@
         "ne01t-22": {
             "skill": "ne01t-22",
             "name": "Agile Hunter",
-            "x": 8091.3998,
+            "x": 8080.19996,
             "y": 460.8,
             "maxPoints": 1,
             "stats": [
@@ -14129,7 +14129,7 @@
         "ne01t-23": {
             "skill": "ne01t-23",
             "name": "Assault of the Huntress",
-            "x": 8592.1998,
+            "x": 8580.999960000001,
             "y": 1060.8,
             "maxPoints": 1,
             "stats": [
@@ -14149,7 +14149,7 @@
         "ne01t-24": {
             "skill": "ne01t-24",
             "name": "Into the Shadows",
-            "x": 8891.3998,
+            "x": 8880.19996,
             "y": 296.0,
             "maxPoints": 1,
             "stats": [
@@ -14172,7 +14172,7 @@
         "ne01t-25": {
             "skill": "ne01t-25",
             "name": "Strongly Woven",
-            "x": 7489.3998,
+            "x": 7478.19996,
             "y": 6.1036e-05,
             "maxPoints": 4,
             "stats": [
@@ -14196,7 +14196,7 @@
         "ne01t-26": {
             "skill": "ne01t-26",
             "name": "Hunters of Heorot",
-            "x": 8137.3998,
+            "x": 8126.19996,
             "y": -336.0,
             "maxPoints": 1,
             "stats": [
@@ -14221,7 +14221,7 @@
         "ne01t-27": {
             "skill": "ne01t-27",
             "name": "Engineering Smarts",
-            "x": 8808.1998,
+            "x": 8796.999960000001,
             "y": -336.0,
             "maxPoints": 4,
             "stats": [
@@ -14243,7 +14243,7 @@
         "ne01t-28": {
             "skill": "ne01t-28",
             "name": "Acrobatic",
-            "x": 8470.9998,
+            "x": 8459.79996,
             "y": -900.0,
             "maxPoints": 1,
             "stats": [
@@ -14265,7 +14265,7 @@
         "ne01t-29": {
             "skill": "ne01t-29",
             "name": "Entangled Weapons",
-            "x": 7328.1998,
+            "x": 7316.99996,
             "y": -844.0,
             "maxPoints": 1,
             "stats": [
@@ -14292,7 +14292,7 @@
         "ne01t-30": {
             "skill": "ne01t-30",
             "name": "Exposed Bait",
-            "x": 6839.3998,
+            "x": 6828.19996,
             "y": -536.0,
             "maxPoints": 4,
             "stats": [
@@ -14317,7 +14317,7 @@
         "ne01t-31": {
             "skill": "ne01t-31",
             "name": "Weakening Threads",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": -844.0,
             "maxPoints": 3,
             "stats": [
@@ -14980,7 +14980,7 @@
         "shiif-0": {
             "skill": "shiif-0",
             "name": "Shift",
-            "x": 6366.9998,
+            "x": 6389.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -15002,7 +15002,7 @@
         "shiif-2": {
             "skill": "shiif-2",
             "name": "Shadow Recuperation",
-            "x": 5726.9998,
+            "x": 5749.3998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -15027,7 +15027,7 @@
         "shiif-3": {
             "skill": "shiif-3",
             "name": "Vault",
-            "x": 4064.9997999999996,
+            "x": 4087.3998,
             "y": -320.0,
             "maxPoints": 3,
             "stats": [
@@ -15050,7 +15050,7 @@
         "shiif-4": {
             "skill": "shiif-4",
             "name": "Elusive",
-            "x": 4993.399799999999,
+            "x": 5015.799800000001,
             "y": 1224.0,
             "maxPoints": 4,
             "stats": [
@@ -15072,7 +15072,7 @@
         "shiif-5": {
             "skill": "shiif-5",
             "name": "Breathing Technique",
-            "x": 4851.399799999999,
+            "x": 4873.799800000001,
             "y": -320.0,
             "maxPoints": 2,
             "stats": [
@@ -15095,7 +15095,7 @@
         "shiif-6": {
             "skill": "shiif-6",
             "name": "Molting",
-            "x": 3818.9997999999996,
+            "x": 3841.3998,
             "y": -854.0,
             "maxPoints": 1,
             "stats": [
@@ -15115,7 +15115,7 @@
         "shiif-7": {
             "skill": "shiif-7",
             "name": "Rebound",
-            "x": 4563.399799999999,
+            "x": 4585.799800000001,
             "y": -854.0,
             "maxPoints": 1,
             "stats": [
@@ -15136,7 +15136,7 @@
         "shiif-8": {
             "skill": "shiif-8",
             "name": "Deadly Ambush",
-            "x": 7882.5998,
+            "x": 7904.9998,
             "y": -328.8,
             "maxPoints": 5,
             "stats": [
@@ -15161,7 +15161,7 @@
         "shiif-9": {
             "skill": "shiif-9",
             "name": "Momentum",
-            "x": 6726.9998,
+            "x": 6749.3998,
             "y": 800.0,
             "maxPoints": 3,
             "stats": [
@@ -15188,7 +15188,7 @@
         "shiif-10": {
             "skill": "shiif-10",
             "name": "Hypovolemia",
-            "x": 7882.5998,
+            "x": 7904.9998,
             "y": 320.0,
             "maxPoints": 5,
             "stats": [
@@ -15210,7 +15210,7 @@
         "shiif-11": {
             "skill": "shiif-11",
             "name": "Jagged Cuts",
-            "x": 8573.7998,
+            "x": 8596.1998,
             "y": 320.0,
             "maxPoints": 3,
             "stats": [
@@ -15233,7 +15233,7 @@
         "shiif-12": {
             "skill": "shiif-12",
             "name": "Jade Quiver",
-            "x": 4651.399799999999,
+            "x": 4673.799800000001,
             "y": 196.00004,
             "maxPoints": 4,
             "stats": [
@@ -15258,7 +15258,7 @@
         "shiif-13": {
             "skill": "shiif-13",
             "name": "Jagged Arrows",
-            "x": 4862.9998,
+            "x": 4885.3998,
             "y": 712.0,
             "maxPoints": 5,
             "stats": [
@@ -15278,7 +15278,7 @@
         "shiif-14": {
             "skill": "shiif-14",
             "name": "Venom Tipped Arrows",
-            "x": 3864.9997999999996,
+            "x": 3887.3998,
             "y": 270.8,
             "maxPoints": 5,
             "stats": [
@@ -15298,7 +15298,7 @@
         "shiif-15": {
             "skill": "shiif-15",
             "name": "Swift Recovery",
-            "x": 6006.9998,
+            "x": 6029.3998,
             "y": 800.0,
             "maxPoints": 4,
             "stats": [
@@ -15324,7 +15324,7 @@
         "shiif-16": {
             "skill": "shiif-16",
             "name": "Shadowslip",
-            "x": 5646.9998,
+            "x": 5669.3998,
             "y": 1164.0,
             "maxPoints": 1,
             "stats": [
@@ -15346,7 +15346,7 @@
         "shiif-17": {
             "skill": "shiif-17",
             "name": "Emergency Flask",
-            "x": 7086.9998,
+            "x": 7109.3998,
             "y": 1164.0,
             "maxPoints": 1,
             "stats": [
@@ -15366,7 +15366,7 @@
         "shiif-18": {
             "skill": "shiif-18",
             "name": "Critical Opening",
-            "x": 8984.9998,
+            "x": 9007.3998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -15386,7 +15386,7 @@
         "shiif-19": {
             "skill": "shiif-19",
             "name": "Unseen Strike",
-            "x": 6366.9998,
+            "x": 6389.3998,
             "y": -596.0,
             "maxPoints": 1,
             "stats": [
@@ -15412,7 +15412,7 @@
         "shiif-20": {
             "skill": "shiif-20",
             "name": "Sleight of Hand",
-            "x": 5246.9998,
+            "x": 5269.3998,
             "y": -654.0,
             "maxPoints": 5,
             "stats": [
@@ -15435,7 +15435,7 @@
         "shiif-21": {
             "skill": "shiif-21",
             "name": "Broad Sweep",
-            "x": 7006.9998,
+            "x": 7029.3998,
             "y": -868.0,
             "maxPoints": 3,
             "stats": [
@@ -15458,7 +15458,7 @@
         "shiif-22": {
             "skill": "shiif-22",
             "name": "Lasting Presence",
-            "x": 8178.9998,
+            "x": 8201.3998,
             "y": 912.0,
             "maxPoints": 1,
             "stats": [
@@ -15481,7 +15481,7 @@
         "shiif-23": {
             "skill": "shiif-23",
             "name": "Through the Shadows",
-            "x": 7526.9998,
+            "x": 7549.3998,
             "y": 1224.0,
             "maxPoints": 1,
             "stats": [
@@ -15501,7 +15501,7 @@
         "shiif-24": {
             "skill": "shiif-24",
             "name": "Dancing Shadows",
-            "x": 8822.9998,
+            "x": 8845.3998,
             "y": 1224.0,
             "maxPoints": 1,
             "stats": [
@@ -15521,7 +15521,7 @@
         "shiif-25": {
             "skill": "shiif-25",
             "name": "Arrival Gift",
-            "x": 3735.7998,
+            "x": 3758.1998000000003,
             "y": 800.0,
             "maxPoints": 2,
             "stats": [
@@ -15544,7 +15544,7 @@
         "shiif-26": {
             "skill": "shiif-26",
             "name": "Parting Gift",
-            "x": 4264.9998,
+            "x": 4287.3998,
             "y": 1224.0,
             "maxPoints": 2,
             "stats": [
@@ -15569,7 +15569,7 @@
         "shiif-27": {
             "skill": "shiif-27",
             "name": "Velocity",
-            "x": 7006.9998,
+            "x": 7029.3998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -15594,7 +15594,7 @@
         "shiif-28": {
             "skill": "shiif-28",
             "name": "Hidden Blades",
-            "x": 7526.9998,
+            "x": 7549.3998,
             "y": -639.6,
             "maxPoints": 2,
             "stats": [
@@ -15614,7 +15614,7 @@
         "shiif-29": {
             "skill": "shiif-29",
             "name": "Low Blow",
-            "x": 8052.5998,
+            "x": 8074.9998,
             "y": -1022.0,
             "maxPoints": 3,
             "stats": [
@@ -15634,7 +15634,7 @@
         "shiif-30": {
             "skill": "shiif-30",
             "name": "Consumed by Shadow",
-            "x": 5726.9998,
+            "x": 5749.3998,
             "y": -868.0,
             "maxPoints": 4,
             "stats": [
@@ -15654,7 +15654,7 @@
         "shiif-32": {
             "skill": "shiif-32",
             "name": "Braskula's Hesitation",
-            "x": 8573.7998,
+            "x": 8596.1998,
             "y": -328.80002,
             "maxPoints": 3,
             "stats": [
@@ -15678,7 +15678,7 @@
         "smbmb-0": {
             "skill": "smbmb-0",
             "name": "Smoke Bomb",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -15698,7 +15698,7 @@
         "smbmb-2": {
             "skill": "smbmb-2",
             "name": "Thick Smoke",
-            "x": 5849.3998,
+            "x": 5838.19996,
             "y": -400.0,
             "maxPoints": 1,
             "stats": [
@@ -15721,7 +15721,7 @@
         "smbmb-4": {
             "skill": "smbmb-4",
             "name": "Eroding Fumes",
-            "x": 4991.3998,
+            "x": 4980.19996,
             "y": -178.0,
             "maxPoints": 4,
             "stats": [
@@ -15745,7 +15745,7 @@
         "smbmb-5": {
             "skill": "smbmb-5",
             "name": "Toxic Cloud",
-            "x": 4371.39992,
+            "x": 4360.20008,
             "y": -394.40016,
             "maxPoints": 1,
             "stats": [
@@ -15767,7 +15767,7 @@
         "smbmb-6": {
             "skill": "smbmb-6",
             "name": "Venom Infusion",
-            "x": 3781.7998000000002,
+            "x": 3770.59996,
             "y": -660.0,
             "maxPoints": 4,
             "stats": [
@@ -15787,7 +15787,7 @@
         "smbmb-7": {
             "skill": "smbmb-7",
             "name": "Smokescreen Arrow",
-            "x": 5161.799800000001,
+            "x": 5150.59996,
             "y": -625.6,
             "maxPoints": 1,
             "stats": [
@@ -15807,7 +15807,7 @@
         "smbmb-8": {
             "skill": "smbmb-8",
             "name": "Swirling Fog",
-            "x": 4401.3998,
+            "x": 4390.19996,
             "y": 75.599944,
             "maxPoints": 4,
             "stats": [
@@ -15830,7 +15830,7 @@
         "smbmb-9": {
             "skill": "smbmb-9",
             "name": "Knives in the Dark",
-            "x": 3842.99964,
+            "x": 3831.7998,
             "y": 626.0,
             "maxPoints": 2,
             "stats": [
@@ -15850,7 +15850,7 @@
         "smbmb-10": {
             "skill": "smbmb-10",
             "name": "Lingering Fumes",
-            "x": 5849.3998,
+            "x": 5838.19996,
             "y": 400.0,
             "maxPoints": 5,
             "stats": [
@@ -15874,7 +15874,7 @@
         "smbmb-11": {
             "skill": "smbmb-11",
             "name": "Shadow Hunter",
-            "x": 5849.3998,
+            "x": 5838.19996,
             "y": 892.0,
             "maxPoints": 5,
             "stats": [
@@ -15895,7 +15895,7 @@
         "smbmb-12": {
             "skill": "smbmb-12",
             "name": "Smoke Blades",
-            "x": 4958.9998,
+            "x": 4947.79996,
             "y": 625.99992,
             "maxPoints": 5,
             "stats": [
@@ -15921,7 +15921,7 @@
         "smbmb-13": {
             "skill": "smbmb-13",
             "name": "Blood Bandit",
-            "x": 4401.3998,
+            "x": 4390.19996,
             "y": 625.99992,
             "maxPoints": 3,
             "stats": [
@@ -15942,7 +15942,7 @@
         "smbmb-14": {
             "skill": "smbmb-14",
             "name": "Umbral Assault",
-            "x": 4401.3998,
+            "x": 4390.19996,
             "y": 1180.0,
             "maxPoints": 4,
             "stats": [
@@ -15962,7 +15962,7 @@
         "smbmb-15": {
             "skill": "smbmb-15",
             "name": "Concealed in Carnage",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": 800.0,
             "maxPoints": 1,
             "stats": [
@@ -15987,7 +15987,7 @@
         "smbmb-16": {
             "skill": "smbmb-16",
             "name": "Cloaked Incursion",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": 1292.0,
             "maxPoints": 1,
             "stats": [
@@ -16012,7 +16012,7 @@
         "smbmb-17": {
             "skill": "smbmb-17",
             "name": "Generosity",
-            "x": 6929.3998,
+            "x": 6918.19996,
             "y": 400.0,
             "maxPoints": 5,
             "stats": [
@@ -16039,7 +16039,7 @@
         "smbmb-18": {
             "skill": "smbmb-18",
             "name": "Escape Tactics",
-            "x": 6929.3998,
+            "x": 6918.19996,
             "y": 892.0,
             "maxPoints": 1,
             "stats": [
@@ -16062,7 +16062,7 @@
         "smbmb-19": {
             "skill": "smbmb-19",
             "name": "Enfeeblement",
-            "x": 7766.1996,
+            "x": 7754.99976,
             "y": 275.60004,
             "maxPoints": 4,
             "stats": [
@@ -16086,7 +16086,7 @@
         "smbmb-20": {
             "skill": "smbmb-20",
             "name": "Moonlight Bomb",
-            "x": 7516.99988,
+            "x": 7505.80004,
             "y": 932.80004,
             "maxPoints": 3,
             "stats": [
@@ -16110,7 +16110,7 @@
         "smbmb-21": {
             "skill": "smbmb-21",
             "name": "Cleansing Steam",
-            "x": 8126.1996,
+            "x": 8114.99976,
             "y": 785.2,
             "maxPoints": 1,
             "stats": [
@@ -16132,7 +16132,7 @@
         "smbmb-22": {
             "skill": "smbmb-22",
             "name": "Purging Fumes",
-            "x": 8530.1994,
+            "x": 8518.99956,
             "y": 1203.2,
             "maxPoints": 1,
             "stats": [
@@ -16152,7 +16152,7 @@
         "smbmb-23": {
             "skill": "smbmb-23",
             "name": "Invigorating Darkness",
-            "x": 8530.1996,
+            "x": 8518.999759999999,
             "y": 385.19996,
             "maxPoints": 3,
             "stats": [
@@ -16174,7 +16174,7 @@
         "smbmb-24": {
             "skill": "smbmb-24",
             "name": "Refreshment",
-            "x": 8920.5994,
+            "x": 8909.39956,
             "y": 785.2,
             "maxPoints": 1,
             "stats": [
@@ -16194,7 +16194,7 @@
         "smbmb-25": {
             "skill": "smbmb-25",
             "name": "Engulfed in Flames",
-            "x": 8526.9994,
+            "x": 8515.79956,
             "y": -92.0,
             "maxPoints": 5,
             "stats": [
@@ -16217,7 +16217,7 @@
         "smbmb-26": {
             "skill": "smbmb-26",
             "name": "Hasty Combustion",
-            "x": 8917.3994,
+            "x": 8906.199560000001,
             "y": -508.40004,
             "maxPoints": 1,
             "stats": [
@@ -16239,7 +16239,7 @@
         "smbmb-27": {
             "skill": "smbmb-27",
             "name": "Cleaving Shadows",
-            "x": 8526.9994,
+            "x": 8515.79956,
             "y": -908.40016,
             "maxPoints": 1,
             "stats": [
@@ -16259,7 +16259,7 @@
         "smbmb-28": {
             "skill": "smbmb-28",
             "name": "Trapped Shadows",
-            "x": 8114.59952,
+            "x": 8103.39968,
             "y": -508.40016,
             "maxPoints": 1,
             "stats": [
@@ -16279,7 +16279,7 @@
         "smbmb-29": {
             "skill": "smbmb-29",
             "name": "Shrouded in Darkness",
-            "x": 6929.3998,
+            "x": 6918.19996,
             "y": -400.0,
             "maxPoints": 1,
             "stats": [
@@ -16304,7 +16304,7 @@
         "smbmb-30": {
             "skill": "smbmb-30",
             "name": "Rapid Concealment",
-            "x": 7662.9998,
+            "x": 7651.79996,
             "y": -400.0,
             "maxPoints": 4,
             "stats": [
@@ -16326,7 +16326,7 @@
         "smbmb-31": {
             "skill": "smbmb-31",
             "name": "Shared Concealment",
-            "x": 7289.3998,
+            "x": 7278.19996,
             "y": -939.60008,
             "maxPoints": 1,
             "stats": [
@@ -16346,7 +16346,7 @@
         "smbmb-32": {
             "skill": "smbmb-32",
             "name": "Impending Gloom",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": -800.0,
             "maxPoints": 4,
             "stats": [
@@ -16372,7 +16372,7 @@
         "smbmb-34": {
             "skill": "smbmb-34",
             "name": "Hidden Blows",
-            "x": 5229.3998,
+            "x": 5218.19996,
             "y": 1180.0,
             "maxPoints": 4,
             "stats": [
@@ -16393,7 +16393,7 @@
         "srk21-0": {
             "skill": "srk21-0",
             "name": "Shurikens ",
-            "x": 6435.7998,
+            "x": 6355.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -16413,7 +16413,7 @@
         "srk21-2": {
             "skill": "srk21-2",
             "name": "Toxic Tips",
-            "x": 5161.399799999999,
+            "x": 5081.399799999999,
             "y": -156.8,
             "maxPoints": 4,
             "stats": [
@@ -16436,7 +16436,7 @@
         "srk21-3": {
             "skill": "srk21-3",
             "name": "Weighted Projectiles",
-            "x": 6443.7998,
+            "x": 6363.7998,
             "y": -676.0,
             "maxPoints": 4,
             "stats": [
@@ -16459,7 +16459,7 @@
         "srk21-4": {
             "skill": "srk21-4",
             "name": "Deep Cuts",
-            "x": 5752.199799999999,
+            "x": 5672.199799999999,
             "y": -876.0,
             "maxPoints": 4,
             "stats": [
@@ -16486,7 +16486,7 @@
         "srk21-6": {
             "skill": "srk21-6",
             "name": "Flip of a Coin",
-            "x": 4977.399799999999,
+            "x": 4897.399799999999,
             "y": -876.0,
             "maxPoints": 1,
             "stats": [
@@ -16515,7 +16515,7 @@
         "srk21-7": {
             "skill": "srk21-7",
             "name": "Entry Points",
-            "x": 5873.7998,
+            "x": 5793.7998,
             "y": -356.80002,
             "maxPoints": 3,
             "stats": [
@@ -16540,7 +16540,7 @@
         "srk21-8": {
             "skill": "srk21-8",
             "name": "Throwing Star",
-            "x": 4227.7998,
+            "x": 4147.7998,
             "y": -600.0,
             "maxPoints": 1,
             "stats": [
@@ -16560,7 +16560,7 @@
         "srk21-9": {
             "skill": "srk21-9",
             "name": "Scintillant Steel",
-            "x": 5796.9998,
+            "x": 5716.9998,
             "y": 384.8,
             "maxPoints": 3,
             "stats": [
@@ -16584,7 +16584,7 @@
         "srk21-10": {
             "skill": "srk21-10",
             "name": "Keen Throw",
-            "x": 8416.9998,
+            "x": 8336.9998,
             "y": -104.0,
             "maxPoints": 1,
             "stats": [
@@ -16604,7 +16604,7 @@
         "srk21-11": {
             "skill": "srk21-11",
             "name": "Behind the Veil",
-            "x": 4407.399799999999,
+            "x": 4327.399799999999,
             "y": 96.0,
             "maxPoints": 4,
             "stats": [
@@ -16626,7 +16626,7 @@
         "srk21-12": {
             "skill": "srk21-12",
             "name": "Acrobatics",
-            "x": 4977.399799999999,
+            "x": 4897.399799999999,
             "y": 670.4,
             "maxPoints": 1,
             "stats": [
@@ -16650,7 +16650,7 @@
         "srk21-13": {
             "skill": "srk21-13",
             "name": "Exuberance",
-            "x": 4407.39988,
+            "x": 4327.39988,
             "y": 1216.0,
             "maxPoints": 3,
             "stats": [
@@ -16671,7 +16671,7 @@
         "srk21-14": {
             "skill": "srk21-14",
             "name": "Stagger",
-            "x": 3837.3997999999997,
+            "x": 3757.3997999999997,
             "y": 670.4,
             "maxPoints": 1,
             "stats": [
@@ -16691,7 +16691,7 @@
         "srk21-15": {
             "skill": "srk21-15",
             "name": "Alacrity",
-            "x": 6996.19972,
+            "x": 6916.19972,
             "y": 584.8,
             "maxPoints": 5,
             "stats": [
@@ -16716,7 +16716,7 @@
         "srk21-16": {
             "skill": "srk21-16",
             "name": "Charged Steel",
-            "x": 6282.5998,
+            "x": 6202.5998,
             "y": 700.0,
             "maxPoints": 4,
             "stats": [
@@ -16745,7 +16745,7 @@
         "srk21-17": {
             "skill": "srk21-17",
             "name": "Shuriken Storm",
-            "x": 6643.7998,
+            "x": 6563.7998,
             "y": 1216.0,
             "maxPoints": 1,
             "stats": [
@@ -16765,7 +16765,7 @@
         "srk21-18": {
             "skill": "srk21-18",
             "name": "Abrasive Arsenal",
-            "x": 7415.7998,
+            "x": 7335.7998,
             "y": 1216.0,
             "maxPoints": 4,
             "stats": [
@@ -16788,7 +16788,7 @@
         "srk21-19": {
             "skill": "srk21-19",
             "name": "Ricochet",
-            "x": 8244.5996,
+            "x": 8164.5996,
             "y": 1216.0,
             "maxPoints": 2,
             "stats": [
@@ -16813,7 +16813,7 @@
         "srk21-20": {
             "skill": "srk21-20",
             "name": "Fan of Blades",
-            "x": 7738.19972,
+            "x": 7658.19972,
             "y": 584.80004,
             "maxPoints": 1,
             "stats": [
@@ -16835,7 +16835,7 @@
         "srk21-21": {
             "skill": "srk21-21",
             "name": "Blade Shield",
-            "x": 8394.19972,
+            "x": 8314.19972,
             "y": 584.80004,
             "maxPoints": 1,
             "stats": [
@@ -16862,7 +16862,7 @@
         "srk21-22": {
             "skill": "srk21-22",
             "name": "Bladed Armor",
-            "x": 9015.7998,
+            "x": 8935.7998,
             "y": 951.6,
             "maxPoints": 3,
             "stats": [
@@ -16882,7 +16882,7 @@
         "srk21-23": {
             "skill": "srk21-23",
             "name": "Floating Blades",
-            "x": 9015.7998,
+            "x": 8935.7998,
             "y": 259.6,
             "maxPoints": 3,
             "stats": [
@@ -16902,7 +16902,7 @@
         "srk21-24": {
             "skill": "srk21-24",
             "name": "Aerodynamic",
-            "x": 5455.7998,
+            "x": 5375.7998,
             "y": 1216.0,
             "maxPoints": 3,
             "stats": [
@@ -16926,7 +16926,7 @@
         "srk21-25": {
             "skill": "srk21-25",
             "name": "Deadly Aim",
-            "x": 8679.7998,
+            "x": 8599.7998,
             "y": -600.0,
             "maxPoints": 1,
             "stats": [
@@ -16947,7 +16947,7 @@
         "srk21-27": {
             "skill": "srk21-27",
             "name": "Ethereal Blades",
-            "x": 6996.199799999999,
+            "x": 6916.199799999999,
             "y": -356.8,
             "maxPoints": 4,
             "stats": [
@@ -16972,7 +16972,7 @@
         "srk21-28": {
             "skill": "srk21-28",
             "name": "Jagged Edges",
-            "x": 7335.79988,
+            "x": 7255.79988,
             "y": -876.0,
             "maxPoints": 4,
             "stats": [
@@ -16995,7 +16995,7 @@
         "srk21-29": {
             "skill": "srk21-29",
             "name": "Massacre",
-            "x": 8081.399799999999,
+            "x": 8001.399799999999,
             "y": -876.0,
             "maxPoints": 3,
             "stats": [
@@ -17017,7 +17017,7 @@
         "srk21-30": {
             "skill": "srk21-30",
             "name": "Chakram",
-            "x": 7766.19972,
+            "x": 7686.19972,
             "y": -263.599976,
             "maxPoints": 1,
             "stats": [
@@ -17706,7 +17706,7 @@
         "ub5d9-0": {
             "skill": "ub5d9-0",
             "name": "Umbral Blades",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -17725,7 +17725,7 @@
         "ub5d9-1": {
             "skill": "ub5d9-1",
             "name": "Dawnfall",
-            "x": 5829.3998,
+            "x": 5818.19996,
             "y": -440.0,
             "maxPoints": 4,
             "stats": [
@@ -17749,7 +17749,7 @@
         "ub5d9-2": {
             "skill": "ub5d9-2",
             "name": "Sword Thrower",
-            "x": 5296.1998,
+            "x": 5284.99996,
             "y": -728.0,
             "maxPoints": 1,
             "stats": [
@@ -17777,7 +17777,7 @@
         "ub5d9-3": {
             "skill": "ub5d9-3",
             "name": "Cacophony of Steel",
-            "x": 4565.3998,
+            "x": 4554.19996,
             "y": -728.0,
             "maxPoints": 1,
             "stats": [
@@ -17802,7 +17802,7 @@
         "ub5d9-4": {
             "skill": "ub5d9-4",
             "name": "Steel Torrent",
-            "x": 4036.9998,
+            "x": 4025.79996,
             "y": -506.4,
             "maxPoints": 4,
             "stats": [
@@ -17825,7 +17825,7 @@
         "ub5d9-5": {
             "skill": "ub5d9-5",
             "name": "Loathing",
-            "x": 3797.7998000000002,
+            "x": 3786.59996,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -17845,7 +17845,7 @@
         "ub5d9-6": {
             "skill": "ub5d9-6",
             "name": "Lethal Darkness",
-            "x": 4493.3998,
+            "x": 4482.19996,
             "y": -6.1036e-05,
             "maxPoints": 1,
             "stats": [
@@ -17868,7 +17868,7 @@
         "ub5d9-7": {
             "skill": "ub5d9-7",
             "name": "Edge of Obscurity",
-            "x": 5369.3998,
+            "x": 5358.19996,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -17894,7 +17894,7 @@
         "ub5d9-8": {
             "skill": "ub5d9-8",
             "name": "Umbral Remnant",
-            "x": 4928.5998,
+            "x": 4917.39996,
             "y": 414.0,
             "maxPoints": 1,
             "stats": [
@@ -17917,7 +17917,7 @@
         "ub5d9-10": {
             "skill": "ub5d9-10",
             "name": "Soul Thief",
-            "x": 5829.3998,
+            "x": 5818.19996,
             "y": 440.0,
             "maxPoints": 4,
             "stats": [
@@ -17944,7 +17944,7 @@
         "ub5d9-11": {
             "skill": "ub5d9-11",
             "name": "Stabbing Blast",
-            "x": 4872.9998,
+            "x": 4861.79996,
             "y": 1086.4,
             "maxPoints": 1,
             "stats": [
@@ -17971,7 +17971,7 @@
         "ub5d9-12": {
             "skill": "ub5d9-12",
             "name": "Shredding Daggers",
-            "x": 4236.9998,
+            "x": 4225.79996,
             "y": 870.8,
             "maxPoints": 3,
             "stats": [
@@ -17991,7 +17991,7 @@
         "ub5d9-13": {
             "skill": "ub5d9-13",
             "name": "Nightmare Dash",
-            "x": 5866.9998000000005,
+            "x": 5855.79996,
             "y": 1144.4,
             "maxPoints": 1,
             "stats": [
@@ -18012,7 +18012,7 @@
         "ub5d9-14": {
             "skill": "ub5d9-14",
             "name": "Backstab",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": 736.8,
             "maxPoints": 4,
             "stats": [
@@ -18039,7 +18039,7 @@
         "ub5d9-15": {
             "skill": "ub5d9-15",
             "name": "Slice the Legs",
-            "x": 6871.7998,
+            "x": 6860.59996,
             "y": 1144.4,
             "maxPoints": 5,
             "stats": [
@@ -18065,7 +18065,7 @@
         "ub5d9-16": {
             "skill": "ub5d9-16",
             "name": "Bloody Trail",
-            "x": 7395.7998,
+            "x": 7384.59996,
             "y": 1261.2,
             "maxPoints": 3,
             "stats": [
@@ -18087,7 +18087,7 @@
         "ub5d9-17": {
             "skill": "ub5d9-17",
             "name": "Cut and Leave",
-            "x": 6949.3998,
+            "x": 6938.19996,
             "y": 440.0,
             "maxPoints": 5,
             "stats": [
@@ -18115,7 +18115,7 @@
         "ub5d9-18": {
             "skill": "ub5d9-18",
             "name": "Emerald Cutlass",
-            "x": 7232.1998,
+            "x": 7220.99996,
             "y": 824.4,
             "maxPoints": 1,
             "stats": [
@@ -18137,7 +18137,7 @@
         "ub5d9-19": {
             "skill": "ub5d9-19",
             "name": "Kunai Belt",
-            "x": 7929.7994,
+            "x": 7918.59956,
             "y": 672.39996,
             "maxPoints": 2,
             "stats": [
@@ -18161,7 +18161,7 @@
         "ub5d9-20": {
             "skill": "ub5d9-20",
             "name": "Hidden Blades",
-            "x": 8409.39956,
+            "x": 8398.19972,
             "y": 1173.60008,
             "maxPoints": 2,
             "stats": [
@@ -18182,7 +18182,7 @@
         "ub5d9-21": {
             "skill": "ub5d9-21",
             "name": "Jagged Carvings",
-            "x": 7409.3998,
+            "x": 7398.19996,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -18206,7 +18206,7 @@
         "ub5d9-22": {
             "skill": "ub5d9-22",
             "name": "Twilight Assault",
-            "x": 8409.39956,
+            "x": 8398.19972,
             "y": 210.4,
             "maxPoints": 1,
             "stats": [
@@ -18229,7 +18229,7 @@
         "ub5d9-23": {
             "skill": "ub5d9-23",
             "name": "Duskhunter",
-            "x": 8887.7994,
+            "x": 8876.59956,
             "y": 672.39996,
             "maxPoints": 2,
             "stats": [
@@ -18249,7 +18249,7 @@
         "ub5d9-24": {
             "skill": "ub5d9-24",
             "name": "Subzero Intrusion",
-            "x": 8180.6,
+            "x": 8169.40016,
             "y": -417.2,
             "maxPoints": 1,
             "stats": [
@@ -18272,7 +18272,7 @@
         "ub5d9-25": {
             "skill": "ub5d9-25",
             "name": "Coldsnap Strike",
-            "x": 8910.2002,
+            "x": 8899.00036,
             "y": -802.8,
             "maxPoints": 2,
             "stats": [
@@ -18296,7 +18296,7 @@
         "ub5d9-26": {
             "skill": "ub5d9-26",
             "name": "Precision Cuts",
-            "x": 6389.3998,
+            "x": 6378.19996,
             "y": -776.0,
             "maxPoints": 1,
             "stats": [
@@ -18319,7 +18319,7 @@
         "ub5d9-27": {
             "skill": "ub5d9-27",
             "name": "Explosive Blades",
-            "x": 6949.3998,
+            "x": 6938.19996,
             "y": -440.0,
             "maxPoints": 1,
             "stats": [
@@ -18344,7 +18344,7 @@
         "ub5d9-28": {
             "skill": "ub5d9-28",
             "name": "Burst of Agony",
-            "x": 7498.1998,
+            "x": 7486.99996,
             "y": -776.0,
             "maxPoints": 4,
             "stats": [
@@ -18387,68 +18387,44 @@
             "base_vit": 0,
             "skills": [
                 {
-                    "label": "Net",
-                    "treeId": "ex4tp"
-                },
-                {
-                    "label": "Decoy",
-                    "treeId": "deeco"
-                },
-                {
-                    "label": "Shift",
-                    "treeId": "shiif"
+                    "label": "Dark Quiver",
+                    "treeId": "dqv5"
                 },
                 {
                     "label": "Detonating Arrow",
                     "treeId": "detar"
                 },
                 {
-                    "label": "Hail Of Arrows",
-                    "treeId": "exvol8"
-                },
-                {
-                    "label": "Flurry",
-                    "treeId": "flur3"
-                },
-                {
-                    "label": "Synchronized Strike",
-                    "treeId": "sync5"
-                },
-                {
-                    "label": "Dive Bomb",
-                    "treeId": "db992"
-                },
-                {
-                    "label": "Puncture",
-                    "treeId": "pun22"
-                },
-                {
-                    "label": "Multishot",
-                    "treeId": "mush9"
-                },
-                {
-                    "label": "Dark Quiver",
-                    "treeId": "dqv5"
-                },
-                {
-                    "label": "Smoke Bomb",
-                    "treeId": "smbmb"
+                    "label": "Shurikens ",
+                    "treeId": "srk21"
                 },
                 {
                     "label": "Net",
                     "treeId": "ne01t"
                 },
                 {
-                    "label": "Cinder Strike",
-                    "treeId": "cstri"
+                    "label": "Smoke Bomb",
+                    "treeId": "smbmb"
                 },
                 {
-                    "label": "Falconry",
-                    "treeId": "falc0"
+                    "label": "Umbral Blades",
+                    "treeId": "ub5d9"
                 },
                 {
-                    "label": "Dancing Strikes",
-                    "treeId": "dacn33"
+                    "label": "Synchronized Strike",
+                    "treeId": "sync5"
+                },
+                {
+                    "label": "Multishot",
+                    "treeId": "mush9"
+                },
+                {
+                    "label": "Puncture",
+                    "treeId": "pun22"
+                },
+                {
+                    "label": "Shift",
+                    "treeId": "shiif"
                 },
                 {
                     "label": "Ballista",
@@ -18459,12 +18435,32 @@
                     "treeId": "dagg3"
                 },
                 {
-                    "label": "Umbral Blades",
-                    "treeId": "ub5d9"
+                    "label": "Flurry",
+                    "treeId": "flur3"
                 },
                 {
-                    "label": "Acid Flask",
-                    "treeId": "aacfl"
+                    "label": "Net",
+                    "treeId": "ex4tp"
+                },
+                {
+                    "label": "Falconry",
+                    "treeId": "falc0"
+                },
+                {
+                    "label": "Decoy",
+                    "treeId": "deeco"
+                },
+                {
+                    "label": "Hail Of Arrows",
+                    "treeId": "exvol8"
+                },
+                {
+                    "label": "Dive Bomb",
+                    "treeId": "db992"
+                },
+                {
+                    "label": "Cinder Strike",
+                    "treeId": "cstri"
                 },
                 {
                     "label": "Aerial Assault",
@@ -18475,8 +18471,12 @@
                     "treeId": "mira59"
                 },
                 {
-                    "label": "Shurikens ",
-                    "treeId": "srk21"
+                    "label": "Acid Flask",
+                    "treeId": "aacfl"
+                },
+                {
+                    "label": "Dancing Strikes",
+                    "treeId": "dacn33"
                 }
             ]
         }

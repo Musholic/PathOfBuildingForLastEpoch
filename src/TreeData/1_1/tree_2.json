@@ -1733,7 +1733,7 @@
             "maxPoints": 8,
             "stats": [
                 "+1% Parry Chance While Dual Wielding",
-                "3% Increased Attack Speed While Dual Wilding",
+                "3% Increased Attack Speed While Dual Wielding",
                 "+2 Strength With 2h Weapon",
                 "+6% Frailty Chance With Shield",
                 "3% Reduced Bonus Damage Taken From Crits With Shield"
@@ -4028,7 +4028,7 @@
         "an0my-0": {
             "skill": "an0my-0",
             "name": "Anomaly",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -4047,7 +4047,7 @@
         "an0my-1": {
             "skill": "an0my-1",
             "name": "Emission",
-            "x": 5342.9998,
+            "x": 5738.9998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -4072,7 +4072,7 @@
         "an0my-2": {
             "skill": "an0my-2",
             "name": "Red Shift",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": -748.0,
             "maxPoints": 5,
             "stats": [
@@ -4092,7 +4092,7 @@
         "an0my-3": {
             "skill": "an0my-3",
             "name": "Borrowed Time",
-            "x": 4893.479719999999,
+            "x": 5289.479719999999,
             "y": -661.92,
             "maxPoints": 1,
             "stats": [
@@ -4113,7 +4113,7 @@
         "an0my-4": {
             "skill": "an0my-4",
             "name": "Time Wave",
-            "x": 4537.8798,
+            "x": 4933.8798,
             "y": -145.199952,
             "maxPoints": 1,
             "stats": [
@@ -4135,7 +4135,7 @@
         "an0my-5": {
             "skill": "an0my-5",
             "name": "Temporal Expanse",
-            "x": 4108.99964,
+            "x": 4504.99964,
             "y": -413.99996,
             "maxPoints": 5,
             "stats": [
@@ -4158,7 +4158,7 @@
         "an0my-6": {
             "skill": "an0my-6",
             "name": "Tides of Time",
-            "x": 3765.3997999999997,
+            "x": 4161.399799999999,
             "y": -785.2,
             "maxPoints": 1,
             "stats": [
@@ -4178,7 +4178,7 @@
         "an0my-7": {
             "skill": "an0my-7",
             "name": "Anticipation",
-            "x": 4975.7998,
+            "x": 5371.7998,
             "y": 412.0,
             "maxPoints": 3,
             "stats": [
@@ -4203,7 +4203,7 @@
         "an0my-8": {
             "skill": "an0my-8",
             "name": "Reflection",
-            "x": 4265.6398,
+            "x": 4661.6398,
             "y": 336.0,
             "maxPoints": 1,
             "stats": [
@@ -4225,7 +4225,7 @@
         "an0my-9": {
             "skill": "an0my-9",
             "name": "Resonate",
-            "x": 3735.7998,
+            "x": 4131.7998,
             "y": 584.0,
             "maxPoints": 5,
             "stats": [
@@ -4245,7 +4245,7 @@
         "an0my-10": {
             "skill": "an0my-10",
             "name": "Quicksand",
-            "x": 5342.9998,
+            "x": 5738.9998,
             "y": 1222.0,
             "maxPoints": 5,
             "stats": [
@@ -4273,7 +4273,7 @@
         "an0my-11": {
             "skill": "an0my-11",
             "name": "Cycle of Decay",
-            "x": 4493.479719999999,
+            "x": 4889.479719999999,
             "y": 1132.8004,
             "maxPoints": 1,
             "stats": [
@@ -4293,7 +4293,7 @@
         "an0my-12": {
             "skill": "an0my-12",
             "name": "Void Touched",
-            "x": 6675.7998,
+            "x": 7071.7998,
             "y": 388.0,
             "maxPoints": 1,
             "stats": [
@@ -4318,7 +4318,7 @@
         "an0my-13": {
             "skill": "an0my-13",
             "name": "Exacerbate",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": 700.0,
             "maxPoints": 5,
             "stats": [
@@ -4342,7 +4342,7 @@
         "an0my-14": {
             "skill": "an0my-14",
             "name": "Mark of Rot",
-            "x": 6248.9998,
+            "x": 6644.9998,
             "y": 1200.0,
             "maxPoints": 5,
             "stats": [
@@ -4363,7 +4363,7 @@
         "an0my-15": {
             "skill": "an0my-15",
             "name": "Voidfire",
-            "x": 6846.199799999999,
+            "x": 7242.199799999999,
             "y": 984.0,
             "maxPoints": 1,
             "stats": [
@@ -4385,7 +4385,7 @@
         "an0my-16": {
             "skill": "an0my-16",
             "name": "Hour of Flame",
-            "x": 7246.9998,
+            "x": 7642.9998,
             "y": 1244.0,
             "maxPoints": 3,
             "stats": [
@@ -4405,7 +4405,7 @@
         "an0my-17": {
             "skill": "an0my-17",
             "name": "Time Bubble",
-            "x": 7664.5996,
+            "x": 8060.5996,
             "y": 820.0,
             "maxPoints": 1,
             "stats": [
@@ -4431,7 +4431,7 @@
         "an0my-18": {
             "skill": "an0my-18",
             "name": "Decimation",
-            "x": 8164.5996,
+            "x": 8560.5996,
             "y": 1132.8004,
             "maxPoints": 5,
             "stats": [
@@ -4451,7 +4451,7 @@
         "an0my-19": {
             "skill": "an0my-19",
             "name": "Temporal Mastery",
-            "x": 8164.5996,
+            "x": 8560.5996,
             "y": 536.0,
             "maxPoints": 5,
             "stats": [
@@ -4474,7 +4474,7 @@
         "an0my-20": {
             "skill": "an0my-20",
             "name": "Time Lord",
-            "x": 8687.4004,
+            "x": 9083.4004,
             "y": 277.59996,
             "maxPoints": 1,
             "stats": [
@@ -4495,7 +4495,7 @@
         "an0my-22": {
             "skill": "an0my-22",
             "name": "Manipulation",
-            "x": 7664.5998,
+            "x": 8060.5998,
             "y": 277.6,
             "maxPoints": 2,
             "stats": [
@@ -4519,7 +4519,7 @@
         "an0my-23": {
             "skill": "an0my-23",
             "name": "Swiftrest",
-            "x": 8164.5998,
+            "x": 8560.5998,
             "y": 16.4,
             "maxPoints": 3,
             "stats": [
@@ -4539,7 +4539,7 @@
         "an0my-24": {
             "skill": "an0my-24",
             "name": "Time Eater",
-            "x": 7807.4003999999995,
+            "x": 8203.4004,
             "y": -383.59984,
             "maxPoints": 4,
             "stats": [
@@ -4562,7 +4562,7 @@
         "an0my-25": {
             "skill": "an0my-25",
             "name": "Void Maw",
-            "x": 8275.3998,
+            "x": 8671.3998,
             "y": -640.0,
             "maxPoints": 4,
             "stats": [
@@ -4582,7 +4582,7 @@
         "an0my-26": {
             "skill": "an0my-26",
             "name": "Immediacy",
-            "x": 7263.7998,
+            "x": 7659.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -4605,7 +4605,7 @@
         "an0my-27": {
             "skill": "an0my-27",
             "name": "Time Lock",
-            "x": 6675.7998,
+            "x": 7071.7998,
             "y": -448.0,
             "maxPoints": 1,
             "stats": [
@@ -4633,7 +4633,7 @@
         "an0my-28": {
             "skill": "an0my-28",
             "name": "Temporal Prison",
-            "x": 6967.7998,
+            "x": 7363.7998,
             "y": -861.92,
             "maxPoints": 4,
             "stats": [
@@ -4655,7 +4655,7 @@
         "an0my-29": {
             "skill": "an0my-29",
             "name": "Stasis",
-            "x": 7587.7998,
+            "x": 7983.7998,
             "y": -948.0,
             "maxPoints": 1,
             "stats": [
@@ -4675,7 +4675,7 @@
         "an0my-30": {
             "skill": "an0my-30",
             "name": "Lingering Memory",
-            "x": 8687.4004,
+            "x": 9083.4004,
             "y": 820.0,
             "maxPoints": 1,
             "stats": [
@@ -4695,7 +4695,7 @@
         "do5vr-0": {
             "skill": "do5vr-0",
             "name": "Devouring Orb",
-            "x": 5875.7998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -4714,7 +4714,7 @@
         "do5vr-2": {
             "skill": "do5vr-2",
             "name": "Dark Moon",
-            "x": 5875.7998,
+            "x": 6483.7998,
             "y": 480.0,
             "maxPoints": 1,
             "stats": [
@@ -4738,7 +4738,7 @@
         "do5vr-3": {
             "skill": "do5vr-3",
             "name": "Distant Satellite",
-            "x": 5275.7998,
+            "x": 5883.7998,
             "y": 720.0,
             "maxPoints": 4,
             "stats": [
@@ -4761,7 +4761,7 @@
         "do5vr-4": {
             "skill": "do5vr-4",
             "name": "Abyssal Rush",
-            "x": 6475.7998,
+            "x": 7083.7998,
             "y": 720.0,
             "maxPoints": 1,
             "stats": [
@@ -4783,7 +4783,7 @@
         "do5vr-5": {
             "skill": "do5vr-5",
             "name": "Cosmic Impact",
-            "x": 5875.7998,
+            "x": 6483.7998,
             "y": 1000.0,
             "maxPoints": 1,
             "stats": [
@@ -4811,7 +4811,7 @@
         "do5vr-6": {
             "skill": "do5vr-6",
             "name": "Extinction",
-            "x": 6675.7998,
+            "x": 7283.7998,
             "y": 1080.0,
             "maxPoints": 5,
             "stats": [
@@ -4831,7 +4831,7 @@
         "do5vr-7": {
             "skill": "do5vr-7",
             "name": "Void Adept",
-            "x": 6559.7998,
+            "x": 7167.7998,
             "y": -308.0,
             "maxPoints": 5,
             "stats": [
@@ -4857,7 +4857,7 @@
         "do5vr-8": {
             "skill": "do5vr-8",
             "name": "Hollow Orb",
-            "x": 7099.7998,
+            "x": 7707.7998,
             "y": -736.0,
             "maxPoints": 1,
             "stats": [
@@ -4884,7 +4884,7 @@
         "do5vr-9": {
             "skill": "do5vr-9",
             "name": "Abyssal Emission",
-            "x": 7911.7998,
+            "x": 8519.7998,
             "y": -563.99988,
             "maxPoints": 1,
             "stats": [
@@ -4909,7 +4909,7 @@
         "do5vr-10": {
             "skill": "do5vr-10",
             "name": "Chaotic Torrent",
-            "x": 8547.7998,
+            "x": 9155.7998,
             "y": 4.0,
             "maxPoints": 4,
             "stats": [
@@ -4930,7 +4930,7 @@
         "do5vr-11": {
             "skill": "do5vr-11",
             "name": "Cataclysm",
-            "x": 7607.7998,
+            "x": 8215.7998,
             "y": -16.0,
             "maxPoints": 1,
             "stats": [
@@ -4957,7 +4957,7 @@
         "do5vr-12": {
             "skill": "do5vr-12",
             "name": "Fleeting Orb",
-            "x": 7607.7999199999995,
+            "x": 8215.79992,
             "y": 544.0,
             "maxPoints": 4,
             "stats": [
@@ -4981,7 +4981,7 @@
         "do5vr-13": {
             "skill": "do5vr-13",
             "name": "Dust Channeller",
-            "x": 7047.7998,
+            "x": 7655.7998,
             "y": 544.0,
             "maxPoints": 4,
             "stats": [
@@ -5002,7 +5002,7 @@
         "do5vr-14": {
             "skill": "do5vr-14",
             "name": "Orb Master",
-            "x": 8175.7998,
+            "x": 8783.7998,
             "y": 544.0,
             "maxPoints": 5,
             "stats": [
@@ -5023,7 +5023,7 @@
         "do5vr-15": {
             "skill": "do5vr-15",
             "name": "Rift Caller",
-            "x": 5191.7998,
+            "x": 5799.7998,
             "y": -308.0,
             "maxPoints": 5,
             "stats": [
@@ -5048,7 +5048,7 @@
         "do5vr-16": {
             "skill": "do5vr-16",
             "name": "Soul Eater",
-            "x": 4291.7998,
+            "x": 4899.7998,
             "y": -0.0,
             "maxPoints": 2,
             "stats": [
@@ -5073,7 +5073,7 @@
         "do5vr-17": {
             "skill": "do5vr-17",
             "name": "Soul Gorger",
-            "x": 3735.7998,
+            "x": 4343.7998,
             "y": -392.0,
             "maxPoints": 2,
             "stats": [
@@ -5096,7 +5096,7 @@
         "do5vr-18": {
             "skill": "do5vr-18",
             "name": "Abyssal Expanse",
-            "x": 5623.7998,
+            "x": 6231.7998,
             "y": -732.0,
             "maxPoints": 4,
             "stats": [
@@ -5116,7 +5116,7 @@
         "do5vr-19": {
             "skill": "do5vr-19",
             "name": "Devour the Weak",
-            "x": 4283.7998,
+            "x": 4891.7998,
             "y": -784.0,
             "maxPoints": 4,
             "stats": [
@@ -5136,7 +5136,7 @@
         "do5vr-20": {
             "skill": "do5vr-20",
             "name": "World Rot",
-            "x": 4796.19972,
+            "x": 5404.19972,
             "y": 216.0,
             "maxPoints": 4,
             "stats": [
@@ -5163,7 +5163,7 @@
         "do5vr-21": {
             "skill": "do5vr-21",
             "name": "Rotting Prey",
-            "x": 4039.7998,
+            "x": 4647.7998,
             "y": 488.0,
             "maxPoints": 4,
             "stats": [
@@ -5183,7 +5183,7 @@
         "do5vr-22": {
             "skill": "do5vr-22",
             "name": "Voidfire Rift",
-            "x": 4484.19972,
+            "x": 5092.19972,
             "y": 824.0,
             "maxPoints": 3,
             "stats": [
@@ -5205,7 +5205,7 @@
         "do5vr-23": {
             "skill": "do5vr-23",
             "name": "Burning Prey",
-            "x": 3879.7998,
+            "x": 4487.7998,
             "y": 996.0,
             "maxPoints": 4,
             "stats": [
@@ -5225,7 +5225,7 @@
         "do5vr-24": {
             "skill": "do5vr-24",
             "name": "Sightless Star",
-            "x": 5075.7998,
+            "x": 5683.7998,
             "y": 1080.0,
             "maxPoints": 5,
             "stats": [
@@ -5246,7 +5246,7 @@
         "do5vr-25": {
             "skill": "do5vr-25",
             "name": "Patient Hunger",
-            "x": 7607.7999199999995,
+            "x": 8215.79992,
             "y": 1100.0,
             "maxPoints": 4,
             "stats": [
@@ -5266,7 +5266,7 @@
         "do5vr-26": {
             "skill": "do5vr-26",
             "name": "Abyssal Juggernaut",
-            "x": 6127.7998,
+            "x": 6735.7998,
             "y": -732.0,
             "maxPoints": 5,
             "stats": [
@@ -5286,7 +5286,7 @@
         "es6ai-0": {
             "skill": "es6ai-0",
             "name": "Erasing Strike",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -5306,7 +5306,7 @@
         "es6ai-2": {
             "skill": "es6ai-2",
             "name": "Dust To Wind",
-            "x": 5764.5998,
+            "x": 5883.7998,
             "y": -392.0,
             "maxPoints": 3,
             "stats": [
@@ -5331,7 +5331,7 @@
         "es6ai-3": {
             "skill": "es6ai-3",
             "name": "Rifts of Decay",
-            "x": 4864.5998,
+            "x": 4983.7998,
             "y": -743.99988,
             "maxPoints": 4,
             "stats": [
@@ -5353,7 +5353,7 @@
         "es6ai-4": {
             "skill": "es6ai-4",
             "name": "Regicide",
-            "x": 7642.1998,
+            "x": 7761.399799999999,
             "y": 739.2,
             "maxPoints": 4,
             "stats": [
@@ -5376,7 +5376,7 @@
         "es6ai-5": {
             "skill": "es6ai-5",
             "name": "Rifts of Destruction",
-            "x": 4089.3998,
+            "x": 4208.5998,
             "y": 240.000032,
             "maxPoints": 5,
             "stats": [
@@ -5401,7 +5401,7 @@
         "es6ai-6": {
             "skill": "es6ai-6",
             "name": "Iriesha's Fall",
-            "x": 3795.3998,
+            "x": 3914.5998,
             "y": 759.2,
             "maxPoints": 1,
             "stats": [
@@ -5422,7 +5422,7 @@
         "es6ai-7": {
             "skill": "es6ai-7",
             "name": "Mark of the End",
-            "x": 5022.5998,
+            "x": 5141.7998,
             "y": -57.599976,
             "maxPoints": 4,
             "stats": [
@@ -5445,7 +5445,7 @@
         "es6ai-8": {
             "skill": "es6ai-8",
             "name": "Void Pyre",
-            "x": 7164.5998,
+            "x": 7283.7998,
             "y": 1200.0,
             "maxPoints": 2,
             "stats": [
@@ -5474,7 +5474,7 @@
         "es6ai-9": {
             "skill": "es6ai-9",
             "name": "Merciful",
-            "x": 5764.5998,
+            "x": 5883.7998,
             "y": 400.0,
             "maxPoints": 4,
             "stats": [
@@ -5497,7 +5497,7 @@
         "es6ai-10": {
             "skill": "es6ai-10",
             "name": "Ruthless",
-            "x": 6964.5998,
+            "x": 7083.7998,
             "y": 400.0,
             "maxPoints": 4,
             "stats": [
@@ -5519,7 +5519,7 @@
         "es6ai-11": {
             "skill": "es6ai-11",
             "name": "Erasure of the Living",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": 800.0,
             "maxPoints": 5,
             "stats": [
@@ -5550,7 +5550,7 @@
         "es6ai-12": {
             "skill": "es6ai-12",
             "name": "Void Lens",
-            "x": 8008.5998,
+            "x": 8127.7998,
             "y": 1200.0,
             "maxPoints": 2,
             "stats": [
@@ -5578,7 +5578,7 @@
         "es6ai-13": {
             "skill": "es6ai-13",
             "name": "Time Loop",
-            "x": 5564.5998,
+            "x": 5683.7998,
             "y": 1200.0,
             "maxPoints": 3,
             "stats": [
@@ -5602,7 +5602,7 @@
         "es6ai-14": {
             "skill": "es6ai-14",
             "name": "Shattered Continuity",
-            "x": 5162.9998,
+            "x": 5282.1998,
             "y": 573.19996,
             "maxPoints": 1,
             "stats": [
@@ -5622,7 +5622,7 @@
         "es6ai-15": {
             "skill": "es6ai-15",
             "name": "Chamber of Fate",
-            "x": 4508.5998,
+            "x": 4627.7998,
             "y": 1200.0,
             "maxPoints": 2,
             "stats": [
@@ -5643,7 +5643,7 @@
         "es6ai-16": {
             "skill": "es6ai-16",
             "name": "Obliteration",
-            "x": 6964.5998,
+            "x": 7083.7998,
             "y": -392.0,
             "maxPoints": 5,
             "stats": [
@@ -5669,7 +5669,7 @@
         "es6ai-17": {
             "skill": "es6ai-17",
             "name": "Prophet's Onslaught",
-            "x": 7899.3998,
+            "x": 8018.5998,
             "y": -700.0,
             "maxPoints": 3,
             "stats": [
@@ -5693,7 +5693,7 @@
         "es6ai-18": {
             "skill": "es6ai-18",
             "name": "Essence of the End",
-            "x": 8588.5998,
+            "x": 8707.7998,
             "y": 4.5776e-05,
             "maxPoints": 3,
             "stats": [
@@ -5713,7 +5713,7 @@
         "es6ai-19": {
             "skill": "es6ai-19",
             "name": "Certain Erasure",
-            "x": 9009.3998,
+            "x": 9128.5998,
             "y": -454.8,
             "maxPoints": 2,
             "stats": [
@@ -5733,7 +5733,7 @@
         "es6ai-20": {
             "skill": "es6ai-20",
             "name": "Absorb the Remains",
-            "x": 7509.7998,
+            "x": 7628.9998,
             "y": -57.599976,
             "maxPoints": 3,
             "stats": [
@@ -5758,7 +5758,7 @@
         "es6ai-21": {
             "skill": "es6ai-21",
             "name": "Moments Stolen",
-            "x": 8008.5998,
+            "x": 8127.7998,
             "y": 258.8,
             "maxPoints": 3,
             "stats": [
@@ -5786,7 +5786,7 @@
         "es6ai-22": {
             "skill": "es6ai-22",
             "name": "Ravenous Void",
-            "x": 8428.59956,
+            "x": 8547.79956,
             "y": 739.2,
             "maxPoints": 1,
             "stats": [
@@ -5816,7 +5816,7 @@
         "es6ai-23": {
             "skill": "es6ai-23",
             "name": "Void Bringer",
-            "x": 8874.5998,
+            "x": 8993.7998,
             "y": 1200.0,
             "maxPoints": 2,
             "stats": [
@@ -5837,7 +5837,7 @@
         "es6ai-24": {
             "skill": "es6ai-24",
             "name": "Implements of Destruction",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -794.4,
             "maxPoints": 4,
             "stats": [
@@ -5861,7 +5861,7 @@
         "es6ai-26": {
             "skill": "es6ai-26",
             "name": "Final Hour",
-            "x": 4089.3998,
+            "x": 4208.5998,
             "y": -392.0,
             "maxPoints": 1,
             "stats": [
@@ -5882,7 +5882,7 @@
         "es6ai-27": {
             "skill": "es6ai-27",
             "name": "Twin Cataclysms",
-            "x": 4624.1998,
+            "x": 4743.399799999999,
             "y": 573.2,
             "maxPoints": 1,
             "stats": [
@@ -5902,7 +5902,7 @@
         "es6ai-28": {
             "skill": "es6ai-28",
             "name": "Hastened Cataclysm",
-            "x": 8788.5998,
+            "x": 8907.7998,
             "y": -1023.2,
             "maxPoints": 3,
             "stats": [
@@ -5923,7 +5923,7 @@
         "fs3e3-0": {
             "skill": "fs3e3-0",
             "name": "Forge Strike",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -5943,7 +5943,7 @@
         "fs3e3-1": {
             "skill": "fs3e3-1",
             "name": "Ironbound",
-            "x": 5635.39984,
+            "x": 5754.59984,
             "y": -209.599976,
             "maxPoints": 3,
             "stats": [
@@ -5966,7 +5966,7 @@
         "fs3e3-2": {
             "skill": "fs3e3-2",
             "name": "Lightforge",
-            "x": 6772.5998,
+            "x": 6891.7998,
             "y": -700.00012,
             "maxPoints": 4,
             "stats": [
@@ -5991,7 +5991,7 @@
         "fs3e3-3": {
             "skill": "fs3e3-3",
             "name": "Arcane Welding",
-            "x": 7536.99996,
+            "x": 7656.19996,
             "y": -900.00012,
             "maxPoints": 3,
             "stats": [
@@ -6016,7 +6016,7 @@
         "fs3e3-4": {
             "skill": "fs3e3-4",
             "name": "Rewarding Craft",
-            "x": 8274.1998,
+            "x": 8393.3998,
             "y": -900.0,
             "maxPoints": 1,
             "stats": [
@@ -6039,7 +6039,7 @@
         "fs3e3-5": {
             "skill": "fs3e3-5",
             "name": "Singular Craft",
-            "x": 5124.5998,
+            "x": 5243.7998,
             "y": -661.6,
             "maxPoints": 1,
             "stats": [
@@ -6067,7 +6067,7 @@
         "fs3e3-6": {
             "skill": "fs3e3-6",
             "name": "Put to the Sword",
-            "x": 4284.1998,
+            "x": 4403.399799999999,
             "y": -661.6,
             "maxPoints": 1,
             "stats": [
@@ -6092,7 +6092,7 @@
         "fs3e3-7": {
             "skill": "fs3e3-7",
             "name": "Spear Forge",
-            "x": 4724.5998,
+            "x": 4843.7998,
             "y": -209.599976,
             "maxPoints": 1,
             "stats": [
@@ -6114,7 +6114,7 @@
         "fs3e3-8": {
             "skill": "fs3e3-8",
             "name": "Heavy Strike",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": 580.0,
             "maxPoints": 5,
             "stats": [
@@ -6144,7 +6144,7 @@
         "fs3e3-9": {
             "skill": "fs3e3-9",
             "name": "Rending Descent",
-            "x": 5635.3998,
+            "x": 5754.5998,
             "y": 1232.8,
             "maxPoints": 5,
             "stats": [
@@ -6169,7 +6169,7 @@
         "fs3e3-10": {
             "skill": "fs3e3-10",
             "name": "Eagle Strike",
-            "x": 4924.5998,
+            "x": 5043.7998,
             "y": 700.0,
             "maxPoints": 1,
             "stats": [
@@ -6189,7 +6189,7 @@
         "fs3e3-11": {
             "skill": "fs3e3-11",
             "name": "Reinforce Weapon",
-            "x": 4676.5998,
+            "x": 4795.7998,
             "y": 1232.8,
             "maxPoints": 3,
             "stats": [
@@ -6212,7 +6212,7 @@
         "fs3e3-12": {
             "skill": "fs3e3-12",
             "name": "Reinforce Armor",
-            "x": 4220.5998,
+            "x": 4339.7998,
             "y": 600.0,
             "maxPoints": 4,
             "stats": [
@@ -6232,7 +6232,7 @@
         "fs3e3-14": {
             "skill": "fs3e3-14",
             "name": "Goliath Strike",
-            "x": 5635.39972,
+            "x": 5754.59972,
             "y": 400.00004,
             "maxPoints": 1,
             "stats": [
@@ -6252,7 +6252,7 @@
         "fs3e3-15": {
             "skill": "fs3e3-15",
             "name": "Engines of War",
-            "x": 7264.59972,
+            "x": 7383.79972,
             "y": 755.6,
             "maxPoints": 5,
             "stats": [
@@ -6275,7 +6275,7 @@
         "fs3e3-16": {
             "skill": "fs3e3-16",
             "name": "Anvil Blow",
-            "x": 6972.59972,
+            "x": 7091.79972,
             "y": 1232.8,
             "maxPoints": 1,
             "stats": [
@@ -6302,7 +6302,7 @@
         "fs3e3-17": {
             "skill": "fs3e3-17",
             "name": "Temper",
-            "x": 7708.59956,
+            "x": 7827.7995599999995,
             "y": 1232.8,
             "maxPoints": 5,
             "stats": [
@@ -6325,7 +6325,7 @@
         "fs3e3-18": {
             "skill": "fs3e3-18",
             "name": "Detonating Ground",
-            "x": 8449.3998,
+            "x": 8568.5998,
             "y": 1232.8,
             "maxPoints": 1,
             "stats": [
@@ -6349,7 +6349,7 @@
         "fs3e3-19": {
             "skill": "fs3e3-19",
             "name": "Lava Burn",
-            "x": 9097.3998,
+            "x": 9216.5998,
             "y": 928.4,
             "maxPoints": 4,
             "stats": [
@@ -6369,7 +6369,7 @@
         "fs3e3-20": {
             "skill": "fs3e3-20",
             "name": "Ignited Grounds",
-            "x": 8636.5998,
+            "x": 8755.7998,
             "y": 522.0,
             "maxPoints": 3,
             "stats": [
@@ -6390,7 +6390,7 @@
         "fs3e3-21": {
             "skill": "fs3e3-21",
             "name": "Forged by Fire",
-            "x": 7336.9998,
+            "x": 7456.199799999999,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -6417,7 +6417,7 @@
         "fs3e3-22": {
             "skill": "fs3e3-22",
             "name": "Well Forged Weapons",
-            "x": 7895.3994,
+            "x": 8014.5994,
             "y": 580.0,
             "maxPoints": 4,
             "stats": [
@@ -6443,7 +6443,7 @@
         "fs3e3-23": {
             "skill": "fs3e3-23",
             "name": "Forgemaster",
-            "x": 8455.3996,
+            "x": 8574.5996,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -6471,7 +6471,7 @@
         "fs3e3-24": {
             "skill": "fs3e3-24",
             "name": "Mass Production",
-            "x": 7895.3996,
+            "x": 8014.5996,
             "y": -560.0,
             "maxPoints": 3,
             "stats": [
@@ -6497,7 +6497,7 @@
         "fs3e3-25": {
             "skill": "fs3e3-25",
             "name": "Shrapnel",
-            "x": 7895.399719999999,
+            "x": 8014.59972,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -6522,7 +6522,7 @@
         "fs3e3-26": {
             "skill": "fs3e3-26",
             "name": "Serrated Blade",
-            "x": 3896.1998,
+            "x": 4015.3997999999997,
             "y": -209.6,
             "maxPoints": 4,
             "stats": [
@@ -6543,7 +6543,7 @@
         "fs3e3-28": {
             "skill": "fs3e3-28",
             "name": "Beneath Solarum",
-            "x": 5966.9998,
+            "x": 6086.199799999999,
             "y": -700.0,
             "maxPoints": 1,
             "stats": [
@@ -6564,7 +6564,7 @@
         "fs3e3-29": {
             "skill": "fs3e3-29",
             "name": "Bellows",
-            "x": 6364.599708448,
+            "x": 6483.799708447999,
             "y": 1232.8,
             "maxPoints": 1,
             "stats": [
@@ -6587,7 +6587,7 @@
         "fs3e3-30": {
             "skill": "fs3e3-30",
             "name": "Fan The Flames",
-            "x": 3891.3998,
+            "x": 4010.5998,
             "y": 1049.2,
             "maxPoints": 2,
             "stats": [
@@ -7267,7 +7267,7 @@
         "hh7pa3-0": {
             "skill": "hh7pa3-0",
             "name": "Healing Hands",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -7287,7 +7287,7 @@
         "hh7pa3-1": {
             "skill": "hh7pa3-1",
             "name": "Searing Light",
-            "x": 7360.5998,
+            "x": 7479.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -7311,7 +7311,7 @@
         "hh7pa3-2": {
             "skill": "hh7pa3-2",
             "name": "Bane of Evil",
-            "x": 8240.5998,
+            "x": 8359.7998,
             "y": -228.0,
             "maxPoints": 2,
             "stats": [
@@ -7334,7 +7334,7 @@
         "hh7pa3-3": {
             "skill": "hh7pa3-3",
             "name": "Halted Scourge",
-            "x": 7956.5998,
+            "x": 8075.7998,
             "y": -920.0,
             "maxPoints": 1,
             "stats": [
@@ -7359,7 +7359,7 @@
         "hh7pa3-4": {
             "skill": "hh7pa3-4",
             "name": "Turn Undead",
-            "x": 8548.5998,
+            "x": 8667.7998,
             "y": -936.0,
             "maxPoints": 1,
             "stats": [
@@ -7384,7 +7384,7 @@
         "hh7pa3-5": {
             "skill": "hh7pa3-5",
             "name": "Cleric's Wrath",
-            "x": 7992.5998,
+            "x": 8111.7998,
             "y": 436.0,
             "maxPoints": 2,
             "stats": [
@@ -7410,7 +7410,7 @@
         "hh7pa3-6": {
             "skill": "hh7pa3-6",
             "name": "Consecrated Storm",
-            "x": 8508.5998,
+            "x": 8627.7998,
             "y": 444.0,
             "maxPoints": 4,
             "stats": [
@@ -7432,7 +7432,7 @@
         "hh7pa3-7": {
             "skill": "hh7pa3-7",
             "name": "Holy Winds",
-            "x": 8916.5998,
+            "x": 9035.7998,
             "y": 24.0,
             "maxPoints": 4,
             "stats": [
@@ -7453,7 +7453,7 @@
         "hh7pa3-8": {
             "skill": "hh7pa3-8",
             "name": "Seraph Blade",
-            "x": 8624.5998,
+            "x": 8743.7998,
             "y": 988.0,
             "maxPoints": 1,
             "stats": [
@@ -7473,7 +7473,7 @@
         "hh7pa3-9": {
             "skill": "hh7pa3-9",
             "name": "Prayer of the Fallen",
-            "x": 5753.7998,
+            "x": 5872.9998,
             "y": 612.0,
             "maxPoints": 4,
             "stats": [
@@ -7500,7 +7500,7 @@
         "hh7pa3-10": {
             "skill": "hh7pa3-10",
             "name": "Blessed Parish",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": 1096.0,
             "maxPoints": 3,
             "stats": [
@@ -7526,7 +7526,7 @@
         "hh7pa3-11": {
             "skill": "hh7pa3-11",
             "name": "Purity of Thought",
-            "x": 6982.9998,
+            "x": 7102.199799999999,
             "y": 612.0,
             "maxPoints": 1,
             "stats": [
@@ -7551,7 +7551,7 @@
         "hh7pa3-12": {
             "skill": "hh7pa3-12",
             "name": "Divine Catalyst",
-            "x": 7264.59956,
+            "x": 7383.7995599999995,
             "y": 1220.0,
             "maxPoints": 5,
             "stats": [
@@ -7571,7 +7571,7 @@
         "hh7pa3-13": {
             "skill": "hh7pa3-13",
             "name": "Divine Barrier",
-            "x": 5364.5998,
+            "x": 5483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -7599,7 +7599,7 @@
         "hh7pa3-14": {
             "skill": "hh7pa3-14",
             "name": "Homeward",
-            "x": 4876.5998,
+            "x": 4995.7998,
             "y": -576.0,
             "maxPoints": 1,
             "stats": [
@@ -7620,7 +7620,7 @@
         "hh7pa3-15": {
             "skill": "hh7pa3-15",
             "name": "Synthesis of Light",
-            "x": 4456.9998,
+            "x": 4576.1998,
             "y": -154.8,
             "maxPoints": 3,
             "stats": [
@@ -7646,7 +7646,7 @@
         "hh7pa3-16": {
             "skill": "hh7pa3-16",
             "name": "Unbroken Prayer",
-            "x": 4096.5998,
+            "x": 4215.7998,
             "y": -676.0,
             "maxPoints": 1,
             "stats": [
@@ -7673,7 +7673,7 @@
         "hh7pa3-17": {
             "skill": "hh7pa3-17",
             "name": "Guardian's Chant",
-            "x": 4096.5998,
+            "x": 4215.7998,
             "y": 252.0,
             "maxPoints": 3,
             "stats": [
@@ -7697,7 +7697,7 @@
         "hh7pa3-18": {
             "skill": "hh7pa3-18",
             "name": "Urgent Healing",
-            "x": 5201.3998,
+            "x": 5320.5998,
             "y": 1069.2,
             "maxPoints": 4,
             "stats": [
@@ -7719,7 +7719,7 @@
         "hh7pa3-19": {
             "skill": "hh7pa3-19",
             "name": "Vow of Restoration",
-            "x": 5076.5998,
+            "x": 5195.7998,
             "y": 443.99994,
             "maxPoints": 4,
             "stats": [
@@ -7741,7 +7741,7 @@
         "hh7pa3-20": {
             "skill": "hh7pa3-20",
             "name": "Cleric's Hammer",
-            "x": 5808.5998,
+            "x": 5927.7998,
             "y": -420.0,
             "maxPoints": 4,
             "stats": [
@@ -7765,7 +7765,7 @@
         "hh7pa3-21": {
             "skill": "hh7pa3-21",
             "name": "Hand of Aurelus",
-            "x": 6918.5998,
+            "x": 7037.7998,
             "y": -420.0,
             "maxPoints": 4,
             "stats": [
@@ -7787,7 +7787,7 @@
         "hh7pa3-22": {
             "skill": "hh7pa3-22",
             "name": "Rahyeh's Chariot",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -771.2,
             "maxPoints": 1,
             "stats": [
@@ -7817,7 +7817,7 @@
         "hh7pa3-23": {
             "skill": "hh7pa3-23",
             "name": "Cloud Voyager",
-            "x": 5507.3998,
+            "x": 5626.5998,
             "y": -844.0,
             "maxPoints": 1,
             "stats": [
@@ -7837,7 +7837,7 @@
         "hh7pa3-24": {
             "skill": "hh7pa3-24",
             "name": "Sacred Gift",
-            "x": 4385.3998,
+            "x": 4504.5998,
             "y": 612.0,
             "maxPoints": 4,
             "stats": [
@@ -7857,7 +7857,7 @@
         "hh7pa3-26": {
             "skill": "hh7pa3-26",
             "name": "Sun Shroud",
-            "x": 7221.7998,
+            "x": 7340.9998,
             "y": -844.0,
             "maxPoints": 1,
             "stats": [
@@ -7877,7 +7877,7 @@
         "hh7pa3-28": {
             "skill": "hh7pa3-28",
             "name": "Virtue of Patience",
-            "x": 7876.5998,
+            "x": 7995.7998,
             "y": 988.0,
             "maxPoints": 2,
             "stats": [
@@ -7905,7 +7905,7 @@
         "hh7pa3-30": {
             "skill": "hh7pa3-30",
             "name": "Font of Salvation",
-            "x": 4638.1998,
+            "x": 4757.399799999999,
             "y": 1220.0,
             "maxPoints": 1,
             "stats": [
@@ -7927,7 +7927,7 @@
         "hh7pa3-32": {
             "skill": "hh7pa3-32",
             "name": "Skyfall",
-            "x": 3747.3998,
+            "x": 3866.5998,
             "y": -154.8,
             "maxPoints": 1,
             "stats": [
@@ -7948,7 +7948,7 @@
         "ht16aw-0": {
             "skill": "ht16aw-0",
             "name": "Hammer Throw",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -7967,7 +7967,7 @@
         "ht16aw-2": {
             "skill": "ht16aw-2",
             "name": "Rapid Throw",
-            "x": 6681.3998,
+            "x": 7077.3998,
             "y": 448.0,
             "maxPoints": 5,
             "stats": [
@@ -7992,7 +7992,7 @@
         "ht16aw-3": {
             "skill": "ht16aw-3",
             "name": "Weighted Hammers",
-            "x": 7559.7998,
+            "x": 7955.7998,
             "y": 364.0,
             "maxPoints": 5,
             "stats": [
@@ -8015,7 +8015,7 @@
         "ht16aw-4": {
             "skill": "ht16aw-4",
             "name": "Enra's Technique",
-            "x": 7420.8398,
+            "x": 7816.8398,
             "y": 916.0,
             "maxPoints": 1,
             "stats": [
@@ -8040,7 +8040,7 @@
         "ht16aw-5": {
             "skill": "ht16aw-5",
             "name": "Mana Starved Forging",
-            "x": 8119.7998,
+            "x": 8515.7998,
             "y": 752.0,
             "maxPoints": 1,
             "stats": [
@@ -8060,7 +8060,7 @@
         "ht16aw-6": {
             "skill": "ht16aw-6",
             "name": "Shattering Force",
-            "x": 6819.7998,
+            "x": 7215.7998,
             "y": 1064.0,
             "maxPoints": 5,
             "stats": [
@@ -8080,7 +8080,7 @@
         "ht16aw-7": {
             "skill": "ht16aw-7",
             "name": "Disintegrating Aura",
-            "x": 8187.7998,
+            "x": 8583.7998,
             "y": 32.0,
             "maxPoints": 1,
             "stats": [
@@ -8107,7 +8107,7 @@
         "ht16aw-8": {
             "skill": "ht16aw-8",
             "name": "Rapid Disintegration",
-            "x": 8279.7998,
+            "x": 8675.7998,
             "y": -480.0,
             "maxPoints": 4,
             "stats": [
@@ -8128,7 +8128,7 @@
         "ht16aw-9": {
             "skill": "ht16aw-9",
             "name": "Force of Impact",
-            "x": 5494.199799999999,
+            "x": 5890.199799999999,
             "y": 448.0,
             "maxPoints": 5,
             "stats": [
@@ -8154,7 +8154,7 @@
         "ht16aw-10": {
             "skill": "ht16aw-10",
             "name": "Collision",
-            "x": 4615.7998,
+            "x": 5011.7998,
             "y": 364.0,
             "maxPoints": 1,
             "stats": [
@@ -8178,7 +8178,7 @@
         "ht16aw-11": {
             "skill": "ht16aw-11",
             "name": "Ricochet",
-            "x": 3987.7998,
+            "x": 4383.7998,
             "y": 32.0,
             "maxPoints": 1,
             "stats": [
@@ -8203,7 +8203,7 @@
         "ht16aw-12": {
             "skill": "ht16aw-12",
             "name": "Chaining Hammers",
-            "x": 3895.7998,
+            "x": 4291.7998,
             "y": -480.0,
             "maxPoints": 2,
             "stats": [
@@ -8225,7 +8225,7 @@
         "ht16aw-13": {
             "skill": "ht16aw-13",
             "name": "Overwhelm",
-            "x": 5355.7998,
+            "x": 5751.7998,
             "y": 1064.0,
             "maxPoints": 5,
             "stats": [
@@ -8246,7 +8246,7 @@
         "ht16aw-14": {
             "skill": "ht16aw-14",
             "name": "Battle Rouse",
-            "x": 4754.771479999999,
+            "x": 5150.771479999999,
             "y": 916.0,
             "maxPoints": 5,
             "stats": [
@@ -8269,7 +8269,7 @@
         "ht16aw-15": {
             "skill": "ht16aw-15",
             "name": "Hammer of Want",
-            "x": 4055.7998,
+            "x": 4451.7998,
             "y": 752.0,
             "maxPoints": 1,
             "stats": [
@@ -8292,7 +8292,7 @@
         "ht16aw-16": {
             "skill": "ht16aw-16",
             "name": "Winged Hammers",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": -458.8,
             "maxPoints": 3,
             "stats": [
@@ -8314,7 +8314,7 @@
         "ht16aw-17": {
             "skill": "ht16aw-17",
             "name": "Steadfast Path",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": -886.28,
             "maxPoints": 1,
             "stats": [
@@ -8338,7 +8338,7 @@
         "ht16aw-18": {
             "skill": "ht16aw-18",
             "name": "Catapult",
-            "x": 6767.7998,
+            "x": 7163.7998,
             "y": -664.0,
             "maxPoints": 2,
             "stats": [
@@ -8362,7 +8362,7 @@
         "ht16aw-19": {
             "skill": "ht16aw-19",
             "name": "Avatar of the Spire",
-            "x": 7466.5996,
+            "x": 7862.5996,
             "y": -546.80004,
             "maxPoints": 1,
             "stats": [
@@ -8384,7 +8384,7 @@
         "ht16aw-20": {
             "skill": "ht16aw-20",
             "name": "Iron Spiral",
-            "x": 5407.7998,
+            "x": 5803.7998,
             "y": -664.0,
             "maxPoints": 1,
             "stats": [
@@ -8412,7 +8412,7 @@
         "ht16aw-21": {
             "skill": "ht16aw-21",
             "name": "Hammer Vortex",
-            "x": 4708.9998,
+            "x": 5104.9998,
             "y": -546.80004,
             "maxPoints": 1,
             "stats": [
@@ -8433,7 +8433,7 @@
         "ht16aw-22": {
             "skill": "ht16aw-22",
             "name": "Ballista",
-            "x": 7087.7998,
+            "x": 7483.7998,
             "y": -104.0,
             "maxPoints": 6,
             "stats": [
@@ -8454,7 +8454,7 @@
         "ht16aw-23": {
             "skill": "ht16aw-23",
             "name": "Zealot's Conviction",
-            "x": 5087.7998,
+            "x": 5483.7998,
             "y": -104.0,
             "maxPoints": 5,
             "stats": [
@@ -8474,7 +8474,7 @@
         "ht16aw-24": {
             "skill": "ht16aw-24",
             "name": "Guardian's Zeal",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": 736.0,
             "maxPoints": 3,
             "stats": [
@@ -8503,7 +8503,7 @@
         "ht16aw-25": {
             "skill": "ht16aw-25",
             "name": "Rahyeh's Legacy",
-            "x": 6087.7998,
+            "x": 6483.7998,
             "y": 1204.0,
             "maxPoints": 3,
             "stats": [
@@ -10485,7 +10485,7 @@
         "multis-0": {
             "skill": "multis-0",
             "name": "Multistrike",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -10503,7 +10503,7 @@
         "multis-2": {
             "skill": "multis-2",
             "name": "Way of the Sword",
-            "x": 5684.5998,
+            "x": 5803.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -10528,7 +10528,7 @@
         "multis-3": {
             "skill": "multis-3",
             "name": "Guarding Stance",
-            "x": 4776.19964,
+            "x": 4895.39964,
             "y": -172.400148,
             "maxPoints": 5,
             "stats": [
@@ -10552,7 +10552,7 @@
         "multis-4": {
             "skill": "multis-4",
             "name": "Bladed Focus",
-            "x": 4512.99972,
+            "x": 4632.19972,
             "y": -803.60016,
             "maxPoints": 2,
             "stats": [
@@ -10572,7 +10572,7 @@
         "multis-5": {
             "skill": "multis-5",
             "name": "Flanking Strikes",
-            "x": 4235.3996,
+            "x": 4354.5996,
             "y": -306.80014,
             "maxPoints": 1,
             "stats": [
@@ -10596,7 +10596,7 @@
         "multis-6": {
             "skill": "multis-6",
             "name": "Hallowed Arsenal",
-            "x": 3864.9998,
+            "x": 3984.1998,
             "y": -708.4,
             "maxPoints": 1,
             "stats": [
@@ -10616,7 +10616,7 @@
         "multis-7": {
             "skill": "multis-7",
             "name": "Vengeful",
-            "x": 4338.59968,
+            "x": 4457.79968,
             "y": 240.39984,
             "maxPoints": 3,
             "stats": [
@@ -10636,7 +10636,7 @@
         "multis-8": {
             "skill": "multis-8",
             "name": "Echoed Warfare",
-            "x": 3735.7998,
+            "x": 3854.9997999999996,
             "y": -72.400148,
             "maxPoints": 2,
             "stats": [
@@ -10659,7 +10659,7 @@
         "multis-9": {
             "skill": "multis-9",
             "name": "Initiate",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": 680.0,
             "maxPoints": 5,
             "stats": [
@@ -10684,7 +10684,7 @@
         "multis-10": {
             "skill": "multis-10",
             "name": "Path of the Knight",
-            "x": 5217.7998,
+            "x": 5336.9998,
             "y": 1207.2,
             "maxPoints": 5,
             "stats": [
@@ -10709,7 +10709,7 @@
         "multis-11": {
             "skill": "multis-11",
             "name": "Heated Forge",
-            "x": 4646.9998,
+            "x": 4766.1998,
             "y": 820.0,
             "maxPoints": 1,
             "stats": [
@@ -10731,7 +10731,7 @@
         "multis-12": {
             "skill": "multis-12",
             "name": "Forgemastery",
-            "x": 4088.5998,
+            "x": 4207.7998,
             "y": 1207.2,
             "maxPoints": 2,
             "stats": [
@@ -10751,7 +10751,7 @@
         "multis-13": {
             "skill": "multis-13",
             "name": "Hack and Slash",
-            "x": 5308.5998,
+            "x": 5427.7998,
             "y": 680.0,
             "maxPoints": 1,
             "stats": [
@@ -10775,7 +10775,7 @@
         "multis-14": {
             "skill": "multis-14",
             "name": "Alpha Cuts",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": 1235.2,
             "maxPoints": 3,
             "stats": [
@@ -10797,7 +10797,7 @@
         "multis-15": {
             "skill": "multis-15",
             "name": "Bladestorm",
-            "x": 7196.5998,
+            "x": 7315.7998,
             "y": 834.4,
             "maxPoints": 1,
             "stats": [
@@ -10822,7 +10822,7 @@
         "multis-16": {
             "skill": "multis-16",
             "name": "Relentless Advance",
-            "x": 7044.5998,
+            "x": 7163.7998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -10846,7 +10846,7 @@
         "multis-17": {
             "skill": "multis-17",
             "name": "Determination",
-            "x": 7866.5998,
+            "x": 7985.7998,
             "y": 60.800048,
             "maxPoints": 5,
             "stats": [
@@ -10870,7 +10870,7 @@
         "multis-18": {
             "skill": "multis-18",
             "name": "Blitz",
-            "x": 8256.19988,
+            "x": 8375.399879999999,
             "y": 581.20008,
             "maxPoints": 5,
             "stats": [
@@ -10892,7 +10892,7 @@
         "multis-19": {
             "skill": "multis-19",
             "name": "Decimate",
-            "x": 7866.5998,
+            "x": 7985.7998,
             "y": 1090.8,
             "maxPoints": 5,
             "stats": [
@@ -10914,7 +10914,7 @@
         "multis-20": {
             "skill": "multis-20",
             "name": "Guillotine",
-            "x": 8694.5998,
+            "x": 8813.7998,
             "y": 1090.8,
             "maxPoints": 3,
             "stats": [
@@ -10935,7 +10935,7 @@
         "multis-21": {
             "skill": "multis-21",
             "name": "Jousting",
-            "x": 8694.5998,
+            "x": 8813.7998,
             "y": 60.800048,
             "maxPoints": 1,
             "stats": [
@@ -10955,7 +10955,7 @@
         "multis-22": {
             "skill": "multis-22",
             "name": "Sweeping Blows",
-            "x": 8256.1998,
+            "x": 8375.3998,
             "y": -555.99992,
             "maxPoints": 4,
             "stats": [
@@ -10977,7 +10977,7 @@
         "multis-23": {
             "skill": "multis-23",
             "name": "Victory Strikes",
-            "x": 8820.5998,
+            "x": 8939.7998,
             "y": -858.8,
             "maxPoints": 1,
             "stats": [
@@ -10997,7 +10997,7 @@
         "multis-24": {
             "skill": "multis-24",
             "name": "Perfect Steel",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -680.0,
             "maxPoints": 1,
             "stats": [
@@ -11022,7 +11022,7 @@
         "multis-25": {
             "skill": "multis-25",
             "name": "Doctrine of the Anvil",
-            "x": 7224.9998,
+            "x": 7344.199799999999,
             "y": -535.6,
             "maxPoints": 1,
             "stats": [
@@ -11045,7 +11045,7 @@
         "multis-26": {
             "skill": "multis-26",
             "name": "Fiery Justice",
-            "x": 7757.3998,
+            "x": 7876.5998,
             "y": -937.6,
             "maxPoints": 1,
             "stats": [
@@ -11067,7 +11067,7 @@
         "multis-27": {
             "skill": "multis-27",
             "name": "Aggressive Cadence",
-            "x": 5621.7998,
+            "x": 5740.9998,
             "y": -831.6,
             "maxPoints": 1,
             "stats": [
@@ -11089,7 +11089,7 @@
         "multis-28": {
             "skill": "multis-28",
             "name": "Nullifying Carve",
-            "x": 5207.7998,
+            "x": 5326.9998,
             "y": -476.7998,
             "maxPoints": 1,
             "stats": [
@@ -12346,7 +12346,7 @@
         "rs31hi-0": {
             "skill": "rs31hi-0",
             "name": "Ring Of Shields",
-            "x": 6364.5998,
+            "x": 6075.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -12366,7 +12366,7 @@
         "rs31hi-1": {
             "skill": "rs31hi-1",
             "name": "Reinforcement",
-            "x": 5716.1998,
+            "x": 5427.3998,
             "y": -443.2,
             "maxPoints": 2,
             "stats": [
@@ -12389,7 +12389,7 @@
         "rs31hi-2": {
             "skill": "rs31hi-2",
             "name": "Healing Shields",
-            "x": 4978.9998,
+            "x": 4690.1998,
             "y": -443.19988,
             "maxPoints": 4,
             "stats": [
@@ -12414,7 +12414,7 @@
         "rs31hi-3": {
             "skill": "rs31hi-3",
             "name": "Phalanx",
-            "x": 4496.5998,
+            "x": 4207.7998,
             "y": -816.0,
             "maxPoints": 5,
             "stats": [
@@ -12436,7 +12436,7 @@
         "rs31hi-4": {
             "skill": "rs31hi-4",
             "name": "Sturdy Shields",
-            "x": 4080.5998,
+            "x": 3791.7998,
             "y": -444.0,
             "maxPoints": 5,
             "stats": [
@@ -12459,7 +12459,7 @@
         "rs31hi-5": {
             "skill": "rs31hi-5",
             "name": "On the Path",
-            "x": 6364.5998,
+            "x": 6075.7998,
             "y": -700.0,
             "maxPoints": 3,
             "stats": [
@@ -12480,7 +12480,7 @@
         "rs31hi-6": {
             "skill": "rs31hi-6",
             "name": "Aegis of Life",
-            "x": 4536.5998,
+            "x": 4247.7998,
             "y": -68.0,
             "maxPoints": 4,
             "stats": [
@@ -12505,7 +12505,7 @@
         "rs31hi-7": {
             "skill": "rs31hi-7",
             "name": "Tempered Steel",
-            "x": 5664.5998,
+            "x": 5375.7998,
             "y": 276.0,
             "maxPoints": 5,
             "stats": [
@@ -12530,7 +12530,7 @@
         "rs31hi-8": {
             "skill": "rs31hi-8",
             "name": "Martyr Shields",
-            "x": 4978.9998,
+            "x": 4690.1998,
             "y": 276.0,
             "maxPoints": 4,
             "stats": [
@@ -12555,7 +12555,7 @@
         "rs31hi-9": {
             "skill": "rs31hi-9",
             "name": "Collateral Damage",
-            "x": 4610.99996,
+            "x": 4322.19996,
             "y": 632.80004,
             "maxPoints": 1,
             "stats": [
@@ -12577,7 +12577,7 @@
         "rs31hi-10": {
             "skill": "rs31hi-10",
             "name": "Heavy Shrapnel",
-            "x": 4024.5998,
+            "x": 3735.7998,
             "y": 632.80004,
             "maxPoints": 3,
             "stats": [
@@ -12600,7 +12600,7 @@
         "rs31hi-11": {
             "skill": "rs31hi-11",
             "name": "Defensive Shields",
-            "x": 4976.19988,
+            "x": 4687.39988,
             "y": 992.4,
             "maxPoints": 5,
             "stats": [
@@ -12624,7 +12624,7 @@
         "rs31hi-12": {
             "skill": "rs31hi-12",
             "name": "Iron Form",
-            "x": 5562.1998,
+            "x": 5273.3998,
             "y": 1260.0,
             "maxPoints": 1,
             "stats": [
@@ -12645,7 +12645,7 @@
         "rs31hi-13": {
             "skill": "rs31hi-13",
             "name": "Rush Wall",
-            "x": 4368.1998,
+            "x": 4079.3997999999997,
             "y": 1260.0,
             "maxPoints": 1,
             "stats": [
@@ -12665,7 +12665,7 @@
         "rs31hi-14": {
             "skill": "rs31hi-14",
             "name": "Heavy Burden",
-            "x": 6364.5998,
+            "x": 6075.7998,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -12689,7 +12689,7 @@
         "rs31hi-15": {
             "skill": "rs31hi-15",
             "name": "Pulsing Shields",
-            "x": 6364.5998,
+            "x": 6075.7998,
             "y": 1260.0,
             "maxPoints": 1,
             "stats": [
@@ -12709,7 +12709,7 @@
         "rs31hi-16": {
             "skill": "rs31hi-16",
             "name": "Banding",
-            "x": 7064.5998,
+            "x": 6775.7998,
             "y": 276.0,
             "maxPoints": 5,
             "stats": [
@@ -12734,7 +12734,7 @@
         "rs31hi-17": {
             "skill": "rs31hi-17",
             "name": "Enduring Defense",
-            "x": 7774.19988,
+            "x": 7485.39988,
             "y": 992.4,
             "maxPoints": 3,
             "stats": [
@@ -12757,7 +12757,7 @@
         "rs31hi-18": {
             "skill": "rs31hi-18",
             "name": "Coating",
-            "x": 7156.99972,
+            "x": 6868.19972,
             "y": 1260.0,
             "maxPoints": 1,
             "stats": [
@@ -12777,7 +12777,7 @@
         "rs31hi-19": {
             "skill": "rs31hi-19",
             "name": "Shield Spike",
-            "x": 8401.3996,
+            "x": 8112.5996,
             "y": 1260.0,
             "maxPoints": 1,
             "stats": [
@@ -12797,7 +12797,7 @@
         "rs31hi-20": {
             "skill": "rs31hi-20",
             "name": "Molten Shields",
-            "x": 7949.3998,
+            "x": 7660.5998,
             "y": 276.0,
             "maxPoints": 1,
             "stats": [
@@ -12825,7 +12825,7 @@
         "rs31hi-21": {
             "skill": "rs31hi-21",
             "name": "Immolation",
-            "x": 8292.5998,
+            "x": 8003.7998,
             "y": -244.0,
             "maxPoints": 1,
             "stats": [
@@ -12850,7 +12850,7 @@
         "rs31hi-22": {
             "skill": "rs31hi-22",
             "name": "Fire Spin",
-            "x": 8904.5998,
+            "x": 8615.7998,
             "y": -152.0,
             "maxPoints": 4,
             "stats": [
@@ -12871,7 +12871,7 @@
         "rs31hi-23": {
             "skill": "rs31hi-23",
             "name": "Touched by Fire",
-            "x": 8292.5998,
+            "x": 8003.7998,
             "y": 800.0,
             "maxPoints": 5,
             "stats": [
@@ -12893,7 +12893,7 @@
         "rs31hi-24": {
             "skill": "rs31hi-24",
             "name": "Bastion",
-            "x": 7012.5998,
+            "x": 6723.7998,
             "y": -443.2,
             "maxPoints": 5,
             "stats": [
@@ -12916,7 +12916,7 @@
         "rs31hi-26": {
             "skill": "rs31hi-26",
             "name": "Amass",
-            "x": 7774.1998,
+            "x": 7485.399799999999,
             "y": -443.2,
             "maxPoints": 3,
             "stats": [
@@ -12937,7 +12937,7 @@
         "rs31hi-27": {
             "skill": "rs31hi-27",
             "name": "Displacement",
-            "x": 7552.5998,
+            "x": 7263.7998,
             "y": -816.0,
             "maxPoints": 1,
             "stats": [
@@ -12963,7 +12963,7 @@
         "rs31hi-28": {
             "skill": "rs31hi-28",
             "name": "Wreathed in Flame",
-            "x": 8904.5998,
+            "x": 8615.7998,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -14418,7 +14418,7 @@
         "sm87r4-0": {
             "skill": "sm87r4-0",
             "name": "Smite",
-            "x": 6364.5998,
+            "x": 6186.1998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -14439,7 +14439,7 @@
         "sm87r4-2": {
             "skill": "sm87r4-2",
             "name": "Fissure",
-            "x": 6364.5998,
+            "x": 6186.1998,
             "y": 654.0,
             "maxPoints": 1,
             "stats": [
@@ -14464,7 +14464,7 @@
         "sm87r4-3": {
             "skill": "sm87r4-3",
             "name": "Epicenter",
-            "x": 6364.599861036,
+            "x": 6186.199861036001,
             "y": 1271.6,
             "maxPoints": 3,
             "stats": [
@@ -14487,7 +14487,7 @@
         "sm87r4-4": {
             "skill": "sm87r4-4",
             "name": "Heavy Impact",
-            "x": 7004.59988,
+            "x": 6826.19988,
             "y": 1104.4,
             "maxPoints": 5,
             "stats": [
@@ -14512,7 +14512,7 @@
         "sm87r4-5": {
             "skill": "sm87r4-5",
             "name": "Six Feet Under",
-            "x": 7741.399719999999,
+            "x": 7562.99972,
             "y": 1174.0,
             "maxPoints": 3,
             "stats": [
@@ -14535,7 +14535,7 @@
         "sm87r4-6": {
             "skill": "sm87r4-6",
             "name": "Aftershock",
-            "x": 5723.7998,
+            "x": 5545.3998,
             "y": 1104.4,
             "maxPoints": 5,
             "stats": [
@@ -14561,7 +14561,7 @@
         "sm87r4-7": {
             "skill": "sm87r4-7",
             "name": "Descend",
-            "x": 4797.7998,
+            "x": 4619.3998,
             "y": 1209.6,
             "maxPoints": 1,
             "stats": [
@@ -14592,7 +14592,7 @@
         "sm87r4-8": {
             "skill": "sm87r4-8",
             "name": "Forceful Impact",
-            "x": 3914.1998,
+            "x": 3735.7998000000002,
             "y": 1057.2,
             "maxPoints": 5,
             "stats": [
@@ -14612,7 +14612,7 @@
         "sm87r4-9": {
             "skill": "sm87r4-9",
             "name": "Holy Wave",
-            "x": 5664.5998,
+            "x": 5486.1998,
             "y": -400.0,
             "maxPoints": 4,
             "stats": [
@@ -14636,7 +14636,7 @@
         "sm87r4-10": {
             "skill": "sm87r4-10",
             "name": "Righteous Fury",
-            "x": 4671.7998,
+            "x": 4493.3998,
             "y": -258.400024,
             "maxPoints": 5,
             "stats": [
@@ -14658,7 +14658,7 @@
         "sm87r4-11": {
             "skill": "sm87r4-11",
             "name": "Righteous Flurry",
-            "x": 4081.3998,
+            "x": 3902.9998000000005,
             "y": 454.0,
             "maxPoints": 4,
             "stats": [
@@ -14680,7 +14680,7 @@
         "sm87r4-12": {
             "skill": "sm87r4-12",
             "name": "Panacea",
-            "x": 5037.3998,
+            "x": 4858.9998000000005,
             "y": -732.0,
             "maxPoints": 5,
             "stats": [
@@ -14702,7 +14702,7 @@
         "sm87r4-13": {
             "skill": "sm87r4-13",
             "name": "Desperate Measures",
-            "x": 4222.1998,
+            "x": 4043.7998000000002,
             "y": -732.0,
             "maxPoints": 1,
             "stats": [
@@ -14724,7 +14724,7 @@
         "sm87r4-14": {
             "skill": "sm87r4-14",
             "name": "Soothing Balm",
-            "x": 6064.5998,
+            "x": 5886.1998,
             "y": -811.2,
             "maxPoints": 3,
             "stats": [
@@ -14747,7 +14747,7 @@
         "sm87r4-15": {
             "skill": "sm87r4-15",
             "name": "Pillars of Light",
-            "x": 7064.5998,
+            "x": 6886.1998,
             "y": 400.0,
             "maxPoints": 3,
             "stats": [
@@ -14769,7 +14769,7 @@
         "sm87r4-16": {
             "skill": "sm87r4-16",
             "name": "Holy Fire",
-            "x": 5664.5998,
+            "x": 5486.1998,
             "y": 400.0,
             "maxPoints": 5,
             "stats": [
@@ -14792,7 +14792,7 @@
         "sm87r4-17": {
             "skill": "sm87r4-17",
             "name": "Conflagration",
-            "x": 5251.7998,
+            "x": 5073.3998,
             "y": 26.0,
             "maxPoints": 5,
             "stats": [
@@ -14819,7 +14819,7 @@
         "sm87r4-18": {
             "skill": "sm87r4-18",
             "name": "Immolate",
-            "x": 5251.79964,
+            "x": 5073.3996400000005,
             "y": 777.6,
             "maxPoints": 2,
             "stats": [
@@ -14841,7 +14841,7 @@
         "sm87r4-19": {
             "skill": "sm87r4-19",
             "name": "Righteous Overload",
-            "x": 4871.7998,
+            "x": 4693.3998,
             "y": 400.00004,
             "maxPoints": 5,
             "stats": [
@@ -14865,7 +14865,7 @@
         "sm87r4-20": {
             "skill": "sm87r4-20",
             "name": "Blinding Flash",
-            "x": 7064.5998,
+            "x": 6886.1998,
             "y": -400.0,
             "maxPoints": 5,
             "stats": [
@@ -14889,7 +14889,7 @@
         "sm87r4-21": {
             "skill": "sm87r4-21",
             "name": "Order of Lagon",
-            "x": 8278.9998,
+            "x": 8100.5998,
             "y": -430.0,
             "maxPoints": 1,
             "stats": [
@@ -14916,7 +14916,7 @@
         "sm87r4-22": {
             "skill": "sm87r4-22",
             "name": "Unbalanced Scale",
-            "x": 8696.5998,
+            "x": 8518.1998,
             "y": -58.4,
             "maxPoints": 1,
             "stats": [
@@ -14939,7 +14939,7 @@
         "sm87r4-23": {
             "skill": "sm87r4-23",
             "name": "Charged Hand",
-            "x": 8696.5998,
+            "x": 8518.1998,
             "y": -841.60008,
             "maxPoints": 5,
             "stats": [
@@ -14960,7 +14960,7 @@
         "sm87r4-24": {
             "skill": "sm87r4-24",
             "name": "Wandering Bolts",
-            "x": 7856.59968,
+            "x": 7678.199680000001,
             "y": -58.400024,
             "maxPoints": 3,
             "stats": [
@@ -14980,7 +14980,7 @@
         "sm87r4-25": {
             "skill": "sm87r4-25",
             "name": "Conviction",
-            "x": 8970.199639999999,
+            "x": 8791.799640000001,
             "y": 1215.2,
             "maxPoints": 5,
             "stats": [
@@ -15001,7 +15001,7 @@
         "sm87r4-26": {
             "skill": "sm87r4-26",
             "name": "Deep Impact",
-            "x": 8970.199639999999,
+            "x": 8791.799640000001,
             "y": 601.99992,
             "maxPoints": 4,
             "stats": [
@@ -15021,7 +15021,7 @@
         "sm87r4-27": {
             "skill": "sm87r4-27",
             "name": "Grace",
-            "x": 6664.59986,
+            "x": 6486.199860000001,
             "y": -811.2,
             "maxPoints": 5,
             "stats": [
@@ -15041,7 +15041,7 @@
         "sm87r4-28": {
             "skill": "sm87r4-28",
             "name": "Atonement",
-            "x": 8356.19964,
+            "x": 8177.79964,
             "y": 896.4,
             "maxPoints": 5,
             "stats": [
@@ -15064,7 +15064,7 @@
         "sm87r4-30": {
             "skill": "sm87r4-30",
             "name": "Sacrifice",
-            "x": 7741.3998,
+            "x": 7562.9998000000005,
             "y": 612.4,
             "maxPoints": 5,
             "stats": [
@@ -15089,7 +15089,7 @@
         "sm87r4-31": {
             "skill": "sm87r4-31",
             "name": "Piety",
-            "x": 7856.5998,
+            "x": 7678.1998,
             "y": -841.6,
             "maxPoints": 5,
             "stats": [
@@ -15111,7 +15111,7 @@
         "sndr1-0": {
             "skill": "sndr1-0",
             "name": "Rive",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -15131,7 +15131,7 @@
         "sndr1-2": {
             "skill": "sndr1-2",
             "name": "Champion",
-            "x": 5800.5998,
+            "x": 5919.7998,
             "y": -480.0,
             "maxPoints": 5,
             "stats": [
@@ -15156,7 +15156,7 @@
         "sndr1-3": {
             "skill": "sndr1-3",
             "name": "Bound Weapon",
-            "x": 5604.5998,
+            "x": 5723.7998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -15181,7 +15181,7 @@
         "sndr1-4": {
             "skill": "sndr1-4",
             "name": "Laceration",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -760.0,
             "maxPoints": 1,
             "stats": [
@@ -15206,7 +15206,7 @@
         "sndr1-5": {
             "skill": "sndr1-5",
             "name": "Temporal Warrior",
-            "x": 4420.5998,
+            "x": 4539.7998,
             "y": -852.0,
             "maxPoints": 1,
             "stats": [
@@ -15232,7 +15232,7 @@
         "sndr1-6": {
             "skill": "sndr1-6",
             "name": "Weapon Specialist",
-            "x": 5160.5998,
+            "x": 5279.7998,
             "y": -592.0,
             "maxPoints": 1,
             "stats": [
@@ -15256,7 +15256,7 @@
         "sndr1-7": {
             "skill": "sndr1-7",
             "name": "Azure Crescendo",
-            "x": 8144.5998,
+            "x": 8263.7998,
             "y": 304.0,
             "maxPoints": 3,
             "stats": [
@@ -15277,7 +15277,7 @@
         "sndr1-8": {
             "skill": "sndr1-8",
             "name": "Ripples of Oblivion",
-            "x": 3872.5998,
+            "x": 3991.7998,
             "y": -648.0,
             "maxPoints": 5,
             "stats": [
@@ -15301,7 +15301,7 @@
         "sndr1-9": {
             "skill": "sndr1-9",
             "name": "Sever",
-            "x": 5800.5998,
+            "x": 5919.7998,
             "y": 480.0,
             "maxPoints": 3,
             "stats": [
@@ -15324,7 +15324,7 @@
         "sndr1-10": {
             "skill": "sndr1-10",
             "name": "Twisting Fangs",
-            "x": 4788.5998,
+            "x": 4907.7998,
             "y": 720.0,
             "maxPoints": 3,
             "stats": [
@@ -15347,7 +15347,7 @@
         "sndr1-11": {
             "skill": "sndr1-11",
             "name": "Flame Drinker's Blade",
-            "x": 4301.3998,
+            "x": 4420.5998,
             "y": 1186.0,
             "maxPoints": 1,
             "stats": [
@@ -15374,7 +15374,7 @@
         "sndr1-12": {
             "skill": "sndr1-12",
             "name": "Assassin's Sustenance",
-            "x": 3802.1998,
+            "x": 3921.3997999999997,
             "y": 888.0,
             "maxPoints": 1,
             "stats": [
@@ -15395,7 +15395,7 @@
         "sndr1-13": {
             "skill": "sndr1-13",
             "name": "Savagery",
-            "x": 4305.3998,
+            "x": 4424.5998,
             "y": 217.2,
             "maxPoints": 3,
             "stats": [
@@ -15415,7 +15415,7 @@
         "sndr1-14": {
             "skill": "sndr1-14",
             "name": "Scrap Metal",
-            "x": 4460.5998,
+            "x": 4579.7998,
             "y": -300.0,
             "maxPoints": 1,
             "stats": [
@@ -15440,7 +15440,7 @@
         "sndr1-15": {
             "skill": "sndr1-15",
             "name": "Flurry",
-            "x": 6928.5998,
+            "x": 7047.7998,
             "y": 480.0,
             "maxPoints": 5,
             "stats": [
@@ -15464,7 +15464,7 @@
         "sndr1-16": {
             "skill": "sndr1-16",
             "name": "Concentration",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": 760.0,
             "maxPoints": 4,
             "stats": [
@@ -15488,7 +15488,7 @@
         "sndr1-17": {
             "skill": "sndr1-17",
             "name": "Adrenaline",
-            "x": 5784.9998,
+            "x": 5904.199799999999,
             "y": 1200.0,
             "maxPoints": 4,
             "stats": [
@@ -15508,7 +15508,7 @@
         "sndr1-18": {
             "skill": "sndr1-18",
             "name": "Focused Strike",
-            "x": 6940.5998,
+            "x": 7059.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -15530,7 +15530,7 @@
         "sndr1-19": {
             "skill": "sndr1-19",
             "name": "Rending",
-            "x": 7736.5998,
+            "x": 7855.7998,
             "y": 784.0,
             "maxPoints": 2,
             "stats": [
@@ -15553,7 +15553,7 @@
         "sndr1-20": {
             "skill": "sndr1-20",
             "name": "Projection of War",
-            "x": 7440.5998,
+            "x": 7559.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -15574,7 +15574,7 @@
         "sndr1-21": {
             "skill": "sndr1-21",
             "name": "Cadence",
-            "x": 8552.5998,
+            "x": 8671.7998,
             "y": 784.0,
             "maxPoints": 1,
             "stats": [
@@ -15598,7 +15598,7 @@
         "sndr1-22": {
             "skill": "sndr1-22",
             "name": "Triple Threat",
-            "x": 8960.5998,
+            "x": 9079.7998,
             "y": 424.0,
             "maxPoints": 1,
             "stats": [
@@ -15620,7 +15620,7 @@
         "sndr1-23": {
             "skill": "sndr1-23",
             "name": "Double Slash",
-            "x": 8884.5998,
+            "x": 9003.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -15640,7 +15640,7 @@
         "sndr1-24": {
             "skill": "sndr1-24",
             "name": "Foe Cleaver",
-            "x": 4976.5998,
+            "x": 5095.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -15663,7 +15663,7 @@
         "sndr1-26": {
             "skill": "sndr1-26",
             "name": "Iron Reach",
-            "x": 7416.5998,
+            "x": 7535.7998,
             "y": 272.0,
             "maxPoints": 4,
             "stats": [
@@ -15688,7 +15688,7 @@
         "sndr1-27": {
             "skill": "sndr1-27",
             "name": "Challenge",
-            "x": 7840.5998,
+            "x": 7959.7998,
             "y": -40.0,
             "maxPoints": 1,
             "stats": [
@@ -15717,7 +15717,7 @@
         "sndr1-28": {
             "skill": "sndr1-28",
             "name": "Outburst",
-            "x": 6928.5998,
+            "x": 7047.7998,
             "y": -480.0,
             "maxPoints": 3,
             "stats": [
@@ -15740,7 +15740,7 @@
         "sndr1-29": {
             "skill": "sndr1-29",
             "name": "Reclamation",
-            "x": 7568.5998,
+            "x": 7687.7998,
             "y": -592.0,
             "maxPoints": 2,
             "stats": [
@@ -15764,7 +15764,7 @@
         "sndr1-30": {
             "skill": "sndr1-30",
             "name": "Brutality",
-            "x": 8176.5998,
+            "x": 8295.7998,
             "y": -444.0,
             "maxPoints": 3,
             "stats": [
@@ -15791,7 +15791,7 @@
         "sndr1-31": {
             "skill": "sndr1-31",
             "name": "Massacre",
-            "x": 8976.5998,
+            "x": 9095.7998,
             "y": -693.6,
             "maxPoints": 3,
             "stats": [
@@ -15811,7 +15811,7 @@
         "sndr1-32": {
             "skill": "sndr1-32",
             "name": "Coup de Grace",
-            "x": 8960.5998,
+            "x": 9079.7998,
             "y": -177.599976,
             "maxPoints": 1,
             "stats": [
@@ -15834,7 +15834,7 @@
         "sr31hu-0": {
             "skill": "sr31hu-0",
             "name": "Shield Rush",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -15853,7 +15853,7 @@
         "sr31hu-2": {
             "skill": "sr31hu-2",
             "name": "Consuming Path",
-            "x": 6764.5998,
+            "x": 6883.7998,
             "y": 640.0,
             "maxPoints": 5,
             "stats": [
@@ -15877,7 +15877,7 @@
         "sr31hu-3": {
             "skill": "sr31hu-3",
             "name": "Will Breaker",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": 1200.0,
             "maxPoints": 4,
             "stats": [
@@ -15897,7 +15897,7 @@
         "sr31hu-4": {
             "skill": "sr31hu-4",
             "name": "Descent of the Void",
-            "x": 5964.5998,
+            "x": 6083.7998,
             "y": 640.0,
             "maxPoints": 1,
             "stats": [
@@ -15920,7 +15920,7 @@
         "sr31hu-5": {
             "skill": "sr31hu-5",
             "name": "Dark Regression",
-            "x": 5564.5998,
+            "x": 5683.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -15935,7 +15935,7 @@
             ],
             "out": [],
             "description": [
-                "When Shield Rush ends it creates a {Void Beam} that travels back in the direction you came from. Shield Rush costs more mana."
+                "When Shield Rush ends it creates a {Void Beam} that travels back in the direction you came from, but Shield Rush costs more mana."
             ],
             "reminderText": [
                 "{Void Beam} is a spell which deals void damage over time in its area of effect."
@@ -15944,7 +15944,7 @@
         "sr31hu-6": {
             "skill": "sr31hu-6",
             "name": "Dark Rush",
-            "x": 7564.5998,
+            "x": 7683.7998,
             "y": 640.0,
             "maxPoints": 1,
             "stats": [
@@ -15969,7 +15969,7 @@
         "sr31hu-7": {
             "skill": "sr31hu-7",
             "name": "Void Breaker",
-            "x": 7164.5998,
+            "x": 7283.7998,
             "y": 1200.0,
             "maxPoints": 2,
             "stats": [
@@ -15989,7 +15989,7 @@
         "sr31hu-8": {
             "skill": "sr31hu-8",
             "name": "Temporal Strike",
-            "x": 7964.5998,
+            "x": 8083.7998,
             "y": 1200.0,
             "maxPoints": 4,
             "stats": [
@@ -16010,7 +16010,7 @@
         "sr31hu-9": {
             "skill": "sr31hu-9",
             "name": "Rush Mastery",
-            "x": 7164.5998,
+            "x": 7283.7998,
             "y": -0.0,
             "maxPoints": 6,
             "stats": [
@@ -16033,7 +16033,7 @@
         "sr31hu-10": {
             "skill": "sr31hu-10",
             "name": "Protective Speed",
-            "x": 6964.5998,
+            "x": 7083.7998,
             "y": -480.0,
             "maxPoints": 2,
             "stats": [
@@ -16055,7 +16055,7 @@
         "sr31hu-11": {
             "skill": "sr31hu-11",
             "name": "Unstoppable Charge",
-            "x": 6364.5998,
+            "x": 6483.7998,
             "y": -744.0,
             "maxPoints": 5,
             "stats": [
@@ -16075,7 +16075,7 @@
         "sr31hu-12": {
             "skill": "sr31hu-12",
             "name": "Desynchronous Charge",
-            "x": 7964.5998,
+            "x": 8083.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -16091,13 +16091,13 @@
                 "sr31hu-13"
             ],
             "description": [
-                "When Shield Rush ends, you return to the position you used it from."
+                "When Shield Rush ends, you return to the position you used it from.\n\nThis removes Shield Rush's {Traversal} tag."
             ]
         },
         "sr31hu-13": {
             "skill": "sr31hu-13",
             "name": "Mana Memory",
-            "x": 8764.5998,
+            "x": 8883.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -16121,7 +16121,7 @@
         "sr31hu-14": {
             "skill": "sr31hu-14",
             "name": "Endless Cycle",
-            "x": 8364.5998,
+            "x": 8483.7998,
             "y": 400.0,
             "maxPoints": 4,
             "stats": [
@@ -16142,7 +16142,7 @@
         "sr31hu-15": {
             "skill": "sr31hu-15",
             "name": "The Rush of Sacrifice",
-            "x": 8364.5998,
+            "x": 8483.7998,
             "y": -400.0,
             "maxPoints": 1,
             "stats": [
@@ -16163,7 +16163,7 @@
         "sr31hu-16": {
             "skill": "sr31hu-16",
             "name": "Warrior's Entrance",
-            "x": 5564.5998,
+            "x": 5683.7998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -16188,7 +16188,7 @@
         "sr31hu-17": {
             "skill": "sr31hu-17",
             "name": "Splintering Impact",
-            "x": 5764.5998,
+            "x": 5883.7998,
             "y": -480.0,
             "maxPoints": 8,
             "stats": [
@@ -16208,7 +16208,7 @@
         "sr31hu-18": {
             "skill": "sr31hu-18",
             "name": "Critical Rush",
-            "x": 5044.5998,
+            "x": 5163.7998,
             "y": -480.0,
             "maxPoints": 2,
             "stats": [
@@ -16230,7 +16230,7 @@
         "sr31hu-19": {
             "skill": "sr31hu-19",
             "name": "Obliterating Rush",
-            "x": 4364.5998,
+            "x": 4483.7998,
             "y": -744.0,
             "maxPoints": 2,
             "stats": [
@@ -16250,7 +16250,7 @@
         "sr31hu-20": {
             "skill": "sr31hu-20",
             "name": "Echoes of the Charge",
-            "x": 4764.5998,
+            "x": 4883.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -16274,7 +16274,7 @@
         "sr31hu-21": {
             "skill": "sr31hu-21",
             "name": "Stretched Time",
-            "x": 4364.5998,
+            "x": 4483.7998,
             "y": -400.0,
             "maxPoints": 5,
             "stats": [
@@ -16295,7 +16295,7 @@
         "sr31hu-22": {
             "skill": "sr31hu-22",
             "name": "Critical Echo",
-            "x": 4364.5998,
+            "x": 4483.7998,
             "y": 400.0,
             "maxPoints": 2,
             "stats": [
@@ -16317,7 +16317,7 @@
         "sr31hu-23": {
             "skill": "sr31hu-23",
             "name": "Obliterating Echo",
-            "x": 3964.5998,
+            "x": 4083.7998,
             "y": -0.0,
             "maxPoints": 2,
             "stats": [
@@ -19440,52 +19440,36 @@
             "base_vit": 1,
             "skills": [
                 {
-                    "label": "Devouring Orb",
-                    "treeId": "do5vr"
-                },
-                {
-                    "label": "Anomaly",
-                    "treeId": "an0my"
-                },
-                {
-                    "label": "Hammer Throw",
-                    "treeId": "ht16aw"
-                },
-                {
-                    "label": "Multistrike",
-                    "treeId": "multis"
-                },
-                {
-                    "label": "Shield Rush",
-                    "treeId": "sr31hu"
-                },
-                {
-                    "label": "Healing Hands",
-                    "treeId": "hh7pa3"
+                    "label": "Ring Of Shields",
+                    "treeId": "rs31hi"
                 },
                 {
                     "label": "Smite",
                     "treeId": "sm87r4"
                 },
                 {
+                    "label": "Vengeance",
+                    "treeId": "gs15de"
+                },
+                {
+                    "label": "Judgement",
+                    "treeId": "pa67ju"
+                },
+                {
+                    "label": "Healing Hands",
+                    "treeId": "hh7pa3"
+                },
+                {
                     "label": "Erasing Strike",
                     "treeId": "es6ai"
                 },
                 {
-                    "label": "Rive",
-                    "treeId": "sndr1"
+                    "label": "Shield Rush",
+                    "treeId": "sr31hu"
                 },
                 {
-                    "label": "Forge Strike",
-                    "treeId": "fs3e3"
-                },
-                {
-                    "label": "Ring Of Shields",
-                    "treeId": "rs31hi"
-                },
-                {
-                    "label": "Vengeance",
-                    "treeId": "gs15de"
+                    "label": "Anomaly",
+                    "treeId": "an0my"
                 },
                 {
                     "label": "Sigils Of Hope",
@@ -19496,52 +19480,68 @@
                     "treeId": "st4th"
                 },
                 {
-                    "label": "Warpath",
-                    "treeId": "va53st"
-                },
-                {
                     "label": "Void Cleave",
                     "treeId": "v01cv"
                 },
                 {
-                    "label": "Manifest Armor",
-                    "treeId": "ma6hdr"
-                },
-                {
-                    "label": "Shield Throw",
-                    "treeId": "st31io"
-                },
-                {
-                    "label": "Holy Aura",
-                    "treeId": "ah443"
+                    "label": "Warpath",
+                    "treeId": "va53st"
                 },
                 {
                     "label": "Abyssal Echoes",
                     "treeId": "ab0lh"
                 },
                 {
-                    "label": "Javelin",
-                    "treeId": "javeli"
-                },
-                {
-                    "label": "Volatile Reversal",
-                    "treeId": "vr53sl"
+                    "label": "Rive",
+                    "treeId": "sndr1"
                 },
                 {
                     "label": "Shield Bash",
                     "treeId": "sb4h"
                 },
                 {
+                    "label": "Holy Aura",
+                    "treeId": "ah443"
+                },
+                {
+                    "label": "Shield Throw",
+                    "treeId": "st31io"
+                },
+                {
+                    "label": "Devouring Orb",
+                    "treeId": "do5vr"
+                },
+                {
+                    "label": "Multistrike",
+                    "treeId": "multis"
+                },
+                {
+                    "label": "Manifest Armor",
+                    "treeId": "ma6hdr"
+                },
+                {
+                    "label": "Javelin",
+                    "treeId": "javeli"
+                },
+                {
+                    "label": "Hammer Throw",
+                    "treeId": "ht16aw"
+                },
+                {
                     "label": "Rebuke",
                     "treeId": "re82ke"
                 },
                 {
-                    "label": "Lunge",
-                    "treeId": "lu25ng"
+                    "label": "Volatile Reversal",
+                    "treeId": "vr53sl"
                 },
                 {
-                    "label": "Judgement",
-                    "treeId": "pa67ju"
+                    "label": "Forge Strike",
+                    "treeId": "fs3e3"
+                },
+                {
+                    "label": "Lunge",
+                    "treeId": "lu25ng"
                 }
             ]
         }

@@ -3,7 +3,7 @@ from common import *
 
 construct_mod_data_list()
 
-data = load_yaml_file_with_tag_error(resourcesPath + "MasterItemsList.asset")["MonoBehaviour"]
+data = load_yaml_file_with_tag_error(monoPath + "ItemList/MasterItemsList.asset")["MonoBehaviour"]
 
 itemBases = {
 }

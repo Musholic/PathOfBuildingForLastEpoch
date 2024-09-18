@@ -4,8 +4,8 @@ import re
 from natsort import natsorted
 
 extractPath = os.getenv("LE_EXTRACT_DIR")
-prefabPath = extractPath + "PrefabInstance/"
-monoPath = extractPath + "MonoBehaviour/"
+prefabPath = extractPath + "Assets/PrefabInstance/"
+monoPath = extractPath + "GameBundle/Assets/MonoBehaviour/"
 resourcesPath = extractPath + "Resources/"
 
 
@@ -453,13 +453,13 @@ modDataList = {}
 
 def construct_mod_data_list():
     global modDataList
-    mod_data_list0 = load_yaml_file_with_tag_error(extractPath + "Resources/MasterAffixesList.asset")["MonoBehaviour"]
+    mod_data_list0 = load_yaml_file_with_tag_error(monoPath + "AffixList/MasterAffixesList.asset")["MonoBehaviour"]
 
     affix_keys_data = load_yaml_file_with_tag_error(
-        extractPath + "Localization/Tables/Item_Affixes/Item_Affixes Shared Data.asset")["MonoBehaviour"]["m_Entries"]
+        extractPath + "Assets/Localization/Tables/Item_Affixes/Item_Affixes Shared Data.asset")["MonoBehaviour"]["m_Entries"]
 
     affix_strings_data = load_yaml_file_with_tag_error(
-        extractPath + "Localization/Tables/Item_Affixes/Item_Affixes_en.asset")["MonoBehaviour"]["m_TableData"]
+        extractPath + "Assets/Localization/Tables/Item_Affixes/Item_Affixes_en.asset")["MonoBehaviour"]["m_TableData"]
 
     affix_strings_by_id = {}
     for affixStringData in affix_strings_data:
@@ -487,7 +487,7 @@ def construct_mod_data_list():
         mod_data1["name"] = affix_strings[str(mod_data["affixId"]) + "_B"]
 
     property_data_list0 = \
-        load_yaml_file_with_tag_error(extractPath + "Resources/MasterPropertyList.asset")["MonoBehaviour"][
+        load_yaml_file_with_tag_error(monoPath + "PropertyList/MasterPropertyList.asset")["MonoBehaviour"][
             "propertyInfoList"]
 
     for propertyData in property_data_list0:
@@ -503,7 +503,7 @@ def construct_mod_data_list():
                 modDataList[mod_key]["needs_tag_apply"] = True
 
     player_property_data_list0 = \
-        load_yaml_file_with_tag_error(extractPath + "Resources/PlayerPropertyList.asset")["MonoBehaviour"]["list"]
+        load_yaml_file_with_tag_error(monoPath + "PlayerPropertyList/PlayerPropertyList.asset")["MonoBehaviour"]["list"]
 
     for idx, propertyData in enumerate(player_property_data_list0):
         mod_key = "98_0_" + str(idx)
@@ -512,7 +512,7 @@ def construct_mod_data_list():
             propertyData["name"] = propertyData["propertyName"]
 
     player_property_ability_list = \
-        load_yaml_file_with_tag_error(extractPath + "Resources/AbilityPropertyList.asset")["MonoBehaviour"]["list"]
+        load_yaml_file_with_tag_error(monoPath + "AbilityPropertyList/AbilityPropertyList.asset")["MonoBehaviour"]["list"]
 
     for abilityData in player_property_ability_list:
         for idx, propertyData in enumerate(abilityData['properties']):

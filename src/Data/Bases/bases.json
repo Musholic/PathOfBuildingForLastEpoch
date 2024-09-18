@@ -199,7 +199,7 @@
         "implicits": [
             "+163 Armor",
             "+(11-16)% Endurance",
-            "+(11-16)% reduced Bonus Damage Taken from Critical Strikes"
+            "+(11-16)% Reduced Bonus Damage Taken from Critical Strikes"
         ]
     },
     "Copper Circlet": {
@@ -807,7 +807,7 @@
         "affixEffectModifier": 0,
         "implicits": [
             "+550 Armor",
-            "+(50-85)% reduced Bonus Damage Taken from Critical Strikes"
+            "+(50-85)% Reduced Bonus Damage Taken from Critical Strikes"
         ]
     },
     "Witch Hat": {
@@ -2189,7 +2189,7 @@
         "implicits": [
             "+185 Armor",
             "(15-18)% increased Movement Speed",
-            "+(35-50)% reduced Bonus Damage Taken from Critical Strikes"
+            "+(35-50)% Reduced Bonus Damage Taken from Critical Strikes"
         ]
     },
     "Celestial Boots": {
@@ -8716,7 +8716,7 @@
             "+(12-25)% Void Cold Lightning Increased Drop Rate"
         ]
     },
-    "Talon of Granduer": {
+    "Talon of Grandeur": {
         "type": "Blessing",
         "baseTypeID": 34,
         "subTypeID": 69,
@@ -9380,7 +9380,7 @@
             "+(30-60)% Void Cold Lightning Increased Drop Rate"
         ]
     },
-    "Grand Talon of Granduer": {
+    "Grand Talon of Grandeur": {
         "type": "Blessing",
         "baseTypeID": 34,
         "subTypeID": 124,

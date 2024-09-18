@@ -496,7 +496,7 @@
             ],
             "out": [],
             "description": [
-                "You gain ward based on your current mana when you use a skill that costs at least 40 mana."
+                "You gain ward based on your current mana when you directly use a skill that costs at least 40 mana."
             ],
             "reminderText": [
                 "Ward is a decaying shield that protects your health"
@@ -1195,7 +1195,7 @@
                 "7 Ward Gained"
             ],
             "notScalingStats": [
-                "7 Cooldown for Ward Gain (secons)"
+                "7 Cooldown for Ward Gain (seconds)"
             ],
             "noScalingPointThreshold": 0,
             "in": [
@@ -3341,7 +3341,7 @@
         "bh2-0": {
             "skill": "bh2-0",
             "name": "Black Hole",
-            "x": 6247.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -3362,7 +3362,7 @@
         "bh2-2": {
             "skill": "bh2-2",
             "name": "Catalyst",
-            "x": 6563.7998,
+            "x": 6783.7998,
             "y": 684.0,
             "maxPoints": 4,
             "stats": [
@@ -3386,7 +3386,7 @@
         "bh2-3": {
             "skill": "bh2-3",
             "name": "Absolute Zero",
-            "x": 6979.7998,
+            "x": 7199.7998,
             "y": 128.0,
             "maxPoints": 4,
             "stats": [
@@ -3408,7 +3408,7 @@
         "bh2-4": {
             "skill": "bh2-4",
             "name": "Red Giant",
-            "x": 7072.59984,
+            "x": 7292.59984,
             "y": 707.60004,
             "maxPoints": 1,
             "stats": [
@@ -3433,7 +3433,7 @@
         "bh2-5": {
             "skill": "bh2-5",
             "name": "Scorching",
-            "x": 7406.1998,
+            "x": 7626.1998,
             "y": 211.60002,
             "maxPoints": 5,
             "stats": [
@@ -3458,7 +3458,7 @@
         "bh2-6": {
             "skill": "bh2-6",
             "name": "Heat Wave",
-            "x": 7945.399799999999,
+            "x": 8165.399799999999,
             "y": 1226.79992,
             "maxPoints": 5,
             "stats": [
@@ -3485,7 +3485,7 @@
         "bh2-7": {
             "skill": "bh2-7",
             "name": "Flaming",
-            "x": 7352.999879999999,
+            "x": 7572.999879999999,
             "y": 1240.4,
             "maxPoints": 5,
             "stats": [
@@ -3507,7 +3507,7 @@
         "bh2-8": {
             "skill": "bh2-8",
             "name": "Infusion",
-            "x": 7998.5998,
+            "x": 8218.5998,
             "y": 269.20004,
             "maxPoints": 5,
             "stats": [
@@ -3531,7 +3531,7 @@
         "bh2-9": {
             "skill": "bh2-9",
             "name": "Binary System",
-            "x": 8214.19972,
+            "x": 8434.19972,
             "y": 787.2,
             "maxPoints": 1,
             "stats": [
@@ -3557,7 +3557,7 @@
         "bh2-10": {
             "skill": "bh2-10",
             "name": "Umbral Core",
-            "x": 5479.7998,
+            "x": 5699.7998,
             "y": -176.0,
             "maxPoints": 5,
             "stats": [
@@ -3581,7 +3581,7 @@
         "bh2-11": {
             "skill": "bh2-11",
             "name": "Event Horizon",
-            "x": 5050.5998,
+            "x": 5270.5998,
             "y": 76.0,
             "maxPoints": 4,
             "stats": [
@@ -3604,7 +3604,7 @@
         "bh2-12": {
             "skill": "bh2-12",
             "name": "Collapse",
-            "x": 4859.399799999999,
+            "x": 5079.399799999999,
             "y": -645.59984,
             "maxPoints": 1,
             "stats": [
@@ -3628,7 +3628,7 @@
         "bh2-13": {
             "skill": "bh2-13",
             "name": "Pulsar",
-            "x": 4441.7998,
+            "x": 4661.7998,
             "y": -57.199952,
             "maxPoints": 1,
             "stats": [
@@ -3652,7 +3652,7 @@
         "bh2-14": {
             "skill": "bh2-14",
             "name": "Deep Space",
-            "x": 4135.7998,
+            "x": 4355.7998,
             "y": -644.0,
             "maxPoints": 5,
             "stats": [
@@ -3676,7 +3676,7 @@
         "bh2-15": {
             "skill": "bh2-15",
             "name": "Time Dilation",
-            "x": 6455.7998,
+            "x": 6675.7998,
             "y": -712.0,
             "maxPoints": 4,
             "stats": [
@@ -3699,7 +3699,7 @@
         "bh2-16": {
             "skill": "bh2-16",
             "name": "Cascade Fracture",
-            "x": 5823.7998,
+            "x": 6043.7998,
             "y": -632.0,
             "maxPoints": 3,
             "stats": [
@@ -3724,7 +3724,7 @@
         "bh2-17": {
             "skill": "bh2-17",
             "name": "Rifts",
-            "x": 7019.7998,
+            "x": 7239.7998,
             "y": -884.0,
             "maxPoints": 4,
             "stats": [
@@ -3750,7 +3750,7 @@
         "bh2-18": {
             "skill": "bh2-18",
             "name": "Intensity",
-            "x": 6883.7998,
+            "x": 7103.7998,
             "y": -432.0,
             "maxPoints": 5,
             "stats": [
@@ -3773,7 +3773,7 @@
         "bh2-19": {
             "skill": "bh2-19",
             "name": "Massive",
-            "x": 7610.1998,
+            "x": 7830.1998,
             "y": -684.4,
             "maxPoints": 4,
             "stats": [
@@ -3793,7 +3793,7 @@
         "bh2-20": {
             "skill": "bh2-20",
             "name": "Drifting Singularity",
-            "x": 7948.200199999999,
+            "x": 8168.200199999999,
             "y": -272.0,
             "maxPoints": 1,
             "stats": [
@@ -3817,7 +3817,7 @@
         "bh2-21": {
             "skill": "bh2-21",
             "name": "Spacial Dilation",
-            "x": 8499.4002,
+            "x": 8719.4002,
             "y": -307.6,
             "maxPoints": 5,
             "stats": [
@@ -3840,7 +3840,7 @@
         "bh2-22": {
             "skill": "bh2-22",
             "name": "Gravity's Guile",
-            "x": 8758.6002,
+            "x": 8978.6002,
             "y": 176.0,
             "maxPoints": 4,
             "stats": [
@@ -3861,7 +3861,7 @@
         "bh2-23": {
             "skill": "bh2-23",
             "name": "Supermassive",
-            "x": 8949.80004,
+            "x": 9169.80004,
             "y": -620.0,
             "maxPoints": 4,
             "stats": [
@@ -3882,7 +3882,7 @@
         "bh2-24": {
             "skill": "bh2-24",
             "name": "Stability",
-            "x": 5563.7998,
+            "x": 5783.7998,
             "y": 396.0,
             "maxPoints": 3,
             "stats": [
@@ -3904,7 +3904,7 @@
         "bh2-25": {
             "skill": "bh2-25",
             "name": "Endless Maw",
-            "x": 5283.7998,
+            "x": 5503.7998,
             "y": 912.0,
             "maxPoints": 3,
             "stats": [
@@ -3928,7 +3928,7 @@
         "bh2-26": {
             "skill": "bh2-26",
             "name": "Scattered",
-            "x": 5987.7998,
+            "x": 6207.7998,
             "y": 1152.0,
             "maxPoints": 1,
             "stats": [
@@ -3948,7 +3948,7 @@
         "bh2-27": {
             "skill": "bh2-27",
             "name": "Weakened Reality",
-            "x": 4507.7998,
+            "x": 4727.7998,
             "y": 968.0,
             "maxPoints": 3,
             "stats": [
@@ -3973,7 +3973,7 @@
         "bh2-28": {
             "skill": "bh2-28",
             "name": "Singularity",
-            "x": 3899.7998,
+            "x": 4119.7998,
             "y": 700.0,
             "maxPoints": 1,
             "stats": [
@@ -3996,7 +3996,7 @@
         "bh2-29": {
             "skill": "bh2-29",
             "name": "Armageddon",
-            "x": 3735.7998,
+            "x": 3955.7998,
             "y": 96.0,
             "maxPoints": 1,
             "stats": [
@@ -4731,7 +4731,7 @@
         "en6-0": {
             "skill": "en6-0",
             "name": "Elemental Nova",
-            "x": 6387.7998,
+            "x": 6304.6002,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -4751,7 +4751,7 @@
         "en6-2": {
             "skill": "en6-2",
             "name": "Ice Nova",
-            "x": 5839.7998,
+            "x": 5756.6002,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -4775,7 +4775,7 @@
         "en6-3": {
             "skill": "en6-3",
             "name": "Glyphs of Winter",
-            "x": 4491.7998,
+            "x": 4408.6002,
             "y": -568.0,
             "maxPoints": 4,
             "stats": [
@@ -4798,7 +4798,7 @@
         "en6-4": {
             "skill": "en6-4",
             "name": "Freezing Cascade",
-            "x": 4491.7998,
+            "x": 4408.6002,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -4819,7 +4819,7 @@
         "en6-5": {
             "skill": "en6-5",
             "name": "Glacial Might",
-            "x": 4991.7998,
+            "x": 4908.6002,
             "y": 280.0,
             "maxPoints": 5,
             "stats": [
@@ -4843,7 +4843,7 @@
         "en6-6": {
             "skill": "en6-6",
             "name": "Protective Strikes",
-            "x": 4491.7998,
+            "x": 4408.6002,
             "y": 568.0,
             "maxPoints": 5,
             "stats": [
@@ -4866,7 +4866,7 @@
         "en6-7": {
             "skill": "en6-7",
             "name": "Magical Barrier",
-            "x": 3987.7998,
+            "x": 3904.6002,
             "y": 280.0,
             "maxPoints": 4,
             "stats": [
@@ -4886,7 +4886,7 @@
         "en6-8": {
             "skill": "en6-8",
             "name": "Lightning Nova",
-            "x": 6935.7998,
+            "x": 6852.6002,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -4911,7 +4911,7 @@
         "en6-9": {
             "skill": "en6-9",
             "name": "Charged Destruction",
-            "x": 8679.7998,
+            "x": 8596.6002,
             "y": -400.0,
             "maxPoints": 3,
             "stats": [
@@ -4931,7 +4931,7 @@
         "en6-10": {
             "skill": "en6-10",
             "name": "Survival of the Victor",
-            "x": 7887.7998,
+            "x": 7804.6002,
             "y": 400.0,
             "maxPoints": 3,
             "stats": [
@@ -4954,7 +4954,7 @@
         "en6-11": {
             "skill": "en6-11",
             "name": "Arcane Protection",
-            "x": 8667.7998,
+            "x": 8584.6002,
             "y": 400.0,
             "maxPoints": 5,
             "stats": [
@@ -4974,7 +4974,7 @@
         "en6-12": {
             "skill": "en6-12",
             "name": "Fire Nova",
-            "x": 6387.7998,
+            "x": 6304.6002,
             "y": 548.0,
             "maxPoints": 1,
             "stats": [
@@ -4999,7 +4999,7 @@
         "en6-13": {
             "skill": "en6-13",
             "name": "Infernal Prism",
-            "x": 5859.7998,
+            "x": 5776.6002,
             "y": 620.0,
             "maxPoints": 7,
             "stats": [
@@ -5021,7 +5021,7 @@
         "en6-14": {
             "skill": "en6-14",
             "name": "Ash Frenzy",
-            "x": 6139.7998,
+            "x": 6056.6002,
             "y": 1016.0,
             "maxPoints": 5,
             "stats": [
@@ -5045,7 +5045,7 @@
         "en6-15": {
             "skill": "en6-15",
             "name": "Arcane Projection",
-            "x": 5367.7998,
+            "x": 5284.6002,
             "y": 1020.0,
             "maxPoints": 1,
             "stats": [
@@ -5067,7 +5067,7 @@
         "en6-16": {
             "skill": "en6-16",
             "name": "Infernal Nova",
-            "x": 7371.7998,
+            "x": 7288.6002,
             "y": 928.0,
             "maxPoints": 1,
             "stats": [
@@ -5093,7 +5093,7 @@
         "en6-17": {
             "skill": "en6-17",
             "name": "Conflagrating Speed",
-            "x": 8183.7998,
+            "x": 8100.6002,
             "y": 928.0,
             "maxPoints": 5,
             "stats": [
@@ -5113,7 +5113,7 @@
         "en6-18": {
             "skill": "en6-18",
             "name": "Spark Charges",
-            "x": 7731.7998,
+            "x": 7648.6002,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -5136,7 +5136,7 @@
         "en6-19": {
             "skill": "en6-19",
             "name": "Immolation",
-            "x": 6895.7998,
+            "x": 6812.6002,
             "y": 620.0,
             "maxPoints": 8,
             "stats": [
@@ -5161,7 +5161,7 @@
         "en6-20": {
             "skill": "en6-20",
             "name": "Flame Battery",
-            "x": 7935.7998,
+            "x": 7852.6002,
             "y": 1232.0,
             "maxPoints": 2,
             "stats": [
@@ -5181,7 +5181,7 @@
         "en6-21": {
             "skill": "en6-21",
             "name": "Elemental Expanse",
-            "x": 7863.7998,
+            "x": 7780.6002,
             "y": -400.0,
             "maxPoints": 5,
             "stats": [
@@ -5204,7 +5204,7 @@
         "en6-22": {
             "skill": "en6-22",
             "name": "Overcharge",
-            "x": 8283.7998,
+            "x": 8200.6002,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -5228,7 +5228,7 @@
         "en6-23": {
             "skill": "en6-23",
             "name": "Overload",
-            "x": 8831.7998,
+            "x": 8748.6002,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -5249,7 +5249,7 @@
         "en6-24": {
             "skill": "en6-24",
             "name": "Elemental Tranquillity",
-            "x": 4987.7998,
+            "x": 4904.6002,
             "y": -280.0,
             "maxPoints": 6,
             "stats": [
@@ -5274,7 +5274,7 @@
         "en6-25": {
             "skill": "en6-25",
             "name": "Cryomantic Fragility",
-            "x": 5415.7998,
+            "x": 5332.6002,
             "y": -688.0,
             "maxPoints": 4,
             "stats": [
@@ -5295,7 +5295,7 @@
         "en6-26": {
             "skill": "en6-26",
             "name": "Arcana Elementorum",
-            "x": 6387.7998,
+            "x": 6304.6002,
             "y": -548.0,
             "maxPoints": 5,
             "stats": [
@@ -5316,7 +5316,7 @@
         "en6-27": {
             "skill": "en6-27",
             "name": "Melting Nova",
-            "x": 6715.7998,
+            "x": 6632.6002,
             "y": 1232.0,
             "maxPoints": 5,
             "stats": [
@@ -5342,7 +5342,7 @@
         "en6-28": {
             "skill": "en6-28",
             "name": "Luminaire",
-            "x": 7351.7998,
+            "x": 7268.6002,
             "y": -840.0,
             "maxPoints": 1,
             "stats": [
@@ -5371,7 +5371,7 @@
         "en6-29": {
             "skill": "en6-29",
             "name": "Star Prism",
-            "x": 6815.7998,
+            "x": 6732.6002,
             "y": -840.0,
             "maxPoints": 3,
             "stats": [
@@ -5391,7 +5391,7 @@
         "en6-30": {
             "skill": "en6-30",
             "name": "Silenced Spark",
-            "x": 7815.7998,
+            "x": 7732.6002,
             "y": -1120.0,
             "maxPoints": 1,
             "stats": [
@@ -5412,7 +5412,7 @@
         "en6-32": {
             "skill": "en6-32",
             "name": "Shatter Nova",
-            "x": 3987.7998,
+            "x": 3904.6002,
             "y": -280.0,
             "maxPoints": 3,
             "stats": [
@@ -5435,7 +5435,7 @@
         "en6-34": {
             "skill": "en6-34",
             "name": "Fiery Destruction",
-            "x": 7199.7998,
+            "x": 7116.6002,
             "y": 1300.0,
             "maxPoints": 4,
             "stats": [
@@ -5455,7 +5455,7 @@
         "f1b4d-0": {
             "skill": "f1b4d-0",
             "name": "Firebrand",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -5477,7 +5477,7 @@
         "f1b4d-1": {
             "skill": "f1b4d-1",
             "name": "Searing Brand",
-            "x": 5912.9998,
+            "x": 5992.9998,
             "y": -633.12,
             "maxPoints": 5,
             "stats": [
@@ -5501,7 +5501,7 @@
         "f1b4d-2": {
             "skill": "f1b4d-2",
             "name": "Charring",
-            "x": 5272.9998,
+            "x": 5352.9998,
             "y": -868.4,
             "maxPoints": 3,
             "stats": [
@@ -5524,7 +5524,7 @@
         "f1b4d-3": {
             "skill": "f1b4d-3",
             "name": "Triple Strike",
-            "x": 4675.7998,
+            "x": 4755.7998,
             "y": -416.0,
             "maxPoints": 1,
             "stats": [
@@ -5545,7 +5545,7 @@
         "f1b4d-4": {
             "skill": "f1b4d-4",
             "name": "Hypothermia",
-            "x": 6858.5998,
+            "x": 6938.5998,
             "y": 1126.8,
             "maxPoints": 3,
             "stats": [
@@ -5566,7 +5566,7 @@
         "f1b4d-5": {
             "skill": "f1b4d-5",
             "name": "Kindling",
-            "x": 4505.399799999999,
+            "x": 4585.399799999999,
             "y": -868.4,
             "maxPoints": 4,
             "stats": [
@@ -5588,7 +5588,7 @@
         "f1b4d-6": {
             "skill": "f1b4d-6",
             "name": "Inflame",
-            "x": 3846.9997999999996,
+            "x": 3926.9997999999996,
             "y": -668.4,
             "maxPoints": 4,
             "stats": [
@@ -5608,7 +5608,7 @@
         "f1b4d-7": {
             "skill": "f1b4d-7",
             "name": "Incineration",
-            "x": 5272.9998,
+            "x": 5352.9998,
             "y": -149.599976,
             "maxPoints": 1,
             "stats": [
@@ -5634,7 +5634,7 @@
         "f1b4d-8": {
             "skill": "f1b4d-8",
             "name": "Illuminating Fire",
-            "x": 4505.399799999999,
+            "x": 4585.399799999999,
             "y": 162.4,
             "maxPoints": 3,
             "stats": [
@@ -5655,7 +5655,7 @@
         "f1b4d-9": {
             "skill": "f1b4d-9",
             "name": "Wildfire",
-            "x": 5272.99964,
+            "x": 5352.99964,
             "y": 496.0,
             "maxPoints": 2,
             "stats": [
@@ -5681,7 +5681,7 @@
         "f1b4d-10": {
             "skill": "f1b4d-10",
             "name": "Insulation",
-            "x": 5779.7998,
+            "x": 5859.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -5702,7 +5702,7 @@
         "f1b4d-11": {
             "skill": "f1b4d-11",
             "name": "Galvanize",
-            "x": 4446.9998,
+            "x": 4526.9998,
             "y": 880.80004,
             "maxPoints": 1,
             "stats": [
@@ -5726,7 +5726,7 @@
         "f1b4d-12": {
             "skill": "f1b4d-12",
             "name": "Mana Shell",
-            "x": 3828.5998,
+            "x": 3908.5998,
             "y": 1179.6,
             "maxPoints": 1,
             "stats": [
@@ -5746,7 +5746,7 @@
         "f1b4d-13": {
             "skill": "f1b4d-13",
             "name": "Electrostatic",
-            "x": 5019.7998,
+            "x": 5099.7998,
             "y": 1179.6,
             "maxPoints": 3,
             "stats": [
@@ -5766,7 +5766,7 @@
         "f1b4d-14": {
             "skill": "f1b4d-14",
             "name": "Pyroshielding",
-            "x": 5889.3998,
+            "x": 5969.3998,
             "y": 668.0,
             "maxPoints": 5,
             "stats": [
@@ -5791,7 +5791,7 @@
         "f1b4d-15": {
             "skill": "f1b4d-15",
             "name": "Warding Flames",
-            "x": 5579.7998,
+            "x": 5659.7998,
             "y": 1226.8,
             "maxPoints": 3,
             "stats": [
@@ -5811,7 +5811,7 @@
         "f1b4d-16": {
             "skill": "f1b4d-16",
             "name": "Undying Fire",
-            "x": 6903.7998,
+            "x": 6983.7998,
             "y": 668.0,
             "maxPoints": 5,
             "stats": [
@@ -5836,7 +5836,7 @@
         "f1b4d-17": {
             "skill": "f1b4d-17",
             "name": "Everflames",
-            "x": 7459.399799999999,
+            "x": 7539.399799999999,
             "y": 1226.8,
             "maxPoints": 1,
             "stats": [
@@ -5856,7 +5856,7 @@
         "f1b4d-18": {
             "skill": "f1b4d-18",
             "name": "Ardent Branding",
-            "x": 7487.79968,
+            "x": 7567.79968,
             "y": 468.0,
             "maxPoints": 1,
             "stats": [
@@ -5885,7 +5885,7 @@
         "f1b4d-19": {
             "skill": "f1b4d-19",
             "name": "Fulmination",
-            "x": 7287.7998,
+            "x": 7367.7998,
             "y": -200.0,
             "maxPoints": 3,
             "stats": [
@@ -5913,7 +5913,7 @@
         "f1b4d-20": {
             "skill": "f1b4d-20",
             "name": "Brand of Arcanus",
-            "x": 8051.7998,
+            "x": 8131.7998,
             "y": 173.6,
             "maxPoints": 1,
             "stats": [
@@ -5936,7 +5936,7 @@
         "f1b4d-21": {
             "skill": "f1b4d-21",
             "name": "Arcane Sharpshooter",
-            "x": 8238.1998,
+            "x": 8318.1998,
             "y": 813.6,
             "maxPoints": 3,
             "stats": [
@@ -5956,7 +5956,7 @@
         "f1b4d-22": {
             "skill": "f1b4d-22",
             "name": "Pyre",
-            "x": 8767.7998,
+            "x": 8847.7998,
             "y": 388.0,
             "maxPoints": 1,
             "stats": [
@@ -5976,7 +5976,7 @@
         "f1b4d-23": {
             "skill": "f1b4d-23",
             "name": "Flare",
-            "x": 7728.1998,
+            "x": 7808.1998,
             "y": -804.0,
             "maxPoints": 5,
             "stats": [
@@ -6002,7 +6002,7 @@
         "f1b4d-24": {
             "skill": "f1b4d-24",
             "name": "Inferno",
-            "x": 8288.1994,
+            "x": 8368.1994,
             "y": -416.00004,
             "maxPoints": 3,
             "stats": [
@@ -6026,7 +6026,7 @@
         "f1b4d-25": {
             "skill": "f1b4d-25",
             "name": "Crossfire",
-            "x": 8550.5998,
+            "x": 8630.5998,
             "y": -1068.4,
             "maxPoints": 4,
             "stats": [
@@ -6048,7 +6048,7 @@
         "f1b4d-26": {
             "skill": "f1b4d-26",
             "name": "Exothermic",
-            "x": 8853.7998,
+            "x": 8933.7998,
             "y": -604.0,
             "maxPoints": 3,
             "stats": [
@@ -6069,7 +6069,7 @@
         "f1b4d-27": {
             "skill": "f1b4d-27",
             "name": "Conflagrate",
-            "x": 6858.59984,
+            "x": 6938.59984,
             "y": -633.12012,
             "maxPoints": 1,
             "stats": [
@@ -6094,7 +6094,7 @@
         "f1b4d-28": {
             "skill": "f1b4d-28",
             "name": "Fading Flame",
-            "x": 6284.999752,
+            "x": 6364.999752,
             "y": 1126.8,
             "maxPoints": 3,
             "stats": [
@@ -6119,7 +6119,7 @@
         "fb8fe-0": {
             "skill": "fb8fe-0",
             "name": "Runebolt",
-            "x": 6247.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -6138,7 +6138,7 @@
         "fb8fe-1": {
             "skill": "fb8fe-1",
             "name": "Arcanist",
-            "x": 5076.5998,
+            "x": 5296.5998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -6165,7 +6165,7 @@
         "fb8fe-2": {
             "skill": "fb8fe-2",
             "name": "Cryomantic Bolt",
-            "x": 5076.5998,
+            "x": 5296.5998,
             "y": -587.2,
             "maxPoints": 3,
             "stats": [
@@ -6188,7 +6188,7 @@
         "fb8fe-3": {
             "skill": "fb8fe-3",
             "name": "Frost Spikes",
-            "x": 5616.59972,
+            "x": 5836.59972,
             "y": -332.8,
             "maxPoints": 1,
             "stats": [
@@ -6209,7 +6209,7 @@
         "fb8fe-4": {
             "skill": "fb8fe-4",
             "name": "Ice Shard",
-            "x": 5616.5998,
+            "x": 5836.5998,
             "y": -766.4,
             "maxPoints": 1,
             "stats": [
@@ -6230,7 +6230,7 @@
         "fb8fe-5": {
             "skill": "fb8fe-5",
             "name": "Fulminating Bolt",
-            "x": 4377.399799999999,
+            "x": 4597.399799999999,
             "y": -587.2,
             "maxPoints": 3,
             "stats": [
@@ -6253,7 +6253,7 @@
         "fb8fe-6": {
             "skill": "fb8fe-6",
             "name": "Lightning Spear",
-            "x": 3820.5998,
+            "x": 4040.5998,
             "y": -766.4,
             "maxPoints": 1,
             "stats": [
@@ -6274,7 +6274,7 @@
         "fb8fe-7": {
             "skill": "fb8fe-7",
             "name": "Jolting Spark",
-            "x": 3820.5998,
+            "x": 4040.5998,
             "y": -332.80004,
             "maxPoints": 1,
             "stats": [
@@ -6295,7 +6295,7 @@
         "fb8fe-8": {
             "skill": "fb8fe-8",
             "name": "Pyromantic Bolt",
-            "x": 4377.399799999999,
+            "x": 4597.399799999999,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -6318,7 +6318,7 @@
         "fb8fe-9": {
             "skill": "fb8fe-9",
             "name": "Blazing Flare",
-            "x": 4004.1998,
+            "x": 4224.1998,
             "y": 354.0,
             "maxPoints": 1,
             "stats": [
@@ -6339,7 +6339,7 @@
         "fb8fe-10": {
             "skill": "fb8fe-10",
             "name": "Searing Dart",
-            "x": 4526.5998,
+            "x": 4746.5998,
             "y": 514.8,
             "maxPoints": 1,
             "stats": [
@@ -6360,7 +6360,7 @@
         "fb8fe-11": {
             "skill": "fb8fe-11",
             "name": "Efficient Experiment",
-            "x": 5381.79988,
+            "x": 5601.79988,
             "y": 470.0,
             "maxPoints": 1,
             "stats": [
@@ -6381,7 +6381,7 @@
         "fb8fe-12": {
             "skill": "fb8fe-12",
             "name": "Arcane Overcharge",
-            "x": 7230.9998,
+            "x": 7450.9998,
             "y": -268.8,
             "maxPoints": 5,
             "stats": [
@@ -6406,7 +6406,7 @@
         "fb8fe-13": {
             "skill": "fb8fe-13",
             "name": "Supercharged Bolt",
-            "x": 7794.1998,
+            "x": 8014.1998,
             "y": -753.2,
             "maxPoints": 1,
             "stats": [
@@ -6430,7 +6430,7 @@
         "fb8fe-14": {
             "skill": "fb8fe-14",
             "name": "Runic Evocation",
-            "x": 7077.79968,
+            "x": 7297.79968,
             "y": -908.0,
             "maxPoints": 1,
             "stats": [
@@ -6451,7 +6451,7 @@
         "fb8fe-15": {
             "skill": "fb8fe-15",
             "name": "Attuned Recovery",
-            "x": 7971.7998,
+            "x": 8191.7998,
             "y": 60.0,
             "maxPoints": 3,
             "stats": [
@@ -6479,7 +6479,7 @@
         "fb8fe-16": {
             "skill": "fb8fe-16",
             "name": "Amplified Cascade",
-            "x": 8399.7998,
+            "x": 8619.7998,
             "y": -681.6,
             "maxPoints": 1,
             "stats": [
@@ -6503,7 +6503,7 @@
         "fb8fe-17": {
             "skill": "fb8fe-17",
             "name": "Inscription of Momentum",
-            "x": 8776.9998,
+            "x": 8996.9998,
             "y": -176.0,
             "maxPoints": 1,
             "stats": [
@@ -6524,7 +6524,7 @@
         "fb8fe-18": {
             "skill": "fb8fe-18",
             "name": "Punch Through Metal",
-            "x": 7247.7998,
+            "x": 7467.7998,
             "y": 405.19996,
             "maxPoints": 5,
             "stats": [
@@ -6551,7 +6551,7 @@
         "fb8fe-19": {
             "skill": "fb8fe-19",
             "name": "Kinetic Breach",
-            "x": 8249.3998,
+            "x": 8469.3998,
             "y": 587.2,
             "maxPoints": 1,
             "stats": [
@@ -6573,7 +6573,7 @@
         "fb8fe-20": {
             "skill": "fb8fe-20",
             "name": "Runestone",
-            "x": 8850.5996,
+            "x": 9070.5996,
             "y": 1174.8,
             "maxPoints": 1,
             "stats": [
@@ -6602,7 +6602,7 @@
         "fb8fe-21": {
             "skill": "fb8fe-21",
             "name": "Awakened Runestone",
-            "x": 8249.399879999999,
+            "x": 8469.399879999999,
             "y": 1174.8,
             "maxPoints": 4,
             "stats": [
@@ -6622,7 +6622,7 @@
         "fb8fe-22": {
             "skill": "fb8fe-22",
             "name": "Devastator",
-            "x": 7247.79988,
+            "x": 7467.79988,
             "y": 926.80004,
             "maxPoints": 1,
             "stats": [
@@ -6645,7 +6645,7 @@
         "fb8fe-23": {
             "skill": "fb8fe-23",
             "name": "Wrecking Ball",
-            "x": 7752.1998,
+            "x": 7972.1998,
             "y": 1240.4,
             "maxPoints": 1,
             "stats": [
@@ -6665,7 +6665,7 @@
         "fb8fe-24": {
             "skill": "fb8fe-24",
             "name": "Arcane Restoration",
-            "x": 6247.799702724,
+            "x": 6467.799702724,
             "y": 536.0,
             "maxPoints": 4,
             "stats": [
@@ -6692,7 +6692,7 @@
         "fb8fe-25": {
             "skill": "fb8fe-25",
             "name": "Runeweaver",
-            "x": 6247.7998457759995,
+            "x": 6467.7998457759995,
             "y": 1040.4,
             "maxPoints": 3,
             "stats": [
@@ -6718,7 +6718,7 @@
         "fb8fe-26": {
             "skill": "fb8fe-26",
             "name": "Dissolve and Conquer",
-            "x": 5717.3998,
+            "x": 5937.3998,
             "y": 1232.0,
             "maxPoints": 1,
             "stats": [
@@ -6739,7 +6739,7 @@
         "fb8fe-27": {
             "skill": "fb8fe-27",
             "name": "Cosmic Tapestry",
-            "x": 6781.7998,
+            "x": 7001.7998,
             "y": 1232.0,
             "maxPoints": 3,
             "stats": [
@@ -6759,7 +6759,7 @@
         "fb8fe-28": {
             "skill": "fb8fe-28",
             "name": "Orderly Conduit",
-            "x": 5076.5998,
+            "x": 5296.5998,
             "y": 1232.0,
             "maxPoints": 3,
             "stats": [
@@ -6785,7 +6785,7 @@
         "fb8fe-29": {
             "skill": "fb8fe-29",
             "name": "Torrent of Evocation",
-            "x": 4341.7998,
+            "x": 4561.7998,
             "y": 926.8,
             "maxPoints": 1,
             "stats": [
@@ -6805,7 +6805,7 @@
         "fb8fe-30": {
             "skill": "fb8fe-30",
             "name": "Focused Runewords",
-            "x": 3862.9997999999996,
+            "x": 4082.9997999999996,
             "y": 1232.0,
             "maxPoints": 1,
             "stats": [
@@ -6828,7 +6828,7 @@
         "fb8fe-31": {
             "skill": "fb8fe-31",
             "name": "Echomancy",
-            "x": 4938.9998,
+            "x": 5158.9998,
             "y": 736.0,
             "maxPoints": 1,
             "stats": [
@@ -6848,7 +6848,7 @@
         "fb8fe-32": {
             "skill": "fb8fe-32",
             "name": "Imbued Runestone",
-            "x": 8850.5998,
+            "x": 9070.5998,
             "y": 587.2,
             "maxPoints": 1,
             "stats": [
@@ -6871,7 +6871,7 @@
         "fi9-0": {
             "skill": "fi9-0",
             "name": "Fireball",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -6891,7 +6891,7 @@
         "fi9-2": {
             "skill": "fi9-2",
             "name": "Piercing Heat",
-            "x": 5799.7998,
+            "x": 5879.7998,
             "y": 516.0,
             "maxPoints": 4,
             "stats": [
@@ -6915,7 +6915,7 @@
         "fi9-3": {
             "skill": "fi9-3",
             "name": "Immolated Core",
-            "x": 5583.7998,
+            "x": 5663.7998,
             "y": 1132.0,
             "maxPoints": 5,
             "stats": [
@@ -6936,7 +6936,7 @@
         "fi9-4": {
             "skill": "fi9-4",
             "name": "Orb of Destruction",
-            "x": 5147.7998,
+            "x": 5227.7998,
             "y": 708.0,
             "maxPoints": 2,
             "stats": [
@@ -6960,7 +6960,7 @@
         "fi9-5": {
             "skill": "fi9-5",
             "name": "Plasma Ball",
-            "x": 4673.399799999999,
+            "x": 4753.399799999999,
             "y": 1092.8,
             "maxPoints": 1,
             "stats": [
@@ -6981,7 +6981,7 @@
         "fi9-6": {
             "skill": "fi9-6",
             "name": "Winged Fire",
-            "x": 5563.7998,
+            "x": 5643.7998,
             "y": 36.0,
             "maxPoints": 5,
             "stats": [
@@ -7005,7 +7005,7 @@
         "fi9-7": {
             "skill": "fi9-7",
             "name": "Fire Spray",
-            "x": 5027.7998,
+            "x": 5107.7998,
             "y": -316.0,
             "maxPoints": 1,
             "stats": [
@@ -7032,7 +7032,7 @@
         "fi9-8": {
             "skill": "fi9-8",
             "name": "Skira's Gambit",
-            "x": 4199.7998,
+            "x": 4279.7998,
             "y": -576.0,
             "maxPoints": 3,
             "stats": [
@@ -7055,7 +7055,7 @@
         "fi9-9": {
             "skill": "fi9-9",
             "name": "Arcane Divergence",
-            "x": 3934.1998,
+            "x": 4014.1998,
             "y": -36.0,
             "maxPoints": 2,
             "stats": [
@@ -7078,7 +7078,7 @@
         "fi9-10": {
             "skill": "fi9-10",
             "name": "Igneous Force",
-            "x": 4335.7998,
+            "x": 4415.7998,
             "y": 440.0,
             "maxPoints": 1,
             "stats": [
@@ -7098,7 +7098,7 @@
         "fi9-11": {
             "skill": "fi9-11",
             "name": "Embers",
-            "x": 5587.7998,
+            "x": 5667.7998,
             "y": -696.0,
             "maxPoints": 1,
             "stats": [
@@ -7126,7 +7126,7 @@
         "fi9-12": {
             "skill": "fi9-12",
             "name": "Dancing Fire",
-            "x": 6147.7998,
+            "x": 6227.7998,
             "y": -832.0,
             "maxPoints": 2,
             "stats": [
@@ -7149,7 +7149,7 @@
         "fi9-13": {
             "skill": "fi9-13",
             "name": "Conflagration",
-            "x": 6975.7998,
+            "x": 7055.7998,
             "y": 516.0,
             "maxPoints": 5,
             "stats": [
@@ -7173,7 +7173,7 @@
         "fi9-14": {
             "skill": "fi9-14",
             "name": "Spreading Inferno",
-            "x": 6419.7998,
+            "x": 6499.7998,
             "y": 772.0,
             "maxPoints": 4,
             "stats": [
@@ -7196,7 +7196,7 @@
         "fi9-15": {
             "skill": "fi9-15",
             "name": "Wildfire",
-            "x": 6415.7998,
+            "x": 6495.7998,
             "y": 1244.0,
             "maxPoints": 5,
             "stats": [
@@ -7216,7 +7216,7 @@
         "fi9-16": {
             "skill": "fi9-16",
             "name": "Burning Wounds",
-            "x": 7191.7998,
+            "x": 7271.7998,
             "y": 1131.99976,
             "maxPoints": 4,
             "stats": [
@@ -7236,7 +7236,7 @@
         "fi9-17": {
             "skill": "fi9-17",
             "name": "Adept",
-            "x": 7211.7998,
+            "x": 7291.7998,
             "y": 35.999756,
             "maxPoints": 4,
             "stats": [
@@ -7260,7 +7260,7 @@
         "fi9-18": {
             "skill": "fi9-18",
             "name": "Flammability",
-            "x": 7627.7998,
+            "x": 7707.7998,
             "y": 708.0,
             "maxPoints": 4,
             "stats": [
@@ -7288,7 +7288,7 @@
         "fi9-19": {
             "skill": "fi9-19",
             "name": "Seeker's Ash",
-            "x": 8102.19972,
+            "x": 8182.19972,
             "y": 1092.8,
             "maxPoints": 1,
             "stats": [
@@ -7308,7 +7308,7 @@
         "fi9-20": {
             "skill": "fi9-20",
             "name": "Flame Burst",
-            "x": 8499.7998,
+            "x": 8579.7998,
             "y": 580.0,
             "maxPoints": 1,
             "stats": [
@@ -7333,7 +7333,7 @@
         "fi9-21": {
             "skill": "fi9-21",
             "name": "Volatile flames",
-            "x": 8880.9998,
+            "x": 8960.9998,
             "y": 164.0,
             "maxPoints": 2,
             "stats": [
@@ -7356,7 +7356,7 @@
         "fi9-22": {
             "skill": "fi9-22",
             "name": "Mana Sphere",
-            "x": 8003.7998,
+            "x": 8083.7998,
             "y": 216.0,
             "maxPoints": 3,
             "stats": [
@@ -7377,7 +7377,7 @@
         "fi9-23": {
             "skill": "fi9-23",
             "name": "Unchained Fire",
-            "x": 7747.7998,
+            "x": 7827.7998,
             "y": -316.0,
             "maxPoints": 1,
             "stats": [
@@ -7401,7 +7401,7 @@
         "fi9-24": {
             "skill": "fi9-24",
             "name": "Flamethrower",
-            "x": 7187.7998,
+            "x": 7267.7998,
             "y": -696.0,
             "maxPoints": 1,
             "stats": [
@@ -7431,7 +7431,7 @@
         "fi9-25": {
             "skill": "fi9-25",
             "name": "Forbidden Flames",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": -476.0,
             "maxPoints": 2,
             "stats": [
@@ -7452,7 +7452,7 @@
         "fi9-26": {
             "skill": "fi9-26",
             "name": "Eternal Fire",
-            "x": 6627.7998,
+            "x": 6707.7998,
             "y": -832.0,
             "maxPoints": 5,
             "stats": [
@@ -7475,7 +7475,7 @@
         "fi9-27": {
             "skill": "fi9-27",
             "name": "Magma Shell",
-            "x": 8034.1998,
+            "x": 8114.1998,
             "y": -776.0,
             "maxPoints": 5,
             "stats": [
@@ -7498,7 +7498,7 @@
         "fi9-28": {
             "skill": "fi9-28",
             "name": "Infernal Legacy",
-            "x": 8535.7998,
+            "x": 8615.7998,
             "y": -320.0,
             "maxPoints": 4,
             "stats": [
@@ -7518,7 +7518,7 @@
         "fl71ds-0": {
             "skill": "fl71ds-0",
             "name": "Flame Rush",
-            "x": 6467.7998,
+            "x": 6304.6002,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -7538,7 +7538,7 @@
         "fl71ds-2": {
             "skill": "fl71ds-2",
             "name": "Blazing Flux",
-            "x": 5932.5998,
+            "x": 5769.4002,
             "y": -582.39992,
             "maxPoints": 3,
             "stats": [
@@ -7563,7 +7563,7 @@
         "fl71ds-3": {
             "skill": "fl71ds-3",
             "name": "Manafused Current",
-            "x": 5169.399799999999,
+            "x": 5006.200199999999,
             "y": -582.4,
             "maxPoints": 3,
             "stats": [
@@ -7588,7 +7588,7 @@
         "fl71ds-4": {
             "skill": "fl71ds-4",
             "name": "Glyph of Intention",
-            "x": 4269.7998,
+            "x": 4106.6002,
             "y": -700.0,
             "maxPoints": 1,
             "stats": [
@@ -7614,7 +7614,7 @@
         "fl71ds-5": {
             "skill": "fl71ds-5",
             "name": "Magma Starter",
-            "x": 4852.9998,
+            "x": 4689.8002,
             "y": 200.000032,
             "maxPoints": 1,
             "stats": [
@@ -7642,7 +7642,7 @@
         "fl71ds-6": {
             "skill": "fl71ds-6",
             "name": "Runic Eclipse",
-            "x": 5471.7998,
+            "x": 5308.6002,
             "y": 67.6,
             "maxPoints": 3,
             "stats": [
@@ -7668,7 +7668,7 @@
         "fl71ds-7": {
             "skill": "fl71ds-7",
             "name": "Celestial Guidance",
-            "x": 6028.199799999999,
+            "x": 5865.0001999999995,
             "y": 414.0,
             "maxPoints": 3,
             "stats": [
@@ -7692,7 +7692,7 @@
         "fl71ds-8": {
             "skill": "fl71ds-8",
             "name": "Lunar Protection",
-            "x": 5532.5998,
+            "x": 5369.4002,
             "y": 867.6,
             "maxPoints": 3,
             "stats": [
@@ -7721,7 +7721,7 @@
         "fl71ds-9": {
             "skill": "fl71ds-9",
             "name": "Energy Equivalence",
-            "x": 4742.1998,
+            "x": 4579.0002,
             "y": 937.2,
             "maxPoints": 1,
             "stats": [
@@ -7745,7 +7745,7 @@
         "fl71ds-10": {
             "skill": "fl71ds-10",
             "name": "Beta Decay",
-            "x": 3964.9997999999996,
+            "x": 3801.8001999999997,
             "y": 1170.4,
             "maxPoints": 1,
             "stats": [
@@ -7766,7 +7766,7 @@
         "fl71ds-11": {
             "skill": "fl71ds-11",
             "name": "Snowballing",
-            "x": 4184.9998,
+            "x": 4021.8001999999997,
             "y": 516.0,
             "maxPoints": 1,
             "stats": [
@@ -7789,7 +7789,7 @@
         "fl71ds-13": {
             "skill": "fl71ds-13",
             "name": "Branding Cold",
-            "x": 3905.3997999999997,
+            "x": 3742.2001999999998,
             "y": -21.6,
             "maxPoints": 1,
             "stats": [
@@ -7810,7 +7810,7 @@
         "fl71ds-14": {
             "skill": "fl71ds-14",
             "name": "Fiery Overload",
-            "x": 6467.7998,
+            "x": 6304.6002,
             "y": 808.4,
             "maxPoints": 2,
             "stats": [
@@ -7834,7 +7834,7 @@
         "fl71ds-15": {
             "skill": "fl71ds-15",
             "name": "Epilogue",
-            "x": 6028.199799999999,
+            "x": 5865.0001999999995,
             "y": 1215.6,
             "maxPoints": 1,
             "stats": [
@@ -7855,7 +7855,7 @@
         "fl71ds-16": {
             "skill": "fl71ds-16",
             "name": "Guidance of Flames",
-            "x": 7350.9998,
+            "x": 7187.8002,
             "y": 937.19996,
             "maxPoints": 3,
             "stats": [
@@ -7883,7 +7883,7 @@
         "fl71ds-17": {
             "skill": "fl71ds-17",
             "name": "Breath of Fire",
-            "x": 6875.79986,
+            "x": 6712.60026,
             "y": 1215.6,
             "maxPoints": 1,
             "stats": [
@@ -7906,7 +7906,7 @@
         "fl71ds-18": {
             "skill": "fl71ds-18",
             "name": "Smolder and Burn",
-            "x": 8048.1998,
+            "x": 7885.0002,
             "y": 1137.2,
             "maxPoints": 5,
             "stats": [
@@ -7937,7 +7937,7 @@
         "fl71ds-19": {
             "skill": "fl71ds-19",
             "name": "Fire Eater",
-            "x": 8806.1998,
+            "x": 8643.0002,
             "y": 1137.2,
             "maxPoints": 1,
             "stats": [
@@ -7962,7 +7962,7 @@
         "fl71ds-20": {
             "skill": "fl71ds-20",
             "name": "Mark of the Forbidden Flame",
-            "x": 9114.9998,
+            "x": 8951.8002,
             "y": 653.6,
             "maxPoints": 1,
             "stats": [
@@ -7989,7 +7989,7 @@
         "fl71ds-21": {
             "skill": "fl71ds-21",
             "name": "Solar Rush",
-            "x": 7450.9998,
+            "x": 7287.8002,
             "y": 345.2,
             "maxPoints": 3,
             "stats": [
@@ -8012,7 +8012,7 @@
         "fl71ds-22": {
             "skill": "fl71ds-22",
             "name": "Blazeborn",
-            "x": 8429.3998,
+            "x": 8266.2002,
             "y": 345.2,
             "maxPoints": 5,
             "stats": [
@@ -8038,7 +8038,7 @@
         "fl71ds-23": {
             "skill": "fl71ds-23",
             "name": "Gas Powered",
-            "x": 8929.7998,
+            "x": 8766.6002,
             "y": -173.6,
             "maxPoints": 1,
             "stats": [
@@ -8059,7 +8059,7 @@
         "fl71ds-24": {
             "skill": "fl71ds-24",
             "name": "Ember Wake",
-            "x": 7464.19988,
+            "x": 7301.00028,
             "y": -426.00006,
             "maxPoints": 1,
             "stats": [
@@ -8084,7 +8084,7 @@
         "fl71ds-25": {
             "skill": "fl71ds-25",
             "name": "Flaring Coals",
-            "x": 7934.9998,
+            "x": 7771.8002,
             "y": -124.8,
             "maxPoints": 4,
             "stats": [
@@ -8106,7 +8106,7 @@
         "fl71ds-26": {
             "skill": "fl71ds-26",
             "name": "Living Embers",
-            "x": 8377.0,
+            "x": 8213.8004,
             "y": -426.00008,
             "maxPoints": 3,
             "stats": [
@@ -8130,7 +8130,7 @@
         "fl71ds-27": {
             "skill": "fl71ds-27",
             "name": "Keen Ignition",
-            "x": 8232.59996,
+            "x": 8069.40036,
             "y": -924.80004,
             "maxPoints": 1,
             "stats": [
@@ -8155,7 +8155,7 @@
         "fl71ds-28": {
             "skill": "fl71ds-28",
             "name": "Signet of Ash",
-            "x": 7619.80004,
+            "x": 7456.60044,
             "y": -924.80004,
             "maxPoints": 4,
             "stats": [
@@ -8180,7 +8180,7 @@
         "fr4wl-0": {
             "skill": "fr4wl-0",
             "name": "Frost Wall",
-            "x": 6467.7998,
+            "x": 6304.6002,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -8199,7 +8199,7 @@
         "fr4wl-1": {
             "skill": "fr4wl-1",
             "name": "Biting Limit",
-            "x": 7125.7998,
+            "x": 6962.6002,
             "y": -822.80016,
             "maxPoints": 4,
             "stats": [
@@ -8224,7 +8224,7 @@
         "fr4wl-2": {
             "skill": "fr4wl-2",
             "name": "Lightning Rod",
-            "x": 6035.7998,
+            "x": 5872.6002,
             "y": -822.8,
             "maxPoints": 4,
             "stats": [
@@ -8254,7 +8254,7 @@
         "fr4wl-3": {
             "skill": "fr4wl-3",
             "name": "Charged Pylons",
-            "x": 5109.7998,
+            "x": 4946.6002,
             "y": -746.8,
             "maxPoints": 1,
             "stats": [
@@ -8277,7 +8277,7 @@
         "fr4wl-4": {
             "skill": "fr4wl-4",
             "name": "Amplified Currents",
-            "x": 4377.7998,
+            "x": 4214.6002,
             "y": -457.6,
             "maxPoints": 2,
             "stats": [
@@ -8299,7 +8299,7 @@
         "fr4wl-5": {
             "skill": "fr4wl-5",
             "name": "Aspirant's Arrival",
-            "x": 5357.7998,
+            "x": 5194.6002,
             "y": -257.600096,
             "maxPoints": 3,
             "stats": [
@@ -8325,7 +8325,7 @@
         "fr4wl-6": {
             "skill": "fr4wl-6",
             "name": "Purifying Gate",
-            "x": 5357.7998,
+            "x": 5194.6002,
             "y": 282.0,
             "maxPoints": 1,
             "stats": [
@@ -8350,7 +8350,7 @@
         "fr4wl-7": {
             "skill": "fr4wl-7",
             "name": "Arch of Rimefrost",
-            "x": 7811.399799999999,
+            "x": 7648.200199999999,
             "y": -946.8,
             "maxPoints": 3,
             "stats": [
@@ -8373,7 +8373,7 @@
         "fr4wl-8": {
             "skill": "fr4wl-8",
             "name": "Crystals of Protection",
-            "x": 5985.7998,
+            "x": 5822.6002,
             "y": 797.19996,
             "maxPoints": 4,
             "stats": [
@@ -8401,7 +8401,7 @@
         "fr4wl-9": {
             "skill": "fr4wl-9",
             "name": "Boosted Kickoff",
-            "x": 5271.7998,
+            "x": 5108.6002,
             "y": 962.4,
             "maxPoints": 3,
             "stats": [
@@ -8426,7 +8426,7 @@
         "fr4wl-10": {
             "skill": "fr4wl-10",
             "name": "Runic Conclusion",
-            "x": 4498.9998,
+            "x": 4335.8002,
             "y": 962.4,
             "maxPoints": 1,
             "stats": [
@@ -8452,7 +8452,7 @@
         "fr4wl-11": {
             "skill": "fr4wl-11",
             "name": "Shattered to Pieces",
-            "x": 3898.9997999999996,
+            "x": 3735.8001999999997,
             "y": 648.0,
             "maxPoints": 1,
             "stats": [
@@ -8473,7 +8473,7 @@
         "fr4wl-12": {
             "skill": "fr4wl-12",
             "name": "Glyph of Direfrost",
-            "x": 3898.9993999999997,
+            "x": 3735.7998,
             "y": 1218.0,
             "maxPoints": 1,
             "stats": [
@@ -8494,7 +8494,7 @@
         "fr4wl-13": {
             "skill": "fr4wl-13",
             "name": "Prepared Wards",
-            "x": 4498.9998,
+            "x": 4335.8002,
             "y": 239.99996,
             "maxPoints": 1,
             "stats": [
@@ -8516,7 +8516,7 @@
         "fr4wl-14": {
             "skill": "fr4wl-14",
             "name": "Heaping Cold",
-            "x": 5835.7998,
+            "x": 5672.6002,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -8537,7 +8537,7 @@
         "fr4wl-15": {
             "skill": "fr4wl-15",
             "name": "Marching Winter",
-            "x": 7040.5998,
+            "x": 6877.4002,
             "y": 997.2,
             "maxPoints": 5,
             "stats": [
@@ -8564,7 +8564,7 @@
         "fr4wl-16": {
             "skill": "fr4wl-16",
             "name": "Chilled Touch",
-            "x": 6467.7998,
+            "x": 6304.6002,
             "y": 1197.2,
             "maxPoints": 2,
             "stats": [
@@ -8584,7 +8584,7 @@
         "fr4wl-17": {
             "skill": "fr4wl-17",
             "name": "The Dark Cold",
-            "x": 8107.7998,
+            "x": 7944.6002,
             "y": 871.2,
             "maxPoints": 5,
             "stats": [
@@ -8609,7 +8609,7 @@
         "fr4wl-18": {
             "skill": "fr4wl-18",
             "name": "Howling Rift",
-            "x": 8907.7998,
+            "x": 8744.6002,
             "y": 1241.2,
             "maxPoints": 1,
             "stats": [
@@ -8633,7 +8633,7 @@
         "fr4wl-19": {
             "skill": "fr4wl-19",
             "name": "Frigid Domination",
-            "x": 8348.9998,
+            "x": 8185.8002,
             "y": -746.8,
             "maxPoints": 2,
             "stats": [
@@ -8655,7 +8655,7 @@
         "fr4wl-20": {
             "skill": "fr4wl-20",
             "name": "Frozen Throne",
-            "x": 8862.5996,
+            "x": 8699.4,
             "y": -946.80004,
             "maxPoints": 1,
             "stats": [
@@ -8676,7 +8676,7 @@
         "fr4wl-21": {
             "skill": "fr4wl-21",
             "name": "Protection of the Apostate",
-            "x": 8107.7998,
+            "x": 7944.6002,
             "y": -296.0,
             "maxPoints": 3,
             "stats": [
@@ -8702,7 +8702,7 @@
         "fr4wl-22": {
             "skill": "fr4wl-22",
             "name": "Shelter of the Chef",
-            "x": 8952.1998,
+            "x": 8789.0002,
             "y": -296.0,
             "maxPoints": 1,
             "stats": [
@@ -8723,7 +8723,7 @@
         "fr4wl-23": {
             "skill": "fr4wl-23",
             "name": "Pyroglass",
-            "x": 7690.5998,
+            "x": 7527.4002,
             "y": 521.19996,
             "maxPoints": 1,
             "stats": [
@@ -8751,7 +8751,7 @@
         "fr4wl-24": {
             "skill": "fr4wl-24",
             "name": "Brand the Invaders",
-            "x": 7125.7998,
+            "x": 6962.6002,
             "y": 321.19996,
             "maxPoints": 1,
             "stats": [
@@ -8772,7 +8772,7 @@
         "fr4wl-25": {
             "skill": "fr4wl-25",
             "name": "Flames Unchained",
-            "x": 7690.5996,
+            "x": 7527.4,
             "y": -20.800048,
             "maxPoints": 3,
             "stats": [
@@ -8797,7 +8797,7 @@
         "fr4wl-26": {
             "skill": "fr4wl-26",
             "name": "Crackling Barrier",
-            "x": 7125.7998,
+            "x": 6962.6002,
             "y": -240.0,
             "maxPoints": 1,
             "stats": [
@@ -8826,7 +8826,7 @@
         "fr4wl-27": {
             "skill": "fr4wl-27",
             "name": "Wall of Glyptic Art",
-            "x": 8770.9998,
+            "x": 8607.8002,
             "y": 179.19992,
             "maxPoints": 1,
             "stats": [
@@ -8849,7 +8849,7 @@
         "fr4wl-28": {
             "skill": "fr4wl-28",
             "name": "Arcane Mosaic",
-            "x": 8770.9998,
+            "x": 8607.8002,
             "y": 721.2,
             "maxPoints": 5,
             "stats": [
@@ -8869,7 +8869,7 @@
         "fr11mv-0": {
             "skill": "fr11mv-0",
             "name": "Flame Reave",
-            "x": 6467.7998,
+            "x": 6199.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -8888,7 +8888,7 @@
         "fr11mv-2": {
             "skill": "fr11mv-2",
             "name": "Dancing Flames",
-            "x": 6995.7998,
+            "x": 6727.7998,
             "y": -320.0,
             "maxPoints": 5,
             "stats": [
@@ -8913,7 +8913,7 @@
         "fr11mv-3": {
             "skill": "fr11mv-3",
             "name": "Rhythm of Fire",
-            "x": 7963.7998,
+            "x": 7695.7998,
             "y": -432.0,
             "maxPoints": 1,
             "stats": [
@@ -8943,7 +8943,7 @@
         "fr11mv-4": {
             "skill": "fr11mv-4",
             "name": "Versatility",
-            "x": 8547.7998,
+            "x": 8279.7998,
             "y": -432.0,
             "maxPoints": 1,
             "stats": [
@@ -8968,7 +8968,7 @@
         "fr11mv-5": {
             "skill": "fr11mv-5",
             "name": "Engulfing Flames",
-            "x": 7691.7998,
+            "x": 7423.7998,
             "y": -892.0,
             "maxPoints": 4,
             "stats": [
@@ -8989,7 +8989,7 @@
         "fr11mv-6": {
             "skill": "fr11mv-6",
             "name": "Frenzied Flame",
-            "x": 6467.7998,
+            "x": 6199.7998,
             "y": -872.0,
             "maxPoints": 4,
             "stats": [
@@ -9016,7 +9016,7 @@
         "fr11mv-7": {
             "skill": "fr11mv-7",
             "name": "Naurcrist",
-            "x": 5763.7998,
+            "x": 5495.7998,
             "y": -776.0,
             "maxPoints": 4,
             "stats": [
@@ -9036,7 +9036,7 @@
         "fr11mv-8": {
             "skill": "fr11mv-8",
             "name": "Rolling Thunder",
-            "x": 7171.7998,
+            "x": 6903.7998,
             "y": -776.0,
             "maxPoints": 1,
             "stats": [
@@ -9058,7 +9058,7 @@
         "fr11mv-9": {
             "skill": "fr11mv-9",
             "name": "Heat Wave",
-            "x": 5939.7998,
+            "x": 5671.7998,
             "y": -320.0,
             "maxPoints": 5,
             "stats": [
@@ -9082,7 +9082,7 @@
         "fr11mv-10": {
             "skill": "fr11mv-10",
             "name": "Scorched Earth",
-            "x": 5095.7998,
+            "x": 4827.7998,
             "y": -584.0,
             "maxPoints": 3,
             "stats": [
@@ -9107,7 +9107,7 @@
         "fr11mv-11": {
             "skill": "fr11mv-11",
             "name": "Volatile Strike",
-            "x": 4511.7998,
+            "x": 4243.7998,
             "y": -584.0,
             "maxPoints": 2,
             "stats": [
@@ -9128,7 +9128,7 @@
         "fr11mv-12": {
             "skill": "fr11mv-12",
             "name": "Arcane Severance",
-            "x": 6787.7998,
+            "x": 6519.7998,
             "y": 488.0,
             "maxPoints": 4,
             "stats": [
@@ -9155,7 +9155,7 @@
         "fr11mv-13": {
             "skill": "fr11mv-13",
             "name": "Ember Infusion",
-            "x": 7587.7998,
+            "x": 7319.7998,
             "y": 1072.0,
             "maxPoints": 4,
             "stats": [
@@ -9178,7 +9178,7 @@
         "fr11mv-14": {
             "skill": "fr11mv-14",
             "name": "Catalyst of Ash",
-            "x": 7691.7998,
+            "x": 7423.7998,
             "y": 28.0,
             "maxPoints": 2,
             "stats": [
@@ -9198,7 +9198,7 @@
         "fr11mv-16": {
             "skill": "fr11mv-16",
             "name": "Firewalker",
-            "x": 8103.7998,
+            "x": 7835.7998,
             "y": 692.0,
             "maxPoints": 1,
             "stats": [
@@ -9221,7 +9221,7 @@
         "fr11mv-17": {
             "skill": "fr11mv-17",
             "name": "Kindling",
-            "x": 8495.7998,
+            "x": 8227.7998,
             "y": 156.0,
             "maxPoints": 2,
             "stats": [
@@ -9241,7 +9241,7 @@
         "fr11mv-18": {
             "skill": "fr11mv-18",
             "name": "Flame Caller",
-            "x": 8339.7998,
+            "x": 8071.7998,
             "y": 1204.0,
             "maxPoints": 1,
             "stats": [
@@ -9263,7 +9263,7 @@
         "fr11mv-19": {
             "skill": "fr11mv-19",
             "name": "Infernal Calling",
-            "x": 8827.7998,
+            "x": 8559.7998,
             "y": 788.0,
             "maxPoints": 1,
             "stats": [
@@ -9284,7 +9284,7 @@
         "fr11mv-20": {
             "skill": "fr11mv-20",
             "name": "Precise Destruction",
-            "x": 6467.7998,
+            "x": 6199.7998,
             "y": 1000.0,
             "maxPoints": 3,
             "stats": [
@@ -9314,7 +9314,7 @@
         "fr11mv-21": {
             "skill": "fr11mv-21",
             "name": "Infernal Alchemy",
-            "x": 6871.7998,
+            "x": 6603.7998,
             "y": 1292.0,
             "maxPoints": 3,
             "stats": [
@@ -9334,7 +9334,7 @@
         "fr11mv-22": {
             "skill": "fr11mv-22",
             "name": "Slash and Burn",
-            "x": 5375.7998,
+            "x": 5107.7998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -9359,7 +9359,7 @@
         "fr11mv-23": {
             "skill": "fr11mv-23",
             "name": "Scorching Tide",
-            "x": 5375.7998,
+            "x": 5107.7998,
             "y": 578.8,
             "maxPoints": 3,
             "stats": [
@@ -9384,7 +9384,7 @@
         "fr11mv-24": {
             "skill": "fr11mv-24",
             "name": "Chaos Flare",
-            "x": 5815.7998,
+            "x": 5547.7998,
             "y": 1000.0,
             "maxPoints": 4,
             "stats": [
@@ -9409,7 +9409,7 @@
         "fr11mv-25": {
             "skill": "fr11mv-25",
             "name": "Rolling Flames",
-            "x": 6243.7998,
+            "x": 5975.7998,
             "y": 536.0,
             "maxPoints": 2,
             "stats": [
@@ -9434,7 +9434,7 @@
         "fr11mv-26": {
             "skill": "fr11mv-26",
             "name": "Ashen Waste",
-            "x": 5875.7998,
+            "x": 5607.7998,
             "y": 220.0,
             "maxPoints": 2,
             "stats": [
@@ -9454,7 +9454,7 @@
         "fr11mv-27": {
             "skill": "fr11mv-27",
             "name": "Unbound Flames",
-            "x": 4587.7998,
+            "x": 4319.7998,
             "y": 268.0,
             "maxPoints": 3,
             "stats": [
@@ -9477,7 +9477,7 @@
         "fr11mv-28": {
             "skill": "fr11mv-28",
             "name": "Worldfire",
-            "x": 4003.7998,
+            "x": 3735.7998,
             "y": 76.0,
             "maxPoints": 1,
             "stats": [
@@ -9499,7 +9499,7 @@
         "fr11mv-29": {
             "skill": "fr11mv-29",
             "name": "Lingering Embers",
-            "x": 4143.7998,
+            "x": 3875.7998,
             "y": 948.0,
             "maxPoints": 2,
             "stats": [
@@ -9523,7 +9523,7 @@
         "fr11mv-30": {
             "skill": "fr11mv-30",
             "name": "Accelerando",
-            "x": 9075.7998,
+            "x": 8807.7998,
             "y": -604.0,
             "maxPoints": 3,
             "stats": [
@@ -10244,7 +10244,7 @@
         "fw3d-0": {
             "skill": "fw3d-0",
             "name": "Flame Ward",
-            "x": 6367.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -10263,7 +10263,7 @@
         "fw3d-2": {
             "skill": "fw3d-2",
             "name": "Infusion",
-            "x": 5687.7998,
+            "x": 5787.7998,
             "y": 408.0,
             "maxPoints": 5,
             "stats": [
@@ -10287,7 +10287,7 @@
         "fw3d-3": {
             "skill": "fw3d-3",
             "name": "Retribution",
-            "x": 5763.7998,
+            "x": 5863.7998,
             "y": -484.0,
             "maxPoints": 5,
             "stats": [
@@ -10312,7 +10312,7 @@
         "fw3d-4": {
             "skill": "fw3d-4",
             "name": "Telepyrosis",
-            "x": 4931.7998,
+            "x": 5031.7998,
             "y": -756.0,
             "maxPoints": 1,
             "stats": [
@@ -10333,7 +10333,7 @@
         "fw3d-5": {
             "skill": "fw3d-5",
             "name": "Blast Field",
-            "x": 6139.7998,
+            "x": 6239.7998,
             "y": -736.0,
             "maxPoints": 5,
             "stats": [
@@ -10353,7 +10353,7 @@
         "fw3d-6": {
             "skill": "fw3d-6",
             "name": "Frost Ward",
-            "x": 4827.7998,
+            "x": 4927.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -10381,7 +10381,7 @@
         "fw3d-7": {
             "skill": "fw3d-7",
             "name": "Frostguard",
-            "x": 4539.7998,
+            "x": 4639.7998,
             "y": 416.0,
             "maxPoints": 5,
             "stats": [
@@ -10403,7 +10403,7 @@
         "fw3d-8": {
             "skill": "fw3d-8",
             "name": "Glacial Reinforcement",
-            "x": 4047.7998,
+            "x": 4147.7998,
             "y": 348.0,
             "maxPoints": 5,
             "stats": [
@@ -10425,7 +10425,7 @@
         "fw3d-9": {
             "skill": "fw3d-9",
             "name": "Rimeskin",
-            "x": 4007.7998,
+            "x": 4107.7998,
             "y": -184.0,
             "maxPoints": 5,
             "stats": [
@@ -10445,7 +10445,7 @@
         "fw3d-10": {
             "skill": "fw3d-10",
             "name": "Lightning Ward",
-            "x": 5583.7998,
+            "x": 5683.7998,
             "y": -36.0,
             "maxPoints": 1,
             "stats": [
@@ -10469,7 +10469,7 @@
         "fw3d-11": {
             "skill": "fw3d-11",
             "name": "Dilation",
-            "x": 6067.7998,
+            "x": 6167.7998,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -10495,7 +10495,7 @@
         "fw3d-12": {
             "skill": "fw3d-12",
             "name": "Fire Aura",
-            "x": 5055.7998,
+            "x": 5155.7998,
             "y": 748.0,
             "maxPoints": 1,
             "stats": [
@@ -10520,7 +10520,7 @@
         "fw3d-13": {
             "skill": "fw3d-13",
             "name": "Eye of Flame",
-            "x": 4371.7998,
+            "x": 4471.7998,
             "y": 1128.0,
             "maxPoints": 1,
             "stats": [
@@ -10543,7 +10543,7 @@
         "fw3d-14": {
             "skill": "fw3d-14",
             "name": "Energize",
-            "x": 6503.7998,
+            "x": 6603.7998,
             "y": 1188.0,
             "maxPoints": 3,
             "stats": [
@@ -10568,7 +10568,7 @@
         "fw3d-15": {
             "skill": "fw3d-15",
             "name": "Recollection",
-            "x": 6827.7998,
+            "x": 6927.7998,
             "y": 796.0,
             "maxPoints": 2,
             "stats": [
@@ -10588,7 +10588,7 @@
         "fw3d-16": {
             "skill": "fw3d-16",
             "name": "Through Flames",
-            "x": 5583.7998,
+            "x": 5683.7998,
             "y": 1088.0,
             "maxPoints": 5,
             "stats": [
@@ -10610,7 +10610,7 @@
         "fw3d-17": {
             "skill": "fw3d-17",
             "name": "Stalwart Defense",
-            "x": 7115.7998,
+            "x": 7215.7998,
             "y": -236.0,
             "maxPoints": 5,
             "stats": [
@@ -10635,7 +10635,7 @@
         "fw3d-18": {
             "skill": "fw3d-18",
             "name": "Barrier",
-            "x": 7451.7998,
+            "x": 7551.7998,
             "y": 496.0,
             "maxPoints": 5,
             "stats": [
@@ -10660,7 +10660,7 @@
         "fw3d-19": {
             "skill": "fw3d-19",
             "name": "Prismatic Buffer",
-            "x": 7255.7998,
+            "x": 7355.7998,
             "y": 1000.0,
             "maxPoints": 3,
             "stats": [
@@ -10686,7 +10686,7 @@
         "fw3d-20": {
             "skill": "fw3d-20",
             "name": "Selfless Sorcery",
-            "x": 7819.7998,
+            "x": 7919.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -10706,7 +10706,7 @@
         "fw3d-21": {
             "skill": "fw3d-21",
             "name": "Shrewd Shielding",
-            "x": 8003.7998,
+            "x": 8103.7998,
             "y": 596.0,
             "maxPoints": 3,
             "stats": [
@@ -10728,7 +10728,7 @@
         "fw3d-22": {
             "skill": "fw3d-22",
             "name": "Mental Aegis",
-            "x": 8527.7998,
+            "x": 8627.7998,
             "y": 380.0,
             "maxPoints": 5,
             "stats": [
@@ -10750,7 +10750,7 @@
         "fw3d-23": {
             "skill": "fw3d-23",
             "name": "Warmth",
-            "x": 8879.7998,
+            "x": 8979.7998,
             "y": -44.0,
             "maxPoints": 4,
             "stats": [
@@ -10770,7 +10770,7 @@
         "fw3d-25": {
             "skill": "fw3d-25",
             "name": "Concentrated Shielding",
-            "x": 7763.7998,
+            "x": 7863.7998,
             "y": 136.0,
             "maxPoints": 4,
             "stats": [
@@ -10794,7 +10794,7 @@
         "fw3d-27": {
             "skill": "fw3d-27",
             "name": "Fortification",
-            "x": 8147.7998,
+            "x": 8247.7998,
             "y": -100.0,
             "maxPoints": 1,
             "stats": [
@@ -10815,7 +10815,7 @@
         "fw3d-28": {
             "skill": "fw3d-28",
             "name": "Desperate Defense",
-            "x": 7207.7998,
+            "x": 7307.7998,
             "y": -784.0,
             "maxPoints": 3,
             "stats": [
@@ -10838,7 +10838,7 @@
         "fw3d-29": {
             "skill": "fw3d-29",
             "name": "Fuel The Flames",
-            "x": 7875.7998,
+            "x": 7975.7998,
             "y": -964.0,
             "maxPoints": 3,
             "stats": [
@@ -10863,7 +10863,7 @@
         "fw3d-30": {
             "skill": "fw3d-30",
             "name": "Dual Aegis",
-            "x": 8219.7998,
+            "x": 8319.7998,
             "y": -576.0,
             "maxPoints": 1,
             "stats": [
@@ -10883,7 +10883,7 @@
         "fw3d-31": {
             "skill": "fw3d-31",
             "name": "Astonish",
-            "x": 6595.7998,
+            "x": 6695.7998,
             "y": -736.0,
             "maxPoints": 1,
             "stats": [
@@ -10903,7 +10903,7 @@
         "fw3d-33": {
             "skill": "fw3d-33",
             "name": "Flame Runner",
-            "x": 4939.7998,
+            "x": 5039.7998,
             "y": 1236.0,
             "maxPoints": 1,
             "stats": [
@@ -10926,7 +10926,7 @@
         "fw3d-34": {
             "skill": "fw3d-34",
             "name": "Warden Pulse",
-            "x": 6999.7998,
+            "x": 7099.7998,
             "y": 360.0,
             "maxPoints": 1,
             "stats": [
@@ -10946,7 +10946,7 @@
         "gl14-0": {
             "skill": "gl14-0",
             "name": "Glacier",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -10966,7 +10966,7 @@
         "gl14-2": {
             "skill": "gl14-2",
             "name": "Chilling Force",
-            "x": 5707.7998,
+            "x": 5787.7998,
             "y": 300.0,
             "maxPoints": 2,
             "stats": [
@@ -10991,7 +10991,7 @@
         "gl14-3": {
             "skill": "gl14-3",
             "name": "Lesser Destruction",
-            "x": 8251.7998,
+            "x": 8331.7998,
             "y": 272.0,
             "maxPoints": 4,
             "stats": [
@@ -11018,7 +11018,7 @@
         "gl14-4": {
             "skill": "gl14-4",
             "name": "Moderate Destruction",
-            "x": 7679.7998,
+            "x": 7759.7998,
             "y": -300.0,
             "maxPoints": 4,
             "stats": [
@@ -11042,7 +11042,7 @@
         "gl14-5": {
             "skill": "gl14-5",
             "name": "Greater Destruction",
-            "x": 8251.7998,
+            "x": 8331.7998,
             "y": -860.0,
             "maxPoints": 4,
             "stats": [
@@ -11066,7 +11066,7 @@
         "gl14-6": {
             "skill": "gl14-6",
             "name": "Lesser Chilling",
-            "x": 5431.7998,
+            "x": 5511.7998,
             "y": 992.0,
             "maxPoints": 2,
             "stats": [
@@ -11088,7 +11088,7 @@
         "gl14-7": {
             "skill": "gl14-7",
             "name": "Moderate Chilling",
-            "x": 5159.7998,
+            "x": 5239.7998,
             "y": 620.0,
             "maxPoints": 2,
             "stats": [
@@ -11111,7 +11111,7 @@
         "gl14-8": {
             "skill": "gl14-8",
             "name": "Greater Chilling",
-            "x": 4887.7998,
+            "x": 4967.7998,
             "y": 244.0,
             "maxPoints": 2,
             "stats": [
@@ -11134,7 +11134,7 @@
         "gl14-9": {
             "skill": "gl14-9",
             "name": "Lesser Vortex",
-            "x": 4311.7998,
+            "x": 4391.7998,
             "y": 272.0,
             "maxPoints": 1,
             "stats": [
@@ -11159,7 +11159,7 @@
         "gl14-10": {
             "skill": "gl14-10",
             "name": "Moderate Vortex",
-            "x": 4311.7998,
+            "x": 4391.7998,
             "y": -388.0,
             "maxPoints": 2,
             "stats": [
@@ -11185,7 +11185,7 @@
         "gl14-11": {
             "skill": "gl14-11",
             "name": "Greater Vortex",
-            "x": 4311.7998,
+            "x": 4391.7998,
             "y": -860.0,
             "maxPoints": 2,
             "stats": [
@@ -11211,7 +11211,7 @@
         "gl14-12": {
             "skill": "gl14-12",
             "name": "Whirlpools",
-            "x": 5707.7998,
+            "x": 5787.7998,
             "y": -300.0,
             "maxPoints": 4,
             "stats": [
@@ -11237,7 +11237,7 @@
         "gl14-13": {
             "skill": "gl14-13",
             "name": "Rime Caster",
-            "x": 4895.7998,
+            "x": 4975.7998,
             "y": -388.0,
             "maxPoints": 5,
             "stats": [
@@ -11266,7 +11266,7 @@
         "gl14-14": {
             "skill": "gl14-14",
             "name": "Lesser Glacier",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": -731.99988,
             "maxPoints": 1,
             "stats": [
@@ -11291,7 +11291,7 @@
         "gl14-15": {
             "skill": "gl14-15",
             "name": "Cold Snap",
-            "x": 7067.7998,
+            "x": 7147.7998,
             "y": -976.0,
             "maxPoints": 2,
             "stats": [
@@ -11312,7 +11312,7 @@
         "gl14-16": {
             "skill": "gl14-16",
             "name": "Frost Grip",
-            "x": 7067.7998,
+            "x": 7147.7998,
             "y": 300.0,
             "maxPoints": 5,
             "stats": [
@@ -11337,7 +11337,7 @@
         "gl14-17": {
             "skill": "gl14-17",
             "name": "Critical Rejuvenation",
-            "x": 6747.7998,
+            "x": 6827.7998,
             "y": 1204.0,
             "maxPoints": 1,
             "stats": [
@@ -11359,7 +11359,7 @@
         "gl14-18": {
             "skill": "gl14-18",
             "name": "Cold Victory",
-            "x": 6027.7998,
+            "x": 6107.7998,
             "y": 1204.0,
             "maxPoints": 1,
             "stats": [
@@ -11379,7 +11379,7 @@
         "gl14-19": {
             "skill": "gl14-19",
             "name": "Fading Echoes",
-            "x": 7747.7998,
+            "x": 7827.7998,
             "y": 600.0,
             "maxPoints": 1,
             "stats": [
@@ -11399,7 +11399,7 @@
         "gl14-20": {
             "skill": "gl14-20",
             "name": "Resplendent Frost",
-            "x": 7343.7998,
+            "x": 7423.7998,
             "y": 992.0,
             "maxPoints": 3,
             "stats": [
@@ -11425,7 +11425,7 @@
         "gl14-21": {
             "skill": "gl14-21",
             "name": "Static Collapse",
-            "x": 8339.7998,
+            "x": 8419.7998,
             "y": 868.0,
             "maxPoints": 1,
             "stats": [
@@ -11453,7 +11453,7 @@
         "gl14-22": {
             "skill": "gl14-22",
             "name": "Perma Frost",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": 732.0,
             "maxPoints": 4,
             "stats": [
@@ -11476,7 +11476,7 @@
         "gl14-24": {
             "skill": "gl14-24",
             "name": "Breaking Point",
-            "x": 7067.7998,
+            "x": 7147.7998,
             "y": -300.0,
             "maxPoints": 4,
             "stats": [
@@ -11502,7 +11502,7 @@
         "gl14-25": {
             "skill": "gl14-25",
             "name": "Engulfing Vortex",
-            "x": 3735.7998,
+            "x": 3815.7998,
             "y": -388.0,
             "maxPoints": 5,
             "stats": [
@@ -11528,7 +11528,7 @@
         "gl14-26": {
             "skill": "gl14-26",
             "name": "Morditas' Bane",
-            "x": 8799.7998,
+            "x": 8879.7998,
             "y": -300.0,
             "maxPoints": 4,
             "stats": [
@@ -11556,7 +11556,7 @@
         "gl14-27": {
             "skill": "gl14-27",
             "name": "Endless Frost",
-            "x": 4443.7998,
+            "x": 4523.7998,
             "y": 1108.0,
             "maxPoints": 1,
             "stats": [
@@ -11581,7 +11581,7 @@
         "gl14-28": {
             "skill": "gl14-28",
             "name": "Critical Barrier",
-            "x": 8959.7998,
+            "x": 9039.7998,
             "y": 600.0,
             "maxPoints": 3,
             "stats": [
@@ -11601,7 +11601,7 @@
         "gl14-30": {
             "skill": "gl14-30",
             "name": "Snow Blink",
-            "x": 8935.7998,
+            "x": 9015.7998,
             "y": 1132.0,
             "maxPoints": 1,
             "stats": [
@@ -11627,7 +11627,7 @@
         "gy2dm-0": {
             "skill": "gy2dm-0",
             "name": "Glyph of Dominion",
-            "x": 6367.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -11646,7 +11646,7 @@
         "gy2dm-1": {
             "skill": "gy2dm-1",
             "name": "Herald of Domination",
-            "x": 5571.79988,
+            "x": 5671.79988,
             "y": -384.0,
             "maxPoints": 4,
             "stats": [
@@ -11670,7 +11670,7 @@
         "gy2dm-2": {
             "skill": "gy2dm-2",
             "name": "Astromage",
-            "x": 6010.9998,
+            "x": 6110.9998,
             "y": -804.0,
             "maxPoints": 5,
             "stats": [
@@ -11693,7 +11693,7 @@
         "gy2dm-3": {
             "skill": "gy2dm-3",
             "name": "Astral Extension",
-            "x": 6732.9998,
+            "x": 6832.9998,
             "y": -804.0,
             "maxPoints": 1,
             "stats": [
@@ -11716,7 +11716,7 @@
         "gy2dm-4": {
             "skill": "gy2dm-4",
             "name": "Careful Drawings",
-            "x": 5685.3998,
+            "x": 5785.3998,
             "y": 268.0,
             "maxPoints": 2,
             "stats": [
@@ -11741,7 +11741,7 @@
         "gy2dm-5": {
             "skill": "gy2dm-5",
             "name": "Runecarver's Domain",
-            "x": 5072.5998,
+            "x": 5172.5998,
             "y": -71.6,
             "maxPoints": 3,
             "stats": [
@@ -11767,7 +11767,7 @@
         "gy2dm-6": {
             "skill": "gy2dm-6",
             "name": "Attuned Shapes",
-            "x": 4783.7998,
+            "x": 4883.7998,
             "y": -604.0,
             "maxPoints": 1,
             "stats": [
@@ -11791,7 +11791,7 @@
         "gy2dm-7": {
             "skill": "gy2dm-7",
             "name": "Doom Scribe",
-            "x": 4751.7998,
+            "x": 4851.7998,
             "y": 420.0,
             "maxPoints": 4,
             "stats": [
@@ -11818,7 +11818,7 @@
         "gy2dm-8": {
             "skill": "gy2dm-8",
             "name": "Runic Dominance",
-            "x": 4086.19996,
+            "x": 4186.19996,
             "y": 348.0,
             "maxPoints": 1,
             "stats": [
@@ -11842,7 +11842,7 @@
         "gy2dm-9": {
             "skill": "gy2dm-9",
             "name": "Power Word: Devastation",
-            "x": 3735.7998,
+            "x": 3835.7998,
             "y": 808.0,
             "maxPoints": 1,
             "stats": [
@@ -11867,7 +11867,7 @@
         "gy2dm-10": {
             "skill": "gy2dm-10",
             "name": "Perfect Design",
-            "x": 4028.5998,
+            "x": 4128.5998,
             "y": 1257.2,
             "maxPoints": 4,
             "stats": [
@@ -11888,7 +11888,7 @@
         "gy2dm-11": {
             "skill": "gy2dm-11",
             "name": "Evoker of Elements",
-            "x": 4003.7998,
+            "x": 4103.7998,
             "y": -528.0,
             "maxPoints": 3,
             "stats": [
@@ -11909,7 +11909,7 @@
         "gy2dm-12": {
             "skill": "gy2dm-12",
             "name": "Wreak Havoc",
-            "x": 5412.9998,
+            "x": 5512.9998,
             "y": 794.0,
             "maxPoints": 3,
             "stats": [
@@ -11938,7 +11938,7 @@
         "gy2dm-13": {
             "skill": "gy2dm-13",
             "name": "Atomization",
-            "x": 5132.5998,
+            "x": 5232.5998,
             "y": 1247.6,
             "maxPoints": 1,
             "stats": [
@@ -11959,7 +11959,7 @@
         "gy2dm-14": {
             "skill": "gy2dm-14",
             "name": "Vaporizing Realm",
-            "x": 6375.7998,
+            "x": 6475.7998,
             "y": 794.0,
             "maxPoints": 5,
             "stats": [
@@ -11987,7 +11987,7 @@
         "gy2dm-15": {
             "skill": "gy2dm-15",
             "name": "Runes of Disintegration",
-            "x": 5685.3998,
+            "x": 5785.3998,
             "y": 1247.6,
             "maxPoints": 4,
             "stats": [
@@ -12008,7 +12008,7 @@
         "gy2dm-16": {
             "skill": "gy2dm-16",
             "name": "Amplified Expanse",
-            "x": 7166.59984,
+            "x": 7266.59984,
             "y": 438.0,
             "maxPoints": 3,
             "stats": [
@@ -12034,7 +12034,7 @@
         "gy2dm-17": {
             "skill": "gy2dm-17",
             "name": "Charged Reflections",
-            "x": 7963.7998,
+            "x": 8063.7998,
             "y": 860.0,
             "maxPoints": 1,
             "stats": [
@@ -12058,7 +12058,7 @@
         "gy2dm-18": {
             "skill": "gy2dm-18",
             "name": "Arcane Mirror",
-            "x": 7560.9998,
+            "x": 7660.9998,
             "y": 1196.8,
             "maxPoints": 3,
             "stats": [
@@ -12078,7 +12078,7 @@
         "gy2dm-19": {
             "skill": "gy2dm-19",
             "name": "Static Sparks",
-            "x": 8872.5998,
+            "x": 8972.5998,
             "y": 860.0,
             "maxPoints": 1,
             "stats": [
@@ -12099,7 +12099,7 @@
         "gy2dm-20": {
             "skill": "gy2dm-20",
             "name": "Sanctuary Threshold",
-            "x": 7055.3998,
+            "x": 7155.3998,
             "y": 1008.0,
             "maxPoints": 4,
             "stats": [
@@ -12120,7 +12120,7 @@
         "gy2dm-21": {
             "skill": "gy2dm-21",
             "name": "Shocking Grasp",
-            "x": 7166.5998,
+            "x": 7266.5998,
             "y": -384.0,
             "maxPoints": 4,
             "stats": [
@@ -12144,7 +12144,7 @@
         "gy2dm-22": {
             "skill": "gy2dm-22",
             "name": "Power Word: Stun",
-            "x": 7963.7998,
+            "x": 8063.7998,
             "y": -0.0,
             "maxPoints": 3,
             "stats": [
@@ -12167,7 +12167,7 @@
         "gy2dm-23": {
             "skill": "gy2dm-23",
             "name": "Tendrils of the Invoker",
-            "x": 8495.7998,
+            "x": 8595.7998,
             "y": 420.0,
             "maxPoints": 3,
             "stats": [
@@ -12191,7 +12191,7 @@
         "gy2dm-24": {
             "skill": "gy2dm-24",
             "name": "Mage's Decree",
-            "x": 8787.7998,
+            "x": 8887.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [
@@ -12211,7 +12211,7 @@
         "gy2dm-25": {
             "skill": "gy2dm-25",
             "name": "Flaming Scroll",
-            "x": 7900.1998,
+            "x": 8000.1998,
             "y": -570.0,
             "maxPoints": 1,
             "stats": [
@@ -12235,7 +12235,7 @@
         "gy2dm-26": {
             "skill": "gy2dm-26",
             "name": "Burning Symbol",
-            "x": 8313.3998,
+            "x": 8413.3998,
             "y": -1029.2,
             "maxPoints": 3,
             "stats": [
@@ -12257,7 +12257,7 @@
         "gy2dm-27": {
             "skill": "gy2dm-27",
             "name": "Fan the Inferno",
-            "x": 8721.3998,
+            "x": 8821.3998,
             "y": -570.0,
             "maxPoints": 1,
             "stats": [
@@ -16150,7 +16150,7 @@
         "so35a-0": {
             "skill": "so35a-0",
             "name": "Static Orb",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -16168,7 +16168,7 @@
         "so35a-2": {
             "skill": "so35a-2",
             "name": "Shocking Conduit",
-            "x": 5747.7998,
+            "x": 5827.7998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -16192,7 +16192,7 @@
         "so35a-3": {
             "skill": "so35a-3",
             "name": "Manacharged",
-            "x": 5571.7998,
+            "x": 5651.7998,
             "y": -728.0,
             "maxPoints": 5,
             "stats": [
@@ -16215,7 +16215,7 @@
         "so35a-4": {
             "skill": "so35a-4",
             "name": "Static Ground",
-            "x": 4620.1998,
+            "x": 4700.1998,
             "y": -584.0,
             "maxPoints": 1,
             "stats": [
@@ -16239,7 +16239,7 @@
         "so35a-5": {
             "skill": "so35a-5",
             "name": "Electrocuting Cascade",
-            "x": 4076.9997999999996,
+            "x": 4156.9998,
             "y": -819.6,
             "maxPoints": 5,
             "stats": [
@@ -16259,7 +16259,7 @@
         "so35a-6": {
             "skill": "so35a-6",
             "name": "Charged Allies",
-            "x": 4076.9997999999996,
+            "x": 4156.9998,
             "y": -366.4,
             "maxPoints": 5,
             "stats": [
@@ -16280,7 +16280,7 @@
         "so35a-7": {
             "skill": "so35a-7",
             "name": "Insidious Focus",
-            "x": 4878.5998,
+            "x": 4958.5998,
             "y": 240.0,
             "maxPoints": 1,
             "stats": [
@@ -16305,7 +16305,7 @@
         "so35a-8": {
             "skill": "so35a-8",
             "name": "Ball Lightning",
-            "x": 4198.9998,
+            "x": 4278.9998,
             "y": 118.0,
             "maxPoints": 1,
             "stats": [
@@ -16330,7 +16330,7 @@
         "so35a-9": {
             "skill": "so35a-9",
             "name": "Recurring Orb",
-            "x": 3791.7998,
+            "x": 3871.7998,
             "y": 576.0,
             "maxPoints": 1,
             "stats": [
@@ -16351,7 +16351,7 @@
         "so35a-10": {
             "skill": "so35a-10",
             "name": "Biting Force",
-            "x": 4479.7998,
+            "x": 4559.7998,
             "y": 721.2,
             "maxPoints": 1,
             "stats": [
@@ -16376,7 +16376,7 @@
         "so35a-11": {
             "skill": "so35a-11",
             "name": "Wintry Power",
-            "x": 4198.9998,
+            "x": 4278.9998,
             "y": 1183.6,
             "maxPoints": 5,
             "stats": [
@@ -16399,7 +16399,7 @@
         "so35a-12": {
             "skill": "so35a-12",
             "name": "Glacial Orb",
-            "x": 4769.399799999999,
+            "x": 4849.399799999999,
             "y": 1183.6,
             "maxPoints": 1,
             "stats": [
@@ -16421,7 +16421,7 @@
         "so35a-13": {
             "skill": "so35a-13",
             "name": "Orbital Fulmination",
-            "x": 5112.5998,
+            "x": 5192.5998,
             "y": -252.0,
             "maxPoints": 5,
             "stats": [
@@ -16442,7 +16442,7 @@
         "so35a-14": {
             "skill": "so35a-14",
             "name": "Storm Conductor",
-            "x": 5270.1998,
+            "x": 5350.1998,
             "y": 721.2,
             "maxPoints": 5,
             "stats": [
@@ -16467,7 +16467,7 @@
         "so35a-15": {
             "skill": "so35a-15",
             "name": "Arcane Current",
-            "x": 6027.7998,
+            "x": 6107.7998,
             "y": 600.0,
             "maxPoints": 4,
             "stats": [
@@ -16490,7 +16490,7 @@
         "so35a-16": {
             "skill": "so35a-16",
             "name": "Overwhelming Barrage",
-            "x": 5913.7998,
+            "x": 5993.7998,
             "y": 1217.2,
             "maxPoints": 5,
             "stats": [
@@ -16517,7 +16517,7 @@
         "so35a-17": {
             "skill": "so35a-17",
             "name": "Critical Trajectory",
-            "x": 6899.7998,
+            "x": 6979.7998,
             "y": 1217.2,
             "maxPoints": 4,
             "stats": [
@@ -16542,7 +16542,7 @@
         "so35a-18": {
             "skill": "so35a-18",
             "name": "Forking Surge",
-            "x": 6747.7998,
+            "x": 6827.7998,
             "y": 600.0,
             "maxPoints": 3,
             "stats": [
@@ -16566,7 +16566,7 @@
         "so35a-19": {
             "skill": "so35a-19",
             "name": "Static Armor",
-            "x": 7735.7998,
+            "x": 7815.7998,
             "y": 968.4,
             "maxPoints": 4,
             "stats": [
@@ -16591,7 +16591,7 @@
         "so35a-20": {
             "skill": "so35a-20",
             "name": "Storm Burst",
-            "x": 8536.5998,
+            "x": 8616.5998,
             "y": 1217.2,
             "maxPoints": 1,
             "stats": [
@@ -16613,7 +16613,7 @@
         "so35a-21": {
             "skill": "so35a-21",
             "name": "Volatile Outburst",
-            "x": 8065.399799999999,
+            "x": 8145.399799999999,
             "y": 418.4,
             "maxPoints": 3,
             "stats": [
@@ -16637,7 +16637,7 @@
         "so35a-22": {
             "skill": "so35a-22",
             "name": "Storm Artillery",
-            "x": 8859.7998,
+            "x": 8939.7998,
             "y": 700.0,
             "maxPoints": 1,
             "stats": [
@@ -16663,7 +16663,7 @@
         "so35a-23": {
             "skill": "so35a-23",
             "name": "Fusionblast",
-            "x": 8065.399799999999,
+            "x": 8145.399799999999,
             "y": -166.39996,
             "maxPoints": 5,
             "stats": [
@@ -16688,7 +16688,7 @@
         "so35a-24": {
             "skill": "so35a-24",
             "name": "Atomic Manipulation",
-            "x": 8913.3998,
+            "x": 8993.3998,
             "y": -302.0,
             "maxPoints": 3,
             "stats": [
@@ -16708,7 +16708,7 @@
         "so35a-25": {
             "skill": "so35a-25",
             "name": "Open Circuit",
-            "x": 7027.7998,
+            "x": 7107.7998,
             "y": -0.0,
             "maxPoints": 4,
             "stats": [
@@ -16733,7 +16733,7 @@
         "so35a-26": {
             "skill": "so35a-26",
             "name": "Overcharged Detonation",
-            "x": 7150.9998,
+            "x": 7230.9998,
             "y": -728.0,
             "maxPoints": 1,
             "stats": [
@@ -16757,7 +16757,7 @@
         "so35a-27": {
             "skill": "so35a-27",
             "name": "Auxiliary Capacity",
-            "x": 6387.7998,
+            "x": 6467.7998,
             "y": -640.0,
             "maxPoints": 1,
             "stats": [
@@ -16778,7 +16778,7 @@
         "so35a-28": {
             "skill": "so35a-28",
             "name": "Scatter Blast",
-            "x": 7836.9998,
+            "x": 7916.9998,
             "y": -784.0,
             "maxPoints": 4,
             "stats": [
@@ -16800,7 +16800,7 @@
         "ss3tre-0": {
             "skill": "ss3tre-0",
             "name": "Shatter Strike",
-            "x": 6367.7998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -16821,7 +16821,7 @@
         "ss3tre-2": {
             "skill": "ss3tre-2",
             "name": "Icy Flow",
-            "x": 5842.9998,
+            "x": 5942.9998,
             "y": -700.0,
             "maxPoints": 5,
             "stats": [
@@ -16848,7 +16848,7 @@
         "ss3tre-3": {
             "skill": "ss3tre-3",
             "name": "Frostbitten",
-            "x": 6867.7998,
+            "x": 6967.7998,
             "y": -700.0,
             "maxPoints": 4,
             "stats": [
@@ -16870,7 +16870,7 @@
         "ss3tre-4": {
             "skill": "ss3tre-4",
             "name": "Razor Ice",
-            "x": 7702.1998,
+            "x": 7802.1998,
             "y": -883.2,
             "maxPoints": 5,
             "stats": [
@@ -16892,7 +16892,7 @@
         "ss3tre-5": {
             "skill": "ss3tre-5",
             "name": "Chillflame",
-            "x": 8507.3998,
+            "x": 8607.3998,
             "y": -960.0,
             "maxPoints": 1,
             "stats": [
@@ -16912,7 +16912,7 @@
         "ss3tre-6": {
             "skill": "ss3tre-6",
             "name": "Absolute Zero",
-            "x": 4923.7998,
+            "x": 5023.7998,
             "y": -607.19996,
             "maxPoints": 4,
             "stats": [
@@ -16937,7 +16937,7 @@
         "ss3tre-7": {
             "skill": "ss3tre-7",
             "name": "Cold Presence",
-            "x": 4303.7998,
+            "x": 4403.7998,
             "y": -308.0,
             "maxPoints": 4,
             "stats": [
@@ -16963,7 +16963,7 @@
         "ss3tre-8": {
             "skill": "ss3tre-8",
             "name": "Shiver",
-            "x": 5508.199799999999,
+            "x": 5608.199799999999,
             "y": -4.8636e-05,
             "maxPoints": 5,
             "stats": [
@@ -16987,7 +16987,7 @@
         "ss3tre-9": {
             "skill": "ss3tre-9",
             "name": "Cold Steel",
-            "x": 4745.7998,
+            "x": 4845.7998,
             "y": 160.0,
             "maxPoints": 4,
             "stats": [
@@ -17007,7 +17007,7 @@
         "ss3tre-10": {
             "skill": "ss3tre-10",
             "name": "Obliteration",
-            "x": 5861.7998,
+            "x": 5961.7998,
             "y": 576.0,
             "maxPoints": 4,
             "stats": [
@@ -17030,7 +17030,7 @@
         "ss3tre-11": {
             "skill": "ss3tre-11",
             "name": "Winter's Boon",
-            "x": 4970.5998,
+            "x": 5070.5998,
             "y": 830.0,
             "maxPoints": 1,
             "stats": [
@@ -17052,7 +17052,7 @@
         "ss3tre-12": {
             "skill": "ss3tre-12",
             "name": "Arctic Blast",
-            "x": 4043.7998,
+            "x": 4143.7998,
             "y": 272.0,
             "maxPoints": 1,
             "stats": [
@@ -17072,7 +17072,7 @@
         "ss3tre-13": {
             "skill": "ss3tre-13",
             "name": "Rimestrike",
-            "x": 5489.7998,
+            "x": 5589.7998,
             "y": 1200.0,
             "maxPoints": 1,
             "stats": [
@@ -17092,7 +17092,7 @@
         "ss3tre-14": {
             "skill": "ss3tre-14",
             "name": "Frigid Zephyr",
-            "x": 4366.1998,
+            "x": 4466.1998,
             "y": 1164.8,
             "maxPoints": 1,
             "stats": [
@@ -17112,7 +17112,7 @@
         "ss3tre-15": {
             "skill": "ss3tre-15",
             "name": "Breadth of Cold",
-            "x": 7205.39988,
+            "x": 7305.39988,
             "y": 1032.4,
             "maxPoints": 3,
             "stats": [
@@ -17136,7 +17136,7 @@
         "ss3tre-16": {
             "skill": "ss3tre-16",
             "name": "Whiteout",
-            "x": 6605.3998,
+            "x": 6705.3998,
             "y": 1232.4,
             "maxPoints": 2,
             "stats": [
@@ -17158,7 +17158,7 @@
         "ss3tre-17": {
             "skill": "ss3tre-17",
             "name": "Iceblink",
-            "x": 7737.39988,
+            "x": 7837.39988,
             "y": 1232.4,
             "maxPoints": 5,
             "stats": [
@@ -17179,7 +17179,7 @@
         "ss3tre-18": {
             "skill": "ss3tre-18",
             "name": "Lingering Chill",
-            "x": 6845.7998,
+            "x": 6945.7998,
             "y": 576.0,
             "maxPoints": 4,
             "stats": [
@@ -17203,7 +17203,7 @@
         "ss3tre-19": {
             "skill": "ss3tre-19",
             "name": "Ice Barrier",
-            "x": 7902.19972,
+            "x": 8002.19972,
             "y": 700.0,
             "maxPoints": 3,
             "stats": [
@@ -17227,7 +17227,7 @@
         "ss3tre-20": {
             "skill": "ss3tre-20",
             "name": "Acclimated",
-            "x": 8490.9998,
+            "x": 8590.9998,
             "y": 1232.4,
             "maxPoints": 2,
             "stats": [
@@ -17248,7 +17248,7 @@
         "ss3tre-21": {
             "skill": "ss3tre-21",
             "name": "Hoarfrost",
-            "x": 8707.4002,
+            "x": 8807.4002,
             "y": 700.0,
             "maxPoints": 4,
             "stats": [
@@ -17272,7 +17272,7 @@
         "ss3tre-22": {
             "skill": "ss3tre-22",
             "name": "Frozen Shrapnel",
-            "x": 7992.5998,
+            "x": 8092.5998,
             "y": 112.0,
             "maxPoints": 1,
             "stats": [
@@ -17297,7 +17297,7 @@
         "ss3tre-23": {
             "skill": "ss3tre-23",
             "name": "Frigid Efficacy",
-            "x": 8707.4004,
+            "x": 8807.4004,
             "y": 112.0,
             "maxPoints": 3,
             "stats": [
@@ -17321,7 +17321,7 @@
         "ss3tre-24": {
             "skill": "ss3tre-24",
             "name": "Solidify",
-            "x": 7221.3998,
+            "x": 7321.3998,
             "y": -0.0,
             "maxPoints": 5,
             "stats": [
@@ -17344,7 +17344,7 @@
         "ss3tre-25": {
             "skill": "ss3tre-25",
             "name": "Glacial Smash",
-            "x": 7992.5998,
+            "x": 8092.5998,
             "y": -385.99996,
             "maxPoints": 4,
             "stats": [
@@ -17370,7 +17370,7 @@
         "ss3tre-26": {
             "skill": "ss3tre-26",
             "name": "Unrelenting Winter",
-            "x": 8707.4004,
+            "x": 8807.4004,
             "y": -385.99996,
             "maxPoints": 1,
             "stats": [
@@ -17990,7 +17990,7 @@
         "su5g3-0": {
             "skill": "su5g3-0",
             "name": "Surge",
-            "x": 6287.3998,
+            "x": 6467.7998,
             "y": -0.0,
             "maxPoints": 1,
             "stats": [],
@@ -18012,7 +18012,7 @@
         "su5g3-1": {
             "skill": "su5g3-1",
             "name": "Jolt",
-            "x": 6287.3998,
+            "x": 6467.7998,
             "y": -604.0,
             "maxPoints": 3,
             "stats": [
@@ -18037,7 +18037,7 @@
         "su5g3-2": {
             "skill": "su5g3-2",
             "name": "Expanse",
-            "x": 5707.3998,
+            "x": 5887.7998,
             "y": -360.0,
             "maxPoints": 5,
             "stats": [
@@ -18060,7 +18060,7 @@
         "su5g3-3": {
             "skill": "su5g3-3",
             "name": "Stagnant",
-            "x": 4617.3998,
+            "x": 4797.7998,
             "y": -404.0,
             "maxPoints": 3,
             "stats": [
@@ -18080,7 +18080,7 @@
         "su5g3-4": {
             "skill": "su5g3-4",
             "name": "Charged Movement",
-            "x": 5008.5998,
+            "x": 5188.9998,
             "y": -825.2,
             "maxPoints": 4,
             "stats": [
@@ -18102,7 +18102,7 @@
         "su5g3-5": {
             "skill": "su5g3-5",
             "name": "Crackling Blades",
-            "x": 4235.3998,
+            "x": 4415.7998,
             "y": -825.19996,
             "maxPoints": 2,
             "stats": [
@@ -18126,7 +18126,7 @@
         "su5g3-6": {
             "skill": "su5g3-6",
             "name": "Shocking Blows",
-            "x": 5707.3998,
+            "x": 5887.7998,
             "y": 396.0,
             "maxPoints": 5,
             "stats": [
@@ -18150,7 +18150,7 @@
         "su5g3-7": {
             "skill": "su5g3-7",
             "name": "Lightning Rush",
-            "x": 5008.5998,
+            "x": 5188.9998,
             "y": 39.999976,
             "maxPoints": 3,
             "stats": [
@@ -18173,7 +18173,7 @@
         "su5g3-8": {
             "skill": "su5g3-8",
             "name": "Shielding Advance",
-            "x": 4235.3998,
+            "x": 4415.7998,
             "y": 40.0,
             "maxPoints": 1,
             "stats": [
@@ -18195,7 +18195,7 @@
         "su5g3-9": {
             "skill": "su5g3-9",
             "name": "Dynamics",
-            "x": 3735.7998000000002,
+            "x": 3916.1998,
             "y": -404.0,
             "maxPoints": 2,
             "stats": [
@@ -18218,7 +18218,7 @@
         "su5g3-10": {
             "skill": "su5g3-10",
             "name": "Conduit",
-            "x": 5008.5998,
+            "x": 5188.9998,
             "y": 838.4,
             "maxPoints": 3,
             "stats": [
@@ -18240,7 +18240,7 @@
         "su5g3-11": {
             "skill": "su5g3-11",
             "name": "Static Buildup",
-            "x": 4377.799800000001,
+            "x": 4558.1998,
             "y": 838.4,
             "maxPoints": 5,
             "stats": [
@@ -18263,7 +18263,7 @@
         "su5g3-12": {
             "skill": "su5g3-12",
             "name": "Capacitator",
-            "x": 3760.9998,
+            "x": 3941.3997999999997,
             "y": 496.0,
             "maxPoints": 3,
             "stats": [
@@ -18283,7 +18283,7 @@
         "su5g3-13": {
             "skill": "su5g3-13",
             "name": "Discharge",
-            "x": 3760.9998,
+            "x": 3941.3997999999997,
             "y": 1167.6,
             "maxPoints": 1,
             "stats": [
@@ -18303,7 +18303,7 @@
         "su5g3-14": {
             "skill": "su5g3-14",
             "name": "Effluence",
-            "x": 5602.5998,
+            "x": 5782.9998,
             "y": 1204.0,
             "maxPoints": 5,
             "stats": [
@@ -18329,7 +18329,7 @@
         "su5g3-15": {
             "skill": "su5g3-15",
             "name": "Longstrider",
-            "x": 6287.3998,
+            "x": 6467.7998,
             "y": 712.8,
             "maxPoints": 5,
             "stats": [
@@ -18351,7 +18351,7 @@
         "su5g3-16": {
             "skill": "su5g3-16",
             "name": "Storm Aegis",
-            "x": 6867.3998,
+            "x": 7047.7998,
             "y": 396.0,
             "maxPoints": 5,
             "stats": [
@@ -18374,7 +18374,7 @@
         "su5g3-17": {
             "skill": "su5g3-17",
             "name": "Shielding Efflux",
-            "x": 6974.9998000000005,
+            "x": 7155.3998,
             "y": 1204.0,
             "maxPoints": 5,
             "stats": [
@@ -18399,7 +18399,7 @@
         "su5g3-18": {
             "skill": "su5g3-18",
             "name": "Glacial Assault",
-            "x": 7575.3998,
+            "x": 7755.7998,
             "y": 818.4,
             "maxPoints": 1,
             "stats": [
@@ -18423,7 +18423,7 @@
         "su5g3-19": {
             "skill": "su5g3-19",
             "name": "Coldfront",
-            "x": 8157.3998,
+            "x": 8337.7998,
             "y": 967.6,
             "maxPoints": 1,
             "stats": [
@@ -18446,7 +18446,7 @@
         "su5g3-20": {
             "skill": "su5g3-20",
             "name": "Cryomantic Path",
-            "x": 8770.1998,
+            "x": 8950.5998,
             "y": 1109.2,
             "maxPoints": 5,
             "stats": [
@@ -18467,7 +18467,7 @@
         "su5g3-21": {
             "skill": "su5g3-21",
             "name": "Stormbringer",
-            "x": 6867.3998,
+            "x": 7047.7998,
             "y": -360.0,
             "maxPoints": 1,
             "stats": [
@@ -18489,7 +18489,7 @@
         "su5g3-22": {
             "skill": "su5g3-22",
             "name": "Electropulse",
-            "x": 7538.99988,
+            "x": 7719.39988,
             "y": 127.199952,
             "maxPoints": 3,
             "stats": [
@@ -18511,7 +18511,7 @@
         "su5g3-23": {
             "skill": "su5g3-23",
             "name": "Ride the Lightning",
-            "x": 8505.7998,
+            "x": 8686.1998,
             "y": 296.0,
             "maxPoints": 1,
             "stats": [
@@ -18532,7 +18532,7 @@
         "su5g3-24": {
             "skill": "su5g3-24",
             "name": "Storm Battery",
-            "x": 7259.3998,
+            "x": 7439.7998,
             "y": -783.59984,
             "maxPoints": 5,
             "stats": [
@@ -18556,7 +18556,7 @@
         "su5g3-25": {
             "skill": "su5g3-25",
             "name": "Insulation",
-            "x": 7886.5998,
+            "x": 8066.9998,
             "y": -383.6,
             "maxPoints": 3,
             "stats": [
@@ -18581,7 +18581,7 @@
         "su5g3-26": {
             "skill": "su5g3-26",
             "name": "Fulmination",
-            "x": 8789.7998,
+            "x": 8970.1998,
             "y": -383.6,
             "maxPoints": 4,
             "stats": [
@@ -18601,7 +18601,7 @@
         "su5g3-27": {
             "skill": "su5g3-27",
             "name": "Flaming Surge",
-            "x": 7886.6,
+            "x": 8067.0,
             "y": -940.80004,
             "maxPoints": 1,
             "stats": [
@@ -18624,7 +18624,7 @@
         "su5g3-28": {
             "skill": "su5g3-28",
             "name": "Pyroclasm",
-            "x": 8789.7998,
+            "x": 8970.1998,
             "y": -940.80004,
             "maxPoints": 1,
             "stats": [
@@ -18644,7 +18644,7 @@
         "su5g3-30": {
             "skill": "su5g3-30",
             "name": "Concentrated Current",
-            "x": 4724.1998,
+            "x": 4904.5998,
             "y": 451.2,
             "maxPoints": 2,
             "stats": [
@@ -21124,116 +21124,116 @@
             "base_vit": 0,
             "skills": [
                 {
-                    "label": "Black Hole",
-                    "treeId": "bh2"
-                },
-                {
-                    "label": "Runebolt",
-                    "treeId": "fb8fe"
-                },
-                {
-                    "label": "Surge",
-                    "treeId": "su5g3"
-                },
-                {
-                    "label": "Glyph of Dominion",
-                    "treeId": "gy2dm"
-                },
-                {
-                    "label": "Shatter Strike",
-                    "treeId": "ss3tre"
-                },
-                {
-                    "label": "Flame Ward",
-                    "treeId": "fw3d"
-                },
-                {
-                    "label": "Glacier",
-                    "treeId": "gl14"
-                },
-                {
-                    "label": "Elemental Nova",
-                    "treeId": "en6"
-                },
-                {
-                    "label": "Firebrand",
-                    "treeId": "f1b4d"
-                },
-                {
-                    "label": "Static Orb",
-                    "treeId": "so35a"
-                },
-                {
-                    "label": "Fireball",
-                    "treeId": "fi9"
-                },
-                {
-                    "label": "Lightning Blast",
-                    "treeId": "lb23il"
-                },
-                {
-                    "label": "Runic Invocation",
-                    "treeId": "rn7iv"
-                },
-                {
-                    "label": "Enchant Weapon",
-                    "treeId": "sb44eQ"
-                },
-                {
-                    "label": "Mana Strike",
-                    "treeId": "ms26"
-                },
-                {
-                    "label": "Runic Invocation",
-                    "treeId": "frc87w"
-                },
-                {
                     "label": "Flame Reave",
                     "treeId": "fr11mv"
-                },
-                {
-                    "label": "Static",
-                    "treeId": "st47ic"
-                },
-                {
-                    "label": "Snap Freeze",
-                    "treeId": "sw31a"
-                },
-                {
-                    "label": "Arcane Ascendance",
-                    "treeId": "arcas"
-                },
-                {
-                    "label": "Focus",
-                    "treeId": "vm53dx"
-                },
-                {
-                    "label": "Ice Barrage",
-                    "treeId": "ib5g3"
-                },
-                {
-                    "label": "Disintegrate",
-                    "treeId": "dig5"
                 },
                 {
                     "label": "Frost Wall",
                     "treeId": "fr4wl"
                 },
                 {
-                    "label": "Volcanic Orb",
-                    "treeId": "vo54"
+                    "label": "Elemental Nova",
+                    "treeId": "en6"
                 },
                 {
                     "label": "Flame Rush",
                     "treeId": "fl71ds"
                 },
                 {
-                    "label": "Teleport",
-                    "treeId": "te44"
+                    "label": "Lightning Blast",
+                    "treeId": "lb23il"
+                },
+                {
+                    "label": "Black Hole",
+                    "treeId": "bh2"
                 },
                 {
                     "label": "Meteor",
                     "treeId": "me27"
+                },
+                {
+                    "label": "Glyph of Dominion",
+                    "treeId": "gy2dm"
+                },
+                {
+                    "label": "Runebolt",
+                    "treeId": "fb8fe"
+                },
+                {
+                    "label": "Mana Strike",
+                    "treeId": "ms26"
+                },
+                {
+                    "label": "Static",
+                    "treeId": "st47ic"
+                },
+                {
+                    "label": "Arcane Ascendance",
+                    "treeId": "arcas"
+                },
+                {
+                    "label": "Flame Ward",
+                    "treeId": "fw3d"
+                },
+                {
+                    "label": "Firebrand",
+                    "treeId": "f1b4d"
+                },
+                {
+                    "label": "Runic Invocation",
+                    "treeId": "frc87w"
+                },
+                {
+                    "label": "Runic Invocation",
+                    "treeId": "rn7iv"
+                },
+                {
+                    "label": "Shatter Strike",
+                    "treeId": "ss3tre"
+                },
+                {
+                    "label": "Snap Freeze",
+                    "treeId": "sw31a"
+                },
+                {
+                    "label": "Fireball",
+                    "treeId": "fi9"
+                },
+                {
+                    "label": "Disintegrate",
+                    "treeId": "dig5"
+                },
+                {
+                    "label": "Glacier",
+                    "treeId": "gl14"
+                },
+                {
+                    "label": "Enchant Weapon",
+                    "treeId": "sb44eQ"
+                },
+                {
+                    "label": "Volcanic Orb",
+                    "treeId": "vo54"
+                },
+                {
+                    "label": "Ice Barrage",
+                    "treeId": "ib5g3"
+                },
+                {
+                    "label": "Surge",
+                    "treeId": "su5g3"
+                },
+                {
+                    "label": "Focus",
+                    "treeId": "vm53dx"
+                },
+                {
+                    "label": "Static Orb",
+                    "treeId": "so35a"
+                },
+                {
+                    "label": "Teleport",
+                    "treeId": "te44"
                 }
             ]
         }

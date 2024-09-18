@@ -1,7 +1,7 @@
 from glob import glob
 from common import *
 
-metaFileNames = glob(monoPath + "*.asset.meta")
+metaFileNames = glob(monoPath + "*/*.asset.meta")
 metaFileNames += glob(prefabPath + "*.prefab.meta")
 
 guidToFilename = {}

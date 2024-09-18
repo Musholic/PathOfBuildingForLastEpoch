@@ -1,7 +1,7 @@
 import json
 from common import *
 
-abilityKeyedArray = load_yaml_file_with_tag_error(resourcesPath + "Ability Manager.asset")["MonoBehaviour"][
+abilityKeyedArray = load_yaml_file_with_tag_error(monoPath + "AbilityManager/Ability Manager.asset")["MonoBehaviour"][
     "keyedArray"]
 
 keyToGuid = {}
@@ -167,47 +167,43 @@ for skillTreeData in skillTreesData:
     skillData = load_file_from_guid(skillTreeData['ability'])["MonoBehaviour"]
     process_skill_data(skillData, skillTreeData['treeID'])
 
-dataTmp = load_yaml_file_with_tag_error(resourcesPath + "AilmentList.asset")['MonoBehaviour']
+dataTmp = load_yaml_file_with_tag_error(monoPath + "AilmentList/AilmentList.asset")['MonoBehaviour']
 ailmentListData = dataTmp['list']
 
 for ailmentGuidData in ailmentListData:
-    ailmentDataFilename = guidToFilenames[ailmentGuidData['guid']].replace('_0.asset', '').replace('.asset', '')
-    for suffix in ['', '_0', '_1', '_2', '_3']:
-        ailmentData = load_yaml_file_with_tag_error(ailmentDataFilename + suffix + '.asset')
-        if ailmentData.get('MonoBehaviour'):
-            ailmentData = ailmentData['MonoBehaviour']
-        if ailmentData.get('displayName') and ailmentData.get('tags') is not None:
-            ailment = {
-                "name": ailmentData['displayName'],
-                "skillTypeTags": ailmentData['tags'],
-                "baseFlags": {
-                    "duration": True,
-                    "ailment": True
-                },
-                "stats": {
-                    "base_skill_effect_duration": float(ailmentData['duration']) * 1000,
-                    "maximum_stacks": int(ailmentData['maxInstances']),
-                },
-            }
-            if ailmentData['displayName'] != ailmentData['instanceName']:
-                ailment["altName"] = ailmentData['instanceName']
-            if ailmentData['buffs']:
-                ailment['buffs'] = []
-            for buffData in ailmentData['buffs']:
-                if buffData['addedValue']:
-                    buffData['value'] = buffData['addedValue']
-                if buffData['increasedValue']:
-                    buffData['value'] = buffData['increasedValue']
-                    buffData['modType'] = 1
-                if buffData['moreValues']:
-                    buffData['value'] = buffData['moreValues'][0]
-                    buffData['modType'] = 2
+    ailmentData = load_file_from_guid(ailmentGuidData)['MonoBehaviour']
+    if ailmentData is not None:
+        ailment = {
+            "name": ailmentData['displayName'],
+            "skillTypeTags": ailmentData['tags'],
+            "baseFlags": {
+                "duration": True,
+                "ailment": True
+            },
+            "stats": {
+                "base_skill_effect_duration": float(ailmentData['duration']) * 1000,
+                "maximum_stacks": int(ailmentData['maxInstances']),
+            },
+        }
+        if ailmentData['displayName'] != ailmentData['instanceName']:
+            ailment["altName"] = ailmentData['instanceName']
+        if ailmentData['buffs']:
+            ailment['buffs'] = []
+        for buffData in ailmentData['buffs']:
+            if buffData['addedValue']:
+                buffData['value'] = buffData['addedValue']
+            if buffData['increasedValue']:
+                buffData['value'] = buffData['increasedValue']
+                buffData['modType'] = 1
+            if buffData['moreValues']:
+                buffData['value'] = buffData['moreValues'][0]
+                buffData['modType'] = 2
 
-                ailment['buffs'].append(get_mod_value(buffData))
-            set_stats_from_damage_data(ailment, ailmentData['baseDamage'], ailmentData['tags'])
-            skills["Ailment_" + ailmentData['m_Name']] = ailment
-            # We consider that all ailments can stack for simplification
-            ailment['stats']['dot_can_stack'] = 1
+            ailment['buffs'].append(get_mod_value(buffData))
+        set_stats_from_damage_data(ailment, ailmentData['baseDamage'], ailmentData['tags'])
+        skills["Ailment_" + ailmentData['m_Name']] = ailment
+        # We consider that all ailments can stack for simplification
+        ailment['stats']['dot_can_stack'] = 1
 
 skills = dict(natsorted(skills.items()))
 minions = dict(natsorted(minions.items()))

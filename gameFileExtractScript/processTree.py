@@ -145,7 +145,7 @@ for classInfo in data["trees"].values():
         "ascendancies": ascendancies
     }
 
-    classData = load_yaml_file_with_tag_error(extractPath + "MonoBehaviour/" + className + ".asset")["MonoBehaviour"]
+    classData = load_yaml_file_with_tag_error(monoPath + "CharacterClass/" + className + ".asset")["MonoBehaviour"]
     classes[className]["base_str"] = classData["baseStrength"]
     classes[className]["base_dex"] = classData["baseDexterity"]
     classes[className]["base_int"] = classData["baseIntelligence"]
@@ -329,7 +329,7 @@ for classInfo in data["trees"].values():
         for req in node["in"]:
             tree["nodes"][req]["out"].append(node["skill"])
 
-    with open("../src/TreeData/1_0/tree_" + str(classStartIndex) + ".json", "w") as jsonFile:
+    with open("../src/TreeData/1_1/tree_" + str(classStartIndex) + ".json", "w") as jsonFile:
         json.dump(tree, jsonFile, indent=4)
 
 print("passive tree processed with success")
