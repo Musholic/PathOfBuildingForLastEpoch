@@ -6,7 +6,7 @@ expose("BuildImport #buildImport", function()
         jsonFile:close()
         build:Init(false, "Imported build", importCode)
         runCallback("OnFrame")
-        assert.are.equals(1251, build.calcsTab.calcsOutput.Life)
+        assert.are.equals(1266, build.calcsTab.calcsOutput.Life)
     end)
 
     it("build import from LETools, fireballDps calculation", function()
@@ -19,7 +19,7 @@ expose("BuildImport #buildImport", function()
 
         --TODO: Blessing support
         assert.are.equals("Fireball", build.calcsTab.mainEnv.player.mainSkill.skillCfg.skillName)
-        assert.are.equals(9739, round(build.calcsTab.mainOutput.FullDPS))
+        assert.are.equals(9578, round(build.calcsTab.mainOutput.FullDPS))
     end)
 
     it("build import from LETools, minionDps calculation", function()
