@@ -1,4 +1,4 @@
-var passiveTreeDictionary = new Dictionary<string, List<string>>();
+var passiveTreeNodes = new PassiveTreeNodes();
 
 Il2CppSystem.Collections.Generic.List<GlobalTreeData.PassiveTreeData> passiveTrees = GlobalTreeData.get().passiveTrees;
 foreach (var passiveTree in passiveTrees)
@@ -8,12 +8,11 @@ foreach (var passiveTree in passiveTrees)
     {
         nodeNames.Add(node.name);
     }
-    passiveTreeDictionary[passiveTree.name] = nodeNames;
+    passiveTreeNodes.Nodes[passiveTree.name] = nodeNames;
 }
 
-
 // Serialize to JSON and write to file
-string json = System.Text.Json.JsonSerializer.Serialize(passiveTreeDictionary, new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
+string json = System.Text.Json.JsonSerializer.Serialize(passiveTreeNodes, new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
 
 string dirPath = System.IO.Path.Combine(Environment.CurrentDirectory, "pob_extracts");
 System.IO.Directory.CreateDirectory(dirPath);
