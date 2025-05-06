@@ -1,0 +1,375 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>MelonLoaderMod1</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>MelonLoaderMod1</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Il2CppALINE">
+		</Reference>
+		<Reference Include="Il2CppAwesomeTechnologies.TouchReactSystemPro.Runtime">
+		</Reference>
+		<Reference Include="Il2CppAwesomeTechnologies.VegetationStudioPro.Runtime">
+		</Reference>
+		<Reference Include="Il2CppBezierSolution.Runtime">
+		</Reference>
+		<Reference Include="Il2CppCinemachine">
+		</Reference>
+		<Reference Include="Il2CppCommandLine">
+		</Reference>
+		<Reference Include="Il2CppCrest">
+		</Reference>
+		<Reference Include="Il2Cppcrosstales">
+		</Reference>
+		<Reference Include="Il2CppCSharp.OperationResult">
+		</Reference>
+		<Reference Include="Il2CppDialogueSystem">
+		</Reference>
+		<Reference Include="Il2CppDOTween">
+		</Reference>
+		<Reference Include="Il2CppDOTweenPro">
+		</Reference>
+		<Reference Include="Il2CppDunGen">
+		</Reference>
+		<Reference Include="Il2CppEHRGB">
+		</Reference>
+		<Reference Include="Il2CppFacepunch.Steamworks.Win64">
+		</Reference>
+		<Reference Include="Il2CppFmodShared">
+		</Reference>
+		<Reference Include="Il2CppFMODUnity">
+		</Reference>
+		<Reference Include="Il2CppFMODUnityResonance">
+		</Reference>
+		<Reference Include="Il2CppGenerated">
+		</Reference>
+		<Reference Include="Il2CppHeathen.ScreenKeyboard">
+		</Reference>
+		<Reference Include="Il2CppHoudiniEngineUnity">
+		</Reference>
+		<Reference Include="Il2CppJBooth.MicroSplat.Core">
+		</Reference>
+		<Reference Include="Il2CppLE.Core">
+		</Reference>
+		<Reference Include="Il2CppLE">
+		</Reference>
+		<Reference Include="Il2CppLE.Networking.Core">
+		</Reference>
+		<Reference Include="Il2CppLE.PCG">
+		</Reference>
+		<Reference Include="Il2CppLE.Telemetry.Client">
+		</Reference>
+		<Reference Include="Il2CppLE.Telemetry">
+		</Reference>
+		<Reference Include="Il2CppLE.UI.Controls">
+		</Reference>
+		<Reference Include="Il2CppLidgren.Network">
+		</Reference>
+		<Reference Include="Il2CppLuaInterpreter">
+		</Reference>
+		<Reference Include="Il2CppMathNet.Numerics">
+		</Reference>
+		<Reference Include="Il2CppMeshExtension">
+		</Reference>
+		<Reference Include="Il2CppMono.Security">
+		</Reference>
+		<Reference Include="Il2Cppmscorlib">
+		</Reference>
+		<Reference Include="Il2CppNewAssembly">
+		</Reference>
+		<Reference Include="Il2CppNewtonsoft.Json">
+		</Reference>
+		<Reference Include="Il2CppNewtonsoft.Json.UnityConverters">
+		</Reference>
+		<Reference Include="Il2CppPlayFab">
+		</Reference>
+		<Reference Include="Il2CppPolly">
+		</Reference>
+		<Reference Include="Il2CppProBuilderCore-Unity5">
+		</Reference>
+		<Reference Include="Il2CppProBuilderMeshOps-Unity5">
+		</Reference>
+		<Reference Include="Il2CppRewired_Core">
+		</Reference>
+		<Reference Include="Il2CppRewired_Windows">
+		</Reference>
+		<Reference Include="Il2CppRewired_Windows_Functions">
+		</Reference>
+		<Reference Include="Il2CppRG.ImGui">
+		</Reference>
+		<Reference Include="Il2CppRG.ImGui.Unity">
+		</Reference>
+		<Reference Include="Il2CppSirenix.OdinInspector.Attributes">
+		</Reference>
+		<Reference Include="Il2CppSirenix.OdinInspector.Modules.Unity.Addressables">
+		</Reference>
+		<Reference Include="Il2CppSirenix.OdinInspector.Modules.UnityLocalization">
+		</Reference>
+		<Reference Include="Il2CppSirenix.Serialization.AOTGenerated">
+		</Reference>
+		<Reference Include="Il2CppSirenix.Serialization.Config">
+		</Reference>
+		<Reference Include="Il2CppSirenix.Serialization">
+		</Reference>
+		<Reference Include="Il2CppSirenix.Utilities">
+		</Reference>
+		<Reference Include="Il2CppStreamChat.Core">
+		</Reference>
+		<Reference Include="Il2CppStreamChat.Libs">
+		</Reference>
+		<Reference Include="Il2CppSystem.ComponentModel.DataAnnotations">
+		</Reference>
+		<Reference Include="Il2CppSystem.Configuration">
+		</Reference>
+		<Reference Include="Il2CppSystem.Core">
+		</Reference>
+		<Reference Include="Il2CppSystem.Data">
+		</Reference>
+		<Reference Include="Il2CppSystem">
+		</Reference>
+		<Reference Include="Il2CppSystem.Drawing">
+		</Reference>
+		<Reference Include="Il2CppSystem.IO.Compression">
+		</Reference>
+		<Reference Include="Il2CppSystem.IO.Compression.FileSystem">
+		</Reference>
+		<Reference Include="Il2CppSystem.Net.Http">
+		</Reference>
+		<Reference Include="Il2CppSystem.Numerics">
+		</Reference>
+		<Reference Include="Il2CppSystem.Runtime.CompilerServices.Unsafe">
+		</Reference>
+		<Reference Include="Il2CppSystem.Runtime.Serialization">
+		</Reference>
+		<Reference Include="Il2CppSystem.Xml">
+		</Reference>
+		<Reference Include="Il2CppSystem.Xml.Linq">
+		</Reference>
+		<Reference Include="Il2CppTriangleNET">
+		</Reference>
+		<Reference Include="Il2CppUMA_Content">
+		</Reference>
+		<Reference Include="Il2CppUMA_Core">
+		</Reference>
+		<Reference Include="Il2CppUMA_Examples">
+		</Reference>
+		<Reference Include="Il2CppUniTask.Addressables">
+		</Reference>
+		<Reference Include="Il2CppUniTask">
+		</Reference>
+		<Reference Include="Il2CppXNode">
+		</Reference>
+		<Reference Include="Il2Cpp__Generated">
+		</Reference>
+		<Reference Include="Unity.Addressables">
+		</Reference>
+		<Reference Include="Unity.AI.Navigation">
+		</Reference>
+		<Reference Include="Unity.Burst">
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+		</Reference>
+		<Reference Include="Unity.Collections">
+		</Reference>
+		<Reference Include="Unity.Collections.LowLevel.ILSupport">
+		</Reference>
+		<Reference Include="Unity.Localization">
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+		</Reference>
+		<Reference Include="Unity.Postprocessing.Runtime">
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+		</Reference>
+		<Reference Include="Unity.ResourceManager">
+		</Reference>
+		<Reference Include="Unity.Services.Analytics">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Configuration">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Device">
+		</Reference>
+		<Reference Include="Unity.Services.Core">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments.Internal">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Internal">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Registration">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Scheduler">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Telemetry">
+		</Reference>
+		<Reference Include="Unity.Services.Core.Threading">
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+		</Reference>
+		<Reference Include="Unity.Timeline">
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+		</Reference>
+		<Reference Include="UnityEngine">
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsNativeModule">
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+		</Reference>
+		<Reference Include="UnityEngine.UNETModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+		</Reference>
+		<Reference Include="MelonLoader">
+		</Reference>
+		<Reference Include="0Harmony">
+		</Reference>
+		<Reference Include="Il2CppInterop.Runtime">
+		</Reference>
+		<Reference Include="Il2CppInterop.Common">
+		</Reference>
+
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Core.cs" />
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="cp &quot;$(TargetPath)&quot; &quot;/home/musholic/.local/share/Steam/steamapps/common/Last Epoch/Mods/&quot;" />
+	</Target>
+</Project>
