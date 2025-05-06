@@ -47,6 +47,8 @@
     </Reference>
     <Reference Include="Il2CppInterop.Runtime">
     </Reference>
+    <Reference Include="UnityExplorer.BIE.Unity.IL2CPP.CoreCLR">
+    </Reference>
   </ItemGroup>
 
 </Project>
