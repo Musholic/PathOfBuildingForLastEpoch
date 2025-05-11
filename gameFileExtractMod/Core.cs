@@ -1,36 +1,43 @@
-﻿using MelonLoader;
-using Il2Cpp;
+﻿using Il2Cpp;
+using MelonLoader;
+using PobfleExtractor;
+using UnityEngine;
 
-[assembly: MelonInfo(typeof(PobfleExtractor.Core), "PobfleExtractor", "1.0.0", "Musholic", null)]
+[assembly: MelonInfo(typeof(Core), "PobfleExtractor", "1.0.0", "Musholic", null)]
 [assembly: MelonGame("Eleventh Hour Games", "Last Epoch")]
+
 namespace PobfleExtractor
 {
     public class Core : MelonMod
     {
-        private static int genId = 0;
+        public static MelonLogger.Instance Logger;
+
+        private static int _genId;
 
         public override void OnInitializeMelon()
         {
-            LoggerInstance.Msg("Initialized.");
+            Logger = LoggerInstance;
+            Logger.Msg("Initialized.");
         }
 
         public override void OnUpdate()
         {
             // Use a hot reloadable variable to allow multiple extracts per debugging session
-            int targetId = 1;
-            if(genId != targetId && IsReady())
+            var targetId = 1;
+            if (_genId != targetId && IsReady())
             {
-                LoggerInstance.Msg("Starting extract...");
-                genId = targetId;
-                Extractor.ExtractAll();
+                Logger.Msg("Starting extract...");
+                _genId = targetId;
+                TreeData.Extract();
+                Application.Quit();
             }
         }
 
-        private bool IsReady()
+        private static bool IsReady()
         {
-            // Wait for the resources to be available thanks to UnityExplorer doing its magic
-            var trees = UnityEngine.Resources.FindObjectsOfTypeAll<CharacterTree>();
-            LoggerInstance.Msg("Got tree count: " + trees.Length);
+            // Wait for the resources to be available
+            var trees = Resources.FindObjectsOfTypeAll<CharacterTree>();
+            Logger.Msg("Got tree count: " + trees.Length);
 
             return trees.Length > 0;
         }

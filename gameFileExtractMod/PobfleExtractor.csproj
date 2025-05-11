@@ -539,7 +539,7 @@
 
 	<ItemGroup>
 		<Compile Include="Core.cs" />
-		<Compile Include="Classes.cs" />
+		<Compile Include="TreeData.cs"/>
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
