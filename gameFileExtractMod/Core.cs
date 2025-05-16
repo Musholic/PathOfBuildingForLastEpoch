@@ -11,6 +11,7 @@ namespace PobfleExtractor
     public class Core : MelonMod
     {
         public static MelonLogger.Instance Logger;
+        public static readonly UpperCaseFirstNaturalComparer StringComparer = new();
 
         private static int _genId;
 
