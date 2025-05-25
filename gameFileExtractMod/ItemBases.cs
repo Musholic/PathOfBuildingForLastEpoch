@@ -1,5 +1,4 @@
 using System.Text.Json;
-using System.Text.RegularExpressions;
 using Il2Cpp;
 
 // ReSharper disable NotAccessedField.Global
@@ -57,14 +56,8 @@ namespace PobfleExtractor
             AffixEffectModifier = baseEquipmentItem.affixEffectModifier;
             foreach (var itemImplicit in equipmentItem.implicits)
             {
-                // ReSharper disable once CompareOfFloatsByEqualityOperator
-                var isRange = itemImplicit.implicitValue != itemImplicit.implicitMaxValue;
-                var format = ModFormatting.FormatProperty(itemImplicit.property, itemImplicit.tags,
-                    itemImplicit.specialTag,
-                    itemImplicit.type, itemImplicit.implicitValue, null, false, false, false, true, isRange,
-                    itemImplicit.implicitMaxValue);
-                format = Regex.Replace(format, @"(\d+)(%?) to (\d+)%?", "($1-$3)$2");
-                Implicits.Add(format);
+                Implicits.Add(Core.GetModLine(itemImplicit.property, itemImplicit.tags, itemImplicit.implicitValue,
+                    itemImplicit.implicitMaxValue, itemImplicit.specialTag, itemImplicit.type));
             }
 
             if (baseEquipmentItem.isWeapon)

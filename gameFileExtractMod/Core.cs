@@ -1,6 +1,7 @@
 ﻿using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 using Il2Cpp;
 using MelonLoader;
 using PobfleExtractor;
@@ -46,6 +47,7 @@ namespace PobfleExtractor
             {
                 Logger.Msg("Starting extract...");
                 _genId = targetId;
+                Mods.Extract();
                 TreeData.Extract();
                 ItemBases.Extract();
                 Application.Quit();
@@ -59,6 +61,20 @@ namespace PobfleExtractor
             Logger.Msg("Got tree count: " + trees.Length);
 
             return trees.Length > 0;
+        }
+
+
+        public static string GetModLine(SP property, AT tags, float minRoll, float maxRoll, byte specialTag,
+            BaseStats.ModType modifierType)
+        {
+            // ReSharper disable once CompareOfFloatsByEqualityOperator
+            var isRange = minRoll != maxRoll;
+            var format = ModFormatting.FormatProperty(property, tags,
+                specialTag,
+                modifierType, minRoll, null, false, false, false, true, isRange,
+                maxRoll);
+            format = Regex.Replace(format, @"(\d+\.?\d*)(%?) to (\d+\.?\d*)%?", "($1-$3)$2");
+            return format;
         }
     }
 }
