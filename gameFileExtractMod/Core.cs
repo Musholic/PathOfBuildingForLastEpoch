@@ -47,6 +47,7 @@ namespace PobfleExtractor
             {
                 Logger.Msg("Starting extract...");
                 _genId = targetId;
+                Uniques.Extract();
                 Mods.Extract();
                 TreeData.Extract();
                 ItemBases.Extract();

@@ -542,6 +542,7 @@
 		<Compile Include="ItemBases.cs"/>
 		<Compile Include="Mods.cs"/>
 		<Compile Include="TreeData.cs"/>
+		<Compile Include="Uniques.cs"/>
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
