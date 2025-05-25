@@ -539,6 +539,7 @@
 
 	<ItemGroup>
 		<Compile Include="Core.cs" />
+		<Compile Include="ItemBases.cs"/>
 		<Compile Include="TreeData.cs"/>
 	</ItemGroup>
 	

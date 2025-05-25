@@ -1,5 +1,4 @@
 using System.Runtime.InteropServices;
-using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Il2Cpp;
@@ -15,29 +14,18 @@ namespace PobfleExtractor
 {
     public static class TreeData
     {
-        private static readonly string TreeDataDir = @"C:\Users\" + Environment.UserName +
-                                                     @"\IdeaProjects\PathOfBuildingForLastEpoch\src\TreeData\1_1";
+        private static readonly string TreeDataDir = Core.BaseSrcDir + @"\TreeData\1_1";
 
         public static void Extract()
         {
-            var options = new JsonSerializerOptions()
-            {
-                WriteIndented = true,
-                ReferenceHandler = ReferenceHandler.IgnoreCycles,
-                IncludeFields = true,
-                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
-            };
             var dirPath = Path.Combine(Environment.CurrentDirectory, "pob_extracts");
             Directory.CreateDirectory(dirPath);
-
 
             IList<CharacterTree> characterTrees = Resources.FindObjectsOfTypeAll<CharacterTree>();
             foreach (var characterTree in characterTrees)
             {
                 var passiveTreeNodes = new PassiveTreeNodes(characterTree);
-                var json = JsonSerializer.Serialize(passiveTreeNodes, options);
+                var json = JsonSerializer.Serialize(passiveTreeNodes, Core.JsonSerializerOptions);
 
                 var filePath = Path.Combine(TreeDataDir,
                     "tree_" + (byte)characterTree.characterClass.classID + ".json");
@@ -49,8 +37,8 @@ namespace PobfleExtractor
 
     public class PassiveTreeNodes
     {
-        public SortedDictionary<string, PassiveTreeNode> Nodes = new(Core.StringComparer);
-        public List<PassiveTreeClass> Classes = [];
+        public readonly SortedDictionary<string, PassiveTreeNode> Nodes = new(Core.StringComparer);
+        public readonly List<PassiveTreeClass> Classes = [];
 
         public PassiveTreeNodes(CharacterTree characterTree)
         {
@@ -188,14 +176,14 @@ namespace PobfleExtractor
 
     public class PassiveTreeClass
     {
-        public string Name;
-        public List<PassiveTreeAscendancy> Ascendancies = [];
+        public readonly string Name;
+        public readonly List<PassiveTreeAscendancy> Ascendancies = [];
         public int Base_str;
         public int Base_dex;
         public int Base_int;
         public int Base_att;
         public int Base_vit;
-        public SortedSet<PassiveTreeSkill> Skills = [];
+        public readonly SortedSet<PassiveTreeSkill> Skills = [];
 
         public PassiveTreeClass(CharacterClass characterClass, SkillTree[] skillTrees)
         {
@@ -224,7 +212,7 @@ namespace PobfleExtractor
     public class PassiveTreeSkill : IComparable<PassiveTreeSkill>
     {
         public string Label;
-        public string TreeId;
+        public readonly string TreeId;
 
         public PassiveTreeSkill(Ability ability)
         {
@@ -242,7 +230,7 @@ namespace PobfleExtractor
 
     public class PassiveTreeAscendancy
     {
-        public string Id;
+        public readonly string Id;
         public string Name;
 
         public PassiveTreeAscendancy(Mastery mastery)
@@ -305,12 +293,12 @@ namespace PobfleExtractor
         [JsonInclude] public float Y;
         public bool? IsAscendancyStart;
         public byte? MaxPoints;
-        public List<string> Stats;
-        public List<string> NotScalingStats;
+        public readonly List<string> Stats;
+        public readonly List<string> NotScalingStats;
         public int? NoScalingPointThreshold;
-        public SortedSet<string> In = new(Core.StringComparer);
-        public List<int> ReqPoints;
-        public SortedSet<string> Out = new(Core.StringComparer);
+        public readonly SortedSet<string> In = new(Core.StringComparer);
+        public readonly List<int> ReqPoints;
+        public readonly SortedSet<string> Out = new(Core.StringComparer);
         public List<string> Description;
         public List<string> ReminderText;
 

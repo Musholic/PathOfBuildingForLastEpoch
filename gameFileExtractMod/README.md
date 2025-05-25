@@ -1,14 +1,18 @@
 ﻿# PobfleExtractor
 
-This is a melon loader mod to extract all the game data.
+This is a melon loader mod to extract all the game data required by this tool.
+
+> [!WARNING]
+> This is a Third Party Program, any issues or bugs a player might experience in game related to the use of this program
+> are not the responsibility of EHG and EHG will not be able to assist.
 
 ## WIP
 
 The mod currently does not extract all data. The last method was using AssetRipper to extract all game data then it used
 python scripts to process them.
 
-It currently extract all the TreeData to `C:\Users\USER\IdeaProjects\PathOfBuildingForLastEpoch\src\TreeData\1_1` so you
-probably should not use it as is.
+It currently extracts data to `C:\Users\USER\IdeaProjects\PathOfBuildingForLastEpoch\` so you probably should not use it
+as is if you want to extract data to another directory.
 
 ## How to build and run
 
@@ -16,6 +20,8 @@ First you need to install melon loader **v0.7.0 Beta**, the simplest is to use t
 installer (https://melonwiki.xyz/#/?id=automated-installation).
 
 You also need to start the game once to let melon loader generated all the dlls for the project.
+
+You don't need Unity to build the mod, the generated dlls are enough.
 
 The .csproj file can be opened either with Visual Studio or with Jetbrains Rider.
 
