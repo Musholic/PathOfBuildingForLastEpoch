@@ -4890,7 +4890,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+120 Melee Damage",
-      "1.(2-1).8 Seconds of Haste after you use Evade",
+      "(1.2-1.8) Seconds of Haste after you use Evade",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ],
     "weapon": {
@@ -4908,7 +4908,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+120 Melee Damage",
-      "1.(2-1).8 Seconds of Haste after you use Evade",
+      "(1.2-1.8) Seconds of Haste after you use Evade",
       "(30-50)% increased Effect of Haste on You "
     ],
     "weapon": {
@@ -6166,7 +6166,7 @@
     "implicits": [
       "+(9-17) Intelligence",
       "(9-34)% increased Effect of Haste on You ",
-      "1.(7-2).9 Seconds of Haste after you use a Traversal Skill"
+      "(1.7-2.9) Seconds of Haste after you use a Traversal Skill"
     ]
   },
   "Soulmass": {
@@ -6979,8 +6979,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(1-2)%.4% of Damage Leeched as Health on Hit",
-      "(1-2)%.4% of Minion Damage Leeched as Health on Hit"
+      "(1-2.4)% of Damage Leeched as Health on Hit",
+      "(1-2.4)% of Minion Damage Leeched as Health on Hit"
     ]
   },
   "Ochre Antler": {
@@ -7432,7 +7432,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+24 Bow Damage",
-      "0.(2-0)%.3% of Bow Damage Leeched as Health"
+      "(0.2-0.3)% of Bow Damage Leeched as Health"
     ],
     "weapon": {
       "AttackRateBase": 0.95,
@@ -8628,7 +8628,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "1.(2-2)% of Throwing Damage Leeched as Health"
+      "(1.2-2)% of Throwing Damage Leeched as Health"
     ]
   },
   "Grand Wrath of Rahyeh": {
@@ -8640,7 +8640,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "2.(2-3)%.5% of Throwing Damage Leeched as Health"
+      "(2.2-3.5)% of Throwing Damage Leeched as Health"
     ]
   },
   "Whisper of Orobyss": {
@@ -8700,7 +8700,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "1.(2-2)% of Spell Damage Leeched as Health"
+      "(1.2-2)% of Spell Damage Leeched as Health"
     ]
   },
   "Grand Hunger of the Void": {
@@ -8712,7 +8712,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "2.(2-3)%.5% of Spell Damage Leeched as Health"
+      "(2.2-3.5)% of Spell Damage Leeched as Health"
     ]
   },
   "Strength of the Mountain": {
@@ -10160,7 +10160,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "4.(5-7)% of Melee Damage Leeched as Health"
+      "(4.5-7)% of Melee Damage Leeched as Health"
     ]
   },
   "Grand Virtue of Command": {
