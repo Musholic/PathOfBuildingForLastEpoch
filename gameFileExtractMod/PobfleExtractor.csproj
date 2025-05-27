@@ -541,6 +541,7 @@
 		<Compile Include="Core.cs" />
 		<Compile Include="ItemBases.cs"/>
 		<Compile Include="Mods.cs"/>
+		<Compile Include="Skills.cs"/>
 		<Compile Include="TreeData.cs"/>
 		<Compile Include="Uniques.cs"/>
 	</ItemGroup>
