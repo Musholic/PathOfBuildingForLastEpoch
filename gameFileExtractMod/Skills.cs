@@ -23,6 +23,12 @@ namespace PobfleExtractor
                 skills.Add(skillTree.treeID, new Skill(skillTree.ability));
             }
 
+            var ailmentList = AilmentList.instance.list;
+            foreach (var ailment in ailmentList)
+            {
+                skills.TryAdd("Ailment_" + ailment.name, new Skill(ailment));
+            }
+
             var json = JsonSerializer.Serialize(skills, Core.JsonSerializerOptions);
 
             var filePath = Path.Combine(SkillsDir, "skills.json");
@@ -35,9 +41,11 @@ namespace PobfleExtractor
     {
         public string Name;
         public int SkillTypeTags;
-        public float CastTime;
+        public float? CastTime;
         public readonly Dictionary<string, bool> BaseFlags = new();
         public readonly Dictionary<string, float> Stats = new();
+        public string AltName;
+        public readonly List<string> Buffs;
 
         public Skill(Ability ability)
         {
@@ -94,85 +102,7 @@ namespace PobfleExtractor
             if (damageStatsHolder)
             {
                 var baseDamageStats = damageStatsHolder.baseDamageStats;
-                if (baseDamageStats.addedDamageScaling > 0)
-                {
-                    Stats["damageEffectiveness"] = baseDamageStats.addedDamageScaling;
-                }
-
-                if (baseDamageStats.isHit)
-                {
-                    BaseFlags["hit"] = true;
-                }
-
-                var damageTags = damageStatsHolder.damageTags;
-                var damageTag = damageTags.ToString();
-                if ((damageTags & AT.DoT) > 0)
-                {
-                    damageTag = "dot";
-                    BaseFlags["dot"] = true;
-                }
-
-                if ((damageTags & AT.Spell) > 0)
-                {
-                    damageTag = "spell";
-                    BaseFlags["spell"] = true;
-                }
-
-                if ((damageTags & AT.Melee) > 0)
-                {
-                    damageTag = "melee";
-                    BaseFlags["melee"] = true;
-                    BaseFlags["attack"] = true;
-                }
-
-                if ((damageTags & AT.Throwing) > 0)
-                {
-                    damageTag = "throwing";
-                    BaseFlags["projectile"] = true;
-                    BaseFlags["attack"] = true;
-                }
-
-                if ((damageTags & AT.Bow) > 0)
-                {
-                    damageTag = "bow";
-                    BaseFlags["projectile"] = true;
-                    BaseFlags["attack"] = true;
-                }
-
-                var i = 0;
-                foreach (var damage in baseDamageStats.damage)
-                {
-                    if (damage > 0)
-                    {
-                        var damageType = i switch
-                        {
-                            0 => "physical",
-                            1 => "fire",
-                            2 => "cold",
-                            3 => "lightning",
-                            4 => "necrotic",
-                            5 => "void",
-                            _ => "poison"
-                        };
-                        Stats[damageTag + "_base_" + damageType + "_damage"] = damage;
-                    }
-
-                    i++;
-                }
-
-                if (baseDamageStats.critMultiplier == 0)
-                {
-                    Stats["no_critical_strike_multiplier"] = 1;
-                }
-                else
-                {
-                    Stats["base_critical_strike_multiplier"] = baseDamageStats.critMultiplier * 100 - 100;
-                }
-
-                if (baseDamageStats.critChance > 0)
-                {
-                    Stats["critChance"] = baseDamageStats.critChance * 100;
-                }
+                SetStatsFromDamageData(baseDamageStats, damageStatsHolder.damageTags);
             }
 
             CastTime = ability.useDuration / (ability.speedMultiplier * 1.1f);
@@ -187,6 +117,136 @@ namespace PobfleExtractor
                     Stats.Add("cooldown", 1 / ability.chargesGainedPerSecond);
                 }
             }
+        }
+
+        private void SetStatsFromDamageData(DamageStatsHolder.BaseDamageStats baseDamageStats, AT tags)
+        {
+            if (baseDamageStats.addedDamageScaling > 0)
+            {
+                Stats["damageEffectiveness"] = baseDamageStats.addedDamageScaling;
+            }
+
+            if (baseDamageStats.isHit)
+            {
+                BaseFlags["hit"] = true;
+            }
+
+            var damageTag = tags.ToString();
+            if ((tags & AT.DoT) > 0)
+            {
+                damageTag = "dot";
+                BaseFlags["dot"] = true;
+            }
+
+            if ((tags & AT.Spell) > 0)
+            {
+                damageTag = "spell";
+                BaseFlags["spell"] = true;
+            }
+
+            if ((tags & AT.Melee) > 0)
+            {
+                damageTag = "melee";
+                BaseFlags["melee"] = true;
+                BaseFlags["attack"] = true;
+            }
+
+            if ((tags & AT.Throwing) > 0)
+            {
+                damageTag = "throwing";
+                BaseFlags["projectile"] = true;
+                BaseFlags["attack"] = true;
+            }
+
+            if ((tags & AT.Bow) > 0)
+            {
+                damageTag = "bow";
+                BaseFlags["projectile"] = true;
+                BaseFlags["attack"] = true;
+            }
+
+            var i = 0;
+            foreach (var damage in baseDamageStats.damage)
+            {
+                if (damage > 0)
+                {
+                    var damageType = i switch
+                    {
+                        0 => "physical",
+                        1 => "fire",
+                        2 => "cold",
+                        3 => "lightning",
+                        4 => "necrotic",
+                        5 => "void",
+                        _ => "poison"
+                    };
+                    Stats[damageTag + "_base_" + damageType + "_damage"] = damage;
+                }
+
+                i++;
+            }
+
+            if (baseDamageStats.critMultiplier == 0)
+            {
+                Stats["no_critical_strike_multiplier"] = 1;
+            }
+            // ReSharper disable once CompareOfFloatsByEqualityOperator
+            else if (baseDamageStats.critMultiplier != 1)
+            {
+                Stats["base_critical_strike_multiplier"] = baseDamageStats.critMultiplier * 100 - 100;
+            }
+
+            if (baseDamageStats.critChance > 0)
+            {
+                Stats["critChance"] = baseDamageStats.critChance * 100;
+            }
+        }
+
+        public Skill(Ailment ailment)
+        {
+            Name = ailment.displayName;
+            SkillTypeTags = (int)ailment.tags;
+            BaseFlags["duration"] = true;
+            BaseFlags["ailment"] = true;
+            Stats["base_skill_effect_duration"] = ailment.duration * 1000;
+            Stats["maximum_stacks"] = ailment.maxInstances;
+            if (ailment.displayName != ailment.instanceName)
+            {
+                AltName = ailment.instanceName;
+            }
+
+            if (ailment.buffs.Count > 0)
+            {
+                Buffs = [];
+                foreach (var buff in ailment.buffs)
+                {
+                    var value = 0f;
+                    var modifierType = BaseStats.ModType.ADDED;
+                    if (buff.addedValue > 0)
+                    {
+                        value = buff.addedValue;
+                    }
+
+                    if (buff.increasedValue > 0)
+                    {
+                        modifierType = BaseStats.ModType.INCREASED;
+                        value = buff.increasedValue;
+                    }
+
+                    if (buff.moreValues.Count > 0)
+                    {
+                        modifierType = BaseStats.ModType.MORE;
+                        value = buff.moreValues._items[0];
+                    }
+
+                    Buffs.Add(Core.GetModLine(buff.property, buff.tags, value, value, buff.specialTag, modifierType));
+                }
+            }
+
+            SetStatsFromDamageData(ailment.baseDamage, ailment.tags);
+
+            // We consider that all ailments can stack for simplification
+            Stats["dot_can_stack"] = 1;
         }
     }
 }

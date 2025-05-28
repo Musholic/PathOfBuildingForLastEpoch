@@ -15,8 +15,7 @@ namespace PobfleExtractor
     public class Core : MelonMod
     {
         // Change this to another directory if you need to
-        public static readonly string BaseSrcDir =
-            @"C:\Users\" + Environment.UserName + @"\IdeaProjects\PathOfBuildingForLastEpoch\src";
+        public static readonly string BaseSrcDir = Environment.CurrentDirectory + @"\src";
 
         public static MelonLogger.Instance Logger;
         public static readonly UpperCaseFirstNaturalComparer StringComparer = new();
@@ -71,10 +70,62 @@ namespace PobfleExtractor
         {
             // ReSharper disable once CompareOfFloatsByEqualityOperator
             var isRange = minRoll != maxRoll;
+            // ReSharper disable once SwitchStatementMissingSomeEnumCasesNoDefault
+            switch (property)
+            {
+                case SP.NegativePhysicalResistance:
+                    property = SP.PhysicalResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativeArmour:
+                    property = SP.Armour;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativeFireResistance:
+                    property = SP.FireResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativeColdResistance:
+                    property = SP.ColdResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativeLightningResistance:
+                    property = SP.LightningResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativeVoidResistance:
+                    property = SP.VoidResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativeNecroticResistance:
+                    property = SP.NecroticResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativePoisonResistance:
+                    property = SP.PoisonResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+                case SP.NegativeElementalResistance:
+                    property = SP.ElementalResistance;
+                    minRoll *= -1;
+                    maxRoll *= -1;
+                    break;
+            }
+
             var format = ModFormatting.FormatProperty(property, tags,
                 specialTag,
                 modifierType, minRoll, null, false, false, false, true, isRange,
                 maxRoll);
+            // Fix locale issue using ',' instead of '.'
+            format = Regex.Replace(format, @"(\d),(\d)", "$1.$2");
             format = Regex.Replace(format, @"(\d+\.?\d*)(%?) to (\d+\.?\d*)%?", "($1-$3)$2");
             return format;
         }

@@ -11,9 +11,6 @@ This is a melon loader mod to extract all the game data required by this tool.
 The mod currently does not extract all data. The last method was using AssetRipper to extract all game data then it used
 python scripts to process them.
 
-It currently extracts data to `C:\Users\USER\IdeaProjects\PathOfBuildingForLastEpoch\` so you probably should not use it
-as is if you want to extract data to another directory.
-
 ## How to build and run
 
 First you need to install melon loader **v0.7.0 Beta**, the simplest is to use the automated
@@ -29,6 +26,10 @@ Building the project will automatically copy the mod dll to
 `C:\Program Files (x86)\Steam\steamapps\common\Last Epoch\Mods`
 
 Then you can run the game to use the mod (in pure offline mode is fine, with the argument `--offline`).
+
+> [!NOTE]
+> The mod expect the working directory to be the root of this project (PathOfBuildingForLastEpoch) which is done
+> automatically with the Rider run configuration in `./run`
 
 ## How to debug with the IDE
 
