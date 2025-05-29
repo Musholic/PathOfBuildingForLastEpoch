@@ -6,11 +6,6 @@ This is a melon loader mod to extract all the game data required by this tool.
 > This is a Third Party Program, any issues or bugs a player might experience in game related to the use of this program
 > are not the responsibility of EHG and EHG will not be able to assist.
 
-## WIP
-
-The mod currently does not extract all data. The last method was using AssetRipper to extract all game data then it used
-python scripts to process them.
-
 ## How to build and run
 
 First you need to install melon loader **v0.7.0 Beta**, the simplest is to use the automated
