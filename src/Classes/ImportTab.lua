@@ -762,6 +762,8 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
         end
     end
     main:SetWindowTitleSubtext(string.format("%s (%s, %s, %s)", self.build.buildName, charData.name, charData.class, charData.league))
+
+    self.charImportStatus = colorCodes.POSITIVE .. "Passive tree successfully imported."
 end
 
 function ImportTabClass:ImportItemsAndSkills(charData)
@@ -773,7 +775,6 @@ function ImportTabClass:ImportItemsAndSkills(charData)
         end
     end
 
-    self.charImportStatus = colorCodes.POSITIVE .. "Items and skills successfully imported."
     --ConPrintTable(charItemData)
     for _, itemData in pairs(charData.items) do
         self:ImportItem(itemData)
@@ -784,6 +785,8 @@ function ImportTabClass:ImportItemsAndSkills(charData)
     self.build.configTab:UpdateLevel()
     self.build.controls.characterLevel:SetText(charData.level)
     self.build.buildFlag = true
+
+    self.charImportStatus = colorCodes.POSITIVE .. "Items and skills successfully imported."
     return charData -- For the wrapper
 end
 
