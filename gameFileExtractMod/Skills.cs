@@ -41,7 +41,10 @@ namespace PobfleExtractor
                     foreach (var abilityRef in actor.GetAbilityList().abilityRefs)
                     {
                         var ability = abilityRef.GetAbility();
-                        skills[ability.name] = new Skill(ability);
+                        if (ability.abilityName != "")
+                        {
+                            skills[ability.name] = new Skill(ability);
+                        }
                     }
                 }
             }
