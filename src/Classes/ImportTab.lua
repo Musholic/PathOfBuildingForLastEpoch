@@ -624,6 +624,9 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
         ["hashes"] = { }
     }
     char.league = saveContent["cycle"] == 5 and "Cycle" or "Legacy"
+    if char.league == "Legacy" then
+        return char
+    end
     for passiveIdx, passive in pairs(saveContent["savedCharacterTree"]["nodeIDs"]) do
         local nbPoints = saveContent["savedCharacterTree"]["nodePoints"][passiveIdx]
         table.insert(char["hashes"], className .. "-" .. passive .. "#" .. nbPoints)
@@ -641,8 +644,8 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
             local item = {
                 ["inventoryId"] = itemData["containerID"],
             }
-            local baseTypeID = itemData["data"][2]
-            local subTypeID = itemData["data"][3]
+            local baseTypeID = itemData["data"][4]
+            local subTypeID = itemData["data"][5]
             if itemData["containerID"] == 29 then
                 local posX = itemData["inventoryPosition"]["x"]
                 local posY = itemData["inventoryPosition"]["y"]
@@ -661,14 +664,14 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                     item.base = itemBase
                     item.implicitMods= {}
                     for i,implicit in ipairs(itemBase.implicits) do
-                        local range = itemData["data"][5 + i ] / 256.0
+                        local range = itemData["data"][7 + i ] / 256.0
                         table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
                     end
-                    local rarity = itemData["data"][4]
+                    local rarity = itemData["data"][6]
                     item["explicitMods"] = {}
                     if rarity == 7 then
                         item["rarity"] = "UNIQUE"
-                        local uniqueID = itemData["data"][10]
+                        local uniqueID = itemData["data"][12]
                         local uniqueBase = self.build.data.uniques[uniqueID]
                         item["name"] = uniqueBase.name
                         for _, modLine in ipairs(uniqueBase.mods) do
@@ -679,7 +682,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                         item["name"] = itemBaseName
                         item["rarity"] = "RARE"
                         for i=0,3 do
-                            local dataId = 12 + i * 3
+                            local dataId = 14 + i * 3
                             if #itemData["data"] > dataId then
                                 local affixId = itemData["data"][dataId] + (itemData["data"][dataId - 1] % 4) * 256
                                 if affixId then
