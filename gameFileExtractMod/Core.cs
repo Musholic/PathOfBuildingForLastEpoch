@@ -30,7 +30,7 @@ namespace PobfleExtractor
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
         };
 
-        private static int _genId;
+        private bool _isExtractRequired = true;
 
         public override void OnInitializeMelon()
         {
@@ -40,18 +40,25 @@ namespace PobfleExtractor
 
         public override void OnUpdate()
         {
-            // Use a hot reloadable variable to allow multiple extracts per debugging session
-            var targetId = 1;
-            if (_genId != targetId && IsReady())
+            if (_isExtractRequired && IsReady())
             {
+                _isExtractRequired = false;
                 Logger.Msg("Starting extract...");
-                _genId = targetId;
                 Skills.Extract();
                 Uniques.Extract();
                 Mods.Extract();
                 TreeData.Extract();
                 ItemBases.Extract();
+                Logger.Msg("Extract finished!");
                 Application.Quit();
+            }
+        }
+
+        public override void OnLateUpdate()
+        {
+            if (Input.GetKeyDown(KeyCode.F12))
+            {
+                _isExtractRequired = true;
             }
         }
 

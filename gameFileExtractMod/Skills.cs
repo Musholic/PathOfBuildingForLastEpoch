@@ -1,7 +1,6 @@
 using System.Text.Json;
 using Il2Cpp;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 // ReSharper disable NotAccessedField.Global
 // ReSharper disable MemberCanBePrivate.Global
@@ -18,9 +17,33 @@ namespace PobfleExtractor
             var skills = new SortedDictionary<string, Skill>(Core.StringComparer);
 
             var allSkillTrees = Resources.FindObjectsOfTypeAll<SkillTree>();
+            var actors = Resources.FindObjectsOfTypeAll<Actor>();
+            ISet<string> minionNames = new HashSet<string>();
             foreach (var skillTree in allSkillTrees)
             {
-                skills.Add(skillTree.treeID, new Skill(skillTree.ability));
+                var skill = new Skill(skillTree.ability);
+                skills.Add(skillTree.treeID, skill);
+                if (skill.MinionList != null)
+                {
+                    foreach (var minion in skill.MinionList)
+                    {
+                        minionNames.Add(minion);
+                    }
+                }
+            }
+
+            var minions = new SortedDictionary<string, Minion>(Core.StringComparer);
+            foreach (var actor in actors)
+            {
+                if (minionNames.Contains(actor.name))
+                {
+                    minions[actor.name] = new Minion(actor);
+                    foreach (var abilityRef in actor.GetAbilityList().abilityRefs)
+                    {
+                        var ability = abilityRef.GetAbility();
+                        skills[ability.name] = new Skill(ability);
+                    }
+                }
             }
 
             var ailmentList = AilmentList.instance.list;
@@ -30,8 +53,12 @@ namespace PobfleExtractor
             }
 
             var json = JsonSerializer.Serialize(skills, Core.JsonSerializerOptions);
-
             var filePath = Path.Combine(SkillsDir, "skills.json");
+            Core.Logger.Msg("Writing file: " + filePath);
+            File.WriteAllText(filePath, json);
+
+            json = JsonSerializer.Serialize(minions, Core.JsonSerializerOptions);
+            filePath = Path.Combine(SkillsDir, "minions.json");
             Core.Logger.Msg("Writing file: " + filePath);
             File.WriteAllText(filePath, json);
         }
@@ -46,6 +73,7 @@ namespace PobfleExtractor
         public readonly Dictionary<string, float> Stats = new();
         public string AltName;
         public readonly List<string> Buffs;
+        public readonly List<string> MinionList;
 
         public Skill(Ability ability)
         {
@@ -97,12 +125,18 @@ namespace PobfleExtractor
             }
 
             var abilityPrefab = ability.abilityPrefab;
-            var components = abilityPrefab.GetComponents<Object>();
+            var components = abilityPrefab.GetComponents<MonoBehaviour>();
             var damageStatsHolder = ability.abilityPrefab.GetComponent<DamageStatsHolder>();
             if (damageStatsHolder)
             {
                 var baseDamageStats = damageStatsHolder.baseDamageStats;
                 SetStatsFromDamageData(baseDamageStats, damageStatsHolder.damageTags);
+            }
+
+            var summonEntityOnDeath = ability.abilityPrefab.GetComponent<SummonEntityOnDeath>();
+            if (summonEntityOnDeath)
+            {
+                MinionList = [summonEntityOnDeath.ActorReference.name];
             }
 
             CastTime = ability.useDuration / (ability.speedMultiplier * 1.1f);
@@ -193,7 +227,7 @@ namespace PobfleExtractor
             // ReSharper disable once CompareOfFloatsByEqualityOperator
             else if (baseDamageStats.critMultiplier != 1)
             {
-                Stats["base_critical_strike_multiplier"] = baseDamageStats.critMultiplier * 100 - 100;
+                Stats["base_critical_strike_multiplier_+"] = baseDamageStats.critMultiplier * 100 - 100;
             }
 
             if (baseDamageStats.critChance > 0)
@@ -222,12 +256,12 @@ namespace PobfleExtractor
                 {
                     var value = 0f;
                     var modifierType = BaseStats.ModType.ADDED;
-                    if (buff.addedValue > 0)
+                    if (buff.addedValue != 0)
                     {
                         value = buff.addedValue;
                     }
 
-                    if (buff.increasedValue > 0)
+                    if (buff.increasedValue != 0)
                     {
                         modifierType = BaseStats.ModType.INCREASED;
                         value = buff.increasedValue;
@@ -247,6 +281,24 @@ namespace PobfleExtractor
 
             // We consider that all ailments can stack for simplification
             Stats["dot_can_stack"] = 1;
+        }
+    }
+
+    public class Minion
+    {
+        public readonly List<string> SkillList = [];
+        public readonly List<string> ModList = [];
+        public string Name;
+        public string Life;
+
+        public Minion(Actor actor)
+        {
+            Name = actor.name;
+            Life = actor.health.maxHealth.ToString();
+            foreach (var abilityRef in actor.GetAbilityList().abilityRefs)
+            {
+                SkillList.Add(abilityRef.GetAbility().name);
+            }
         }
     }
 }
