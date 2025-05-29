@@ -73,7 +73,7 @@ namespace PobfleExtractor
         public readonly Dictionary<string, float> Stats = new();
         public string AltName;
         public readonly List<string> Buffs;
-        public readonly List<string> MinionList;
+        public List<string> MinionList;
 
         public Skill(Ability ability)
         {
@@ -101,6 +101,24 @@ namespace PobfleExtractor
                 }
             }
 
+            processAbility(ability);
+
+            CastTime = ability.useDuration / (ability.speedMultiplier * 1.1f);
+            if (ability.maxCharges > 0)
+            {
+                if (ability.channelled)
+                {
+                    CastTime /= ability.chargesGainedPerSecond;
+                }
+                else
+                {
+                    Stats["cooldown"] = 1 / ability.chargesGainedPerSecond;
+                }
+            }
+        }
+
+        private void processAbility(Ability ability)
+        {
             if ((ability.tags & AT.Spell) > 0)
             {
                 BaseFlags["spell"] = true;
@@ -126,6 +144,9 @@ namespace PobfleExtractor
 
             var abilityPrefab = ability.abilityPrefab;
             var components = abilityPrefab.GetComponents<MonoBehaviour>();
+
+            // TODO
+            var buffParent = ability.abilityPrefab.GetComponent<BuffParent>();
             var damageStatsHolder = ability.abilityPrefab.GetComponent<DamageStatsHolder>();
             if (damageStatsHolder)
             {
@@ -136,20 +157,41 @@ namespace PobfleExtractor
             var summonEntityOnDeath = ability.abilityPrefab.GetComponent<SummonEntityOnDeath>();
             if (summonEntityOnDeath)
             {
+                BaseFlags["minion"] = true;
                 MinionList = [summonEntityOnDeath.ActorReference.name];
             }
 
-            CastTime = ability.useDuration / (ability.speedMultiplier * 1.1f);
-            if (ability.maxCharges > 0)
+            var chanceToApplyAilmentsOnHit = ability.abilityPrefab.GetComponent<ChanceToApplyAilmentsOnHit>();
+            if (chanceToApplyAilmentsOnHit)
             {
-                if (ability.channelled)
+                foreach (var ailmentApplication in chanceToApplyAilmentsOnHit.ailments)
                 {
-                    CastTime /= ability.chargesGainedPerSecond;
+                    var ailmentName = ailmentApplication.ailment.name;
+                    Stats["chance_to_cast_Ailment_" + ailmentName + "_on_hit_%"] = ailmentApplication.chance * 100;
                 }
-                else
+            }
+
+            var repeatedlyApplyAilmentsList = ability.abilityPrefab.GetComponents<RepeatedlyApplyAilmentsInRadius>();
+            foreach (var repeatedlyApplyAilments in repeatedlyApplyAilmentsList)
+            {
+                foreach (var ailmentApplication in repeatedlyApplyAilments.ailments)
                 {
-                    Stats.Add("cooldown", 1 / ability.chargesGainedPerSecond);
+                    var ailmentName = ailmentApplication.ailment.name;
+                    // TODO: probably wrong stat here
+                    Stats["chance_to_cast_Ailment_" + ailmentName + "_on_hit_%"] = ailmentApplication.chance * 100;
                 }
+            }
+
+            var createAbilityObjectOnDeath = abilityPrefab.GetComponent<CreateAbilityObjectOnDeath>();
+            if (createAbilityObjectOnDeath)
+            {
+                processAbility(createAbilityObjectOnDeath.abilityToInstantiateRef.GetAbility());
+            }
+
+            var castAfterDuration = ability.abilityPrefab.GetComponent<CastAfterDuration>();
+            if (castAfterDuration)
+            {
+                processAbility(castAfterDuration.abilityRef.GetAbility());
             }
         }
 
