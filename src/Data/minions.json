@@ -1,177 +1,151 @@
 {
-    "Frenzy Totem": {
-        "skillList": [
-            "FrenzyAura"
-        ],
-        "modList": [],
-        "name": "Frenzy Totem",
-        "life": "120"
-    },
-    "Manifest Shield": {
-        "skillList": [
-            "FrenzyAura"
-        ],
-        "modList": [],
-        "name": "Manifest Shield",
-        "life": "75"
-    },
-    "ManifestedArmor": {
-        "skillList": [
-            "Manifest Armor 01 Melee"
-        ],
-        "modList": [],
-        "name": "ManifestedArmor",
-        "life": "350"
-    },
-    "PrimalBear": {
-        "skillList": [
-            "PrimalBear 01 melee attack"
-        ],
-        "modList": [],
-        "name": "PrimalBear",
-        "life": "360"
-    },
-    "PrimalRaptor": {
-        "skillList": [
-            "FeatheredRaptorJumpSlash",
-            "BasicEnemyMelee"
-        ],
-        "modList": [],
-        "name": "PrimalRaptor",
-        "life": "240"
-    },
-    "PrimalSabertooth": {
-        "skillList": [
-            "PrimalSabertooth 01 Melee"
-        ],
-        "modList": [],
-        "name": "PrimalSabertooth",
-        "life": "240"
-    },
-    "PrimalScorpion": {
-        "skillList": [
-            "ScorpionTailMelee",
-            "ScorpionMeleeComboStart"
-        ],
-        "modList": [],
-        "name": "PrimalScorpion",
-        "life": "300"
-    },
-    "PrimalWolf": {
-        "skillList": [
-            "PrimalWolf 01 melee"
-        ],
-        "modList": [],
-        "name": "PrimalWolf",
-        "life": "220"
-    },
-    "RogueBallista": {
-        "skillList": [
-            "BallistaBolt",
-            "FrenzyRoar"
-        ],
-        "modList": [],
-        "name": "RogueBallista",
-        "life": "1000"
-    },
-    "RogueDecoy": {
-        "skillList": [
-            "NullAbility"
-        ],
-        "modList": [],
-        "name": "RogueDecoy",
-        "life": "200"
-    },
-    "Spriggan": {
-        "skillList": [
-            "ThornVolley"
-        ],
-        "modList": [],
-        "name": "Spriggan",
-        "life": "160"
-    },
-    "StormCrow": {
-        "skillList": [
-            "StormCrowLightningBlast"
-        ],
-        "modList": [],
-        "name": "StormCrow",
-        "life": "200"
-    },
-    "StormTotem": {
-        "skillList": [
-            "LightningStorm"
-        ],
-        "modList": [],
-        "name": "StormTotem",
-        "life": "120"
-    },
-    "SummonedAbomination": {
-        "skillList": [
-            "Abomination Melee"
-        ],
-        "modList": [],
-        "name": "SummonedAbomination",
-        "life": "400"
-    },
-    "SummonedBoneGolem": {
-        "skillList": [
-            "Bone Golem 02 Big Slam",
-            "Bone Golem 03 Leap Slam",
-            "golemMelee",
-            "Bone Golem Rampage"
-        ],
-        "modList": [],
-        "name": "SummonedBoneGolem",
-        "life": "400"
-    },
-    "SummonedSkeleton": {
-        "skillList": [
-            "BasicEnemyMelee",
-            "DeathSlash"
-        ],
-        "modList": [],
-        "name": "SummonedSkeleton",
-        "life": "100"
-    },
-    "SummonedSkeletonArcher": {
-        "skillList": [
-            "Summon Skeleton Archer Bow Attack"
-        ],
-        "modList": [],
-        "name": "SummonedSkeletonArcher",
-        "life": "100"
-    },
-    "SummonedSkeletonMage": {
-        "skillList": [
-            "Skeletal Mages Necrotic Projectile"
-        ],
-        "modList": [],
-        "name": "SummonedSkeletonMage",
-        "life": "100"
-    },
-    "SummonedVolatileZombie": {
-        "skillList": [
-            "Suicide"
-        ],
-        "modList": [],
-        "name": "SummonedVolatileZombie",
-        "life": "200"
-    },
-    "SummonedWraith": {
-        "skillList": [
-            "Wraith 01 Melee"
-        ],
-        "modList": [],
-        "name": "SummonedWraith",
-        "life": "60"
-    },
-    "Thorn Totem": {
-        "skillList": [
-            "ThornTotemAttack"
-        ],
-        "modList": [],
-        "name": "Thorn Totem",
-        "life": "120"
-    }
+  "Frenzy Totem": {
+    "skillList": [
+      "FrenzyAura"
+    ],
+    "modList": [],
+    "name": "Frenzy Totem",
+    "life": "120"
+  },
+  "Manifest Shield": {
+    "skillList": [
+      "FrenzyAura"
+    ],
+    "modList": [],
+    "name": "Manifest Shield",
+    "life": "75"
+  },
+  "ManifestedArmor": {
+    "skillList": [
+      "Manifest Armor 01 Melee"
+    ],
+    "modList": [],
+    "name": "ManifestedArmor",
+    "life": "350"
+  },
+  "PrimalBear": {
+    "skillList": [
+      "PrimalBear 01 melee attack"
+    ],
+    "modList": [],
+    "name": "PrimalBear",
+    "life": "360"
+  },
+  "PrimalSabertooth": {
+    "skillList": [
+      "PrimalSabertooth 01 Melee"
+    ],
+    "modList": [],
+    "name": "PrimalSabertooth",
+    "life": "240"
+  },
+  "PrimalScorpion": {
+    "skillList": [
+      "ScorpionTailMelee",
+      "ScorpionMeleeComboStart"
+    ],
+    "modList": [],
+    "name": "PrimalScorpion",
+    "life": "300"
+  },
+  "PrimalWolf": {
+    "skillList": [
+      "PrimalWolf 01 melee"
+    ],
+    "modList": [],
+    "name": "PrimalWolf",
+    "life": "220"
+  },
+  "RogueBallista": {
+    "skillList": [
+      "BallistaBolt"
+    ],
+    "modList": [],
+    "name": "RogueBallista",
+    "life": "1000"
+  },
+  "RogueDecoy": {
+    "skillList": [
+      "NullAbility"
+    ],
+    "modList": [],
+    "name": "RogueDecoy",
+    "life": "200"
+  },
+  "RogueFalcon": {
+    "skillList": [
+      "RogueFalcon Melee",
+      "RogueFalcon Diving Attack"
+    ],
+    "modList": [],
+    "name": "RogueFalcon",
+    "life": "160"
+  },
+  "Spriggan": {
+    "skillList": [
+      "ThornVolley"
+    ],
+    "modList": [],
+    "name": "Spriggan",
+    "life": "160"
+  },
+  "StormCrow": {
+    "skillList": [
+      "StormCrowLightningBlast"
+    ],
+    "modList": [],
+    "name": "StormCrow",
+    "life": "200"
+  },
+  "StormTotem": {
+    "skillList": [
+      "LightningStorm"
+    ],
+    "modList": [],
+    "name": "StormTotem",
+    "life": "120"
+  },
+  "SummonedAbomination": {
+    "skillList": [
+      "Abomination Melee"
+    ],
+    "modList": [],
+    "name": "SummonedAbomination",
+    "life": "400"
+  },
+  "SummonedBoneGolem": {
+    "skillList": [
+      "Bone Golem 02 Big Slam",
+      "Bone Golem 03 Leap Slam",
+      "golemMelee",
+      "Bone Golem Rampage"
+    ],
+    "modList": [],
+    "name": "SummonedBoneGolem",
+    "life": "400"
+  },
+  "SummonedVolatileZombie": {
+    "skillList": [
+      "Suicide"
+    ],
+    "modList": [],
+    "name": "SummonedVolatileZombie",
+    "life": "200"
+  },
+  "SummonedWraith": {
+    "skillList": [
+      "Wraith 01 Melee"
+    ],
+    "modList": [],
+    "name": "SummonedWraith",
+    "life": "60"
+  },
+  "Thorn Totem": {
+    "skillList": [
+      "ThornTotemAttack"
+    ],
+    "modList": [],
+    "name": "Thorn Totem",
+    "life": "120"
+  }
 }
