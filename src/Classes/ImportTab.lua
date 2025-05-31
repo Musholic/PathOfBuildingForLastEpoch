@@ -674,8 +674,8 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                         local uniqueID = itemData["data"][12]
                         local uniqueBase = self.build.data.uniques[uniqueID]
                         item["name"] = uniqueBase.name
-                        for _, modLine in ipairs(uniqueBase.mods) do
-                            local range = 0.5
+                        for i, modLine in ipairs(uniqueBase.mods) do
+                            local range = itemData["data"][12 + i ] / 256.0
                             table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
                         end
                     else
