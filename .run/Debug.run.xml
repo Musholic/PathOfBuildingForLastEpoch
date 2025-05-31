@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug" type="lua.emmy.debugger" factoryName="Emmy Debugger(NEW)">
+    <module name="PathOfBuildingForLastEpoch" />
+    <option name="TYPE" value="0" />
+    <option name="HOST" value="localhost" />
+    <option name="PORT" value="9966" />
+    <option name="PIPE" value="emmy" />
+    <option name="WIN_ARCH" value="1" />
+    <method v="2" />
+  </configuration>
+</component>
