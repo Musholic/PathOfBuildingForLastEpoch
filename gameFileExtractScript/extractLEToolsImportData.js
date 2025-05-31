@@ -4,4 +4,4 @@ function le_e(a) {
     le_wa(a)) : a.displayName
 }
 JSON.stringify(Object.fromEntries(Object.entries(le_k).map(([k, v]) => [k, le_e(v)])))
-JSON.stringify(Object.fromEntries(Object.entries(le_l).concat(Object.entries(le_m)).map(([k, v]) => [k, v.affixId])))
+JSON.stringify(Object.fromEntries(Object.entries(le_n).concat(Object.entries(le_m)).map(([k, v]) => [k, v.affixId])))
