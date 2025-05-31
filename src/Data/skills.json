@@ -2427,9 +2427,15 @@
     "skillTypeTags": 258,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "hit": true
     },
-    "stats": {}
+    "stats": {
+      "damageEffectiveness": 0.55,
+      "spell_base_lightning_damage": 11,
+      "base_critical_strike_multiplier_+": 100,
+      "critChance": 5
+    }
   },
   "Manifest Armor 01 Melee": {
     "name": "Melee Attack",
@@ -3065,7 +3071,10 @@
     "name": "Dark Quiver",
     "skillTypeTags": 131072,
     "castTime": 0.6818182,
-    "baseFlags": {},
+    "baseFlags": {
+      "melee": true,
+      "attack": true
+    },
     "stats": {
       "cooldown": 5.9998803
     }
@@ -4731,10 +4740,14 @@
     "skillTypeTags": 4384,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "dot": true
     },
     "stats": {
       "damage_+%_per_int": 4,
+      "damageEffectiveness": 0.9,
+      "spell_base_necrotic_damage": 18,
+      "no_critical_strike_multiplier": 1,
       "cooldown": 13.000013
     }
   }

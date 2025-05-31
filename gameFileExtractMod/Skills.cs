@@ -205,6 +205,11 @@ namespace PobfleExtractor
             {
                 processAbility(castAfterDuration.abilityRef.GetAbility());
             }
+            var castAtRandomPointAfterDuration = ability.abilityPrefab.GetComponent<CastAtRandomPointAfterDuration>();
+            if (castAtRandomPointAfterDuration)
+            {
+                processAbility(castAtRandomPointAfterDuration.abilityRef.GetAbility());
+            }
         }
 
         private void SetStatsFromDamageData(DamageStatsHolder.BaseDamageStats baseDamageStats, AT tags)
