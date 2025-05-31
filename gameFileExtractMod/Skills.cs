@@ -102,7 +102,7 @@ namespace PobfleExtractor
 
                         var modLine = Core.GetModLine(stat.property, stat.tags, value, value, stat.specialTag,
                             modifierType);
-                        modLine += " per " + attribute;
+                        modLine += " per player " + attribute;
                         BaseMods ??= [];
                         BaseMods.Add(modLine);
                     }

@@ -1667,6 +1667,7 @@ local modTagList = {
 
 for i,stat in ipairs(LongAttributes) do
 	modTagList["per " .. stat:lower()] = { tag = { type = "PerStat", stat = Attributes[i] } }
+	modTagList["per player " .. stat:lower()] = { tag = { type = "PerStat", stat = Attributes[i], actor = "parent" } }
 end
 for _, weapon in ipairs({ "Wand", "Bow", "Axe", "Sceptre", "Staff" }) do
 	modTagList["with an? " .. weapon:lower()] = { tag = { type = "Condition", var = "Using" .. weapon } }

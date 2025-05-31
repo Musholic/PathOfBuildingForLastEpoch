@@ -2322,7 +2322,7 @@
       "base_skill_effect_duration": 300
     },
     "baseMods": [
-      "5% increased Attack Speed per Dexterity"
+      "5% increased Attack Speed per player Dexterity"
     ]
   },
   "BasicEnemyMelee": {
@@ -2360,8 +2360,8 @@
       "cooldown": 6
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement"
     ]
   },
   "Bone Golem 03 Leap Slam": {
@@ -2382,8 +2382,8 @@
       "cooldown": 5
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement"
     ]
   },
   "Bone Golem Rampage": {
@@ -2404,9 +2404,9 @@
       "cooldown": 2
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement",
-      "+2% Mana Efficiency per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement",
+      "+2% Mana Efficiency per player Attunement"
     ]
   },
   "DeathSlash": {
@@ -2540,8 +2540,8 @@
       "base_skill_effect_duration": 2000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Intelligence",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "RogueFalcon Melee": {
@@ -2613,7 +2613,7 @@
       "base_skill_effect_duration": 1000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "StormCrowLightningBlast": {
@@ -2632,7 +2632,7 @@
       "base_skill_effect_duration": 1500
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "Suicide": {
@@ -2695,8 +2695,8 @@
       "base_skill_effect_duration": 350
     },
     "baseMods": [
-      "4% increased Damage per Attunement",
-      "+4% Freeze Rate Multiplier per Attunement"
+      "4% increased Damage per player Attunement",
+      "+4% Freeze Rate Multiplier per player Attunement"
     ]
   },
   "Wraith 01 Melee": {
@@ -2725,7 +2725,7 @@
     },
     "stats": {},
     "baseMods": [
-      "4% increased Minion Damage per Intelligence"
+      "4% increased Minion Damage per player Intelligence"
     ],
     "minionList": [
       "SummonedAbomination"
@@ -2749,7 +2749,7 @@
       "cooldown": 4
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "aacfl": {
@@ -2771,7 +2771,7 @@
       "base_skill_effect_duration": 450
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "ab0lh": {
@@ -2787,7 +2787,7 @@
       "cooldown": 2.9994001
     },
     "baseMods": [
-      "+2 Spell Void Damage per Vitality"
+      "+2 Spell Void Damage per player Vitality"
     ]
   },
   "ad0ry": {
@@ -2800,7 +2800,7 @@
       "cooldown": 1
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "ah443": {
@@ -2860,8 +2860,8 @@
       "base_skill_effect_duration": 2500
     },
     "baseMods": [
-      "4% increased Damage per Attunement",
-      "+4% Freeze Rate Multiplier per Attunement"
+      "4% increased Damage per player Attunement",
+      "+4% Freeze Rate Multiplier per player Attunement"
     ]
   },
   "ba1574": {
@@ -2875,8 +2875,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Minion Damage per Dexterity",
-      "1% increased Minion Attack Speed per Dexterity"
+      "4% increased Minion Damage per player Dexterity",
+      "1% increased Minion Attack Speed per player Dexterity"
     ],
     "minionList": [
       "RogueBallista"
@@ -2894,7 +2894,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "be36ar": {
@@ -2909,8 +2909,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+20 Minion Health per Strength",
-      "4% increased Minion Damage per Strength"
+      "+20 Minion Health per player Strength",
+      "4% increased Minion Damage per player Strength"
     ],
     "minionList": [
       "PrimalBear"
@@ -2928,8 +2928,8 @@
       "cooldown": 10
     },
     "baseMods": [
-      "+20 Minion Health per Intelligence",
-      "4% increased Minion Damage per Intelligence"
+      "+20 Minion Health per player Intelligence",
+      "4% increased Minion Damage per player Intelligence"
     ],
     "minionList": [
       "SummonedBoneGolem"
@@ -2953,7 +2953,7 @@
       "cooldown": 13.999721
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "bp2nk": {
@@ -2972,7 +2972,7 @@
       "base_skill_effect_duration": 766.6666
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "ch0fs": {
@@ -2993,7 +2993,7 @@
       "base_skill_effect_duration": 6000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "ch4bo": {
@@ -3013,7 +3013,7 @@
       "base_skill_effect_duration": 350
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "cstri": {
@@ -3028,7 +3028,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "dacn33": {
@@ -3049,7 +3049,7 @@
       "cooldown": 0.7000002
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "dagg3": {
@@ -3069,7 +3069,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "db992": {
@@ -3090,7 +3090,7 @@
       "cooldown": 5
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "deeco": {
@@ -3107,7 +3107,7 @@
       "cooldown": 13.999721
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ],
     "minionList": [
       "RogueDecoy"
@@ -3130,7 +3130,7 @@
       "base_skill_effect_duration": 300
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "dig5": {
@@ -3151,7 +3151,7 @@
       "base_skill_effect_duration": 100000000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "dl73": {
@@ -3169,7 +3169,7 @@
       "base_skill_effect_duration": 100000000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "do5vr": {
@@ -3190,7 +3190,7 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+2 Spell Void Damage per Vitality"
+      "+2 Spell Void Damage per player Vitality"
     ]
   },
   "dqv5": {
@@ -3206,7 +3206,7 @@
       "cooldown": 5.9998803
     },
     "baseMods": [
-      "+2% Mana Efficiency per Dexterity"
+      "+2% Mana Efficiency per player Dexterity"
     ]
   },
   "ds4d3": {
@@ -3220,7 +3220,7 @@
       "base_skill_effect_duration": 999999000
     },
     "baseMods": [
-      "+2% Mana Efficiency per Intelligence"
+      "+2% Mana Efficiency per player Intelligence"
     ]
   },
   "ds34l": {
@@ -3240,7 +3240,7 @@
       "cooldown": 5
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "eb5656": {
@@ -3254,8 +3254,8 @@
       "base_skill_effect_duration": 4000
     },
     "baseMods": [
-      "5% Increased Healing Effectiveness per Attunement",
-      "+3% Mana Efficiency per Attunement"
+      "5% Increased Healing Effectiveness per player Attunement",
+      "+3% Mana Efficiency per player Attunement"
     ]
   },
   "en6": {
@@ -3276,7 +3276,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "eq5s": {
@@ -3296,8 +3296,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement"
     ]
   },
   "er6no": {
@@ -3316,7 +3316,7 @@
       "base_skill_effect_duration": 782
     },
     "baseMods": [
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Attunement"
     ]
   },
   "es6ai": {
@@ -3337,8 +3337,8 @@
       "cooldown": 5
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "+2 Spell Void Damage per Vitality"
+      "4% increased Damage per player Strength",
+      "+2 Spell Void Damage per player Vitality"
     ]
   },
   "ex4tp": {
@@ -3354,7 +3354,7 @@
       "base_skill_effect_duration": 300
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "exvol8": {
@@ -3377,7 +3377,7 @@
       "cooldown": 2
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "f1b4d": {
@@ -3397,8 +3397,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Intelligence",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "falc0": {
@@ -3412,7 +3412,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Minion Damage per Dexterity"
+      "4% increased Minion Damage per player Dexterity"
     ],
     "minionList": [
       "RogueFalcon"
@@ -3434,7 +3434,7 @@
       "base_skill_effect_duration": 400
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "fe8at": {
@@ -3453,7 +3453,7 @@
       "base_skill_effect_duration": 2000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "fi9": {
@@ -3473,7 +3473,7 @@
       "base_skill_effect_duration": 875
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "fl13": {
@@ -3494,7 +3494,7 @@
       "cooldown": 5.9988003
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "fl71ds": {
@@ -3515,7 +3515,7 @@
       "cooldown": 3.4999998
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "flur3": {
@@ -3535,7 +3535,7 @@
       "base_skill_effect_duration": 4000
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "fr4wl": {
@@ -3552,7 +3552,7 @@
       "base_skill_effect_duration": 6000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "fr11mv": {
@@ -3572,8 +3572,8 @@
       "base_skill_effect_duration": 500
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Intelligence",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "frc87w": {
@@ -3592,7 +3592,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "fs3e3": {
@@ -3613,9 +3613,9 @@
       "cooldown": 4
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement",
-      "+11 Minion Health per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement",
+      "+11 Minion Health per player Attunement"
     ]
   },
   "fs11": {
@@ -3651,8 +3651,8 @@
       "cooldown": 14.999249
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "+1% Mana Efficiency per Intelligence"
+      "4% increased Damage per player Intelligence",
+      "+1% Mana Efficiency per player Intelligence"
     ]
   },
   "ga2st": {
@@ -3672,8 +3672,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Melee Damage per Strength",
-      "+1 Spell Damage per Attunement"
+      "4% increased Melee Damage per player Strength",
+      "+1 Spell Damage per player Attunement"
     ]
   },
   "gh0fl": {
@@ -3694,7 +3694,7 @@
       "base_skill_effect_duration": 100000000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "gl14": {
@@ -3713,8 +3713,8 @@
       "base_skill_effect_duration": 3000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "+4% Freeze Rate Multiplier per Intelligence"
+      "4% increased Damage per player Intelligence",
+      "+4% Freeze Rate Multiplier per player Intelligence"
     ]
   },
   "golemMelee": {
@@ -3751,7 +3751,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "gy2dm": {
@@ -3774,7 +3774,7 @@
       "base_skill_effect_duration": 3000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "ha84": {
@@ -3794,8 +3794,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Dexterity",
-      "+1 Melee Necrotic Damage per Intelligence"
+      "4% increased Damage per player Dexterity",
+      "+1 Melee Necrotic Damage per player Intelligence"
     ]
   },
   "hh7pa3": {
@@ -3810,7 +3810,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "5% Increased Healing Effectiveness per Attunement"
+      "5% Increased Healing Effectiveness per player Attunement"
     ]
   },
   "hs18gu": {
@@ -3830,7 +3830,7 @@
       "base_skill_effect_duration": 2500
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "ht16aw": {
@@ -3850,8 +3850,8 @@
       "base_skill_effect_duration": 2500
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "htsk5": {
@@ -3871,7 +3871,7 @@
       "base_skill_effect_duration": 10000
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "ib5g3": {
@@ -3891,8 +3891,8 @@
       "cooldown": 3.0003002
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "+4% Freeze Rate Multiplier per Intelligence"
+      "4% increased Damage per player Intelligence",
+      "+4% Freeze Rate Multiplier per player Intelligence"
     ]
   },
   "is40": {
@@ -3913,7 +3913,7 @@
       "damage_interval": 330
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "is58": {
@@ -3946,8 +3946,8 @@
       "base_skill_effect_duration": 370
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "lb23il": {
@@ -3966,7 +3966,7 @@
       "base_skill_effect_duration": 5000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "lu25ng": {
@@ -3987,8 +3987,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "ma6hdr": {
@@ -4003,9 +4003,9 @@
       "cooldown": 10
     },
     "baseMods": [
-      "+10 Minion Health per Strength",
-      "+10 Minion Health per Attunement",
-      "4% increased Minion Damage per Attunement"
+      "+10 Minion Health per player Strength",
+      "+10 Minion Health per player Attunement",
+      "4% increased Minion Damage per player Attunement"
     ],
     "minionList": [
       "ManifestedArmor"
@@ -4028,8 +4028,8 @@
       "base_skill_effect_duration": 7000
     },
     "baseMods": [
-      "4% increased Damage per Attunement",
-      "+4% Freeze Rate Multiplier per Attunement"
+      "4% increased Damage per player Attunement",
+      "+4% Freeze Rate Multiplier per player Attunement"
     ]
   },
   "md26kh": {
@@ -4044,7 +4044,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "+2% Mana Efficiency per Intelligence"
+      "+2% Mana Efficiency per player Intelligence"
     ]
   },
   "me27": {
@@ -4063,7 +4063,7 @@
       "base_skill_effect_duration": 9000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "mira59": {
@@ -4084,7 +4084,7 @@
       "cooldown": 10
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "ms26": {
@@ -4104,8 +4104,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Intelligence",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "multis": {
@@ -4125,7 +4125,7 @@
       "base_skill_effect_duration": 1000
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "mush9": {
@@ -4145,7 +4145,7 @@
       "base_skill_effect_duration": 450
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "ne01t": {
@@ -4166,7 +4166,7 @@
       "base_skill_effect_duration": 300
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "pa67ju": {
@@ -4187,9 +4187,9 @@
       "cooldown": 4
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement",
-      "4% Increased Healing Effectiveness per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement",
+      "4% Increased Healing Effectiveness per player Attunement"
     ]
   },
   "pr5fm": {
@@ -4207,7 +4207,7 @@
       "cooldown": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "pun22": {
@@ -4228,7 +4228,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "rb31pl": {
@@ -4247,8 +4247,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "4% Increased Healing Effectiveness per Intelligence"
+      "4% increased Damage per player Intelligence",
+      "4% Increased Healing Effectiveness per player Intelligence"
     ]
   },
   "re82ke": {
@@ -4267,7 +4267,7 @@
       "base_skill_effect_duration": 2000
     },
     "baseMods": [
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Attunement"
     ]
   },
   "rf1azz": {
@@ -4298,7 +4298,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "rs31hi": {
@@ -4313,9 +4313,9 @@
       "cooldown": 14.992504
     },
     "baseMods": [
-      "+5 Minion Health per Strength",
-      "+5 Minion Health per Attunement",
-      "4% increased Minion Damage per Attunement"
+      "+5 Minion Health per player Strength",
+      "+5 Minion Health per player Attunement",
+      "4% increased Minion Damage per player Attunement"
     ],
     "minionList": [
       "Manifest Shield"
@@ -4333,8 +4333,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+12 Minion Health per Strength",
-      "4% increased Minion Damage per Strength"
+      "+12 Minion Health per player Strength",
+      "4% increased Minion Damage per player Strength"
     ],
     "minionList": [
       "PrimalSabertooth"
@@ -4358,7 +4358,7 @@
       "cooldown": 18
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "sb44eQ": {
@@ -4405,8 +4405,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+15 Minion Health per Strength",
-      "4% increased Minion Damage per Strength"
+      "+15 Minion Health per player Strength",
+      "4% increased Minion Damage per player Strength"
     ],
     "minionList": [
       "PrimalScorpion"
@@ -4445,7 +4445,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "sf37": {
@@ -4460,9 +4460,9 @@
       "cooldown": 5.999988
     },
     "baseMods": [
-      "+5 Minion Health per Strength",
-      "+3 Minion Health per Attunement",
-      "1% Increased Frenzy Effect for Minions  per Attunement"
+      "+5 Minion Health per player Strength",
+      "+3 Minion Health per player Attunement",
+      "1% Increased Frenzy Effect for Minions  per player Attunement"
     ],
     "minionList": [
       "Frenzy Totem"
@@ -4478,7 +4478,7 @@
       "cooldown": 3.500175
     },
     "baseMods": [
-      "+2% Mana Efficiency per Dexterity"
+      "+2% Mana Efficiency per player Dexterity"
     ]
   },
   "si4lgl": {
@@ -4503,8 +4503,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "+8 Minion Health per Intelligence",
-      "4% increased Minion Damage per Intelligence"
+      "+8 Minion Health per player Intelligence",
+      "4% increased Minion Damage per player Intelligence"
     ],
     "minionList": [
       "SummonedSkeletonMage"
@@ -4526,8 +4526,8 @@
       "base_skill_effect_duration": 210
     },
     "baseMods": [
-      "4% increased Damage per Attunement",
-      "4% Increased Healing Effectiveness per Attunement"
+      "4% increased Damage per player Attunement",
+      "4% Increased Healing Effectiveness per player Attunement"
     ]
   },
   "smbmb": {
@@ -4562,7 +4562,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "so35a": {
@@ -4581,7 +4581,7 @@
       "base_skill_effect_duration": 1000
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "sp5g2": {
@@ -4596,7 +4596,7 @@
       "base_skill_effect_duration": 400
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "sp38": {
@@ -4611,9 +4611,9 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+8 Minion Health per Attunement",
-      "4% increased Minion Damage per Attunement",
-      "4% Minion Increased Healing Effectiveness per Attunement"
+      "+8 Minion Health per player Attunement",
+      "4% increased Minion Damage per player Attunement",
+      "4% Minion Increased Healing Effectiveness per player Attunement"
     ],
     "minionList": [
       "Spriggan"
@@ -4637,7 +4637,7 @@
       "cooldown": 4.50045
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "srk21": {
@@ -4657,7 +4657,7 @@
       "base_skill_effect_duration": 350
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "srtor": {
@@ -4672,8 +4672,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+12 Minion Health per Strength",
-      "4% increased Minion Damage per Strength"
+      "+12 Minion Health per player Strength",
+      "4% increased Minion Damage per player Strength"
     ],
     "minionList": [
       "Summon_Raptor"
@@ -4691,10 +4691,10 @@
       "base_skill_effect_duration": 250
     },
     "baseMods": [
-      "4% increased Melee Damage per Dexterity",
-      "+1 Melee Cold Damage per Dexterity",
-      "4% increased Cold Damage per Intelligence",
-      "+4% Freeze Rate Multiplier per Intelligence"
+      "4% increased Melee Damage per player Dexterity",
+      "+1 Melee Cold Damage per player Dexterity",
+      "4% increased Cold Damage per player Intelligence",
+      "+4% Freeze Rate Multiplier per player Intelligence"
     ]
   },
   "ss37kl": {
@@ -4708,8 +4708,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "+8 Minion Health per Intelligence",
-      "4% increased Minion Damage per Intelligence"
+      "+8 Minion Health per player Intelligence",
+      "4% increased Minion Damage per player Intelligence"
     ],
     "minionList": [
       "SummonedSkeleton",
@@ -4728,10 +4728,10 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+10 Minion Health per Attunement",
-      "4% increased Minion Damage per Attunement",
-      "+10 Minion Health per Strength",
-      "4% increased Minion Damage per Strength"
+      "+10 Minion Health per player Attunement",
+      "4% increased Minion Damage per player Attunement",
+      "+10 Minion Health per player Strength",
+      "4% increased Minion Damage per player Strength"
     ],
     "minionList": [
       "StormCrow"
@@ -4755,7 +4755,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "st31et": {
@@ -4776,9 +4776,9 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Dexterity",
-      "+4% Chance to Poison on Melee Hit per Dexterity"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Dexterity",
+      "+4% Chance to Poison on Melee Hit per player Dexterity"
     ]
   },
   "st31io": {
@@ -4798,8 +4798,8 @@
       "base_skill_effect_duration": 10000
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "st38ml": {
@@ -4814,8 +4814,8 @@
       "cooldown": 3.0003002
     },
     "baseMods": [
-      "+6 Minion Health per Attunement",
-      "4% increased Minion Damage per Attunement"
+      "+6 Minion Health per player Attunement",
+      "4% increased Minion Damage per player Attunement"
     ],
     "minionList": [
       "StormTotem"
@@ -4838,7 +4838,7 @@
       "cooldown": 4
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "su5g3": {
@@ -4859,8 +4859,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "4% increased Damage per Intelligence",
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Intelligence",
+      "4% increased Damage per player Dexterity"
     ]
   },
   "svz81": {
@@ -4874,8 +4874,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "+10 Minion Health per Intelligence",
-      "4% increased Minion Damage per Intelligence"
+      "+10 Minion Health per player Intelligence",
+      "4% increased Minion Damage per player Intelligence"
     ],
     "minionList": [
       "SummonedVolatileZombie"
@@ -4893,7 +4893,7 @@
       "cooldown": 18.00018
     },
     "baseMods": [
-      "+2% Mana Efficiency per Intelligence"
+      "+2% Mana Efficiency per player Intelligence"
     ]
   },
   "sw42ih": {
@@ -4907,8 +4907,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "+3 Minion Health per Intelligence",
-      "4% increased Minion Damage per Intelligence"
+      "+3 Minion Health per player Intelligence",
+      "4% increased Minion Damage per player Intelligence"
     ],
     "minionList": [
       "SummonedWraith"
@@ -4931,7 +4931,7 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "sync5": {
@@ -4952,7 +4952,7 @@
       "cooldown": 1
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "tb47": {
@@ -4972,8 +4972,8 @@
       "base_skill_effect_duration": 650
     },
     "baseMods": [
-      "4% increased Damage per Attunement",
-      "+4% Freeze Rate Multiplier per Attunement"
+      "4% increased Damage per player Attunement",
+      "+4% Freeze Rate Multiplier per player Attunement"
     ]
   },
   "te44": {
@@ -4988,7 +4988,7 @@
       "cooldown": 5
     },
     "baseMods": [
-      "+2% Mana Efficiency per Intelligence"
+      "+2% Mana Efficiency per player Intelligence"
     ]
   },
   "th39": {
@@ -5002,8 +5002,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "+6 Minion Health per Attunement",
-      "4% increased Minion Damage per Attunement"
+      "+6 Minion Health per player Attunement",
+      "4% increased Minion Damage per player Attunement"
     ],
     "minionList": [
       "Thorn Totem"
@@ -5026,7 +5026,7 @@
       "damage_interval": 400
     },
     "baseMods": [
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Attunement"
     ]
   },
   "ts50pl": {
@@ -5046,7 +5046,7 @@
       "cooldown": 5
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "ts85i": {
@@ -5066,8 +5066,8 @@
       "base_skill_effect_duration": 10
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement"
     ]
   },
   "ub5d9": {
@@ -5087,7 +5087,7 @@
       "base_skill_effect_duration": 350
     },
     "baseMods": [
-      "4% increased Damage per Dexterity"
+      "4% increased Damage per player Dexterity"
     ]
   },
   "uph41": {
@@ -5107,8 +5107,8 @@
       "base_skill_effect_duration": 600
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Attunement"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Attunement"
     ]
   },
   "v01cv": {
@@ -5129,8 +5129,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "4% increased Damage per Strength",
-      "4% increased Damage per Vitality"
+      "4% increased Damage per player Strength",
+      "4% increased Damage per player Vitality"
     ]
   },
   "va53st": {
@@ -5150,7 +5150,7 @@
       "base_skill_effect_duration": 1000000
     },
     "baseMods": [
-      "4% increased Damage per Strength"
+      "4% increased Damage per player Strength"
     ]
   },
   "vm53dx": {
@@ -5179,7 +5179,7 @@
       "cooldown": 3.030303
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   },
   "vr53sl": {
@@ -5200,8 +5200,8 @@
       "cooldown": 6
     },
     "baseMods": [
-      "4% increased Melee Damage per Strength",
-      "+2 Spell Void Damage per Vitality"
+      "4% increased Melee Damage per player Strength",
+      "+2 Spell Void Damage per player Vitality"
     ]
   },
   "wb8fo": {
@@ -5224,7 +5224,7 @@
       "cooldown": 18.018019
     },
     "baseMods": [
-      "+2% Mana Efficiency per Attunement"
+      "+2% Mana Efficiency per player Attunement"
     ]
   },
   "wo42": {
@@ -5239,8 +5239,8 @@
       "cooldown": 4
     },
     "baseMods": [
-      "+12 Minion Health per Strength",
-      "4% increased Minion Damage per Strength"
+      "+12 Minion Health per player Strength",
+      "4% increased Minion Damage per player Strength"
     ],
     "minionList": [
       "PrimalWolf"
@@ -5264,7 +5264,7 @@
       "cooldown": 13.000013
     },
     "baseMods": [
-      "4% increased Damage per Intelligence"
+      "4% increased Damage per player Intelligence"
     ]
   }
 }
