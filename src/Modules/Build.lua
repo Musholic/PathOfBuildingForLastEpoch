@@ -809,6 +809,20 @@ function buildMode:ReadLeToolsSave(saveContent)
 				end
 			end
 		end
+		if itemData.sealedAffix then
+			local affixData = itemData.sealedAffix;
+			local affixId = data.LETools_affixes[affixData.id]
+			if affixId then
+				local affixTier = affixData.tier - 1
+				local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+				if modData then
+					local mod = modData[1]
+					local range = (affixData.r or 128) / 256.0
+					-- TODO: handle sealed affixes. Make use of "Prefix:" and "Suffix:"
+					table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
+				end
+			end
+		end
 
 		local foundItemBase = data.itemBases[itemName]
 		if not foundItemBase then
