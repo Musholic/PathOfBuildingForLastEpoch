@@ -271,12 +271,12 @@ function calcs.defence(env, actor)
 	output.ActionSpeedMod = calcs.actionSpeedMod(actor)
 	
 	-- Armour defence types for conditionals
-	for _, slot in pairs({"Helmet","Gloves","Boots","Body Armour","Weapon 2","Weapon 3"}) do
+	for _, slot in pairs({"Helmet","Gloves","Boots","Body Armor","Weapon 2","Weapon 3"}) do
 		local armourData = actor.itemList[slot] and actor.itemList[slot].armourData
 		if armourData then
 			wardBase = armourData.Ward or 0
 			if wardBase > 0 then
-				if slot == "Body Armour" and modDB:Flag(nil, "DoubleBodyArmourDefence") then
+				if slot == "Body Armor" and modDB:Flag(nil, "DoubleBodyArmourDefence") then
 					wardBase = wardBase * 2
 				end
 				output["WardOn"..slot] = wardBase
@@ -570,7 +570,7 @@ function calcs.defence(env, actor)
 		local gearArmour = 0
 		local gearEvasion = 0
 		local slotCfg = wipeTable(tempTable1)
-		for _, slot in pairs({"Helmet","Gloves","Boots","Body Armour","Weapon 2","Weapon 3"}) do
+		for _, slot in pairs({"Helmet","Gloves","Boots","Body Armor","Weapon 2","Weapon 3"}) do
 			local armourData = actor.itemList[slot] and actor.itemList[slot].armourData
 			if armourData then
 				slotCfg.slotName = slot

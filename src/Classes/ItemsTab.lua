@@ -30,7 +30,7 @@ local socketDropList = {
 	{ label = colorCodes.SCION.."W", color = "W" }
 }
 
-local baseSlots = { "Weapon 1", "Weapon 2", "Helmet", "Body Armour", "Gloves", "Boots", "Amulet", "Ring 1", "Ring 2", "Belt", "Relic" }
+local baseSlots = { "Weapon 1", "Weapon 2", "Helmet", "Body Armor", "Gloves", "Boots", "Amulet", "Ring 1", "Ring 2", "Belt", "Relic" }
 
 for i = 1, 20 do
 	table.insert(baseSlots, "Idol " .. i)

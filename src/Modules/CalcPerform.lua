@@ -167,7 +167,7 @@ local function doActorAttribsConditions(env, actor)
 			condList["UsingTwoHandedWeapon"] = true
 		end
 	end
-	local armourSlots = { "Helmet", "Body Armour", "Gloves", "Boots" }
+	local armourSlots = { "Helmet", "Body Armor", "Gloves", "Boots" }
 	for _, slotName in ipairs(armourSlots) do
 		if actor.itemList[slotName] then
 			condList["Using"..slotName] = true
@@ -1252,7 +1252,7 @@ function calcs.perform(env, fullDPSSkipEHP)
 		local energyShieldBase
 		local tempTable1 = { }
 		local slotCfg = wipeTable(tempTable1)
-		for _, slot in pairs({"Helmet","Gloves","Boots","Body Armour","Weapon 2","Weapon 3"}) do
+		for _, slot in pairs({"Helmet","Gloves","Boots","Body Armor","Weapon 2","Weapon 3"}) do
 			local armourData = env.player.itemList[slot] and env.player.itemList[slot].armourData
 			if armourData then
 				slotCfg.slotName = slot
