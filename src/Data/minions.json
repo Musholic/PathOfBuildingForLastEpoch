@@ -124,6 +124,31 @@
     "name": "SummonedBoneGolem",
     "life": "400"
   },
+  "SummonedSkeleton": {
+    "skillList": [
+      "BasicEnemyMelee",
+      "DeathSlash"
+    ],
+    "modList": [],
+    "name": "SummonedSkeleton",
+    "life": "100"
+  },
+  "SummonedSkeletonArcher": {
+    "skillList": [
+      "Summon Skeleton Archer Bow Attack"
+    ],
+    "modList": [],
+    "name": "SummonedSkeletonArcher",
+    "life": "100"
+  },
+  "SummonedSkeletonMage": {
+    "skillList": [
+      "Skeletal Mages Necrotic Projectile"
+    ],
+    "modList": [],
+    "name": "SummonedSkeletonMage",
+    "life": "100"
+  },
   "SummonedVolatileZombie": {
     "skillList": [
       "Suicide"

@@ -2321,6 +2321,22 @@
       "critChance": 5
     }
   },
+  "BasicEnemyMelee": {
+    "name": "Melee Attack",
+    "skillTypeTags": 513,
+    "castTime": 1.0909091,
+    "baseFlags": {
+      "melee": true,
+      "attack": true,
+      "hit": true
+    },
+    "stats": {
+      "damageEffectiveness": 1,
+      "melee_base_physical_damage": 18,
+      "base_critical_strike_multiplier_+": 100,
+      "critChance": 5
+    }
+  },
   "Bone Golem 02 Big Slam": {
     "name": "Maul",
     "skillTypeTags": 513,
@@ -2376,6 +2392,23 @@
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "cooldown": 2
+    }
+  },
+  "DeathSlash": {
+    "name": "Death Slash",
+    "skillTypeTags": 545,
+    "castTime": 0.6818182,
+    "baseFlags": {
+      "melee": true,
+      "attack": true,
+      "hit": true
+    },
+    "stats": {
+      "damageEffectiveness": 1,
+      "melee_base_physical_damage": 11,
+      "melee_base_necrotic_damage": 11,
+      "base_critical_strike_multiplier_+": 100,
+      "critChance": 5
     }
   },
   "FrenzyAura": {
@@ -2529,6 +2562,23 @@
       "chance_to_cast_Ailment_Poison_on_hit_%": 200
     }
   },
+  "Skeletal Mages Necrotic Projectile": {
+    "name": "Dread Bolt",
+    "skillTypeTags": 4384,
+    "castTime": 0.90909094,
+    "baseFlags": {
+      "spell": true,
+      "hit": true
+    },
+    "stats": {
+      "damage_+%_per_int": 4,
+      "damageEffectiveness": 1.5,
+      "spell_base_necrotic_damage": 30,
+      "base_critical_strike_multiplier_+": 100,
+      "critChance": 5,
+      "chance_to_cast_Ailment_Damned_on_hit_%": 50
+    }
+  },
   "StormCrowLightningBlast": {
     "name": "Lightning Blast",
     "skillTypeTags": 258,
@@ -2553,6 +2603,22 @@
       "spell": true
     },
     "stats": {}
+  },
+  "Summon Skeleton Archer Bow Attack": {
+    "name": "Bow Attack",
+    "skillTypeTags": 2049,
+    "castTime": 1.2727273,
+    "baseFlags": {
+      "projectile": true,
+      "attack": true,
+      "hit": true
+    },
+    "stats": {
+      "damageEffectiveness": 1,
+      "bow_base_physical_damage": 25,
+      "base_critical_strike_multiplier_+": 100,
+      "critChance": 5
+    }
   },
   "ThornTotemAttack": {
     "name": "Mystic Thorns",
@@ -4062,8 +4128,13 @@
     "name": "Summon Skeletal Mage",
     "skillTypeTags": 0,
     "castTime": 0.6818182,
-    "baseFlags": {},
-    "stats": {}
+    "baseFlags": {
+      "minion": true
+    },
+    "stats": {},
+    "minionList": [
+      "SummonedSkeletonMage"
+    ]
   },
   "sm87r4": {
     "name": "Smite",
@@ -4220,8 +4291,14 @@
     "name": "Summon Skeleton",
     "skillTypeTags": 0,
     "castTime": 0.6818182,
-    "baseFlags": {},
-    "stats": {}
+    "baseFlags": {
+      "minion": true
+    },
+    "stats": {},
+    "minionList": [
+      "SummonedSkeleton",
+      "SummonedSkeletonArcher"
+    ]
   },
   "ssc50": {
     "name": "Summon Storm Crows",

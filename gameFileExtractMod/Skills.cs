@@ -161,7 +161,8 @@ namespace PobfleExtractor
             if (summonEntityOnDeath)
             {
                 BaseFlags["minion"] = true;
-                MinionList = [summonEntityOnDeath.ActorReference.name];
+                MinionList ??= [];
+                MinionList.Add(summonEntityOnDeath.ActorReference.name);
             }
 
             var chanceToApplyAilmentsOnHit = ability.abilityPrefab.GetComponent<ChanceToApplyAilmentsOnHit>();
@@ -185,6 +186,14 @@ namespace PobfleExtractor
                 }
             }
 
+            var createRandomAbilityObjectOnDeath = abilityPrefab.GetComponent<CreateRandomAbilityObjectOnDeath>();
+            if (createRandomAbilityObjectOnDeath)
+            {
+                foreach (var possibleAbility in createRandomAbilityObjectOnDeath.possibleAbilities)
+                {
+                    processAbility(possibleAbility);
+                }
+            }
             var createAbilityObjectOnDeath = abilityPrefab.GetComponent<CreateAbilityObjectOnDeath>();
             if (createAbilityObjectOnDeath)
             {
