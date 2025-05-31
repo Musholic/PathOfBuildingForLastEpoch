@@ -2315,13 +2315,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 5,
       "damageEffectiveness": 2,
       "bow_base_physical_damage": 40,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 300
-    }
+    },
+    "baseMods": [
+      "5% increased Attack Speed per Dexterity"
+    ]
   },
   "BasicEnemyMelee": {
     "name": "Melee Attack",
@@ -2350,15 +2352,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 2,
       "melee_base_physical_damage": 40,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10,
       "cooldown": 6
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement"
+    ]
   },
   "Bone Golem 03 Leap Slam": {
     "name": "Maul",
@@ -2370,15 +2374,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 1.75,
       "melee_base_physical_damage": 35,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 350,
       "cooldown": 5
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement"
+    ]
   },
   "Bone Golem Rampage": {
     "name": "Rampage",
@@ -2390,15 +2396,18 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 1.75,
       "melee_base_physical_damage": 35,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10000,
       "cooldown": 2
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement",
+      "+2% Mana Efficiency per Attunement"
+    ]
   },
   "DeathSlash": {
     "name": "Death Slash",
@@ -2524,14 +2533,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1.5,
       "melee_base_physical_damage": 30,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 2000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "RogueFalcon Melee": {
     "name": "Rogue Falcon Melee",
@@ -2594,14 +2605,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.5,
       "spell_base_necrotic_damage": 30,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "chance_to_cast_Ailment_Damned_on_hit_%": 50,
       "base_skill_effect_duration": 1000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "StormCrowLightningBlast": {
     "name": "Lightning Blast",
@@ -2612,13 +2625,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_lightning_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 1500
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "Suicide": {
     "name": "Suicide Explosion",
@@ -2673,13 +2688,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 0.6,
       "spell_base_physical_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 350
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement",
+      "+4% Freeze Rate Multiplier per Attunement"
+    ]
   },
   "Wraith 01 Melee": {
     "name": "Melee Attack",
@@ -2705,9 +2723,10 @@
     "baseFlags": {
       "minion": true
     },
-    "stats": {
-      "damage_+%_per_int": 4
-    },
+    "stats": {},
+    "baseMods": [
+      "4% increased Minion Damage per Intelligence"
+    ],
     "minionList": [
       "SummonedAbomination"
     ]
@@ -2722,14 +2741,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 4,
       "throwing_base_physical_damage": 80,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 800,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "aacfl": {
     "name": "Acid Flask",
@@ -2741,7 +2762,6 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1.25,
       "throwing_base_physical_damage": 25,
       "base_critical_strike_multiplier_+": 100,
@@ -2749,7 +2769,10 @@
       "chance_to_cast_Ailment_Poison_on_hit_%": 100,
       "chance_to_cast_Ailment_ArmourShred_on_hit_%": 100,
       "base_skill_effect_duration": 450
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "ab0lh": {
     "name": "Abyssal Echoes",
@@ -2762,7 +2785,10 @@
       "chance_to_cast_Ailment_AbyssalDecay_on_hit_%": 100,
       "base_skill_effect_duration": 300,
       "cooldown": 2.9994001
-    }
+    },
+    "baseMods": [
+      "+2 Spell Void Damage per Vitality"
+    ]
   },
   "ad0ry": {
     "name": "Aura Of Decay",
@@ -2770,10 +2796,12 @@
     "castTime": 0.6818182,
     "baseFlags": {},
     "stats": {
-      "damage_+%_per_int": 4,
       "chance_to_cast_Ailment_Poison_on_hit_%": 100,
       "cooldown": 1
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "ah443": {
     "name": "Holy Aura",
@@ -2824,14 +2852,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 4,
       "spell_base_physical_damage": 40,
       "spell_base_cold_damage": 40,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 2500
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement",
+      "+4% Freeze Rate Multiplier per Attunement"
+    ]
   },
   "ba1574": {
     "name": "Ballista",
@@ -2841,9 +2872,12 @@
       "minion": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "base_skill_effect_duration": 10
     },
+    "baseMods": [
+      "4% increased Minion Damage per Dexterity",
+      "1% increased Minion Attack Speed per Dexterity"
+    ],
     "minionList": [
       "RogueBallista"
     ]
@@ -2856,10 +2890,12 @@
       "spell": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "chance_to_cast_Ailment_BoneCurse_on_hit_%": 100,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "be36ar": {
     "name": "Summon Bear",
@@ -2872,6 +2908,10 @@
       "base_skill_effect_duration": 10,
       "cooldown": 4
     },
+    "baseMods": [
+      "+20 Minion Health per Strength",
+      "4% increased Minion Damage per Strength"
+    ],
     "minionList": [
       "PrimalBear"
     ]
@@ -2887,6 +2927,10 @@
       "base_skill_effect_duration": 10,
       "cooldown": 10
     },
+    "baseMods": [
+      "+20 Minion Health per Intelligence",
+      "4% increased Minion Damage per Intelligence"
+    ],
     "minionList": [
       "SummonedBoneGolem"
     ]
@@ -2900,7 +2944,6 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.8,
       "dot_can_stack": 1,
       "dot_base_cold_damage": 36,
@@ -2908,7 +2951,10 @@
       "base_skill_effect_duration": 2750,
       "damage_interval": 300,
       "cooldown": 13.999721
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "bp2nk": {
     "name": "Marrow Shards",
@@ -2919,13 +2965,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.1,
       "spell_base_physical_damage": 22,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 766.6666
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "ch0fs": {
     "name": "Chthonic Fissure",
@@ -2936,7 +2984,6 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 0.3,
       "spell_base_fire_damage": 6,
       "spell_base_necrotic_damage": 6,
@@ -2944,7 +2991,10 @@
       "critChance": 5,
       "chance_to_cast_Ailment_Torment_on_hit_%": 100,
       "base_skill_effect_duration": 6000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "ch4bo": {
     "name": "Chaos Bolts",
@@ -2955,14 +3005,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_fire_damage": 10,
       "spell_base_necrotic_damage": 10,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 350
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "cstri": {
     "name": "Cinder Strike",
@@ -2973,9 +3025,11 @@
       "attack": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "dacn33": {
     "name": "Dancing Strikes",
@@ -2987,14 +3041,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1.2,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10000,
       "cooldown": 0.7000002
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "dagg3": {
     "name": "Shadow Cascade",
@@ -3006,13 +3062,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 2,
       "melee_base_physical_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 10,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "db992": {
     "name": "Dive Bomb",
@@ -3024,14 +3082,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 5,
       "melee_base_physical_damage": 100,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 2000,
       "cooldown": 5
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "deeco": {
     "name": "Decoy",
@@ -3043,10 +3103,12 @@
       "minion": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "base_skill_effect_duration": 300,
       "cooldown": 13.999721
     },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ],
     "minionList": [
       "RogueDecoy"
     ]
@@ -3061,13 +3123,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 2,
       "bow_base_lightning_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 300
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "dig5": {
     "name": "Disintegrate",
@@ -3078,7 +3142,6 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.2,
       "dot_can_stack": 1,
       "dot_base_fire_damage": 12,
@@ -3086,7 +3149,10 @@
       "base_critical_strike_multiplier_+": 100,
       "critChance": 50,
       "base_skill_effect_duration": 100000000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "dl73": {
     "name": "Drain Life",
@@ -3097,12 +3163,14 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 0.66,
       "dot_can_stack": 1,
       "dot_base_necrotic_damage": 13.2,
       "base_skill_effect_duration": 100000000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "do5vr": {
     "name": "Devouring Orb",
@@ -3120,7 +3188,10 @@
       "base_skill_effect_duration": 10000,
       "damage_interval": 250,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "+2 Spell Void Damage per Vitality"
+    ]
   },
   "dqv5": {
     "name": "Dark Quiver",
@@ -3133,7 +3204,10 @@
     "stats": {
       "base_skill_effect_duration": 4000,
       "cooldown": 5.9998803
-    }
+    },
+    "baseMods": [
+      "+2% Mana Efficiency per Dexterity"
+    ]
   },
   "ds4d3": {
     "name": "Dread Shade",
@@ -3144,7 +3218,10 @@
     },
     "stats": {
       "base_skill_effect_duration": 999999000
-    }
+    },
+    "baseMods": [
+      "+2% Mana Efficiency per Intelligence"
+    ]
   },
   "ds34l": {
     "name": "Death Seal",
@@ -3155,14 +3232,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 3,
       "spell_base_necrotic_damage": 60,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 5000,
       "cooldown": 5
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "eb5656": {
     "name": "Eterra's Blessing",
@@ -3173,7 +3252,11 @@
     },
     "stats": {
       "base_skill_effect_duration": 4000
-    }
+    },
+    "baseMods": [
+      "5% Increased Healing Effectiveness per Attunement",
+      "+3% Mana Efficiency per Attunement"
+    ]
   },
   "en6": {
     "name": "Elemental Nova",
@@ -3184,7 +3267,6 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.2,
       "spell_base_fire_damage": 8,
       "spell_base_cold_damage": 8,
@@ -3192,7 +3274,10 @@
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "eq5s": {
     "name": "Earthquake",
@@ -3204,14 +3289,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 2,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement"
+    ]
   },
   "er6no": {
     "name": "Entangling Roots",
@@ -3222,13 +3309,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 1,
       "spell_base_physical_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 782
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement"
+    ]
   },
   "es6ai": {
     "name": "Erasing Strike",
@@ -3240,14 +3329,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 6,
       "melee_base_void_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 100,
       "cooldown": 5
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "+2 Spell Void Damage per Vitality"
+    ]
   },
   "ex4tp": {
     "name": "Explosive Trap",
@@ -3259,9 +3351,11 @@
       "spell": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "base_skill_effect_duration": 300
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "exvol8": {
     "name": "Hail of Arrows",
@@ -3273,7 +3367,6 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 0.65,
       "dot_can_stack": 1,
       "bow_base_physical_damage": 2,
@@ -3282,7 +3375,10 @@
       "base_skill_effect_duration": 3500,
       "damage_interval": 200,
       "cooldown": 2
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "f1b4d": {
     "name": "Firebrand",
@@ -3294,14 +3390,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "melee_base_fire_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "falc0": {
     "name": "Falconry",
@@ -3311,9 +3409,11 @@
       "minion": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "base_skill_effect_duration": 10
     },
+    "baseMods": [
+      "4% increased Minion Damage per Dexterity"
+    ],
     "minionList": [
       "RogueFalcon"
     ]
@@ -3327,13 +3427,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_fire_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 400
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "fe8at": {
     "name": "Soul Feast",
@@ -3344,13 +3446,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 2.5,
       "spell_base_necrotic_damage": 50,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 2000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "fi9": {
     "name": "Fireball",
@@ -3361,14 +3465,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.25,
       "spell_base_fire_damage": 25,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "chance_to_cast_Ailment_Ignite_on_hit_%": 40,
       "base_skill_effect_duration": 875
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "fl13": {
     "name": "Fury Leap",
@@ -3380,14 +3486,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 2.5,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10000,
       "cooldown": 5.9988003
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "fl71ds": {
     "name": "Flame Rush",
@@ -3398,7 +3506,6 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 2,
       "None_base_fire_damage": 20,
       "base_critical_strike_multiplier_+": 100,
@@ -3406,7 +3513,10 @@
       "spell_base_fire_damage": 40,
       "base_skill_effect_duration": 3000,
       "cooldown": 3.4999998
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "flur3": {
     "name": "Flurry",
@@ -3418,13 +3528,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 0.8,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 4000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "fr4wl": {
     "name": "Frost Wall",
@@ -3434,12 +3546,14 @@
       "spell": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_cold_damage": 20,
       "chance_to_cast_Ailment_Chill_on_hit_%": 100,
       "base_skill_effect_duration": 6000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "fr11mv": {
     "name": "Flame Reave",
@@ -3451,14 +3565,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 2,
       "melee_base_fire_damage": 16,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 500
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "frc87w": {
     "name": "Frost Claw",
@@ -3469,13 +3585,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_cold_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "fs3e3": {
     "name": "Forge Strike",
@@ -3487,15 +3605,18 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 6,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 200,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement",
+      "+11 Minion Health per Attunement"
+    ]
   },
   "fs11": {
     "name": "Infernal Aura",
@@ -3526,10 +3647,13 @@
       "spell": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "base_skill_effect_duration": 3000,
       "cooldown": 14.999249
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "+1% Mana Efficiency per Intelligence"
+    ]
   },
   "ga2st": {
     "name": "Gathering Storm",
@@ -3541,13 +3665,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 1,
       "melee_base_lightning_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Melee Damage per Strength",
+      "+1 Spell Damage per Attunement"
+    ]
   },
   "gh0fl": {
     "name": "Ghostflame",
@@ -3558,7 +3685,6 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.75,
       "dot_can_stack": 1,
       "dot_base_fire_damage": 17.5,
@@ -3566,7 +3692,10 @@
       "base_critical_strike_multiplier_+": 100,
       "critChance": 50,
       "base_skill_effect_duration": 100000000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "gl14": {
     "name": "Glacier",
@@ -3577,13 +3706,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_cold_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 3000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "+4% Freeze Rate Multiplier per Intelligence"
+    ]
   },
   "golemMelee": {
     "name": "Melee Attack",
@@ -3612,13 +3744,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 1.25,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "gy2dm": {
     "name": "Glyph of Dominion",
@@ -3630,7 +3764,6 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 2,
       "dot_can_stack": 1,
       "dot_base_lightning_damage": 7.5,
@@ -3639,7 +3772,10 @@
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 3000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "ha84": {
     "name": "Harvest",
@@ -3651,13 +3787,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 0.7,
       "melee_base_necrotic_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity",
+      "+1 Melee Necrotic Damage per Intelligence"
+    ]
   },
   "hh7pa3": {
     "name": "Healing Hands",
@@ -3669,7 +3808,10 @@
     "stats": {
       "chance_to_cast_Ailment_HealingHandsHealOverTime_on_hit_%": 100,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "5% Increased Healing Effectiveness per Attunement"
+    ]
   },
   "hs18gu": {
     "name": "Hungering Souls",
@@ -3680,14 +3822,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 0.45,
       "spell_base_necrotic_damage": 9,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "chance_to_cast_Ailment_Possess_on_hit_%": 100,
       "base_skill_effect_duration": 2500
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "ht16aw": {
     "name": "Hammer Throw",
@@ -3699,14 +3843,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1.1,
       "throwing_base_physical_damage": 22,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 2500
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "htsk5": {
     "name": "Heartseeker",
@@ -3718,13 +3864,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "bow_base_physical_damage": 20,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "ib5g3": {
     "name": "Ice Barrage",
@@ -3735,14 +3883,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1.2,
       "spell_base_cold_damage": 24,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 6000,
       "cooldown": 3.0003002
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "+4% Freeze Rate Multiplier per Intelligence"
+    ]
   },
   "is40": {
     "name": "Infernal Shade",
@@ -3753,7 +3904,6 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 0.825,
       "dot_can_stack": 1,
       "dot_base_fire_damage": 16.5,
@@ -3761,7 +3911,10 @@
       "critChance": 5,
       "base_skill_effect_duration": 5000,
       "damage_interval": 330
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "is58": {
     "name": "Ice Ward",
@@ -3786,14 +3939,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 2.5,
       "throwing_base_physical_damage": 50,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 370
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "lb23il": {
     "name": "Lightning Blast",
@@ -3804,13 +3959,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_lightning_damage": 21,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 5000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "lu25ng": {
     "name": "Lunge",
@@ -3822,15 +3979,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10100,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "ma6hdr": {
     "name": "Manifest Armor",
@@ -3843,6 +4002,11 @@
       "base_skill_effect_duration": 200,
       "cooldown": 10
     },
+    "baseMods": [
+      "+10 Minion Health per Strength",
+      "+10 Minion Health per Attunement",
+      "4% increased Minion Damage per Attunement"
+    ],
     "minionList": [
       "ManifestedArmor"
     ]
@@ -3856,14 +4020,17 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 0.4,
       "dot_can_stack": 1,
       "dot_base_cold_damage": 8,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 7000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement",
+      "+4% Freeze Rate Multiplier per Attunement"
+    ]
   },
   "md26kh": {
     "name": "Mark For Death",
@@ -3875,7 +4042,10 @@
     "stats": {
       "chance_to_cast_Ailment_MarkedForDeath_on_hit_%": 100,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "+2% Mana Efficiency per Intelligence"
+    ]
   },
   "me27": {
     "name": "Meteor",
@@ -3886,13 +4056,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 9.5,
       "spell_base_fire_damage": 190,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 9000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "mira59": {
     "name": "Lethal Mirage",
@@ -3904,14 +4076,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 50,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 1050,
       "cooldown": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "ms26": {
     "name": "Mana Strike",
@@ -3923,14 +4097,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "melee_base_lightning_damage": 15,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "multis": {
     "name": "Multistrike",
@@ -3942,13 +4118,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 1000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "mush9": {
     "name": "Multishot",
@@ -3960,13 +4138,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1.2,
       "bow_base_physical_damage": 6,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 450
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "ne01t": {
     "name": "Net",
@@ -3979,13 +4159,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "throwing_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 300
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "pa67ju": {
     "name": "Judgement",
@@ -3997,15 +4179,18 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 3.5,
       "melee_base_fire_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 50,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement",
+      "4% Increased Healing Effectiveness per Attunement"
+    ]
   },
   "pr5fm": {
     "name": "Profane Veil",
@@ -4015,13 +4200,15 @@
       "spell": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 0.5,
       "spell_base_necrotic_damage": 10,
       "base_skill_effect_duration": 2050,
       "damage_interval": 250,
       "cooldown": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "pun22": {
     "name": "Puncture",
@@ -4033,14 +4220,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "chance_to_cast_Ailment_Bleed_on_hit_%": 30.000002,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "rb31pl": {
     "name": "Rip Blood",
@@ -4051,13 +4240,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 1,
       "spell_base_physical_damage": 15,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "4% Increased Healing Effectiveness per Intelligence"
+    ]
   },
   "re82ke": {
     "name": "Rebuke",
@@ -4068,13 +4260,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 2,
       "spell_base_physical_damage": 40,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 2000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement"
+    ]
   },
   "rf1azz": {
     "name": "Reaper Form",
@@ -4101,9 +4295,11 @@
       "spell": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "rs31hi": {
     "name": "Ring Of Shields",
@@ -4116,6 +4312,11 @@
       "base_skill_effect_duration": 10,
       "cooldown": 14.992504
     },
+    "baseMods": [
+      "+5 Minion Health per Strength",
+      "+5 Minion Health per Attunement",
+      "4% increased Minion Damage per Attunement"
+    ],
     "minionList": [
       "Manifest Shield"
     ]
@@ -4131,6 +4332,10 @@
       "base_skill_effect_duration": 10,
       "cooldown": 4
     },
+    "baseMods": [
+      "+12 Minion Health per Strength",
+      "4% increased Minion Damage per Strength"
+    ],
     "minionList": [
       "PrimalSabertooth"
     ]
@@ -4145,14 +4350,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 1.5,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10,
       "cooldown": 18
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "sb44eQ": {
     "name": "Enchant Weapon",
@@ -4197,6 +4404,10 @@
       "base_skill_effect_duration": 10,
       "cooldown": 4
     },
+    "baseMods": [
+      "+15 Minion Health per Strength",
+      "4% increased Minion Damage per Strength"
+    ],
     "minionList": [
       "PrimalScorpion"
     ]
@@ -4227,13 +4438,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 2,
       "spell_base_physical_damage": 40,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "sf37": {
     "name": "Summon Frenzy Totem",
@@ -4246,6 +4459,11 @@
       "base_skill_effect_duration": 10,
       "cooldown": 5.999988
     },
+    "baseMods": [
+      "+5 Minion Health per Strength",
+      "+3 Minion Health per Attunement",
+      "1% Increased Frenzy Effect for Minions  per Attunement"
+    ],
     "minionList": [
       "Frenzy Totem"
     ]
@@ -4258,7 +4476,10 @@
     "stats": {
       "base_skill_effect_duration": 1000,
       "cooldown": 3.500175
-    }
+    },
+    "baseMods": [
+      "+2% Mana Efficiency per Dexterity"
+    ]
   },
   "si4lgl": {
     "name": "Symbols of Hope",
@@ -4281,6 +4502,10 @@
     "stats": {
       "base_skill_effect_duration": 10
     },
+    "baseMods": [
+      "+8 Minion Health per Intelligence",
+      "4% increased Minion Damage per Intelligence"
+    ],
     "minionList": [
       "SummonedSkeletonMage"
     ]
@@ -4294,13 +4519,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 1.5,
       "spell_base_fire_damage": 30,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 210
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement",
+      "4% Increased Healing Effectiveness per Attunement"
+    ]
   },
   "smbmb": {
     "name": "Smoke Bomb",
@@ -4327,13 +4555,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 1.25,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "so35a": {
     "name": "Static Orb",
@@ -4344,13 +4574,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 2,
       "spell_base_lightning_damage": 40,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 1000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "sp5g2": {
     "name": "Spirit Plague",
@@ -4360,10 +4592,12 @@
       "spell": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "chance_to_cast_Ailment_SpiritPlague_on_hit_%": 100,
       "base_skill_effect_duration": 400
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "sp38": {
     "name": "Summon Spriggan",
@@ -4376,6 +4610,11 @@
       "base_skill_effect_duration": 10,
       "cooldown": 4
     },
+    "baseMods": [
+      "+8 Minion Health per Attunement",
+      "4% increased Minion Damage per Attunement",
+      "4% Minion Increased Healing Effectiveness per Attunement"
+    ],
     "minionList": [
       "Spriggan"
     ]
@@ -4390,14 +4629,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 100000,
       "cooldown": 4.50045
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "srk21": {
     "name": "Shurikens",
@@ -4409,13 +4650,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1.25,
       "throwing_base_physical_damage": 25,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 350
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "srtor": {
     "name": "Summon Raptor",
@@ -4428,6 +4671,10 @@
       "base_skill_effect_duration": 10,
       "cooldown": 4
     },
+    "baseMods": [
+      "+12 Minion Health per Strength",
+      "4% increased Minion Damage per Strength"
+    ],
     "minionList": [
       "Summon_Raptor"
     ]
@@ -4441,10 +4688,14 @@
       "attack": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
-      "damage_+%_per_int": 4,
       "base_skill_effect_duration": 250
-    }
+    },
+    "baseMods": [
+      "4% increased Melee Damage per Dexterity",
+      "+1 Melee Cold Damage per Dexterity",
+      "4% increased Cold Damage per Intelligence",
+      "+4% Freeze Rate Multiplier per Intelligence"
+    ]
   },
   "ss37kl": {
     "name": "Summon Skeleton",
@@ -4456,6 +4707,10 @@
     "stats": {
       "base_skill_effect_duration": 10
     },
+    "baseMods": [
+      "+8 Minion Health per Intelligence",
+      "4% increased Minion Damage per Intelligence"
+    ],
     "minionList": [
       "SummonedSkeleton",
       "SummonedSkeletonArcher"
@@ -4472,6 +4727,12 @@
       "base_skill_effect_duration": 10,
       "cooldown": 4
     },
+    "baseMods": [
+      "+10 Minion Health per Attunement",
+      "4% increased Minion Damage per Attunement",
+      "+10 Minion Health per Strength",
+      "4% increased Minion Damage per Strength"
+    ],
     "minionList": [
       "StormCrow"
     ]
@@ -4486,14 +4747,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 6,
       "melee_base_physical_damage": 1,
       "melee_base_fire_damage": 1,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "st31et": {
     "name": "Serpent Strike",
@@ -4505,15 +4768,18 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "chance_to_cast_Ailment_Poison_on_hit_%": 140,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Dexterity",
+      "+4% Chance to Poison on Melee Hit per Dexterity"
+    ]
   },
   "st31io": {
     "name": "Shield Throw",
@@ -4525,14 +4791,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 2.25,
       "throwing_base_physical_damage": 45,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "st38ml": {
     "name": "Summon Storm Totem",
@@ -4545,6 +4813,10 @@
       "base_skill_effect_duration": 10,
       "cooldown": 3.0003002
     },
+    "baseMods": [
+      "+6 Minion Health per Attunement",
+      "4% increased Minion Damage per Attunement"
+    ],
     "minionList": [
       "StormTotem"
     ]
@@ -4558,14 +4830,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 2.5,
       "spell_base_lightning_damage": 50,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "su5g3": {
     "name": "Surge",
@@ -4577,15 +4851,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 2,
       "melee_base_lightning_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 2000,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence",
+      "4% increased Damage per Dexterity"
+    ]
   },
   "svz81": {
     "name": "Summon Volatile Zombie",
@@ -4597,6 +4873,10 @@
     "stats": {
       "base_skill_effect_duration": 10
     },
+    "baseMods": [
+      "+10 Minion Health per Intelligence",
+      "4% increased Minion Damage per Intelligence"
+    ],
     "minionList": [
       "SummonedVolatileZombie"
     ]
@@ -4611,7 +4891,10 @@
     "stats": {
       "base_skill_effect_duration": 20,
       "cooldown": 18.00018
-    }
+    },
+    "baseMods": [
+      "+2% Mana Efficiency per Intelligence"
+    ]
   },
   "sw42ih": {
     "name": "Summon Wraith",
@@ -4623,6 +4906,10 @@
     "stats": {
       "base_skill_effect_duration": 10
     },
+    "baseMods": [
+      "+3 Minion Health per Intelligence",
+      "4% increased Minion Damage per Intelligence"
+    ],
     "minionList": [
       "SummonedWraith"
     ]
@@ -4637,13 +4924,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "sync5": {
     "name": "Synchronized Strike",
@@ -4655,14 +4944,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 1,
       "melee_base_physical_damage": 5,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 250,
       "cooldown": 1
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "tb47": {
     "name": "Ice Thorns",
@@ -4673,14 +4964,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 1,
       "spell_base_physical_damage": 9,
       "spell_base_cold_damage": 9,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 650
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement",
+      "+4% Freeze Rate Multiplier per Attunement"
+    ]
   },
   "te44": {
     "name": "Teleport",
@@ -4692,7 +4986,10 @@
     "stats": {
       "base_skill_effect_duration": 50,
       "cooldown": 5
-    }
+    },
+    "baseMods": [
+      "+2% Mana Efficiency per Intelligence"
+    ]
   },
   "th39": {
     "name": "Summon Thorn Totem",
@@ -4704,6 +5001,10 @@
     "stats": {
       "base_skill_effect_duration": 10
     },
+    "baseMods": [
+      "+6 Minion Health per Attunement",
+      "4% increased Minion Damage per Attunement"
+    ],
     "minionList": [
       "Thorn Totem"
     ]
@@ -4717,14 +5018,16 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 0.5,
       "dot_can_stack": 1,
       "dot_base_physical_damage": 10,
       "no_critical_strike_multiplier": 1,
       "base_skill_effect_duration": 4000,
       "damage_interval": 400
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Attunement"
+    ]
   },
   "ts50pl": {
     "name": "Transplant",
@@ -4735,14 +5038,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 2.5,
       "spell_base_physical_damage": 50,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 40,
       "cooldown": 5
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "ts85i": {
     "name": "Tempest Strike",
@@ -4754,14 +5059,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 1,
       "melee_base_cold_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 10
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement"
+    ]
   },
   "ub5d9": {
     "name": "Umbral Blades",
@@ -4773,13 +5080,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_dex": 4,
       "damageEffectiveness": 0.6,
       "throwing_base_physical_damage": 12,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 350
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Dexterity"
+    ]
   },
   "uph41": {
     "name": "Upheaval",
@@ -4791,14 +5100,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_att": 4,
       "damageEffectiveness": 1.5,
       "melee_base_physical_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 600
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Attunement"
+    ]
   },
   "v01cv": {
     "name": "Void Cleave",
@@ -4810,15 +5121,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
-      "damage_+%_per_vit": 4,
       "damageEffectiveness": 4,
       "melee_base_void_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 150,
       "cooldown": 4
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength",
+      "4% increased Damage per Vitality"
+    ]
   },
   "va53st": {
     "name": "Warpath",
@@ -4830,13 +5143,15 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 0.6,
       "melee_base_physical_damage": 1,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 1000000
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Strength"
+    ]
   },
   "vm53dx": {
     "name": "Focus",
@@ -4856,14 +5171,16 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 0.8,
       "spell_base_fire_damage": 16,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 3300,
       "cooldown": 3.030303
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   },
   "vr53sl": {
     "name": "Volatile Reversal",
@@ -4875,14 +5192,17 @@
       "hit": true
     },
     "stats": {
-      "damage_+%_per_str": 4,
       "damageEffectiveness": 2,
       "melee_base_void_damage": 2,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 300,
       "cooldown": 6
-    }
+    },
+    "baseMods": [
+      "4% increased Melee Damage per Strength",
+      "+2 Spell Void Damage per Vitality"
+    ]
   },
   "wb8fo": {
     "name": "Werebear Form",
@@ -4902,7 +5222,10 @@
     "stats": {
       "base_skill_effect_duration": 10,
       "cooldown": 18.018019
-    }
+    },
+    "baseMods": [
+      "+2% Mana Efficiency per Attunement"
+    ]
   },
   "wo42": {
     "name": "Summon Wolf",
@@ -4915,6 +5238,10 @@
       "base_skill_effect_duration": 10,
       "cooldown": 4
     },
+    "baseMods": [
+      "+12 Minion Health per Strength",
+      "4% increased Minion Damage per Strength"
+    ],
     "minionList": [
       "PrimalWolf"
     ]
@@ -4928,7 +5255,6 @@
       "dot": true
     },
     "stats": {
-      "damage_+%_per_int": 4,
       "damageEffectiveness": 0.9,
       "dot_can_stack": 1,
       "dot_base_necrotic_damage": 18,
@@ -4936,6 +5262,9 @@
       "base_skill_effect_duration": 5600,
       "damage_interval": 450,
       "cooldown": 13.000013
-    }
+    },
+    "baseMods": [
+      "4% increased Damage per Intelligence"
+    ]
   }
 }

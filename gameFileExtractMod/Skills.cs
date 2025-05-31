@@ -74,6 +74,7 @@ namespace PobfleExtractor
         public float? CastTime;
         public readonly Dictionary<string, bool> BaseFlags = new();
         public readonly Dictionary<string, float> Stats = new();
+        public readonly List<string> BaseMods;
         public string AltName;
         public readonly List<string> Buffs;
         public List<string> MinionList;
@@ -87,19 +88,23 @@ namespace PobfleExtractor
             {
                 if (attributeScaling.stats.Count > 0)
                 {
-                    var attribute = attributeScaling.attribute switch
-                    {
-                        CoreAttribute.Attribute.Strength => "str",
-                        CoreAttribute.Attribute.Vitality => "vit",
-                        CoreAttribute.Attribute.Intelligence => "int",
-                        CoreAttribute.Attribute.Dexterity => "dex",
-                        CoreAttribute.Attribute.Attunement => "att",
-                        _ => null
-                    };
+                    var attribute = attributeScaling.attribute.ToString();
                     var increasedValue = attributeScaling.stats._items[0].increasedValue;
-                    if (increasedValue > 0)
+                    foreach (var stat in attributeScaling.stats)
                     {
-                        Stats["damage_+%_per_" + attribute] = increasedValue * 100;
+                        var value = stat.addedValue;
+                        var modifierType = BaseStats.ModType.ADDED;
+                        if (value == 0)
+                        {
+                            value = stat.increasedValue;
+                            modifierType = BaseStats.ModType.INCREASED;
+                        }
+
+                        var modLine = Core.GetModLine(stat.property, stat.tags, value, value, stat.specialTag,
+                            modifierType);
+                        modLine += " per " + attribute;
+                        BaseMods ??= [];
+                        BaseMods.Add(modLine);
                     }
                 }
             }
@@ -219,7 +224,9 @@ namespace PobfleExtractor
             {
                 Stats["base_skill_effect_duration"] = destroyAfterDuration.duration * 1000;
             }
-            var repeatedlyDamageEnemiesWithinRadius = ability.abilityPrefab.GetComponent<RepeatedlyDamageEnemiesWithinRadius>();
+
+            var repeatedlyDamageEnemiesWithinRadius =
+                ability.abilityPrefab.GetComponent<RepeatedlyDamageEnemiesWithinRadius>();
             if (repeatedlyDamageEnemiesWithinRadius)
             {
                 Stats["damage_interval"] = repeatedlyDamageEnemiesWithinRadius.damageInterval * 1000;
