@@ -194,6 +194,7 @@ namespace PobfleExtractor
                     processAbility(possibleAbility);
                 }
             }
+
             var createAbilityObjectOnDeath = abilityPrefab.GetComponent<CreateAbilityObjectOnDeath>();
             if (createAbilityObjectOnDeath)
             {
@@ -205,10 +206,23 @@ namespace PobfleExtractor
             {
                 processAbility(castAfterDuration.abilityRef.GetAbility());
             }
+
             var castAtRandomPointAfterDuration = ability.abilityPrefab.GetComponent<CastAtRandomPointAfterDuration>();
             if (castAtRandomPointAfterDuration)
             {
                 processAbility(castAtRandomPointAfterDuration.abilityRef.GetAbility());
+            }
+
+
+            var destroyAfterDuration = ability.abilityPrefab.GetComponent<DestroyAfterDuration>();
+            if (destroyAfterDuration)
+            {
+                Stats["base_skill_effect_duration"] = destroyAfterDuration.duration * 1000;
+            }
+            var repeatedlyDamageEnemiesWithinRadius = ability.abilityPrefab.GetComponent<RepeatedlyDamageEnemiesWithinRadius>();
+            if (repeatedlyDamageEnemiesWithinRadius)
+            {
+                Stats["damage_interval"] = repeatedlyDamageEnemiesWithinRadius.damageInterval * 1000;
             }
         }
 
@@ -225,16 +239,19 @@ namespace PobfleExtractor
             }
 
             var damageTag = tags.ToString();
-            if ((tags & AT.DoT) > 0)
-            {
-                damageTag = "dot";
-                BaseFlags["dot"] = true;
-            }
 
             if ((tags & AT.Spell) > 0)
             {
                 damageTag = "spell";
                 BaseFlags["spell"] = true;
+            }
+
+            if ((tags & AT.DoT) > 0)
+            {
+                damageTag = "dot";
+                BaseFlags["dot"] = true;
+                // We consider that all dots can stack for simplification (until proven otherwise)
+                Stats["dot_can_stack"] = 1;
             }
 
             if ((tags & AT.Melee) > 0)

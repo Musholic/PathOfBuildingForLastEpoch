@@ -13,6 +13,10 @@ local result = {
 	skill("duration", nil),
 	div = 1000,
 },
+["damage_interval"] = {
+	skill("damageInterval", nil),
+	div = 1000,
+},
 ["base_secondary_skill_effect_duration"] = {
 	skill("durationSecondary", nil),
 	div = 1000,

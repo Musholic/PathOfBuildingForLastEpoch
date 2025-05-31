@@ -3070,8 +3070,12 @@ function calcs.offence(env, actor, activeSkill)
 		end
 		if baseVal > 0 or (output[damageType.."Dot"] or 0) > 0 then
 			if skillData.duration then
-				-- Base damage is applied over the given base duration
-				baseVal = baseVal / skillData.duration
+				-- Base damage is applied over the given base duration unless damage_interval is specified
+				if skillData.damageInterval then
+					baseVal = baseVal / skillData.damageInterval
+					else
+					baseVal = baseVal / skillData.duration
+				end
 			end
 			skillFlags.dot = true
 			local effMult = 1
