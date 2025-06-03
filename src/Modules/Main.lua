@@ -21,7 +21,6 @@ LoadModule("Modules/ModTools")
 LoadModule("Modules/ItemTools")
 LoadModule("Modules/CalcTools")
 LoadModule("Modules/BuildSiteTools")
-LoadModule("Modules/DataProcess")
 
 --[[if launch.devMode then
 	for skillName, skill in pairs(data.enchantments.Helmet) do
@@ -69,6 +68,8 @@ function main:Init()
 		-- Load mod cache
 		LoadModule("Data/ModCache", modLib.parseModCache)
 	end
+	-- This needs the mod cache to be loaded
+	LoadModule("Modules/DataProcess")
 
 	if launch.devMode and IsKeyDown("CTRL") and IsKeyDown("SHIFT") then
 		self.allowTreeDownload = true
