@@ -81,9 +81,9 @@ return {
 			"Lightning", DamageTypes),
 	replaceStringInTableByValues(
 			{ label = "Skill Hit Damage", textSize = 12,
-			  { format = "{0:output:TotalMin} to {0:output:TotalMax}", },
+			  {  },
 			},
-			{ format = "{0:output:LightningDamage}",
+			{ format = "{1:output:LightningDamage}",
 			  { breakdown = "Lightning" },
 			  { label = "Conversions", modType = "BASE", cfg = "skill", modName = lightningConvert },
 			},
@@ -200,6 +200,12 @@ return {
 				},
 				{ format = "Physical:" },
 				"Physical", DamageTypesColored),
+	replaceStringInTableByValues(
+			{ label = "Added",
+			  { format = "{0:mod:1}", { modName = "Damage", modType = "BASE", cfg = "dot" }, },
+			},
+			{ format = "{0:mod:1}", { modName = "PhysicalDamage", modType = "BASE", cfg = "dotPhysical" }, } ,
+			"Physical", DamageTypes),
 	replaceStringInTableByValues(
 			{ label = "Total Increased",
 			  { format = "{0:mod:1}%", { modName = "Damage", modType = "INC", cfg = "dot" }, },

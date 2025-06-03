@@ -73,7 +73,7 @@ local function calcDamage(activeSkill, output, cfg, breakdown, damageType, typeF
 		end
 	end
 	if addDmg ~= 0 then
-		addDmg = round(addDmg)
+		addDmg = round(addDmg, 2)
 	end
 
 	local baseDmg = output[damageType.."DamageBase"]
@@ -104,12 +104,12 @@ local function calcDamage(activeSkill, output, cfg, breakdown, damageType, typeF
 			inc = (inc ~= 1 and "x "..inc),
 			more = (more ~= 1 and "x "..more),
 			convSrc = (addDmg ~= 0) and (addDmg .. ""),
-			total = (round(baseDmg * inc * more) + addDmg) .. "",
+			total = (round(baseDmg * inc * more, 2) + addDmg) .. "",
 			convDst = convDst and conversionTable[damageType][convDst] > 0 and s_format("%d%% to %s", conversionTable[damageType][convDst] * 100, convDst),
 		})
 	end
 
-	return 	round(((baseDmg * inc * more) * genericMoreMinDamage + addDmg) * moreMinDamage)
+	return 	round(((baseDmg * inc * more) * genericMoreMinDamage + addDmg) * moreMinDamage, 2)
 end
 
 ---Calculates skill radius
@@ -2453,7 +2453,7 @@ function calcs.offence(env, actor, activeSkill)
 			output[damageTypeMod .."Base"] = baseDmg
 			if breakdown then
 				breakdown[damageType] = { damageTypes = { } }
-				if baseDmg ~= 0 and baseMax ~= 0 then
+				if baseDmg ~= 0 then
 					t_insert(breakdown[damageType], "Base damage:")
 					local plus = ""
 					if (source[damageTypeMod] or 0) ~= 0 then
@@ -3031,27 +3031,6 @@ function calcs.offence(env, actor, activeSkill)
 		keywordFlags = band(skillCfg.keywordFlags, bnot(KeywordFlag.Hit)),
 		groupSource = skillCfg.groupSource
 	}
-	if bor(dotCfg.flags, ModFlag.Area) == dotCfg.flags and not skillData.dotIsArea then
-		dotCfg.flags = band(dotCfg.flags, bnot(ModFlag.Area))
-	end
-	if bor(dotCfg.flags, ModFlag.Projectile) == dotCfg.flags and not skillData.dotIsProjectile then
-		dotCfg.flags = band(dotCfg.flags, bnot(ModFlag.Projectile))
-	end
-	if bor(dotCfg.flags, ModFlag.Spell) == dotCfg.flags and not skillData.dotIsSpell then
-		dotCfg.flags = band(dotCfg.flags, bnot(ModFlag.Spell))
-	end
-	if bor(dotCfg.flags, ModFlag.Attack) == dotCfg.flags and not skillData.dotIsAttack then
-		dotCfg.flags = band(dotCfg.flags, bnot(ModFlag.Attack))
-	end
-	if bor(dotCfg.flags, ModFlag.Hit) == dotCfg.flags and not skillData.dotIsHit then
-		dotCfg.flags = band(dotCfg.flags, bnot(ModFlag.Hit))
-	end
-
-	-- spell_damage_modifiers_apply_to_skill_dot does not apply to enemy damage taken
-	local dotTakenCfg = copyTable(dotCfg, true)
-	if (skillData.dotIsSpell) then
-		dotTakenCfg.flags = band(dotTakenCfg.flags, bnot(ModFlag.Spell))
-	end
 
 	activeSkill.dotCfg = dotCfg
 	output.TotalDotInstance = 0
@@ -3069,12 +3048,20 @@ function calcs.offence(env, actor, activeSkill)
 			baseVal = 0
 		end
 		if baseVal > 0 or (output[damageType.."Dot"] or 0) > 0 then
+			local damageTypeMod = damageType.."Dot"
+			local typeAddedDmg = skillModList:Sum("BASE", dotTypeCfg, damageType.."Damage")
+			local allAddedDmg = skillModList:Sum("BASE", dotTypeCfg, "Damage")
+			local addedDmg = typeAddedDmg + allAddedDmg
+			local damageEffectiveness = activeSkill.activeEffect.grantedEffect.stats.damageEffectiveness or skillData.damageEffectiveness or 1
+			local baseDmg = baseVal + addedDmg * damageEffectiveness
+			-- TODO: add breakdown / refactor with hits
+			output[damageTypeMod .."Base"] = baseDmg
 			if skillData.duration then
 				-- Base damage is applied over the given base duration unless damage_interval is specified
 				if skillData.damageInterval then
-					baseVal = baseVal / skillData.damageInterval
-					else
-					baseVal = baseVal / skillData.duration
+					baseVal = baseDmg / skillData.damageInterval
+				else
+					baseVal = baseDmg / skillData.duration
 				end
 			end
 			skillFlags.dot = true

@@ -33,6 +33,14 @@ describe("TestModParse", function()
         assert.are.equals(15, math.floor(build.calcsTab.calcsOutput.LifeRegen))
     end)
 
+    it("cooldown recovery", function()
+        build.configTab.input.customMods = "-17% Cooldown Recovery Speed"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+        assert.are.equals(0, build.configTab.modList:Sum("BASE", nil, "CooldownRecovery"))
+        assert.are.equals(-17, build.configTab.modList:Sum("INC", nil, "CooldownRecovery"))
+    end)
+
     it("attributes", function()
         build.configTab.input.customMods = "+2 to All Attributes"
         build.configTab:BuildModList()

@@ -16,10 +16,10 @@ end
 
 -- List of modifier forms
 local formList = {
-	["^+?([%d%.]+)%% increased"] = "INC",
-	["^+?([%d%.]+)%% reduced"] = "RED",
-	["^+?([%d%.]+)%% more"] = "MORE",
-	["^+?([%d%.]+)%% less"] = "LESS",
+	["^([%+%-]?[%d%.]+)%% increased"] = "INC",
+	["^([%+%-]?[%d%.]+)%% reduced"] = "RED",
+	["^([%+%-]?[%d%.]+)%% more"] = "MORE",
+	["^([%+%-]?[%d%.]+)%% less"] = "LESS",
 	["^(%d+)%% faster"] = "INC",
 	["^(%d+)%% slower"] = "RED",
 	["^([%+%-]?[%d%.]+)%%?"] = "BASE",
@@ -1693,9 +1693,9 @@ end
 
 -- List of special modifiers
 local specialQuickFixModList = {
-	["^%+([%d%.]+%%) Damage"] = "%1 more Damage",
-	["^%+([%d%.]+%%) Cast Speed"] = "%1 increased Cast Speed",
-	["^%+([%d%.]+%%) Cooldown Recovery Speed"] = "%1 increased Cooldown Recovery Speed",
+	["([%d%.]+%%) Damage"] = "%1 more Damage",
+	["([%d%.]+%%) Cast Speed"] = "%1 increased Cast Speed",
+	["([%d%.]+%%) Cooldown Recovery Speed"] = "%1 increased Cooldown Recovery Speed",
 }
 
 for _, damageType in ipairs(DamageTypes) do

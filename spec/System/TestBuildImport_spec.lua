@@ -1,4 +1,5 @@
 expose("BuildImport #buildImport", function()
+    -- TODO: update to last version
     it("build import from LETools", function()
         newBuild()
         local jsonFile = io.open("../spec/System/letools_import.json", "r")
@@ -6,7 +7,7 @@ expose("BuildImport #buildImport", function()
         jsonFile:close()
         build:Init(false, "Imported build", importCode)
         runCallback("OnFrame")
-        assert.are.equals(1266, build.calcsTab.calcsOutput.Life)
+        assert.are.equals(1283, build.calcsTab.calcsOutput.Life)
     end)
 
     it("build import from LETools, fireballDps calculation", function()
@@ -19,7 +20,7 @@ expose("BuildImport #buildImport", function()
 
         --TODO: Blessing support
         assert.are.equals("Fireball", build.calcsTab.mainEnv.player.mainSkill.skillCfg.skillName)
-        assert.are.equals(9578, round(build.calcsTab.mainOutput.FullDPS))
+        assert.are.equals(12969, round(build.calcsTab.mainOutput.FullDPS))
     end)
 
     it("build import from LETools, minionDps calculation", function()
@@ -31,6 +32,6 @@ expose("BuildImport #buildImport", function()
         runCallback("OnFrame")
 
         assert.are.equals("Summon Skeletal Mage", build.calcsTab.mainEnv.player.mainSkill.skillCfg.skillName)
-        assert.are.equals(2385, round(build.calcsTab.mainOutput.FullDPS))
+        assert.are.equals(1103, round(build.calcsTab.mainOutput.FullDPS))
     end)
 end)
