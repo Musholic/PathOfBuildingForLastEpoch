@@ -2454,6 +2454,14 @@ function calcs.offence(env, actor, activeSkill)
 			local addedDmg = typeAddedDmg + allAddedDmg
 			local addedMult = calcLib.mod(skillModList, cfg, "Added"..damageType.."Damage", "AddedDamage")
 			local baseDmg = ((source[damageTypeMod] or 0) + (source[damageType.."BonusMin"] or 0)) * baseMultiplier + addedDmg * damageEffectiveness * addedMult
+			if skillFlags.dot then
+				-- Base damage is applied over the given base duration unless damage_interval is specified
+				if skillData.damageInterval then
+					baseDmg = baseDmg / skillData.damageInterval
+				else
+					baseDmg = baseDmg / skillData.duration
+				end
+			end
 			output[damageTypeMod .."Base"] = baseDmg
 			if breakdown then
 				breakdown[damageType] = { damageTypes = { } }
@@ -2474,6 +2482,13 @@ function calcs.offence(env, actor, activeSkill)
 						end
 						if addedMult ~= 1 then
 							t_insert(breakdown[damageType], s_format("x %.2f ^8(added damage multiplier)", addedMult))
+						end
+					end
+					if skillFlags.dot then
+						if skillData.damageInterval then
+							t_insert(breakdown[damageType], s_format("/ %.2f ^8(damage interval)", skillData.damageInterval))
+						else
+							t_insert(breakdown[damageType], s_format("/ %.2f ^8(duration)", skillData.duration))
 						end
 					end
 					t_insert(breakdown[damageType], s_format("= %.1f", baseDmg))
