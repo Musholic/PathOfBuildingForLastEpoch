@@ -1887,6 +1887,10 @@ function calcs.offence(env, actor, activeSkill)
 		output.QuantityMultiplier = quantityMultiplier
 	end
 
+	if skillFlags.duration then
+		output.MaxStacks = round(output.Speed * output.Duration * quantityMultiplier, 2)
+	end
+
 	--Calculate damage (exerts, crits, ruthless, DPS, etc)
 	for _, pass in ipairs(passList) do
 		globalOutput, globalBreakdown = output, breakdown
@@ -2800,15 +2804,10 @@ function calcs.offence(env, actor, activeSkill)
 		-- Calculates DOT stack
 		if skillFlags.dot then
 			output.TotalDPS = output.TotalDPS * output.Duration
-			output.MaxStacks = round(output.Speed * output.Duration * quantityMultiplier, 2)
 			if breakdown then
 				breakdown.MaxStacks = {
 					s_format("%.2f ^8(hits per second)", output.Speed),
 					s_format("x %.2f ^8(skill duration)", output.Duration),
-				}
-				breakdown.TotalDot = {
-					s_format("%.1f ^8(Damage per Instance)", output.AverageDamage),
-					s_format("x %.2f ^8(max stacks)", output.MaxStacks),
 				}
 			end
 		end

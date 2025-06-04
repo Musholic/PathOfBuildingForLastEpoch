@@ -56,7 +56,7 @@ describe("TestSkills #skills", function()
 
         runCallback("OnFrame")
 
-        assert.are.equals(36.18, round(build.calcsTab.mainOutput.WithDotDPS, 2))
+        assert.are.equals(31.02, round(build.calcsTab.mainOutput.TotalDPS, 2))
     end)
 
     it("Test melee skill with weapon attack speed", function()
