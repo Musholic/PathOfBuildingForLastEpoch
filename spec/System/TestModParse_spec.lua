@@ -41,6 +41,14 @@ describe("TestModParse", function()
         assert.are.equals(-17, build.configTab.modList:Sum("INC", nil, "CooldownRecovery"))
     end)
 
+    it("duration", function()
+        build.configTab.input.customMods = "+81% Duration"
+        build.configTab:BuildModList()
+        runCallback("OnFrame")
+        assert.are.equals(0, build.configTab.modList:Sum("BASE", nil, "Duration"))
+        assert.are.equals(81, build.configTab.modList:Sum("INC", nil, "Duration"))
+    end)
+
     it("attributes", function()
         build.configTab.input.customMods = "+2 to All Attributes"
         build.configTab:BuildModList()
