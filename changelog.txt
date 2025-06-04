@@ -1,3 +1,15 @@
+VERSION[0.5.0][2025/06/04]
+
+--- New to Path of Building for Last Epoch ---
+
+Finally updated with game data from season 2 along with several changes:
+
+* Support for minion skills
+* Online character import through https://www.lastepochtools.com/profile/
+* Some fixes on DOT calculation
+* Support of additional abilities and mods
+
+
 VERSION[0.4.0][2024/04/26]
 
 --- New to Path of Building for Last Epoch ---

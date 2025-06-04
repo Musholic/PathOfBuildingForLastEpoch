@@ -1,5 +1,18 @@
 # Changelog
 
+## [v0.5.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.0) (2025/06/04)
+
+[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.4.0...v0.5.0)
+
+## What's Changed
+
+Finally updated with game data from season 2 along with several changes:
+
+* Support for minion skills
+* Online character import through https://www.lastepochtools.com/profile/
+* Some fixes on DOT calculation
+* Support of additional abilities and mods
+
 ## [v0.4.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.4.0) (2024/04/26)
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.3.0...v0.4.0)
