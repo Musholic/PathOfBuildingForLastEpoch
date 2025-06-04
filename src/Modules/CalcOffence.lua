@@ -343,8 +343,8 @@ function calcs.offence(env, actor, activeSkill)
 					output.AreaOfEffectRadiusMetres = output.AreaOfEffectRadius / 10
 					if breakdown then
 						setMoltenStrikeTertiaryRadiusBreakdown(
-							breakdown, skillData.radiusSecondary, baseRadius, skillData.radiusTertiaryLabel,
-							incAreaTertiary, moreAreaTertiary, incSpeedTertiary, moreSpeedTertiary
+								breakdown, skillData.radiusSecondary, baseRadius, skillData.radiusTertiaryLabel,
+								incAreaTertiary, moreAreaTertiary, incSpeedTertiary, moreSpeedTertiary
 						)
 					end
 				else
@@ -1142,7 +1142,7 @@ function calcs.offence(env, actor, activeSkill)
 		if breakdown and timeMod > 0 then
 			breakdown.MineThrowingTime = { }
 			breakdown.multiChain(breakdown.MineThrowingTime, {
-			label = "Throwing time:",
+				label = "Throwing time:",
 				base = { "%.2f ^8(base throwing time)", 1 / (output.MineLayingSpeed * timeMod) },
 				{ "%.2f ^8(total modifier)", timeMod },
 				total = s_format("= %.2f ^8seconds per throw", output.MineLayingTime),
@@ -1463,9 +1463,9 @@ function calcs.offence(env, actor, activeSkill)
 				end
 			elseif val.type == "ES" then
 				local manaType = resource:gsub("ES", "Mana")
-			  	if additionalESCost > 0 then
-			  		val.baseCost = costs[manaType].baseCost
-			  		val.finalBaseCost = val.finalBaseCost + round(costs[manaType].finalBaseCost * additionalESCost)
+				if additionalESCost > 0 then
+					val.baseCost = costs[manaType].baseCost
+					val.finalBaseCost = val.finalBaseCost + round(costs[manaType].finalBaseCost * additionalESCost)
 				end
 			elseif val.type == "Rage" then
 				if skillModList:Flag(skillCfg, "CostRageInsteadOfSouls") then -- Hateforge
@@ -2287,7 +2287,7 @@ function calcs.offence(env, actor, activeSkill)
 					output.PreEffectiveCritChance = 100
 					output.CritChance = 100
 				end
-			--else -- this shouldn't ever be a case but leaving this here if someone wants to implement it
+				--else -- this shouldn't ever be a case but leaving this here if someone wants to implement it
 			end
 		else
 			local critOverride = skillModList:Override(cfg, "CritChance")
@@ -2612,12 +2612,12 @@ function calcs.offence(env, actor, activeSkill)
 						lifeLeech = skillModList:Sum("BASE", cfg, "DamageLifeLeechToPlayer")
 					else
 						if skillModList:Flag(nil, "LifeLeechBasedOnChaosDamage") then
-								if damageType == "Chaos" then
-									lifeLeech = skillModList:Sum("BASE", cfg, "DamageLeech", "DamageLifeLeech", "PhysicalDamageLifeLeech", "LightningDamageLifeLeech", "ColdDamageLifeLeech", "FireDamageLifeLeech", "ChaosDamageLifeLeech", "ElementalDamageLifeLeech") + enemyDB:Sum("BASE", cfg, "SelfDamageLifeLeech") / 100
-								end
-							else
-								lifeLeech = skillModList:Sum("BASE", cfg, "DamageLeech", "DamageLifeLeech", damageType.."DamageLifeLeech", isElemental[damageType] and "ElementalDamageLifeLeech" or nil) + enemyDB:Sum("BASE", cfg, "SelfDamageLifeLeech") / 100
+							if damageType == "Chaos" then
+								lifeLeech = skillModList:Sum("BASE", cfg, "DamageLeech", "DamageLifeLeech", "PhysicalDamageLifeLeech", "LightningDamageLifeLeech", "ColdDamageLifeLeech", "FireDamageLifeLeech", "ChaosDamageLifeLeech", "ElementalDamageLifeLeech") + enemyDB:Sum("BASE", cfg, "SelfDamageLifeLeech") / 100
 							end
+						else
+							lifeLeech = skillModList:Sum("BASE", cfg, "DamageLeech", "DamageLifeLeech", damageType.."DamageLifeLeech", isElemental[damageType] and "ElementalDamageLifeLeech" or nil) + enemyDB:Sum("BASE", cfg, "SelfDamageLifeLeech") / 100
+						end
 						energyShieldLeech = skillModList:Sum("BASE", cfg, "DamageEnergyShieldLeech", damageType.."DamageEnergyShieldLeech", isElemental[damageType] and "ElementalDamageEnergyShieldLeech" or nil) + enemyDB:Sum("BASE", cfg, "SelfDamageEnergyShieldLeech") / 100
 						manaLeech = skillModList:Sum("BASE", cfg, "DamageLeech", "DamageManaLeech", damageType.."DamageManaLeech", isElemental[damageType] and "ElementalDamageManaLeech" or nil) + enemyDB:Sum("BASE", cfg, "SelfDamageManaLeech") / 100
 					end
@@ -3100,8 +3100,8 @@ function calcs.offence(env, actor, activeSkill)
 			end
 		end
 	end
-	if skillModList:Flag(nil, "DotCanStack") then
-		skillFlags.DotCanStack = true
+	-- Calculates DOT stack
+	if skillFlags.dot then
 		local speed = output.Speed
 		output.TotalDot = output.TotalDotInstance * speed * output.Duration * skillData.dpsMultiplier * quantityMultiplier
 		output.TotalDotCalcSection = output.TotalDot
@@ -3123,32 +3123,6 @@ function calcs.offence(env, actor, activeSkill)
 			end
 			t_insert(breakdown.TotalDot, s_format("= %.1f", output.TotalDot))
 		end
-	elseif skillModList:Flag(nil, "dotIsBurningGround") then
-		output.TotalDot = 0
-		output.TotalDotCalcSection = output.TotalDotInstance
-		if not output.BurningGroundDPS or output.BurningGroundDPS < output.TotalDotInstance then
-			output.BurningGroundDPS = m_max(output.BurningGroundDPS or 0, output.TotalDotInstance)
-			output.BurningGroundFromIgnite = false
-		end
-	elseif skillModList:Flag(nil, "dotIsCausticGround") then
-		output.TotalDot = 0
-		output.TotalDotCalcSection = output.TotalDotInstance
-		if not output.CausticGroundDPS or output.CausticGroundDPS < output.TotalDotInstance then
-			output.CausticGroundDPS = m_max(output.CausticGroundDPS or 0, output.TotalDotInstance)
-			output.CausticGroundFromPoison = false
-		end
-	elseif skillModList:Flag(nil, "dotIsCorruptingBlood") then
-		output.TotalDot = 0
-		output.TotalDotCalcSection = output.TotalDotInstance
-		if not output.CorruptingBloodDPS or output.CorruptingBloodDPS < output.TotalDotInstance then
-			output.CorruptingBloodDPS = m_max(output.CorruptingBloodDPS or 0, output.TotalDotInstance)
-		end
-	else
-		if skillModList:Flag(nil, "DotCanStackAsTotems") and skillFlags.totem then
-			skillFlags.DotCanStack = true
-		end
-		output.TotalDot = output.TotalDotInstance
-		output.TotalDotCalcSection = output.TotalDotInstance
 	end
 
 	--Calculates and displays cost per second for skills that don't already have one (link skills)

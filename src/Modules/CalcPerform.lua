@@ -916,7 +916,7 @@ function calcs.perform(env, fullDPSSkipEHP)
 				end
 				cache = GlobalCache.cachedData["CACHE"][uuid]
 				local skillId = activeSkill.activeEffect.grantedEffect.id
-				if cache.Env.player.output.MaxStacks > 0 then
+				if (cache.Env.player.output.MaxStacks or 0) > 0 then
 					modDB:NewMod("Multiplier:" .. skillId .. "Stack", "BASE", cache.Env.player.output.MaxStacks)
 				end
 			end

@@ -257,8 +257,6 @@ namespace PobfleExtractor
             {
                 damageTag = "dot";
                 BaseFlags["dot"] = true;
-                // We consider that all dots can stack for simplification (until proven otherwise)
-                Stats["dot_can_stack"] = 1;
             }
 
             if ((tags & AT.Melee) > 0)
@@ -361,9 +359,6 @@ namespace PobfleExtractor
             }
 
             SetStatsFromDamageData(ailment.baseDamage, ailment.tags);
-
-            // We consider that all ailments can stack for simplification
-            Stats["dot_can_stack"] = 1;
         }
     }
 
