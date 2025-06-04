@@ -666,7 +666,6 @@ function TradeQueryClass:ReduceOutput(output)
 	for _, statTable in ipairs(self.statSortSelectionList) do
 		if statTable.stat == "FullDPS" and GlobalCache.numActiveSkillInFullDPS == 0 then
 			smallOutput.TotalDPS = output.TotalDPS
-			smallOutput.TotalDotDPS = output.TotalDotDPS
 			smallOutput.CombinedDPS = output.CombinedDPS
 		else
 			smallOutput[statTable.stat] = output[statTable.stat]

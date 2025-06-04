@@ -119,7 +119,7 @@ DamageTypesColored = {
 	colorCodes.POISON.."Poison"
 }
 
-DamageSourceTypes = { "Spell", "Melee", "Throwing", "Bow"}
+DamageSourceTypes = { "Spell", "Melee", "Throwing", "Bow", "Dot"}
 
 -- Active skill types
 SkillType = {

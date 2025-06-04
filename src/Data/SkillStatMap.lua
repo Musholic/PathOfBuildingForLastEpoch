@@ -2054,11 +2054,6 @@ for _,sourceType in ipairs(DamageSourceTypes) do
 		}
 	end
 end
-for _,damageType in ipairs(DamageTypes) do
-	result["dot_base_".. damageType:lower() .."_damage"] = {
-		skill(damageType.."Dot", nil),
-	}
-end
 
 for _, attribute in ipairs(Attributes) do
 	result["damage_+%_per_" .. attribute:lower()] = {

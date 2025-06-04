@@ -289,6 +289,7 @@ function calcs.offence(env, actor, activeSkill)
 	else
 		skillFlags.notAverage = true
 	end
+	skillFlags.notAilment = skillFlags.ailment ~= true
 
 	if skillFlags.disable then
 		-- Skill is disabled
@@ -2256,7 +2257,7 @@ function calcs.offence(env, actor, activeSkill)
 		end
 
 		-- Calculate crit chance, crit multiplier, and their combined effect
-		if skillModList:Flag(cfg, "NeverCrit") then
+		if skillModList:Flag(cfg, "NeverCrit") or not skillFlags.hit then
 			output.PreEffectiveCritChance = 0
 			output.CritChance = 0
 			output.CritMultiplier = 0
@@ -2445,6 +2446,9 @@ function calcs.offence(env, actor, activeSkill)
 			local damageTypeMod = damageType.."Damage"
 			local baseMultiplier = activeSkill.activeEffect.grantedEffect.stats.baseMultiplier or skillData.baseMultiplier or 1
 			local damageEffectiveness = activeSkill.activeEffect.grantedEffect.stats.damageEffectiveness or skillData.damageEffectiveness or 1
+			if skillFlags.ailment then
+				damageEffectiveness = 0
+			end
 			local typeAddedDmg = skillModList:Sum("BASE", cfg, damageTypeMod) + enemyDB:Sum("BASE", cfg, "Self".. damageTypeMod)
 			local allAddedDmg = source[damageTypeMod] and skillModList:Sum("BASE", cfg, "Damage") or 0
 			local addedDmg = typeAddedDmg + allAddedDmg
@@ -2463,7 +2467,7 @@ function calcs.offence(env, actor, activeSkill)
 						end
 						plus = "+ "
 					end
-					if addedDmg ~= 0 or addedMax ~= 0 then
+					if addedDmg ~= 0 and not skillFlags.ailment then
 						t_insert(breakdown[damageType], s_format("%s(%d + %d) ^8(added damage, including all types)", plus, typeAddedDmg, allAddedDmg))
 						if damageEffectiveness ~= 1 then
 							t_insert(breakdown[damageType], s_format("x %.2f ^8(damage effectiveness)", damageEffectiveness))
@@ -2499,7 +2503,7 @@ function calcs.offence(env, actor, activeSkill)
 			local noManaLeech = skillModList:Flag(cfg, "CannotLeechMana") or enemyDB:Flag(nil, "CannotLeechManaFromSelf") or skillModList:Flag(cfg, "CannotGainMana")
 			for _, damageType in ipairs(dmgTypeList) do
 				local damageTypeHitAvg = 0
-				if skillFlags.hit and canDeal[damageType] then
+				if canDeal[damageType] then
 					damageTypeHitAvg = calcDamage(activeSkill, output, cfg, pass == 2 and breakdown and breakdown[damageType], damageType, 0)
 					local convMult = activeSkill.conversionTable[damageType].mult
 					if pass == 2 and breakdown then
@@ -2775,7 +2779,25 @@ function calcs.offence(env, actor, activeSkill)
 		local repeatPenalty = skillModList:Flag(nil, "HasSeals") and activeSkill.skillTypes[SkillType.CanRapidFire]  and not skillModList:Flag(nil, "NoRepeatBonuses") and calcLib.mod(skillModList, skillCfg, "SealRepeatPenalty") or 1
 		globalOutput.AverageBurstDamage = output.AverageDamage + output.AverageDamage * (globalOutput.AverageBurstHits - 1) * repeatPenalty or 0
 		globalOutput.ShowBurst = globalOutput.AverageBurstHits > 1
+
 		output.TotalDPS = output.AverageDamage * (globalOutput.HitSpeed or globalOutput.Speed) * skillData.dpsMultiplier * quantityMultiplier
+
+		-- Calculates DOT stack
+		if skillFlags.dot then
+			output.TotalDPS = output.TotalDPS * output.Duration
+			output.MaxStacks = round(output.Speed * output.Duration * quantityMultiplier, 2)
+			if breakdown then
+				breakdown.MaxStacks = {
+					s_format("%.2f ^8(hits per second)", output.Speed),
+					s_format("x %.2f ^8(skill duration)", output.Duration),
+				}
+				breakdown.TotalDot = {
+					s_format("%.1f ^8(Damage per Instance)", output.AverageDamage),
+					s_format("x %.2f ^8(max stacks)", output.MaxStacks),
+				}
+			end
+		end
+
 		if breakdown then
 			if output.CritEffect ~= 1 then
 				breakdown.AverageHit = { }
@@ -2931,6 +2953,11 @@ function calcs.offence(env, actor, activeSkill)
 				s_format("%.1f ^8(average damage)", output.AverageDamage),
 				output.HitSpeed and s_format("x %.2f ^8(hit rate)", output.HitSpeed) or s_format("x %.2f ^8(trigger rate)", output.Speed),
 			}
+		elseif skillFlags.dot then
+			breakdown.TotalDPS = {
+				s_format("%.1f ^8(Damage per Instance)", output.AverageDamage),
+				s_format("x %.2f ^8(max stacks)", output.MaxStacks),
+			}
 		else
 			breakdown.TotalDPS = {
 				s_format("%.1f ^8(average hit)", output.AverageDamage),
@@ -3019,111 +3046,6 @@ function calcs.offence(env, actor, activeSkill)
 	end
 
 	skillFlags.impale = false
-
-	-- Calculate skill DOT components
-	local dotCfg = {
-		skillName = skillCfg.skillName,
-		skillPart = skillCfg.skillPart,
-		skillTypes = skillCfg.skillTypes,
-		slotName = skillCfg.slotName,
-		skillGrantedEffect = skillCfg.skillGrantedEffect,
-		flags = bor(ModFlag.Dot, skillCfg.flags),
-		keywordFlags = band(skillCfg.keywordFlags, bnot(KeywordFlag.Hit)),
-		groupSource = skillCfg.groupSource
-	}
-
-	activeSkill.dotCfg = dotCfg
-	output.TotalDotInstance = 0
-
-	runSkillFunc("preDotFunc")
-
-	for _, damageType in ipairs(dmgTypeList) do
-		local dotTypeCfg = copyTable(dotCfg, true)
-		dotTypeCfg.keywordFlags = bor(dotTypeCfg.keywordFlags, KeywordFlag[damageType.."Dot"])
-		activeSkill["dot"..damageType.."Cfg"] = dotTypeCfg
-		local baseVal
-		if canDeal[damageType] then
-			baseVal = skillData[damageType.."Dot"] or 0
-		else
-			baseVal = 0
-		end
-		if baseVal > 0 or (output[damageType.."Dot"] or 0) > 0 then
-			local damageTypeMod = damageType.."Dot"
-			local typeAddedDmg = skillModList:Sum("BASE", dotTypeCfg, damageType.."Damage")
-			local allAddedDmg = skillModList:Sum("BASE", dotTypeCfg, "Damage")
-			local addedDmg = typeAddedDmg + allAddedDmg
-			local damageEffectiveness = activeSkill.activeEffect.grantedEffect.stats.damageEffectiveness or skillData.damageEffectiveness or 1
-			local baseDmg = baseVal + addedDmg * damageEffectiveness
-			-- TODO: add breakdown / refactor with hits
-			output[damageTypeMod .."Base"] = baseDmg
-			if skillData.duration then
-				-- Base damage is applied over the given base duration unless damage_interval is specified
-				if skillData.damageInterval then
-					baseVal = baseDmg / skillData.damageInterval
-				else
-					baseVal = baseDmg / skillData.duration
-				end
-			end
-			skillFlags.dot = true
-			local effMult = 1
-			if env.mode_effective then
-				local resist = 0
-				local takenInc = enemyDB:Sum("INC", dotTakenCfg, "DamageTaken", "DamageTakenOverTime", damageType.."DamageTaken", damageType.."DamageTakenOverTime") + (isElemental[damageType] and enemyDB:Sum("INC", dotTakenCfg, "ElementalDamageTaken") or 0)
-				local takenMore = enemyDB:More(dotTakenCfg, "DamageTaken", "DamageTakenOverTime", damageType.."DamageTaken", damageType.."DamageTakenOverTime") * (isElemental[damageType] and enemyDB:More(dotTakenCfg, "ElementalDamageTaken") or 1)
-				local pen = skillModList:Sum("BASE", dotCfg, damageType.."Penetration", "Penetration")
-				if damageType == "Physical" then
-					resist = m_max(0, m_min(enemyDB:Sum("BASE", nil, "PhysicalDamageReduction"), data.misc.DamageReductionCap))
-				else
-					resist = calcResistForType(damageType, dotTypeCfg)
-				end
-				effMult = (1 - (resist - pen) / 100) * (1 + takenInc / 100) * takenMore
-				output[damageType.."DotEffMult"] = effMult
-				if breakdown and effMult ~= 1 then
-					local sourceRes = env.modDB:Flag(nil, "Enemy"..damageType.."ResistEqualToYours") and "Your "..damageType.." Resistance" or (env.partyMembers.modDB:Flag(nil, "Enemy"..damageType.."ResistEqualToYours") and "Party Member "..damageType.." Resistance" or damageType)
-					breakdown[damageType.."DotEffMult"] = breakdown.effMult(damageType, resist, pen, takenInc, effMult, takenMore, sourceRes, true)
-				end
-			end
-			local inc = skillModList:Sum("INC", dotTypeCfg, "Damage", damageType.."Damage", isElemental[damageType] and "ElementalDamage" or nil)
-			local more = skillModList:More(dotTypeCfg, "Damage", damageType.."Damage", isElemental[damageType] and "ElementalDamage" or nil)
-			local mult = skillModList:Sum("BASE", dotTypeCfg, "DotMultiplier", damageType.."DotMultiplier")
-			local aura = activeSkill.skillTypes[SkillType.Aura] and not activeSkill.skillTypes[SkillType.RemoteMined] and calcLib.mod(skillModList, dotTypeCfg, "AuraEffect")
-			local total = baseVal * (1 + inc/100) * more * (1 + mult/100) * (aura or 1) * effMult
-			if output[damageType.."Dot"] == 0 or output[damageType.."Dot"] == nil then
-				output[damageType.."Dot"] = total
-				output.TotalDotInstance = m_min(output.TotalDotInstance + total, data.misc.DotDpsCap)
-			else
-				output.TotalDotInstance = m_min(output.TotalDotInstance + total + (output[damageType.."Dot"] or 0), data.misc.DotDpsCap)
-			end
-			if breakdown then
-				breakdown[damageType.."Dot"] = { }
-				breakdown.dot(breakdown[damageType.."Dot"], baseVal, inc, more, mult, nil, aura, effMult, total)
-			end
-		end
-	end
-	-- Calculates DOT stack
-	if skillFlags.dot then
-		local speed = output.Speed
-		output.TotalDot = output.TotalDotInstance * speed * output.Duration * skillData.dpsMultiplier * quantityMultiplier
-		output.TotalDotCalcSection = output.TotalDot
-		output.MaxStacks = round(speed * output.Duration * quantityMultiplier, 2)
-		if breakdown then
-			breakdown.MaxStacks = {
-				s_format("%.2f ^8(hits per second)", speed),
-				s_format("x %.2f ^8(skill duration)", output.Duration),
-			}
-			breakdown.TotalDot = {
-				s_format("%.1f ^8(Damage per Instance)", output.TotalDotInstance),
-				s_format("x %.2f ^8(max stacks)", output.MaxStacks),
-			}
-			if skillData.dpsMultiplier ~= 1 then
-				t_insert(breakdown.TotalDot, s_format("x %g ^8(DPS multiplier for this skill)", skillData.dpsMultiplier))
-			end
-			if quantityMultiplier > 1 then
-				t_insert(breakdown.TotalDot, s_format("x %g ^8(quantity multiplier for this skill)", quantityMultiplier))
-			end
-			t_insert(breakdown.TotalDot, s_format("= %.1f", output.TotalDot))
-		end
-	end
 
 	--Calculates and displays cost per second for skills that don't already have one (link skills)
 	for resource, val in pairs(costs) do
@@ -3328,9 +3250,6 @@ function calcs.offence(env, actor, activeSkill)
 	local baseDPS = output[(skillData.showAverage and "AverageDamage") or "TotalDPS"]
 	output.CombinedDPS = baseDPS
 	output.CombinedAvg = baseDPS
-	if skillFlags.dot then
-		output.WithDotDPS = baseDPS + (output.TotalDot or 0)
-	end
 	if quantityMultiplier > 1 and output.TotalPoisonDPS then
 		output.TotalPoisonDPS = m_min(output.TotalPoisonDPS * quantityMultiplier, data.misc.DotDpsCap)
 	end
@@ -3368,14 +3287,6 @@ function calcs.offence(env, actor, activeSkill)
 		end
 	else
 		output.WithBleedDPS = baseDPS
-	end
-	local TotalDotDPS = (output.TotalDot or 0) + (output.TotalPoisonDPS or 0) + (output.CausticGroundDPS or 0) + (output.TotalIgniteDPS or output.IgniteDPS or 0) + (output.BurningGroundDPS  or 0) + (output.BleedDPS or 0) + (output.CorruptingBloodDPS or 0) + (output.DecayDPS or 0)
-	output.TotalDotDPS = m_min(TotalDotDPS, data.misc.DotDpsCap)
-	if output.TotalDotDPS ~= TotalDotDPS then
-		output.showTotalDotDPS = true
-	end
-	if not skillData.showAverage then
-		output.CombinedDPS = output.CombinedDPS + output.TotalDotDPS
 	end
 	if skillFlags.impale then
 		if skillFlags.attack then

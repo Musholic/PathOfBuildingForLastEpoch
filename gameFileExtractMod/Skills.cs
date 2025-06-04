@@ -223,6 +223,7 @@ namespace PobfleExtractor
             if (destroyAfterDuration)
             {
                 Stats["base_skill_effect_duration"] = destroyAfterDuration.duration * 1000;
+                BaseFlags["duration"] = true;
             }
 
             var repeatedlyDamageEnemiesWithinRadius =
@@ -247,16 +248,15 @@ namespace PobfleExtractor
 
             var damageTag = tags.ToString();
 
-            if ((tags & AT.Spell) > 0)
-            {
-                damageTag = "spell";
-                BaseFlags["spell"] = true;
-            }
-
             if ((tags & AT.DoT) > 0)
             {
                 damageTag = "dot";
                 BaseFlags["dot"] = true;
+            }
+            if ((tags & AT.Spell) > 0)
+            {
+                damageTag = "spell";
+                BaseFlags["spell"] = true;
             }
 
             if ((tags & AT.Melee) > 0)

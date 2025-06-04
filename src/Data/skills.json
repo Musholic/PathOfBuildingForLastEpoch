@@ -6,7 +6,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -22,14 +23,14 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 5000,
       "maximum_stacks": 1,
       "damageEffectiveness": 5,
-      "dot_base_void_damage": 100
+      "spell_base_void_damage": 100
     }
   },
   "Ailment_AcidSkin": {
@@ -459,14 +460,14 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 2000,
       "maximum_stacks": 1,
       "damageEffectiveness": 2,
-      "dot_base_necrotic_damage": 40
+      "spell_base_necrotic_damage": 40
     }
   },
   "Ailment_Chill": {
@@ -696,14 +697,14 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 10000,
       "maximum_stacks": 1,
       "damageEffectiveness": 10,
-      "dot_base_physical_damage": 200
+      "spell_base_physical_damage": 200
     },
     "buffs": [
       "15% more Damage Over Time Taken"
@@ -1400,14 +1401,14 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 1500,
       "maximum_stacks": 1,
       "damageEffectiveness": 1,
-      "dot_base_necrotic_damage": 20
+      "spell_base_necrotic_damage": 20
     }
   },
   "Ailment_Ravage": {
@@ -1416,13 +1417,13 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 6000,
       "maximum_stacks": 1,
-      "dot_base_void_damage": 135
+      "spell_base_void_damage": 135
     }
   },
   "Ailment_Revolution": {
@@ -1851,14 +1852,14 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 3000,
       "maximum_stacks": 1,
       "damageEffectiveness": 4.5,
-      "dot_base_necrotic_damage": 90
+      "spell_base_necrotic_damage": 90
     }
   },
   "Ailment_SpreadingFlames": {
@@ -1881,14 +1882,14 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 3000,
       "maximum_stacks": 0,
       "damageEffectiveness": 1.5,
-      "dot_base_void_damage": 30
+      "spell_base_void_damage": 30
     }
   },
   "Ailment_StackingAspectOfTheSharkVisuals": {
@@ -1960,13 +1961,13 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 30000,
       "maximum_stacks": 10,
-      "dot_base_void_damage": 25
+      "spell_base_void_damage": 25
     },
     "buffs": [
       "1% increased Movement Speed"
@@ -2010,13 +2011,13 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 4000,
       "maximum_stacks": 1,
-      "dot_base_void_damage": 25
+      "spell_base_void_damage": 25
     },
     "buffs": [
       "+3 Melee Cold Damage",
@@ -2060,14 +2061,14 @@
     "baseFlags": {
       "duration": true,
       "ailment": true,
-      "spell": true,
-      "dot": true
+      "dot": true,
+      "spell": true
     },
     "stats": {
       "base_skill_effect_duration": 3000,
       "maximum_stacks": 1,
       "damageEffectiveness": 6,
-      "dot_base_necrotic_damage": 120,
+      "spell_base_necrotic_damage": 120,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5
     },
@@ -2178,7 +2179,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -2198,7 +2200,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2215,7 +2218,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -2237,7 +2241,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.75,
@@ -2259,7 +2264,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.75,
@@ -2282,7 +2288,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2298,7 +2305,8 @@
     "skillTypeTags": 131328,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_Frenzy_on_hit_%": 100,
@@ -2311,7 +2319,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.55,
@@ -2328,7 +2337,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2345,7 +2355,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2362,7 +2373,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2379,7 +2391,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2396,7 +2409,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.5,
@@ -2417,7 +2431,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.5,
@@ -2434,7 +2449,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2451,7 +2467,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -2468,7 +2485,8 @@
     "castTime": 0.90909094,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.5,
@@ -2488,7 +2506,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2506,7 +2525,8 @@
     "skillTypeTags": 257,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -2519,7 +2539,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2535,7 +2556,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.75,
@@ -2551,7 +2573,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.6,
@@ -2572,7 +2595,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2604,7 +2628,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 4,
@@ -2625,7 +2650,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.25,
@@ -2645,7 +2671,8 @@
     "skillTypeTags": 4368,
     "castTime": 0.6363636,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_AbyssalDecay_on_hit_%": 100,
@@ -2674,7 +2701,8 @@
     "skillTypeTags": 131328,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 1000,
@@ -2686,7 +2714,8 @@
     "skillTypeTags": 272,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -2703,7 +2732,7 @@
     },
     "stats": {
       "damageEffectiveness": 0.45000002,
-      "dot_base_lightning_damage": 9,
+      "spell_base_lightning_damage": 9,
       "damage_interval": 450,
       "cooldown": 5
     }
@@ -2714,7 +2743,8 @@
     "castTime": 0.72727275,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 4,
@@ -2734,7 +2764,8 @@
     "skillTypeTags": 0,
     "castTime": 0.54545456,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -2752,7 +2783,8 @@
     "skillTypeTags": 16777473,
     "castTime": 0.45454544,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_BoneCurse_on_hit_%": 100,
@@ -2767,7 +2799,8 @@
     "skillTypeTags": 0,
     "castTime": 1.3636364,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -2786,7 +2819,8 @@
     "skillTypeTags": 0,
     "castTime": 0.6818182,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -2806,11 +2840,12 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.8,
-      "dot_base_cold_damage": 36,
+      "spell_base_cold_damage": 36,
       "no_critical_strike_multiplier": 1,
       "base_skill_effect_duration": 2750,
       "damage_interval": 300,
@@ -2826,7 +2861,8 @@
     "castTime": 0.65604496,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.1,
@@ -2845,7 +2881,8 @@
     "castTime": 0.68181825,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.3,
@@ -2866,7 +2903,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -2886,7 +2924,8 @@
     "castTime": 0.75757575,
     "baseFlags": {
       "melee": true,
-      "attack": true
+      "attack": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -2902,7 +2941,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.2,
@@ -2923,7 +2963,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -2943,7 +2984,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 5,
@@ -2964,7 +3006,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 300,
@@ -2984,7 +3027,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -3003,12 +3047,13 @@
     "castTime": 0.048484847,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.2,
-      "dot_base_fire_damage": 12,
-      "dot_base_lightning_damage": 12,
+      "spell_base_fire_damage": 12,
+      "spell_base_lightning_damage": 12,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 50,
       "base_skill_effect_duration": 100000000
@@ -3023,11 +3068,12 @@
     "castTime": 0.048484847,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.66,
-      "dot_base_necrotic_damage": 13.2,
+      "spell_base_necrotic_damage": 13.2,
       "base_skill_effect_duration": 100000000
     },
     "baseMods": [
@@ -3040,7 +3086,8 @@
     "castTime": 0.59090906,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -3061,7 +3108,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "melee": true,
-      "attack": true
+      "attack": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 4000,
@@ -3076,7 +3124,8 @@
     "skillTypeTags": 131360,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 999999000
@@ -3091,7 +3140,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 3,
@@ -3110,7 +3160,8 @@
     "skillTypeTags": 131328,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 4000
@@ -3126,7 +3177,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.2,
@@ -3148,7 +3200,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -3168,7 +3221,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3188,7 +3242,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 6,
@@ -3210,7 +3265,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 300
@@ -3226,7 +3282,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.65,
@@ -3248,7 +3305,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3267,7 +3325,8 @@
     "skillTypeTags": 0,
     "castTime": 1.3636364,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -3285,7 +3344,8 @@
     "castTime": 0.6818181,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3304,7 +3364,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2.5,
@@ -3323,7 +3384,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.25,
@@ -3344,7 +3406,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2.5,
@@ -3364,7 +3427,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -3386,7 +3450,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.8,
@@ -3404,7 +3469,8 @@
     "skillTypeTags": 4356,
     "castTime": 0.5594406,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3423,7 +3489,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -3443,7 +3510,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3463,7 +3531,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 6,
@@ -3486,11 +3555,11 @@
     "baseFlags": {
       "spell": true,
       "dot": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 3,
-      "dot_base_fire_damage": 5,
       "spell_base_fire_damage": 60,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
@@ -3504,7 +3573,8 @@
     "skillTypeTags": 131336,
     "castTime": 0.3409091,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 3000,
@@ -3522,7 +3592,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3542,12 +3613,13 @@
     "castTime": 0.048484847,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.75,
-      "dot_base_fire_damage": 17.5,
-      "dot_base_necrotic_damage": 17.5,
+      "spell_base_fire_damage": 17.5,
+      "spell_base_necrotic_damage": 17.5,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 50,
       "base_skill_effect_duration": 100000000
@@ -3562,7 +3634,8 @@
     "castTime": 0.76923084,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3583,7 +3656,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.9,
@@ -3600,7 +3674,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.25,
@@ -3620,13 +3695,13 @@
     "baseFlags": {
       "spell": true,
       "dot": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
-      "dot_base_lightning_damage": 7.5,
-      "chance_to_cast_Ailment_Slow_on_hit_%": 100,
       "spell_base_lightning_damage": 40,
+      "chance_to_cast_Ailment_Slow_on_hit_%": 100,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 3000
@@ -3642,7 +3717,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.7,
@@ -3661,7 +3737,8 @@
     "skillTypeTags": 131328,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_HealingHandsHealOverTime_on_hit_%": 100,
@@ -3677,7 +3754,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.45,
@@ -3698,7 +3776,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.1,
@@ -3719,7 +3798,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3738,7 +3818,8 @@
     "castTime": 0.76555026,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.2,
@@ -3759,11 +3840,12 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.825,
-      "dot_base_fire_damage": 16.5,
+      "spell_base_fire_damage": 16.5,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 5000,
@@ -3778,7 +3860,8 @@
     "skillTypeTags": 131332,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_Chill_on_hit_%": 100,
@@ -3793,7 +3876,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2.5,
@@ -3813,7 +3897,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3833,7 +3918,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3853,7 +3939,8 @@
     "skillTypeTags": 0,
     "castTime": 0.6818182,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 200,
@@ -3874,11 +3961,12 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.4,
-      "dot_base_cold_damage": 8,
+      "spell_base_cold_damage": 8,
       "base_critical_strike_multiplier_+": 100,
       "critChance": 5,
       "base_skill_effect_duration": 7000
@@ -3893,7 +3981,8 @@
     "skillTypeTags": 256,
     "castTime": 0.45454544,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_MarkedForDeath_on_hit_%": 100,
@@ -3909,7 +3998,8 @@
     "castTime": 0.7954545,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 9.5,
@@ -3929,7 +4019,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3950,7 +4041,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3971,7 +4063,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -3991,7 +4084,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.2,
@@ -4012,7 +4106,8 @@
       "projectile": true,
       "attack": true,
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4032,7 +4127,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 3.5,
@@ -4053,7 +4149,8 @@
     "skillTypeTags": 4384,
     "castTime": 0.12121212,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.5,
@@ -4073,7 +4170,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4093,7 +4191,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4113,7 +4212,8 @@
     "castTime": 1.4545455,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -4133,7 +4233,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4148,7 +4249,8 @@
     "skillTypeTags": 270,
     "castTime": 0.81818175,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -4162,7 +4264,8 @@
     "skillTypeTags": 0,
     "castTime": 0.6818182,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4182,7 +4285,8 @@
     "skillTypeTags": 0,
     "castTime": 1.3636364,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4203,7 +4307,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.5,
@@ -4221,7 +4326,9 @@
     "name": "Enchant Weapon",
     "skillTypeTags": 131200,
     "castTime": 0.3409091,
-    "baseFlags": {},
+    "baseFlags": {
+      "duration": true
+    },
     "stats": {
       "base_skill_effect_duration": 5000,
       "cooldown": 14.999249
@@ -4235,7 +4342,8 @@
       "melee": true,
       "attack": true,
       "hit": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4253,7 +4361,8 @@
     "skillTypeTags": 0,
     "castTime": 1.3636364,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4273,7 +4382,8 @@
     "castTime": 0.6363636,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4290,7 +4400,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -4308,7 +4419,8 @@
     "skillTypeTags": 0,
     "castTime": 0.54545456,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4327,7 +4439,9 @@
     "name": "Shift",
     "skillTypeTags": 0,
     "castTime": 0.18181819,
-    "baseFlags": {},
+    "baseFlags": {
+      "duration": true
+    },
     "stats": {
       "base_skill_effect_duration": 1000,
       "cooldown": 3.500175
@@ -4352,7 +4466,8 @@
     "skillTypeTags": 0,
     "castTime": 0.6818182,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -4371,7 +4486,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.5,
@@ -4391,7 +4507,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "projectile": true,
-      "attack": true
+      "attack": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_Haste_on_hit_%": 100,
@@ -4407,7 +4524,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.25,
@@ -4426,7 +4544,8 @@
     "castTime": 0.76555026,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -4444,7 +4563,8 @@
     "skillTypeTags": 16781600,
     "castTime": 0.6818182,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "chance_to_cast_Ailment_SpiritPlague_on_hit_%": 100,
@@ -4459,7 +4579,8 @@
     "skillTypeTags": 0,
     "castTime": 1.3636364,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4481,7 +4602,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4502,7 +4624,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.25,
@@ -4520,7 +4643,8 @@
     "skillTypeTags": 0,
     "castTime": 1.3636364,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4540,7 +4664,8 @@
     "castTime": 0.59090906,
     "baseFlags": {
       "melee": true,
-      "attack": true
+      "attack": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 250
@@ -4557,7 +4682,8 @@
     "skillTypeTags": 0,
     "castTime": 0.6818182,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -4576,7 +4702,8 @@
     "skillTypeTags": 0,
     "castTime": 0.6818182,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4599,7 +4726,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 6,
@@ -4620,7 +4748,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4643,7 +4772,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2.25,
@@ -4662,7 +4792,8 @@
     "skillTypeTags": 0,
     "castTime": 0.54545456,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -4682,7 +4813,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2.5,
@@ -4703,7 +4835,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -4723,7 +4856,8 @@
     "skillTypeTags": 0,
     "castTime": 0.72727275,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -4741,7 +4875,8 @@
     "skillTypeTags": 260,
     "castTime": 0.54545456,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 20,
@@ -4756,7 +4891,8 @@
     "skillTypeTags": 0,
     "castTime": 0.61983466,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -4776,7 +4912,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4796,7 +4933,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4816,7 +4954,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4836,7 +4975,8 @@
     "skillTypeTags": 256,
     "castTime": 0.3409091,
     "baseFlags": {
-      "spell": true
+      "spell": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 50,
@@ -4851,7 +4991,8 @@
     "skillTypeTags": 0,
     "castTime": 0.54545456,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10
@@ -4870,11 +5011,12 @@
     "castTime": 0.530303,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.5,
-      "dot_base_physical_damage": 10,
+      "spell_base_physical_damage": 10,
       "no_critical_strike_multiplier": 1,
       "base_skill_effect_duration": 4000,
       "damage_interval": 400
@@ -4889,7 +5031,8 @@
     "castTime": 0.40909088,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2.5,
@@ -4910,7 +5053,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1,
@@ -4931,7 +5075,8 @@
     "baseFlags": {
       "projectile": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.6,
@@ -4951,7 +5096,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 1.5,
@@ -4972,7 +5118,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 4,
@@ -4994,7 +5141,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.6,
@@ -5022,7 +5170,8 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.8,
@@ -5043,7 +5192,8 @@
     "baseFlags": {
       "melee": true,
       "attack": true,
-      "hit": true
+      "hit": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 2,
@@ -5062,7 +5212,9 @@
     "name": "Werebear Form",
     "skillTypeTags": 0,
     "castTime": 0.54545456,
-    "baseFlags": {},
+    "baseFlags": {
+      "duration": true
+    },
     "stats": {
       "base_skill_effect_duration": 10000000,
       "cooldown": 6
@@ -5072,7 +5224,9 @@
     "name": "Warcry",
     "skillTypeTags": 0,
     "castTime": 0.6818182,
-    "baseFlags": {},
+    "baseFlags": {
+      "duration": true
+    },
     "stats": {
       "base_skill_effect_duration": 10,
       "cooldown": 18.018019
@@ -5086,7 +5240,8 @@
     "skillTypeTags": 0,
     "castTime": 1.3636364,
     "baseFlags": {
-      "minion": true
+      "minion": true,
+      "duration": true
     },
     "stats": {
       "base_skill_effect_duration": 10,
@@ -5106,11 +5261,12 @@
     "castTime": 0.6818182,
     "baseFlags": {
       "spell": true,
-      "dot": true
+      "dot": true,
+      "duration": true
     },
     "stats": {
       "damageEffectiveness": 0.9,
-      "dot_base_necrotic_damage": 18,
+      "spell_base_necrotic_damage": 18,
       "no_critical_strike_multiplier": 1,
       "base_skill_effect_duration": 5600,
       "damage_interval": 450,

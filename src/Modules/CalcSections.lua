@@ -40,16 +40,15 @@ local fireConvert = {
 
 -- format {width, id, group, color, subsection:{default hidden, label, data:{}}}
 return {
-{ 3, "HitDamage", 1, colorCodes.OFFENCE, {{ defaultCollapsed = false, label = "Skill Hit Damage", data = {
+{ 3, "HitDamage", 1, colorCodes.OFFENCE, {{ defaultCollapsed = false, label = "Skill Damage", data = {
 	extra = "{output:DisplayDamage}",
-	flag = "hit",
 	colWidth = 95,
 	replaceStringInTableByValues(
 			{{ format = "All Types:", }},
 			{ format = "Physical:" },
 			"Physical", DamageTypesColored),
 	replaceStringInTableByValues(
-			{ label = "Added",
+			{ label = "Added", flag = "notAilment",
 			  { format = "{0:mod:1}", { modName = "Damage", modType = "BASE", cfg = "skill" }, },
 			},
 			{ format = "{0:mod:1,2}",
@@ -112,6 +111,7 @@ return {
 		{ label = "Tvalue Override (ms)", modName = "MultiplierPvpTvalueOverride" },
 		{ label = "PvP Multiplier", cfg = "skill", modName = "PvpDamageMultiplier" },
 	}, },
+	{ label = "Skill Stacks", flag = "dot", { format = "{2:output:MaxStacks}", { breakdown = "MaxStacks" }, }, },
 	{ label = "Skill DPS", flag = "notAverage", notFlag = "triggered", { format = "{1:output:TotalDPS}", { breakdown = "TotalDPS" }, { label = "DPS Multiplier", modName = "DPS" }, }, },
 	{ label = "Skill PvP DPS", flag = "notAveragePvP", { format = "{1:output:PvpTotalDPS}", { breakdown = "PvpTotalDPS" },
 		{ label = "Tvalue Override (ms)", modName = "MultiplierPvpTvalueOverride" },
@@ -188,56 +188,6 @@ return {
 		{ format = "" },
 		{ format = "{2:output:MaxFistOfWarHitEffect}" },
 	},
-} }
-} },
-{ 3, "Dot", 1, colorCodes.OFFENCE, {{ defaultCollapsed = false, label = "Skill Damage over Time", data = {
-	extra = "{1:output:TotalDotCalcSection} total DoT",
-	flag = "dot",
-	colWidth = 95,
-		replaceStringInTableByValues(
-				{
-				  { format = "All Types:", }
-				},
-				{ format = "Physical:" },
-				"Physical", DamageTypesColored),
-	replaceStringInTableByValues(
-			{ label = "Added",
-			  { format = "{0:mod:1}", { modName = "Damage", modType = "BASE", cfg = "dot" }, },
-			},
-			{ format = "{0:mod:1}", { modName = "PhysicalDamage", modType = "BASE", cfg = "dotPhysical" }, } ,
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
-			{ label = "Total Increased",
-			  { format = "{0:mod:1}%", { modName = "Damage", modType = "INC", cfg = "dot" }, },
-			},
-			{ format = "{0:mod:1}%", { modName = "PhysicalDamage", modType = "INC", cfg = "dotPhysical" }, },
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
-			{ label = "Total More",
-			  { format = "{0:mod:1}%", { modName = "Damage", modType = "MORE", cfg = "dot" }, },
-			},
-			{ format = "{0:mod:1}%", { modName = "PhysicalDamage", modType = "MORE", cfg = "dotPhysical" }, },
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
-			{ label = "Total Multiplier",
-			  { format = "{0:mod:1}%", { modName = "DotMultiplier", modType = "BASE", cfg = "dot" }, } },
-			{ format = "{0:mod:1}%", { modName = "PhysicalDotMultiplier", modType = "BASE", cfg = "dotPhysical" }, },
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
-			{ label = "Effective DPS Mod", flag = "effective",
-			  { } },
-			{ format = "x {3:output:PhysicalDotEffMult}",
-			  { breakdown = "PhysicalDotEffMult" },
-			  { label = "Enemy modifiers", modName = { "DamageTaken", "DamageTakenOverTime", "PhysicalDamageTaken", "PhysicalDamageTakenOverTime", "PhysicalDamageReduction" }, enemy = true },
-			},
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
-			{ label = "Damage over Time",
-			  { format = "{1:output:TotalDotInstance}", } },
-			{ format = "{1:output:PhysicalDot}", { breakdown = "PhysicalDot" }, },
-			"Physical", DamageTypes),
-	{ label = "Skill Stacks", { format = "{2:output:MaxStacks}", { breakdown = "MaxStacks" }, }, },
-	{ label = "Skill DoT DPS", { format = "{1:output:TotalDotCalcSection}", { breakdown = "TotalDot" }, }, },
 } }
 } },
 { 1, "Speed", 1, colorCodes.OFFENCE, {{ defaultCollapsed = false, label = "Attack/Cast Rate", data = {

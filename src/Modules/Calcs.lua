@@ -78,7 +78,6 @@ local function getCalculator(build, fullInit, modFunc)
 	local fullDPS = calcs.calcFullDPS(build, "CALCULATOR", {}, { cachedPlayerDB = cachedPlayerDB, cachedEnemyDB = cachedEnemyDB, cachedMinionDB = cachedMinionDB, env = nil })
 	env.player.output.SkillDPS = fullDPS.skills
 	env.player.output.FullDPS = fullDPS.combinedDPS
-	env.player.output.FullDotDPS = fullDPS.TotalDotDPS
 	local baseOutput = env.player.output
 
 	env.modDB.parent = cachedPlayerDB
@@ -104,7 +103,6 @@ local function getCalculator(build, fullInit, modFunc)
 		fullDPS = calcs.calcFullDPS(build, "CALCULATOR", {}, { cachedPlayerDB = cachedPlayerDB, cachedEnemyDB = cachedEnemyDB, cachedMinionDB = cachedMinionDB, env = env})
 		env.player.output.SkillDPS = fullDPS.skills
 		env.player.output.FullDPS = fullDPS.combinedDPS
-		env.player.output.FullDotDPS = fullDPS.TotalDotDPS
 
 		return env.player.output
 	end, baseOutput	
@@ -126,7 +124,6 @@ function calcs.getMiscCalculator(build)
 	local fullDPS = calcs.calcFullDPS(build, "CALCULATOR", {}, { cachedPlayerDB = cachedPlayerDB, cachedEnemyDB = cachedEnemyDB, cachedMinionDB = cachedMinionDB, env = env})
 	env.player.output.SkillDPS = fullDPS.skills
 	env.player.output.FullDPS = fullDPS.combinedDPS
-	env.player.output.FullDotDPS = fullDPS.TotalDotDPS
 
 	local baseOutput = env.player.output
 
@@ -143,7 +140,6 @@ function calcs.getMiscCalculator(build)
 			-- reset cache usage
 			env.player.output.SkillDPS = fullDPS.skills
 			env.player.output.FullDPS = fullDPS.combinedDPS
-			env.player.output.FullDotDPS = fullDPS.TotalDotDPS
 		end
 		return env.player.output
 	end, baseOutput	
@@ -155,7 +151,6 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 
 	local fullDPS = {
 		combinedDPS = 0,
-		TotalDotDPS = 0,
 		skills = { },
 		poisonDPS = 0,
 		causticGroundDPS = 0,
@@ -165,7 +160,6 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 		bleedDPS = 0,
 		corruptingBloodDPS = 0,
 		decayDPS = 0,
-		dotDPS = 0,
 		cullingMulti = 0
 	}
 
@@ -221,9 +215,6 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 				if usedEnv.minion.output.DecayDPS and usedEnv.minion.output.DecayDPS > 0 then
 					fullDPS.decayDPS = fullDPS.decayDPS + usedEnv.minion.output.DecayDPS
 				end
-				if usedEnv.minion.output.TotalDot and usedEnv.minion.output.TotalDot > 0 then
-					fullDPS.dotDPS = fullDPS.dotDPS + usedEnv.minion.output.TotalDot
-				end
 				if usedEnv.minion.output.CullMultiplier and usedEnv.minion.output.CullMultiplier > 1 and usedEnv.minion.output.CullMultiplier > fullDPS.cullingMulti then
 					fullDPS.cullingMulti = usedEnv.minion.output.CullMultiplier
 				end
@@ -257,9 +248,6 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 				if activeSkill.mirage.output.DecayDPS and activeSkill.mirage.output.DecayDPS > 0 then
 					fullDPS.decayDPS = fullDPS.decayDPS + activeSkill.mirage.output.DecayDPS
 				end
-				if activeSkill.mirage.output.TotalDot and activeSkill.mirage.output.TotalDot > 0 and (activeSkill.skillFlags.DotCanStack or (usedEnv.player.output.TotalDot and usedEnv.player.output.TotalDot == 0)) then
-					fullDPS.dotDPS = fullDPS.dotDPS + activeSkill.mirage.output.TotalDot * (activeSkill.skillFlags.DotCanStack and mirageCount or 1)
-				end
 				if activeSkill.mirage.output.CullMultiplier and activeSkill.mirage.output.CullMultiplier > 1 and activeSkill.mirage.output.CullMultiplier > fullDPS.cullingMulti then
 					fullDPS.cullingMulti = activeSkill.mirage.output.CullMultiplier
 				end
@@ -268,11 +256,6 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 			if usedEnv.player.output.TotalDPS and usedEnv.player.output.TotalDPS > 0 then
 				t_insert(fullDPS.skills, { name = activeSkill.activeEffect.grantedEffect.name, dps = usedEnv.player.output.TotalDPS, count = activeSkillCount, trigger = activeSkill.infoTrigger, skillPart = minionName and activeSkill.infoMessage2 or activeSkill.skillPartName })
 				fullDPS.combinedDPS = fullDPS.combinedDPS + usedEnv.player.output.TotalDPS * activeSkillCount
-			end
-			if usedEnv.player.output.TotalDot and usedEnv.player.output.TotalDot > 0 then
-				local count = (activeSkill.skillFlags.DotCanStack and activeSkillCount or 1)
-				t_insert(fullDPS.skills, { name = activeSkill.activeEffect.grantedEffect.name, dps = usedEnv.player.output.TotalDot, count = count, trigger = activeSkill.infoTrigger, skillPart = minionName and activeSkill.infoMessage2 or activeSkill.skillPartName })
-				fullDPS.dotDPS = fullDPS.dotDPS + usedEnv.player.output.TotalDot * count
 			end
 			if usedEnv.player.output.CullMultiplier and usedEnv.player.output.CullMultiplier > 1 and usedEnv.player.output.CullMultiplier > fullDPS.cullingMulti then
 				fullDPS.cullingMulti = usedEnv.player.output.CullMultiplier
@@ -291,12 +274,6 @@ function calcs.calcFullDPS(build, mode, override, specEnv)
 	end
 
 	-- Re-Add ailment DPS components
-	fullDPS.TotalDotDPS = 0
-	if fullDPS.dotDPS > 0 then
-		fullDPS.TotalDotDPS = fullDPS.TotalDotDPS + fullDPS.dotDPS
-	end
-	fullDPS.TotalDotDPS = m_min(fullDPS.TotalDotDPS, data.misc.DotDpsCap)
-	fullDPS.combinedDPS = fullDPS.combinedDPS + fullDPS.TotalDotDPS
 	if fullDPS.cullingMulti > 0 then
 		fullDPS.cullingDPS = fullDPS.combinedDPS * (fullDPS.cullingMulti - 1)
 		t_insert(fullDPS.skills, { name = "Full Culling DPS", dps = fullDPS.cullingDPS, count = 1 })
@@ -334,7 +311,6 @@ function calcs.buildOutput(build, mode)
 	-- Add Full DPS data to main `env`
 	env.player.output.SkillDPS = fullDPS.skills
 	env.player.output.FullDPS = fullDPS.combinedDPS
-	env.player.output.FullDotDPS = fullDPS.TotalDotDPS
 
 	if mode == "MAIN" then
 		for _, skill in ipairs(env.player.activeSkillList) do
