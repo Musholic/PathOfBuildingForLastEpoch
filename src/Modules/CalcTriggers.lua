@@ -819,7 +819,7 @@ local configTable = {
 		end
 
 		-- The triggered skill inherits the source skill mods
-		calcs.mergeSkillInstanceMods(env, env.player.mainSkill.skillModList, source.activeEffect)
+		env.player.mainSkill.skillModList:AddList(source.activeEffect.baseMods)
 		local triggerChance = source.skillModList:Sum("BASE", source.skillCfg, "ChanceToTriggerOnHit_"..env.player.mainSkill.activeEffect.grantedEffect.id)
 		env.player.output.TriggerChance = triggerChance
 		env.player.mainSkill.triggerSourceCfg = source.skillCfg
