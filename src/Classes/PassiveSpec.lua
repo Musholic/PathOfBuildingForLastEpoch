@@ -260,6 +260,10 @@ function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, 
 	end
 
 	if abilities then
+		-- First wipe existing ability selections
+		for index, _ in ipairs(self.build.skillsTab.socketGroupList) do
+			self.build.skillsTab.socketGroupList[index] = nil
+		end
 		for index, skillId in ipairs(abilities) do
 			self.build.skillsTab:SelSkill(index, skillId)
 		end

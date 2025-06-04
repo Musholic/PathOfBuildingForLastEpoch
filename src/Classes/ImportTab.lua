@@ -741,7 +741,6 @@ function ImportTabClass:DownloadItems()
 end
 
 function ImportTabClass:ImportPassiveTreeAndJewels(charData)
-    local mainSkillEmpty = #self.build.skillsTab.socketGroupList == 0
     self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
     self.build.spec:AddUndoState()
     self.build.characterLevel = charData.level
@@ -753,14 +752,14 @@ function ImportTabClass:ImportPassiveTreeAndJewels(charData)
     self.build.configTab:BuildModList()
     self.build.configTab:UpdateControls()
     self.build.buildFlag = true
-    if mainSkillEmpty then
-        local mainSocketGroup = self:GuessMainSocketGroup()
-        if mainSocketGroup then
-            self.build.calcsTab.input.skill_number = mainSocketGroup
-            self.build.mainSocketGroup = mainSocketGroup
-            self.build.skillsTab.socketGroupList[mainSocketGroup].includeInFullDPS = true
-        end
+
+    local mainSocketGroup = self:GuessMainSocketGroup()
+    if mainSocketGroup then
+        self.build.calcsTab.input.skill_number = mainSocketGroup
+        self.build.mainSocketGroup = mainSocketGroup
+        self.build.skillsTab.socketGroupList[mainSocketGroup].includeInFullDPS = true
     end
+
     main:SetWindowTitleSubtext(string.format("%s (%s, %s, %s)", self.build.buildName, charData.name, charData.class, charData.league))
 
     self.charImportStatus = colorCodes.POSITIVE .. "Passive tree successfully imported."
