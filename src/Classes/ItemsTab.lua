@@ -1408,6 +1408,23 @@ function ItemsTabClass:SortItemList()
 	self:AddUndoState()
 end
 
+-- Delete all unused items
+function ItemsTabClass:DeleteUnused()
+	local delList = {}
+	for itemId, item in pairs(self.items) do
+		if not self:GetEquippedSlotForItem(item) then
+			t_insert(delList, itemId)
+		end
+	end
+	-- Delete in reverse order so as to not delete the wrong item whilst deleting
+	for i = #delList, 1, -1 do
+		self:DeleteItem(self.items[delList[i]], true)
+	end
+	self:PopulateSlots()
+	self:AddUndoState()
+	self.build.buildFlag = true
+end
+
 -- Deletes an item
 function ItemsTabClass:DeleteItem(item, deferUndoState)
 	for slotName, slot in pairs(self.slots) do

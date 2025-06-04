@@ -41,19 +41,7 @@ local ItemListClass = newClass("ItemListControl", "ListControl", function(self, 
 		return #self.list > 0
 	end
 	self.controls.deleteUnused = new("ButtonControl", {"RIGHT",self.controls.deleteAll,"LEFT"}, -4, 0, 100, 18, "Delete Unused", function()
-		local delList = {}
-		for _, itemId in pairs(self.list) do
-			if not itemsTab:GetEquippedSlotForItem(itemsTab.items[itemId]) then
-				t_insert(delList, itemId)
-			end
-		end
-		-- Delete in reverse order so as to not delete the wrong item whilst deleting
-		for i = #delList, 1, -1 do
-			itemsTab:DeleteItem(itemsTab.items[delList[i]], true)
-		end
-		itemsTab:PopulateSlots()
-		itemsTab:AddUndoState()
-		itemsTab.build.buildFlag = true
+		self.itemsTab:DeleteUnused()
 	end)
 	self.controls.deleteUnused.enabled = function()
 		return #self.list > 0

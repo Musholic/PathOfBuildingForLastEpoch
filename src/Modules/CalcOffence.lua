@@ -2962,7 +2962,7 @@ function calcs.offence(env, actor, activeSkill)
 				s_format("%.1f ^8(average damage)", output.AverageDamage),
 				output.HitSpeed and s_format("x %.2f ^8(hit rate)", output.HitSpeed) or s_format("x %.2f ^8(attack rate)", output.Speed),
 			}
-		elseif skillData.triggered then
+		elseif skillData.triggered and not skillFlags.dot then
 			breakdown.TotalDPS = {
 				s_format("%.1f ^8(average damage)", output.AverageDamage),
 				output.HitSpeed and s_format("x %.2f ^8(hit rate)", output.HitSpeed) or s_format("x %.2f ^8(trigger rate)", output.Speed),

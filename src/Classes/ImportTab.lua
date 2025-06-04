@@ -168,7 +168,7 @@ You can get this from your web browser's cookies while logged into the Path of E
         return self.charImportMode == "SELECTCHAR"
     end
     self.controls.charImportItemsClearItems = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 120, 0, 18, "Delete equipment:", nil, "Delete all equipped items when importing.", true)
-    self.controls.charImportItemsIgnoreWeaponSwap = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 280, 0, 18, "Ignore weapon swap:", nil, "Ignore items and skills in weapon swap.", false)
+    self.controls.charImportUnusedItemsClearItems = new("CheckBoxControl", { "LEFT", self.controls.charImportItems, "RIGHT" }, 280, 0, 18, "Delete unused items:", nil, "Delete all unused items when importing.", false)
 
     self.controls.charClose = new("ButtonControl", { "TOPLEFT", self.controls.charImportHeader, "BOTTOMLEFT" }, 0, 50, 60, 20, "Close", function()
         self.charImportMode = "GETACCOUNTNAME"
@@ -773,6 +773,9 @@ function ImportTabClass:ImportItemsAndSkills(charData)
                 self.build.itemsTab:DeleteItem(self.build.itemsTab.items[slot.selItemId])
             end
         end
+    end
+    if self.controls.charImportUnusedItemsClearItems.state then
+        self.build.itemsTab:DeleteUnused()
     end
 
     --ConPrintTable(charItemData)
