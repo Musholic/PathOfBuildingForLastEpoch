@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.5.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.0) (2025/06/04)
+
+[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.4.0...v0.5.0)
+
+<!-- Release notes generated using configuration in .github/release.yml at dev -->
+
+
+
+
 ## [v0.4.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.4.0) (2024/04/26)
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.3.0...v0.4.0)
