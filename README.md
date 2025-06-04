@@ -1,6 +1,12 @@
 # Path of Building For Last Epoch
 
-This is a fork of Path Of Building adapted to work for the game **Last Epoch**. The following features are supported (or partially):
+This is a fork of Path Of Building adapted to work for the game **Last Epoch**.
+
+> [!WARNING]
+> This is a Third Party Program, any issues or bugs a player might experience in game related to the use of this program
+> are not the responsibility of EHG and EHG will not be able to assist.
+
+The following features are supported (or partially):
 * Passive tree
 * Character import: for offline character and from LE tools build planner
 * A lot of stats and mods/affixes are not working correctly (either not recognized or not applied correctly)
@@ -23,6 +29,7 @@ For linux, there may be a native support in the future but for now it runs fine 
 
 ## Roadmap
 * Legendary items (for offline import)
+* Web version
 * Blessings support
 * Have a selected skill dps correctly computed
 * Points requirements and constraints in skills and passives
