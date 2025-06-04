@@ -669,7 +669,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                     end
                     local rarity = itemData["data"][6]
                     item["explicitMods"] = {}
-                    if rarity == 7 then
+                    if rarity == 7 or rarity == 9 then
                         item["rarity"] = "UNIQUE"
                         local uniqueID = itemData["data"][12]
                         local uniqueBase = self.build.data.uniques[uniqueID]
@@ -677,6 +677,10 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                         for i, modLine in ipairs(uniqueBase.mods) do
                             local range = itemData["data"][12 + i ] / 256.0
                             table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
+                        end
+                        if rarity == 9 then
+                            local nbMods = itemData["data"][13 + #uniqueBase.mods]
+                            -- TODO
                         end
                     else
                         item["name"] = itemBaseName
