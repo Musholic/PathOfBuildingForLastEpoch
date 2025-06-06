@@ -71,6 +71,10 @@ function itemLib.applyRange(line, range, valueScalar)
 	return line
 end
 
+function itemLib.hasRange(line)
+	return line:find("%(%-?%d+%.?%d*%-%-?%d+%.?%d*%)");
+end
+
 function itemLib.formatModLine(modLine, dbMode)
 	local line = (not dbMode and modLine.range and itemLib.applyRange(modLine.line, modLine.range, modLine.valueScalar)) or modLine.line
 	if line:match("^%+?0%%? ") or (line:match(" %+?0%%? ") and not line:match("0 to [1-9]")) or line:match(" 0%-0 ") or line:match(" 0 to 0 ") then -- Hack to hide 0-value modifiers
