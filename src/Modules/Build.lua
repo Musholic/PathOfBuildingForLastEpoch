@@ -833,14 +833,11 @@ function buildMode:ReadLeToolsSave(saveContent)
 							foundItemBase = itemBase
 						end
 					end
-					local rollIndex = 0
-					for _, modLine in ipairs(uniqueBase.mods) do
+					for i, modLine in ipairs(uniqueBase.mods) do
 						if itemLib.hasRange(modLine) then
-							-- mods that cannot be rolled don't have a roll
-							rollIndex = rollIndex + 1
 							local range = 0.5
 							if itemData['ur'] then
-								range = itemData["ur"][rollIndex] / 256.0
+								range = itemData["ur"][uniqueBase.rollIds[i] + 1] / 256.0
 							end
 							table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
 						else
