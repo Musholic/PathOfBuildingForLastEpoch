@@ -452,7 +452,7 @@ function calcs.initEnv(build, mode, override, specEnv)
 		end
 		modDB.multipliers["Level"] = m_max(1, m_min(100, build.characterLevel))
 		calcs.initModDB(env, modDB)
-		modDB:NewMod("Life", "BASE", 8, "Base", { type = "Multiplier", var = "Level", base = 100 })
+		modDB:NewMod("Life", "BASE", 10, "Base", { type = "Multiplier", var = "Level", base = 100 })
 		modDB:NewMod("LifeRegen", "BASE", 0.14, "Base", { type = "Multiplier", var = "Level", base = 6 })
 		modDB:NewMod("Mana", "BASE", 0.5, "Base", { type = "Multiplier", var = "Level", base = 50 })
 		modDB:NewMod("ManaRegen", "BASE", 8, "Base")
