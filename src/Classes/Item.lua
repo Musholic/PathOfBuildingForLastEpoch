@@ -480,6 +480,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 						end
 					elseif k == "range" then
 						modLine.range = tonumber(val)
+					elseif k == "scalar" then
+						modLine.valueScalar = tonumber(val)
 					elseif k == "rounding" then
 						modLine.rounding = val
 					elseif lineFlags[k] then
@@ -557,22 +559,22 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					foundImplicit = true
 					gameModeStage = "IMPLICIT"
 				end
-				local modScalar = 1;
 				modLine.implicit = modLine.implicit or (not modLine.crafted and #self.implicitModLines < implicitLines)
-				if not modLine.implicit and (self.rarity ~= "UNIQUE" or modLine.crafted) then
-					-- There is no modifier to apply for unique mods
-					modScalar = 1 + self.base.affixEffectModifier
-				end
-				local rangedLine = itemLib.applyRange(line, 1, modScalar, modLine.rounding)
+				local rangedLine = itemLib.applyRange(line, 1, 1)
 				local modList, extra = modLib.parseMod(rangedLine)
 
 				local modLines
+
+				if modLine.implicit or (not modLine.crafted and #self.implicitModLines < implicitLines) then
+					modLines = self.implicitModLines
+				else
 					modLines = self.explicitModLines
+				end
+
 				modLine.line = line
 				if modList then
 					modLine.modList = modList
 					modLine.extra = extra
-					modLine.valueScalar = modScalar
 					modLine.range = modLine.range or main.defaultItemAffixQuality
 					t_insert(modLines, modLine)
 					if mode == "GAME" then
@@ -755,10 +757,13 @@ function ItemClass:BuildRaw()
 	end
 	local function writeModLine(modLine)
 		local line = modLine.line
-		if modLine.rounding then
+		if modLine.rounding and itemLib.hasRange(line) then
 			line = "{rounding:" .. modLine.rounding .. "}" .. line
 		end
-		if modLine.range and line:match("%(%-?[%d%.]+%-%-?[%d%.]+%)") then
+		if modLine.valueScalar then
+			line = "{scalar:" .. round(modLine.scalar, 3) .. "}" .. line
+		end
+		if modLine.range and itemLib.hasRange(line) then
 			line = "{range:" .. round(modLine.range, 3) .. "}" .. line
 		end
 		if modLine.crafted then
@@ -904,7 +909,6 @@ function ItemClass:Craft()
 	self.namePrefix = ""
 	self.nameSuffix = ""
 	self.requirements.level = self.base.req.level
-	local statOrder = { }
 	for _, list in ipairs({self.prefixes,self.suffixes}) do
 		for i = 1, self.affixLimit / 2 do
 			local affix = list[i]
@@ -918,29 +922,13 @@ function ItemClass:Craft()
 				elseif mod.type == "Suffix" then
 					self.nameSuffix = " " .. mod.affix
 				end
-				self.requirements.level = m_max(self.requirements.level or 0, m_floor(mod.level * 0.8))
-				local rangeScalar = getCatalystScalar(self.catalyst, mod.modTags, self.catalystQuality)
-				for i, line in ipairs(mod) do
-					line = itemLib.applyRange(line, affix.range or 0.5, rangeScalar, affix.rounding)
-					local order = mod.statOrder[i]
-					if statOrder[order] then
-						-- Combine stats
-						local start = 1
-						statOrder[order].line = statOrder[order].line:gsub("%d+", function(num)
-							local s, e, other = line:find("(%d+)", start)
-							start = e + 1
-							return tonumber(num) + tonumber(other)
-						end)
-					else
-						local modLine = { line = line, order = order }
-						for l = 1, #self.explicitModLines + 1 do
-							if not self.explicitModLines[l] or self.explicitModLines[l].order > order then
-								t_insert(self.explicitModLines, l, modLine)
-								break
-							end
-						end
-						statOrder[order] = modLine
-					end	
+				for _, line in ipairs(mod) do
+					local modScalar = 1 + self.base.affixEffectModifier
+					if mod.standardAffixEffectModifier then
+						modScalar = modScalar - mod.standardAffixEffectModifier
+					end
+					local modLine = { line = line, range = affix.range, scalar = modScalar }
+					t_insert(self.explicitModLines, modLine)
 				end
 			end
 		end

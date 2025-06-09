@@ -630,11 +630,11 @@ holding Shift will put it in the second.]])
 
 			if priorMod then
 				if flipRange(priorMod, self.displayItem.affixes[drop.list[drop.selIndex].modList[index]]) then
-					range = 1 - range
+					range = 256 - range
 				end
 			elseif nextMod then
 				if flipRange(self.displayItem.affixes[drop.list[drop.selIndex].modList[index]], nextMod) then
-					range = 1 - range
+					range = 256 - range
 				end
 			end
 			return range
@@ -1732,7 +1732,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 	end
 	if control.list[control.selIndex].haveRange then
 		control.slider.divCount = #control.list[control.selIndex].modList
-		control.slider.val = (isValueInArray(control.list[control.selIndex].modList, selAffix) - 1 + (item[outputTable][outputIndex].range or 0.5)) / control.slider.divCount
+		control.slider.val = (isValueInArray(control.list[control.selIndex].modList, selAffix) - 1 + (item[outputTable][outputIndex].range / 256 or 0.5)) / control.slider.divCount
 		if control.slider.divCount == 1 then
 			control.slider.divCount = nil
 		end

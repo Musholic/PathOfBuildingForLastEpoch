@@ -792,16 +792,20 @@ function buildMode:ReadLeToolsSave(saveContent)
 		item["name"] = itemName
 		item["rarity"] = "RARE"
 		item["explicitMods"] = {}
+		item["prefixes"] = {}
+		item["suffixes"] = {}
 
 		for _, affixData in ipairs(itemData["affixes"]) do
 			local affixId = data.LETools_affixes[affixData.id]
 			if affixId then
 				local affixTier = affixData.tier - 1
-				local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
-				if modData then
-					local mod = modData[1]
-					local range = (affixData.r or 128)
-					table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
+				local modId = affixId .. "_" .. affixTier
+				local modData = data.itemMods.Item[modId]
+
+				if modData.type == "Prefix" then
+					table.insert(item.prefixes, { ["range"] = (affixData.r or 128), ["modId"] = modId })
+				else
+					table.insert(item.suffixes, { ["range"] = (affixData.r or 128), ["modId"] = modId })
 				end
 			end
 		end

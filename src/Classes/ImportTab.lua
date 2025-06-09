@@ -947,8 +947,13 @@ function ImportTabClass:BuildItem(itemData)
             end
         end
     end
+    item.prefixes = itemData.prefixes;
+    item.suffixes = itemData.suffixes;
+    item.crafted = true
 
     item:BuildAndParseRaw()
+    -- Craft the item since we only added the prefixes and suffixes and not their mod lines
+    item:Craft()
 
     return item
 end

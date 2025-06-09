@@ -56,9 +56,9 @@ function SliderClass:GetDivVal(val)
 	val = val or self.val
 	if self.divCount and self.divCount > 1 then
 		local divIndex = m_max(m_ceil(val * self.divCount), 1)
-		return divIndex, val * self.divCount - divIndex + 1
+		return divIndex, (val * self.divCount - divIndex + 1) * 256
 	else
-		return 1, val
+		return 1, val * 256
 	end
 end
 
