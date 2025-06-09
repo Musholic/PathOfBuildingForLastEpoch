@@ -21,8 +21,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+5 Armor",
-      "+(10-35) Mana",
-      "(5-25)% increased Spell Damage"
+      "{rounding:Integer}+(10-35) Mana",
+      "{rounding:Integer}(5-25)% increased Spell Damage"
     ]
   },
   "Iron Casque": {
@@ -47,7 +47,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+35 Armor",
-      "(5-15)% increased Health Regen"
+      "{rounding:Integer}(5-15)% increased Health Regen"
     ]
   },
   "Dome Cap": {
@@ -133,7 +133,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+9 Armor",
-      "+(2-3) Spell Damage"
+      "{rounding:Integer}+(2-3) Spell Damage"
     ]
   },
   "Death Mask": {
@@ -236,7 +236,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+28 Armor",
-      "+(6-28) Mana"
+      "{rounding:Integer}+(6-28) Mana"
     ]
   },
   "Temple Veil": {
@@ -249,7 +249,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+35 Armor",
-      "+(3-15) Ward per Second"
+      "{rounding:Integer}+(3-15) Ward per Second"
     ]
   },
   "Lunar Helm": {
@@ -262,7 +262,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+63 Armor",
-      "(9-18)% increased Mana Regen"
+      "{rounding:Integer}(9-18)% increased Mana Regen"
     ]
   },
   "Mystic Helm": {
@@ -302,7 +302,7 @@
     "implicits": [
       "+77 Armor",
       "(30-77)% of Mana Spent Gained as Ward",
-      "(14-30)% increased Mana Regen"
+      "{rounding:Integer}(14-30)% increased Mana Regen"
     ]
   },
   "Oak Helm": {
@@ -327,7 +327,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+18 Armor",
-      "+(1-4) Strength"
+      "{rounding:Integer}+(1-4) Strength"
     ]
   },
   "Forest Cowl": {
@@ -340,8 +340,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+36 Armor",
-      "(10-16)% increased Health Regen",
-      "(10-16)% increased Mana Regen"
+      "{rounding:Integer}(10-16)% increased Health Regen",
+      "{rounding:Integer}(10-16)% increased Mana Regen"
     ]
   },
   "Chitin Helm": {
@@ -395,8 +395,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+84 Armor",
-      "(32-64)% increased Physical Damage",
-      "(32-64)% increased Minion Physical Damage"
+      "{rounding:Integer}(32-64)% increased Physical Damage",
+      "{rounding:Integer}(32-64)% increased Minion Physical Damage"
     ]
   },
   "Greatwood Visage": {
@@ -409,8 +409,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+142 Armor",
-      "+(24-64) Mana",
-      "(14-32)% increased Mana Regen"
+      "{rounding:Integer}+(24-64) Mana",
+      "{rounding:Integer}(14-32)% increased Mana Regen"
     ]
   },
   "Leather Helm": {
@@ -512,8 +512,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+365 Armor",
-      "+(15-75) Endurance Threshold",
-      "(15-75)% increased Fire Damage"
+      "{rounding:Integer}+(15-75) Endurance Threshold",
+      "{rounding:Integer}(15-75)% increased Fire Damage"
     ]
   },
   "Tyrant Crown": {
@@ -539,7 +539,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+124 Armor",
-      "(6-12)% increased Health",
+      "{rounding:Integer}(6-12)% increased Health",
       "(2-3)% of Damage Leeched as Health on Hit"
     ]
   },
@@ -605,7 +605,7 @@
     "implicits": [
       "+62 Armor",
       "+(6-18)% Physical Resistance",
-      "(6-18)% increased Physical Damage"
+      "{rounding:Integer}(6-18)% increased Physical Damage"
     ]
   },
   "Umbral Hood": {
@@ -618,7 +618,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+81 Armor",
-      "+(54-81) Stun Avoidance"
+      "{rounding:Integer}+(54-81) Stun Avoidance"
     ]
   },
   "Exile Hat": {
@@ -631,8 +631,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+56 Armor",
-      "(35-65)% increased Bow Damage",
-      "(35-65)% increased Throwing Damage"
+      "{rounding:Integer}(35-65)% increased Bow Damage",
+      "{rounding:Integer}(35-65)% increased Throwing Damage"
     ]
   },
   "Pinnacle Helm": {
@@ -658,8 +658,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+108 Armor",
-      "+(3-6) Dexterity",
-      "+(12-24) Melee and Throwing Damage for your Falcon"
+      "{rounding:Integer}+(3-6) Dexterity",
+      "{rounding:Integer}+(12-24) Melee and Throwing Damage for your Falcon"
     ]
   },
   "Necropolis Helm": {
@@ -672,8 +672,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+143 Armor",
-      "+(66-173) Ward Decay Threshold",
-      "(6-17) Ward Gain on Kill"
+      "{rounding:Integer}+(66-173) Ward Decay Threshold",
+      "{rounding:Integer}(6-17) Ward Gain on Kill"
     ]
   },
   "Terror Crown": {
@@ -686,7 +686,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+313 Armor",
-      "+(1-7) Vitality",
+      "{rounding:Integer}+(1-7) Vitality",
       "(13-130)% increased Echo Damage when a skill is Echoed"
     ]
   },
@@ -753,7 +753,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+14 Armor",
-      "(14-34)% increased Spell Damage"
+      "{rounding:Integer}(14-34)% increased Spell Damage"
     ]
   },
   "Arcane Visage": {
@@ -767,7 +767,7 @@
     "implicits": [
       "+117 Armor",
       "(7-15)% Increased Cooldown Recovery Speed",
-      "(7-15)% increased Mana"
+      "{rounding:Integer}(7-15)% increased Mana"
     ]
   },
   "Arena Helm": {
@@ -794,7 +794,7 @@
     "implicits": [
       "+70 Armor",
       "+(12-27)% Physical Resistance",
-      "(12-27)% increased Physical Damage"
+      "{rounding:Integer}(12-27)% increased Physical Damage"
     ]
   },
   "Leonine Greathelm": {
@@ -820,7 +820,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+26 Armor",
-      "(13-19)% increased Mana Regen"
+      "{rounding:Integer}(13-19)% increased Mana Regen"
     ]
   },
   "Coven Hat": {
@@ -833,8 +833,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+66 Armor",
-      "+(13-33) Mana",
-      "(13-33)% increased Mana Regen"
+      "{rounding:Integer}+(13-33) Mana",
+      "{rounding:Integer}(13-33)% increased Mana Regen"
     ]
   },
   "Immortal Crown": {
@@ -888,7 +888,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+115 Armor",
-      "(50-95)% increased Damage Over Time",
+      "{rounding:Integer}(50-95)% increased Damage Over Time",
       "(10-25)% Increased Bleed Duration "
     ]
   },
@@ -930,8 +930,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+115 Armor",
-      "+(10-15) Spell Damage",
-      "+(10-15) Minion Spell Damage"
+      "{rounding:Integer}+(10-15) Spell Damage",
+      "{rounding:Integer}+(10-15) Minion Spell Damage"
     ]
   },
   "Refuge Armor": {
@@ -980,7 +980,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+32 Armor",
-      "+(2-7) Spell Damage"
+      "{rounding:Integer}+(2-7) Spell Damage"
     ]
   },
   "Banded Armor": {
@@ -1067,7 +1067,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+26 Armor",
-      "+(13-26) Mana"
+      "{rounding:Integer}+(13-26) Mana"
     ]
   },
   "Ribbed Cuirass": {
@@ -1106,7 +1106,7 @@
     "implicits": [
       "+257 Armor",
       "+(23-39)% Cold Resistance",
-      "+(57-139) Stun Avoidance"
+      "{rounding:Integer}+(57-139) Stun Avoidance"
     ]
   },
   "Profane Regalia": {
@@ -1158,7 +1158,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+24 Armor",
-      "(6-18)% increased Elemental Damage"
+      "{rounding:Integer}(6-18)% increased Elemental Damage"
     ]
   },
   "Archive Robes": {
@@ -1184,7 +1184,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+48 Armor",
-      "+(30-60) Ward Decay Threshold"
+      "{rounding:Integer}+(30-60) Ward Decay Threshold"
     ]
   },
   "Opulent Robes": {
@@ -1197,8 +1197,8 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+64 Armor",
-      "+(12-48) Mana",
-      "(16-24)% increased Mana Regen"
+      "{rounding:Integer}+(12-48) Mana",
+      "{rounding:Integer}(16-24)% increased Mana Regen"
     ]
   },
   "Mystic Plate": {
@@ -1239,7 +1239,7 @@
     "implicits": [
       "+170 Armor",
       "(27-70)% of Mana Spent Gained as Ward",
-      "+(70-127) Ward Decay Threshold"
+      "{rounding:Integer}+(70-127) Ward Decay Threshold"
     ]
   },
   "Hide Armor": {
@@ -1276,7 +1276,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+42 Armor",
-      "+(3-7) Health Regen"
+      "{rounding:Integer}+(3-7) Health Regen"
     ]
   },
   "Icewolf Garb": {
@@ -1290,7 +1290,7 @@
     "implicits": [
       "+78 Armor",
       "+(14-28)% Cold Resistance",
-      "(28-56)% increased Cold Damage"
+      "{rounding:Integer}(28-56)% increased Cold Damage"
     ]
   },
   "Shamanic Garb": {
@@ -1303,8 +1303,8 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+136 Armor",
-      "+(2-6) Attunement",
-      "(36-60)% increased Minion Damage"
+      "{rounding:Integer}+(2-6) Attunement",
+      "{rounding:Integer}(36-60)% increased Minion Damage"
     ]
   },
   "Kolheim Armor": {
@@ -1330,7 +1330,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+372 Armor",
-      "+(72-372) Stun Avoidance"
+      "{rounding:Integer}+(72-372) Stun Avoidance"
     ]
   },
   "Greatwood Coat": {
@@ -1343,8 +1343,8 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+185 Armor",
-      "+(8-15) Spell Damage",
-      "+(8-15) Minion Spell Damage"
+      "{rounding:Integer}+(8-15) Spell Damage",
+      "{rounding:Integer}+(8-15) Minion Spell Damage"
     ]
   },
   "Ringmail Hauberk": {
@@ -1432,7 +1432,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+475 Armor",
-      "(18-35)% increased Mana Regen"
+      "{rounding:Integer}(18-35)% increased Mana Regen"
     ]
   },
   "Solarum Plate": {
@@ -1446,7 +1446,7 @@
     "implicits": [
       "+420 Armor",
       "+(10-15)% Endurance",
-      "(20-80)% increased Fire Damage"
+      "{rounding:Integer}(20-80)% increased Fire Damage"
     ]
   },
   "Apocalypse Plate": {
@@ -1459,7 +1459,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+513 Armor",
-      "+(113-253) Stun Avoidance",
+      "{rounding:Integer}+(113-253) Stun Avoidance",
       "(13-130)% increased Echo Damage when a skill is Echoed"
     ]
   },
@@ -1474,7 +1474,7 @@
     "implicits": [
       "+147 Armor",
       "(5-14)% increased Cast Speed",
-      "+(5-14) Spell Damage"
+      "{rounding:Integer}+(5-14) Spell Damage"
     ]
   },
   "Ancestral Garb": {
@@ -1487,7 +1487,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+172 Armor",
-      "(6-12)% increased Health",
+      "{rounding:Integer}(6-12)% increased Health",
       "(6-12)% Increased Cooldown Recovery Speed"
     ]
   },
@@ -1525,7 +1525,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+40 Armor",
-      "(10-18)% increased Physical Damage"
+      "{rounding:Integer}(10-18)% increased Physical Damage"
     ]
   },
   "Outcast Coat": {
@@ -1578,7 +1578,7 @@
     "implicits": [
       "+94 Armor",
       "(14-34)% increased Critical Strike Chance",
-      "(14-34)% increased Dodge Rating"
+      "{rounding:Integer}(14-34)% increased Dodge Rating"
     ]
   },
   "Elite Regalia": {
@@ -1592,7 +1592,7 @@
     "implicits": [
       "+175 Armor",
       "+(7-15)% Endurance",
-      "(15-25)% increased Mana Regen"
+      "{rounding:Integer}(15-25)% increased Mana Regen"
     ]
   },
   "Falconry Armor": {
@@ -1605,8 +1605,8 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+202 Armor",
-      "+(4-8) Dexterity",
-      "+(12-24) Melee and Throwing Damage for your Falcon"
+      "{rounding:Integer}+(4-8) Dexterity",
+      "{rounding:Integer}+(12-24) Melee and Throwing Damage for your Falcon"
     ]
   },
   "Necropolis Plate": {
@@ -1619,8 +1619,8 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+179 Armor",
-      "+(83-179) Ward Decay Threshold",
-      "(8-19) Ward Gain on Kill"
+      "{rounding:Integer}+(83-179) Ward Decay Threshold",
+      "{rounding:Integer}(8-19) Ward Gain on Kill"
     ]
   },
   "Avian Garb": {
@@ -1633,7 +1633,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+38 Armor",
-      "+(1-4) Attunement"
+      "{rounding:Integer}+(1-4) Attunement"
     ]
   },
   "Chitin Carapace": {
@@ -1660,7 +1660,7 @@
     "implicits": [
       "+156 Armor",
       "(5-10)% increased Movement Speed",
-      "+(5-16) Health Regen"
+      "{rounding:Integer}+(5-16) Health Regen"
     ]
   },
   "Keeper Raiment": {
@@ -1673,7 +1673,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+35 Armor",
-      "(10-15)% increased Mana Regen"
+      "{rounding:Integer}(10-15)% increased Mana Regen"
     ]
   },
   "Lunar Raiment": {
@@ -1700,8 +1700,8 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+196 Armor",
-      "(7-14)% increased Mana",
-      "(21-42)% increased Mana Regen"
+      "{rounding:Integer}(7-14)% increased Mana",
+      "{rounding:Integer}(21-42)% increased Mana Regen"
     ]
   },
   "Worn Plate": {
@@ -1766,7 +1766,7 @@
     "implicits": [
       "+83 Armor",
       "(8-15)% increased Cast Speed",
-      "(15-29)% increased Mana Regen"
+      "{rounding:Integer}(15-29)% increased Mana Regen"
     ]
   },
   "Immortal Regalia": {
@@ -1793,7 +1793,7 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+52 Armor",
-      "(12-20)% increased Mana Regen"
+      "{rounding:Integer}(12-20)% increased Mana Regen"
     ]
   },
   "Scalebane Coat": {
@@ -1820,8 +1820,8 @@
     "affixEffectModifier": 0.5,
     "implicits": [
       "+168 Armor",
-      "(25-50)% increased Dodge Rating",
-      "(25-50)% increased Damage Over Time"
+      "{rounding:Integer}(25-50)% increased Dodge Rating",
+      "{rounding:Integer}(25-50)% increased Damage Over Time"
     ]
   },
   "Dragonhide Coat": {
@@ -1899,7 +1899,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(35-65) Armor",
+      "{rounding:Integer}+(35-65) Armor",
       "+3 Potion Slots"
     ]
   },
@@ -1924,7 +1924,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(40-74) Ward Decay Threshold",
+      "{rounding:Integer}+(40-74) Ward Decay Threshold",
       "+4 Potion Slots"
     ]
   },
@@ -1949,7 +1949,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(16-32) Mana",
+      "{rounding:Integer}+(16-32) Mana",
       "+3 Potion Slots"
     ]
   },
@@ -1976,7 +1976,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(125-250) Armor",
+      "{rounding:Integer}+(125-250) Armor",
       "+4 Potion Slots"
     ]
   },
@@ -2026,7 +2026,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(120-180) Armor",
+      "{rounding:Integer}+(120-180) Armor",
       "+4 Potion Slots"
     ]
   },
@@ -2161,7 +2161,7 @@
     "implicits": [
       "+8 Armor",
       "(15-18)% increased Movement Speed",
-      "+(120-230) Ward Decay Threshold"
+      "{rounding:Integer}+(120-230) Ward Decay Threshold"
     ]
   },
   "Vanguard Boots": {
@@ -2203,7 +2203,7 @@
     "implicits": [
       "+8 Armor",
       "(15-18)% increased Movement Speed",
-      "+(115-180) Ward Decay Threshold"
+      "{rounding:Integer}+(115-180) Ward Decay Threshold"
     ]
   },
   "Mercantile Boots": {
@@ -2255,7 +2255,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+10 Armor",
-      "+(5-10) Mana"
+      "{rounding:Integer}+(5-10) Mana"
     ]
   },
   "Mail Bracers": {
@@ -2293,7 +2293,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+28 Armor",
-      "(7-14)% increased Mana Regen"
+      "{rounding:Integer}(7-14)% increased Mana Regen"
     ]
   },
   "Plated Gauntlets": {
@@ -2345,8 +2345,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+80 Armor",
-      "+(5-10) Vitality",
-      "(5-10)% increased Health"
+      "{rounding:Integer}+(5-10) Vitality",
+      "{rounding:Integer}(5-10)% increased Health"
     ]
   },
   "Serrated Bracers": {
@@ -2373,8 +2373,8 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+36 Armor",
-      "+(20-36) Mana",
-      "(12-24)% increased Mana Regen"
+      "{rounding:Integer}+(20-36) Mana",
+      "{rounding:Integer}(12-24)% increased Mana Regen"
     ]
   },
   "Ascetic Gloves": {
@@ -2413,7 +2413,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+35 Armor",
-      "(15-20)% increased Mana Regen"
+      "{rounding:Integer}(15-20)% increased Mana Regen"
     ]
   },
   "Coinmail Gauntlets": {
@@ -2504,8 +2504,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+33 Melee Necrotic Damage",
-      "(23-39)% increased Necrotic Damage",
-      "(23-39)% increased Minion Damage"
+      "{rounding:Integer}(23-39)% increased Necrotic Damage",
+      "{rounding:Integer}(23-39)% increased Minion Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.09,
@@ -2540,7 +2540,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+28 Melee Damage",
-      "+(14-28) Melee Lightning Damage",
+      "{rounding:Integer}+(14-28) Melee Lightning Damage",
       "+(7-14)% Lightning Penetration"
     ],
     "weapon": {
@@ -2594,8 +2594,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+46 Melee Necrotic Damage",
-      "(100-166)% increased Melee Necrotic Damage",
-      "(100-166)% increased Minion Necrotic Damage"
+      "{rounding:Integer}(100-166)% increased Melee Necrotic Damage",
+      "{rounding:Integer}(100-166)% increased Minion Necrotic Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.09,
@@ -2612,7 +2612,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+32 Melee Damage",
-      "+(30-44) Melee Void Damage"
+      "{rounding:Integer}+(30-44) Melee Void Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -2629,7 +2629,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+51 Melee Damage",
-      "+(10-14) Minion Melee Damage",
+      "{rounding:Integer}+(10-14) Minion Melee Damage",
       "+(70-100)% Chance to inflict Bleed on Hit"
     ],
     "weapon": {
@@ -2647,7 +2647,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+32 Melee Damage",
-      "+(25-42) Melee Void Damage"
+      "{rounding:Integer}+(25-42) Melee Void Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -2682,7 +2682,7 @@
     "implicits": [
       "+25 Melee Damage",
       "+10% Block Chance",
-      "+(250-425) Block Effectiveness"
+      "{rounding:Integer}+(250-425) Block Effectiveness"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -2822,7 +2822,7 @@
     "implicits": [
       "+28 Melee Damage",
       "+(2-3)% Critical Strike Chance",
-      "+(14-21) Melee Lightning Damage"
+      "{rounding:Integer}+(14-21) Melee Lightning Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.14,
@@ -2857,7 +2857,7 @@
     "implicits": [
       "+36 Melee Damage",
       "+(3-4)% Critical Strike Chance",
-      "+(30-40) Spell Damage"
+      "{rounding:Integer}+(30-40) Spell Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.14,
@@ -2875,7 +2875,7 @@
     "implicits": [
       "+37 Melee Damage",
       "+(2-4)% Critical Strike Chance",
-      "(20-50)% increased Dodge Rating"
+      "{rounding:Integer}(20-50)% increased Dodge Rating"
     ],
     "weapon": {
       "AttackRateBase": 1.18,
@@ -2911,7 +2911,7 @@
     "implicits": [
       "+43 Melee Damage",
       "+4% Critical Strike Chance",
-      "(20-80)% increased Physical Damage"
+      "{rounding:Integer}(20-80)% increased Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.1,
@@ -2929,7 +2929,7 @@
     "implicits": [
       "+35 Melee Damage",
       "+(3-4)% Critical Strike Chance",
-      "+(30-35) Spell Damage"
+      "{rounding:Integer}+(30-35) Spell Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.14,
@@ -2983,7 +2983,7 @@
     "implicits": [
       "+47 Melee Damage",
       "(2-3)% of Damage Leeched as Health on Hit",
-      "(47-72) Health Gain on Kill"
+      "{rounding:Integer}(47-72) Health Gain on Kill"
     ],
     "weapon": {
       "AttackRateBase": 1.14,
@@ -3016,7 +3016,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+20 Melee Damage",
-      "(20-30)% increased Physical Damage"
+      "{rounding:Integer}(20-30)% increased Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3050,7 +3050,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+42 Melee Damage",
-      "(22-42)% increased Physical Damage"
+      "{rounding:Integer}(22-42)% increased Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3117,7 +3117,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+53 Melee Damage",
-      "(53-93)% increased Poison Damage",
+      "{rounding:Integer}(53-93)% increased Poison Damage",
       "+(53-75)% Poison Resistance"
     ],
     "weapon": {
@@ -3222,7 +3222,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+68 Melee Damage",
-      "+(58-90) Endurance Threshold",
+      "{rounding:Integer}+(58-90) Endurance Threshold",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ],
     "weapon": {
@@ -3240,7 +3240,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+68 Melee Damage",
-      "+(57-90) Endurance Threshold",
+      "{rounding:Integer}+(57-90) Endurance Threshold",
       "(5-7)% of Maximum Health gained as Endurance Threshold"
     ],
     "weapon": {
@@ -3293,8 +3293,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+25 Melee Damage",
-      "+(25-30) Spell Damage",
-      "(25-60)% increased Elemental Damage"
+      "{rounding:Integer}+(25-30) Spell Damage",
+      "{rounding:Integer}(25-60)% increased Elemental Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3311,7 +3311,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+16 Melee Damage",
-      "+(6-10) Spell Damage"
+      "{rounding:Integer}+(6-10) Spell Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3328,8 +3328,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+21 Melee Damage",
-      "+(10-17) Spell Damage",
-      "(15-35)% increased Minion Damage"
+      "{rounding:Integer}+(10-17) Spell Damage",
+      "{rounding:Integer}(15-35)% increased Minion Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3346,7 +3346,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+38 Melee Damage",
-      "+(38-48) Spell Damage"
+      "{rounding:Integer}+(38-48) Spell Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3363,8 +3363,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+50 Melee Damage",
-      "+(48-58) Spell Damage",
-      "(50-80)% increased Damage Over Time"
+      "{rounding:Integer}+(48-58) Spell Damage",
+      "{rounding:Integer}(50-80)% increased Damage Over Time"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3398,7 +3398,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+55 Melee Damage",
-      "+(55-65) Spell Damage"
+      "{rounding:Integer}+(55-65) Spell Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3415,8 +3415,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+47 Melee Damage",
-      "+(53-59) Spell Damage",
-      "(35-75)% increased Minion Damage"
+      "{rounding:Integer}+(53-59) Spell Damage",
+      "{rounding:Integer}(35-75)% increased Minion Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3433,8 +3433,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+42 Melee Damage",
-      "+(48-52) Spell Damage",
-      "(48-72)% increased Damage Over Time"
+      "{rounding:Integer}+(48-52) Spell Damage",
+      "{rounding:Integer}(48-72)% increased Damage Over Time"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3451,8 +3451,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+46 Melee Damage",
-      "+(50-56) Spell Damage",
-      "(40-70)% increased Minion Damage"
+      "{rounding:Integer}+(50-56) Spell Damage",
+      "{rounding:Integer}(40-70)% increased Minion Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -3488,7 +3488,7 @@
     "implicits": [
       "+61 Melee Damage",
       "+(8-9)% Spell Critical Strike Chance",
-      "+(16-21) Spell Damage"
+      "{rounding:Integer}+(16-21) Spell Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.94,
@@ -3570,7 +3570,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+11 Melee Damage",
-      "+(3-9) Melee Void Damage"
+      "{rounding:Integer}+(3-9) Melee Void Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.2,
@@ -3619,7 +3619,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+36 Melee Damage",
-      "(35-65)% increased Damage Over Time"
+      "{rounding:Integer}(35-65)% increased Damage Over Time"
     ],
     "weapon": {
       "AttackRateBase": 1.24,
@@ -3636,7 +3636,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+40 Melee Damage",
-      "(40-100)% increased Melee Elemental Damage",
+      "{rounding:Integer}(40-100)% increased Melee Elemental Damage",
       "(8-14)% increased Elemental Melee Attack Speed"
     ],
     "weapon": {
@@ -3687,7 +3687,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+39 Melee Damage",
-      "(52-72)% increased Melee Elemental Damage",
+      "{rounding:Integer}(52-72)% increased Melee Elemental Damage",
       "(5-12)% increased Elemental Melee Attack Speed"
     ],
     "weapon": {
@@ -3723,7 +3723,7 @@
     "implicits": [
       "+50 Melee Damage",
       "+(25-35)% Critical Strike Multiplier",
-      "+(3-5) Strength"
+      "{rounding:Integer}+(3-5) Strength"
     ],
     "weapon": {
       "AttackRateBase": 1.16,
@@ -3759,7 +3759,7 @@
     "implicits": [
       "+47 Melee Damage",
       "(17-27)% increased Cooldown Recovery Speed for Evade",
-      "+(147-231) Dodge Rating while using Evade"
+      "{rounding:Integer}+(147-231) Dodge Rating while using Evade"
     ],
     "weapon": {
       "AttackRateBase": 1.16,
@@ -3775,7 +3775,7 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(41-51) Spell Lightning Damage",
+      "{rounding:Integer}+(41-51) Spell Lightning Damage",
       "+(15-51)% Chance to Shock on Spell Hit",
       "-3 Spell Mana Cost"
     ],
@@ -3810,7 +3810,7 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(4-6) Spell Damage",
+      "{rounding:Integer}+(4-6) Spell Damage",
       "-3 Spell Mana Cost"
     ],
     "weapon": {
@@ -3827,7 +3827,7 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(44-51) Spell Damage",
+      "{rounding:Integer}+(44-51) Spell Damage",
       "+(22-61)% Chance to Poison on Spell Hit",
       "-4 Spell Mana Cost"
     ],
@@ -3845,8 +3845,8 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(36-44) Spell Damage",
-      "(40-80)% increased Health Regen",
+      "{rounding:Integer}+(36-44) Spell Damage",
+      "{rounding:Integer}(40-80)% increased Health Regen",
       "-3 Spell Mana Cost"
     ],
     "weapon": {
@@ -3863,8 +3863,8 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(8-13) Spell Void Damage",
-      "(13-19)% increased Damage Over Time",
+      "{rounding:Integer}+(8-13) Spell Void Damage",
+      "{rounding:Integer}(13-19)% increased Damage Over Time",
       "-3 Spell Mana Cost"
     ],
     "weapon": {
@@ -3881,7 +3881,7 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(20-26) Spell Damage",
+      "{rounding:Integer}+(20-26) Spell Damage",
       "+(20-30)% Ward Retention",
       "-3 Spell Mana Cost"
     ],
@@ -3899,8 +3899,8 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(12-16) Spell Damage",
-      "+(20-30) Mana",
+      "{rounding:Integer}+(12-16) Spell Damage",
+      "{rounding:Integer}+(20-30) Mana",
       "-3 Spell Mana Cost"
     ],
     "weapon": {
@@ -3917,9 +3917,9 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(56-66) Spell Necrotic Damage",
-      "(56-66)% increased Curse Damage",
-      "-3 to -5 Spell Mana Cost"
+      "{rounding:Integer}+(56-66) Spell Necrotic Damage",
+      "{rounding:Integer}(56-66)% increased Curse Damage",
+      "{rounding:Integer}-3 to -5 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 1.02,
@@ -3935,9 +3935,9 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(50-60) Spell Damage",
-      "+(50-60) Mana",
-      "-3 to -5 Spell Mana Cost"
+      "{rounding:Integer}+(50-60) Spell Damage",
+      "{rounding:Integer}+(50-60) Mana",
+      "{rounding:Integer}-3 to -5 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 1.02,
@@ -3953,9 +3953,9 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(54-60) Spell Damage",
+      "{rounding:Integer}+(54-60) Spell Damage",
       "(6-12)% increased Cast Speed",
-      "-3 to -5 Spell Mana Cost"
+      "{rounding:Integer}-3 to -5 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 1.02,
@@ -3971,9 +3971,9 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(52-56) Spell Damage",
+      "{rounding:Integer}+(52-56) Spell Damage",
       "(5-10)% increased Cast Speed",
-      "-3 to -4 Spell Mana Cost"
+      "{rounding:Integer}-3 to -4 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 1.02,
@@ -3989,9 +3989,9 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(52-58) Spell Damage",
-      "+(40-52) Mana",
-      "-3 to -4 Spell Mana Cost"
+      "{rounding:Integer}+(52-58) Spell Damage",
+      "{rounding:Integer}+(40-52) Mana",
+      "{rounding:Integer}-3 to -4 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 1.02,
@@ -4007,8 +4007,8 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(60-63) Spell Damage",
-      "-3 to -5 Spell Mana Cost",
+      "{rounding:Integer}+(60-63) Spell Damage",
+      "{rounding:Integer}-3 to -5 Spell Mana Cost",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ],
     "weapon": {
@@ -4025,8 +4025,8 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(60-63) Spell Damage",
-      "-3 to -5 Spell Mana Cost",
+      "{rounding:Integer}+(60-63) Spell Damage",
+      "{rounding:Integer}-3 to -5 Spell Mana Cost",
       "(36-60)% of Mana Spent Gained as Ward"
     ],
     "weapon": {
@@ -4093,7 +4093,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+42 Melee Damage",
-      "(24-50)% increased Minion Damage"
+      "{rounding:Integer}(24-50)% increased Minion Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.95,
@@ -4127,8 +4127,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+31 Melee Damage",
-      "+(31-41) Melee Cold Damage",
-      "(41-131)% increased Cold Damage"
+      "{rounding:Integer}+(31-41) Melee Cold Damage",
+      "{rounding:Integer}(41-131)% increased Cold Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.95,
@@ -4179,8 +4179,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+101 Melee Damage",
-      "(75-110)% increased Physical Damage",
-      "(75-110)% increased Minion Physical Damage"
+      "{rounding:Integer}(75-110)% increased Physical Damage",
+      "{rounding:Integer}(75-110)% increased Minion Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -4268,8 +4268,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+146 Melee Damage",
-      "+(46-60) Spell Fire Damage",
-      "+(46-60) Spell Necrotic Damage"
+      "{rounding:Integer}+(46-60) Spell Fire Damage",
+      "{rounding:Integer}+(46-60) Spell Necrotic Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -4286,8 +4286,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+100 Melee Damage",
-      "(50-100)% increased Physical Damage",
-      "(50-100)% increased Minion Physical Damage"
+      "{rounding:Integer}(50-100)% increased Physical Damage",
+      "{rounding:Integer}(50-100)% increased Minion Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -4340,7 +4340,7 @@
     "implicits": [
       "+105 Melee Damage",
       "+(105-135)% Melee Critical Strike Multiplier",
-      "(10-15) Health Gain on Crit"
+      "{rounding:Integer}(10-15) Health Gain on Crit"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -4407,7 +4407,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+46 Melee Damage",
-      "(20-60)% increased Physical Damage"
+      "{rounding:Integer}(20-60)% increased Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.9,
@@ -4458,7 +4458,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+96 Melee Damage",
-      "+(16-32) Strength"
+      "{rounding:Integer}+(16-32) Strength"
     ],
     "weapon": {
       "AttackRateBase": 0.88,
@@ -4631,7 +4631,7 @@
     },
     "affixEffectModifier": 2.2,
     "implicits": [
-      "+(60-68) Melee Cold Damage",
+      "{rounding:Integer}+(60-68) Melee Cold Damage",
       "+(3-6)% Melee Critical Strike Chance"
     ],
     "weapon": {
@@ -4752,7 +4752,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+45 Melee Damage",
-      "+(30-50) Melee Fire Damage",
+      "{rounding:Integer}+(30-50) Melee Fire Damage",
       "+(3-6)% Melee Critical Strike Chance"
     ],
     "weapon": {
@@ -4788,7 +4788,7 @@
     "implicits": [
       "+86 Melee Damage",
       "+(60-86)% Chance to Poison on Melee Hit",
-      "(60-86)% increased Poison Damage"
+      "{rounding:Integer}(60-86)% increased Poison Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.94,
@@ -4822,7 +4822,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+78 Melee Damage",
-      "(80-120)% increased Poison Damage"
+      "{rounding:Integer}(80-120)% increased Poison Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.02,
@@ -4839,7 +4839,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+160 Melee Damage",
-      "+(92-108) Spell Void Damage"
+      "{rounding:Integer}+(92-108) Spell Void Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -4890,7 +4890,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+120 Melee Damage",
-      "(1.2-1.8) Seconds of Haste after you use Evade",
+      "{rounding:Tenth}(1.2-1.8) Seconds of Haste after you use Evade",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ],
     "weapon": {
@@ -4908,7 +4908,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+120 Melee Damage",
-      "(1.2-1.8) Seconds of Haste after you use Evade",
+      "{rounding:Tenth}(1.2-1.8) Seconds of Haste after you use Evade",
       "(30-50)% increased Effect of Haste on You "
     ],
     "weapon": {
@@ -4926,7 +4926,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+16 Melee Damage",
-      "+(3-5) Spell Damage",
+      "{rounding:Integer}+(3-5) Spell Damage",
       "-3 Spell Mana Cost"
     ],
     "weapon": {
@@ -4944,7 +4944,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+19 Melee Damage",
-      "+(7-9) Spell Damage",
+      "{rounding:Integer}+(7-9) Spell Damage",
       "-3 Spell Mana Cost"
     ],
     "weapon": {
@@ -4962,7 +4962,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+21 Melee Damage",
-      "+(11-14) Spell Damage",
+      "{rounding:Integer}+(11-14) Spell Damage",
       "(25-40)% Reduced Health Cost of Spells"
     ],
     "weapon": {
@@ -4980,7 +4980,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+42 Melee Damage",
-      "+(20-24) Spell Damage",
+      "{rounding:Integer}+(20-24) Spell Damage",
       "(20-24)% increased Melee Attack Speed"
     ],
     "weapon": {
@@ -4998,7 +4998,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+45 Melee Damage",
-      "+(23-35) Spell Damage",
+      "{rounding:Integer}+(23-35) Spell Damage",
       "-3 Spell Mana Cost"
     ],
     "weapon": {
@@ -5016,8 +5016,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+53 Melee Damage",
-      "+(39-47) Spell Damage",
-      "(39-93)% increased Damage Over Time"
+      "{rounding:Integer}+(39-47) Spell Damage",
+      "{rounding:Integer}(39-93)% increased Damage Over Time"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5034,8 +5034,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+56 Melee Damage",
-      "+(39-47) Spell Damage",
-      "(46-86)% increased Damage for Totems"
+      "{rounding:Integer}+(39-47) Spell Damage",
+      "{rounding:Integer}(46-86)% increased Damage for Totems"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5052,8 +5052,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+78 Melee Damage",
-      "+(60-68) Spell Damage",
-      "-3 to -4 Spell Mana Cost"
+      "{rounding:Integer}+(60-68) Spell Damage",
+      "{rounding:Integer}-3 to -4 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -5070,8 +5070,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+72 Melee Damage",
-      "+(72-80) Spell Damage",
-      "+(60-80) Mana"
+      "{rounding:Integer}+(72-80) Spell Damage",
+      "{rounding:Integer}+(60-80) Mana"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5088,7 +5088,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+79 Melee Damage",
-      "+(79-91) Spell Damage",
+      "{rounding:Integer}+(79-91) Spell Damage",
       "+1 to All Minion Skills"
     ],
     "weapon": {
@@ -5105,9 +5105,9 @@
     },
     "affixEffectModifier": 2.2,
     "implicits": [
-      "+(90-100) Spell Damage",
-      "(20-30)% increased Mana Regen",
-      "-3 to -5 Spell Mana Cost"
+      "{rounding:Integer}+(90-100) Spell Damage",
+      "{rounding:Integer}(20-30)% increased Mana Regen",
+      "{rounding:Integer}-3 to -5 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5124,7 +5124,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+94 Melee Damage",
-      "+(84-104) Spell Damage",
+      "{rounding:Integer}+(84-104) Spell Damage",
       "+1 to Melee Attacks"
     ],
     "weapon": {
@@ -5142,8 +5142,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+92 Melee Damage",
-      "+(102-122) Spell Damage",
-      "(20-52)% increased Spell Mana Cost"
+      "{rounding:Integer}+(102-122) Spell Damage",
+      "{rounding:Integer}(20-52)% increased Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5160,7 +5160,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+95 Melee Damage",
-      "+(85-95) Spell Damage",
+      "{rounding:Integer}+(85-95) Spell Damage",
       "+1 to Elemental Skills"
     ],
     "weapon": {
@@ -5178,8 +5178,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+70 Melee Damage",
-      "+(63-80) Spell Damage",
-      "-3 to -5 Spell Mana Cost"
+      "{rounding:Integer}+(63-80) Spell Damage",
+      "{rounding:Integer}-3 to -5 Spell Mana Cost"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5196,7 +5196,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+66 Melee Damage",
-      "+(72-86) Spell Damage",
+      "{rounding:Integer}+(72-86) Spell Damage",
       "+1 to All Minion Skills"
     ],
     "weapon": {
@@ -5214,8 +5214,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+67 Melee Damage",
-      "+(67-76) Spell Damage",
-      "+(60-67) Mana"
+      "{rounding:Integer}+(67-76) Spell Damage",
+      "{rounding:Integer}+(60-67) Mana"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5232,7 +5232,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+92 Melee Damage",
-      "+(92-102) Spell Damage",
+      "{rounding:Integer}+(92-102) Spell Damage",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ],
     "weapon": {
@@ -5250,8 +5250,8 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+92 Melee Damage",
-      "+(92-102) Spell Damage",
-      "+(55-72) Health"
+      "{rounding:Integer}+(92-102) Spell Damage",
+      "{rounding:Integer}+(55-72) Health"
     ],
     "weapon": {
       "AttackRateBase": 0.92,
@@ -5400,7 +5400,7 @@
     "affixEffectModifier": 2.2,
     "implicits": [
       "+66 Melee Damage",
-      "+(22-42) Melee Void Damage",
+      "{rounding:Integer}+(22-42) Melee Void Damage",
       "+(6-12)% Void Penetration"
     ],
     "weapon": {
@@ -5549,7 +5549,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(15-30)% increased Bow Damage",
+      "{rounding:Integer}(15-30)% increased Bow Damage",
       "(15-30)% Increased Bow Stun Chance"
     ]
   },
@@ -5587,7 +5587,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(8-13) Bow Cold Damage"
+      "{rounding:Integer}+(8-13) Bow Cold Damage"
     ]
   },
   "Skalnir Quiver": {
@@ -5612,7 +5612,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(30-60)% Chance to Poison on Bow Hit",
-      "(30-60)% increased Damage Over Time"
+      "{rounding:Integer}(30-60)% increased Damage Over Time"
     ]
   },
   "Spidersilk Quiver": {
@@ -5637,7 +5637,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(77-140) Armor",
+      "{rounding:Integer}+(77-140) Armor",
       "+(42-77)% Chance to Shred Armor on Hit",
       "(21-42)% Increased Armor Shred Effect "
     ]
@@ -5652,7 +5652,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(2-3)% Bow Critical Strike Chance",
-      "(12-20)% increased Mana Regen",
+      "{rounding:Integer}(12-20)% increased Mana Regen",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ]
   },
@@ -5666,7 +5666,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(2-3)% Bow Critical Strike Chance",
-      "(12-20)% increased Mana Regen",
+      "{rounding:Integer}(12-20)% increased Mana Regen",
       "+(36-64)% Chance to apply Critical Vulnerability on Bow Hit"
     ]
   },
@@ -5680,7 +5680,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+18% Block Chance",
-      "+(80-120) Block Effectiveness"
+      "{rounding:Integer}+(80-120) Block Effectiveness"
     ]
   },
   "Targe": {
@@ -5693,7 +5693,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+16% Block Chance",
-      "+(80-140) Block Effectiveness",
+      "{rounding:Integer}+(80-140) Block Effectiveness",
       "+(6-12)% Elemental Resistance"
     ]
   },
@@ -5707,7 +5707,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+20% Block Chance",
-      "+(150-180) Block Effectiveness",
+      "{rounding:Integer}+(150-180) Block Effectiveness",
       "+80 Armor"
     ]
   },
@@ -5734,7 +5734,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+22% Block Chance",
-      "+(350-500) Block Effectiveness"
+      "{rounding:Integer}+(350-500) Block Effectiveness"
     ]
   },
   "Tower Shield": {
@@ -5747,7 +5747,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+28% Block Chance",
-      "+(200-300) Block Effectiveness"
+      "{rounding:Integer}+(200-300) Block Effectiveness"
     ]
   },
   "Bandit Shield": {
@@ -5760,8 +5760,8 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+19% Block Chance",
-      "+(215-275) Block Effectiveness",
-      "(25-60)% increased Physical Damage"
+      "{rounding:Integer}+(215-275) Block Effectiveness",
+      "{rounding:Integer}(25-60)% increased Physical Damage"
     ]
   },
   "Root Shield": {
@@ -5774,8 +5774,8 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+21% Block Chance",
-      "+(240-320) Block Effectiveness",
-      "+(45-70) Endurance Threshold"
+      "{rounding:Integer}+(240-320) Block Effectiveness",
+      "{rounding:Integer}+(45-70) Endurance Threshold"
     ]
   },
   "Frostbound Shield": {
@@ -5788,7 +5788,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+17% Block Chance",
-      "+(400-460) Block Effectiveness",
+      "{rounding:Integer}+(400-460) Block Effectiveness",
       "+(75-150)% Freeze Rate Multiplier"
     ]
   },
@@ -5802,7 +5802,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+25% Block Chance",
-      "+(600-800) Block Effectiveness"
+      "{rounding:Integer}+(600-800) Block Effectiveness"
     ]
   },
   "Meruna Shell": {
@@ -5815,8 +5815,8 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+23% Block Chance",
-      "+(325-425) Block Effectiveness",
-      "(45-75)% increased Melee Physical Damage"
+      "{rounding:Integer}+(325-425) Block Effectiveness",
+      "{rounding:Integer}(45-75)% increased Melee Physical Damage"
     ]
   },
   "Mountain Shield": {
@@ -5829,7 +5829,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+26% Block Chance",
-      "+(440-520) Block Effectiveness",
+      "{rounding:Integer}+(440-520) Block Effectiveness",
       "+(11-15)% Endurance"
     ]
   },
@@ -5843,7 +5843,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+28% Block Chance",
-      "+(500-585) Block Effectiveness",
+      "{rounding:Integer}+(500-585) Block Effectiveness",
       "+75% Poison Resistance"
     ]
   },
@@ -5857,7 +5857,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+35% Block Chance",
-      "+(400-620) Block Effectiveness"
+      "{rounding:Integer}+(400-620) Block Effectiveness"
     ]
   },
   "Dawn Shield": {
@@ -5870,7 +5870,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+30% Block Chance",
-      "+(750-1000) Block Effectiveness"
+      "{rounding:Integer}+(750-1000) Block Effectiveness"
     ]
   },
   "Rotskin Round Shield": {
@@ -5883,7 +5883,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+20% Block Chance",
-      "+(200-600) Block Effectiveness"
+      "{rounding:Integer}+(200-600) Block Effectiveness"
     ]
   },
   "Stone Shield": {
@@ -5896,7 +5896,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+15% Block Chance",
-      "+(275-650) Block Effectiveness",
+      "{rounding:Integer}+(275-650) Block Effectiveness",
       "+(20-40)% Physical Resistance"
     ]
   },
@@ -5910,8 +5910,8 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+14% Block Chance",
-      "+(320-400) Block Effectiveness",
-      "+(4-10) Strength"
+      "{rounding:Integer}+(320-400) Block Effectiveness",
+      "{rounding:Integer}+(4-10) Strength"
     ]
   },
   "Ship Wheel": {
@@ -5924,7 +5924,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+24% Block Chance",
-      "+(400-520) Block Effectiveness",
+      "{rounding:Integer}+(400-520) Block Effectiveness",
       "+(10-15)% Endurance"
     ]
   },
@@ -5938,7 +5938,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+23% Block Chance",
-      "+(750-1000) Block Effectiveness"
+      "{rounding:Integer}+(750-1000) Block Effectiveness"
     ]
   },
   "Culnivan Shield": {
@@ -5951,7 +5951,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+25% Block Chance",
-      "(40-48) Ward Gain on Block",
+      "{rounding:Integer}(40-48) Ward Gain on Block",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ]
   },
@@ -5965,8 +5965,8 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+25% Block Chance",
-      "(40-48) Ward Gain on Block",
-      "+(125-255) Ward Decay Threshold"
+      "{rounding:Integer}(40-48) Ward Gain on Block",
+      "{rounding:Integer}+(125-255) Ward Decay Threshold"
     ]
   },
   "Glass Catalyst": {
@@ -5978,7 +5978,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(3-6) Intelligence"
+      "{rounding:Integer}+(3-6) Intelligence"
     ]
   },
   "Leatherbound Tome": {
@@ -5990,7 +5990,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(2-5) Intelligence",
+      "{rounding:Integer}+(2-5) Intelligence",
       "(5-8)% increased Cast Speed"
     ]
   },
@@ -6003,8 +6003,8 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(4-7) Intelligence",
-      "+(10-17) Ward per Second"
+      "{rounding:Integer}+(4-7) Intelligence",
+      "{rounding:Integer}+(10-17) Ward per Second"
     ]
   },
   "Branded Skull": {
@@ -6016,7 +6016,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(5-9) Intelligence",
+      "{rounding:Integer}+(5-9) Intelligence",
       "+(2-3)% Spell Critical Strike Chance"
     ]
   },
@@ -6029,7 +6029,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(6-10) Intelligence",
+      "{rounding:Integer}+(6-10) Intelligence",
       "(6-10)% increased Cast Speed"
     ]
   },
@@ -6042,7 +6042,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(7-11) Intelligence",
+      "{rounding:Integer}+(7-11) Intelligence",
       "+(3-5)% Spell Critical Strike Chance"
     ]
   },
@@ -6055,8 +6055,8 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(8-14) Intelligence",
-      "+(20-30) Ward per Second"
+      "{rounding:Integer}+(8-14) Intelligence",
+      "{rounding:Integer}+(20-30) Ward per Second"
     ]
   },
   "Astrolabe": {
@@ -6068,9 +6068,9 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(8-15) Intelligence",
+      "{rounding:Integer}+(8-15) Intelligence",
       "(15-25)% of Mana Spent Gained as Ward",
-      "(10-15)% increased Mana Regen"
+      "{rounding:Integer}(10-15)% increased Mana Regen"
     ]
   },
   "Opulent Focus": {
@@ -6082,8 +6082,8 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(8-16) Intelligence",
-      "+(32-54) Ward per Second",
+      "{rounding:Integer}+(8-16) Intelligence",
+      "{rounding:Integer}+(32-54) Ward per Second",
       "+(42-86)% Ward Retention"
     ]
   },
@@ -6096,7 +6096,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(12-18) Intelligence",
+      "{rounding:Integer}+(12-18) Intelligence",
       "+(18-40)% Spell Critical Strike Multiplier"
     ]
   },
@@ -6109,9 +6109,9 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(13-16) Intelligence",
-      "(36-66)% increased Minion Damage",
-      "(36-66)% increased Minion Health"
+      "{rounding:Integer}+(13-16) Intelligence",
+      "{rounding:Integer}(36-66)% increased Minion Damage",
+      "{rounding:Integer}(36-66)% increased Minion Health"
     ]
   },
   "Crystal Skull": {
@@ -6123,7 +6123,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(10-16) Intelligence",
+      "{rounding:Integer}+(10-16) Intelligence",
       "+(3-6)% Spell Critical Strike Chance",
       "+(12-18)% Ward Retention"
     ]
@@ -6137,9 +6137,9 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(12-18) Intelligence",
+      "{rounding:Integer}+(12-18) Intelligence",
       "(26-42)% of Mana Spent Gained as Ward",
-      "(12-18)% increased Mana Regen"
+      "{rounding:Integer}(12-18)% increased Mana Regen"
     ]
   },
   "Divine Instrument": {
@@ -6151,7 +6151,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(8-14) Intelligence",
+      "{rounding:Integer}+(8-14) Intelligence",
       "+(2-6)% Spell Critical Strike Chance"
     ]
   },
@@ -6164,9 +6164,9 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(9-17) Intelligence",
+      "{rounding:Integer}+(9-17) Intelligence",
       "(9-34)% increased Effect of Haste on You ",
-      "(1.7-2.9) Seconds of Haste after you use a Traversal Skill"
+      "{rounding:Tenth}(1.7-2.9) Seconds of Haste after you use a Traversal Skill"
     ]
   },
   "Soulmass": {
@@ -6178,8 +6178,8 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(12-18) Intelligence",
-      "(36-84)% increased Necrotic Damage"
+      "{rounding:Integer}+(12-18) Intelligence",
+      "{rounding:Integer}(36-84)% increased Necrotic Damage"
     ]
   },
   "Trade Ledger": {
@@ -6191,9 +6191,9 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(10-12) Intelligence",
-      "(36-60)% increased Minion Damage",
-      "(36-60)% increased Minion Health"
+      "{rounding:Integer}+(10-12) Intelligence",
+      "{rounding:Integer}(36-60)% increased Minion Damage",
+      "{rounding:Integer}(36-60)% increased Minion Health"
     ]
   },
   "Celestial Compass": {
@@ -6205,9 +6205,9 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(12-15) Intelligence",
+      "{rounding:Integer}+(12-15) Intelligence",
       "(25-40)% of Mana Spent Gained as Ward",
-      "(12-15)% increased Mana Regen"
+      "{rounding:Integer}(12-15)% increased Mana Regen"
     ]
   },
   "Crystal Core": {
@@ -6219,8 +6219,8 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(12-15) Intelligence",
-      "(24-30) Mana Gained on Potion Use",
+      "{rounding:Integer}+(12-15) Intelligence",
+      "{rounding:Integer}(24-30) Mana Gained on Potion Use",
       "(100-355)% Chance to Upgrade when you slay a Harbinger"
     ]
   },
@@ -6233,9 +6233,9 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(12-15) Intelligence",
-      "(24-30) Mana Gained on Potion Use",
-      "+(30-48) Mana"
+      "{rounding:Integer}+(12-15) Intelligence",
+      "{rounding:Integer}(24-30) Mana Gained on Potion Use",
+      "{rounding:Integer}+(30-48) Mana"
     ]
   },
   "Copper Amulet": {
@@ -6248,7 +6248,7 @@
     "affixEffectModifier": 0.17,
     "implicits": [
       "+(6-20)% Lightning Resistance",
-      "+(2-3) Spell Lightning Damage"
+      "{rounding:Integer}+(2-3) Spell Lightning Damage"
     ]
   },
   "Jade Amulet": {
@@ -6297,7 +6297,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "(5-35)% increased Minion Damage",
+      "{rounding:Integer}(5-35)% increased Minion Damage",
       "(5-35)% increased Minion Critical Strike Chance"
     ]
   },
@@ -6310,7 +6310,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(5-25) Health"
+      "{rounding:Integer}+(5-25) Health"
     ]
   },
   "Sapphire Amulet": {
@@ -6348,7 +6348,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "(6-20)% less Damage Over Time Taken"
+      "{rounding:Integer}(6-20)% less Damage Over Time Taken"
     ]
   },
   "Gold Amulet": {
@@ -6373,7 +6373,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "(6-12)% less Damage Over Time Taken"
+      "{rounding:Integer}(6-12)% less Damage Over Time Taken"
     ]
   },
   "Mercantile Amulet": {
@@ -6397,8 +6397,8 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "(1-12)% increased Health",
-      "(1-12)% increased Mana",
+      "{rounding:Integer}(1-12)% increased Health",
+      "{rounding:Integer}(1-12)% increased Mana",
       "(4-8)% reduced Movement Speed"
     ]
   },
@@ -6411,7 +6411,7 @@
     },
     "affixEffectModifier": 0.17,
     "implicits": [
-      "+(16-48) Mana"
+      "{rounding:Integer}+(16-48) Mana"
     ]
   },
   "Copper Ring": {
@@ -6436,7 +6436,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(28-45)% Fire Resistance",
-      "(28-45)% increased Fire Damage"
+      "{rounding:Integer}(28-45)% increased Fire Damage"
     ]
   },
   "Sapphire Ring": {
@@ -6448,8 +6448,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(10-20) Mana",
-      "(6-12)% increased Mana Regen"
+      "{rounding:Integer}+(10-20) Mana",
+      "{rounding:Integer}(6-12)% increased Mana Regen"
     ]
   },
   "Silver Ring": {
@@ -6485,7 +6485,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(40-95) Stun Avoidance"
+      "{rounding:Integer}+(40-95) Stun Avoidance"
     ]
   },
   "Jade Ring": {
@@ -6497,7 +6497,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(10-25) Dodge Rating"
+      "{rounding:Integer}+(10-25) Dodge Rating"
     ]
   },
   "Turquoise Ring": {
@@ -6509,8 +6509,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(5-35)% increased Minion Damage",
-      "(5-35)% increased Minion Health",
+      "{rounding:Integer}(5-35)% increased Minion Damage",
+      "{rounding:Integer}(5-35)% increased Minion Health",
       "+(5-35)% Minion Critical Strike Multiplier"
     ]
   },
@@ -6524,7 +6524,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(33-46)% Necrotic Resistance",
-      "+(46-130) Ward Decay Threshold"
+      "{rounding:Integer}+(46-130) Ward Decay Threshold"
     ]
   },
   "Coral Ring": {
@@ -6536,8 +6536,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(3-6) Vitality",
-      "+(3-6) Health Regen"
+      "{rounding:Integer}+(3-6) Vitality",
+      "{rounding:Integer}+(3-6) Health Regen"
     ]
   },
   "Opal Ring": {
@@ -6550,7 +6550,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "(6-10)% Increased Cooldown Recovery Speed",
-      "+(1-2) to All Attributes"
+      "{rounding:Integer}+(1-2) to All Attributes"
     ]
   },
   "Celestial Ring": {
@@ -6562,7 +6562,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(42-110) Ward Decay Threshold"
+      "{rounding:Integer}+(42-110) Ward Decay Threshold"
     ]
   },
   "Mercantile Insignia": {
@@ -6586,7 +6586,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(6-10) Mana"
+      "{rounding:Integer}+(6-10) Mana"
     ]
   },
   "Lost Journal": {
@@ -6611,8 +6611,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(30-40) Health",
-      "(12-2)% reduced Health Regen"
+      "{rounding:Integer}+(30-40) Health",
+      "{rounding:Integer}(12-2)% reduced Health Regen"
     ]
   },
   "Copper Chalice": {
@@ -6624,7 +6624,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(2-3) Health Regen"
+      "{rounding:Integer}+(2-3) Health Regen"
     ]
   },
   "Silver Grail": {
@@ -6636,7 +6636,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(10-25) Mana"
+      "{rounding:Integer}+(10-25) Mana"
     ]
   },
   "Golden Chalice": {
@@ -6648,7 +6648,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(4-6) Health Regen"
+      "{rounding:Integer}+(4-6) Health Regen"
     ]
   },
   "Grave Lantern": {
@@ -6685,8 +6685,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(20-40)% increased Cold Damage",
-      "(20-40)% increased Lightning Damage"
+      "{rounding:Integer}(20-40)% increased Cold Damage",
+      "{rounding:Integer}(20-40)% increased Lightning Damage"
     ]
   },
   "Broken Hilt": {
@@ -6710,7 +6710,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(3-4) Health Regen"
+      "{rounding:Integer}+(3-4) Health Regen"
     ]
   },
   "Defiled Bones": {
@@ -6722,7 +6722,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(13-19)% increased Spell Damage"
+      "{rounding:Integer}(13-19)% increased Spell Damage"
     ]
   },
   "Caged Souls": {
@@ -6734,7 +6734,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(9-29) Ward Gained on Potion Use",
+      "{rounding:Integer}(9-29) Ward Gained on Potion Use",
       "+(9-29)% Ward Retention"
     ]
   },
@@ -6760,7 +6760,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(13-45)% Fire Resistance",
-      "(13-63)% increased Curse Damage"
+      "{rounding:Integer}(13-63)% increased Curse Damage"
     ]
   },
   "Runed Bones": {
@@ -6772,9 +6772,9 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(6-36)% increased Minion Damage",
+      "{rounding:Integer}(6-36)% increased Minion Damage",
       "(6-16)% increased Minion Movement Speed",
-      "(6-66)% increased Minion Health"
+      "{rounding:Integer}(6-66)% increased Minion Health"
     ]
   },
   "Decaying Homunculus": {
@@ -6786,8 +6786,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(31-61)% increased Necrotic Damage",
-      "(31-61)% increased Minion Necrotic Damage"
+      "{rounding:Integer}(31-61)% increased Necrotic Damage",
+      "{rounding:Integer}(31-61)% increased Minion Necrotic Damage"
     ]
   },
   "Damned Souls": {
@@ -6799,8 +6799,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(13-91)% increased Fire Damage",
-      "(13-91)% increased Minion Fire Damage"
+      "{rounding:Integer}(13-91)% increased Fire Damage",
+      "{rounding:Integer}(13-91)% increased Minion Fire Damage"
     ]
   },
   "Homunculus Blood": {
@@ -6826,7 +6826,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(31-45)% Poison Resistance",
-      "+(13-45) Ward per Second"
+      "{rounding:Integer}+(13-45) Ward per Second"
     ]
   },
   "Runic Scroll": {
@@ -6838,7 +6838,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(2-3) Spell Damage"
+      "{rounding:Integer}+(2-3) Spell Damage"
     ]
   },
   "Arcane Quill": {
@@ -6850,7 +6850,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(3-5) Ward Gain on Kill"
+      "{rounding:Integer}(3-5) Ward Gain on Kill"
     ]
   },
   "Third Eye": {
@@ -6876,7 +6876,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(11-33) Ward per Second"
+      "{rounding:Integer}+(11-33) Ward per Second"
     ]
   },
   "Ancient Scroll": {
@@ -6914,7 +6914,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(14-40) Mana",
+      "{rounding:Integer}+(14-40) Mana",
       "(14-40)% of Mana Spent Gained as Ward"
     ]
   },
@@ -6927,7 +6927,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-84)% increased Elemental Damage Over Time"
+      "{rounding:Integer}(40-84)% increased Elemental Damage Over Time"
     ]
   },
   "Elder Eye": {
@@ -6939,7 +6939,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(24-48)% increased Cold Damage",
+      "{rounding:Integer}(24-48)% increased Cold Damage",
       "+(12-24)% Chance to Chill on Hit",
       "+(120-240)% Freeze Rate Multiplier"
     ]
@@ -6953,8 +6953,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(7-14) Health",
-      "(7-14)% increased Minion Health"
+      "{rounding:Integer}+(7-14) Health",
+      "{rounding:Integer}(7-14)% increased Minion Health"
     ]
   },
   "Sage Antler": {
@@ -6966,8 +6966,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(8-19)% increased Physical Damage",
-      "(8-19)% increased Minion Physical Damage"
+      "{rounding:Integer}(8-19)% increased Physical Damage",
+      "{rounding:Integer}(8-19)% increased Minion Physical Damage"
     ]
   },
   "Living Seed": {
@@ -7004,7 +7004,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(16-32)% increased Minion Damage",
+      "{rounding:Integer}(16-32)% increased Minion Damage",
       "(12-24)% Increased Companion Revive Range",
       "(12-24)% Increased Companion Revive Speed"
     ]
@@ -7031,7 +7031,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(4-8) Spell Cold Damage",
+      "{rounding:Integer}+(4-8) Spell Cold Damage",
       "+(10-24)% Chance to cast Maelstrom every 3 seconds"
     ]
   },
@@ -7057,8 +7057,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(4-10) Melee Cold Damage",
-      "+(4-10) Minion Melee Cold Damage"
+      "{rounding:Integer}+(4-10) Melee Cold Damage",
+      "{rounding:Integer}+(4-10) Minion Melee Cold Damage"
     ]
   },
   "Sunrise Emblem": {
@@ -7082,7 +7082,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(5-12)% increased Armor",
+      "{rounding:Integer}(5-12)% increased Armor",
       "+(5-12)% Void Resistance"
     ]
   },
@@ -7095,8 +7095,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(15-25) Health",
-      "(3-5) Health Gain on Melee Hit"
+      "{rounding:Integer}+(15-25) Health",
+      "{rounding:Integer}(3-5) Health Gain on Melee Hit"
     ]
   },
   "Inscribed Tablet": {
@@ -7108,7 +7108,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(10-30) Mana",
+      "{rounding:Integer}+(10-30) Mana",
       "-3 Melee Attack Mana Cost"
     ]
   },
@@ -7122,7 +7122,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(2-5)% Block Chance",
-      "(2-5) Health Gain on Block"
+      "{rounding:Integer}(2-5) Health Gain on Block"
     ]
   },
   "Solar Commandment": {
@@ -7134,7 +7134,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(25-60)% increased Fire Damage",
+      "{rounding:Integer}(25-60)% increased Fire Damage",
       "(25-60)% Increased Healing Effectiveness"
     ]
   },
@@ -7160,7 +7160,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(43-73)% increased Void Damage",
+      "{rounding:Integer}(43-73)% increased Void Damage",
       "+(15-30)% Chance to apply Future Strike on Melee Hit"
     ]
   },
@@ -7173,8 +7173,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(5-10) Melee Void Damage",
-      "+(5-10) Spell Void Damage"
+      "{rounding:Integer}+(5-10) Melee Void Damage",
+      "{rounding:Integer}+(5-10) Spell Void Damage"
     ]
   },
   "Ivory Dice": {
@@ -7235,7 +7235,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(26-44)% increased Fire Damage",
+      "{rounding:Integer}(26-44)% increased Fire Damage",
       "+(14-26)% Chance to Ignite on Hit"
     ]
   },
@@ -7248,7 +7248,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(6-24)% increased Dodge Rating"
+      "{rounding:Integer}(6-24)% increased Dodge Rating"
     ]
   },
   "Ruby Dice": {
@@ -7287,7 +7287,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "(10-100)% increased Critical Strike Chance",
-      "(3-6) Health Gain on Crit"
+      "{rounding:Integer}(3-6) Health Gain on Crit"
     ]
   },
   "Lost Anchor": {
@@ -7299,7 +7299,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(15-25)% increased Armor"
+      "{rounding:Integer}(15-25)% increased Armor"
     ]
   },
   "Stone Tablet": {
@@ -7323,7 +7323,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(12-20)% increased Health"
+      "{rounding:Integer}(12-20)% increased Health"
     ]
   },
   "Blood Encased Hive": {
@@ -7335,7 +7335,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(6-10) Bees per 10 seconds while in Spriggan Form"
+      "{rounding:Integer}+(6-10) Bees per 10 seconds while in Spriggan Form"
     ]
   },
   "Runed Box": {
@@ -7369,7 +7369,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(5-10)% less Damage Taken"
+      "{rounding:Integer}(5-10)% less Damage Taken"
     ]
   },
   "Shortbow": {
@@ -7415,7 +7415,7 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+19 Bow Damage",
-      "(15-30)% increased Damage Over Time"
+      "{rounding:Integer}(15-30)% increased Damage Over Time"
     ],
     "weapon": {
       "AttackRateBase": 1.05,
@@ -7535,8 +7535,8 @@
     "affixEffectModifier": 0.75,
     "implicits": [
       "+30 Bow Damage",
-      "+(16-26) Bow Fire Damage",
-      "(60-90)% increased Bow Elemental Damage"
+      "{rounding:Integer}+(16-26) Bow Fire Damage",
+      "{rounding:Integer}(60-90)% increased Bow Elemental Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.98,
@@ -7554,7 +7554,7 @@
     "implicits": [
       "+45 Bow Damage",
       "+(3-4)% Bow Critical Strike Chance",
-      "(40-100)% increased Physical Damage"
+      "{rounding:Integer}(40-100)% increased Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.1,
@@ -7570,7 +7570,7 @@
     },
     "affixEffectModifier": 0.75,
     "implicits": [
-      "+(60-72) Bow Lightning Damage"
+      "{rounding:Integer}+(60-72) Bow Lightning Damage"
     ],
     "weapon": {
       "AttackRateBase": 0.9,
@@ -7606,7 +7606,7 @@
     "implicits": [
       "+39 Bow Damage",
       "+3% Bow Critical Strike Chance",
-      "(30-90)% increased Physical Damage"
+      "{rounding:Integer}(30-90)% increased Physical Damage"
     ],
     "weapon": {
       "AttackRateBase": 1.05,
@@ -8556,7 +8556,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(30-42) Health"
+      "{rounding:Integer}+(30-42) Health"
     ]
   },
   "Grand Memory of Light": {
@@ -8568,7 +8568,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(45-70) Health"
+      "{rounding:Integer}+(45-70) Health"
     ]
   },
   "Echo of Solarum": {
@@ -8604,7 +8604,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(60-100) Dodge Rating"
+      "{rounding:Integer}+(60-100) Dodge Rating"
     ]
   },
   "Grand Shadow of the Eclipse": {
@@ -8616,7 +8616,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(101-200) Dodge Rating"
+      "{rounding:Integer}+(101-200) Dodge Rating"
     ]
   },
   "Wrath of Rahyeh": {
@@ -8652,7 +8652,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Void Damage"
+      "{rounding:Integer}(40-60)% increased Void Damage"
     ]
   },
   "Grand Whisper of Orobyss": {
@@ -8664,7 +8664,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Void Damage"
+      "{rounding:Integer}(65-100)% increased Void Damage"
     ]
   },
   "Flames of the Black Sun": {
@@ -8724,7 +8724,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(10-14) Health Gain on Block"
+      "{rounding:Integer}(10-14) Health Gain on Block"
     ]
   },
   "Grand Strength of the Mountain": {
@@ -8736,7 +8736,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(15-22) Health Gain on Block"
+      "{rounding:Integer}(15-22) Health Gain on Block"
     ]
   },
   "Winds of Oblivion": {
@@ -8796,8 +8796,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(6-10) Ward Gain on Kill",
-      "+(60-100) Ward Decay Threshold"
+      "{rounding:Integer}(6-10) Ward Gain on Kill",
+      "{rounding:Integer}+(60-100) Ward Decay Threshold"
     ]
   },
   "Grand Greed of Darkness": {
@@ -8809,8 +8809,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(12-18) Ward Gain on Kill",
-      "+(120-200) Ward Decay Threshold"
+      "{rounding:Integer}(12-18) Ward Gain on Kill",
+      "{rounding:Integer}+(120-200) Ward Decay Threshold"
     ]
   },
   "Emptiness of Ash": {
@@ -9158,7 +9158,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(30-50) Mana"
+      "{rounding:Integer}+(30-50) Mana"
     ]
   },
   "Grand Light of the Moon": {
@@ -9170,7 +9170,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(60-90) Mana"
+      "{rounding:Integer}+(60-90) Mana"
     ]
   },
   "Rhythm of the Tide": {
@@ -9182,8 +9182,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(60-100)% increased Health Regen",
-      "+(6-10) Health Regen"
+      "{rounding:Integer}(60-100)% increased Health Regen",
+      "{rounding:Integer}+(6-10) Health Regen"
     ]
   },
   "Grand Rhythm of the Tide": {
@@ -9195,8 +9195,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(120-200)% increased Health Regen",
-      "+(12-20) Health Regen"
+      "{rounding:Integer}(120-200)% increased Health Regen",
+      "{rounding:Integer}+(12-20) Health Regen"
     ]
   },
   "Chaos of Lagon": {
@@ -9208,7 +9208,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Lightning Damage"
+      "{rounding:Integer}(40-60)% increased Lightning Damage"
     ]
   },
   "Grand Chaos of Lagon": {
@@ -9220,7 +9220,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Lightning Damage"
+      "{rounding:Integer}(65-100)% increased Lightning Damage"
     ]
   },
   "Might of the Sea Titan": {
@@ -9232,7 +9232,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Cold Damage"
+      "{rounding:Integer}(40-60)% increased Cold Damage"
     ]
   },
   "Grand Might of the Sea Titan": {
@@ -9244,7 +9244,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Cold Damage"
+      "{rounding:Integer}(65-100)% increased Cold Damage"
     ]
   },
   "Resonance of the Sea": {
@@ -9256,7 +9256,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(17-25) Ward per Second"
+      "{rounding:Integer}+(17-25) Ward per Second"
     ]
   },
   "Grand Resonance of the Sea": {
@@ -9268,7 +9268,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(30-42) Ward per Second"
+      "{rounding:Integer}+(30-42) Ward per Second"
     ]
   },
   "Mysteries of the Deep": {
@@ -9424,8 +9424,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-70) Ward Gained on Potion Use",
-      "+(80-140) Ward Decay Threshold"
+      "{rounding:Integer}(40-70) Ward Gained on Potion Use",
+      "{rounding:Integer}+(80-140) Ward Decay Threshold"
     ]
   },
   "Grand Grace of Water": {
@@ -9437,8 +9437,8 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(80-130) Ward Gained on Potion Use",
-      "+(160-260) Ward Decay Threshold"
+      "{rounding:Integer}(80-130) Ward Gained on Potion Use",
+      "{rounding:Integer}+(160-260) Ward Decay Threshold"
     ]
   },
   "Resolve of Humanity": {
@@ -9463,7 +9463,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(30-45)% Critical Strike Avoidance",
-      "+(30-50) Dodge Rating"
+      "{rounding:Integer}+(30-50) Dodge Rating"
     ]
   },
   "Dream of Eterra": {
@@ -9487,7 +9487,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Poison Damage"
+      "{rounding:Integer}(40-60)% increased Poison Damage"
     ]
   },
   "Despair of Flesh": {
@@ -9499,7 +9499,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Necrotic Damage"
+      "{rounding:Integer}(40-60)% increased Necrotic Damage"
     ]
   },
   "Cruelty of Strength": {
@@ -9511,7 +9511,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Physical Damage"
+      "{rounding:Integer}(40-60)% increased Physical Damage"
     ]
   },
   "Hemmorage of Marrow": {
@@ -10076,7 +10076,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(50-70)% Critical Strike Avoidance",
-      "+(51-90) Dodge Rating"
+      "{rounding:Integer}+(51-90) Dodge Rating"
     ]
   },
   "Grand Dream of Eterra": {
@@ -10100,7 +10100,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Poison Damage"
+      "{rounding:Integer}(65-100)% increased Poison Damage"
     ]
   },
   "Grand Despair of Flesh": {
@@ -10112,7 +10112,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Necrotic Damage"
+      "{rounding:Integer}(65-100)% increased Necrotic Damage"
     ]
   },
   "Grand Cruelty of Strength": {
@@ -10124,7 +10124,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Physical Damage"
+      "{rounding:Integer}(65-100)% increased Physical Damage"
     ]
   },
   "Grand Hemmorage of Marrow": {
@@ -10484,7 +10484,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(40-70) Endurance Threshold"
+      "{rounding:Integer}+(40-70) Endurance Threshold"
     ]
   },
   "Grand Vigor of Jormun": {
@@ -10496,7 +10496,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(80-150) Endurance Threshold"
+      "{rounding:Integer}+(80-150) Endurance Threshold"
     ]
   },
   "Maw of Artor": {
@@ -10629,7 +10629,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(3-4)% Block Chance",
-      "+(100-140) Block Effectiveness"
+      "{rounding:Integer}+(100-140) Block Effectiveness"
     ]
   },
   "Grand Bones of Eternity": {
@@ -10642,7 +10642,7 @@
     "affixEffectModifier": 0,
     "implicits": [
       "+(5-8)% Block Chance",
-      "+(180-240) Block Effectiveness"
+      "{rounding:Integer}+(180-240) Block Effectiveness"
     ]
   },
   "Bulwark of the Tundra": {
@@ -10654,7 +10654,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(12-24)% increased Armor"
+      "{rounding:Integer}(12-24)% increased Armor"
     ]
   },
   "Grand Bulwark of the Tundra": {
@@ -10666,7 +10666,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(25-55)% increased Armor"
+      "{rounding:Integer}(25-55)% increased Armor"
     ]
   },
   "Defiance of Yulia": {
@@ -10678,7 +10678,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(5-10) Spell Cold Damage While Channelling"
+      "{rounding:Integer}+(5-10) Spell Cold Damage While Channelling"
     ]
   },
   "Grand Defiance of Yulia": {
@@ -10690,7 +10690,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(11-20) Spell Cold Damage While Channelling"
+      "{rounding:Integer}+(11-20) Spell Cold Damage While Channelling"
     ]
   },
   "Heart of the Caldera": {
@@ -10726,7 +10726,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(120-180) Armor"
+      "{rounding:Integer}+(120-180) Armor"
     ]
   },
   "Grand Body of Obsidian": {
@@ -10738,7 +10738,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(200-320) Armor"
+      "{rounding:Integer}+(200-320) Armor"
     ]
   },
   "Curse of Sulphur": {
@@ -10798,7 +10798,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(15-35)% increased Dodge Rating"
+      "{rounding:Integer}(15-35)% increased Dodge Rating"
     ]
   },
   "Grand Swiftness of Logi": {
@@ -10810,7 +10810,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-70)% increased Dodge Rating"
+      "{rounding:Integer}(40-70)% increased Dodge Rating"
     ]
   },
   "Breath of Cinders": {
@@ -10870,7 +10870,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Minion Damage"
+      "{rounding:Integer}(40-60)% increased Minion Damage"
     ]
   },
   "Grand Spirit of Command": {
@@ -10882,7 +10882,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Minion Damage"
+      "{rounding:Integer}(65-100)% increased Minion Damage"
     ]
   },
   "Might of Bhuldar": {
@@ -10918,7 +10918,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(40-60)% increased Fire Damage"
+      "{rounding:Integer}(40-60)% increased Fire Damage"
     ]
   },
   "Grand Flames of Calamity": {
@@ -10930,7 +10930,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "(65-100)% increased Fire Damage"
+      "{rounding:Integer}(65-100)% increased Fire Damage"
     ]
   },
   "Patience of Herkir": {
@@ -10942,7 +10942,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(200-350) Armor While Channelling"
+      "{rounding:Integer}+(200-350) Armor While Channelling"
     ]
   },
   "Grand Patience of Herkir": {
@@ -10954,7 +10954,7 @@
     },
     "affixEffectModifier": 0,
     "implicits": [
-      "+(400-650) Armor While Channelling"
+      "{rounding:Integer}+(400-650) Armor While Channelling"
     ]
   },
   "Obscuring Lens of Battle": {

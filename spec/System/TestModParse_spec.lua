@@ -12,13 +12,13 @@ describe("TestModParse", function()
         20% increased Health"
         build.configTab:BuildModList()
         runCallback("OnFrame")
-        assert.are.equals(240, build.calcsTab.calcsOutput.Life)
+        assert.are.equals(242, build.calcsTab.calcsOutput.Life)
 
         build.configTab.input.customMods = "+892 Health\n\z
         20.5% increased Health"
         build.configTab:BuildModList()
         runCallback("OnFrame")
-        assert.are.equals(1205, build.calcsTab.calcsOutput.Life)
+        assert.are.equals(1207, build.calcsTab.calcsOutput.Life)
     end)
 
     it("health regen", function()

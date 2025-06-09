@@ -789,7 +789,7 @@ holding Shift will put it in the second.]])
 				local modId = modList[index]
 				local mod = self.displayItem.affixes[modId]
 				for _, line in ipairs(mod) do
-					tooltip:AddLine(16, itemLib.applyRange(line, range))
+					tooltip:AddLine(16, itemLib.applyRange(line, range, 1.0, mod.rounding))
 				end
 				tooltip:AddSeparator(10)
 				if #modList > 1 then

@@ -800,7 +800,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 				local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
 				if modData then
 					local mod = modData[1]
-					local range = (affixData.r or 128) / 256.0
+					local range = (affixData.r or 128)
 					table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
 				end
 			end
@@ -813,7 +813,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 				local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
 				if modData then
 					local mod = modData[1]
-					local range = (affixData.r or 128) / 256.0
+					local range = (affixData.r or 128)
 					-- TODO: handle sealed affixes. Make use of "Prefix:" and "Suffix:"
 					table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
 				end
@@ -837,7 +837,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 						if itemLib.hasRange(modLine) then
 							local range = 0.5
 							if itemData['ur'] then
-								range = itemData["ur"][uniqueBase.rollIds[i] + 1] / 256.0
+								range = itemData["ur"][uniqueBase.rollIds[i] + 1]
 							end
 							table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
 						else
@@ -855,7 +855,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 			for i,implicit in ipairs(foundItemBase.implicits) do
 				local range = 0.5
 				if itemData['ir'] then
-					range = itemData["ir"][i] / 256.0
+					range = itemData["ir"][i]
 				end
 				table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
 			end

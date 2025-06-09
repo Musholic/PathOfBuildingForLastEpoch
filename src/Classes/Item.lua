@@ -361,31 +361,15 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 	self.requirements.int = 0
 	self.baseLines = { }
 	local importedLevelReq
-	local flaskBuffLines
-	local deferJewelRadiusIndexAssignment
 	local gameModeStage = "FINDIMPLICIT"
 	local foundExplicit, foundImplicit
 
 	while self.rawLines[l] do	
 		local line = self.rawLines[l]
-		if flaskBuffLines and flaskBuffLines[line] then
-			flaskBuffLines[line] = nil
-		elseif line == "--------" then
+		if line == "--------" then
 			self.checkSection = true
-		elseif line == "Split" then
-			self.split = true
 		elseif line == "Mirrored" then
 			self.mirrored = true
-		elseif line == "Corrupted" then
-			self.corrupted = true
-		elseif line == "Fractured Item" then
-			self.fractured = true
-		elseif line == "Synthesised Item" then
-			self.synthesised = true
-		elseif influenceItemMap[line] then
-			self[influenceItemMap[line]] = true
-		elseif line == "Requirements:" then
-			-- nothing to do
 		else
 			if self.checkSection then
 				if gameModeStage == "IMPLICIT" then
@@ -422,58 +406,9 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					self.classRestriction = specVal
 				elseif specName == "Quality" then
 					self.quality = specToNumber(specVal)
-				elseif specName == "Sockets" then
-					local group = 0
-					for c in specVal:gmatch(".") do
-						if c:match("[RGBWA]") then
-							t_insert(self.sockets, { color = c, group = group })
-						elseif c == " " then
-							group = group + 1
-						end
-					end
-				elseif specName == "Radius" and self.type == "Jewel" then
-					self.jewelRadiusLabel = specVal:match("^%a+")
-					if specVal:match("^%a+") == "Variable" then
-                        -- Jewel radius is variable and must be read from it's mods instead after they are parsed
-                        deferJewelRadiusIndexAssignment = true
-                    else
-                        for index, data in pairs(data.jewelRadius) do
-                            if specVal:match("^%a+") == data.label then
-                                self.jewelRadiusIndex = index
-                                break
-                            end
-						end
-					end
-				elseif specName == "Limited to" and self.type == "Jewel" then
-					self.limit = specToNumber(specVal)
-				elseif specName == "Variant" then
-					if not self.variantList then
-						self.variantList = { }
-					end
-					-- This has to be kept for backwards compatibility
-					local ver, name = specVal:match("{([%w_]+)}(.+)")
-					if ver then
-						t_insert(self.variantList, name)
-					else
-						t_insert(self.variantList, specVal)
-					end
-				elseif specName == "Talisman Tier" then
-					self.talismanTier = specToNumber(specVal)
-				elseif specName == "Armour" or specName == "Evasion Rating" or specName == "Evasion" or specName == "Energy Shield" or specName == "Ward" then
+				elseif specName == "Armour" or specName == "Evasion Rating" or specName == "Evasion" or specName == "Ward" then
 					if specName == "Evasion Rating" then
 						specName = "Evasion"
-						if self.baseName == "Two-Toned Boots (Armour/Energy Shield)" then
-							-- Another hack for Two-Toned Boots
-							self.baseName = "Two-Toned Boots (Armour/Evasion)"
-							self.base = data.itemBases[self.baseName]
-						end
-					elseif specName == "Energy Shield" then
-						specName = "EnergyShield"
-						if self.baseName == "Two-Toned Boots (Armour/Evasion)" then
-							-- Yet another hack for Two-Toned Boots
-							self.baseName = "Two-Toned Boots (Evasion/Energy Shield)"
-							self.base = data.itemBases[self.baseName]
-						end
 					end
 					self.armourData = self.armourData or { }
 					self.armourData[specName] = specToNumber(specVal)
@@ -487,40 +422,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					importedLevelReq = specToNumber(specVal)
 				elseif specName == "LevelReq" then
 					self.requirements.level = specToNumber(specVal)
-				elseif specName == "Has Alt Variant" then
-					self.hasAltVariant = true
-				elseif specName == "Has Alt Variant Two" then
-					self.hasAltVariant2 = true
-				elseif specName == "Has Alt Variant Three" then
-					self.hasAltVariant3 = true
-				elseif specName == "Has Alt Variant Four" then
-					self.hasAltVariant4 = true
-				elseif specName == "Has Alt Variant Five" then
-					self.hasAltVariant5 = true
-				elseif specName == "Selected Variant" then
-					self.variant = specToNumber(specVal)
-				elseif specName == "Selected Alt Variant" then
-					self.variantAlt = specToNumber(specVal)
-				elseif specName == "Selected Alt Variant Two" then
-					self.variantAlt2 = specToNumber(specVal)
-				elseif specName == "Selected Alt Variant Three" then
-					self.variantAlt3 = specToNumber(specVal)
-				elseif specName == "Selected Alt Variant Four" then
-					self.variantAlt4 = specToNumber(specVal)
-				elseif specName == "Selected Alt Variant Five" then
-					self.variantAlt5 = specToNumber(specVal)
-				elseif specName == "Has Variants" or specName == "Selected Variants" then
-					-- Need to skip this line for backwards compatibility
-					-- with builds that used an old Watcher's Eye implementation
-					l = l + 1
-				elseif specName == "League" then
-					self.league = specVal
 				elseif specName == "Crafted" then
 					self.crafted = true
-				elseif specName == "Scourge" then
-					self.scourge = true
-				elseif specName == "Crucible" then
-					self.crucible = true
 				elseif specName == "Implicit" then
 					self.implicit = true
 				elseif specName == "Prefix" then
@@ -540,30 +443,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 				elseif specName == "Implicits" then
 					implicitLines = specToNumber(specVal) or 0
 					gameModeStage = "EXPLICIT"
-				elseif specName == "Unreleased" then
-					self.unreleased = (specVal == "true")
-				elseif specName == "Upgrade" then
-					self.upgradePaths = self.upgradePaths or { }
-					t_insert(self.upgradePaths, specVal)
 				elseif specName == "Source" then
 					self.source = specVal
-				elseif specName == "Cluster Jewel Skill" then
-					if self.clusterJewel and self.clusterJewel.skills[specVal] then
-						self.clusterJewelSkill = specVal
-					end
-				elseif specName == "Cluster Jewel Node Count" then
-					if self.clusterJewel then
-						local num = specToNumber(specVal) or self.clusterJewel.maxNodes
-						self.clusterJewelNodeCount = m_min(m_max(num, self.clusterJewel.minNodes), self.clusterJewel.maxNodes)
-					end
-				elseif specName == "Catalyst" then
-					for i=1, #catalystList do
-						if specVal == catalystList[i] then
-							self.catalyst = i
-						end
-					end
-				elseif specName == "CatalystQuality" then
-					self.catalystQuality = specToNumber(specVal)
 				elseif specName == "Note" then
 					self.note = specVal
 				elseif specName == "Str" or specName == "Strength" or specName == "Dex" or specName == "Dexterity" or
@@ -599,6 +480,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 						end
 					elseif k == "range" then
 						modLine.range = tonumber(val)
+					elseif k == "rounding" then
+						modLine.rounding = val
 					elseif lineFlags[k] then
 						modLine[k] = true
 					end
@@ -621,9 +504,6 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 				local baseName
 				if not self.base and (self.rarity == "NORMAL" or self.rarity == "MAGIC") then
 					-- Exact match (affix-less magic and normal items)
-					if self.name:match("Energy Blade") and itemClass then -- Special handling for energy blade base.
-						self.name = itemClass:match("One Hand") and "Energy Blade One Handed" or "Energy Blade Two Handed"
-					end
 					if data.itemBases[self.name] then
 						baseName = self.name
 					else
@@ -656,10 +536,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					self.name = self.name:gsub(" %(.+%)","")
 				end
 				if not baseName then
-					baseName = line:gsub("^Superior ", ""):gsub("^Synthesised ","")
-				end
-				if baseName == "Two-Toned Boots" then
-					baseName = "Two-Toned Boots (Armour/Energy Shield)"
+					baseName = line
 				end
 				local base = data.itemBases[baseName]
 				if base then
@@ -686,45 +563,11 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					-- There is no modifier to apply for unique mods
 					modScalar = 1 + self.base.affixEffectModifier
 				end
-				local rangedLine = itemLib.applyRange(line, 1, modScalar)
+				local rangedLine = itemLib.applyRange(line, 1, modScalar, modLine.rounding)
 				local modList, extra = modLib.parseMod(rangedLine)
 
-				local lineLower = line:lower()
-				if lineLower == "this item can be anointed by cassia" then
-					self.canBeAnointed = true
-				elseif lineLower == "can have a second enchantment modifier" then
-					self.canHaveTwoEnchants = true
-				elseif lineLower == "can have 1 additional enchantment modifiers" then
-					self.canHaveTwoEnchants = true
-				elseif lineLower == "can have 2 additional enchantment modifiers" then
-					self.canHaveTwoEnchants = true
-					self.canHaveThreeEnchants = true
-				elseif lineLower == "can have 3 additional enchantment modifiers" then
-					self.canHaveTwoEnchants = true
-					self.canHaveThreeEnchants = true
-					self.canHaveFourEnchants = true
-				elseif lineLower == "has a crucible passive skill tree with only support passive skills" then
-					self.canHaveOnlySupportSkillsCrucibleTree = true
-				elseif lineLower == "has a crucible passive skill tree" then
-					self.canHaveShieldCrucibleTree = true
-				elseif lineLower == "has a two handed sword crucible passive skill tree" then
-					self.canHaveTwoHandedSwordCrucibleTree = true
-				end
-
 				local modLines
-				if modLine.enchant or (modLine.crafted and #self.enchantModLines + #self.implicitModLines < implicitLines) then
-					modLines = self.enchantModLines
-				elseif modLine.scourge then
-					modLines = self.scourgeModLines
-				elseif line:find("Requires Class") then
-					modLines = self.classRequirementModLines
-				elseif modLine.implicit then
-					modLines = self.implicitModLines
-				elseif modLine.crucible then
-					modLines = self.crucibleModLines
-				else
 					modLines = self.explicitModLines
-				end
 				modLine.line = line
 				if modList then
 					modLine.modList = modList
@@ -775,15 +618,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 	end
 	self.affixLimit = 0
 	if self.crafted then
-		if not self.affixes then 
-			self.crafted = false
-		elseif self.rarity == "MAGIC" then
-			self.affixLimit = 2
-		elseif self.rarity == "RARE" then
-			self.affixLimit = ((self.type == "Jewel" and not (self.base.subType == "Abyss" and self.corrupted)) and 4 or 6)
-		else
-			self.crafted = false
-		end
+		self.affixLimit = 4
 		if self.crafted then
 			for _, list in ipairs({self.prefixes,self.suffixes}) do
 				for i = 1, self.affixLimit/2 do
@@ -804,47 +639,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 			end
 		end
 	end
-	if self.base and self.base.socketLimit then
-		if #self.sockets == 0 then
-			for i = 1, self.base.socketLimit do
-				t_insert(self.sockets, {
-					color = self.defaultSocketColor,
-					group = 0,
-				})
-			end
-		end
-	end
-	self.abyssalSocketCount = 0
-	if self.variantList then
-		self.variant = m_min(#self.variantList, self.variant or #self.variantList)
-		if self.hasAltVariant then
-			self.variantAlt = m_min(#self.variantList, self.variantAlt or #self.variantList)
-		end
-		if self.hasAltVariant2 then
-			self.variantAlt2 = m_min(#self.variantList, self.variantAlt2 or #self.variantList)
-		end
-		if self.hasAltVariant3 then
-			self.variantAlt3 = m_min(#self.variantList, self.variantAlt3 or #self.variantList)
-		end
-		if self.hasAltVariant4 then
-			self.variantAlt4 = m_min(#self.variantList, self.variantAlt4 or #self.variantList)
-		end
-		if self.hasAltVariant5 then
-			self.variantAlt5 = m_min(#self.variantList, self.variantAlt5 or #self.variantList)
-		end
-	end
-	if not self.quality then
-		self:NormaliseQuality()
-		if highQuality then
-			-- Behavior of NormaliseQuality should be looked at because calling it twice has different results.
-			-- Leaving it alone for now. Just moving it here from Main.lua so BuildAndParseRaw doesn't need to be called.
-			self:NormaliseQuality()
-		end
-	end
 	self:BuildModList()
-	if deferJewelRadiusIndexAssignment then
-		self.jewelRadiusIndex = self.jewelData.radiusIndex
-	end
 end
 
 function ItemClass:NormaliseQuality()
@@ -960,6 +755,9 @@ function ItemClass:BuildRaw()
 	end
 	local function writeModLine(modLine)
 		local line = modLine.line
+		if modLine.rounding then
+			line = "{rounding:" .. modLine.rounding .. "}" .. line
+		end
 		if modLine.range and line:match("%(%-?[%d%.]+%-%-?[%d%.]+%)") then
 			line = "{range:" .. round(modLine.range, 3) .. "}" .. line
 		end
@@ -1123,7 +921,7 @@ function ItemClass:Craft()
 				self.requirements.level = m_max(self.requirements.level or 0, m_floor(mod.level * 0.8))
 				local rangeScalar = getCatalystScalar(self.catalyst, mod.modTags, self.catalystQuality)
 				for i, line in ipairs(mod) do
-					line = itemLib.applyRange(line, affix.range or 0.5, rangeScalar)
+					line = itemLib.applyRange(line, affix.range or 0.5, rangeScalar, affix.rounding)
 					local order = mod.statOrder[i]
 					if statOrder[order] then
 						-- Combine stats
@@ -1515,7 +1313,7 @@ function ItemClass:BuildModList()
 					if modLine.line:find("%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)") then
 						local strippedModeLine = modLine.line:gsub("\n"," ")
 						-- Put the modified value into the string
-						local line = itemLib.applyRange(strippedModeLine, modLine.range, modLine.valueScalar)
+						local line = itemLib.applyRange(strippedModeLine, modLine.range, modLine.valueScalar, modLine.rounding)
 						-- Check if we can parse it before adding the mods
 						local list, extra = modLib.parseMod(line)
 						if list and not extra then
