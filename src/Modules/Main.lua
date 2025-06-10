@@ -91,7 +91,7 @@ function main:Init()
 	self.showThousandsSeparators = true
 	self.thousandsSeparator = ","
 	self.decimalSeparator = "."
-	self.defaultItemAffixQuality = 0.5
+	self.defaultItemAffixQuality = 0
 	self.showTitlebarName = true
 	self.showWarnings = true
 	self.slotOnlyTooltips = true
@@ -174,10 +174,10 @@ function main:Init()
 		self.rareDB.loading = nil
 		ConPrintf("Rares loaded")
 	end
-	
+
 	if self.saveNewModCache then
 		local saved = self.defaultItemAffixQuality
-		self.defaultItemAffixQuality = 0.5
+		self.defaultItemAffixQuality = 0
 		loadItemDBs()
 		self:SaveModCache()
 		self.defaultItemAffixQuality = saved
@@ -260,7 +260,7 @@ the "Releases" section of the GitHub page.]])
 
 	if not self.saveNewModCache then
 		local itemsCoroutine = coroutine.create(loadItemDBs)
-		
+
 		self.onFrameFuncs["LoadItems"] = function()
 			local res, errMsg = coroutine.resume(itemsCoroutine)
 			if coroutine.status(itemsCoroutine) == "dead" then
@@ -459,7 +459,7 @@ function main:OnFrame()
 	SetDrawColor(0, 0, 0)
 	DrawImage(nil, par + 500, 200, 2, 750)
 	DrawImage(nil, 500, par + 200, 759, 2)]]
-	
+
 	if self.inputEvents and not itemLib.wiki.triggered then
 		for _, event in ipairs(self.inputEvents) do
 			if event.type == "KeyUp" and event.key == "F1" then
@@ -597,7 +597,7 @@ function main:LoadSettings(ignoreBuild)
 					self.defaultCharLevel = m_min(m_max(tonumber(node.attrib.defaultCharLevel) or 1, 1), 100)
 				end
 				if node.attrib.defaultItemAffixQuality then
-					self.defaultItemAffixQuality = m_min(tonumber(node.attrib.defaultItemAffixQuality) or 0.5, 1)
+					self.defaultItemAffixQuality = m_min(tonumber(node.attrib.defaultItemAffixQuality) or 0, 1)
 				end
 				if node.attrib.lastExportWebsite then
 					self.lastExportWebsite = node.attrib.lastExportWebsite
@@ -713,7 +713,7 @@ function main:SaveSettings()
 		betaTest = tostring(self.betaTest),
 		defaultGemQuality = tostring(self.defaultGemQuality or 0),
 		defaultCharLevel = tostring(self.defaultCharLevel or 1),
-		defaultItemAffixQuality = tostring(self.defaultItemAffixQuality or 0.5),
+		defaultItemAffixQuality = tostring(self.defaultItemAffixQuality or 0),
 		lastExportWebsite = self.lastExportWebsite,
 		showWarnings = tostring(self.showWarnings),
 		slotOnlyTooltips = tostring(self.slotOnlyTooltips),
@@ -836,7 +836,7 @@ function main:OpenOptionsPopup()
 	controls.colorHighlightLabel = new("LabelControl", { "RIGHT", controls.colorHighlight, "LEFT" }, defaultLabelSpacingPx, 0, 0, 16, "^7Hex colour for highlight nodes:")
 	controls.colorHighlight.tooltipText = "Overrides the default hex colour for highlighting nodes in passive tree search. \nExpected format is 0x000000. " ..
 		"The default value is " .. tostring(defaultColorCodes.HIGHLIGHT:gsub('^(^)', '0')) .."\nIf updating while inside a build, please re-load the build after saving."
-			
+
 	nextRow()
 	controls.betaTest = new("CheckBoxControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 20, "^7Opt-in to weekly beta test builds:", function(state)
 		self.betaTest = state
@@ -902,14 +902,14 @@ function main:OpenOptionsPopup()
 		self.slotOnlyTooltips = state
 	end)
 	controls.slotOnlyTooltips.state = self.slotOnlyTooltips
-	
+
 	nextRow()
 	controls.invertSliderScrollDirection = new("CheckBoxControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 20, "^7Invert slider scroll direction:", function(state)
 		self.invertSliderScrollDirection = state
 	end)
 	controls.invertSliderScrollDirection.tooltipText = "Default scroll direction is:\nScroll Up = Move right\nScroll Down = Move left"
 	controls.invertSliderScrollDirection.state = self.invertSliderScrollDirection
-	
+
 	if launch.devMode then
 		nextRow()
 		controls.disableDevAutoSave = new("CheckBoxControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 20, "^7Disable Dev AutoSave:", function(state)
@@ -932,7 +932,7 @@ function main:OpenOptionsPopup()
 	local initialBetaTest = self.betaTest
 	local initialDefaultGemQuality = self.defaultGemQuality or 0
 	local initialDefaultCharLevel = self.defaultCharLevel or 1
-	local initialDefaultItemAffixQuality = self.defaultItemAffixQuality or 0.5
+	local initialDefaultItemAffixQuality = self.defaultItemAffixQuality or 0
 	local initialShowWarnings = self.showWarnings
 	local initialSlotOnlyTooltips = self.slotOnlyTooltips
 	local initialInvertSliderScrollDirection = self.invertSliderScrollDirection

@@ -1,710 +1,652 @@
 {
   "data": {
-    "fromSaveFile": 1,
-    "newGrid": true,
-    "bio": {
-      "level": 75,
-      "characterClass": 3,
-      "chosenMastery": 2
-    },
     "equipment": {
       "head": {
-        "id": "IIwBjOAWcg",
+        "ir": [
+          255,
+          126,
+          188
+        ],
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "ACwBgTEA",
             "tier": 3,
-            "r": 233
+            "r": 208,
+            "id": "AAzDsQ"
           },
           {
-            "id": "AKwBgTEA",
-            "tier": 4,
-            "r": 226
-          },
-          {
-            "id": "AAwJgrEA",
-            "tier": 5,
-            "r": 240
-          },
-          {
-            "id": "AAzDsQ",
             "tier": 1,
-            "r": 32
+            "r": 13,
+            "id": "AKwBmQ"
+          },
+          {
+            "tier": 1,
+            "r": 39,
+            "id": "AAwJhQ"
+          },
+          {
+            "tier": 1,
+            "r": 169,
+            "id": "AMzCMQ"
           }
         ],
-        "sealedAffix": null,
-        "ir": [
-          51,
-          136,
-          88
-        ],
-        "ur": []
+        "sealedAffix": {
+          "tier": 5,
+          "r": 163,
+          "id": "AAwRmQ"
+        },
+        "id": "IIwBjIFg8g"
       },
       "chest": {
-        "id": "UAwNgTAjKQ",
-        "affixes": [],
-        "sealedAffix": null,
         "ir": [
-          250,
-          80,
-          167
+          124,
+          170,
+          50
         ],
         "ur": [
-          109,
-          28,
-          63,
-          213,
-          120,
-          118,
-          141,
-          17
-        ]
+          11,
+          79,
+          13,
+          163,
+          209,
+          31,
+          129,
+          126
+        ],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
+        "affixes": [
+          {
+            "tier": 4,
+            "r": 152,
+            "id": "AAwRmQ"
+          }
+        ],
+        "sealedAffix": null,
+        "id": "UAwkdiA"
       },
       "weapon1": {
-        "id": "IIwBlJBOCSA",
+        "ir": [
+          137,
+          146,
+          232
+        ],
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AAwRgHEA",
             "tier": 3,
-            "r": 63
+            "r": 212,
+            "id": "ACwZgjEA"
           },
           {
-            "id": "AAwdgTEA",
-            "tier": 3,
-            "r": 202
+            "tier": 4,
+            "r": 185,
+            "id": "ACwZmQ"
           },
           {
-            "id": "AAwDgrEA",
-            "tier": 2,
-            "r": 198
-          },
-          {
-            "id": "AAwVhQ",
             "tier": 1,
-            "r": 100
+            "r": 103,
+            "id": "AAwDgbEA"
+          },
+          {
+            "tier": 2,
+            "r": 213,
+            "id": "AAwVgbEA"
           }
         ],
         "sealedAffix": null,
-        "ir": [
-          127,
-          182,
-          190
-        ],
-        "ur": []
+        "id": "IIwBgTAzC7SQ"
       },
       "weapon2": {
-        "id": "IIwBmE4RAOKSA",
-        "affixes": [
-          {
-            "id": "AAwZgHEA",
-            "tier": 5,
-            "r": 218
-          },
-          {
-            "id": "AAwdgTEA",
-            "tier": 6,
-            "r": 242
-          },
-          {
-            "id": "AAwRg7EA",
-            "tier": 3,
-            "r": 99
-          },
-          {
-            "id": "AAzDsQ",
-            "tier": 4,
-            "r": 103
-          }
-        ],
-        "sealedAffix": null,
         "ir": [
-          201,
-          140,
+          133,
+          198,
           46
         ],
-        "ur": []
+        "ur": [
+          26,
+          65,
+          57,
+          248,
+          169,
+          198,
+          229,
+          204
+        ],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
+        "affixes": [],
+        "sealedAffix": null,
+        "id": "UAzCMoFgDiA"
       },
       "hands": {
-        "id": "IIwBhBYwNjEg",
+        "ir": [
+          141,
+          227,
+          251
+        ],
+        "ur": [
+          145,
+          57,
+          48,
+          209,
+          169,
+          231,
+          206,
+          255
+        ],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AAwDgzEA",
+            "tier": 3,
+            "r": 149,
+            "id": "AAwTmQ"
+          },
+          {
             "tier": 2,
-            "r": 18
+            "r": 97,
+            "id": "ACwJgnEA"
           },
           {
-            "id": "AIwBmQ",
             "tier": 2,
-            "r": 252
+            "r": 44,
+            "id": "AAwdgTEA"
           },
           {
-            "id": "AAwRmQ",
-            "tier": 6,
-            "r": 70
-          },
-          {
-            "id": "AAwZgjEA",
-            "tier": 1,
-            "r": 254
+            "tier": 2,
+            "r": 107,
+            "id": "AKwBgjEA"
           }
         ],
         "sealedAffix": null,
-        "ir": [
-          40,
-          82,
-          94
-        ],
-        "ur": []
+        "id": "UAzCMCYE4GYg"
       },
       "waist": {
-        "id": "IIwBhCYwFjEg",
+        "ir": [
+          134,
+          183,
+          129
+        ],
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AAwRgHEA",
-            "tier": 4,
-            "r": 91
-          },
-          {
-            "id": "AAwdgrEA",
             "tier": 1,
-            "r": 93
+            "r": 82,
+            "id": "AAwVgnEA"
           },
           {
-            "id": "AAwDmQ",
-            "tier": 2,
-            "r": 203
+            "tier": 1,
+            "r": 155,
+            "id": "AMzAMQ"
           },
           {
-            "id": "AAwRg7EA",
-            "tier": 2,
-            "r": 107
+            "tier": 1,
+            "r": 115,
+            "id": "AAwNgrEA"
+          },
+          {
+            "tier": 4,
+            "r": 243,
+            "id": "AAwRgzEA"
           }
         ],
-        "sealedAffix": null,
-        "ir": [
-          3,
-          3,
-          90
-        ],
-        "ur": []
+        "sealedAffix": {
+          "tier": 3,
+          "r": 60,
+          "id": "AOzCMQ"
+        },
+        "id": "IIwBhCYykg"
       },
       "feet": {
-        "id": "IIwBhGYwVjEg",
+        "ir": [
+          17,
+          158,
+          149
+        ],
+        "ur": [
+          150,
+          207,
+          201,
+          188,
+          3,
+          174,
+          84,
+          251
+        ],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AKwBmQ",
-            "tier": 6,
-            "r": 157
-          },
-          {
-            "id": "AKwBgTEA",
-            "tier": 4,
-            "r": 177
-          },
-          {
-            "id": "AAwJgrEA",
             "tier": 5,
-            "r": 46
+            "r": 47,
+            "id": "AAwFgrEA"
           },
           {
-            "id": "AAwRgnEA",
-            "tier": 4,
-            "r": 116
+            "tier": 6,
+            "r": 34,
+            "id": "AAwJgrEA"
+          },
+          {
+            "tier": 1,
+            "r": 206,
+            "id": "AKwBmQ"
+          },
+          {
+            "tier": 1,
+            "r": 54,
+            "id": "AKwBgLEA"
           }
         ],
         "sealedAffix": null,
-        "ir": [
-          136,
-          229,
-          197
-        ],
-        "ur": []
+        "id": "UAzBMoTgNiA"
       },
       "ring1": {
-        "id": "IIwBgTKotQ",
+        "ir": [
+          49,
+          37,
+          186
+        ],
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AKwBgzEA",
-            "tier": 1,
-            "r": 235
+            "tier": 3,
+            "r": 0,
+            "id": "AKwBgzEA"
           },
           {
-            "id": "AKwBgTEA",
-            "tier": 4,
-            "r": 253
-          },
-          {
-            "id": "AAwRgzEA",
-            "tier": 1,
-            "r": 16
-          },
-          {
-            "id": "AAwJgrEA",
             "tier": 2,
-            "r": 8
+            "r": 124,
+            "id": "ABwJgLEA"
+          },
+          {
+            "tier": 4,
+            "r": 104,
+            "id": "AKwBg7EA"
+          },
+          {
+            "tier": 4,
+            "r": 88,
+            "id": "AAzAcQ"
           }
         ],
         "sealedAffix": null,
-        "ir": [
-          83,
-          195,
-          112
-        ],
-        "ur": []
+        "id": "IIwBgTKIGwrQ"
       },
       "ring2": {
-        "id": "IIwBgTKotQ",
+        "ir": [
+          248,
+          53,
+          205
+        ],
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AAwRgHEA",
             "tier": 1,
-            "r": 241
+            "r": 217,
+            "id": "AAwFgzEA"
           },
           {
-            "id": "AAwRgbEA",
-            "tier": 3,
-            "r": 251
+            "tier": 2,
+            "r": 203,
+            "id": "AAwZmQ"
           },
           {
-            "id": "AAzAcQ",
             "tier": 1,
-            "r": 225
+            "r": 69,
+            "id": "ABwJgLEA"
           },
           {
-            "id": "ACwJgbEA",
             "tier": 1,
-            "r": 0
+            "r": 212,
+            "id": "AAwRg7EA"
           }
         ],
         "sealedAffix": null,
-        "ir": [
-          179,
-          199,
-          71
-        ],
-        "ur": []
+        "id": "IIwBgTKIMwrQ"
       },
       "amulet": {
-        "id": "IIwBgTCkZQ",
+        "ir": [
+          82,
+          230,
+          213
+        ],
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AAwRgHEA",
+            "tier": 2,
+            "r": 62,
+            "id": "AAwRgbEA"
+          },
+          {
             "tier": 3,
-            "r": 69
+            "r": 25,
+            "id": "AAwZhQ"
           },
           {
-            "id": "AAwdgTEA",
-            "tier": 4,
-            "r": 234
+            "tier": 1,
+            "r": 29,
+            "id": "AAwVhQ"
           },
           {
-            "id": "AAwDmQ",
-            "tier": 3,
-            "r": 58
-          },
-          {
-            "id": "AAwJgnEA",
-            "tier": 6,
-            "r": 186
+            "tier": 1,
+            "r": 152,
+            "id": "AAzDsQ"
           }
         ],
-        "sealedAffix": null,
-        "ir": [
-          231,
-          253,
-          103
-        ],
-        "ur": []
+        "sealedAffix": {
+          "tier": 3,
+          "r": 88,
+          "id": "AOzAMQ"
+        },
+        "id": "IIwBgTCkMySQ"
       },
       "relic": {
-        "id": "IIwBgTGLJIkA",
+        "ir": [
+          156,
+          173,
+          24
+        ],
+        "ur": [
+          192,
+          232,
+          230,
+          38,
+          234,
+          111,
+          209,
+          217
+        ],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AAwRgHEA",
-            "tier": 6,
-            "r": 212
+            "tier": 4,
+            "r": 122,
+            "id": "AGwRgTEA"
           },
           {
-            "id": "AKwDgzEA",
-            "tier": 4,
-            "r": 68
+            "tier": 1,
+            "r": 94,
+            "id": "AGwRmQ"
           },
           {
-            "id": "AAwJgLEA",
-            "tier": 4,
-            "r": 98
-          },
-          {
-            "id": "AAwRgnEA",
-            "tier": 4,
-            "r": 110
+            "tier": 1,
+            "r": 248,
+            "id": "ACwJgnEA"
           }
         ],
         "sealedAffix": null,
-        "ir": [
-          43,
-          162,
-          13
-        ],
-        "ur": []
+        "id": "UAwFg7AzMCMQ"
       }
     },
     "idols": [
       {
-        "x": 4,
-        "y": 1,
-        "id": "IIwBgTAbC00A",
-        "affixes": [
-          {
-            "id": "AIwFgTEA",
-            "tier": 1,
-            "r": 42
-          },
-          {
-            "id": "AMwJgDEA",
-            "tier": 1,
-            "r": 129
-          }
-        ],
-        "ur": []
-      },
-      {
-        "x": 4,
-        "y": 5,
-        "id": "IIwBgTArC00A",
-        "affixes": [
-          {
-            "id": "AIzCcQ",
-            "tier": 1,
-            "r": 211
-          },
-          {
-            "id": "AIzBsQ",
-            "tier": 1,
-            "r": 155
-          }
-        ],
-        "ur": []
-      },
-      {
-        "x": 2,
-        "y": 1,
-        "id": "IIwBgTAbC00A",
-        "affixes": [
-          {
-            "id": "AIwFgTEA",
-            "tier": 1,
-            "r": 94
-          },
-          {
-            "id": "AIwo",
-            "tier": 1,
-            "r": 203
-          }
-        ],
-        "ur": []
-      },
-      {
-        "x": 4,
-        "y": 3,
-        "id": "IIwBgTAHC00A",
-        "affixes": [
-          {
-            "id": "AIwJgDEA",
-            "tier": 1,
-            "r": 246
-          },
-          {
-            "id": "AIwBgrEA",
-            "tier": 1,
-            "r": 177
-          }
-        ],
-        "ur": []
-      },
-      {
         "x": 3,
-        "y": 1,
-        "id": "IIwBgTArC00A",
+        "y": 4,
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AIzAcQ",
             "tier": 1,
-            "r": 175
+            "r": 130,
+            "id": "AIwZgnEA"
           },
           {
-            "id": "AMwJgLEA",
             "tier": 1,
-            "r": 69
+            "r": 226,
+            "id": "AIzDsQ"
           }
         ],
-        "ur": []
-      },
-      {
-        "x": 2,
-        "y": 3,
-        "id": "IIwBgTArC00A",
-        "affixes": [
-          {
-            "id": "AIzAcQ",
-            "tier": 1,
-            "r": 227
-          },
-          {
-            "id": "AMwJgLEA",
-            "tier": 1,
-            "r": 249
-          }
-        ],
-        "ur": []
+        "id": "IIwBgTAHC00A"
       },
       {
         "x": 5,
-        "y": 3,
-        "id": "IIwBgTAHC00A",
+        "y": 4,
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AIwBg7EA",
             "tier": 1,
-            "r": 96
+            "r": 156,
+            "id": "AMwJhQ"
           },
           {
-            "id": "AIzBMQ",
             "tier": 1,
-            "r": 128
+            "r": 1,
+            "id": "AIzAMQ"
           }
         ],
-        "ur": []
+        "id": "IIwBgTAbC00A"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
+        "affixes": [
+          {
+            "tier": 1,
+            "r": 205,
+            "id": "AIwFmQ"
+          },
+          {
+            "tier": 1,
+            "r": 80,
+            "id": "AMwJhQ"
+          }
+        ],
+        "id": "IIwBgTAHC00A"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
+        "affixes": [
+          {
+            "tier": 1,
+            "r": 197,
+            "id": "AIwFmQ"
+          },
+          {
+            "tier": 1,
+            "r": 201,
+            "id": "AIzDsQ"
+          }
+        ],
+        "id": "IIwBgTAHC00A"
       },
       {
         "x": 1,
-        "y": 2,
-        "id": "IIwBgzCkZQ",
-        "affixes": [
-          {
-            "id": "AIwJhQ",
-            "tier": 1,
-            "r": 3
-          },
-          {
-            "id": "AIwBgrEA",
-            "tier": 1,
-            "r": 210
-          }
-        ],
-        "ur": []
-      },
-      {
-        "x": 2,
         "y": 4,
-        "id": "IIwBgzGLlJA",
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AOwVmQ",
             "tier": 1,
-            "r": 97
+            "r": 97,
+            "id": "AIwJhQ"
           },
           {
-            "id": "AIwBgrEA",
             "tier": 1,
-            "r": 122
+            "r": 76,
+            "id": "AMwJhQ"
           }
         ],
-        "ur": []
+        "id": "IIwBgTAbC00A"
       },
       {
         "x": 2,
         "y": 2,
-        "id": "IIwBgzK4tQ",
+        "ur": [],
+        "tradeable": 0,
+        "faction": null,
+        "duplicated": false,
         "affixes": [
           {
-            "id": "AGwVgDEA",
             "tier": 1,
-            "r": 47
+            "r": 47,
+            "id": "AIwZgbEA"
           },
           {
-            "id": "AMwBgHEA",
             "tier": 1,
-            "r": 180
+            "r": 143,
+            "id": "ACwNgTEA"
+          },
+          {
+            "tier": 7,
+            "r": 222,
+            "id": "AJwJg7EA"
           }
         ],
-        "ur": []
+        "id": "IIwBgzATCIJzSQ"
       }
     ],
-    "blessings": {
-      "1": {
-        "id": "IIwBgzALCorQ",
-        "ir": [
-          51,
-          36,
-          184
-        ]
+    "blessings": [],
+    "weaverTreeContainers": [],
+    "skillTrees": [
+      {
+        "treeID": "dqv5",
+        "slotNumber": 2,
+        "level": 16,
+        "selected": {
+          "5": 1,
+          "8": 2,
+          "20": 2,
+          "21": 3,
+          "22": 2,
+          "23": 1,
+          "6": 4,
+          "28": 3
+        }
       },
-      "2": {
-        "id": "IIwBgzALCBsAcIKA",
-        "ir": [
-          78,
-          27,
-          243
-        ]
+      {
+        "treeID": "shiif",
+        "slotNumber": 3,
+        "level": 16,
+        "selected": {
+          "2": 3,
+          "5": 1,
+          "3": 2,
+          "6": 1,
+          "27": 3,
+          "9": 3,
+          "15": 3,
+          "16": 1,
+          "22": 1
+        }
       },
-      "3": {
-        "id": "IIwBgzALOBsJ0A",
-        "ir": [
-          94,
-          55,
-          249
-        ]
+      {
+        "treeID": "htsk5",
+        "slotNumber": 1,
+        "level": 16,
+        "selected": {
+          "9": 2,
+          "13": 1,
+          "14": 3,
+          "15": 4,
+          "16": 2,
+          "17": 1,
+          "23": 3,
+          "27": 1,
+          "28": 1
+        }
       },
-      "4": {
-        "id": "IIwBgzALCxSJA",
-        "ir": [
-          16,
-          174,
-          169
-        ]
+      {
+        "treeID": "cstri",
+        "slotNumber": 0,
+        "level": 16,
+        "selected": {
+          "2": 2,
+          "24": 2,
+          "25": 1,
+          "26": 5,
+          "18": 2,
+          "19": 3,
+          "21": 1,
+          "23": 2
+        }
       },
-      "5": {
-        "id": "IIwBgzALCAcBMIKA",
-        "ir": [
-          44,
-          234,
-          88
-        ]
+      {
+        "treeID": "exvol8",
+        "slotNumber": 4,
+        "level": 15,
+        "selected": {
+          "2": 4,
+          "16": 1,
+          "13": 1,
+          "12": 1,
+          "8": 1,
+          "9": 5,
+          "10": 4
+        }
       }
-    },
+    ],
     "charTree": {
       "treeID": "",
       "selected": {
-        "1": 8,
-        "2": 1,
-        "3": 1,
-        "6": 5,
-        "7": 5,
-        "29": 8,
-        "30": 8,
-        "38": 8,
-        "40": 5,
-        "42": 10,
-        "43": 9,
-        "48": 10,
-        "56": 5,
-        "66": 4
-      },
-      "version": 2
-    },
-    "skillTrees": [
-      {
-        "treeID": "sp5g2",
-        "selected": {
-          "2": 1,
-          "6": 3,
-          "10": 1,
-          "13": 3,
-          "18": 3,
-          "22": 5,
-          "23": 2,
-          "24": 1
-        },
-        "level": 20,
-        "slotNumber": 0,
-        "version": 1
-      },
-      {
-        "treeID": "rf1azz",
-        "selected": {
-          "2": 1,
-          "6": 3,
-          "7": 4,
-          "19": 1,
-          "21": 2,
-          "25": 1,
-          "31": 3,
-          "32": 1,
-          "33": 3
-        },
-        "level": 20,
-        "slotNumber": 1,
-        "version": 1
-      },
-      {
-        "treeID": "ws54hm",
-        "selected": {
-          "2": 1,
-          "3": 1,
-          "7": 3,
-          "8": 4,
-          "26": 4,
-          "30": 3,
-          "31": 3
-        },
-        "level": 20,
-        "slotNumber": 2,
-        "version": 2
-      },
-      {
-        "treeID": "ds34l",
-        "selected": {
-          "5": 5,
-          "6": 1,
-          "7": 4,
-          "8": 3,
-          "11": 1,
-          "15": 2,
-          "22": 1,
-          "26": 2
-        },
-        "level": 20,
-        "slotNumber": 3,
-        "version": 0
-      },
-      {
-        "treeID": "ts50pl",
-        "selected": {
-          "2": 3,
-          "4": 3,
-          "5": 3,
-          "7": 1,
-          "8": 1,
-          "12": 1,
-          "13": 2,
-          "14": 1,
-          "17": 1,
-          "18": 3,
-          "19": 1
-        },
-        "level": 21,
-        "slotNumber": 4,
-        "version": 3
+        "6": 8,
+        "1": 1,
+        "7": 2,
+        "8": 5,
+        "14": 4,
+        "20": 5,
+        "24": 5,
+        "27": 5,
+        "22": 5,
+        "28": 1,
+        "31": 5,
+        "33": 4,
+        "39": 1,
+        "37": 3,
+        "36": 1,
+        "41": 5,
+        "42": 4,
+        "40": 1,
+        "45": 1
       }
-    ],
-    "hud": [
-      "rf1azz",
-      "ds34l",
-      "ws54hm",
-      "ts50pl",
-      "sp5g2"
-    ],
-    "weaponTypes": [
-      10,
-      19
-    ],
-    "dataVersion": "Version 1.0.3",
-    "charTreeProgression": [],
-    "skillTreesProgression": {},
-    "conditions": {
-      "healthPercent": 100,
-      "manaPercent": 100,
-      "moving": true,
-      "enemyIsNearby": true
     },
-    "customConditions": [],
-    "activeBuffs": {
-      "buffs": [],
-      "ailments": [],
-      "skills": []
+    "weaverTree": {
+      "selected": {
+        "164": 1,
+        "103": 1,
+        "121": 1
+      }
     },
-    "buffSettings": [],
     "completedQuests": [
       128,
       131,
@@ -714,45 +656,56 @@
       3,
       94,
       39,
-      9,
-      35,
-      12,
-      37,
+      160,
+      45,
       20,
       24,
       30,
       36,
-      33,
-      32,
-      47,
-      46,
-      45,
-      58,
-      57,
-      121,
-      119,
-      120,
-      117,
-      122,
-      124
-    ]
-  },
-  "tags": [
-    {
-      "32": 5,
-      "256": 4,
-      "512": 1,
-      "4096": 2,
-      "131072": 1,
-      "16777216": 1
+      158
+    ],
+    "hud": [
+      "exvol8",
+      "cstri",
+      "shiif",
+      "dqv5",
+      "htsk5"
+    ],
+    "bio": {
+      "level": 54,
+      "characterClass": 4,
+      "chosenMastery": 2
     },
-    []
-  ],
-  "level": 75,
-  "class": 3,
+    "fromSaveFile": 2,
+    "newGrid": true,
+    "gh": "97c1176ad8aecc493fc03534ce3521ed",
+    "weaponTypes": [
+      -1,
+      -1
+    ],
+    "dataVersion": "Version 1.2.5",
+    "charTreeProgression": [],
+    "skillTreesProgression": {},
+    "conditions": {
+      "healthPercent": 100,
+      "moving": true,
+      "enemyIsNearby": true
+    },
+    "customConditions": [],
+    "activeBuffs": {
+      "buffs": [],
+      "ailments": [],
+      "skills": []
+    },
+    "buffSettings": []
+  },
+  "tags": null,
+  "level": 54,
+  "class": 4,
   "mastery": 2,
-  "created_for_build": "Version 1.0.3",
-  "data_version": "Version 1.0.3",
+  "created_for_build": "Version 1.2.5",
+  "data_version": "Version 1.2.5",
   "guide": null,
-  "precalc_data": "{\"data\":{\"attributes\":{\"str\":4,\"dex\":5,\"int\":79,\"att\":4,\"vit\":16},\"general\":{\"health\":1232,\"mana\":176,\"healthRegen\":14,\"manaRegen\":8,\"ward\":0,\"wardRegen\":80,\"wardRetention\":\"471%\",\"wardDecayThreshold\":57,\"moveSpeed\":\"17%\"},\"resistances\":{\"fire\":\"32%\",\"cold\":\"90%\",\"lightning\":\"45%\",\"physical\":\"0%\",\"void\":\"37%\",\"necrotic\":\"131%\",\"poison\":\"93%\"},\"defences\":{\"dodgeRating\":168,\"dodgeChance\":\"8%\",\"armor\":313,\"armorMitigation\":\"15%\",\"blockChance\":\"1%\",\"blockEffectiveness\":40,\"blockMitigation\":\"9%\",\"endurance\":\"20%\",\"enduranceThreshold\":246,\"glancingBlow\":\"0%\",\"critAvoidance\":\"0%\",\"reducedBonusDamageFromCrit\":\"0%\",\"parryChance\":\"0%\",\"stunAvoidance\":835},\"masteryLevels\":[25,0,62,0]},\"ehp\":{\"Physical\":947,\"Fire\":1097,\"Cold\":1574,\"Lightning\":1206,\"Necrotic\":1574,\"Void\":1141,\"Poison\":1574},\"buffs\":[],\"tags\":[{\"Necrotic\":5,\"Spell\":4,\"Melee\":1,\"DoT\":2,\"Buff\":1,\"Curse\":1},{}]}"
+  "precalc_data": "",
+  "source": "https://www.lastepochtools.com/planner/Bg7PNkkB"
 }

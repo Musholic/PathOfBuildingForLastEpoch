@@ -708,7 +708,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                     item.base = itemBase
                     item.implicitMods = {}
                     for i, implicit in ipairs(itemBase.implicits) do
-                        local range = itemData["data"][7 + i] / 256.0
+                        local range = itemData["data"][7 + i]
                         table.insert(item.implicitMods, "{range: " .. range .. "}" .. implicit)
                     end
                     local rarity = itemData["data"][6]
@@ -719,7 +719,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                         local uniqueBase = self.build.data.uniques[uniqueID]
                         item["name"] = uniqueBase.name
                         for i, modLine in ipairs(uniqueBase.mods) do
-                            local range = itemData["data"][12 + i ] / 256.0
+                            local range = itemData["data"][12 + i ]
                             table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
                         end
                         if rarity == 9 then
@@ -738,7 +738,7 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                                     local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
                                     if modData then
                                         local mod = modData[1]
-                                        local range = itemData["data"][dataId + 1] / 256.0
+                                        local range = itemData["data"][dataId + 1]
                                         table.insert(item.explicitMods, "{range: " .. range .. "}" .. mod)
                                     end
                                 end
@@ -819,11 +819,40 @@ for i = 1, 20 do
     slotMap["Idol " .. i] = "Idol " .. i
 end
 
+
 function ImportTabClass:ImportItem(itemData, slotName)
     if not slotName then
         slotName = slotMap[itemData.inventoryId]
     end
 
+    local item = self:BuildItem(itemData)
+
+    -- Add and equip the new item
+    --ConPrintf("%s", item.raw)
+    if item.base then
+        local repIndex, repItem
+        for index, item in pairs(self.build.itemsTab.items) do
+            if item.uniqueID == itemData.id then
+                repIndex = index
+                repItem = item
+                break
+            end
+        end
+        if repIndex then
+            -- Item already exists in the build, overwrite it
+            item.id = repItem.id
+            self.build.itemsTab.items[item.id] = item
+            item:BuildModList()
+        else
+            self.build.itemsTab:AddItem(item, true)
+        end
+        if slotName then
+            self.build.itemsTab.slots[slotName]:SetSelItemId(item.id)
+        end
+    end
+end
+
+function ImportTabClass:BuildItem(itemData)
     local item = new("Item")
 
     -- Determine rarity, display name and base type of the item
@@ -918,31 +947,15 @@ function ImportTabClass:ImportItem(itemData, slotName)
             end
         end
     end
+    item.prefixes = itemData.prefixes;
+    item.suffixes = itemData.suffixes;
+    item.crafted = true
 
-    -- Add and equip the new item
     item:BuildAndParseRaw()
-    --ConPrintf("%s", item.raw)
-    if item.base then
-        local repIndex, repItem
-        for index, item in pairs(self.build.itemsTab.items) do
-            if item.uniqueID == itemData.id then
-                repIndex = index
-                repItem = item
-                break
-            end
-        end
-        if repIndex then
-            -- Item already exists in the build, overwrite it
-            item.id = repItem.id
-            self.build.itemsTab.items[item.id] = item
-            item:BuildModList()
-        else
-            self.build.itemsTab:AddItem(item, true)
-        end
-        if slotName then
-            self.build.itemsTab.slots[slotName]:SetSelItemId(item.id)
-        end
-    end
+    -- Craft the item since we only added the prefixes and suffixes and not their mod lines
+    item:Craft()
+
+    return item
 end
 
 function ImportTabClass:ImportSocketedItems(item, socketedItems, slotName)

@@ -427,6 +427,13 @@ data.describeStats = LoadModule("Modules/StatDescriber")
 data.itemMods = {
 	Item = readJsonFile("Data/ModItem.json"),
 }
+
+for _,mod in pairs(data.itemMods.Item) do
+	if not mod.affix then
+		mod.affix = ""
+	end
+end
+
 data.costs = LoadModule("Data/Costs")
 do
 	local map = { }

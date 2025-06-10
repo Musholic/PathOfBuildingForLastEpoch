@@ -277,311 +277,15 @@ holding Shift will put it in the second.]])
 		self:SetDisplayItem()
 	end)
 
-	-- Section: Variant(s)
-
-	self.controls.displayItemSectionVariant = new("Control", {"TOPLEFT",self.controls.addDisplayItem,"BOTTOMLEFT"}, 0, 8, 0, function()
-		if not self.controls.displayItemVariant:IsShown() then
-			return 0
-		end
-		return (28 +
-		(self.displayItem.hasAltVariant and 24 or 0) +
-		(self.displayItem.hasAltVariant2 and 24 or 0) +
-		(self.displayItem.hasAltVariant3 and 24 or 0) +
-		(self.displayItem.hasAltVariant4 and 24 or 0) +
-		(self.displayItem.hasAltVariant5 and 24 or 0))
-	end)
-	self.controls.displayItemVariant = new("DropDownControl", {"TOPLEFT", self.controls.displayItemSectionVariant,"TOPLEFT"}, 0, 0, 300, 20, nil, function(index, value)
-		self.displayItem.variant = index
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-		self:UpdateDisplayItemRangeLines()
-	end)
-	self.controls.displayItemVariant.maxDroppedWidth = 1000
-	self.controls.displayItemVariant.shown = function()
-		return self.displayItem.variantList and #self.displayItem.variantList > 1
-	end
-	self.controls.displayItemAltVariant = new("DropDownControl", {"TOPLEFT",self.controls.displayItemVariant,"BOTTOMLEFT"}, 0, 4, 300, 20, nil, function(index, value)
-		self.displayItem.variantAlt = index
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-		self:UpdateDisplayItemRangeLines()
-	end)
-	self.controls.displayItemAltVariant.maxDroppedWidth = 1000
-	self.controls.displayItemAltVariant.shown = function()
-		return self.displayItem.hasAltVariant
-	end
-	self.controls.displayItemAltVariant2 = new("DropDownControl", {"TOPLEFT",self.controls.displayItemAltVariant,"BOTTOMLEFT"}, 0, 4, 300, 20, nil, function(index, value)
-		self.displayItem.variantAlt2 = index
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-		self:UpdateDisplayItemRangeLines()
-	end)
-	self.controls.displayItemAltVariant2.maxDroppedWidth = 1000
-	self.controls.displayItemAltVariant2.shown = function()
-		return self.displayItem.hasAltVariant2
-	end
-	self.controls.displayItemAltVariant3 = new("DropDownControl", {"TOPLEFT",self.controls.displayItemAltVariant2,"BOTTOMLEFT"}, 0, 4, 300, 20, nil, function(index, value)
-		self.displayItem.variantAlt3 = index
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-		self:UpdateDisplayItemRangeLines()
-	end)
-	self.controls.displayItemAltVariant3.maxDroppedWidth = 1000
-	self.controls.displayItemAltVariant3.shown = function()
-		return self.displayItem.hasAltVariant3
-	end
-	self.controls.displayItemAltVariant4 = new("DropDownControl", {"TOPLEFT",self.controls.displayItemAltVariant3,"BOTTOMLEFT"}, 0, 4, 300, 20, nil, function(index, value)
-		self.displayItem.variantAlt4 = index
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-		self:UpdateDisplayItemRangeLines()
-	end)
-	self.controls.displayItemAltVariant4.maxDroppedWidth = 1000
-	self.controls.displayItemAltVariant4.shown = function()
-		return self.displayItem.hasAltVariant4
-	end
-	self.controls.displayItemAltVariant5 = new("DropDownControl", {"TOPLEFT",self.controls.displayItemAltVariant4,"BOTTOMLEFT"}, 0, 4, 300, 20, nil, function(index, value)
-		self.displayItem.variantAlt5 = index
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-		self:UpdateDisplayItemRangeLines()
-	end)
-	self.controls.displayItemAltVariant5.maxDroppedWidth = 1000
-	self.controls.displayItemAltVariant5.shown = function()
-		return self.displayItem.hasAltVariant5
-	end
-
-	-- Section: Sockets and Links
-	self.controls.displayItemSectionSockets = new("Control", {"TOPLEFT",self.controls.displayItemSectionVariant,"BOTTOMLEFT"}, 0, 0, 0, function()
-		return self.displayItem and self.displayItem.selectableSocketCount > 0 and 28 or 0
-	end)
-	for i = 1, 6 do
-		local drop = new("DropDownControl", {"TOPLEFT",self.controls.displayItemSectionSockets,"TOPLEFT"}, (i-1) * 64, 0, 36, 20, socketDropList, function(index, value)
-			self.displayItem.sockets[i].color = value.color
-			self.displayItem:BuildAndParseRaw()
-			self:UpdateDisplayItemTooltip()
-		end)
-		drop.shown = function()
-			return self.displayItem.selectableSocketCount >= i and self.displayItem.sockets[i] and self.displayItem.sockets[i].color ~= "A"
-		end
-		self.controls["displayItemSocket"..i] = drop
-		if i < 6 then
-			local link = new("CheckBoxControl", {"LEFT",drop,"RIGHT"}, 4, 0, 20, nil, function(state)
-				if state and self.displayItem.sockets[i].group ~= self.displayItem.sockets[i+1].group then
-					for s = i + 1, #self.displayItem.sockets do
-						self.displayItem.sockets[s].group = self.displayItem.sockets[s].group - 1
-					end
-				elseif not state and self.displayItem.sockets[i].group == self.displayItem.sockets[i+1].group then
-					for s = i + 1, #self.displayItem.sockets do
-						self.displayItem.sockets[s].group = self.displayItem.sockets[s].group + 1
-					end
-				end
-				self.displayItem:BuildAndParseRaw()
-				self:UpdateDisplayItemTooltip()
-			end)
-			link.shown = function()
-				return self.displayItem.selectableSocketCount > i and self.displayItem.sockets[i+1] and self.displayItem.sockets[i+1].color ~= "A"
-			end
-			self.controls["displayItemLink"..i] = link
-		end
-	end
-	self.controls.displayItemAddSocket = new("ButtonControl", {"TOPLEFT",self.controls.displayItemSectionSockets,"TOPLEFT"}, function() return (#self.displayItem.sockets - self.displayItem.abyssalSocketCount) * 64 - 12 end, 0, 20, 20, "+", function()
-		local insertIndex = #self.displayItem.sockets - self.displayItem.abyssalSocketCount + 1
-		t_insert(self.displayItem.sockets, insertIndex, {
-			color = self.displayItem.defaultSocketColor,
-			group = self.displayItem.sockets[insertIndex - 1].group + 1
-		})
-		for s = insertIndex + 1, #self.displayItem.sockets do
-			self.displayItem.sockets[s].group = self.displayItem.sockets[s].group + 1
-		end
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateSocketControls()
-		self:UpdateDisplayItemTooltip()
-	end)
-	self.controls.displayItemAddSocket.shown = function()
-		return #self.displayItem.sockets < self.displayItem.selectableSocketCount + self.displayItem.abyssalSocketCount
-	end
-
-	-- Section: Enchant / Anoint / Corrupt
-	self.controls.displayItemSectionEnchant = new("Control", {"TOPLEFT",self.controls.displayItemSectionSockets,"BOTTOMLEFT"}, 0, 0, 0, function()
-		return (self.controls.displayItemEnchant:IsShown() or self.controls.displayItemEnchant2:IsShown() or self.controls.displayItemAnoint:IsShown() or self.controls.displayItemAnoint2:IsShown() or self.controls.displayItemCorrupt:IsShown() ) and 28 or 0
-	end)
-	self.controls.displayItemEnchant = new("ButtonControl", {"TOPLEFT",self.controls.displayItemSectionEnchant,"TOPLEFT"}, 0, 0, 160, 20, "Apply Enchantment...", function()
-		self:EnchantDisplayItem(1)
-	end)
-	self.controls.displayItemEnchant.shown = function()
-		return self.displayItem and self.displayItem.enchantments
-	end
-	self.controls.displayItemEnchant2 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemEnchant,"TOPRIGHT",true}, 8, 0, 160, 20, "Apply Enchantment 2...", function()
-		self:EnchantDisplayItem(2)
-	end)
-	self.controls.displayItemEnchant2.shown = function()
-		return self.displayItem and self.displayItem.enchantments and self.displayItem.canHaveTwoEnchants and #self.displayItem.enchantModLines > 0
-	end
-	self.controls.displayItemAnoint = new("ButtonControl", {"TOPLEFT",self.controls.displayItemEnchant2,"TOPRIGHT",true}, 8, 0, 100, 20, "Anoint...", function()
-		self:AnointDisplayItem(1)
-	end)
-	self.controls.displayItemAnoint.shown = function()
-		return self.displayItem and (self.displayItem.base.type == "Amulet" or self.displayItem.canBeAnointed)
-	end
-	self.controls.displayItemAnoint2 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint,"TOPRIGHT",true}, 8, 0, 100, 20, "Anoint 2...", function()
-		self:AnointDisplayItem(2)
-	end)
-	self.controls.displayItemAnoint2.shown = function()
-		return self.displayItem and
-			(self.displayItem.base.type == "Amulet" or self.displayItem.canBeAnointed) and
-			self.displayItem.canHaveTwoEnchants and
-			#self.displayItem.enchantModLines > 0
-	end
-	self.controls.displayItemAnoint3 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint2,"TOPRIGHT",true}, 8, 0, 100, 20, "Anoint 3...", function()
-		self:AnointDisplayItem(3)
-	end)
-	self.controls.displayItemAnoint3.shown = function()
-		return self.displayItem and
-			(self.displayItem.base.type == "Amulet" or self.displayItem.canBeAnointed) and
-			self.displayItem.canHaveThreeEnchants and
-			#self.displayItem.enchantModLines > 1
-	end
-	self.controls.displayItemAnoint4 = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint3,"TOPRIGHT",true}, 8, 0, 100, 20, "Anoint 4...", function()
-		self:AnointDisplayItem(4)
-	end)
-	self.controls.displayItemAnoint4.shown = function()
-		return self.displayItem and
-			(self.displayItem.base.type == "Amulet" or self.displayItem.canBeAnointed) and
-			self.displayItem.canHaveFourEnchants and
-			#self.displayItem.enchantModLines > 2
-	end
-	self.controls.displayItemCorrupt = new("ButtonControl", {"TOPLEFT",self.controls.displayItemAnoint4,"TOPRIGHT",true}, 8, 10, 100, 20, "Corrupt...", function()
-		self:CorruptDisplayItem("Corrupted")
-	end)
-	self.controls.displayItemCorrupt.shown = function()
-		return self.displayItem and self.displayItem.corruptible
-	end
-	--[[
-	self.controls.displayItemScourge = new("ButtonControl", {"TOPLEFT",self.controls.displayItemCorrupt,"TOPRIGHT",true}, 8, 0, 100, 20, "Scourge...", function()
-		self:CorruptDisplayItem("Scourge")
-	end)
-	self.controls.displayItemScourge.shown = function()
-		return self.displayItem and self.displayItem.corruptible
-	end
-	--]]
-	self.controls.displayItemAddImplicit = new("ButtonControl", {"TOPLEFT",self.controls.displayItemCorrupt,"TOPRIGHT",true}, 8, 0, 120, 20, "Add Implicit...", function()
+	self.controls.displayItemAddImplicit = new("ButtonControl", {"TOPLEFT",self.controls.addDisplayItem,"BOTTOMLEFT"}, 0, 8, 120, 20, "Add Implicit...", function()
 		self:AddImplicitToDisplayItem()
 	end)
 	self.controls.displayItemAddImplicit.shown = function()
-		return self.displayItem and (self.displayItem.corruptible or ((self.displayItem.type ~= "Flask" or self.displayItem.type ~= "Jewel") and (self.displayItem.rarity == "NORMAL" or self.displayItem.rarity == "MAGIC" or self.displayItem.rarity == "RARE")))
+		return self.displayItem
 	end
-
-	-- Section: Influence dropdowns
-	local influenceDisplayList = { "Influence" }
-	for i, curInfluenceInfo in ipairs(influenceInfo) do
-		influenceDisplayList[i + 1] = curInfluenceInfo.display
-	end
-	local function setDisplayItemInfluence(influenceIndexList)
-		self.displayItem:ResetInfluence()
-		for _, index in ipairs(influenceIndexList) do
-			if index > 0 then
-				self.displayItem[influenceInfo[index].key] = true;
-			end
-		end
-
-		if self.displayItem.crafted then
-			for i = 1, self.displayItem.affixLimit do
-				-- Force affix selectors to update
-				local drop = self.controls["displayItemAffix"..i]
-				drop.selFunc(drop.selIndex, drop.list[drop.selIndex])
-			end
-		end
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-	end
-	self.controls.displayItemSectionInfluence = new("Control", {"TOPLEFT",self.controls.displayItemSectionEnchant,"BOTTOMLEFT"}, 0, 0, 0, function()
-		return self.displayItem and self.displayItem.canBeInfluenced and 28 or 0
-	end)
-	self.controls.displayItemInfluence = new("DropDownControl", {"TOPLEFT",self.controls.displayItemSectionInfluence,"TOPRIGHT"}, 0, 0, 100, 20, influenceDisplayList, function(index, value)
-		local otherIndex = self.controls.displayItemInfluence2.selIndex
-		setDisplayItemInfluence({ index - 1, otherIndex - 1 })
-	end)
-	self.controls.displayItemInfluence.shown = function()
-		return self.displayItem and self.displayItem.canBeInfluenced
-	end
-	self.controls.displayItemInfluence2 = new("DropDownControl", {"TOPLEFT",self.controls.displayItemInfluence,"TOPRIGHT",true}, 8, 0, 100, 20, influenceDisplayList, function(index, value)
-		local otherIndex = self.controls.displayItemInfluence.selIndex
-		setDisplayItemInfluence({ index - 1, otherIndex - 1 })
-	end)
-	self.controls.displayItemInfluence2.shown = function()
-		return self.displayItem and self.displayItem.canBeInfluenced
-	end
-
-	-- Section: Catalysts
-	self.controls.displayItemSectionCatalyst = new("Control", {"TOPLEFT",self.controls.displayItemSectionInfluence,"BOTTOMLEFT"}, 0, 0, 0, function()
-		return (self.controls.displayItemCatalyst:IsShown() or self.controls.displayItemCatalystQualitySlider:IsShown()) and 28 or 0
-	end)
-	self.controls.displayItemCatalyst = new("DropDownControl", {"TOPLEFT",self.controls.displayItemSectionCatalyst,"TOPRIGHT"}, 0, 0, 250, 20,
-		{"Catalyst","Abrasive (Attack)","Accelerating (Speed)","Fertile (Life & Mana)","Imbued (Caster)","Intrinsic (Attribute)","Noxious (Physical & Chaos Damage)",
-		 "Prismatic (Resistance)","Tempering (Defense)","Turbulent (Elemental)","Unstable (Critical)"},
-		function(index, value)
-			self.displayItem.catalyst = index - 1
-			if not self.displayItem.catalystQuality then
-				self.displayItem.catalystQuality = 20
-			end
-			if self.displayItem.crafted then
-				for i = 1, self.displayItem.affixLimit do
-					-- Force affix selectors to update
-					local drop = self.controls["displayItemAffix"..i]
-					drop.selFunc(drop.selIndex, drop.list[drop.selIndex])
-				end
-			end
-			self.displayItem:BuildAndParseRaw()
-			self:UpdateDisplayItemTooltip()
-		end)
-	self.controls.displayItemCatalyst.shown = function()
-		return self.displayItem and (self.displayItem.crafted or self.displayItem.hasModTags) and (self.displayItem.base.type == "Amulet" or self.displayItem.base.type == "Ring" or self.displayItem.base.type == "Belt")
-	end
-	self.controls.displayItemCatalystQualitySlider = new("SliderControl", {"LEFT",self.controls.displayItemCatalyst,"RIGHT",true}, 8, 0, 200, 20, function(val)
-		self.displayItem.catalystQuality = round(val * 20)
-		if self.displayItem.crafted then
-			for i = 1, self.displayItem.affixLimit do
-				-- Force affix selectors to update
-				local drop = self.controls["displayItemAffix"..i]
-				drop.selFunc(drop.selIndex, drop.list[drop.selIndex])
-			end
-		end
-		self.displayItem:BuildAndParseRaw()
-		self:UpdateDisplayItemTooltip()
-	end)
-	self.controls.displayItemCatalystQualitySlider.shown = function()
-		return self.displayItem and (self.displayItem.crafted or self.displayItem.hasModTags) and self.displayItem.catalyst and self.displayItem.catalyst > 0
-	end
-	self.controls.displayItemCatalystQualitySlider.tooltipFunc = function(tooltip, val)
-		local quality = round(val * 20)
-		tooltip:Clear()
-		tooltip:AddLine(16, "^7Quality: "..quality.."%")
-	end
-
-	-- Section: Cluster Jewel
-	self.controls.displayItemSectionClusterJewel = new("Control", {"TOPLEFT",self.controls.displayItemSectionCatalyst,"BOTTOMLEFT"}, 0, 0, 0, function()
-		return self.controls.displayItemClusterJewelSkill:IsShown() and 52 or 0
-	end)
-	self.controls.displayItemClusterJewelSkill = new("DropDownControl", {"TOPLEFT",self.controls.displayItemSectionClusterJewel,"TOPLEFT"}, 0, 0, 300, 20, { }, function(index, value)
-		self.displayItem.clusterJewelSkill = value.skillId
-		self:CraftClusterJewel()
-	end) {
-		shown = function()
-			return self.displayItem and self.displayItem.crafted and self.displayItem.clusterJewel
-		end
-	}
-
-	self.controls.displayItemClusterJewelNodeCountLabel = new("LabelControl", {"TOPLEFT",self.controls.displayItemClusterJewelSkill,"BOTTOMLEFT"}, 0, 7, 0, 14, "^7Added Passives:")
-	self.controls.displayItemClusterJewelNodeCount = new("SliderControl", {"LEFT",self.controls.displayItemClusterJewelNodeCountLabel,"RIGHT"}, 2, 0, 150, 20, function(val)
-		local divVal = self.controls.displayItemClusterJewelNodeCount:GetDivVal()
-		local clusterJewel = self.displayItem.clusterJewel
-		self.displayItem.clusterJewelNodeCount = round(val * (clusterJewel.maxNodes - clusterJewel.minNodes) + clusterJewel.minNodes)
-		self:CraftClusterJewel()
-	end)
 
 	-- Section: Affix Selection
-	self.controls.displayItemSectionAffix = new("Control", {"TOPLEFT",self.controls.displayItemSectionClusterJewel,"BOTTOMLEFT"}, 0, 0, 0, function()
+	self.controls.displayItemSectionAffix = new("Control", {"TOPLEFT",self.controls.displayItemAddImplicit,"BOTTOMLEFT"}, 0, 0, 0, function()
 		if not self.displayItem or not self.displayItem.crafted then
 			return 0
 		end
@@ -630,11 +334,11 @@ holding Shift will put it in the second.]])
 
 			if priorMod then
 				if flipRange(priorMod, self.displayItem.affixes[drop.list[drop.selIndex].modList[index]]) then
-					range = 1 - range
+					range = 256 - range
 				end
 			elseif nextMod then
 				if flipRange(self.displayItem.affixes[drop.list[drop.selIndex].modList[index]], nextMod) then
-					range = 1 - range
+					range = 256 - range
 				end
 			end
 			return range
@@ -789,7 +493,7 @@ holding Shift will put it in the second.]])
 				local modId = modList[index]
 				local mod = self.displayItem.affixes[modId]
 				for _, line in ipairs(mod) do
-					tooltip:AddLine(16, itemLib.applyRange(line, range))
+					tooltip:AddLine(16, itemLib.applyRange(line, range, 1.0, mod.rounding))
 				end
 				tooltip:AddSeparator(10)
 				if #modList > 1 then
@@ -1015,32 +719,14 @@ function ItemsTabClass:Save(xml)
 		item:BuildAndParseRaw()
 		t_insert(child, item.raw)
 		local id = #item.buffModLines + 1
-		for _, modLine in ipairs(item.enchantModLines) do
-			if modLine.range then
-				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
-			end
-			id = id + 1
-		end
-		for _, modLine in ipairs(item.scourgeModLines) do
-			if modLine.range then
-				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
-			end
-			id = id + 1
-		end
 		for _, modLine in ipairs(item.implicitModLines) do
-			if modLine.range then
+			if modLine.range ~= nil then
 				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
 			end
 			id = id + 1
 		end
 		for _, modLine in ipairs(item.explicitModLines) do
-			if modLine.range then
-				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
-			end
-			id = id + 1
-		end
-		for _, modLine in ipairs(item.crucibleModLines) do
-			if modLine.range then
+			if modLine.range ~= nil then
 				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
 			end
 			id = id + 1
@@ -1495,60 +1181,11 @@ function ItemsTabClass:SetDisplayItem(item)
 		self:UpdateDisplayItemTooltip()
 		self.snapHScroll = "RIGHT"
 
-		self.controls.displayItemVariant.list = item.variantList
-		self.controls.displayItemVariant.selIndex = item.variant
-		self.controls.displayItemVariant:CheckDroppedWidth(true)
-		if item.hasAltVariant then
-			self.controls.displayItemAltVariant.list = item.variantList
-			self.controls.displayItemAltVariant.selIndex = item.variantAlt
-			self.controls.displayItemAltVariant:CheckDroppedWidth(true)
-		end
-		if item.hasAltVariant2 then
-			self.controls.displayItemAltVariant2.list = item.variantList
-			self.controls.displayItemAltVariant2.selIndex = item.variantAlt2
-			self.controls.displayItemAltVariant2:CheckDroppedWidth(true)
-		end
-		if item.hasAltVariant3 then
-			self.controls.displayItemAltVariant3.list = item.variantList
-			self.controls.displayItemAltVariant3.selIndex = item.variantAlt3
-			self.controls.displayItemAltVariant3:CheckDroppedWidth(true)
-		end
-		if item.hasAltVariant4 then
-			self.controls.displayItemAltVariant4.list = item.variantList
-			self.controls.displayItemAltVariant4.selIndex = item.variantAlt4
-			self.controls.displayItemAltVariant4:CheckDroppedWidth(true)
-		end
-		if item.hasAltVariant5 then
-			self.controls.displayItemAltVariant5.list = item.variantList
-			self.controls.displayItemAltVariant5.selIndex = item.variantAlt5
-			self.controls.displayItemAltVariant5:CheckDroppedWidth(true)
-		end
 		self:UpdateSocketControls()
 		if item.crafted then
 			self:UpdateAffixControls()
 		end
 
-		-- Set both influence dropdowns
-		local influence1 = 1
-		local influence2 = 1
-		for i, curInfluenceInfo in ipairs(influenceInfo) do
-			if item[curInfluenceInfo.key] then
-				if influence1 == 1 then
-					influence1 = i + 1
-				elseif influence2 == 1 then
-					influence2 = i + 1
-					break
-				end
-			end
-		end
-		self.controls.displayItemInfluence:SetSel(influence1, true) -- Don't call the selection function for the first influence dropdown as the second dropdown isn't properly set yet.
-		self.controls.displayItemInfluence2:SetSel(influence2) -- The selection function for the second dropdown properly handles everything for both dropdowns
-		self.controls.displayItemCatalyst:SetSel((item.catalyst or 0) + 1)
-		if item.catalystQuality then
-			self.controls.displayItemCatalystQualitySlider.val = m_min(item.catalystQuality / 20, 1)
-		else
-			self.controls.displayItemCatalystQualitySlider.val = 1
-		end
 		self:UpdateCustomControls()
 		self:UpdateDisplayItemRangeLines()
 		if item.clusterJewel and item.crafted then
@@ -1686,7 +1323,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 	control.outputTable = outputTable
 	control.outputIndex = outputIndex
 	control.slider.shown = false
-	control.slider.val = main.defaultItemAffixQuality or 0.5
+	control.slider.val = main.defaultItemAffixQuality or 0
 	local selAffix = item[outputTable][outputIndex].modId
 	if (item.type == "Jewel" and item.base.subType ~= "Abyss") then
 		for i, modId in pairs(affixList) do
@@ -1732,7 +1369,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 	end
 	if control.list[control.selIndex].haveRange then
 		control.slider.divCount = #control.list[control.selIndex].modList
-		control.slider.val = (isValueInArray(control.list[control.selIndex].modList, selAffix) - 1 + (item[outputTable][outputIndex].range or 0.5)) / control.slider.divCount
+		control.slider.val = (isValueInArray(control.list[control.selIndex].modList, selAffix) - 1 + (item[outputTable][outputIndex].range / 256 or 0)) / control.slider.divCount
 		if control.slider.divCount == 1 then
 			control.slider.divCount = nil
 		end
@@ -2801,144 +2438,7 @@ function ItemsTabClass:AddImplicitToDisplayItem()
 	local modGroups = {}
 	---Mutates modList to contain mods from the specified source
 	---@param sourceId string @The crafting source id to build the list of mods for
-	local function buildMods(sourceId)
-		wipeTable(modList)
-		wipeTable(modGroups)
-		local groupIndexes = {}
-		if sourceId == "EXARCH" or sourceId == "EATER" then
-			for i, mod in pairs(self.displayItem.affixes) do
-				if self.displayItem:GetModSpawnWeight(mod) > 0 and sourceId:lower() == mod.type:lower() then
-					local modLabel = table.concat(mod, "/")
-					local group = mod.group:gsub("PinnaclePresence", ""):gsub("UniquePresence", "")
-					if not groupIndexes[group] then
-						t_insert(modList, {})
-						t_insert(modGroups, {
-							label = modLabel,
-							mod = mod,
-							modListIndex = #modList,
-							defaultOrder = i,
-						})
-						groupIndexes[group] = #modGroups
-					end
-					t_insert(modList[groupIndexes[group]], {
-						label = modLabel,
-						mod = mod,
-						affixType = mod.type,
-						type = sourceId:lower(),
-						defaultOrder = i,
-					})
-				end
-			end
-			table.sort(modGroups, function(a, b)
-				local modA = a.mod
-				local modB = b.mod
-				for i = 1, m_max(#modA, #modB) do
-					if not modA[i] then
-						return true
-					elseif not modB[i] then
-						return false
-					elseif modA.statOrder[i] ~= modB.statOrder[i] then
-						return modA.statOrder[i] < modB.statOrder[i]
-					end
-				end
-				return modA.level > modB.level
-			end)
-			for i, _ in pairs(modList) do
-				table.sort(modList[i], function(a, b)
-					local modA = a.mod
-					local modB = b.mod
-					if modA.group ~= modB.group then
-						if modA.group:match("PinnaclePresence") then
-							return false
-						elseif modB.group:match("PinnaclePresence") then
-							return true
-						elseif modA.group:match("UniquePresence") then
-							return false
-						else
-							return true
-						end
-					end
-					for j = 1, m_max(#modA, #modB) do
-						if not modA[j] then
-							return true
-						elseif not modB[j] then
-							return false
-						elseif modA.statOrder[j] ~= modB.statOrder[j] then
-							return modA.statOrder[j] < modB.statOrder[j]
-						else
-							local modAVal = tonumber(a.defaultOrder:match("%d+$"))
-							local modBVal = tonumber(b.defaultOrder:match("%d+$"))
-							return modAVal < modBVal
-						end
-					end
-					return modA.level > modB.level
-				end)
-			end
-			for i, _ in pairs(modGroups) do
-				modGroups[i].label = modList[modGroups[i].modListIndex][1].label:gsub("%([%d%.]+%-[%d%.]+%)", "#"):gsub("[%d%.]+", "#")
-			end
-		elseif sourceId == "SYNTHESIS" then
-			for i, mod in pairs(self.displayItem.affixes) do
-				if sourceId:lower() == mod.type:lower() then -- weights are missing and so are 0, how do I determine what goes on what item?, also arn't these supposed to work on jewels?
-					t_insert(modList, {
-						label = table.concat(mod, "/"),
-						mod = mod,
-						affixType = mod.type,
-						type = "synthesis",
-						defaultOrder = i,
-					})
-				end
-			end
-			table.sort(modList, function(a, b)
-				return a.defaultOrder < b.defaultOrder
-			end)
-		elseif sourceId == "DelveImplicit" then
-			for i, mod in pairs(self.displayItem.affixes) do
-				if self.displayItem:GetModSpawnWeight(mod) > 0 and sourceId:lower() == mod.type:lower() then
-					local modLabel = table.concat(mod, "/")
-					if not groupIndexes[mod.group] then
-						t_insert(modList, {})
-						t_insert(modGroups, {
-							label = modLabel,
-							mod = mod,
-							modListIndex = #modList,
-							defaultOrder = i,
-						})
-						groupIndexes[mod.group] = #modGroups
-					--elseif mod[1].len() < modGroups[groupIndexes[mod.group] ].mod[1].len() then
-					--	modGroups[groupIndexes[mod.group]].label = modLabel
-					--	modGroups[groupIndexes[mod.group]].mod = mod
-					end
-					t_insert(modList[groupIndexes[mod.group]], {
-						label = modLabel,
-						mod = mod,
-						affixType = mod.type,
-						type = "custom",
-						defaultOrder = i,
-					})
-				end
-			end
-			for i, _ in pairs(modList) do
-				table.sort(modList[i], function(a, b)
-					return a.defaultOrder < b.defaultOrder
-				end)
-			end
-		end
-	end
-	if (self.displayItem.rarity ~= "UNIQUE" and self.displayItem.rarity ~= "RELIC") and (self.displayItem.type == "Helmet" or self.displayItem.type == "Body Armour" or self.displayItem.type == "Gloves" or self.displayItem.type == "Boots") then
-		if self.displayItem.cleansing then
-			t_insert(sourceList, { label = "Searing Exarch", sourceId = "EXARCH" })
-		end
-		if self.displayItem.tangle then
-			t_insert(sourceList, { label = "Eater of Worlds", sourceId = "EATER" })
-		end
-	end
-	if self.displayItem.type ~= "Flask" and self.displayItem.type ~= "Jewel" then
-		--t_insert(sourceList, { label = "Synth", sourceId = "SYNTHESIS" }) -- synth removed until we get proper support for where the mods go
-		t_insert(sourceList, { label = "Delve", sourceId = "DelveImplicit" })
-	end
 	t_insert(sourceList, { label = "Custom", sourceId = "CUSTOM" })
-	buildMods(sourceList[1].sourceId)
 	local function addModifier()
 		local item = new("Item", self.displayItem:BuildRaw())
 		item.id = self.displayItem.id
@@ -2946,29 +2446,6 @@ function ItemsTabClass:AddImplicitToDisplayItem()
 		if sourceId == "CUSTOM" then
 			if controls.custom.buf:match("%S") then
 				t_insert(item.implicitModLines, { line = controls.custom.buf, custom = true })
-			end
-		elseif sourceId == "SYNTHESIS" then
-			local listMod = modList[controls.modSelect.selIndex]
-			for _, line in ipairs(listMod.mod) do
-				t_insert(item.implicitModLines, { line = line, modTags = listMod.mod.modTags, [listMod.type] = true })
-			end
-		elseif sourceId == "EXARCH" or sourceId == "EATER" then
-			local listMod = modList[modGroups[controls.modGroupSelect.selIndex].modListIndex][controls.modSelect.selIndex]
-			local index
-			for i, implicitMod in ipairs(item.implicitModLines) do
-				if implicitMod[listMod.type] and implicitMod[listMod.type] == "{"..listMod.type.."}" then
-					index = i
-					break
-				end
-			end
-			if index then
-				for i, line in ipairs(listMod.mod) do
-                    item.implicitModLines[index + i - 1] = { line = line, modTags = listMod.mod.modTags, [listMod.type] = true }
-                end
-			else
-				for _, line in ipairs(listMod.mod) do
-					t_insert(item.implicitModLines, { line = line, modTags = listMod.mod.modTags, [listMod.type] = true })
-				end
 			end
 		else
 			local listMod = modList[modGroups[controls.modGroupSelect.selIndex].modListIndex][controls.modSelect.selIndex]

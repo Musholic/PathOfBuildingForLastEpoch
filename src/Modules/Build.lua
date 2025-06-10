@@ -792,16 +792,21 @@ function buildMode:ReadLeToolsSave(saveContent)
 		item["name"] = itemName
 		item["rarity"] = "RARE"
 		item["explicitMods"] = {}
+		item["prefixes"] = {}
+		item["suffixes"] = {}
 
 		for _, affixData in ipairs(itemData["affixes"]) do
 			local affixId = data.LETools_affixes[affixData.id]
 			if affixId then
 				local affixTier = affixData.tier - 1
-				local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
-				if modData then
-					local mod = modData[1]
-					local range = (affixData.r or 128) / 256.0
-					table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
+				local modId = affixId .. "_" .. affixTier
+				local modData = data.itemMods.Item[modId]
+				local range = (affixData.r or 128)
+
+				if modData.type == "Prefix" then
+					table.insert(item.prefixes, { ["range"] = range, ["modId"] = modId })
+				else
+					table.insert(item.suffixes, { ["range"] = range, ["modId"] = modId })
 				end
 			end
 		end
@@ -810,13 +815,15 @@ function buildMode:ReadLeToolsSave(saveContent)
 			local affixId = data.LETools_affixes[affixData.id]
 			if affixId then
 				local affixTier = affixData.tier - 1
-				local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
-				if modData then
-					local mod = modData[1]
-					local range = (affixData.r or 128) / 256.0
-					-- TODO: handle sealed affixes. Make use of "Prefix:" and "Suffix:"
-					table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}".. mod)
-				end
+				local modId = affixId .. "_" .. affixTier
+				local modData = data.itemMods.Item[modId]
+				local range = (affixData.r or 128)
+
+                if modData.type == "Prefix" then
+                    table.insert(item.prefixes, { ["range"] = range, ["modId"] = modId })
+				else
+					table.insert(item.suffixes, { ["range"] = range, ["modId"] = modId })
+                end
 			end
 		end
 
@@ -834,15 +841,16 @@ function buildMode:ReadLeToolsSave(saveContent)
 						end
 					end
 					for i, modLine in ipairs(uniqueBase.mods) do
-						if itemLib.hasRange(modLine) then
-							local range = 0.5
-							if itemData['ur'] then
-								range = itemData["ur"][uniqueBase.rollIds[i] + 1] / 256.0
-							end
-							table.insert(item.explicitMods, "{range: " .. range .. "}".. modLine)
-						else
-							table.insert(item.explicitMods, modLine)
-						end
+                        if itemLib.hasRange(modLine) then
+                            local range = 0
+                            if itemData['ur'] then
+                                range = itemData["ur"][uniqueBase.rollIds[i] + 1]
+                            end
+                            -- TODO: avoid using crafted
+                            table.insert(item.explicitMods, "{crafted}{range: " .. range .. "}" .. modLine)
+                        else
+                            table.insert(item.explicitMods, "{crafted}" .. modLine)
+                        end
 					end
 				end
 			end
@@ -853,9 +861,9 @@ function buildMode:ReadLeToolsSave(saveContent)
 			item.base = foundItemBase
 			item.implicitMods= {}
 			for i,implicit in ipairs(foundItemBase.implicits) do
-				local range = 0.5
+				local range = 0
 				if itemData['ir'] then
-					range = itemData["ir"][i] / 256.0
+					range = itemData["ir"][i]
 				end
 				table.insert(item.implicitMods, "{range: " .. range .. "}".. implicit)
 			end
