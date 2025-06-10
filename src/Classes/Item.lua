@@ -764,7 +764,7 @@ function ItemClass:BuildRaw()
 		if modLine.valueScalar and modLine.valueScalar ~= 1 then
 			line = "{scalar:" .. round(modLine.valueScalar, 3) .. "}" .. line
 		end
-		if modLine.range and itemLib.hasRange(line) then
+		if modLine.range ~= nil and itemLib.hasRange(line) then
 			line = "{range:" .. round(modLine.range, 3) .. "}" .. line
 		end
 		if modLine.crafted then
@@ -1297,7 +1297,7 @@ function ItemClass:BuildModList()
 			end
 			-- handle understood modifier variable properties
 			if not modLine.extra then
-				if modLine.range then
+				if modLine.range ~= nil then
 					-- Check if line actually has a range
 					if modLine.line:find("%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)") then
 						local strippedModeLine = modLine.line:gsub("\n"," ")

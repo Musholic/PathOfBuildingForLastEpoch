@@ -719,32 +719,14 @@ function ItemsTabClass:Save(xml)
 		item:BuildAndParseRaw()
 		t_insert(child, item.raw)
 		local id = #item.buffModLines + 1
-		for _, modLine in ipairs(item.enchantModLines) do
-			if modLine.range then
-				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
-			end
-			id = id + 1
-		end
-		for _, modLine in ipairs(item.scourgeModLines) do
-			if modLine.range then
-				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
-			end
-			id = id + 1
-		end
 		for _, modLine in ipairs(item.implicitModLines) do
-			if modLine.range then
+			if modLine.range ~= nil then
 				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
 			end
 			id = id + 1
 		end
 		for _, modLine in ipairs(item.explicitModLines) do
-			if modLine.range then
-				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
-			end
-			id = id + 1
-		end
-		for _, modLine in ipairs(item.crucibleModLines) do
-			if modLine.range then
+			if modLine.range ~= nil then
 				t_insert(child, { elem = "ModRange", attrib = { id = tostring(id), range = tostring(modLine.range) } })
 			end
 			id = id + 1
@@ -1341,7 +1323,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 	control.outputTable = outputTable
 	control.outputIndex = outputIndex
 	control.slider.shown = false
-	control.slider.val = main.defaultItemAffixQuality or 0.5
+	control.slider.val = main.defaultItemAffixQuality or 0
 	local selAffix = item[outputTable][outputIndex].modId
 	if (item.type == "Jewel" and item.base.subType ~= "Abyss") then
 		for i, modId in pairs(affixList) do
@@ -1387,7 +1369,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 	end
 	if control.list[control.selIndex].haveRange then
 		control.slider.divCount = #control.list[control.selIndex].modList
-		control.slider.val = (isValueInArray(control.list[control.selIndex].modList, selAffix) - 1 + (item[outputTable][outputIndex].range / 256 or 0.5)) / control.slider.divCount
+		control.slider.val = (isValueInArray(control.list[control.selIndex].modList, selAffix) - 1 + (item[outputTable][outputIndex].range / 256 or 0)) / control.slider.divCount
 		if control.slider.divCount == 1 then
 			control.slider.divCount = nil
 		end
