@@ -61,7 +61,7 @@ function itemLib.applyRange(line, range, valueScalar, rounding)
 
     local numbers = 0
     if not valueScalar then
-        valueScalar = 1.0
+        valueScalar = 0
     end
     line = line:gsub("(%+?)%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)",
             function(plus, min, max)

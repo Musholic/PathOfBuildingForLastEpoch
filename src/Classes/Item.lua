@@ -560,7 +560,7 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					gameModeStage = "IMPLICIT"
 				end
 				modLine.implicit = modLine.implicit or (not modLine.crafted and #self.implicitModLines < implicitLines)
-				local rangedLine = itemLib.applyRange(line, 1, 1)
+				local rangedLine = itemLib.applyRange(line, 0, 1)
 				local modList, extra = modLib.parseMod(rangedLine)
 
 				local modLines

@@ -842,7 +842,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 					end
 					for i, modLine in ipairs(uniqueBase.mods) do
                         if itemLib.hasRange(modLine) then
-                            local range = 0.5
+                            local range = 0
                             if itemData['ur'] then
                                 range = itemData["ur"][uniqueBase.rollIds[i] + 1]
                             end
@@ -861,7 +861,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 			item.base = foundItemBase
 			item.implicitMods= {}
 			for i,implicit in ipairs(foundItemBase.implicits) do
-				local range = 0.5
+				local range = 0
 				if itemData['ir'] then
 					range = itemData["ir"][i]
 				end
