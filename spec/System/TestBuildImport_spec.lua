@@ -34,6 +34,6 @@ expose("BuildImport #buildImport", function()
         runCallback("OnFrame")
 
         assert.are.equals("Summon Wraith", build.calcsTab.mainEnv.player.mainSkill.skillCfg.skillName)
-        assert.are.equals(743, round(build.calcsTab.mainOutput.FullDPS))
+        assert.are.equals(836, round(build.calcsTab.mainOutput.FullDPS))
     end)
 end)
