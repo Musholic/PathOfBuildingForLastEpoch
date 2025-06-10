@@ -143,6 +143,8 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 	end)
 	self.controls.specLabel = new("LabelControl", {"RIGHT",prevSlot,"LEFT"}, -2, 0, 0, 16, "^7Passive tree:")
 
+	self.controls.idolPositionsLabel = new("LabelControl", {"TOPLEFT",self.controls.specLabel,"BOTTOMLEFT"}, 0, 16, 0, 16, "Idol positions start from bottom left then left to right")
+
 	self.sockets = { }
 	local socketOrder = { }
 	for _, node in pairs(build.latestTree.nodes) do

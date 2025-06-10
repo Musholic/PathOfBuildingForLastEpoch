@@ -786,6 +786,9 @@ function buildMode:ReadLeToolsSave(saveContent)
 			if posY == 4 then
 				idolPosition = idolPosition - 1
 			end
+			if posY == 1 and posX > 2 or posY > 1 then
+				idolPosition = idolPosition - 1
+			end
 			item["inventoryId"] = "Idol " .. idolPosition
 		end
 		local itemName = data.LETools_itemBases[itemData.id]
