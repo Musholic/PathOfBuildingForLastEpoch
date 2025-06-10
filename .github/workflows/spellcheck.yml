@@ -12,9 +12,8 @@ on:
 
 jobs:
   spellcheck:
-    continue-on-error: true
     runs-on: ubuntu-latest
-    env: 
+    env:
       CONFIG_URL:  https://raw.githubusercontent.com/Nightblade/pob-dict/main
     steps:
 
@@ -35,6 +34,7 @@ jobs:
 
       - name: Run cspell
         uses: streetsidesoftware/cspell-action@v6.9.0
+        continue-on-error: true
         with:
           files: '**' # needed as workaround for non-incremental runs (overrides in config still work ok)
           config: "cspell.json"
