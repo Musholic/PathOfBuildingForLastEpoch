@@ -5,9 +5,9 @@ local applyRangeTests = {
     [{ "+(2-6) to All Attributes", 48, 1.0, "Integer" }] = "+2 to All Attributes",
 }
 
-describe("TestItemTools #wip", function()
+describe("TestItemTools", function()
     for args, expected in pairs(applyRangeTests) do
-        it(string.format("tests applyRange('%s', %.2f, %.2f) #wip", unpack(args)), function()
+        it(string.format("tests applyRange('%s', %.2f, %.2f)", unpack(args)), function()
             local result = itemLib.applyRange(unpack(args))
             assert.are.equals(expected, result)
         end)
