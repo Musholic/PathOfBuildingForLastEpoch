@@ -91,7 +91,7 @@ function main:Init()
 	self.showThousandsSeparators = true
 	self.thousandsSeparator = ","
 	self.decimalSeparator = "."
-	self.defaultItemAffixQuality = 0
+	self.defaultItemAffixQuality = 127.5
 	self.showTitlebarName = true
 	self.showWarnings = true
 	self.slotOnlyTooltips = true
@@ -177,7 +177,7 @@ function main:Init()
 
 	if self.saveNewModCache then
 		local saved = self.defaultItemAffixQuality
-		self.defaultItemAffixQuality = 0
+		self.defaultItemAffixQuality = 127.5
 		loadItemDBs()
 		self:SaveModCache()
 		self.defaultItemAffixQuality = saved
@@ -597,7 +597,7 @@ function main:LoadSettings(ignoreBuild)
 					self.defaultCharLevel = m_min(m_max(tonumber(node.attrib.defaultCharLevel) or 1, 1), 100)
 				end
 				if node.attrib.defaultItemAffixQuality then
-					self.defaultItemAffixQuality = m_min(tonumber(node.attrib.defaultItemAffixQuality) or 0, 1)
+					self.defaultItemAffixQuality = tonumber(node.attrib.defaultItemAffixQuality) or 127.5
 				end
 				if node.attrib.lastExportWebsite then
 					self.lastExportWebsite = node.attrib.lastExportWebsite
@@ -713,7 +713,7 @@ function main:SaveSettings()
 		betaTest = tostring(self.betaTest),
 		defaultGemQuality = tostring(self.defaultGemQuality or 0),
 		defaultCharLevel = tostring(self.defaultCharLevel or 1),
-		defaultItemAffixQuality = tostring(self.defaultItemAffixQuality or 0),
+		defaultItemAffixQuality = tostring(self.defaultItemAffixQuality or 127.5),
 		lastExportWebsite = self.lastExportWebsite,
 		showWarnings = tostring(self.showWarnings),
 		slotOnlyTooltips = tostring(self.slotOnlyTooltips),
@@ -883,13 +883,13 @@ function main:OpenOptionsPopup()
 
 	nextRow()
 	controls.defaultItemAffixQualitySlider = new("SliderControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 200, 20, function(value)
-		self.defaultItemAffixQuality = round(value, 2)
-		controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality * 100) .. "%"
+		self.defaultItemAffixQuality = round(value * 256, 2)
+		controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality / 256 * 100) .. "%"
 	end)
 	controls.defaultItemAffixQualityLabel = new("LabelControl", { "RIGHT", controls.defaultItemAffixQualitySlider, "LEFT" }, defaultLabelSpacingPx, 0, 92, 16, "^7Default item affix quality:")
 	controls.defaultItemAffixQualityValue = new("LabelControl", { "LEFT", controls.defaultItemAffixQualitySlider, "RIGHT" }, -defaultLabelSpacingPx, 0, 92, 16, "50%")
-	controls.defaultItemAffixQualitySlider.val = self.defaultItemAffixQuality
-	controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality * 100) .. "%"
+	controls.defaultItemAffixQualitySlider.val = self.defaultItemAffixQuality / 256
+	controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality / 256 * 100) .. "%"
 
 	nextRow()
 	controls.showWarnings = new("CheckBoxControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 20, "^7Show build warnings:", function(state)
@@ -932,7 +932,7 @@ function main:OpenOptionsPopup()
 	local initialBetaTest = self.betaTest
 	local initialDefaultGemQuality = self.defaultGemQuality or 0
 	local initialDefaultCharLevel = self.defaultCharLevel or 1
-	local initialDefaultItemAffixQuality = self.defaultItemAffixQuality or 0
+	local initialDefaultItemAffixQuality = self.defaultItemAffixQuality or 127.5
 	local initialShowWarnings = self.showWarnings
 	local initialSlotOnlyTooltips = self.slotOnlyTooltips
 	local initialInvertSliderScrollDirection = self.invertSliderScrollDirection

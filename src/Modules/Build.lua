@@ -804,7 +804,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 				local affixTier = affixData.tier - 1
 				local modId = affixId .. "_" .. affixTier
 				local modData = data.itemMods.Item[modId]
-				local range = (affixData.r or 128)
+				local range = (affixData.r or main.defaultItemAffixQuality)
 
 				if modData.type == "Prefix" then
 					table.insert(item.prefixes, { ["range"] = range, ["modId"] = modId })
@@ -820,7 +820,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 				local affixTier = affixData.tier - 1
 				local modId = affixId .. "_" .. affixTier
 				local modData = data.itemMods.Item[modId]
-				local range = (affixData.r or 128)
+				local range = (affixData.r or defaultItemAffixQuality)
 
                 if modData.type == "Prefix" then
                     table.insert(item.prefixes, { ["range"] = range, ["modId"] = modId })
@@ -845,7 +845,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 					end
 					for i, modLine in ipairs(uniqueBase.mods) do
                         if itemLib.hasRange(modLine) then
-                            local range = 0
+                            local range = main.defaultItemAffixQuality
                             if itemData['ur'] then
                                 range = itemData["ur"][uniqueBase.rollIds[i] + 1]
                             end
@@ -864,7 +864,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 			item.base = foundItemBase
 			item.implicitMods= {}
 			for i,implicit in ipairs(foundItemBase.implicits) do
-				local range = 0
+				local range = main.defaultItemAffixQuality
 				if itemData['ir'] then
 					range = itemData["ir"][i]
 				end
