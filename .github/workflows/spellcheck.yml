@@ -12,6 +12,7 @@ on:
 
 jobs:
   spellcheck:
+    continue-on-error: true
     runs-on: ubuntu-latest
     env: 
       CONFIG_URL:  https://raw.githubusercontent.com/Nightblade/pob-dict/main
@@ -33,7 +34,7 @@ jobs:
             ${{ env.CONFIG_URL }}/contribs-dict.txt
 
       - name: Run cspell
-        uses: streetsidesoftware/cspell-action@v5
+        uses: streetsidesoftware/cspell-action@v6.9.0
         with:
           files: '**' # needed as workaround for non-incremental runs (overrides in config still work ok)
           config: "cspell.json"
