@@ -760,8 +760,8 @@ function ItemClass:BuildRaw()
 		if modLine.rounding and itemLib.hasRange(line) then
 			line = "{rounding:" .. modLine.rounding .. "}" .. line
 		end
-		if modLine.valueScalar then
-			line = "{scalar:" .. round(modLine.scalar, 3) .. "}" .. line
+		if modLine.valueScalar and modLine.valueScalar ~= 1 then
+			line = "{scalar:" .. round(modLine.valueScalar, 3) .. "}" .. line
 		end
 		if modLine.range and itemLib.hasRange(line) then
 			line = "{range:" .. round(modLine.range, 3) .. "}" .. line
@@ -927,7 +927,7 @@ function ItemClass:Craft()
 					if mod.standardAffixEffectModifier then
 						modScalar = modScalar - mod.standardAffixEffectModifier
 					end
-					local modLine = { line = line, range = affix.range, scalar = modScalar }
+					local modLine = { line = line, range = affix.range, valueScalar = modScalar }
 					t_insert(self.explicitModLines, modLine)
 				end
 			end
