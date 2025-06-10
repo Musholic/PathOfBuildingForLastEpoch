@@ -620,7 +620,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 	end
 	self.affixLimit = 0
 	if self.crafted then
-		self.affixLimit = 4
+	    -- The affix limit is set to 6 instead of 4 to support sealed affixes
+		self.affixLimit = 6
 		if self.crafted then
 			for _, list in ipairs({self.prefixes,self.suffixes}) do
 				for i = 1, self.affixLimit/2 do
