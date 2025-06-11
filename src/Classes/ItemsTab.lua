@@ -463,7 +463,7 @@ holding Shift will put it in the second.]])
 					if value.modId or #modList == 1 then
 						mod = self.displayItem.affixes[value.modId or modList[1]]
 					else
-						mod = self.displayItem.affixes[modList[1 + round((#modList - 1) * main.defaultItemAffixQuality)]]
+						mod = self.displayItem.affixes[modList[1 + round((#modList - 1) * main.defaultItemAffixQuality / 256)]]
 					end
 
 					-- Adding Mod
@@ -1325,7 +1325,7 @@ function ItemsTabClass:UpdateAffixControl(control, item, type, outputTable, outp
 	control.outputTable = outputTable
 	control.outputIndex = outputIndex
 	control.slider.shown = false
-	control.slider.val = main.defaultItemAffixQuality or 0
+	control.slider.val = main.defaultItemAffixQuality / 256 or 0
 	local selAffix = item[outputTable][outputIndex].modId
 	if (item.type == "Jewel" and item.base.subType ~= "Abyss") then
 		for i, modId in pairs(affixList) do
