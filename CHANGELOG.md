@@ -1,5 +1,23 @@
 # Changelog
 
+## [v0.5.1](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.1) (2025/06/11)
+
+[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.5.0...v0.5.1)
+
+## What's Changed
+### User interface
+- Improve online import (giving feedback on last cache) [\#12](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/12) ([Musholic](https://github.com/Musholic))
+- Partial support for crafting items and changing rolls of affixes
+- Set the default roll for affixes to 127.5 (the average) (this is configurable in the options) (/!\ You may end up with the old value of 0.5)
+
+### Fixed bugs / calculations
+- On online import, fix import of unique items with mods that don't have roll [\#10](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/10) ([Musholic](https://github.com/Musholic))
+- Fix roll roundings and wrong affix effect modifiers for some affixes [\#13](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/13) ([Musholic](https://github.com/Musholic))
+- Fix life per level gain
+- Fix idol positions on online import (one idol could not be imported)
+- Fix offline import of legacy characters
+
+
 ## [v0.5.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.0) (2025/06/04)
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.4.0...v0.5.0)
