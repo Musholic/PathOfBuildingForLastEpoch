@@ -668,9 +668,6 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
         ["hashes"] = { }
     }
     char.league = saveContent["cycle"] == 5 and "Cycle" or "Legacy"
-    if char.league == "Legacy" then
-        return char
-    end
     for passiveIdx, passive in pairs(saveContent["savedCharacterTree"]["nodeIDs"]) do
         local nbPoints = saveContent["savedCharacterTree"]["nodePoints"][passiveIdx]
         table.insert(char["hashes"], className .. "-" .. passive .. "#" .. nbPoints)
