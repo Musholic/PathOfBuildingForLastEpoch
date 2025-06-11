@@ -1,5 +1,18 @@
 # Changelog
 
+## [v0.5.1](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.1) (2025/06/11)
+
+[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.5.0...v0.5.1)
+
+<!-- Release notes generated using configuration in .github/release.yml at dev -->
+
+## What's Changed
+### Other changes
+- On online import, fix import of unique items with mods that don't have roll [\#10](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/10) ([Musholic](https://github.com/Musholic))
+- Improve online import [\#12](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/12) ([Musholic](https://github.com/Musholic))
+- Fix roll roundings and wrong affix effect modifiers for some affixes [\#13](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/13) ([Musholic](https://github.com/Musholic))
+
+
 ## [v0.5.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.0) (2025/06/04)
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.4.0...v0.5.0)
