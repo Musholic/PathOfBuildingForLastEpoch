@@ -37,15 +37,6 @@ end
 
 -- Apply range value (0 to 256) to a modifier that has a range: "(x-x)" or "(x-x) to (x-x)"
 function itemLib.applyRange(line, range, valueScalar, rounding)
-    local modList, extra = modLib.parseMod(line)
-    if modList and not extra then
-        for _, mod in pairs(modList) do
-            local subMod = mod
-            if type(mod.value) == "table" and mod.value.mod then
-                subMod = mod.value.mod
-            end
-        end
-    end
     -- High precision for increased modifier
     local precision = 100
     if rounding == "Integer" then
