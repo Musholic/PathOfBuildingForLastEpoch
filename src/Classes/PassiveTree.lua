@@ -483,25 +483,6 @@ function PassiveTreeClass:ProcessStats(node, startIndex)
         end
         local line = node.sd[i]
         local list, extra = modLib.parseMod(line)
-        if not list or extra then
-            -- Try to combine it with one or more of the lines that follow this one
-            local endI = i + 1
-            while node.sd[endI] do
-                local comb = line
-                for ci = i + 1, endI do
-                    comb = comb .. " " .. node.sd[ci]
-                end
-                list, extra = modLib.parseMod(comb, true)
-                if list and not extra then
-                    -- Success, add dummy mod lists to the other lines that were combined with this one
-                    for ci = i + 1, endI do
-                        node.mods[ci] = { list = { } }
-                    end
-                    break
-                end
-                endI = endI + 1
-            end
-        end
         if not list then
             -- Parser had no idea how to read this modifier
             node.unknown = true

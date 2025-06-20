@@ -187,6 +187,7 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 			self:AddUndoState()
 			self.build.buildFlag = true
 			local mainSocketGroup = self.build.skillsTab.socketGroupList[self.build.mainSocketGroup]
+			-- TODO: support second item slot
 			if mainSocketGroup and mainSocketGroup.slot and self.slots[mainSocketGroup.slot].weaponSet == 1 then
 				for index, socketGroup in pairs(self.build.skillsTab.socketGroupList) do
 					if socketGroup.slot and self.slots[socketGroup.slot].weaponSet == 2 then
@@ -550,13 +551,13 @@ holding Shift will put it in the second.]])
 		return self.displayItem.rangeLineList[1] and 28 or 0
 	end)
 	self.controls.displayItemRangeLine = new("DropDownControl", {"TOPLEFT",self.controls.displayItemSectionRange,"TOPLEFT"}, 0, 0, 350, 18, nil, function(index, value)
-		self.controls.displayItemRangeSlider.val = self.displayItem.rangeLineList[index].range
+		self.controls.displayItemRangeSlider.val = self.displayItem.rangeLineList[index].range / 256
 	end)
 	self.controls.displayItemRangeLine.shown = function()
 		return self.displayItem and self.displayItem.rangeLineList[1] ~= nil
 	end
 	self.controls.displayItemRangeSlider = new("SliderControl", {"LEFT",self.controls.displayItemRangeLine,"RIGHT"}, 8, 0, 100, 18, function(val)
-		self.displayItem.rangeLineList[self.controls.displayItemRangeLine.selIndex].range = val
+		self.displayItem.rangeLineList[self.controls.displayItemRangeLine.selIndex].range = val * 256
 		self.displayItem:BuildAndParseRaw()
 		self:UpdateDisplayItemTooltip()
 		self:UpdateCustomControls()
@@ -1437,7 +1438,7 @@ function ItemsTabClass:UpdateDisplayItemRangeLines()
 			t_insert(self.controls.displayItemRangeLine.list, modLine.line)
 		end
 		self.controls.displayItemRangeLine.selIndex = 1
-		self.controls.displayItemRangeSlider.val = self.displayItem.rangeLineList[1].range
+		self.controls.displayItemRangeSlider.val = self.displayItem.rangeLineList[1].range / 256
 	end
 end
 
@@ -1559,11 +1560,10 @@ function ItemsTabClass:CraftItem()
 		if raritySel >= 3 then
 			item.title = controls.title.buf:match("%S") and controls.title.buf or "New Item"
 		end
-		if base.base.implicit then
+		if base.base.implicits then
 			local implicitIndex = 1
-			for line in base.base.implicit:gmatch("[^\n]+") do
-				local modList, extra = modLib.parseMod(line)
-				t_insert(item.implicitModLines, { line = line, extra = extra, modList = modList or { }, modTags = base.base.implicitModTypes and base.base.implicitModTypes[implicitIndex] or { } })
+			for _,line in ipairs(base.base.implicits) do
+				t_insert(item.implicitModLines, { line = line})
 				implicitIndex = implicitIndex + 1
 			end
 		end
@@ -2144,24 +2144,6 @@ function ItemsTabClass:AddCustomModifierToDisplayItem()
 					return a.defaultOrder < b.defaultOrder
 				end
 			end)
-		elseif sourceId == "ESSENCE" then
-			for _, essence in pairs(self.build.data.essences) do
-				local modId = essence.mods[self.displayItem.type]
-				local mod = self.displayItem.affixes[modId]
-				t_insert(modList, {
-					label = essence.name .. "   " .. "^8[" .. table.concat(mod, "/") .. "]" .. " (" .. mod.type .. ")",
-					mod = mod,
-					type = "custom",
-					essence = essence,
-				})
-			end
-			table.sort(modList, function(a, b)
-				if a.essence.type ~= b.essence.type then
-					return a.essence.type > b.essence.type
-				else
-					return a.essence.tier > b.essence.tier
-				end
-			end)
 		elseif sourceId == "PREFIX" or sourceId == "SUFFIX" then
 			for _, mod in pairs(self.displayItem.affixes) do
 				if sourceId:lower() == mod.type:lower() and self.displayItem:GetModSpawnWeight(mod) > 0 then
@@ -2226,22 +2208,8 @@ function ItemsTabClass:AddCustomModifierToDisplayItem()
 			end)
 		end
 	end
-	if self.displayItem.type ~= "Jewel" then
-		t_insert(sourceList, { label = "Crafting Bench", sourceId = "MASTER" })
-	end
-	if self.displayItem.type ~= "Jewel" and self.displayItem.type ~= "Flask" then
-		t_insert(sourceList, { label = "Essence", sourceId = "ESSENCE" })
-	end
-	if self.displayItem.type ~= "Jewel" and self.displayItem.type ~= "Flask" then
-		t_insert(sourceList, { label = "Veiled", sourceId = "VEILED"})
-	end
-	if self.displayItem.type ~= "Flask" then
-		t_insert(sourceList, { label = "Delve", sourceId = "DELVE"})
-	end
-	if not self.displayItem.crafted then
 		t_insert(sourceList, { label = "Prefix", sourceId = "PREFIX" })
 		t_insert(sourceList, { label = "Suffix", sourceId = "SUFFIX" })
-	end
 	t_insert(sourceList, { label = "Custom", sourceId = "CUSTOM" })
 	buildMods(sourceList[1].sourceId)
 	local function addModifier()

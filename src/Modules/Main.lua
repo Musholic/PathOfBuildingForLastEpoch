@@ -179,6 +179,36 @@ function main:Init()
 		local saved = self.defaultItemAffixQuality
 		self.defaultItemAffixQuality = 127.5
 		loadItemDBs()
+
+		-- Load all affixes
+		for _,mod in pairs(data.itemMods.Item) do
+			for _, line in ipairs(mod) do
+				local rounding
+				line = line:gsub("{(%a*):?([^}]*)}", function(k,val)
+					if k == "rounding" then
+						rounding = val
+					end
+
+					return ""
+				end)
+				local rangedLine = itemLib.applyRange(line, self.defaultItemAffixQuality, 1, rounding)
+				modLib.parseMod(rangedLine)
+			end
+		end
+
+		-- Load all bases
+		for baseName, base in pairs(data.itemBases) do
+			newItem = new("Item", "")
+
+			newItem.baseName = baseName
+			newItem.base = base
+			newItem.rarity = "NORMAL"
+			for _,mod in ipairs(base.implicits) do
+				table.insert(newItem.implicitModLines, { line = mod })
+			end
+			newItem:BuildAndParseRaw()
+		end
+
 		self:SaveModCache()
 		self.defaultItemAffixQuality = saved
 	end

@@ -120,6 +120,7 @@ DamageTypesColored = {
 }
 
 DamageSourceTypes = { "Spell", "Melee", "Throwing", "Bow", "Dot"}
+DamageSourceWeapons = { "Wand", "Bow", "Axe", "Sceptre", "Staff", "Dagger", "Sword" }
 
 -- Active skill types
 SkillType = {
