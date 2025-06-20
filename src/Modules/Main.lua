@@ -195,6 +195,20 @@ function main:Init()
 				modLib.parseMod(rangedLine)
 			end
 		end
+
+		-- Load all bases
+		for baseName, base in pairs(data.itemBases) do
+			newItem = new("Item", "")
+
+			newItem.baseName = baseName
+			newItem.base = base
+			newItem.rarity = "NORMAL"
+			for _,mod in ipairs(base.implicits) do
+				table.insert(newItem.implicitModLines, { line = mod })
+			end
+			newItem:BuildAndParseRaw()
+		end
+
 		self:SaveModCache()
 		self.defaultItemAffixQuality = saved
 	end
