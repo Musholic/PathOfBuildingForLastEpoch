@@ -235,8 +235,21 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 	self.controls.rareDB.shown = function()
 		return not self.controls.selectDBLabel:IsShown() or self.controls.selectDB.selIndex == 2
 	end
+	-- Set all item ranges
+	self.controls.allItemRangeSlider = new("SliderControl", {"TOPLEFT",main.portraitMode and self.controls.setManage or self.controls.itemList,"TOPRIGHT"}, 20, main.portraitMode and 0 or -20, 100, 18, function (val)
+		self.controls.allItemRangeButton.label = "Set all mods range of all items (" .. round(val * 100) .. "%)"
+	end)
+
+
+	self.controls.allItemRangeButton = new("ButtonControl", {"TOPLEFT",self.controls.allItemRangeSlider,"TOPRIGHT"}, 8, 0, 250, 20, "Set all mods range of all items (50%)", function()
+		self:SetAllItemRanges(round(self.controls.allItemRangeSlider.val * 256, 1))
+		self:AddUndoState()
+	end)
+
+	self.controls.allItemRangeSlider.val = main.defaultItemAffixQuality / 256;
+
 	-- Create/import item
-	self.controls.craftDisplayItem = new("ButtonControl", {"TOPLEFT",main.portraitMode and self.controls.setManage or self.controls.itemList,"TOPRIGHT"}, 20, main.portraitMode and 0 or -20, 120, 20, "Craft item...", function()
+	self.controls.craftDisplayItem = new("ButtonControl", {"TOPLEFT",self.controls.allItemRangeSlider,"BOTTOMLEFT"}, 0, 8, 120, 20, "Craft item...", function()
 		self:CraftItem()
 	end)
 	self.controls.craftDisplayItem.shown = function()
@@ -263,7 +276,7 @@ holding Shift will put it in the second.]])
 	-- Display item
 	self.displayItemTooltip = new("Tooltip")
 	self.displayItemTooltip.maxWidth = 458
-	self.anchorDisplayItem = new("Control", {"TOPLEFT",main.portraitMode and self.controls.setManage or self.controls.itemList,"TOPRIGHT"}, 20, main.portraitMode and 0 or -20, 0, 0)
+	self.anchorDisplayItem = new("Control", {"TOPLEFT",self.controls.allItemRangeSlider,"BOTTOMLEFT"}, 0, 8, 0, 0)
 	self.anchorDisplayItem.shown = function()
 		return self.displayItem ~= nil
 	end
@@ -1526,6 +1539,26 @@ function ItemsTabClass:OpenItemSetManagePopup()
 		main:ClosePopup()
 	end)
 	main:OpenPopup(630, 290, "Manage Item Sets", controls)
+end
+
+function ItemsTabClass:SetAllItemRanges(range)
+	for _, item in pairs(self.items) do
+		for _, rangeLine in pairs(item.rangeLineList) do
+			rangeLine.range = range
+		end
+		for _, rangeLine in pairs(item.prefixes) do
+			rangeLine.range = range
+		end
+		for _, rangeLine in pairs(item.suffixes) do
+			rangeLine.range = range
+		end
+		item:BuildAndParseRaw()
+	end
+	if self.displayItem then
+		self:UpdateDisplayItemTooltip()
+		self:UpdateCustomControls()
+	end
+	self.build.buildFlag = true
 end
 
 -- Opens the item crafting popup
