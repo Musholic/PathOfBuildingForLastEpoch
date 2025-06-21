@@ -1266,6 +1266,9 @@ function ItemClass:BuildModList()
 				self.classRestriction = modLine.line:gsub("{variant:([%d,]+)}", ""):match("Requires Class (.+)")
 			end
 			-- handle understood modifier variable properties
+			if modLine.range ~= nil then
+				t_insert(self.rangeLineList, modLine)
+			end
 			if not modLine.extra then
 				for _, mod in ipairs(modLine.modList) do
 					mod = modLib.setSource(mod, self.modSource)
