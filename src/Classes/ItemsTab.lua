@@ -236,17 +236,25 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 		return not self.controls.selectDBLabel:IsShown() or self.controls.selectDB.selIndex == 2
 	end
 	-- Set all item ranges
-	self.controls.allItemRangeSlider = new("SliderControl", {"TOPLEFT",main.portraitMode and self.controls.setManage or self.controls.itemList,"TOPRIGHT"}, 20, main.portraitMode and 0 or -20, 100, 18, function (val)
-		self.controls.allItemRangeButton.label = "Set all mods range of all items (" .. round(val * 100) .. "%)"
+	self.controls.allItemRangeSlider = new("SliderControl", {"TOPLEFT",main.portraitMode and self.controls.setManage or self.controls.itemList,"TOPRIGHT"}, 20, main.portraitMode and 0 or -20, 100, 18, function ()
+		self:UpdateAllItemRangeLabel()
 	end)
 
 
-	self.controls.allItemRangeButton = new("ButtonControl", {"TOPLEFT",self.controls.allItemRangeSlider,"TOPRIGHT"}, 8, 0, 250, 20, "Set all mods range of all items (50%)", function()
-		self:SetAllItemRanges(round(self.controls.allItemRangeSlider.val * 256, 1))
+	self.controls.allItemRangeButton = new("ButtonControl", {"TOPLEFT",self.controls.allItemRangeSlider,"TOPRIGHT"}, 8, 0, 250, 20, "Set all mods range of all items", function()
+		local range = self.controls.allItemRangeSlider.val * 256
+		-- Fix for allowing half range values
+		if range > 127.2 and range < 127.8 then
+			range = 127.5
+		else
+			range = round(range)
+		end
+		self:SetAllItemRanges(range)
 		self:AddUndoState()
 	end)
 
 	self.controls.allItemRangeSlider.val = main.defaultItemAffixQuality / 256;
+	self:UpdateAllItemRangeLabel()
 
 	-- Create/import item
 	self.controls.craftDisplayItem = new("ButtonControl", {"TOPLEFT",self.controls.allItemRangeSlider,"BOTTOMLEFT"}, 0, 8, 120, 20, "Craft item...", function()
@@ -981,6 +989,16 @@ function ItemsTabClass:EquipItemInSet(item, itemSetId)
 	self:PopulateSlots()
 	self:AddUndoState()
 	self.build.buildFlag = true
+end
+
+function ItemsTabClass:UpdateAllItemRangeLabel()
+	local range = self.controls.allItemRangeSlider.val * 256
+	if range > 127.2 and range < 127.8 then
+		range = 127.5
+	else
+		range = round(range)
+	end
+	self.controls.allItemRangeButton.label = "Set all mods range of all items (" .. round(range / 255 * 100,1) .. "%)"
 end
 
 -- Update the item lists for all the slot controls

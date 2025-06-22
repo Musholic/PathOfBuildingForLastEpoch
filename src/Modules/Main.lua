@@ -914,12 +914,12 @@ function main:OpenOptionsPopup()
 	nextRow()
 	controls.defaultItemAffixQualitySlider = new("SliderControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 200, 20, function(value)
 		self.defaultItemAffixQuality = round(value * 256, 2)
-		controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality / 256 * 100) .. "%"
+		controls.defaultItemAffixQualityValue.label = round(self.defaultItemAffixQuality / 255 * 100, 1) .. "%"
 	end)
 	controls.defaultItemAffixQualityLabel = new("LabelControl", { "RIGHT", controls.defaultItemAffixQualitySlider, "LEFT" }, defaultLabelSpacingPx, 0, 92, 16, "^7Default item affix quality:")
 	controls.defaultItemAffixQualityValue = new("LabelControl", { "LEFT", controls.defaultItemAffixQualitySlider, "RIGHT" }, -defaultLabelSpacingPx, 0, 92, 16, "50%")
 	controls.defaultItemAffixQualitySlider.val = self.defaultItemAffixQuality / 256
-	controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality / 256 * 100) .. "%"
+	controls.defaultItemAffixQualityValue.label = round(self.defaultItemAffixQuality / 255 * 100, 1) .. "%"
 
 	nextRow()
 	controls.showWarnings = new("CheckBoxControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 20, "^7Show build warnings:", function(state)
