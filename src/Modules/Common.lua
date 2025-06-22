@@ -415,15 +415,18 @@ function writeLuaTable(out, t, indent)
 end
 
 -- Replace string in table, making multiple copy per values
-function replaceStringInTableByValues(tblInit, tbl, str, values)
+function replaceStringInTableByValues(tblInit, tbl, str, values, str2, values2)
 	local outs = tblInit
-	for _, value in ipairs(values) do
+	for i, value in ipairs(values) do
 		local out = {}
 		for k, v in pairs(tbl) do
 			if type(v) == "table" then
-				out[k] = replaceStringInTableByValues({}, v, str, {value})[1]
+				out[k] = replaceStringInTableByValues({}, v, str, {value}, str2, values2 ~= nil and {values2[i]} or nil)[1]
 			elseif type(v) == "string" then
 				out[k] = v:gsub(str, value)
+				if str2 ~= nil then
+					out[k] = out[k]:gsub(str2, values2[i])
+				end
 			else
 				out[k] = v
 			end

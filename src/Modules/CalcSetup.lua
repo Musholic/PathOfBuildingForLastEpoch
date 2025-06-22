@@ -16,14 +16,10 @@ local tempTable1 = { }
 
 -- Initialise modifier database with stats and conditions common to all actors
 function calcs.initModDB(env, modDB)
-	modDB:NewMod("FireResistMax", "BASE", 75, "Base")
-	modDB:NewMod("ColdResistMax", "BASE", 75, "Base")
-	modDB:NewMod("LightningResistMax", "BASE", 75, "Base")
-	modDB:NewMod("ChaosResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemFireResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemColdResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemLightningResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemChaosResistMax", "BASE", 75, "Base")
+	for _, damageType in ipairs(DamageTypes) do
+		modDB:NewMod(damageType.."ResistMax", "BASE", 75, "Base")
+		modDB:NewMod("Totem".. damageType.."ResistMax", "BASE", 75, "Base")
+	end
 	modDB:NewMod("BlockChanceMax", "BASE", 75, "Base")
 	modDB:NewMod("SpellBlockChanceMax", "BASE", 75, "Base")
 	modDB:NewMod("SpellDodgeChanceMax", "BASE", 75, "Base")
