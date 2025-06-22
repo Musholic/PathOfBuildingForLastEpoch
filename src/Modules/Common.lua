@@ -575,6 +575,12 @@ function tableConcat(t1,t2)
 	return t3
 end
 
+function tableInsertAll(t1, t2)
+	for _,v in pairs(t2) do
+		table.insert(t1, v)
+	end
+end
+
 --- Simple table value equality
 ---@param t1 table
 ---@param t2 table
