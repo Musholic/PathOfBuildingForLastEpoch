@@ -13,7 +13,7 @@ local SliderClass = newClass("SliderControl", "Control", "TooltipHost", function
 	self.knobSize = height - 2
 	self.val = 0
 	self.changeFunc = changeFunc
-	self.scrollWheelSpeedTbl = scrollWheelSpeedTbl or { ["SHIFT"] = 0.25, ["CTRL"] = 0.01, ["DEFAULT"] = 0.05 }
+	self.scrollWheelSpeedTbl = scrollWheelSpeedTbl or { ["SHIFT"] = 16 / 256, ["CTRL"] = 0.5 / 256, ["DEFAULT"] = 4 / 256 }
 end)
 
 function SliderClass:IsMouseOver()

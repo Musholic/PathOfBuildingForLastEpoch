@@ -179,6 +179,36 @@ function main:Init()
 		local saved = self.defaultItemAffixQuality
 		self.defaultItemAffixQuality = 127.5
 		loadItemDBs()
+
+		-- Load all affixes
+		for _,mod in pairs(data.itemMods.Item) do
+			for _, line in ipairs(mod) do
+				local rounding
+				line = line:gsub("{(%a*):?([^}]*)}", function(k,val)
+					if k == "rounding" then
+						rounding = val
+					end
+
+					return ""
+				end)
+				local rangedLine = itemLib.applyRange(line, self.defaultItemAffixQuality, 1, rounding)
+				modLib.parseMod(rangedLine)
+			end
+		end
+
+		-- Load all bases
+		for baseName, base in pairs(data.itemBases) do
+			newItem = new("Item", "")
+
+			newItem.baseName = baseName
+			newItem.base = base
+			newItem.rarity = "NORMAL"
+			for _,mod in ipairs(base.implicits) do
+				table.insert(newItem.implicitModLines, { line = mod })
+			end
+			newItem:BuildAndParseRaw()
+		end
+
 		self:SaveModCache()
 		self.defaultItemAffixQuality = saved
 	end
@@ -884,12 +914,12 @@ function main:OpenOptionsPopup()
 	nextRow()
 	controls.defaultItemAffixQualitySlider = new("SliderControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 200, 20, function(value)
 		self.defaultItemAffixQuality = round(value * 256, 2)
-		controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality / 256 * 100) .. "%"
+		controls.defaultItemAffixQualityValue.label = round(self.defaultItemAffixQuality / 255 * 100, 1) .. "%"
 	end)
 	controls.defaultItemAffixQualityLabel = new("LabelControl", { "RIGHT", controls.defaultItemAffixQualitySlider, "LEFT" }, defaultLabelSpacingPx, 0, 92, 16, "^7Default item affix quality:")
 	controls.defaultItemAffixQualityValue = new("LabelControl", { "LEFT", controls.defaultItemAffixQualitySlider, "RIGHT" }, -defaultLabelSpacingPx, 0, 92, 16, "50%")
 	controls.defaultItemAffixQualitySlider.val = self.defaultItemAffixQuality / 256
-	controls.defaultItemAffixQualityValue.label = (self.defaultItemAffixQuality / 256 * 100) .. "%"
+	controls.defaultItemAffixQualityValue.label = round(self.defaultItemAffixQuality / 255 * 100, 1) .. "%"
 
 	nextRow()
 	controls.showWarnings = new("CheckBoxControl", { "TOPLEFT", nil, "TOPLEFT" }, defaultLabelPlacementX, currentY, 20, "^7Show build warnings:", function(state)

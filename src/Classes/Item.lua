@@ -560,7 +560,8 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 					gameModeStage = "IMPLICIT"
 				end
 				modLine.implicit = modLine.implicit or (not modLine.crafted and #self.implicitModLines < implicitLines)
-				local rangedLine = itemLib.applyRange(line, 0, 1)
+				modLine.range = modLine.range or main.defaultItemAffixQuality
+				local rangedLine = itemLib.applyRange(line, modLine.range, modLine.valueScalar, modLine.rounding)
 				local modList, extra = modLib.parseMod(rangedLine)
 
 				local modLines
@@ -575,7 +576,6 @@ function ItemClass:ParseRaw(raw, rarity, highQuality)
 				if modList then
 					modLine.modList = modList
 					modLine.extra = extra
-					modLine.range = modLine.range or main.defaultItemAffixQuality
 					t_insert(modLines, modLine)
 					if mode == "GAME" then
 						if gameModeStage == "FINDIMPLICIT" then
@@ -656,37 +656,7 @@ function ItemClass:NormaliseQuality()
 end
 
 function ItemClass:GetModSpawnWeight(mod, includeTags, excludeTags)
-	local weight = 0
-	if self.base then
-		local function HasInfluenceTag(key)
-			if self.base.influenceTags then
-				for _, curInfluenceInfo in ipairs(influenceInfo) do
-					if self[curInfluenceInfo.key] and self.base.influenceTags[curInfluenceInfo.key] == key then
-						return true
-					end
-				end
-			end
-			return false
-		end
-
-		local function HasMavenInfluence(modAffix)
-			return modAffix:match("Elevated")
-		end
-
-		for i, key in ipairs(mod.weightKey) do
-			if (self.base.tags[key] or (includeTags and includeTags[key]) or HasInfluenceTag(key)) and not (excludeTags and excludeTags[key]) then
-				weight = (HasInfluenceTag(key) and HasMavenInfluence(mod.affix)) and 1000 or mod.weightVal[i]
-				break
-			end
-		end
-		for i, key in ipairs(mod.weightMultiplierKey) do
-			if (self.base.tags[key] or (includeTags and includeTags[key]) or HasInfluenceTag(key)) and not (excludeTags and excludeTags[key]) then
-				weight = weight * mod.weightMultiplierVal[i] / 100
-				break
-			end
-		end
-	end
-	return weight
+	return 1
 end
 
 function ItemClass:CheckIfModIsDelve(mod)
@@ -1296,21 +1266,10 @@ function ItemClass:BuildModList()
 				self.classRestriction = modLine.line:gsub("{variant:([%d,]+)}", ""):match("Requires Class (.+)")
 			end
 			-- handle understood modifier variable properties
+			if modLine.range ~= nil and itemLib.hasRange(modLine.line) then
+				t_insert(self.rangeLineList, modLine)
+			end
 			if not modLine.extra then
-				if modLine.range ~= nil then
-					-- Check if line actually has a range
-					if modLine.line:find("%((%-?%d+%.?%d*)%-(%-?%d+%.?%d*)%)") then
-						local strippedModeLine = modLine.line:gsub("\n"," ")
-						-- Put the modified value into the string
-						local line = itemLib.applyRange(strippedModeLine, modLine.range, modLine.valueScalar, modLine.rounding)
-						-- Check if we can parse it before adding the mods
-						local list, extra = modLib.parseMod(line)
-						if list and not extra then
-							modLine.modList = list
-							t_insert(self.rangeLineList, modLine)
-						end
-					end
-				end
 				for _, mod in ipairs(modLine.modList) do
 					mod = modLib.setSource(mod, self.modSource)
 					baseList:AddMod(mod)

@@ -726,17 +726,24 @@ function ImportTabClass:ReadJsonSaveData(saveFileContent)
                     else
                         item["name"] = itemBaseName
                         item["rarity"] = "RARE"
+                        item["prefixes"] = {}
+                        item["suffixes"] = {}
                         for i = 0, 3 do
                             local dataId = 14 + i * 3
                             if #itemData["data"] > dataId then
                                 local affixId = itemData["data"][dataId] + (itemData["data"][dataId - 1] % 4) * 256
                                 if affixId then
                                     local affixTier = math.floor(itemData["data"][dataId - 1] / 16)
-                                    local modData = data.itemMods.Item[affixId .. "_" .. affixTier]
+                                    local modId = affixId .. "_" .. affixTier
+                                    local modData = data.itemMods.Item[modId]
+                                    local range = itemData["data"][dataId + 1]
+
                                     if modData then
-                                        local mod = modData[1]
-                                        local range = itemData["data"][dataId + 1]
-                                        table.insert(item.explicitMods, "{range: " .. range .. "}" .. mod)
+                                        if modData.type == "Prefix" then
+                                            table.insert(item.prefixes, { ["range"] = range, ["modId"] = modId })
+                                        else
+                                            table.insert(item.suffixes, { ["range"] = range, ["modId"] = modId })
+                                        end
                                     end
                                 end
                             end
@@ -931,16 +938,14 @@ function ImportTabClass:BuildItem(itemData)
     if itemData.implicitMods then
         for _, line in ipairs(itemData.implicitMods) do
             for line in line:gmatch("[^\n]+") do
-                local modList, extra = modLib.parseMod(line)
-                t_insert(item.implicitModLines, { line = line, extra = extra, mods = modList or { } })
+                t_insert(item.implicitModLines, { line = line})
             end
         end
     end
     if itemData.explicitMods then
         for _, line in ipairs(itemData.explicitMods) do
             for line in line:gmatch("[^\n]+") do
-                local modList, extra = modLib.parseMod(line)
-                t_insert(item.explicitModLines, { line = line, extra = extra, mods = modList or { } })
+                t_insert(item.explicitModLines, { line = line })
             end
         end
     end
