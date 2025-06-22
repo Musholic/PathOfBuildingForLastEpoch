@@ -9,8 +9,14 @@ This is a fork of Path Of Building adapted to work for the game **Last Epoch**.
 The following features are supported (or partially):
 * Passive tree
 * Character import: for offline character and from LE tools build planner
-* A lot of stats and mods/affixes are not working correctly (either not recognized or not applied correctly)
-* Items: Imported from character import and can be crafted / modified
+* A lot of stats and mods/affixes are not working correctly.
+  * **Out of 13,274 mods, 4,082 (31%) mods are recognized by the parser**. Even if a mod is recognized, it's not guaranteed that it will work as expected.
+  * The total amount of mods is made of 
+    * the implicits (one for each implicit of each item)
+    * the prefixes and suffixes (one for each tier of each)
+    * the unique modifiers (one for each mod of each unique)
+    * the passive and skill trees (one for each mod of each node)
+* Items: Imported from character import and can be crafted / modified.
 * Unique items
 * Legendary items supported through LE tools import
 * Basic support for following stat calculation: health, mana, armor, attributes
