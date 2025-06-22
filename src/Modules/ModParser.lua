@@ -191,7 +191,6 @@ local modTagList = {
 	["from critical strikes"] = { tag = { type = "Condition", var = "CriticalStrike" } },
 	-- Multipliers
 	["per level"] = { tag = { type = "Multiplier", var = "Level" } },
-	-- TODO: refactor all sword use
 	-- Per stat
 	["per (%d+) total attributes"] = function(num) return { tag = { type = "PerStat", statList = Attributes, div = num } } end,
 	["per (%d+) maximum mana"] = function(num) return { tag = { type = "PerStat", stat = "Mana", div = num } } end,
