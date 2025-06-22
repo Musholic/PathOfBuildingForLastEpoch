@@ -846,7 +846,7 @@ function buildMode:ReadLeToolsSave(saveContent)
 					for i, modLine in ipairs(uniqueBase.mods) do
                         if itemLib.hasRange(modLine) then
                             local range = main.defaultItemAffixQuality
-                            if itemData['ur'] then
+                            if itemData['ur'] and #itemData['ur'] > 0 then
                                 range = itemData["ur"][uniqueBase.rollIds[i] + 1]
                             end
                             -- TODO: avoid using crafted
