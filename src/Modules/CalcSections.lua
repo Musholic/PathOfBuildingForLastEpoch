@@ -4,58 +4,60 @@
 -- List of sections for the Calcs tab
 --
 
--- Commonly used modifier lists
-local lightningHitTaken = {
-	"DamageTaken", "LightningDamageTaken", "LightningResist"
-}
 -- format {width, id, group, color, subsection:{default hidden, label, data:{}}}
 return {
 { 3, "HitDamage", 1, colorCodes.OFFENCE, {{ defaultCollapsed = false, label = "Skill Damage", data = {
 	extra = "{output:DisplayDamage}",
 	colWidth = 95,
-	replaceStringInTableByValues(
+	generateTableByValues(
 			{{ format = "All Types:", }},
-			{ format = "Physical:" },
-			"Physical", DamageTypesColored),
-	replaceStringInTableByValues(
+			DamageTypesColored, function (_,damageType)
+				return { format = damageType .. ":" }
+			end),
+	generateTableByValues(
 			{ label = "Added", flag = "notAilment",
 			  { format = "{0:mod:1}", { modName = "Damage", modType = "BASE", cfg = "skill" }, },
 			},
-			{ format = "{0:mod:1,2}",
-			  { label = "Player modifiers", modName = "PhysicalDamage", modType = "BASE", cfg = "skill" },
-			  { label = "Enemy modifiers", modName = "SelfPhysicalDamage", modType = "BASE", enemy = true, cfg = "skill" }, } ,
-			"Physical", DamageTypes),
+			DamageTypes, function (_,damageType)
+				return { format = "{0:mod:1,2}",
+						 { label = "Player modifiers", modName = damageType .. "Damage", modType = "BASE", cfg = "skill" },
+						 { label = "Enemy modifiers", modName = "Self" .. damageType .. "Damage", modType = "BASE", enemy = true, cfg = "skill" }, }
+			end),
 	-- Skill Hit Damage
-	replaceStringInTableByValues(
+	generateTableByValues(
 			{ label = "Total Increased",
 			  { format = "{0:mod:1}%", { modName = "Damage", modType = "INC", cfg = "skill" }, },
 			},
-			{ format = "{0:mod:1}%", { modName = "PhysicalDamage", modType = "INC", cfg = "skill" }, },
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
+			DamageTypes, function (_,damageType)
+				return { format = "{0:mod:1}%", { modName = damageType .. "Damage", modType = "INC", cfg = "skill" }, }
+			end),
+	generateTableByValues(
 			{ label = "Total More",
 			  { format = "{0:mod:1}%", { modName = "Damage", modType = "MORE", cfg = "skill" }, },
 			},
-			{ format = "{0:mod:1}%", { modName = "PhysicalDamage", modType = "MORE", cfg = "skill" }, },
-			"Physical", DamageTypes),
-	replaceStringInTableByValues(
+			DamageTypes, function (_,damageType)
+				return { format = "{0:mod:1}%", { modName = damageType .. "Damage", modType = "MORE", cfg = "skill" }, }
+			end),
+	generateTableByValues(
 			{ label = "Effective DPS Mod", flag = "effective",
 			  { },
 			},
-			{ format = "x {3:output:LightningEffMult}",
-			  { breakdown = "LightningEffMult" },
-			  { label = "Player modifiers", modName = { "LightningPenetration", "IgnoreLightningResistance" }, cfg = "skill" },
-			  { label = "Enemy modifiers", modName = lightningHitTaken, enemy = true, cfg = "skill" },
-			},
-			"Lightning", DamageTypes),
-	replaceStringInTableByValues(
+			DamageTypes, function (_,damageType)
+				return { format = "x {3:output:" .. damageType .. "EffMult}",
+						 { breakdown = damageType .. "EffMult" },
+						 { label = "Player modifiers", modName = { damageType .. "Penetration", "Ignore" .. damageType .. "Resistance" }, cfg = "skill" },
+						 { label = "Enemy modifiers", modName = { "DamageTaken", damageType .. "DamageTaken", damageType .. "Resist" }, enemy = true, cfg = "skill" },
+				}
+			end),
+	generateTableByValues(
 			{ label = "Skill Hit Damage", textSize = 12,
 			  {  },
 			},
-			{ format = "{1:output:LightningDamage}",
-			  { breakdown = "Lightning" },
-			},
-			"Lightning", DamageTypes),
+			DamageTypes, function (_,damageType)
+				return { format = "{1:output:" .. damageType .. "Damage}",
+						 { breakdown = damageType },
+				}
+			end),
 	{ label = "Skill Average Hit", { format = "{1:output:AverageHit}", { breakdown = "AverageHit" }, }, },
 	{ label = "Skill PvP Average Hit", flag = "notAttackPvP", { format = "{1:output:PvpAverageHit}", { breakdown = "PvpAverageHit" },
 		{ label = "Tvalue Override (ms)", modName = "MultiplierPvpTvalueOverride" },
@@ -324,10 +326,11 @@ return {
 } }
 } },
 -- attributes/resists
-{ 1, "Attributes", 2, colorCodes.NORMAL, {{ defaultCollapsed = false, label = "Attributes", data = replaceStringInTableByValues({},
-	{ label = "Strength", { format = "{0:output:Str}", { breakdown = "Str" }, { modName = "Str" }, }, },
-	"Strength", LongAttributes, "Str", Attributes
-) }
+{ 1, "Attributes", 2, colorCodes.NORMAL, {{ defaultCollapsed = false, label = "Attributes", data = generateTableByValues({},
+		Attributes, function(i, stat)
+			return { label = LongAttributes[i], { format = "{0:output:" .. stat .. "}", { breakdown = stat }, { modName = stat }, }, }
+		end),
+}
 } },
 -- primary defenses
 { 1, "Life", 2, colorCodes.LIFE, {{ defaultCollapsed = false, label = "Health", data = {
@@ -376,11 +379,13 @@ return {
 } }
 } },
 -- secondary defenses
-{ 1, "Resist", 3, colorCodes.DEFENCE, {{ defaultCollapsed = false, label = "Resists", data = replaceStringInTableByValues({},
-		{ label = "COLOR_DMG Resist", { format = "{0:output:FireResist}% (+{0:output:FireResistOverCap}%)",
-		{ breakdown = "FireResist" },
-		{ modName = { "FireResistMax", "FireResist" }, },
-	}, }, "Fire", DamageTypes, "COLOR_DMG", DamageTypesColored),
+{ 1, "Resist", 3, colorCodes.DEFENCE, {{ defaultCollapsed = false, label = "Resists", data = generateTableByValues({},
+
+		DamageTypes, function (i,damageType)
+			return { label = DamageTypesColored[i] .. " Resist", { format = "{0:output:" .. damageType .. "Resist}% (+{0:output:FireResistOverCap}%)",
+												   { breakdown = "FireResist" },
+												   { modName = { "FireResistMax", "FireResist" }, } } }
+		end),
 }
 } },
 { 1, "Armour", 3, colorCodes.ARMOUR, {{ defaultCollapsed = false, label = "Armor", data = {
@@ -425,53 +430,60 @@ return {
 -- damage taken
 { 3, "DamageTaken", 1, colorCodes.DEFENCE, {{ defaultCollapsed = false, label = "Damage Taken", data = {
 	colWidth = 95,
-	replaceStringInTableByValues(
+	generateTableByValues(
 			{ { format = "Total:" }},
-			{ format = "Physical:" },
-			"Physical", DamageTypesColored
+			DamageTypesColored, function (_,damageType)
+			    return { format = damageType .. ":" }
+			end
 	),
-	replaceStringInTableByValues(
+	generateTableByValues(
 			{ label = "Enemy Damage",
 			  { format = "{2:output:totalEnemyDamage}",
 				{ breakdown = "totalEnemyDamage" },
 				{ label = "Enemy modifiers", modName = {"Damage", "CritChance", "CritMultiplier"}, enemy = true },
 			  }},
-			{ format = "{2:output:PhysicalEnemyDamage}",
-			  { breakdown = "PhysicalEnemyDamage" },
-			  { label = "Enemy modifiers", modName = {"Damage", "PhysicalDamage", "CritChance", "CritMultiplier"}, enemy = true },
-			},
-			"Physical", DamageTypes
+			DamageTypes, function (_,damageType)
+			    return { format = "{2:output:" .. damageType .. "EnemyDamage}",
+    			  { breakdown = damageType .. "EnemyDamage" },
+    			  { label = "Enemy modifiers", modName = {"Damage", damageType .. "Damage", "CritChance", "CritMultiplier"}, enemy = true },
+    			}
+			end
 	),
-	replaceStringInTableByValues(
+	generateTableByValues(
 			{ label = "Taken As",
 			  { format = "{2:output:totalTakenDamage}",
 				{ breakdown = "totalTakenDamage" },
 			  }},
-			{ format = "{2:output:PhysicalTakenDamage}",
-			  { breakdown = "PhysicalTakenDamage" },
-			},
-			"Physical", DamageTypes
+			DamageTypes, function (_,damageType)
+			    return { format = "{2:output:" .. damageType .. "TakenDamage}",
+    			  { breakdown = damageType .. "TakenDamage" },
+    			}
+			end
 	),
 } }, { defaultCollapsed = false, label = "Damaging Hits", data = {
 	colWidth = 95,
-	replaceStringInTableByValues(
+	generateTableByValues(
 			{ label = "Hit taken Mult.",
 			  { format = "" }},
-			{ format = "x {3:output:PhysicalTakenHitMult}",
-			  { breakdown = "PhysicalTakenHitMult" },
-			  { modName = { "DamageTaken", "DamageTakenWhenHit", "AttackDamageTaken", "SpellDamageTaken", "PhysicalDamageTaken", "PhysicalDamageTakenWhenHit" } }
-			},
-			"Physical", DamageTypes
+			DamageTypes, function (_,damageType)
+    			return {
+    				format = "x {3:output:" .. damageType .. "TakenHitMult}",
+    				{ breakdown = damageType .. "TakenHitMult" },
+    				{ modName = { "DamageTaken", "DamageTakenWhenHit", "AttackDamageTaken", "SpellDamageTaken", damageType .. "DamageTaken", damageType .. "DamageTakenWhenHit" } }
+    			}
+			end
 	),
-	replaceStringInTableByValues(
+	generateTableByValues(
 			{ label = "Hit taken",
 			  { format = "{2:output:totalTakenHit}",
 				{ breakdown = "totalTakenHit" },
 			  }},
-			{ format = "{2:output:PhysicalTakenHit}",
-			  { breakdown = "PhysicalTakenHit" },
-			},
-			"Physical", DamageTypes
+			DamageTypes, function (_,damageType)
+    			return {
+    				format = "{2:output:" .. damageType .. "TakenHit}",
+    				{ breakdown = damageType .. "TakenHit" },
+    			}
+			end
 	),
 	{ label = "Hits before death",{ format = "{2:output:NumberOfDamagingHits}", },
 	}
@@ -494,47 +506,54 @@ return {
 	},}
 }, }, { defaultCollapsed = false, label = "Maximum Hit Taken", data = {
 	colWidth = 108,
-	replaceStringInTableByValues({},
-		{ format = "Physical:" },
-			"Physical", DamageTypesColored
+	generateTableByValues({},
+	    DamageTypesColored, function (_,damageType)
+			return { format = damageType .. ":" }
+		end
 	),
-	replaceStringInTableByValues({ label = "Maximum Hit Taken"},
-		{ format = "{0:output:PhysicalMaximumHitTaken}",
-			{ breakdown = "PhysicalMaximumHitTaken" },
-		},
-			"Physical", DamageTypes
+	generateTableByValues({ label = "Maximum Hit Taken"},
+        DamageTypes, function (_,damageType)
+            return { format = "{0:output:" .. damageType .. "MaximumHitTaken}",
+    			{ breakdown = damageType .. "MaximumHitTaken" },
+    		}
+		end
 	)
 } }, { defaultCollapsed = false, label = "Dots and Degens", data = {
 	colWidth = 108,
-	replaceStringInTableByValues({},
-			{ format = "Physical:" },
-			"Physical", DamageTypesColored
+	generateTableByValues({},
+    	DamageTypesColored, function (_,damageType)
+			return { format = damageType .. ":" }
+		end
 	),
-	replaceStringInTableByValues({ label = "DoT taken"},
-		{ format = "x {2:output:PhysicalTakenDotMult}",
-			{ breakdown = "PhysicalTakenDotMult" },
-			{ modName = { "DamageTaken", "DamageTakenOverTime", "PhysicalDamageTaken", "PhysicalDamageTakenOverTime" } },
-		},
-			"Physical", DamageTypes
+	generateTableByValues({ label = "DoT taken"},
+    	DamageTypes, function (_,damageType)
+    		return { format = "x {2:output:" .. damageType .. "TakenDotMult}",
+    			{ breakdown = damageType .. "TakenDotMult" },
+    			{ modName = { "DamageTaken", "DamageTakenOverTime", damageType .. "DamageTaken", damageType .. "DamageTakenOverTime" } },
+    		}
+		end
 	),
-	replaceStringInTableByValues({ label = "Total Pool"},
-		{ format = "{0:output:PhysicalTotalPool}",
-			{ breakdown = "PhysicalTotalPool" },
-		},
-			"Physical", DamageTypes
+	generateTableByValues({ label = "Total Pool"},
+    	DamageTypes, function (_,damageType)
+		return { format = "{0:output:" .. damageType .. "TotalPool}",
+			{ breakdown = damageType .. "TotalPool" },
+		}
+		end
 	),
-	replaceStringInTableByValues({ label = "Effective DoT Pool"},
-		{ format = "{0:output:PhysicalDotEHP}",
-			{ breakdown = "PhysicalDotEHP" },
-		},
-			"Physical", DamageTypes
+	generateTableByValues({ label = "Effective DoT Pool"},
+    	DamageTypes, function (_,damageType)
+    		return { format = "{0:output:" .. damageType .. "DotEHP}",
+    			{ breakdown = damageType .. "DotEHP" },
+    		}
+		end
 	),
-	replaceStringInTableByValues({ label = "Degens", haveOutput = "TotalDegen"},
-		{ format = "{0:output:PhysicalDegen}",
-			{ breakdown = "PhysicalDegen" },
-			{ modName = "PhysicalDegen", }
-		},
-			"Physical", DamageTypes
+	generateTableByValues({ label = "Degens", haveOutput = "TotalDegen"},
+    	DamageTypes, function (_,damageType)
+    		return { format = "{0:output:" .. damageType .. "Degen}",
+    			{ breakdown = damageType .. "Degen" },
+    			{ modName = damageType .. "Degen", }
+    		}
+		end
 	),
 	{ label = "Total Net Recovery", haveOutput = "TotalNetRegen", { format = "{1:output:TotalNetRegen}",
 		{ breakdown = "TotalNetRegen" },

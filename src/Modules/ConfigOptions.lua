@@ -289,15 +289,15 @@ local options = {
 	end },
 	-- Section: Enemy Stats
 	{ section = "Enemy Stats", col = 3 },
-	{ var = "enemyLightningResist", type = "integer", label = "Enemy ^xADAA47Lightning Resistance:", apply = function(val, modList, enemyModList)
-		enemyModList:NewMod("LightningResist", "BASE", val, "EnemyConfig")
-	end },
-	{ var = "enemyColdResist", type = "integer", label = "Enemy ^x3F6DB3Cold Resistance:", apply = function(val, modList, enemyModList)
-		enemyModList:NewMod("ColdResist", "BASE", val, "EnemyConfig")
-	end },
-	{ var = "enemyFireResist", type = "integer", label = "Enemy ^xB97123Fire Resistance:", apply = function(val, modList, enemyModList)
-		enemyModList:NewMod("FireResist", "BASE", val, "EnemyConfig")
-	end },
+}
+
+for i,damageType in ipairs(DamageTypes) do
+    table.insert(options,  { var = "enemy" .. damageType .. "Resist", type = "integer", label = "Enemy " .. DamageTypesColored[i] .. " Resistance:", apply = function(val, modList, enemyModList)
+		enemyModList:NewMod(damageType .. "Resist", "BASE", val, "EnemyConfig")
+	end })
+end
+
+tableInsertAll(options, {
 	{ var = "enemyBlockChance", type = "integer", label = "Enemy Block Chance:", apply = function(val, modList, enemyModList)
 		enemyModList:NewMod("BlockChance", "BASE", val, "Config")
 	end },
@@ -310,12 +310,12 @@ local options = {
 	{ var = "enemyDamageRollRange", type = "integer", label = "Enemy Skill Roll Range %:", ifFlag = "BossSkillActive", tooltip = "The percentage of the roll range the enemy hits for \n eg at 100% the enemy deals its maximum damage", defaultPlaceholderState = 70, hideIfInvalid = true },
 	{ var = "enemySpeed", type = "integer", label = "Enemy attack / cast time in ms:", defaultPlaceholderState = 700 },
 	{ var = "enemyCritChance", type = "integer", label = "Enemy critical strike chance:", defaultPlaceholderState = 5 },
-	{ var = "enemyCritDamage", type = "integer", label = "Enemy critical strike multiplier:", defaultPlaceholderState = 30 }}
+	{ var = "enemyCritDamage", type = "integer", label = "Enemy critical strike multiplier:", defaultPlaceholderState = 30 }
+})
 
-tableInsertAll(options,
-	replaceStringInTableByValues( {},
-			{ var = "enemyPhysicalDamage", type = "integer", label = "Enemy Skill Physical Damage:", defaultPlaceholderState = 1000},
-			"Physical", DamageTypes))
+for _,damageType in ipairs(DamageTypes) do
+    table.insert(options,  { var = "enemy"..damageType.."Damage", type = "integer", label = "Enemy Skill "..damageType.." Damage:", defaultPlaceholderState = 1000})
+end
 
 tableInsertAll(options, {
 -- Section: Custom mods
