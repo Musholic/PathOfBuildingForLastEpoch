@@ -119,6 +119,16 @@ DamageTypesColored = {
 	colorCodes.POISON.."Poison"
 }
 
+DamageTypeColors = {
+	colorCodes.PHYSICAL,
+	colorCodes.LIGHTNING,
+	colorCodes.COLD,
+	colorCodes.FIRE,
+	colorCodes.VOID,
+	colorCodes.NECROTIC,
+	colorCodes.POISON
+}
+
 DamageSourceTypes = { "Spell", "Melee", "Throwing", "Bow", "Dot"}
 DamageSourceWeapons = { "Wand", "Bow", "Axe", "Sceptre", "Staff", "Dagger", "Sword" }
 
