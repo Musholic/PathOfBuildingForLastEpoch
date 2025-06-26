@@ -23,13 +23,6 @@ local rarityDropList = {
 	{ label = colorCodes.RELIC.."Relic", rarity = "RELIC" }
 }
 
-local socketDropList = {
-	{ label = colorCodes.STRENGTH.."R", color = "R" },
-	{ label = colorCodes.DEXTERITY.."G", color = "G" },
-	{ label = colorCodes.INTELLIGENCE.."B", color = "B" },
-	{ label = colorCodes.SCION.."W", color = "W" }
-}
-
 local baseSlots = { "Weapon 1", "Weapon 2", "Helmet", "Body Armor", "Gloves", "Boots", "Amulet", "Ring 1", "Ring 2", "Belt", "Relic" }
 
 for i = 1, 20 do
@@ -37,19 +30,6 @@ for i = 1, 20 do
 end
 
 local influenceInfo = itemLib.influenceInfo
-
-local catalystQualityFormat = {
-	"^x7F7F7FQuality (Attack Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Speed Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Life and Mana Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Caster Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Attribute Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Physical and Chaos Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Resistance Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Defense Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Elemental Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Critical Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-}
 
 local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Control", function(self, build)
 	self.UndoHandler()
@@ -63,8 +43,6 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 	self.items = { }
 	self.itemOrderList = { }
 
-	-- PoB Trader class initialization
-	self.tradeQuery = new("TradeQuery", self)
 
 	-- Set selector
 	self.controls.setSelect = new("DropDownControl", {"TOPLEFT",self,"TOPLEFT"}, 96, 8, 216, 20, nil, function(index, value)

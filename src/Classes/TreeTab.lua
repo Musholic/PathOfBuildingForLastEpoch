@@ -144,13 +144,9 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 	self.controls.treeSearch.tooltipText = "Uses Lua pattern matching for complex searches"
 
 	self.tradeLeaguesList = { }
-	-- Find Timeless Jewel Button
-	self.controls.findTimelessJewel = new("ButtonControl", { "LEFT", self.controls.treeSearch, "RIGHT" }, 8, 0, 150, 20, "Find Timeless Jewel", function()
-		self:FindTimelessJewel()
-	end)
 
 	-- Show Node Power Checkbox
-	self.controls.treeHeatMap = new("CheckBoxControl", { "LEFT", self.controls.findTimelessJewel, "RIGHT" }, 130, 0, 20, "Show Node Power:", function(state)
+	self.controls.treeHeatMap = new("CheckBoxControl", { "LEFT", self.controls.treeSearch, "RIGHT" }, 130, 0, 20, "Show Node Power:", function(state)
 		self.viewer.showHeatMap = state
 		self.controls.treeHeatMapStatSelect.shown = state
 

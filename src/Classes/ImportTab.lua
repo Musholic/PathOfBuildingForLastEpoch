@@ -31,7 +31,6 @@ local ImportTabClass = newClass("ImportTab", "ControlHost", "Control", function(
         return self.charImportMode == "GETACCOUNTNAME"
     end
     self.controls.accountNameGoOffline = new("ButtonControl", { "TOPLEFT", self.controls.accountNameHeaderOffline, "BOTTOMLEFT" }, 0, 4, 100, 20, "Start Offline", function()
-        self.controls.sessionInput.buf = ""
         self.isOnlineMode = false
         self:DownloadCharacterList()
     end)
@@ -60,7 +59,6 @@ local ImportTabClass = newClass("ImportTab", "ControlHost", "Control", function(
         end)
     end -- don't load the list many times
     self.controls.accountNameGo = new("ButtonControl", { "LEFT", self.controls.accountName, "RIGHT" }, 8, 0, 100, 20, "Start Online", function()
-        self.controls.sessionInput.buf = ""
         self.isOnlineMode = true
         self:DownloadCharacterListOnline()
     end)
@@ -86,46 +84,6 @@ local ImportTabClass = newClass("ImportTab", "ControlHost", "Control", function(
     self.controls.removeAccount.tooltipFunc = function(tooltip)
         tooltip:Clear()
         tooltip:AddLine(16, "^7Removes account from the dropdown list")
-    end
-
-    self.controls.accountNameUnicode = new("LabelControl", { "TOPLEFT", self.controls.accountRealm, "BOTTOMLEFT" }, 0, 16, 0, 14, "^7Note: if the account name contains non-ASCII characters then it must be URL encoded first.")
-    self.controls.accountNameURLEncoder = new("ButtonControl", { "TOPLEFT", self.controls.accountNameUnicode, "BOTTOMLEFT" }, 0, 4, 170, 18, "^x4040FFhttps://www.urlencoder.org/", function()
-        OpenURL("https://www.urlencoder.org/")
-    end)
-
-    -- Stage: input POESESSID
-    self.controls.sessionHeader = new("LabelControl", { "TOPLEFT", self.controls.sectionCharImport, "TOPLEFT" }, 6, 40, 200, 14)
-    self.controls.sessionHeader.label = function()
-        return [[
-^7The list of characters on ']] .. self.controls.accountName.buf .. [[' couldn't be retrieved. This may be because:
-1. You entered a character name instead of an account name or
-2. This account's characters tab is hidden (this is the default setting).
-If this is your account, you can either:
-1. Uncheck "Hide Characters" in your privacy settings or
-2. Enter a POESESSID below.
-You can get this from your web browser's cookies while logged into the Path of Exile website.
-		]]
-    end
-    self.controls.sessionHeader.shown = function()
-        return self.charImportMode == "GETSESSIONID"
-    end
-    self.controls.sessionRetry = new("ButtonControl", { "TOPLEFT", self.controls.sessionHeader, "TOPLEFT" }, 0, 108, 60, 20, "Retry", function()
-        self:DownloadCharacterList()
-    end)
-    self.controls.sessionCancel = new("ButtonControl", { "LEFT", self.controls.sessionRetry, "RIGHT" }, 8, 0, 60, 20, "Cancel", function()
-        self.charImportMode = "GETACCOUNTNAME"
-        self.charImportStatus = "Idle"
-    end)
-    self.controls.sessionPrivacySettings = new("ButtonControl", { "LEFT", self.controls.sessionCancel, "RIGHT" }, 8, 0, 120, 20, "Privacy Settings", function()
-        OpenURL('https://www.pathofexile.com/my-account/privacy')
-    end)
-    self.controls.sessionInput = new("EditControl", { "TOPLEFT", self.controls.sessionRetry, "BOTTOMLEFT" }, 0, 8, 350, 20, "", "POESESSID", "%X", 32)
-    self.controls.sessionInput:SetProtected(true)
-    self.controls.sessionGo = new("ButtonControl", { "LEFT", self.controls.sessionInput, "RIGHT" }, 8, 0, 60, 20, "Go", function()
-        self:DownloadCharacterList()
-    end)
-    self.controls.sessionGo.enabled = function()
-        return #self.controls.sessionInput.buf == 32
     end
 
     -- Stage: select character and import data
