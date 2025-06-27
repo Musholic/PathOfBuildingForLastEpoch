@@ -44,56 +44,47 @@ end
 data = { }
 
 data.powerStatList = {
-	{ stat=nil, label="Offence/Defence", combinedOffDef=true, ignoreForItems=true },
-	{ stat=nil, label="Name", itemField="Name", ignoreForNodes=true, reverseSort=true, transform=function(value) return value:gsub("^The ","") end},
-	{ stat="FullDPS", label="Full DPS" },
-	{ stat="CombinedDPS", label="Combined DPS" },
-	{ stat="TotalDPS", label="Hit DPS" },
-	{ stat="WithImpaleDPS", label="Impale + Hit DPS" },
-	{ stat="AverageDamage", label="Average Hit" },
-	{ stat="Speed", label="Attack/Cast Speed" },
-	{ stat="TotalDot", label="DoT DPS" },
-	{ stat="BleedDPS", label="Bleed DPS" },
-	{ stat="IgniteDPS", label="Ignite DPS" },
-	{ stat="PoisonDPS", label="Poison DPS" },
-	{ stat="Life", label="Health" },
-	{ stat="LifeRegen", label="Health regen" },
-	{ stat="LifeLeechRate", label="Health leech" },
-	{ stat="Armour", label="Armor" },
-	{ stat="Evasion", label="Evasion" },
-	{ stat="EnergyShield", label="Energy Shield" },
-	{ stat="EnergyShieldRecoveryCap", label="Recoverable ES" },
-	{ stat="EnergyShieldRegen", label="Energy Shield regen" },
-	{ stat="EnergyShieldLeechRate", label="Energy Shield leech" },
-	{ stat="Mana", label="Mana" },
-	{ stat="ManaRegen", label="Mana regen" },
-	{ stat="ManaLeechRate", label="Mana leech" },
-	{ stat="Ward", label="Ward" },
-	{ stat="Str", label="Strength" },
-	{ stat="Dex", label="Dexterity" },
-	{ stat="Int", label="Intelligence" },
-	{ stat="TotalAttr", label="Total Attributes" },
-	{ stat="MeleeAvoidChance", label="Melee avoid chance" },
-	{ stat="SpellAvoidChance", label="Spell avoid chance" },
-	{ stat="ProjectileAvoidChance", label="Projectile avoid chance" },
-	{ stat="TotalEHP", label="Effective Hit Pool" },
-	{ stat="SecondMinimalMaximumHitTaken", label="Eff. Maximum Hit Taken" },
-	{ stat="PhysicalTakenHit", label="Taken Phys dmg", transform=function(value) return -value end },
-	{ stat="LightningTakenHit", label="Taken Lightning dmg", transform=function(value) return -value end },
-	{ stat="ColdTakenHit", label="Taken Cold dmg", transform=function(value) return -value end },
-	{ stat="FireTakenHit", label="Taken Fire dmg", transform=function(value) return -value end },
-	{ stat="ChaosTakenHit", label="Taken Chaos dmg", transform=function(value) return -value end },
+	{ stat = nil, label = "Offence/Defence", combinedOffDef = true, ignoreForItems = true },
+	{ stat = nil, label = "Name", itemField = "Name", ignoreForNodes = true, reverseSort = true, transform = function(value)
+		return value:gsub("^The ", "")
+	end },
+	{ stat = "FullDPS", label = "Full DPS" },
+	{ stat = "CombinedDPS", label = "Combined DPS" },
+	{ stat = "TotalDPS", label = "Hit DPS" },
+	{ stat = "AverageDamage", label = "Average Hit" },
+	{ stat = "Speed", label = "Attack/Cast Speed" },
+	{ stat = "TotalDot", label = "DoT DPS" },
+	{ stat = "Life", label = "Health" },
+	{ stat = "LifeRegen", label = "Health regen" },
+	{ stat = "LifeLeechRate", label = "Health leech" },
+	{ stat = "Armour", label = "Armor" },
+	{ stat = "Evasion", label = "Evasion" },
+	{ stat = "Mana", label = "Mana" },
+	{ stat = "ManaRegen", label = "Mana regen" },
+	{ stat = "ManaLeechRate", label = "Mana leech" },
+	{ stat = "Ward", label = "Ward" }
+}
+
+for i, attribute in ipairs(Attributes) do
+	t_insert(data.powerStatList, { stat=attribute, label=LongAttributes[i] })
+end
+
+tableInsertAll(data.powerStatList, {
+	{ stat = "TotalAttr", label = "Total Attributes" },
+	{ stat = "TotalEHP", label = "Effective Hit Pool" },
+	{ stat = "SecondMinimalMaximumHitTaken", label = "Eff. Maximum Hit Taken" }
+})
+
+for _, damageType in ipairs(DamageTypes) do
+	t_insert(data.powerStatList, { stat=damageType .. "TakenHit", label="Taken " .. damageType .. " dmg", transform=function(value) return -value end })
+end
+
+tableInsertAll(data.powerStatList,{
 	{ stat="CritChance", label="Crit Chance" },
 	{ stat="CritMultiplier", label="Crit Multiplier" },
-	{ stat="BleedChance", label="Bleed Chance" },
-	{ stat="FreezeChance", label="Freeze Chance" },
-	{ stat="IgniteChance", label="Ignite Chance" },
-	{ stat="ShockChance", label="Shock Chance" },
 	{ stat="EffectiveMovementSpeedMod", label="Move speed" },
 	{ stat="BlockChance", label="Block Chance" },
-	{ stat="SpellBlockChance", label="Spell Block Chance" },
-	{ stat="SpellSuppressionChance", label="Spell Suppression Chance" },
-}
+})
 
 data.misc = { -- magic numbers
 	AccuracyPerDexBase = 2,

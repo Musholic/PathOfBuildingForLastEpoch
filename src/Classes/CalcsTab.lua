@@ -35,7 +35,7 @@ local CalcsTabClass = newClass("CalcsTab", "UndoHandler", "ControlHost", "Contro
 	-- Special section for skill/mode selection
 	self:NewSection(3, "SkillSelect", 1, colorCodes.NORMAL, {{ defaultCollapsed = false, label = "View Skill Details", data = {
 		{ label = "Active Skill", { controlName = "mainSocketGroup",
-			control = new("DropDownControl", nil, 0, 0, 300, 16, nil, function(index, value) 
+			control = new("DropDownControl", nil, 0, 0, 300, 16, nil, function(index, value)
 				self.input.skill_number = index
 				self:AddUndoState()
 				self.build.buildFlag = true
@@ -465,7 +465,7 @@ function CalcsTabClass:PowerBuilder()
 	end
 
 	local start = GetTime()
-	for nodeId, node in pairs(self.build.spec.nodes) do
+	for nodeId, node in pairs(self.build.spec.visibleNodes) do
 		wipeTable(node.power)
 		if self.nodePowerMaxDepth == nil or self.nodePowerMaxDepth >= node.pathDist then
 			if node.alloc == 0 and node.modKey ~= "" and not self.mainEnv.grantedPassives[nodeId] then
