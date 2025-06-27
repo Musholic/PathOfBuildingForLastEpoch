@@ -245,9 +245,7 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 		self:EditDisplayItemText()
 	end)
 	self.controls.displayItemTip = new("LabelControl", {"TOPLEFT",self.controls.craftDisplayItem,"BOTTOMLEFT"}, 0, 8, 100, 16,
-[[^7Double-click an item from one of the lists,
-or copy and paste an item from in game
-(hover over the item and Ctrl+C) to view or edit
+[[^7Double-click an item from one of the lists to view or edit
 the item and add it to your build. You can
 also clone an item within Path of Building by
 copying and pasting it with Ctrl+C and Ctrl+V.
@@ -601,7 +599,6 @@ function ItemsTabClass:Load(xml, dbFileName)
 	self.activeItemSetId = 0
 	self.itemSets = { }
 	self.itemSetOrderList = { }
-	self.tradeQuery.statSortSelectionList = { }
 	for _, node in ipairs(xml) do
 		if node.elem == "Item" then
 			local item = new("Item", "")
@@ -679,15 +676,6 @@ function ItemsTabClass:Load(xml, dbFileName)
 				end
 			end
 			t_insert(self.itemSetOrderList, itemSet.id)
-		elseif node.elem == "TradeSearchWeights" then
-			for _, child in ipairs(node) do
-				local statSort = {
-					label = child.attrib.label,
-					stat = child.attrib.stat,
-					weightMult = tonumber(child.attrib.weightMult)
-				}
-				t_insert(self.tradeQuery.statSortSelectionList, statSort)
-			end
 		end
 	end
 	if not self.itemSetOrderList[1] then
@@ -748,25 +736,6 @@ function ItemsTabClass:Save(xml)
 			end
 		end
 		t_insert(xml, child)
-	end
-	if self.tradeQuery.statSortSelectionList then
-		local parent = {
-			elem = "TradeSearchWeights"
-		}
-		for _, statSort in ipairs(self.tradeQuery.statSortSelectionList) do
-			if statSort.weightMult and statSort.weightMult > 0 then
-				local child = {
-				elem = "Stat",
-				attrib = {
-					label = statSort.label,
-					stat = statSort.stat,
-					weightMult = s_format("%.2f", tostring(statSort.weightMult))
-				}
-			}
-			t_insert(parent, child)
-			end
-		end
-		t_insert(xml, parent)
 	end
 end
 
