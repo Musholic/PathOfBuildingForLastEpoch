@@ -129,7 +129,7 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 	end
 
 	-- Controls: top bar, right side
-	self.anchorTopBarRight = new("Control", nil, function() return main.screenW / 4 + 6 end, 4, 0, 20)
+	self.anchorTopBarRight = new("Control", nil, function() return main.screenW / 2 + 6 end, 4, 0, 20)
 	self.controls.pointDisplay = new("Control", {"LEFT",self.anchorTopBarRight,"RIGHT"}, -12, 0, 0, 20)
 	self.controls.pointDisplay.x = function(control)
 		local width, height = control:GetSize()
@@ -176,33 +176,6 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 		self.controls.levelScalingButton.label = "Manual"
 	end)
 	self.controls.characterLevel:SetText(self.characterLevel)
-	self.controls.characterLevel.tooltipFunc = function(tooltip)
-		if tooltip:CheckForUpdate(self.characterLevel) then
-			tooltip:AddLine(16, "Experience multiplier:")
-			local playerLevel = self.characterLevel
-			local safeZone = 3 + m_floor(playerLevel / 16)
-			for level, expLevel in ipairs(self.data.monsterExperienceLevelMap) do
-				local diff = m_abs(playerLevel - expLevel) - safeZone
-				local mult
-				if diff <= 0 then
-					mult = 1
-				else
-					mult = ((playerLevel + 5) / (playerLevel + 5 + diff ^ 2.5)) ^ 1.5
-				end
-				if playerLevel >= 95 then
-					mult = mult * (1 / (1 + 0.1 * (playerLevel - 94)))
-				end
-				if mult > 0.01 then
-					local line = level
-					if level >= 68 then
-						line = line .. string.format(" (Tier %d)", level - 67)
-					end
-					line = line .. string.format(": %.1f%%", mult * 100)
-					tooltip:AddLine(14, line)
-				end
-			end
-		end
-	end
 	self.controls.classDrop = new("DropDownControl", {"LEFT",self.controls.characterLevel,"RIGHT"}, 8, 0, 100, 20, nil, function(index, value)
 		if value.classId ~= self.spec.curClassId then
 			if self.spec:CountAllocNodes() == 0 or self.spec:IsClassConnected(value.classId) then
@@ -226,12 +199,6 @@ function buildMode:Init(dbFileName, buildName, buildXML, convertBuild)
 		self.spec:SetWindowTitleWithBuildClass()
 		self.buildFlag = true
 	end)
-	for i=1,5 do
-		self.controls["skillDrops-"..i] = new("DropDownControl", {"LEFT",self.controls.ascendDrop,"RIGHT"}, 8 + 128 * (i - 1), 0, 120, 20, nil, function(index, value)
-			self.skillsTab:SelSkill(i, value.treeId)
-			self.spec:BuildAllDependsAndPaths()
-		end)
-	end
 
 	-- List of display stats
 	-- This defines the stats in the side bar, and also which stats show in node/item comparisons
@@ -832,37 +799,22 @@ local function actExtra(act, extra)
 end
 
 function buildMode:EstimatePlayerProgress()
-	local PointsUsed, AscUsed, SecondaryAscUsed = self.spec:CountAllocNodes()
+	local PointsUsed = self.spec:CountAllocNodes()
 	local extra = self.calcsTab.mainOutput and self.calcsTab.mainOutput.ExtraPoints or 0
-	local usedMax, ascMax, secondaryAscMax, level, act = 99 + 22 + extra, 8, 8, 1, 0
+	local usedMax, level = 98 + 15 + extra, 1
 
-	-- Find estimated act and level based on points used
-	repeat
-		act = act + 1
-		level = m_min(m_max(PointsUsed + 1 - acts[act].questPoints - actExtra(act, extra), acts[act].level), 100)
-	until act == 11 or level <= acts[act + 1].level
+	-- Find estimated level based on points used
+	level = m_min(m_max(PointsUsed + 1 - 15, 0), 100)
 
 	if self.characterLevelAutoMode and self.characterLevel ~= level then
 		self.characterLevel = level
 		self.controls.characterLevel:SetText(self.characterLevel)
 	end
 
-	-- Ascendancy points for lab
-	-- this is a recommendation for beginners who are using Path of Building for the first time and trying to map out progress in PoB
-	local labSuggest = level < 33 and ""
-		or level < 55 and "\nLabyrinth: Normal Lab"
-		or level < 68 and "\nLabyrinth: Cruel Lab"
-		or level < 75 and "\nLabyrinth: Merciless Lab"
-		or level < 90 and "\nLabyrinth: Uber Lab"
-		or ""
-
 	if PointsUsed > usedMax then InsertIfNew(self.controls.warnings.lines, "You have too many passive points allocated") end
-	if AscUsed > ascMax then InsertIfNew(self.controls.warnings.lines, "You have too many ascendancy points allocated") end
-	if SecondaryAscUsed > secondaryAscMax then InsertIfNew(self.controls.warnings.lines, "You have too many secondary ascendancy points allocated") end
-	self.Act = level < 90 and act <= 10 and act or "Endgame"
 
-	return string.format("%s%3d / %3d   %s%d / %d", PointsUsed > usedMax and colorCodes.NEGATIVE or "^7", PointsUsed, usedMax, AscUsed > ascMax and colorCodes.NEGATIVE or "^7", AscUsed, ascMax),
-		"Required Level: "..level.."\nEstimated Progress:\nAct: "..self.Act.."\nQuestpoints: "..acts[act].questPoints.."\nExtra Skillpoints: "..actExtra(act, extra)..labSuggest
+	return string.format("%s%3d / %3d", PointsUsed > usedMax and colorCodes.NEGATIVE or "^7", PointsUsed, usedMax),
+		"Required Level: "..level.."\nQuestpoints: ".. 15
 end
 
 function buildMode:CanExit(mode)
@@ -1088,15 +1040,6 @@ function buildMode:OnFrame(inputEvents)
 	self.controls.classDrop:SelByValue(self.spec.curClassId, "classId")
 	self.controls.ascendDrop.list = self.controls.classDrop:GetSelValue("ascendancies")
 	self.controls.ascendDrop:SelByValue(self.spec.curAscendClassId, "ascendClassId")
-
-	local skillList = { { label = "None"}}
-	for k,v in ipairs(self.spec.curClass.skills) do
-		table.insert(skillList, v)
-	end
-	for i = 1,5 do
-		self.controls["skillDrops-"..i].list = skillList
-		self.controls["skillDrops-"..i]:SelByValue(self.skillsTab.socketGroupList[i] and self.skillsTab.socketGroupList[i].skillId, "treeId")
-	end
 
 	if self.buildFlag then
 		-- Wipe Global Cache
