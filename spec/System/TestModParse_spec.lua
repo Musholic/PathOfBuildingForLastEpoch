@@ -11,12 +11,14 @@ describe("TestModParse", function()
         build.configTab.input.customMods = "+92 Health\n\z
         20% increased Health"
         build.configTab:BuildModList()
+        build.buildFlag = true
         runCallback("OnFrame")
         assert.are.equals(242, build.calcsTab.calcsOutput.Life)
 
         build.configTab.input.customMods = "+892 Health\n\z
         20.5% increased Health"
         build.configTab:BuildModList()
+        build.buildFlag = true
         runCallback("OnFrame")
         assert.are.equals(1207, build.calcsTab.calcsOutput.Life)
     end)
@@ -24,11 +26,13 @@ describe("TestModParse", function()
     it("health regen", function()
         build.configTab.input.customMods = "100% Increased Health Regen"
         build.configTab:BuildModList()
+        build.buildFlag = true
         runCallback("OnFrame")
         assert.are.equals(12, math.floor(build.calcsTab.calcsOutput.LifeRegen))
 
         build.configTab.input.customMods = "200% Increased Health Regen\n\z50% Reduced Health Regeneration"
         build.configTab:BuildModList()
+        build.buildFlag = true
         runCallback("OnFrame")
         assert.are.equals(15, math.floor(build.calcsTab.calcsOutput.LifeRegen))
     end)
@@ -52,6 +56,7 @@ describe("TestModParse", function()
     it("attributes", function()
         build.configTab.input.customMods = "+2 to All Attributes"
         build.configTab:BuildModList()
+        build.buildFlag = true
         runCallback("OnFrame")
 
         assert.are.equals(4, build.calcsTab.calcsOutput.Str)
@@ -102,6 +107,7 @@ describe("TestModParse", function()
 
         build.configTab.input.customMods = "+900 maximum mana\n\z+40% Increased fire damage. This effect is doubled if you have 300 or more maximum mana."
         build.configTab:BuildModList()
+        build.buildFlag = true
         runCallback("OnFrame")
 
         assert.are.equals(951, build.calcsTab.calcsOutput.Mana)

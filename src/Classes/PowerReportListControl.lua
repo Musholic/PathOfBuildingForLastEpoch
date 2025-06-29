@@ -21,15 +21,13 @@ local PowerReportListClass = newClass("PowerReportListControl", "ListControl", f
 	}
 	self.colLabels = true
 	self.nodeSelectCallback = nodeSelectCallback
-	self.showClusters = false
 	self.allocated = false
 	self.label = "Building Tree..."
 	
 	self.controls.filterSelect = new("DropDownControl", { "BOTTOMRIGHT", self, "TOPRIGHT" }, 0, -2, 200, 20,
-		{ "Show Unallocated", "Show Unallocated & Clusters", "Show Allocated" },
+		{ "Show Unallocated", "Show Allocated" },
 		function(index, value)
-			self.showClusters = index == 2
-			self.allocated = index == 3
+			self.allocated = index == 2
 			self:ReList()
 			self:ReSort(3) -- Sort by power
 		end)
@@ -67,12 +65,6 @@ function PowerReportListClass:ReSort(colIndex)
 		end)
 	elseif colIndex == 4 then
 		t_sort(self.list, function (a,b)
-			if a.pathDist == "Anoint" or a.pathDist == "Cluster" then
-				return false
-			end
-			if b.pathDist == "Anoint" or b.pathDist == "Cluster" then
-				return true
-			end
 			if a.pathDist == b.pathDist then
 				return compare(a.power, b.power)
 			end
@@ -96,9 +88,6 @@ function PowerReportListClass:ReList()
 
 	for _, item in ipairs(self.originalList) do
 		local insert = item.power > 0
-		if not self.showClusters and item.pathDist == "Cluster" then
-			insert = false
-		end
 		if self.allocated then
 			insert = item.allocated
 		end
@@ -119,7 +108,7 @@ function PowerReportListClass:GetRowValue(column, index, report)
 	return column == 1 and report.type
 		or column == 2 and report.name
 		or column == 3 and report.powerStr
-		or column == 4 and (report.pathDist == 1000 and "Anoint" or report.pathDist)
+		or column == 4 and report.pathDist
 		or column == 5 and report.pathPowerStr
 		or ""
 end

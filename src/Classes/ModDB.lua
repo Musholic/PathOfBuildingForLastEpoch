@@ -108,7 +108,7 @@ function ModDBClass:SumInternal(context, modType, cfg, flags, keywordFlags, sour
 						end
 						result = result + value
 					else
-						result = result + mod.value
+						result = result + (mod.value or 0)
 					end
 				end
 			end

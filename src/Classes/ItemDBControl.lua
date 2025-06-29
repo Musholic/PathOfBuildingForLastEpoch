@@ -27,7 +27,7 @@ local ItemDBClass = newClass("ItemDBControl", "ListControl", function(self, anch
 	self.leagueList = { "Any league", "No league" }
 	self.typeList = { "Any type", "Armour", "Jewellery", "One Handed Melee", "Two Handed Melee" }
 	self.slotList = { "Any slot", "Weapon 1", "Weapon 2", "Helmet", "Body Armor", "Gloves", "Boots", "Amulet", "Ring", "Belt", "Relic" }
-	local baseY = dbType == "RARE" and -22 or -62
+	local baseY = dbType == "RARE" and -22 or -42
 	self.controls.slot = new("DropDownControl", {"BOTTOMLEFT",self,"TOPLEFT"}, 0, baseY, 179, 18, self.slotList, function(index, value)
 		self.listBuildFlag = true
 	end)
@@ -39,13 +39,7 @@ local ItemDBClass = newClass("ItemDBControl", "ListControl", function(self, anch
 			self:SetSortMode(value.sortMode)
 			GlobalCache.useFullDPS = value.sortMode == "FullDPS"
 		end)
-		self.controls.league = new("DropDownControl", {"LEFT",self.controls.sort,"RIGHT"}, 2, 0, 179, 18, self.leagueList, function(index, value)
-			self.listBuildFlag = true
-		end)
-		self.controls.requirement = new("DropDownControl", {"LEFT",self.controls.sort,"BOTTOMLEFT"}, 0, 11, 179, 18, { "Any requirements", "Current level", "Current attributes", "Current useable" }, function(index, value)
-			self.listBuildFlag = true
-		end)
-		self.controls.obtainable = new("DropDownControl", {"LEFT",self.controls.requirement,"RIGHT"}, 2, 0, 179, 18, { "Obtainable", "Any source", "Unobtainable", "Vendor Recipe", "Upgraded", "Boss Item", "Corruption"}, function(index, value)
+		self.controls.requirement = new("DropDownControl", {"LEFT",self.controls.sort,"RIGHT"}, 2, 0, 179, 18, { "Any requirements", "Current level", "Current attributes", "Current useable" }, function(index, value)
 			self.listBuildFlag = true
 		end)
 	end
@@ -102,26 +96,6 @@ function ItemDBClass:DoesItemMatchFilters(item)
 				return false
 			end
 		elseif item.type ~= self.typeList[typeSel] then
-			return false
-		end
-	end
-	if self.dbType == "UNIQUE" and self.controls.league.selIndex > 1 then
-		if (self.controls.league.selIndex == 2 and item.league) or (self.controls.league.selIndex > 2 and (not item.league or not item.league:match(self.leagueList[self.controls.league.selIndex]))) then
-			return false
-		end
-	end
-	if self.dbType == "UNIQUE" and self.controls.obtainable.selIndex ~= 2 then
-		local source = item.source or ""
-		local obtainable = not (source == "No longer obtainable" or (item.league and item.league == "Race Events"))
-		if (self.controls.obtainable.selIndex == 1 and not obtainable) or (self.controls.obtainable.selIndex == 3 and obtainable) then
-			return false
-		elseif (self.controls.obtainable.selIndex == 4 and not (source == "Vendor Recipe")) then
-			return false
-		elseif (self.controls.obtainable.selIndex == 5 and not (string.match(source, "Upgraded from"))) then
-			return false
-		elseif (self.controls.obtainable.selIndex == 6 and not (string.match(source, "Drops from unique"))) then
-			return false
-		elseif (self.controls.obtainable.selIndex == 7 and not (string.match(source, "Vaal Orb"))) then
 			return false
 		end
 	end

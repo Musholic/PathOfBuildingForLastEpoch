@@ -23,13 +23,6 @@ local rarityDropList = {
 	{ label = colorCodes.RELIC.."Relic", rarity = "RELIC" }
 }
 
-local socketDropList = {
-	{ label = colorCodes.STRENGTH.."R", color = "R" },
-	{ label = colorCodes.DEXTERITY.."G", color = "G" },
-	{ label = colorCodes.INTELLIGENCE.."B", color = "B" },
-	{ label = colorCodes.SCION.."W", color = "W" }
-}
-
 local baseSlots = { "Weapon 1", "Weapon 2", "Helmet", "Body Armor", "Gloves", "Boots", "Amulet", "Ring 1", "Ring 2", "Belt", "Relic" }
 
 for i = 1, 20 do
@@ -37,19 +30,6 @@ for i = 1, 20 do
 end
 
 local influenceInfo = itemLib.influenceInfo
-
-local catalystQualityFormat = {
-	"^x7F7F7FQuality (Attack Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Speed Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Life and Mana Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Caster Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Attribute Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Physical and Chaos Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Resistance Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Defense Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Elemental Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-	"^x7F7F7FQuality (Critical Modifiers): "..colorCodes.MAGIC.."+%d%% (augmented)",
-}
 
 local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Control", function(self, build)
 	self.UndoHandler()
@@ -63,8 +43,6 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 	self.items = { }
 	self.itemOrderList = { }
 
-	-- PoB Trader class initialization
-	self.tradeQuery = new("TradeQuery", self)
 
 	-- Set selector
 	self.controls.setSelect = new("DropDownControl", {"TOPLEFT",self,"TOPLEFT"}, 96, 8, 216, 20, nil, function(index, value)
@@ -267,9 +245,7 @@ local ItemsTabClass = newClass("ItemsTab", "UndoHandler", "ControlHost", "Contro
 		self:EditDisplayItemText()
 	end)
 	self.controls.displayItemTip = new("LabelControl", {"TOPLEFT",self.controls.craftDisplayItem,"BOTTOMLEFT"}, 0, 8, 100, 16,
-[[^7Double-click an item from one of the lists,
-or copy and paste an item from in game
-(hover over the item and Ctrl+C) to view or edit
+[[^7Double-click an item from one of the lists to view or edit
 the item and add it to your build. You can
 also clone an item within Path of Building by
 copying and pasting it with Ctrl+C and Ctrl+V.
@@ -623,7 +599,6 @@ function ItemsTabClass:Load(xml, dbFileName)
 	self.activeItemSetId = 0
 	self.itemSets = { }
 	self.itemSetOrderList = { }
-	self.tradeQuery.statSortSelectionList = { }
 	for _, node in ipairs(xml) do
 		if node.elem == "Item" then
 			local item = new("Item", "")
@@ -701,15 +676,6 @@ function ItemsTabClass:Load(xml, dbFileName)
 				end
 			end
 			t_insert(self.itemSetOrderList, itemSet.id)
-		elseif node.elem == "TradeSearchWeights" then
-			for _, child in ipairs(node) do
-				local statSort = {
-					label = child.attrib.label,
-					stat = child.attrib.stat,
-					weightMult = tonumber(child.attrib.weightMult)
-				}
-				t_insert(self.tradeQuery.statSortSelectionList, statSort)
-			end
 		end
 	end
 	if not self.itemSetOrderList[1] then
@@ -770,25 +736,6 @@ function ItemsTabClass:Save(xml)
 			end
 		end
 		t_insert(xml, child)
-	end
-	if self.tradeQuery.statSortSelectionList then
-		local parent = {
-			elem = "TradeSearchWeights"
-		}
-		for _, statSort in ipairs(self.tradeQuery.statSortSelectionList) do
-			if statSort.weightMult and statSort.weightMult > 0 then
-				local child = {
-				elem = "Stat",
-				attrib = {
-					label = statSort.label,
-					stat = statSort.stat,
-					weightMult = s_format("%.2f", tostring(statSort.weightMult))
-				}
-			}
-			t_insert(parent, child)
-			end
-		end
-		t_insert(xml, parent)
 	end
 end
 

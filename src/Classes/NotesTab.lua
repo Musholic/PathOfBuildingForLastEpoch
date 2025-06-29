@@ -22,16 +22,22 @@ Below are some common color codes PoB uses:	]]
 	self.controls.magic = new("ButtonControl", {"TOPLEFT",self.controls.normal,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.MAGIC.."MAGIC", function() self:SetColor(colorCodes.MAGIC) end)
 	self.controls.rare = new("ButtonControl", {"TOPLEFT",self.controls.magic,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.RARE.."RARE", function() self:SetColor(colorCodes.RARE) end)
 	self.controls.unique = new("ButtonControl", {"TOPLEFT",self.controls.rare,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.UNIQUE.."UNIQUE", function() self:SetColor(colorCodes.UNIQUE) end)
-	self.controls.fire = new("ButtonControl", {"TOPLEFT",self.controls.normal,"TOPLEFT"}, 0, 18, 100, 18, colorCodes.FIRE.."FIRE", function() self:SetColor(colorCodes.FIRE) end)
-	self.controls.cold = new("ButtonControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.COLD.."COLD", function() self:SetColor(colorCodes.COLD) end)
-	self.controls.lightning = new("ButtonControl", {"TOPLEFT",self.controls.cold,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.LIGHTNING.."LIGHTNING", function() self:SetColor(colorCodes.LIGHTNING) end)
-	self.controls.chaos = new("ButtonControl", {"TOPLEFT",self.controls.lightning,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.CHAOS.."CHAOS", function() self:SetColor(colorCodes.CHAOS) end)
-	self.controls.strength = new("ButtonControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, 0, 18, 100, 18, colorCodes.STRENGTH.."STRENGTH", function() self:SetColor(colorCodes.STRENGTH) end)
-	self.controls.dexterity = new("ButtonControl", {"TOPLEFT",self.controls.strength,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.DEXTERITY.."DEXTERITY", function() self:SetColor(colorCodes.DEXTERITY) end)
-	self.controls.intelligence = new("ButtonControl", {"TOPLEFT",self.controls.dexterity,"TOPLEFT"}, 120, 0, 100, 18, colorCodes.INTELLIGENCE.."INTELLIGENCE", function() self:SetColor(colorCodes.INTELLIGENCE) end)
-	self.controls.default = new("ButtonControl", {"TOPLEFT",self.controls.intelligence,"TOPLEFT"}, 120, 0, 100, 18, "^7DEFAULT", function() self:SetColor("^7") end)
 
-	self.controls.edit = new("EditControl", {"TOPLEFT",self.controls.fire,"TOPLEFT"}, 0, 48, 0, 0, "", nil, "^%C\t\n", nil, nil, 16, true)
+	for i, damageType in ipairs(DamageTypes) do
+		local x , y
+		if i < 5 then
+			x = 120 * (i - 1)
+			y = 18
+		else
+			x = 120 * (i - 5)
+			y = 18 * 2
+		end
+		self.controls[damageType:lower()] = new("ButtonControl", {"TOPLEFT",self.controls.normal,"TOPLEFT"}, x, y, 100, 18, DamageTypesColored[i]:upper(), function() self:SetColor(DamageTypeColors[i]) end)
+	end
+
+	self.controls.default = new("ButtonControl", {"TOPLEFT",self.controls.poison,"TOPLEFT"}, 120, 0, 100, 18, "^7DEFAULT", function() self:SetColor("^7") end)
+
+	self.controls.edit = new("EditControl", {"TOPLEFT",self.controls.physical,"TOPLEFT"}, 0, 48, 0, 0, "", nil, "^%C\t\n", nil, nil, 16, true)
 	self.controls.edit.width = function()
 		return self.width - 16
 	end

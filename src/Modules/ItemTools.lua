@@ -116,9 +116,7 @@ itemLib.wiki = {
         itemLib.wiki.open(name)
     end,
     open = function(name)
-        local route = string.gsub(name, " ", "_")
-
-        OpenURL("https://www.poewiki.net/wiki/" .. route)
+        OpenURL("https://www.lastepochtools.com/db/search?query=" .. name)
         itemLib.wiki.triggered = true
     end,
     matchesKey = function(key)

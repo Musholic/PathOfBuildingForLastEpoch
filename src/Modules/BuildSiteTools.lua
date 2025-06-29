@@ -12,14 +12,6 @@ buildSites.websiteList = {
 		label = "lastepochtools.com", id = "lastepochtools", matchURL = "lastepochtools.com/planner/.+", regexURL = "lastepochtools.com/planner/(.+)$", downloadURL = "lastepochtools.com/planner/%1"
 	},
 	{
-		label = "pobb.in", id = "POBBin", matchURL = "pobb%.in/.+", regexURL = "pobb%.in/(.+)%s*$", downloadURL = "pobb.in/pob/%1",
-		codeOut = "https://pobb.in/", postUrl = "https://pobb.in/pob/", postFields = ""
-	},
-	{
-		label = "PoeNinja", id = "PoeNinja", matchURL = "poe%.ninja/pob/%w+", regexURL = "poe%.ninja/pob/(%w+)%s*$", downloadURL = "poe.ninja/pob/raw/%1",
-		codeOut = "", postUrl = "https://poe.ninja/pob/api/api_post.php", postFields = "api_paste_code="
-	},
-	{
 		label = "Pastebin.com", id = "pastebin", matchURL = "pastebin%.com/%w+", regexURL = "pastebin%.com/(%w+)%s*$", downloadURL = "pastebin.com/raw/%1",
 	},
 	{ label = "PastebinP.com", id = "pastebinProxy", matchURL = "pastebinp%.com/%w+", regexURL = "pastebinp%.com/(%w+)%s*$", downloadURL = "pastebinp.com/raw/%1" },

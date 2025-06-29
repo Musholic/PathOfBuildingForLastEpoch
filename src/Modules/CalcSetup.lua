@@ -16,14 +16,10 @@ local tempTable1 = { }
 
 -- Initialise modifier database with stats and conditions common to all actors
 function calcs.initModDB(env, modDB)
-	modDB:NewMod("FireResistMax", "BASE", 75, "Base")
-	modDB:NewMod("ColdResistMax", "BASE", 75, "Base")
-	modDB:NewMod("LightningResistMax", "BASE", 75, "Base")
-	modDB:NewMod("ChaosResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemFireResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemColdResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemLightningResistMax", "BASE", 75, "Base")
-	modDB:NewMod("TotemChaosResistMax", "BASE", 75, "Base")
+	for _, damageType in ipairs(DamageTypes) do
+		modDB:NewMod(damageType.."ResistMax", "BASE", 75, "Base")
+		modDB:NewMod("Totem".. damageType.."ResistMax", "BASE", 75, "Base")
+	end
 	modDB:NewMod("BlockChanceMax", "BASE", 75, "Base")
 	modDB:NewMod("SpellBlockChanceMax", "BASE", 75, "Base")
 	modDB:NewMod("SpellDodgeChanceMax", "BASE", 75, "Base")
@@ -459,10 +455,6 @@ function calcs.initEnv(build, mode, override, specEnv)
 		modDB:NewMod("Devotion", "BASE", 0, "Base")
 		modDB:NewMod("Evasion", "BASE", 15, "Base")
 		modDB:NewMod("Accuracy", "BASE", 2, "Base", { type = "Multiplier", var = "Level", base = -2 })
-		modDB:NewMod("FireResist", "BASE", env.configInput.resistancePenalty or -60, "Base")
-		modDB:NewMod("ColdResist", "BASE", env.configInput.resistancePenalty or -60, "Base")
-		modDB:NewMod("LightningResist", "BASE", env.configInput.resistancePenalty or -60, "Base")
-		modDB:NewMod("ChaosResist", "BASE", env.configInput.resistancePenalty or -60, "Base")
 		modDB:NewMod("TotemFireResist", "BASE", 40, "Base")
 		modDB:NewMod("TotemColdResist", "BASE", 40, "Base")
 		modDB:NewMod("TotemLightningResist", "BASE", 40, "Base")
@@ -501,25 +493,6 @@ function calcs.initEnv(build, mode, override, specEnv)
 		modDB:NewMod("PerAfflictionAilmentDamage", "BASE", 8, "Base")
 		modDB:NewMod("PerAfflictionNonDamageEffect", "BASE", 8, "Base")
 		modDB:NewMod("PerAbsorptionElementalEnergyShieldRecoup", "BASE", 12, "Base")
-
-		-- Add bandit mods
-		if env.configInput.bandit == "Alira" then
-			modDB:NewMod("ManaRegen", "BASE", 5, "Bandit")
-			modDB:NewMod("CritMultiplier", "BASE", 20, "Bandit")
-			modDB:NewMod("ElementalResist", "BASE", 15, "Bandit")
-		elseif env.configInput.bandit == "Kraityn" then
-			modDB:NewMod("Speed", "INC", 6, "Bandit")
-			for _, ailment in ipairs(env.data.elementalAilmentTypeList) do
-				modDB:NewMod("Avoid"..ailment, "BASE", 10, "Bandit")
-			end
-			modDB:NewMod("MovementSpeed", "INC", 6, "Bandit")
-		elseif env.configInput.bandit == "Oak" then
-			modDB:NewMod("LifeRegenPercent", "BASE", 1, "Bandit")
-			modDB:NewMod("PhysicalDamageReduction", "BASE", 2, "Bandit")
-			modDB:NewMod("PhysicalDamage", "INC", 20, "Bandit")
-		else
-			modDB:NewMod("ExtraPoints", "BASE", 2, "Bandit")
-		end
 
 		-- Add Pantheon mods
 		local parser = modLib.parseMod

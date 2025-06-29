@@ -577,26 +577,13 @@ end
 
 -- Count the number of allocated nodes and allocated ascendancy nodes
 function PassiveSpecClass:CountAllocNodes()
-	local used, ascUsed, secondaryAscUsed, sockets = 0, 0, 0, 0
-	for _, node in pairs(self.allocNodes) do
-		if node.type ~= "ClassStart" and node.type ~= "AscendClassStart" then
-			if node.ascendancyName then
-				if not node.isMultipleChoiceOption then
-					if self.tree.secondaryAscendNameMap and self.tree.secondaryAscendNameMap[node.ascendancyName] then
-						secondaryAscUsed = secondaryAscUsed + 1
-					else
-						ascUsed = ascUsed + 1
-					end
-				end
-			else
-				used = used + 1
-			end
-			if node.type == "Socket" then
-				sockets = sockets + 1
-			end
+	local used = 0
+	for nodeId, node in pairs(self.allocNodes) do
+		if node.type ~= "ClassStart" and nodeId:match("^" .. self.curClassName) then
+			used = used + node.alloc or 0
 		end
 	end
-	return used, ascUsed, secondaryAscUsed, sockets
+	return used
 end
 
 -- Attempt to find a class start node starting from the given node

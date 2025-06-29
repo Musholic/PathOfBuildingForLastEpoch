@@ -415,19 +415,10 @@ function writeLuaTable(out, t, indent)
 end
 
 -- Replace string in table, making multiple copy per values
-function replaceStringInTableByValues(tblInit, tbl, str, values)
+function generateTableByValues(tblInit, values, iterateFunction)
 	local outs = tblInit
-	for _, value in ipairs(values) do
-		local out = {}
-		for k, v in pairs(tbl) do
-			if type(v) == "table" then
-				out[k] = replaceStringInTableByValues({}, v, str, {value})[1]
-			elseif type(v) == "string" then
-				out[k] = v:gsub(str, value)
-			else
-				out[k] = v
-			end
-		end
+	for i, value in ipairs(values) do
+		local out = iterateFunction(i, value)
 		table.insert(outs, out)
 	end
 	return outs
@@ -573,6 +564,12 @@ function tableConcat(t1,t2)
 		t3[#t3+1] = t2[i]
 	end
 	return t3
+end
+
+function tableInsertAll(t1, t2)
+	for _,v in pairs(t2) do
+		table.insert(t1, v)
+	end
 end
 
 --- Simple table value equality
