@@ -52,36 +52,14 @@ local TreeTabClass = newClass("TreeTab", "ControlHost", function(self, build)
 		if mode ~= "OUT" then
 			local spec = self.specList[selIndex]
 			if spec then
-				local used, ascUsed, secondaryAscUsed, sockets = spec:CountAllocNodes()
+				local used = spec:CountAllocNodes()
 				tooltip:AddLine(16, "Class: "..spec.curClassName)
-				tooltip:AddLine(16, "Ascendancy: "..spec.curAscendClassName)
 				tooltip:AddLine(16, "Points used: "..used)
-				if sockets > 0 then
-					tooltip:AddLine(16, "Jewel sockets: "..sockets)
-				end
 				if selIndex ~= self.activeSpec then
 					local calcFunc, calcBase = self.build.calcsTab:GetMiscCalculator()
 					if calcFunc then
 						local output = calcFunc({ spec = spec }, {})
 						self.build:AddStatComparesToTooltip(tooltip, calcBase, output, "^7Switching to this tree will give you:")
-					end
-					if spec.curClassId == self.build.spec.curClassId then
-						local respec = 0
-						for nodeId, node in pairs(self.build.spec.allocNodes) do
-							-- Assumption: Nodes >= 65536 are small cluster passives.
-							if node.type ~= "ClassStart" and node.type ~= "AscendClassStart"
-							and (self.build.spec.tree.clusterNodeMap[node.dn] == nil or node.isKeystone or node.isJewelSocket) and nodeId < 65536
-							and not spec.allocNodes[nodeId] then
-								if node.ascendancyName then
-									respec = respec + 5
-								else
-									respec = respec + 1
-								end
-							end
-						end
-						if respec > 0 then
-							tooltip:AddLine(16, "^7Switching to this tree requires "..respec.." refund points.")
-						end
 					end
 				end
 				tooltip:AddLine(16, "Game Version: "..treeVersions[spec.treeVersion].display)
