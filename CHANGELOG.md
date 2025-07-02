@@ -1,5 +1,19 @@
 # Changelog
 
+## [v6.0.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v6.0.0) (2025/07/02)
+
+[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.5.1...v6.0.0)
+
+<!-- Release notes generated using configuration in .github/release.yml at dev -->
+
+## What's Changed
+### Other changes
+- Review mod parsing [\#17](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/17) ([Musholic](https://github.com/Musholic))
+- UI review [\#18](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/18) ([Musholic](https://github.com/Musholic))
+- Support for modifying nodes [\#19](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/19) ([Musholic](https://github.com/Musholic))
+
+
+
 ## [v0.5.1](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.1) (2025/06/11)
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.5.0...v0.5.1)

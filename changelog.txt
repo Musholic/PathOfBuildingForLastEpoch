@@ -1,3 +1,11 @@
+VERSION[6.0.0][2025/07/02]
+<!-- Release notes generated using configuration in .github/release.yml at dev -->
+
+* Review mod parsing (Musholic)
+* UI review (Musholic)
+* Support for modifying nodes (Musholic)
+
+
 VERSION[0.5.1][2025/06/11]
 
 --- User interface ---
