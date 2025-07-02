@@ -1,4 +1,4 @@
-VERSION[6.0.0][2025/07/02]
+VERSION[0.6.0][2025/07/02]
 
 --- New to Path of Building for Last Epoch ---
 - Support for modifying nodes in order to do some quick fix of some not yet supported mods (Alt + Left click on node)

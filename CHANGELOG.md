@@ -1,8 +1,8 @@
 # Changelog
 
-## [v6.0.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v6.0.0) (2025/07/02)
+## [v0.6.0](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.6.0) (2025/07/02)
 
-[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.5.1...v6.0.0)
+[Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.5.1...v0.6.0)
 
 ## What's Changed
 ### New
