@@ -68,16 +68,9 @@ function PassiveSpecClass:Init(treeVersion, convert)
 	-- List of cluster nodes to allocate
 	self.allocExtendedNodes = { }
 
-	-- Table of jewels equipped in this tree
-	-- Keys are node IDs, values are items
-	self.jewels = { }
-
 	-- Tree graphs dynamically generated from cluster jewels
 	-- Keys are subgraph IDs, values are graphs
 	self.subGraphs = { }
-
-	-- Keys are mastery node IDs, values are mastery effect IDs
-	self.masterySelections = { }
 
 	-- Keys are node IDs, values are the replacement node
 	self.hashOverrides = { }
@@ -95,25 +88,6 @@ function PassiveSpecClass:Load(xml, dbFileName)
 					return true
 				end
 				url = node[1]
-			elseif node.elem == "Sockets" then
-				for _, child in ipairs(node) do
-					if child.elem == "Socket" then
-						if not child.attrib.nodeId then
-							launch:ShowErrMsg("^1Error parsing '%s': 'Socket' element missing 'nodeId' attribute", dbFileName)
-							return true
-						end
-						if not child.attrib.itemId then
-							launch:ShowErrMsg("^1Error parsing '%s': 'Socket' element missing 'itemId' attribute", dbFileName)
-							return true
-						end
-						-- there are files which have been saved poorly and have empty jewel sockets saved as sockets with itemId zero.
-						-- this check filters them out to prevent dozens of invalid jewels
-						jewelIdNum = tonumber(child.attrib.itemId)
-						if jewelIdNum > 0 then
-							self.jewels[tonumber(child.attrib.nodeId)] = jewelIdNum
-						end
-					end
-				end
 			end
 		end
 	end
@@ -146,15 +120,21 @@ function PassiveSpecClass:Load(xml, dbFileName)
 							return true
 						end
 						
-						local nodeId = tonumber(child.attrib.nodeId)
-
-						self.hashOverrides[nodeId] = copyTable(self.tree.tattoo.nodes[child.attrib.dn], true)
-						self.hashOverrides[nodeId].id = nodeId
+						local nodeId = child.attrib.nodeId
+						self.hashOverrides[nodeId] = {}
+						for _,stats in ipairs(child) do
+							for line in stats:gmatch("([^\n]*)\n?") do
+								local strippedLine = StripEscapes(line):gsub("^[%s?]+", ""):gsub("[%s?]+$", "")
+								if strippedLine ~= "" then
+									t_insert(self.hashOverrides[nodeId], strippedLine)
+								end
+							end
+						end
 					end
 				end
 			end
 		end
-		self:ImportFromNodeList(tonumber(xml.attrib.classId), tonumber(xml.attrib.ascendClassId), nil, hashList, self.hashOverrides, masteryEffects)
+		self:ImportFromNodeList(tonumber(xml.attrib.classId), tonumber(xml.attrib.ascendClassId), nil, hashList, self.hashOverrides)
 	elseif url then
 		self:DecodeURL(url)
 	end
@@ -166,41 +146,23 @@ function PassiveSpecClass:Save(xml)
 	for nodeId in pairs(self.allocNodes) do
 		t_insert(allocNodeIdList, nodeId .. "#" .. self.nodes[nodeId].alloc)
 	end
-	local masterySelections = { }
-	for mastery, effect in pairs(self.masterySelections) do
-		t_insert(masterySelections, "{"..mastery..","..effect.."}")
-	end
 	xml.attrib = {
 		title = self.title,
 		treeVersion = self.treeVersion,
 		-- New format
 		classId = tostring(self.curClassId),
 		ascendClassId = tostring(self.curAscendClassId),
-		secondaryAscendClassId = tostring(self.curSecondaryAscendClassId),
 		nodes = table.concat(allocNodeIdList, ","),
-		masteryEffects = table.concat(masterySelections, ",")
 	}
 
-	local sockets = {
-		elem = "Sockets"
-	}
-	for nodeId, itemId in pairs(self.jewels) do
-		-- jewel socket contents should not be saved unless they contain a valid jewel
-		if itemId > 0 then
-			local socket = { elem = "Socket", attrib = { nodeId = tostring(nodeId), itemId = tostring(itemId) }}
-			t_insert( sockets, socket )
-		end
-	end
-	t_insert(xml, sockets)
-	
 	local overrides = {
 		elem = "Overrides"
 	}
 	if self.hashOverrides then
 		for nodeId, node in pairs(self.hashOverrides) do
-			local override = { elem = "Override", attrib = { nodeId = tostring(nodeId), icon = tostring(node.icon), activeEffectImage = tostring(node.activeEffectImage), dn = tostring(node.dn) } }
-			for _, modLine in ipairs(node.sd) do
-				t_insert(override, modLine)
+			local override = { elem = "Override", attrib = { nodeId = tostring(nodeId) } }
+			for _, stat in ipairs(node) do
+				t_insert(override, stat)
 			end
 			t_insert(overrides, override)
 		end
@@ -213,7 +175,7 @@ function PassiveSpecClass:PostLoad()
 end
 
 -- Import passive spec from the provided class IDs and node hash list
-function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, hashList, hashOverrides, masteryEffects, treeVersion)
+function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, hashList, hashOverrides, treeVersion)
   if hashOverrides == nil then hashOverrides = {} end
 	if treeVersion and treeVersion ~= self.treeVersion then
 		self:Init(treeVersion)
@@ -222,23 +184,6 @@ function PassiveSpecClass:ImportFromNodeList(classId, ascendClassId, abilities, 
 	self:ResetNodes()
 	self:SelectClass(classId)
 	self:SelectAscendClass(ascendClassId)
-	self.hashOverrides = hashOverrides
-	-- move above setting allocNodes so we can compare mastery with selection
-	wipeTable(self.masterySelections)
-	for mastery, effect in pairs(masteryEffects) do
-		-- ignore ggg codes from profile import
-		if (tonumber(effect) < 65536) then
-			self.masterySelections[mastery] = effect
-		end
-	end
-	for id, override in pairs(hashOverrides) do
-		local node = self.nodes[id]
-		if node then
-			override.effectSprites = self.tree.spriteMap[override.activeEffectImage]
-			override.sprites = self.tree.spriteMap[override.icon]
-			self:ReplaceNode(node, override)
-		end
-	end
 	for _, id in pairs(hashList) do
 		local nbPoint = tonumber(id:match("#(%d*)$")) or 0
 		id = id:match("^(.*)#")
@@ -748,42 +693,14 @@ function PassiveSpecClass:BuildAllDependsAndPaths()
 
 		-- ignore cluster jewel nodes that don't have an id in the tree
 		if self.tree.nodes[id] then
-			self:ReplaceNode(node,self.tree.nodes[id])
-		end
-
-		if node.type ~= "ClassStart" and node.type ~= "Socket" and not node.ascendancyName then
-			for nodeId, itemId in pairs(self.jewels) do
-				local item = self.build.itemsTab.items[itemId]
-				if item and item.jewelRadiusIndex and self.allocNodes[nodeId] and item.jewelData and not item.jewelData.limitDisabled then
-					local radiusIndex = item.jewelRadiusIndex
-					if self.nodes[nodeId].nodesInRadius and self.nodes[nodeId].nodesInRadius[radiusIndex][node.id] then
-						if itemId ~= 0 then
-							if item.jewelData.intuitiveLeapLike then
-								-- This node depends on Intuitive Leap-like behaviour
-								-- This flag:
-								-- 1. Prevents generation of paths from this node
-								-- 2. Prevents this node from being deallocted via dependency
-								-- 3. Prevents allocation of path nodes when this node is being allocated
-								node.dependsOnIntuitiveLeapLike = true
-							end
-							if item.jewelData.conqueredBy then
-								node.conqueredBy = item.jewelData.conqueredBy
-							end
-						end
-					end
-
-					if item.jewelData and item.jewelData.impossibleEscapeKeystone then
-						for keyName, keyNode in pairs(self.tree.keystoneMap) do
-							if item.jewelData.impossibleEscapeKeystones[keyName:lower()] and keyNode.nodesInRadius then
-								if keyNode.nodesInRadius[radiusIndex][node.id] then
-									node.dependsOnIntuitiveLeapLike = true
-								end
-							end
-						end
-					end
-				end
+			local newNode = self.tree.nodes[id]
+			if self.hashOverrides[id] then
+				newNode = copyTable(newNode, true)
+				newNode.stats = self.hashOverrides[id]
 			end
+			self:ReplaceNode(node,newNode)
 		end
+
 		if node.alloc > 0 then
 			node.depends[1] = node -- All nodes depend on themselves
 		end
@@ -910,6 +827,7 @@ function PassiveSpecClass:ReplaceNode(old, newNode)
 	end
 	old.dn = newNode.dn
 	old.sd = newNode.sd
+	old.stats = newNode.stats
 	old.mods = newNode.mods
 	old.modKey = newNode.modKey
 	old.modList = new("ModList")
@@ -1364,23 +1282,17 @@ function PassiveSpecClass:CreateUndoState()
 	for nodeId in pairs(self.allocNodes) do
 		t_insert(allocNodeIdList, nodeId)
 	end
-	local selections = { }
-	for mastery, effect in pairs(self.masterySelections) do
-		selections[mastery] = effect
-	end
 	return {
 		classId = self.curClassId,
 		ascendClassId = self.curAscendClassId,
-		secondaryAscendClassId = self.secondaryAscendClassId,
 		hashList = allocNodeIdList,
 		hashOverrides = self.hashOverrides,
-		masteryEffects = selections,
 		treeVersion = self.treeVersion
 	}
 end
 
 function PassiveSpecClass:RestoreUndoState(state, treeVersion)
-	self:ImportFromNodeList(state.classId, state.ascendClassId, state.abilities, state.hashList, state.hashOverrides, state.masteryEffects, treeVersion or state.treeVersion)
+	self:ImportFromNodeList(state.classId, state.ascendClassId, state.abilities, state.hashList, state.hashOverrides, treeVersion or state.treeVersion)
 	self:SetWindowTitleWithBuildClass()
 end
 
