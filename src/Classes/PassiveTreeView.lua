@@ -272,17 +272,21 @@ function PassiveTreeViewClass:Draw(build, viewPort, inputEvents)
 	if treeClick == "LEFT" then
 		if hoverNode then
 			-- User left-clicked on a node
-			if hoverNode.alloc > 0 then
-				if hoverNode.alloc < hoverNode.maxPoints then
-					hoverNode.alloc = hoverNode.alloc + 1
-					tree:ProcessStats(hoverNode)
+			if IsKeyDown("ALT") then
+				build.treeTab:ModifyNodePopup(hoverNode, viewPort)
+			else
+				if hoverNode.alloc > 0 then
+					if hoverNode.alloc < hoverNode.maxPoints then
+						hoverNode.alloc = hoverNode.alloc + 1
+						tree:ProcessStats(hoverNode)
+						spec:AddUndoState()
+						build.buildFlag = true
+					end
+				else
+					spec:AllocNode(hoverNode, self.tracePath and hoverNode == self.tracePath[#self.tracePath] and self.tracePath)
 					spec:AddUndoState()
 					build.buildFlag = true
 				end
-			else
-				spec:AllocNode(hoverNode, self.tracePath and hoverNode == self.tracePath[#self.tracePath] and self.tracePath)
-				spec:AddUndoState()
-				build.buildFlag = true
 			end
 		end
 	elseif treeClick == "RIGHT" then
@@ -800,7 +804,11 @@ end
 
 function PassiveTreeViewClass:AddNodeName(tooltip, node, build)
 	tooltip:SetRecipe(node.recipe)
-	tooltip:AddLine(24, "^7"..node.dn..(launch.devModeAlt and " ["..node.id.."]" or ""))
+	local customized = ""
+	if build.spec.hashOverrides[node.id] then
+		customized = colorCodes.WARNING .. " (CUSTOMIZED)"
+	end
+	tooltip:AddLine(24, "^7"..node.dn..(launch.devModeAlt and " ["..node.id.."]" or "") .. customized)
 end
 
 function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
@@ -857,16 +865,6 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 			line = line:gsub("{(.-)}", "^xFFFFFF%1^x808080")
 			tooltip:AddLine(14, "^x808080"..line)
 		end
-	end
-
-	-- Tattoo Editing
-	if node and (node.isTattoo
-			or (node.type == "Normal" and (node.dn == "Strength" or node.dn == "Dexterity" or node.dn == "Intelligence"))
-			or (node.type == "Notable" and #node.sd > 0 and (node.sd[1]:match("+30 to Dexterity") or node.sd[1]:match("+30 to Strength") or node.sd[1]:match("+30 to Intelligence")))
-			or node.type == "Keystone")
-	then
-		tooltip:AddSeparator(14)
-		tooltip:AddLine(14, colorCodes.TIP.."Tip: Right click to edit the tattoo for this node")
 	end
 
 	-- Mod differences
@@ -949,10 +947,7 @@ function PassiveTreeViewClass:AddNodeTooltip(tooltip, node, build)
 		tooltip:AddLine(14, "^7"..#node.depends .. " points gained from unallocating these nodes")
 		tooltip:AddLine(14, colorCodes.TIP)
 	end
-	if node.type == "Socket" then
-		tooltip:AddLine(14, colorCodes.TIP.."Tip: Hold Shift or Ctrl to hide this tooltip.")
-	else
-		tooltip:AddLine(14, colorCodes.TIP.."Tip: Hold Ctrl to hide this tooltip.")
-	end
+	tooltip:AddLine(14, colorCodes.TIP.."Tip: Hold Ctrl to hide this tooltip.")
 	tooltip:AddLine(14, colorCodes.TIP.."Tip: Right click to remove allocated points.")
+	tooltip:AddLine(14, colorCodes.TIP.."Tip: Hold Alt and left click to edit this node.")
 end

@@ -724,7 +724,7 @@ function ImportTabClass:DownloadItems()
 end
 
 function ImportTabClass:ImportPassiveTreeAndJewels(charData)
-    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, charData.mastery_effects or {}, latestTreeVersion)
+    self.build.spec:ImportFromNodeList(charData.classId, charData.ascendancy, charData.abilities, charData.hashes, charData.skill_overrides, latestTreeVersion)
     self.build.spec:AddUndoState()
     self.build.characterLevel = charData.level
     self.build.characterLevelAutoMode = false
