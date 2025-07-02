@@ -4,14 +4,26 @@
 
 [Full Changelog](https://github.com/Musholic/PathOfBuildingForLastEpoch/compare/v0.5.1...v6.0.0)
 
-<!-- Release notes generated using configuration in .github/release.yml at dev -->
-
 ## What's Changed
-### Other changes
-- Review mod parsing [\#17](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/17) ([Musholic](https://github.com/Musholic))
-- UI review [\#18](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/18) ([Musholic](https://github.com/Musholic))
-- Support for modifying nodes [\#19](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/19) ([Musholic](https://github.com/Musholic))
+### New
+- Support for modifying nodes in order to do some quick fix of some not yet supported mods (Alt + Left click on node) [\#19](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/19) ([Musholic](https://github.com/Musholic))
+- Support for weekly beta release (same as PoB) that you can opt in from the options
 
+### User interface
+- UI review to remove all specific parts related to Path of Exile [\#18](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/18) ([Musholic](https://github.com/Musholic))
+
+### Fixed calculations
+- Review mod parsing (simplification + removing irrelevant mods) [\#17](https://github.com/Musholic/PathOfBuildingForLastEpoch/pull/17) ([Musholic](https://github.com/Musholic))
+  - Add the support of a bit more mods
+  - Add a slider to set the range of all mods of all items (making it easier to compare builds from LETools)
+
+## Mod parsing progression
+* **Out of 13,274 mods, 4,082 (31%) mods are recognized by the parser**. Even if a mod is recognized, it's not guaranteed that it will work as expected.
+* The total amount of mods is made of
+    * the implicits (one for each implicit of each item)
+    * the prefixes and suffixes (one for each tier of each)
+    * the unique modifiers (one for each mod of each unique)
+    * the passive and skill trees (one for each mod of each node)
 
 
 ## [v0.5.1](https://github.com/Musholic/PathOfBuildingForLastEpoch/tree/v0.5.1) (2025/06/11)
